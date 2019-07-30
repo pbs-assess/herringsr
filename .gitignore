@@ -5,8 +5,10 @@
 
 csas-style
 csl
-knitr-cache
-knitr-figs
+knitr-cache-docx
+knitr-cache-tex
+knitr-figs-docx
+knitr-figs-pdf
 models
 _book
 sr.log
