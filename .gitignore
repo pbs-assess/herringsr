@@ -12,4 +12,6 @@ knitr-figs-pdf
 models
 _book
 sr.log
+sr.Rmd
+sr.tex
 sr.upa
