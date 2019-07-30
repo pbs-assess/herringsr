@@ -5,44 +5,12 @@ The 2017 assessment included updates to the model [Integrated Statistical catch-
 
 Also new to the 2017 assessment was the estimation of stock productivity and current stock status relative to the new limit reference point (LRP) of $0.3\mli{SB}_0$ [@kronlund2017]. The structure of the 2017 model was not changed for the 2018 stock assessment.
 
-<!-- In 2016 DFO committed to renewing the current management framework to address a range of challenges facing \fishName{} stocks and fisheries in BC.  -->
-<!-- Renewal of the management framework includes conducting a Management Strategy Evaluation (MSE) process to evaluate the performance of candidate management procedures against a range of hypotheses about uncertain stock and fishery dynamics. -->
-<!-- As part of the MSE process, a CSAS regional peer review occurred July 25 and 26, 2018, where performance of \fishName{} management procedures were assessed against conservation objectives for Strait of Georgia and West Coast of Vancouver Island stock assessment regions \citep{DFO2018}. -->
+In 2016 DFO committed to renewing the current management framework to address a range of challenges facing Pacific Herring stocks and fisheries in BC. Renewal of the management framework includes conducting a Management Strategy Evaluation (MSE) process to evaluate the performance of candidate management procedures against a range of hypotheses about uncertain stock and fishery dynamics. As part of the MSE process, a CSAS regional peer review occurred July 25 and 26, 2018, where performance of Pacific Herring management procedures were assessed against conservation objectives for Strait of Georgia and West Coast of Vancouver Island stock assessment regions [@dfo2018].
 
-<!-- Estimated stock trajectories, current status of stocks for \assessYr{}, and harvest advice recommendations for \forecastYr{} reflect methods of \citet{ClearyEtal2018} and, where applicable, recommendations from the aforementioned July 2018 regional peer review. -->
-<!-- These recommendations are described in the section ``\nameref{secProjHarv}''. -->
+Estimated stock trajectories, current status of stocks for `r assess_yr`, and harvest advice recommendations for `r forecast_yr` reflect methods of @cleary2018 and, where applicable, recommendations from the aforementioned July 2018 regional peer review. These recommendations are described in the section <!-- \nameref{secProjHarv}''.-->
 
-<!-- Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested that DFO Pacific Science Branch assess the status of British Columbia (BC) \fishName{} stocks in \assessYr{} and recommend harvest advice for \forecastYr{} to inform the development of the \assessYr{}/\forecastYr{} Integrated Fisheries Management Plan. -->
+Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested that DFO Pacific Science Branch assess the status of British Columbia (BC) Pacific Herring stocks in `r assess_yr` and recommend harvest advice for `r forecast_yr` to inform the development of the `r assess_yr`/`r forecast_yr` Integrated Fisheries Management Plan.
 
-<!-- % Mandatory last paragraph in this section -->
-<!-- This Science Response Report results from the Science Response Process of September 2018 on the \rdTitle{}. -->
-
-
-
-## Note on this section
-
-The context section must give the readers a clear idea of the issue being addressed and of the history of how the need for this process came about (e.g., the rationale for using the Science Response Process in this specific case).
-It should include the formal request/question from the client, the response deadline, as well as a short summary of the conclusion (one or two sentences).
-
-The rationale for the approach taken to answer the request can be described (e.g., specific scientific questions that were addressed).
-This section could also include information on previous related meetings and advice on which this process is based.
-
-This section is not intended for detailed background information on the science issues themselves, but rather gives the bigger picture.
-At the end of this section, the reader will have a clear understanding of the reason to produce the report, will know how this specific report fits in the sequence of past advice, and what advice is expected to be produced in the future on this specific issue.
-
-If the objective of the process was to comment on a specific report (e.g., Environmental Assessment report produced by a proponent in the context of the Canadian Environmental Assessment Act) then the relevant link to the report that was the subject of the review could be identified in this section.
-
-This section will be posted in HTML format on the CSAS website followed by the link to the full PDF version of the publication.
-
-## Mandatory paragraph
-
-*The meeting date and title must be exactly as they appear on the Fisheries and Oceans Science Advisory Schedule.
-Be sure to use the default text in the French template for the translation as well as the meeting information on the French version of the schedule.
-Edit the following sentence as necessary.*
-
-This Science Response Report results from the Science Response Process Month Day, Year on the Title of Process Here.
-
-*Add the following sentence if there are other associated publications that will be posted on the schedule.*
-
-Additional publications from this meeting will be posted on the \href{http://www.isdm-gdsi.gc.ca/csas-sccs/applications/events-evenements/index-eng.asp}{DFO Science Advisory Schedule} as they become available.
+<!--  Mandatory last paragraph in this section -->
+This Science Response Report results from the Science Response Process of September 2018 on the Status of Pacific Herring (*Clupea pallasii*) in 2018 and forecast for 2019.
 

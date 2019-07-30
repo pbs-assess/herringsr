@@ -67,4 +67,6 @@ knitr::opts_chunk$set(
 ```{r load-libraries, cache=FALSE}
 # add other packages here:
 library(csasdown)
+library(gfiscamutils)
+source("R/model-setup.R")
 ```
