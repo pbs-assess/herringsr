@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.DS_Store
+
+csas-style
+csl
+knitr-cache
+knitr-figs
+_book
+sr.log
+sr.upa
