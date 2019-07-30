@@ -1,6 +1,23 @@
 # Context
 
-Mandatory section and title.
+Pacific Herring abundance is assessed using a statistical catch-age (SCA) model.
+The 2017 assessment included updates to the model [Integrated Statistical catch-age model; @martell2011], and a bridging analysis to support these changes [@cleary2018].
+
+Also new to the 2017 assessment was the estimation of stock productivity and current stock status relative to the new limit reference point (LRP) of $0.3\mli{SB}_0$ [@kronlund2017]. The structure of the 2017 model was not changed for the 2018 stock assessment.
+
+<!-- In 2016 DFO committed to renewing the current management framework to address a range of challenges facing \fishName{} stocks and fisheries in BC.  -->
+<!-- Renewal of the management framework includes conducting a Management Strategy Evaluation (MSE) process to evaluate the performance of candidate management procedures against a range of hypotheses about uncertain stock and fishery dynamics. -->
+<!-- As part of the MSE process, a CSAS regional peer review occurred July 25 and 26, 2018, where performance of \fishName{} management procedures were assessed against conservation objectives for Strait of Georgia and West Coast of Vancouver Island stock assessment regions \citep{DFO2018}. -->
+
+<!-- Estimated stock trajectories, current status of stocks for \assessYr{}, and harvest advice recommendations for \forecastYr{} reflect methods of \citet{ClearyEtal2018} and, where applicable, recommendations from the aforementioned July 2018 regional peer review. -->
+<!-- These recommendations are described in the section ``\nameref{secProjHarv}''. -->
+
+<!-- Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested that DFO Pacific Science Branch assess the status of British Columbia (BC) \fishName{} stocks in \assessYr{} and recommend harvest advice for \forecastYr{} to inform the development of the \assessYr{}/\forecastYr{} Integrated Fisheries Management Plan. -->
+
+<!-- % Mandatory last paragraph in this section -->
+<!-- This Science Response Report results from the Science Response Process of September 2018 on the \rdTitle{}. -->
+
+
 
 ## Note on this section
 

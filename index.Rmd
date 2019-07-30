@@ -18,7 +18,7 @@ region: Pacific Region
 address: |
   ^1^Pacific Biological Station\
      Fisheries and Oceans Canada, 3190 Hammond Bay Road\
-     Nanaimo, British Columbia, V9T 6N7, Canada\
+     Nanaimo, British Columbia, V9T 6N7, Canada
 phone: (250) 756-7208
 email: csap@dfo-mpo.gc.ca
 output:
