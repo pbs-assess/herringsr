@@ -42,6 +42,8 @@ start_yr <- 1951
 start_yr_age_comps <- 1951
 end_yr <- 2016
 last_data_yr <- 2016
+this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
+
 ## Directories and names of stocks
 stock_dir <- list()
 stock_name <- list()
