@@ -1,7 +1,7 @@
 # Background
 
-Pacific Herring in BC are managed as `r number_to_word(length(allRegions$major))` major and `r number_to_word(length(allRegions$minor))` minor stock assessment regions (SARs; \autoref{figBC}).
-The major SARs are `r paste(allRegionNames$major, collapse = " ")`. The minor SARs are `r paste(allRegionNames$minor, collapse = " ")`.
+Pacific Herring in BC are managed as `r number_to_word(length(allRegions$major))` major and `r number_to_word(length(allRegions$minor))` minor stock assessment regions (SARs; <!--\autoref{figBC}-->).
+The major SARs are `r commify(allRegionNames$major)`. The minor SARs are `r commify(allRegionNames$minor)`.
 We conduct formal analyses of stock trend information for the Pacific Herring major SARs. For the minor SARs, we present catch data, biological data, and spawn survey data (<!-- \nameref{appMinor} -->).
 
 <!-- \subsection{Description of the fishery} -->
