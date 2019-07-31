@@ -32,17 +32,6 @@ base_model_name <- lapply(1:length(stock_name),
                           function(x){
                             paste("Reference model", stock_name[[x]])})
 
-#' Must be called from within the first knitr code chunk
-#' in the document. It is defined here so that it is in the same place
-#' as the other model setup.
-#'
-#' @param dirs List of directories shich hold Rdata files build using [build()] function
-load_models_into_parent_env <- function(dirs = base_model_dir_name){
-  base_models <<- lapply(dirs,
-                         function(x){
-                           load_models(x)})
-}
-
 #' Create RData files for models found in the directories given by `dirs`
 #'
 #' @param dirs List of directories to nuild Rdata fies for
@@ -52,6 +41,7 @@ load_models_into_parent_env <- function(dirs = base_model_dir_name){
 #' @param confidence_vals Confidence interval values. Vector of length 2.
 #' @param load_proj Load projections? Logical
 #' @param fixed_cutoffs vector of fixed cutoff values for Herring areas
+#' @importFrom gfiscamutils create.rdata.file
 build <- function(dirs = base_model_dir_name,
                   ovwrt = FALSE,
                   burnin = 1000,
@@ -77,6 +67,7 @@ build <- function(dirs = base_model_dir_name,
                        which_stock <- 0
                      }
                      create.rdata.file(bm,
+                                       mcmc.subdir = "mcmc",
                                        ovwrt.rdata = ovwrt,
                                        load.proj = ld_proj,
                                        lower = conf_vals[1],
@@ -90,4 +81,16 @@ build <- function(dirs = base_model_dir_name,
                    )
             )
 
+}
+
+#' Must be called from within the first knitr code chunk
+#' in the document. It is defined here so that it is in the same place
+#' as the other model setup.
+#'
+#' @param dirs List of directories shich hold Rdata files build using [build()] function
+#' @importFrom gfiscamutils load.models
+load_models_into_parent_env <- function(dirs = base_model_dir_name){
+  base_models <<- lapply(dirs,
+                         function(x){
+                           load.models(x)})
 }
