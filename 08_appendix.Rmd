@@ -1,0 +1,8 @@
+# Appendix
+
+```{r app-catch-plot}
+plot_catch(base_models[[1]],
+           thm = herring_theme())
+```
+
+\clearpage

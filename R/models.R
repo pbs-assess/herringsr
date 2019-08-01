@@ -1,12 +1,10 @@
-#### Sources #####
-
-# # Location and name of the location database and tables
+## Location and name of the location database and tables
 # areaLoc <- list(
 #     loc=file.path(dirShare, "Stock_Assess_Database"),
 #     db="HSA_BE_Locations_Main_v6.1_2015.mdb",
 #     fns=list(sections="Sections", locations="Location") )
 #
-# # Location(s) and names of the Sections and land shapefiles
+## Location(s) and names of the Sections and land shapefiles
 # shapesLoc <- list(
 #     locSec=file.path(dirShare, "Kristen", "Herring_Shapefiles"),
 #     locLand=file.path("..", "..", "Data", "Polygons"),
@@ -89,11 +87,14 @@ ciLevel <- 0.9
 wtMax <- 150 / 1000
 
 # 1996 fixed cutoff values (t*10^3)
-fixedCutoffs <- list( HG=10.7, PRD=12.1, CC=17.6, SoG=21.2, WCVI=18.8 )
+#fixedCutoffs <- list( HG=10.7, PRD=12.1, CC=17.6, SoG=21.2, WCVI=18.8 )
 
 # High-productivity years
-hiProdYrs <- list( HG=1994:1997, PRD=1994:2002, CC=1990:1999, SoG=1988:2016,
-  WCVI=1988:1996 )
+hiProdYrs <- list(HG = 1994:1997,
+                  PRD = 1994:2002,
+                  CC = 1990:1999,
+                  SoG = 1988:2016,
+                  WCVI = 1988:1996 )
 
 # Proportion of B_0 for LRP
 propB0 <- 0.3

@@ -69,4 +69,5 @@ knitr::opts_chunk$set(
 source(here::here("R/model-setup.R"))
 build(ovwrt = FALSE)
 load_models_into_parent_env()
+theme_set(herring_theme())
 ```
