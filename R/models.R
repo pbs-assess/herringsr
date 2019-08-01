@@ -1,4 +1,4 @@
-base_models <- load.models(unlist(base_model_dir_name))
+base_models <- load.models(unlist(base_model_dirs))
 
 regions <- tribble(
   ~SAR, ~Region,                      ~RegionName, ~Major,

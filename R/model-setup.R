@@ -21,62 +21,16 @@ this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
 
 ## Directories and names of stocks
 stock_dir <- list("HG", "PRD", "CC", "SOG", "WCVI", "A27", "A2W")
-base_model_dir_name <- lapply(1:length(stock_dir),
-                              function(x){
-                                file.path(models_dir, stock_dir[[x]], "AM2")})
-
-stock_name <- list("Haida Gwaii", "Pr. Rupert", "Central Coast", "SOG", "WCVI", "Area 27", "Area 2 West")
-base_model_name <- lapply(1:length(stock_name),
+base_model_dirs <- lapply(1:length(stock_dir),
                           function(x){
-                            paste("Reference model", stock_name[[x]])})
+                            file.path(models_dir, stock_dir[[x]], "AM2")})
 
-#' Create RData files for models found in the directories given by `dirs`
-#'
-#' @param dirs List of directories to nuild Rdata fies for
-#' @param ovwrt Overwrite Rdata file if it exists? Logical
-#' @param burnin integer burnin value for MCMC calculations
-#' @param thin integer thinning interval value for MCMC calculations
-#' @param conf_vals Confidence interval values. Vector of length 2.
-#' @param ld_proj Load projections? Logical
-#' @param fixed_cutoffs. vector of fixed cutoff values for Herring areas
-#' @importFrom gfiscamutils create.rdata.file
-build <- function(dirs = base_model_dir_name,
-                  ovwrt = FALSE,
-                  burnin = 1000,
-                  thin = 1,
-                  conf_vals = confidence_vals,
-                  fixed_cutoffs. = fixed_cutoffs,
-                  ld_proj = TRUE){
-
-  invisible(lapply(1:length(dirs),
-                   function(x){
-                     bm <- dirs[[x]]
-                     if(length(grep("HG", bm))){
-                       which_stock <- 1
-                     }else if(length(grep("PRD", bm))){
-                       which_stock <- 2
-                     }else if(length(grep("CC", bm))){
-                       which_stock <- 3
-                     }else if(length(grep("SOG", bm))){
-                       which_stock <- 4
-                     }else if(length(grep("WCVI", bm))){
-                       which_stock <- 5
-                     }else{
-                       which_stock <- 0
-                     }
-                     create.rdata.file(bm,
-                                       mcmc.subdir = "mcmc",
-                                       ovwrt.rdata = ovwrt,
-                                       load.proj = ld_proj,
-                                       lower = conf_vals[1],
-                                       upper = conf_vals[2],
-                                       burnin = burnin,
-                                       thin = thin,
-                                       which.stock = which_stock,
-                                       which.model = 2,
-                                       fixed.cutoffs = fixed_cutoffs.)
-                     }
-                   )
-            )
-
-}
+build_herring_rdata_files(base_model_dirs,
+                          ovwrt.rdata = TRUE,
+                          mcmc.subdir = "mcmc",
+                          load.proj = TRUE,
+                          lower = confidence_vals[1],
+                          upper = confidence_vals[2],
+                          burnin = 1000,
+                          thin = 1,
+                          fixed.cutoffs = fixed_cutoffs)

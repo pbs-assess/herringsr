@@ -67,7 +67,6 @@ knitr::opts_chunk$set(
 ```{r load-libraries, cache=FALSE}
 # add other packages here:
 source(here::here("R/model-setup.R"))
-build(ovwrt = FALSE)
 source(here::here("R/models.R"))
 
 theme_set(herring_theme())
