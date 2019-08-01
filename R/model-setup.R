@@ -5,7 +5,6 @@ library(gfiscamutils)
 library(coda)
 
 models_dir <- here::here("models")
-retros_dir <- here::here("retrospectives")
 confidence_vals <- c(0.05, 0.95)
 ## Fixed cutoffs for decision tables, corresponsing to the stock order
 ## HG, PRD, CC, SOG, WCVI
