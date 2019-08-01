@@ -1,54 +1,20 @@
-## Location and name of the location database and tables
-# areaLoc <- list(
-#     loc=file.path(dirShare, "Stock_Assess_Database"),
-#     db="HSA_BE_Locations_Main_v6.1_2015.mdb",
-#     fns=list(sections="Sections", locations="Location") )
-#
-## Location(s) and names of the Sections and land shapefiles
-# shapesLoc <- list(
-#     locSec=file.path(dirShare, "Kristen", "Herring_Shapefiles"),
-#     locLand=file.path("..", "..", "Data", "Polygons"),
-#     fns=list(sections="SectionsIntegrated", land="GSHHS_h_L1_Alb") )
+regions <- tribble(
+  ~SAR, ~Region,                      ~RegionName, ~Major,
+  1,       "HG",                    "Haida Gwaii",   TRUE,
+  2,      "PRD",         "Prince Rupert District",   TRUE,
+  3,       "CC",                  "Central Coast",   TRUE,
+  4,      "SoG",              "Strait of Georgia",   TRUE,
+  5,     "WCVI", "West Coast of Vancouver Island",   TRUE,
+  6,      "A27",                        "Area 27",  FALSE,
+  7,      "A2W",                    "Area 2 West",  FALSE)
+major_regions <- regions$Region[regions$Major]
+minor_regions <- regions$Region[!regions$Major]
 
-##### Parameters #####
-
-allRegions <- list(
-  major = c("HG",
-            "PRD",
-            "CC",
-            "SoG",
-            "WCVI"),
-  minor = c("A27",
-            "A2W"))
-
-allRegionNames <- list(
-  major = c("Haida Gwaii (HG)",
-            "Prince Rupert District (PRD)",
-            "Central Coast (CC)",
-            "Strait of Georgia (SoG)",
-            "West Coast of Vancouver Island (WCVI)"),
-  minor = c("Area 27 (A27)",
-            "Area 2 West (A2W)"))
-
-# Cross-walk table for SAR to region and region name (and french)
-regions <- read_csv(file =
-    "SAR, Region, RegionName, Major
-        1, HG, Haida Gwaii, TRUE
-        2, PRD, Prince Rupert District, TRUE
-        3, CC, Central Coast, TRUE
-        4, SoG, Strait of Georgia, TRUE
-        5, WCVI, West Coast of Vancouver Island, TRUE
-        6, A27, Area 27, FALSE
-        7, A2W, Area 2 West, FALSE",
-  col_types = cols())
-
-# Cross-walk table for Period to Gear type
-gear <- read_csv(file =
-    "Period, Gear
-      Gear1, Other
-      Gear2, RoeSN
-      Gear3, RoeGN",
-  col_types = cols())
+gear <- tribble(
+  ~Period,   ~Gear,
+  "Gear1", "Other",
+  "Gear2", "RoeSN",
+  "Gear3", "RoeGN")
 
 # Age to highlight in figure
 ageShow <- 3
