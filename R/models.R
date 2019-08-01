@@ -32,22 +32,22 @@ allRegionNames <- list(
 
 # Cross-walk table for SAR to region and region name (and french)
 regions <- read_csv(file =
-    "SAR, Region, RegionName, Major, RegionFR, RegionNameFR
-        1, HG, Haida Gwaii, TRUE, HG, Haida Gwaii
-        2, PRD, Prince Rupert District, TRUE, DPR, District de Prince Rupert
-        3, CC, Central Coast, TRUE, CC, C\u{00F4}te centrale
-        4, SoG, Strait of Georgia, TRUE, DG, D\u{00E9}troit de Georgie
-        5, WCVI, West Coast of Vancouver Island, TRUE, COIV, C\u{00F4}te Ouest de l'\u{00EE}le de Vancouver
-        6, A27, Area 27, FALSE, Z27, Zone 27
-        7, A2W, Area 2 West, FALSE, Z2O, Zone 2 ouest",
+    "SAR, Region, RegionName, Major
+        1, HG, Haida Gwaii, TRUE
+        2, PRD, Prince Rupert District, TRUE
+        3, CC, Central Coast, TRUE
+        4, SoG, Strait of Georgia, TRUE
+        5, WCVI, West Coast of Vancouver Island, TRUE
+        6, A27, Area 27, FALSE
+        7, A2W, Area 2 West, FALSE",
   col_types = cols())
 
 # Cross-walk table for Period to Gear type
 gear <- read_csv(file =
-    "Period, Gear, Engin
-      Gear1, Other, Autre
-      Gear2, RoeSN, RogueFM
-      Gear3, RoeGN, RogueSN",
+    "Period, Gear
+      Gear1, Other
+      Gear2, RoeSN
+      Gear3, RoeGN",
   col_types = cols())
 
 # Age to highlight in figure
@@ -110,4 +110,6 @@ earlyCatchYrs <- 1951:1965
 
 # First year to show for minor stock area timseries plots
 firstYrMinor <- 1978
+
+
 

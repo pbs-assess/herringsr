@@ -89,7 +89,5 @@ build <- function(dirs = base_model_dir_name,
 #' @param dirs List of directories shich hold Rdata files build using [build()] function
 #' @importFrom gfiscamutils load.models
 load_models_into_parent_env <- function(dirs = base_model_dir_name){
-  base_models <<- lapply(dirs,
-                         function(x){
-                           load.models(x)})
+  base_models <<- load.models(unlist(dirs))
 }
