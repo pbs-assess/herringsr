@@ -38,9 +38,9 @@ base_model_name <- lapply(1:length(stock_name),
 #' @param ovwrt Overwrite Rdata file if it exists? Logical
 #' @param burnin integer burnin value for MCMC calculations
 #' @param thin integer thinning interval value for MCMC calculations
-#' @param confidence_vals Confidence interval values. Vector of length 2.
-#' @param load_proj Load projections? Logical
-#' @param fixed_cutoffs vector of fixed cutoff values for Herring areas
+#' @param conf_vals Confidence interval values. Vector of length 2.
+#' @param ld_proj Load projections? Logical
+#' @param fixed_cutoffs. vector of fixed cutoff values for Herring areas
 #' @importFrom gfiscamutils create.rdata.file
 build <- function(dirs = base_model_dir_name,
                   ovwrt = FALSE,
