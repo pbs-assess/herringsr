@@ -4,8 +4,6 @@ library(gfutilities)
 library(gfiscamutils)
 library(coda)
 
-source(here::here("R/models.R"))
-
 models_dir <- here::here("models")
 retros_dir <- here::here("retrospectives")
 confidence_vals <- c(0.05, 0.95)
@@ -22,11 +20,12 @@ last_data_yr <- 2016
 this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
 
 ## Directories and names of stocks
-stock_dir <- list("HG", "PRD", "CC", "SOG", "WCVI")
+stock_dir <- list("HG", "PRD", "CC", "SOG", "WCVI", "A27", "A2W")
 base_model_dir_name <- lapply(1:length(stock_dir),
                               function(x){
                                 file.path(models_dir, stock_dir[[x]], "AM2")})
-stock_name <- list("Haida Gwaii", "Pr. Rupert", "Central Coast", "SOG", "WCVI")
+
+stock_name <- list("Haida Gwaii", "Pr. Rupert", "Central Coast", "SOG", "WCVI", "Area 27", "Area 2 West")
 base_model_name <- lapply(1:length(stock_name),
                           function(x){
                             paste("Reference model", stock_name[[x]])})
@@ -80,14 +79,4 @@ build <- function(dirs = base_model_dir_name,
                    )
             )
 
-}
-
-#' Must be called from within the first knitr code chunk
-#' in the document. It is defined here so that it is in the same place
-#' as the other model setup.
-#'
-#' @param dirs List of directories shich hold Rdata files build using [build()] function
-#' @importFrom gfiscamutils load.models
-load_models_into_parent_env <- function(dirs = base_model_dir_name){
-  base_models <<- load.models(unlist(dirs))
 }

@@ -1,3 +1,5 @@
+base_models <- load.models(unlist(base_model_dir_name))
+
 regions <- tribble(
   ~SAR, ~Region,                      ~RegionName, ~Major,
   1,       "HG",                    "Haida Gwaii",   TRUE,
