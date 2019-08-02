@@ -1,3 +1,5 @@
+rebuild_rdata_model_files <- FALSE
+
 library(tidyverse)
 library(csasdown)
 library(gfutilities)
@@ -25,7 +27,7 @@ base_model_dirs <- lapply(1:length(stock_dir),
                             file.path(models_dir, stock_dir[[x]], "AM2")})
 
 build_herring_rdata_files(base_model_dirs,
-                          ovwrt.rdata = TRUE,
+                          ovwrt.rdata = rebuild_rdata_model_files,
                           mcmc.subdir = "mcmc",
                           load.proj = TRUE,
                           lower = confidence_vals[1],

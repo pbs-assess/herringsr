@@ -70,4 +70,5 @@ source(here::here("R/model-setup.R"))
 source(here::here("R/models.R"))
 
 theme_set(herring_theme())
+french = FALSE
 ```

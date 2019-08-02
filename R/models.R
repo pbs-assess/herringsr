@@ -9,14 +9,15 @@ regions <- tribble(
   5,     "WCVI", "West Coast of Vancouver Island",   TRUE,
   6,      "A27",                        "Area 27",  FALSE,
   7,      "A2W",                    "Area 2 West",  FALSE)
+all_regions_fullnames <- regions$RegionName
 major_regions <- regions$Region[regions$Major]
 minor_regions <- regions$Region[!regions$Major]
 
 gear <- tribble(
-  ~Period,   ~Gear,
-  "Gear1", "Other",
-  "Gear2", "RoeSN",
-  "Gear3", "RoeGN")
+  ~gear,   ~gearname,
+      1,     "Other",
+      2,     "RoeSN",
+      3,     "RoeGN")
 
 # Age to highlight in figure
 ageShow <- 3
