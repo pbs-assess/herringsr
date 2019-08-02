@@ -65,10 +65,10 @@ knitr::opts_chunk$set(
 ```
 
 ```{r load-libraries, cache=FALSE}
+french = FALSE
 # add other packages here:
 source(here::here("R/model-setup.R"))
 source(here::here("R/models.R"))
 
 theme_set(herring_theme())
-french = FALSE
 ```

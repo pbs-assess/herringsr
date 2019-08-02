@@ -9,9 +9,17 @@ regions <- tribble(
   5,     "WCVI", "West Coast of Vancouver Island",   TRUE,
   6,      "A27",                        "Area 27",  FALSE,
   7,      "A2W",                    "Area 2 West",  FALSE)
-all_regions_fullnames <- regions$RegionName
-major_regions <- regions$Region[regions$Major]
-minor_regions <- regions$Region[!regions$Major]
+all_regions_short <- en2fr(regions$Region, french)
+major_regions_short <- en2fr(regions$Region[regions$Major], french)
+minor_regions_short <- en2fr(regions$Region[!regions$Major], french)
+
+all_regions_full <- en2fr(regions$RegionName, french)
+major_regions_full <- en2fr(all_regions_full[regions$Major], french)
+minor_regions_full <- en2fr(all_regions_full[!regions$Major], french)
+
+all_regions_full_parens <- paste0(regions$RegionName,  " (", regions$Region, ")")
+major_regions_full_parens <- paste0(major_regions_full,  " (", major_regions_short, ")")
+minor_regions_full_parens <- paste0(minor_regions_full,  " (", minor_regions_short, ")")
 
 gear <- tribble(
   ~gear,   ~gearname,

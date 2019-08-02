@@ -4,6 +4,7 @@ library(tidyverse)
 library(csasdown)
 library(gfutilities)
 library(gfiscamutils)
+library(rosettafish)
 library(coda)
 
 models_dir <- here::here("models")
