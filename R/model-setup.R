@@ -5,8 +5,6 @@ library(gfiscamutils)
 library(rosettafish)
 library(coda)
 
-models_dir <- here::here("models")
-
 ## ------------------------------------------------------------------------------------------------
 ## Directories and names of stocks
 major_stock_dir <- list("HG", "PRD", "CC", "SOG", "WCVI")

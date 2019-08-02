@@ -67,6 +67,7 @@ knitr::opts_chunk$set(
 ```{r load-libraries, cache=FALSE}
 french = FALSE
 rebuild_rdata_model_files <- FALSE
+models_dir <- here::here("models")
 
 source(here::here("R/model-setup.R"))
 source(here::here("R/models.R"))
