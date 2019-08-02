@@ -39,6 +39,10 @@ minor_catch <- get_catch(minor_models,
                          gear,
                          translate = french)
 
+wa <- get_wa(major_models,
+             major_regions_short,
+             gear,
+             translate = french)
 
 confidence_vals <- c(0.05, 0.95)
 ## Fixed cutoffs for decision tables, corresponsing to the stock order
