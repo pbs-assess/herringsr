@@ -22,27 +22,27 @@ major_regions_short <- en2fr(regions$Region[regions$Major], french)
 minor_regions_short <- en2fr(regions$Region[!regions$Major], french)
 
 all_regions_full <- en2fr(regions$RegionName, french)
-major_regions_full <- en2fr(all_regions_full[regions$Major], french)
-minor_regions_full <- en2fr(all_regions_full[!regions$Major], french)
+major_regions_full <- en2fr(regions$RegionName[regions$Major], french)
+minor_regions_full <- en2fr(regions$RegionName[!regions$Major], french)
 
-all_regions_full_parens <- paste0(regions$RegionName,  " (", regions$Region, ")")
+all_regions_full_parens <- paste0(all_regions_full,  " (", all_regions_short, ")")
 major_regions_full_parens <- paste0(major_regions_full,  " (", major_regions_short, ")")
 minor_regions_full_parens <- paste0(minor_regions_full,  " (", minor_regions_short, ")")
 
 major_catch <- get_catch(major_models,
-                         major_regions_short,
+                         major_regions_full,
                          gear,
                          translate = french)
 
 minor_catch <- get_catch(minor_models,
-                         minor_regions_short,
+                         minor_regions_full,
                          gear,
                          translate = french)
 
-wa <- get_wa(major_models,
-             major_regions_short,
-             gear,
-             translate = french)
+minor_wa <- get_wa(minor_models,
+                   minor_regions_full,
+                   gear,
+                   translate = french)
 
 confidence_vals <- c(0.05, 0.95)
 ## Fixed cutoffs for decision tables, corresponsing to the stock order
@@ -90,8 +90,8 @@ smLine <- "loess"
 # Level of confidence interval
 ciLevel <- 0.9
 
-# Get ylimits (e.g., weight in kg) for the weight-at-age plot
-wtMax <- 150 / 1000
+# Limits for the weight-at-age plot
+wa_ylim <- c(0.05, 0.15)
 
 # 1996 fixed cutoff values (t*10^3)
 #fixedCutoffs <- list( HG=10.7, PRD=12.1, CC=17.6, SoG=21.2, WCVI=18.8 )
