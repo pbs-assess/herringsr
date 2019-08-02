@@ -14,6 +14,11 @@ gear <- tribble(
   2,     "RoeSN",
   3,     "RoeGN")
 
+surv_type <- tribble(
+  ~gear,   ~survey,
+      4, "Surface",
+      5,    "Dive")
+
 major_models <- load.models(unlist(major_model_dirs))
 minor_models <- load.models(unlist(minor_model_dirs))
 
@@ -49,6 +54,12 @@ minor_pa <- get_pa(minor_models,
                    minor_regions_full,
                    gear,
                    translate = french)
+
+#Survey Indices
+minor_surv <- get_surv_ind(minor_models,
+                           minor_regions_full,
+                           gear,
+                           translate = french)
 
 ## Fixed cutoffs for decision tables, corresponsing to the stock order
 ## HG, PRD, CC, SOG, WCVI
