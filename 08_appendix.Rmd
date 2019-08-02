@@ -4,10 +4,8 @@ We do not conduct formal analyses of stock trend information for the `r number_t
 <!-- However, we do provide time series of landed commercial catch (\autoref{figCatchMinor}), biological data including weight-at-age (\autoref{figWeightAgeMinor}) and proportion-at-age (\autoref{figPropAgeMinor}), as well as the spawn index (\autoref{figSpawnIndexMinor}) from \Sexpr{firstYrMinor} to \Sexpr{max(yrRange)}. -->
 
 ```{r app-catch-plot}
-plot_catch(list(base_models[[6]], base_models[[7]]),
-           c(all_regions_full[6], all_regions_full[7]),
-           gear,
-           xlim = c(1978, 2020),
+plot_catch(minor_catch,
+           xlim = c(1977, 2020),
            translate = french)
 ```
 

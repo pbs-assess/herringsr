@@ -1,5 +1,3 @@
-base_models <- load.models(unlist(base_model_dirs))
-
 regions <- tribble(
   ~SAR, ~Region,                      ~RegionName, ~Major,
   1,       "HG",                    "Haida Gwaii",   TRUE,
@@ -9,6 +7,16 @@ regions <- tribble(
   5,     "WCVI", "West Coast of Vancouver Island",   TRUE,
   6,      "A27",                        "Area 27",  FALSE,
   7,      "A2W",                    "Area 2 West",  FALSE)
+
+gear <- tribble(
+  ~gear,   ~gearname,
+  1,     "Other",
+  2,     "RoeSN",
+  3,     "RoeGN")
+
+major_models <- load.models(unlist(major_model_dirs))
+minor_models <- load.models(unlist(minor_model_dirs))
+
 all_regions_short <- en2fr(regions$Region, french)
 major_regions_short <- en2fr(regions$Region[regions$Major], french)
 minor_regions_short <- en2fr(regions$Region[!regions$Major], french)
@@ -21,11 +29,29 @@ all_regions_full_parens <- paste0(regions$RegionName,  " (", regions$Region, ")"
 major_regions_full_parens <- paste0(major_regions_full,  " (", major_regions_short, ")")
 minor_regions_full_parens <- paste0(minor_regions_full,  " (", minor_regions_short, ")")
 
-gear <- tribble(
-  ~gear,   ~gearname,
-      1,     "Other",
-      2,     "RoeSN",
-      3,     "RoeGN")
+major_catch <- get_catch(major_models,
+                         major_regions_short,
+                         gear,
+                         translate = french)
+
+minor_catch <- get_catch(minor_models,
+                         minor_regions_short,
+                         gear,
+                         translate = french)
+
+
+confidence_vals <- c(0.05, 0.95)
+## Fixed cutoffs for decision tables, corresponsing to the stock order
+## HG, PRD, CC, SOG, WCVI
+fixed_cutoffs <- c(10.7, 12.1, 17.6, 21.2, 18.8)
+assess_yr <- as.numeric(substr(Sys.Date(), 1, 4))
+last_assess_yr <- assess_yr - 1
+forecast_yr <- assess_yr + 1
+start_yr <- 1951
+start_yr_age_comps <- 1951
+end_yr <- 2016
+last_data_yr <- 2016
+this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
 
 # Age to highlight in figure
 ageShow <- 3
