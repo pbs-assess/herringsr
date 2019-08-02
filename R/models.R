@@ -29,6 +29,7 @@ all_regions_full_parens <- paste0(all_regions_full,  " (", all_regions_short, ")
 major_regions_full_parens <- paste0(major_regions_full,  " (", major_regions_short, ")")
 minor_regions_full_parens <- paste0(minor_regions_full,  " (", minor_regions_short, ")")
 
+#Catch
 major_catch <- get_catch(major_models,
                          major_regions_full,
                          gear,
@@ -38,13 +39,17 @@ minor_catch <- get_catch(minor_models,
                          minor_regions_full,
                          gear,
                          translate = french)
-
+#Weight-at-age
 minor_wa <- get_wa(minor_models,
                    minor_regions_full,
                    gear,
                    translate = french)
+#Proportion-at-age
+minor_pa <- get_pa(minor_models,
+                   minor_regions_full,
+                   gear,
+                   translate = french)
 
-confidence_vals <- c(0.05, 0.95)
 ## Fixed cutoffs for decision tables, corresponsing to the stock order
 ## HG, PRD, CC, SOG, WCVI
 fixed_cutoffs <- c(10.7, 12.1, 17.6, 21.2, 18.8)
@@ -61,7 +66,7 @@ this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
 ageShow <- 3
 
 # Age class of plus group for proportion-at-age
-agePlusProp <- 10
+age_plus <- 10
 
 # Age of recruitment
 ageRec <- 2
@@ -88,7 +93,8 @@ intendUYrs <- 1983
 smLine <- "loess"
 
 # Level of confidence interval
-ciLevel <- 0.9
+ci_level <- 0.9
+confidence_vals <- c(0.05, 0.95)
 
 # Limits for the weight-at-age plot
 wa_ylim <- c(0.05, 0.15)
