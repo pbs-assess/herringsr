@@ -3,6 +3,10 @@
 We do not conduct formal analyses of stock trend information for the `r number_to_word(length(minor_regions_short))` Pacific Herring minor SARs (`r commify(minor_regions_full_parens)`).
 <!-- However, we do provide time series of landed commercial catch (\autoref{figCatchMinor}), biological data including weight-at-age (\autoref{figWeightAgeMinor}) and proportion-at-age (\autoref{figPropAgeMinor}), as well as the spawn index (\autoref{figSpawnIndexMinor}) from \Sexpr{firstYrMinor} to \Sexpr{max(yrRange)}. -->
 
+```{r app-bc-map, fig.cap = "Boundaries for the Pacifc Herring stock assessment regions (SARs) in BC. The major SARs are Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). The minor SARs are Area 27 (A27) and Area 2 West (A2W). Units: kilometres (km).", out.width = "100%"}
+knitr::include_graphics(here::here(ifelse(french, "figures/BC-FR.png", "figures/BC.png")))
+```
+
 ```{r app-minor-catch, fig.cap = "Time series of total landed catch in thousands of tonnes of Pacifc Herring from 1977 to 2020 in the minor stock assessment regions. Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fshery; and 'RoeSN' represents the roe seine fishery."}
 plot_catch(minor_catch,
            xlim = c(1977, 2020),
