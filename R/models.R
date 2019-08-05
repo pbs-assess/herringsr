@@ -13,6 +13,7 @@ gear <- tribble(
       1,     "Other",
       2,     "RoeSN",
       3,     "RoeGN")
+roe_gear <- c(2, 3)
 
 surv_type <- tribble(
   ~gear,   ~gearname,
@@ -44,6 +45,21 @@ minor_catch <- get_catch(minor_models,
                          minor_regions_full,
                          gear,
                          translate = french)
+minor_final_yr_catch <- minor_catch %>%
+  filter(year %in% max(year))
+
+minor_final_yr_roe_catch <- minor_final_yr_catch %>%
+  filter(Gear %in% gear$gearname[c(2,3)]) %>%
+  summarize(catch = sum(value) * 1000) %>%
+  pull() %>%
+  f()
+
+minor_final_yr_other_catch <- minor_final_yr_catch %>%
+  filter(!Gear %in% gear$gearname[c(2,3)]) %>%
+  summarize(catch = sum(value) * 1000) %>%
+  pull() %>%
+  f()
+
 #Weight-at-age
 minor_wa <- get_wa(minor_models,
                    minor_regions_full,
