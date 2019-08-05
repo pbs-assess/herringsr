@@ -1,4 +1,4 @@
-# Appendix
+# Appendix {#appendix-minor}
 
 We do not conduct formal analyses of stock trend information for the `r number_to_word(length(minor_regions_short))` Pacific Herring minor SARs (`r commify(minor_regions_full_parens)`).
 <!-- However, we do provide time series of landed commercial catch (\autoref{figCatchMinor}), biological data including weight-at-age (\autoref{figWeightAgeMinor}) and proportion-at-age (\autoref{figPropAgeMinor}), as well as the spawn index (\autoref{figSpawnIndexMinor}) from \Sexpr{firstYrMinor} to \Sexpr{max(yrRange)}. -->
