@@ -10,14 +10,14 @@ regions <- tribble(
 
 gear <- tribble(
   ~gear,   ~gearname,
-  1,     "Other",
-  2,     "RoeSN",
-  3,     "RoeGN")
+      1,     "Other",
+      2,     "RoeSN",
+      3,     "RoeGN")
 
 surv_type <- tribble(
-  ~gear,   ~survey,
-      4, "Surface",
-      5,    "Dive")
+  ~gear,   ~gearname,
+      4,   "Surface",
+      5,      "Dive")
 
 major_models <- load.models(unlist(major_model_dirs))
 minor_models <- load.models(unlist(minor_model_dirs))
@@ -58,7 +58,7 @@ minor_pa <- get_pa(minor_models,
 #Survey Indices
 minor_surv <- get_surv_ind(minor_models,
                            minor_regions_full,
-                           gear,
+                           surv_type,
                            translate = french)
 
 ## Fixed cutoffs for decision tables, corresponsing to the stock order
@@ -89,7 +89,7 @@ nRoll <- 5
 nRollDev <- 3
 
 # Spawn survey method changed from surface (1951--1987) to dive (1988--present)
-newSurvYr <- 1988
+new_surv_yr <- 1988
 
 # Intended harvest rate
 intendU <- 0.2
