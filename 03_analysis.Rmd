@@ -1,11 +1,10 @@
 # Analysis and response
 
-Mandatory section, title may vary.
+## Input data
 
-## Note on this section
+Input data to the stock assessment are summarized in \autoref{tabDataInput}.
+Relative to last year's assessment, the only change made to input data was updating the time series to include data from the \Sexpr{thisSeason} herring season (July 1 to June 30).
 
-This section is the core of the report.
+## Catch data
 
-## Indicators of the stock status
-
-Mandatory section for stock status updates, title may vary.
+<!-- For the purposes of stock assessment, catch data are summarized by gear type and fishing category as described in \autoref{tabDataInput} and presented in \autoref{figCatchMajor}. -->
