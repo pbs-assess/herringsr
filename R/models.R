@@ -22,6 +22,14 @@ surv_type <- tribble(
 
 major_models <- load.models(unlist(major_model_dirs))
 minor_models <- load.models(unlist(minor_model_dirs))
+# Assumes all major region models have the same year range
+major_start_yr <- major_models[[1]]$dat$start.yr
+major_end_yr <- major_models[[1]]$dat$end.yr
+major_yr_range <- major_start_yr:major_end_yr
+# Assumes all minor region models have the same year range
+minor_start_yr <- minor_models[[1]]$dat$start.yr
+minor_end_yr <- minor_models[[1]]$dat$end.yr
+minor_yr_range <- minor_start_yr:minor_end_yr
 
 all_regions_short <- en2fr(regions$Region, french)
 major_regions_short <- en2fr(regions$Region[regions$Major], french)
@@ -45,6 +53,7 @@ minor_catch <- get_catch(minor_models,
                          minor_regions_full,
                          gear,
                          translate = french)
+
 minor_final_yr_catch <- minor_catch %>%
   filter(year %in% max(year))
 
