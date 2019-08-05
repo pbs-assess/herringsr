@@ -10,27 +10,15 @@ At present, Pacific Herring fisheries in BC consist of commercial fishing opport
 
 In `r this_season`, the primary Pacific Herring fisheries were seine roe and gillnet roe fisheries, with a combined coast wide catch in `r this_season` of `r minor_final_yr_roe_catch` tonnes (t), and the FB seine fishery with a coast wide catch of `r minor_final_yr_other_catch` t. The roe fishery was operational in SoG and PRD. The spawn-on-kelp (SOK) fishery was operational in PRD and CC, and special use (SU) minor fishery was operational in SoG only.
 
-<!-- A complete dockside monitoring program exists for all \fishName{} commercial fisheries and the resulting validated catch data are included in the annual stock assessment process for all fisheries, except SOK. -->
-<!-- The SOK fishery is licenced based on validated pounds of SOK product (eggs on kelp) however these landings are not easily combined with catches of whole herring and are not currently incorporated in the stock assessment process. -->
+A complete dockside monitoring program exists for all Pacific Herring commercial fisheries and the resulting validated catch data are included in the annual stock assessment process for all fisheries, except SOK. The SOK fishery is licenced based on validated pounds of SOK product (eggs on kelp) however these landings are not easily combined with catches of whole herring and are not currently incorporated in the stock assessment process.
 
-<!-- The exclusion of SOK fishery data from the annual stock assessment process was identified as a key uncertainty in the most recent CSAS review of the stock assessment framework \citep{ClearyEtal2018}. -->
-<!-- Recommendations for addressing this uncertainty will require quantifying ponding mortality and removals (eggs) associated with the SOK fishery. -->
-<!-- Consideration of these uncertainties will occur at a future stage in the MSE process. -->
+The exclusion of SOK fishery data from the annual stock assessment process was identified as a key uncertainty in the most recent CSAS review of the stock assessment framework [@cleary2018]. Recommendations for addressing this uncertainty will require quantifying ponding mortality and removals (eggs) associated with the SOK fishery. Consideration of these uncertainties will occur at a future stage in the MSE process.
 
-<!-- First Nations fish for whole herring, herring roe, and herring eggs for FSC purposes. -->
-<!-- Whole herring are fished by seine, gillnet, rake, dip net, and jig. -->
-<!-- Herring eggs are collected as spawn on seaweed such as kelp, or spawn on set tree boughs. -->
-<!-- Opportunities are provided in a manner that allows for harvest activity in all assessment areas. -->
-<!-- In addition, Treaty and aboriginal commercial fisheries may occur in some specific management areas. -->
+First Nations fish for whole herring, herring roe, and herring eggs for FSC purposes. Whole herring are fished by seine, gillnet, rake, dip net, and jig. Herring eggs are collected as spawn on seaweed such as kelp, or spawn on set tree boughs. Opportunities are provided in a manner that allows for harvest activity in all assessment areas. In addition, Treaty and aboriginal commercial fisheries may occur in some specific management areas.
 
-<!-- \subsection{Description of the stock assessment process} -->
+## Description of the stock assessment process
 
-<!-- The SCA model is fitted to commercial catch data, fishery and survey proportions-at-age data and a fishery-independent spawning biomass index to estimate total and spawning biomass, natural mortality, and recruitment. -->
-<!-- Observed annual weight-at-age is estimated external to the model, and maturity-at-age is a fixed input parameter. -->
-<!-- In 2017, an updated version of the SCA model was applied to assess each of the \Sexpr{Num2Word(length(allRegions$major))} major \fishName{} stocks \citep{ClearyEtal2018}. -->
-<!-- The main change from the SCA model used from 2011 to 2016 was the partitioning of variance between observation and process error to improve the estimation of the variance structure \citep{ClearyEtal2018}. -->
-<!-- A bridging analysis was used to validate the updated model: this showed parameter estimates and biomass trajectories associated with the structural adjustments to be nearly identical to results from previous versions of the model, supporting the adoption of the revised structure \citep{ClearyEtal2018}. -->
-<!-- Other adjustments were made to improve computational efficiency and update input data. -->
+The SCA model is fitted to commercial catch data, fishery and survey proportions-at-age data and a fishery-independent spawning biomass index to estimate total and spawning biomass, natural mortality, and recruitment. Observed annual weight-at-age is estimated external to the model, and maturity-at-age is a fixed input parameter. In 2017, an updated version of the SCA model was applied to assess each of the `r number_to_word(length(major_regions_short))` major Pacific Herring stocks [@cleary2018]. The main change from the SCA model used from 2011 to 2016 was the partitioning of variance between observation and process error to improve the estimation of the variance structure [@cleary2018]. A bridging analysis was used to validate the updated model: this showed parameter estimates and biomass trajectories associated with the structural adjustments to be nearly identical to results from previous versions of the model, supporting the adoption of the revised structure [@cleary2018]. Other adjustments were made to improve computational efficiency and update input data.
 
 <!-- A Bayesian framework was used to estimate time series of spawning biomass, instantaneous natural mortality, and age-2 recruitment from \Sexpr{paste(range(yrRange), collapse=" to " )}. -->
 <!-- Advice to managers for the major stock areas includes posterior estimates of current stock status ($\mli{SB}_{\Sexpr{max(yrRange)}}$), spawning biomass in \forecastYr{} assuming no catch ($\mli{SB}_{\forecastYr{}}$), and stock status relative to the LRP of $0.3\mli{SB}_0$. -->
@@ -45,3 +33,6 @@ In `r this_season`, the primary Pacific Herring fisheries were seine roe and gil
 <!-- Simulations to quantify the risks associated with continued application of a management procedure where $q_2=1$ were conducted because fisheries management quota decisions since 2015 have been based on the AM2 model. -->
 <!-- Scaling the assessment with values of $q_2<1$ is likely to result in larger absolute assessment errors than those estimated when $q_2=1$. -->
 <!-- For these reasons, advice presented here is based on the AM2 stock assessment model parameterization, supported also by comparisons presented in \citet[][Table A1]{DFO2016} and \citet[][Appendix D]{ClearyEtal2018}. -->
+
+\clearpage
+
