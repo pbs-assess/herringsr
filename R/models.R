@@ -77,6 +77,17 @@ sok <- sok_filenames %>%
   map(~read_csv(file.path(data_path, .))) %>%
   reduce(rbind)
 
+#Proportion-of-spawn
+ps_file_pattern <- "prop-spawn-*"
+data_path <- here::here("data")
+ps_filenames <- dir(data_path, pattern = ps_file_pattern)
+ps_shortnames <- sub("prop-spawn-", "", ps_filenames )
+ps_shortnames <- toupper(sub(".csv", "", ps_shortnames))
+ps_filenames <- file.path(data_path, ps_filenames)
+ps <- lapply(ps_filenames, function(x){
+  read_csv(x)})
+names(ps) <- ps_shortnames
+
 #Weight-at-age
 minor_wa <- get_wa(minor_models,
                    minor_regions_full,

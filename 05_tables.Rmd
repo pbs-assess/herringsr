@@ -57,3 +57,73 @@ csas_table(tab,
            caption = cap)
 
 ```
+
+```{r spawn-index-hg}
+cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Section within Statistical Area 02 for Pacifc Herring in the Haida Gwaii major stock assessment region. The spawn index is the annual total for the earliest year indicated in the 'Year(s)' column. Proportions indicate the proportion by year, or mean proportion over years, where year(s) are specifed in the ‘Year(s)’ column. The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q."
+
+tab <- ps$HG
+names(tab) <- gsub("&", "\\\\&", names(tab))
+tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
+tab[2] <- apply(tab[2], c(1,2), f)
+csas_table(tab,
+           format = "latex",
+           align = c("l", rep("r", ncol(tab) - 1)),
+           caption = cap)
+
+```
+
+```{r spawn-index-prd}
+cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacifc Herring in the Central Coast major stock assessment region. See Table \\\\@ref(tab:spawn-index-hg) for description."
+
+tab <- ps$PRD
+names(tab) <- gsub("&", "\\\\&", names(tab))
+tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
+tab[2] <- apply(tab[2], c(1,2), f)
+csas_table(tab,
+           format = "latex",
+           align = c("l", rep("r", ncol(tab) - 1)),
+           caption = cap)
+
+```
+
+```{r spawn-index-cc}
+cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacifc Herring in the Central Coast major stock assessment region. See Table \\\\@ref(tab:spawn-index-hg) for description."
+
+tab <- ps$CC
+names(tab) <- gsub("&", "\\\\&", names(tab))
+tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
+tab[2] <- apply(tab[2], c(1,2), f)
+csas_table(tab,
+           format = "latex",
+           align = c("l", rep("r", ncol(tab) - 1)),
+           caption = cap)
+
+```
+
+```{r spawn-index-sog}
+cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Group for Pacifc Herring in the Strait of Georgia major stock assessment region. Legend: '14\\&17' is Statistical Areas 14 and 17 (excluding Section 173); 'ESoG' is eastern Strait of Georgia; 'Lazo' is above Cape Lazo; and 'SDodd' is South of Dodd Narrows. See Table \\\\@ref(tab:spawn-index-hg) for description."
+
+tab <- ps$SOG
+names(tab) <- gsub("&", "\\\\&", names(tab))
+tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
+tab[2] <- apply(tab[2], c(1,2), f)
+csas_table(tab,
+           format = "latex",
+           align = c("l", rep("r", ncol(tab) - 1)),
+           caption = cap)
+
+```
+
+```{r spawn-index-wcvi}
+cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacifc Herring in the West Coast of Vancouver Island major stock assessment region. See Table \\\\@ref(tab:spawn-index-hg) for description."
+
+tab <- ps$WCVI
+names(tab) <- gsub("&", "\\\\&", names(tab))
+tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
+tab[2] <- apply(tab[2], c(1,2), f)
+csas_table(tab,
+           format = "latex",
+           align = c("l", rep("r", ncol(tab) - 1)),
+           caption = cap)
+
+```
