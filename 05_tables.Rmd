@@ -1,19 +1,59 @@
 # Tables
 
 ```{r data-input}
+firstup <- function(x) {
+  substr(x, 1, 1) <- toupper(substr(x, 1, 1))
+  x
+}
+
+firstlower <- function(x) {
+  substr(x, 1, 1) <- tolower(substr(x, 1, 1))
+  x
+}
+
 cap <- paste0("Input data for the ", assess_yr," Pacifc Herring stock assessment. The spawn index has two distinct periods defned by the dominant survey method: surface surveys (", major_start_yr, " to ", new_surv_yr - 1, "), and dive surveys (", new_surv_yr, " to ", major_end_yr, "). The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q.")
 tab <- inp_catch
-# Following needed for french to work but some phrases not in dictionary. TODO
-tab <- apply(tab, c(1,2), function(x){
-  en2fr(x, translate = french, allow_missing = TRUE)})
-#names(tab) <- en2fr(names(tab), french)
+# Source column
+tab$Source <- en2fr(tab$Source, french, allow_missing = TRUE)
+tmp <- tab$Source
+nonbracs <- stringr::str_extract(tmp, "[(\\w+ ) ]+(?= +\\()")
+bracs <- stringr::str_extract(tmp, "(?<=\\()\\w+(?=\\))")
+if(!all(is.na(bracs) == is.na(nonbracs))){
+  warning("The match of bracketed items in the Source column of the Input data table was incorrect.")
+}
+tmp[!is.na(bracs)] <- paste0(en2fr(firstup(nonbracs[!is.na(nonbracs)]), french),
+                             " (",  firstlower(en2fr(firstup(bracs[!is.na(bracs)]), french)), ")")
+tab$Source <- tmp
+# Data column
+tmp <- strsplit(tab$Data, ": *")
+tmp <- lapply(tmp, function(x){
+  j <- firstup(x)
+  j <- en2fr(j, translate = french, allow_missing = TRUE)
+  if(length(j) > 1){
+    j <- c(j[1], tolower(j[-1]))
+    j <- paste(j, collapse = ": ")
+  }
+  j
+})
+tab$Data <- unlist(tmp)
+# Years column
+if(french){
+  tmp <- tab$Years
+  tmp <- strsplit(tab$Years, " *to *")
+  tmp <- lapply(tmp, function(x){
+    paste0("De ", x[1], " à ", x[2])
+  })
+  tab$Years <- unlist(tmp)
+}
+
+names(tab) <- en2fr(names(tab), french)
 csas_table(tab,
            format = "latex",
            caption = cap)
 ```
 
 ```{r annual-catch}
-cap <- "Total landed catch in tonnes of Pacifc Herring in the major stock assessment areas. Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: ‘WP’ indicates that data are withheld due to privacy concerns."
+cap <- "Total landed catch in tonnes of Pacific Herring in the major stock assessment areas. Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: 'WP' indicates that data are withheld due to privacy concerns."
 tab <- major_catch %>% 
   filter(year >= 2009) %>% 
   select(c(year, value, region)) %>% 
@@ -23,7 +63,7 @@ tab <- major_catch %>%
   reshape2::dcast(year ~ region, value.var = "catch") %>% 
   rename(Year = year)
 tab <- add_cols_and_reorder(tab, by = major_regions_short)
-names(tab) <- en2fr(names(tab), french)
+names(tab)[names(tab) == "Year"] <- en2fr("Year", french)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", 5)),
@@ -31,7 +71,7 @@ csas_table(tab,
 ```
 
 ```{r annual-spawn-on-kelp}
-cap <- "Total spawn-on-kelp harvest in pounds of Pacifc Herring in the major stock assessment areas. Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: ‘WP’ indicates that data are withheld due to privacy concerns."
+cap <- "Total spawn-on-kelp harvest in pounds of Pacifc Herring in the major stock assessment areas. Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: 'WP' indicates that data are withheld due to privacy concerns."
 
 tab <- sok %>% 
   filter(Year >= 2009) %>% 
@@ -42,8 +82,12 @@ tab <- sok %>%
   reshape2::dcast(Year ~ Region, value.var = "catch") %>% 
   select(-minor_regions_short)
 tab <- add_cols_and_reorder(tab, by = major_regions_short)
-tab$PRD[tab$Year == 2016] <- "WP"
-names(tab) <- en2fr(names(tab), french)
+if(french){
+  tab$DPR[tab$Year == 2016] <- "DT"
+}else{
+  tab$PRD[tab$Year == 2016] <- "WP"
+}
+names(tab)[names(tab) == "Year"] <- en2fr("Year", french)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", 5)),
@@ -54,11 +98,11 @@ csas_table(tab,
 ```{r spawn-index-hg}
 cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Section within Statistical Area 02 for Pacifc Herring in the Haida Gwaii major stock assessment region. The spawn index is the annual total for the earliest year indicated in the 'Year(s)' column. Proportions indicate the proportion by year, or mean proportion over years, where year(s) are specifed in the ‘Year(s)’ column. The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q."
 
-tab <- ps$HG
+tab <- ps[[en2fr("HG", french)]]
 names(tab) <- gsub("&", "\\\\&", names(tab))
 tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
 tab[2] <- apply(tab[2], c(1,2), f)
-#names(tab) <- en2fr(names(tab), french)
+names(tab) <- en2fr(names(tab), french, allow_missing = TRUE)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", ncol(tab) - 1)),
@@ -69,11 +113,12 @@ csas_table(tab,
 ```{r spawn-index-prd}
 cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacifc Herring in the Central Coast major stock assessment region. See Table \\\\@ref(tab:spawn-index-hg) for description."
 
-tab <- ps$PRD
+
+tab <- ps[[en2fr("PRD", french)]]
 names(tab) <- gsub("&", "\\\\&", names(tab))
 tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
 tab[2] <- apply(tab[2], c(1,2), f)
-#names(tab) <- en2fr(names(tab), french)
+names(tab) <- en2fr(names(tab), french, allow_missing = TRUE)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", ncol(tab) - 1)),
@@ -84,11 +129,11 @@ csas_table(tab,
 ```{r spawn-index-cc}
 cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacifc Herring in the Central Coast major stock assessment region. See Table \\\\@ref(tab:spawn-index-hg) for description."
 
-tab <- ps$CC
+tab <- ps[[en2fr("CC", french)]]
 names(tab) <- gsub("&", "\\\\&", names(tab))
 tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
 tab[2] <- apply(tab[2], c(1,2), f)
-#names(tab) <- en2fr(names(tab), french)
+names(tab) <- en2fr(names(tab), french, allow_missing = TRUE)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", ncol(tab) - 1)),
@@ -99,11 +144,11 @@ csas_table(tab,
 ```{r spawn-index-sog}
 cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Group for Pacifc Herring in the Strait of Georgia major stock assessment region. Legend: '14\\&17' is Statistical Areas 14 and 17 (excluding Section 173); 'ESoG' is eastern Strait of Georgia; 'Lazo' is above Cape Lazo; and 'SDodd' is South of Dodd Narrows. See Table \\\\@ref(tab:spawn-index-hg) for description."
 
-tab <- ps$SOG
+tab <- ps[[en2fr("SoG", french)]]
 names(tab) <- gsub("&", "\\\\&", names(tab))
 tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
 tab[2] <- apply(tab[2], c(1,2), f)
-#names(tab) <- en2fr(names(tab), french)
+names(tab) <- en2fr(names(tab), french, allow_missing = TRUE)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", ncol(tab) - 1)),
@@ -114,11 +159,11 @@ csas_table(tab,
 ```{r spawn-index-wcvi}
 cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacifc Herring in the West Coast of Vancouver Island major stock assessment region. See Table \\\\@ref(tab:spawn-index-hg) for description."
 
-tab <- ps$WCVI
+tab <- ps[[en2fr("WCVI", french)]]
 names(tab) <- gsub("&", "\\\\&", names(tab))
 tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
 tab[2] <- apply(tab[2], c(1,2), f)
-#names(tab) <- en2fr(names(tab), french)
+names(tab) <- en2fr(names(tab), french, allow_missing = TRUE)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", ncol(tab) - 1)),
@@ -132,11 +177,12 @@ cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
               "points for the Haida Gwaii model. $\\mli{SB}_{2019}$ represents prefishery spawning biomass, ",
               "and all biomass numbers are in thousands of tonnes. Probability of ",
               "$\\mli{SB}_{2019} < 0.3\\mli{SB}_0$ is based on zero catch.")
-model_ind <- match("HG", major_regions_short)
+model_ind <- match(en2fr("HG", french), major_regions_short)
 make.ref.points.table(major_models[[model_ind]],
                       xcaption = cap,
                       xlabel = "tab:hg-ref-points",
                       font.size = 11,
                       space.size = 12,
-                      placement = "H")
+                      placement = "H",
+                      translate = french)
 ```

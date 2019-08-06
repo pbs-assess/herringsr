@@ -7,18 +7,22 @@ regions <- tribble(
   5,     "WCVI", "West Coast of Vancouver Island",   TRUE,
   6,      "A27",                        "Area 27",  FALSE,
   7,      "A2W",                    "Area 2 West",  FALSE)
+regions$Region <- en2fr(regions$Region, french)
+regions$RegionName <- en2fr(regions$RegionName, french)
 
 gear <- tribble(
   ~gear,   ~gearname,
       1,     "Other",
       2,     "RoeSN",
       3,     "RoeGN")
+gear$gearname <- en2fr(gear$gearname, french)
 roe_gear <- c(2, 3)
 
 surv_type <- tribble(
   ~gear,   ~gearname,
       4,   "Surface",
       5,      "Dive")
+surv_type$gearname <- en2fr(surv_type$gearname, french)
 
 major_models <- load.models(unlist(major_model_dirs))
 minor_models <- load.models(unlist(minor_model_dirs))
@@ -31,13 +35,13 @@ minor_start_yr <- minor_models[[1]]$dat$start.yr
 minor_end_yr <- minor_models[[1]]$dat$end.yr
 minor_yr_range <- minor_start_yr:minor_end_yr
 
-all_regions_short <- en2fr(regions$Region, french)
-major_regions_short <- en2fr(regions$Region[regions$Major], french)
-minor_regions_short <- en2fr(regions$Region[!regions$Major], french)
+all_regions_short <- regions$Region
+major_regions_short <- regions$Region[regions$Major]
+minor_regions_short <- regions$Region[!regions$Major]
 
-all_regions_full <- en2fr(regions$RegionName, french)
-major_regions_full <- en2fr(regions$RegionName[regions$Major], french)
-minor_regions_full <- en2fr(regions$RegionName[!regions$Major], french)
+all_regions_full <- regions$RegionName
+major_regions_full <- regions$RegionName[regions$Major]
+minor_regions_full <- regions$RegionName[!regions$Major]
 
 all_regions_full_parens <- paste0(all_regions_full,  " (", all_regions_short, ")")
 major_regions_full_parens <- paste0(major_regions_full,  " (", major_regions_short, ")")
@@ -76,6 +80,7 @@ sok_filenames <- dir(data_path, pattern = sok_file_pattern)
 sok <- sok_filenames %>%
   map(~read_csv(file.path(data_path, .))) %>%
   reduce(rbind)
+sok$Region <- en2fr(sok$Region, french)
 
 #Proportion-of-spawn
 ps_file_pattern <- "prop-spawn-*"
@@ -83,10 +88,11 @@ data_path <- here::here("data")
 ps_filenames <- dir(data_path, pattern = ps_file_pattern)
 ps_shortnames <- sub("prop-spawn-", "", ps_filenames )
 ps_shortnames <- toupper(sub(".csv", "", ps_shortnames))
+ps_shortnames[ps_shortnames == "SOG"] <- "SoG"
 ps_filenames <- file.path(data_path, ps_filenames)
 ps <- lapply(ps_filenames, function(x){
   read_csv(x)})
-names(ps) <- ps_shortnames
+names(ps) <- en2fr(ps_shortnames, french)
 
 #Weight-at-age
 minor_wa <- get_wa(minor_models,
