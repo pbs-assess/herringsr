@@ -16,7 +16,11 @@ fixup_table_by_major <- function(tab, by = major_regions_short){
 }
 
 cap <- paste0("Input data for the ", assess_yr," Pacifc Herring stock assessment. The spawn index has two distinct periods defned by the dominant survey method: surface surveys (", major_start_yr, " to ", new_surv_yr - 1, "), and dive surveys (", new_surv_yr, " to ", major_end_yr, "). The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q.")
-csas_table(inp_catch,
+tab <- inp_catch
+# Following needed for french to work but some phrases not in dictionary. TODO
+#tab <- apply(tab, c(1,2), en2fr, french)
+#names(tab) <- en2fr(names(tab), french)
+csas_table(tab,
            format = "latex",
            caption = cap)
 ```
@@ -32,6 +36,7 @@ tab <- major_catch %>%
   reshape2::dcast(year ~ region, value.var = "catch") %>% 
   rename(Year = year)
 tab <- fixup_table_by_major(tab)
+names(tab) <- en2fr(names(tab), french)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", 5)),
@@ -51,6 +56,7 @@ tab <- sok %>%
   select(-minor_regions_short)
 tab <- fixup_table_by_major(tab)
 tab$PRD[tab$Year == 2016] <- "WP"
+names(tab) <- en2fr(names(tab), french)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", 5)),
@@ -65,6 +71,7 @@ tab <- ps$HG
 names(tab) <- gsub("&", "\\\\&", names(tab))
 tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
 tab[2] <- apply(tab[2], c(1,2), f)
+#names(tab) <- en2fr(names(tab), french)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", ncol(tab) - 1)),
@@ -79,6 +86,7 @@ tab <- ps$PRD
 names(tab) <- gsub("&", "\\\\&", names(tab))
 tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
 tab[2] <- apply(tab[2], c(1,2), f)
+#names(tab) <- en2fr(names(tab), french)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", ncol(tab) - 1)),
@@ -93,6 +101,7 @@ tab <- ps$CC
 names(tab) <- gsub("&", "\\\\&", names(tab))
 tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
 tab[2] <- apply(tab[2], c(1,2), f)
+#names(tab) <- en2fr(names(tab), french)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", ncol(tab) - 1)),
@@ -107,6 +116,7 @@ tab <- ps$SOG
 names(tab) <- gsub("&", "\\\\&", names(tab))
 tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
 tab[2] <- apply(tab[2], c(1,2), f)
+#names(tab) <- en2fr(names(tab), french)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", ncol(tab) - 1)),
@@ -121,6 +131,7 @@ tab <- ps$WCVI
 names(tab) <- gsub("&", "\\\\&", names(tab))
 tab[-c(1, 2)] <- apply(tab[-c(1, 2)], c(1,2), f, 3)
 tab[2] <- apply(tab[2], c(1,2), f)
+#names(tab) <- en2fr(names(tab), french)
 csas_table(tab,
            format = "latex",
            align = c("l", rep("r", ncol(tab) - 1)),
