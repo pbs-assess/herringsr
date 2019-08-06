@@ -4,7 +4,8 @@
 cap <- paste0("Input data for the ", assess_yr," Pacifc Herring stock assessment. The spawn index has two distinct periods defned by the dominant survey method: surface surveys (", major_start_yr, " to ", new_surv_yr - 1, "), and dive surveys (", new_surv_yr, " to ", major_end_yr, "). The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q.")
 tab <- inp_catch
 # Following needed for french to work but some phrases not in dictionary. TODO
-#tab <- apply(tab, c(1,2), en2fr, french)
+tab <- apply(tab, c(1,2), function(x){
+  en2fr(x, translate = french, allow_missing = TRUE)})
 #names(tab) <- en2fr(names(tab), french)
 csas_table(tab,
            format = "latex",
