@@ -127,3 +127,18 @@ csas_table(tab,
            caption = cap)
 
 ```
+
+```{r ref-points, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
+              "95\\textsuperscript{th} percentile) estimates of proposed reference ",
+              "points for the Haida Gwaii model. $\\mli{SB}_{2019}$ represents prefishery spawning biomass, ",
+              "and all biomass numbers are in thousands of tonnes. Probability of ",
+              "$\\mli{SB}_{2019} < 0.3\\mli{SB}_0$ is based on zero catch.")
+model_ind <- match("HG", major_regions_short)
+make.ref.points.table(major_models[[model_ind]],
+                      xcaption = cap,
+                      xlabel = "tab:hg-ref-points",
+                      font.size = 11,
+                      space.size = 12,
+                      placement = "H")
+```

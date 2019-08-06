@@ -62,6 +62,7 @@ knitr::opts_chunk$set(
   fig.align = "center",
   fig.pos = "htb"
 )
+options(xtable.comment = FALSE)
 ```
 
 ```{r load-libraries, cache=FALSE}
