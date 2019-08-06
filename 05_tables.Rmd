@@ -1,6 +1,20 @@
 # Tables
 
 ```{r data-input}
+fixup_table_by_major <- function(tab, by = major_regions_short){
+  # Order a table with the first column 'Year' and the rest being major regions
+  # by the same order as the major_regions_short vector.
+  # Also check if any columns are missing and add them, and set all NAs to 0
+  if(any(!by %in% colnames(tab))){
+    tab[by[!by %in% colnames(tab)]] <- NA
+  }
+  tab[is.na(tab)] <- 0
+  tab[-1] <- apply(tab[-1], c(1,2), f)
+  tab_no_yr <- tab[-1]
+  tab_no_yr <- tab_no_yr[,match(by, names(tab_no_yr))]
+  cbind(tab[1], tab_no_yr)
+}
+
 cap <- paste0("Input data for the ", assess_yr," Pacifc Herring stock assessment. The spawn index has two distinct periods defned by the dominant survey method: surface surveys (", major_start_yr, " to ", new_surv_yr - 1, "), and dive surveys (", new_surv_yr, " to ", major_end_yr, "). The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q.")
 csas_table(inp_catch,
            format = "latex",
@@ -17,13 +31,29 @@ tab <- major_catch %>%
   ungroup() %>% 
   reshape2::dcast(year ~ region, value.var = "catch") %>% 
   rename(Year = year)
-if(any(!major_regions_short %in% colnames(tab))){
-  tab[major_regions_short[!major_regions_short %in% colnames(tab)]] <- NA
-}
-tab[is.na(tab)] <- 0
-tab[-1] <- apply(tab[-1], c(1,2), f)
+tab <- fixup_table_by_major(tab)
 csas_table(tab,
            format = "latex",
-           align = "lrrrrr",
+           align = c("l", rep("r", 5)),
            caption = cap)
+```
+
+```{r annual-spawn-on-kelp}
+cap <- "Total spawn-on-kelp harvest in pounds of Pacifc Herring in the major stock assessment areas. Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: ‘WP’ indicates that data are withheld due to privacy concerns."
+
+tab <- sok %>% 
+  filter(Year >= 2009) %>% 
+  select(c(Year, Harvest, Region)) %>% 
+  group_by(Year, Region) %>% 
+  summarize(catch = sum(Harvest) * 2.20462262185) %>% 
+  ungroup() %>% 
+  reshape2::dcast(Year ~ Region, value.var = "catch") %>% 
+  select(-minor_regions_short)
+tab <- fixup_table_by_major(tab)
+tab$PRD[tab$Year == 2016] <- "WP"
+csas_table(tab,
+           format = "latex",
+           align = c("l", rep("r", 5)),
+           caption = cap)
+
 ```

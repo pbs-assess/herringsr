@@ -69,6 +69,14 @@ minor_final_yr_other_catch <- minor_final_yr_catch %>%
   pull() %>%
   f()
 
+#Spawn-on-kelp
+sok_file_pattern <- "harvest-sok-*"
+data_path <- here::here("data")
+sok_filenames <- dir(data_path, pattern = sok_file_pattern)
+sok <- sok_filenames %>%
+  map(~read_csv(file.path(data_path, .))) %>%
+  reduce(rbind)
+
 #Weight-at-age
 minor_wa <- get_wa(minor_models,
                    minor_regions_full,
