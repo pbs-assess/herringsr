@@ -45,12 +45,12 @@ minor_regions_full_parens <- paste0(minor_regions_full,  " (", minor_regions_sho
 
 #Catch
 major_catch <- get_catch(major_models,
-                         major_regions_full,
+                         major_regions_short,
                          gear,
                          translate = french)
 
 minor_catch <- get_catch(minor_models,
-                         minor_regions_full,
+                         minor_regions_short,
                          gear,
                          translate = french)
 

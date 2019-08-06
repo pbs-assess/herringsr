@@ -6,3 +6,24 @@ csas_table(inp_catch,
            format = "latex",
            caption = cap)
 ```
+
+```{r annual-catch}
+cap <- "Total landed catch in tonnes of Pacifc Herring in the major stock assessment areas. Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: ‘WP’ indicates that data are withheld due to privacy concerns."
+tab <- major_catch %>% 
+  filter(year >= 2009) %>% 
+  select(c(year, value, region)) %>% 
+  group_by(year, region) %>% 
+  summarize(catch = sum(value) * 1000) %>% 
+  ungroup() %>% 
+  reshape2::dcast(year ~ region, value.var = "catch") %>% 
+  rename(Year = year)
+if(any(!major_regions_short %in% colnames(tab))){
+  tab[major_regions_short[!major_regions_short %in% colnames(tab)]] <- NA
+}
+tab[is.na(tab)] <- 0
+tab[-1] <- apply(tab[-1], c(1,2), f)
+csas_table(tab,
+           format = "latex",
+           align = "lrrrrr",
+           caption = cap)
+```
