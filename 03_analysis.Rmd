@@ -2,8 +2,8 @@
 
 ## Input data
 
-Input data to the stock assessment are summarized in \autoref{tabDataInput}.
-Relative to last year's assessment, the only change made to input data was updating the time series to include data from the \Sexpr{thisSeason} herring season (July 1 to June 30).
+Input data to the stock assessment are summarized in \@ref(tab:data-input).
+Relative to last year's assessment, the only change made to input data was updating the time series to include data from the `r this_season` herring season (July 1 to June 30).
 
 ## Catch data
 

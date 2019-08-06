@@ -1,1 +1,5 @@
 # Tables
+
+```{r data-input}
+csas_table(inp_catch, format = "latex")
+```

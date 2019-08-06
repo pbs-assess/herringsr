@@ -86,6 +86,8 @@ minor_surv <- get_surv_ind(minor_models,
                            surv_type,
                            translate = french)
 
+# Input catch for table 1
+inp_catch <- read_csv(here::here("data/input-data.csv"))
 ## Fixed cutoffs for decision tables, corresponsing to the stock order
 ## HG, PRD, CC, SOG, WCVI
 fixed_cutoffs <- c(10.7, 12.1, 17.6, 21.2, 18.8)
