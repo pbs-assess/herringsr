@@ -113,9 +113,6 @@ minor_surv <- get_surv_ind(minor_models,
 
 # Input catch for table 1
 inp_catch <- read_csv(here::here("data/input-data.csv"))
-## Fixed cutoffs for decision tables, corresponsing to the stock order
-## HG, PRD, CC, SOG, WCVI
-fixed_cutoffs <- c(10.7, 12.1, 17.6, 21.2, 18.8)
 assess_yr <- as.numeric(substr(Sys.Date(), 1, 4))
 last_assess_yr <- assess_yr - 1
 forecast_yr <- assess_yr + 1
@@ -154,10 +151,6 @@ intendUYrs <- 1983
 
 # Type of smoothing line
 smLine <- "loess"
-
-# Level of confidence interval
-ci_level <- 0.9
-confidence_vals <- c(0.05, 0.95)
 
 # Limits for the weight-at-age plot
 wa_ylim <- c(0.05, 0.15)
