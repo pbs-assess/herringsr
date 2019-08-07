@@ -60,7 +60,7 @@ knitr::opts_chunk$set(
   dev = if (knitr:::is_latex_output()) "png" else "png",
   dpi = 180,
   fig.align = "center",
-  fig.pos = "htb"
+  fig.pos = "H"
 )
 options(xtable.comment = FALSE)
 ```

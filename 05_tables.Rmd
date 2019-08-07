@@ -184,3 +184,4 @@ make.decision.table(major_models[[model_ind]],
 #                     placement = "H")
 # 
 ```
+

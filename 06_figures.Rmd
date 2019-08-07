@@ -1,1 +1,8 @@
+\clearpage
+
 # Figures
+
+```{r bc-map, fig.cap = "Boundaries for the Pacifc Herring stock assessment regions (SARs) in BC. The major SARs are Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). The minor SARs are Area 27 (A27) and Area 2 West (A2W). Units: kilometres (km).", out.width = "100%"}
+knitr::include_graphics(here::here(ifelse(french, "figures/BC-FR.png", "figures/BC.png")))
+```
+
