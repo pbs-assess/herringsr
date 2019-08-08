@@ -50,25 +50,23 @@ minor_regions_full_parens <- paste0(minor_regions_full,  " (", minor_regions_sho
 #Catch
 major_catch <- get_catch(major_models,
                          major_regions_short,
-                         gear,
-                         translate = french)
+                         gear)
 
 minor_catch <- get_catch(minor_models,
                          minor_regions_short,
-                         gear,
-                         translate = french)
+                         gear)
 
 minor_final_yr_catch <- minor_catch %>%
   filter(year %in% max(year))
 
 minor_final_yr_roe_catch <- minor_final_yr_catch %>%
-  filter(Gear %in% gear$gearname[c(2,3)]) %>%
+  filter(gear %in% !!gear$gearname[c(2,3)]) %>%
   summarize(catch = sum(value) * 1000) %>%
   pull() %>%
   f()
 
 minor_final_yr_other_catch <- minor_final_yr_catch %>%
-  filter(!Gear %in% gear$gearname[c(2,3)]) %>%
+  filter(!gear %in% !!gear$gearname[c(2,3)]) %>%
   summarize(catch = sum(value) * 1000) %>%
   pull() %>%
   f()
@@ -97,19 +95,16 @@ names(ps) <- en2fr(ps_shortnames, french)
 #Weight-at-age
 minor_wa <- get_wa(minor_models,
                    minor_regions_full,
-                   gear,
-                   translate = french)
+                   gear)
 #Proportion-at-age
 minor_pa <- get_pa(minor_models,
                    minor_regions_full,
-                   gear,
-                   translate = french)
+                   gear)
 
 #Survey Indices
 minor_surv <- get_surv_ind(minor_models,
                            minor_regions_full,
-                           surv_type,
-                           translate = french)
+                           surv_type)
 
 # Input catch for table 1
 inp_catch <- read_csv(here::here("data/input-data.csv"))

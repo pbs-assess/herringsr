@@ -34,7 +34,7 @@ input_data_table <- function(tab, cap = "", translate = FALSE){
     tmp <- tab$Years
     tmp <- strsplit(tab$Years, " *to *")
     tmp <- lapply(tmp, function(x){
-      paste0("De ", x[1], " à ", x[2])
+      paste0("De ", x[1], " \U00E0 ", x[2])
     })
     tab$Years <- unlist(tmp)
   }

@@ -73,6 +73,7 @@ models_dir <- here::here("models")
 source(here::here("R/model-setup.R"))
 source(here::here("R/models.R"))
 source(here::here("R/tables.R"))
+source(here::here("R/figures.R"))
 
 theme_set(herring_theme())
 ```

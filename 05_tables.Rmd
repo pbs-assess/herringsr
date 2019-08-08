@@ -1,7 +1,7 @@
 # Tables
 
 ```{r data-input}
-cap <- paste0("Input data for the ", assess_yr," Pacifc Herring stock assessment. The spawn index has two distinct periods defned by the dominant survey method: surface surveys (", major_start_yr, " to ", new_surv_yr - 1, "), and dive surveys (", new_surv_yr, " to ", major_end_yr, "). The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q.")
+cap <- paste0("Input data for the ", assess_yr," Pacifc Herring stock assessment. The spawn index has two distinct periods defined by the dominant survey method: surface surveys (", major_start_yr, " to ", new_surv_yr - 1, "), and dive surveys (", new_surv_yr, " to ", major_end_yr, "). The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q.")
 
 input_data_table(inp_catch, cap = cap, french)
 ```
@@ -122,7 +122,7 @@ make.ref.points.table(major_models[[model_ind]],
 
 ```{r decision-table-hg, results = 'asis', echo = FALSE}
 # cap <- "Probabilistic decision table for the Haida Gwaii AM2 model."
-# 
+#
 # model_ind <- match(en2fr("HG", french), major_regions_short)
 # make.decision.table(major_models[[model_ind]],
 #                     xcaption = cap,
@@ -130,7 +130,7 @@ make.ref.points.table(major_models[[model_ind]],
 #                     font.size = 11,
 #                     space.size = 12,
 #                     placement = "H")
-# 
+#
 ```
 
 ```{r decision-table-prd, results = 'asis', echo = FALSE}
@@ -161,7 +161,7 @@ make.decision.table(major_models[[model_ind]],
 
 ```{r decision-table-sog, results = 'asis', echo = FALSE}
 # cap <- "Probabilistic decision table for the Strait of Georgia AM2 model."
-# 
+#
 # model_ind <- match(en2fr("SoG", french), major_regions_short)
 # make.decision.table(major_models[[model_ind]],
 #                     xcaption = cap,
@@ -169,12 +169,12 @@ make.decision.table(major_models[[model_ind]],
 #                     font.size = 11,
 #                     space.size = 12,
 #                     placement = "H")
-# 
+#
 ```
 
 ```{r decision-table-wcvi, results = 'asis', echo = FALSE}
 # cap <- "Probabilistic decision table for the West Coast Vancouver Island AM2 model."
-# 
+#
 # model_ind <- match(en2fr("WCVI", french), major_regions_short)
 # make.decision.table(major_models[[model_ind]],
 #                     xcaption = cap,
@@ -182,6 +182,6 @@ make.decision.table(major_models[[model_ind]],
 #                     font.size = 11,
 #                     space.size = 12,
 #                     placement = "H")
-# 
+#
 ```
 
