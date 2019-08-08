@@ -93,15 +93,24 @@ ps <- lapply(ps_filenames, function(x){
 names(ps) <- en2fr(ps_shortnames, french)
 
 #Weight-at-age
+major_wa <- get_wa(major_models,
+                   major_regions_full,
+                   gear)
 minor_wa <- get_wa(minor_models,
                    minor_regions_full,
                    gear)
 #Proportion-at-age
+major_pa <- get_pa(major_models,
+                   major_regions_full,
+                   gear)
 minor_pa <- get_pa(minor_models,
                    minor_regions_full,
                    gear)
 
 #Survey Indices
+major_surv <- get_surv_ind(major_models,
+                           major_regions_full,
+                           surv_type)
 minor_surv <- get_surv_ind(minor_models,
                            minor_regions_full,
                            surv_type)
