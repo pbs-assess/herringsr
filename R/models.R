@@ -49,7 +49,7 @@ minor_regions_full_parens <- paste0(minor_regions_full,  " (", minor_regions_sho
 
 #Catch
 major_catch <- get_catch(major_models,
-                         major_regions_short,
+                         major_regions_full,
                          gear)
 
 minor_catch <- get_catch(minor_models,

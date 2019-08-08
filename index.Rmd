@@ -70,6 +70,7 @@ french = TRUE
 rebuild_rdata_model_files <- FALSE
 models_dir <- here::here("models")
 
+source(here::here("R/utilities.R"))
 source(here::here("R/model-setup.R"))
 source(here::here("R/models.R"))
 source(here::here("R/tables.R"))

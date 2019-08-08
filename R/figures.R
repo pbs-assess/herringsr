@@ -76,6 +76,7 @@ plot_wa <- function(df,
 #' @param conf confidence value for the envelope
 #' @param xlim limits for the years shown on the plot
 #' @param ylim limits for the ages shown on the plot
+#' @param size_range vector of min and max for range of sizes of points
 #' @param translate Logical. If TRUE, translate to French
 #'
 #' @return A ggplot object
@@ -84,10 +85,11 @@ plot_pa <- function(df,
                     conf = 0.9,
                     xlim = c(1000, 3000),
                     ylim = c(0, NA),
+                    size_range = c(0.5, 2),
                     translate = FALSE){
   df <- df %>%
     filter(year >= xlim[1])
-  dfm <- melt(df, id.vars = c("year", "area", "group", "sex", "region", "Gear")) %>%
+  dfm <- melt(df, id.vars = c("year", "area", "group", "sex", "region", "gear")) %>%
     as_tibble() %>%
     rename(Region = region,
            Year = year,
@@ -115,8 +117,11 @@ plot_pa <- function(df,
     mutate(GroupID = consecutive_group(Year))
 
   g <- ggplot(dfm, aes(x = Year)) +
-    geom_point(aes(y = Age, size = ifelse(Proportion, Proportion, NA))) +
-    geom_path(data = dfm_ci, aes(y = MeanAge, group = GroupID), size = 2) +
+    geom_point(aes(y = Age,
+                   size = ifelse(Proportion, Proportion, NA))) +
+    geom_path(data = dfm_ci,
+              aes(y = MeanAge, group = GroupID), size = 2) +
+    scale_size_continuous(range = size_range) +
     geom_ribbon(data = dfm_ci,
                 aes(ymin = Lower, ymax = Upper, group = GroupID),
                 alpha = 0.25) +
@@ -129,3 +134,4 @@ plot_pa <- function(df,
     theme(legend.position="top")
   g
 }
+

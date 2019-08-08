@@ -20,7 +20,7 @@ plot_wa(minor_wa,
 ```
 
 
-```{r app-minor-proportions-at-age, fig.cap = paste0("Time series of proportion-at-age for Pacifc Herring from 1978 to 2018 in the minor stock assessment regions. The black line is the mean age, and the shaded area is the approximate 90\\% distribution. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-10 class is a 'plus group' which includes fsh ages ", age_plus, "  and older.")}
+```{r app-minor-proportions-at-age, fig.cap = paste0("Time series of proportion-at-age for Pacifc Herring from 1978 to 2018 in the minor stock assessment regions. The black line is the mean age, and the shaded area is the approximate 90\\% distribution. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-10 class is a 'plus group' which includes fish ages ", age_plus, "  and older.")}
 plot_pa(minor_pa,
         age_plus = age_plus,
         conf = ci_level,

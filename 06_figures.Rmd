@@ -12,11 +12,21 @@ plot_catch(major_catch,
            translate = french)
 ```
 
-```{r weight-at-age, fig.cap = paste0("Time series of weight-at-age in kilograms (kg) for age-3 (circles) and 5-year running mean weight-at-age (lines) for Pacifc Herring from 1951 to 2018 in the major stock assessment regions (SARs). Lines show 5-year running means for age-2 to age-10 herring (incrementing higher from the lowest line); the thick black line highlights age-3 herring. Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods: missing values at the beginning of the time series are imputed by extending the frst non-missing value backwards; other missing values are imputed as the mean of the previous 5 years. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-10 class is a 'plus group' which includes fsh ages 10 and older. Note that vertical axes are cropped at ", wa_ylim[1], " and ", wa_ylim[2], " kg.")}
+```{r weight-at-age, fig.cap = paste0("Time series of weight-at-age in kilograms (kg) for age-3 (circles) and 5-year running mean weight-at-age (lines) for Pacifc Herring from ", start_yr, " to ", assess_yr, " in the major stock assessment regions (SARs). Lines show 5-year running means for age-2 to age-10 herring (incrementing higher from the lowest line); the thick black line highlights age-3 herring. Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods: missing values at the beginning of the time series are imputed by extending the frst non-missing value backwards; other missing values are imputed as the mean of the previous 5 years. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-10 class is a 'plus group' which includes fish aged 10 and older. Note that vertical axes are cropped at ", wa_ylim[1], " and ", wa_ylim[2], " kg.")}
 plot_wa(major_wa,
         circle_age = 3,
-        xlim = c(1951, 2020),
+        xlim = c(start_yr, assess_yr + 2),
         ylim = wa_ylim,
+        translate = french)
+
+```
+
+```{r proportion-at-age, fig.cap = paste0("Time series of proportion-at-age for Pacifc Herring from ", start_yr, " to ", assess_yr, " in the minor stock assessment regions. The black line is the mean age, and the shaded area is the approximate 90\\% distribution. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-10 class is a 'plus group' which includes fish aged ", age_plus, "  and older.")}
+plot_pa(major_pa,
+        age_plus = age_plus,
+        conf = ci_level,
+        xlim = c(start_yr, assess_yr + 2),
+        ylim = c(1, age_plus),
         translate = french)
 
 ```
