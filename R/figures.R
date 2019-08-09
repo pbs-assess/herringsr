@@ -193,12 +193,29 @@ plot_herring_spawn_ind <- function(df,
   g
 }
 
+#' Plot the median SSB as a line, with points which are survey index scaled by catchability value
+#' for the survey
+#'
+#' @param df Data frame of the survey estimates, as constructed by [get_surv_ind()]
+#' @param model an iscam model object
+#' @param gear a gear data frame containing `gear`, `gearname`, and `qind` columns
+#' @param new_surv_yr the year when the survey changed from surface to dive
+#' @param point_size size for points
+#' @param line_size thickness of line
+#' @param annot a character to place in parentheses in the top left of the plot.
+#' If NA, nothing will appear
+#' @param show_x_axis Logical
+#' @param show_legend Logical
+#' @param translate Logical. If TRUE, translate to french
+#'
+#' @return a ggplot object
 plot_scaled_abundance <- function(df,
                                   model,
                                   gear,
                                   new_surv_yr = NA,
                                   point_size = 2,
                                   line_size = 2,
+                                  annot = NA,
                                   show_x_axis = TRUE,
                                   show_legend = FALSE,
                                   translate = FALSE){
@@ -230,14 +247,17 @@ plot_scaled_abundance <- function(df,
     geom_line(data = ssb,
              aes(x = year, y = median, group = survey),
              size = line_size) +
-    ylab(paste0(en2fr("Scaled abundance", translate), " (1000 t)")) +
-    annotate(geom = "text",
-             x = -Inf,
-             y = Inf,
-             label = "(a)",
-             vjust = 1.3,
-             hjust = -0.1,
-             size = 2.5)
+    ylab(paste0(en2fr("Scaled abundance", translate), " (1000 t)"))
+  if(!is.na(annot)){
+    g <- g +
+      annotate(geom = "text",
+               x = -Inf,
+               y = Inf,
+               label = paste0("(", annot, ")"),
+               vjust = 1.3,
+               hjust = -0.1,
+               size = 2.5)
+  }
   if(show_x_axis){
     g <- g +
       xlab(en2fr("Year", translate))
@@ -251,6 +271,56 @@ plot_scaled_abundance <- function(df,
   if(!show_legend){
     g <- g +
       guides(shape = FALSE, linetype = FALSE)
+  }
+  g
+}
+
+#' Plot natural mortality mcmc median and credibility interval
+#'
+#' @param model an iscam model
+#' @param line_size thickness of the median line
+#' @param ribbon_alpha transparency of the credibility interval ribbon
+#' @param annot a character to place in parentheses in the top left of the plot.
+#' If NA, nothing will appear
+#' @param show_x_axis Logical
+#' @param translate Logical. If TRUE, translate to french
+#'
+#' @return a ggplot object
+plot_natural_mortality <- function(model,
+                                   line_size = 2,
+                                   ribbon_alpha = 0.5,
+                                   annot = NA,
+                                   show_x_axis = TRUE,
+                                   translate = FALSE){
+  m <- model$mcmccalcs$nat.mort.quants %>%
+    t() %>%
+    as_tibble(rownames = "year") %>%
+    mutate(year = as.numeric(year))
+  names(m) <- c("year", "lower", "median", "upper")
+
+  g <- ggplot(m, aes(x = year, y = median)) +
+    geom_line(size = line_size) +
+    geom_ribbon(aes(ymin = lower, ymax = upper), alpha = ribbon_alpha) +
+    ylab(en2fr("Instantaneous natural mortality", translate))
+  if(!is.na(annot)){
+    g <- g +
+      annotate(geom = "text",
+               x = -Inf,
+               y = Inf,
+               label = paste0("(", annot, ")"),
+               vjust = 1.3,
+               hjust = -0.1,
+               size = 2.5)
+  }
+  if(show_x_axis){
+    g <- g +
+      xlab(en2fr("Year", translate))
+  }else{
+    g <- g +
+      theme(axis.text.x = element_blank(),
+            text = element_text(size = 8),
+            axis.text = element_text(size = 8),
+            axis.title.x = element_blank())
   }
   g
 }

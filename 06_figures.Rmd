@@ -49,3 +49,8 @@ plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[1]),
                       show_x_axis = FALSE,
                       show_legend = FALSE)
 ```
+
+```{r natural-mortality-hg, fig.cap = "asawwwxwxw"}
+plot_natural_mortality(major_models[[1]],
+                       show_x_axis = FALSE)
+```
