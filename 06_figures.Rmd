@@ -71,5 +71,22 @@ plot_recruitment(major_models[[model_ind]],
                  annot = "c",
                  show_x_axis = FALSE,
                  translate = french)
-)
 ```
+
+```{r biomass-catch-hg, fig.cap = "asawwwxwxw"}
+model_ind <- match(en2fr("HG", french), major_regions_short)
+plot_biomass_catch(major_models[[model_ind]],
+                   major_catch %>% filter(region == major_regions_full[model_ind]),
+                   point_size = 3,
+                   errorbar_size = 1,
+                   line_size = 2,
+                   ribbon_alpha = 0.5,
+                   lrp_ribbon_alpha = 0.35,
+                   between_bars = 0.5,
+                   refpt_show = "0.3sbo",
+                   annot = "d",
+                   show_x_axis = FALSE,
+                   translate = french)
+```
+
+

@@ -325,6 +325,17 @@ plot_natural_mortality <- function(model,
   g
 }
 
+#' Plot recruitment as points and errorbars
+#'
+#' @param model an iscam model object
+#' @param point_size Size of points for median recruitment
+#' @param line_size thickness of errorbars
+#' @param annot a character to place in parentheses in the top left of the plot.
+#' If NA, nothing will appear
+#' @param show_x_axis Logical
+#' @param translate Logical. If TRUE, translate to french
+#'
+#' @return a ggplot object
 plot_recruitment <- function(model,
                              point_size = 2,
                              line_size = 2,
@@ -369,4 +380,111 @@ plot_recruitment <- function(model,
   }
   g
 
+}
+
+#' Plot estimated biommass median and credible interval, projected biomass with credible interval,
+#' catch history, and LRP line with credible interval
+#'
+#' @param model an iscam model object
+#' @param catch_df a datr frame of catch as constructed by [get_catch()]
+#' @param point_size size of point for projection year median biomass
+#' @param errorbar_size thickness of errorbar for projection year median biomass
+#' @param line_size thickness of the median and LRP lines
+#' @param ribbon_alpha transparency value for the biomass credibility interval ribbon
+#' @param lrp_ribbon_alpha transparency value for the LRP credibility interval ribbon
+#' @param between_bars amount of space between catch bars
+#' @param refpt_show which reference point to show. See `model$mcmccalcs$r.quants`` for choices
+#' @param annot a character to place in parentheses in the top left of the plot.
+#' If NA, nothing will appear
+#' @param show_x_axis Logical
+#' @param translate Logical. If TRUE, translate to french
+#'
+#' @return a ggplot object
+plot_biomass_catch <- function(model,
+                               catch_df,
+                               point_size = 3,
+                               errorbar_size = 1,
+                               line_size = 2,
+                               ribbon_alpha = 0.5,
+                               lrp_ribbon_alpha = 0.35,
+                               between_bars = 0.5,
+                               refpt_show = "0.3sbo",
+                               annot = NA,
+                               show_x_axis = TRUE,
+                               translate = FALSE){
+
+  if(length(unique(catch_df$region)) > 1){
+    stop("There is more than one region in the catch_df data frame", call. = FALSE)
+  }
+  sbt <- model$mcmccalcs$sbt.quants %>%
+    t() %>%
+    as_tibble(rownames = "year") %>%
+    mutate(year = as.numeric(year))
+  names(sbt) <- c("year", "lower", "median", "upper", "mpd")
+
+  proj <- model$mcmccalcs$proj.quants
+  proj_yr <- as.numeric(gsub("B", "", colnames(proj)[2]))
+  proj_sbt <- as.numeric(c(proj_yr, proj[,2]))
+  names(proj_sbt) <- c("year", "lower", "median", "upper")
+  proj_sbt <- as_tibble(t(proj_sbt))
+
+  ct <- catch_df %>%
+    select(-c(area, group, sex, type, region)) %>%
+    group_by(year) %>%
+    summarize(median = sum(value)) %>%
+    ungroup()
+
+  lrp <- model$mcmccalcs$r.quants
+  lrp <- lrp[,-1] %>%
+    as_tibble(rownames = "refpt") %>%
+    filter(refpt == refpt_show)
+  names(lrp) <- c("year", "lower", "median", "upper")
+  lrp[1,1] <- min(sbt$year) - 2
+  lrp[,1] <- as.numeric(lrp[,1])
+
+  g <- ggplot(sbt, aes(x = year, y = median)) +
+    geom_hline(yintercept = lrp$median,
+               color = "red",
+               size = line_size) +
+    geom_rect(data = lrp, aes(xmin = -Inf, xmax = Inf, ymin = lrp$lower, ymax = lrp$upper),
+              alpha = lrp_ribbon_alpha,
+              fill = "red") +
+    geom_line(size = line_size) +
+    geom_ribbon(aes(ymin = lower, ymax = upper), alpha = ribbon_alpha) +
+    geom_point(data = proj_sbt,
+               position = position_nudge(x = 0.5),
+               size = point_size) +
+    geom_errorbar(data = proj_sbt,
+                  aes(ymin = lower, ymax = upper),
+                  size = errorbar_size,
+                  width = 0,
+                  position = position_nudge(x = 0.5)) +
+    geom_bar(data = ct,
+             stat = "identity",
+             width = between_bars,
+             fill = "black") +
+    #geom_hline(aes(yintercept = lrp$lower)) +
+    #geom_hline(aes(yintercept = lrp$upper)) +
+    ylab(paste0(en2fr("Spawning biomass", translate), " (1,000 t)"))
+  if(!is.na(annot)){
+    g <- g +
+      annotate(geom = "text",
+               x = -Inf,
+               y = Inf,
+               label = paste0("(", annot, ")"),
+               vjust = 1.3,
+               hjust = -0.1,
+               size = 2.5)
+  }
+  if(show_x_axis){
+    g <- g +
+      xlab(en2fr("Year", translate))
+  }else{
+    g <- g +
+      theme(axis.text.x = element_blank(),
+            text = element_text(size = 8),
+            axis.text = element_text(size = 8),
+            axis.title.x = element_blank())
+  }
+  g
 }
