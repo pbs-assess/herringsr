@@ -18,10 +18,12 @@ gear <- tribble(
 gear$gearname <- en2fr(gear$gearname, french)
 roe_gear <- c(2, 3)
 
+# Survey gear follows the fishery gears above, but q parameters exist only for survey
+# gears so they are included here as `qind`
 surv_type <- tribble(
-  ~gear,   ~gearname,
-      4,   "Surface",
-      5,      "Dive")
+  ~gear,   ~gearname, ~qind,
+      4,   "Surface",     1,
+      5,      "Dive",     2)
 surv_type$gearname <- en2fr(surv_type$gearname, french)
 
 major_models <- load.models(unlist(major_model_dirs))

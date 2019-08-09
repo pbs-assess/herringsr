@@ -38,3 +38,14 @@ plot_herring_spawn_ind(major_surv,
                        new_surv_yr = new_surv_yr,
                        translate = french)
 ```
+
+```{r scaled-abundance-hg, fig.cap = ""}
+plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[1]),
+                      major_models[[1]],
+                      surv_type,
+                      new_surv_yr = new_surv_yr,
+                      point_size = 2,
+                      line_size = 2,
+                      show_x_axis = FALSE,
+                      show_legend = FALSE)
+```

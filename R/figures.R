@@ -191,3 +191,65 @@ plot_herring_spawn_ind <- function(df,
   g
 }
 
+plot_scaled_abundance <- function(df,
+                                  model,
+                                  gear,
+                                  new_surv_yr = NA,
+                                  point_size = 2,
+                                  line_size = 2,
+                                  show_x_axis = TRUE,
+                                  show_legend = FALSE,
+                                  translate = FALSE){
+  if(length(unique(df$region)) > 1){
+    stop("There is more than one region in the df data frame", call. = FALSE)
+  }
+  pars <- model$mcmccalcs$p.quants[2,]
+  qs <- pars[grep("^q[0-9]$", names(pars))]
+  names(qs) <- gsub("q", "", names(qs))
+  qs <- qs %>%
+    melt(qs) %>%
+    as_tibble(rownames = "qind") %>%
+    mutate(qind = as.numeric(qind))
+
+  dfm <- full_join(df, qs, by = "qind") %>%
+    rename(qmedian = value.y,
+           spawn = value.x) %>%
+    mutate(abundance = spawn / qmedian)
+
+  ssb <- t(model$mcmccalcs$sbt.quants) %>%
+    as_tibble(rownames = "year") %>%
+    rename(median = `50%`) %>%
+    mutate(survey = ifelse(year < new_surv_yr, "Surface", "Dive"),
+           year = as.numeric(year))
+
+  g <- ggplot(dfm, aes(x = year, y = abundance)) +
+    geom_point(aes(shape = gear), size = point_size) +
+    scale_shape_manual(values = c(2, 1)) +
+    geom_line(data = ssb,
+             aes(x = year, y = median, group = survey),
+             size = line_size) +
+    ylab(paste0(en2fr("Scaled abundance", translate), " (1000 t)")) +
+    annotate(geom = "text",
+             x = -Inf,
+             y = Inf,
+             label = "(a)",
+             vjust = 1.3,
+             hjust = -0.1,
+             size = 2.5)
+  if(show_x_axis){
+    g <- g +
+      xlab(en2fr("Year", translate))
+  }else{
+    g <- g +
+      theme(axis.text.x = element_blank(),
+            text = element_text(size = 8),
+            axis.text = element_text(size = 8),
+            axis.title.x = element_blank())
+  }
+  if(!show_legend){
+    g <- g +
+      guides(shape = FALSE, linetype = FALSE)
+  }
+  g
+}
+
