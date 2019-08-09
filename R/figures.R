@@ -325,3 +325,48 @@ plot_natural_mortality <- function(model,
   g
 }
 
+plot_recruitment <- function(model,
+                             point_size = 2,
+                             line_size = 2,
+                             annot = NA,
+                             show_x_axis = TRUE,
+                             translate = FALSE){
+
+  rec <- model$mcmccalcs$recr.quants %>%
+    t() %>%
+    as_tibble(rownames = "year") %>%
+    mutate(year = as.numeric(year))
+  names(rec) <- c("year", "lower", "median", "upper", "mpd")
+  rec <- rec %>%
+    mutate(lower = lower / 1000,
+           median = median / 1000,
+           upper = upper / 1000,
+           mpd = mpd / 1000)
+
+  g <- ggplot(rec, aes(x = year, y = median)) +
+    geom_point(size = point_size) +
+    geom_errorbar(aes(ymin = lower, ymax = upper), size = line_size / 2, width = 0) +
+    ylab(paste0(en2fr("Number of age-2 recruits", translate), " (1,000 millions)"))
+  if(!is.na(annot)){
+    g <- g +
+      annotate(geom = "text",
+               x = -Inf,
+               y = Inf,
+               label = paste0("(", annot, ")"),
+               vjust = 1.3,
+               hjust = -0.1,
+               size = 2.5)
+  }
+  if(show_x_axis){
+    g <- g +
+      xlab(en2fr("Year", translate))
+  }else{
+    g <- g +
+      theme(axis.text.x = element_blank(),
+            text = element_text(size = 8),
+            axis.text = element_text(size = 8),
+            axis.title.x = element_blank())
+  }
+  g
+
+}

@@ -62,3 +62,14 @@ plot_natural_mortality(major_models[[model_ind]],
                        show_x_axis = FALSE,
                        translate = french)
 ```
+
+```{r recruitment-hg, fig.cap = "asawwwxwxw"}
+model_ind <- match(en2fr("HG", french), major_regions_short)
+plot_recruitment(major_models[[model_ind]],
+                 point_size = 2,
+                 line_size = 2,
+                 annot = "c",
+                 show_x_axis = FALSE,
+                 translate = french)
+)
+```
