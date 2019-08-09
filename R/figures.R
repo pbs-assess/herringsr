@@ -488,3 +488,78 @@ plot_biomass_catch <- function(model,
   }
   g
 }
+
+#' Plot recruitment deviations as points and errorbars, with a running mean of the median
+#' values
+#'
+#' @param model an iscam model object
+#' @param run_mean_yrs number of years to set the running mean calculation to
+#' @param point_size Size of points for median recruitment
+#' @param line_size thickness of the line for the running mean
+#' @param errorbar_size thickness of errorbars for recruitment deviations
+#' @param zeroline_size thickness of guide line at zero deviation
+#' @param zeroline_type type of  of guide line at zero deviation
+#' @param annot a character to place in parentheses in the top left of the plot.
+#' If NA, nothing will appear
+#' @param show_x_axis Logical
+#' @param translate Logical. If TRUE, translate to french
+#'
+#' @return a ggplot object
+plot_recruitment_devs <- function(model,
+                                  run_mean_yrs = 3,
+                                  point_size = 2,
+                                  line_size = 2,
+                                  errorbar_size = 1,
+                                  zeroline_size = 1,
+                                  zeroline_type = "dashed",
+                                  annot = NA,
+                                  show_x_axis = TRUE,
+                                  translate = FALSE){
+
+  recdev <- model$mcmccalcs$recr.devs.quants %>%
+    t() %>%
+    as_tibble(rownames = "year") %>%
+    mutate(year = as.numeric(year))
+  names(recdev) <- c("year", "lower", "median", "upper")
+
+  recdev <- recdev %>%
+    mutate(runmean = rollmean(x = median,
+                              k = run_mean_yrs,
+                              align = "right",
+                              na.pad = TRUE))
+
+  g <- ggplot(recdev, aes(x = year, y = median)) +
+    geom_hline(yintercept = 0,
+               size = zeroline_size,
+               linetype = zeroline_type) +
+    geom_point(size = point_size) +
+    geom_errorbar(aes(ymin = lower, ymax = upper),
+                  size = errorbar_size / 2,
+                  width = 0) +
+    geom_line(aes(y = runmean),
+              color = "red",
+              size = line_size) +
+    ylab(en2fr("Log recruitment deviations", translate))
+  if(!is.na(annot)){
+    g <- g +
+      annotate(geom = "text",
+               x = -Inf,
+               y = Inf,
+               label = paste0("(", annot, ")"),
+               vjust = 1.3,
+               hjust = -0.1,
+               size = 2.5)
+  }
+  if(show_x_axis){
+    g <- g +
+      xlab(en2fr("Year", translate))
+  }else{
+    g <- g +
+      theme(axis.text.x = element_blank(),
+            text = element_text(size = 8),
+            axis.text = element_text(size = 8),
+            axis.title.x = element_blank())
+  }
+  g
+
+}

@@ -89,4 +89,16 @@ plot_biomass_catch(major_models[[model_ind]],
                    translate = french)
 ```
 
-
+```{r recruitment-devs-hg, fig.cap = "asawwwxwxw"}
+model_ind <- match(en2fr("HG", french), major_regions_short)
+plot_recruitment_devs(major_models[[model_ind]],
+                      run_mean_yrs = 3,
+                      point_size = 2,
+                      line_size = 2,
+                      errorbar_size = 1,
+                      zeroline_size = 1,
+                      zeroline_type = "dashed",
+                      annot = "e",
+                      show_x_axis = FALSE,
+                      translate = french)
+```
