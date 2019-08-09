@@ -386,7 +386,7 @@ plot_recruitment <- function(model,
 #' catch history, and LRP line with credible interval
 #'
 #' @param model an iscam model object
-#' @param catch_df a datr frame of catch as constructed by [get_catch()]
+#' @param catch_df a data frame of catch as constructed by [get_catch()]
 #' @param point_size size of point for projection year median biomass
 #' @param errorbar_size thickness of errorbar for projection year median biomass
 #' @param line_size thickness of the median and LRP lines
@@ -562,4 +562,112 @@ plot_recruitment_devs <- function(model,
   }
   g
 
+}
+
+#' Plot production using a phase plot with a path through time. Includes the reference point and its credible interval
+#'
+#' @param model an iscam model object
+#' @param catch_df a data frame of catch as constructed by [get_catch()]
+#' @param new_surv_yr year in which the survey changed from surface to dive
+#' @param point_size size for points for years
+#' @param line_size thickness of the path line
+#' @param zeroline_size thickness of the line across zero
+#' @param zeroline_type type of the line across zer
+#' @param lrp_ribbon_alpha transparency of the reference point credible interval ribbon
+#' @param refpt_show which reference point to show. See `model$mcmccalcs$r.quants`` for choices
+#' @param annot a character to place in parentheses in the top left of the plot.
+#' If NA, nothing will appear
+#' @param show_x_axis Logical
+#' @param translate Logical. If TRUE, translate to french
+#'
+#' @return a ggplot object
+plot_biomass_phase <- function(model,
+                               catch_df,
+                               new_surv_yr = NA,
+                               point_size = 3,
+                               line_size = 2,
+                               zeroline_size = 1,
+                               zeroline_type = "dashed",
+                               lrp_ribbon_alpha = 0.35,
+                               refpt_show = "0.3sbo",
+                               annot = NA,
+                               show_x_axis = TRUE,
+                               translate = FALSE){
+
+  stopifnot(!is.na(new_surv_yr),
+            is.numeric(new_surv_yr),
+            length(new_surv_yr) == 1)
+  if(length(unique(catch_df$region)) > 1){
+    stop("There is more than one region in the catch_df data frame", call. = FALSE)
+  }
+  sbt <- model$mcmccalcs$sbt.quants %>%
+    t() %>%
+    as_tibble(rownames = "year") %>%
+    mutate(year = as.numeric(year))
+  names(sbt) <- c("year", "lower", "median", "upper", "mpd")
+
+  ct <- catch_df %>%
+    select(-c(area, group, sex, type, region)) %>%
+    group_by(year) %>%
+    summarize(catch = sum(value)) %>%
+    ungroup()
+
+  dd <- full_join(sbt, ct, by = "year") %>%
+    mutate(catch = ifelse(is.na(catch), 0, catch),
+           mediannext = lead(median),
+           catchnext = lead(catch),
+           production = mediannext - median + catchnext,
+           prodrate = production / median) %>%
+    na.omit() %>%
+    filter(year >= new_surv_yr)
+
+  dd <- dd %>%
+    mutate(shp = ifelse(year != max(year), 0, 24))
+
+  lrp <- model$mcmccalcs$r.quants
+  lrp <- lrp[,-1] %>%
+    as_tibble(rownames = "refpt") %>%
+    filter(refpt == refpt_show)
+  names(lrp) <- c("year", "lower", "median", "upper")
+  lrp[1,1] <- min(sbt$year) - 2
+  lrp[,1] <- as.numeric(lrp[,1])
+
+  g <- ggplot(dd, aes(x = median, y = production)) +
+    geom_hline(yintercept = 0,
+               size = zeroline_size,
+               linetype = zeroline_type) +
+    geom_vline(xintercept = lrp$median,
+               color = "red",
+               size = line_size) +
+    geom_rect(data = lrp, aes(xmin = lrp$lower, xmax = lrp$upper, ymin = -Inf, ymax = Inf),
+              alpha = lrp_ribbon_alpha,
+              fill = "red", inherit.aes = FALSE) +
+    geom_point(aes(color = year, shape = factor(shp)), size = 5) +
+    scale_color_gradient(low = "lightgrey", high = "black") +
+    geom_text_repel(aes(label = year), segment.colour = "grey", size = 4) +
+    geom_path(size = 1) +
+    guides(color = FALSE, shape = FALSE) +
+    expand_limits(x = 0) +
+    ylab(paste0(en2fr("Spawning biomass production", translate), " (1,000 t)"))
+  if(!is.na(annot)){
+    g <- g +
+      annotate(geom = "text",
+               x = -Inf,
+               y = Inf,
+               label = paste0("(", annot, ")"),
+               vjust = 1.3,
+               hjust = -0.1,
+               size = 2.5)
+  }
+  if(show_x_axis){
+    g <- g +
+      xlab(paste0(en2fr("Spawning biomass", translate), " (1,000 t)"))
+  }else{
+    g <- g +
+      theme(axis.text.x = element_blank(),
+            text = element_text(size = 8),
+            axis.text = element_text(size = 8),
+            axis.title.x = element_blank())
+  }
+  g
 }

@@ -102,3 +102,19 @@ plot_recruitment_devs(major_models[[model_ind]],
                       show_x_axis = FALSE,
                       translate = french)
 ```
+
+```{r biomass-phase-hg, fig.cap = "asawwwxwxw"}
+model_ind <- match(en2fr("HG", french), major_regions_short)
+plot_biomass_phase(major_models[[model_ind]],
+                   major_catch %>% filter(region == major_regions_full[model_ind]),
+                   new_surv_yr = new_surv_yr,
+                   point_size = 3,
+                   line_size = 2,
+                   zeroline_size = 1,
+                   zeroline_type = "dashed",
+                   lrp_ribbon_alpha = 0.35,
+                   refpt_show = "0.3sbo",
+                   annot = "f",
+                   show_x_axis = TRUE,
+                   translate = french)
+```
