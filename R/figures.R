@@ -158,10 +158,15 @@ plot_herring_spawn_ind <- function(df,
                                    new_surv_yr_type = "dashed",
                                    new_surv_yr_size = 0.25,
                                    translate = FALSE){
+  stopifnot(!is.na(new_surv_yr),
+            is.numeric(new_surv_yr),
+            length(new_surv_yr) == 1)
+
   df <- df %>%
     filter(year >= xlim[1]) %>%
     mutate(gear = ifelse(year < new_surv_yr, "Surface", "Dive"),
-           gear = factor(gear))
+           gear = factor(gear)) %>%
+    select(-qind)
 
   dfm <- melt(df, id.vars = c("year", "area", "group", "sex", "region", "wt", "timing", "gear")) %>%
     as_tibble() %>%
@@ -174,19 +179,16 @@ plot_herring_spawn_ind <- function(df,
     geom_point(aes(shape = gear)) +
     geom_line(aes(group = gear)) +
     scale_shape_manual(values = c(2, 1)) +
+    geom_vline(xintercept = new_surv_yr - 0.5, linetype = new_surv_yr_type, size = new_surv_yr_size) +
     expand_limits(x = xlim[1]:xlim[2]) +
     labs(shape = en2fr("Survey period", translate)) +
     ylab(paste0(en2fr("Spawn index", translate), " (1000 t)")) +
     xlab(en2fr("Year", translate)) +
     facet_wrap(~ Region, ncol = 2, dir = "v", scales = "free_y" ) +
     theme(legend.position="top")
-  if(!is.na(ylim)){
+  if(!is.na(ylim[1])){
     g <- g +
       coord_cartesian(xlim, ylim)
-  }
-  if(!is.na(new_surv_yr)){
-    g <- g +
-      geom_vline(xintercept = new_surv_yr - 0.5, linetype = new_surv_yr_type, size = new_surv_yr_size)
   }
   g
 }
