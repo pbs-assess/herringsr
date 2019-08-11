@@ -39,7 +39,8 @@ plot_spawn_ind(major_surv,
                translate = french)
 ```
 
-```{r scaled-abundance-hg, fig.show = "hide", fig.asp = 1, fig.cap = "asawwwxwxw"}
+<!-- Haida Gwaii Storyboard -->
+```{r scaled-abundance-hg, fig.show = "hide", fig.asp = 1}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 sbt_yrs <- as.numeric(colnames(major_models[[model_ind]]$mcmccalcs$sbt.quants ))
 xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
@@ -67,8 +68,8 @@ plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_fu
                                 show_legend = FALSE,
                                 translate = french)
 ```
-
-```{r natural-mortality-hg, fig.show = "hide", fig.asp = 1, fig.cap = "asawwwxwxw"}
+<!-- Haida Gwaii Storyboard -->
+```{r natural-mortality-hg, fig.show = "hide", fig.asp = 1}
 plot_b <- plot_natural_mortality(major_models[[model_ind]],
                                  line_size = 1,
                                  ribbon_alpha = 0.5,
@@ -84,8 +85,8 @@ plot_b <- plot_natural_mortality(major_models[[model_ind]],
                                  annot = "b",
                                  translate = french)
 ```
-
-```{r recruitment-hg, fig.show = "hide", fig.asp = 1, fig.cap = "asawwwxwxw"}
+<!-- Haida Gwaii Storyboard -->
+```{r recruitment-hg, fig.show = "hide", fig.asp = 1}
 plot_c <- plot_recruitment(major_models[[model_ind]],
                            point_size = 1,
                            line_size = 1,
@@ -101,8 +102,8 @@ plot_c <- plot_recruitment(major_models[[model_ind]],
                            annot = "c",
                            translate = french)
 ```
-
-```{r biomass-catch-hg, fig.show = "hide", fig.asp = 1, fig.cap = "asawwwxwxw"}
+<!-- Haida Gwaii Storyboard -->
+```{r biomass-catch-hg, fig.show = "hide", fig.asp = 1}
 plot_d <- plot_biomass_catch(major_models[[model_ind]],
                              ct,
                              point_size = 1,
@@ -124,8 +125,8 @@ plot_d <- plot_biomass_catch(major_models[[model_ind]],
                              annot = "d",
                              translate = french)
 ```
-
-```{r recruitment-devs-hg, fig.show = "hide", fig.asp = 1, fig.cap = "asawwwxwxw"}
+<!-- Haida Gwaii Storyboard -->
+```{r recruitment-devs-hg, fig.show = "hide", fig.asp = 1}
 plot_e <- plot_recruitment_devs(major_models[[model_ind]],
                                 run_mean_yrs = 3,
                                 point_size = 1,
@@ -145,8 +146,8 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
                                 annot = "e",
                                 translate = french)
 ```
-
-```{r biomass-phase-hg, fig.show = "hide", fig.asp = 1, fig.cap = "asawwwxwxw"}
+<!-- Haida Gwaii Storyboard -->
+```{r biomass-phase-hg, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              ct,
                              new_surv_yr = new_surv_yr,
@@ -168,8 +169,152 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              annot = "f",
                              translate = french)
 ```
-
+<!-- Haida Gwaii Storyboard -->
 ```{r storyboard-hg, out.width = "6in", out.height = "6in", fig.cap = paste0("Model output for Pacifc Herring in the Haida Gwaii major stock assessment region. Panel (a): model fit to scaled spawn survey data in thousands of tonnes. The spawn survey data (i.e., spawn index) is scaled to abundance via the spawn survey scaling parameter q. Panel (b): posterior estimates of instantaneous natural mortality rate. Panel (c): reconstructed number of age-2 recruits in thousands of millions. Panel (d): posterior estimate of spawning biomass ($SB_t$) for each year t in thousands of tonnes. Circle and vertical line indicate the median and 90\\% credible interval, respectively, of $SB_{2019}$ (pre-fishery). Vertical bars indicate commercial catch, excluding spawn-on-kelp. Panels (b \\& d): lines and shaded areas indicate medians and 90\\% credible intervals, respectively. Panel (e): log recruitment deviations. The red line is the 3-year running mean of the median recruitment deviation. Panels (c \\& e): circles and vertical lines indicate medians and 90\\% credible intervals, respectively. Panel (f): phase plot of spawning biomass production for the dive survey period (", new_surv_yr, " to ", assess_yr,  "; maximum posterior density estimates). Grey shading becomes darker in chronological order; the triangle indicates ", assess_yr - 1, "2. Panels (d \\& f): red lines and shading indicate medians and 90\\% confdence intervals, respectively, for the limit reference point, $0.3SB_0$.")}
+
+cowplot::plot_grid(plot_a,
+                   plot_b,
+                   plot_c,
+                   plot_d,
+                   plot_e,
+                   plot_f,
+                   ncol = 2,
+                   rel_heights = c(1.0, 1.0, 1.1))
+
+```
+
+<!-- Prince Rupert District Storyboard -->
+```{r scaled-abundance-prd, fig.show = "hide", fig.asp = 1}
+model_ind <- match(en2fr("PRD", french), major_regions_short)
+sbt_yrs <- as.numeric(colnames(major_models[[model_ind]]$mcmccalcs$sbt.quants ))
+xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
+ct <- major_catch %>% filter(region == major_regions_full[model_ind])
+x_axis_label_newline_length <- 50
+y_axis_label_newline_length <- 50
+y_axis_label_size <- 7
+
+plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                major_models[[model_ind]],
+                                surv_type,
+                                new_surv_yr = new_surv_yr,
+                                point_size = 1,
+                                line_size = 1,
+                                xlim = xlim_all,
+                                show_x_axis = FALSE,
+                                show_y_axis = TRUE,
+                                x_axis_label_size = 7,
+                                x_axis_tick_label_size = 8,
+                                y_axis_label_size = y_axis_label_size,
+                                y_axis_tick_label_size = 8,
+                                x_axis_label_newline_length = x_axis_label_newline_length,
+                                y_axis_label_newline_length = y_axis_label_newline_length,
+                                annot = "a",
+                                show_legend = FALSE,
+                                translate = french)
+```
+<!-- Prince Rupert District Storyboard -->
+```{r natural-mortality-prd, fig.show = "hide", fig.asp = 1}
+plot_b <- plot_natural_mortality(major_models[[model_ind]],
+                                 line_size = 1,
+                                 ribbon_alpha = 0.5,
+                                 xlim = xlim_all,
+                                 show_x_axis = FALSE,
+                                 show_y_axis = TRUE,
+                                 x_axis_label_size = 7,
+                                 x_axis_tick_label_size = 8,
+                                 y_axis_label_size = y_axis_label_size,
+                                 y_axis_tick_label_size = 8,
+                                 x_axis_label_newline_length = x_axis_label_newline_length,
+                                 y_axis_label_newline_length = y_axis_label_newline_length,
+                                 annot = "b",
+                                 translate = french)
+```
+<!-- Prince Rupert District Storyboard -->
+```{r recruitment-prd, fig.show = "hide", fig.asp = 1}
+plot_c <- plot_recruitment(major_models[[model_ind]],
+                           point_size = 1,
+                           line_size = 1,
+                           xlim = xlim_all,
+                           show_x_axis = FALSE,
+                           show_y_axis = TRUE,
+                           x_axis_label_size = 7,
+                           x_axis_tick_label_size = 8,
+                           y_axis_label_size = y_axis_label_size,
+                           y_axis_tick_label_size = 8,
+                           x_axis_label_newline_length = x_axis_label_newline_length,
+                           y_axis_label_newline_length = y_axis_label_newline_length,
+                           annot = "c",
+                           translate = french)
+```
+<!-- Prince Rupert District Storyboard -->
+```{r biomass-catch-prd, fig.show = "hide", fig.asp = 1}
+plot_d <- plot_biomass_catch(major_models[[model_ind]],
+                             ct,
+                             point_size = 1,
+                             errorbar_size = 1,
+                             line_size = 1,
+                             ribbon_alpha = 0.5,
+                             lrp_ribbon_alpha = 0.35,
+                             between_bars = 0.5,
+                             refpt_show = "0.3sbo",
+                             xlim = xlim_all,
+                             show_x_axis = FALSE,
+                             show_y_axis = TRUE,
+                             x_axis_label_size = 7,
+                             x_axis_tick_label_size = 8,
+                             y_axis_label_size = y_axis_label_size,
+                             y_axis_tick_label_size = 8,
+                             x_axis_label_newline_length = x_axis_label_newline_length,
+                             y_axis_label_newline_length = y_axis_label_newline_length,
+                             annot = "d",
+                             translate = french)
+```
+<!-- Prince Rupert District Storyboard -->
+```{r recruitment-devs-prd, fig.show = "hide", fig.asp = 1}
+plot_e <- plot_recruitment_devs(major_models[[model_ind]],
+                                run_mean_yrs = 3,
+                                point_size = 1,
+                                line_size = 0.5,
+                                errorbar_size = 0.5,
+                                zeroline_size = 0.5,
+                                zeroline_type = "dashed",
+                                xlim = xlim_all,
+                                show_x_axis = TRUE,
+                                show_y_axis = TRUE,
+                                x_axis_label_size = 7,
+                                x_axis_tick_label_size = 8,
+                                y_axis_label_size = y_axis_label_size,
+                                y_axis_tick_label_size = 8,
+                                x_axis_label_newline_length = x_axis_label_newline_length,
+                                y_axis_label_newline_length = y_axis_label_newline_length,
+                                annot = "e",
+                                translate = french)
+```
+<!-- Prince Rupert District Storyboard -->
+```{r biomass-phase-prd, fig.show = "hide", fig.asp = 1}
+plot_f <- plot_biomass_phase(major_models[[model_ind]],
+                             ct,
+                             new_surv_yr = new_surv_yr,
+                             point_size = 3,
+                             line_size = 0.5,
+                             text_size = 2,
+                             zeroline_size = 0.5,
+                             zeroline_type = "dashed",
+                             lrp_ribbon_alpha = 0.35,
+                             refpt_show = "0.3sbo",
+                             show_x_axis = TRUE,
+                             show_y_axis = TRUE,
+                             x_axis_label_size = 7,
+                             x_axis_tick_label_size = 8,
+                             y_axis_label_size = y_axis_label_size,
+                             y_axis_tick_label_size = 8,
+                             x_axis_label_newline_length = x_axis_label_newline_length,
+                             y_axis_label_newline_length = y_axis_label_newline_length,
+                             annot = "f",
+                             translate = french)
+```
+<!-- Prince Rupert District Storyboard -->
+```{r storyboard-prd, out.width = "6in", out.height = "6in", fig.cap = "Model output for Pacifc Herring in the Prince Rupert District major stock assessment region. See Figure \\\\@ref(fig:storyboard-hg) for description."}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
