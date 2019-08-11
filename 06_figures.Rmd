@@ -6,7 +6,7 @@
 knitr::include_graphics(here::here(ifelse(french, "figures/BC-FR.png", "figures/BC.png")))
 ```
 
-```{r major-catch, fig.cap = "Time series of total landed catch in thousands of tonnes of Pacifc Herring from 1951 to 2020 in the major stock assessment regions. Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fshery; and 'RoeSN' represents the roe seine fishery."}
+```{r major-catch, fig.cap = "Time series of total landed catch in thousands of tonnes of Pacifc Herring from 1951 to 2020 in the major stock assessment regions. Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fishery; and 'RoeSN' represents the roe seine fishery."}
 plot_catch(major_catch,
            xlim = c(1951, 2020),
            translate = french)
@@ -39,82 +39,106 @@ plot_spawn_ind(major_surv,
                translate = french)
 ```
 
-```{r scaled-abundance-hg, fig.cap = "asawwwxwxw"}
+```{r scaled-abundance-hg, fig.show = "hide", fig.asp = 1, fig.cap = "asawwwxwxw"}
 model_ind <- match(en2fr("HG", french), major_regions_short)
-plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
-                      major_models[[model_ind]],
-                      surv_type,
-                      new_surv_yr = new_surv_yr,
-                      point_size = 2,
-                      line_size = 2,
-                      annot = "a",
-                      show_x_axis = FALSE,
-                      show_legend = FALSE,
-                      translate = french)
+sbt_yrs <- as.numeric(colnames(major_models[[model_ind]]$mcmccalcs$sbt.quants ))
+xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
+ct <- major_catch %>% filter(region == major_regions_full[model_ind])
+line_len_labels <- 20
+
+plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                major_models[[model_ind]],
+                                surv_type,
+                                new_surv_yr = new_surv_yr,
+                                point_size = 1,
+                                line_size = 1,
+                                xlim = xlim_all,
+                                line_len = line_len_labels,
+                                annot = "a",
+                                show_x_axis = FALSE,
+                                show_legend = FALSE,
+                                translate = french)
 ```
 
-```{r natural-mortality-hg, fig.cap = "asawwwxwxw"}
-model_ind <- match(en2fr("HG", french), major_regions_short)
-plot_natural_mortality(major_models[[model_ind]],
-                       line_size = 2,
-                       ribbon_alpha = 0.5,
-                       annot = "b",
-                       show_x_axis = FALSE,
-                       translate = french)
+```{r natural-mortality-hg, fig.show = "hide", fig.asp = 1, fig.cap = "asawwwxwxw"}
+plot_b <- plot_natural_mortality(major_models[[model_ind]],
+                                 line_size = 1,
+                                 ribbon_alpha = 0.5,
+                                 xlim = xlim_all,
+                                 line_len = line_len_labels,
+                                 annot = "b",
+                                 show_x_axis = FALSE,
+                                 translate = french)
 ```
 
-```{r recruitment-hg, fig.cap = "asawwwxwxw"}
-model_ind <- match(en2fr("HG", french), major_regions_short)
-plot_recruitment(major_models[[model_ind]],
-                 point_size = 2,
-                 line_size = 2,
-                 annot = "c",
-                 show_x_axis = FALSE,
-                 translate = french)
+```{r recruitment-hg, fig.show = "hide", fig.asp = 1, fig.cap = "asawwwxwxw"}
+plot_c <- plot_recruitment(major_models[[model_ind]],
+                           point_size = 1,
+                           line_size = 1,
+                           xlim = xlim_all,
+                           line_len = line_len_labels,
+                           annot = "c",
+                           show_x_axis = FALSE,
+                           translate = french)
 ```
 
-```{r biomass-catch-hg, fig.cap = "asawwwxwxw"}
-model_ind <- match(en2fr("HG", french), major_regions_short)
-plot_biomass_catch(major_models[[model_ind]],
-                   major_catch %>% filter(region == major_regions_full[model_ind]),
-                   point_size = 3,
-                   errorbar_size = 1,
-                   line_size = 2,
-                   ribbon_alpha = 0.5,
-                   lrp_ribbon_alpha = 0.35,
-                   between_bars = 0.5,
-                   refpt_show = "0.3sbo",
-                   annot = "d",
-                   show_x_axis = FALSE,
-                   translate = french)
+```{r biomass-catch-hg, fig.show = "hide", fig.asp = 1, fig.cap = "asawwwxwxw"}
+plot_d <- plot_biomass_catch(major_models[[model_ind]],
+                             ct,
+                             point_size = 1,
+                             errorbar_size = 1,
+                             line_size = 1,
+                             ribbon_alpha = 0.5,
+                             lrp_ribbon_alpha = 0.35,
+                             between_bars = 0.5,
+                             refpt_show = "0.3sbo",
+                             xlim = xlim_all,
+                             line_len = line_len_labels,
+                             annot = "d",
+                             show_x_axis = FALSE,
+                             translate = french)
 ```
 
-```{r recruitment-devs-hg, fig.cap = "asawwwxwxw"}
-model_ind <- match(en2fr("HG", french), major_regions_short)
-plot_recruitment_devs(major_models[[model_ind]],
-                      run_mean_yrs = 3,
-                      point_size = 2,
-                      line_size = 2,
-                      errorbar_size = 1,
-                      zeroline_size = 1,
-                      zeroline_type = "dashed",
-                      annot = "e",
-                      show_x_axis = FALSE,
-                      translate = french)
+```{r recruitment-devs-hg, fig.show = "hide", fig.asp = 1, fig.cap = "asawwwxwxw"}
+plot_e <- plot_recruitment_devs(major_models[[model_ind]],
+                                run_mean_yrs = 3,
+                                point_size = 1,
+                                line_size = 0.5,
+                                errorbar_size = 0.5,
+                                zeroline_size = 0.5,
+                                zeroline_type = "dashed",
+                                xlim = xlim_all,
+                                line_len = line_len_labels,
+                                annot = "e",
+                                show_x_axis = TRUE,
+                                translate = french)
 ```
 
-```{r biomass-phase-hg, fig.cap = "asawwwxwxw"}
-model_ind <- match(en2fr("HG", french), major_regions_short)
-plot_biomass_phase(major_models[[model_ind]],
-                   major_catch %>% filter(region == major_regions_full[model_ind]),
-                   new_surv_yr = new_surv_yr,
-                   point_size = 3,
-                   line_size = 2,
-                   zeroline_size = 1,
-                   zeroline_type = "dashed",
-                   lrp_ribbon_alpha = 0.35,
-                   refpt_show = "0.3sbo",
-                   annot = "f",
-                   show_x_axis = TRUE,
-                   translate = french)
+```{r biomass-phase-hg, fig.show = "hide", fig.asp = 1, fig.cap = "asawwwxwxw"}
+plot_f <- plot_biomass_phase(major_models[[model_ind]],
+                             ct,
+                             new_surv_yr = new_surv_yr,
+                             point_size = 3,
+                             line_size = 0.5,
+                             text_size = 2,
+                             zeroline_size = 0.5,
+                             zeroline_type = "dashed",
+                             lrp_ribbon_alpha = 0.35,
+                             refpt_show = "0.3sbo",
+                             line_len = line_len_labels,
+                             annot = "f",
+                             show_x_axis = TRUE,
+                             translate = french)
+```
+
+```{r storyboard-hg, out.width = "6in", out.height = "6in", fig.cap = paste0("Model output for Pacifc Herring in the Haida Gwaii major stock assessment region. Panel (a): model fit to scaled spawn survey data in thousands of tonnes. The spawn survey data (i.e., spawn index) is scaled to abundance via the spawn survey scaling parameter q. Panel (b): posterior estimates of instantaneous natural mortality rate. Panel (c): reconstructed number of age-2 recruits in thousands of millions. Panel (d): posterior estimate of spawning biomass ($SB_t$) for each year t in thousands of tonnes. Circle and vertical line indicate the median and 90\\% credible interval, respectively, of $SB_{2019}$ (pre-fishery). Vertical bars indicate commercial catch, excluding spawn-on-kelp. Panels (b \\& d): lines and shaded areas indicate medians and 90\\% credible intervals, respectively. Panel (e): log recruitment deviations. The red line is the 3-year running mean of the median recruitment deviation. Panels (c \\& e): circles and vertical lines indicate medians and 90\\% credible intervals, respectively. Panel (f): phase plot of spawning biomass production for the dive survey period (", new_surv_yr, " to ", assess_yr,  "; maximum posterior density estimates). Grey shading becomes darker in chronological order; the triangle indicates ", assess_yr - 1, "2. Panels (d \\& f): red lines and shading indicate medians and 90\\% confdence intervals, respectively, for the limit reference point, $0.3SB_0$.")}
+
+cowplot::plot_grid(plot_a,
+                   plot_b,
+                   plot_c,
+                   plot_d,
+                   plot_e,
+                   plot_f,
+                   ncol = 2)
+
 ```
