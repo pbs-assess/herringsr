@@ -2,17 +2,17 @@
 
 # Figures
 
-```{r bc-map, fig.cap = "Boundaries for the Pacifc Herring stock assessment regions (SARs) in BC. The major SARs are Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). The minor SARs are Area 27 (A27) and Area 2 West (A2W). Units: kilometres (km).", out.width = "100%"}
+```{r bc-map, fig.cap = "Boundaries for the Pacific Herring stock assessment regions (SARs) in BC. The major SARs are Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). The minor SARs are Area 27 (A27) and Area 2 West (A2W). Units: kilometres (km).", out.width = "100%"}
 knitr::include_graphics(here::here(ifelse(french, "figures/BC-FR.png", "figures/BC.png")))
 ```
 
-```{r major-catch, fig.cap = "Time series of total landed catch in thousands of tonnes of Pacifc Herring from 1951 to 2020 in the major stock assessment regions. Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fishery; and 'RoeSN' represents the roe seine fishery."}
+```{r major-catch, fig.cap = "Time series of total landed catch in thousands of tonnes of Pacific Herring from 1951 to 2020 in the major stock assessment regions. Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fishery; and 'RoeSN' represents the roe seine fishery."}
 plot_catch(major_catch,
            xlim = c(1951, 2020),
            translate = french)
 ```
 
-```{r major-weight-at-age, fig.cap = paste0("Time series of weight-at-age in kilograms (kg) for age-3 (circles) and 5-year running mean weight-at-age (lines) for Pacifc Herring from ", start_yr, " to ", assess_yr, " in the major stock assessment regions (SARs). Lines show 5-year running means for age-2 to age-10 herring (incrementing higher from the lowest line); the thick black line highlights age-3 herring. Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods: missing values at the beginning of the time series are imputed by extending the frst non-missing value backwards; other missing values are imputed as the mean of the previous 5 years. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-10 class is a 'plus group' which includes fish aged 10 and older. Note that vertical axes are cropped at ", wa_ylim[1], " and ", wa_ylim[2], " kg.")}
+```{r major-weight-at-age, fig.cap = paste0("Time series of weight-at-age in kilograms (kg) for age-3 (circles) and 5-year running mean weight-at-age (lines) for Pacific Herring from ", start_yr, " to ", assess_yr, " in the major stock assessment regions (SARs). Lines show 5-year running means for age-2 to age-10 herring (incrementing higher from the lowest line); the thick black line highlights age-3 herring. Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods: missing values at the beginning of the time series are imputed by extending the frst non-missing value backwards; other missing values are imputed as the mean of the previous 5 years. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-10 class is a 'plus group' which includes fish aged 10 and older. Note that vertical axes are cropped at ", wa_ylim[1], " and ", wa_ylim[2], " kg.")}
 plot_wa(major_wa,
         circle_age = 3,
         xlim = c(start_yr, assess_yr + 2),
@@ -21,7 +21,7 @@ plot_wa(major_wa,
 
 ```
 
-```{r major-proportion-at-age, fig.cap = paste0("Time series of proportion-at-age for Pacifc Herring from ", start_yr, " to ", assess_yr, " in the minor stock assessment regions. The black line is the mean age, and the shaded area is the approximate 90\\% distribution. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-10 class is a 'plus group' which includes fish aged ", age_plus, "  and older.")}
+```{r major-proportion-at-age, fig.cap = paste0("Time series of proportion-at-age for Pacific Herring from ", start_yr, " to ", assess_yr, " in the minor stock assessment regions. The black line is the mean age, and the shaded area is the approximate 90\\% distribution. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-10 class is a 'plus group' which includes fish aged ", age_plus, "  and older.")}
 plot_pa(major_pa,
         age_plus = age_plus,
         conf = ci_level,
@@ -31,7 +31,7 @@ plot_pa(major_pa,
 
 ```
 
-```{r major-survey-index, fig.cap = paste0("Time series of spawn index in thousands of tonnes for Pacifc Herring from ", start_yr, " to ", assess_yr, " in the minor stock assessment regions. The spawn index has two distinct periods defned by the dominant survey method: surface surveys (", start_yr, " to ", new_surv_yr - 1, "), and dive surveys (", new_surv_yr, " to ", assess_yr, "). The dashed vertical line is the boundary between these two periods. The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q.")}
+```{r major-survey-index, fig.cap = paste0("Time series of spawn index in thousands of tonnes for Pacific Herring from ", start_yr, " to ", assess_yr, " in the minor stock assessment regions. The spawn index has two distinct periods defned by the dominant survey method: surface surveys (", start_yr, " to ", new_surv_yr - 1, "), and dive surveys (", new_surv_yr, " to ", assess_yr, "). The dashed vertical line is the boundary between these two periods. The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q.")}
 plot_spawn_ind(major_surv,
                xlim = c(start_yr, assess_yr + 2),
                #ylim = c(0, 15),
@@ -170,7 +170,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 <!-- Haida Gwaii Storyboard -->
-```{r storyboard-hg, out.width = "6in", out.height = "6in", fig.cap = paste0("Model output for Pacifc Herring in the Haida Gwaii major stock assessment region. Panel (a): model fit to scaled spawn survey data in thousands of tonnes. The spawn survey data (i.e., spawn index) is scaled to abundance via the spawn survey scaling parameter q. Panel (b): posterior estimates of instantaneous natural mortality rate. Panel (c): reconstructed number of age-2 recruits in thousands of millions. Panel (d): posterior estimate of spawning biomass ($SB_t$) for each year t in thousands of tonnes. Circle and vertical line indicate the median and 90\\% credible interval, respectively, of $SB_{2019}$ (pre-fishery). Vertical bars indicate commercial catch, excluding spawn-on-kelp. Panels (b \\& d): lines and shaded areas indicate medians and 90\\% credible intervals, respectively. Panel (e): log recruitment deviations. The red line is the 3-year running mean of the median recruitment deviation. Panels (c \\& e): circles and vertical lines indicate medians and 90\\% credible intervals, respectively. Panel (f): phase plot of spawning biomass production for the dive survey period (", new_surv_yr, " to ", assess_yr,  "; maximum posterior density estimates). Grey shading becomes darker in chronological order; the triangle indicates ", assess_yr - 1, "2. Panels (d \\& f): red lines and shading indicate medians and 90\\% confdence intervals, respectively, for the limit reference point, $0.3SB_0$.")}
+```{r storyboard-hg, out.width = "6in", out.height = "6in", fig.cap = paste0("Model output for Pacific Herring in the Haida Gwaii major stock assessment region. Panel (a): model fit to scaled spawn survey data in thousands of tonnes. The spawn survey data (i.e., spawn index) is scaled to abundance via the spawn survey scaling parameter q. Panel (b): posterior estimates of instantaneous natural mortality rate. Panel (c): reconstructed number of age-2 recruits in thousands of millions. Panel (d): posterior estimate of spawning biomass ($SB_t$) for each year t in thousands of tonnes. Circle and vertical line indicate the median and 90\\% credible interval, respectively, of $SB_{2019}$ (pre-fishery). Vertical bars indicate commercial catch, excluding spawn-on-kelp. Panels (b \\& d): lines and shaded areas indicate medians and 90\\% credible intervals, respectively. Panel (e): log recruitment deviations. The red line is the 3-year running mean of the median recruitment deviation. Panels (c \\& e): circles and vertical lines indicate medians and 90\\% credible intervals, respectively. Panel (f): phase plot of spawning biomass production for the dive survey period (", new_surv_yr, " to ", assess_yr,  "; maximum posterior density estimates). Grey shading becomes darker in chronological order; the triangle indicates ", assess_yr - 1, "2. Panels (d \\& f): red lines and shading indicate medians and 90\\% confdence intervals, respectively, for the limit reference point, $0.3SB_0$.")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -314,7 +314,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 <!-- Prince Rupert District Storyboard -->
-```{r storyboard-prd, out.width = "6in", out.height = "6in", fig.cap = "Model output for Pacifc Herring in the Prince Rupert District major stock assessment region. See Figure \\\\@ref(fig:storyboard-hg) for description."}
+```{r storyboard-prd, out.width = "6in", out.height = "6in", fig.cap = "Model output for Pacific Herring in the Prince Rupert District major stock assessment region. See Figure \\\\@ref(fig:storyboard-hg) for description."}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -457,7 +457,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 <!-- Central Coast Storyboard -->
-```{r storyboard-cc, out.width = "6in", out.height = "6in", fig.cap = "Model output for Pacifc Herring in the Central Coast major stock assessment region. See Figure \\\\@ref(fig:storyboard-hg) for description."}
+```{r storyboard-cc, out.width = "6in", out.height = "6in", fig.cap = "Model output for Pacific Herring in the Central Coast major stock assessment region. See Figure \\\\@ref(fig:storyboard-hg) for description."}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -600,7 +600,150 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 <!-- Strait of Georgia Storyboard -->
-```{r storyboard-dog, out.width = "6in", out.height = "6in", fig.cap = "Model output for Pacifc Herring in the Strait of Georgia major stock assessment region. See Figure \\\\@ref(fig:storyboard-hg) for description."}
+```{r storyboard-sog, out.width = "6in", out.height = "6in", fig.cap = "Model output for Pacific Herring in the Strait of Georgia major stock assessment region. See Figure \\\\@ref(fig:storyboard-hg) for description."}
+
+cowplot::plot_grid(plot_a,
+                   plot_b,
+                   plot_c,
+                   plot_d,
+                   plot_e,
+                   plot_f,
+                   ncol = 2,
+                   rel_heights = c(1.0, 1.0, 1.1))
+
+```
+<!-- West Coast Vancouver Island Storyboard -->
+```{r scaled-abundance-wcvi, fig.show = "hide", fig.asp = 1}
+model_ind <- match(en2fr("WCVI", french), major_regions_short)
+sbt_yrs <- as.numeric(colnames(major_models[[model_ind]]$mcmccalcs$sbt.quants ))
+xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
+ct <- major_catch %>% filter(region == major_regions_full[model_ind])
+x_axis_label_newline_length <- 50
+y_axis_label_newline_length <- 50
+y_axis_label_size <- 7
+
+plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                major_models[[model_ind]],
+                                surv_type,
+                                new_surv_yr = new_surv_yr,
+                                point_size = 1,
+                                line_size = 1,
+                                xlim = xlim_all,
+                                show_x_axis = FALSE,
+                                show_y_axis = TRUE,
+                                x_axis_label_size = 7,
+                                x_axis_tick_label_size = 8,
+                                y_axis_label_size = y_axis_label_size,
+                                y_axis_tick_label_size = 8,
+                                x_axis_label_newline_length = x_axis_label_newline_length,
+                                y_axis_label_newline_length = y_axis_label_newline_length,
+                                annot = "a",
+                                show_legend = FALSE,
+                                translate = french)
+```
+<!-- West Coast Vancouver Island Storyboard -->
+```{r natural-mortality-wcvi, fig.show = "hide", fig.asp = 1}
+plot_b <- plot_natural_mortality(major_models[[model_ind]],
+                                 line_size = 1,
+                                 ribbon_alpha = 0.5,
+                                 xlim = xlim_all,
+                                 show_x_axis = FALSE,
+                                 show_y_axis = TRUE,
+                                 x_axis_label_size = 7,
+                                 x_axis_tick_label_size = 8,
+                                 y_axis_label_size = y_axis_label_size,
+                                 y_axis_tick_label_size = 8,
+                                 x_axis_label_newline_length = x_axis_label_newline_length,
+                                 y_axis_label_newline_length = y_axis_label_newline_length,
+                                 annot = "b",
+                                 translate = french)
+```
+<!-- West Coast Vancouver Island Storyboard -->
+```{r recruitment-wcvi, fig.show = "hide", fig.asp = 1}
+plot_c <- plot_recruitment(major_models[[model_ind]],
+                           point_size = 1,
+                           line_size = 1,
+                           xlim = xlim_all,
+                           show_x_axis = FALSE,
+                           show_y_axis = TRUE,
+                           x_axis_label_size = 7,
+                           x_axis_tick_label_size = 8,
+                           y_axis_label_size = y_axis_label_size,
+                           y_axis_tick_label_size = 8,
+                           x_axis_label_newline_length = x_axis_label_newline_length,
+                           y_axis_label_newline_length = y_axis_label_newline_length,
+                           annot = "c",
+                           translate = french)
+```
+<!-- West Coast Vancouver Island Storyboard -->
+```{r biomass-catch-wcvi, fig.show = "hide", fig.asp = 1}
+plot_d <- plot_biomass_catch(major_models[[model_ind]],
+                             ct,
+                             point_size = 1,
+                             errorbar_size = 1,
+                             line_size = 1,
+                             ribbon_alpha = 0.5,
+                             lrp_ribbon_alpha = 0.35,
+                             between_bars = 0.5,
+                             refpt_show = "0.3sbo",
+                             xlim = xlim_all,
+                             show_x_axis = FALSE,
+                             show_y_axis = TRUE,
+                             x_axis_label_size = 7,
+                             x_axis_tick_label_size = 8,
+                             y_axis_label_size = y_axis_label_size,
+                             y_axis_tick_label_size = 8,
+                             x_axis_label_newline_length = x_axis_label_newline_length,
+                             y_axis_label_newline_length = y_axis_label_newline_length,
+                             annot = "d",
+                             translate = french)
+```
+<!-- West Coast Vancouver Island Storyboard -->
+```{r recruitment-devs-wcvi, fig.show = "hide", fig.asp = 1}
+plot_e <- plot_recruitment_devs(major_models[[model_ind]],
+                                run_mean_yrs = 3,
+                                point_size = 1,
+                                line_size = 0.5,
+                                errorbar_size = 0.5,
+                                zeroline_size = 0.5,
+                                zeroline_type = "dashed",
+                                xlim = xlim_all,
+                                show_x_axis = TRUE,
+                                show_y_axis = TRUE,
+                                x_axis_label_size = 7,
+                                x_axis_tick_label_size = 8,
+                                y_axis_label_size = y_axis_label_size,
+                                y_axis_tick_label_size = 8,
+                                x_axis_label_newline_length = x_axis_label_newline_length,
+                                y_axis_label_newline_length = y_axis_label_newline_length,
+                                annot = "e",
+                                translate = french)
+```
+<!-- West Coast Vancouver Island Storyboard -->
+```{r biomass-phase-wcvi, fig.show = "hide", fig.asp = 1}
+plot_f <- plot_biomass_phase(major_models[[model_ind]],
+                             ct,
+                             new_surv_yr = new_surv_yr,
+                             point_size = 3,
+                             line_size = 0.5,
+                             text_size = 2,
+                             zeroline_size = 0.5,
+                             zeroline_type = "dashed",
+                             lrp_ribbon_alpha = 0.35,
+                             refpt_show = "0.3sbo",
+                             show_x_axis = TRUE,
+                             show_y_axis = TRUE,
+                             x_axis_label_size = 7,
+                             x_axis_tick_label_size = 8,
+                             y_axis_label_size = y_axis_label_size,
+                             y_axis_tick_label_size = 8,
+                             x_axis_label_newline_length = x_axis_label_newline_length,
+                             y_axis_label_newline_length = y_axis_label_newline_length,
+                             annot = "f",
+                             translate = french)
+```
+<!-- West Coast Vancouver Island Storyboard -->
+```{r storyboard-wcvi, out.width = "6in", out.height = "6in", fig.cap = "Model output for Pacific Herring in the West Coast Vancouver Island major stock assessment region. See Figure \\\\@ref(fig:storyboard-hg) for description."}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
