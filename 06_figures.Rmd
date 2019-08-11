@@ -44,7 +44,9 @@ model_ind <- match(en2fr("HG", french), major_regions_short)
 sbt_yrs <- as.numeric(colnames(major_models[[model_ind]]$mcmccalcs$sbt.quants ))
 xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
 ct <- major_catch %>% filter(region == major_regions_full[model_ind])
-line_len_labels <- 20
+x_axis_label_newline_length <- 50
+y_axis_label_newline_length <- 50
+y_axis_label_size <- 7
 
 plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                 major_models[[model_ind]],
@@ -53,9 +55,15 @@ plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_fu
                                 point_size = 1,
                                 line_size = 1,
                                 xlim = xlim_all,
-                                line_len = line_len_labels,
-                                annot = "a",
                                 show_x_axis = FALSE,
+                                show_y_axis = TRUE,
+                                x_axis_label_size = 7,
+                                x_axis_tick_label_size = 8,
+                                y_axis_label_size = y_axis_label_size,
+                                y_axis_tick_label_size = 8,
+                                x_axis_label_newline_length = x_axis_label_newline_length,
+                                y_axis_label_newline_length = y_axis_label_newline_length,
+                                annot = "a",
                                 show_legend = FALSE,
                                 translate = french)
 ```
@@ -65,9 +73,15 @@ plot_b <- plot_natural_mortality(major_models[[model_ind]],
                                  line_size = 1,
                                  ribbon_alpha = 0.5,
                                  xlim = xlim_all,
-                                 line_len = line_len_labels,
-                                 annot = "b",
                                  show_x_axis = FALSE,
+                                 show_y_axis = TRUE,
+                                 x_axis_label_size = 7,
+                                 x_axis_tick_label_size = 8,
+                                 y_axis_label_size = y_axis_label_size,
+                                 y_axis_tick_label_size = 8,
+                                 x_axis_label_newline_length = x_axis_label_newline_length,
+                                 y_axis_label_newline_length = y_axis_label_newline_length,
+                                 annot = "b",
                                  translate = french)
 ```
 
@@ -76,9 +90,15 @@ plot_c <- plot_recruitment(major_models[[model_ind]],
                            point_size = 1,
                            line_size = 1,
                            xlim = xlim_all,
-                           line_len = line_len_labels,
-                           annot = "c",
                            show_x_axis = FALSE,
+                           show_y_axis = TRUE,
+                           x_axis_label_size = 7,
+                           x_axis_tick_label_size = 8,
+                           y_axis_label_size = y_axis_label_size,
+                           y_axis_tick_label_size = 8,
+                           x_axis_label_newline_length = x_axis_label_newline_length,
+                           y_axis_label_newline_length = y_axis_label_newline_length,
+                           annot = "c",
                            translate = french)
 ```
 
@@ -93,9 +113,15 @@ plot_d <- plot_biomass_catch(major_models[[model_ind]],
                              between_bars = 0.5,
                              refpt_show = "0.3sbo",
                              xlim = xlim_all,
-                             line_len = line_len_labels,
-                             annot = "d",
                              show_x_axis = FALSE,
+                             show_y_axis = TRUE,
+                             x_axis_label_size = 7,
+                             x_axis_tick_label_size = 8,
+                             y_axis_label_size = y_axis_label_size,
+                             y_axis_tick_label_size = 8,
+                             x_axis_label_newline_length = x_axis_label_newline_length,
+                             y_axis_label_newline_length = y_axis_label_newline_length,
+                             annot = "d",
                              translate = french)
 ```
 
@@ -108,9 +134,15 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
                                 zeroline_size = 0.5,
                                 zeroline_type = "dashed",
                                 xlim = xlim_all,
-                                line_len = line_len_labels,
-                                annot = "e",
                                 show_x_axis = TRUE,
+                                show_y_axis = TRUE,
+                                x_axis_label_size = 7,
+                                x_axis_tick_label_size = 8,
+                                y_axis_label_size = y_axis_label_size,
+                                y_axis_tick_label_size = 8,
+                                x_axis_label_newline_length = x_axis_label_newline_length,
+                                y_axis_label_newline_length = y_axis_label_newline_length,
+                                annot = "e",
                                 translate = french)
 ```
 
@@ -125,9 +157,15 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              zeroline_type = "dashed",
                              lrp_ribbon_alpha = 0.35,
                              refpt_show = "0.3sbo",
-                             line_len = line_len_labels,
-                             annot = "f",
                              show_x_axis = TRUE,
+                             show_y_axis = TRUE,
+                             x_axis_label_size = 7,
+                             x_axis_tick_label_size = 8,
+                             y_axis_label_size = y_axis_label_size,
+                             y_axis_tick_label_size = 8,
+                             x_axis_label_newline_length = x_axis_label_newline_length,
+                             y_axis_label_newline_length = y_axis_label_newline_length,
+                             annot = "f",
                              translate = french)
 ```
 
@@ -139,6 +177,7 @@ cowplot::plot_grid(plot_a,
                    plot_d,
                    plot_e,
                    plot_f,
-                   ncol = 2)
+                   ncol = 2,
+                   rel_heights = c(1.0, 1.0, 1.1))
 
 ```
