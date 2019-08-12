@@ -755,3 +755,7 @@ cowplot::plot_grid(plot_a,
                    rel_heights = c(1.0, 1.0, 1.1))
 
 ```
+
+```{r harvest-rate, fig.cap = paste0("Time series of effective harvest rate for Pacific Herring from ", start_yr, " to ", assess_yr, " in the major stock assessment regions. Effective harvest rate in year $t$, $U_t$ is calculated as $U_t = C_t/(C_t + SB_t)$ where $C_t$ is catch in year $t$, and $SB_t$ is estimated spawning biomass in year $t$. Black lines indicate medians and shaded ribbons indicate 90\\% confdence intervals for spawning biomass, $SB_t$. Horizontal dashed lines indicate $U_t = 0.2$.")}
+plot_harvest_rate(major_catch, major_models, major_regions_full)
+```
