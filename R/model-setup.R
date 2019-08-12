@@ -4,10 +4,6 @@ library(gfutilities)
 library(gfiscamutils)
 library(rosettafish)
 library(herringutils)
-#library(coda)
-#library(reshape2)
-#library(zoo)
-#library(ggrepel)
 
 ## ------------------------------------------------------------------------------------------------
 ## Directories and names of stocks
