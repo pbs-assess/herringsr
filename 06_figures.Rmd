@@ -6,13 +6,13 @@
 knitr::include_graphics(here::here(ifelse(french, "figures/BC-FR.png", "figures/BC.png")))
 ```
 
-```{r major-catch, fig.cap = "Time series of total landed catch in thousands of tonnes of Pacific Herring from 1951 to 2020 in the major stock assessment regions. Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fishery; and 'RoeSN' represents the roe seine fishery."}
+```{r major-catch, fig.asp = 1, out.width = "6in", out.height = "6in", fig.cap = "Time series of total landed catch in thousands of tonnes of Pacific Herring from 1951 to 2020 in the major stock assessment regions. Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fishery; and 'RoeSN' represents the roe seine fishery."}
 plot_catch(major_catch,
            xlim = c(1951, 2020),
            translate = french)
 ```
 
-```{r major-weight-at-age, fig.cap = paste0("Time series of weight-at-age in kilograms (kg) for age-3 (circles) and 5-year running mean weight-at-age (lines) for Pacific Herring from ", start_yr, " to ", assess_yr, " in the major stock assessment regions (SARs). Lines show 5-year running means for age-2 to age-10 herring (incrementing higher from the lowest line); the thick black line highlights age-3 herring. Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods: missing values at the beginning of the time series are imputed by extending the frst non-missing value backwards; other missing values are imputed as the mean of the previous 5 years. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-10 class is a 'plus group' which includes fish aged 10 and older. Note that vertical axes are cropped at ", wa_ylim[1], " and ", wa_ylim[2], " kg.")}
+```{r major-weight-at-age, fig.asp = 1, out.width = "6in", out.height = "6in", fig.cap = paste0("Time series of weight-at-age in kilograms (kg) for age-3 (circles) and 5-year running mean weight-at-age (lines) for Pacific Herring from ", start_yr, " to ", assess_yr, " in the major stock assessment regions (SARs). Lines show 5-year running means for age-2 to age-10 herring (incrementing higher from the lowest line); the thick black line highlights age-3 herring. Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods: missing values at the beginning of the time series are imputed by extending the frst non-missing value backwards; other missing values are imputed as the mean of the previous 5 years. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-10 class is a 'plus group' which includes fish aged 10 and older. Note that vertical axes are cropped at ", wa_ylim[1], " and ", wa_ylim[2], " kg.")}
 plot_wa(major_wa,
         circle_age = 3,
         xlim = c(start_yr, assess_yr + 2),
@@ -21,7 +21,7 @@ plot_wa(major_wa,
 
 ```
 
-```{r major-proportion-at-age, fig.cap = paste0("Time series of proportion-at-age for Pacific Herring from ", start_yr, " to ", assess_yr, " in the minor stock assessment regions. The black line is the mean age, and the shaded area is the approximate 90\\% distribution. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-10 class is a 'plus group' which includes fish aged ", age_plus, "  and older.")}
+```{r major-proportion-at-age, fig.asp = 1, out.width = "6in", out.height = "6in", fig.cap = paste0("Time series of proportion-at-age for Pacific Herring from ", start_yr, " to ", assess_yr, " in the minor stock assessment regions. The black line is the mean age, and the shaded area is the approximate 90\\% distribution. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-10 class is a 'plus group' which includes fish aged ", age_plus, "  and older.")}
 plot_pa(major_pa,
         age_plus = age_plus,
         conf = ci_level,
@@ -31,7 +31,7 @@ plot_pa(major_pa,
 
 ```
 
-```{r major-survey-index, fig.cap = paste0("Time series of spawn index in thousands of tonnes for Pacific Herring from ", start_yr, " to ", assess_yr, " in the minor stock assessment regions. The spawn index has two distinct periods defned by the dominant survey method: surface surveys (", start_yr, " to ", new_surv_yr - 1, "), and dive surveys (", new_surv_yr, " to ", assess_yr, "). The dashed vertical line is the boundary between these two periods. The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q.")}
+```{r major-survey-index, fig.asp = 1, out.width = "6in", out.height = "6in", fig.cap = paste0("Time series of spawn index in thousands of tonnes for Pacific Herring from ", start_yr, " to ", assess_yr, " in the minor stock assessment regions. The spawn index has two distinct periods defned by the dominant survey method: surface surveys (", start_yr, " to ", new_surv_yr - 1, "), and dive surveys (", new_surv_yr, " to ", assess_yr, "). The dashed vertical line is the boundary between these two periods. The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q.")}
 plot_spawn_ind(major_surv,
                xlim = c(start_yr, assess_yr + 2),
                #ylim = c(0, 15),
@@ -756,6 +756,6 @@ cowplot::plot_grid(plot_a,
 
 ```
 
-```{r harvest-rate, fig.cap = paste0("Time series of effective harvest rate for Pacific Herring from ", start_yr, " to ", assess_yr, " in the major stock assessment regions. Effective harvest rate in year $t$, $U_t$ is calculated as $U_t = C_t/(C_t + SB_t)$ where $C_t$ is catch in year $t$, and $SB_t$ is estimated spawning biomass in year $t$. Black lines indicate medians and shaded ribbons indicate 90\\% confdence intervals for spawning biomass, $SB_t$. Horizontal dashed lines indicate $U_t = 0.2$.")}
+```{r harvest-rate, fig.asp = 1, out.width = "6in", out.height = "6in", fig.cap = paste0("Time series of effective harvest rate for Pacific Herring from ", start_yr, " to ", assess_yr, " in the major stock assessment regions. Effective harvest rate in year $t$, $U_t$ is calculated as $U_t = C_t/(C_t + SB_t)$ where $C_t$ is catch in year $t$, and $SB_t$ is estimated spawning biomass in year $t$. Black lines indicate medians and shaded ribbons indicate 90\\% confdence intervals for spawning biomass, $SB_t$. Horizontal dashed lines indicate $U_t = 0.2$.")}
 plot_harvest_rate(major_catch, major_models, major_regions_full)
 ```
