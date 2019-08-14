@@ -757,7 +757,13 @@ cowplot::plot_grid(plot_a,
 ```
 
 ```{r harvest-rate, fig.asp = 1, out.width = "6in", out.height = "6in", fig.cap = paste0("Time series of effective harvest rate for Pacific Herring from ", start_yr, " to ", assess_yr, " in the major stock assessment regions. Effective harvest rate in year $t$, $U_t$ is calculated as $U_t = C_t/(C_t + SB_t)$ where $C_t$ is catch in year $t$, and $SB_t$ is estimated spawning biomass in year $t$. Black lines indicate medians and shaded ribbons indicate 90\\% confdence intervals for spawning biomass, $SB_t$. Horizontal dashed lines indicate $U_t = 0.2$.")}
-plot_harvest_rate(major_catch, major_models, major_regions_full)
+plot_harvest_rate(major_catch,
+                  major_models,
+                  major_regions_full,
+                  line_size = 1,
+                  ribbon_alpha = 0.35,
+                  ylim = c(0, 1),
+                  translate = french)
 ```
 
 ```{r proj-biomass-density, fig.asp = 1, out.width = "6in", out.height = "6in", fig.cap = paste0("Projected spawning biomass assuming no fishing in ", assess_yr + 1, " $SB_", assess_yr + 1, "$ in thousands of tonnes for Pacific Herring in the major stock assessment regions. Vertical black lines indicate medians (solid) and 90\\% confdence intervals (dashed) for $SB_", assess_yr + 1, "$. Vertical red lines indicate medians, and shaded red rectangles indicate 90\\% confdence intervals for the limit reference point, $0.3SB_0$, where $SB_0$ is estimated unfshed biomass.")}
