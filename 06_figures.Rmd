@@ -314,7 +314,8 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 <!-- Prince Rupert District Storyboard -->
-```{r storyboard-prd, out.width = "6in", out.height = "6in", fig.cap = "Model output for Pacific Herring in the Prince Rupert District major stock assessment region. See Figure \\\\@ref(fig:storyboard-hg) for description."}
+(ref:storyboard-prd) Model output for Pacific Herring in the Prince Rupert District major stock assessment region. See Figure \@ref(fig:storyboard-hg) for description.
+```{r storyboard-prd, out.width = "6in", out.height = "6in", fig.cap = "(ref:storyboard-prd)"}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -457,7 +458,8 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 <!-- Central Coast Storyboard -->
-```{r storyboard-cc, out.width = "6in", out.height = "6in", fig.cap = "Model output for Pacific Herring in the Central Coast major stock assessment region. See Figure \\\\@ref(fig:storyboard-hg) for description."}
+(ref:storyboard-cc) Model output for Pacific Herring in the Central Coast major stock assessment region. See Figure \@ref(fig:storyboard-hg) for description.
+```{r storyboard-cc, out.width = "6in", out.height = "6in", fig.cap = "(ref:storyboard-cc)"}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -600,7 +602,8 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 <!-- Strait of Georgia Storyboard -->
-```{r storyboard-sog, out.width = "6in", out.height = "6in", fig.cap = "Model output for Pacific Herring in the Strait of Georgia major stock assessment region. See Figure \\\\@ref(fig:storyboard-hg) for description."}
+(ref:storyboard-sog) Model output for Pacific Herring in the Strait of Georgia major stock assessment region. See Figure \@ref(fig:storyboard-hg) for description.
+```{r storyboard-sog, out.width = "6in", out.height = "6in", fig.cap = "(ref:storyboard-sog)"}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -743,7 +746,8 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 <!-- West Coast Vancouver Island Storyboard -->
-```{r storyboard-wcvi, out.width = "6in", out.height = "6in", fig.cap = "Model output for Pacific Herring in the West Coast Vancouver Island major stock assessment region. See Figure \\\\@ref(fig:storyboard-hg) for description."}
+(ref:storyboard-wcvi) Model output for Pacific Herring in the West Coast Vancouver Island major stock assessment region. See Figure \@ref(fig:storyboard-hg) for description.
+```{r storyboard-wcvi, out.width = "6in", out.height = "6in", fig.cap = "(ref:storyboard-wcvi)"}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
