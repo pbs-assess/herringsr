@@ -133,6 +133,30 @@ end_yr <- 2016
 last_data_yr <- 2016
 this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
 
+# -----------------------------------------------------------------------------
+# Haida Gwaii-dependent values
+model_ind <- match(en2fr("HG", french), major_regions_short)
+sbt <- major_models[[model_ind]]$mcmccalcs$sbt.quants
+sbt_yrs <- as.numeric(colnames(sbt))
+## Final year spawning biomass - vector length 4 - 1 = lower, 2 = median, 3 = upper, 4 = mpd
+hg_final_yr_sbt <- sbt[,sbt_yrs == assess_yr] * 1000
+hg_refs <- major_models[[model_ind]]$mcmccalcs$r.quants
+hg_sbo <- hg_refs[rownames(hg_refs) == "sbo",][2:4] * 1000
+## Probability that final year biomass is less than 0.3B0 - vector length 3 - 1 = lower, 2 = median, 3 = upper
+hg_prob_less_03sbo <- hg_refs[rownames(hg_refs) == paste0("psb", assess_yr, "/0.3sbo"),][2:4]
+
+# -----------------------------------------------------------------------------
+# Prince Rupert District-dependent values
+
+# -----------------------------------------------------------------------------
+# Central Coast-dependent values
+
+# -----------------------------------------------------------------------------
+# Strait of Georgia District-dependent values
+
+# -----------------------------------------------------------------------------
+# West Coast Vancouver Island-dependent values
+
 # Age to highlight in figure
 ageShow <- 3
 
