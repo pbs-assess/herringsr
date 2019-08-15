@@ -116,6 +116,8 @@ minor_pa <- get_pa(minor_models,
 major_surv <- get_surv_ind(major_models,
                            major_regions_full,
                            surv_type)
+surv_yr_rng <- range(major_surv$year)
+
 minor_surv <- get_surv_ind(minor_models,
                            minor_regions_full,
                            surv_type)

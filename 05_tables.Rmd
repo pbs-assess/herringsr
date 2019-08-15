@@ -17,8 +17,8 @@ total_landed_catch_table(major_catch_short,
                          french)
 ```
 
-```{r annual-spawn-on-kelp}
-cap <- "Total spawn-on-kelp harvest in pounds of Pacifc Herring in the major stock assessment areas. Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: 'WP' indicates that data are withheld due to privacy concerns."
+```{r annual-sok-catch}
+cap <- "Total spawn-on-kelp harvest in pounds of Pacific Herring in the major stock assessment areas. Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: 'WP' indicates that data are withheld due to privacy concerns."
 
 sok_harvest_table(sok,
                   by_vec = major_regions_short,
@@ -28,31 +28,31 @@ sok_harvest_table(sok,
 ```
 
 ```{r spawn-index-hg}
-cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Section within Statistical Area 02 for Pacifc Herring in the Haida Gwaii major stock assessment region. The spawn index is the annual total for the earliest year indicated in the 'Year(s)' column. Proportions indicate the proportion by year, or mean proportion over years, where year(s) are specifed in the ‘Year(s)’ column. The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q."
+cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Section within Statistical Area 02 for Pacific Herring in the Haida Gwaii major stock assessment region. The spawn index is the annual total for the earliest year indicated in the 'Year(s)' column. Proportions indicate the proportion by year, or mean proportion over years, where year(s) are specifed in the ‘Year(s)’ column. The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q."
 
 spawn_index_by_area_table(ps[[en2fr("HG", french)]], cap = cap, french)
 ```
 
 ```{r spawn-index-prd}
-cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacifc Herring in the Central Coast major stock assessment region. See Table \\\\@ref(tab:spawn-index-hg) for description."
+cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacific Herring in the Prince Rupert District major stock assessment region. See Table \\\\@ref(tab:spawn-index-hg) for description."
 
 spawn_index_by_area_table(ps[[en2fr("PRD", french)]], cap = cap, french)
 ```
 
 ```{r spawn-index-cc}
-cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacifc Herring in the Central Coast major stock assessment region. See Table \\\\@ref(tab:spawn-index-hg) for description."
+cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacific Herring in the Central Coast major stock assessment region. See Table \\\\@ref(tab:spawn-index-hg) for description."
 
 spawn_index_by_area_table(ps[[en2fr("CC", french)]], cap = cap, french)
 ```
 
 ```{r spawn-index-sog}
-cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Group for Pacifc Herring in the Strait of Georgia major stock assessment region. Legend: '14\\&17' is Statistical Areas 14 and 17 (excluding Section 173); 'ESoG' is eastern Strait of Georgia; 'Lazo' is above Cape Lazo; and 'SDodd' is South of Dodd Narrows. See Table \\\\@ref(tab:spawn-index-hg) for description."
+cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Group for Pacific Herring in the Strait of Georgia major stock assessment region. Legend: '14\\&17' is Statistical Areas 14 and 17 (excluding Section 173); 'ESoG' is eastern Strait of Georgia; 'Lazo' is above Cape Lazo; and 'SDodd' is South of Dodd Narrows. See Table \\\\@ref(tab:spawn-index-hg) for description."
 
 spawn_index_by_area_table(ps[[en2fr("SoG", french)]], cap = cap, french)
 ```
 
 ```{r spawn-index-wcvi}
-cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacifc Herring in the West Coast of Vancouver Island major stock assessment region. See Table \\\\@ref(tab:spawn-index-hg) for description."
+cap <- "Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacific Herring in the West Coast of Vancouver Island major stock assessment region. See Table \\\\@ref(tab:spawn-index-hg) for description."
 
 spawn_index_by_area_table(ps[[en2fr("WCVI", french)]], cap = cap, french)
 ```
