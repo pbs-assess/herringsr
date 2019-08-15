@@ -89,3 +89,20 @@ e. Time series of (log) deviations from the estimated Beverton-Holt recruitment 
 
 f. Phase plot of spawning biomass production for the dive survey period (MPD estimates), with reference line at model estimates of $0.3SB_0$
 
+## Reference points
+
+A biological limit reference point (LRP) is defned for the major Pacific Herring SARs at $0.3SB_0$ [@kronlund2017]. Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG [dfo2018]. Candidate USRs are:
+
+1. $0.4SB_0$,
+
+2. $0.6SB_0$,
+
+3. average spawning biomass from `r start_yr` to `r assess_yr`, $SB_{ave}$, and
+
+4. average spawning biomass during a productive period [@cleary2018], $SB_{ave-prod}$.
+
+Simulation results showed similar properties between USRs $0.6SB_0$ and $SB_{ave}$ both within and among SARs, while the USR based on the average biomass in a productive period, $SB_{ave-prod}$, was found to be most variable among SARs. The simulation-evaluations did not select a single USR, however a USR of $0.6SB_0$ is included in this stock status update because this candidate is suffciently above the LRP (2*LRP) and it is a repeatable calculation across all SARs. Stock status relative to the assessment model estimates $0.3SB_0$ (LRP) and $0.6SB_0$ (USR) are presented for each stock in Tables \@ref(tab:ref-points-hg) through \@ref(tab:ref-points-wcvi).
+
+The LRP and the USR relate stock status to the DFO PA Framework [@dfo09] and in this assessment the same calculations are applied for each SAR. These reference points differ from operational control points (OCPs) which are the biomass levels where management action is taken (i.e., the infection points of the harvest control rule; HCR). OCPs and HCRs differ among SARs, and are described below.
+
+
