@@ -9,7 +9,7 @@ Relative to last year's assessment, the only change made to input data was updat
 
 For the purposes of stock assessment, catch data are summarized by gear type and fishing category as described in Table \@ref(tab:data-input) and presented in Figure \@ref(fig:major-catch).
 
-As per previous years, catch input to the stock assessment model does not include mortality from the commercial SOK fshery, nor any recreational or food, social, and ceremonial (FSC) fisheries. The FSC and recreational catches are considered minor relative to commercial harvest. The commercial SOK fshery is licensed based on pounds of validated SOK product (i.e., eggs adhered to kelp), not tonnes of fsh used or spawned. Currently there is no basis for validating mortality imposed on the population by this fshery, however methods for estimating SOK mortality are being developed.
+As per previous years, catch input to the stock assessment model does not include mortality from the commercial SOK fishery, nor any recreational or food, social, and ceremonial (FSC) fisheries. The FSC and recreational catches are considered minor relative to commercial harvest. The commercial SOK fishery is licensed based on pounds of validated SOK product (i.e., eggs adhered to kelp), not tonnes of fish used or spawned. Currently there is no basis for validating mortality imposed on the population by this fishery, however methods for estimating SOK mortality are being developed.
 
 Combined commercial removals from 2010 to 2018 from the roe, food and bait, and special use fisheries are presented for the major stocks in Table \@ref(tab:annual-catch). The proportion of coast-wide catch that comes from the SoG was 22\\% in 1990, and has increased to greater than 95\\% in `r assess_yr`. Total SOK harvest is presented for the major SARs in Table \@ref(tab:annual-sok-catch).
 
@@ -25,7 +25,67 @@ The surface (`r surv_yr_rng[1]` to `r new_surv_yr - 1`) and dive (`r new_surv_yr
 
 ## Spatial spawn distribution
 
-Tables \@ref(tab:spawn-index-hg)-\@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) and proportions over years for the major SARs. We summarise HG, PRD, CC, and WCVI by Statistical Area, and SoG by Group, where choice of spatial grouping refects spawning behaviour and biology for each SAR based on the survey data and working group discussions with local First Nations. Sections and Groups are not intended to represent sub-stock structure or ‘known’ stocklets.
+Tables \@ref(tab:spawn-index-hg)-\ through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) and proportions over years for the major SARs. We summarise HG, PRD, CC, and WCVI by Statistical Area, and SoG by Group, where choice of spatial grouping refects spawning behaviour and biology for each SAR based on the survey data and working group discussions with local First Nations. Sections and Groups are not intended to represent sub-stock structure or ‘known’ stocklets.
 
-Tables \@ref(tab:spawn-index-hg)-\@ref(tab:spawn-index-wcvi) also present annual proportions of survey spawn index expressed as biomass by Statistical Area or Group for the last fve years, and average proportions by Statistical Area or Group for 1 to 5 years. To facilitate comparisons, these tables also include spawn index by year.
+Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) also present annual proportions of survey spawn index expressed as biomass by Statistical Area or Group for the last fve years, and average proportions by Statistical Area or Group for 1 to 5 years. To facilitate comparisons, these tables also include spawn index by year.
+
+## First Nations observations
+
+First Nations observations are provided by First Nations representatives to describe their perspective in their respective local areas.
+
+### Hadia Gwaii
+
+The `r assess_yr` herring spawn survey on Haida Gwaii was conducted from April 7 to 21 within Area 2 East. Haida traditional harvest of spawn on kelp observed in the major stock area was low.
+
+### Prince Rupert District
+
+This year in the Prince Rupert District, Lax Kw’alaams had several fishermen out on the water. One of the members was on the water for a full eight days. He and his crew observed lots of herring, at least 10,000 fish, swimming in the region for several days. After four to five days of observation, they disappeared. It should be noted that there were whales feeding on these fish over the observation period. It is possible that these fish felt there was too much predation and they moved to deeper water to spawn or they were eaten by the whales. Some spawning was observed, but it was not as much as expected based on the herring observed.
+
+Lax Kw’alaams gill net fishermen reported that the use of nets with a smaller mesh size yielded better catches. The fish obtained were smaller than normal. Most of the gill net fishermen did not gather enough fish to satisfy FSC needs. For the SOK fishery in the Prince Rupert District, there was very little spawn obtained and with insuffcient amounts needed to satisfy the FSC needs of the community. Many of the ponds that were established (four) were destroyed by sea lions preying on captive fish.
+
+Lax Kw’alaams Fisheries Technicians spent four days during the harvest monitoring and recording herring. They found no schools of fish on any of the days they were out. Their correspondence with harvesters on the water confrmed the absence of herring.
+
+Similar observations were reported by members of the Metlakatla First Nation. Metlakatla members were unsuccessful again in `r assess_yr` in achieving their Section 35(1) needs for herring spawn-on-kelp or -on-branches. The last catch reports were submitted from community members during the early 2000s, and this information is refected in the catch reporting to the AFS Manager at that time. Although effort was made in `r assess_yr`, with assistance from DFO staff, to obtain SOK from the fishery, it was not successful due to many circumstances, including very low herring biomass. Metlakatla technicians participated in field work with Lax Kw’alaams during one of their patrols, and the lack of fish, spawn, and wildlife indicated to our technician that the stocks are seriously depressed.
+
+### Central Coast
+
+FSC fishermen and SOK fishermen from both the Heiltsuk and Kitasoo/Xai’xais Nations reported very challenging fishing seasons in 2018, resulting in less and overall lower-grade product than in previous years, due to a combination of low tonnage of spawners, high predator pressure, and unusual spawner behaviour.
+
+Heiltsuk harvesters reported generally low spawner volume and a high incidence of spot spawning, exacerbated by seals and sea lions, which frequently disturbed spawning aggregations. The main spawn lasted only two days, which is shorter than usual. Although what appeared to be a strong spawning event occurred in Spiller Channel, spawning was too brief and/or deep to obtain any product. In general, harvesters found it more diffcult than usual to predict the erratic spawner behaviour. Some harvesters would get only one or two layers on their kelp, not enough for merchantable product, while others reported that it took much longer than usual to cover the kelp with a suffcient number of layers (a week instead of a few days).
+
+Kitasoo harvesters also observed that the tonnage of fish available had noticeably dropped from previous years. Sea lions continue to be a major problem for fishing, especially in the SOK fishery. Higgins Pass had very small tonnage in the area prior to spawning. Overall these observations signal a reduction in biomass in `r assess_yr`. Spawn timing was similar to previous years, though it has been trending earlier over the past 8 to 10 years (18 days earlier than the 2010/2011 season). The fish held deeper than normal, and spawned very intensely over a shorter period than normal.
+
+### Strait of Georgia
+
+Hul’q’umi’num Nations report that little to no spawn activity occurred south of Dodd Narrows in `r assess_yr`. Additionally, there was limited predator activity observed, and a number of
+species/predators seemed to have moved from the area (predators were less numerous than previous years). FSC roe catch was gathered within the traditional fshing territory but outside of
+the immediate core territory. There was also an issue with cholera that required an extensive community outreach collaboration with the health department of Hul’q’umi’num, taking time that
+would have otherwise been spent continuing to look for spawn in the area.
+
+### West Coast Vancouver Island
+
+There were several observations from Nuu-chah-nulth harvesters and Fisheries Technicians regarding WCVI herring in `r assess_yr`. Very early spawn was observed in Hesquiaht Harbour, and on
+the west side of Barkley Sound (January). A January spawn in Hesquiaht Harbour is a common event, but not in Barkley. There were small spawning events in February, primarily in Area 24.
+The main spawning events in Areas 23 to 25 were in mid to late March. Due to the distinct timing and relatively small spawn, the early Hesquiaht and Barkley spawns were not assessed by divers or included in the WCVI assessment. Marine vegetation from the early spawn collected by Hesquiaht residents corresponded to one to two layers of eggs.
+
+For the main WCVI herring spawning, Nuu-chah-nulth harvesters set whole trees and lines of tree branches to harvest herring spawn-on-bough (SOB). Trees and boughs were set in both
+usual herring spawning locations and in active spawning locations in Barkley Sound (Area 23), Clayoquot Sound (Area 24), Nootka Sound, Esperanza Inlet, Nuchatlitz (Area 25), and Kyuquot
+Sound (Area 26, which is outside of DFO assessment area for WCVI herring). Herring SOB harvests were mixed. In both Areas 23 and 24 some harvesters succeeded with one or two trees
+acquiring four to six layers, whereas some trees had only one to two layers (a minimum of four to six layers of eggs are necessary to provide enough eggs to peel off branches for harvesting). Harvests in Areas 23 and 24 were well below community food needs. In Area 25 both SOB and SOK harvest occurred in the northern and southern areas. Although signifcantly less than observed in the mid to late 1990’s, the SOK and SOB harvests in 2018 were the largest in over 10 years with many trees having over eight layers.
+
+## Stock status update
+
+Analyses of stock trend information for AM2 are presented following methods of @cleary2018 for the Pacifc Herring major stocks. Perceptions of stock status based on outputs from the SCA model (AM2) are summarized for each stock in a six-panel figure (e.g., Figure \@ref(fig:storyboard-hg)). The six panels (a–f) include:
+
+a. Time series of maximum posterior density (MPD) estimates of the spawn survey data in thousands of tonnes. The spawn survey data (i.e., spawn index) is scaled to abundance via the spawn survey scaling parameter $q$. The spawn index has two distinct periods defined by the dominant survey method: surface surveys (`r surv_yr_rng[1]` to `r new_surv_yr - 1`), and dive surveys (`r new_surv_yr` to `r surv_yr_rng[2]`). Two q parameters are implemented in the estimation procedure: $q_1$ with an uninformative prior and $q_2$ with an informative prior approximating 1.0.
+
+b. Time series of natural mortality ($M$) estimates
+
+c. Time series reconstruction of number of age-2 recruits
+
+d. Time series of total catch and estimated spawning biomass with reference line at model estimates of $0.3SB_0$
+
+e. Time series of (log) deviations from the estimated Beverton-Holt recruitment function overlaid with a 3-year trailing moving average smoother
+
+f. Phase plot of spawning biomass production for the dive survey period (MPD estimates), with reference line at model estimates of $0.3SB_0$
 
