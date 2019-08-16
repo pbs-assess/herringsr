@@ -124,15 +124,14 @@ minor_surv <- get_surv_ind(minor_models,
 
 # Input catch for table 1
 inp_catch <- read_csv(here::here("data/input-data.csv"))
-assess_yr <- as.numeric(substr(Sys.Date(), 1, 4))
+
+assess_yr <- 2018 #as.numeric(substr(Sys.Date(), 1, 4))
 last_assess_yr <- assess_yr - 1
-forecast_yr <- assess_yr + 1
 start_yr <- 1951
 start_yr_age_comps <- 1951
 end_yr <- 2016
 last_data_yr <- 2016
 this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
-
 
 # -----------------------------------------------------------------------------
 get_vars <- function(region){
@@ -144,46 +143,59 @@ get_vars <- function(region){
   refs <- major_models[[model_ind]]$mcmccalcs$r.quants
   sbo <- refs[rownames(refs) == "sbo",][2:4] * 1000
   ## Probability that final year biomass is less than 0.3B0 - vector length 3 - 1 = lower, 2 = median, 3 = upper
-  prob_less_03sbo <- refs[rownames(refs) == paste0("psb", assess_yr, "/0.3sbo"),][2:4]
+  prob_less_03sbo <- refs[rownames(refs) == paste0("psb", assess_yr, "/0.3sbo"),][2]
+  proj <- major_models[[model_ind]]$mcmccalcs$proj.quants
+  ## Projected biomass for next year - vector length 3 - 1 = lower, 2 = median, 3 = upper
+  proj_sbt_yr1 <- proj[, paste0("B", assess_yr + 1)] * 1000
+  ## Probability that next year (projected) biomass is less than 0.3B0 - vector length 3 - 1 = lower, 2 = median, 3 = upper
+  prob_proj_less_03sbo <- refs[rownames(refs) == paste0("psb", assess_yr + 1, "/0.3sbo"),][2]
 
   list(final_yr_sbt = final_yr_sbt,
        sbo = sbo,
-       prob_less_03sbo = prob_less_03sbo)
+       prob_less_03sbo = prob_less_03sbo,
+       proj_sbt = proj_sbt,
+       prob_proj_less_03sbo = prob_proj_less_03sbo)
 }
 # -----------------------------------------------------------------------------
 # Haida Gwaii-dependent values
 hg_vars <- get_vars("HG")
-hg_final_yr_sbt <- hg_vars[[1]]
-hg_sbo <- hg_vars[[2]]
-hg_prob_less_03sbo <- hg_vars[[3]]
-
+hg_final_yr_sbt <- hg_vars[["final_yr_sbt"]]
+hg_sbo <- hg_vars[["sbo"]]
+hg_prob_less_03sbo <- hg_vars[["prob_less_03sbo"]]
+hg_proj_sbt <- hg_vars[["proj_sbt"]]
+hg_prob_proj_less_03sbo <- hg_vars[["prob_proj_less_03sbo"]]
 # -----------------------------------------------------------------------------
 # Prince Rupert District-dependent values
 prd_vars <- get_vars("PRD")
-prd_final_yr_sbt <- prd_vars[[1]]
-prd_sbo <- prd_vars[[2]]
-prd_prob_less_03sbo <- prd_vars[[3]]
-
+prd_final_yr_sbt <- prd_vars[["final_yr_sbt"]]
+prd_sbo <- prd_vars[["sbo"]]
+prd_prob_less_03sbo <- prd_vars[["prob_less_03sbo"]]
+prd_proj_sbt <- prd_vars[["proj_sbt"]]
+prd_prob_proj_less_03sbo <- prd_vars[["prob_proj_less_03sbo"]]
 # -----------------------------------------------------------------------------
 # Central Coast-dependent values
 cc_vars <- get_vars("CC")
-cc_final_yr_sbt <- cc_vars[[1]]
-cc_sbo <- cc_vars[[2]]
-cc_prob_less_03sbo <- cc_vars[[3]]
-
+cc_final_yr_sbt <- cc_vars[["final_yr_sbt"]]
+cc_sbo <- cc_vars[["sbo"]]
+cc_prob_less_03sbo <- cc_vars[["prob_less_03sbo"]]
+cc_proj_sbt <- cc_vars[["proj_sbt"]]
+cc_prob_proj_less_03sbo <- cc_vars[["prob_proj_less_03sbo"]]
 # -----------------------------------------------------------------------------
 # Strait of Georgia District-dependent values
 sog_vars <- get_vars("SoG")
-sog_final_yr_sbt <- sog_vars[[1]]
-sog_sbo <- sog_vars[[2]]
-sog_prob_less_03sbo <- sog_vars[[3]]
-
+sog_final_yr_sbt <- sog_vars[["final_yr_sbt"]]
+sog_sbo <- sog_vars[["sbo"]]
+sog_prob_less_03sbo <- sog_vars[["prob_less_03sbo"]]
+sog_proj_sbt <- sog_vars[["proj_sbt"]]
+sog_prob_proj_less_03sbo <- sog_vars[["prob_proj_less_03sbo"]]
 # -----------------------------------------------------------------------------
 # West Coast Vancouver Island-dependent values
 wcvi_vars <- get_vars("WCVI")
-wcvi_final_yr_sbt <- wcvi_vars[[1]]
-wcvi_sbo <- wcvi_vars[[2]]
-wcvi_prob_less_03sbo <- wcvi_vars[[3]]
+wcvi_final_yr_sbt <- wcvi_vars[["final_yr_sbt"]]
+wcvi_sbo <- wcvi_vars[["sbo"]]
+wcvi_prob_less_03sbo <- wcvi_vars[["prob_less_03sbo"]]
+wcvi_proj_sbt <- wcvi_vars[["proj_sbt"]]
+wcvi_prob_proj_less_03sbo <- wcvi_vars[["prob_proj_less_03sbo"]]
 
 # Age to highlight in figure
 ageShow <- 3
