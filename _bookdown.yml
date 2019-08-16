@@ -8,6 +8,6 @@ rmd_files: ["index.Rmd",
             "06_figures.Rmd",
             "07_contributors.Rmd",
             "08_approval.Rmd",
-            "09_bibliography.Rmd"]
-            #"10_appendix.Rmd"]
+            "09_bibliography.Rmd",
+            "10_appendix.Rmd"]
 delete_merged_file: true

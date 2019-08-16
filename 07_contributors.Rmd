@@ -1,13 +1,15 @@
 # Contributors
 
-Mandatory section and title.
-
 ```{r, echo=FALSE, include=FALSE}
 contributors <- tibble::tribble(
-  ~Name,          ~Affiliation,
-  "Jane Smith",   "DFO Science, Pacific Region",
-  "John Smith",   "DFO Science, Maritimes Region",
-)
+  ~Name,                               ~Affiliation,
+  "Jaclyn Cleary",                     "DFO Science, Pacific Region",
+  "Matthew Grinnell",                  "DFO Science, Pacific Region",
+  "Allen Kronlund",                    "DFO Science, National Capital Region",
+  "Chris Grandin",                     "DFO Science, Pacific Region",
+  "Herring Technical Working Group",   "Various (contributions to First Nations observations)",
+  "Roger Kanno",                       "DFO Fisheries Management, Pacifc Region (reviewer)",
+  "Lesley MacDougall",                 "DFO Centre for Science Advice, Pacifc Region (editor)")
 ```
 
 ```{r, results='asis'}
