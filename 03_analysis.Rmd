@@ -194,3 +194,11 @@ The following modification from @cleary2018 is made:
 
 The fixed cutoff values are removed from the `r assess_yr` decision table because they were calculated outside of the current assessment model, last updated in 1996, and therefore ignore 22 years of stock and fishery monitoring data, as well as substantial changes to the structural form of the assessment model.
 
+
+### Central Coast
+
+Due to the absence of CC-specifc simulation testing of HCRs, options for CC SAR follow the same steps as PRD. Harvest recommendations for CC stock are presented as a probabilistic decision table (Table \@ref(tab:decision-table-cc)) following the description and caveats presented above for PRD. The decision table for CC includes a catch stream from 0 t to 3,000 t, showing the probability of `r paste0("$SB_{", assess_yr + 1, "}$")` falling below the LRP to increase with increasing catches.
+
+In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(cc_proj_sbt[2])` t (posterior median), increasing from `r f(cc_final_yr_sbt[2])` t in `r assess_yr` (Table \@ref(tab:ref-points-cc)). The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3SB_0$ with `r f(cc_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing.
+
+
