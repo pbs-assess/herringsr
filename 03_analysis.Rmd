@@ -201,4 +201,19 @@ Due to the absence of CC-specifc simulation testing of HCRs, options for CC SAR 
 
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(cc_proj_sbt[2])` t (posterior median), increasing from `r f(cc_final_yr_sbt[2])` t in `r assess_yr` (Table \@ref(tab:ref-points-cc)). The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3SB_0$ with `r f(cc_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing.
 
+### Strait of Georgia
+
+Closed-loop feedback simulations for the SoG evaluated alternative MPs that differed only in the confguration of the HCR and application of a fixed catch cap [@dfo2018]. Results showed that all tested MPs could maintain the spawning biomass above the LRP with 91\% probability or higher, including the historical HCR which applied a constant escapement of 21,200 t based on the 1996 stock assessment and 20% harvest rate. A 30,000 t catch cap was evaluated for the SoG; this cap was not often triggered, and thus did not limit the commercial fishery very often in simulations. Management procedures that included a 30,000 t catch cap were able to maintain spawning biomass above a biomass level of $0.6SB_0$ with 60\% probability or higher. The purpose of the catch cap is to provide a model-free means of mitigating the effects of large positive assessment errors that lead to a higher realized harvest rate than intended (i.e., harvest rates that exceed 20\%). Simulations showed that such assessment errors can occur when fitting the SCA model to SoG stock assessment data. Meeting the conservation objective of maintaining a high probability of exceeding the LRP does not mean the SoG is immune to stock decline. Future simulation-evaluation may suggest adjustment of the catch cap is necessary to acceptably meet additional stock and fishery objectives.
+
+Management procedures evaluated included segmented HCRs of the form indicated in the DFO PA Framework [@dfo2009] with a lower operational control point (OCP) at the assessment model estimate of $0.3SB_0$ and an upper control point at the assessment model estimate of $0.6SB_0$. Discontinuing the use of fixed cutoffs and adopting a HCR with two OCPs is recommended for these reasons:
+
+1. The fixed cutoff values were calculated outside of the current assessment model, last updated in 1996, and therefore ignore 22 years of stock and fishery monitoring data, as well as substantial changes to the structural form of the assessment model
+
+2. Use of separate lower and upper OCPs allows for altering the slope of the ramp portion ofthe HCR to better meet stock and fishery objectives by avoiding fishery closures and encouraging stock growth as more is learned about stock dynamics and the effects of fishing.
+
+Harvest recommendations for SoG stock are provided by application of a management procedure that utilizes stock assessment estimates of forecast spawning biomass and operational control points at $0.3SB_0$ and $0.6SB_0$ with a 20\% target harvest rate, and a maximum catch cap of 30,000 t [@dfo2018, Figure 4]. The `r assess_yr + 1` recommended catch calculated by applying the MP is XXX t.
+
+
+
+
 
