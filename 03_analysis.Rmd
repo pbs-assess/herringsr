@@ -166,3 +166,31 @@ As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0 t
 
 [^1]: In response to recommendations in the Commissioner of the Environment and Sustainable Development (CESD) October 2016 Report 2 - Sustaining Canada’s Major Fish Stocks - Fisheries and Oceans Canada, the Department will develop rebuilding plans for major fish stocks that are in the precautionary approach critical zone, including Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.
 
+### Prince Rupert District
+
+Harvest options for 2019 are presented as probabilistic decision tables and include total allowable catch (TAC) options relative to 10\% and 20\% target harvest rates, as well as projected spawning biomass relative to the assessment model estimate of the LRP (for each TAC level) (Table \@ref(tab:decision-table-prd)). Effective harvest rates for the past 10-years average ~12\% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fuctuate at or near $0.3SB_0$ (Figure \@ref(fig:storyboard-prd)d). Furthermore, adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity: states that were entered rapidly and were preceded by high biomass levels [@kronlund2017].
+
+In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to increase from `r f(prd_final_yr_sbt[2])` t in `r assess_yr` to an estimated `r f(prd_proj_sbt[2])` t (posterior medians). The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the LRP of $0.3SB_0$ with `r f(prd_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing (Table \@ref(tab:ref-points-prd)).
+
+For PRD, the `r assess_yr + 1` decision table includes the following columns, with TAC ranging from 0 to 3,000 t (Table \@ref(tab:decision-table-prd)):
+
+1. `r assess_yr + 1` TAC (t)
+
+2. `r paste0("$P(SB_{", assess_yr + 1, "} < 0.3SB_0)$")`
+
+3. `r paste0("$Med(SB_{", assess_yr + 1, "} / 0.3SB_0)$")`
+
+4. `r paste0("$P(SB_{", assess_yr + 1, "} < 0.6SB_0)$")`
+
+5. `r paste0("$P(U_{", assess_yr + 1, "} > 20\\%)$")`
+
+6. `r paste0("$P(U_{", assess_yr + 1, "} > 10\\%)$")`
+
+7. `r paste0("$Med(U_{", assess_yr + 1, "})$")`
+
+The following modification from @cleary2018 is made:
+
+1. Removal of `r paste0("$SB_{", assess_yr + 1, "}$")` relative to fxed 1996 cutoffs.
+
+The fixed cutoff values are removed from the `r assess_yr` decision table because they were calculated outside of the current assessment model, last updated in 1996, and therefore ignore 22 years of stock and fishery monitoring data, as well as substantial changes to the structural form of the assessment model.
+
