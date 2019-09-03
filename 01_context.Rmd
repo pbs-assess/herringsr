@@ -7,9 +7,9 @@ Also new to the 2017 assessment was the estimation of stock productivity and cur
 
 In 2016 DFO committed to renewing the current management framework to address a range of challenges facing Pacific Herring stocks and fisheries in BC. Renewal of the management framework includes conducting a Management Strategy Evaluation (MSE) process to evaluate the performance of candidate management procedures against a range of hypotheses about uncertain stock and fishery dynamics. As part of the MSE process, a CSAS regional peer review occurred July 25 and 26, 2018, where performance of Pacific Herring management procedures were assessed against conservation objectives for Strait of Georgia and West Coast of Vancouver Island stock assessment regions [@dfo2018].
 
-Estimated stock trajectories, current status of stocks for `r assess_yr`, and harvest advice recommendations for `r forecast_yr` reflect methods of @cleary2018 and, where applicable, recommendations from the aforementioned July 2018 regional peer review. These recommendations are described in the section <!-- \nameref{secProjHarv}''.-->
+Estimated stock trajectories, current status of stocks for `r assess_yr`, and harvest advice recommendations for `r assess_yr + 1` reflect methods of @cleary2018 and, where applicable, recommendations from the aforementioned July 2018 regional peer review. These recommendations are described in the section <!-- \nameref{secProjHarv}''.-->
 
-Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested that DFO Pacific Science Branch assess the status of British Columbia (BC) Pacific Herring stocks in `r assess_yr` and recommend harvest advice for `r forecast_yr` to inform the development of the `r assess_yr`/`r forecast_yr` Integrated Fisheries Management Plan.
+Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested that DFO Pacific Science Branch assess the status of British Columbia (BC) Pacific Herring stocks in `r assess_yr` and recommend harvest advice for `r assess_yr + 1` to inform the development of the `r assess_yr`/`r assess_yr + 1` Integrated Fisheries Management Plan.
 
 <!--  Mandatory last paragraph in this section -->
 This Science Response Report results from the Science Response Process of September 2018 on the Status of Pacific Herring (*Clupea pallasii*) in 2018 and forecast for 2019.

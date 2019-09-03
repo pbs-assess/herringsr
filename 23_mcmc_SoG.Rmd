@@ -1,0 +1,71 @@
+# MCMC Diagnostics for the Strait of Georgia iSCAM model
+
+These tables and figures will not be included in the final Science Response.
+
+```{r sog-parameter-est-table, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
+              "95\\textsuperscript{th} percentile) and MPD estimates of key ",
+              "parameters from the Strait of Georgia AM2 model. Subscripts on $q$ ",
+              "(catchability) indicate: 1 = Surface survey, 2 = Dive survey. ",
+              "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
+model_ind <- match(en2fr("SoG", french), major_regions_short)
+make.parameters.est.table(major_models[[model_ind]],
+                          xcaption = cap,
+                          xlabel = "tab:sog-parameter-est-table",
+                          font.size = 11,
+                          space.size = 12,
+                          placement = "H")
+```
+
+```{r sog-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
+              "95\\textsuperscript{th} percentile) and MPD estimates of ",
+              "spawning biomass (1000 t) and relative spawning ",
+              "biomass for the Strait of Georgia AM2 model.")
+make.biomass.depletion.table(major_models[[model_ind]],
+                             syr = 2007,
+                             xcaption = cap,
+                             xlabel = "sog-spawning-biomass-depletion-table",
+                             font.size = 11,
+                             space.size = 12,
+                             placement = "H")
+                             ##tabular.environment = "longtable")
+```
+
+```{r sog-recruitment-table, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
+              "95\\textsuperscript{th} percentile) and MPD estimates of ",
+              "recruitment (millions) for the Strait of Georgia AM2 model.")
+make.value.table(major_models[[model_ind]],
+                 type = 2,
+                 syr = 2007,
+                 xcaption = cap,
+                 xlabel = "tab:sog-recruitment-table",
+                 font.size = 11,
+                 space.size = 12,
+                 placement = "H")
+                 ##tabular.environment = "longtable")
+```
+
+```{r sog-priors-posts-figure, fig.cap = "Prior probability distributions (lines) with comparative posterior histograms (bars) used in the Strait of Georgia AM2 model. Parameters $q_k$ represent gears where: $k=1$ is the surface survey and $k=2$ is the dive survey. The dotted red lines are the MPD estimates."}
+make.priors.posts.plot(major_models[[model_ind]],
+                       priors.only = FALSE)
+```
+
+```{r sog-traces-figure, fig.cap = paste0("Trace plots for MCMC output of estimated parameters for the Strait of Georgia AM2 model. The MCMC run had chain length ", mcmc_length, " with a sample taken at every ", f(mcmc_samp_freq), "th iteration. The catchability parameter $q_1$ represents the surface survey and $q_2$ the dive survey. Parameters $\\hat{a}_k$ (selectivity-at-age-50\\%), and $\\hat{\\gamma}_k$ (selectivity standard deviation-at-50\\%) represent gears as follows: $k=1$: Other fisheries, $k=2$: Roe seine, $k=3$: Gillnet roe.")}
+make.traces.plot(major_models[[model_ind]],
+                 axis.lab.freq = 200)
+```
+
+(ref:sog-autocor-figure) Autocorrelation plots for MCMC output of estimated parameters for the Strait of Georgia AM2 model. See Figure \@ref(fig:sog-traces-figure) for parameter descriptions.
+```{r sog-autocor-figure, fig.cap = "(ref:sog-autocor-figure)"}
+make.autocor.plot(major_models[[model_ind]])
+```
+
+(ref:sog-pairs-figure) Pairs plots for MCMC output of estimated parameters in for the Strait of Georgia AM2 model. See Figure \@ref(fig:sog-traces-figure) for parameter descriptions.
+```{r sog-pairs-figure, fig.cap = "(ref:sog-pairs-figure)"}
+make.pairs.plot(major_models[[model_ind]])
+```
+
+
+

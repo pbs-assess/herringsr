@@ -1,0 +1,7 @@
+# Beverton-Holt
+
+```{r beverton-holt, fig.cap = "HELLO"}
+}
+model_ind <- match(en2fr("HG", french), major_regions_short)
+bh(major_models[[model_ind]])
+```

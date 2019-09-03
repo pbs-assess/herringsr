@@ -133,18 +133,33 @@ end_yr <- 2016
 last_data_yr <- 2016
 this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
 
-# -----------------------------------------------------------------------------
-get_vars <- function(region){
-  model_ind <- match(en2fr(region, french), major_regions_short)
-  sbt <- major_models[[model_ind]]$mcmccalcs$sbt.quants
+#' Get model output values for a given region
+#'
+#' @param region the short form for the region as defined in the `major_regions_short` vector`
+#' @param majors if TRUE, use major models list (`major_models`), if FALSE use minor models list (`minor_models`)
+#' @param french if TRUE, use french
+#'
+#' @return a list of values as required for the report
+#'
+#' @examples
+#' hg_vars <- get_vars("HG")
+get_vars <- function(region, majors = TRUE, french = FALSE){
+  if(majors){
+    model_ind <- match(en2fr(region, french), major_regions_short)
+    models <- major_models
+  }else{
+    model_ind <- match(en2fr(region, french), minor_regions_short)
+    models <- minor_models
+  }
+  sbt <- models[[model_ind]]$mcmccalcs$sbt.quants
   sbt_yrs <- as.numeric(colnames(sbt))
   ## Final year spawning biomass - vector length 4 - 1 = lower, 2 = median, 3 = upper, 4 = mpd
   final_yr_sbt <- sbt[, sbt_yrs == assess_yr] * 1000
-  refs <- major_models[[model_ind]]$mcmccalcs$r.quants
+  refs <- models[[model_ind]]$mcmccalcs$r.quants
   sbo <- refs[rownames(refs) == "sbo",][2:4] * 1000
   ## Probability that final year biomass is less than 0.3B0 - vector length 3 - 1 = lower, 2 = median, 3 = upper
   prob_less_03sbo <- refs[rownames(refs) == paste0("psb", assess_yr, "/0.3sbo"),][2]
-  proj <- major_models[[model_ind]]$mcmccalcs$proj.quants
+  proj <- models[[model_ind]]$mcmccalcs$proj.quants
   ## Projected biomass for next year - vector length 3 - 1 = lower, 2 = median, 3 = upper
   proj_sbt <- proj[, paste0("B", assess_yr + 1)] * 1000
   ## Probability that next year (projected) biomass is less than 0.3B0 - vector length 3 - 1 = lower, 2 = median, 3 = upper
@@ -158,7 +173,7 @@ get_vars <- function(region){
 }
 # -----------------------------------------------------------------------------
 # Haida Gwaii-dependent values
-hg_vars <- get_vars("HG")
+hg_vars <- get_vars("HG", french = french)
 hg_final_yr_sbt <- hg_vars[["final_yr_sbt"]]
 hg_sbo <- hg_vars[["sbo"]]
 hg_prob_less_03sbo <- hg_vars[["prob_less_03sbo"]]
@@ -166,7 +181,7 @@ hg_proj_sbt <- hg_vars[["proj_sbt"]]
 hg_prob_proj_less_03sbo <- hg_vars[["prob_proj_less_03sbo"]]
 # -----------------------------------------------------------------------------
 # Prince Rupert District-dependent values
-prd_vars <- get_vars("PRD")
+prd_vars <- get_vars("PRD", french = french)
 prd_final_yr_sbt <- prd_vars[["final_yr_sbt"]]
 prd_sbo <- prd_vars[["sbo"]]
 prd_prob_less_03sbo <- prd_vars[["prob_less_03sbo"]]
@@ -174,7 +189,7 @@ prd_proj_sbt <- prd_vars[["proj_sbt"]]
 prd_prob_proj_less_03sbo <- prd_vars[["prob_proj_less_03sbo"]]
 # -----------------------------------------------------------------------------
 # Central Coast-dependent values
-cc_vars <- get_vars("CC")
+cc_vars <- get_vars("CC", french = french)
 cc_final_yr_sbt <- cc_vars[["final_yr_sbt"]]
 cc_sbo <- cc_vars[["sbo"]]
 cc_prob_less_03sbo <- cc_vars[["prob_less_03sbo"]]
@@ -182,7 +197,7 @@ cc_proj_sbt <- cc_vars[["proj_sbt"]]
 cc_prob_proj_less_03sbo <- cc_vars[["prob_proj_less_03sbo"]]
 # -----------------------------------------------------------------------------
 # Strait of Georgia District-dependent values
-sog_vars <- get_vars("SoG")
+sog_vars <- get_vars("SoG", french = french)
 sog_final_yr_sbt <- sog_vars[["final_yr_sbt"]]
 sog_sbo <- sog_vars[["sbo"]]
 sog_prob_less_03sbo <- sog_vars[["prob_less_03sbo"]]
@@ -190,70 +205,27 @@ sog_proj_sbt <- sog_vars[["proj_sbt"]]
 sog_prob_proj_less_03sbo <- sog_vars[["prob_proj_less_03sbo"]]
 # -----------------------------------------------------------------------------
 # West Coast Vancouver Island-dependent values
-wcvi_vars <- get_vars("WCVI")
+wcvi_vars <- get_vars("WCVI", french = french)
 wcvi_final_yr_sbt <- wcvi_vars[["final_yr_sbt"]]
 wcvi_sbo <- wcvi_vars[["sbo"]]
 wcvi_prob_less_03sbo <- wcvi_vars[["prob_less_03sbo"]]
 wcvi_proj_sbt <- wcvi_vars[["proj_sbt"]]
 wcvi_prob_proj_less_03sbo <- wcvi_vars[["prob_proj_less_03sbo"]]
 
-# Age to highlight in figure
-ageShow <- 3
+
+## Number of mcmc samples, min and max median biomass
+mcmc_num_samples <- nrow(major_models[[1]]$mcmc$params)
+mcmc_burnin <- mcmc_num_samples - nrow(major_models[[1]]$mcmccalcs$p.dat)
+mcmc_length <- "5 million"
+mcmc_samp_freq <- 1000
+mcmc_ci <- "90\\%"
 
 # Age class of plus group for proportion-at-age
 age_plus <- 10
 
-# Age of recruitment
-ageRec <- 2
-
-# Number of years to calculate running/rolling mean
-nRoll <- 5
-
-# Number of years to calculate running/rolling mean of recruitment deviations
-nRollDev <- 3
-
 # Spawn survey method changed from surface (1951--1987) to dive (1988--present)
 new_surv_yr <- 1988
 
-# Intended harvest rate
-intendU <- 0.2
-
-# First year of intended harvest rate
-intendUYrs <- 1983
-
-# Figure width
-#figWidth <- 6.5
-
-# Type of smoothing line
-smLine <- "loess"
-
 # Limits for the weight-at-age plot
 wa_ylim <- c(0.05, 0.15)
-
-# 1996 fixed cutoff values (t*10^3)
-#fixedCutoffs <- list( HG=10.7, PRD=12.1, CC=17.6, SoG=21.2, WCVI=18.8 )
-
-# High-productivity years
-hiProdYrs <- list(HG = 1994:1997,
-                  PRD = 1994:2002,
-                  CC = 1990:1999,
-                  SoG = 1988:2016,
-                  WCVI = 1988:1996 )
-
-# Proportion of B_0 for LRP
-propB0 <- 0.3
-
-# Multiplyer of LRP for USR
-multLRP <- 2
-
-# Years for calculating mean catch (i.e., recent)
-recentCatchYrs <- 35
-
-# Years for calculating mean catch (i.e., early)
-earlyCatchYrs <- 1951:1965
-
-# First year to show for minor stock area timseries plots
-firstYrMinor <- 1978
-
-
 
