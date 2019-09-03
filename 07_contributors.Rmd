@@ -8,8 +8,8 @@ contributors <- tibble::tribble(
   "Allen Kronlund",                    "DFO Science, National Capital Region",
   "Chris Grandin",                     "DFO Science, Pacific Region",
   "Herring Technical Working Group",   "Various (contributions to First Nations observations)",
-  "Roger Kanno",                       "DFO Fisheries Management, Pacifc Region (reviewer)",
-  "Lesley MacDougall",                 "DFO Centre for Science Advice, Pacifc Region (editor)")
+  "Roger Kanno",                       "DFO Fisheries Management, Pacific Region (reviewer)",
+  "Lesley MacDougall",                 "DFO Centre for Science Advice, Pacific Region (editor)")
 ```
 
 ```{r, results='asis'}
