@@ -1,7 +1,7 @@
 ---
 title: "Status of Pacific Herring (*Clupea Pallasii*) in 2018 and Forecast for 2019"
 title_short: "Pacific Herring SR"
-title_other: "Titre Ici (*Nom Latin*)"
+title_other: "ÉTAT DU HARENG DU PACIFIQUE (CLUPEA PALLASII) EN 2018 ET PRÉVISIONS POUR 2019"
 year: 2019
 month: August
 report_number: XXX
@@ -22,9 +22,9 @@ address: |
 phone: (250) 756-7208
 email: csap@dfo-mpo.gc.ca
 output:
- csasdown::sr_pdf
+ csasdown::sr_pdf:
+   #french: true
   # csasdown::sr_word:
-    # french: false
 type:
   sr
 # ------------
