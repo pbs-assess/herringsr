@@ -42,6 +42,7 @@ lof: true
 ---
 
 ```{r setup, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}
+library(knitr)
 if(is_latex_output()){
   knitr_figs_dir <- "knitr-figs-pdf/"
   knitr_cache_dir <- "knitr-cache-pdf/"
@@ -78,7 +79,7 @@ options(xtable.comment = FALSE)
 ```
 
 ```{r load-libraries, cache=FALSE}
-french = TRUE
+french = FALSE
 rebuild_rdata_model_files <- FALSE
 models_dir <- here::here("models")
 
