@@ -41,7 +41,7 @@ plot_wa(major_wa,
 plot_pa(major_pa,
         age_plus = age_plus,
         conf = ci_level,
-        xlim = c(start_yr, assess_yr + 2),
+        xlim = c(major_start_yr, assess_yr + 2),
         ylim = c(1, age_plus),
         translate = french)
 

@@ -89,7 +89,7 @@ A biological limit reference point (LRP) is defned for the major Pacific Herring
 
 2. $0.6SB_0$,
 
-3. average spawning biomass from `r start_yr` to `r assess_yr`, $SB_{ave}$, and
+3. average spawning biomass from `r major_start_yr` to `r assess_yr`, $SB_{ave}$, and
 
 4. average spawning biomass during a productive period [@cleary2018], $SB_{ave-prod}$.
 

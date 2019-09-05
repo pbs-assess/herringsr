@@ -1,3 +1,16 @@
+assess_yr <- 2019 #as.numeric(substr(Sys.Date(), 1, 4))
+last_assess_yr <- assess_yr - 1
+this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
+
+# Age class of plus group for proportion-at-age
+age_plus <- 10
+
+# Spawn survey method changed from surface (1951--1987) to dive (1988--present)
+new_surv_yr <- 1988
+
+# Limits for the weight-at-age plot
+wa_ylim <- c(0.05, 0.15)
+
 regions <- tribble(
   ~SAR, ~Region,                      ~RegionName, ~Major,
   1,       "HG",                    "Haida Gwaii",   TRUE,
@@ -125,14 +138,6 @@ minor_surv <- get_surv_ind(minor_models,
 # Input catch for table 1
 inp_catch <- read_csv(here::here("data/input-data.csv"))
 
-assess_yr <- 2018 #as.numeric(substr(Sys.Date(), 1, 4))
-last_assess_yr <- assess_yr - 1
-start_yr <- 1951
-start_yr_age_comps <- 1951
-end_yr <- 2016
-last_data_yr <- 2016
-this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
-
 #' Get model output values for a given region
 #'
 #' @param region the short form for the region as defined in the `major_regions_short` vector`
@@ -220,12 +225,4 @@ mcmc_length <- "5 million"
 mcmc_samp_freq <- 1000
 mcmc_ci <- "90\\%"
 
-# Age class of plus group for proportion-at-age
-age_plus <- 10
-
-# Spawn survey method changed from surface (1951--1987) to dive (1988--present)
-new_surv_yr <- 1988
-
-# Limits for the weight-at-age plot
-wa_ylim <- c(0.05, 0.15)
 
