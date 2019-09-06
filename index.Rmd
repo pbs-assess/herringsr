@@ -79,7 +79,10 @@ options(xtable.comment = FALSE)
 ```
 
 ```{r load-libraries, cache=FALSE}
-french = FALSE
+french <- TRUE
+if(french){
+  options(OutDec =  ",")
+}
 rebuild_rdata_model_files <- FALSE
 models_dir <- here::here("models")
 
