@@ -8,7 +8,7 @@ We conduct formal analyses of stock trend information for the Pacific Herring ma
 
 At present, Pacific Herring fisheries in BC consist of commercial fishing opportunities for food and bait (FB), spawn-on-kelp (SOK) products, and roe herring. There are also opportunities for First Nations food, social, and ceremonial (FSC) fisheries, as well as recreational fishing.
 
-In `r this_season`, the primary Pacific Herring fisheries were seine roe and gillnet roe fisheries, with a combined coast wide catch in `r this_season` of `r minor_final_yr_roe_catch` tonnes (t), and the FB seine fishery with a coast wide catch of `r minor_final_yr_other_catch` t. The roe fishery was operational in SoG and PRD. The spawn-on-kelp (SOK) fishery was operational in PRD and CC, and special use (SU) minor fishery was operational in SoG only.
+In `r this_season`, the primary Pacific Herring fisheries were seine roe and gillnet roe fisheries, with a combined coast wide catch in `r this_season` of `r minor_final_yr_roe_catch` tonnes (t), and the FB seine fishery with a coast wide catch of `r minor_final_yr_other_catch` t. The roe fishery was only operational in SoG. The spawn-on-kelp (SOK) fishery was operational in PRD and CC, and special use (SU) minor fishery was operational in SoG only.
 
 A complete dockside monitoring program exists for all Pacific Herring commercial fisheries and the resulting validated catch data are included in the annual stock assessment process for all fisheries, except SOK. The SOK fishery is licenced based on validated pounds of SOK product (eggs on kelp) however these landings are not easily combined with catches of whole herring and are not currently incorporated in the stock assessment process.
 
