@@ -46,6 +46,7 @@ First Nations observations are provided by First Nations representatives to desc
 
 
 ### West Coast Vancouver Island
+\vspace{12pt}
 
 
 ## Stock status update
@@ -66,7 +67,7 @@ f. Phase plot of spawning biomass production for the dive survey period (MPD est
 
 ## Reference points
 
-A biological limit reference point (LRP) is defned for the major Pacific Herring SARs at $0.3SB_0$ [@kronlund2017]. Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG in 2018 [DFO2018XXADD] and HG, PRD, and CC in 2019 [DFO2019XXADD]. Candidate USRs are:
+A biological limit reference point (LRP) is defned for the major Pacific Herring SARs at $0.3SB_0$ [@kronlund2017]. Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG in 2018 [@dfo2018] and HG, PRD, and CC in 2019 [dfo2019XXADD]. Candidate USRs are:
 
 1. $0.4SB_0$,
 
@@ -127,8 +128,6 @@ Management procedure performance can be investigated using time series of effect
 Harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and application of a harvest control rule that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988). Although the target harvest rate has varied among areas in recent years (e.g., CC and PRD SARs; @dfo2017), the “historical” practice was to apply a target harvest rate of 0.2 when the forecast is estimated to be above a fxed commercial fishery cutoff of $0.25SB_0$ defined in the 1996 stock assessment [@dfo2016].
 Harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and application of a harvest control rule that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988). Although the target harvest rate has varied among areas in recent years (e.g., CC and PRD SARs; @dfo2017), the “historical” practice was to apply a target harvest rate of 0.2 when the forecast is estimated to be above a fxed commercial fishery cutoff of $0.25SB_0$ defined in the 1996 stock assessment [@dfo2016].
 
-Provision of harvest advice was changed to a decision table format in 2012, providing probabilistic advice to managers for consultation and decision-making. Decision tables report the probability of being above (or below) management parameters of interest for a range of catch levels using one-year-ahead projections. In @cleary2018 projected spawning biomass in 2018 relative to the LRP ($0.3SB_0$) was added to decision tables for the five major Pacific Herring stocks. The 2018 decision tables report the probability that spawning biomass in 2019 will be below the LRP ($P(SB_{2019} < 0.3SB_0)$), the probability that spawning biomass in 2019 will be below the USR ($P(SB_{2019} < 0.6SB_0)$), and the probabilities of the harvest rate in 2019 exceeding 20\% or 10\% ($P(U_{2019} > 20\%)$, and $P(U_{2019} > 10\%)$, respectively) for a range of commercial catch levels including 0 tonnes.
-
 Renewal of the Pacific Herring management framework included a commitment to simulation-evaluation of the performance of the historical and alternative management procedures using management strategy evaluation (MSE), and the first cycle of the MSE process was completed for the WCVI and SoG SARs in July 2018 [@dfo2018]. These two areas were selected for evaluation because they exhibit contrasting stock and fishery states that encompass the range of stock conditions observed elsewhere in BC.
 
 Several lessons were learned from the analysis:
@@ -139,11 +138,14 @@ Several lessons were learned from the analysis:
 
 3. Differences in specifcation of Pacific Herring MPs, including the HCR components, are expected a priori among SARs. The reasons relate to differences in objectives deemed important by resource users, differences in historical and current stock and fishery dynamics, and differences in the magnitude and direction of assessment model errors in each area. Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
 
-Harvest advice in `r assess_yr` for the SoG and WCVI SARs is guided by the results and lessons learned from the simulation-evaluation completed in the frst MSE cycle [@dfo2018]. In the absence of area-specifc simulation-evaluation analyses for the CC, HG and PRD SARs, harvest advice for these areas is provided in the form of decision tables following @cleary2018. Details of harvest advice are provided below for each of the major SARs.
+Harvest advice in `r assess_yr` for the SoG and WCVI SARs is guided by the results and lessons learned from the simulation-evaluation completed in the frst MSE cycle [@dfo2018]. A similar simulation-evaluation process occurred in 202 to assess performance of MPs for HG, PRD, and CC [dfo2019NeedToAddXXXX]. 
+
+Details of harvest advice are provided below for each of the major SARs.
 
 ### Haida Gwaii
 
-The HG stock has persisted in a low biomass, low productivity state in since 2000, remaining below the LRP for much of that period and shows little evidence of sustained stock growth despite the absence of commercial fisheries since 2002 (2004 for the SOK fishery). In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(hg_proj_sbt[2])` t. The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3SB_0$ with `r f(hg_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing (Table \@ref(tab:ref-points-hg) and Figure \@ref(fig:proj-biomass-density)).
+The HG stock has persisted in a low biomass, low productivity state in since 2000, with productivity
+increasing slightly in the most recent year. The stock was below the LRP for much of that period and shows little evidence of sustained stock growth despite the absence of commercial fisheries since 2002 (2004 for the SOK fishery). In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(hg_proj_sbt[2])` t. The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3SB_0$ with `r f(hg_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing (Table \@ref(tab:ref-points-hg) and Figure \@ref(fig:proj-biomass-density)).
 
 DFO has committed to developing and implementing a rebuilding plan for Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.[^1] Guidance for the Development of Rebuilding Plans under the Precautionary Approach Framework: Growing Stocks out of the Critical Zone [@dfo2013] states the primary objective of any rebuilding plan is to promote stock growth out of the Critical Zone (i.e., to grow the stock above the status-based LRP) by ensuring removals from all fishing sources are kept to the lowest possible level until the stock has cleared this zone with high probability. Stock rebuilding does not end having met this goal, however, and one of the goals of the rebuilding plan will be to identify candidate threshold biomass levels greater than the LRP that are consistent with a rebuilt state.
 
@@ -153,36 +155,15 @@ As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0 t
 
 ### Prince Rupert District
 
-Harvest options for 2019 are presented as probabilistic decision tables and include total allowable catch (TAC) options relative to 10\% and 20\% target harvest rates, as well as projected spawning biomass relative to the assessment model estimate of the LRP (for each TAC level) (Table \@ref(tab:decision-table-prd)). Effective harvest rates for the past 10-years average ~12\% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fuctuate at or near $0.3SB_0$ (Figure \@ref(fig:storyboard-prd)d). Furthermore, adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity: states that were entered rapidly and were preceded by high biomass levels [@kronlund2017].
+XXXX Simulation Evaluation information
+Effective harvest rates for the past 10-years average ~12\% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fuctuate at or near $0.3SB_0$ (Figure \@ref(fig:storyboard-prd)d). Furthermore, adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity: states that were entered rapidly and were preceded by high biomass levels [@kronlund2017].
 
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to increase from `r f(prd_final_yr_sbt[2])` t in `r assess_yr` to an estimated `r f(prd_proj_sbt[2])` t (posterior medians). The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the LRP of $0.3SB_0$ with `r f(prd_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing (Table \@ref(tab:ref-points-prd)).
-
-For PRD, the `r assess_yr + 1` decision table includes the following columns, with TAC ranging from 0 to 3,000 t (Table \@ref(tab:decision-table-prd)):
-
-1. `r assess_yr + 1` TAC (t)
-
-2. `r paste0("$P(SB_{", assess_yr + 1, "} < 0.3SB_0)$")`
-
-3. `r paste0("$Med(SB_{", assess_yr + 1, "} / 0.3SB_0)$")`
-
-4. `r paste0("$P(SB_{", assess_yr + 1, "} < 0.6SB_0)$")`
-
-5. `r paste0("$P(U_{", assess_yr + 1, "} > 20\\%)$")`
-
-6. `r paste0("$P(U_{", assess_yr + 1, "} > 10\\%)$")`
-
-7. `r paste0("$Med(U_{", assess_yr + 1, "})$")`
-
-The following modification from @cleary2018 is made:
-
-1. Removal of `r paste0("$SB_{", assess_yr + 1, "}$")` relative to fxed 1996 cutoffs.
-
-The fixed cutoff values are removed from the `r assess_yr` decision table because they were calculated outside of the current assessment model, last updated in 1996, and therefore ignore 22 years of stock and fishery monitoring data, as well as substantial changes to the structural form of the assessment model.
 
 
 ### Central Coast
 
-Due to the absence of CC-specifc simulation testing of HCRs, options for CC SAR follow the same steps as PRD. Harvest recommendations for CC stock are presented as a probabilistic decision table (Table \@ref(tab:decision-table-cc)) following the description and caveats presented above for PRD. The decision table for CC includes a catch stream from 0 t to 3,000 t, showing the probability of `r paste0("$SB_{", assess_yr + 1, "}$")` falling below the LRP to increase with increasing catches.
+XXXX Simulation Evaluation information
 
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(cc_proj_sbt[2])` t (posterior median), increasing from `r f(cc_final_yr_sbt[2])` t in `r assess_yr` (Table \@ref(tab:ref-points-cc)). The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3SB_0$ with `r f(cc_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing.
 
@@ -212,7 +193,6 @@ Given the best performing MP for the WCVI did not meet the minimum "high" probab
 
 MPs designed to delay reopening of commercial fisheries following prolonged low biomass states will allow evidence of persistent stock growth to accrue, reducing the potential for assessment errors or underlying population dynamics (i.e., increasing natural mortality) to cause the spawning biomass to lapse back to a low production, low biomass state.
 
-Such MPs could also be evaluated for the HG stock during development of the rebuilding plan.
 
 
 
