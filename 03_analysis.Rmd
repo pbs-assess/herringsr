@@ -11,7 +11,7 @@ For the purposes of stock assessment, catch data are summarized by gear type and
 
 As per previous years, catch input to the stock assessment model does not include mortality from the commercial SOK fishery, nor any recreational or food, social, and ceremonial (FSC) fisheries. The FSC and recreational catches are considered minor relative to commercial harvest. The commercial SOK fishery is licensed based on pounds of validated SOK product (i.e., eggs adhered to kelp), not tonnes of fish used or spawned. Currently there is no basis for validating mortality imposed on the population by this fishery, however methods for estimating SOK mortality are being developed.
 
-Combined commercial removals from 2010 to 2018 from the roe, food and bait, and special use fisheries are presented for the major stocks in Table \@ref(tab:annual-catch). The proportion of coast-wide catch that comes from the SoG was 22\\% in 1990, and has increased to greater than 100\\% in `r assess_yr`. Total SOK harvest is presented for the major SARs in Table \@ref(tab:annual-sok-catch).
+Combined commercial removals from 2010 to 2018 from the roe, food and bait, and special use fisheries are presented for the major stocks in Table \@ref(tab:annual-catch). The proportion of coast-wide catch that comes from the SoG was 22\% in 1990, and has increased to greater than 100\% in `r assess_yr`. Total SOK harvest is presented for the major SARs in Table \@ref(tab:annual-sok-catch).
 
 ## Biological data
 
@@ -121,7 +121,7 @@ Since implementing the current HCR in 1986, the effective harvest rate, $U_t$, i
 Following a commercial fishery closure from 2007 to 2013, the CC stock reopened to commercial fisheries in 2014 and small commercial roe fisheries occurred in 2014, 2015, and 2016. A commercial SOK fishery has operated yearly since 2014, however these removals are not
 included in the estimation of $U_t$.
 
-The model estimates spawning biomass in `r assess_yr`, `r paste0("$SB_{", assess_yr, "}$")`, at `r f(cc_final_yr_sbt[2])` t (posterior median), equal to `r f(cc_final_yr_sbt[2]/cc_sbo[2] * 100, 1)`\% of $SB_0$ (Table \@ref(tab:ref-points-cc)). Spawning biomass in `r assess_yr` is estimated to be less than the LRP of $0.3SB_0$ with a `r f(cc_prob_less_03sbo * 100, 1)`\% probability (Table \@ref(tab:ref-points-cc)).
+The model estimates spawning biomass in `r assess_yr`, `r paste0("$SB_{", assess_yr, "}$")`, at `r f(cc_final_yr_sbt[2])` t (posterior median), equal to `r f(cc_final_yr_sbt[2]/cc_sbo[2] * 100, 1)`\% of $SB_0$ (Table \@ref(tab:ref-points-cc)). Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3SB_0$ with a `r f((1-cc_prob_less_03sbo) * 100, 1)`\% probability (Table \@ref(tab:ref-points-cc)).
 
 ### Strait of Georgia
 
