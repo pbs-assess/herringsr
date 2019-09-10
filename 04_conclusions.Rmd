@@ -1,5 +1,9 @@
 # Conclusions
 
-The `r assess_yr` Science Response includes a formal analyses of stock trend information for the Pacific Herring major SARs using the stock assessment framework reviewed in 2017 [@cleary2018]. Harvest recommendations for `r assess_yr + 1` for PRD and CC include updated probabilistic decision tables relating forecast spawning biomass to the LRP of $0.3SB_0$, and a candidate USR of $0.6SB_0$. Harvest recommendations for SoG and WCVI adopt recommendations from simulation analyses conducted as part of the Management Strategy Evaluation [@dfo2018]. DFO has committed to developing and implementing a rebuilding plan for Pacific Herring in HG by the end of fiscal year 2020/21, thus a commercial closure is recommended for this SAR.
+The `r assess_yr` Science Response includes a formal analyses of stock trend information for the Pacific Herring major SARs using the stock assessment framework reviewed in 2017 [@cleary2018]. 
+
+Harvest recommendations for `r assess_yr + 1` for PRD and CC include.....
+
+Harvest recommendations for SoG and WCVI adopt recommendations from simulation analyses conducted as part of the Management Strategy Evaluation [@dfo2018]. DFO has committed to developing and implementing a rebuilding plan for Pacific Herring in HG by the end of fiscal year 2020/21, thus a commercial closure is recommended for this SAR.
 
 Science advice for the minor SARs is limited to presentation of catch data, biological data, and spawn survey data.
