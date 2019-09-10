@@ -177,7 +177,7 @@ Management procedures evaluated included segmented HCRs of the form indicated in
 
 2. Use of separate lower and upper OCPs allows for altering the slope of the ramp portion ofthe HCR to better meet stock and fishery objectives by avoiding fishery closures and encouraging stock growth as more is learned about stock dynamics and the effects of fishing.
 
-Harvest recommendations for SoG stock are provided by application of a management procedure that utilizes stock assessment estimates of forecast spawning biomass and operational control points at $0.3SB_0$ and $0.6SB_0$ with a 20\% target harvest rate, and a maximum catch cap of 30,000 t [@dfo2018, Figure 4]. The `r assess_yr + 1` recommended catch calculated by applying the MP is XXX t.
+Harvest recommendations for SoG stock are provided by application of a management procedure that utilizes stock assessment estimates of forecast spawning biomass and operational control points at $0.3SB_0$ and $0.6SB_0$ with a 20\% target harvest rate, and a maximum catch cap of 30,000 t [@dfo2018, Figure 4]. The `r assess_yr + 1` recommended catch calculated by applying the MP is 10,799 t.
 
 ### West Coast Vancouver Island
 
@@ -187,7 +187,7 @@ Closed-loop feedback simulations for WCVI evaluated alternative MPs that differe
 
 Of the MPs that were simulation-tested across the three $M$ scenarios, the "best-performing" HCR maintained spawning biomass above the LRP with a 74\% probability. This HCR implements a lower OCP at the assessment model estimate of $0.5SB_0$, a 10\% target harvest rate, and a maximum catch cap of 2,000 t.
 
-Using a HCR with OCPs at $0.5SB_0$ and $0.6SB_0$, a 10\% target harvest rate, and a maximum catch cap of 2,000 t, the `r assess_yr + 1` catch calculation is XXX t.
+Using a HCR with OCPs at $0.5SB_0$ and $0.6SB_0$, a 10\% target harvest rate, and a maximum catch cap of 2,000 t, the `r assess_yr + 1` catch calculation is 0 t.
 
 Given the best performing MP for the WCVI did not meet the minimum "high" probability of 75\%, further simulation-testing of HCRs that include additional measures to ensure persistent stock growth away from the critical zone and towards identifed biomass targets may be required. For example, for a rebuilding stock a "slow-up" MP could be designed to delay fishery openings for an additional predefined number of years (e.g., 3 to 5) when the spawning biomass is estimated to be above the lower OCP in order to provide higher confidence of stock growth. The WCVI survey data and model estimates of spawning biomass (Figure \@ref(fig:storyboard-wcvi)a, d) show the increasing trajectory for WCVI herring as both gradual and erratic. The `r assess_yr` assessment estimates WCVI spawning biomass to be above the LRP from 2015 to 2018 (based on posterior medians), however this perspective based on stock assessment model estimates does not take into consideration positive assessment model errors. Thus simulation-evaluation of a "slow-up" MP is needed to identify the number of closure years needed to support continual stock growth.
 
