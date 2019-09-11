@@ -164,9 +164,9 @@ get_vars <- function(region, majors = TRUE, french = FALSE){
   sbo <- refs[rownames(refs) == "sbo",][2:4] * 1000
   ## Probability that final year biomass is less than 0.3B0 - vector length 3 - 1 = lower, 2 = median, 3 = upper
   prob_less_03sbo <- refs[rownames(refs) == paste0("psb", assess_yr, "/0.3sbo"),][2]
-  proj <- models[[model_ind]]$mcmccalcs$proj.quants
+  proj <- as_tibble(models[[model_ind]]$mcmccalcs$r.quants, rownames = "value")
   ## Projected biomass for next year - vector length 3 - 1 = lower, 2 = median, 3 = upper
-  proj_sbt <- proj[, paste0("B", assess_yr + 1)] * 1000
+  proj_sbt <- as.numeric(proj[proj$value == paste0("sb", assess_yr + 1), -c(1, 2)]) * 1000
   ## Probability that next year (projected) biomass is less than 0.3B0 - vector length 3 - 1 = lower, 2 = median, 3 = upper
   prob_proj_less_03sbo <- refs[rownames(refs) == paste0("psb", assess_yr + 1, "/0.3sbo"),][2]
 
