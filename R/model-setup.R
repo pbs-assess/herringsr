@@ -12,6 +12,8 @@ minor_stock_dir <- list("A27", "A2W")
 major_model_dirs <- lapply(1:length(major_stock_dir),
                            function(x){
                              file.path(models_dir, major_stock_dir[[x]], "AM2")})
+lapply(major_model_dirs, run_retro, yrs = retrospective_yrs, overwrite = run_retrospectives)
+
 minor_model_dirs <- lapply(1:length(minor_stock_dir),
                            function(x){
                              file.path(models_dir, minor_stock_dir[[x]], "AM2")})
