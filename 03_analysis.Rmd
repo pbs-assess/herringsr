@@ -123,7 +123,7 @@ The model estimates spawning biomass in `r assess_yr`, `r paste0("$SB_{", assess
 
 Management procedure performance can be investigated using time series of effective harvest rate. $U_t$ represents the estimated effective harvest rate in each year $t$, calculated as $U_t = C_t/(C_t + SB_t)$ where $C_t$ is catch in year $t$, and $SB_t$ is estimated spawning biomass in year $t$. Times series of $U_t$ relative to target harvest rate of 20\% are presented in Figure \@ref(fig:harvest-rate).
 
-## Harvest recommendatioins for `r assess_yr + 1`
+## Harvest recommendations for `r assess_yr + 1`
 
 Harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and application of a harvest control rule that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988). Although the target harvest rate has varied among areas in recent years (e.g., CC and PRD SARs; @dfo2017), the “historical” practice was to apply a target harvest rate of 0.2 when the forecast is estimated to be above a fxed commercial fishery cutoff of $0.25SB_0$ defined in the 1996 stock assessment [@dfo2016].
 Harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and application of a harvest control rule that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988). Although the target harvest rate has varied among areas in recent years (e.g., CC and PRD SARs; @dfo2017), the “historical” practice was to apply a target harvest rate of 0.2 when the forecast is estimated to be above a fxed commercial fishery cutoff of $0.25SB_0$ defined in the 1996 stock assessment [@dfo2016].
