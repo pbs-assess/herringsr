@@ -39,8 +39,8 @@ surv_type <- tribble(
       5,      "Dive",     2)
 surv_type$gearname <- en2fr(surv_type$gearname, french)
 
-major_models <- load.models(unlist(major_model_dirs))
-minor_models <- load.models(unlist(minor_model_dirs))
+major_models <- load.models(unlist(major_model_dirs), inc_retro = TRUE)
+minor_models <- load.models(unlist(minor_model_dirs), inc_retro = FALSE)
 # Assumes all major region models have the same year range
 major_start_yr <- major_models[[1]]$dat$start.yr
 major_end_yr <- major_models[[1]]$dat$end.yr
