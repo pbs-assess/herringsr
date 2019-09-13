@@ -67,5 +67,9 @@ make.autocor.plot(major_models[[model_ind]])
 make.pairs.plot(major_models[[model_ind]])
 ```
 
+(ref:prd-biomass-retro-figure) MPD biomass with retrospectivces for the Prince Rupert District AM2 model.
+```{r prd-biomass-retro-figure, fig.cap = "(ref:prd-biomass-retro-figure)"}
+biomass.plot.mpd(major_models[[model_ind]])
+```
 
 

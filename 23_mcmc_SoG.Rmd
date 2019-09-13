@@ -67,5 +67,9 @@ make.autocor.plot(major_models[[model_ind]])
 make.pairs.plot(major_models[[model_ind]])
 ```
 
+(ref:sog-biomass-retro-figure) MPD biomass with retrospectivces for the Strait of Georgia AM2 model.
+```{r sog-biomass-retro-figure, fig.cap = "(ref:sog-biomass-retro-figure)"}
+biomass.plot.mpd(major_models[[model_ind]])
+```
 
 

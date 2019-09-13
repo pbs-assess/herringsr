@@ -67,5 +67,9 @@ make.autocor.plot(major_models[[model_ind]])
 make.pairs.plot(major_models[[model_ind]])
 ```
 
+(ref:wcvi-biomass-retro-figure) MPD biomass with retrospectivces for the West Coast Vancouver Island AM2 model.
+```{r wcvi-biomass-retro-figure, fig.cap = "(ref:wcvi-biomass-retro-figure)"}
+biomass.plot.mpd(major_models[[model_ind]])
+```
 
 
