@@ -1,5 +1,5 @@
 ---
-title: "Status of Pacific Herring (*Clupea Pallasii*) in 2018 and Forecast for 2019"
+title: "Status of Pacific Herring (*Clupea Pallasii*) in 2019 and Forecast for 2020"
 title_short: "Pacific Herring status 2019 and forecast 2020"
 title_other: "ÉTAT DU HARENG DU PACIFIQUE (CLUPEA PALLASII) EN 2018 ET PRÉVISIONS POUR 2019"
 year: 2019
