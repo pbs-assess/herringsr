@@ -67,7 +67,7 @@ f. Phase plot of spawning biomass production for the dive survey period (MPD est
 
 ## Reference points
 
-A biological limit reference point (LRP) is defned for the major Pacific Herring SARs at $0.3SB_0$ [@kronlund2017]. Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG in 2018 [@dfo2018] and HG, PRD, and CC in 2019 [dfo2019XXADD]. Candidate USRs are:
+A biological limit reference point (LRP) is defned for the major Pacific Herring SARs at $0.3SB_0$ [@kronlund2017]. Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG in 2018 [@dfo2018] and HG, PRD, and CC in 2019 [@dfo2019]. Candidate USRs are:
 
 1. $0.4SB_0$,
 
@@ -138,7 +138,7 @@ Several lessons were learned from the analysis:
 
 3. Differences in specifcation of Pacific Herring MPs, including the HCR components, are expected a priori among SARs. The reasons relate to differences in objectives deemed important by resource users, differences in historical and current stock and fishery dynamics, and differences in the magnitude and direction of assessment model errors in each area. Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
 
-Harvest advice in `r assess_yr` for the SoG and WCVI SARs is guided by the results and lessons learned from the simulation-evaluation completed in the frst MSE cycle [@dfo2018]. A similar simulation-evaluation process occurred in 2020 to assess performance of MPs for HG, PRD, and CC [dfo2019NeedToAddXXXX]. 
+Harvest advice in `r assess_yr` for the SoG and WCVI SARs is guided by the results and lessons learned from the simulation-evaluation completed in the frst MSE cycle [@dfo2018]. A similar simulation-evaluation process occurred in 2020 to assess performance of MPs for HG, PRD, and CC [@dfo2019]. 
 
 Details of harvest advice are provided below for each of the major SARs.
 
