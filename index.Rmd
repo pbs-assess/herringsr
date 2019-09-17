@@ -76,6 +76,7 @@ opts_chunk$set(collapse = TRUE,
                fig.align = fig_align,
                fig.pos = fig_pos)
 options(xtable.comment = FALSE)
+options(tinytex.verbose = TRUE)
 ```
 
 ```{r load-libraries, cache=FALSE}
