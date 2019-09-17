@@ -17,7 +17,7 @@ input_data_table(inp_catch,
 ```{r annual-catch}
 total_landed_catch_table(major_catch_short,
                          by_vec = major_regions_short,
-                         first_yr = assess_yr - 10,
+                         first_yr = assess_yr - 9,
                          cap = ifelse(french, "(ref:annual-catch-cap-french)", "(ref:annual-catch-cap)"),
                          french)
 ```
@@ -29,7 +29,7 @@ total_landed_catch_table(major_catch_short,
 ```{r annual-sok-catch}
 sok_harvest_table(sok,
                   by_vec = major_regions_short,
-                  first_yr = assess_yr - 10,
+                  first_yr = assess_yr - 9,
                   cap = ifelse(french, "(ref:annual-sok-catch-cap-french)", "(ref:annual-sok-catch-cap)"),
                   french)
 ```
