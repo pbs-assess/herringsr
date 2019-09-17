@@ -2,7 +2,7 @@
 
 ## Input data
 
-Input data to the stock assessment are summarized in \@ref(tab:data-input).
+Input data to the stock assessment are summarized in Table \@ref(tab:data-input).
 Relative to last year's assessment, the only change made to input data was updating the time series to include data from the `r this_season` herring season (July 1 to June 30).
 
 ## Catch data
@@ -11,7 +11,7 @@ For the purposes of stock assessment, catch data are summarized by gear type and
 
 As per previous years, catch input to the stock assessment model does not include mortality from the commercial SOK fishery, nor any recreational or food, social, and ceremonial (FSC) fisheries. The FSC and recreational catches are considered minor relative to commercial harvest. The commercial SOK fishery is licensed based on pounds of validated SOK product (i.e., eggs adhered to kelp), not tonnes of fish used or spawned. Currently there is no basis for validating mortality imposed on the population by this fishery, however methods for estimating SOK mortality are being developed.
 
-Combined commercial removals from 2010 to 2018 from the roe, food and bait, and special use fisheries are presented for the major stocks in Table \@ref(tab:annual-catch). The proportion of coast-wide catch that comes from the SoG was 22\% in 1990, and has increased to greater than 100\% in `r assess_yr`. Total SOK harvest is presented for the major SARs in Table \@ref(tab:annual-sok-catch).
+Combined commercial removals from 2010 to 2019 from the roe, food and bait, and special use fisheries are presented for the major stocks in Table \@ref(tab:annual-catch). The proportion of coast-wide catch that comes from the SoG was 22\% in 1990, and increased to nearly 100\% in `r assess_yr`. Total SOK harvest is presented for the major SARs in Table \@ref(tab:annual-sok-catch).
 
 ## Biological data
 
@@ -25,7 +25,7 @@ The surface (`r surv_yr_rng[1]` to `r new_surv_yr - 1`) and dive (`r new_surv_yr
 
 ## Spatial spawn distribution
 
-Tables \@ref(tab:spawn-index-hg)-\ through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) and proportions over years for the major SARs. We summarise HG, PRD, CC, and WCVI by Statistical Area, and SoG by Group, where choice of spatial grouping refects spawning behaviour and biology for each SAR based on the survey data and working group discussions with local First Nations. Sections and Groups are not intended to represent sub-stock structure or ‘known’ stocklets.
+Tables \@ref(tab:spawn-index-hg)-\ through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) and proportions over years for the major SARs. We summarise HG, PRD, CC, and WCVI by Statistical Area, and SoG by Group, where choice of spatial grouping reflects spawning behaviour and biology for each SAR based on the survey data and working group discussions with local First Nations. Sections and Groups are not intended to represent sub-stock structure or ‘known’ stocklets.
 
 Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) also present annual proportions of survey spawn index expressed as biomass by Statistical Area or Group for the last fve years, and average proportions by Statistical Area or Group for 1 to 5 years. To facilitate comparisons, these tables also include spawn index by year.
 

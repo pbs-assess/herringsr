@@ -10,7 +10,7 @@ In the spring of 2019, the MSE process was initiated for the northern stock area
 
 Estimated stock trajectories, current status of stocks for `r assess_yr`, and harvest advice recommendations for `r assess_yr + 1` reflect methods of @cleary2018 and, where applicable, recommendations from the aforementioned 2018 and 2019 MSE analyses. These recommendations are described in the section “Harvest recommendations for `r assess_yr + 1`”. <!-- \nameref{secProjHarv}''.--> 
 
-Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested that DFO Pacific Science Branch assess the status of British Columbia (BC) Pacific Herring stocks in `r assess_yr` and recommend harvest advice for `r assess_yr + 1` to inform the development of the `r assess_yr`/`r assess_yr + 1` Integrated Fisheries Management Plan.
+Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested that DFO Pacific Science Branch assess the status of British Columbia (BC) Pacific Herring stocks in `r assess_yr` and recommend harvest advice for `r assess_yr + 1` as simulation-tested MPs to inform the development of the `r assess_yr`/`r assess_yr + 1` Integrated Fisheries Management Plan.
 
 <!--  Mandatory last paragraph in this section -->
 This Science Response Report results from the Science Response Process of September `r assess_yr` on the Status of Pacific Herring (*Clupea pallasii*) in `r assess_yr` and forecast for `r assess_yr + 1`.
