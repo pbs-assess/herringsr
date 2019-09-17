@@ -49,6 +49,7 @@ major_yr_range <- major_start_yr:major_end_yr
 minor_start_yr <- minor_models[[1]]$dat$start.yr
 minor_end_yr <- minor_models[[1]]$dat$end.yr
 minor_yr_range <- minor_start_yr:minor_end_yr
+minor_start_yr_plot <- 1978
 
 all_regions_short <- regions$Region
 major_regions_short <- regions$Region[regions$Major]
