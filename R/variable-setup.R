@@ -74,8 +74,23 @@ minor_catch <- get_catch(minor_models,
                          minor_regions_short,
                          gear)
 
+major_final_yr_catch <- major_catch %>%
+  filter(year == assess_yr)
+
+major_final_yr_roe_catch <- major_final_yr_catch %>%
+  filter(gear %in% !!gear$gearname[c(2,3)]) %>%
+  summarize(catch = sum(value) * 1000) %>%
+  pull() %>%
+  f()
+
+major_final_yr_other_catch <- major_final_yr_catch %>%
+  filter(!gear %in% !!gear$gearname[c(2,3)]) %>%
+  summarize(catch = sum(value) * 1000) %>%
+  pull() %>%
+  f()
+
 minor_final_yr_catch <- minor_catch %>%
-  filter(year %in% max(year))
+  filter(year == assess_yr)
 
 minor_final_yr_roe_catch <- minor_final_yr_catch %>%
   filter(gear %in% !!gear$gearname[c(2,3)]) %>%
@@ -84,6 +99,23 @@ minor_final_yr_roe_catch <- minor_final_yr_catch %>%
   f()
 
 minor_final_yr_other_catch <- minor_final_yr_catch %>%
+  filter(!gear %in% !!gear$gearname[c(2,3)]) %>%
+  summarize(catch = sum(value) * 1000) %>%
+  pull() %>%
+  f()
+
+total_catch <- bind_rows( major_catch_short, minor_catch )
+
+total_final_yr_catch <- total_catch %>%
+  filter(year == assess_yr)
+
+total_final_yr_roe_catch <- total_final_yr_catch %>%
+  filter(gear %in% !!gear$gearname[c(2,3)]) %>%
+  summarize(catch = sum(value) * 1000) %>%
+  pull() %>%
+  f()
+
+total_final_yr_other_catch <- total_final_yr_catch %>%
   filter(!gear %in% !!gear$gearname[c(2,3)]) %>%
   summarize(catch = sum(value) * 1000) %>%
   pull() %>%
