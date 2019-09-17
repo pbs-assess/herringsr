@@ -5,6 +5,7 @@ del sr.Rmd
 del sr.tex
 del sr.upa
 del sr.aux
+del sr.pdf
 
 rmdir /S /Q csas-style
 rmdir /S /Q knitr-figs-pdf
