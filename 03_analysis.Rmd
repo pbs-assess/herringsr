@@ -27,7 +27,7 @@ The surface (`r surv_yr_rng[1]` to `r new_surv_yr - 1`) and dive (`r new_surv_yr
 
 Tables \@ref(tab:spawn-index-hg)-\ through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) and proportions over years for the major SARs. We summarise HG, PRD, CC, and WCVI by Statistical Area, and SoG by Group, where choice of spatial grouping reflects spawning behaviour and biology for each SAR based on the survey data and working group discussions with local First Nations. Sections and Groups are not intended to represent sub-stock structure or ‘known’ stocklets.
 
-Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) also present annual proportions of survey spawn index expressed as biomass by Statistical Area or Group for the last fve years, and average proportions by Statistical Area or Group for 1 to 5 years. To facilitate comparisons, these tables also include spawn index by year.
+Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) also present annual proportions of survey spawn index expressed as biomass by Statistical Area or Group for the last fve years, and average proportions by Statistical Area or Group for 6 to 10 years. To facilitate comparisons, these tables also include spawn index by year.
 
 ## First Nations observations
 
