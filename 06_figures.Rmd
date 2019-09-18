@@ -26,9 +26,9 @@ plot_catch(major_catch,
 
 (ref:major-wa-cap-french) `r paste0("Série chronologique du poids selon l’âge en kilogrammes (kg) pour les poissons de 3 ans (cercles) et des moyennes mobiles sur 5 ans du poids selon l’âge (lignes) pour le hareng du Pacifique de ", major_start_yr, " à ", assess_yr, " dans les principales régions d’évaluation des stocks. Les lignes indiquent les moyennes mobiles sur 5 ans pour le hareng âgé de 2 à 10 ans (en ordre croissant à partir de la ligne inférieure); la ligne noire épaisse met en évidence le hareng âgé de 3 ans. Les valeurs manquantes du poids selon l’âge (c.-à-d. les années où il n’y a pas d’échantillons biologiques) sont imputées selon l’une des deux méthodes suivantes : les valeurs manquantes au début de la série chronologique sont imputées en étendant la première valeur non manquante à rebours; les autres valeurs manquantes sont imputées comme la moyenne des cinq années précédentes. Les résumés biologiques ne comprennent que les échantillons prélevés à l’aide de sennes (pêche commerciale et pêche d’essai) en raison de la sélectivité par taille des autres types d’engins tels que les filets maillants. La classe des poissons âgés de ", age_plus, " ans est un groupe « plus » qui comprend les poissons âgés de ", age_plus, " ans et plus. Notez que les axes verticaux sont coupés à ", wa_ylim[1], " et ", wa_ylim[2], " kg.")`
 
-```{r major-wa, fig.asp = 1, out.width = "6in", out.height = "6in", fig.cap = ifelse(french, "(ref:major-wa-cap-french)", "(ref:major-wa-cap)")}
+```{r major-wa, fig.asp = 1, fig.cap = ifelse(french, "(ref:major-wa-cap-french)", "(ref:major-wa-cap)")}
 plot_wa(major_wa,
-        circle_age = 3,
+        circle_age = age_highlight,
         xlim = c(major_start_yr, major_end_yr),
         ylim = wa_ylim,
         n_roll = nRollWA,
@@ -40,7 +40,7 @@ plot_wa(major_wa,
 
 (ref:major-pa-cap-french) `r paste0("Série chronologique de la proportion selon l’âge pour le hareng du Pacifique de ", major_start_yr, " à ", assess_yr, " dans les principales régions d’évaluation des stocks. La ligne noire correspond à l’âge moyen et la zone ombragée à la distribution d’environ 90 %. Les résumés biologiques ne comprennent que les échantillons prélevés à l’aide de sennes (pêche commerciale et pêche d’essai) en raison de la sélectivité par taille des autres types d’engins tels que les filets maillants. La classe des poissons âgés de ", age_plus, " ans est un groupe « plus » qui comprend les poissons âgés de ", age_plus, " ans et plus.")`
 
-```{r major-pa, fig.asp = 1, out.width = "6in", out.height = "6in", fig.cap = ifelse(french, "(ref:major-pa-cap-french)", "(ref:major-pa-cap)")}
+```{r major-pa, fig.asp = 1, fig.cap = ifelse(french, "(ref:major-pa-cap-french)", "(ref:major-pa-cap)")}
 plot_pa(major_pa,
         age_plus = age_plus,
         conf = ci_level,
@@ -54,7 +54,7 @@ plot_pa(major_pa,
 
 (ref:major-spawn-index-cap-french) `r paste0("Série chronologique de l’indice du frai en milliers de tonnes pour le hareng du Pacifique de ", major_start_yr, " à ", assess_yr, " dans les principales régions d’évaluation des stocks. L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante : relevés en surface (de ", major_start_yr, " à ", new_surv_yr - 1, ") et relevés de plongée (de ", new_surv_yr, " à ", assess_yr, "). La ligne verticale en pointillés est la limite entre ces deux périodes. L’indice du frai représente uniquement les données brutes de relevé et n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai, q.")`
 
-```{r major-spawn-index, fig.asp = 1, out.width = "6in", out.height = "6in", fig.cap = ifelse(french, "(ref:major-spawn-index-cap-french)", "(ref:major-spawn-index-cap)")}
+```{r major-spawn-index, fig.asp = 1, fig.cap = ifelse(french, "(ref:major-spawn-index-cap-french)", "(ref:major-spawn-index-cap)")}
 plot_spawn_ind(major_surv,
                xlim = c(major_start_yr, major_end_yr),
                new_surv_yr = new_surv_yr,
@@ -197,7 +197,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 
 (ref:storyboard-hg-cap-french) `r paste0("Production d’un modèle pour le hareng du Pacifique dans la principale région d’évaluation des stocks de Haida Gwaii. Panneau (a) : ajustement du modèle aux données mises à l’échelle de relevé du frai en milliers de tonnes métriques. Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai q. Panneau (b) : estimations a posteriori du taux de mortalité naturelle instantanée. Panneau (c) : nombre reconstitué de recrues d’âge 2 en milliers de millions. Panneau (d) : estimation a posteriori de la biomasse reproductrice ($BSR_t$) pour chaque année t en milliers de tonnes. Le cercle et la ligne verticale indiquent la médiane et l’intervalle de crédibilité de 90\\%, respectivement, de la $BSR_{", assess_yr + 1, "}$ (avant la pêche). Les barres verticales indiquent les prises commerciales, à l’exclusion des prises d’oeufs sur varech. Panneaux (b et d) : les lignes et les zones ombragées indiquent les médianes et les intervalles de crédibilité de 90\\%, respectivement. Panneau (e) : log des écarts du recrutement. La ligne rouge correspond à la moyenne mobile sur trois ans de l’écart médian de recrutement. Panneaux (c et e) : les cercles et les lignes verticales indiquent les médianes et les intervalles de crédibilité de 90\\%, respectivement. Panneau (f) : diagramme de phase de la production de la biomasse reproductrice pour la période du relevé de plongée (de ", new_surv_yr, " à ", assess_yr,  "; estimations de la densité maximale a posteriori). L’ombrage gris est de plus en plus foncé à mesure que l’on avance dans la série chronologique; le triangle indique ", assess_yr - 1, ". Panneaux (d et f) : les lignes rouges et l’ombrage indiquent les médianes et les intervalles de confiance de 90\\%, respectivement, pour le point de référence limite, $0,3BSR_0$.")`
 
-```{r storyboard-hg, out.width = "6in", out.height = "6in", fig.cap = ifelse(french, "(ref:storyboard-hg-cap-french)", "(ref:storyboard-hg-cap)")}
+```{r storyboard-hg, out.height="6.5in", fig.cap = ifelse(french, "(ref:storyboard-hg-cap-french)", "(ref:storyboard-hg-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -346,7 +346,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 
 (ref:storyboard-prd-cap-french) Production d’un modèle pour le hareng du Pacifique dans la principale région d’évaluation des stocks du district de Prince Rupert. Voir la figure \@ref(fig:storyboard-hg) pour une description.
 
-```{r storyboard-prd, out.width = "6in", out.height = "6in", fig.cap = ifelse(french, "(ref:storyboard-prd-cap-french)", "(ref:storyboard-prd-cap)")}
+```{r storyboard-prd, out.height="6.5in", fig.cap = ifelse(french, "(ref:storyboard-prd-cap-french)", "(ref:storyboard-prd-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -494,7 +494,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 
 (ref:storyboard-cc-cap-french) Production d’un modèle pour le hareng du Pacifique dans la principale région d’évaluation des stocks de la côte centrale. Voir la figure \@ref(fig:storyboard-hg) pour une description.
 
-```{r storyboard-cc, out.width = "6in", out.height = "6in", fig.cap = ifelse(french, "(ref:storyboard-cc-cap-french)", "(ref:storyboard-cc-cap)")}
+```{r storyboard-cc, out.height="6.5in", fig.cap = ifelse(french, "(ref:storyboard-cc-cap-french)", "(ref:storyboard-cc-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -642,7 +642,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 
 (ref:storyboard-sog-cap-french) Production d’un modèle pour le hareng du Pacifique dans la principale région d’évaluation des stocks du détroit de Georgie. Voir la figure \@ref(fig:storyboard-hg) pour une description.
 
-```{r storyboard-sog, out.width = "6in", out.height = "6in", fig.cap = ifelse(french, "(ref:storyboard-sog-cap-french)", "(ref:storyboard-sog-cap)")}
+```{r storyboard-sog, out.height="6.5in", fig.cap = ifelse(french, "(ref:storyboard-sog-cap-french)", "(ref:storyboard-sog-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -790,7 +790,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 
 (ref:storyboard-wcvi-cap-french) Production d’un modèle pour le hareng du Pacifique dans la principale région d’évaluation des stocks de la côte ouest de l’île de Vancouver. Voir la figure  \@ref(fig:storyboard-hg) pour une description.
 
-```{r storyboard-wcvi, out.width = "6in", out.height = "6in", fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-french)", "(ref:storyboard-wcvi-cap)")}
+```{r storyboard-wcvi, out.height="6.5in", fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-french)", "(ref:storyboard-wcvi-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
