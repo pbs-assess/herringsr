@@ -14,8 +14,11 @@ new_surv_yr <- 1988
 # Limits for the weight-at-age plot
 wa_ylim <- c(0.05, 0.15)
 
-# Number of years to calculate running mean (window)
-nRoll <- 5
+# Number of years to calculate running mean weight-at-age (window)
+nRollWA <- 5
+
+# Number of years to calculate running mean recruitment (window)
+nRollRec <- 3
 
 regions <- tribble(
   ~SAR, ~Region,                      ~RegionName, ~Major,

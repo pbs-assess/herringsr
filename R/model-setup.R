@@ -21,8 +21,8 @@ minor_model_dirs <- lapply(1:length(minor_stock_dir),
 # Cutoffs by region, corresponding to above region order in major_stock_dir
 fixed_cutoffs <- c(10.7, 12.1, 17.6, 21.2, 18.8)
 # Level of confidence interval
-ci_level <- 0.9
 confidence_vals <- c(0.05, 0.95)
+ci_level <- confidence_vals[2] - confidence_vals[1]
 
 build_herring_rdata_files(major_model_dirs,
                           ovwrt.rdata = rebuild_rdata_model_files,
