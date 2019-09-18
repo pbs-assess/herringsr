@@ -5,11 +5,17 @@ this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
 # Age class of plus group for proportion-at-age
 age_plus <- 10
 
+# Age class to highlight in weight-at-age plots
+age_highlight <- 3
+
 # Spawn survey method changed from surface (1951--1987) to dive (1988--present)
 new_surv_yr <- 1988
 
 # Limits for the weight-at-age plot
 wa_ylim <- c(0.05, 0.15)
+
+# Number of years to calculate running mean (window)
+nRoll <- 5
 
 regions <- tribble(
   ~SAR, ~Region,                      ~RegionName, ~Major,
