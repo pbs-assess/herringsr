@@ -165,7 +165,7 @@ In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to 
 
 XXXX Simulation Evaluation information
 
-In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(cc_proj_sbt[2])` t (posterior median), increasing from `r f(cc_final_yr_sbt[2])` t in `r assess_yr` (Table \@ref(tab:ref-points-cc)). The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3SB_0$ with `r f(cc_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing.
+In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(cc_proj_sbt[2])` t (posterior median), decreasing from `r f(cc_final_yr_sbt[2])` t in `r assess_yr` (Table \@ref(tab:ref-points-cc)). The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3SB_0$ with `r f(cc_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing.
 
 ### Strait of Georgia
 
