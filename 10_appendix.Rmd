@@ -20,7 +20,7 @@ plot_wa(minor_wa,
         circle_age = age_highlight,
         xlim = c(minor_start_yr_plot, minor_end_yr),
         ylim = wa_ylim,
-        n_roll = nRoll,
+        n_roll = nRollWA,
         translate = french)
 ```
 
