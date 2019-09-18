@@ -158,7 +158,7 @@ As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0 t
 XXXX Simulation Evaluation information
 Effective harvest rates for the past 10-years average ~12\% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fuctuate at or near $0.3SB_0$ (Figure \@ref(fig:storyboard-prd)d). Furthermore, adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity: states that were entered rapidly and were preceded by high biomass levels [@kronlund2017].
 
-In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to increase from `r f(prd_final_yr_sbt[2])` t in `r assess_yr` to an estimated `r f(prd_proj_sbt[2])` t (posterior medians). The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the LRP of $0.3SB_0$ with `r f(prd_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing (Table \@ref(tab:ref-points-prd)).
+In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to decrease slightly from `r f(prd_final_yr_sbt[2])` t in `r assess_yr` to an estimated `r f(prd_proj_sbt[2])` t (posterior medians). The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the LRP of $0.3SB_0$ with `r f(prd_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing (Table \@ref(tab:ref-points-prd)).
 
 
 ### Central Coast
