@@ -61,7 +61,6 @@ major_yr_range <- major_start_yr:major_end_yr
 minor_start_yr <- minor_models[[1]]$dat$start.yr
 minor_end_yr <- minor_models[[1]]$dat$end.yr
 minor_yr_range <- minor_start_yr:minor_end_yr
-minor_start_yr_plot <- 1978
 
 all_regions_short <- regions$Region
 major_regions_short <- regions$Region[regions$Major]
@@ -87,23 +86,8 @@ minor_catch <- get_catch(minor_models,
                          minor_regions_full,
                          gear)
 
-major_final_yr_catch <- major_catch %>%
-  filter(year == assess_yr)
-
-major_final_yr_roe_catch <- major_final_yr_catch %>%
-  filter(gear %in% !!gear$gearname[c(2,3)]) %>%
-  summarize(catch = sum(value) * 1000) %>%
-  pull() %>%
-  f()
-
-major_final_yr_other_catch <- major_final_yr_catch %>%
-  filter(!gear %in% !!gear$gearname[c(2,3)]) %>%
-  summarize(catch = sum(value) * 1000) %>%
-  pull() %>%
-  f()
-
 minor_final_yr_catch <- minor_catch %>%
-  filter(year == assess_yr)
+  filter(year %in% max(year))
 
 minor_final_yr_roe_catch <- minor_final_yr_catch %>%
   filter(gear %in% !!gear$gearname[c(2,3)]) %>%
@@ -112,23 +96,6 @@ minor_final_yr_roe_catch <- minor_final_yr_catch %>%
   f()
 
 minor_final_yr_other_catch <- minor_final_yr_catch %>%
-  filter(!gear %in% !!gear$gearname[c(2,3)]) %>%
-  summarize(catch = sum(value) * 1000) %>%
-  pull() %>%
-  f()
-
-total_catch <- bind_rows( major_catch_short, minor_catch )
-
-total_final_yr_catch <- total_catch %>%
-  filter(year == assess_yr)
-
-total_final_yr_roe_catch <- total_final_yr_catch %>%
-  filter(gear %in% !!gear$gearname[c(2,3)]) %>%
-  summarize(catch = sum(value) * 1000) %>%
-  pull() %>%
-  f()
-
-total_final_yr_other_catch <- total_final_yr_catch %>%
   filter(!gear %in% !!gear$gearname[c(2,3)]) %>%
   summarize(catch = sum(value) * 1000) %>%
   pull() %>%
@@ -270,4 +237,21 @@ mcmc_length <- "5 million"
 mcmc_samp_freq <- 1000
 mcmc_ci <- "90\\%"
 
+# -----------------------------------------------------------------------------
+# MP decision tables
+cc_mp <- read_csv("data/mp-cc.csv")
 
+proc_mp <- function(df){
+  csas_table(df,
+             format = "latex",
+             bold_header = TRUE,
+             col_names = c("Scenario",
+                           "MP",
+                           "Label",
+                           "Conservation\nObj 1 (LRP)\n>75%",
+                           "Biomass\nObj 2\n>50%",
+                           "Yield\nObj 3\n<25%",
+                           "Yield\nObj 4\nmax",
+                           "Catch < 650t\nmin"))
+
+}
