@@ -20,6 +20,9 @@ nRollWA <- 5
 # Number of years to calculate running mean recruitment (window)
 nRollRec <- 3
 
+# Target harvest rate
+target_hr <- 0.2
+
 regions <- tribble(
   ~SAR, ~Region,                      ~RegionName, ~Major,
   1,       "HG",                    "Haida Gwaii",   TRUE,
