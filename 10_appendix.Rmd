@@ -7,36 +7,36 @@ Pacific Herring minor SARs: `r commify(minor_regions_full_parens)`.
 However, we do provide time series of landed commercial catch (Figure \@ref(fig:app-minor-catch)),
 biological data including weight-at-age (Figure \@ref(fig:app-minor-weight-at-age)) and proportion-at-age (Figure \@ref(fig:app-minor-proportions-at-age)),
 as well as the spawn index (Figure \@ref(fig:app-minor-survey-indices))
-from `r minor_start_yr_plot` to `r minor_end_yr`.
+from `r minor_start_yr` to `r minor_end_yr`.
 
-```{r app-minor-catch, fig.cap = paste0("Time series of total landed catch in thousands of tonnes of Pacific Herring from ", minor_start_yr_plot, " to ", minor_end_yr, " in the minor stock assessment regions. Legend: `Other' represents the reduction, the food and bait, as well as the special use fishery; `RoeGN' represents the roe gillnet fishery; and `RoeSN' represents the roe seine fishery.")}
+```{r app-minor-catch, fig.cap = paste0("Time series of total landed catch in thousands of tonnes of Pacific Herring from ", minor_start_yr, " to ", minor_end_yr, " in the minor stock assessment regions. Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fshery; and 'RoeSN' represents the roe seine fishery.")}
 plot_catch(minor_catch,
-           xlim = c(minor_start_yr_plot, minor_end_yr),
+           xlim = c(minor_start_yr, minor_end_yr),
            translate = french)
 ```
 
-```{r app-minor-weight-at-age, fig.cap = paste0("Time series of weight-at-age in kilograms (kg) for age-", age_highlight, " (circles) and ", nRoll, "-year running mean weight-at-age (lines) for Pacific Herring from ", minor_start_yr_plot, " to ", minor_end_yr, " in the minor stock assessment regions. Lines show ", nRoll, "-year running means for age-", min(as.integer(names(minor_wa)), na.rm=TRUE), " to age-", age_plus, " herring (incrementing higher from the lowest line); the thick black line highlights age-", age_highlight, " herring. Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods: missing values at the beginning of the time series are imputed by extending the frst non-missing value backwards; other missing values are imputed as the mean of the previous ", nRoll, " years. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-",  age_plus, " class is a `plus group' which includes fish ages ", age_plus, " and older. Note that vertical axes are cropped at ", wa_ylim[1], " and ", wa_ylim[2], " kg.")}
+```{r app-minor-weight-at-age, fig.cap = paste0("Time series of weight-at-age in kilograms (kg) for age-3 (circles) and 5-year running mean weight-at-age (lines) for Pacific Herring from ", minor_start_yr, " to ", minor_end_yr, " in the minor stock assessment regions. Lines show 5-year running means for age-2 to age-10 herring (incrementing higher from the lowest line); the thick black line highlights age-3 herring. Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods: missing values at the beginning of the time series are imputed by extending the frst non-missing value backwards; other missing values are imputed as the mean of the previous 5 years. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-",  age_plus, " class is a `plus group' which includes fish ages ", age_plus, " and older. Note that vertical axes are cropped at ", wa_ylim[1], " and ", wa_ylim[2], " kg.")}
 plot_wa(minor_wa,
-        circle_age = age_highlight,
-        xlim = c(minor_start_yr_plot, minor_end_yr),
+        circle_age = 3,
+        xlim = c(minor_start_yr, minor_end_yr),
         ylim = wa_ylim,
         n_roll = nRoll,
         translate = french)
 ```
 
-```{r app-minor-proportions-at-age, fig.cap = paste0("Time series of proportion-at-age for Pacific Herring from ", minor_start_yr_plot, " to ", minor_end_yr, " in the minor stock assessment regions. The black line is the mean age, and the shaded area is the approximate ", ci_level*100, "\\% distribution. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-", age_plus, " class is a `plus group' which includes fish ages ", age_plus, " and older.")}
+```{r app-minor-proportions-at-age, fig.cap = paste0("Time series of proportion-at-age for Pacific Herring from ", minor_start_yr, " to ", minor_end_yr, " in the minor stock assessment regions. The black line is the mean age, and the shaded area is the approximate ", ci_level*100, "\\% distribution. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-", age_plus, " class is a `plus group' which includes fish ages ", age_plus, " and older.")}
 plot_pa(minor_pa,
         age_plus = age_plus,
         conf = ci_level,
-        xlim = c(minor_start_yr_plot, minor_end_yr),
+        xlim = c(minor_start_yr, minor_end_yr),
         ylim = c(1, age_plus),
         translate = french)
 
 ```
 
-```{r app-minor-survey-indices, fig.cap = paste0("Time series of spawn index in thousands of tonnes for Pacific Herring from ", minor_start_yr_plot, " to ", minor_end_yr, " in the minor stock assessment regions. The spawn index has two distinct periods defned by the dominant survey method: surface surveys (",  minor_start_yr, " to ", new_surv_yr-1, "), and dive surveys (", new_surv_yr, " to ", minor_end_yr, "). The dashed vertical line is the boundary between these two periods. The `spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter $q$.")}
+```{r app-minor-survey-indices, fig.cap = paste0("Time series of spawn index in thousands of tonnes for Pacific Herring from ", minor_start_yr, " to ", minor_end_yr, " in the minor stock assessment regions. The spawn index has two distinct periods defned by the dominant survey method: surface surveys (1951 to 1987), and dive surveys (1988 to 2018). The dashed vertical line is the boundary between these two periods. The `spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, q.")}
 plot_spawn_ind(minor_surv,
-               xlim = c(minor_start_yr_plot, minor_end_yr),
+               xlim = c(minor_start_yr, minor_end_yr),
                new_surv_yr = new_surv_yr,
                translate = french)
 ```
