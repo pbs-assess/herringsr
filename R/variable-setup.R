@@ -78,7 +78,7 @@ major_catch_short <- get_catch(major_models,
                                gear)
 
 minor_catch <- get_catch(minor_models,
-                         minor_regions_short,
+                         minor_regions_full,
                          gear)
 
 major_final_yr_catch <- major_catch %>%
