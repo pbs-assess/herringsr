@@ -67,7 +67,7 @@ f. Phase plot of spawning biomass production for the dive survey period (MPD est
 
 ## Reference points
 
-A biological limit reference point (LRP) is defned for the major Pacific Herring SARs at $0.3SB_0$ [@kronlund2017]. Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG in 2018 [@dfo2018] and HG, PRD, and CC in 2019 [@dfo2019]. Candidate USRs are:
+A biological limit reference point (LRP) is defned for the major Pacific Herring SARs at $0.3SB_0$ [@kronlund2017]. Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG in 2018 [@dfo2019] and HG, PRD, and CC in 2019 [@dfo2019b]. Candidate USRs are:
 
 1. $0.4SB_0$,
 
