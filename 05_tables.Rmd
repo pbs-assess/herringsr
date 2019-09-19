@@ -7,7 +7,8 @@
 ```{r data-input}
 input_data_table(inp_catch,
                  cap = ifelse(french, "(ref:data-input-cap-french)", "(ref:data-input-cap)"),
-                 french)
+                 french,
+                 longtable = FALSE)
 ```
 
 (ref:annual-catch-cap) Total landed catch in tonnes of Pacific Herring in the major stock assessment areas. Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: 'WP' indicates that data are withheld due to privacy concerns.
@@ -19,7 +20,8 @@ total_landed_catch_table(major_catch_short,
                          by_vec = major_regions_short,
                          first_yr = assess_yr - 9,
                          cap = ifelse(french, "(ref:annual-catch-cap-french)", "(ref:annual-catch-cap)"),
-                         french)
+                         french,
+                         longtable = FALSE)
 ```
 
 (ref:annual-sok-catch-cap) Total spawn-on-kelp harvest in pounds of Pacific Herring in the major stock assessment areas. Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: 'WP' indicates that data are withheld due to privacy concerns.
@@ -31,7 +33,8 @@ sok_harvest_table(sok,
                   by_vec = major_regions_short,
                   first_yr = assess_yr - 9,
                   cap = ifelse(french, "(ref:annual-sok-catch-cap-french)", "(ref:annual-sok-catch-cap)"),
-                  french)
+                  french,
+                  longtable = FALSE)
 ```
 
 (ref:spawn-index-hg-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring in the Haida Gwaii major stock assessment region. The spawn index is the annual total for the earliest year indicated in the 'Years' column. Proportions indicate the proportion by year, or mean proportion over years, where year(s) are specifed in the ‘Years’ column. The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter $q$. Legend: 'Cumshewa' is Section 023; 'Juan Perez/Skincuttle' is Sections 021 \& 025; 'Louscoone' is Section 006; and 'Selwyn' is Section 024.
@@ -41,7 +44,8 @@ sok_harvest_table(sok,
 ```{r spawn-index-hg}
 spawn_index_by_area_table(ps[[en2fr("HG", french)]],
                           cap = ifelse(french, "(ref:spawn-index-hg-cap-french)", "(ref:spawn-index-hg-cap)"),
-                          french)
+                          french,
+                          longtable = FALSE)
 ```
 
 (ref:spawn-index-pr-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the Prince Rupert District major stock assessment region. See Table \@ref(tab:spawn-index-hg) for description.
@@ -51,7 +55,8 @@ spawn_index_by_area_table(ps[[en2fr("HG", french)]],
 ```{r spawn-index-prd}
 spawn_index_by_area_table(ps[[en2fr("PRD", french)]], 
                           cap = ifelse(french, "(ref:spawn-index-pr-cap-french)", "(ref:spawn-index-pr-cap)"),
-                          translate = french)
+                          translate = french,
+                          longtable = FALSE)
 ```
 
 (ref:spawn-index-cc-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the Central Coast major stock assessment region. See Table \@ref(tab:spawn-index-hg) for description.
@@ -61,7 +66,8 @@ spawn_index_by_area_table(ps[[en2fr("PRD", french)]],
 ```{r spawn-index-cc}
 spawn_index_by_area_table(ps[[en2fr("CC", french)]],
                           cap = ifelse(french, "(ref:spawn-index-cc-cap-french)", "(ref:spawn-index-cc-cap)"),
-                          translate = french)
+                          translate = french,
+                          longtable = FALSE)
 ```
 
 (ref:spawn-index-sog-cap) Spawn index in tonnes (t), and proportion of the spawn index by Group for Pacific Herring in the Strait of Georgia major stock assessment region. Legend: '14\&17' is Statistical Areas 14 and 17 (excluding Section 173); 'ESoG' is eastern Strait of Georgia; 'Lazo' is above Cape Lazo; and 'SDodd' is South of Dodd Narrows. See Table \@ref(tab:spawn-index-hg) for description.
@@ -71,7 +77,8 @@ spawn_index_by_area_table(ps[[en2fr("CC", french)]],
 ```{r spawn-index-sog}
 spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
                           cap = ifelse(french, "(ref:spawn-index-sog-cap-french)", "(ref:spawn-index-sog-cap)"),
-                          translate = french)
+                          translate = french,
+                          longtable = FALSE)
 ```
 
 (ref:spawn-index-wcvi-cap) Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacific Herring in the West Coast of Vancouver Island major stock assessment region. See Table \@ref(tab:spawn-index-hg) for description.
@@ -81,7 +88,8 @@ spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
 ```{r spawn-index-wcvi}
 spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
                           cap = ifelse(french, "(ref:spawn-index-wcvi-cap-french)", "(ref:spawn-index-wcvi-cap)"),
-                          translate = french)
+                          translate = french,
+                          longtable = FALSE)
 ```
 
 (ref:ref-points-hg-cap) Posterior (5\textsuperscript{th} percentile, Median, and  95\textsuperscript{th} percentile) estimates of proposed reference points for the Haida Gwaii model. $\mli{SB}_{2019}$ represents prefishery spawning biomass, and all biomass numbers are in thousands of tonnes. Probability of $\mli{SB}_{2019} < 0.3\mli{SB}_0$ is based on zero catch.
@@ -95,7 +103,7 @@ make.ref.points.table(major_models[[model_ind]],
                       xlabel = "tab:ref-points-hg",
                       font.size = 11,
                       space.size = 12,
-                      placement = "H",
+                      placement = "h",
                       translate = french)
 ```
 
@@ -110,7 +118,7 @@ make.ref.points.table(major_models[[model_ind]],
                       xlabel = "tab:ref-points-prd",
                       font.size = 11,
                       space.size = 12,
-                      placement = "H",
+                      placement = "h",
                       translate = french)
 ```
 
@@ -125,7 +133,7 @@ make.ref.points.table(major_models[[model_ind]],
                       xlabel = "tab:ref-points-cc",
                       font.size = 11,
                       space.size = 12,
-                      placement = "H",
+                      placement = "h",
                       translate = french)
 ```
 
@@ -143,7 +151,7 @@ make.ref.points.table(major_models[[model_ind]],
                       xlabel = "tab:ref-points-sog",
                       font.size = 11,
                       space.size = 12,
-                      placement = "H",
+                      placement = "h",
                       translate = french)
 ```
 
@@ -161,7 +169,7 @@ make.ref.points.table(major_models[[model_ind]],
                       xlabel = "tab:ref-points-wcvi",
                       font.size = 11,
                       space.size = 12,
-                      placement = "H",
+                      placement = "h",
                       translate = french)
 ```
 
@@ -198,7 +206,7 @@ decision_tables_mp(prd_mp,
                    xlabel = "tab:decision-table-prd",
                    font.size = 7,
                    space.size = 10,
-                   placement = "H",
+                   placement = "h",
                    last_col_header = paste0(assess_yr + 1, " TAC"),
                    perc_dec_pts = 0,
                    dec_pts = 2,
@@ -226,7 +234,7 @@ decision_tables_mp(cc_mp,
                    xlabel = "tab:decision-table-cc",
                    font.size = 7,
                    space.size = 10,
-                   placement = "H",
+                   placement = "h",
                    last_col_header = paste0(assess_yr + 1, " TAC"),
                    perc_dec_pts = 0,
                    dec_pts = 2,
@@ -257,7 +265,7 @@ decision_tables_mp(sog_mp,
                    xlabel = "tab:decision-table-sog",
                    font.size = 7,
                    space.size = 10,
-                   placement = "H",
+                   placement = "h",
                    last_col_header = paste0(assess_yr + 1, " TAC"),
                    perc_dec_pts = 0,
                    dec_pts = 2,
