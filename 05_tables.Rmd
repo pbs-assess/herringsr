@@ -202,7 +202,7 @@ decision_tables_mp(prd_mp,
                    last_col_header = paste0(assess_yr + 1, " TAC"),
                    perc_dec_pts = 0,
                    dec_pts = 2,
-                   col_align = "ccc|r|r|c|c|r|c",
+                   col_align = "ccc|c|c|c|c|c|c",
                    translate = french)
 ```
 
@@ -230,7 +230,7 @@ decision_tables_mp(cc_mp,
                    last_col_header = paste0(assess_yr + 1, " TAC"),
                    perc_dec_pts = 0,
                    dec_pts = 2,
-                   col_align = "ccc|r|r|c|c|r|c",
+                   col_align = "ccc|c|c|c|c|c|c",
                    translate = french)
 ```
 
@@ -261,7 +261,7 @@ decision_tables_mp(sog_mp,
                    last_col_header = paste0(assess_yr + 1, " TAC"),
                    perc_dec_pts = 0,
                    dec_pts = 2,
-                   col_align = "ccc|r|r|c|c|r|c",
+                   col_align = "ccc|c|c|c|c|c|c",
                    translate = french)
 ```
 
