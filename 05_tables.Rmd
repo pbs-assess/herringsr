@@ -249,7 +249,7 @@ make.ref.points.table(major_models[[model_ind]],
 ```
 
 ```{r decision-table-hg, results = 'asis', echo = FALSE}
-col_align <- "cc|c|c|c|c|c|c"
+col_align <- "cc|c|c|c|c|c|c|c"
 # cap <- "Probabilistic decision table for the Haida Gwaii AM2 model."
 #
 # model_ind <- match(en2fr("HG", french), major_regions_short)
