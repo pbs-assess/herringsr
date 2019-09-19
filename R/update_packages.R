@@ -1,4 +1,5 @@
 git_dir <- "C:/github"
+if( Sys.getenv("USERNAME") == "grinnellm" )  git_dir <- "C:/Grinnell/Git"
 curr_dir <- getwd()
 shell(paste0("cd ", file.path(git_dir, "gfutilities"), " && git pull --rebase"))
 shell(paste0("cd ", file.path(git_dir, "gfiscamutils"), " && git pull --rebase"))
