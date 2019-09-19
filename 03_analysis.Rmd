@@ -33,7 +33,7 @@ Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) also presen
 
 First Nations observations are provided by First Nations representatives to describe their perspective in their respective local areas.
 
-### Hadia Gwaii
+### Haida Gwaii
 
 
 ### Prince Rupert District
