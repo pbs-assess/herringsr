@@ -93,77 +93,97 @@ spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
 ```
 
 ```{r hg-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
-              "95\\textsuperscript{th} percentile) and MPD estimates of ",
-              "spawning biomass (1000 t) and relative spawning ",
-              "biomass for the Haida Gwaii AM2 model.")
+cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
+              "50\\textsuperscript{th}, and ", confidence_vals[2]*100,
+              "\\textsuperscript{th} percentile) and maximum posterior density ",
+              "(MPD) estimates of spawning biomass in thousands of tonnes and ",
+              "relative spawning biomass (i.e., depletion $SB_t/SB_0$ where ",
+              "$SB_t$ is spawning biomass in year $t$, and $SB_0$ is estimated ",
+              "unfished biomass) for the Haida Gwaii major stock assessment ",
+              "region.")
 make.biomass.depletion.table(major_models[[model_ind]],
-                             syr = 2007,
+                             syr = major_end_yr-9,
                              xcaption = cap,
                              xlabel = "hg-spawning-biomass-depletion-table",
                              font.size = 11,
                              space.size = 12,
-                             placement = "H")
+                             placement = "h")
                              ##tabular.environment = "longtable")
 ```
 
 ```{r prd-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
-              "95\\textsuperscript{th} percentile) and MPD estimates of ",
-              "spawning biomass (1000 t) and relative spawning ",
-              "biomass for the Prince Rupert District AM2 model.")
+cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
+              "50\\textsuperscript{th}, and ", confidence_vals[2]*100,
+              "\\textsuperscript{th} percentile) and maximum posterior density ",
+              "(MPD) estimates of spawning biomass in thousands of tonnes and ",
+              "relative spawning biomass (i.e., depletion $SB_t/SB_0$ where ",
+              "$SB_t$ is spawning biomass in year $t$, and $SB_0$ is estimated ",
+              "unfished biomass) for the Prince Rupert District major stock ",
+              "assessment region.")
 make.biomass.depletion.table(major_models[[model_ind]],
-                             syr = 2007,
+                             syr = major_end_yr-9,
                              xcaption = cap,
                              xlabel = "prd-spawning-biomass-depletion-table",
                              font.size = 11,
                              space.size = 12,
-                             placement = "H")
+                             placement = "h")
                              ##tabular.environment = "longtable")
 ```
 
 ```{r cc-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
-              "95\\textsuperscript{th} percentile) and MPD estimates of ",
-              "spawning biomass (1000 t) and relative spawning ",
-              "biomass for the Central Coast AM2 model.")
+cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
+              "50\\textsuperscript{th}, and ", confidence_vals[2]*100,
+              "\\textsuperscript{th} percentile) and maximum posterior density ",
+              "(MPD) estimates of spawning biomass in thousands of tonnes and ",
+              "relative spawning biomass (i.e., depletion $SB_t/SB_0$ where ",
+              "$SB_t$ is spawning biomass in year $t$, and $SB_0$ is estimated ",
+              "unfished biomass) for the Central Coast major stock assessment ",
+              "region.")
 make.biomass.depletion.table(major_models[[model_ind]],
-                             syr = 2007,
+                             syr = major_end_yr-9,
                              xcaption = cap,
                              xlabel = "cc-spawning-biomass-depletion-table",
                              font.size = 11,
                              space.size = 12,
-                             placement = "H")
+                             placement = "h")
                              ##tabular.environment = "longtable")
 ```
 
 ```{r sog-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
-              "95\\textsuperscript{th} percentile) and MPD estimates of ",
-              "spawning biomass (1000 t) and relative spawning ",
-              "biomass for the Strait of Georgia AM2 model.")
+cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
+              "50\\textsuperscript{th}, and ", confidence_vals[2]*100,
+              "\\textsuperscript{th} percentile) and maximum posterior density ",
+              "(MPD) estimates of spawning biomass in thousands of tonnes and ",
+              "relative spawning biomass (i.e., depletion $SB_t/SB_0$ where ",
+              "$SB_t$ is spawning biomass in year $t$, and $SB_0$ is estimated ",
+              "unfished biomass) for the Strait of Georgia major stock ",
+              "assessment region.")
 make.biomass.depletion.table(major_models[[model_ind]],
-                             syr = 2007,
+                             syr = major_end_yr-9,
                              xcaption = cap,
                              xlabel = "sog-spawning-biomass-depletion-table",
                              font.size = 11,
                              space.size = 12,
-                             placement = "H")
+                             placement = "h")
                              ##tabular.environment = "longtable")
 ```
 
 ```{r wcvi-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
-              "95\\textsuperscript{th} percentile) and MPD estimates of ",
-              "spawning biomass (1000 t) and relative spawning ",
-              "biomass for the West Coast Vancouver Island AM2 model.")
+cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
+              "50\\textsuperscript{th}, and ", confidence_vals[2]*100,
+              "\\textsuperscript{th} percentile) and maximum posterior density ",
+              "(MPD) estimates of spawning biomass in thousands of tonnes and ",
+              "relative spawning biomass (i.e., depletion $SB_t/SB_0$ where ",
+              "$SB_t$ is spawning biomass in year $t$, and $SB_0$ is estimated ",
+              "unfished biomass) for the West Coast of Vancouver Island major ",
+              " stock assessment region.")
 make.biomass.depletion.table(major_models[[model_ind]],
-                             syr = 2007,
+                             syr = major_end_yr-9,
                              xcaption = cap,
                              xlabel = "wcvi-spawning-biomass-depletion-table",
                              font.size = 11,
                              space.size = 12,
-                             placement = "H")
+                             placement = "h")
                              ##tabular.environment = "longtable")
 ```
 
