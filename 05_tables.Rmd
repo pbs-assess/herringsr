@@ -262,6 +262,7 @@ decision_tables_mp(sog_mp,
                    perc_dec_pts = 0,
                    dec_pts = 2,
                    col_align = "ccc|c|c|c|c|c|c",
+                   inc_mps = 9,
                    translate = french)
 ```
 
