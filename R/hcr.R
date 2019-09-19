@@ -119,3 +119,5 @@ hcr.wcvi <- wcvi.min.hs.5060.hr.10.cap.2
 #     "minE_rel50_hr10_cap2_slow",
 #     "minHS3060_hr20_slow",
 #     "minHS3060_hr10_cap2_slow")
+
+hcr.min.esc(bt.sog, 0.2, 0.5, 1000, bo.sog)
