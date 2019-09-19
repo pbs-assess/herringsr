@@ -17,21 +17,6 @@ make.parameters.est.table(major_models[[model_ind]],
                           placement = "H")
 ```
 
-```{r wcvi-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
-              "95\\textsuperscript{th} percentile) and MPD estimates of ",
-              "spawning biomass (1000 t) and relative spawning ",
-              "biomass for the West Coast Vancouver Island AM2 model.")
-make.biomass.depletion.table(major_models[[model_ind]],
-                             syr = 2007,
-                             xcaption = cap,
-                             xlabel = "wcvi-spawning-biomass-depletion-table",
-                             font.size = 11,
-                             space.size = 12,
-                             placement = "H")
-                             ##tabular.environment = "longtable")
-```
-
 ```{r wcvi-recruitment-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
               "95\\textsuperscript{th} percentile) and MPD estimates of ",
