@@ -11,7 +11,7 @@ input_data_table(inp_catch,
                  longtable = FALSE)
 ```
 
-(ref:annual-catch-cap) Total landed catch in tonnes of Pacific Herring in the major stock assessment areas. Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: 'WP' indicates that data are withheld due to privacy concerns.
+(ref:annual-catch-cap) Total landed catch in tonnes of Pacific Herring in the major stock assessment regions (SARs). Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: 'WP' indicates that data are withheld due to privacy concerns.
 
 (ref:annual-catch-cap-french) Total des prises débarquées en tonnes de hareng du Pacifique dans les principales zones d’évaluation des stocks. Légende : Haida Gwaii (HG), le district de Prince Rupert (DPR), la côte centrale (CC), le détroit de Georgie (DG) et la côte ouest de l’île de Vancouver (COIV). Remarque : « DT » indique que les données ne sont pas divulguées pour des raisons de confidentialité.
 
@@ -24,7 +24,7 @@ total_landed_catch_table(major_catch_short,
                          longtable = FALSE)
 ```
 
-(ref:annual-sok-catch-cap) Total spawn-on-kelp harvest in pounds of Pacific Herring in the major stock assessment areas. Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: 'WP' indicates that data are withheld due to privacy concerns.
+(ref:annual-sok-catch-cap) Total spawn-on-kelp harvest in pounds of Pacific Herring in the major stock assessment regions (SARs). Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: 'WP' indicates that data are withheld due to privacy concerns.
 
 (ref:annual-sok-catch-cap-french) Récolte totale d’oeufs sur varech en livres de hareng du Pacifique dans les principales zones d’évaluation des stocks. Légende : Haida Gwaii (HG), le district de Prince Rupert (DPR), la côte centrale (CC), le détroit de Georgie (DG) et la côte ouest de l’île de Vancouver (COIV). Remarque : « DT » indique que les données ne sont pas divulguées pour des raisons de confidentialité.
 
@@ -70,9 +70,9 @@ spawn_index_by_area_table(ps[[en2fr("CC", french)]],
                           longtable = FALSE)
 ```
 
-(ref:spawn-index-sog-cap) Spawn index in tonnes (t), and proportion of the spawn index by Group for Pacific Herring in the Strait of Georgia major stock assessment region. Legend: '14\&17' is Statistical Areas 14 and 17 (excluding Section 173); 'ESoG' is eastern Strait of Georgia; 'Lazo' is above Cape Lazo; and 'SDodd' is South of Dodd Narrows. See Table \@ref(tab:spawn-index-hg) for description.
+(ref:spawn-index-sog-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring in the Strait of Georgia major stock assessment region. Legend: '14\&17' is Statistical Areas 14 and 17 (excluding Section 173); 'ESoG' is eastern Strait of Georgia; 'Lazo' is above Cape Lazo; and 'SDodd' is South of Dodd Narrows. See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-sog-cap-french) Indice du frai en tonnes (t) et proportion de l’indice du frai par groupe pour le hareng du Pacifique dans la principale région d’évaluation des stocks du détroit de Georgie. Légende : « 14 et 17 » fait référence aux zones statistiques 14 et 17 (à l’exclusion de la section 173); « EDG » fait référence à l’est du détroit de Géorgie; « Lazo » fait référence au-dessus du cap Lazo; et « SDodd » fait référence au sud du passage Dodd. Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
+(ref:spawn-index-sog-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique dans la principale région d’évaluation des stocks du détroit de Georgie. Légende : « 14 et 17 » fait référence aux zones statistiques 14 et 17 (à l’exclusion de la section 173); « EDG » fait référence à l’est du détroit de Géorgie; « Lazo » fait référence au-dessus du cap Lazo; et « SDodd » fait référence au sud du passage Dodd. Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-sog}
 spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
@@ -81,9 +81,9 @@ spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
                           longtable = FALSE)
 ```
 
-(ref:spawn-index-wcvi-cap) Spawn index in tonnes (t), and proportion of the spawn index by Statistical Area for Pacific Herring in the West Coast of Vancouver Island major stock assessment region. See Table \@ref(tab:spawn-index-hg) for description.
+(ref:spawn-index-wcvi-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the West Coast of Vancouver Island major stock assessment region. See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-wcvi-cap-french) Indice du frai en tonnes (t) et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la principale région d’évaluation des stocks de la côte ouest de l’île de Vancouver. Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
+(ref:spawn-index-wcvi-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la principale région d’évaluation des stocks de la côte ouest de l’île de Vancouver. Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-wcvi}
 spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
