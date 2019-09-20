@@ -5,13 +5,9 @@ model_ind <- match(en2fr("WCVI", french), major_regions_short)
 wcvi.b <- major_models[[model_ind]]
 
 bt.sog <- sog.b$mcmccalcs$sbt.quants[2,]
-## Replace last year (assess_yr + 1 spawning biomass with the projected one)
-bt.sog[length(bt.sog)]<- sog.b$mcmccalcs$proj.quants[2,2]
 bo.sog <- as.data.frame(sog.b$mcmccalcs$p.quants)$sbo[2]
 
 bt.wcvi <- wcvi.b$mcmccalcs$sbt.quants[2,]
-## Replace last year (assess_yr + 1 spawning biomass with the projected one)
-bt.wcvi[length(bt.wcvi)]<- wcvi.b$mcmccalcs$proj.quants[2,2]
 bo.wcvi <- as.data.frame(wcvi.b$mcmccalcs$p.quants)$sbo[2]
 
 sog.min.esc.rel.50.hr.10.cap.2 <- hcr.min.esc(bt.sog,
