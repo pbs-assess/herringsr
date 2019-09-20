@@ -9,9 +9,9 @@ Relative to last year's assessment, the only change made to input data was updat
 
 For the purposes of stock assessment, catch data are summarized by gear type and fishing category as described in Table \@ref(tab:data-input) and presented in Figure \@ref(fig:major-catch).
 
-As per previous years, catch input to the stock assessment model does not include mortality from the commercial SOK fishery, nor any recreational or food, social, and ceremonial (FSC) fisheries. The FSC and recreational catches are considered minor relative to commercial harvest. The commercial SOK fishery is licensed based on pounds of validated SOK product (i.e., eggs adhered to kelp), not tonnes of fish used or spawned. Currently there is no basis for validating mortality imposed on the population by this fishery, however methods for estimating SOK mortality are being developed.
+As per previous years, catch input to the stock assessment model does not include mortality from the commercial SOK fishery, nor any recreational fisheries or food, social, and ceremonial (FSC) harvest. The FSC and recreational harvest are considered minor relative to commercial harvest. The commercial SOK fishery is licensed based on pounds of validated SOK product (i.e., eggs adhered to kelp), not tonnes of fish used or spawned. Currently there is no basis for validating mortality imposed on the population by this fishery, however methods for estimating SOK mortality are being developed.
 
-Combined commercial removals from 2010 to `r assess_yr` from the roe, food and bait, and special use fisheries are presented for the major stocks in Table \@ref(tab:annual-catch). The proportion of coast-wide catch that comes from the SoG was 22\% in 1990, and has increased to nearly 100\% in `r assess_yr`. Total SOK harvest is presented for the major SARs in Table \@ref(tab:annual-sok-catch).
+Combined commercial removals from 2010 to `r assess_yr` from the roe, food and bait, and special use fisheries are presented for the major stocks in Table \@ref(tab:annual-catch). The proportion of coast-wide catch that comes from the SoG was 22\% in 1990, and nearly 100\% in `r assess_yr`. Total SOK harvest is presented for the major SARs in Table \@ref(tab:annual-sok-catch).
 
 ## Biological data
 
