@@ -5,7 +5,7 @@ These tables and figures will not be included in the final Science Response.
 ```{r hg-parameter-est-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
               "95\\textsuperscript{th} percentile) and MPD estimates of key ",
-              "parameters from the Haida Gwaii major stock assessment region. ",
+              "parameters for the Haida Gwaii major stock assessment region. ",
               "Subscripts on $q$ ",
               "(catchability) indicate: 1 = Surface survey, 2 = Dive survey. ",
               "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
