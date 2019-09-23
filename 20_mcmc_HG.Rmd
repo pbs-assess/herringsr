@@ -49,7 +49,7 @@ make.traces.plot(major_models[[model_ind]],
 make.autocor.plot(major_models[[model_ind]])
 ```
 
-(ref:hg-pairs-figure) Pairs plots for MCMC output of estimated parameters in for the Haida Gwaii major stock assessment region. See Figure \@ref(fig:hg-traces-figure) for parameter descriptions.
+(ref:hg-pairs-figure) Pairs plots for MCMC output of estimated parameters for the Haida Gwaii major stock assessment region. See Figure \@ref(fig:hg-traces-figure) for parameter descriptions.
 ```{r hg-pairs-figure, fig.asp=1, fig.cap = "(ref:hg-pairs-figure)"}
 make.pairs.plot(major_models[[model_ind]])
 ```

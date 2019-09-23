@@ -49,7 +49,7 @@ make.traces.plot(major_models[[model_ind]],
 make.autocor.plot(major_models[[model_ind]])
 ```
 
-(ref:wcvi-pairs-figure) Pairs plots for MCMC output of estimated parameters in for the West Coast Vancouver Island major stock assessment region. See Figure \@ref(fig:wcvi-traces-figure) for parameter descriptions.
+(ref:wcvi-pairs-figure) Pairs plots for MCMC output of estimated parameters for the West Coast Vancouver Island major stock assessment region. See Figure \@ref(fig:wcvi-traces-figure) for parameter descriptions.
 ```{r wcvi-pairs-figure, fig.asp=1, fig.cap = "(ref:wcvi-pairs-figure)"}
 make.pairs.plot(major_models[[model_ind]])
 ```
