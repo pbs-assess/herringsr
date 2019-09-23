@@ -255,14 +255,14 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
-(ref:ref-points-wcvi-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the West Coast Vancouver Island major stock assessment region. See Table \@ref(tab:ref-points-hg) for description.
+(ref:ref-points-wcvi-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the West Coast of Vancouver Island major stock assessment region. See Table \@ref(tab:ref-points-hg) for description.
 
 (ref:ref-points-wcvi-cap-french) Estimations a posteriori (5\textsuperscript{e} percentile, médiane et 95\textsuperscript{e} percentile) des points de référence proposés pour le modèle de la côte ouest de l’île de Vancouver. Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-wcvi, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
               "95\\textsuperscript{th} percentile) estimates of proposed reference ",
-              "points for the West Coast Vancouver Island model. See Table \\\\@ref(tab:ref-points-hg) for description.")
+              "points for the West Coast of Vancouver Island model. See Table \\\\@ref(tab:ref-points-hg) for description.")
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.ref.points.table(major_models[[model_ind]],
                       xcaption = ifelse(french, "(ref:ref-points-wcvi-cap-french)","(ref:ref-points-wcvi-cap)"),
@@ -376,7 +376,7 @@ decision_tables_mp(sog_mp,
 ```
 
 ```{r decision-table-wcvi, results = 'asis', echo = FALSE}
-# cap <- "Probabilistic decision table for the West Coast Vancouver Island AM2 model."
+# cap <- "Probabilistic decision table for the West Coast of Vancouver Island AM2 model."
 #
 # model_ind <- match(en2fr("WCVI", french), major_regions_short)
 # make.decision.table(major_models[[model_ind]],

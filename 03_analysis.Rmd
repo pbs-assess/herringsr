@@ -51,7 +51,7 @@ Observations from Q'ul-lhanumutsun Aquatic Resources Society
 
 No herring spawn was observed south of Dodd Narrows in 2019.
 
-### West Coast Vancouver Island
+### West Coast of Vancouver Island
 \vspace{12pt}
 
 
@@ -119,7 +119,7 @@ The SCA model fit to the SoG stock and fishery monitoring data shows that spawni
 
 Commercial fisheries have occurred annually in SoG since the early-1970s (following the stock collapse of the late 1960s). Since implementing the current HCR in 1986, the effective harvest rate, $U_t$, is estimated to fluctuate above and below the 20\% target rate, with median estimates exceeding 20\% in 2005, 2006, 2013–2015, and 2017–2019 (Figure \@ref(fig:harvest-rate)). The model estimates spawning biomass in `r assess_yr`, `r paste0("$SB_{", assess_yr, "}$")`, at `r f(sog_final_yr_sbt[2])` t (posterior median), equal to `r f(sog_final_yr_sbt[2]/sog_sbo[2] * 100, 1)`\% of $SB_0$ (Table \@ref(tab:ref-points-sog)). Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3SB_0$ with a `r f((1-sog_prob_less_03sbo) * 100, 1)`\% probability (Table \@ref(tab:ref-points-sog)).
 
-### West Coast Vancouver Island
+### West Coast of Vancouver Island
 
 The time series of estimated spawning biomass shows a decline from the late 1980s through to a historic low in the 2000s (Figure \@ref(fig:storyboard-wcvi)d). The low estimated spawning biomass persisted through the 2006 to 2013 period and has since slowly increased to a level similar to that estimated for 2000. The model reconstruction of spawning biomass closely follows the trajectory of the spawn index values (Figure \@ref(fig:storyboard-wcvi)a). The increase in spawning biomass from 2013 coincides with a decline in estimated natural mortality from a historic high in the late 2000s (Figure \@ref(fig:storyboard-wcvi)b). Recruitment deviations have been negative (lower than predicted by the stock-recruit function) on average since about 2003 (Figure \@ref(fig:storyboard-wcvi)e), however the reduction in estimated natural mortality and absence of removals from a commercial fishery appears to be suffcient to offset this below average recruitment of age-2 fish. The absence of a commercial fishery since 2005 means the realized harvest rate has been near zero for the last 14 years (Figure \@ref(fig:harvest-rate)). Recent production estimates in the WCVI are at a higher spawning biomass level than those estimated during the low production, low biomass period of the last half of the 2000s and early 2010s (Figure \@ref(fig:storyboard-wcvi)f).
 
@@ -185,7 +185,7 @@ Management procedures evaluated included segmented HCRs of the form indicated in
 
 Harvest recommendations for SoG stock are provided by application of a management procedure that utilizes stock assessment estimates of forecast spawning biomass and operational control points at $0.3SB_0$ and $0.6SB_0$ with a 20\% target harvest rate, and a maximum catch cap of 30,000 t [@dfo2018, Figure 4]. In the absence of fishing, spawning biomass in 2020 is forecast at `r f(sog_proj_sbt[2])` t (posterior median) and is forecast to be below the LRP of $0.3SB_0$ with `r f(sog_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing. The `r assess_yr + 1` recommended catch calculated by applying the MP is `r f(hcr.sog*1000,0)` t.
 
-### West Coast Vancouver Island
+### West Coast of Vancouver Island
 
 Closed-loop feedback simulations for WCVI evaluated alternative MPs that differed only in the configuration of the HCR and application of a fixed catch cap [@dfo2018]. Results showed that no tested management procedure could meet the conservation objective of maintaining spawning biomass above the LRP with high probability (at least 75\%)[^2] across the three future natural mortality ($M$) scenarios. In addition, for the scenario where $M$ is most similar to the last 10 years (density-independent-$M$), the historical HCR can only meet the conservation objective 56\% of the time.
 

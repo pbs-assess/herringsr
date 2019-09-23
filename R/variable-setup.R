@@ -224,7 +224,7 @@ sog_prob_less_03sbo <- sog_vars[["prob_less_03sbo"]]
 sog_proj_sbt <- sog_vars[["proj_sbt"]]
 sog_prob_proj_less_03sbo <- sog_vars[["prob_proj_less_03sbo"]]
 # -----------------------------------------------------------------------------
-# West Coast Vancouver Island-dependent values
+# West Coast of Vancouver Island-dependent values
 wcvi_vars <- get_vars("WCVI", french = french)
 wcvi_final_yr_sbt <- wcvi_vars[["final_yr_sbt"]]
 wcvi_sbo <- wcvi_vars[["sbo"]]
