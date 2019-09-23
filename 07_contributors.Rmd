@@ -14,5 +14,5 @@ contributors <- tibble::tribble(
 ```
 
 ```{r, results='asis'}
-csasdown::csas_table(contributors)
+csasdown::csas_table(contributors, longtable=FALSE)
 ```
