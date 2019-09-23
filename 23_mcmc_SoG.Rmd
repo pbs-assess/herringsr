@@ -1,5 +1,6 @@
-# MCMC Diagnostics for the Strait of Georgia iSCAM model
+# Strait of Georgia diagnostics
 
+This section contains MCMC diagnostics for the Strait of Georgia major stock assessment region SCA model.
 These tables and figures will not be included in the final Science Response.
 
 ```{r sog-parameter-est-table, results = 'asis', echo = FALSE}

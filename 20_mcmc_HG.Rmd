@@ -1,5 +1,6 @@
-# MCMC Diagnostics for the Haida Gwaii iSCAM model
+# Haida Gwaii diagnostics
 
+This section contains MCMC diagnostics for the Haida Gwaii major stock assessment region SCA model.
 These tables and figures will not be included in the final Science Response.
 
 ```{r hg-parameter-est-table, results = 'asis', echo = FALSE}

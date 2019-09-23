@@ -1,5 +1,6 @@
-# MCMC Diagnostics for the Central Coast iSCAM model
+# Central Coast diagnostics
 
+This section contains MCMC diagnostics for the Central Coast major stock assessment region SCA model.
 These tables and figures will not be included in the final Science Response.
 
 ```{r cc-parameter-est-table, results = 'asis', echo = FALSE}

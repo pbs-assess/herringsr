@@ -1,5 +1,6 @@
-# MCMC Diagnostics for the Prince Rupert District iSCAM model
+# Prince Rupert District diagnostics
 
+This section contains MCMC diagnostics for the Prince Rupert District major stock assessment region SCA model.
 These tables and figures will not be included in the final Science Response.
 
 ```{r prd-parameter-est-table, results = 'asis', echo = FALSE}

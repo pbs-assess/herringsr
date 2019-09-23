@@ -1,11 +1,12 @@
-# MCMC Diagnostics for the West Coast Vancouver Island iSCAM model
+# West Coast of Vancouver Island diagnostics
 
+This section contains MCMC diagnostics for the West Coast of Vancouver Island major stock assessment region SCA model.
 These tables and figures will not be included in the final Science Response.
 
 ```{r wcvi-parameter-est-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
               "95\\textsuperscript{th} percentile) and MPD estimates of key ",
-              "parameters for the West Coast Vancouver Island major stock ",
+              "parameters for the West Coast of Vancouver Island major stock ",
               "assessment region. Subscripts on $q$ ",
               "(catchability) indicate: 1 = Surface survey, 2 = Dive survey. ",
               "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
@@ -21,7 +22,7 @@ make.parameters.est.table(major_models[[model_ind]],
 ```{r wcvi-recruitment-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
               "95\\textsuperscript{th} percentile) and MPD estimates of ",
-              "recruitment (millions) for the West Coast Vancouver Island ",
+              "recruitment (millions) for the West Coast of Vancouver Island ",
               "major stock assessment region.")
 make.value.table(major_models[[model_ind]],
                  type = 2,
@@ -34,27 +35,27 @@ make.value.table(major_models[[model_ind]],
                  ##tabular.environment = "longtable")
 ```
 
-```{r wcvi-priors-posts-figure, fig.cap = "Prior probability distributions (lines) with comparative posterior histograms (bars) used in the West Coast Vancouver Island major stock assessment region. Parameters $q_k$ represent gears where: $k=1$ is the surface survey and $k=2$ is the dive survey. The dotted red lines are the MPD estimates."}
+```{r wcvi-priors-posts-figure, fig.cap = "Prior probability distributions (lines) with comparative posterior histograms (bars) used in the West Coast of Vancouver Island major stock assessment region. Parameters $q_k$ represent gears where: $k=1$ is the surface survey and $k=2$ is the dive survey. The dotted red lines are the MPD estimates."}
 make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
 ```
 
-```{r wcvi-traces-figure, fig.asp=1, fig.cap = paste0("Trace plots for MCMC output of estimated parameters for the West Coast Vancouver Island major stock assessment region. The MCMC run had chain length ", mcmc_length, " with a sample taken at every ", f(mcmc_samp_freq), "th iteration. The catchability parameter $q_1$ represents the surface survey and $q_2$ the dive survey. Parameters $\\hat{a}_k$ (selectivity-at-age-50\\%), and $\\hat{\\gamma}_k$ (selectivity standard deviation-at-50\\%) represent gears as follows: $k=1$: Other fisheries, $k=2$: Roe seine, $k=3$: Gillnet roe.")}
+```{r wcvi-traces-figure, fig.asp=1, fig.cap = paste0("Trace plots for MCMC output of estimated parameters for the West Coast of Vancouver Island major stock assessment region. The MCMC run had chain length ", mcmc_length, " with a sample taken at every ", f(mcmc_samp_freq), "th iteration. The catchability parameter $q_1$ represents the surface survey and $q_2$ the dive survey. Parameters $\\hat{a}_k$ (selectivity-at-age-50\\%), and $\\hat{\\gamma}_k$ (selectivity standard deviation-at-50\\%) represent gears as follows: $k=1$: Other fisheries, $k=2$: Roe seine, $k=3$: Gillnet roe.")}
 make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
 
-(ref:wcvi-autocor-figure) Autocorrelation plots for MCMC output of estimated parameters for the West Coast Vancouver Island major stock assessment region. See Figure \@ref(fig:wcvi-traces-figure) for parameter descriptions.
+(ref:wcvi-autocor-figure) Autocorrelation plots for MCMC output of estimated parameters for the West Coast of Vancouver Island major stock assessment region. See Figure \@ref(fig:wcvi-traces-figure) for parameter descriptions.
 ```{r wcvi-autocor-figure, fig.asp=1, fig.cap = "(ref:wcvi-autocor-figure)"}
 make.autocor.plot(major_models[[model_ind]])
 ```
 
-(ref:wcvi-pairs-figure) Pairs plots for MCMC output of estimated parameters for the West Coast Vancouver Island major stock assessment region. See Figure \@ref(fig:wcvi-traces-figure) for parameter descriptions.
+(ref:wcvi-pairs-figure) Pairs plots for MCMC output of estimated parameters for the West Coast of Vancouver Island major stock assessment region. See Figure \@ref(fig:wcvi-traces-figure) for parameter descriptions.
 ```{r wcvi-pairs-figure, fig.asp=1, fig.cap = "(ref:wcvi-pairs-figure)"}
 make.pairs.plot(major_models[[model_ind]])
 ```
 
-(ref:wcvi-biomass-retro-figure) MPD biomass with retrospectivces for the West Coast Vancouver Island major stock assessment region.
+(ref:wcvi-biomass-retro-figure) MPD biomass with retrospectivces for the West Coast of Vancouver Island major stock assessment region.
 ```{r wcvi-biomass-retro-figure, fig.cap = "(ref:wcvi-biomass-retro-figure)"}
 biomass.plot.mpd(major_models[[model_ind]])
 ```
