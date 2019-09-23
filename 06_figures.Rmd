@@ -14,7 +14,7 @@ knitr::include_graphics(here::here(ifelse(french, "figures/BC-FR.png", "figures/
 
 (ref:major-catch-cap-french) `r paste0("Série chronologique des prises totales débarquées en milliers de tonnes (t) de hareng du Pacifique de ", major_start_yr, " à ", major_end_yr, " dans les principales régions d’évaluation des stocks. Légende : « Autre » représente la réduction, ainsi que les pêches pratiquées à des fins de subsistance, pour le marché des appâts et pour des usages spéciaux; « RogueFM » représente la pêche au hareng rogué au filet maillant; et « RogueSN » représente la pêche au hareng rogué à la senne.")`
 
-```{r major-catch, fig.asp = 1, fig.cap = ifelse(french, "(ref:major-catch-cap-french)", "(ref:major-catch-cap)")}
+```{r major-catch, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-catch-cap-french)", "(ref:major-catch-cap)")}
 plot_catch(major_catch,
            xlim = c(major_start_yr, major_end_yr),
            translate = french)
@@ -40,7 +40,7 @@ plot_wa(major_wa,
 
 (ref:major-pa-cap-french) `r paste0("Série chronologique de la proportion selon l’âge pour le hareng du Pacifique de ", major_start_yr, " à ", assess_yr, " dans les principales régions d’évaluation des stocks. La ligne noire correspond à l’âge moyen et la zone ombragée à la distribution d’environ 90 %. Les résumés biologiques ne comprennent que les échantillons prélevés à l’aide de sennes (pêche commerciale et pêche d’essai) en raison de la sélectivité par taille des autres types d’engins tels que les filets maillants. La classe des poissons âgés de ", age_plus, " ans est un groupe « plus » qui comprend les poissons âgés de ", age_plus, " ans et plus.")`
 
-```{r major-pa, fig.asp = 1, fig.cap = ifelse(french, "(ref:major-pa-cap-french)", "(ref:major-pa-cap)")}
+```{r major-pa, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-pa-cap-french)", "(ref:major-pa-cap)")}
 plot_pa(major_pa,
         age_plus = age_plus,
         conf = ci_level,
@@ -54,7 +54,7 @@ plot_pa(major_pa,
 
 (ref:major-spawn-index-cap-french) `r paste0("Série chronologique de l’indice du frai en milliers de tonnes pour le hareng du Pacifique de ", major_start_yr, " à ", assess_yr, " dans les principales régions d’évaluation des stocks. L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante : relevés en surface (de ", major_start_yr, " à ", new_surv_yr - 1, ") et relevés de plongée (de ", new_surv_yr, " à ", assess_yr, "). La ligne verticale en pointillés est la limite entre ces deux périodes. L’indice du frai représente uniquement les données brutes de relevé et n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai, q.")`
 
-```{r major-spawn-index, fig.asp = 1, fig.cap = ifelse(french, "(ref:major-spawn-index-cap-french)", "(ref:major-spawn-index-cap)")}
+```{r major-spawn-index, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-spawn-index-cap-french)", "(ref:major-spawn-index-cap)")}
 plot_spawn_ind(major_surv,
                xlim = c(major_start_yr, major_end_yr),
                new_surv_yr = new_surv_yr,
