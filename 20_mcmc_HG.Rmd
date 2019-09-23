@@ -37,18 +37,18 @@ make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
 ```
 
-```{r hg-traces-figure, fig.cap = paste0("Trace plots for MCMC output of estimated parameters for the Haida Gwaii AM2 model. The MCMC run had chain length ", mcmc_length, " with a sample taken at every ", f(mcmc_samp_freq), "th iteration. The catchability parameter $q_1$ represents the surface survey and $q_2$ the dive survey. Parameters $\\hat{a}_k$ (selectivity-at-age-50\\%), and $\\hat{\\gamma}_k$ (selectivity standard deviation-at-50\\%) represent gears as follows: $k=1$: Other fisheries, $k=2$: Roe seine, $k=3$: Gillnet roe.")}
+```{r hg-traces-figure, fig.asp=1, fig.cap = paste0("Trace plots for MCMC output of estimated parameters for the Haida Gwaii AM2 model. The MCMC run had chain length ", mcmc_length, " with a sample taken at every ", f(mcmc_samp_freq), "th iteration. The catchability parameter $q_1$ represents the surface survey and $q_2$ the dive survey. Parameters $\\hat{a}_k$ (selectivity-at-age-50\\%), and $\\hat{\\gamma}_k$ (selectivity standard deviation-at-50\\%) represent gears as follows: $k=1$: Other fisheries, $k=2$: Roe seine, $k=3$: Gillnet roe.")}
 make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
 
 (ref:hg-autocor-figure) Autocorrelation plots for MCMC output of estimated parameters for the Haida Gwaii AM2 model. See Figure \@ref(fig:hg-traces-figure) for parameter descriptions.
-```{r hg-autocor-figure, fig.cap = "(ref:hg-autocor-figure)"}
+```{r hg-autocor-figure, fig.asp=1, fig.cap = "(ref:hg-autocor-figure)"}
 make.autocor.plot(major_models[[model_ind]])
 ```
 
 (ref:hg-pairs-figure) Pairs plots for MCMC output of estimated parameters in for the Haida Gwaii AM2 model. See Figure \@ref(fig:hg-traces-figure) for parameter descriptions.
-```{r hg-pairs-figure, fig.cap = "(ref:hg-pairs-figure)"}
+```{r hg-pairs-figure, fig.asp=1, fig.cap = "(ref:hg-pairs-figure)"}
 make.pairs.plot(major_models[[model_ind]])
 ```
 
