@@ -8,7 +8,8 @@ year: 2019
 month: September
 report_number: XXX
 approver: |
-  Carmel Lowe
+  Carmel Lowe\
+  Regional Director
 approval_year: 2019
 approval_month: September
 approval_day: 30
