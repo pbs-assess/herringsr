@@ -102,6 +102,7 @@ cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
               "biomass in year $t$, and $SB_0$ is estimated ",
               "unfished biomass) for the Haida Gwaii major stock assessment ",
               "region.")
+model_ind <- match(en2fr("HG", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-9,
                              xcaption = cap,
@@ -122,6 +123,7 @@ cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
               "biomass in year $t$, and $SB_0$ is estimated ",
               "unfished biomass) for the Prince Rupert District major stock ",
               "assessment region.")
+model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-9,
                              xcaption = cap,
@@ -142,6 +144,7 @@ cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
               "biomass in year $t$, and $SB_0$ is estimated ",
               "unfished biomass) for the Central Coast major stock assessment ",
               "region.")
+model_ind <- match(en2fr("CC", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-9,
                              xcaption = cap,
@@ -162,6 +165,7 @@ cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
               "biomass in year $t$, and $SB_0$ is estimated ",
               "unfished biomass) for the Strait of Georgia major stock ",
               "assessment region.")
+model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-9,
                              xcaption = cap,
@@ -182,6 +186,7 @@ cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
               "biomass in year $t$, and $SB_0$ is estimated ",
               "unfished biomass) for the West Coast of Vancouver Island major ",
               " stock assessment region.")
+model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-9,
                              xcaption = cap,
@@ -299,10 +304,7 @@ col_align <- "cc|c|c|c|c|c|c|c"
 #                     font.size = 11,
 #                     space.size = 12,
 #                     placement = "H")
-prd_mp <- read_csv("data/mp-prd.csv") %>% 
-  as_tibble() %>% 
-  arrange(desc(obj1), desc(obj2))
-decision_tables_mp(prd_mp,
+decision_tables_mp(mp.prd,
                    xcaption = ifelse(french, "(ref:decision-table-prd-cap-french)", "(ref:decision-table-prd-cap)"),
                    xlabel = "tab:decision-table-prd",
                    font.size = 7,
@@ -327,10 +329,7 @@ decision_tables_mp(prd_mp,
 #                     font.size = 11,
 #                     space.size = 12,
 #                     placement = "H")
-cc_mp <- read_csv("data/mp-cc.csv") %>% 
-  as_tibble() %>% 
-  arrange(desc(obj1), desc(obj2))
-decision_tables_mp(cc_mp,
+decision_tables_mp(mp.cc,
                    xcaption = ifelse(french, "(ref:decision-table-cc-cap-french)", "(ref:decision-table-cc-cap)"),
                    xlabel = "tab:decision-table-cc",
                    font.size = 7,
@@ -358,10 +357,7 @@ decision_tables_mp(cc_mp,
 #                     space.size = 12,
 #                     placement = "H")
 #
-sog_mp <- read_csv("data/mp-sog.csv") %>% 
-  as_tibble() %>% 
-  arrange(desc(obj1), desc(obj2))
-decision_tables_mp(sog_mp,
+decision_tables_mp(mp.sog,
                    xcaption = ifelse(french, "(ref:decision-table-sog-cap-french)", "(ref:decision-table-sog-cap)"),
                    xlabel = "tab:decision-table-sog",
                    font.size = 7,
@@ -371,7 +367,7 @@ decision_tables_mp(sog_mp,
                    perc_dec_pts = 0,
                    dec_pts = 2,
                    col_align = col_align,
-                   inc_mps = 9,
+                   #inc_mps = 9,
                    translate = french)
 ```
 
