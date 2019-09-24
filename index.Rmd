@@ -1,8 +1,9 @@
 ---
-#title: "Status of Pacific Herring (*Clupea Pallasii*) in 2019 and Forecast for 2020"
-title: "Stock Status Update with Application of Management Procedures for BC Pacific Herring (*Clupea pallasii*): 2019 Status and 2020 Forecast"
-title_short: "Pacific Herring status 2019 and forecast 2020"
-title_other: "ÉTAT DU HARENG DU PACIFIQUE (CLUPEA PALLASII) EN 2018 ET PRÉVISIONS POUR 2019"
+title: "Stock Status Update with Application of Management Procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: 2019 Status and 2020 Forecast"
+#title: "Status of Pacific Herring (*Clupea pallasii*) in 2019 and Forecast for 2020"
+title_short: "Pacific Herring status in 2019 and forecast for 2020"
+title_other: "Mise à jour sur l'état des stocks et application des procédures de gestion du hareng du Pacifique (*Clupea pallasii*) de la Colombie-Britannique: état en 2019 et prévisions pour 2020"
+# "État du hareng du Pacifique (*Clupea pallasii*) en 2018 et prévisions pour 2019"
 year: 2019
 month: September
 report_number: XXX
