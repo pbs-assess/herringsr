@@ -7,10 +7,7 @@ year: 2019
 month: September
 report_number: XXX
 approver: |
-  Carmel Lowe\
-  Regional Director\
-  Science Branch, Pacific Region\
-  Fisheries and Oceans Canada
+  Carmel Lowe
 approval_year: 2019
 approval_month: September
 approval_day: 30
