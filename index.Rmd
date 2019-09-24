@@ -12,7 +12,7 @@ approver: |
   Regional Director
 approval_year: 2019
 approval_month: September
-approval_day: 30
+approval_day: XX
 branch: Science Branch
 region: Pacific Region
 address: |
