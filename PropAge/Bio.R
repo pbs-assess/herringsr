@@ -12,9 +12,74 @@ gear <- tribble(
   2,     "RoeSN",
   3,     "RoeGN" )
 
+# Maximum age (plus group)
+agePlus <- 10
+
+# Plot width
+pWidth <- 6.5
+
 # Load the biosample data
-bio <- read_csv( file=file.path("PropAge", "bio.csv"), col_types=cols() ) %>%
+raw <- read_csv( file=file.path("PropAge", "BioSoG2019.csv"),
+                 col_types=cols() )
+
+# Light wrangling
+bio <- raw %>%
   left_join( y=gear, by="Period" ) %>%
   select( Year, Month, Region, StatArea, Section,
-          LocationName, Eastings, Northings, Sample, Fish, Length, Weight,
-          Sex, MaturityCode, Age, GonadLength, GonadWeight, Gear )
+          LocationName, Sample, Fish, Length, Weight,
+          Sex, MaturityCode, Age, Gear ) %>%
+  mutate( Age=ifelse(Age >= agePlus, agePlus, Age),
+          Gear=factor(Gear, levels=gear$Gear) ) %>%
+  arrange( Month, Sample, Fish, Age )
+
+# Summarise by sample
+bioSamp <- bio %>%
+  group_by( Gear, Sample, Age ) %>%
+  summarise( Number=n()) %>%
+  mutate(  Proportion=Number/sum(Number) ) %>%
+  ungroup( )
+
+# Summarise by gear
+bioGear <- bioSamp %>%
+  group_by( Gear, Age ) %>%
+  summarise( Number=sum(Number) ) %>%
+  mutate(  Proportion=Number/sum(Number) ) %>%
+  ungroup( )
+
+# Plot proportion-at-age by gear
+pPropAgeGear <- ggplot( data=bioGear, mapping=aes(x=Age, y=Proportion) ) +
+  geom_bar( stat="identity" ) +
+  facet_grid( ~ Gear ) +
+  scale_x_continuous( breaks=pretty(2:agePlus) ) +
+  theme_bw( ) +
+  ggsave( filename=file.path("PropAge", "PropAgeGear.png"), width=pWidth,
+          height=pWidth/3 )
+
+# Plot proportion-at-age by sample: Other
+pPropAgeSampOther <- ggplot( data=bioSamp %>% filter( Gear == "Other"),
+                             mapping=aes(x=Age, y=Proportion) ) +
+  geom_bar( stat="identity" ) +
+  facet_wrap( ~ Sample ) +
+  scale_x_continuous( breaks=pretty(2:agePlus) ) +
+  theme_bw( ) +
+  ggsave( filename=file.path("PropAge", "PropAgeSampOther.png"), width=pWidth,
+          height=pWidth )
+
+# Plot proportion-at-age by sample: RoeSN
+pPropAgeSampRoeSN <- ggplot( data=bioSamp %>% filter( Gear == "RoeSN"),
+                             mapping=aes(x=Age, y=Proportion) ) +
+  geom_bar( stat="identity" ) +
+  facet_wrap( ~ Sample ) +
+  scale_x_continuous( breaks=pretty(2:agePlus) ) +
+  ggsave( filename=file.path("PropAge", "PropAgeSampRoeSN.png"), width=pWidth,
+          height=pWidth )
+
+# Plot proportion-at-age by sample: RoeGN
+pPropAgeSampRoeGN <- ggplot( data=bioSamp %>% filter( Gear == "RoeGN"),
+                             mapping=aes(x=Age, y=Proportion) ) +
+  geom_bar( stat="identity" ) +
+  facet_wrap( ~ Sample ) +
+  scale_x_continuous( breaks=pretty(2:agePlus) ) +
+  theme_bw( ) +
+  ggsave( filename=file.path("PropAge", "PropAgeSampRoeGN.png"), width=pWidth,
+          height=pWidth )
