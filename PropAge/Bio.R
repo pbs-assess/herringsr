@@ -55,9 +55,11 @@ bioGear <- bioSamp %>%
 
 # Plot proportion-at-age by gear
 pPropAgeGear <- ggplot( data=bioGear, mapping=aes(x=Age, y=Proportion) ) +
-  geom_bar( stat="identity" ) +
+  geom_bar( stat="identity", aes(fill=Age!=2) )  +
   facet_grid( ~ Gear ) +
   scale_x_continuous( breaks=pretty(2:agePlus) ) +
+  scale_fill_viridis_d( ) +
+  guides( fill=FALSE ) +
   theme_bw( ) +
   ggsave( filename=file.path("PropAge", "PropAgeGear.png"), width=pWidth,
           height=pWidth/3 )
@@ -65,9 +67,11 @@ pPropAgeGear <- ggplot( data=bioGear, mapping=aes(x=Age, y=Proportion) ) +
 # Plot proportion-at-age by sample: Other
 pPropAgeSampOther <- ggplot( data=bioSamp %>% filter( Gear == "Other"),
                              mapping=aes(x=Age, y=Proportion) ) +
-  geom_bar( stat="identity" ) +
+  geom_bar( stat="identity", aes(fill=Age!=2) )  +
   facet_wrap( ~ Sample ) +
   scale_x_continuous( breaks=pretty(2:agePlus) ) +
+  scale_fill_viridis_d( ) +
+  guides( fill=FALSE ) +
   theme_bw( ) +
   ggsave( filename=file.path("PropAge", "PropAgeSampOther.png"), width=pWidth,
           height=pWidth )
@@ -75,18 +79,22 @@ pPropAgeSampOther <- ggplot( data=bioSamp %>% filter( Gear == "Other"),
 # Plot proportion-at-age by sample: RoeSN
 pPropAgeSampRoeSN <- ggplot( data=bioSamp %>% filter( Gear == "RoeSN"),
                              mapping=aes(x=Age, y=Proportion) ) +
-  geom_bar( stat="identity" ) +
+  geom_bar( stat="identity", aes(fill=Age!=2) )  +
   facet_wrap( ~ Sample ) +
   scale_x_continuous( breaks=pretty(2:agePlus) ) +
+  scale_fill_viridis_d( ) +
+  guides( fill=FALSE ) +
   ggsave( filename=file.path("PropAge", "PropAgeSampRoeSN.png"), width=pWidth,
           height=pWidth )
 
 # Plot proportion-at-age by sample: RoeGN
 pPropAgeSampRoeGN <- ggplot( data=bioSamp %>% filter( Gear == "RoeGN"),
                              mapping=aes(x=Age, y=Proportion) ) +
-  geom_bar( stat="identity" ) +
+  geom_bar( stat="identity", aes(fill=Age!=2) )  +
   facet_wrap( ~ Sample ) +
   scale_x_continuous( breaks=pretty(2:agePlus) ) +
+  scale_fill_viridis_d( ) +
+  guides( fill=FALSE ) +
   theme_bw( ) +
   ggsave( filename=file.path("PropAge", "PropAgeSampRoeGN.png"), width=pWidth,
           height=pWidth )
