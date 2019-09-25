@@ -1,0 +1,161 @@
+Gear,Month,StatArea,Section,LocationName,Sample,2,3,4,5,6,7,8,9,10
+Other,1,13,132,Deepwater Bay,58,5,24,33,12,13,2,2,NA,NA
+Other,1,14,143,Little Qualicum Rvr,1,13,29,22,16,7,4,1,NA,NA
+Other,1,14,143,Little Qualicum Rvr,3,32,37,10,4,7,NA,NA,NA,NA
+Other,1,14,143,Little Qualicum Rvr,50,16,34,21,10,3,NA,NA,NA,NA
+Other,1,14,143,Northwest Bay,16,13,17,27,20,8,1,1,NA,NA
+Other,1,14,143,Qualicum Bay,26,8,22,23,18,4,1,1,NA,NA
+Other,1,14,143,Qualicum Beach,27,13,25,19,12,3,5,NA,NA,NA
+Other,1,14,143,Qualicum Beach,38,21,43,16,1,1,NA,NA,NA,NA
+Other,1,17,172,Descanso Bay,23,42,27,2,1,NA,1,NA,NA,NA
+Other,1,17,172,Descanso Bay,45,36,27,14,3,1,NA,NA,NA,NA
+Other,1,17,172,Edgell Banks,22,17,41,17,8,3,1,NA,1,NA
+Other,1,17,172,Edgell Banks,24,21,29,21,4,5,3,2,NA,NA
+Other,1,17,172,Edgell Banks,25,13,17,28,13,7,1,1,NA,NA
+Other,1,17,172,Edgell Banks,42,20,38,14,10,3,2,NA,NA,NA
+Other,1,17,172,Gabriola Is (N Shore),21,20,38,18,9,6,1,1,1,NA
+Other,1,17,172,Lantzville,2,18,8,7,2,2,NA,3,NA,NA
+Other,1,17,172,Lantzville,4,19,33,23,9,3,2,NA,NA,NA
+Other,1,17,172,Lantzville,10,15,34,28,4,2,1,1,NA,NA
+Other,1,17,172,Lantzville,28,7,28,20,14,10,3,1,NA,NA
+Other,1,17,172,Lantzville,43,18,25,15,16,7,3,NA,NA,NA
+Other,1,17,172,Maude Is,6,40,39,9,1,NA,1,NA,NA,NA
+Other,1,17,172,Maude Is,7,22,40,21,5,1,3,NA,NA,NA
+Other,1,17,172,Winchelsea Is,37,30,31,14,5,4,3,1,NA,NA
+Other,1,29,291,"Galiano Is, East side",15,33,47,7,3,NA,NA,NA,NA,NA
+Other,1,29,291,"Galiano Is, East side",46,41,32,8,6,2,1,NA,NA,NA
+Other,2,17,172,Maude Is,12,20,32,20,7,3,1,1,NA,NA
+Other,2,17,172,Maude Is,30,25,27,12,3,NA,3,NA,NA,NA
+Other,2,17,172,Sunrise Beach +,33,23,19,22,6,3,2,NA,NA,NA
+Other,11,13,132,Deepwater Bay,68,7,20,12,14,9,4,2,NA,NA
+Other,11,13,132,Deepwater Bay,91,16,31,14,7,2,3,NA,NA,NA
+Other,11,13,132,Deepwater Bay,98,26,18,19,6,8,6,NA,NA,NA
+Other,11,14,143,French Cr,18,29,26,12,6,NA,1,1,NA,NA
+Other,11,14,143,Qualicum Beach,8,6,16,11,1,2,NA,NA,NA,NA
+Other,11,14,143,Qualicum Beach,40,5,30,29,12,11,3,NA,NA,NA
+Other,11,14,143,Rathtrevor Beach,34,29,38,9,7,1,1,NA,NA,NA
+Other,11,17,172,Gabriola Is (N Shore),29,66,20,2,NA,NA,NA,NA,NA,NA
+Other,11,17,172,Snake Is,35,23,21,17,4,3,NA,NA,NA,NA
+Other,11,29,291,"Galiano Is, East side",5,35,31,20,5,1,2,NA,NA,NA
+Other,11,29,291,"Galiano Is, East side",19,15,31,26,12,3,1,NA,NA,NA
+Other,11,29,291,"Galiano Is, East side",31,41,13,5,1,NA,NA,NA,NA,NA
+Other,11,29,291,"Galiano Is, East side",36,33,33,12,4,2,2,NA,NA,NA
+Other,11,29,291,"Galiano Is, East side",39,18,29,19,8,7,6,1,NA,NA
+Other,12,13,132,Deepwater Bay,92,10,34,30,11,1,NA,NA,NA,NA
+Other,12,14,143,Qualicum Beach,9,9,27,10,18,16,7,1,1,NA
+Other,12,14,143,Qualicum Beach,13,16,39,20,14,1,NA,NA,NA,NA
+Other,12,14,143,Qualicum Beach,17,14,28,25,15,8,2,1,NA,NA
+Other,12,17,172,Edgell Banks,11,15,27,22,10,3,4,NA,NA,NA
+Other,12,17,172,Lantzville,20,20,32,23,7,4,2,NA,NA,NA
+Other,12,29,291,"Galiano Is, East side",14,30,40,13,1,1,1,NA,NA,NA
+Other,12,29,291,"Galiano Is, East side",32,25,39,12,7,3,1,NA,NA,NA
+Other,12,29,291,"Galiano Is, East side",41,32,35,5,NA,NA,NA,NA,NA,NA
+Other,12,29,291,"Galiano Is, East side",44,7,23,24,12,2,4,3,NA,NA
+RoeSN,2,14,141,Ajax Bank,69,32,34,16,13,2,NA,1,NA,NA
+RoeSN,2,14,142,Cape Lazo,61,23,25,23,10,3,3,NA,NA,NA
+RoeSN,2,14,142,Cape Lazo,62,26,35,23,3,4,1,NA,NA,NA
+RoeSN,2,14,142,Cape Lazo,90,21,43,22,9,1,NA,NA,NA,NA
+RoeSN,2,14,143,Rathtrevor Beach,65,19,44,15,10,2,2,1,NA,NA
+RoeSN,2,17,172,Maude Is,64,28,36,17,6,2,2,NA,NA,NA
+RoeSN,3,14,141,Kitty Coleman Beach,102,19,36,12,7,2,NA,1,NA,NA
+RoeSN,3,14,142,Collishaw Pt,60,14,29,27,13,3,3,NA,NA,NA
+RoeSN,3,14,142,Collishaw Pt,204,29,36,18,5,2,2,1,NA,NA
+RoeSN,3,14,142,Komas Bluff,49,18,32,17,15,4,2,1,NA,NA
+RoeSN,3,14,142,Komas Bluff,66,21,25,17,9,9,4,NA,NA,NA
+RoeSN,3,14,142,Komas Bluff,84,19,30,23,9,2,2,NA,NA,NA
+RoeSN,3,14,142,Komas Bluff,87,19,23,27,8,NA,NA,1,NA,NA
+RoeSN,3,14,142,Norman Pt,82,21,40,18,4,3,1,NA,NA,NA
+RoeSN,3,14,142,Norris Rks,67,17,25,29,15,5,2,NA,NA,NA
+RoeSN,3,14,142,Norris Rks,93,53,24,3,1,NA,NA,NA,NA,NA
+RoeSN,3,14,142,Sandy Is,57,34,22,23,13,4,1,NA,NA,NA
+RoeSN,3,14,142,Tribune Bay,194,10,31,23,14,5,3,NA,NA,NA
+RoeSN,3,14,143,Columbia Beach,52,21,38,17,10,2,NA,1,NA,NA
+RoeSN,3,14,143,Columbia Beach,55,19,35,29,7,2,4,NA,NA,NA
+RoeSN,3,14,143,Columbia Beach,109,9,21,15,12,8,2,NA,NA,NA
+RoeSN,3,14,143,Columbia Beach,113,2,16,24,21,3,9,4,NA,1
+RoeSN,3,14,143,Columbia Beach,134,13,16,26,8,4,3,NA,NA,NA
+RoeSN,3,14,143,French Cr,53,7,41,26,10,5,1,NA,1,NA
+RoeSN,3,14,143,French Cr,112,35,43,7,NA,NA,NA,NA,NA,NA
+RoeSN,3,14,143,French Cr,125,7,26,17,20,4,3,NA,NA,NA
+RoeSN,3,14,143,French Cr,127,8,23,15,11,9,3,NA,NA,NA
+RoeSN,3,14,143,French Cr,136,12,28,30,9,6,2,NA,NA,NA
+RoeSN,3,14,143,French Cr,138,9,21,18,NA,NA,3,NA,NA,NA
+RoeSN,3,14,143,French Cr,141,11,22,19,7,7,NA,NA,NA,NA
+RoeSN,3,14,143,Mistaken Is,51,13,44,18,6,3,1,NA,NA,NA
+RoeSN,3,14,143,Northwest Bay,59,21,41,18,8,2,NA,NA,NA,NA
+RoeSN,3,14,143,Northwest Bay,107,9,21,24,6,8,2,2,NA,NA
+RoeSN,3,14,143,Northwest Bay,110,3,26,27,14,7,4,NA,1,NA
+RoeSN,3,14,143,Northwest Bay,111,1,9,26,22,10,4,1,NA,NA
+RoeSN,3,14,143,Northwest Bay,114,13,19,20,14,8,2,1,NA,NA
+RoeSN,3,14,143,Northwest Bay,119,15,27,15,12,5,1,1,NA,NA
+RoeSN,3,14,143,Northwest Bay,124,10,16,18,12,7,3,4,NA,NA
+RoeSN,3,14,143,Northwest Bay,128,9,20,26,11,6,NA,NA,NA,NA
+RoeSN,3,14,143,Northwest Bay,129,11,24,15,12,6,5,1,NA,NA
+RoeSN,3,14,143,Northwest Bay,135,6,16,21,15,6,3,2,NA,NA
+RoeSN,3,14,143,Northwest Bay,139,4,22,12,19,13,2,2,NA,NA
+RoeSN,3,14,143,Northwest Bay,143,5,20,27,12,7,2,NA,NA,NA
+RoeSN,3,14,143,Northwest Bay,144,8,20,27,13,14,2,2,1,NA
+RoeSN,3,14,143,Northwest Bay,154,9,33,18,1,7,2,NA,1,NA
+RoeSN,3,14,143,Northwest Bay,155,9,11,26,14,7,8,NA,2,NA
+RoeSN,3,14,143,Northwest Bay,156,20,27,10,7,2,NA,NA,NA,NA
+RoeSN,3,14,143,Northwest Bay,157,4,21,21,26,10,4,NA,NA,NA
+RoeSN,3,14,143,Parksville,48,11,41,20,8,3,1,NA,NA,NA
+RoeSN,3,14,143,Qualicum Beach,56,30,36,12,9,1,1,1,NA,NA
+RoeSN,3,14,143,Qualicum Beach,115,17,20,20,6,5,NA,NA,NA,NA
+RoeSN,3,14,143,Qualicum Beach,117,7,20,20,18,5,1,1,NA,NA
+RoeSN,3,14,143,Qualicum Beach,121,3,14,27,22,9,1,1,NA,NA
+RoeSN,3,14,143,Qualicum Beach,123,7,25,24,11,9,6,NA,NA,NA
+RoeSN,3,14,143,Qualicum Beach,202,20,38,23,6,3,2,NA,NA,NA
+RoeSN,3,14,143,Rathtrevor Beach,54,6,18,25,17,11,4,1,NA,NA
+RoeSN,3,14,143,Rathtrevor Beach,101,46,33,12,NA,NA,NA,NA,NA,NA
+RoeSN,3,14,143,Rathtrevor Beach,140,8,17,21,16,8,3,NA,NA,NA
+RoeSN,3,14,143,Rathtrevor Beach,158,4,26,21,16,5,3,NA,NA,NA
+RoeSN,3,15,152,Dinner Rk,83,60,19,9,2,1,NA,1,NA,NA
+RoeSN,3,15,152,Powell Rvr Mill,85,52,23,6,NA,1,1,NA,NA,NA
+RoeSN,3,17,172,Blunden Pt,100,20,46,14,5,1,NA,NA,NA,NA
+RoeSN,3,17,172,Icarus Pt,47,46,37,7,2,1,NA,NA,NA,NA
+RoeSN,3,17,172,Maude Is,99,34,52,5,2,1,1,NA,NA,NA
+RoeSN,3,17,173,Danger Rfs,86,30,32,14,5,2,NA,NA,NA,NA
+RoeGN,3,14,142,Cape Lazo,187,NA,1,11,18,7,5,3,NA,NA
+RoeGN,3,14,142,Chrome Is,148,NA,4,18,17,8,3,2,NA,NA
+RoeGN,3,14,142,Chrome Is,166,1,2,19,14,9,8,2,NA,NA
+RoeGN,3,14,142,Chrome Is,174,NA,2,5,16,11,7,4,NA,NA
+RoeGN,3,14,142,Denman Is E,118,NA,2,8,11,8,6,1,1,NA
+RoeGN,3,14,142,Denman Is E,161,NA,3,10,20,10,8,2,NA,NA
+RoeGN,3,14,142,Denman Is E,188,NA,3,18,20,16,6,1,NA,NA
+RoeGN,3,14,142,Fillongley Park,116,NA,1,10,17,12,12,2,NA,NA
+RoeGN,3,14,142,Fillongley Park,120,NA,2,9,17,12,8,NA,1,NA
+RoeGN,3,14,142,Fillongley Park,131,NA,4,23,17,14,2,1,NA,NA
+RoeGN,3,14,142,Fillongley Park,132,NA,5,16,13,12,4,2,2,NA
+RoeGN,3,14,142,Fillongley Park,165,NA,1,19,17,13,9,3,NA,NA
+RoeGN,3,14,142,Fillongley Park,171,NA,7,22,18,6,6,2,NA,NA
+RoeGN,3,14,142,Fillongley Park,175,NA,2,10,7,16,8,1,1,NA
+RoeGN,3,14,142,Gartley Pt,170,NA,1,16,15,17,4,NA,NA,NA
+RoeGN,3,14,142,Komas Bluff,122,NA,NA,11,25,14,7,4,NA,NA
+RoeGN,3,14,142,Komas Bluff,126,NA,3,12,14,15,6,1,NA,NA
+RoeGN,3,14,142,Komas Bluff,130,NA,2,11,10,12,5,2,NA,NA
+RoeGN,3,14,142,Komas Bluff,133,1,4,9,10,9,8,2,NA,NA
+RoeGN,3,14,142,Komas Bluff,137,NA,3,17,20,8,4,2,NA,NA
+RoeGN,3,14,142,Komas Bluff,169,NA,2,11,22,18,5,3,1,1
+RoeGN,3,14,142,Komas Bluff,178,NA,2,20,18,13,4,NA,1,1
+RoeGN,3,14,142,Repulse Pt,151,NA,NA,8,20,12,6,2,NA,NA
+RoeGN,3,14,142,Sandy Is,162,NA,1,12,12,14,7,8,NA,NA
+RoeGN,3,14,142,Sandy Is,167,NA,7,18,21,15,6,5,NA,NA
+RoeGN,3,14,142,Sandy Is,168,NA,5,10,14,8,5,NA,NA,NA
+RoeGN,3,14,142,Whalebone Pt,163,NA,NA,5,7,5,5,3,NA,NA
+RoeGN,3,14,142,Whalebone Pt,179,NA,4,19,17,12,11,4,NA,NA
+RoeGN,3,14,142,Willemar Bluff,160,1,7,16,14,12,5,NA,NA,NA
+RoeGN,3,14,142,Willemar Bluff,173,NA,3,17,10,7,2,5,NA,NA
+RoeGN,3,14,142,Willemar Bluff,177,NA,1,7,7,7,3,5,NA,NA
+RoeGN,3,14,143,Mapleguard Pt,153,NA,4,20,11,8,3,1,NA,NA
+RoeGN,3,14,143,Mapleguard Pt,176,NA,4,20,15,7,8,NA,NA,NA
+RoeGN,3,14,143,Nile Cr,152,NA,12,11,13,10,2,1,NA,NA
+RoeGN,3,14,143,Northwest Bay,145,15,18,20,10,9,1,NA,NA,NA
+RoeGN,3,14,143,Northwest Bay,159,6,26,22,15,6,3,1,NA,NA
+RoeGN,3,14,143,Qualicum Bay,146,NA,8,23,17,10,2,2,NA,NA
+RoeGN,3,14,143,Qualicum Bay,147,NA,2,10,23,10,6,1,1,NA
+RoeGN,3,14,143,Qualicum Bay,149,NA,12,7,8,17,4,1,NA,NA
+RoeGN,3,14,143,Qualicum Bay,164,NA,5,24,14,5,5,1,NA,NA
+RoeGN,3,14,143,Qualicum Bay,172,NA,1,7,11,3,3,5,1,NA
+RoeGN,3,14,143,Qualicum Beach,150,NA,1,5,15,9,5,NA,NA,NA
+RoeGN,4,14,143,Nile Cr,180,1,11,17,10,9,3,NA,NA,NA

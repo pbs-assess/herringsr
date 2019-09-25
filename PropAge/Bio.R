@@ -4,6 +4,7 @@ graphics.off( )
 
 # Packages
 require( tidyverse )
+require( reshape2 )
 
 # Gear look up table
 gear <- tribble(
@@ -34,10 +35,16 @@ bio <- raw %>%
 
 # Summarise by sample
 bioSamp <- bio %>%
-  group_by( Gear, Sample, Age ) %>%
+  group_by( Gear, Month, StatArea, Section, LocationName, Sample, Age ) %>%
   summarise( Number=n()) %>%
   mutate(  Proportion=Number/sum(Number) ) %>%
   ungroup( )
+
+# Summaries by sample, wide version
+bioSampW <- bioSamp %>%
+  dcast( Gear + Month + StatArea + Section + LocationName + Sample ~ Age,
+         value.var="Number" ) %>%
+  write_csv( path=file.path("PropAge", "Summary.csv") )
 
 # Summarise by gear
 bioGear <- bioSamp %>%
