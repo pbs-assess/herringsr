@@ -11,24 +11,29 @@ get_sbt_sbo <- function(name){
   list(sbt, sbo)
 }
 
-#' Retrieve MP file with decision table data, perform HCR calculations,
-#' and return the table
+#' Retrieve MP file with decision table data and perform HCR calculations on the posteriors
 #'
 #' @param name name of the SAR Region
 #' @param fn file which contains the MP data for the given region
 #'
-#' @return a `tibble::tibble()` holding the data from the file plus two columns, catch, and hr (harvest rate)
-#' which are the catch limits and harverst rate calculated for the region by MP. Each value is a median of the
-#' values calculated for each point of the posterior.
+#' @return a list of two elements:
+#' 1. A list with the same number of elements as there are rows in the table read in from `fn`. Each of these is a list of
+#'  posteriors of length 2, tac and hr (harvest rate)
+#' 2. [tibble::tibble()] holding the data from the file plus two columns, tac and hr (harvest rate)
+#'  which are the median tac and harverst rate calculated for the region by MP.
 get_hcr <- function(sbt, sbo, fn){
   mp <- read_csv(fn) %>%
     as_tibble() %>%
     arrange(desc(obj1), desc(obj2)) %>%
     mutate(tac = NA,
            targ.hr = NA)
+  mp.lst <- NULL
   for(rw in seq_len(nrow(mp))){
-    mp[rw,] <- hcr(sbt, sbo, row = mp[rw,])
+    mp.lst[[rw]] <- hcr(sbt, sbo, row = mp[rw,])
+    mp[rw,]$tac <- median(sapply(mp.lst, "[[", 1))
+    mp[rw,]$targ.hr <- median(sapply(mp.lst, "[[", 2))
   }
+  list(mp.lst,
   mp %>% select(mp,
                 label,
                 obj1,
@@ -37,7 +42,7 @@ get_hcr <- function(sbt, sbo, fn){
                 obj4,
                 catch,
                 tac,
-                targ.hr)
+                targ.hr))
 }
 
 sbt_sbo.hg <- get_sbt_sbo("HG")
@@ -49,25 +54,31 @@ sbt_sbo.cc <- get_sbt_sbo("CC")
 sbt.cc <- sbt_sbo.cc[[1]]
 sbo.cc <- sbt_sbo.cc[[2]]
 rel.sbo.cc <- rep(1, length(sbo.cc))
-mp.cc <- get_hcr(sbt.cc,
-                 sbo.cc,
-                 fn = here("data/mp-cc.csv"))
+mp.lst.cc <- get_hcr(sbt.cc,
+                     sbo.cc,
+                     fn = here("data/mp-cc.csv"))
+mp.vals.cc <- mp.lst.cc[[1]]
+mp.cc <- mp.lst.cc[[2]]
 
 sbt_sbo.prd <- get_sbt_sbo("PRD")
 sbt.prd <- sbt_sbo.prd[[1]]
 sbo.prd <- sbt_sbo.prd[[2]]
 rel.sbo.prd <- rep(1, length(sbo.prd))
-mp.prd <- get_hcr(sbt.prd,
-                  sbo.prd,
-                  fn = here("data/mp-prd.csv"))
+mp.lst.prd <- get_hcr(sbt.prd,
+                      sbo.prd,
+                      fn = here("data/mp-prd.csv"))
+mp.vals.prd <- mp.lst.prd[[1]]
+mp.prd <- mp.lst.prd[[2]]
 
 sbt_sbo.sog <- get_sbt_sbo("SoG")
 sbt.sog <- sbt_sbo.sog[[1]]
 sbo.sog <- sbt_sbo.sog[[2]]
 rel.sbo.sog <- rep(1, length(sbo.sog))
-mp.sog <- get_hcr(sbt.sog,
-                  sbo.sog,
-                  fn = here("data/mp-sog.csv"))
+mp.lst.sog <- get_hcr(sbt.sog,
+                      sbo.sog,
+                      fn = here("data/mp-sog.csv"))
+mp.vals.sog <- mp.lst.sog[[1]]
+mp.sog <- mp.lst.sog[[2]]
 
 sbt_sbo.wcvi <- get_sbt_sbo("WCVI")
 sbt.wcvi <- sbt_sbo.wcvi[[1]]
