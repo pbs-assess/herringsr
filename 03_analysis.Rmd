@@ -245,14 +245,14 @@ The stock was below the LRP for much of that period and shows little evidence of
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(hg_proj_sbt[2])`&nbsp;t.
 The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3\mli{SB}_0$ with `r f(hg_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing (Table \@ref(tab:ref-points-hg) and Figure \@ref(fig:proj-biomass-density)).
 
-DFO has committed to developing and implementing a rebuilding plan for Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.[^1]
+DFO has committed to developing and implementing a rebuilding plan for Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.[^RebuildHG]
 Work is underway through a technical working group comprised of members of the Council of Haida Nation, DFO, and Parks Canada.
 Guidance for the Development of Rebuilding Plans under the Precautionary Approach Framework: Growing Stocks out of the Critical Zone [@dfo2013] states the primary objective of any rebuilding plan is to promote stock growth out of the Critical Zone (i.e., to grow the stock above the status-based LRP) by ensuring removals from all fishing sources are kept to the lowest possible level until the stock has cleared this zone with high probability.
 Stock rebuilding does not end having met this goal, however, and one of the goals of the rebuilding plan will be to identify candidate threshold biomass levels greater than the LRP that are consistent with a rebuilt state.
 
-DFO supports commercial herring fishery closures for the HG major stock area until April 2021. As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&nbsp;t.
+[^RebuildHG]: In response to recommendations in the Commissioner of the Environment and Sustainable Development (CESD) October 2016 Report 2 - Sustaining Canada’s Major Fish Stocks - Fisheries and Oceans Canada, the Department will develop rebuilding plans for major fish stocks that are in the precautionary approach critical zone, including Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.
 
-[^1]: In response to recommendations in the Commissioner of the Environment and Sustainable Development (CESD) October 2016 Report 2 - Sustaining Canada’s Major Fish Stocks - Fisheries and Oceans Canada, the Department will develop rebuilding plans for major fish stocks that are in the precautionary approach critical zone, including Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.
+DFO supports commercial herring fishery closures for the HG major stock area until April 2021. As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&nbsp;t.
 
 ### Prince Rupert District
 
@@ -298,10 +298,10 @@ The `r assess_yr + 1` recommended catch calculated by applying the MP is `r f(hc
 ### West Coast of Vancouver Island
 
 Closed-loop feedback simulations for WCVI evaluated alternative MPs that differed only in the configuration of the HCR and application of a fixed catch cap [@dfo2018].
-Results showed that no tested management procedure could meet the conservation objective of maintaining spawning biomass above the LRP with high probability (at least 75\%)[^2] across the three future natural mortality ($M$) scenarios.
+Results showed that no tested management procedure could meet the conservation objective of maintaining spawning biomass above the LRP with high probability (at least 75\%)[^HighProb] across the three future natural mortality ($M$) scenarios.
 In addition, for the scenario where $M$ is most similar to the last 10 years (density-independent-$M$), the historical HCR can only meet the conservation objective 56\% of the time.
 
-[^2]: "High" probability is defined as 75\% to 95\% by the DFO Decision-making framework [@dfo2009].
+[^HighProb]: "High" probability is defined as 75\% to 95\% by the DFO Decision-making framework [@dfo2009].
 
 Of the MPs that were simulation-tested across the three $M$ scenarios, the "best-performing" HCR maintained spawning biomass above the LRP with a 74\% probability.
 This HCR implements a lower OCP at the assessment model estimate of $0.5\mli{SB}_0$, a 10\% target harvest rate, and a maximum catch cap of 2,000&nbsp;t.
