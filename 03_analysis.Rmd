@@ -315,7 +315,7 @@ Using a HCR with OCPs at $0.5\mli{SB}_0$ and $0.6\mli{SB}_0$, a 10\% target harv
 
 Given the best performing MP for the WCVI did not meet the minimum "high" probability of 75\%, further simulation-testing of HCRs that include additional measures to ensure persistent stock growth away from the critical zone and towards identifed biomass targets may be required.
 For example, for a rebuilding stock a "slow-up" MP could be designed to delay fishery openings for an additional predefined number of years (e.g., 3 to 5) when the spawning biomass is estimated to be above the lower OCP in order to provide higher confidence of stock growth.
-The WCVI spawn index data and model estimates of spawning biomass (Figure \@ref(fig:storyboard-wcvi)a, d) show the increasing trajectory for WCVI herring as both gradual and erratic.
+The WCVI spawn index data and model estimates of spawning biomass (Figure \@ref(fig:storyboard-wcvi)a & d) show the increasing trajectory for WCVI herring as both gradual and erratic.
 The `r assess_yr` assessment estimates WCVI spawning biomass to be above the LRP from 2015 to 2018 (based on posterior medians), however this perspective based on stock assessment model estimates does not take into consideration positive assessment model errors.
 Thus simulation-evaluation of a "slow-up" MP is needed to identify the number of closure years needed to support continual stock growth.
 
