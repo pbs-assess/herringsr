@@ -55,7 +55,7 @@ fig_width <- 6.5
 fig_out_width <- "6.5in"
 fig_dpi <- 180
 fig_align <- "center"
-fig_pos <- "H"
+fig_pos <- "ht"
 opts_chunk$set(collapse = TRUE,
                warning = FALSE,
                message = FALSE,

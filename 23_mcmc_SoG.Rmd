@@ -17,7 +17,7 @@ make.parameters.est.table(major_models[[model_ind]],
                           xlabel = "tab:sog-parameter-est-table",
                           font.size = 11,
                           space.size = 12,
-                          placement = "H")
+                          placement = "ht")
 ```
 
 ```{r sog-recruitment-table, results = 'asis', echo = FALSE}
@@ -33,7 +33,7 @@ make.value.table(major_models[[model_ind]],
                  xlabel = "tab:sog-recruitment-table",
                  font.size = 11,
                  space.size = 12,
-                 placement = "H")
+                 placement = "ht")
                  ##tabular.environment = "longtable")
 ```
 
