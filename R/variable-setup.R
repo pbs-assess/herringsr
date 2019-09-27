@@ -89,8 +89,12 @@ minor_catch_short <- get_catch(minor_models,
                                minor_regions_short,
                                gear)
 
-total_final_yr_catch <- bind_rows( major_catch_short, minor_catch_short ) %>%
-  filter(year == assess_yr)
+suppressWarnings(
+  ## supress warnings is because the two tables have different factors for the `region` column
+  ## and are therefore coerced to character types before binding
+  total_final_yr_catch <- bind_rows(major_catch_short, minor_catch_short) %>%
+    filter(year == assess_yr)
+)
 
 total_final_yr_roe_catch <- total_final_yr_catch %>%
   filter(gear %in% !!gear$gearname[c(2,3)]) %>%
