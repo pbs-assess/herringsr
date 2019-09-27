@@ -137,7 +137,7 @@ cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
               "(MPD) estimates of spawning biomass in thousands of tonnes and ",
               "relative spawning biomass (i.e., depletion ",
               "$\\mli{SB}_t/\\mli{SB}_0$, where $\\mli{SB}_t$ is spawning ",
-              "biomass in year $t$, and \\mli{SB}_0$ is estimated ",
+              "biomass in year $t$, and $\\mli{SB}_0$ is estimated ",
               "unfished biomass) for the Prince Rupert District major stock ",
               "assessment region.")
 model_ind <- match(en2fr("PRD", french), major_regions_short)
