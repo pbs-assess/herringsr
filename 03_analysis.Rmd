@@ -232,11 +232,11 @@ Simulation analyses additionally showed that outcomes are insensitive to the cho
 This occurs because low biomass levels (associated with the lower OCP) are avoided for these management procedures (MPs).
 
 3. Differences in specifcation of Pacific Herring MPs, including the HCR components, are expected a priori among SARs.
-The reasons relate to differences in objectives deemed important by resource users, differences in historical and current stock and fishery dynamics, and differences in the magnitude and direction of assessment model errors in each area.
+The reasons relate to differences in objectives deemed important by resource users, differences in historical and current stock and fishery dynamics, and differences in the magnitude and direction of assessment model errors in each SAR.
 Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
 
 Harvest advice in `r assess_yr` for the SoG and WCVI SARs is guided by the results and lessons learned from the simulation-evaluation completed in the frst MSE cycle [@dfo2018].
-A similar simulation-evaluation process occurred in 2020 to assess performance of MPs for HG, PRD, and CC [@dfo2019]. 
+A similar simulation-evaluation process occurred in 2019 to assess MP performance for HG, PRD, and CC [@dfo2019]. 
 
 Details of harvest advice are provided below for each major SAR.
 
@@ -249,7 +249,7 @@ The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3
 
 DFO has committed to developing and implementing a rebuilding plan for Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.[^RebuildHG]
 Work is underway through a technical working group comprised of members of the Council of Haida Nation, DFO, and Parks Canada.
-Guidance for the Development of Rebuilding Plans under the Precautionary Approach Framework: Growing Stocks out of the Critical Zone [@dfo2013] states the primary objective of any rebuilding plan is to promote stock growth out of the Critical Zone (i.e., to grow the stock above the status-based LRP) by ensuring removals from all fishing sources are kept to the lowest possible level until the stock has cleared this zone with high probability.
+Guidance for the Development of Rebuilding Plans under the Precautionary Approach Framework: Growing Stocks out of the Critical Zone [@dfo2013] states that the primary objective of any rebuilding plan is to promote stock growth out of the Critical Zone (i.e., to grow the stock above the status-based LRP) by ensuring removals from all fishing sources are kept to the lowest possible level until the stock has cleared this zone with high probability.
 Stock rebuilding does not end having met this goal, however, and one of the goals of the rebuilding plan will be to identify candidate threshold biomass levels greater than the LRP that are consistent with a rebuilt state.
 
 [^RebuildHG]: In response to recommendations in the Commissioner of the Environment and Sustainable Development (CESD) October 2016 Report 2 - Sustaining Canada’s Major Fish Stocks - Fisheries and Oceans Canada, the Department will develop rebuilding plans for major fish stocks that are in the precautionary approach critical zone, including Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.
