@@ -42,7 +42,7 @@ make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
 ```
 
-```{r prd-traces-figure, fig.asp=1, fig.cap = paste0("Trace plots for MCMC output of estimated parameters for the Prince Rupert District major stock assessment region. The MCMC run had chain length ", mcmc_length, " with a sample taken at every ", f(mcmc_samp_freq), "th iteration. Subscripts on $q$ (catchability) indicate: 1 = surface survey, 2 = dive survey. Parameters $\\hat{a}_k$ (selectivity-at-age-50\\%), and $\\hat{\\gamma}_k$ (selectivity standard deviation-at-50\\%) represent gears as follows: $k=1$: Other fisheries, $k=2$: Roe seine, $k=3$: Gillnet roe.")}
+```{r prd-traces-figure, fig.asp=1, fig.cap = paste0("Trace plots for MCMC output of estimated parameters for the Prince Rupert District major stock assessment region. The MCMC run had chain length ", mcmc_length, " with a sample taken at every ", f(mcmc_samp_freq), "th iteration. Subscripts on $q$ (catchability) indicate: 1 = surface survey, 2 = dive survey. Parameters $\\hat{a}_k$ (selectivity-at-age-50\\%), and $\\hat{\\gamma}_k$ (selectivity standard deviation-at-50\\%) represent gears as follows: $k=1$: other fisheries, $k=2$: roe seine, $k=3$: roe gillnet.")}
 make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
