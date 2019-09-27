@@ -4,12 +4,12 @@ This section contains MCMC diagnostics for the Prince Rupert District major stoc
 These tables and figures will not be included in the final Science Response.
 
 ```{r prd-parameter-est-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
-              "95\\textsuperscript{th} percentile) and maximum posterior ",
+cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
+              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
               "density (MPD) estimates of key ",
               "parameters for the Prince Rupert District major stock ",
               "assessment region. Subscripts on $q$ ",
-              "(catchability) indicate: 1 = Surface survey, 2 = Dive survey. ",
+              "(catchability) indicate: 1 = surface survey, 2 = dive survey. ",
               "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
@@ -21,8 +21,8 @@ make.parameters.est.table(major_models[[model_ind]],
 ```
 
 ```{r prd-recruitment-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
-              "95\\textsuperscript{th} percentile) and maximum posterior ",
+cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
+              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
               "density (MPD) estimates of ",
               "recruitment (millions) for the Prince Rupert District major ",
               "stock assessment region.")
@@ -37,12 +37,12 @@ make.value.table(major_models[[model_ind]],
                  ##tabular.environment = "longtable")
 ```
 
-```{r prd-priors-posts-figure, fig.cap = "Prior probability distributions (lines) with comparative posterior histograms (bars) used in the Prince Rupert District major stock assessment region. Parameters $q_k$ represent gears where: $k=1$ is the surface survey and $k=2$ is the dive survey. The dotted red lines are the maximum posterior density estimates."}
+```{r prd-priors-posts-figure, fig.cap = "Prior probability distributions (lines) with comparative posterior histograms (bars) used in the Prince Rupert District major stock assessment region. Subscripts on $q$ (catchability) indicate: 1 = surface survey, 2 = dive survey. The dotted red lines are the maximum posterior density estimates."}
 make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
 ```
 
-```{r prd-traces-figure, fig.asp=1, fig.cap = paste0("Trace plots for MCMC output of estimated parameters for the Prince Rupert District major stock assessment region. The MCMC run had chain length ", mcmc_length, " with a sample taken at every ", f(mcmc_samp_freq), "th iteration. The catchability parameter $q_1$ represents the surface survey and $q_2$ the dive survey. Parameters $\\hat{a}_k$ (selectivity-at-age-50\\%), and $\\hat{\\gamma}_k$ (selectivity standard deviation-at-50\\%) represent gears as follows: $k=1$: Other fisheries, $k=2$: Roe seine, $k=3$: Gillnet roe.")}
+```{r prd-traces-figure, fig.asp=1, fig.cap = paste0("Trace plots for MCMC output of estimated parameters for the Prince Rupert District major stock assessment region. The MCMC run had chain length ", mcmc_length, " with a sample taken at every ", f(mcmc_samp_freq), "th iteration. Subscripts on $q$ (catchability) indicate: 1 = surface survey, 2 = dive survey. Parameters $\\hat{a}_k$ (selectivity-at-age-50\\%), and $\\hat{\\gamma}_k$ (selectivity standard deviation-at-50\\%) represent gears as follows: $k=1$: Other fisheries, $k=2$: Roe seine, $k=3$: Gillnet roe.")}
 make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
