@@ -129,7 +129,7 @@ The increase can be attributed to increases in the spawn index in 2013 and 2015 
 An increasing trend in the estimated natural mortality rate since 1980 (Figure \@ref(fig:storyboard-hg)b) largely absorbed surplus production attributable to above average recruitment events (e.g., 1997 and 2012; Figure \@ref(fig:storyboard-hg)c, d).
 In particular, estimated natural mortality has increased sharply since the early 2010s following a decline from a peak rate in the early 2000s.
 Since 2000, the HG stock has been in a low biomass state, with many of these years also showing low productivity which has precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
-The most recent year between 2018 and 2019 remains in a low productivity, low biomass state.
+The most recent year, between 2018 and 2019, biomass remains very low and there is evidence of positive productivity.
 The effective harvest rate $U_t$ since 2000 has been at or near zero (Figure \@ref(fig:harvest-rate)), with the last commercial roe fishery in 2002, and the last commercial SOK fishery in 2004. 
 
 Estimated spawning biomass in `r assess_yr` is `r f(hg_final_yr_sbt[2])`&nbsp;t (`r paste0("$\\mli{SB}_{", assess_yr, "}$")`, median posterior value) or `r f(hg_final_yr_sbt[2]/hg_sbo[2] * 100, 1)`% of $\mli{SB}_0$ (Tables \@ref(hg-spawning-biomass-depletion-table) & \@ref(tab:ref-points-hg)).
@@ -213,18 +213,17 @@ Times series of $U_t$ relative to target harvest rate of 20% are presented in Fi
 
 ## Harvest recommendations for `r assess_yr + 1`
 
-Harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and application of a harvest control rule that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988).
+Harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and application of a HCR that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988).
 Although the target harvest rate has varied among areas in recent years (e.g., CC and PRD SARs; @dfo2017),
 the “historical” practice was to apply a target harvest rate of 0.2 when the forecast is estimated to be above a fixed commercial fishery cutoff of $0.25\mli{SB}_0$ defined in the 1996 stock assessment [@dfo2016].
 
 Renewal of the Pacific Herring management framework included a commitment to simulation-evaluation of the performance of the historical and alternative management procedures using management strategy evaluation (MSE),
-and the first cycle of the MSE process was completed for the WCVI and SoG SARs in July 2018 [@dfo2019a].
-These two SARs were selected for evaluation because they exhibit contrasting stock and fishery states that encompass the range of stock conditions observed elsewhere in BC.
+and the first cycle of the MSE process was completed for the WCVI and SoG SARs in July 2018 [@dfo2019a] and in 2019 a similar simulation-evaluation process occurred to assess MP performance for HG, PRD, and CC [@dfo2019c]. The MPs for each SAR differs in the form of the HCR and choices of catch cap, but use the same monitoring data and assessment model.
 
 Several lessons were learned from the analysis:
 
 1. The catch-at-age stock assessment model can produce large (positive) assessment errors.
-Such assessment errors cause over-estimation of spawning biomass and result in recommended catch limits such that the realized harvest rate exceeds the intended target specified by a harvest control rule (HCR; e.g., over-harvest).
+Such assessment errors cause over-estimation of spawning biomass and result in recommended catch limits such that the realized harvest rate exceeds the intended target specified by a HCR (e.g., over-harvest).
 
 2. Reduction in harvest rate from 20% to 10% was the most effective means of mitigating stock assessment errors by reducing the absolute size of the catch.
 The use of a catch cap, implemented as a maximum annual catch level, was an effective model-free way to further mitigate assessment errors.
@@ -235,8 +234,8 @@ This occurs because low biomass levels (associated with the lower OCP) are avoid
 The reasons relate to differences in objectives deemed important by resource users, differences in historical and current stock and fishery dynamics, and differences in the magnitude and direction of assessment model errors in each SAR.
 Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
 
-Harvest advice in `r assess_yr` for the SoG and WCVI SARs is guided by the results and lessons learned from the simulation-evaluation completed in the first MSE cycle [@dfo2019a].
-A similar simulation-evaluation process occurred in 2019 to assess MP performance for HG, PRD, and CC [@dfo2019c]. 
+Harvest advice in `r assess_yr+1` for all SARs is guided by the results and lessons learned from the simulation-evaluations completed in the first MSE cycle [@dfo2019a and @dfo2019c].
+ 
 
 Details of harvest advice are provided below for each major SAR.
 
@@ -245,6 +244,7 @@ Details of harvest advice are provided below for each major SAR.
 The HG stock has persisted in a low biomass, low productivity state in since 2000.
 The stock was below the LRP for much of that period and shows little evidence of sustained stock growth despite the absence of commercial fisheries since 2002 (2004 for the SOK fishery).
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(hg_proj_sbt[2])`&nbsp;t.
+Results of the simulation-evaluations found that non of the proposed MPs, including the historical and no fishing MPs, performed satisfactorily against the conservation objective.
 The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3\mli{SB}_0$ with `r f(hg_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-hg) and Figure \@ref(fig:proj-biomass-density)).
 
 DFO has committed to developing and implementing a rebuilding plan for Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.[^RebuildHG]
