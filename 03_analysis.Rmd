@@ -4,6 +4,7 @@
 
 Input data to the stock assessment are summarized in Table \@ref(tab:data-input).
 Relative to last year's assessment, the only change made to input data was updating the time series to include data from the `r this_season` herring season (July 1 to June 30).
+Note that we refer to 'year' instead of 'herring season' in this report; therefore `r assess_yr` refers to the `r this_season` Pacific Herring season.
 
 ## Catch data
 
@@ -37,14 +38,14 @@ These data are used to calculate egg densities per spawn.
 Ultimately, the estimated weight of mature spawners required to produce the egg deposition is calculated and referred to as the 'spawn index'.
 Execution of the `r surv_yr_rng[2]` spawn survey followed all standard protocols as described in @cleary2018.
 Time series of spawn index by major stock area, from `r paste(surv_yr_rng, collapse=" to ")` are summarized in Figure \@ref(fig:major-spawn-index).
-In `r surv_yr_rng[2]`, there was a decrease in survey biomass in SoG and WCVI (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-sog) and \@ref(tab:spawn-index-wcvi)) and an increase in survey biomass in HG, PRD, and CC (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-hg), \@ref(tab:spawn-index-prd) and \@ref(tab:spawn-index-cc)). 
+In `r surv_yr_rng[2]`, there was a decrease in survey biomass in SoG and WCVI (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-sog) & \@ref(tab:spawn-index-wcvi)) and an increase in survey biomass in HG, PRD, and CC (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-hg), \@ref(tab:spawn-index-prd), & \@ref(tab:spawn-index-cc)). 
 
 ## Spatial spawn distribution
 
-Tables \@ref(tab:spawn-index-hg)-\ through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) by proportions over the most recent 10 years for the major SARs.
+Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) by proportions over the most recent 10 years for the major SARs.
 HG and SoG are summarised by Group, while PRD, CC, and WCVI are summarized by Statistical Area;
 the choice of spatial grouping refects spawning behaviour and biology for each SAR based on the survey data and working group discussions with local First Nations.
-Sections and Groups are not intended to represent sub-stock structure or ‘known’ stocklets.
+Statistical Areas, Sections, and Groups are not intended to represent sub-stock structure or ‘known’ stocklets.
 
 ## First Nations observations
 
