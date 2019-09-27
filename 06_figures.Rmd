@@ -785,7 +785,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 <!-- West Coast of Vancouver Island Storyboard -->
 (ref:storyboard-wcvi-cap) Model output for Pacific Herring in the West Coast of Vancouver Island major stock assessment region. See Figure \@ref(fig:storyboard-hg) for description.
 
-(ref:storyboard-wcvi-cap-french) Production d’un modèle pour le hareng du Pacifique dans la principale région d’évaluation des stocks de la côte ouest de l’île de Vancouver. Voir la figure  \@ref(fig:storyboard-hg) pour une description.
+(ref:storyboard-wcvi-cap-french) Production d’un modèle pour le hareng du Pacifique dans la principale région d’évaluation des stocks de la côte ouest de l’île de Vancouver. Voir la figure \@ref(fig:storyboard-hg) pour une description.
 
 ```{r storyboard-wcvi, out.height="6.5in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-french)", "(ref:storyboard-wcvi-cap)")}
 

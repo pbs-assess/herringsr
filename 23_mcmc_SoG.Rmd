@@ -62,7 +62,7 @@ make.pairs.plot(major_models[[model_ind]])
 biomass.plot.mpd(major_models[[model_ind]])
 ```
 
-(ref:decision-table-sog) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, rows 1-6 in Table @\ref(tab:decision-table-sog)")`
+(ref:decision-table-sog) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, rows 1-4 in Table \\@ref(tab:decision-table-sog)")`
 ```{r hcr-sog, fig.cap = "(ref:decision-table-sog)"}
 region <- "SoG"
 probs <- confidence_vals 
@@ -80,49 +80,62 @@ cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[1]],
                             sbt.sog,
                             mp = mp.sog[3,]$label,
                             region = region,
-                            probs = probs),
+                            probs = probs,
+                            show.x.axes = TRUE),
                    plot_hcr(mp.lst.sog[[1]][[4]],
                             sbt.sog,
                             mp = mp.sog[4,]$label,
                             region = region,
-                            probs = probs),
-                   plot_hcr(mp.lst.sog[[1]][[5]],
-                            sbt.sog,
-                            mp = mp.sog[5,]$label,
-                            region = region,
                             probs = probs,
                             show.x.axes = TRUE),
-                   plot_hcr(mp.lst.sog[[1]][[6]],
-                            sbt.sog,
-                            mp = mp.sog[6,]$label,
-                            region = region,
-                            probs = probs,
-                            show.x.axes = TRUE),
-                   nrow = 3,
+                   nrow = 2,
                    ncol = 2,
                    align = "hv",
                    axis = "tblr")
 ```
-(ref:decision-table-sog-2) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, rows 7-10 in Table @\ref(tab:decision-table-sog)")`
-```{r hcr-sog-2, fig.cap = "(ref:decision-table-sog-2)"}
+
+(ref:decision-table-sog-2) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, rows 5-8 in Table \\@ref(tab:decision-table-sog)")`
+```{r hcr-sog-2, fig.height = 9, fig.cap = "(ref:decision-table-sog-2)"}
 region <- "SoG"
 probs <- confidence_vals 
-cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[7]],
+cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[5]],
+                            sbt.sog,
+                            mp = mp.sog[5,]$label,
+                            region = region,
+                            probs = probs),
+                   plot_hcr(mp.lst.sog[[1]][[6]],
+                            sbt.sog,
+                            mp = mp.sog[6,]$label,
+                            region = region,
+                            probs = probs),
+                   plot_hcr(mp.lst.sog[[1]][[7]],
                             sbt.sog,
                             mp = mp.sog[7,]$label,
                             region = region,
-                            probs = probs),
+                            probs = probs,
+                            show.x.axes = TRUE),
                    plot_hcr(mp.lst.sog[[1]][[8]],
                             sbt.sog,
                             mp = mp.sog[8,]$label,
                             region = region,
-                            probs = probs),
-                   plot_hcr(mp.lst.sog[[1]][[9]],
+                            probs = probs,
+                            show.x.axes = TRUE),
+                   nrow = 2,
+                   ncol = 2,
+                   align = c("v", "h"))
+```
+
+(ref:decision-table-sog-3) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, row 9 in Table \\@ref(tab:decision-table-sog)")`
+```{r hcr-sog-3, fig.height = 9, fig.cap = "(ref:decision-table-sog-3)"}
+region <- "SoG"
+probs <- confidence_vals 
+cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[9]],
                             sbt.sog,
                             mp = mp.sog[9,]$label,
                             region = region,
-                            probs = probs),
-                   nrow = 2,
-                   ncol = 2,
+                            probs = probs,
+                            show.x.axes = TRUE),
+                   nrow = 1,
+                   ncol = 1,
                    align = c("v", "h"))
 ```
