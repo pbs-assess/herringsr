@@ -24,7 +24,7 @@ Total SOK harvest or the major SARs from `r assess_yr-9` to `r assess_yr` is pre
 Biological samples are collected as described in @cleary2018 and Table \@ref(tab:data-input). 
 Biological data inputs to the stock assessment are annual weight-at-age (Figure \@ref(fig:major-wa)) and annual numbers-at-age, shown as proportions-at-age (Figure \@ref(fig:major-pa)).
 
-Signifcant declines in weight-at-age are evident for all major herring stocks, from the mid-1980s to 2010.
+Significant declines in weight-at-age are evident for all major herring stocks, from the mid-1980s to 2010.
 Declining weight-at-age may be attributed to any number of factors, including
 fishing effects (i.e., gear selectivity), 
 environmental effects (e.g., changes in ocean productivity), or 
@@ -43,8 +43,8 @@ In `r surv_yr_rng[2]`, there was a decrease in survey biomass in SoG and WCVI (F
 ## Spatial spawn distribution
 
 Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) by proportions over the most recent 10 years for the major SARs.
-HG and SoG are summarised by Group, while PRD, CC, and WCVI are summarized by Statistical Area;
-the choice of spatial grouping refects spawning behaviour and biology for each SAR based on the survey data and working group discussions with local First Nations.
+HG and SoG are summarized by Group, while PRD, CC, and WCVI are summarized by Statistical Area;
+the choice of spatial grouping reflects spawning behaviour and biology for each SAR based on the survey data and working group discussions with local First Nations.
 Statistical Areas, Sections, and Groups are not intended to represent sub-stock structure or ‘known’ stocklets.
 
 ## First Nations observations
@@ -114,7 +114,7 @@ Candidate USRs are:
 4. Average spawning biomass during a productive period [@cleary2018], $\mli{SB}_{\mli{ave-prod}}$.
 
 Simulation results showed similar properties between USRs $0.6\mli{SB}_0$ and $\mli{SB}_{\mli{ave}}$ both within and among SARs, while the USR based on the average biomass in a productive period, $\mli{SB}_{\mli{ave-prod}}$, was found to be most variable among SARs.
-The simulation-evaluations did not select a single USR, however a USR of $0.6\mli{SB}_0$ is included in this stock status update because this candidate is suffciently above the LRP (2*LRP) and it is a repeatable calculation across all SARs.
+The simulation-evaluations did not select a single USR, however a USR of $0.6\mli{SB}_0$ is included in this stock status update because this candidate is sufficiently above the LRP (2*LRP) and it is a repeatable calculation across all SARs.
 Stock status relative to the assessment model estimates $0.3\mli{SB}_0$ (LRP) and $0.6\mli{SB}_0$ (USR) are presented for each SAR in Tables \@ref(tab:ref-points-hg) through \@ref(tab:ref-points-wcvi).
 
 The LRP and USR relate stock status to the DFO PA Framework [@dfo2009], and in this assessment the same calculations are applied for each SAR.
@@ -158,7 +158,7 @@ Spawning biomass in `r assess_yr` is estimated to be less than the LRP of $0.3\m
 Estimated spawning biomass fluctuated around a strongly declining trend from a historic high around 1980 before reaching a historic low level in the late 2000s (Figure \@ref(fig:storyboard-cc)d).
 An increase in spawning stock biomass was estimated through the mid-2010s but remained below levels estimated prior to 2000, and then declining modestly through to 2018.
 In 2019 there was an increase in estimated spawning biomass.
-The estimated biomass trend largely refects the trend in the spawn index (Figure \@ref(fig:storyboard-cc)a), where fluctuations correspond in opposite phase to the fluctuations in estimated natural mortality (Figure \@ref(fig:storyboard-cc)b).
+The estimated biomass trend largely reflects the trend in the spawn index (Figure \@ref(fig:storyboard-cc)a), where fluctuations correspond in opposite phase to the fluctuations in estimated natural mortality (Figure \@ref(fig:storyboard-cc)b).
 For example, the decline in spawn index (and estimated spawning biomass) to the historic lows of the late 2000s followed a strongly increasing trend in estimated natural mortality through the same period.
 Estimated natural mortality moderated by the late 2000s, which was followed by the increase in spawn index (and estimated spawning biomass) until 2015 whereupon natural mortality again increased.
 Recruitment deviations were slightly negative (lower than predicted by the stock-recruit function) on average from about 1990 to 2017, and have increased to above average in 2018 and 2019 (Figure \@ref(fig:storyboard-cc)e).
@@ -198,7 +198,7 @@ The time series of estimated spawning biomass shows a decline from the late 1980
 The low estimated spawning biomass persisted through the 2006 to 2013 period and has since slowly increased to a level similar to that estimated for 2000.
 The model reconstruction of spawning biomass closely follows the trajectory of spawn index values (Figure \@ref(fig:storyboard-wcvi)a).
 The increase in spawning biomass from 2013 coincides with a decline in estimated natural mortality from a historic high in the late 2000s (Figure \@ref(fig:storyboard-wcvi)b).
-Recruitment deviations have been negative (lower than predicted by the stock-recruit function) on average since about 2003 (Figure \@ref(fig:storyboard-wcvi)e), however the reduction in estimated natural mortality and absence of removals from a commercial fishery appears to be suffcient to offset this below average recruitment of age-2 fish.
+Recruitment deviations have been negative (lower than predicted by the stock-recruit function) on average since about 2003 (Figure \@ref(fig:storyboard-wcvi)e), however the reduction in estimated natural mortality and absence of removals from a commercial fishery appears to be sufficient to offset this below average recruitment of age-2 fish.
 The absence of a commercial fishery since 2005 means the realized harvest rate has been near zero for the last 14 years (Figure \@ref(fig:harvest-rate)).
 Recent production estimates in the WCVI are at a higher spawning biomass level than those estimated during the low production, low biomass period of the last half of the 2000s and early 2010s (Figure \@ref(fig:storyboard-wcvi)f).
 
@@ -215,7 +215,7 @@ Times series of $U_t$ relative to target harvest rate of 20% are presented in Fi
 
 Harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and application of a harvest control rule that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988).
 Although the target harvest rate has varied among areas in recent years (e.g., CC and PRD SARs; @dfo2017),
-the “historical” practice was to apply a target harvest rate of 0.2 when the forecast is estimated to be above a fxed commercial fishery cutoff of $0.25\mli{SB}_0$ defined in the 1996 stock assessment [@dfo2016].
+the “historical” practice was to apply a target harvest rate of 0.2 when the forecast is estimated to be above a fixed commercial fishery cutoff of $0.25\mli{SB}_0$ defined in the 1996 stock assessment [@dfo2016].
 
 Renewal of the Pacific Herring management framework included a commitment to simulation-evaluation of the performance of the historical and alternative management procedures using management strategy evaluation (MSE),
 and the first cycle of the MSE process was completed for the WCVI and SoG SARs in July 2018 [@dfo2019a].
@@ -224,18 +224,18 @@ These two SARs were selected for evaluation because they exhibit contrasting sto
 Several lessons were learned from the analysis:
 
 1. The catch-at-age stock assessment model can produce large (positive) assessment errors.
-Such assessment errors cause over-estimation of spawning biomass and result in recommended catch limits such that the realized harvest rate exceeds the intended target specifed by a harvest control rule (HCR; e.g., over-harvest).
+Such assessment errors cause over-estimation of spawning biomass and result in recommended catch limits such that the realized harvest rate exceeds the intended target specified by a harvest control rule (HCR; e.g., over-harvest).
 
 2. Reduction in harvest rate from 20% to 10% was the most effective means of mitigating stock assessment errors by reducing the absolute size of the catch.
 The use of a catch cap, implemented as a maximum annual catch level, was an effective model-free way to further mitigate assessment errors.
 Simulation analyses additionally showed that outcomes are insensitive to the choice of operational control points (OCPs) in the HCR when a low harvest rate (HR) and catch cap are applied.
 This occurs because low biomass levels (associated with the lower OCP) are avoided for these management procedures (MPs).
 
-3. Differences in specifcation of Pacific Herring MPs, including the HCR components, are expected a priori among SARs.
+3. Differences in specification of Pacific Herring MPs, including the HCR components, are expected a priori among SARs.
 The reasons relate to differences in objectives deemed important by resource users, differences in historical and current stock and fishery dynamics, and differences in the magnitude and direction of assessment model errors in each SAR.
 Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
 
-Harvest advice in `r assess_yr` for the SoG and WCVI SARs is guided by the results and lessons learned from the simulation-evaluation completed in the frst MSE cycle [@dfo2019a].
+Harvest advice in `r assess_yr` for the SoG and WCVI SARs is guided by the results and lessons learned from the simulation-evaluation completed in the first MSE cycle [@dfo2019a].
 A similar simulation-evaluation process occurred in 2019 to assess MP performance for HG, PRD, and CC [@dfo2019c]. 
 
 Details of harvest advice are provided below for each major SAR.
@@ -260,7 +260,7 @@ DFO supports commercial herring fishery closures for the HG major stock area unt
 
 XXXX Simulation Evaluation information
 
-Effective harvest rates for the past 10-years average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fuctuate at or near $0.3\mli{SB}_0$ (Figure \@ref(fig:storyboard-prd)d).
+Effective harvest rates for the past 10-years average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fluctuate at or near $0.3\mli{SB}_0$ (Figure \@ref(fig:storyboard-prd)d).
 Furthermore, adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity:
 states that were entered rapidly and were preceded by high biomass levels [@kronlund2017].
 
@@ -277,7 +277,7 @@ The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3\m
 
 ### Strait of Georgia
 
-Closed-loop feedback simulations for the SoG evaluated alternative MPs that differed only in the confguration of the HCR and application of a fixed catch cap [@dfo2019a].
+Closed-loop feedback simulations for the SoG evaluated alternative MPs that differed only in the configuration of the HCR and application of a fixed catch cap [@dfo2019a].
 Results showed that all tested MPs could maintain the spawning biomass above the LRP with 91% probability or higher, including the historical HCR which applied a constant escapement of 21,200&nbsp;t based on the 1996 stock assessment and 20% harvest rate.
 A 30,000&nbsp;t catch cap was evaluated for the SoG; this cap was not often triggered, and thus did not limit the commercial fishery very often in simulations.
 Management procedures that included a 30,000&nbsp;t catch cap were able to maintain spawning biomass above a biomass level of $0.6\mli{SB}_0$ with 60% probability or higher.
@@ -314,7 +314,7 @@ In the absence of fishing, spawning biomass in 2020 is forecast at `r f(wcvi_pro
 Using a HCR with OCPs at $0.5\mli{SB}_0$ and $0.6\mli{SB}_0$, a 10% target harvest rate, and a maximum catch cap of 2,000&nbsp;t, the `r assess_yr + 1` catch calculation is `r f(hcr.wcvi[1]*1000,0)`&nbsp;t.
 <!-- This reflects a harvest rate of `r f(hcr.wcvi[2]*100, 0)`%. -->
 
-Given the best performing MP for the WCVI did not meet the minimum "high" probability of 75%, further simulation-testing of HCRs that include additional measures to ensure persistent stock growth away from the critical zone and towards identifed biomass targets may be required.
+Given the best performing MP for the WCVI did not meet the minimum "high" probability of 75%, further simulation-testing of HCRs that include additional measures to ensure persistent stock growth away from the critical zone and towards identified biomass targets may be required.
 For example, for a rebuilding stock a "slow-up" MP could be designed to delay fishery openings for an additional predefined number of years (e.g., 3 to 5) when the spawning biomass is estimated to be above the lower OCP in order to provide higher confidence of stock growth.
 The WCVI spawn index data and model estimates of spawning biomass (Figure \@ref(fig:storyboard-wcvi)a & d) show the increasing trajectory for WCVI herring as both gradual and erratic.
 The `r assess_yr` assessment estimates WCVI spawning biomass to be above the LRP from 2015 to 2018 (based on posterior medians), however this perspective based on stock assessment model estimates does not take into consideration positive assessment model errors.
