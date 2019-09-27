@@ -1,4 +1,4 @@
-# Appendix {#appendix-minor}
+# Appendix
 
 We do not conduct formal analyses of stock trend information for the `r number_to_word(length(minor_regions_short))`
 Pacific Herring minor SARs: `r commify(minor_regions_full_parens)`.

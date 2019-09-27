@@ -4,7 +4,7 @@ The `r assess_yr` Science Response includes a formal analyses of stock trend inf
 
 Harvest recommendations for `r assess_yr + 1` for PRD and CC include.....
 
-Harvest recommendations for SoG and WCVI adopt recommendations from simulation analyses conducted as part of the Management Strategy Evaluation [@dfo2018].
+Harvest recommendations for SoG and WCVI adopt recommendations from simulation analyses conducted as part of the MSE process [@dfo2018].
 DFO has committed to developing and implementing a rebuilding plan for Pacific Herring in HG by the end of fiscal year 2020/21, thus a commercial closure is recommended for this SAR.
 
-Science advice for the minor SARs is limited to presentation of catch data, biological data, and spawn survey data.
+Science advice for the minor SARs is limited to presentation of catch data, biological data, and spawn survey data ([Appendix]).
