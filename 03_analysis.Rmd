@@ -86,23 +86,23 @@ The six panels (a–f) include:
 a. Time series of maximum posterior density (MPD) estimates of the spawn survey data in thousands of tonnes.
 The spawn survey data (i.e., spawn index) is scaled to abundance via the spawn survey scaling parameter $q$.
 The spawn index has two distinct periods defined by the dominant survey method: surface surveys (`r surv_yr_rng[1]` to `r new_surv_yr - 1`), and dive surveys (`r new_surv_yr` to `r surv_yr_rng[2]`).
-Two q parameters are implemented in the estimation procedure: $q_1$ with an uninformative prior and $q_2$ with an informative prior approximating 1.0.
+Two $q$ parameters are implemented in the estimation procedure: $q_1$ with an uninformative prior, and $q_2$ with an informative prior approximating 1.0.
 
 b. Time series of natural mortality ($M$) estimates.
 
 c. Time series reconstruction of number of age-2 recruits.
 
-d. Time series of total catch and estimated spawning biomass with reference line at model estimates of $0.3\mli{SB}_0$
+d. Time series of total catch and estimated spawning biomass with reference line at model estimates of $0.3\mli{SB}_0$.
 
 e. Time series of (log) deviations from the estimated Beverton-Holt recruitment function.
 <!-- overlaid with a 3-year trailing moving average smoother. -->
 
-f. Phase plot of spawning biomass production for the dive survey period (MPD estimates), with reference line at model estimates of $0.3\mli{SB}_0$
+f. Phase plot of spawning biomass production for the dive survey period (MPD estimates), with reference line at model estimates of $0.3\mli{SB}_0$.
 
 ## Reference points
 
 A biological limit reference point (LRP) is defined for the major Pacific Herring SARs at $0.3\mli{SB}_0$ [@kronlund2017].
-Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG in 2018 [@dfo2019] and HG, PRD, and CC in 2019 [@dfo2019b].
+Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG in 2018 [@dfo2019] and then for HG, PRD, and CC in 2019 [@dfo2019b].
 Candidate USRs are:
 
 1. $0.4\mli{SB}_0$,
@@ -115,7 +115,7 @@ Candidate USRs are:
 
 Simulation results showed similar properties between USRs $0.6\mli{SB}_0$ and $\mli{SB}_{\mli{ave}}$ both within and among SARs, while the USR based on the average biomass in a productive period, $\mli{SB}_{\mli{ave-prod}}$, was found to be most variable among SARs.
 The simulation-evaluations did not select a single USR, however a USR of $0.6\mli{SB}_0$ is included in this stock status update because this candidate is suffciently above the LRP (2*LRP) and it is a repeatable calculation across all SARs.
-Stock status relative to the assessment model estimates $0.3\mli{SB}_0$ (LRP) and $0.6\mli{SB}_0$ (USR) are presented for each stock in Tables \@ref(tab:ref-points-hg) through \@ref(tab:ref-points-wcvi).
+Stock status relative to the assessment model estimates $0.3\mli{SB}_0$ (LRP) and $0.6\mli{SB}_0$ (USR) are presented for each SAR in Tables \@ref(tab:ref-points-hg) through \@ref(tab:ref-points-wcvi).
 
 The LRP and USR relate stock status to the DFO PA Framework [@dfo2009], and in this assessment the same calculations are applied for each SAR.
 These reference points differ from operational control points (OCPs) which are the biomass levels where management action is taken (i.e., the infection points of the harvest control rule; HCR).
