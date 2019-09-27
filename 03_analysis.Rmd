@@ -102,7 +102,7 @@ f. Phase plot of spawning biomass production for the dive survey period (MPD est
 ## Reference points
 
 A biological limit reference point (LRP) is defined for the major Pacific Herring SARs at $0.3\mli{SB}_0$ [@kronlund2017].
-Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG in 2018 [@dfo2019] and then for HG, PRD, and CC in 2019 [@dfo2019b].
+Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG in 2018 [@dfo2019a] and then for HG, PRD, and CC in 2019 [@dfo2019c].
 Candidate USRs are:
 
 1. $0.4\mli{SB}_0$,
@@ -235,8 +235,8 @@ This occurs because low biomass levels (associated with the lower OCP) are avoid
 The reasons relate to differences in objectives deemed important by resource users, differences in historical and current stock and fishery dynamics, and differences in the magnitude and direction of assessment model errors in each SAR.
 Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
 
-Harvest advice in `r assess_yr` for the SoG and WCVI SARs is guided by the results and lessons learned from the simulation-evaluation completed in the frst MSE cycle [@dfo2018].
-A similar simulation-evaluation process occurred in 2019 to assess MP performance for HG, PRD, and CC [@dfo2019]. 
+Harvest advice in `r assess_yr` for the SoG and WCVI SARs is guided by the results and lessons learned from the simulation-evaluation completed in the frst MSE cycle [@dfo2019a].
+A similar simulation-evaluation process occurred in 2019 to assess MP performance for HG, PRD, and CC [@dfo2019c]. 
 
 Details of harvest advice are provided below for each major SAR.
 
