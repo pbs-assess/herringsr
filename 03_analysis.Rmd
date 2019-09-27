@@ -312,7 +312,7 @@ This HCR implements a lower OCP at the assessment model estimate of $0.5\mli{SB}
 In the absence of fishing, spawning biomass in 2020 is forecast at `r f(wcvi_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\mli{SB}_0$ with `r f(wcvi_prob_proj_less_03sbo * 100, 1)` \% probability in the absence of fishing.
 
 Using a HCR with OCPs at $0.5\mli{SB}_0$ and $0.6\mli{SB}_0$, a 10\% target harvest rate, and a maximum catch cap of 2,000&nbsp;t, the `r assess_yr + 1` catch calculation is `r f(hcr.wcvi[1]*1000,0)`&nbsp;t.
-This reflects a harvest rate of `r f(hcr.wcvi[2]*100, 0)`%.
+<!-- This reflects a harvest rate of `r f(hcr.wcvi[2]*100, 0)`%. -->
 
 Given the best performing MP for the WCVI did not meet the minimum "high" probability of 75\%, further simulation-testing of HCRs that include additional measures to ensure persistent stock growth away from the critical zone and towards identifed biomass targets may be required.
 For example, for a rebuilding stock a "slow-up" MP could be designed to delay fishery openings for an additional predefined number of years (e.g., 3 to 5) when the spawning biomass is estimated to be above the lower OCP in order to provide higher confidence of stock growth.
