@@ -219,12 +219,12 @@ Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.
 ### West Coast of Vancouver Island
 
 The time series of estimated spawning biomass shows a decline from the late 1980s through to a historic low in the 2000s (Figure \@ref(fig:storyboard-wcvi)d).
-The low estimated spawning biomass persisted through the 2006 to 2013 period and has since slowly increased to a level similar to that estimated for 2000.
+The low estimated spawning biomass persisted through the 2006 to 2012 period and has since slowly increased to a level similar to that estimated for 2000.
 The model reconstruction of spawning biomass closely follows the trajectory of spawn index values (Figure \@ref(fig:storyboard-wcvi)a).
 The increase in spawning biomass from 2013 coincides with a decline in estimated natural mortality from a historic high in the late 2000s (Figure \@ref(fig:storyboard-wcvi)b).
 Recruitment deviations have been negative (lower than predicted by the stock-recruit function) on average since about 2003 (Figure \@ref(fig:storyboard-wcvi)e), however the reduction in estimated natural mortality and absence of removals from a commercial fishery appears to be sufficient to offset this below average recruitment of age-2 fish.
 The absence of a commercial fishery since 2005 means the realized harvest rate has been near zero for the last 14 years (Figure \@ref(fig:harvest-rate)).
-Recent production estimates in the WCVI are at a higher spawning biomass level than those estimated during the low production, low biomass period of the last half of the 2000s and early 2010s (Figure \@ref(fig:storyboard-wcvi)f).
+In recent there has been modest evidence for an increase in production and biomass.  The production estimates in 2018-2019 year are at a higher spawning biomass level than those estimated during the low production, low biomass period of the last half of the 2000s and early 2010s (Figure \@ref(fig:storyboard-wcvi)f).
 
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(wcvi_final_yr_sbt[2])`&nbsp;t (posterior median), equal to `r f(wcvi_final_yr_sbt[2]/wcvi_sbo[2] * 100, 1)`% of $\mli{SB}_0$ (Tables \@ref(wcvi-spawning-biomass-depletion-table) & \@ref(tab:ref-points-wcvi)).
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\mli{SB}_0$ with a `r f((1-wcvi_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-wcvi)).
