@@ -207,7 +207,7 @@ Estimated natural mortality has been increasing since 2016, and has now reached 
 This coincides with the recent decreasing trend in estimated spawning biomass.
 The large uncertainty in both spawning biomass and natural mortality estimates in `r assess_yr` may be in part a function of the declining trend in the spawn index starting in 2017 following the increasing trend that began in 2010 (Figure \@ref(fig:storyboard-sog)a).
 The model fits an averaged trajectory through the spawn index values of the 2010s and has, to date, insufficient information to determine whether the decline from 2016 to `r assess_yr` represents a true decline in estimated spawning biomass.
-The model also has estimated above average recruitment in most years from 2010 to `r assess_yr` (Figure \@ref(fig:storyboard-sog)c) with the recruitment deviations showing much larger recruitment of age-2 fish in 2019 than expected from the stock-recruitment function (Figure \@ref(fig:storyboard-sog)e).
+The model also has estimated above average recruitment in most years from 2010 to `r assess_yr` (Figure \@ref(fig:storyboard-sog)c) with the recruitment deviations showing especially large recruitment of age-2 fish in 2019, which is consistent with the large number of age-0 fish found in the 2017 juvenile survey (Figure \@ref(fig:storyboard-sog)e).
 There is extremely large uncertainty around the estimates of age-2 recruitment in the most recent years because this age class is only partially recruited to the fishing gears.
 The SoG SAR is still estimated to be in a high production, high biomass state (Figure \@ref(fig:storyboard-sog)f).
 
