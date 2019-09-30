@@ -1,3 +1,5 @@
+\needspace{10\baselineskip}
+
 # Contributors
 
 ```{r, echo=FALSE, include=FALSE}

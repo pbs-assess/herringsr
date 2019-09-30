@@ -1,3 +1,5 @@
+\needspace{20\baselineskip}
+
 # Tables
 
 (ref:data-input-cap) `r paste0("Input data for the ", assess_yr," Pacific Herring stock assessment. The spawn index has two distinct periods defined by the dominant survey method: surface surveys (", major_start_yr, " to ", new_surv_yr - 1, "), and dive surveys (", new_surv_yr, " to ", major_end_yr, "). The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter $q$.")`
