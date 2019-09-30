@@ -217,8 +217,8 @@ Harvest advice for the major stocks of Pacific Herring has been based on a 1-yea
 Although the target harvest rate has varied among areas in recent years (e.g., CC and PRD SARs; @dfo2017),
 the “historical” practice was to apply a target harvest rate of 0.2 when the forecast is estimated to be above a fixed commercial fishery cutoff of $0.25\mli{SB}_0$ defined in the 1996 stock assessment [@dfo2016].
 
-Renewal of the Pacific Herring management framework included a commitment to simulation-evaluation of the performance of the historical and alternative management procedures using management strategy evaluation (MSE),
-and the first cycle of the MSE process was completed for the WCVI and SoG SARs in July 2018 [@dfo2019a] and in 2019 a similar simulation-evaluation process occurred to assess MP performance for HG, PRD, and CC [@dfo2019c]. The MPs for each SAR differs in the form of the HCR and choices of catch cap, but use the same monitoring data and assessment model.
+Renewal of the Pacific Herring management framework included a commitment to simulation-evaluation of the performance of the historical and alternative management procedures using management strategy evaluation (MSE).
+The first cycle of the MSE process was completed for the WCVI and SoG SARs in 2018 [@dfo2019a] and in 2019 a similar process was used to evaluate harvest strategies for HG, PRD, and CC [@dfo2019c]. The MPs for each SAR differs in the form of the HCR and choices of catch cap, but use the same monitoring data and assessment model.
 
 Several lessons were learned from the analysis:
 
