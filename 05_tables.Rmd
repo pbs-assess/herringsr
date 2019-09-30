@@ -130,6 +130,40 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
+```{r hg-parameter-est-table, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
+              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
+              "density (MPD) estimates of key ",
+              "parameters for the Haida Gwaii major stock assessment region. ",
+              "Subscripts on $q$ ",
+              "(catchability) indicate: 1 = surface survey, 2 = dive survey. ",
+              "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
+model_ind <- match(en2fr("HG", french), major_regions_short)
+make.parameters.est.table(major_models[[model_ind]],
+                          xcaption = cap,
+                          xlabel = "tab:hg-parameter-est-table",
+                          font.size = 11,
+                          space.size = 12,
+                          placement = "ht")
+```
+
+```{r hg-recruitment-table, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
+              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
+              "density (MPD) estimates of ",
+              "recruitment (millions) for the Haida Gwaii major stock ",
+              "assessment region.")
+make.value.table(major_models[[model_ind]],
+                 type = 2,
+                 syr = 2007,
+                 xcaption = cap,
+                 xlabel = "tab:hg-recruitment-table",
+                 font.size = 11,
+                 space.size = 12,
+                 placement = "ht")
+                 ##tabular.environment = "longtable")
+```
+
 ```{r prd-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
               "50\\textsuperscript{th}, and ", confidence_vals[2]*100,
@@ -166,6 +200,40 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
+```{r prd-parameter-est-table, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
+              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
+              "density (MPD) estimates of key ",
+              "parameters for the Prince Rupert District major stock ",
+              "assessment region. Subscripts on $q$ ",
+              "(catchability) indicate: 1 = surface survey, 2 = dive survey. ",
+              "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
+model_ind <- match(en2fr("PRD", french), major_regions_short)
+make.parameters.est.table(major_models[[model_ind]],
+                          xcaption = cap,
+                          xlabel = "tab:prd-parameter-est-table",
+                          font.size = 11,
+                          space.size = 12,
+                          placement = "ht")
+```
+
+```{r prd-recruitment-table, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
+              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
+              "density (MPD) estimates of ",
+              "recruitment (millions) for the Prince Rupert District major ",
+              "stock assessment region.")
+make.value.table(major_models[[model_ind]],
+                 type = 2,
+                 syr = 2007,
+                 xcaption = cap,
+                 xlabel = "tab:prd-recruitment-table",
+                 font.size = 11,
+                 space.size = 12,
+                 placement = "ht")
+                 ##tabular.environment = "longtable")
+```
+
 ```{r cc-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
               "50\\textsuperscript{th}, and ", confidence_vals[2]*100,
@@ -200,6 +268,40 @@ make.ref.points.table(major_models[[model_ind]],
                       space.size = 12,
                       placement = "ht",
                       translate = french)
+```
+
+```{r cc-parameter-est-table, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
+              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
+              "density (MPD) estimates of key ",
+              "parameters for the Central Coast major stock assessment ",
+              "region. Subscripts on $q$ ",
+              "(catchability) indicate: 1 = surface survey, 2 = dive survey. ",
+              "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
+model_ind <- match(en2fr("CC", french), major_regions_short)
+make.parameters.est.table(major_models[[model_ind]],
+                          xcaption = cap,
+                          xlabel = "tab:cc-parameter-est-table",
+                          font.size = 11,
+                          space.size = 12,
+                          placement = "ht")
+```
+
+```{r cc-recruitment-table, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
+              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
+              "density (MPD) estimates of ",
+              "recruitment (millions) for the Central Coast major stock ",
+              "assessment region.")
+make.value.table(major_models[[model_ind]],
+                 type = 2,
+                 syr = 2007,
+                 xcaption = cap,
+                 xlabel = "tab:cc-recruitment-table",
+                 font.size = 11,
+                 space.size = 12,
+                 placement = "ht")
+                 ##tabular.environment = "longtable")
 ```
 
 ```{r sog-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -241,6 +343,40 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
+```{r sog-parameter-est-table, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
+              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
+              "density (MPD) estimates of key ",
+              "parameters for the Strait of Georgia major stock assessment",
+              "region. Subscripts on $q$ ",
+              "(catchability) indicate: 1 = surface survey, 2 = dive survey. ",
+              "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
+model_ind <- match(en2fr("SoG", french), major_regions_short)
+make.parameters.est.table(major_models[[model_ind]],
+                          xcaption = cap,
+                          xlabel = "tab:sog-parameter-est-table",
+                          font.size = 11,
+                          space.size = 12,
+                          placement = "ht")
+```
+
+```{r sog-recruitment-table, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
+              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
+              "density (MPD) estimates of ",
+              "recruitment (millions) for the Strait of Georgia major stock",
+              "assessment region.")
+make.value.table(major_models[[model_ind]],
+                 type = 2,
+                 syr = 2007,
+                 xcaption = cap,
+                 xlabel = "tab:sog-recruitment-table",
+                 font.size = 11,
+                 space.size = 12,
+                 placement = "ht")
+                 ##tabular.environment = "longtable")
+```
+
 ```{r wcvi-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
               "50\\textsuperscript{th}, and ", confidence_vals[2]*100,
@@ -279,6 +415,40 @@ make.ref.points.table(major_models[[model_ind]],
                       space.size = 12,
                       placement = "ht",
                       translate = french)
+```
+
+```{r wcvi-parameter-est-table, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
+              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
+              "density (MPD) estimates of key ",
+              "parameters for the West Coast of Vancouver Island major stock ",
+              "assessment region. Subscripts on $q$ ",
+              "(catchability) indicate: 1 = surface survey, 2 = dive survey. ",
+              "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
+model_ind <- match(en2fr("WCVI", french), major_regions_short)
+make.parameters.est.table(major_models[[model_ind]],
+                          xcaption = cap,
+                          xlabel = "tab:wcvi-parameter-est-table",
+                          font.size = 11,
+                          space.size = 12,
+                          placement = "ht")
+```
+
+```{r wcvi-recruitment-table, results = 'asis', echo = FALSE}
+cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
+              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
+              "density (MPD) estimates of ",
+              "recruitment (millions) for the West Coast of Vancouver Island ",
+              "major stock assessment region.")
+make.value.table(major_models[[model_ind]],
+                 type = 2,
+                 syr = 2007,
+                 xcaption = cap,
+                 xlabel = "tab:wcvi-recruitment-table",
+                 font.size = 11,
+                 space.size = 12,
+                 placement = "ht")
+                 ##tabular.environment = "longtable")
 ```
 
 ```{r decision-table-hg, results = 'asis', echo = FALSE}
