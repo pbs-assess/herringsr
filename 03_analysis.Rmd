@@ -201,18 +201,18 @@ Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.
 
 ### Strait of Georgia
 
-The SCA model fit to the SoG stock and fishery monitoring data shows that spawning biomass has decreased in 2019 although uncertainty associated with the terminal spawning biomass estimate is large, as is the uncertainty associated with the forecast of `r paste0("$\\mli{SB}_{", assess_yr, "}$")` (Figure \@ref(fig:storyboard-sog)d).
+The estimated spawning biomass for the SoG stock decreased in 2019, although the uncertainty associated with the last few years of spawning biomass along with the forecast biomass, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, is quite large (Figure \@ref(fig:storyboard-sog)d).
 There was an increasing trend in estimated spawning biomass from about 2010 to 2016 which coincided with a decline in estimated natural mortality that began in the late 2000s (Figure \@ref(fig:storyboard-sog)b).
-Estimated natural mortality has been increasing since 2016, and has now reached a level last estimated in the late 1970s.
+Estimated natural mortality has been increasing since 2016, and has now reached a level last estimated in the early 1970s.
 This coincides with the recent decreasing trend in estimated spawning biomass.
 The large uncertainty in both spawning biomass and natural mortality estimates in `r assess_yr` may be in part a function of the declining trend in the spawn index starting in 2017 following the increasing trend that began in 2010 (Figure \@ref(fig:storyboard-sog)a).
 The model fits an averaged trajectory through the spawn index values of the 2010s and has, to date, insufficient information to determine whether the decline from 2016 to `r assess_yr` represents a true decline in estimated spawning biomass.
 The model also has estimated above average recruitment in most years from 2010 to `r assess_yr` (Figure \@ref(fig:storyboard-sog)c) with the recruitment deviations showing much larger recruitment of age-2 fish in 2019 than expected from the stock-recruitment function (Figure \@ref(fig:storyboard-sog)e).
 There is extremely large uncertainty around the estimates of age-2 recruitment in the most recent years because this age class is only partially recruited to the fishing gears.
-The SoG is estimated to be in a high production, high biomass state (Figure \@ref(fig:storyboard-sog)f).
+The SoG SAR is still estimated to be in a high production, high biomass state (Figure \@ref(fig:storyboard-sog)f).
 
 Commercial fisheries have occurred annually in SoG since the early-1970s (following the stock collapse of the late 1960s).
-Since implementing the current HCR in 1986, the effective harvest rate $U_t$ is estimated to fluctuate above and below the 20% target rate, with median estimates exceeding 20% in 2005, 2006, 2013–2015, and 2017–2019 (Figure \@ref(fig:harvest-rate)).
+Since implementing the historical HCR in 1986, the effective harvest rate $U_t$ is estimated to fluctuate above and below the 20% target rate, with median estimates exceeding 20% in 2005, 2006, 2013–2015, and 2017–2019 (Figure \@ref(fig:harvest-rate)).
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(sog_final_yr_sbt[2])`&nbsp;t (posterior median), equal to `r f(sog_final_yr_sbt[2]/sog_sbo[2] * 100, 1)`% of $\mli{SB}_0$ (Tables \@ref(sog-spawning-biomass-depletion-table) & \@ref(tab:ref-points-sog)).
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\mli{SB}_0$ with a `r f((1-sog_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-sog)).
 
