@@ -16,5 +16,7 @@ sr.Rmd
 sr.tex
 sr.upa
 sr.pdf
+sr.knit.md
+sr.utf8.md
 
 *.png
