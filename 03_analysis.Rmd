@@ -175,12 +175,12 @@ An increasing trend in weight-at-age has been observed since about 2010, althoug
 
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(prd_final_yr_sbt[2])`&nbsp;t (posterior median), equal to `r f(prd_final_yr_sbt[2]/prd_sbo[2] * 100, 1)`% of $\mli{SB}_0$ (Tables \@ref(prd-spawning-biomass-depletion-table) & \@ref(tab:ref-points-prd)).
 Commercial fisheries have occurred annually in PRD since the mid-1980s, with the exception of 2019, during which the effective harvest rate $U_t$ was estimated to be at or below 20% (Figure \@ref(fig:harvest-rate)) in all years except 1989.
-Spawning biomass in `r assess_yr` is estimated to be less than the LRP of $0.3\mli{SB}_0$ with a `r f(prd_prob_less_03sbo * 100, 1)`% probability (Table \@ref(tab:ref-points-prd)).
+Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\mli{SB}_0$ with a `r f((1-prd_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-prd)).
 
 ### Central Coast
 
 Estimated spawning biomass fluctuated around a strongly declining trend from a historic high around 1980 before reaching a historic low level in the late 2000s (Figure \@ref(fig:storyboard-cc)d).
-An increase in spawning stock biomass was estimated through the mid-2010s but remained below levels estimated prior to 2000, and then declining modestly through to 2018.
+An increase in spawning stock biomass was estimated through the mid-2010s but remained below levels estimated prior to 2000, and then declining modestly 2016-2018.
 In 2019 there was an increase in estimated spawning biomass.
 The estimated biomass trend largely reflects the trend in the spawn index (Figure \@ref(fig:storyboard-cc)a), where fluctuations correspond in opposite phase to the fluctuations in estimated natural mortality (Figure \@ref(fig:storyboard-cc)b).
 For example, the decline in spawn index (and estimated spawning biomass) to the historic lows of the late 2000s followed a strongly increasing trend in estimated natural mortality through the same period.
