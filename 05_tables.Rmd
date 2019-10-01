@@ -107,7 +107,18 @@ spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
                           longtable = FALSE)
 ```
 
-(ref:hg-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Haida Gwaii major stock assessment region. Subscripts on $q$ (catchability) indicate: 1 = surface survey, 2 = dive survey. Tau ($\tau$) and sigma ($\sigma$) are calculated values.
+(ref:hg-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Haida Gwaii major stock assessment region.
+Legend: unfished age-2 recruitment $R_0$;
+steepness of the stock-recruitment relationship $h$;
+instantaneous natural mortality rate $M$;
+average age-2 recruitment from `r major_start_yr` to `r major_end_yr` $\bar{R}$;
+average age-2 recruitment in `r major_start_yr-1` $\bar{R}_\mli{init}$;
+fraction of total variance associated with observation error $\rho$;
+precision of total error $\vartheta$;
+catchability for surface $q_1$ and dive $q_2$ survey periods;
+standard deviation of process error (i.e., recruitment) $\tau$; and
+standard deviation of observation error (i.e., survey index) $\sigma$.
+Note that tau ($\tau$) and sigma ($\sigma$) are calculated values.
 
 (ref:hg-parameter-est-cap-french) Not yet translated.
 
