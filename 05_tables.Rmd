@@ -111,8 +111,8 @@ spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
 Legend: unfished age-2 recruitment $R_0$;
 steepness of the stock-recruitment relationship $h$;
 instantaneous natural mortality rate $M$;
-average age-2 recruitment from `r major_start_yr` to `r major_end_yr` $\bar{R}$;
-average age-2 recruitment in `r major_start_yr-1` $\bar{R}_\mli{init}$;
+average age-2 recruitment from `r major_start_yr` to `r major_end_yr` $\overline{R}$;
+average age-2 recruitment in `r major_start_yr-1` $\overline{R}_\mli{init}$;
 fraction of total variance associated with observation error $\rho$;
 precision of total error $\vartheta$;
 catchability for surface $q_1$ and dive $q_2$ survey periods;
@@ -151,45 +151,51 @@ make.parameters.est.table(major_models[[model_ind]],
                           placement = "ht")
 ```
 
+(ref:cc-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Central Coast major stock assessment region.
+See Table \@ref(tab:hg-parameter-est-table) for description.
+
+(ref:cc-parameter-est-cap-french) Not yet translated.
+
 ```{r cc-parameter-est-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
-              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of key parameters for the Central ",
-              "Coast major stock assessment region. See Table ",
-              "\\@ref(tab:hg-parameter-est-table) for description.")
 model_ind <- match(en2fr("CC", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
-                          xcaption = cap,
+                          xcaption = ifelse(french, 
+                                            "(ref:cc-parameter-est-cap-french)",
+                                            "(ref:cc-parameter-est-cap)"),
                           xlabel = "tab:cc-parameter-est-table",
                           font.size = 11,
                           space.size = 12,
                           placement = "ht")
 ```
 
+(ref:sog-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Strait of Georgia major stock assessment region.
+See Table \@ref(tab:hg-parameter-est-table) for description.
+
+(ref:sog-parameter-est-cap-french) Not yet translated.
+
 ```{r sog-parameter-est-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
-              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of key parameters for the Strait of ",
-              "Georgia major stock assessment region. See Table ",
-              "\\@ref(tab:hg-parameter-est-table) for description.")
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
-                          xcaption = cap,
+                          xcaption = ifelse(french, 
+                                            "(ref:sog-parameter-est-cap-french)",
+                                            "(ref:sog-parameter-est-cap)"),
                           xlabel = "tab:sog-parameter-est-table",
                           font.size = 11,
                           space.size = 12,
                           placement = "ht")
 ```
 
+(ref:wcvi-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Strait of Georgia major stock assessment region.
+See Table \@ref(tab:hg-parameter-est-table) for description.
+
+(ref:wcvi-parameter-est-cap-french) Not yet translated.
+
 ```{r wcvi-parameter-est-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
-              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of key parameters for the West Coast ",
-              "of Vancouver Island major stock assessment region. See Table ",
-              "\\@ref(tab:hg-parameter-est-table) for description.")
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
-                          xcaption = cap,
+                          xcaption = ifelse(french, 
+                                            "(ref:wcvi-parameter-est-cap-french)",
+                                            "(ref:wcvi-parameter-est-cap)"),
                           xlabel = "tab:wcvi-parameter-est-table",
                           font.size = 11,
                           space.size = 12,
