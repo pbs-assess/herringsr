@@ -97,9 +97,8 @@ spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
 ```{r hg-parameter-est-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
               "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of key ",
-              "parameters for the Haida Gwaii major stock assessment region. ",
-              "Subscripts on $q$ ",
+              "density (MPD) estimates of key parameters for the Haida Gwaii ",
+              "major stock assessment region. Subscripts on $q$ ",
               "(catchability) indicate: 1 = surface survey, 2 = dive survey. ",
               "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -114,11 +113,9 @@ make.parameters.est.table(major_models[[model_ind]],
 ```{r prd-parameter-est-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
               "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of key ",
-              "parameters for the Prince Rupert District major stock ",
-              "assessment region. Subscripts on $q$ ",
-              "(catchability) indicate: 1 = surface survey, 2 = dive survey. ",
-              "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
+              "density (MPD) estimates of key parameters for the Prince ",
+              "Rupert District major stock assessment region. See Table ",
+              "\\@ref(tab:hg-parameter-est-table) for description.")
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
                           xcaption = cap,
@@ -131,11 +128,9 @@ make.parameters.est.table(major_models[[model_ind]],
 ```{r cc-parameter-est-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
               "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of key ",
-              "parameters for the Central Coast major stock assessment ",
-              "region. Subscripts on $q$ ",
-              "(catchability) indicate: 1 = surface survey, 2 = dive survey. ",
-              "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
+              "density (MPD) estimates of key parameters for the Central ",
+              "Coast major stock assessment region. See Table ",
+              "\\@ref(tab:hg-parameter-est-table) for description.")
 model_ind <- match(en2fr("CC", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
                           xcaption = cap,
@@ -148,11 +143,9 @@ make.parameters.est.table(major_models[[model_ind]],
 ```{r sog-parameter-est-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
               "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of key ",
-              "parameters for the Strait of Georgia major stock assessment",
-              "region. Subscripts on $q$ ",
-              "(catchability) indicate: 1 = surface survey, 2 = dive survey. ",
-              "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
+              "density (MPD) estimates of key parameters for the Strait of ",
+              "Georgia major stock assessment region. See Table ",
+              "\\@ref(tab:hg-parameter-est-table) for description.")
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
                           xcaption = cap,
@@ -165,11 +158,9 @@ make.parameters.est.table(major_models[[model_ind]],
 ```{r wcvi-parameter-est-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
               "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of key ",
-              "parameters for the West Coast of Vancouver Island major stock ",
-              "assessment region. Subscripts on $q$ ",
-              "(catchability) indicate: 1 = surface survey, 2 = dive survey. ",
-              "Tau ($\\tau$) and sigma ($\\sigma$) are calculated values.")
+              "density (MPD) estimates of key parameters for the West Coast ",
+              "of Vancouver Island major stock assessment region. See Table ",
+              "\\@ref(tab:hg-parameter-est-table) for description.")
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
                           xcaption = cap,
@@ -182,9 +173,8 @@ make.parameters.est.table(major_models[[model_ind]],
 ```{r hg-recruitment-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
               "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of ",
-              "recruitment (millions) for the Haida Gwaii major stock ",
-              "assessment region.")
+              "density (MPD) estimates of age-2 recruitment (millions) for ",
+              "the Haida Gwaii major stock assessment region.")
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
@@ -199,9 +189,8 @@ make.value.table(major_models[[model_ind]],
 ```{r prd-recruitment-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
               "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of ",
-              "recruitment (millions) for the Prince Rupert District major ",
-              "stock assessment region.")
+              "density (MPD) estimates of age-2 recruitment (millions) for ",
+              "the Prince Rupert District major stock assessment region.")
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
@@ -216,9 +205,8 @@ make.value.table(major_models[[model_ind]],
 ```{r cc-recruitment-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
               "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of ",
-              "recruitment (millions) for the Central Coast major stock ",
-              "assessment region.")
+              "density (MPD) estimates of age-2 recruitment (millions) for ",
+              "the Central Coast major stock assessment region.")
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
@@ -233,9 +221,8 @@ make.value.table(major_models[[model_ind]],
 ```{r sog-recruitment-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
               "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of ",
-              "recruitment (millions) for the Strait of Georgia major stock",
-              "assessment region.")
+              "density (MPD) estimates of age-2 recruitment (millions) for ",
+              "the Strait of Georgia major stock assessment region.")
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
@@ -250,9 +237,9 @@ make.value.table(major_models[[model_ind]],
 ```{r wcvi-recruitment-table, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
               "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of ",
-              "recruitment (millions) for the West Coast of Vancouver Island ",
-              "major stock assessment region.")
+              "density (MPD) estimates of age-2 recruitment (millions) for ",
+              "the West Coast of Vancouver Island major stock assessment ",
+              "region.")
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
@@ -290,11 +277,9 @@ cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
               "50\\textsuperscript{th}, and ", confidence_vals[2]*100,
               "\\textsuperscript{th} percentile) and maximum posterior density ",
               "(MPD) estimates of spawning biomass in thousands of tonnes and ",
-              "relative spawning biomass (i.e., depletion ",
-              "$\\mli{SB}_t/\\mli{SB}_0$, where $\\mli{SB}_t$ is spawning ",
-              "biomass in year $t$, and $\\mli{SB}_0$ is estimated ",
-              "unfished biomass) for the Prince Rupert District major stock ",
-              "assessment region.")
+              "relative spawning biomass (i.e., depletion) for the Prince ",
+              "Rupert District major stock assessment region. See Table ",
+              "\\@ref(hg-spawning-biomass-depletion-table) for description.")
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-9,
@@ -311,11 +296,9 @@ cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
               "50\\textsuperscript{th}, and ", confidence_vals[2]*100,
               "\\textsuperscript{th} percentile) and maximum posterior density ",
               "(MPD) estimates of spawning biomass in thousands of tonnes and ",
-              "relative spawning biomass (i.e., depletion ",
-              "$\\mli{SB}_t/\\mli{SB}_0$, where $\\mli{SB}_t$ is spawning ",
-              "biomass in year $t$, and $\\mli{SB}_0$ is estimated ",
-              "unfished biomass) for the Central Coast major stock assessment ",
-              "region.")
+              "relative spawning biomass (i.e., depletion) for the Central ",
+              "Coast major stock assessment region. See Table ",
+              "\\@ref(hg-spawning-biomass-depletion-table) for description.")
 model_ind <- match(en2fr("CC", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-9,
@@ -332,11 +315,9 @@ cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
               "50\\textsuperscript{th}, and ", confidence_vals[2]*100,
               "\\textsuperscript{th} percentile) and maximum posterior density ",
               "(MPD) estimates of spawning biomass in thousands of tonnes and ",
-              "relative spawning biomass (i.e., depletion ",
-              "$\\mli{SB}_t/\\mli{SB}_0$, where $\\mli{SB}_t$ is spawning ",
-              "biomass in year $t$, and $\\mli{SB}_0$ is estimated ",
-              "unfished biomass) for the Strait of Georgia major stock ",
-              "assessment region.")
+              "relative spawning biomass (i.e., depletion) for the Strait of ",
+              "Georgia major stock assessment region. See Table ",
+              "\\@ref(hg-spawning-biomass-depletion-table) for description.")
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-9,
@@ -353,11 +334,9 @@ cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
               "50\\textsuperscript{th}, and ", confidence_vals[2]*100,
               "\\textsuperscript{th} percentile) and maximum posterior density ",
               "(MPD) estimates of spawning biomass in thousands of tonnes and ",
-              "relative spawning biomass (i.e., depletion ",
-              "$\\mli{SB}_t/\\mli{SB}_0$, where $\\mli{SB}_t$ is spawning ",
-              "biomass in year $t$, and $\\mli{SB}_0$ is estimated ",
-              "unfished biomass) for the West Coast of Vancouver Island major ",
-              " stock assessment region.")
+              "relative spawning biomass (i.e., depletion) for the West Coast ",
+              "of Vancouver Island major stock assessment region. See Table ",
+              "\\@ref(hg-spawning-biomass-depletion-table) for description.")
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-9,
