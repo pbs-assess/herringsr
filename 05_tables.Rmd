@@ -211,7 +211,7 @@ make.parameters.est.table(major_models[[model_ind]],
                           placement = "ht")
 ```
 
-(ref:wcvi-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Strait of Georgia major stock assessment region.
+(ref:wcvi-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
 (ref:wcvi-parameter-est-cap-french) Not yet translated.
@@ -228,85 +228,84 @@ make.parameters.est.table(major_models[[model_ind]],
                           placement = "ht")
 ```
 
+(ref:hg-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Haida Gwaii major stock assessment region.
+
+(ref:hg-recruitment-cap-french) Not yet translated.
+
 ```{r hg-recruitment-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
-              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of age-2 recruitment (millions) for ",
-              "the Haida Gwaii major stock assessment region.")
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
-                 xcaption = cap,
+                 xcaption = ifelse(french, "(ref:hg-recruitment-cap-french)",
+                                   "(ref:hg-recruitment-cap)"),
                  xlabel = "tab:hg-recruitment-table",
                  font.size = 11,
                  space.size = 12,
                  placement = "ht")
-                 ##tabular.environment = "longtable")
 ```
 
+(ref:prd-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Prince Rupert District major stock assessment region.
+
+(ref:prd-recruitment-cap-french) Not yet translated.
+
 ```{r prd-recruitment-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
-              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of age-2 recruitment (millions) for ",
-              "the Prince Rupert District major stock assessment region.")
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
-                 xcaption = cap,
+                 xcaption = ifelse(french, "(ref:prd-recruitment-cap-french)",
+                                   "(ref:prd-recruitment-cap)"),
                  xlabel = "tab:prd-recruitment-table",
                  font.size = 11,
                  space.size = 12,
                  placement = "ht")
-                 ##tabular.environment = "longtable")
 ```
 
+(ref:cc-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Central Coast major stock assessment region.
+
+(ref:cc-recruitment-cap-french) Not yet translated.
+
 ```{r cc-recruitment-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
-              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of age-2 recruitment (millions) for ",
-              "the Central Coast major stock assessment region.")
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
-                 xcaption = cap,
+                 xcaption = ifelse(french, "(ref:cc-recruitment-cap-french)",
+                                   "(ref:cc-recruitment-cap)"),
                  xlabel = "tab:cc-recruitment-table",
                  font.size = 11,
                  space.size = 12,
                  placement = "ht")
-                 ##tabular.environment = "longtable")
 ```
 
+(ref:sog-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Strait of Georgia major stock assessment region.
+
+(ref:sog-recruitment-cap-french) Not yet translated.
+
 ```{r sog-recruitment-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
-              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of age-2 recruitment (millions) for ",
-              "the Strait of Georgia major stock assessment region.")
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
-                 xcaption = cap,
+                 xcaption = ifelse(french, "(ref:sog-recruitment-cap-french)",
+                                   "(ref:sog-recruitment-cap)"),
                  xlabel = "tab:sog-recruitment-table",
                  font.size = 11,
                  space.size = 12,
                  placement = "ht")
-                 ##tabular.environment = "longtable")
 ```
 
+(ref:wcvi-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the West Coast of Vancouver Island major stock assessment region.
+
+(ref:wcvi-recruitment-cap-french) Not yet translated.
+
 ```{r wcvi-recruitment-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
-              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of age-2 recruitment (millions) for ",
-              "the West Coast of Vancouver Island major stock assessment ",
-              "region.")
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
-                 xcaption = cap,
+                 xcaption = ifelse(french, "(ref:wcvi-recruitment-cap-french)",
+                                   "(ref:wcvi-recruitment-cap)"),
                  xlabel = "tab:wcvi-recruitment-table",
                  font.size = 11,
                  space.size = 12,
                  placement = "ht")
-                 ##tabular.environment = "longtable")
 ```
 
 ```{r hg-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -327,7 +326,6 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              font.size = 11,
                              space.size = 12,
                              placement = "ht")
-                             ##tabular.environment = "longtable")
 ```
 
 ```{r prd-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -346,7 +344,6 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              font.size = 11,
                              space.size = 12,
                              placement = "ht")
-                             ##tabular.environment = "longtable")
 ```
 
 ```{r cc-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -365,7 +362,6 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              font.size = 11,
                              space.size = 12,
                              placement = "ht")
-                             ##tabular.environment = "longtable")
 ```
 
 ```{r sog-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -384,7 +380,6 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              font.size = 11,
                              space.size = 12,
                              placement = "ht")
-                             ##tabular.environment = "longtable")
 ```
 
 ```{r wcvi-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -403,7 +398,6 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              font.size = 11,
                              space.size = 12,
                              placement = "ht")
-                             ##tabular.environment = "longtable")
 ```
 
 (ref:ref-points-hg-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the Haida Gwaii major stock assessment region.
