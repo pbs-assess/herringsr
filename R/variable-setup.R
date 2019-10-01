@@ -11,6 +11,9 @@ age_highlight <- 3
 # Spawn survey method changed from surface (1951--1987) to dive (1988--present)
 new_surv_yr <- 1988
 
+# Post-reduction fishery catches
+recent_catch_yr <- 1972
+
 # Limits for the weight-at-age plot
 wa_ylim <- c(0.05, 0.15)
 
