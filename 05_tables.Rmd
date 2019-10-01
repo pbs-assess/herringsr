@@ -228,15 +228,16 @@ make.parameters.est.table(major_models[[model_ind]],
                           placement = "ht")
 ```
 
+(ref:hg-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Haida Gwaii major stock assessment region.
+
+(ref:hg-recruitment-cap-french) Not yet translated.
+
 ```{r hg-recruitment-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
-              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of age-2 recruitment (millions) for ",
-              "the Haida Gwaii major stock assessment region.")
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
-                 xcaption = cap,
+                 xcaption = ifelse(french, "(ref:hg-recruitment-cap-french)",
+                                   "(ref:hg-recruitment-cap)"),
                  xlabel = "tab:hg-recruitment-table",
                  font.size = 11,
                  space.size = 12,
@@ -244,15 +245,16 @@ make.value.table(major_models[[model_ind]],
                  ##tabular.environment = "longtable")
 ```
 
+(ref:prd-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Prince Rupert District major stock assessment region.
+
+(ref:prd-recruitment-cap-french) Not yet translated.
+
 ```{r prd-recruitment-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th}, 50\\textsuperscript{th}, ",
-              "and 95\\textsuperscript{th} percentile) and maximum posterior ",
-              "density (MPD) estimates of age-2 recruitment (millions) for ",
-              "the Prince Rupert District major stock assessment region.")
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
-                 xcaption = cap,
+                 xcaption = ifelse(french, "(ref:prd-recruitment-cap-french)",
+                                   "(ref:prd-recruitment-cap)"),
                  xlabel = "tab:prd-recruitment-table",
                  font.size = 11,
                  space.size = 12,
