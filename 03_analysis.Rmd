@@ -141,9 +141,8 @@ Simulation results showed similar properties between USRs $0.6\mli{SB}_0$ and $\
 The simulation-evaluations did not select a single USR, however a USR of $0.6\mli{SB}_0$ is included in this stock status update because this candidate is sufficiently above the LRP (2*LRP) and it is a repeatable calculation across all SARs.
 Stock status relative to the assessment model estimates $0.3\mli{SB}_0$ (LRP) and $0.6\mli{SB}_0$ (USR) are presented for each SAR in Tables \@ref(tab:ref-points-hg) through \@ref(tab:ref-points-wcvi).
 
-The LRP and USR relate stock status to the DFO PA Framework [@dfo2009], and in this assessment the same calculations are applied for each SAR.
-These reference points differ from operational control points (OCPs) which are the biomass levels where management action is taken (i.e., the infection points of the harvest control rule; HCR).
-OCPs and HCRs differ among SARs, and are described below.
+The LRP and USR relate stock status to the DFO PA Framework [@dfo2009], and in the assessment of Pacific Herring the same calculations are applied for each SAR.
+In Fisheries Science there is an important distinction between reference points (LRP, USR) and the operational control points of the harvest control rule (HCR) or management procedure used for setting catch limits. Specifically, operational control points  define the inflection points of a HCR and identify biomass levels where management action is taken (e.g., cease fishing).
 
 ### Haida Gwaii
 
