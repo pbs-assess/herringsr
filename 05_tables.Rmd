@@ -242,7 +242,6 @@ make.value.table(major_models[[model_ind]],
                  font.size = 11,
                  space.size = 12,
                  placement = "ht")
-                 ##tabular.environment = "longtable")
 ```
 
 (ref:prd-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Prince Rupert District major stock assessment region.
@@ -259,7 +258,6 @@ make.value.table(major_models[[model_ind]],
                  font.size = 11,
                  space.size = 12,
                  placement = "ht")
-                 ##tabular.environment = "longtable")
 ```
 
 ```{r cc-recruitment-table, results = 'asis', echo = FALSE}
@@ -275,7 +273,6 @@ make.value.table(major_models[[model_ind]],
                  font.size = 11,
                  space.size = 12,
                  placement = "ht")
-                 ##tabular.environment = "longtable")
 ```
 
 ```{r sog-recruitment-table, results = 'asis', echo = FALSE}
@@ -291,7 +288,6 @@ make.value.table(major_models[[model_ind]],
                  font.size = 11,
                  space.size = 12,
                  placement = "ht")
-                 ##tabular.environment = "longtable")
 ```
 
 ```{r wcvi-recruitment-table, results = 'asis', echo = FALSE}
@@ -308,7 +304,6 @@ make.value.table(major_models[[model_ind]],
                  font.size = 11,
                  space.size = 12,
                  placement = "ht")
-                 ##tabular.environment = "longtable")
 ```
 
 ```{r hg-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -329,7 +324,6 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              font.size = 11,
                              space.size = 12,
                              placement = "ht")
-                             ##tabular.environment = "longtable")
 ```
 
 ```{r prd-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -348,7 +342,6 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              font.size = 11,
                              space.size = 12,
                              placement = "ht")
-                             ##tabular.environment = "longtable")
 ```
 
 ```{r cc-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -367,7 +360,6 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              font.size = 11,
                              space.size = 12,
                              placement = "ht")
-                             ##tabular.environment = "longtable")
 ```
 
 ```{r sog-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -386,7 +378,6 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              font.size = 11,
                              space.size = 12,
                              placement = "ht")
-                             ##tabular.environment = "longtable")
 ```
 
 ```{r wcvi-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -405,7 +396,6 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              font.size = 11,
                              space.size = 12,
                              placement = "ht")
-                             ##tabular.environment = "longtable")
 ```
 
 (ref:ref-points-hg-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the Haida Gwaii major stock assessment region.
