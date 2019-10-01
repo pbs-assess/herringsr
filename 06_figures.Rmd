@@ -8,13 +8,13 @@
 knitr::include_graphics(here::here(ifelse(french, "figures/BC-FR.png", "figures/BC.png")))
 ```
 
-(ref:major-catch-cap) `r paste0("Time series of total landed catch in thousands of tonnes (t) of Pacific Herring from ", major_start_yr, " to ", major_end_yr, " in the major stock assessment regions. Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fishery; and 'RoeSN' represents the roe seine fishery.")`
+(ref:major-catch-cap) `r paste0("Time series of total landed catch in thousands of tonnes (t) of Pacific Herring from ", recent_catch_yr, " to ", major_end_yr, " in the major stock assessment regions. See storyboard figures for catches from ", major_start_yr, " to ", recent_catch_yr-1, ". Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fishery; and 'RoeSN' represents the roe seine fishery.")`
 
-(ref:major-catch-cap-french) `r paste0("Série chronologique des prises totales débarquées en milliers de tonnes (t) de hareng du Pacifique de ", major_start_yr, " à ", major_end_yr, " dans les principales régions d’évaluation des stocks. Légende : « Autre » représente la réduction, ainsi que les pêches pratiquées à des fins de subsistance, pour le marché des appâts et pour des usages spéciaux; « RogueFM » représente la pêche au hareng rogué au filet maillant; et « RogueSN » représente la pêche au hareng rogué à la senne.")`
+(ref:major-catch-cap-french) `r paste0("Série chronologique des prises totales débarquées en milliers de tonnes (t) de hareng du Pacifique de ", recent_catch_yr, " à ", major_end_yr, " dans les principales régions d’évaluation des stocks. Légende : « Autre » représente la réduction, ainsi que les pêches pratiquées à des fins de subsistance, pour le marché des appâts et pour des usages spéciaux; « RogueFM » représente la pêche au hareng rogué au filet maillant; et « RogueSN » représente la pêche au hareng rogué à la senne.")`
 
 ```{r major-catch, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-catch-cap-french)", "(ref:major-catch-cap)")}
 plot_catch(major_catch,
-           xlim = c(major_start_yr, major_end_yr),
+           xlim = c(recent_catch_yr, major_end_yr),
            translate = french)
 ```
 
