@@ -6,9 +6,9 @@
 The spawn index has two distinct periods defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
-The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter $q$.
+The 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
-(ref:data-input-cap-french) `r paste0("Données d’entrée pour l’évaluation des stocks de hareng du Pacifique de ", assess_yr, ". L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante : relevés en surface (de ", major_start_yr, " à ", new_surv_yr - 1, ") et relevés de plongée (de ", new_surv_yr, " à ", major_end_yr, "). L’indice du frai représente uniquement les données brutes de relevé et n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.")`
+(ref:data-input-cap-french) `r paste0("Données d’entrée pour l’évaluation des stocks de hareng du Pacifique de ", assess_yr, ". L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante : relevés en surface (de ", major_start_yr, " à ", new_surv_yr - 1, ") et relevés de plongée (de ", new_surv_yr, " à ", major_end_yr, "). L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.")`
 
 ```{r data-input}
 input_data_table(inp_catch,
@@ -18,9 +18,13 @@ input_data_table(inp_catch,
                  longtable = FALSE)
 ```
 
-(ref:annual-catch-cap) Total landed catch in tonnes of Pacific Herring in the major stock assessment regions (SARs). Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: 'WP' indicates that data are withheld due to privacy concerns.
+(ref:annual-catch-cap) Total landed catch in tonnes of Pacific Herring in the major stock assessment regions (SARs).
+Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI).
+Note: 'WP' indicates that data are withheld due to privacy concerns.
 
-(ref:annual-catch-cap-french) Total des prises débarquées en tonnes de hareng du Pacifique dans les principales zones d’évaluation des stocks. Légende : Haida Gwaii (HG), le district de Prince Rupert (DPR), la côte centrale (CC), le détroit de Georgie (DG) et la côte ouest de l’île de Vancouver (COIV). Remarque : « DT » indique que les données ne sont pas divulguées pour des raisons de confidentialité.
+(ref:annual-catch-cap-french) Total des prises débarquées en tonnes de hareng du Pacifique dans les principales zones d’évaluation des stocks.
+Légende: Haida Gwaii (HG), le district de Prince Rupert (DPR), la côte centrale (CC), le détroit de Georgie (DG) et la côte ouest de l’île de Vancouver (COIV).
+Remarque: « DT » indique que les données ne sont pas divulguées pour des raisons de confidentialité.
 
 ```{r annual-catch}
 total_landed_catch_table(major_catch_short,
@@ -32,9 +36,13 @@ total_landed_catch_table(major_catch_short,
                          longtable = FALSE)
 ```
 
-(ref:annual-sok-catch-cap) Total spawn-on-kelp harvest in pounds of Pacific Herring in the major stock assessment regions (SARs). Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). Note: 'WP' indicates that data are withheld due to privacy concerns.
+(ref:annual-sok-catch-cap) Total spawn-on-kelp harvest in pounds of Pacific Herring in the major stock assessment regions (SARs).
+Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI).
+Note: 'WP' indicates that data are withheld due to privacy concerns.
 
-(ref:annual-sok-catch-cap-french) Récolte totale d’oeufs sur varech en livres de hareng du Pacifique dans les principales zones d’évaluation des stocks. Légende : Haida Gwaii (HG), le district de Prince Rupert (DPR), la côte centrale (CC), le détroit de Georgie (DG) et la côte ouest de l’île de Vancouver (COIV). Remarque : « DT » indique que les données ne sont pas divulguées pour des raisons de confidentialité.
+(ref:annual-sok-catch-cap-french) Récolte totale d’oeufs sur varech en livres de hareng du Pacifique dans les principales zones d’évaluation des stocks.
+Légende: Haida Gwaii (HG), le district de Prince Rupert (DPR), la côte centrale (CC), le détroit de Georgie (DG) et la côte ouest de l’île de Vancouver (COIV).
+Remarque: « DT » indique que les données ne sont pas divulguées pour des raisons de confidentialité.
 
 ```{r annual-sok-catch}
 sok_harvest_table(sok,
@@ -46,9 +54,12 @@ sok_harvest_table(sok,
                   longtable = FALSE)
 ```
 
-(ref:spawn-index-hg-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring in the Haida Gwaii major stock assessment region. The 'spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter $q$. Legend: 'Cumshewa' is Section 023; 'Juan Perez/Skincuttle' is Sections 021 and 025; 'Louscoone' is Section 006; and 'Selwyn' is Section 024.
+(ref:spawn-index-hg-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring in the Haida Gwaii major stock assessment region.
+The 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
+Legend: 'Cumshewa' is Section 023; 'Juan Perez/Skincuttle' is Sections 021 and 025; 'Louscoone' is Section 006; and 'Selwyn' is Section 024.
 
-(ref:spawn-index-hg-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique dans la principale région d’évaluation des stocks de Haida Gwaii. L’indice du frai représente uniquement les données brutes de relevé et n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
+(ref:spawn-index-hg-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique dans la principale région d’évaluation des stocks de Haida Gwaii.
+L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
 ```{r spawn-index-hg}
 spawn_index_by_area_table(ps[[en2fr("HG", french)]],
@@ -59,9 +70,11 @@ spawn_index_by_area_table(ps[[en2fr("HG", french)]],
                           longtable = FALSE)
 ```
 
-(ref:spawn-index-pr-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the Prince Rupert District major stock assessment region. See Table \@ref(tab:spawn-index-hg) for description.
+(ref:spawn-index-pr-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the Prince Rupert District major stock assessment region.
+See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-pr-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la principale région d’évaluation des stocks du district de Prince Rupert. Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
+(ref:spawn-index-pr-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la principale région d’évaluation des stocks du district de Prince Rupert.
+Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-prd}
 spawn_index_by_area_table(ps[[en2fr("PRD", french)]], 
@@ -72,9 +85,11 @@ spawn_index_by_area_table(ps[[en2fr("PRD", french)]],
                           longtable = FALSE)
 ```
 
-(ref:spawn-index-cc-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the Central Coast major stock assessment region. See Table \@ref(tab:spawn-index-hg) for description.
+(ref:spawn-index-cc-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the Central Coast major stock assessment region.
+See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-cc-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la principale région d’évaluation des stocks de la côte centrale. Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
+(ref:spawn-index-cc-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la principale région d’évaluation des stocks de la côte centrale.
+Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-cc}
 spawn_index_by_area_table(ps[[en2fr("CC", french)]],
@@ -85,9 +100,13 @@ spawn_index_by_area_table(ps[[en2fr("CC", french)]],
                           longtable = FALSE)
 ```
 
-(ref:spawn-index-sog-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring in the Strait of Georgia major stock assessment region. Legend: '14&17' is Statistical Areas 14 and 17 (excluding Section 173); 'ESoG' is eastern Strait of Georgia; 'Lazo' is above Cape Lazo; and 'SDodd' is South of Dodd Narrows. See Table \@ref(tab:spawn-index-hg) for description.
+(ref:spawn-index-sog-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring in the Strait of Georgia major stock assessment region.
+Legend: '14&17' is Statistical Areas 14 and 17 (excluding Section 173); 'ESoG' is eastern Strait of Georgia; 'Lazo' is above Cape Lazo; and 'SDodd' is South of Dodd Narrows.
+See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-sog-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique dans la principale région d’évaluation des stocks du détroit de Georgie. Légende : « 14 et 17 » fait référence aux zones statistiques 14 et 17 (à l’exclusion de la section 173); « EDG » fait référence à l’est du détroit de Géorgie; « Lazo » fait référence au-dessus du cap Lazo; et « SDodd » fait référence au sud du passage Dodd. Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
+(ref:spawn-index-sog-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique dans la principale région d’évaluation des stocks du détroit de Georgie.
+Légende: « 14 et 17 » fait référence aux zones statistiques 14 et 17 (à l’exclusion de la section 173); « EDG » fait référence à l’est du détroit de Géorgie; « Lazo » fait référence au-dessus du cap Lazo; et « SDodd » fait référence au sud du passage Dodd.
+Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-sog}
 spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
@@ -98,9 +117,11 @@ spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
                           longtable = FALSE)
 ```
 
-(ref:spawn-index-wcvi-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the West Coast of Vancouver Island major stock assessment region. See Table \@ref(tab:spawn-index-hg) for description.
+(ref:spawn-index-wcvi-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the West Coast of Vancouver Island major stock assessment region.
+See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-wcvi-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la principale région d’évaluation des stocks de la côte ouest de l’île de Vancouver. Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
+(ref:spawn-index-wcvi-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la principale région d’évaluation des stocks de la côte ouest de l’île de Vancouver.
+Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-wcvi}
 spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
@@ -119,7 +140,8 @@ average age-2 recruitment from `r major_start_yr` to `r major_end_yr` $\overline
 average age-2 recruitment in `r major_start_yr-1` $\overline{R}_\mli{init}$;
 fraction of total variance associated with observation error $\rho$;
 precision of total error $\vartheta$;
-catchability for surface $q_1$ and dive $q_2$ survey periods;
+catchability for surface (`r major_start_yr` to `r new_surv_yr-1`) $q_1$ and
+dive (`r new_surv_yr` to `r major_end_yr`) $q_2$ survey periods;
 standard deviation of process error (i.e., recruitment) $\tau$; and
 standard deviation of observation error (i.e., survey index) $\sigma$.
 Note that $\tau$ and $\sigma$ are calculated values.
@@ -384,9 +406,13 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              ##tabular.environment = "longtable")
 ```
 
-(ref:ref-points-hg-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the Haida Gwaii major stock assessment region. All biomass numbers are in thousands of tonnes. Legend: $\mli{SB}_0$ is estimated unfished biomass; $\mli{SB}_{t}$ is spawning biomass in year $t$; and $\mli{SB}_{`r assess_yr+1`}$ is projected spawning biomass in `r assess_yr+1` assuming no fishing.
+(ref:ref-points-hg-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the Haida Gwaii major stock assessment region.
+All biomass numbers are in thousands of tonnes.
+Legend: $\mli{SB}_0$ is estimated unfished biomass; $\mli{SB}_{t}$ is spawning biomass in year $t$; and $\mli{SB}_{`r assess_yr+1`}$ is projected spawning biomass in `r assess_yr+1` assuming no fishing.
 
-(ref:ref-points-hg-cap-french) Estimations a posteriori (5\textsuperscript{e} percentile, médiane et 95\textsuperscript{e} percentile) des points de référence proposés pour le modèle de Haida Gwaii. La $\mli{BSR}_{2019}$ représente la biomasse reproductrice avant la pêche, et tous les chiffres indiqués pour la biomasse sont exprimés en milliers de tonnes. La probabilité de la $\mli{BSR}_{2019} < 0,3\mli{BSR}_0$ est fondée sur une prise nulle.
+(ref:ref-points-hg-cap-french) Estimations a posteriori (5\textsuperscript{e} percentile, médiane et 95\textsuperscript{e} percentile) des points de référence proposés pour le modèle de Haida Gwaii.
+La $\mli{BSR}_{2019}$ représente la biomasse reproductrice avant la pêche, et tous les chiffres indiqués pour la biomasse sont exprimés en milliers de tonnes.
+La probabilité de la $\mli{BSR}_{2019} < 0,3\mli{BSR}_0$ est fondée sur une prise nulle.
 
 ```{r ref-points-hg, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -401,9 +427,11 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
-(ref:ref-points-prd-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the Prince Rupert District major stock assessment region. See Table \@ref(tab:ref-points-hg) for description.
+(ref:ref-points-prd-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the Prince Rupert District major stock assessment region.
+See Table \@ref(tab:ref-points-hg) for description.
 
-(ref:ref-points-prd-cap-french) Estimations a posteriori (5\textsuperscript{e} percentile, médiane et 95\textsuperscript{e} percentile) des points de référence proposés pour le modèle du district de Prince Rupert. Voir le tableau \@ref(tab:ref-points-hg) pour la description.
+(ref:ref-points-prd-cap-french) Estimations a posteriori (5\textsuperscript{e} percentile, médiane et 95\textsuperscript{e} percentile) des points de référence proposés pour le modèle du district de Prince Rupert.
+Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-prd, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
@@ -418,9 +446,11 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
-(ref:ref-points-cc-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the Central Coast major stock assessment region. See Table \@ref(tab:ref-points-hg) for description.
+(ref:ref-points-cc-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the Central Coast major stock assessment region.
+See Table \@ref(tab:ref-points-hg) for description.
 
-(ref:ref-points-cc-cap-french) Estimations a posteriori (5\textsuperscript{e} percentile, médiane et 95\textsuperscript{e} percentile) des points de référence proposés pour le modèle de la côte centrale. Voir le tableau \@ref(tab:ref-points-hg) pour la description.
+(ref:ref-points-cc-cap-french) Estimations a posteriori (5\textsuperscript{e} percentile, médiane et 95\textsuperscript{e} percentile) des points de référence proposés pour le modèle de la côte centrale.
+Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-cc, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -435,9 +465,11 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
-(ref:ref-points-sog-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the Strait of Georgia major stock assessment region. See Table \@ref(tab:ref-points-hg) for description.
+(ref:ref-points-sog-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the Strait of Georgia major stock assessment region.
+See Table \@ref(tab:ref-points-hg) for description.
 
-(ref:ref-points-sog-cap-french) Estimations a posteriori (5\textsuperscript{e} percentile, médiane et 95\textsuperscript{e} percentile) des points de référence proposés pour le modèle du détroit de Georgie. Voir le tableau \@ref(tab:ref-points-hg) pour la description.
+(ref:ref-points-sog-cap-french) Estimations a posteriori (5\textsuperscript{e} percentile, médiane et 95\textsuperscript{e} percentile) des points de référence proposés pour le modèle du détroit de Georgie.
+Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-sog, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
@@ -455,9 +487,11 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
-(ref:ref-points-wcvi-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the West Coast of Vancouver Island major stock assessment region. See Table \@ref(tab:ref-points-hg) for description.
+(ref:ref-points-wcvi-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the West Coast of Vancouver Island major stock assessment region.
+See Table \@ref(tab:ref-points-hg) for description.
 
-(ref:ref-points-wcvi-cap-french) Estimations a posteriori (5\textsuperscript{e} percentile, médiane et 95\textsuperscript{e} percentile) des points de référence proposés pour le modèle de la côte ouest de l’île de Vancouver. Voir le tableau \@ref(tab:ref-points-hg) pour la description.
+(ref:ref-points-wcvi-cap-french) Estimations a posteriori (5\textsuperscript{e} percentile, médiane et 95\textsuperscript{e} percentile) des points de référence proposés pour le modèle de la côte ouest de l’île de Vancouver.
+Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-wcvi, results = 'asis', echo = FALSE}
 cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
