@@ -8,7 +8,8 @@
 
 ```{r data-input}
 input_data_table(inp_catch,
-                 cap = ifelse(french, "(ref:data-input-cap-french)", "(ref:data-input-cap)"),
+                 cap = ifelse(french, "(ref:data-input-cap-french)",
+                              "(ref:data-input-cap)"),
                  french,
                  longtable = FALSE)
 ```
@@ -21,7 +22,8 @@ input_data_table(inp_catch,
 total_landed_catch_table(major_catch_short,
                          by_vec = major_regions_short,
                          first_yr = assess_yr - 9,
-                         cap = ifelse(french, "(ref:annual-catch-cap-french)", "(ref:annual-catch-cap)"),
+                         cap = ifelse(french, "(ref:annual-catch-cap-french)",
+                                      "(ref:annual-catch-cap)"),
                          french,
                          longtable = FALSE)
 ```
@@ -34,7 +36,8 @@ total_landed_catch_table(major_catch_short,
 sok_harvest_table(sok,
                   by_vec = major_regions_short,
                   first_yr = assess_yr - 9,
-                  cap = ifelse(french, "(ref:annual-sok-catch-cap-french)", "(ref:annual-sok-catch-cap)"),
+                  cap = ifelse(french, "(ref:annual-sok-catch-cap-french)",
+                               "(ref:annual-sok-catch-cap)"),
                   french,
                   longtable = FALSE)
 ```
@@ -45,7 +48,9 @@ sok_harvest_table(sok,
 
 ```{r spawn-index-hg}
 spawn_index_by_area_table(ps[[en2fr("HG", french)]],
-                          cap = ifelse(french, "(ref:spawn-index-hg-cap-french)", "(ref:spawn-index-hg-cap)"),
+                          cap = ifelse(french, 
+                                       "(ref:spawn-index-hg-cap-french)",
+                                       "(ref:spawn-index-hg-cap)"),
                           french,
                           longtable = FALSE)
 ```
@@ -56,7 +61,9 @@ spawn_index_by_area_table(ps[[en2fr("HG", french)]],
 
 ```{r spawn-index-prd}
 spawn_index_by_area_table(ps[[en2fr("PRD", french)]], 
-                          cap = ifelse(french, "(ref:spawn-index-pr-cap-french)", "(ref:spawn-index-pr-cap)"),
+                          cap = ifelse(french, 
+                                       "(ref:spawn-index-pr-cap-french)",
+                                       "(ref:spawn-index-pr-cap)"),
                           translate = french,
                           longtable = FALSE)
 ```
@@ -67,7 +74,9 @@ spawn_index_by_area_table(ps[[en2fr("PRD", french)]],
 
 ```{r spawn-index-cc}
 spawn_index_by_area_table(ps[[en2fr("CC", french)]],
-                          cap = ifelse(french, "(ref:spawn-index-cc-cap-french)", "(ref:spawn-index-cc-cap)"),
+                          cap = ifelse(french, 
+                                       "(ref:spawn-index-cc-cap-french)",
+                                       "(ref:spawn-index-cc-cap)"),
                           translate = french,
                           longtable = FALSE)
 ```
@@ -78,7 +87,9 @@ spawn_index_by_area_table(ps[[en2fr("CC", french)]],
 
 ```{r spawn-index-sog}
 spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
-                          cap = ifelse(french, "(ref:spawn-index-sog-cap-french)", "(ref:spawn-index-sog-cap)"),
+                          cap = ifelse(french, 
+                                       "(ref:spawn-index-sog-cap-french)",
+                                       "(ref:spawn-index-sog-cap)"),
                           translate = french,
                           longtable = FALSE)
 ```
@@ -89,7 +100,9 @@ spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
 
 ```{r spawn-index-wcvi}
 spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
-                          cap = ifelse(french, "(ref:spawn-index-wcvi-cap-french)", "(ref:spawn-index-wcvi-cap)"),
+                          cap = ifelse(french, 
+                                       "(ref:spawn-index-wcvi-cap-french)",
+                                       "(ref:spawn-index-wcvi-cap)"),
                           translate = french,
                           longtable = FALSE)
 ```
@@ -355,7 +368,9 @@ make.biomass.depletion.table(major_models[[model_ind]],
 ```{r ref-points-hg, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.ref.points.table(major_models[[model_ind]],
-                      xcaption = ifelse(french, "(ref:ref-points-hg-cap-french)", "(ref:ref-points-hg-cap)"),
+                      xcaption = ifelse(french, 
+                                        "(ref:ref-points-hg-cap-french)",
+                                        "(ref:ref-points-hg-cap)"),
                       xlabel = "tab:ref-points-hg",
                       font.size = 11,
                       space.size = 12,
@@ -370,7 +385,9 @@ make.ref.points.table(major_models[[model_ind]],
 ```{r ref-points-prd, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.ref.points.table(major_models[[model_ind]],
-                      xcaption = ifelse(french, "(ref:ref-points-prd-cap-french)","(ref:ref-points-prd-cap)"),
+                      xcaption = ifelse(french, 
+                                        "(ref:ref-points-prd-cap-french)",
+                                        "(ref:ref-points-prd-cap)"),
                       xlabel = "tab:ref-points-prd",
                       font.size = 11,
                       space.size = 12,
@@ -385,7 +402,9 @@ make.ref.points.table(major_models[[model_ind]],
 ```{r ref-points-cc, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
 make.ref.points.table(major_models[[model_ind]],
-                      xcaption = ifelse(french, "(ref:ref-points-cc-cap-french)","(ref:ref-points-cc-cap)"),
+                      xcaption = ifelse(french,
+                                        "(ref:ref-points-cc-cap-french)",
+                                        "(ref:ref-points-cc-cap)"),
                       xlabel = "tab:ref-points-cc",
                       font.size = 11,
                       space.size = 12,
@@ -403,7 +422,9 @@ cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
               "points for the Strait of Georgia model. See Table \\\\@ref(tab:ref-points-hg) for description.")
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.ref.points.table(major_models[[model_ind]],
-                      xcaption = ifelse(french, "(ref:ref-points-sog-cap-french)","(ref:ref-points-sog-cap)"),
+                      xcaption = ifelse(french, 
+                                        "(ref:ref-points-sog-cap-french)",
+                                        "(ref:ref-points-sog-cap)"),
                       xlabel = "tab:ref-points-sog",
                       font.size = 11,
                       space.size = 12,
@@ -421,7 +442,9 @@ cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
               "points for the West Coast of Vancouver Island model. See Table \\\\@ref(tab:ref-points-hg) for description.")
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.ref.points.table(major_models[[model_ind]],
-                      xcaption = ifelse(french, "(ref:ref-points-wcvi-cap-french)","(ref:ref-points-wcvi-cap)"),
+                      xcaption = ifelse(french,
+                                        "(ref:ref-points-wcvi-cap-french)",
+                                        "(ref:ref-points-wcvi-cap)"),
                       xlabel = "tab:ref-points-wcvi",
                       font.size = 11,
                       space.size = 12,
