@@ -123,7 +123,7 @@ e. Time series of (log) deviations from the estimated Beverton-Holt recruitment 
 
 f. Phase plot of spawning biomass production for the dive survey period (MPD estimates), with reference line at model estimates of $0.3\mli{SB}_0$.
 
-## Reference points
+### Reference points
 
 A biological limit reference point (LRP) is defined for the major Pacific Herring SARs at $0.3\mli{SB}_0$ [@kronlund2017].
 Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG in 2018 [@dfo2019a] and then for HG, PRD, and CC in 2019 [@dfo2019c].
@@ -169,7 +169,7 @@ Estimated natural mortality reached historic highs in the late 1960s, before dec
 Beginning in about 1980, estimated natural mortality increased through to `r assess_yr`, roughly doubling from 0.25 to 0.5&nbsp;$yr^{-1}$ (Figure \@ref(fig:storyboard-prd)b).
 This trend in natural mortality coincides with the decline in spawning biomass (Figure \@ref(fig:storyboard-prd)d); recruitment deviations have fluctuated around 0 without any strong positive or negative trends (Figure \@ref(fig:storyboard-prd)e).
 An above average age-2+ recruitment in 2014, 2017-2019, and an increase in the spawn index in the last year were still not sufficient to lead to an increasing trend in biomass (Figure \@ref(fig:storyboard-prd)f).
-The catch up to 2018 was relatively low and there was no commercial catch in 2019 and the estimated natural mortality appears to be unchanged from last year, resulting in what appears to be a small increase in production.
+Commercial catches from 2007-2018 have remained low (below 2,000t) and there was no commercial catch in 2019. The estimated natural mortality appears to be unchanged from last year, resulting in what appears to be a small increase in production.
 An increasing trend in weight-at-age has been observed since about 2010, although the change does not appear to be as large as in the HG, CC, SoG and WCVI SARs.
 
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(prd_final_yr_sbt[2])`&nbsp;t (posterior median), equal to `r f(prd_final_yr_sbt[2]/prd_sbo[2] * 100, 1)`% of $\mli{SB}_0$ (Tables \@ref(prd-spawning-biomass-depletion-table) & \@ref(tab:ref-points-prd)).
