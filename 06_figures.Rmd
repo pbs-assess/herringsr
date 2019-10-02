@@ -1,16 +1,24 @@
 # Figures
 
-(ref:bc-map-cap) Boundaries for the Pacific Herring stock assessment regions (SARs) in BC. The major SARs are Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI). The minor SARs are Area 27 (A27) and Area 2 West (A2W). Units: kilometres (km).
+(ref:bc-map-cap) Boundaries for the Pacific Herring stock assessment regions (SARs) in BC.
+The major SARs are Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI).
+The minor SARs are Area 27 (A27) and Area 2 West (A2W).
+Units: kilometres (km).
 
-(ref:bc-map-cap-french) Limites des régions d’évaluation des stocks du hareng du Pacifique en Colombie-Britannique. Les principales régions d’évaluation des stocks sont Haida Gwaii (HG), le district de Prince Rupert (DPR), la côte centrale (CC), le détroit de Georgie (DG) et la côte ouest de l’île de Vancouver (COIV). Les régions d’évaluation des stocks secondaires sont la zone 27 (Z27) et la zone 2 Ouest (Z2O). Unités : kilomètres (km).
+(ref:bc-map-cap-french) Limites des régions d’évaluation des stocks du hareng du Pacifique en Colombie-Britannique.
+Les principales régions d’évaluation des stocks sont Haida Gwaii (HG), le district de Prince Rupert (DPR), la côte centrale (CC), le détroit de Georgie (DG) et la côte ouest de l’île de Vancouver (COIV).
+Les régions d’évaluation des stocks secondaires sont la zone 27 (Z27) et la zone 2 Ouest (Z2O). 
+Unités: kilomètres (km).
 
 ```{r bc-map, fig.cap = ifelse(french, "(ref:bc-map-cap-french)", "(ref:bc-map-cap)"), out.width = "100%", fig.pos="H"}
 knitr::include_graphics(here::here(ifelse(french, "figures/BC-FR.png", "figures/BC.png")))
 ```
 
-(ref:major-catch-cap) `r paste0("Time series of total landed catch in thousands of tonnes (t) of Pacific Herring from ", recent_catch_yr, " to ", major_end_yr, " in the major stock assessment regions. See storyboard figures for catches from ", major_start_yr, " to ", recent_catch_yr-1, ". Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fishery; and 'RoeSN' represents the roe seine fishery.")`
+(ref:major-catch-cap) Time series of total landed catch in thousands of tonnes (t) of Pacific Herring from `r recent_catch_yr` to `r major_end_yr` in the major stock assessment regions.
+See Figures \@ref(fig:storyboard-hg) to \@ref(fig:storyboard-wcvi) for catches during the reduction period (`r major_start_yr` to `r recent_catch_yr-1`).
+Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fishery; and 'RoeSN' represents the roe seine fishery.
 
-(ref:major-catch-cap-french) `r paste0("Série chronologique des prises totales débarquées en milliers de tonnes (t) de hareng du Pacifique de ", recent_catch_yr, " à ", major_end_yr, " dans les principales régions d’évaluation des stocks. Légende : « Autre » représente la réduction, ainsi que les pêches pratiquées à des fins de subsistance, pour le marché des appâts et pour des usages spéciaux; « RogueFM » représente la pêche au hareng rogué au filet maillant; et « RogueSN » représente la pêche au hareng rogué à la senne.")`
+(ref:major-catch-cap-french) `r paste0("Série chronologique des prises totales débarquées en milliers de tonnes (t) de hareng du Pacifique de ", recent_catch_yr, " à ", major_end_yr, " dans les principales régions d’évaluation des stocks. Légende: « Autre » représente la réduction, ainsi que les pêches pratiquées à des fins de subsistance, pour le marché des appâts et pour des usages spéciaux; « RogueFM » représente la pêche au hareng rogué au filet maillant; et « RogueSN » représente la pêche au hareng rogué à la senne.")`
 
 ```{r major-catch, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-catch-cap-french)", "(ref:major-catch-cap)")}
 plot_catch(major_catch,
