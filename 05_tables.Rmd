@@ -506,7 +506,7 @@ make.ref.points.table(major_models[[model_ind]],
 
 ```{r decision-table-hg, results = 'asis', echo = FALSE}
 col_align <- "cc|c|c|c|c|c|c|c"
-# cap <- "Probabilistic decision table for the Haida Gwaii AM2 model."
+# cap <- "Probabilistic decision table for the Haida Gwaii major stock assessment region."
 #
 # model_ind <- match(en2fr("HG", french), major_regions_short)
 # make.decision.table(major_models[[model_ind]],
@@ -518,7 +518,7 @@ col_align <- "cc|c|c|c|c|c|c|c"
 #
 ```
 
-(ref:decision-table-prd-cap) Probabilistic decision table for the Prince Rupert District AM2 model.
+(ref:decision-table-prd-cap) Probabilistic decision table for the Prince Rupert District major stock assessment region.
 
 (ref:decision-table-prd-cap-french) Tableau de décision probabilistes pour le district de Prince Rupert, modèle AM2.
 
@@ -543,7 +543,7 @@ decision_tables_mp(mp.prd,
                    translate = french)
 ```
 
-(ref:decision-table-cc-cap) Probabilistic decision table for the Central Coast AM2 model.
+(ref:decision-table-cc-cap) Probabilistic decision table for the Central Coast major stock assessment region.
 
 (ref:decision-table-cc-cap-french) Tableau de décision probabilistes pour la côte centrale, modèle AM2.
 
@@ -568,7 +568,7 @@ decision_tables_mp(mp.cc,
                    translate = french)
 ```
 
-(ref:decision-table-sog-cap) Probabilistic decision table for the Strait of Georgia AM2 model.
+(ref:decision-table-sog-cap) Probabilistic decision table for the Strait of Georgia major stock assessment region.
 
 (ref:decision-table-sog-cap-french) Tableau de décision probabilistes pour détroit de Georgie, modèle AM2.
 
@@ -598,7 +598,7 @@ decision_tables_mp(mp.sog,
 ```
 
 ```{r decision-table-wcvi, results = 'asis', echo = FALSE}
-# cap <- "Probabilistic decision table for the West Coast of Vancouver Island AM2 model."
+# cap <- "Probabilistic decision table for the West Coast of Vancouver Island major stock assessment region."
 #
 # model_ind <- match(en2fr("WCVI", french), major_regions_short)
 # make.decision.table(major_models[[model_ind]],

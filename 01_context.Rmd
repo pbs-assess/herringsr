@@ -11,7 +11,7 @@ As part of the MSE process, a CSAS regional peer review occurred July 25 and 26,
 Steps included operating model (OM) development, fitting the OM to Pacific Herring stock and fishery monitoring data, and closed-loop simulations of MP performance for alternative future natural mortality scenarios.
 The 2018 stock assessment included updated MP recommendations for SoG and WCVI stock assessment regions for 2019 [@dfo2019b].
 
-In the spring of 2019, the MSE process was initiated for the northern stock areas.
+In the spring of 2019, the MSE process was initiated for the northern stock regions.
 This process included performance evaluation of MPs for Haida Gwaii (HG), Prince Rupert District (PRD), and Central Coast [CC; @dfo2019c].
 
 Estimated stock trajectories, current status of stocks for `r assess_yr`, and harvest advice recommendations for `r assess_yr + 1` reflect methods of @cleary2018 and, where applicable, recommendations from the aforementioned 2018 and 2019 MSE analyses.

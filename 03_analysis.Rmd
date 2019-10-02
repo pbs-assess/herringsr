@@ -37,7 +37,7 @@ The surface (`r surv_yr_rng[1]` to `r new_surv_yr - 1`) and dive (`r new_surv_yr
 These data are used to calculate egg densities per spawn.
 Ultimately, the estimated weight of mature spawners required to produce the egg deposition is calculated and referred to as the 'spawn index'.
 Execution of the `r surv_yr_rng[2]` spawn survey followed all standard protocols as described in @cleary2018.
-Time series of spawn index by major stock area, from `r paste(surv_yr_rng, collapse=" to ")` are summarized in Figure \@ref(fig:major-spawn-index).
+Time series of spawn index by major stock assessment region, from `r paste(surv_yr_rng, collapse=" to ")` are summarized in Figure \@ref(fig:major-spawn-index).
 In `r surv_yr_rng[2]`, there was a decrease in survey biomass in SoG and WCVI (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-sog) & \@ref(tab:spawn-index-wcvi)) and an increase in survey biomass in HG, PRD, and CC (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-hg), \@ref(tab:spawn-index-prd), & \@ref(tab:spawn-index-cc)). 
 
 ## Spatial spawn distribution
@@ -237,7 +237,7 @@ Times series of $U_t$ relative to target harvest rate of 20% are presented in Fi
 ## Harvest recommendations for `r assess_yr + 1`
 
 Harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and application of a HCR that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988). 
-Although the target harvest rate has varied among areas in recent years (e.g., CC and PRD SARs; @dfo2017),
+Although the target harvest rate has varied among regions in recent years (e.g., CC and PRD SARs; @dfo2017),
 the “historical” practice was to apply a target harvest rate of 0.2 when the forecast is estimated to be above a fixed commercial fishery cutoff of $0.25\mli{SB}_0$ defined in the 1996 stock assessment [@dfo2016].
 
 Renewal of the Pacific Herring management framework included a commitment to simulation-evaluation of the performance of the historical and alternative management procedures using management strategy evaluation (MSE). The selection of a MP using an MSE approach is an iterative process conducted with the participation of First Nations, the fishing industry, government, and non-government organizations.
@@ -277,14 +277,14 @@ Stock rebuilding does not end having met this goal, however, and one of the goal
 
 [^RebuildHG]: In response to recommendations in the Commissioner of the Environment and Sustainable Development (CESD) October 2016 Report 2 - Sustaining Canada’s Major Fish Stocks - Fisheries and Oceans Canada, the Department will develop rebuilding plans for major fish stocks that are in the precautionary approach critical zone, including Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.
 
-DFO supports commercial herring fishery closures for the HG major stock area until April 2021. As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&nbsp;t.
+DFO supports commercial herring fishery closures for the HG major stock region until April 2021. As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&nbsp;t.
 
 ### Prince Rupert District
 
 XXXXX THIS STILL NEEDS WORK
 
 For PRD the best performing MPs generally had 10% or lower harvest rates, although one with a 20% harvest rate did meet the conservation objective because it also used a highly conservative 0.5B0 lower control point. This choice resulted in more frequent fishery closures as spawning biomass declined below the lower control point. 
-While several MPs are able to meet core conservation objectives for PRD, they also imply different trade-offs among biomass (e.g., ecosystem) and yield outcomes. For management areas where multiple MPs meet the conservation objective, further ranking of the remaining objectives is needed in order to provide decision-makers with a tractable set of trade-off choices. Mechanisms for ranking objectives can include workshops and explicit identification of existing harvest or access priorities. Ranking of objectives can reveal tradeoffs between MPs in order to identify and eliminate undesirable outcomes.
+While several MPs are able to meet core conservation objectives for PRD, they also imply different trade-offs among biomass (e.g., ecosystem) and yield outcomes. For management regions where multiple MPs meet the conservation objective, further ranking of the remaining objectives is needed in order to provide decision-makers with a tractable set of trade-off choices. Mechanisms for ranking objectives can include workshops and explicit identification of existing harvest or access priorities. Ranking of objectives can reveal tradeoffs between MPs in order to identify and eliminate undesirable outcomes.
 
 
 
