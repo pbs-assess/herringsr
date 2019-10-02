@@ -257,7 +257,7 @@ This occurs because low biomass levels (associated with the lower OCP) are avoid
 The reasons relate to differences in objectives deemed important by resource users, differences in historical and current stock and fishery dynamics, and differences in the magnitude and direction of assessment model errors in each SAR.
 Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
 
-Harvest advice in `r assess_yr+1` for all SARs is guided by the results and lessons learned from the simulation-evaluations completed in the first MSE cycle [@dfo2019a and @dfo2019c].
+Harvest advice in `r assess_yr+1` for all SARs is guided by the results and lessons learned from the simulation-evaluations [@dfo2019a;@dfo2019c].
  
 
 Details of harvest advice are provided below for each major SAR.
