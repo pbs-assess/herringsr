@@ -26,7 +26,15 @@ plot_catch(major_catch,
            translate = french)
 ```
 
-(ref:major-wa-cap) `r paste0("Time series of weight-at-age in kilograms (kg) for age-", age_highlight, " (circles) and ", nRollWA, "-year running mean weight-at-age (lines) for Pacific Herring from ", major_start_yr, " to ", major_end_yr, " in the major stock assessment regions. Lines show ", nRollWA, "-year running means for age-", min(as.integer(names(minor_wa)), na.rm=TRUE), " to age-", age_plus, " herring (incrementing higher from the lowest line); the thick black line highlights age-", age_highlight, " herring. Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods: missing values at the beginning of the time series are imputed by extending the frst non-missing value backwards; other missing values are imputed as the mean of the previous ", nRollWA, " years. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-",  age_plus, " class is a 'plus group' which includes fish ages ", age_plus, " and older. Note that vertical axes are cropped at ", wa_ylim[1], " and ", wa_ylim[2], " kg.")`
+(ref:major-wa-cap) Time series of weight-at-age in kilograms (kg) for age-`r age_highlight` (circles) and `r nRollWA`-year running mean weight-at-age (lines) for Pacific Herring from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
+Lines show `r nRollWA`-year running means for age-`r min(as.integer(names(minor_wa)), na.rm=TRUE)` to age-`r age_plus` herring (incrementing higher from the lowest line);
+the thick black line highlights age-`r age_highlight` herring.
+Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods:
+missing values at the beginning of the time series are imputed by extending the frst non-missing value backwards;
+other missing values are imputed as the mean of the previous `r nRollWA` years.
+Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet.
+The age-`r age_plus` class is a 'plus group' which includes fish ages `r age_plus` and older.
+Note that vertical axes are cropped at `r wa_ylim[1]` and `r wa_ylim[2]` kg.
 
 <!-- Need to fix automation (i.e., age-3) in french captions, here and elsewhere -->
 
@@ -820,7 +828,7 @@ cowplot::plot_grid(plot_a,
 
 ```
 
-(ref:harvest-rate-cap) `r paste0("Time series of effective harvest rate for Pacific Herring from ", major_start_yr, " to ", assess_yr, " in the major stock assessment regions. Effective harvest rate in year $t$, $U_t$ is calculated as $U_t = C_t/(C_t + \\mli{SB}_t)$ where $C_t$ is catch in year $t$, and $\\mli{SB}_t$ is estimated spawning biomass in year $t$. Black lines and shaded ribbons indicate medians and ", ci_level*100, "\\% confdence intervals for spawning biomass, respectively. Horizontal dashed lines indicate $U_t =",  target_hr, "$.")`
+(ref:harvest-rate-cap) `r paste0("Time series of effective harvest rate for Pacific Herring from ", major_start_yr, " to ", assess_yr, " in the major stock assessment regions. Effective harvest rate in year $t$, $U_t$ is calculated as $U_t = C_t/(C_t + \\mli{SB}_t)$ where $C_t$ is catch in year $t$, and $\\mli{SB}_t$ is estimated spawning biomass in year $t$. Black lines and shaded ribbons indicate medians and ", ci_level*100, "\\% confidence intervals for spawning biomass, respectively. Horizontal dashed lines indicate $U_t =",  target_hr, "$.")`
 
 (ref:harvest-rate-cap-french) `r paste0("Série chronologique du taux de récolte effectif pour le hareng du Pacifique de ", major_start_yr, " à ", assess_yr, " dans les principales régions d’évaluation des stocks. Le taux de récolte effectif pour l’année t, Ut est calculé comme $U_t = C_t/(C_t + BSR_t)$ où $C_t$ est est la prise pour l’année $t$, et la $BSR_t$ est la biomasse reproductrice estimée pour l’année $t$. Les lignes noires indiquent les médianes et les zones ombragées indiquent les intervalles de confiance de 90\\% pour la biomasse reproductrice, $BSR_t$. Les lignes en tirets horizontales indiquent $U_t = 0,2$.")`
 
