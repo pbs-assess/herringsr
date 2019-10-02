@@ -512,7 +512,10 @@ col_align <- "cc|c|c|c|c|c|c|c"
 #
 ```
 
-(ref:decision-table-prd-cap) Management procedure (MP) performance for the Prince Rupert District major stock assessment region under three operating model (OM) scenarios: density-dependent mortality (DDM), density-independent mortality (DIM), and constant natural mortality (conM). Performance criteria are calculated over 3 generations (15 years) from the start of the projection period for all objectives. MPs are ordered within each scenario by performance achieving the Conservation Objective 1. The recommended total allowable catch (TAC) and associated harvest rate are reported for each MP.
+(ref:decision-table-prd-cap) Management procedure (MP) performance for the Prince Rupert District major stock assessment region under three operating model (OM) scenarios: density-dependent mortality (DDM), density-independent mortality (DIM), and constant natural mortality (conM).
+Performance criteria are calculated over 3 generations (15 years) from the start of the projection period for all objectives.
+MPs are ordered within each scenario by performance achieving the Conservation Objective 1.
+The recommended total allowable catch (TAC) in thousands of tonnes (t) and associated harvest rate are reported for each MP.
 
 (ref:decision-table-prd-cap-french) Tableau de décision probabilistes pour le district de Prince Rupert, modèle AM2.
 
@@ -537,7 +540,8 @@ decision_tables_mp(mp.prd,
                    translate = french)
 ```
 
-(ref:decision-table-cc-cap) Probabilistic decision table for the Central Coast major stock assessment region. See Table \@ref(tab:decision-table-prd) for description.
+(ref:decision-table-cc-cap) Management procedure performance for the Central Coast major stock assessment region.
+See Table \@ref(tab:decision-table-prd) for description.
 
 (ref:decision-table-cc-cap-french) Tableau de décision probabilistes pour la côte centrale, modèle AM2.
 
@@ -562,7 +566,8 @@ decision_tables_mp(mp.cc,
                    translate = french)
 ```
 
-(ref:decision-table-sog-cap) Probabilistic decision table for the Strait of Georgia major stock assessment region. See Table \@ref(tab:decision-table-prd) for description.
+(ref:decision-table-sog-cap) Management procedure performance for the Strait of Georgia major stock assessment region.
+See Table \@ref(tab:decision-table-prd) for description.
 
 (ref:decision-table-sog-cap-french) Tableau de décision probabilistes pour détroit de Georgie, modèle AM2.
 
