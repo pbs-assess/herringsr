@@ -837,7 +837,7 @@ cowplot::plot_grid(plot_a,
 ```
 
 (ref:harvest-rate-cap) Time series of effective harvest rate $U$ for Pacific Herring from `r major_start_yr` to `r assess_yr` in the major stock assessment regions.
-Effective harvest rate in year $t$, $U_t = C_t/(C_t + \\mli{SB}_t)$ where
+Effective harvest rate in year $t$ is calculated as $U_t = C_t/(C_t + \\mli{SB}_t)$ where
 $C_t$ is catch in year $t$, and
 $\\mli{SB}_t$ is estimated spawning biomass in year $t$.
 Black lines and shaded ribbons indicate medians and `r ci_level*100`% confidence intervals for spawning biomass, respectively.
