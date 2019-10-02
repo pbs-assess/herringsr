@@ -308,7 +308,11 @@ make.value.table(major_models[[model_ind]],
                  placement = "ht")
 ```
 
-(ref:hg-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion (i.e., relative spawning biomass $\mli{SB}_t/\mli{SB}_0$, where $\mli{SB}_t$ is spawning biomass in year $t$, and $\mli{SB}_0$ is estimated unfished biomass) for the Haida Gwaii major stock assessment region.
+(ref:hg-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion
+(i.e., relative spawning biomass $\mli{SB}_t/\mli{SB}_0$, where
+$\mli{SB}_t$ is spawning biomass in year $t$, and
+$\mli{SB}_0$ is estimated unfished biomass)
+for the Haida Gwaii major stock assessment region.
 
 (ref:hg-spawning-biomass-depletion-cap-french) Not yet translated.
 
