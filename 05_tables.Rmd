@@ -515,7 +515,12 @@ col_align <- "cc|c|c|c|c|c|c|c"
 (ref:decision-table-prd-cap) Management procedure (MP) performance for the Prince Rupert District major stock assessment region under three operating model (OM) scenarios: density-dependent mortality (DDM), density-independent mortality (DIM), and constant natural mortality (conM).
 Performance criteria are calculated over 3 generations (15 years) from the start of the projection period for all objectives.
 MPs are ordered within each scenario by performance achieving the Conservation Objective 1.
-The recommended total allowable catch (TAC) in thousands of tonnes (t) and associated harvest rate are reported for each MP.
+The recommended total allowable catch (TAC) in thousands of tonnes (t) and associated harvest rate (HR) are reported for each MP.
+Legend: spawning biomass in year $t$ $\mli{SB}_t$;
+estimated unfished spawning biomass $\mli{SB}_0$;
+average annual varibility in catch (AAV);
+catch in year $t$ $C_t$; and
+average catch $\overbar{C}_t$.
 
 (ref:decision-table-prd-cap-french) Tableau de décision probabilistes pour le district de Prince Rupert, modèle AM2.
 
