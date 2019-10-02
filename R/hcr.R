@@ -24,7 +24,9 @@ get_sbt_sbo <- function(name){
 get_hcr <- function(sbt, sbo, fn){
   mp <- read_csv(fn) %>%
     as_tibble() %>%
-    arrange(desc(obj1), desc(obj2)) %>%
+    arrange(factor(om, levels = c("DDM", "DIM", "conM")),
+            desc(obj1),
+            desc(obj2)) %>%
     mutate(tac = NA,
            targ.hr = NA)
   mp.lst <- NULL
@@ -35,7 +37,7 @@ get_hcr <- function(sbt, sbo, fn){
     mp[rw,]$targ.hr <- hcr_meds[2]
   }
   list(mp.lst,
-  mp %>% select(mp,
+  mp %>% select(om,
                 label,
                 obj1,
                 obj2,
