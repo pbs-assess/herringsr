@@ -467,9 +467,6 @@ See Table \@ref(tab:ref-points-hg) for description.
 Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-sog, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
-              "95\\textsuperscript{th} percentile) estimates of proposed reference ",
-              "points for the Strait of Georgia model. See Table \\\\@ref(tab:ref-points-hg) for description.")
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.ref.points.table(major_models[[model_ind]],
                       xcaption = ifelse(french, 
@@ -489,9 +486,6 @@ See Table \@ref(tab:ref-points-hg) for description.
 Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-wcvi, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (5\\textsuperscript{th} percentile, Median, and ",
-              "95\\textsuperscript{th} percentile) estimates of proposed reference ",
-              "points for the West Coast of Vancouver Island model. See Table \\\\@ref(tab:ref-points-hg) for description.")
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.ref.points.table(major_models[[model_ind]],
                       xcaption = ifelse(french,
