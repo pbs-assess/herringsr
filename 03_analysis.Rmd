@@ -240,7 +240,7 @@ Harvest advice for the major stocks of Pacific Herring has been based on a 1-yea
 Although the target harvest rate has varied among regions in recent years (e.g., CC and PRD SARs; @dfo2017),
 the “historical” practice was to apply a target harvest rate of 0.2 when the forecast is estimated to be above a fixed commercial fishery cutoff of $0.25\mli{SB}_0$ defined in the 1996 stock assessment [@dfo2016].
 
-Renewal of the Pacific Herring management framework included a commitment to simulation-evaluation of the performance of the historical and alternative management procedures using management strategy evaluation (MSE). The selection of a MP using an MSE approach is an iterative process conducted with the participation of First Nations, the fishing industry, government, and non-government organizations.
+Renewal of the Pacific Herring management framework included a commitment to MSE simulation-evaluation of the performance of the historical and alternative MPs in relaton to conservation and fisheries management objectives. The selection of a MP using an MSE approach is an iterative process conducted with the participation of First Nations, the fishing industry, government, and non-government organizations.
 The first cycle of the MSE process was completed for the WCVI and SoG SARs in 2018 [@dfo2019a] and in 2019 a similar process was used to evaluate harvest strategies for HG, PRD, and CC [@dfo2019c]. The MPs for each SAR differs in the form of the HCR and choices of catch cap, but use the same monitoring data and assessment model. The current assessment model assumes density-dependent mortality (DDM). As part of the MSE process OM scenarios, such as density-independent mortality (DIM) and constant natural mortality (conM), were also evaluated as alternative hypotheses about past and future productivity of Pacific Herring stocks. 
 
 Several lessons were learned from the analysis:
@@ -278,8 +278,6 @@ DFO supports commercial herring fishery closures for the HG major stock region u
 
 ### Prince Rupert District
 
-XXXXX THIS STILL NEEDS WORK
-
 For PRD the best performing MPs generally had 10% or lower harvest rates, although one with a 20% harvest rate did meet the conservation objective because it also used a highly conservative 0.5B0 lower control point. This choice resulted in more frequent fishery closures as spawning biomass declined below the lower control point. 
 While several MPs are able to meet core conservation objectives for PRD, they also imply different trade-offs among biomass (e.g., ecosystem) and yield outcomes. For management regions where multiple MPs meet the conservation objective, further ranking of the remaining objectives is needed in order to provide decision-makers with a tractable set of trade-off choices. Mechanisms for ranking objectives can include workshops and explicit identification of existing harvest or access priorities. Ranking of objectives can reveal tradeoffs between MPs in order to identify and eliminate undesirable outcomes.
 
@@ -294,8 +292,6 @@ The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the 
 
 
 ### Central Coast
-
-XXXX THIS STILL NEEDS WORK
 
 For the CC, MPs performing best against the conservation objective have a 10% or lower harvest rate and include a range of operational control point choices. The proposed catch cap of 5,000 t had no effect on management performance under the conditions simulated, suggesting that estimated biomass (and potentially assessment errors) and catch rarely increased to the point where application of the target harvest rate produced a catch > 5,000 t. 
 
