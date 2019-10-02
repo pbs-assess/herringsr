@@ -308,20 +308,16 @@ make.value.table(major_models[[model_ind]],
                  placement = "ht")
 ```
 
+(ref:hg-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion (i.e., relative spawning biomass $\frac{\mli{SB}_t}{\mli{SB}_0}$, where $\mli{SB}_t$ is spawning biomass in year $t$, and $\mli{SB}_0$ is estimated unfished biomass) for the Haida Gwaii major stock assessment region.
+
+(ref:hg-spawning-biomass-depletion-cap-french) Not yet translated.
+
 ```{r hg-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
-cap <- paste0("Posterior (", confidence_vals[1]*100, "\\textsuperscript{th}, ",
-              "50\\textsuperscript{th}, and ", confidence_vals[2]*100,
-              "\\textsuperscript{th} percentile) and maximum posterior density ",
-              "(MPD) estimates of spawning biomass in thousands of tonnes and ",
-              "relative spawning biomass (i.e., depletion ",
-              "$\\mli{SB}_t/\\mli{SB}_0$, where $\\mli{SB}_t$ is spawning ",
-              "biomass in year $t$, and $\\mli{SB}_0$ is estimated ",
-              "unfished biomass) for the Haida Gwaii major stock assessment ",
-              "region.")
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-9,
-                             xcaption = cap,
+                             xcaption = ifelse(french, "(ref:hg-spawning-biomass-depletion-cap-french)",
+                                   "(ref:hg-spawning-biomass-depletion-cap)"),
                              xlabel = "hg-spawning-biomass-depletion-table",
                              font.size = 11,
                              space.size = 12,
