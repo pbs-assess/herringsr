@@ -840,7 +840,7 @@ cowplot::plot_grid(plot_a,
 Effective harvest rate in year $t$ is calculated as $U_t = C_t/(C_t + \mli{SB}_t)$ where
 $C_t$ is catch in year $t$, and
 $\mli{SB}_t$ is estimated spawning biomass in year $t$.
-Black lines and shaded ribbons indicate medians and `r ci_level*100`% confidence intervals for spawning biomass, respectively.
+Black lines and shaded ribbons indicate medians and `r ci_level*100`% confidence intervals for $U_t$, respectively.
 Horizontal dashed lines indicate $U_t = 0.2$.
 
 (ref:harvest-rate-cap-french) `r paste0("Série chronologique du taux de récolte effectif pour le hareng du Pacifique de ", major_start_yr, " à ", assess_yr, " dans les principales régions d’évaluation des stocks. Le taux de récolte effectif pour l’année t, Ut est calculé comme $U_t = C_t/(C_t + BSR_t)$ où $C_t$ est est la prise pour l’année $t$, et la $BSR_t$ est la biomasse reproductrice estimée pour l’année $t$. Les lignes noires indiquent les médianes et les zones ombragées indiquent les intervalles de confiance de 90\\% pour la biomasse reproductrice, $BSR_t$. Les lignes en tirets horizontales indiquent $U_t = 0,2$.")`
