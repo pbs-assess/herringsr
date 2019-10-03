@@ -233,6 +233,7 @@ make.parameters.est.table(major_models[[model_ind]],
 (ref:hg-recruitment-cap-french) Not yet translated.
 
 ```{r hg-recruitment-table, results = 'asis', echo = FALSE}
+model_ind <- match(en2fr("HG", french), major_regions_short)
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
@@ -249,6 +250,7 @@ make.value.table(major_models[[model_ind]],
 (ref:prd-recruitment-cap-french) Not yet translated.
 
 ```{r prd-recruitment-table, results = 'asis', echo = FALSE}
+model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
@@ -265,6 +267,7 @@ make.value.table(major_models[[model_ind]],
 (ref:cc-recruitment-cap-french) Not yet translated.
 
 ```{r cc-recruitment-table, results = 'asis', echo = FALSE}
+model_ind <- match(en2fr("CC", french), major_regions_short)
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
@@ -281,6 +284,7 @@ make.value.table(major_models[[model_ind]],
 (ref:sog-recruitment-cap-french) Not yet translated.
 
 ```{r sog-recruitment-table, results = 'asis', echo = FALSE}
+model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
@@ -297,6 +301,7 @@ make.value.table(major_models[[model_ind]],
 (ref:wcvi-recruitment-cap-french) Not yet translated.
 
 ```{r wcvi-recruitment-table, results = 'asis', echo = FALSE}
+model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = 2007,
