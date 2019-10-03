@@ -25,10 +25,7 @@ Biological samples are collected as described in @cleary2018 and Table \@ref(tab
 Biological data inputs to the stock assessment are annual weight-at-age (Figure \@ref(fig:major-wa)) and annual numbers-at-age, shown as proportions-at-age (Figure \@ref(fig:major-pa)).
 
 Significant declines in weight-at-age are evident for all major herring stocks, from the mid-1980s to 2010.
-Declining weight-at-age may be attributed to any number of factors, including
-fishing effects (i.e., gear selectivity), 
-environmental effects (e.g., changes in ocean productivity), or 
-changes in sampling protocols (e.g., shorter time frame over which samples are collected).
+Declining weight-at-age may be attributed to any number of factors, including fishing effects (i.e., gear selectivity), environmental effects (e.g., changes in ocean productivity), or changes in sampling protocols (e.g., shorter time frame over which samples are collected).
 There has been an increasing trend in weight-at-age for all major stocks from 2012 to `r assess_yr`, although to a lesser degree for PRD.
 
 ## Abundance data
@@ -142,7 +139,8 @@ The simulation-evaluations did not select a single USR, however a USR of $0.6\ml
 Stock status relative to the assessment model estimates $0.3\mli{SB}_0$ (LRP) and $0.6\mli{SB}_0$ (USR) are presented for each SAR in Tables \@ref(tab:ref-points-hg) through \@ref(tab:ref-points-wcvi).
 
 The LRP and USR relate stock status to the DFO PA Framework [@dfo2009], and in the assessment of Pacific Herring the same calculations are applied for each SAR.
-In Fisheries Science there is an important distinction between reference points (LRP, USR) and the operational control points of the harvest control rule (HCR) or management procedure used for setting catch limits. Specifically, operational control points  define the inflection points of a HCR and identify biomass levels where management action is taken (e.g., cease fishing).
+In Fisheries Science there is an important distinction between reference points (LRP, USR) and the operational control points of the harvest control rule (HCR) or management procedure used for setting catch limits.
+Specifically, operational control points define the inflection points of a HCR and identify biomass levels where management action is taken (e.g., cease fishing).
 
 ### Haida Gwaii
 
@@ -189,7 +187,7 @@ In 2019 there is evidence of strong production, similar to the 1990 to 1999 peri
 however, the biomass state is not nearly as high as was seen during that period.
 
 Since implementing the current HCR in 1986, the effective harvest rate $U_t$ is estimated to fluctuate above and below the 20% target rate, with median estimates exceeding 20% frequently Figure \@ref(fig:harvest-rate)).
-Occurrences of $U_t$ exceeding the 20% target rate are due in part to positive assessment model errors.
+Occurrences of $U_t$ exceeding the 20% target harvest rate are due in part to positive assessment model errors.
 
 Following a commercial fishery closure from 2007 to 2013, the CC stock reopened to commercial fisheries in 2014 and small commercial roe fisheries occurred in 2014, 2015, and 2016.
 A commercial SOK fishery has operated yearly since 2014, however these removals are not
@@ -240,11 +238,17 @@ Harvest advice for the major stocks of Pacific Herring has been based on a 1-yea
 Although the target harvest rate has varied among regions in recent years (e.g., CC and PRD SARs; @dfo2017),
 the “historical” practice was to apply a target harvest rate of 0.2 when the forecast is estimated to be above a fixed commercial fishery cutoff of $0.25\mli{SB}_0$ defined in the 1996 stock assessment [@dfo2016].
 
-Renewal of the Pacific Herring management framework included a commitment to MSE simulation-evaluation of the performance of historical and alternative MPs in relaton to conservation and fisheries management objectives. 
-The selection of a MP using an MSE approach is an iterative process conducted with the participation of First Nations, the fishing industry, government, and non-government organizations to define appropiate MPs and relevant objectives.
+Renewal of the Pacific Herring management framework included a commitment to MSE simulation-evaluation of the performance of historical and alternative MPs in relation to conservation and fisheries management objectives. 
+The selection of a MP using an MSE approach is an iterative process conducted with the participation of First Nations, the fishing industry, government, and non-government organizations to define appropriate MPs and relevant objectives.
 
 The first cycle of the MSE process was completed for the WCVI and SoG SARs in 2018 [@dfo2019a] and in 2019 a similar process was used to evaluate harvest strategies for HG, PRD, and CC [@dfo2019c]. 
-The MPs for each SAR differs in the form of the HCR and choices of catch cap, but use the same monitoring data and assessment model. The current assessment model assumes density-dependent mortality (DDM). As part of the MSE process additional OM scenarios, density-independent mortality (DIM) and constant natural mortality (conM), were also evaluated as alternative hypotheses about past and future productivity of Pacific Herring stocks. Core stock and fishery objectives which reflect DFO policy intent to avoid a biomass limit (Objective 1: Avoid the LRP with >75% probability) and achieve a target biomass (Objective 2: Maintain spawning stock biomass at or above USR with >50% probability), and goals regarding the level and variability of catches over time (Objective 3: Maintain average annual variability in catch of less than 25%; Objective 4: Maximize average annual catch; and minimizing the number of closures) common used for all SARs in the first cycle of MSE.
+The MPs for each SAR differs in the form of the HCR and choices of catch cap, but use the same monitoring data and assessment model.
+The current assessment model assumes density-dependent mortality (DDM).
+As part of the MSE process additional OM scenarios, density-independent mortality (DIM) and constant natural mortality (conM), were also evaluated as alternative hypotheses about past and future productivity of Pacific Herring stocks.
+Core stock and fishery objectives which reflect DFO policy intent to
+avoid a biomass limit (Objective 1: Avoid the LRP with >75% probability) and
+achieve a target biomass (Objective 2: Maintain spawning stock biomass at or above USR with >50% probability),
+and goals regarding the level and variability of catches over time (Objective 3: Maintain average annual variability in catch of less than 25%; Objective 4: Maximize average annual catch; and minimizing the number of closures) common used for all SARs in the first cycle of MSE.
 
 Several lessons were learned from the analysis:
 
@@ -272,7 +276,8 @@ The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3
 
 DFO has committed to developing and implementing a rebuilding plan for Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.[^RebuildHG]
 Work is underway through a technical working group comprised of members of the Council of Haida Nation, DFO, and Parks Canada.
-Guidance for the Development of Rebuilding Plans under the Precautionary Approach Framework: Growing Stocks out of the Critical Zone [@dfo2013] states that the primary objective of any rebuilding plan is to promote stock growth out of the Critical Zone (i.e., to grow the stock above the status-based LRP) by ensuring removals from all fishing sources are kept to the lowest possible level until the stock has cleared this zone with high probability.
+Guidance for the Development of Rebuilding Plans under the Precautionary Approach Framework: Growing Stocks out of the Critical Zone [@dfo2013] states that
+the primary objective of any rebuilding plan is to promote stock growth out of the Critical Zone (i.e., to grow the stock above the status-based LRP) by ensuring removals from all fishing sources are kept to the lowest possible level until the stock has cleared this zone with high probability.
 Stock rebuilding does not end having met this goal, however, and one of the goals of the rebuilding plan will be to identify candidate threshold biomass levels greater than the LRP that are consistent with a rebuilt state.
 
 [^RebuildHG]: In response to recommendations in the Commissioner of the Environment and Sustainable Development (CESD) October 2016 Report 2 - Sustaining Canada’s Major Fish Stocks - Fisheries and Oceans Canada, the Department will develop rebuilding plans for major fish stocks that are in the precautionary approach critical zone, including Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.
@@ -281,12 +286,14 @@ DFO supports commercial herring fishery closures for the HG major stock region u
 
 ### Prince Rupert District
 
-For PRD the best performing MPs generally had 10% or lower harvest rates, although one with a 20% harvest rate did meet the conservation objective because it also used a highly conservative 0.5B0 lower control point. This choice resulted in more frequent fishery closures as spawning biomass declined below the lower control point. 
-While several MPs are able to meet core conservation objectives for PRD, they also imply different trade-offs among biomass (e.g., ecosystem) and yield outcomes. For management regions where multiple MPs meet the conservation objective, further ranking of the remaining objectives is needed in order to provide decision-makers with a tractable set of trade-off choices. Mechanisms for ranking objectives can include workshops and explicit identification of existing harvest or access priorities. Ranking of objectives can reveal tradeoffs between MPs in order to identify and eliminate undesirable outcomes.
+For PRD the best performing MPs generally had 10% or lower harvest rates, although one with a 20% harvest rate did meet the conservation objective because it also used a highly conservative $0.5\mli{SB}_0$ lower control point.
+This choice resulted in more frequent fishery closures as spawning biomass declined below the lower control point. 
+While several MPs are able to meet core conservation objectives for PRD, they also imply different trade-offs among biomass (e.g., ecosystem) and yield outcomes.
+For management regions where multiple MPs meet the conservation objective, further ranking of the remaining objectives is needed in order to provide decision-makers with a tractable set of trade-off choices.
+Mechanisms for ranking objectives can include workshops and explicit identification of existing harvest or access priorities.
+Ranking of objectives can reveal trade offs between MPs in order to identify and eliminate undesirable outcomes.
 
-
-
-Effective harvest rates for the past 10-years average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fluctuate at or near $0.3\mli{SB}_0$ (Figure \@ref(fig:storyboard-prd)d).
+Effective harvest rates for the past 10 years average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fluctuate at or near $0.3\mli{SB}_0$ (Figure \@ref(fig:storyboard-prd)d).
 Furthermore, adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity:
 states that were entered rapidly and were preceded by high biomass levels [@kronlund2017].
 
@@ -296,7 +303,8 @@ The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the 
 
 ### Central Coast
 
-For the CC, MPs performing best against the conservation objective have a 10% or lower harvest rate and include a range of operational control point choices. The proposed catch cap of 5,000 t had no effect on management performance under the conditions simulated, suggesting that estimated biomass (and potentially assessment errors) and catch rarely increased to the point where application of the target harvest rate produced a catch > 5,000 t. 
+For the CC, MPs performing best against the conservation objective have a 10% or lower harvest rate and include a range of operational control point choices.
+The proposed catch cap of 5,000&nbsp;t had no effect on management performance under the conditions simulated, suggesting that estimated biomass (and potentially assessment errors) and catch rarely increased to the point where application of the target harvest rate produced a catch > 5,000&nbsp;t. 
 
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(cc_proj_sbt[2])`&nbsp;t (posterior median), decreasing from `r f(cc_final_yr_sbt[2])`&nbsp;t in `r assess_yr` (Table \@ref(tab:ref-points-cc)).
 The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3\mli{SB}_0$ with `r f(cc_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
@@ -343,7 +351,9 @@ Using a HCR with OCPs at $0.5\mli{SB}_0$ and $0.6\mli{SB}_0$, a 10% target harve
 Given the best performing MP for the WCVI did not meet the minimum "high" probability of 75%, further simulation-testing of HCRs that include additional measures to ensure persistent stock growth away from the critical zone and towards identified biomass targets may be required.
 For example, for a rebuilding stock a "slow-up" MP could be designed to delay fishery openings for an additional predefined number of years (e.g., 3 to 5) when the spawning biomass is estimated to be above the lower OCP in order to provide higher confidence of stock growth.
 The WCVI spawn index data and model estimates of spawning biomass (Figure \@ref(fig:storyboard-wcvi)a & d) show the increasing trajectory for WCVI herring as both gradual and erratic.
-The `r assess_yr` assessment estimates WCVI spawning biomass to be above the LRP from 2015 to 2018 (based on posterior medians), however this perspective based on stock assessment model estimates does not take into consideration positive assessment model errors.
+The `r assess_yr` assessment estimates WCVI spawning biomass to be above the LRP from 2015 to 2018 (based on posterior medians),
+however this perspective based on stock assessment model estimates does not take into consideration positive assessment model errors.
 Thus simulation-evaluation of a "slow-up" MP is needed to identify the number of closure years needed to support continual stock growth.
 
-MPs designed to delay reopening of commercial fisheries following prolonged low biomass states will allow evidence of persistent stock growth to accrue, reducing the potential for assessment errors or underlying population dynamics (i.e., increasing natural mortality) to cause the spawning biomass to lapse back to a low production, low biomass state.
+MPs designed to delay reopening of commercial fisheries following prolonged low biomass states will allow evidence of persistent stock growth to accrue,
+reducing the potential for assessment errors or underlying population dynamics (i.e., increasing natural mortality) to cause the spawning biomass to lapse back to a low production, low biomass state.
