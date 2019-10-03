@@ -182,12 +182,12 @@ In 2019 there was an increase in estimated spawning biomass.
 The estimated biomass trend largely reflects the trend in the spawn index (Figure \@ref(fig:storyboard-cc)a), where fluctuations correspond in opposite phase to the fluctuations in estimated natural mortality (Figure \@ref(fig:storyboard-cc)b).
 For example, the decline in spawn index (and estimated spawning biomass) to the historic lows of the late 2000s followed a strongly increasing trend in estimated natural mortality through the same period.
 Estimated natural mortality moderated by the late 2000s, which was followed by the increase in spawn index (and estimated spawning biomass) until 2015 whereupon natural mortality again increased.
-Recruitment deviations were slightly negative (lower than predicted by the stock-recruit function) on average from about 1990 to 2017, and have increased to above average in 2018 and 2019 (Figure \@ref(fig:storyboard-cc)e).
+Recruitment deviations were slightly negative (lower than predicted by the stock-recruitment function) on average from about 1990 to 2017, and have increased to above average in 2018 and 2019 (Figure \@ref(fig:storyboard-cc)e).
 In 2019 there is evidence of strong production, similar to the 1990 to 1999 period (Figure \@ref(fig:storyboard-cc)f);
 however, the biomass state is not nearly as high as was seen during that period.
 
-Since implementing the current HCR in 1986, the effective harvest rate $U_t$ is estimated to fluctuate above and below the 20% target rate, with median estimates exceeding 20% frequently Figure \@ref(fig:harvest-rate)).
-Occurrences of $U_t$ exceeding the 20% target harvest rate are due in part to positive assessment model errors.
+A fixed cutoff HCR was implemented in 1986 and from 1986-2007 the effective harvest rate $U_t$ is estimated to fluctuate above and below the 20% target rate, with median estimates exceeding 20% frequently Figure \@ref(fig:harvest-rate)).
+Occurrences of $U_t$ exceeding the 20% target harvest rate are due lags in part to positive assessment model errors and lags in detecting a directional change in the trend.
 
 Following a commercial fishery closure from 2007 to 2013, the CC stock reopened to commercial fisheries in 2014 and small commercial roe fisheries occurred in 2014, 2015, and 2016.
 A commercial SOK fishery has operated yearly since 2014, however these removals are not
