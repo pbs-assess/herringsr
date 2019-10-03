@@ -4,6 +4,7 @@ This section contains MCMC diagnostics for the Strait of Georgia major stock ass
 These tables and figures will not be included in the final Science Response.
 
 ```{r sog-priors-posts-figure, fig.cap = "Prior probability distributions (lines) with comparative posterior histograms (bars) used in the Strait of Georgia major stock assessment region. Subscripts on $q$ (catchability) indicate: 1 = surface survey, 2 = dive survey. The dotted red lines are the maximum posterior density estimates."}
+model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
 ```

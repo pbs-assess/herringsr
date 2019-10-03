@@ -4,6 +4,7 @@ This section contains MCMC diagnostics for the Haida Gwaii major stock assessmen
 These tables and figures will not be included in the final Science Response.
 
 ```{r hg-priors-posts-figure, fig.cap = "Prior probability distributions (lines) with comparative posterior histograms (bars) used in the Haida Gwaii major stock assessment region. Subscripts on $q$ (catchability) indicate: 1 = surface survey, 2 = dive survey. The dotted red lines are the maximum posterior density estimates."}
+model_ind <- match(en2fr("HG", french), major_regions_short)
 make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
 ```
