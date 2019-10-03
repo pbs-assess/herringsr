@@ -516,9 +516,10 @@ col_align <- "cc|c|c|c|c|c|c|c"
 Performance criteria are calculated over 3 generations (15 years) from the start of the projection period for all objectives.
 MPs are ordered within each scenario by performance achieving the Conservation Objective 1.
 The recommended total allowable catch (TAC) in thousands of tonnes (t) and associated harvest rate (HR) are reported for each MP.
-Legend: spawning biomass in year $t$ $\mli{SB}_t$;
+Legend: limit reference point (LRP);
+spawning biomass in year $t$ $\mli{SB}_t$;
 estimated unfished spawning biomass $\mli{SB}_0$;
-average annual varibility in catch (AAV);
+average annual varibility (AAV);
 catch in year $t$ $C_t$; and
 average catch $\overline{C}$.
 
