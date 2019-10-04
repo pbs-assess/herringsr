@@ -26,7 +26,8 @@ make.pairs.plot(major_models[[model_ind]])
 
 (ref:prd-biomass-retro-figure) Maximum posterior density biomass with retrospectivces for the Prince Rupert District major stock assessment region.
 ```{r prd-biomass-retro-figure, fig.cap = "(ref:prd-biomass-retro-figure)"}
-biomass.plot.mpd(major_models[[model_ind]])
+biomass.plot.mpd(major_models[[model_ind]],
+                 xlim = c(1972, assess_yr))
 ```
 
 (ref:decision-table-prd) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Prince Rupert District, rows 1-4 in Table \\@ref(tab:decision-table-prd)")`

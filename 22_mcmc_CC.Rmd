@@ -26,7 +26,8 @@ make.pairs.plot(major_models[[model_ind]])
 
 (ref:cc-biomass-retro-figure) Maximum posterior density biomass with retrospectivces for the Central Coast major stock assessment region.
 ```{r cc-biomass-retro-figure, fig.cap = "(ref:cc-biomass-retro-figure)"}
-biomass.plot.mpd(major_models[[model_ind]])
+biomass.plot.mpd(major_models[[model_ind]],
+                 xlim = c(1972, assess_yr))
 ```
 
 (ref:decision-table-cc) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 1-4 in Table \\@ref(tab:decision-table-cc)")`
