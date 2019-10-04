@@ -527,6 +527,7 @@ estimated unfished spawning biomass $\mli{SB}_0$;
 average annual varibility (AAV);
 catch in year $t$ $C_t$; and
 average catch $\overline{C}$.
+Dashes indicate that a TAC or HR does not apply.
 MPs are defined in @dfo2019c.
 
 (ref:decision-table-prd-cap-french) Tableau de décision probabilistes pour le district de Prince Rupert, modèle AM2.
