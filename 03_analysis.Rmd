@@ -293,8 +293,7 @@ For PRD the best performing MPs generally had 10% or lower harvest rates, althou
 These MPs also result in more frequent fishery closures due to spawning biomass declined below the lower control point more frequently. 
 While several MPs are able to meet core conservation objectives for PRD, they also imply different trade-offs among biomass (e.g., ecosystem) and yield outcomes.
 For management regions where multiple MPs meet the conservation objective, further ranking of the remaining objectives is needed in order to provide decision-makers with a tractable set of trade-off choices.
-Mechanisms for ranking objectives can include workshops and explicit identification of existing harvest or access priorities.
-Ranking of objectives can reveal trade offs between MPs in order to identify and eliminate undesirable outcomes.
+However this was not undertaken with the first MSE cycle because a fully specified set of objectives has not yet been developed for each management area.
 
 Effective harvest rates for the past 10 years average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fluctuate at or near $0.3\mli{SB}_0$ (Figure \@ref(fig:storyboard-prd)d).
 Furthermore, adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity:
@@ -303,15 +302,21 @@ states that were entered rapidly and were preceded by high biomass levels [@kron
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to decrease slightly from `r f(prd_final_yr_sbt[2])`&nbsp;t in `r assess_yr` to an estimated `r f(prd_proj_sbt[2])`&nbsp;t (posterior medians).
 The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the LRP of $0.3\mli{SB}_0$ with `r f(prd_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-prd)).
 
-Harvest options for `r assess_yr + 1` are presented in TABLE X. These options result from application of MPs to the `r assess_yr + 1` forecast biomass for PRD. Note that TABLE X includes MPs that meet the conservation objective for the DDM operating model scenario, as well as harvest options under the two Robustness OM scenarios.
+Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-table-prd).
+These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for PRD, whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario. Harvest options under the two Robustness OM scenarios are also included. For ease of comparision with MSE results [@dfo2019c], all MPs and scenarios listed in Table \@ref(tab:decision-table-prd) include MP performance against the four core objectives.
 
 ### Central Coast
 
 For the CC, MPs performing best against the conservation objective have a 10% or lower harvest rate and include a range of operational control point choices.
-The proposed catch cap of 5,000&nbsp;t had no effect on management performance under the conditions simulated, suggesting that estimated biomass (and potentially assessment errors) and catch rarely increased to the point where application of the target harvest rate produced a catch > 5,000&nbsp;t. 
+Similar to PRD, the simulation results for CC indicate there are multiple MPs that meet the DFO-defined conservation objective.
+For management regions where multiple MPs meet the conservation objective, further ranking of the remaining objectives is needed in order to provide decision-makers with a tractable set of trade-off choices.
+However this was not undertaken with the first MSE cycle because a fully specified set of objectives has not yet been developed for each management area.
 
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(cc_proj_sbt[2])`&nbsp;t (posterior median), decreasing from `r f(cc_final_yr_sbt[2])`&nbsp;t in `r assess_yr` (Table \@ref(tab:ref-points-cc)).
 The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3\mli{SB}_0$ with `r f(cc_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
+
+Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-table-cc).
+These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for CC, whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario. Harvest options under the two Robustness OM scenarios are also included. For ease of comparision with MSE results [@dfo2019c], all MPs and scenarios listed in Table \@ref(tab:decision-table-cc) include MP performance against the four core objectives.
 
 ### Strait of Georgia
 
