@@ -253,10 +253,10 @@ However a fully specified set of objectives has not yet been developed for each 
 The DFO will continue to collaborate with coastal First Nations to develop area-specific objectives specific to Food, Social and Ceremonial fisheries and spawn-on-kelp (SOK) fisheries.
 As well, DFO will continue to engage with the herring industry, government and non-government organizations to describe broader objectives related to conservation, economics and access.
 
-Core stock and fishery objectives which reflect DFO policy intent to
+Common core stock and fishery objectives which reflect DFO policy intent to
 avoid a biomass limit (Objective 1: Avoid the LRP with >75% probability) and
 achieve a target biomass (Objective 2: Maintain spawning stock biomass at or above USR with >50% probability),
-and goals regarding the level and variability of catches over time (Objective 3: Maintain average annual variability in catch of less than 25%; Objective 4: Maximize average annual catch; and minimizing the number of closures) common used for all SARs in the first cycle of MSE.
+and goals regarding the level and variability of catches over time (Objective 3: Maintain average annual variability in catch of less than 25%; Objective 4: Maximize average annual catch; and minimizing the number of closures) were used for all SARs in the first cycle of MSE.
 
 The first cycle of the MSE process was completed for the WCVI and SoG SARs in 2018 [@dfo2019a] and in 2019 a similar process was used to evaluate harvest strategies for HG, PRD, and CC [@dfo2019c].
 The MPs for each SAR differs in the form of the HCR and choices of catch cap, but use the same monitoring data and assessment model [e.g., @cleary2018].
