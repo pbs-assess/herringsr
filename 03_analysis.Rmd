@@ -274,8 +274,10 @@ Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs
 The HG stock has persisted in a low biomass, low productivity state in since 2000.
 The stock was below the LRP for much of that period and shows little evidence of sustained stock growth despite the absence of commercial fisheries since 2002 (2004 for the SOK fishery).
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(hg_proj_sbt[2])`&nbsp;t (posterior median).
-Results of the simulation-evaluations found that non of the proposed MPs, including the historical and no fishing MPs, performed satisfactorily against the conservation objective.
+Results of the simulation-evaluations found that non of the proposed MPs, including the historical and no fishing MPs, performed satisfactorily against the conservation objective of maintaining spawning biomass above the LRP with high probability (at least 75%)[^HighProb].
 The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3\mli{SB}_0$ with `r f(hg_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-hg) and Figure \@ref(fig:proj-biomass-density)).
+
+[^HighProb]: "High" probability is defined as 75% to 95% by the DFO Decision-making framework [@dfo2009].
 
 DFO has committed to developing and implementing a rebuilding plan for Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.[^RebuildHG]
 Work is underway through a technical working group comprised of members of the Council of Haida Nation, DFO, and Parks Canada.
@@ -291,9 +293,12 @@ DFO supports commercial herring fishery closures for the HG major stock region u
 
 For PRD the best performing MPs generally had 10% or lower harvest rates, although two MPs with a 20% harvest rate did meet the conservation objective because they use a higher lower control point of $0.5\mli{SB}_0$.
 These MPs also result in more frequent fishery closures due to spawning biomass declined below the lower control point more frequently. 
-While several MPs are able to meet core conservation objectives for PRD, they also imply different trade-offs among biomass (e.g., ecosystem) and yield outcomes.
+While several MPs are able to meet core conservation objective of maintaining spawning
+biomass above the LRP with high probability (at least 75%)[^HighProb], they also imply different trade-offs among biomass (e.g., ecosystem) and yield outcomes.
 For management regions where multiple MPs meet the conservation objective, further ranking of the remaining objectives is needed in order to provide decision-makers with a tractable set of trade-off choices.
 However this was not undertaken with the first MSE cycle because a fully specified set of objectives has not yet been developed for each management area.
+
+[^HighProb]: "High" probability is defined as 75% to 95% by the DFO Decision-making framework [@dfo2009].
 
 Effective harvest rates for the past 10 years average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fluctuate at or near $0.3\mli{SB}_0$ (Figure \@ref(fig:storyboard-prd)d).
 Furthermore, adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity:
@@ -317,6 +322,8 @@ The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3\m
 
 Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-table-cc).
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for CC, whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario. Harvest options under the two Robustness OM scenarios are also included. For ease of comparision with MSE results [@dfo2019c], all MPs and scenarios listed in Table \@ref(tab:decision-table-cc) include MP performance against the four core objectives.
+
+Additionally, DFO acknowledges commitment to the Heiltsuk Nation for the development of a Joint Fisheries Management Plan for Pacific Herring in the Central Coast in `r assess_yr + 1`. Results presented here may inform this on-going commitment.
 
 ### Strait of Georgia
 
@@ -343,26 +350,15 @@ This reflects a harvest rate of `r f(hcr.sog[2]*100, 1)`%.
 
 ### West Coast of Vancouver Island
 
-Closed-loop feedback simulations for WCVI evaluated alternative MPs that differed only in the configuration of the HCR and application of a fixed catch cap [@dfo2019a].
-Results showed that no tested management procedure could meet the conservation objective of maintaining spawning biomass above the LRP with high probability (at least 75%)[^HighProb] across the three future natural mortality ($M$) scenarios.
-In addition, for the scenario where $M$ is most similar to the last 10 years (density-independent-$M$), the historical HCR can only meet the conservation objective 56% of the time.
+For the WCVI, simulation results showed that no tested MP could meet the conservation objective of maintaining spawning biomass above the LRP with high probability (at least 75%)[^HighProb] across the three future natural mortality ($M$) scenarios [@dfo2019a]. In addition, for the scenario where $M$ is most similar to the last 10 years (DIM), the historical fixed cutoff HCR  only meet the conservation objective 56% of the time.
 
 [^HighProb]: "High" probability is defined as 75% to 95% by the DFO Decision-making framework [@dfo2009].
 
-Of the MPs that were simulation-tested across the three $M$ scenarios, the "best-performing" HCR maintained spawning biomass above the LRP with a 74% probability.
-This HCR implements a lower OCP at the assessment model estimate of $0.5\mli{SB}_0$, a 10% target harvest rate, and a maximum catch cap of 2,000&nbsp;t.
+Of the MPs that were simulation-tested across the three $M$ scenarios, the "best-performing" MP maintained spawning biomass above the LRP with a 74% probability.
+This MP implements a lower control point at the assessment model estimate of $0.5\mli{SB}_0$, a 10% target harvest rate, and a maximum catch cap of 2,000&nbsp;t.
 
 In the absence of fishing, spawning biomass in 2020 is forecast at `r f(wcvi_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\mli{SB}_0$ with `r f(wcvi_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
-Using a HCR with OCPs at $0.5\mli{SB}_0$ and $0.6\mli{SB}_0$, a 10% target harvest rate, and a maximum catch cap of 2,000&nbsp;t, the `r assess_yr + 1` catch calculation is `r f(hcr.wcvi[1]*1000,0)`&nbsp;t.
-<!-- This reflects a harvest rate of `r f(hcr.wcvi[2]*100, 0)`%. -->
+Given the best performing MP for the WCVI did not meet the minimum "high" probability of 75%, further simulation-testing of HCRs that include additional measures to ensure persistent stock growth away from the critical zone and towards identified biomass targets may be required. Updates to the operating model (addition of 2018 and 2019 data) and evaluation of additional MPs and objectives (including new objectives) is scheduled to occur in 2020/2021.
 
-Given the best performing MP for the WCVI did not meet the minimum "high" probability of 75%, further simulation-testing of HCRs that include additional measures to ensure persistent stock growth away from the critical zone and towards identified biomass targets may be required.
-For example, for a rebuilding stock a "slow-up" MP could be designed to delay fishery openings for an additional predefined number of years (e.g., 3 to 5) when the spawning biomass is estimated to be above the lower OCP in order to provide higher confidence of stock growth.
-The WCVI spawn index data and model estimates of spawning biomass (Figure \@ref(fig:storyboard-wcvi)a & d) show the increasing trajectory for WCVI herring as both gradual and erratic.
-The `r assess_yr` assessment estimates WCVI spawning biomass to be above the LRP from 2015 to 2018 (based on posterior medians),
-however this perspective based on stock assessment model estimates does not take into consideration positive assessment model errors.
-Thus simulation-evaluation of a "slow-up" MP is needed to identify the number of closure years needed to support continual stock growth.
-
-MPs designed to delay reopening of commercial fisheries following prolonged low biomass states will allow evidence of persistent stock growth to accrue,
-reducing the potential for assessment errors or underlying population dynamics (i.e., increasing natural mortality) to cause the spawning biomass to lapse back to a low production, low biomass state.
+As such, the harvest recommendation for the WCVI stock in 2020 is 0 t.
