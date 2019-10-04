@@ -1,10 +1,13 @@
 # Conclusions
 
-The `r assess_yr` Science Response includes a formal analyses of stock trend information for the Pacific Herring major SARs using the stock assessment framework reviewed in 2017 [@cleary2018]. 
+The `r assess_yr` Science Response includes a formal analyses of stock trend information for the Pacific Herring major SARs using the stock assessment framework reviewed in 2017 [@cleary2018] with data time series update to 2019. 
 
-Harvest recommendations for `r assess_yr + 1` for PRD and CC include.....
+In the first MSE cycle for HG, none of the MPs tested could meet the conservation objective with at least 75% probability [@dfo2019c], thus harvest options are not provided for 2020.
+DFO has committed to developing and implementing a rebuilding plan for Haida Gwaii Herring by the end of fiscal year 2020/21, and supports commercial herring fishery closures for the HG major stock region until April 2021.
 
-Harvest recommendations for SoG and WCVI adopt recommendations from simulation analyses conducted as part of the MSE process [@dfo2019a].
-DFO has committed to developing and implementing a rebuilding plan for Pacific Herring in HG by the end of fiscal year 2020/21, thus a commercial closure is recommended for this SAR.
+The MSE process identifies a range of MPs that meet the conservation objective with at least 75% probability for PRD, CC and SoG management areas for the Reference OM scenario [@dfo2019c]. As such, harvest options for `r assess_yr + 1` for PRD, CC, and SoG are reported using MPs that meet the minimum conservation criteria.
+
+A commercial fishery closure was maintained for the WCVI management area in 2018/19 in order to support continued rebuilding.
+Given the best performing MP for the WCVI did not meet the minimum "high" probability of 75%, further simulation-testing of HCRs that include additional measures to ensure persistent stock growth away from the critical zone and towards identified biomass targets is recommended. Updates to the operating model (addition of 2018 and 2019 data) and evaluation of additional MPs and objectives (including new objectives) is scheduled to occur in 2020/2021. As such, the harvest recommendation for the WCVI stock in 2020 is 0 t.
 
 Science advice for the minor SARs is limited to presentation of catch data, biological data, and spawn survey data ([Appendix]).

@@ -226,7 +226,7 @@ In recent years there has been modest evidence for an increase in production and
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(wcvi_final_yr_sbt[2])`&nbsp;t (posterior median), equal to 44.2% of $\mli{SB}_0$ (Tables \@ref(wcvi-spawning-biomass-depletion-table) & \@ref(tab:ref-points-wcvi)).
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\mli{SB}_0$ with a `r f((1-wcvi_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-wcvi)).
 
-## Management performance: effective harvest rate
+## Management performance
 
 Management procedure performance can be investigated using time series of effective harvest rate.
 $U_t$ represents the estimated effective harvest rate in each year $t$, calculated as $U_t = C_t/(C_t + \mli{SB}_t)$, where $C_t$ is catch in year $t$, and $\mli{SB}_t$ is estimated spawning biomass in year $t$.
@@ -325,26 +325,25 @@ Additionally, DFO acknowledges commitment to the Heiltsuk Nation for the develop
 
 ### Strait of Georgia
 
-Closed-loop feedback simulations for the SoG evaluated alternative MPs that differed only in the configuration of the HCR and application of a fixed catch cap [@dfo2019a].
-Results showed that all tested MPs could maintain the spawning biomass above the LRP with 91% probability or higher, including the historical HCR which applied a constant escapement of 21,200&nbsp;t based on the 1996 stock assessment and 20% harvest rate.
-A 30,000&nbsp;t catch cap was evaluated for the SoG; this cap was not often triggered, and thus did not limit the commercial fishery very often in simulations.
-Management procedures that included a 30,000&nbsp;t catch cap were able to maintain spawning biomass above a biomass level of $0.6\mli{SB}_0$ with 60% probability or higher.
-The purpose of the catch cap is to provide a model-free means of mitigating the effects of large positive assessment errors that lead to a higher realized harvest rate than intended (i.e., harvest rates that exceed 20%).
-Simulations showed that such assessment errors can occur when fitting the SCA model to SoG stock assessment data.
-Meeting the conservation objective of maintaining a high probability of exceeding the LRP does not mean the SoG is immune to stock decline.
-Future simulation-evaluation may suggest adjustment of the catch cap is necessary to acceptably meet additional stock and fishery objectives.
+Closed-loop feedback simulations for the SoG showed that all tested MPs could maintain the spawning biomass above the LRP with 91% probability or higher across all OM scenarios, including the historical fixed cutoff MP which applied a constant escapement of 21,200&nbsp;t based on the 1996 stock assessment and 20% harvest rate [@dfo2019a].
+Management procedures that included a 30,000&nbsp;t catch cap were able to maintain spawning biomass above a biomass level of $0.6\mli{SB}_0$ with 60% probability or higher across all OM scenarios.
 
-Management procedures evaluated included segmented HCRs of the form indicated in the DFO PA Framework [@dfo2009] with a lower OCP at the assessment model estimate of $0.3\mli{SB}_0$ and an upper OCP at the assessment model estimate of $0.6\mli{SB}_0$.
-Discontinuing the use of fixed cutoffs and adopting a HCR with two OCPs is recommended for these reasons:
+A 30,000&nbsp;t catch cap was evaluated for the SoG; this cap was not often triggered, and thus did not limit the commercial fishery very often in simulations. 
+The purpose of the catch cap is to provide a model-free means of mitigating the effects of large positive assessment errors on a year-to-year basis. 
+Additional simulation-evaluations were conducted in 2019 to further explore the role of catch caps in mitigating assessment errors [@dfo2019c]. A comparison of catch caps from 30,000 t to 5,000 t showed no discernable gain in conservation performance under all 3 OM scenarios. Results also showed MPs with catch caps of 20 kt or less rarely exceed the 20% harvest rate for any given projection year (over the 15-year projections).
+
+Science advice in 2018 recommended discontinuing the use of the historical fixed cutoff HCR and adopting a HCR with two OCPs for these reasons [@dfo2019a]:
 
 1. The fixed cutoff values were calculated outside of the current assessment model, last updated in 1996, and therefore ignore 22 years of stock and fishery monitoring data, as well as substantial changes to the structural form of the assessment model.
 
 2. Use of separate lower and upper OCPs allows for altering the slope of the ramp portion of the HCR to better meet stock and fishery objectives by avoiding fishery closures and encouraging stock growth as more is learned about stock dynamics and the effects of fishing.
 
-Harvest recommendations for SoG stock are provided by application of a management procedure that utilizes stock assessment estimates of forecast spawning biomass and operational control points at $0.3\mli{SB}_0$ and $0.6\mli{SB}_0$ with a 20% target harvest rate, and a maximum catch cap of 30,000&nbsp;t [@dfo2019a, Figure 4].
 In the absence of fishing, spawning biomass in 2020 is forecast at `r f(sog_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\mli{SB}_0$ with `r f(sog_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
-The `r assess_yr + 1` recommended catch calculated by applying the MP is `r f(hcr.sog[1]*1000,0)`&nbsp;t.
-This reflects a harvest rate of `r f(hcr.sog[2]*100, 1)`%.
+
+Harvest recommendations for SoG stock in 2018/19 were provided by application of a MP that utilizes stock assessment estimates of forecast spawning biomass and operational control points at $0.3\mli{SB}_0$ and $0.6\mli{SB}_0$ with a 20% target harvest rate, and a maximum catch cap of 30,000&nbsp;t [@dfo2019a, Figure 4].
+
+Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-table-sog).
+These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for SoG, whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario. Harvest options under the two Robustness OM scenarios are also included. For ease of comparision with MSE results [@dfo2019c], all MPs and scenarios listed in Table \@ref(tab:decision-table-sog) include MP performance against the four core objectives.
 
 ### West Coast of Vancouver Island
 
