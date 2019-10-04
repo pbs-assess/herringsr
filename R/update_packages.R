@@ -6,6 +6,7 @@ shell(paste0("cd ", file.path(git_dir, "gfiscamutils"), " && git pull --rebase")
 shell(paste0("cd ", file.path(git_dir, "rosettafish"), " && git pull --rebase"))
 shell(paste0("cd ", file.path(git_dir, "herringutils"), " && git pull --rebase"))
 shell(paste0("cd ", file.path(git_dir, "csasdown"), " && git pull --rebase"))
+shell(paste0("cd ", file.path(git_dir, "herringsr"), " && git pull --rebase"))
 
 setwd(git_dir)
 devtools::install("rosettafish", quick = TRUE, dependencies = FALSE)
