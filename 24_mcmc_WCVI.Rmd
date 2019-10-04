@@ -26,5 +26,6 @@ make.pairs.plot(major_models[[model_ind]])
 
 (ref:wcvi-biomass-retro-figure) Maximum posterior density biomass with retrospectivces for the West Coast of Vancouver Island major stock assessment region.
 ```{r wcvi-biomass-retro-figure, fig.cap = "(ref:wcvi-biomass-retro-figure)"}
-biomass.plot.mpd(major_models[[model_ind]])
+biomass.plot.mpd(major_models[[model_ind]],
+                 xlim = c(1972, assess_yr))
 ```
