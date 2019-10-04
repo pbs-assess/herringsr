@@ -57,7 +57,3 @@ Application of the AM1 model would remove such safeguards despite recent simulat
 Simulations to quantify the risks associated with continued application of a management procedure where $q_2 = 1$ were conducted because fisheries management quota decisions since 2015 have been based on the AM2 model.
 Scaling the assessment with values of $q_2 < 1$ is likely to result in larger absolute assessment errors than those estimated when $q_2 = 1$.
 For these reasons, advice presented here is based on the AM2 stock assessment model parameterization, supported also by comparisons presented in @dfo2016 [, Table A1], and @cleary2018 [, Appendix D].
-
-## Description of the MSE process
-
-update (copy from MSE SR)
