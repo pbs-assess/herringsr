@@ -298,8 +298,6 @@ biomass above the LRP with high probability (at least 75%)[^HighProb], they also
 For management regions where multiple MPs meet the conservation objective, further ranking of the remaining objectives is needed in order to provide decision-makers with a tractable set of trade-off choices.
 However this was not undertaken with the first MSE cycle because a fully specified set of objectives has not yet been developed for each management area.
 
-[^HighProb]: "High" probability is defined as 75% to 95% by the DFO Decision-making framework [@dfo2009].
-
 Effective harvest rates for the past 10 years average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fluctuate at or near $0.3\mli{SB}_0$ (Figure \@ref(fig:storyboard-prd)d).
 Furthermore, adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity:
 states that were entered rapidly and were preceded by high biomass levels [@kronlund2017].
@@ -313,7 +311,7 @@ These options reflect application of MPs to the `r assess_yr + 1` forecast bioma
 ### Central Coast
 
 For the CC, MPs performing best against the conservation objective have a 10% or lower harvest rate and include a range of operational control point choices.
-Similar to PRD, the simulation results for CC indicate there are multiple MPs that meet the DFO-defined conservation objective.
+Similar to PRD, the simulation results for CC indicate there are multiple MPs that meet the conservation objective of maintaining spawning biomass above the LRP with high probability (at least 75%)[^HighProb].
 For management regions where multiple MPs meet the conservation objective, further ranking of the remaining objectives is needed in order to provide decision-makers with a tractable set of trade-off choices.
 However this was not undertaken with the first MSE cycle because a fully specified set of objectives has not yet been developed for each management area.
 
@@ -351,8 +349,6 @@ This reflects a harvest rate of `r f(hcr.sog[2]*100, 1)`%.
 ### West Coast of Vancouver Island
 
 For the WCVI, simulation results showed that no tested MP could meet the conservation objective of maintaining spawning biomass above the LRP with high probability (at least 75%)[^HighProb] across the three future natural mortality ($M$) scenarios [@dfo2019a]. In addition, for the scenario where $M$ is most similar to the last 10 years (DIM), the historical fixed cutoff HCR  only meet the conservation objective 56% of the time.
-
-[^HighProb]: "High" probability is defined as 75% to 95% by the DFO Decision-making framework [@dfo2009].
 
 Of the MPs that were simulation-tested across the three $M$ scenarios, the "best-performing" MP maintained spawning biomass above the LRP with a 74% probability.
 This MP implements a lower control point at the assessment model estimate of $0.5\mli{SB}_0$, a 10% target harvest rate, and a maximum catch cap of 2,000&nbsp;t.
