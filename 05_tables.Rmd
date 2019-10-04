@@ -530,7 +530,7 @@ average catch $\overline{C}$.
 Dashes indicate that a TAC or HR does not apply, either
 because the MP specifies no fishing, or
 because the MP failed to meet the Conservation Objective with $\geq 75$% probability.
-MPs are defined in @dfo2019c.
+MPs are defined in @dfo2019a and @dfo2019c.
 
 (ref:decision-table-prd-cap-french) Tableau de décision probabilistes pour le district de Prince Rupert, modèle AM2.
 
@@ -557,7 +557,6 @@ decision_tables_mp(mp.prd,
 
 (ref:decision-table-cc-cap) Management procedure (MP) performance for the Central Coast major stock assessment region.
 See Table \@ref(tab:decision-table-prd) for description.
-MPs are defined in @dfo2019c.
 
 (ref:decision-table-cc-cap-french) Tableau de décision probabilistes pour la côte centrale, modèle AM2.
 
@@ -584,7 +583,6 @@ decision_tables_mp(mp.cc,
 
 (ref:decision-table-sog-cap) Management procedure (MP) performance for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:decision-table-prd) for description.
-MPs are defined in @dfo2019a.
 
 (ref:decision-table-sog-cap-french) Tableau de décision probabilistes pour détroit de Georgie, modèle AM2.
 
