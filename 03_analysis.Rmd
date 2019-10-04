@@ -274,7 +274,8 @@ The HG stock has persisted in a low biomass, low productivity state in since 200
 The stock was below the LRP for much of that period and shows little evidence of sustained stock growth despite the absence of commercial fisheries since 2002 (2004 for the SOK fishery).
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(hg_proj_sbt[2])`&nbsp;t (posterior median).
 Results of the simulation-evaluations found that non of the proposed MPs, including the historical and no fishing MPs,
-performed satisfactorily against the conservation objective of maintaining spawning biomass above the LRP with high probability (at least 75%).\footnote{\label{fn:HighProb}``High'' probability is defined as 75\% to 95\% by the DFO Decision-making framework \citep{dfo2009}.}
+performed satisfactorily against the conservation objective of maintaining spawning biomass above the LRP with high probability (at least 75%).\footnote{\label{fn:HighProb}``High'' probability is defined as 75\% to 95\% by the DFO Decision-making framework (DFO 2009).}
+<!-- \citep{dfo2009} -->
 <!-- Fancy footnote -- gets referred to multiple times -->
 
 The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3\mli{SB}_0$ with `r f(hg_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-hg) and Figure \@ref(fig:proj-biomass-density)).
