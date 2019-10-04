@@ -529,7 +529,7 @@ catch in year $t$ $C_t$; and
 average catch $\overline{C}$.
 Dashes indicate that a TAC or HR does not apply, either
 because the MP specifies no fishing, or
-because the MP failed to meet the Conservation Objective with $\geq 75$% probability.
+because the MP failed to meet the Conservation Objective 1 with $\geq 75$% probability.
 MPs are defined in @dfo2019a and @dfo2019c.
 
 (ref:decision-table-prd-cap-french) Tableau de décision probabilistes pour le district de Prince Rupert, modèle AM2.
