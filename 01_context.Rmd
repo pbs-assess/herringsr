@@ -1,7 +1,8 @@
 # Context
 
 Pacific Herring abundance in British Columbia (BC) is assessed using a statistical catch-age (SCA) model.
-In 2017, the Pacific Herring stock assessment included updates to the model [Integrated Statistical catch-age model; @martell2011], and a bridging analysis to support these changes [@cleary2018].
+In 2017, the Pacific Herring stock assessment included updates to the model [Integrated Statistical catch-age model; @martell2011],
+and a bridging analysis to support these changes [@cleary2018].
 Also introduced in the 2017 assessment was the estimation of stock productivity and current stock status relative to the new limit reference point (LRP) of $0.3\mli{SB}_0$ [@kronlund2017].
 The structure of the 2017 model was not changed for the 2018 and 2019 stock assessments.
 
@@ -17,7 +18,8 @@ This process included performance evaluation of MPs for Haida Gwaii (HG), Prince
 Estimated stock trajectories, current status of stocks for `r assess_yr`, management procedure options and harvest advice recommendations from those MPs for `r assess_yr + 1` reflect methods of @cleary2018 and, where applicable, recommendations from the aforementioned 2018 and 2019 MSE analyses.
 These recommendations are described in the section '[Harvest recommendations for `r assess_yr + 1`]'.
 
-Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested that DFO Pacific Science Branch assess the status of British Columbia (BC) Pacific Herring stocks in `r assess_yr` and recommend harvest advice for `r assess_yr + 1` as simulation-tested MPs to inform the development of the `r assess_yr`/`r assess_yr + 1` Integrated Fisheries Management Plan, where appropriate.
+Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested that DFO Pacific Science Branch assess the status of British Columbia (BC) Pacific Herring stocks in
+`r assess_yr` and recommend harvest advice for `r assess_yr + 1` as simulation-tested MPs to inform the development of the `r assess_yr`/`r assess_yr + 1` Integrated Fisheries Management Plan, where appropriate.
 
 <!--  Mandatory last paragraph in this section -->
 This Science Response Report results from the Science Response Process of September `r assess_yr` on the Status of Pacific Herring (*Clupea pallasii*) in `r assess_yr` and forecast for `r assess_yr + 1`.
