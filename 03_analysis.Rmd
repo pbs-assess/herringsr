@@ -232,7 +232,7 @@ Management procedure performance can be investigated using time series of effect
 $U_t$ represents the estimated effective harvest rate in each year $t$, calculated as $U_t = C_t/(C_t + \mli{SB}_t)$, where $C_t$ is catch in year $t$, and $\mli{SB}_t$ is estimated spawning biomass in year $t$.
 Times series of $U_t$ relative to target harvest rate of 20% are presented in Figure \@ref(fig:harvest-rate).
 
-## Harvest recommendations for `r assess_yr + 1`
+## Application of MPs and harvest options for `r assess_yr + 1`
 
 Generally, harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and application of a HCR that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988). 
 Although the target harvest rate has varied among regions in recent years (e.g., CC and PRD SARs; @dfo2017),
@@ -273,7 +273,7 @@ Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs
 
 The HG stock has persisted in a low biomass, low productivity state in since 2000.
 The stock was below the LRP for much of that period and shows little evidence of sustained stock growth despite the absence of commercial fisheries since 2002 (2004 for the SOK fishery).
-In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(hg_proj_sbt[2])`&nbsp;t.
+In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(hg_proj_sbt[2])`&nbsp;t (posterior median).
 Results of the simulation-evaluations found that non of the proposed MPs, including the historical and no fishing MPs, performed satisfactorily against the conservation objective.
 The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3\mli{SB}_0$ with `r f(hg_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-hg) and Figure \@ref(fig:proj-biomass-density)).
 
@@ -289,8 +289,8 @@ DFO supports commercial herring fishery closures for the HG major stock region u
 
 ### Prince Rupert District
 
-For PRD the best performing MPs generally had 10% or lower harvest rates, although one with a 20% harvest rate did meet the conservation objective because it also used a highly conservative $0.5\mli{SB}_0$ lower control point.
-This choice resulted in more frequent fishery closures as spawning biomass declined below the lower control point. 
+For PRD the best performing MPs generally had 10% or lower harvest rates, although two MPs with a 20% harvest rate did meet the conservation objective because they use a higher lower control point of $0.5\mli{SB}_0$.
+These MPs also result in more frequent fishery closures due to spawning biomass declined below the lower control point more frequently. 
 While several MPs are able to meet core conservation objectives for PRD, they also imply different trade-offs among biomass (e.g., ecosystem) and yield outcomes.
 For management regions where multiple MPs meet the conservation objective, further ranking of the remaining objectives is needed in order to provide decision-makers with a tractable set of trade-off choices.
 Mechanisms for ranking objectives can include workshops and explicit identification of existing harvest or access priorities.
@@ -303,6 +303,7 @@ states that were entered rapidly and were preceded by high biomass levels [@kron
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to decrease slightly from `r f(prd_final_yr_sbt[2])`&nbsp;t in `r assess_yr` to an estimated `r f(prd_proj_sbt[2])`&nbsp;t (posterior medians).
 The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the LRP of $0.3\mli{SB}_0$ with `r f(prd_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-prd)).
 
+Harvest options for `r assess_yr + 1` are presented in TABLE X. These options result from application of MPs to the `r assess_yr + 1` forecast biomass for PRD. Note that TABLE X includes MPs that meet the conservation objective for the DDM operating model scenario, as well as harvest options under the two Robustness OM scenarios.
 
 ### Central Coast
 
