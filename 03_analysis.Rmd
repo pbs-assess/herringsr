@@ -4,13 +4,14 @@
 
 Input data to the stock assessment are summarized in Table \@ref(tab:data-input).
 Relative to the previous assessment, the only change made to input data was to update the time series to include data from the `r this_season` herring season (July 1 to June 30).
-Note that we refer to 'year' instead of 'herring season' in this report; therefore `r assess_yr` refers to the `r this_season` Pacific Herring season.
+Note that we refer to 'year' instead of 'herring season' in this report;
+therefore `r assess_yr` refers to the `r this_season` Pacific Herring season.
 
 ### Catch data
 
+<!-- TODO: What is "fishing category" in the following sentence? -->
 For the purposes of stock assessment, catch data are summarized by gear type and fishing category as described in Table \@ref(tab:data-input) and presented in Figure \@ref(fig:major-catch).
-
-As per previous years, catch input to the stock assessment model does not include mortality from the commercial SOK fishery, nor any recreational fisheries or food, social, and ceremonial (FSC) harvest.
+As in previous years, catch input to the stock assessment model does not include mortality from the commercial SOK fishery, nor any recreational fisheries or food, social, and ceremonial (FSC) harvest.
 The FSC and recreational harvest are considered minor relative to commercial harvest.
 The commercial SOK fishery is licensed based on pounds of validated SOK product (i.e., eggs adhered to kelp), not tonnes of fish used or spawned.
 Currently there is no basis for validating mortality imposed on the population by this fishery, however methods for estimating SOK mortality are being developed.
@@ -22,7 +23,8 @@ Total SOK harvest or the major SARs from `r assess_yr-9` to `r assess_yr` is pre
 ### Biological data
 
 Biological samples are collected as described in @cleary2018 and Table \@ref(tab:data-input).
-Biological data inputs to the stock assessment are annual weight-at-age (Figure \@ref(fig:major-wa)) and annual numbers-at-age, shown as proportions-at-age (Figure \@ref(fig:major-pa)).
+Biological data inputs to the stock assessment are annual weight-at-age (Figure \@ref(fig:major-wa)) and 
+annual numbers-at-age, shown as proportions-at-age (Figure \@ref(fig:major-pa)).
 
 Significant declines in weight-at-age are evident for all major herring stocks, from the mid-1980s to 2010.
 Declining weight-at-age may be attributed to any number of factors, including fishing effects (i.e., gear selectivity), environmental effects (e.g., changes in ocean productivity), or changes in sampling protocols (e.g., shorter time frame over which samples are collected).
@@ -40,7 +42,7 @@ an increase in survey biomass in HG, PRD, and CC (Figure \@ref(fig:major-spawn-i
 
 ## Spatial spawn distribution
 
-Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) by proportions over the most recent 10 years for the major SARs.
+Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) by proportion over the most recent 10 years for the major SARs.
 HG and SoG are summarized by Group, while PRD, CC, and WCVI are summarized by Statistical Area;
 the choice of spatial grouping reflects spawning behaviour and biology for each SAR based on the survey data and working group discussions with local First Nations.
 Statistical Areas, Sections, and Groups are not intended to represent sub-stock structure or ‘known’ stocklets.
