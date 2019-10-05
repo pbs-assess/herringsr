@@ -252,11 +252,11 @@ The first cycle of the MSE process was completed for the WCVI and SoG SARs in 20
 The ranking of objectives and selection of MPs that meet objectives using MSE is an iterative process.
 The first cycle of Pacific Herring MSE includes, as a starting point, four core fisheries management objectives [@dfo2019c] which reflect DFO policy and were applied to all SARs:
 
-Objective 1. Avoid the LRP with >75% probability (Intent to avoid a biomass limit),
+Objective 1. Avoid the LRP with $\geq 75$% probability (Intent to avoid a biomass limit),
 
-Objective 2. Maintain spawning stock biomass at or above USR with >50% probability (Achieve a target biomass),
+Objective 2. Maintain spawning stock biomass at or above USR with $\geq 50$% probability (Achieve a target biomass),
 
-Objective 3. Maintain average annual variability in catch of less than 25% (Goal reflecting variability of catch), and 
+Objective 3. Maintain average annual variability in catch $\leq 25$% (Goal reflecting variability of catch), and 
 
 Objective 4. Maximize average annual catch (Goal reflecting level of catch).
 
