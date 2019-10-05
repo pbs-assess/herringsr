@@ -3,10 +3,10 @@
 ## Input data
 
 Input data to the stock assessment are summarized in Table \@ref(tab:data-input).
-Relative to last year's assessment, the only change made to input data was updating the time series to include data from the `r this_season` herring season (July 1 to June 30).
+Relative to the previous assessment, the only change made to input data was to update the time series to include data from the `r this_season` herring season (July 1 to June 30).
 Note that we refer to 'year' instead of 'herring season' in this report; therefore `r assess_yr` refers to the `r this_season` Pacific Herring season.
 
-## Catch data
+### Catch data
 
 For the purposes of stock assessment, catch data are summarized by gear type and fishing category as described in Table \@ref(tab:data-input) and presented in Figure \@ref(fig:major-catch).
 
@@ -19,7 +19,7 @@ Combined commercial removals from `r assess_yr-9` to `r assess_yr` from the roe,
 The proportion of coast-wide catch that comes from the SoG was 22% in 1990, and nearly 100% in `r assess_yr`.
 Total SOK harvest or the major SARs from `r assess_yr-9` to `r assess_yr` is presented in Table \@ref(tab:annual-sok-catch).
 
-## Biological data
+### Biological data
 
 Biological samples are collected as described in @cleary2018 and Table \@ref(tab:data-input).
 Biological data inputs to the stock assessment are annual weight-at-age (Figure \@ref(fig:major-wa)) and annual numbers-at-age, shown as proportions-at-age (Figure \@ref(fig:major-pa)).
@@ -28,7 +28,7 @@ Significant declines in weight-at-age are evident for all major herring stocks, 
 Declining weight-at-age may be attributed to any number of factors, including fishing effects (i.e., gear selectivity), environmental effects (e.g., changes in ocean productivity), or changes in sampling protocols (e.g., shorter time frame over which samples are collected).
 There has been an increasing trend in weight-at-age for all major stocks from 2012 to `r assess_yr`, although to a lesser degree for PRD.
 
-## Abundance data
+### Abundance data
 
 The surface (`r surv_yr_rng[1]` to `r new_surv_yr - 1`) and dive (`r new_surv_yr` to `r surv_yr_rng[2]`) spawn survey methods involve collecting information on spawn length (parallel to shore), spawn width (perpendicular to shore), number of egg layers by vegetation type, and other data.
 These data are used to calculate egg densities per spawn.
