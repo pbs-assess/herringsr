@@ -517,6 +517,8 @@ col_align <- "cc|c|c|c|c|c|c|c"
 #
 ```
 
+\begin{landscapepage}
+
 (ref:decision-table-prd-cap) Management procedure (MP) performance for the Prince Rupert District major stock assessment region under three operating model (OM) scenarios: density-dependent mortality (DDM), density-independent mortality (DIM), and constant natural mortality (conM).
 Performance criteria are calculated over 3 generations (15 years) from the start of the projection period for all objectives.
 MPs are ordered within each scenario by performance achieving the Conservation Objective 1.
@@ -545,8 +547,8 @@ MPs are defined in @dfo2019a and @dfo2019c.
 decision_tables_mp(mp.prd,
                    xcaption = ifelse(french, "(ref:decision-table-prd-cap-french)", "(ref:decision-table-prd-cap)"),
                    xlabel = "tab:decision-table-prd",
-                   font.size = 7,
-                   space.size = 10,
+                   font.size = 10,
+                   space.size = 11,
                    placement = "ht",
                    last_col_header = paste0(assess_yr + 1, " TAC"),
                    perc_dec_pts = 0,
@@ -554,6 +556,10 @@ decision_tables_mp(mp.prd,
                    col_align = col_align,
                    translate = french)
 ```
+
+\end{landscapepage}
+
+\begin{landscapepage}
 
 (ref:decision-table-cc-cap) Management procedure (MP) performance for the Central Coast major stock assessment region.
 See Table \@ref(tab:decision-table-prd) for description.
@@ -571,8 +577,8 @@ See Table \@ref(tab:decision-table-prd) for description.
 decision_tables_mp(mp.cc,
                    xcaption = ifelse(french, "(ref:decision-table-cc-cap-french)", "(ref:decision-table-cc-cap)"),
                    xlabel = "tab:decision-table-cc",
-                   font.size = 7,
-                   space.size = 10,
+                   font.size = 10,
+                   space.size = 11,
                    placement = "ht",
                    last_col_header = paste0(assess_yr + 1, " TAC"),
                    perc_dec_pts = 0,
@@ -580,6 +586,10 @@ decision_tables_mp(mp.cc,
                    col_align = col_align,
                    translate = french)
 ```
+
+\end{landscapepage}
+
+\begin{landscapepage}
 
 (ref:decision-table-sog-cap) Management procedure (MP) performance for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:decision-table-prd) for description.
@@ -600,8 +610,8 @@ See Table \@ref(tab:decision-table-prd) for description.
 decision_tables_mp(mp.sog,
                    xcaption = ifelse(french, "(ref:decision-table-sog-cap-french)", "(ref:decision-table-sog-cap)"),
                    xlabel = "tab:decision-table-sog",
-                   font.size = 7,
-                   space.size = 10,
+                   font.size = 10,
+                   space.size = 11,
                    placement = "ht",
                    last_col_header = paste0(assess_yr + 1, " TAC"),
                    perc_dec_pts = 0,
@@ -610,6 +620,8 @@ decision_tables_mp(mp.sog,
                    #inc_mps = 9,
                    translate = french)
 ```
+
+\end{landscapepage}
 
 ```{r decision-table-wcvi, results = 'asis', echo = FALSE}
 # cap <- "Probabilistic decision table for the West Coast of Vancouver Island major stock assessment region."
