@@ -28,7 +28,7 @@ Herring eggs are collected as spawn on seaweed such as kelp, or spawn on set tre
 Opportunities are provided in a manner that allows for harvest activity in all assessment regions.
 In addition, Treaty and aboriginal commercial fisheries may occur in some specific management regions.
 
-ADD HEILTSUK CONTEXT HERE.
+TODO: ADD HEILTSUK CONTEXT HERE
 
 ## Description of the stock assessment process
 
