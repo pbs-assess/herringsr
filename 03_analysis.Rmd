@@ -165,63 +165,83 @@ Spawning biomass in `r assess_yr` is estimated to be at the LRP of $0.3\mli{SB}_
 
 ### Prince Rupert District
 
-Estimated spawning biomass recovered by the mid-1980s from historic low depletion levels following the collapse of the 1960s, to about 50% of the historic high biomass estimated in the
-early 1960s (Figure \@ref(fig:storyboard-prd)d).
-However, after the mid-1980s estimated spawning biomass steadily declined before stabilizing at a relatively low level (but above historic lows) by the mid-2000s.
+Estimated spawning biomass recovered by the mid-1980s from historic low depletion levels following the collapse of the 1960s,
+to about 50% of the historic high biomass estimated in the early 1960s (Figure \@ref(fig:storyboard-prd)d).
+However, after the mid-1980s, estimated spawning biomass steadily declined before stabilizing at a relatively low level (but above historic lows) by the mid-2000s.
 The estimated stock biomass has shown little trend from 2005 to 2018, with a modest increase in 2019.
-Fluctuations in the trend in spawning biomass appear to be less than those observed in other SARs, possibly because some spawn index points are being under- or over-fit (e.g., 2001–2004, 2010-2013) as shown in Figure \@ref(fig:storyboard-prd)a.
+Fluctuations in the trend in spawning biomass appear to be less than those observed in other SARs,
+possibly because some spawn index points are being under- or over-fit (e.g., 2001–2004, 2010-2013) as shown in Figure \@ref(fig:storyboard-prd)a.
 Estimated natural mortality reached historic highs in the late 1960s, before declining through the late 1970s.
 Beginning in about 1980, estimated natural mortality increased through to `r assess_yr`, roughly doubling from 0.25 to 0.5&nbsp;$yr^{-1}$ (Figure \@ref(fig:storyboard-prd)b).
-This trend in natural mortality coincides with the decline in spawning biomass (Figure \@ref(fig:storyboard-prd)d); recruitment deviations have fluctuated around 0 without any strong positive or negative trends (Figure \@ref(fig:storyboard-prd)e).
+This trend in natural mortality coincides with the decline in spawning biomass (Figure \@ref(fig:storyboard-prd)d);
+recruitment deviations have fluctuated around 0 without any strong positive or negative trends (Figure \@ref(fig:storyboard-prd)e).
 An above average age-2+ recruitment in 2014, 2017-2019, and an increase in the spawn index in the last year were still not sufficient to lead to an increasing trend in biomass (Figure \@ref(fig:storyboard-prd)f).
-Commercial catches from 2007-2018 have remained low (below 2,000t) and there was no commercial catch in 2019.
-The estimated natural mortality appears to be unchanged from last year, resulting in what appears to be a small increase in production.
-An increasing trend in weight-at-age has been observed since about 2010, although the change does not appear to be as large as in the HG, CC, SoG and WCVI SARs.
+Commercial catches from 2007-2018 have remained low (below 2,000&nbsp;t) and there was no commercial catch in 2019.
+The estimated natural mortality appears to be unchanged from last year,
+resulting in what appears to be a small increase in production.
+An increasing trend in weight-at-age has been observed since about 2010,
+although the change does not appear to be as large as in the HG, CC, SoG and WCVI SARs.
 
-The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(prd_final_yr_sbt[2])`&nbsp;t (posterior median), equal to 38.9% of $\mli{SB}_0$ (Tables \@ref(prd-spawning-biomass-depletion-table) & \@ref(tab:ref-points-prd)).
+The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(prd_final_yr_sbt[2])`&nbsp;t (posterior median),
+equal to 38.9% of $\mli{SB}_0$ (Tables \@ref(prd-spawning-biomass-depletion-table) & \@ref(tab:ref-points-prd)).
 Commercial fisheries have occurred annually in PRD since the mid-1980s, with the exception of 2019, during which the effective harvest rate $U_t$ was estimated to be at or below 20% (Figure \@ref(fig:harvest-rate)) in all years except 1989.
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\mli{SB}_0$ with a `r f((1-prd_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-prd)).
 
 ### Central Coast
 
-Estimated spawning biomass fluctuated around a strongly declining trend from a historic high around 1980 before reaching a historic low level in the late 2000s (Figure \@ref(fig:storyboard-cc)d).
-An increase in spawning stock biomass was estimated through the mid-2010s but remained below levels estimated prior to 2000, and then declining modestly 2016-2018.
+Estimated spawning biomass fluctuated around a strongly declining trend from a historic high around 1980
+before reaching a historic low level in the late 2000s (Figure \@ref(fig:storyboard-cc)d).
+An increase in spawning stock biomass was estimated through the mid-2010s
+but remained below levels estimated prior to 2000, and then declining modestly 2016-2018.
 In 2019 there was an increase in estimated spawning biomass.
-The estimated biomass trend largely reflects the trend in the spawn index (Figure \@ref(fig:storyboard-cc)a), where fluctuations correspond in opposite phase to the fluctuations in estimated natural mortality (Figure \@ref(fig:storyboard-cc)b).
+The estimated biomass trend largely reflects the trend in the spawn index (Figure \@ref(fig:storyboard-cc)a),
+where fluctuations correspond in opposite phase to the fluctuations in estimated natural mortality (Figure \@ref(fig:storyboard-cc)b).
 For example, the decline in spawn index (and estimated spawning biomass) to the historic lows of the late 2000s followed a strongly increasing trend in estimated natural mortality through the same period.
 Estimated natural mortality moderated by the late 2000s, which was followed by the increase in spawn index (and estimated spawning biomass) until 2015 whereupon natural mortality again increased.
-Recruitment deviations were slightly negative (lower than predicted by the stock-recruitment function) on average from about 1990 to 2017, and have increased to above average in 2018 and 2019 (Figure \@ref(fig:storyboard-cc)e).
+Recruitment deviations were slightly negative (lower than predicted by the stock-recruitment function) on average from about 1990 to 2017,
+and have increased to above average in 2018 and 2019 (Figure \@ref(fig:storyboard-cc)e).
 In 2019 there is evidence of strong production, similar to the 1990 to 1999 period (Figure \@ref(fig:storyboard-cc)f);
 however, the biomass state is not nearly as high as was seen during that period.
 
-A fixed cutoff HCR was implemented in 1986 and from 1986-2007 the effective harvest rate $U_t$ is estimated to fluctuate above and below the 20% target rate, with median estimates exceeding 20% frequently Figure \@ref(fig:harvest-rate)).
-Occurrences of $U_t$ exceeding the 20% target harvest rate are due lags in part to positive assessment model errors and lags in detecting a directional change in the trend.
+A fixed cutoff HCR was implemented in 1986, and from 1986-2007 the effective harvest rate $U_t$ is estimated to fluctuate above and below the 20% target rate, with median estimates exceeding 20% frequently Figure \@ref(fig:harvest-rate)).
+Occurrences of $U_t$ exceeding the 20% target harvest rate are due lags in part to
+positive assessment model errors, and
+lags in detecting a directional change in the trend.
 
-Following a commercial fishery closure from 2007 to 2013, the CC stock reopened to commercial fisheries in 2014 and small commercial roe fisheries occurred in 2014, 2015, and 2016.
-A commercial SOK fishery has operated yearly since 2014, however these removals are not
-included in the estimation of $U_t$.
+Following a commercial fishery closure from 2007 to 2013, the CC stock reopened to commercial fisheries in 2014,
+and small commercial roe fisheries occurred in 2014, 2015, and 2016.
+A commercial SOK fishery has operated yearly since 2014,
+however these removals are not included in the estimation of $U_t$.
 
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(cc_final_yr_sbt[2])`&nbsp;t (posterior median), equal to 60.7% of $\mli{SB}_0$ (Tables \@ref(cc-spawning-biomass-depletion-table) & \@ref(tab:ref-points-cc)).
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\mli{SB}_0$ with a `r f((1-cc_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-cc)).
 
 ### Strait of Georgia
 
-The estimated spawning biomass for the SoG stock decreased in 2019, although the uncertainty associated with the last few years of spawning biomass along with the forecast biomass, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, is quite large (Figure \@ref(fig:storyboard-sog)d).
+The estimated spawning biomass for the SoG stock decreased in 2019,
+although the uncertainty associated with the last few years of spawning biomass along with the forecast biomass `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, is quite large (Figure \@ref(fig:storyboard-sog)d).
 There was an increasing trend in estimated spawning biomass from about 2010 to 2016 which coincided with a decline in estimated natural mortality that began in the late 2000s (Figure \@ref(fig:storyboard-sog)b).
 The model estimates natural mortality has been increasing since 2016, and has now reached a level last estimated in the early 1970s.
 This coincides with the recent decreasing trend in estimated spawning biomass.
-The large uncertainty in both spawning biomass and natural mortality estimates in `r assess_yr` may be in part a function of the declining trend in the spawn index starting in 2017 following the increasing trend that began in 2010 (Figure \@ref(fig:storyboard-sog)a).
-The model fits an averaged trajectory through the spawn index values of the 2010s and has, to date, insufficient information to determine whether the decline from 2016 to `r assess_yr` represents a true decline in estimated spawning biomass.
-The model estimates above average recruitment in most years from 2010 to `r assess_yr` (Figure \@ref(fig:storyboard-sog)c) with the recruitment deviations showing especially large recruitment of age-2 fish in 2019 (Figure \@ref(fig:storyboard-sog)e).
+The large uncertainty in both spawning biomass and natural mortality estimates in `r assess_yr` may be in part a function of the declining trend in the spawn index starting in 2017
+following the increasing trend that began in 2010 (Figure \@ref(fig:storyboard-sog)a).
+The model fits an averaged trajectory through the spawn index values of the 2010s and has, to date,
+insufficient information to determine whether the decline from 2016 to `r assess_yr` represents a true decline in estimated spawning biomass.
+The model estimates above average recruitment in most years from 2010 to `r assess_yr` (Figure \@ref(fig:storyboard-sog)c)
+with the recruitment deviations showing especially large recruitment of age-2 fish in 2019 (Figure \@ref(fig:storyboard-sog)e).
 The SoG juvenile herring survey reported an increase in abundance of age-0 fish from 2016 to 2017 (unpublished report).
 The sampling program targets prespawning aggregations and the assessment assumes 25% of age-2 herring are mature.
-The extremely large uncertainty around the estimates of age-2 recruitment in the terminal year of the time series is a common observation because these age-2 fish are only partially recruited to the fishing gear.
-The estimated 2019 age-2 recruitment will be adjusted by the model next year with the addition of the 2020 sample data (i.e., when the 2017 cohort is sampled as age-3s).
-Analysis of surplus production shows that for the year between 2018-2019 the SoG SAR is estimated to be in a high production, high biomass state, similar to 1989, 1990, 2012 and 2016 (Figure \@ref(fig:storyboard-sog)f).
+The large uncertainty around estimated age-2 recruitment in the terminal year of the time series is a common observation
+because these age-2 fish are only partially recruited to the fishing gear.
+The estimated 2019 age-2 recruitment will be adjusted by the model next year with the addition of 2020 sample data (i.e., when the 2017 cohort is sampled as age-3s).
+Analysis of surplus production shows that for the year between 2018-2019, the SoG SAR is estimated to be in a high production, high biomass state,
+similar to 1989, 1990, 2012 and 2016 (Figure \@ref(fig:storyboard-sog)f).
 
 Commercial fisheries have occurred annually in SoG since the early-1970s (following the stock collapse of the late 1960s).
-Since implementing the fixed cutoff HCR in 1986, the effective harvest rate $U_t$ is estimated to fluctuate above and below the 20% target rate, with median estimates above 20% in 2005, 2006, and most years between 2013 and 2019 (Figure \@ref(fig:harvest-rate)).
-The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(sog_final_yr_sbt[2])`&nbsp;t (posterior median), equal to 46.4% of $\mli{SB}_0$ (Tables \@ref(sog-spawning-biomass-depletion-table) & \@ref(tab:ref-points-sog)).
+Since implementing the fixed cutoff HCR in 1986, the effective harvest rate $U_t$ is estimated to fluctuate above and below the 20% target rate,
+with median estimates above 20% in 2005, 2006, and most years between 2013 and 2019 (Figure \@ref(fig:harvest-rate)).
+The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(sog_final_yr_sbt[2])`&nbsp;t (posterior median),
+equal to 46.4% of $\mli{SB}_0$ (Tables \@ref(sog-spawning-biomass-depletion-table) & \@ref(tab:ref-points-sog)).
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\mli{SB}_0$ with a `r f((1-sog_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-sog)).
 
 ### West Coast of Vancouver Island
@@ -234,16 +254,20 @@ Recruitment deviations have been negative (lower than predicted by the stock-rec
 however the reduction in estimated natural mortality and absence of removals from a commercial fishery appears to be sufficient to offset this below average recruitment of age-2 fish.
 The absence of a commercial fishery since 2005 means the realized harvest rate has been near zero for the last 14 years (Figure \@ref(fig:harvest-rate)).
 In recent years there has been modest evidence for an increase in production and biomass.
-The production estimates in 2018-2019 year are at a higher spawning biomass level than those estimated during the low production, low biomass period of the last half of the 2000s and early 2010s (Figure \@ref(fig:storyboard-wcvi)f).
+The production estimates in the 2018-2019 year are at a higher spawning biomass level than those estimated during the low production, low biomass period of the last half of the 2000s and early 2010s (Figure \@ref(fig:storyboard-wcvi)f).
 
-The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(wcvi_final_yr_sbt[2])`&nbsp;t (posterior median), equal to 44.2% of $\mli{SB}_0$ (Tables \@ref(wcvi-spawning-biomass-depletion-table) & \@ref(tab:ref-points-wcvi)).
+The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(wcvi_final_yr_sbt[2])`&nbsp;t (posterior median),
+equal to 44.2% of $\mli{SB}_0$ (Tables \@ref(wcvi-spawning-biomass-depletion-table) & \@ref(tab:ref-points-wcvi)).
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\mli{SB}_0$ with a `r f((1-wcvi_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-wcvi)).
 
 ## Management performance
 
 Management procedure performance can be investigated using time series of effective harvest rate.
-$U_t$ represents the estimated effective harvest rate in each year $t$, calculated as $U_t = C_t/(C_t + \mli{SB}_t)$, where $C_t$ is catch in year $t$, and $\mli{SB}_t$ is estimated spawning biomass in year $t$.
-Times series of $U_t$ relative to target harvest rate of 20% are presented in Figure \@ref(fig:harvest-rate).
+The estimated effective harvest rate $U$ in each year $t$, calculated as
+$U_t = C_t/(C_t + \mli{SB}_t)$, where
+$C_t$ is catch in year $t$, and
+$\mli{SB}_t$ is estimated spawning biomass in year $t$.
+Times series of $U_t$ relative to target harvest rate of `r target_hr*100`% are presented in Figure \@ref(fig:harvest-rate).
 
 ## Application of MPs and harvest options for `r assess_yr + 1`
 
