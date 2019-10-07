@@ -287,16 +287,15 @@ The ranking of objectives and selection of MPs that meet objectives using MSE is
 The first cycle of Pacific Herring MSE includes, as a starting point, four core fisheries management objectives [@dfo2019c] which reflect DFO policy and were applied to all SARs:
 
 1. Avoid the LRP with at least 75% probability
-(Intent to avoid a biomass limit; $P(\mli{SB}_t > 0.3\mli{SB}_0) \geq 0.75$),
+(avoid a biomass limit; $P(\mli{SB}_t > 0.3\mli{SB}_0) \geq 0.75$),
 
-2. Maintain spawning stock biomass at or above USR with at least 50% probability
-(Achieve a target biomass; $P(\mli{SB}_t > 0.6\mli{SB}_0) \geq 0.5$),
+2. Maintain spawning stock biomass at or above the USR with at least 50% probability
+(achieve a target biomass; $P(\mli{SB}_t > 0.6\mli{SB}_0) \geq 0.5$),
 
 3. Maintain average annual variability (AAV) in catch at or below 25%
-(Goal reflecting variability of catch; $\text{AAV} \leq 0.25$), and
+(goal reflecting variability of catch; $\text{AAV} \leq 0.25$), and
 
-4. Maximize average annual catch
-(Goal reflecting level of catch).
+4. Maximize average annual catch (goal reflecting level of catch).
 
 However, a fully specified set of objectives has not yet been developed for each management area.
 The DFO will continue to collaborate with coastal First Nations to develop area-specific objectives specific to Food, Social and Ceremonial fisheries and spawn-on-kelp (SOK) fisheries.
@@ -304,7 +303,7 @@ As well, DFO will continue to engage with the herring industry, government and n
 
 The MPs for each SAR differ in the form of the HCR and choices of catch cap, but use the same monitoring data and assessment model [e.g., @cleary2018].
 The current assessment model assumes natural mortality is time-varying.
-The first MSE cycle introduced three hypotheses about future Herring natural mortality ($M$): 
+The first MSE cycle introduced three hypotheses about future Pacific Herring natural mortality ($M$): 
 
 1. $M$ is a time-varying, density-dependent process (DDM),
 
@@ -313,7 +312,9 @@ The first MSE cycle introduced three hypotheses about future Herring natural mor
 3. $M$ is estimated constant over time (conM).
 
 These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
-Then, based on discussion at the July 2018 CSAS review process, in @dfo2019c the DDM OM scenario is identified as the Reference OM scenario and DIM and conM are identified as Robustness OM scenarios.
+Then, based on discussion at the July 2018 CSAS review process [@dfo2019c],
+the DDM scenario was identified as the Reference OM scenario, while
+the DIM and conM scenarios were identified as Robustness OM scenarios.
 Results presented here represent all three OM scenarios.
 
 Several lessons were learned from the analysis:
