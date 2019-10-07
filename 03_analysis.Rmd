@@ -271,7 +271,8 @@ Times series of $U_t$ relative to target harvest rate of `r target_hr*100`% are 
 
 ## Application of MPs and harvest options for `r assess_yr + 1`
 
-Generally, harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and application of a HCR that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988).
+Generally, harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and
+application of a HCR that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988).
 Although the target harvest rate has varied among regions in recent years (e.g., CC and PRD SARs; @dfo2017),
 the “historical” practice was to apply a target harvest rate of `r target_hr*100`%
 when the forecast is estimated to be above a fixed commercial fishery cutoff of
@@ -279,15 +280,23 @@ $0.25\mli{SB}_0$ defined in the 1996 stock assessment [@dfo2016].
 This rule is referred to as the "fixed cutoff rule".
 
 Renewal of the Pacific Herring management framework included a commitment to MSE simulation-evaluation of the performance of historical fixed cutoff and alternative MPs in relation to conservation and fisheries management objectives.
-The first cycle of the MSE process was completed for the WCVI and SoG SARs in 2018 [@dfo2019a] and in 2019 a similar process was used to evaluate harvest strategies for HG, PRD, and CC [@dfo2019c].
+The first cycle of the MSE process was completed for the WCVI and SoG SARs in 2018 [@dfo2019a];
+a similar process was used to evaluate harvest strategies for HG, PRD, and CC in 2019 [@dfo2019c].
 
 The ranking of objectives and selection of MPs that meet objectives using MSE is an iterative process.
 The first cycle of Pacific Herring MSE includes, as a starting point, four core fisheries management objectives [@dfo2019c] which reflect DFO policy and were applied to all SARs:
 
-  1. Avoid the LRP with $\geq 75$% probability (Intent to avoid a biomass limit),
-  2. Maintain spawning stock biomass at or above USR with $\geq 50$% probability (Achieve a target biomass),
-  3. Maintain average annual variability in catch $\leq 25$% (Goal reflecting variability of catch), and 
-  4. Maximize average annual catch (Goal reflecting level of catch).
+1. Avoid the LRP with at least 75% probability
+(Intent to avoid a biomass limit; $P(\mli{SB}_t > 0.3\mli{SB}_0) \geq 0.75$),
+
+2. Maintain spawning stock biomass at or above USR with at least 50% probability
+(Achieve a target biomass; $P(\mli{SB}_t > 0.6\mli{SB}_0) \geq 0.5$),
+
+3. Maintain average annual variability (AAV) in catch at or below 25%
+(Goal reflecting variability of catch; $\text{AAV} \leq 0.25$), and
+
+4. Maximize average annual catch
+(Goal reflecting level of catch).
 
 However, a fully specified set of objectives has not yet been developed for each management area.
 The DFO will continue to collaborate with coastal First Nations to develop area-specific objectives specific to Food, Social and Ceremonial fisheries and spawn-on-kelp (SOK) fisheries.
@@ -297,9 +306,11 @@ The MPs for each SAR differ in the form of the HCR and choices of catch cap, but
 The current assessment model assumes natural mortality is time-varying.
 The first MSE cycle introduced three hypotheses about future Herring natural mortality ($M$): 
 
-  1. $M$ is a time-varying, density-dependent process (DDM),
-  2. $M$ is a time-varying, density-independent process (DIM), and
-  3. $M$ is estimated constant over time (conM).
+1. $M$ is a time-varying, density-dependent process (DDM),
+
+2. $M$ is a time-varying, density-independent process (DIM), and
+
+3. $M$ is estimated constant over time (conM).
 
 These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
 Then, based on discussion at the July 2018 CSAS review process, in @dfo2019c the DDM OM scenario is identified as the Reference OM scenario and DIM and conM are identified as Robustness OM scenarios.
