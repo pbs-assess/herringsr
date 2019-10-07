@@ -287,10 +287,10 @@ The ranking of objectives and selection of MPs that meet objectives using MSE is
 The first cycle of Pacific Herring MSE includes, as a starting point, four core fisheries management objectives [@dfo2019c] which reflect DFO policy and were applied to all SARs:
 
 1. Avoid the LRP with at least 75% probability
-(avoid a biomass limit; $P(\mli{SB}_t > 0.3\mli{SB}_0) \geq 0.75$),
+(i.e., avoid a biomass limit; $P(\mli{SB}_t > 0.3\mli{SB}_0) \geq 0.75$),
 
 2. Maintain spawning stock biomass at or above the USR with at least 50% probability
-(achieve a target biomass; $P(\mli{SB}_t > 0.6\mli{SB}_0) \geq 0.5$),
+(i.e., achieve a target biomass; $P(\mli{SB}_t > 0.6\mli{SB}_0) \geq 0.5$),
 
 3. Maintain average annual variability (AAV) in catch at or below 25%
 (goal reflecting variability of catch; $\text{AAV} \leq 0.25$), and
