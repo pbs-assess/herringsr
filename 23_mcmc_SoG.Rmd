@@ -24,7 +24,7 @@ make.autocor.plot(major_models[[model_ind]])
 make.pairs.plot(major_models[[model_ind]])
 ```
 
-(ref:sog-biomass-retro-figure) Maximum posterior density biomass with retrospectivces for the Strait of Georgia major stock assessment region.
+(ref:sog-biomass-retro-figure) Maximum posterior density spawning biomass with retrospectives for the Strait of Georgia major stock assessment region.
 ```{r sog-biomass-retro-figure, fig.cap = "(ref:sog-biomass-retro-figure)"}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
