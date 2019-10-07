@@ -256,13 +256,10 @@ The first cycle of the MSE process was completed for the WCVI and SoG SARs in 20
 The ranking of objectives and selection of MPs that meet objectives using MSE is an iterative process.
 The first cycle of Pacific Herring MSE includes, as a starting point, four core fisheries management objectives [@dfo2019c] which reflect DFO policy and were applied to all SARs:
 
-Objective 1. Avoid the LRP with $\geq 75$% probability (Intent to avoid a biomass limit),
-
-Objective 2. Maintain spawning stock biomass at or above USR with $\geq 50$% probability (Achieve a target biomass),
-
-Objective 3. Maintain average annual variability in catch $\leq 25$% (Goal reflecting variability of catch), and 
-
-Objective 4. Maximize average annual catch (Goal reflecting level of catch).
+  1. Avoid the LRP with $\geq 75$% probability (Intent to avoid a biomass limit),
+  2. Maintain spawning stock biomass at or above USR with $\geq 50$% probability (Achieve a target biomass),
+  3. Maintain average annual variability in catch $\leq 25$% (Goal reflecting variability of catch), and 
+  4. Maximize average annual catch (Goal reflecting level of catch).
 
 However, a fully specified set of objectives has not yet been developed for each management area.
 The DFO will continue to collaborate with coastal First Nations to develop area-specific objectives specific to Food, Social and Ceremonial fisheries and spawn-on-kelp (SOK) fisheries.
@@ -272,11 +269,9 @@ The MPs for each SAR differ in the form of the HCR and choices of catch cap, but
 The current assessment model assumes natural mortality is time-varying.
 The first MSE cycle introduced three hypotheses about future Herring natural mortality ($M$): 
 
-1. $M$ is a time-varying, density-dependent process (DDM),
-
-2. $M$ is a time-varying, density-independent process (DIM), and
-
-3. $M$ is estimated constant over time (conM).
+  1. $M$ is a time-varying, density-dependent process (DDM),
+  2. $M$ is a time-varying, density-independent process (DIM), and
+  3. $M$ is estimated constant over time (conM).
 
 These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
 Then, based on discussion at the July 2018 CSAS review process, in @dfo2019c the DDM OM scenario is identified as the Reference OM scenario and DIM and conM are identified as Robustness OM scenarios.
