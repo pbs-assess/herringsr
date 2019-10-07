@@ -203,8 +203,8 @@ and have increased to above average in 2018 and 2019 (Figure \@ref(fig:storyboar
 In 2019 there is evidence of strong production, similar to the 1990 to 1999 period (Figure \@ref(fig:storyboard-cc)f);
 however, the biomass state is not nearly as high as was seen during that period.
 
-A fixed cutoff HCR was implemented in 1986, and from 1986-2007 the effective harvest rate $U_t$ is estimated to fluctuate above and below the 20% target rate, with median estimates exceeding 20% frequently Figure \@ref(fig:harvest-rate)).
-Occurrences of $U_t$ exceeding the 20% target harvest rate are due lags in part to
+A fixed cutoff HCR was implemented in 1986, and from 1986-2007 the effective harvest rate $U_t$ is estimated to fluctuate above and below the `r target_hr*100`% target rate, with median estimates exceeding `r target_hr*100`% frequently (Figure \@ref(fig:harvest-rate)).
+Occurrences of $U_t$ exceeding the `r target_hr*100`% target harvest rate are due in part to
 positive assessment model errors, and
 lags in detecting a directional change in the trend.
 
@@ -238,8 +238,8 @@ Analysis of surplus production shows that for the year between 2018-2019, the So
 similar to 1989, 1990, 2012 and 2016 (Figure \@ref(fig:storyboard-sog)f).
 
 Commercial fisheries have occurred annually in SoG since the early-1970s (following the stock collapse of the late 1960s).
-Since implementing the fixed cutoff HCR in 1986, the effective harvest rate $U_t$ is estimated to fluctuate above and below the 20% target rate,
-with median estimates above 20% in 2005, 2006, and most years between 2013 and 2019 (Figure \@ref(fig:harvest-rate)).
+Since implementing the fixed cutoff HCR in 1986, the effective harvest rate $U_t$ is estimated to fluctuate above and below the `r target_hr*100`% target rate,
+with median estimates above `r target_hr*100`% in 2005, 2006, and most years between 2013 and 2019 (Figure \@ref(fig:harvest-rate)).
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(sog_final_yr_sbt[2])`&nbsp;t (posterior median),
 equal to 46.4% of $\mli{SB}_0$ (Tables \@ref(sog-spawning-biomass-depletion-table) & \@ref(tab:ref-points-sog)).
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\mli{SB}_0$ with a `r f((1-sog_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-sog)).
@@ -273,7 +273,9 @@ Times series of $U_t$ relative to target harvest rate of `r target_hr*100`% are 
 
 Generally, harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and application of a HCR that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988).
 Although the target harvest rate has varied among regions in recent years (e.g., CC and PRD SARs; @dfo2017),
-the “historical” practice was to apply a target harvest rate of 0.2 when the forecast is estimated to be above a fixed commercial fishery cutoff of $0.25\mli{SB}_0$ defined in the 1996 stock assessment [@dfo2016].
+the “historical” practice was to apply a target harvest rate of `r target_hr*100`%
+when the forecast is estimated to be above a fixed commercial fishery cutoff of
+$0.25\mli{SB}_0$ defined in the 1996 stock assessment [@dfo2016].
 This rule is referred to as the "fixed cutoff rule".
 
 Renewal of the Pacific Herring management framework included a commitment to MSE simulation-evaluation of the performance of historical fixed cutoff and alternative MPs in relation to conservation and fisheries management objectives.
@@ -385,7 +387,7 @@ Results presented here may inform this on-going commitment.
 ### Strait of Georgia
 
 Closed-loop feedback simulations for the SoG showed that all tested MPs could maintain the spawning biomass above the LRP with 91% probability or higher across all OM scenarios,
-including the historical fixed cutoff MP which applied a constant escapement of 21,200&nbsp;t based on the 1996 stock assessment and 20% harvest rate [@dfo2019a].
+including the historical fixed cutoff MP which applied a constant escapement of 21,200&nbsp;t based on the 1996 stock assessment and `r target_hr*100`% harvest rate [@dfo2019a].
 Management procedures that included a 30,000&nbsp;t catch cap were able to maintain spawning biomass above a biomass level of $0.6\mli{SB}_0$ with 60% probability or higher across all OM scenarios.
 
 A 30,000&nbsp;t catch cap was evaluated for the SoG; this cap was not often triggered, and thus did not limit the commercial fishery very often in simulations.
@@ -402,7 +404,11 @@ Science advice in 2018 recommended discontinuing the use of the historical fixed
 
 In the absence of fishing, spawning biomass in 2020 is forecast at `r f(sog_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\mli{SB}_0$ with `r f(sog_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
-Harvest recommendations for SoG stock in 2018/19 were provided by application of a MP that utilizes stock assessment estimates of forecast spawning biomass and operational control points at $0.3\mli{SB}_0$ and $0.6\mli{SB}_0$ with a 20% target harvest rate, and a maximum catch cap of 30,000&nbsp;t [@dfo2019a, Figure 4].
+Harvest recommendations for SoG stock in 2018/19 were provided by application of a MP that utilizes stock assessment estimates of
+forecast spawning biomass and 
+operational control points at $0.3\mli{SB}_0$ and $0.6\mli{SB}_0$,
+with a 20% target harvest rate and
+a maximum catch cap of 30,000&nbsp;t [@dfo2019a, Figure 4].
 
 Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-table-sog).
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for SoG,
@@ -416,7 +422,9 @@ For the WCVI, simulation results showed that no tested MP could meet the conserv
 In addition, for the scenario where $M$ is most similar to the last 10 years (DIM), the historical fixed cutoff HCR only meet the conservation objective 56% of the time.
 
 Of the MPs that were simulation-tested across the three $M$ scenarios, the "best-performing" MP maintained spawning biomass above the LRP with a 74% probability.
-This MP implements a lower control point at the assessment model estimate of $0.5\mli{SB}_0$, a 10% target harvest rate, and a maximum catch cap of 2,000&nbsp;t.
+This MP implements a lower control point at the assessment model estimate of $0.5\mli{SB}_0$,
+a 10% target harvest rate, and
+a maximum catch cap of 2,000&nbsp;t.
 
 In the absence of fishing, spawning biomass in 2020 is forecast at `r f(wcvi_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\mli{SB}_0$ with `r f(wcvi_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
