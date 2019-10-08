@@ -518,7 +518,7 @@ col_align <- "cc|c|c|c|c|c|c|c"
 ```
 
 (ref:decision-table-prd-cap) Management procedure (MP) performance for the Prince Rupert District major stock assessment region under three operating model (OM) scenarios: density-dependent mortality (DDM), density-independent mortality (DIM), and constant natural mortality (conM).
-Performance criteria are calculated over 3 generations (15 years) from the start of the projection period for all objectives.
+Performance criteria are calculated over 3 generations (i.e., 15 years) from the start of the projection period for all objectives.
 MPs are ordered within each scenario by performance achieving the Conservation Objective 1.
 The recommended total allowable catch (TAC) in thousands of tonnes (t) and associated harvest rate (HR) are reported for each MP.
 Legend: limit reference point (LRP);
