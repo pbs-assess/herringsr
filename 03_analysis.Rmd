@@ -286,20 +286,21 @@ a similar process was used to evaluate harvest strategies for HG, PRD, and CC in
 The ranking of objectives and selection of MPs that meet objectives using MSE is an iterative process.
 The first cycle of Pacific Herring MSE includes, as a starting point, four core fisheries management objectives [@dfo2019c] which reflect DFO policy and were applied to each major SAR:
 
+<!-- TODO: I don't like how this first Objective reads compared to the other three. I know it's copied from the MSE papers, but it's ambiguous. I think it should read "Maintain spawning biomass above the LRP with at least 75%...". -->
 1. Avoid the LRP with at least 75% probability over three Pacific Herring generations
 (i.e., avoid a biomass limit; $P(\mli{SB}_t > 0.3\mli{SB}_0) \geq 0.75$),
 
-2. Maintain spawning stock biomass at or above the USR with at least 50% probability over three Pacific Herring generations
+2. Maintain spawning biomass at or above the USR with at least 50% probability over three Pacific Herring generations
 (i.e., achieve a target biomass; $P(\mli{SB}_t \geq 0.6\mli{SB}_0) \geq 0.5$),
 
-3. Maintain average annual variability (AAV) in catch at or below 25% over three Pacific Herring generations
-(goal reflecting catch variability; $\text{AAV} \leq 0.25$), and
+3. Maintain average annual variability (AAV) in catch below 25% over three Pacific Herring generations
+(goal reflecting catch variability; $\text{AAV} < 0.25$), and
 
 4. Maximize average annual catch over three Pacific Herring generations
 (goal reflecting catch biomass).
 
 However, a fully specified set of objectives has not yet been developed for each management area.
-The DFO will continue to collaborate with coastal First Nations to develop area-specific objectives specific to Food, Social and Ceremonial fisheries as well as spawn-on-kelp (SOK) fisheries.
+DFO will continue to collaborate with coastal First Nations to develop area-specific objectives specific to Food, Social and Ceremonial fisheries as well as spawn-on-kelp (SOK) fisheries.
 In addition, DFO will continue to engage with the herring industry, government, and non-government organizations
 to describe broader objectives related to conservation, economics, and access.
 
