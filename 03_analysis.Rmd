@@ -277,39 +277,41 @@ Although the target harvest rate has varied among regions in recent years (e.g.,
 the “historical” practice was to apply a target harvest rate of `r target_hr*100`%
 when the forecast is estimated to be above a fixed commercial fishery cutoff of
 $0.25\mli{SB}_0$ defined in the 1996 stock assessment [@dfo2016].
-This rule is referred to as the "fixed cutoff rule".
+This rule is referred to as the "fixed cutoff rule."
 
 Renewal of the Pacific Herring management framework included a commitment to MSE simulation-evaluation of the performance of historical fixed cutoff and alternative MPs in relation to conservation and fisheries management objectives.
 The first cycle of the MSE process was completed for the WCVI and SoG SARs in 2018 [@dfo2019a];
 a similar process was used to evaluate harvest strategies for HG, PRD, and CC in 2019 [@dfo2019c].
 
 The ranking of objectives and selection of MPs that meet objectives using MSE is an iterative process.
-The first cycle of Pacific Herring MSE includes, as a starting point, four core fisheries management objectives [@dfo2019c] which reflect DFO policy and were applied to all SARs:
+The first cycle of Pacific Herring MSE includes, as a starting point, four core fisheries management objectives [@dfo2019c] which reflect DFO policy and were applied to each major SAR:
 
-1. Avoid the LRP with at least 75% probability
+1. Avoid the LRP with at least 75% probability over three Pacific Herring generations
 (i.e., avoid a biomass limit; $P(\mli{SB}_t > 0.3\mli{SB}_0) \geq 0.75$),
 
-2. Maintain spawning stock biomass at or above the USR with at least 50% probability
-(i.e., achieve a target biomass; $P(\mli{SB}_t > 0.6\mli{SB}_0) \geq 0.5$),
+2. Maintain spawning stock biomass at or above the USR with at least 50% probability over three Pacific Herring generations
+(i.e., achieve a target biomass; $P(\mli{SB}_t \geq 0.6\mli{SB}_0) \geq 0.5$),
 
-3. Maintain average annual variability (AAV) in catch at or below 25%
-(goal reflecting variability of catch; $\text{AAV} \leq 0.25$), and
+3. Maintain average annual variability (AAV) in catch at or below 25% over three Pacific Herring generations
+(goal reflecting catch variability; $\text{AAV} \leq 0.25$), and
 
-4. Maximize average annual catch (goal reflecting level of catch).
+4. Maximize average annual catch over three Pacific Herring generations
+(goal reflecting catch biomass).
 
 However, a fully specified set of objectives has not yet been developed for each management area.
-The DFO will continue to collaborate with coastal First Nations to develop area-specific objectives specific to Food, Social and Ceremonial fisheries and spawn-on-kelp (SOK) fisheries.
-As well, DFO will continue to engage with the herring industry, government and non-government organizations to describe broader objectives related to conservation, economics and access.
+The DFO will continue to collaborate with coastal First Nations to develop area-specific objectives specific to Food, Social and Ceremonial fisheries as well as spawn-on-kelp (SOK) fisheries.
+In addition, DFO will continue to engage with the herring industry, government, and non-government organizations
+to describe broader objectives related to conservation, economics, and access.
 
 The MPs for each SAR differ in the form of the HCR and choices of catch cap, but use the same monitoring data and assessment model [e.g., @cleary2018].
 The current assessment model assumes natural mortality is time-varying.
-The first MSE cycle introduced three hypotheses about future Pacific Herring natural mortality ($M$): 
+The first MSE cycle introduced three hypotheses about future Pacific Herring natural mortality $M$: 
 
 1. $M$ is a time-varying, density-dependent process (DDM),
 
 2. $M$ is a time-varying, density-independent process (DIM), and
 
-3. $M$ is estimated constant over time (conM).
+3. $M$ is constant over time (conM).
 
 These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
 The DDM scenario was identified as the Reference OM scenario based on discussion at the July 2018 CSAS review process [@dfo2019c], while
