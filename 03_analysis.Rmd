@@ -284,7 +284,7 @@ The first cycle of the MSE process was completed for the WCVI and SoG SARs in 20
 a similar process was used to evaluate harvest strategies for HG, PRD, and CC in 2019 [@dfo2019c].
 
 The ranking of objectives and selection of MPs that meet objectives using MSE is an iterative process.
-The first cycle of Pacific Herring MSE includes, as a starting point, four core fisheries management objectives [@dfo2019c] which reflect DFO policy and were applied to each major SAR:
+The first cycle of Pacific Herring MSE includes, as a starting point, four core fisheries management objectives [@dfo2019c] which reflect DFO policy, and were applied to each major SAR:
 
 <!-- TODO: I don't like how this first Objective reads compared to the other three. I know it's copied from the MSE papers, but it's ambiguous. I think it should read "Maintain spawning biomass above the LRP with at least 75%...". -->
 1. Avoid the LRP with at least 75% probability over three Pacific Herring generations
