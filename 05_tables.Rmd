@@ -133,17 +133,17 @@ spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
 ```
 
 (ref:hg-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Haida Gwaii major stock assessment region.
-Legend: unfished age-2 recruitment $R_0$;
-steepness of the stock-recruitment relationship $h$;
-instantaneous natural mortality rate $M$;
-average age-2 recruitment from `r major_start_yr` to `r major_end_yr` $\overline{R}$;
-average age-2 recruitment in `r major_start_yr-1` $\overline{R}_\mli{init}$;
-fraction of total variance associated with observation error $\rho$;
-precision of total error $\vartheta$;
-catchability for surface (`r major_start_yr` to `r new_surv_yr-1`) $q_1$ and
-dive (`r new_surv_yr` to `r major_end_yr`) $q_2$ survey periods;
-standard deviation of process error (i.e., recruitment) $\tau$; and
-standard deviation of observation error (i.e., survey index) $\sigma$.
+Legend: $R_0$ is unfished age-2 recruitment;
+$h$ is steepness of the stock-recruitment relationship;
+$M$ is instantaneous natural mortality rate;
+$\overline{R}$ is average age-2 recruitment from `r major_start_yr` to `r major_end_yr`;
+$\overline{R}_\mli{init}$ is average age-2 recruitment in `r major_start_yr-1`;
+$\rho$ is the fraction of total variance associated with observation error;
+$\vartheta$ is the precision of total error;
+$q$ is catchability for surface (`r major_start_yr` to `r new_surv_yr-1`; $q_1$) and
+dive (`r new_surv_yr` to `r major_end_yr`; $q_2$) survey periods;
+$\tau$ is the standard deviation of process error (i.e., recruitment); and
+$\sigma$ is the standard deviation of observation error (i.e., survey index).
 Note that $\tau$ and $\sigma$ are calculated values.
 
 (ref:hg-parameter-est-cap-french) Not yet translated.
@@ -517,16 +517,19 @@ col_align <- "cc|c|c|c|c|c|c|c"
 #
 ```
 
-(ref:decision-table-prd-cap) Management procedure (MP) performance for the Prince Rupert District major stock assessment region under three operating model (OM) scenarios: density-dependent mortality (DDM), density-independent mortality (DIM), and constant natural mortality (conM).
-Performance criteria are calculated over 3 generations (i.e., 15 years) from the start of the projection period for all objectives.
+(ref:decision-table-prd-cap) Management procedure (MP) performance for the Prince Rupert District major stock assessment region under three operating model (OM) scenarios:
+density-dependent mortality (DDM),
+density-independent mortality (DIM), and
+constant natural mortality (conM).
+Performance criteria are calculated over three Pacific Herring generations (i.e., 15 years) from the start of the projection period for all objectives.
 MPs are ordered within each scenario by performance achieving the Conservation Objective 1.
 The recommended total allowable catch (TAC) in thousands of tonnes (t) and associated harvest rate (HR) are reported for each MP.
 Legend: limit reference point (LRP);
-spawning biomass in year $t$ $\mli{SB}_t$;
-estimated unfished spawning biomass $\mli{SB}_0$;
-average annual varibility (AAV);
-catch in year $t$ $C_t$; and
-average catch $\overline{C}$.
+$\mli{SB}_t$ is spawning biomass in year $t$;
+$\mli{SB}_0$ is estimated unfished spawning biomass;
+average annual variability (AAV);
+$C_t$ is catch in year $t$; and
+$\overline{C}$ is average catch.
 Dashes indicate that a TAC or HR does not apply, either
 because the MP specifies no fishing, or
 because the MP failed to meet Objective 1.
