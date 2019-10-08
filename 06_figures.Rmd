@@ -231,7 +231,7 @@ Panel (e): log recruitment deviations.
 Panels (c & e): circles and vertical lines indicate medians and `r ci_level*100`% credible intervals, respectively.
 Panel (f): phase plot of spawning biomass production ($\frac{\mli{SB}_{t+1} - \mli{SB}_t + C_{t+1}}{\mli{SB}_t}$) for the dive survey period (`r new_surv_yr` to `r assess_yr-1`; maximum posterior density estimates).
 Grey shading becomes darker in chronological order; the triangle indicates `r assess_yr-1`.
-Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% confidence intervals, respectively, for the limit reference point $0.3\mli{SB}_0$, where $\mli{SB}_0$ is estimated unfished biomass.
+Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% confidence intervals, respectively, for the limit reference point $0.3\mli{SB}_0$, where $\mli{SB}_0$ is estimated unfished spawning biomass.
 
 <!-- The red line is the ", nRollRec, "-year running mean of the median recruitment deviation. -->
 
@@ -859,7 +859,7 @@ plot_harvest_rate(major_catch,
 (ref:proj-biomass-density-cap) Projected spawning biomass assuming no fishing in `r assess_yr+1` $\mli{SB}_{`r assess_yr+1`}$ in thousands of tonnes (t) for Pacific Herring in the major stock assessment regions.
 Solid and dashed vertical lines indicate medians and `r ci_level*100`% confidence intervals for $\mli{SB}_{`r assess_yr+1`}$, respectively.
 Vertical red lines and shaded red areas indicate medians and `r ci_level*100`% confidence intervals for the limit reference point $0.3\mli{SB}_0$, respectively,
-where $\mli{SB}_0$ is estimated unfished biomass.
+where $\mli{SB}_0$ is estimated unfished spawning biomass.
 
 (ref:proj-biomass-density-cap-french) `r paste0("Biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en ", assess_yr + 1, ", $BSR_{", assess_yr + 1, "}$ en milliers de tonnes pour le hareng du Pacifique dans les principales régions d’évaluation des stocks. Les lignes noires verticales indiquent les médianes (lignes pleines) et les intervalles de confiance de 90\\% (lignes tiretées) pour la $BSR_{", assess_yr + 1, "}$. Les lignes rouges verticales indiquent les médianes et les rectangles rouges ombragés indiquent les intervalles de confiance de 90\\% pour le point de référence limite, $0,3BSR_0$, où $BSR_0$ est la biomasse non exploitée estimée.")`
 

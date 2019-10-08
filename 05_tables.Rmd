@@ -316,7 +316,7 @@ make.value.table(major_models[[model_ind]],
 (ref:hg-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion
 (i.e., relative spawning biomass $\mli{SB}_t/\mli{SB}_0$, where
 $\mli{SB}_t$ is spawning biomass in year $t$, and
-$\mli{SB}_0$ is estimated unfished biomass)
+$\mli{SB}_0$ is estimated unfished spawning biomass)
 for the Haida Gwaii major stock assessment region.
 
 (ref:hg-spawning-biomass-depletion-cap-french) Not yet translated.
@@ -408,7 +408,9 @@ make.biomass.depletion.table(major_models[[model_ind]],
 
 (ref:ref-points-hg-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the Haida Gwaii major stock assessment region.
 All biomass numbers are in thousands of tonnes.
-Legend: $\mli{SB}_0$ is estimated unfished biomass; $\mli{SB}_{t}$ is spawning biomass in year $t$; and $\mli{SB}_{`r assess_yr+1`}$ is projected spawning biomass in `r assess_yr+1` assuming no fishing.
+Legend: $\mli{SB}_0$ is estimated unfished spawning biomass;
+$\mli{SB}_{t}$ is spawning biomass in year $t$; and
+$\mli{SB}_{`r assess_yr+1`}$ is projected spawning biomass in `r assess_yr+1` assuming no fishing.
 
 (ref:ref-points-hg-cap-french) Estimations a posteriori (5\textsuperscript{e} percentile, médiane et 95\textsuperscript{e} percentile) des points de référence proposés pour le modèle de Haida Gwaii.
 La $\mli{BSR}_{2019}$ représente la biomasse reproductrice avant la pêche, et tous les chiffres indiqués pour la biomasse sont exprimés en milliers de tonnes.
