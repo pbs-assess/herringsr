@@ -20,7 +20,7 @@ input_data_table(inp_catch,
 
 (ref:annual-catch-cap) Total landed catch in tonnes of Pacific Herring in the major stock assessment regions (SARs).
 Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI).
-Note: 'WP' indicates that data are withheld due to privacy concerns.
+Note: if present, 'WP' indicates that data are withheld due to privacy concerns.
 
 (ref:annual-catch-cap-french) Total des prises débarquées en tonnes de hareng du Pacifique dans les principales zones d’évaluation des stocks.
 Légende: Haida Gwaii (HG), le district de Prince Rupert (DPR), la côte centrale (CC), le détroit de Georgie (DG) et la côte ouest de l’île de Vancouver (COIV).
@@ -38,7 +38,7 @@ total_landed_catch_table(major_catch_short,
 
 (ref:annual-sok-catch-cap) Total spawn-on-kelp harvest in pounds of Pacific Herring in the major stock assessment regions (SARs).
 Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI).
-Note: 'WP' indicates that data are withheld due to privacy concerns.
+Note: if present, 'WP' indicates that data are withheld due to privacy concerns.
 
 (ref:annual-sok-catch-cap-french) Récolte totale d’oeufs sur varech en livres de hareng du Pacifique dans les principales zones d’évaluation des stocks.
 Légende: Haida Gwaii (HG), le district de Prince Rupert (DPR), la côte centrale (CC), le détroit de Georgie (DG) et la côte ouest de l’île de Vancouver (COIV).
@@ -524,7 +524,7 @@ density-dependent mortality (DDM),
 density-independent mortality (DIM), and
 constant natural mortality (conM).
 Performance criteria are calculated over three Pacific Herring generations (i.e., 15 years) from the start of the projection period for all objectives.
-MPs are ordered within each scenario by performance achieving the Conservation Objective 1.
+MPs are ordered within each scenario by performance achieving Objective 1.
 The recommended total allowable catch (TAC) in thousands of tonnes (t) and associated harvest rate (HR) are reported for each MP.
 Legend: limit reference point (LRP);
 $\mli{SB}_t$ is spawning biomass in year $t$;
@@ -535,7 +535,7 @@ $\overline{C}$ is average catch.
 MPs are defined in @dfo2019a and @dfo2019c.
 Note: dashes indicate that a TAC or HR does not apply, either
 because the MP specifies no fishing, or
-because the MP failed to meet Objective 1.
+because the MP fails to meet Objective 1.
 
 (ref:decision-table-prd-cap-french) Tableau de décision probabilistes pour le district de Prince Rupert, modèle AM2.
 
