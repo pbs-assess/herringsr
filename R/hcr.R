@@ -97,7 +97,7 @@ sog.min.esc.rel.50.hr.10.cap.2 <-
                             hr = 0.1,
                             lrp = NA,
                             usr = NA,
-                            slowyrs = NA)))
+                            num_end_yrs = NA)))
 
 wcvi.min.esc.rel.50.hr.10.cap.2 <-
   get_hcr_tac_hr(hcr(sbt.wcvi,
@@ -108,7 +108,7 @@ wcvi.min.esc.rel.50.hr.10.cap.2 <-
                             hr = 0.1,
                             lrp = NA,
                             usr = NA,
-                            slowyrs = NA)))
+                            num_end_yrs = NA)))
 
 sog.min.hs.3060.hr.20 <-
   get_hcr_tac_hr(hcr(sbt.sog,
@@ -119,7 +119,7 @@ sog.min.hs.3060.hr.20 <-
                             hr = 0.2,
                             lrp = 0.3,
                             usr = 0.6,
-                            slowyrs = NA)))
+                            num_end_yrs = NA)))
 
 wcvi.min.hs.3060.hr.20 <-
   get_hcr_tac_hr(hcr(sbt.wcvi,
@@ -130,7 +130,7 @@ wcvi.min.hs.3060.hr.20 <-
                             hr = 0.2,
                             lrp = 0.3,
                             usr = 0.6,
-                            slowyrs = NA)))
+                            num_end_yrs = NA)))
 
 sog.min.hs.3060.hr.20.cap.30 <-
   get_hcr_tac_hr(hcr(sbt.sog,
@@ -141,7 +141,7 @@ sog.min.hs.3060.hr.20.cap.30 <-
                             hr = 0.2,
                             lrp = 0.3,
                             usr = 0.6,
-                            slowyrs = NA)))
+                            num_end_yrs = NA)))
 
 wcvi.min.hs.5060.hr.10.cap.2 <-
   get_hcr_tac_hr(hcr(sbt.wcvi,
@@ -152,7 +152,7 @@ wcvi.min.hs.5060.hr.10.cap.2 <-
                             hr = 0.1,
                             lrp = 0.5,
                             usr = 0.6,
-                            slowyrs = NA)))
+                            num_end_yrs = NA)))
 
 sog.min.esc.rel.50.hr.10.cap.2.slow <-
   get_hcr_tac_hr(hcr(sbt.sog,
@@ -163,7 +163,7 @@ sog.min.esc.rel.50.hr.10.cap.2.slow <-
                             hr = 0.1,
                             lrp = NA,
                             usr = NA,
-                            slowyrs = 3)))
+                            num_end_yrs = 3)))
 
 wcvi.min.esc.rel.50.hr.10.cap.2.slow <-
   get_hcr_tac_hr(hcr(sbt.wcvi,
@@ -174,7 +174,7 @@ wcvi.min.esc.rel.50.hr.10.cap.2.slow <-
                             hr = 0.1,
                             lrp = NA,
                             usr = NA,
-                            slowyrs = 3)))
+                            num_end_yrs = 3)))
 
 sog.min.hs.3060.hr.20.slow <-
   get_hcr_tac_hr(hcr(sbt.sog,
@@ -185,7 +185,7 @@ sog.min.hs.3060.hr.20.slow <-
                             hr = 0.2,
                             lrp = 0.3,
                             usr = 0.6,
-                            slowyrs = 3)))
+                            num_end_yrs = 3)))
 
 wcvi.min.hs.3060.hr.20.slow <-
   get_hcr_tac_hr(hcr(sbt.wcvi,
@@ -196,7 +196,7 @@ wcvi.min.hs.3060.hr.20.slow <-
                             hr = 0.2,
                             lrp = 0.3,
                             usr = 0.6,
-                            slowyrs = 3)))
+                            num_end_yrs = 3)))
 
 sog.min.hs.3060.hr.10.cap.2.slow <-
   get_hcr_tac_hr(hcr(sbt.sog,
@@ -207,7 +207,7 @@ sog.min.hs.3060.hr.10.cap.2.slow <-
                             hr = 0.1,
                             lrp = 0.3,
                             usr = 0.6,
-                            slowyrs = 3)))
+                            num_end_yrs = 3)))
 
 wcvi.min.hs.3060.hr.10.cap.2.slow <-
   get_hcr_tac_hr(hcr(sbt.wcvi,
@@ -218,7 +218,7 @@ wcvi.min.hs.3060.hr.10.cap.2.slow <-
                             hr = 0.1,
                             lrp = 0.3,
                             usr = 0.6,
-                            slowyrs = 3)))
+                            num_end_yrs = 3)))
 
 hcr.sog <- sog.min.hs.3060.hr.20.cap.30
 
