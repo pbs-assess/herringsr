@@ -524,7 +524,7 @@ density-dependent mortality (DDM),
 density-independent mortality (DIM), and
 constant natural mortality (conM).
 Performance criteria are calculated over three Pacific Herring generations (i.e., 15 years) from the start of the projection period for all objectives.
-MPs are ordered within each scenario by performance achieving Objective 1.
+MPs are ordered within each scenario by performance of achieving Objective 1.
 The recommended total allowable catch (TAC) in thousands of tonnes (t) and associated harvest rate (HR) are reported for each MP.
 Legend: limit reference point (LRP);
 $\mli{SB}_t$ is spawning biomass in year $t$;
@@ -533,7 +533,7 @@ average annual variability (AAV);
 $C_t$ is catch in year $t$; and
 $\overline{C}$ is average catch.
 MPs are defined in @dfo2019a and @dfo2019c.
-Note: dashes indicate that a TAC or HR does not apply, either
+Note: dashes indicate that TAC and HR do not apply, either
 because the MP specifies no fishing, or
 because the MP fails to meet Objective 1.
 
