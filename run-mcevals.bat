@@ -1,14 +1,14 @@
-cd models/CC/AM2
-if exist mcmc rd /s /q mcmc
-md mcmc
-iscam -mceval
-mv *.csv mcmc
-cd ../../HG/AM2
+cd models/HG/AM2
 if exist mcmc rd /s /q mcmc
 md mcmc
 iscam -mceval
 mv *.csv mcmc
 cd ../../PRD/AM2
+if exist mcmc rd /s /q mcmc
+md mcmc
+iscam -mceval
+mv *.csv mcmc
+cd ../../CC/AM2
 if exist mcmc rd /s /q mcmc
 md mcmc
 iscam -mceval
