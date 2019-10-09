@@ -34,7 +34,7 @@ missing values at the beginning of the time series are imputed by extending the 
 other missing values are imputed as the mean of the previous `r nRollWA` years.
 Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet.
 The age-`r age_plus` class is a 'plus group' which includes fish ages `r age_plus` and older.
-Note that vertical axes are cropped at `r wa_ylim[1]` and `r wa_ylim[2]` kg.
+Note: vertical axes are cropped at `r wa_ylim[1]` and `r wa_ylim[2]` kg.
 
 <!-- Need to fix automation (i.e., age-3) in french captions, here and elsewhere -->
 
@@ -72,7 +72,7 @@ The spawn index has two distinct periods defned by the dominant survey method:
 surface surveys (`r minor_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r minor_end_yr`).
 The dashed vertical line is the boundary between these two periods.
-The 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
+Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
 (ref:major-spawn-index-cap-french) `r paste0("Série chronologique de l’indice du frai en milliers de tonnes pour le hareng du Pacifique de ", major_start_yr, " à ", assess_yr, " dans les principales régions d’évaluation des stocks. L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante : relevés en surface (de ", major_start_yr, " à ", new_surv_yr - 1, ") et relevés de plongée (de ", new_surv_yr, " à ", assess_yr, "). La ligne verticale en pointillés est la limite entre ces deux périodes. L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai, q.")`
 
