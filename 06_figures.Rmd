@@ -1,6 +1,6 @@
 # Figures
 
-(ref:bc-map-cap) Boundaries for the Pacific Herring stock assessment regions (SARs) in BC.
+(ref:bc-map-cap) Boundaries for the Pacific Herring stock assessment regions (SARs) in British Columbia.
 The major SARs are Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI).
 The minor SARs are Area 27 (A27) and Area 2 West (A2W).
 Units: kilometres (km).
