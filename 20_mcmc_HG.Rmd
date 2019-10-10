@@ -17,11 +17,12 @@ make.priors.posts.plot(major_models[[model_ind]],
 The MCMC run had chain length `r mcmc_length` with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 In addition, $B_0$ is unfished biomass,
-$\mli{SB}_0$ is unfished spawning biomass, and
-$\mli{SSB}$ is spawning biomass.
-Parameters $\hat{a}_k$ (selectivity-at-age-50%), and
-$\hat{\gamma}_k$ (selectivity standard deviation-at-50%) represent gears as subscripts:
-$k=1$: other fisheries, $k=2$: roe seine, $k=3$: row gillnet.
+$\mli{SB}_0$ is unfished spawning biomass,
+$\mli{SSB}$ is spawning biomass,
+$\hat{a}_k$ is selectivity-at-age-50%, and
+$\hat{\gamma}_k$ is selectivity standard deviation-at-50%.
+Subscripts represent gears as follows:
+$k=1$ is other fisheries, $k=2$ is roe seine, $k=3$ is roe gillnet.
 
 ```{r hg-traces-figure, fig.asp=1, fig.cap="(ref:hg-traces-figure)"}
 make.traces.plot(major_models[[model_ind]],
@@ -41,7 +42,7 @@ See Table \@ref(tab:hg-parameter-est-table) and Figure \@ref(fig:hg-traces-figur
 make.pairs.plot(major_models[[model_ind]])
 ```
 
-(ref:hg-biomass-retro-figure) Maximum posterior density spawning biomass with retrospectives for the Haida Gwaii major stock assessment region.
+(ref:hg-biomass-retro-figure) Maximum posterior density of spawning biomass with retrospectives for the Haida Gwaii major stock assessment region.
 ```{r hg-biomass-retro-figure, fig.cap = "(ref:hg-biomass-retro-figure)"}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
