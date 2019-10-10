@@ -1,9 +1,13 @@
 # Haida Gwaii diagnostics
 
-This section contains MCMC diagnostics for the Haida Gwaii major stock assessment region SCA model.
-These tables and figures will not be included in the final Science Response.
+This section contains Markov chain Monte Carlo (MCMC) diagnostics for the Haida Gwaii major stock assessment region SCA model.
+These diagnostics will not be included in the final Science Response.
 
-```{r hg-priors-posts-figure, fig.cap = "Prior probability distributions (lines) with comparative posterior histograms (bars) used in the Haida Gwaii major stock assessment region. Subscripts on $q$ (catchability) indicate: 1 = surface survey, 2 = dive survey. The dotted red lines are the maximum posterior density estimates."}
+(ref:hg-priors-posts-figure) Prior probability distributions (lines) with comparative posterior histograms (bars) used in the Haida Gwaii major stock assessment region.
+The dotted red lines are the maximum posterior density estimates.
+See Table \@ref(tab:hg-parameter-est-table) for description.
+
+```{r hg-priors-posts-figure, fig.cap = "(ref:hg-priors-posts-figure)"}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
@@ -11,19 +15,28 @@ make.priors.posts.plot(major_models[[model_ind]],
 
 (ref:hg-traces-figure) Trace plots for Markov chain Monte Carlo (MCMC) output of estimated parameters for the Haida Gwaii major stock assessment region.
 The MCMC run had chain length `r mcmc_length` with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration.
-Parameters $\hat{a}_k$ (selectivity-at-age-50%), and $\hat{\gamma}_k$ (selectivity standard deviation-at-50%) represent gears as follows: $k=1$: other fisheries, $k=2$: roe seine, $k=3$: row gillnet.
+See Table \@ref(tab:hg-parameter-est-table) for description.
+In addition, $B_0$ is unfished biomass,
+$\mli{SB}_0$ is unfished spawning biomass, and
+$\mli{SSB}$ is spawning biomass.
+Parameters $\hat{a}_k$ (selectivity-at-age-50%), and
+$\hat{\gamma}_k$ (selectivity standard deviation-at-50%) represent gears as subscripts:
+$k=1$: other fisheries, $k=2$: roe seine, $k=3$: row gillnet.
 
 ```{r hg-traces-figure, fig.asp=1, fig.cap="(ref:hg-traces-figure)"}
 make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
 
-(ref:hg-autocor-figure) Autocorrelation plots for MCMC output of estimated parameters for the Haida Gwaii major stock assessment region. See Figure \@ref(fig:hg-traces-figure) for parameter descriptions.
+(ref:hg-autocor-figure) Auto-correlation plots for Markov chain Monte Carlo (MCMC) output of estimated parameters for the Haida Gwaii major stock assessment region.
+See Table \@ref(tab:hg-parameter-est-table) and Figure \@ref(fig:hg-traces-figure) for description.
+
 ```{r hg-autocor-figure, fig.asp=1, fig.cap = "(ref:hg-autocor-figure)"}
 make.autocor.plot(major_models[[model_ind]])
 ```
 
-(ref:hg-pairs-figure) Pairs plots for MCMC output of estimated parameters for the Haida Gwaii major stock assessment region. See Figure \@ref(fig:hg-traces-figure) for parameter descriptions.
+(ref:hg-pairs-figure) Pairs plots for Markov chain Monte Carlo (MCMC) output of estimated parameters for the Haida Gwaii major stock assessment region.
+See Table \@ref(tab:hg-parameter-est-table) and Figure \@ref(fig:hg-traces-figure) for description.
 ```{r hg-pairs-figure, fig.asp=1, fig.cap = "(ref:hg-pairs-figure)"}
 make.pairs.plot(major_models[[model_ind]])
 ```
