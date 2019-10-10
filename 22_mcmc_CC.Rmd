@@ -1,16 +1,16 @@
 # Central Coast diagnostics
 
 This section contains Markov chain Monte Carlo (MCMC) diagnostics for the
-Central Coast major stock assessment region SCA model.
+Central Coast major stock assessment region statistical catch-age model.
 The MCMC run had chain length `r mcmc_length`
 with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration.
 The first `r f(mcmc_burnin)` samples were discarded (burn-in), 
-leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for the posteriors.
-These diagnostics will not be included in the final Science Response.
+leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for posteriors.
+These diagnostics will not be included in the final document.
 
 (ref:cc-priors-posts-figure) Prior probability distributions (lines) with
 comparative posterior histograms (bars) used in the Central Coast major stock assessment region.
-The dotted red lines are the maximum posterior density estimates.
+The dotted red lines are maximum posterior density estimates.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
 ```{r cc-priors-posts-figure, fig.cap = "(ref:cc-priors-posts-figure)"}
@@ -25,17 +25,17 @@ See Table \@ref(tab:hg-parameter-est-table) for description.
 In addition, $B_0$ is unfished biomass,
 $\mli{SB}_0$ is unfished spawning biomass,
 $\mli{SSB}$ is spawning biomass,
-$\hat{a}_k$ is selectivity-at-age-50%, and
-$\hat{\gamma}_k$ is selectivity standard deviation-at-50%.
+$\hat{a}$ is selectivity-at-age-50%, and
+$\hat{\gamma}$ is selectivity standard deviation-at-50%.
 Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
-$k=1$ is other fisheries, $k=2$ is roe seine, $k=3$ is roe gillnet.
+1 is other fisheries, 2 is roe seine, and 3 is roe gillnet.
 
 ```{r cc-traces-figure, fig.asp=1, fig.cap="(ref:cc-traces-figure)"}
 make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
 
-ref:cc-autocor-figure) Auto-correlation plots for Markov chain Monte Carlo output of
+(ref:cc-autocor-figure) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
 Figure \@ref(fig:cc-traces-figure) for description.
