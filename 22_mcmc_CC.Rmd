@@ -1,30 +1,59 @@
 # Central Coast diagnostics
 
-This section contains MCMC diagnostics for the Central Coast major stock assessment region SCA model.
-These tables and figures will not be included in the final Science Response.
+This section contains Markov chain Monte Carlo (MCMC) diagnostics for the
+Central Coast major stock assessment region SCA model.
+These diagnostics will not be included in the final Science Response.
 
-```{r cc-priors-posts-figure, fig.cap = "Prior probability distributions (lines) with comparative posterior histograms (bars) used in the Central Coast major stock assessment region. Subscripts on $q$ (catchability) indicate: 1 = surface survey, 2 = dive survey. The dotted red lines are the maximum posterior density estimates."}
+(ref:cc-priors-posts-figure) Prior probability distributions (lines) with
+comparative posterior histograms (bars) used in the Central Coast major stock assessment region.
+The dotted red lines are the maximum posterior density estimates.
+See Table \@ref(tab:hg-parameter-est-table) for description.
+
+```{r cc-priors-posts-figure, fig.cap = "(ref:cc-priors-posts-figure)"}
 model_ind <- match(en2fr("CC", french), major_regions_short)
 make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
 ```
 
-```{r cc-traces-figure, fig.asp=1, fig.cap = paste0("Trace plots for MCMC output of estimated parameters for the Central Coast major stock assessment region. The MCMC run had chain length ", mcmc_length, " with a sample taken at every ", f(mcmc_samp_freq), "th iteration. Subscripts on $q$ (catchability) indicate: 1 = surface survey, 2 = dive survey. Parameters $\\hat{a}_k$ (selectivity-at-age-50\\%), and $\\hat{\\gamma}_k$ (selectivity standard deviation-at-50\\%) represent gears as follows: $k=1$: other fisheries, $k=2$: roe seine, $k=3$: roe gillnet.")}
+(ref:cc-traces-figure) Trace plots for Markov chain Monte Carlo (MCMC) output of
+estimated parameters for the Central Coast major stock assessment region.
+The MCMC run had chain length `r mcmc_length`
+with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration.
+See Table \@ref(tab:hg-parameter-est-table) for description.
+In addition, $B_0$ is unfished biomass,
+$\mli{SB}_0$ is unfished spawning biomass,
+$\mli{SSB}$ is spawning biomass,
+$\hat{a}_k$ is selectivity-at-age-50%, and
+$\hat{\gamma}_k$ is selectivity standard deviation-at-50%.
+Subscripts represent gears as follows:
+$k=1$ is other fisheries, $k=2$ is roe seine, $k=3$ is roe gillnet.
+
+```{r cc-traces-figure, fig.asp=1, fig.cap="(ref:cc-traces-figure)"}
 make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
 
-(ref:cc-autocor-figure) Autocorrelation plots for MCMC output of estimated parameters for the Central Coast major stock assessment region. See Figure \@ref(fig:cc-traces-figure) for parameter descriptions.
+ref:cc-autocor-figure) Auto-correlation plots for Markov chain Monte Carlo (MCMC) output of
+estimated parameters for the Central Coast major stock assessment region.
+See Table \@ref(tab:hg-parameter-est-table) and
+Figure \@ref(fig:cc-traces-figure) for description.
+
 ```{r cc-autocor-figure, fig.asp=1, fig.cap = "(ref:cc-autocor-figure)"}
 make.autocor.plot(major_models[[model_ind]])
 ```
 
-(ref:cc-pairs-figure) Pairs plots for MCMC output of estimated parameters for the Central Coast major stock assessment region. See Figure \@ref(fig:cc-traces-figure) for parameter descriptions.
+(ref:cc-pairs-figure) Pairs plots for Markov chain Monte Carlo (MCMC) output of
+estimated parameters for the Central Coast major stock assessment region.
+See Table \@ref(tab:hg-parameter-est-table) and
+Figure \@ref(fig:cc-traces-figure) for description.
+
 ```{r cc-pairs-figure, fig.asp=1, fig.cap = "(ref:cc-pairs-figure)"}
 make.pairs.plot(major_models[[model_ind]])
 ```
 
-(ref:cc-biomass-retro-figure) Maximum posterior density spawning biomass with retrospectives for the Central Coast major stock assessment region.
+(ref:cc-biomass-retro-figure) Maximum posterior density of spawning biomass
+with retrospectives for the Central Coast major stock assessment region.
+
 ```{r cc-biomass-retro-figure, fig.cap = "(ref:cc-biomass-retro-figure)"}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
