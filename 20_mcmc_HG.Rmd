@@ -1,9 +1,11 @@
 # Haida Gwaii diagnostics
 
-This section contains Markov chain Monte Carlo (MCMC) diagnostics for the Haida Gwaii major stock assessment region SCA model.
+This section contains Markov chain Monte Carlo (MCMC) diagnostics for the
+Haida Gwaii major stock assessment region SCA model.
 These diagnostics will not be included in the final Science Response.
 
-(ref:hg-priors-posts-figure) Prior probability distributions (lines) with comparative posterior histograms (bars) used in the Haida Gwaii major stock assessment region.
+(ref:hg-priors-posts-figure) Prior probability distributions (lines) with
+comparative posterior histograms (bars) used in the Haida Gwaii major stock assessment region.
 The dotted red lines are the maximum posterior density estimates.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
@@ -13,8 +15,10 @@ make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
 ```
 
-(ref:hg-traces-figure) Trace plots for Markov chain Monte Carlo (MCMC) output of estimated parameters for the Haida Gwaii major stock assessment region.
-The MCMC run had chain length `r mcmc_length` with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration.
+(ref:hg-traces-figure) Trace plots for Markov chain Monte Carlo (MCMC) output of
+estimated parameters for the Haida Gwaii major stock assessment region.
+The MCMC run had chain length `r mcmc_length`
+with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 In addition, $B_0$ is unfished biomass,
 $\mli{SB}_0$ is unfished spawning biomass,
@@ -29,20 +33,27 @@ make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
 
-(ref:hg-autocor-figure) Auto-correlation plots for Markov chain Monte Carlo (MCMC) output of estimated parameters for the Haida Gwaii major stock assessment region.
-See Table \@ref(tab:hg-parameter-est-table) and Figure \@ref(fig:hg-traces-figure) for description.
+(ref:hg-autocor-figure) Auto-correlation plots for Markov chain Monte Carlo (MCMC) output of
+estimated parameters for the Haida Gwaii major stock assessment region.
+See Table \@ref(tab:hg-parameter-est-table) and
+Figure \@ref(fig:hg-traces-figure) for description.
 
 ```{r hg-autocor-figure, fig.asp=1, fig.cap = "(ref:hg-autocor-figure)"}
 make.autocor.plot(major_models[[model_ind]])
 ```
 
-(ref:hg-pairs-figure) Pairs plots for Markov chain Monte Carlo (MCMC) output of estimated parameters for the Haida Gwaii major stock assessment region.
-See Table \@ref(tab:hg-parameter-est-table) and Figure \@ref(fig:hg-traces-figure) for description.
+(ref:hg-pairs-figure) Pairs plots for Markov chain Monte Carlo (MCMC) output of
+estimated parameters for the Haida Gwaii major stock assessment region.
+See Table \@ref(tab:hg-parameter-est-table) and
+Figure \@ref(fig:hg-traces-figure) for description.
+
 ```{r hg-pairs-figure, fig.asp=1, fig.cap = "(ref:hg-pairs-figure)"}
 make.pairs.plot(major_models[[model_ind]])
 ```
 
-(ref:hg-biomass-retro-figure) Maximum posterior density of spawning biomass with retrospectives for the Haida Gwaii major stock assessment region.
+(ref:hg-biomass-retro-figure) Maximum posterior density of spawning biomass
+with retrospectives for the Haida Gwaii major stock assessment region.
+
 ```{r hg-biomass-retro-figure, fig.cap = "(ref:hg-biomass-retro-figure)"}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
