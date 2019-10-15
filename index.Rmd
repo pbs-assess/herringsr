@@ -9,7 +9,7 @@ approver: |
   Carmel Lowe\
   Regional Director
 approval_year: 2019
-approval_month: September
+approval_month: October
 approval_day: XX
 branch: Science Branch
 region: Pacific Region
