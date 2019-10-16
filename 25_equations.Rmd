@@ -1,8 +1,5 @@
+# Equations
 
-\appsection{TABLES}
-
-%DO WE WANT TO REMOVE THE SEX s INDEX FROM THESE EQUATIONS???? JC: No
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %********************** Table 1 ************************************
 \FloatBarrier
 \begin{table}[!h]
@@ -65,6 +62,7 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 \end{tabular}
 \end{table}
 \FloatBarrier
+
 %%********************** Table 2 ************************************
 \FloatBarrier
 \begin{table}[b]
@@ -199,10 +197,6 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 %% \vbox{\beq R_t = s_oB_{t-k}e^{-\beta B_{t-k}+\delta_t-0.5\tau^2}\ \ \  (Ricker) \label{df27} \eeq} \\
 %% % If using Beverton-Holt:
 \vbox{\beq R_t = \frac{s_oB_{t-k}}{1+\beta B_{t-k}}e^{\delta_{t}-0.5\tau^2}\ \ \ (Beverton-Holt) \label{eq:df27} \eeq} \\
-
 \end{tabular}
 \end{table}
 \FloatBarrier
-
-% Dirty hack to maintain correct appendix letters
-\newpage

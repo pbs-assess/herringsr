@@ -15,4 +15,5 @@ rmd_files: ["index.Rmd",
             "22_mcmc_CC.Rmd",
             "23_mcmc_SoG.Rmd",
             "24_mcmc_WCVI.Rmd"]
+            #"25_equations.Rmd"]
 delete_merged_file: true
