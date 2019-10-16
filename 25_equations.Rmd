@@ -56,12 +56,11 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 \end{tabular}
 \end{table}
 
-\FloatBarrier
 \begin{table}[!h]
 \centering
 \caption{\label{tab:steady-state-model}Pacific Herring steady-state age-structured model assuming unequal vulnerability-at-age, age-specific fecundity, and Beverton-Holt recruitment.}
 \begin{tabular}{l}
-\hline
+\toprule
 \vbox{\begin{center}\bf{Parameters}\end{center}\vspace{-2ex}} \\
 \vbox{\begin{equation} \Theta = (R_o,h,M)\,; \ \ \ R_o>0; \ \ \ 0.2 \leq h < 1.0; \ \ \ M > 0 \label{eq:df1} \end{equation}\vspace{-2ex}} \\
 \vbox{\begin{equation} \Phi = (l_{\infty,s},\acute{k}_s, t_{o,s},\acute{a}_s,\acute{b}_s,\dot{a}_s,\dot{\gamma}_s,\hat{a}_k,\hat{\gamma}_k) \label{eq:df2} \end{equation}\vspace{-2ex}} \\
@@ -106,17 +105,15 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 \vbox{\begin{equation} \kappa=\frac{4h}{1-h} \label{eq:df13} \end{equation}\vspace{-2ex}} \\[2.5ex]
 \vbox{\begin{equation} R_e=R_o \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}\ \ \ (\text{Beverton-Holt}) \label{eq:df14} \end{equation}\vspace{-2ex}}\\
 \vbox{\begin{equation} C_e=F_e R_e \phi_q \label{eq:df15} \end{equation}\vspace{-2ex}} \\
-\hline
+\bottomrule
 \end{tabular}
 \end{table}
-\FloatBarrier
 
-\FloatBarrier
 \begin{table}[!h]
 \centering
 \caption{\label{tab:catch-age-model}Pacific herring statistical catch-age model using Baranov catch.}
 \begin{tabular}{l}
-\hline
+\toprule
 \vbox{\begin{center}\bf{Estimated parameters}\end{center}\vspace{-2ex}}\\
 \vbox{\begin{equation} \Theta= (R_0,h,M,\overline{R},\overline{R}_{init},\vartheta^2,\rho,\Gamma_{k,t},\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\{\omega_{init,t}\}_{t=\acute{t}-A}^{t=\acute{t}-1})  \label{eq:df16} \end{equation}\vspace{-2ex}} \\
 \vbox{\begin{equation} \sigma=\sqrt{\rho}\vartheta, \;  \;  \; \; \tau=\sqrt{(1-\rho)}\vartheta \label{eq:df17} \end{equation}\vspace{-2ex}} \\
@@ -140,7 +137,6 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
        \end{equation}\vspace{-2ex}} \\
 \vbox{\begin{center}\bf{Beverton-Holt recruitment model}\end{center}\vspace{-2ex}} \\
 \vbox{\begin{equation} R_t = \frac{s_oB_{t-k}}{1+\beta B_{t-k}}e^{\delta_{t}-0.5\tau^2}\ \ \ \label{eq:df27} \end{equation}\vspace{-2ex}} \\
-\hline
+\bottomrule
 \end{tabular}
 \end{table}
-\FloatBarrier
