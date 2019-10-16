@@ -137,8 +137,8 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
                       \end{cases}
        \label{eq:df26}
        \end{equation}} \\
-\vbox{\begin{center}\bf{Recruitment model}\end{center}\vspace{-1ex}} \\
-\vbox{\begin{equation} R_t = \frac{s_oB_{t-k}}{1+\beta B_{t-k}}e^{\delta_{t}-0.5\tau^2}\ \ \ (\text{Beverton-Holt}) \label{eq:df27} \end{equation}} \\
+\vbox{\begin{center}\bf{Beverton-Holt recruitment model}\end{center}\vspace{-1ex}} \\
+\vbox{\begin{equation} R_t = \frac{s_oB_{t-k}}{1+\beta B_{t-k}}e^{\delta_{t}-0.5\tau^2}\ \ \ \label{eq:df27} \end{equation}} \\
 \end{tabular}
 \end{table}
 \FloatBarrier
