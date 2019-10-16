@@ -1,11 +1,13 @@
 # Equations
 
+These tables of equations will not be included in the final document.
+
 %********************** Table 1 ************************************
 \FloatBarrier
 \begin{table}[!h]
 \centering
 \caption{\label{tab:variables} A list of symbols, constants and description
-  for variables used in ISCAM.}
+for variables used in ISCAM.}
 \begin{tabular}{lll}
 \hline
 \bf{Symbol} & \bf{Value} & \bf{Description} \\
@@ -18,10 +20,10 @@ $a$ & & Index for age\\
 $t$ & & Index for year\\
 $k$ & & Index for gear\\
 \multicolumn{3}{l}{\textbf{Model dimensions}}\\
-$S$ & $\Sexpr{hg.b$dat$num.sex}$ & Number of sexes\\
-$\acute{a}, A$ & $\Sexpr{hg.b$dat$start.age}$, $\Sexpr{hg.b$dat$end.age}$ & Youngest and oldest age class ($A$ is a plus group)\\
-$\acute{t}, T$ & $\Sexpr{hg.b$dat$start.yr}$, $\Sexpr{hg.b$dat$end.yr}$ & First and last year of catch data\\
-$K$ & $\Sexpr{hg.b$dat$num.gears}$ & Number of gears including survey gears\\
+$S$ & $`r major_models[[1]]$dat$num.sex`$ & Number of sexes\\
+$\acute{a}, A$ & $`r major_models[[1]]$dat$start.age`$, $`r major_models[[1]]$dat$end.age`$ & Youngest and oldest age class ($A$ is a plus group)\\
+$\acute{t}, T$ & $`r major_models[[1]]$dat$start.yr`$, $`r major_models[[1]]$dat$end.yr`$ & First and last year of catch data\\
+$K$ & $`r major_models[[1]]$dat$num.gears`$ & Number of gears including survey gears\\
 \multicolumn{3}{l}{\textbf{Observations (data)}}\\
 $C_{k,t}$ & & catch in weight by gear $k$ in year $t$\\
 $I_{k,t}$ & & relative abundance index for gear $k$ in year $t$\\
