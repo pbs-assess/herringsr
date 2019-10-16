@@ -63,13 +63,13 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 \begin{tabular}{l}
 \hline
 \vbox{\begin{center}\bf{Parameters}\end{center}\vspace{-2ex}} \\
-\vbox{\begin{equation} \Theta = (R_o,h,M)\,; \ \ \ R_o>0; \ \ \ 0.2 \leq h < 1.0; \ \ \ M > 0 \label{eq:df1} \end{equation}} \\
-\vbox{\begin{equation} \Phi = (l_{\infty,s},\acute{k}_s, t_{o,s},\acute{a}_s,\acute{b}_s,\dot{a}_s,\dot{\gamma}_s,\hat{a}_k,\hat{\gamma}_k) \label{eq:df2} \end{equation}} \\
+\vbox{\begin{equation} \Theta = (R_o,h,M)\,; \ \ \ R_o>0; \ \ \ 0.2 \leq h < 1.0; \ \ \ M > 0 \label{eq:df1} \end{equation}\vspace{-2ex}} \\
+\vbox{\begin{equation} \Phi = (l_{\infty,s},\acute{k}_s, t_{o,s},\acute{a}_s,\acute{b}_s,\dot{a}_s,\dot{\gamma}_s,\hat{a}_k,\hat{\gamma}_k) \label{eq:df2} \end{equation}\vspace{-2ex}} \\
 \vbox{\begin{center}\bf{Age-schedule information}\end{center}\vspace{-2ex}}\\
-\vbox{\begin{equation} l_{a,s}=l_{}\left(1-e^{\left(-k_s\left(a-t_{o,s}\right)\right)}\right) \label{eq:df3} \end{equation}} \\
-\vbox{\begin{equation} w_{a,s}=\acute{a}_s(l_{a,s})^{\acute{b}_s} \label{eq:df4} \end{equation}} \\
-\vbox{\begin{equation} v_a=\left(1+e^{\left(\frac{-(\hat{a}-a)}{\hat{\gamma}}\right)}\right)^{-1} \label{eq:df5} \end{equation}} \\
-\vbox{\begin{equation} f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}{\dot{\gamma}_s}\right)}\right)^{-1} \label{eq:df6} \end{equation}} \\
+\vbox{\begin{equation} l_{a,s}=l_{}\left(1-e^{\left(-k_s\left(a-t_{o,s}\right)\right)}\right) \label{eq:df3} \end{equation}\vspace{-2ex}} \\
+\vbox{\begin{equation} w_{a,s}=\acute{a}_s(l_{a,s})^{\acute{b}_s} \label{eq:df4} \end{equation}\vspace{-2ex}} \\
+\vbox{\begin{equation} v_a=\left(1+e^{\left(\frac{-(\hat{a}-a)}{\hat{\gamma}}\right)}\right)^{-1} \label{eq:df5} \end{equation}\vspace{-2ex}} \\
+\vbox{\begin{equation} f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}{\dot{\gamma}_s}\right)}\right)^{-1} \label{eq:df6} \end{equation}\vspace{-2ex}} \\
 \vbox{\begin{center}\bf{Survivorship}\end{center}\vspace{-2ex}} \\
 \vbox{\begin{equation} \iota_a = \begin{cases}
 \frac{1}{S}, & a = 1 \\
@@ -77,35 +77,35 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 \frac{\iota_{a-1}}{(1-e^{-M})}, & a = A \\
 \end{cases}
 \label{eq:df7}
-\end{equation}} \\
+\end{equation}\vspace{-2ex}} \\
 \vbox{\begin{equation} \iota_a = \begin{cases}
 \frac{1}{S}, & a = 1 \\
 \hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}, & a > 1 \\
 \frac{\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}}{(1-e^{-M-F_e v_{a,s}})}, & a = A \\
 \end{cases}
 \label{eq:df8}
-\end{equation}} \\
+\end{equation}\vspace{-2ex}} \\
 \vbox{\begin{center}\bf{Incidence functions}\end{center}\vspace{-2ex}} \\
 \vbox{\begin{equation} \phi_E=\sum_{s=1}^S\sum_{a=1}^\infty \iota_a f_{a,s},\ \ \ \ \ \ \ \ \
 \phi_e=\sum_{s=1}^S\sum_{a=1}^\infty \hat{\iota}_{a,s} f_{a,s}
 \label{eq:df9}
-\end{equation}} \\
+\end{equation}\vspace{-2ex}} \\
 \vbox{\begin{equation} \phi_B=\sum_{s=1}^S\sum_{a=1}^\infty \iota_a w_{a,s} v_{a,s},\ \ \
 \phi_b=\sum_{s=1}^S\sum_{a=1}^\infty \hat{\iota}_{as} w_{a,s} v_{a,s}
 \label{eq:df10}
-\end{equation}} \\
+\end{equation}\vspace{-2ex}} \\
 \vbox{\begin{equation} \phi_q=\sum_{s=1}^S\sum_{a=1}^\infty
 \frac{ \hat{\iota}_{a,s} w_{a,s} v_{a,s}}{M+F_ev_{a,s}}
 \left(1-e^{(-M-F_ev_{a,s})}\right)
 \label{eq:df11}
-\end{equation}} \\
+\end{equation}\vspace{-2ex}} \\
 \vbox{\begin{center}\bf{Steady-state conditions}\end{center}\vspace{-2ex}} \\
-\vbox{\begin{equation} B_o=R_o\phi_B \label{eq:df12} \end{equation}} \\
+\vbox{\begin{equation} B_o=R_o\phi_B \label{eq:df12} \end{equation}\vspace{-2ex}} \\
 % If using Beverton Holt, use:
-% \vbox{\begin{equation} R_e=R_o \dfrac{\kappa-\phi_E/\phi_e}{\kappa-1} \label{df13} \end{equation}} \\
-\vbox{\begin{equation} \kappa=\frac{4h}{1-h} \label{eq:df13} \end{equation}} \\[2.5ex]
-\vbox{\begin{equation} R_e=R_o \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}\ \ \ (Beverton-Holt) \label{eq:df14} \end{equation}}\\
-\vbox{\begin{equation} C_e=F_e R_e \phi_q \label{eq:df15} \end{equation}} \\
+% \vbox{\begin{equation} R_e=R_o \dfrac{\kappa-\phi_E/\phi_e}{\kappa-1} \label{df13} \end{equation}\vspace{-2ex}} \\
+\vbox{\begin{equation} \kappa=\frac{4h}{1-h} \label{eq:df13} \end{equation}\vspace{-2ex}} \\[2.5ex]
+\vbox{\begin{equation} R_e=R_o \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}\ \ \ (\text{Beverton-Holt}) \label{eq:df14} \end{equation}\vspace{-2ex}}\\
+\vbox{\begin{equation} C_e=F_e R_e \phi_q \label{eq:df15} \end{equation}\vspace{-2ex}} \\
 \hline
 \end{tabular}
 \end{table}
