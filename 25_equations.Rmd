@@ -1,6 +1,7 @@
 # Equations
 
-These tables of equations will not be included in the final document.
+This section describes the equations used in the Pacific Herring statistical catch-age model.
+These equations will not be included in the final document.
 
 \begin{table}[!h]
 \centering
@@ -27,12 +28,12 @@ $I_{k,t}$ & & Relative abundance index for gear $k$ in year $t$\\
 $R_o$ & & Age-$\acute{a}$ recruits in unfished conditions\\
 $h$ & & Steepness of the stock-recruitment relationship\\
 $\bar{R}$ & & Average age-$\acute{a}$ recruitment from year $\acute{t}$ to $T$\\
-$\bar{R}_{init}$ & & Average age-$\acute{a}$ recruitment in year $\acute{t}-1$\\
+$\bar{R}_\mli{init}$ & & Average age-$\acute{a}$ recruitment in year $\acute{t}-1$\\
 $M_s$ & & Instantaneous natural mortality rate\\
 $\hat{a}_k, \hat{\gamma}_k$ & & Selectivity parameters for gear $k$\\
 $\Gamma_{k,t}$ & & Logarithm of the instantaneous fishing mortality for gear $k$ in year $t$\\
 $\omega_t$ & & Age-$\acute{a}$ deviates from $\bar{R}$ for years $\acute{t}$ to $T$\\
-$\omega_{init,t}$ & & Age-$\acute{a}$ deviates from $\bar{R}_{init}$ for year $\acute{t}$\\
+$\omega_{\mli{init},t}$ & & Age-$\acute{a}$ deviates from $\bar{R}_{init}$ for year $\acute{t}$\\
 $q_s$ & & Catchability parameter for survey $k$\\
 $\rho$ & & Fraction of the total variance associated with observation error\\
 $\vartheta^2$ & & Total precision (inverse of variance) of the total error\\
@@ -43,7 +44,7 @@ $\sigma_C$ & & Standard deviation in observed catch by gear\\
 \multicolumn{3}{l}{\textbf{Residuals}}\\
 $\delta_t$ & & Annual recruitment residual\\
 $\eta_t$ & & Residual error in predicted catch\\
-\multicolumn{3}{l}{\textbf{Fixed Growth \& maturity parameters}}\\
+\multicolumn{3}{l}{\textbf{Fixed growth and maturity parameters}}\\
 $l_{\infty s}$ & & Asymptotic length in mm for sex $s$\\
 $\acute{k}_s$ & & Brody growth coefficient for sex $s$\\
 $t_{o s}$ & & Theoretical age at zero length for sex $s$\\
