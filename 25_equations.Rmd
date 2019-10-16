@@ -5,7 +5,7 @@ These equations will not be included in the final document.
 
 \begin{table}[!h]
 \centering
-\caption{\label{tab:variables} Description of symbols and constants in the
+\caption{\label{tab:variables}Description of symbols and constants in the
 Pacific Herring statistical catch-age model.}
 \begin{tabular}{lll}
 \toprule
@@ -59,27 +59,18 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 \FloatBarrier
 \begin{table}[!h]
 \centering
-\caption{\label{tab:steady-state-model} Steady-state age-structured model assuming unequal vulnerability-at-age, age-specific fecundity, and Beverton-Holt recruitment.}
+\caption{\label{tab:steady-state-model}Pacific Herring steady-state age-structured model assuming unequal vulnerability-at-age, age-specific fecundity, and Beverton-Holt recruitment.}
 \begin{tabular}{l}
 \hline \\
 \vbox{\begin{center}\bf{Parameters}\end{center}\vspace{-1ex}} \\
 \vbox{\begin{equation} \Theta = (R_o,h,M)\,; \ \ \ R_o>0; \ \ \ 0.2 \leq h < 1.0; \ \ \ M > 0 \label{eq:df1} \end{equation}} \\
 \vbox{\begin{equation} \Phi = (l_{\infty,s},\acute{k}_s, t_{o,s},\acute{a}_s,\acute{b}_s,\dot{a}_s,\dot{\gamma}_s,\hat{a}_k,\hat{\gamma}_k) \label{eq:df2} \end{equation}} \\
-\\
-\vbox{\begin{center}\bf{Age-schedule information}\end{center}\vspace{-3ex}}
-\\
-\\
+\vbox{\begin{center}\bf{Age-schedule information}\end{center}\vspace{-1ex}}\\
 \vbox{\begin{equation} l_{a,s}=l_{}\left(1-e^{\left(-k_s\left(a-t_{o,s}\right)\right)}\right) \label{eq:df3} \end{equation}} \\
 \vbox{\begin{equation} w_{a,s}=\acute{a}_s(l_{a,s})^{\acute{b}_s} \label{eq:df4} \end{equation}} \\
-\\
 \vbox{\begin{equation} v_a=\left(1+e^{\left(\frac{-(\hat{a}-a)}{\hat{\gamma}}\right)}\right)^{-1} \label{eq:df5} \end{equation}} \\
-\\
 \vbox{\begin{equation} f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}{\dot{\gamma}_s}\right)}\right)^{-1} \label{eq:df6} \end{equation}} \\
-\\
-\\
-\vbox{\begin{center}\bf{Survivorship}\end{center}}
-\\
-\\
+\vbox{\begin{center}\bf{Survivorship}\end{center}\vspace{-1ex}} \\
 \vbox{\begin{equation} \iota_a = \begin{cases}
 \frac{1}{S}, & a = 1 \\
 \iota_{a-1}e^{-M}, & a > 1 \\
@@ -87,7 +78,6 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 \end{cases}
 \label{eq:df7}
 \end{equation}} \\
-\vspace{4ex} \\
 \vbox{\begin{equation} \iota_a = \begin{cases}
 \frac{1}{S}, & a = 1 \\
 \hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}, & a > 1 \\
@@ -95,34 +85,24 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 \end{cases}
 \label{eq:df8}
 \end{equation}} \\
-\\
-\\
-\vbox{\begin{center}\bf{Incidence functions}\end{center}} \\
-\\
-\\
+\vbox{\begin{center}\bf{Incidence functions}\end{center}\vspace{-1ex}} \\
 \vbox{\begin{equation} \phi_E=\sum_{s=1}^S\sum_{a=1}^\infty \iota_a f_{a,s},\ \ \ \ \ \ \ \ \
 \phi_e=\sum_{s=1}^S\sum_{a=1}^\infty \hat{\iota}_{a,s} f_{a,s}
 \label{eq:df9}
 \end{equation}} \\
-\vspace{2ex} \\
 \vbox{\begin{equation} \phi_B=\sum_{s=1}^S\sum_{a=1}^\infty \iota_a w_{a,s} v_{a,s},\ \ \
 \phi_b=\sum_{s=1}^S\sum_{a=1}^\infty \hat{\iota}_{as} w_{a,s} v_{a,s}
 \label{eq:df10}
 \end{equation}} \\
-\vspace{2ex} \\
 \vbox{\begin{equation} \phi_q=\sum_{s=1}^S\sum_{a=1}^\infty
 \frac{ \hat{\iota}_{a,s} w_{a,s} v_{a,s}}{M+F_ev_{a,s}}
 \left(1-e^{(-M-F_ev_{a,s})}\right)
 \label{eq:df11}
 \end{equation}} \\
-\vspace{1ex} \\
-\vbox{\begin{center}\bf{Steady-state conditions}\end{center}\vspace{-4ex}} \\
+\vbox{\begin{center}\bf{Steady-state conditions}\end{center}\vspace{-1ex}} \\
 \vbox{\begin{equation} B_o=R_o\phi_B \label{eq:df12} \end{equation}} \\
-\\
-%% % For the next equation, if using Ricker, use:
-%% \vbox{\begin{equation} R_e=R_o \dfrac{\ln(\kappa)-\ln(\phi_E/\phi_e)}{\ln(\kappa)}\ \ \ (Ricker) \label{eq:df13} \end{equation}} \\
-%% % If using Beverton Holt, use:
-%% \vbox{\begin{equation} R_e=R_o \dfrac{\kappa-\phi_E/\phi_e}{\kappa-1} \label{df13} \end{equation}} \\
+% If using Beverton Holt, use:
+% \vbox{\begin{equation} R_e=R_o \dfrac{\kappa-\phi_E/\phi_e}{\kappa-1} \label{df13} \end{equation}} \\
 \vbox{\begin{equation} \kappa=\frac{4h}{1-h} \label{eq:df13} \end{equation}} \\[2.5ex]
 \vbox{\begin{equation} R_e=R_o \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}\ \ \ (Beverton-Holt) \label{eq:df14} \end{equation}}\\
 \vbox{\begin{equation} C_e=F_e R_e \phi_q \label{eq:df15} \end{equation}} \\
@@ -133,43 +113,23 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 \FloatBarrier
 \begin{table}[!h]
 \centering
-\caption{\label{tab:catch-age-model} Statistical catch-age model using Baranov catch.}
+\caption{\label{tab:catch-age-model} Pacific herring statistical catch-age model using Baranov catch.}
 \begin{tabular}{l}
 \hline \\
-\vbox{\begin{center}\bf{Estimated parameters}\end{center}\vspace{-1ex}}
-\\
-\\
+\vbox{\begin{center}\bf{Estimated parameters}\end{center}\vspace{-1ex}}\\
 \vbox{\begin{equation} \Theta= (R_0,h,M,\overline{R},\overline{R}_{init},\vartheta^2,\rho,\Gamma_{k,t},\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\{\omega_{init,t}\}_{t=\acute{t}-A}^{t=\acute{t}-1})  \label{eq:df16} \end{equation}} \\
-\\
 \vbox{\begin{equation} \sigma=\sqrt{\rho}\vartheta, \;  \;  \; \; \tau=\sqrt{(1-\rho)}\vartheta \label{eq:df17} \end{equation}} \\
-\vspace{2ex}
-\\
-\vbox{\begin{center}\bf{Unobserved states}\end{center}\vspace{-4ex}} \\
-\\
+\vbox{\begin{center}\bf{Unobserved states}\end{center}\vspace{-1ex}} \\
 \vbox{\begin{equation} N_{t,a,s},\; B_t,s,\; Z_{t,a,s}  \label{eq:df18} \end{equation}} \\
-\vspace{2ex} \\
-\vbox{\begin{center}\bf{Initial states}\end{center}\vspace{-4ex}}
-\\
-\\
-\\
+\vbox{\begin{center}\bf{Initial states}\end{center}\vspace{-1ex}} \\
 \vbox{\begin{equation} N_{t,a,s}=\frac{1}{S}\overline{R}_{init}e^{\omega_{init,t}}e^{-M(a-1)};\ \ \ (\acute{t}-A)<t<1;\ \ \ 2\leq a \leq A  \label{eq:df19} \end{equation}} \\
-\\
 \vbox{\begin{equation} N_{t,a,s}=\frac{1}{S}\bar{R}e^{\omega_{t}};\ \ \ 1\leq t\leq T;\ \ \ a=1 \label{eq:df20} \end{equation}} \\
-\\
-\\
 \vbox{\begin{equation} v_{k,a}= \frac{1}{1+e^{-\frac{\left(a - \hat{a}_k\right)}{\hat{\gamma}_k}}} \label{eq:df21} \end{equation}} \\
-\\
 \vbox{\begin{equation}  F_{k,t}=e^{\Gamma_{k,t}} \label{eq:df22} \end{equation}} \\
-\\
-\vbox{\begin{center}\bf{State dynamics ($t>1$)}\end{center}\vspace{-4ex}} \\
-\\
-\\
+\vbox{\begin{center}\bf{State dynamics ($t>1$)}\end{center}\vspace{-1ex}} \\
 \vbox{\begin{equation}  B_{t,s}=\sum_a N_{t,a,s}f_{a,s} \label{eq:df23} \end{equation}} \\
-\\
-\vbox{\begin{equation}  Z_{t,a,s}=M+\sum_k F_{k,t} v_{k,t,a,s}  \label{eq:df24} \end{equation}} \\[2ex]
-\\
+\vbox{\begin{equation}  Z_{t,a,s}=M+\sum_k F_{k,t} v_{k,t,a,s}  \label{eq:df24} \end{equation}} \\
 \vbox{\begin{equation} \hat{C}_{k,t}=\sum _ s\sum _ a\frac {N_{{t,a,s}}w_{{a,s}}F_{k,t} v_{{k,t,a,s}} ( 1-{e^{-Z_{t,a,s}}} ) }{Z_{t,a,s}}^{\eta_t}  \label{eq:df25} \end{equation}} \\
-\vspace{4ex} \\
 \vbox{\begin{equation} N_{t,a,s} = \begin{cases}
            \frac{s_oE_{t-1}}{1+\beta E_{t-1}} e^{(\omega_t-0.5\tau^2)} & a=1 \\
            N_{t-1,a-1,s} e^{(-Z_{t-1,a-1,s})} &a>1 \\
@@ -177,11 +137,8 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
                       \end{cases}
        \label{eq:df26}
        \end{equation}} \\
-\\
-\vbox{\begin{center}\bf{Recruitment model}\end{center}\vspace{-4ex}} \\
-\\
-\\
-\vbox{\begin{equation} R_t = \frac{s_oB_{t-k}}{1+\beta B_{t-k}}e^{\delta_{t}-0.5\tau^2}\ \ \ (Beverton-Holt) \label{eq:df27} \end{equation}} \\
+\vbox{\begin{center}\bf{Recruitment model}\end{center}\vspace{-1ex}} \\
+\vbox{\begin{equation} R_t = \frac{s_oB_{t-k}}{1+\beta B_{t-k}}e^{\delta_{t}-0.5\tau^2}\ \ \ (\text{Beverton-Holt}) \label{eq:df27} \end{equation}} \\
 \end{tabular}
 \end{table}
 \FloatBarrier
