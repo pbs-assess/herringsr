@@ -430,7 +430,7 @@ avoiding fishery closures and encouraging stock growth as more is learned about 
 
 In the absence of fishing, spawning biomass in 2020 is forecast at `r f(sog_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\mli{SB}_0$ with `r f(sog_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
-Harvest recommendations for SoG stock in 2018/19 were provided by application of an MP that utilizes stock assessment estimates of
+Harvest recommendations for SoG stock in 2018/19 were provided by application of a MP that utilizes stock assessment estimates of
 forecast spawning biomass and 
 operational control points at $0.3\mli{SB}_0$ and $0.6\mli{SB}_0$,
 with a 20% target harvest rate and
