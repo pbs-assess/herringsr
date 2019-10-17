@@ -45,7 +45,7 @@ this showed parameter estimates and biomass trajectories associated with the str
 Other adjustments were made to improve computational efficiency and update input data.
 
 A Bayesian framework was used to estimate time series of spawning biomass, instantaneous natural mortality, and age-2 recruitment from `r minor_start_yr` to `r minor_end_yr`.
-Advice to managers for the major SARs includes posterior estimates of current stock status ($\mli{SB}_{`r minor_end_yr`}$), spawning biomass in `r assess_yr + 1` assuming no catch ($\mli{SB}_{`r assess_yr + 1`}$), and stock status relative to the LRP of $0.3\mli{SB}_0$.
+Advice to managers for the major SARs includes posterior estimates of current stock status ($\mli{SB}_{`r minor_end_yr`}$), stock status relative to the LRP of $0.3\mli{SB}_0$, and spawning biomass in `r assess_yr + 1` assuming no catch ($\mli{SB}_{`r assess_yr + 1`}$). The projected spawning biomass is based on the current year's recruitment deviations from average (using a Beverton-Holt stock-recruit model) and estimated natural mortality and weight-at-age, both averaged over the most recent 5-years.
 The Markov chain Monte Carlo (MCMC) sampling procedure follows the same method implemented by @cleary2018.
 
 @cleary2018 reported results from two SCA model fits that differed in assumptions about dive survey (from `r new_surv_yr` to `r minor_end_yr`) catchability $q_2$:
