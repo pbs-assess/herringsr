@@ -71,7 +71,6 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 
 \begin{equation}\label{eq:df10}
 \phi_B = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a w_{a,s} v_{a,s}, \qquad
-\phi_b = \sum_{s=1}^S\sum_{a=1}^\infty \hat{\iota}_{as} w_{a,s} v_{a,s}
 \end{equation}
 
 \begin{equation}\label{eq:df11}
