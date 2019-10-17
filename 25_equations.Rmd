@@ -11,11 +11,10 @@ Pacific Herring steady-state age-structured model assuming unequal vulnerability
 ### Parameters
 
 \begin{equation}\label{eq:df1}
-\Theta = (R_o,h,M); \enspace
-R_o > 0, \enspace
-0.2 \leq h < 1.0, \enspace
-M > 0  
+\Theta = (R_o,h,M)
 \end{equation}
+
+where $R_o > 0$, $0.2 \leq h < 1.0$, and $M > 0$.  
 
 \begin{equation}\label{eq:df2}
 \Phi = (l_{\infty,s},\acute{k}_s,
@@ -126,16 +125,16 @@ Z_{t,a,s}
 ### Initial states
 
 \begin{equation}\label{eq:df19}
-N_{t,a,s} = \frac{1}{S}\overline{R}_{init}e^{\omega_{init,t}}e^{-M(a-1)}; \enspace
-(\acute{t}-A)<t<1; \enspace
-2 \leq a \leq A   
+N_{t,a,s} = \frac{1}{S}\overline{R}_{init}e^{\omega_{init,t}}e^{-M(a-1)}
 \end{equation}
+
+where $(\acute{t}-A) < t < 1$, and $2 \leq a \leq A$.   
  
 \begin{equation}\label{eq:df20}
-N_{t,a,s} = \frac{1}{S}\bar{R}e^{\omega_{t}}; \enspace
-1 \leq t \leq T, \enspace
-a = 1  
+N_{t,a,s} = \frac{1}{S}\bar{R}e^{\omega_{t}}
 \end{equation}
+
+where $1 \leq t \leq T$, and $a = 1$.  
 
 \begin{equation}\label{eq:df21}
 v_{k,a} = \frac{1}{1+e^{-\frac{\left(a - \hat{a}_k\right)}{\hat{\gamma}_k}}}  
