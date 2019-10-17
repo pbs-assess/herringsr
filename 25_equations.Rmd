@@ -4,9 +4,12 @@ This section describes the equations used in the Pacific Herring statistical cat
 Symbols and constants are described in Table \@ref(tab:variables).
 These equations will not be included in the final document.
 
-## Steady state model
+## Steady-state model
 
-Pacific Herring steady-state age-structured model assuming unequal vulnerability-at-age, age-specific fecundity, and Beverton-Holt recruitment.
+Pacific Herring steady-state age-structured model assuming
+unequal vulnerability-at-age,
+age-specific fecundity, and
+Beverton-Holt recruitment.
 
 ### Parameters
 
@@ -17,14 +20,14 @@ Pacific Herring steady-state age-structured model assuming unequal vulnerability
 where $R_o > 0$, $0.2 \leq h < 1.0$, and $M > 0$.  
 
 \begin{equation}\label{eq:df2}
-\Phi = (l_{\infty,s},\acute{k}_s,
-t_{o,s},\acute{a}_s,\acute{b}_s,\dot{a}_s,\dot{\gamma}_s,\hat{a}_k,\hat{\gamma}_k)
+\Phi = \left(l_{\infty,s},\acute{k}_s,t_{o,s},\acute{a}_s,
+\acute{b}_s,\dot{a}_s,\dot{\gamma}_s,\hat{a}_k,\hat{\gamma}_k\right)
 \end{equation}
 
 ### Age-schedule information
 
 \begin{equation}\label{eq:df3}
-l_{a,s}=l_{}\left(1-e^{\left(-k_s\left(a-t_{o,s}\right)\right)}\right)
+l_{a,s} = l_{}\left(1-e^{\left(-k_s\left(a-t_{o,s}\right)\right)}\right)
 \end{equation}
 
 \begin{equation}\label{eq:df4}
@@ -62,12 +65,12 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 ### Incidence functions
 
 \begin{equation}\label{eq:df9}
-\phi_E = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a f_{a,s}, \enspace
+\phi_E = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a f_{a,s}, \qquad
 \phi_e = \sum_{s=1}^S\sum_{a=1}^\infty \hat{\iota}_{a,s} f_{a,s}
 \end{equation}
 
 \begin{equation}\label{eq:df10}
-\phi_B = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a w_{a,s} v_{a,s}, \enspace
+\phi_B = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a w_{a,s} v_{a,s}, \qquad
 \phi_b = \sum_{s=1}^S\sum_{a=1}^\infty \hat{\iota}_{as} w_{a,s} v_{a,s}
 \end{equation}
 
@@ -87,7 +90,7 @@ B_o = R_o\phi_B
 \kappa=\frac{4h}{1-h}
 \end{equation}
 
-Beverton-Holt:
+Beverton-Holt recruitment
 
 \begin{equation}\label{eq:df14}
 R_e = R_o \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
@@ -110,15 +113,15 @@ Pacific herring statistical catch-age model using Baranov catch.
 \end{equation}
 
 \begin{equation}\label{eq:df17}
-\sigma = \sqrt{\rho}\vartheta, \enspace
-\tau = \sqrt{(1-\rho)}\vartheta  
+\sigma = \sqrt{\rho}\vartheta, \qquad
+\tau = \sqrt{\left(1-\rho\right)}\vartheta  
 \end{equation}
 
 ### Unobserved states
 
 \begin{equation}\label{eq:df18}
-N_{t,a,s}, \enspace
-B_t,s, \enspace
+N_{t,a,s}, \qquad
+B_t,s, \qquad
 Z_{t,a,s}
 \end{equation}
 
@@ -155,15 +158,16 @@ Z_{t,a,s} = M+\sum_k F_{k,t} v_{k,t,a,s}
 \end{equation}
 
 \begin{equation}\label{eq:df25}
-\hat{C}_{k,t} = \sum_s \sum_a \frac {N_{{t,a,s}}w_{{a,s}}F_{k,t} v_{{k,t,a,s}} ( 1-{e^{-Z_{t,a,s}}} ) }{Z_{t,a,s}}^{\eta_t}
+\hat{C}_{k,t} = \sum_s \sum_a \frac {N_{{t,a,s}}w_{{a,s}}F_{k,t}
+v_{{k,t,a,s}} \left( 1-{e^{-Z_{t,a,s}}} \right) }{Z_{t,a,s}}^{\eta_t}
 \end{equation}
 
 \begin{equation}\label{eq:df26}
 N_{t,a,s} = 
 \begin{cases}
-\frac{s_oE_{t-1}}{1+\beta E_{t-1}} e^{(\omega_t-0.5\tau^2)}, & a=1 \\
-N_{t-1,a-1,s} e^{(-Z_{t-1,a-1,s})}, &a>1 \\
-N_{t-1,a,s} e^{(-Z_{t-1,a,s})}, & a=A \\
+\frac{s_oE_{t-1}}{1+\beta E_{t-1}} e^{\left(\omega_t-0.5\tau^2\right)}, & a=1 \\
+N_{t-1,a-1,s} e^{\left(-Z_{t-1,a-1,s}\right)}, &a>1 \\
+N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A \\
 \end{cases}
 \end{equation}
 
