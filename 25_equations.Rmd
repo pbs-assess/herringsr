@@ -14,14 +14,14 @@ Beverton-Holt recruitment.
 ### Parameters
 
 \begin{equation}\label{eq:df1}
-\Theta = (R_o,h,M)
+\Theta = (R_o,\,h,\,M)
 \end{equation}
 
 where $R_o > 0$, $0.2 \leq h < 1.0$, and $M > 0$.  
 
 \begin{equation}\label{eq:df2}
-\Phi = \left(l_{\infty,s},\acute{k}_s,t_{o,s},\acute{a}_s,
-\acute{b}_s,\dot{a}_s,\dot{\gamma}_s,\hat{a}_k,\hat{\gamma}_k\right)
+\Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{o,s},\,\acute{a}_s,\,
+\acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right)
 \end{equation}
 
 ### Age-schedule information
@@ -107,8 +107,8 @@ Pacific herring statistical catch-age model using Baranov catch.
 ### Estimated parameters
 
 \begin{equation}\label{eq:df16}
-\Theta = (R_0,h,M,\overline{R},\overline{R}_{init},\vartheta^2,\rho,
-\Gamma_{k,t},\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},
+\Theta = (R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{init},\,\vartheta^2,\,\rho,\,
+\Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
 \{\omega_{init,t}\}_{t=\acute{t}-A}^{t=\acute{t}-1})
 \end{equation}
 
