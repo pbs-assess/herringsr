@@ -6,6 +6,16 @@ These equations will not be included in the final document.
 
 ## Steady-state model
 
+For the steady-state conditions represented below, we assume the parameter vector Theta in Eq. 1  is unknown and would be estimated by fitting ISCAM to data. For a given set of growth parameters and maturity-at-age parameters defined by Phi in Eq. 2, growth is assumed to follow von Bertalanffy (Eq. 3), mean weight-at-age is given by the allometric relationship in Eq. 4, and
+the age-specific vulnerability is given by an age-based logistic function (Eq. 5). The terms vulnerability and selectivity are used interchangeably throughout this document, although, technically, selectivity refers to the fishing gear, while vulnerability refers to all processes affecting the availability of fish to the fishery. Selectivity parameters can be fixed or estimated.
+Survivorship for unfished and fished populations is defined by Eq. 7 and 8, respectively.
+It is assumed that all individuals ages A and older (i.e., the plus group) have the same total mortality rate. The incidence functions refer to the life-time or per-recruit quantities such as spawning biomass per recruit (phi_E, Eq. 9) or vulnerable biomass per recruit (phi_B, Eq. 10).
+Note that upper and lower case subscripts denote unfished and fished conditions, respectively.
+Unfished spawning biomass is given by Eq. 11 and the recruitment compensation ratio (Myers et al., 1999) is given by Eq. 12. The steady-state equilibrium recruitment for a given fishing
+mortality rate Fe is given by Eq. 13. Note that we assume that recruitment follows a Beverton-Holt stock recruitment model of the form shown in Eq. 14, where the maximum juvenile survival rate so is given by:
+
+SH_Still updating
+
 Pacific Herring steady-state age-structured model assuming
 unequal vulnerability-at-age,
 age-specific fecundity, and
@@ -121,7 +131,7 @@ Pacific herring statistical catch-age model using Baranov catch.
 
 \begin{equation}\label{eq:df18}
 N_{t,a,s}, \qquad
-B_t,s, \qquad
+SB_t,s, \qquad
 Z_{t,a,s}
 \end{equation}
 
@@ -150,7 +160,7 @@ F_{k,t} = e^{\Gamma_{k,t}}
 ### State dynamics ($t>1$)
 
 \begin{equation}\label{eq:df23}
-B_{t,s} = \sum_a N_{t,a,s}f_{a,s}
+SB_{t,s} = \sum_a N_{t,a,s}f_{a,s}
 \end{equation}
 
 \begin{equation}\label{eq:df24}
@@ -174,7 +184,7 @@ N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A \\
 ### Beverton-Holt recruitment model
 
 \begin{equation}\label{eq:df27}
-R_t = \frac{s_oB_{t-k}}{1+\beta B_{t-k}}e^{\delta_{t}-0.5\tau^2}
+R_t = \frac{s_oSB_{t-k}}{1+\beta SB_{t-k}}e^{\delta_{t}-0.5\tau^2}
 \end{equation}
 
 \begin{table}[ht]
