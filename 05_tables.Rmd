@@ -36,7 +36,7 @@ total_landed_catch_table(major_catch_short,
                          longtable = FALSE)
 ```
 
-(ref:annual-sok-catch-cap) Total spawn-on-kelp harvest, reported as pounds of eggs on kelp, in the major stock assessment regions (SARs).
+(ref:annual-sok-catch-cap) Total spawn-on-kelp harvest, reported as pounds of Pacific Herring eggs on kelp, in the major stock assessment regions (SARs).
 Legend: Haida Gwaii (HG), Prince Rupert District (PRD), Central Coast (CC), Strait of Georgia (SoG), and West Coast of Vancouver Island (WCVI).
 Note: if present, 'WP' indicates that data are withheld due to privacy concerns.
 

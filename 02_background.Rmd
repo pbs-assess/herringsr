@@ -8,10 +8,16 @@ For the minor SARs, we present catch data, biological data, and spawn survey dat
 
 ## Description of the fishery
 
-At present, there are several Pacific Herring fisheries in BC. First Nations have priority access, after conservation, to fish for Food, Social, and Ceremonial (FSC) purposes.
-Commercial fishing opportunities consist of four directed fisheries: food and bait (FB), special use (SU), spawn-on-kelp (SOK) products, and roe herring. There is also a small recreational fishery.
+At present, there are several Pacific Herring fisheries in BC.
+First Nations have priority access, after conservation, to fish for Food, Social, and Ceremonial (FSC) purposes.
+Commercial fishing opportunities consist of four directed fisheries:
+food and bait (FB), special use (SU), spawn-on-kelp (SOK) products, and roe herring.
+There is also a small recreational fishery.
 
-First Nations fish for whole herring, herring roe, and herring eggs for FSC purposes. Whole herring are fished by seine, gillnet, rake, dip net, and jig. Herring eggs are collected as spawn on seaweed such as kelp, or spawn on set tree boughs. Indigenous harvest of herring for FSC purposes may occur coastwide where authorized by a communal license, and DFO will ensure Indigenous communities have priority access to the resource for FSC purposes.
+First Nations fish for whole herring, herring roe, and herring eggs for FSC purposes.
+Whole herring are fished by seine, gillnet, rake, dip net, and jig.
+Herring eggs are collected as spawn on seaweed such as kelp, or spawn on set tree boughs. 
+Indigenous harvest of herring for FSC purposes may occur coastwide where authorized by a communal license, and DFO will ensure Indigenous communities have priority access to the resource for FSC purposes.
 
 In addition, Treaty and aboriginal commercial fisheries may occur in some specific management regions. Four modern treaties (Nisga’a, Tsawwassen, Maa-nulth, and Tla’amin) have been ratified in British Columbia, and the agreement articulate a treaty right to FSC harvest of fish. On the West Coast of Vancouver Island, five Nuu-chah-nulth First Nations - Ahousaht, Ehattesaht, Hesquiaht, Mowachaht/Muchalaht, and Tla-o-qui-aht (the T’aaq-wiihak First Nations) - have aboriginal rights to fish for any species of fish, with the exception of Geoduck, within their Fishing Territories and to sell that fish. The Department has developed a 2019/20 Five Nations Multi-species Fishery Management Plan (FMP) in consultation with the Five Nations. On the Central Coast, Heiltsuk First Nation have an Aboriginal right to commercially fish herring SOK. The Heiltsuk currently hold nine SOK licenses in this area, and SOK is harvested using the preferred means of the Heiltsuk, which is open ponding. The Department and Heiltsuk are also committed to annual development of a Joint Fisheries Management Plan for Pacific Herring in the Central Coast.
 
