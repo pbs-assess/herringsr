@@ -82,7 +82,7 @@ french <- rmarkdown::metadata$output$`csasdown::sr_pdf`$french
 if(french){
   options(OutDec =  ",")
 }
-rebuild_rdata_model_files <- FALSE
+rebuild_rdata_model_files <- TRUE
 run_retrospectives <- FALSE
 retrospective_yrs <- 10
 models_dir <- here::here("models")
