@@ -19,12 +19,8 @@ Whole herring are fished by seine, gillnet, rake, dip net, and jig.
 Herring eggs are collected as spawn on seaweed such as kelp, or spawn on set tree boughs. 
 Indigenous harvest of herring for FSC purposes may occur coastwide where authorized by a communal license, and DFO will ensure Indigenous communities have priority access to the resource for FSC purposes.
 
+In addition, Treaty and aboriginal commercial fisheries may occur in some specific management regions. Four modern treaties (Nisga’a, Tsawwassen, Maa-nulth, and Tla’amin) have been ratified in British Columbia, and the agreement articulate a treaty right to FSC harvest of fish. On the West Coast of Vancouver Island, five Nuu-chah-nulth First Nations - Ahousaht, Ehattesaht, Hesquiaht, Mowachaht/Muchalaht, and Tla-o-qui-aht (the T’aaq-wiihak First Nations) - have aboriginal rights to fish for any species of fish, with the exception of Geoduck, within their Fishing Territories and to sell that fish. The Department has developed a 2019/20 Five Nations Multi-species Fishery Management Plan (FMP) in consultation with the Five Nations. On the Central Coast, Heiltsuk First Nation have an Aboriginal right to commercially fish herring SOK. The Heiltsuk currently hold nine SOK licenses in this area, and SOK is harvested using the preferred means of the Heiltsuk, which is open ponding. The Department and Heiltsuk are also committed to annual development of a Joint Fisheries Management Plan for Pacific Herring in the Central Coast.
 
-HERE
-
-
-At present, Pacific Herring fisheries in BC consist of commercial fishing opportunities for food and bait (FB), spawn-on-kelp (SOK) products, and roe herring.
-There are also opportunities for First Nations food, social, and ceremonial (FSC) fisheries, as well as recreational fishing.
 In `r this_season`, the primary Pacific Herring fisheries were seine roe and gillnet roe fisheries, with a combined coast wide catch of `r total_final_yr_roe_catch` tonnes (t).
 The FB seine fishery had a coast wide catch of `r total_final_yr_other_catch` t.
 The roe and FB fisheries only operated in SoG in `r this_season`.
@@ -33,17 +29,10 @@ The SOK fishery was operational in PRD and CC, and special use (SU) minor fisher
 A complete dockside monitoring program exists for all Pacific Herring commercial fisheries and the resulting validated catch data are included in the annual stock assessment process for all fisheries, except SOK.
 The SOK fishery is licenced based on validated pounds of SOK product (eggs on kelp),
 however these landings are not easily combined with catches of whole herring and are not currently incorporated in the stock assessment process.
+
 The exclusion of SOK fishery data from the annual stock assessment process was identified as a key uncertainty in the most recent CSAS review of the stock assessment framework [@cleary2018].
 Recommendations for addressing this uncertainty will require quantifying ponding mortality and removals (eggs) associated with SOK fisheries.
 Consideration of these uncertainties will also occur at a future stage in the MSE process.
-
-First Nations fish for whole herring, herring roe, and herring eggs for FSC purposes.
-Whole herring are fished by seine, gillnet, rake, dip net, and jig.
-Herring eggs are collected as spawn on seaweed such as kelp, or spawn on set tree boughs.
-Opportunities are provided in a manner that allows for harvest activity in all assessment regions.
-In addition, Treaty and aboriginal commercial fisheries may occur in some specific management regions.
-
-TODO: ADD HEILTSUK CONTEXT HERE
 
 ## Description of the stock assessment process
 
