@@ -313,8 +313,8 @@ The first MSE cycle introduced three hypotheses about future Pacific Herring nat
 3. $M$ is constant over time (conM).
 
 These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
-The DDM scenario was identified as the Reference OM scenario based on discussion at the July 2018 CSAS review process [@dfo2019c], while
-the DIM and conM scenarios were identified as Robustness OM scenarios.
+The DDM scenario was identified as the Reference OM scenario based on discussion at the July 2018 CSAS review process [@dfo2019c], while the DIM and conM scenarios were identified as Robustness OM scenarios. There is however  currently no correct scientifically supported methods for predicting the natural mortality and therefore all three scenarios are equally plausible. 
+
 Results presented here represent all three OM scenarios.
 
 Several lessons were learned from the analysis:
