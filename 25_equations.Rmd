@@ -128,7 +128,7 @@ Z_{t,a,s}
 ### Initial states
 
 \begin{equation}\label{eq:df19}
-N_{t,a,s} = \frac{1}{S}\overline{R}_{\mli{init}}e^{\omega_{\mli{init},t}}e^{-M(a-1)}
+N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M(a-1)}
 \end{equation}
 
 where $(\acute{t}-A) < t < 1$, and $2 \leq a \leq A$.   
