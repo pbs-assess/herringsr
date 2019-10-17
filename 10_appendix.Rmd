@@ -44,7 +44,8 @@ plot_spawn_ind(minor_surv,
 
 (ref:app-minor-survey-indices-tab-cap) Spawn index in tonnes of Pacific Herring in the minor stock assessment regions (SARs) from `r assess_yr-9` to `r assess_yr`.
 Legend: `r commify(minor_regions_full_parens)`.
-Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
+Notes: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$,
+and, if present, 'NA' indicates that data are not available.
 
 (ref:app-minor-survey-indices-tab-cap-french) Not yet translated.
 
