@@ -8,6 +8,16 @@ For the minor SARs, we present catch data, biological data, and spawn survey dat
 
 ## Description of the fishery
 
+At present, there are several Pacific Herring fisheries in BC. First Nations have priority access, after conservation, to fish for Food, Social, and Ceremonial (FSC) purposes.
+Commercial fishing opportunities consist of four directed fisheries: food and bait (FB), special use (SU), spawn-on-kelp (SOK) products, and roe herring. There is also a small recreational fishery.
+
+First Nations fish for whole herring, herring roe, and herring eggs for FSC purposes. Whole herring are fished by seine, gillnet, rake, dip net, and jig. Herring eggs are collected as spawn on seaweed such as kelp, or spawn on set tree boughs. Indigenous harvest of herring for FSC purposes may occur coastwide where authorized by a communal license, and DFO will ensure Indigenous communities have priority access to the resource for FSC purposes.
+
+
+
+HERE
+
+
 At present, Pacific Herring fisheries in BC consist of commercial fishing opportunities for food and bait (FB), spawn-on-kelp (SOK) products, and roe herring.
 There are also opportunities for First Nations food, social, and ceremonial (FSC) fisheries, as well as recreational fishing.
 In `r this_season`, the primary Pacific Herring fisheries were seine roe and gillnet roe fisheries, with a combined coast wide catch of `r total_final_yr_roe_catch` tonnes (t).
@@ -20,7 +30,7 @@ The SOK fishery is licenced based on validated pounds of SOK product (eggs on ke
 however these landings are not easily combined with catches of whole herring and are not currently incorporated in the stock assessment process.
 The exclusion of SOK fishery data from the annual stock assessment process was identified as a key uncertainty in the most recent CSAS review of the stock assessment framework [@cleary2018].
 Recommendations for addressing this uncertainty will require quantifying ponding mortality and removals (eggs) associated with SOK fisheries.
-Consideration of these uncertainties will occur at a future stage in the MSE process.
+Consideration of these uncertainties will also occur at a future stage in the MSE process.
 
 First Nations fish for whole herring, herring roe, and herring eggs for FSC purposes.
 Whole herring are fished by seine, gillnet, rake, dip net, and jig.
