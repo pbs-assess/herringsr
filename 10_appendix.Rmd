@@ -55,6 +55,5 @@ spawn_index_table(minor_surv_short,
                   cap = ifelse(french, "(ref:app-minor-survey-indices-tab-cap-french)",
                                "(ref:app-minor-survey-indices-tab-cap)"),
                   french,
-                  longtable = FALSE,
-                  placement = "ht")
+                  longtable = FALSE)
 ```
