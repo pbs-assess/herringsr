@@ -51,7 +51,7 @@ Statistical Areas, Sections, and Groups are not intended to represent sub-stock 
 
 First Nations observations are provided by First Nations representatives to describe local perspectives in their respective areas.
 
-//### Haida Gwaii - not provided in 2019
+<!-- ### Haida Gwaii - not provided in 2019 -->
 
 ### Prince Rupert District
 
