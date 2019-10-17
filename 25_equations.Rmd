@@ -107,9 +107,9 @@ Pacific herring statistical catch-age model using Baranov catch.
 ### Estimated parameters
 
 \begin{equation}\label{eq:df16}
-\Theta = (R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{init},\,\vartheta^2,\,\rho,\,
+\Theta = (R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,
 \Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
-\{\omega_{init,t}\}_{t=\acute{t}-A}^{t=\acute{t}-1})
+\{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1})
 \end{equation}
 
 \begin{equation}\label{eq:df17}
@@ -128,7 +128,7 @@ Z_{t,a,s}
 ### Initial states
 
 \begin{equation}\label{eq:df19}
-N_{t,a,s} = \frac{1}{S}\overline{R}_{init}e^{\omega_{init,t}}e^{-M(a-1)}
+N_{t,a,s} = \frac{1}{S}\overline{R}_{\mli{init}}e^{\omega_{\mli{init},t}}e^{-M(a-1)}
 \end{equation}
 
 where $(\acute{t}-A) < t < 1$, and $2 \leq a \leq A$.   
@@ -207,7 +207,7 @@ $M_s$ & & Instantaneous natural mortality rate\\
 $\hat{a}_k, \hat{\gamma}_k$ & & Selectivity parameters for gear $k$\\
 $\Gamma_{k,t}$ & & Logarithm of the instantaneous fishing mortality for gear $k$ in year $t$\\
 $\omega_t$ & & Age-$\acute{a}$ deviates from $\bar{R}$ for years $\acute{t}$ to $T$\\
-$\omega_{\mli{init},t}$ & & Age-$\acute{a}$ deviates from $\bar{R}_{init}$ for year $\acute{t}$\\
+$\omega_{\mli{init},t}$ & & Age-$\acute{a}$ deviates from $\bar{R}_{\mli{init}}$ for year $\acute{t}$\\
 $q_s$ & & Catchability parameter for survey $k$\\
 $\rho$ & & Fraction of the total variance associated with observation error\\
 $\vartheta^2$ & & Total precision (inverse of variance) of the total error\\
