@@ -157,6 +157,10 @@ minor_surv <- get_surv_ind(minor_models,
                            minor_regions_full,
                            surv_type)
 
+minor_surv_short <- get_surv_ind(minor_models,
+                                 minor_regions_short,
+                                 surv_type)
+
 # Input catch for table 1
 inp_catch <- read_csv(here::here("data/input-data.csv"))
 
