@@ -1,10 +1,35 @@
 # Equations
+# Model Description
+
+The Pacific Herring stock assessment is conducted using the Integrated Statistical Catch Age Model (ISCAM), developed by S. Martell (Martell et al., 2012). 
+ISCAM uses a statistical catch-at-age model implemented in a Bayesian estimation framework and is written in AD Model Builder. The original source code and documentation for both are available online. 
+
+This section contains the documentation in mathematical form of the underlying ISCAM
+age-structured model, its steady state version that is used to calculate reference points, the
+observation models used in predicting observations, and the components of the objective
+function that formulate the statistical criterion used to estimate model parameters. 
+A documented list of symbols used in model equations is given in Table 34. 
+The documentation presented here is a revised version of the ISCAM user guide available online. Much of the text and many of the
+equations have been taken directly from the original ISCAM user guide.
+Note that all the model equations are presented for a sex structured model with S sexes. Models
+can therefore be constructed with data for females only, for males and females, or with unsexed
+data.
+
+The model documentation describes all features of the ISCAM catch-age model, some of which
+are not implemented for Pacific Herring. 
+The following list describes modifications specific to the assessment of Pacific Herring:
+1. Data are unsexed, S = 1
+2. Total mortality is constant across ages, Zt;a=Zt
+3. Fecundity and maturity are synonymous and used interchangeably
+4. 100% of Zt occurs prior to spawning
+5. Unfished spawning biomass is represented as B0 in the Model Description, and as SB0 in
+the main text.
 
 This section describes the equations used in the Pacific Herring statistical catch-age (SCA) model.
 Symbols and constants are described in Table \@ref(tab:variables).
 These equations will not be included in the final document.
 
-## Steady-state model age structured model
+## Steady-state age structured model
 
 Pacific Herring steady-state age-structured model assuming
 unequal vulnerability-at-age,
@@ -27,7 +52,7 @@ For a given set of growth-, and maturity-at-age parameters $\Phi$
 
 ### Age-schedule information
 
-Growth is assumed to follow the von-Bertalanffy growth model:
+The observed length at age l_{a,s} is modeled using the Von-Bertalanffy growth model:
 \begin{equation}\label{eq:l_as}
 l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right),
 \end{equation}
