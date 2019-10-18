@@ -129,7 +129,7 @@ Pacific herring statistical catch-age model using Baranov catch.
 
 \begin{equation}\label{eq:df16}
 \Theta = (R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,
-\Gamma_{k,t},\,\omega_t_{\acute{t}=1-A}^{\acute{t}=T},\,
+\Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
 \{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1})
 \end{equation}
 
