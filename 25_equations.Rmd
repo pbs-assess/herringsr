@@ -22,7 +22,7 @@ where $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$.
 For a given set of growth parameters and maturity-at-age parameters defined by Phi in Eq. 2, 
 
 \begin{equation}\label{eq:df2}
-\Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{o,s},\,\acute{a}_s,\,
+\Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,
 \acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right)
 \end{equation}
 
@@ -30,7 +30,7 @@ For a given set of growth parameters and maturity-at-age parameters defined by P
 growth is assumed to follow von Bertalanffy (Eq. 3),
 
 \begin{equation}\label{eq:df3}
-l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{o,s}\right)\right)}\right)
+l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right)
 \end{equation}
 
 mean weight-at-age is given by the allometric relationship in Eq. 4, and
@@ -242,9 +242,9 @@ $\sigma_C$ & & Standard deviation in observed catch by gear\\
 $\delta_t$ & & Annual recruitment residual\\
 $\eta_t$ & & Residual error in predicted catch\\
 \multicolumn{3}{l}{\textbf{Fixed growth and maturity parameters}}\\
-$l_{\infty s}$ & & Asymptotic length in millimetres for sex $s$\\
+$l_{\infty,s}$ & & Asymptotic length in millimetres for sex $s$\\
 $\acute{k}_s$ & & Brody growth coefficient for sex $s$\\
-$t_{o s}$ & & Theoretical age at zero length for sex $s$\\
+$t_{0,s}$ & & Theoretical age at zero length for sex $s$\\
 $\acute{a}_s$ & & Scalar in length-weight allometry for sex $s$\\
 $\acute{b}_s$ & & Power parameter in length-weight allometry for sex $s$\\
 $\dot{a}_s$ & & Age at 50\% maturity for sex $s$\\
