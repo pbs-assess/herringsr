@@ -100,8 +100,8 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \left(1-e^{\left(-M-F_ev_{a,s}\right)}\right)
 \end{equation}
 
-\begin{equation}\label{eq:SB_0}
-\mli{SB}_0 = R_0\phi_B
+\begin{equation}\label{eq:B_0}
+\mli{B}_0 = R_0\phi_B
 \end{equation}
 
 \begin{equation}\label{eq:kappa}
@@ -153,8 +153,8 @@ Pacific herring statistical catch-age model using Baranov catch.
 N_{t,a,s}
 \end{equation}
 
-\begin{equation}\label{eq:SB_ts_unobs}
-\mli{SB}_{t,s}
+\begin{equation}\label{eq:B_ts_unobs}
+\mli{B}_{t,s}
 \end{equation}
 
 \begin{equation}\label{eq:Z_tas_unobs}
@@ -185,8 +185,8 @@ F_{k,t} = e^{\Gamma_{k,t}}
 
 ### State dynamics ($t>1$)
 
-\begin{equation}\label{eq:SB_ts_state}
-\mli{SB}_{t,s} = \sum_a N_{t,a,s}f_{a,s}
+\begin{equation}\label{eq:B_ts_state}
+\mli{B}_{t,s} = \sum_a N_{t,a,s}f_{a,s}
 \end{equation}
 
 \begin{equation}\label{eq:Z_tas_state}
@@ -209,7 +209,7 @@ N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A\\
 ### Beverton-Holt recruitment model
 
 \begin{equation}\label{eq:R_t}
-R_t = \frac{\alpha\mli{SB}_{t-k}}{1+\beta \mli{SB}_{t-k}}e^{\delta_{t}-0.5\tau^2}
+R_t = \frac{\alpha B_{t-k}}{1+\beta B_{t-k}}e^{\delta_{t}-0.5\tau^2}
 \end{equation}
 
 \begin{table}[ht]
