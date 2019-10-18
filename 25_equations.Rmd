@@ -229,7 +229,7 @@ $\hat{a}_k, \hat{\gamma}_k$ & & Selectivity parameters for gear $k$\\
 $\Gamma_{k,t}$ & & Logarithm of the instantaneous fishing mortality for gear $k$ in year $t$\\
 $\omega_t$ & & Age-$\acute{a}$ deviates from $\bar{R}$ for years $\acute{t}$ to $T$\\
 $\omega_{\mli{init},t}$ & & Age-$\acute{a}$ deviates from $\bar{R}_\mli{init}$ for year $\acute{t}$\\
-$q_s$ & & Catchability parameter for survey $k$\\
+$q_k$ & & Catchability parameter for survey $k$\\
 $\rho$ & & Fraction of the total variance associated with observation error\\
 $\vartheta^2$ & & Total precision (inverse of variance) of the total error\\
 \multicolumn{3}{l}{\textbf{Standard deviations}}\\
