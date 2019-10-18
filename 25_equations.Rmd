@@ -236,7 +236,7 @@ $\vartheta^2$ & & Total precision (inverse of variance) of the total error\\
 \multicolumn{3}{l}{\textbf{Standard deviations}}\\
 $\sigma$ & & Standard deviation for observation errors in survey index\\
 $\tau$ & & Standard deviation in process errors (recruitment deviations)\\
-$\sigma_C_k$ & & Standard deviation in observed catch for gear $k$\\
+$\sigma_{C,k}$ & & Standard deviation in observed catch for gear $k$\\
 \multicolumn{3}{l}{\textbf{Residuals}}\\
 $\delta_t$ & & Recruitment residual in year $t$\\
 $\eta_t$ & & Residual error in predicted catch in year $t$\\
