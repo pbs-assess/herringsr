@@ -18,7 +18,7 @@ For the steady-state condition of the model, we assume the parameter vector
 \Theta = \left(R_0,\,h,\,M\right)
 \end{equation}
 is unknown, and can be estimated by fitting the SCA model to data.
-Note the following restrictions: $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$.  
+Note the following restrictions: $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$.
 For a given set of growth maturity-at-age parameters $\Phi$ 
 \begin{equation}\label{eq:df2}
 \Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,
