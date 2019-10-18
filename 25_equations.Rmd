@@ -217,7 +217,7 @@ $\acute{a},\,A$ & $`r major_models[[1]]$dat$start.age`$, $`r major_models[[1]]$d
 $\acute{t},\,T$ & $`r major_models[[1]]$dat$start.yr`$, $`r major_models[[1]]$dat$end.yr`$ & First and last year of catch data\\
 $K$ & $`r major_models[[1]]$dat$num.gears`$ & Number of gears including survey gears\\
 \multicolumn{3}{l}{\textbf{Observations (data)}}\\
-$C_{k,t}$ & & Catch in weight by gear $k$ in year $t$\\
+$C_{k,t}$ & & Catch in weight for gear $k$ in year $t$\\
 $I_{k,t}$ & & Relative abundance index for gear $k$ in year $t$\\
 \multicolumn{3}{l}{\textbf{Estimated parameters}}\\
 $R_0$ & & Age-$\acute{a}$ recruits in unfished conditions\\
@@ -229,7 +229,7 @@ $\hat{a}_k$ & & Selectivity parameter for gear $k$\\
 $\hat{\gamma}_k$ & & Selectivity parameter for gear $k$\\
 $\Gamma_{k,t}$ & & Logarithm of the instantaneous fishing mortality for gear $k$ in year $t$\\
 $\omega_t$ & & Age-$\acute{a}$ deviates from $\bar{R}$ for years $\acute{t}$ to $T$\\
-$\omega_{\mli{init},t}$ & & Age-$\acute{a}$ deviates from $\bar{R}_\mli{init}$ for year $\acute{t}$\\
+$\omega_{\mli{init},t}$ & & Age-$\acute{a}$ deviates from $\bar{R}_\mli{init}$ in year $\acute{t}$\\
 $q_k$ & & Catchability parameter for survey $k$\\
 $\rho$ & & Fraction of the total variance associated with observation error\\
 $\vartheta^2$ & & Total precision (inverse of variance) of the total error\\
@@ -238,8 +238,8 @@ $\sigma$ & & Standard deviation for observation errors in survey index\\
 $\tau$ & & Standard deviation in process errors (recruitment deviations)\\
 $\sigma_C$ & & Standard deviation in observed catch by gear\\
 \multicolumn{3}{l}{\textbf{Residuals}}\\
-$\delta_t$ & & Annual recruitment residual\\
-$\eta_t$ & & Residual error in predicted catch\\
+$\delta_t$ & & Recruitment residual in year $t$\\
+$\eta_t$ & & Residual error in predicted catch in year $t$\\
 \multicolumn{3}{l}{\textbf{Fixed growth and maturity parameters}}\\
 $l_{\infty,s}$ & & Asymptotic length in millimetres for sex $s$\\
 $\acute{k}_s$ & & Brody growth coefficient for sex $s$\\
