@@ -213,8 +213,8 @@ $t$ & & Index for year\\
 $k$ & & Index for gear\\
 \multicolumn{3}{l}{\textbf{Model dimensions}}\\
 $S$ & $`r major_models[[1]]$dat$num.sex`$ & Number of sexes\\
-$\acute{a}, A$ & $`r major_models[[1]]$dat$start.age`$, $`r major_models[[1]]$dat$end.age`$ & Youngest and oldest age class ($A$ is a plus group)\\
-$\acute{t}, T$ & $`r major_models[[1]]$dat$start.yr`$, $`r major_models[[1]]$dat$end.yr`$ & First and last year of catch data\\
+$\acute{a},\,A$ & $`r major_models[[1]]$dat$start.age`$, $`r major_models[[1]]$dat$end.age`$ & Youngest and oldest age class ($A$ is a plus group)\\
+$\acute{t},\,T$ & $`r major_models[[1]]$dat$start.yr`$, $`r major_models[[1]]$dat$end.yr`$ & First and last year of catch data\\
 $K$ & $`r major_models[[1]]$dat$num.gears`$ & Number of gears including survey gears\\
 \multicolumn{3}{l}{\textbf{Observations (data)}}\\
 $C_{k,t}$ & & Catch in weight by gear $k$ in year $t$\\
@@ -225,7 +225,8 @@ $h$ & & Steepness of the stock-recruitment relationship\\
 $\bar{R}$ & & Average age-$\acute{a}$ recruitment from year $\acute{t}$ to $T$\\
 $\bar{R}_\mli{init}$ & & Average age-$\acute{a}$ recruitment in year $\acute{t}-1$\\
 $M_s$ & & Instantaneous natural mortality rate\\
-$\hat{a}_k, \hat{\gamma}_k$ & & Selectivity parameters for gear $k$\\
+$\hat{a}_k$ & & Selectivity parameter for gear $k$\\
+$\hat{\gamma}_k$ & & Selectivity parameter for gear $k$\\
 $\Gamma_{k,t}$ & & Logarithm of the instantaneous fishing mortality for gear $k$ in year $t$\\
 $\omega_t$ & & Age-$\acute{a}$ deviates from $\bar{R}$ for years $\acute{t}$ to $T$\\
 $\omega_{\mli{init},t}$ & & Age-$\acute{a}$ deviates from $\bar{R}_\mli{init}$ for year $\acute{t}$\\
