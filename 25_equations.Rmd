@@ -142,7 +142,7 @@ Pacific herring statistical catch-age model using Baranov catch.
 
 \begin{equation}\label{eq:df18}
 N_{t,a,s}, \qquad
-\mli{SB}_t,s, \qquad
+\mli{SB}_{t,s}, \qquad
 Z_{t,a,s}
 \end{equation}
 
