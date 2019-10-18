@@ -120,10 +120,18 @@ R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}
 
 where the maximum juvenile survival rate alpha is given by:
 
+and the density-dependent term beta is given by:
 
+which simplifes to Eq.D.25.
+
+The equilibrium yield Ce foragiven fshing mortality rate is given by Eq.15. 
 \begin{equation}\label{eq:df15}
 C_e = F_e R_e \phi_q
 \end{equation}
+
+ 
+These steady-state conditions are critical for determining various reference points such as FMSY and BMSY.
+
 
 ## Catch-age-model
 
