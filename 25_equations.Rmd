@@ -36,13 +36,13 @@ l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right)
 mean weight-at-age is given by the allometric relationship in Eq. 4, and
 
 \begin{equation}\label{eq:df4}
-w_{a,s} = \acute{a}_s(l_{a,s})^{\acute{b}_s}
+w_{a,s} = \acute{a}_s\left(l_{a,s}\right)^{\acute{b}_s}
 \end{equation}
 
 the age-specific vulnerability is given by an age-based logistic function (Eq. 5).
 
 \begin{equation}\label{eq:df5}
-v_a = \left(1+e^{\left(\frac{-(\hat{a}-a)}{\hat{\gamma}}\right)}\right)^{-1} 
+v_a = \left(1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}\right)^{-1} 
 \end{equation}
 
 The terms vulnerability and selectivity are used interchangeably throughout this document, although, technically,
@@ -72,7 +72,7 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \iota_a = \begin{cases}
 \frac{1}{S}, & a=1\\
 \iota_{a-1}e^{-M}, & 1<a<A\\
-\frac{\iota_{a-1}}{(1-e^{-M})}, & a=A\\
+\frac{\iota_{a-1}}{\left(1-e^{-M}\right)}, & a=A\\
 \end{cases}
 \end{equation}
 
@@ -80,7 +80,7 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \iota_a = \begin{cases}
 \frac{1}{S}, & a=1\\
 \hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}, & 1<a<A\\
-\frac{\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}}{(1-e^{-M-F_e v_{a,s}})}, & a=A\\
+\frac{\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}}{1-e^{-M-F_e v_{a,s}}}, & a=A\\
 \end{cases}
 \end{equation}
 
@@ -99,7 +99,7 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \begin{equation}\label{eq:df11}
 \phi_q = \sum_{s=1}^S\sum_{a=1}^\infty
 \frac{\hat{\iota}_{a,s} w_{a,s} v_{a,s}}{M+F_ev_{a,s}}
-\left(1-e^{(-M-F_ev_{a,s})}\right)
+\left(1-e^{\left(-M-F_ev_{a,s}\right)}\right)
 \end{equation}
 
 ### Steady-state conditions
@@ -150,7 +150,7 @@ Z_{t,a,s}
 ### Initial states
 
 \begin{equation}\label{eq:df19}
-N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M(a-1)}
+N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)}
 \end{equation}
 
 where $(\acute{t}-A) < t < 1$, and $2 \leq a \leq A$.   
