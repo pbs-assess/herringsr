@@ -78,17 +78,23 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 
 ### Incidence functions
 
-\begin{equation}\label{eq:df9}
-\phi_E = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a f_{a,s}, \qquad
+\begin{equation}\label{eq:phi_E}
+\phi_E = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a f_{a,s}
+\end{equation}
+
+\begin{equation}\label{eq:phi_e}
 \phi_e = \sum_{s=1}^S\sum_{a=1}^\infty \hat{\iota}_{a,s} f_{a,s}
 \end{equation}
 
-\begin{equation}\label{eq:df10}
-\phi_B = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a w_{a,s} v_{a,s}, \qquad
+\begin{equation}\label{eq:phi_B}
+\phi_B = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a w_{a,s} v_{a,s}
+\end{equation}
+
+\begin{equation}\label{eq:phi_b}
 \phi_b = \sum_{s=1}^S\sum_{a=1}^\infty \hat{\iota}_{a,s} w_{a,s} v_{a,s}
 \end{equation}
 
-\begin{equation}\label{eq:df11}
+\begin{equation}\label{eq:phi_q}
 \phi_q = \sum_{s=1}^S\sum_{a=1}^\infty
 \frac{\hat{\iota}_{a,s} w_{a,s} v_{a,s}}{M+F_ev_{a,s}}
 \left(1-e^{\left(-M-F_ev_{a,s}\right)}\right)
@@ -134,16 +140,25 @@ Pacific herring statistical catch-age model using Baranov catch.
 \{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right)
 \end{equation}
 
-\begin{equation}\label{eq:df17}
-\sigma = \sqrt{\rho}\vartheta, \qquad
+\begin{equation}\label{eq:sigma}
+\sigma = \sqrt{\rho}\vartheta
+\end{equation}
+
+\begin{equation}\label{eq:tau}
 \tau = \sqrt{\left(1-\rho\right)}\vartheta  
 \end{equation}
 
 ### Unobserved states
 
-\begin{equation}\label{eq:df18}
-N_{t,a,s}, \qquad
-\mli{SB}_{t,s}, \qquad
+\begin{equation}\label{eq:N_tas}
+N_{t,a,s}
+\end{equation}
+
+\begin{equation}\label{eq:SB_ts}
+\mli{SB}_{t,s}
+\end{equation}
+
+\begin{equation}\label{eq:Z_tas}
 Z_{t,a,s}
 \end{equation}
 
