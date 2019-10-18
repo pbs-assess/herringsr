@@ -104,7 +104,7 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 ### Steady-state conditions
 
 \begin{equation}\label{eq:df12}
-B_o = R_o\phi_B
+\mli{SB}_o = R_o\phi_B
 \end{equation}
 
 \begin{equation}\label{eq:df13}
@@ -142,7 +142,7 @@ Pacific herring statistical catch-age model using Baranov catch.
 
 \begin{equation}\label{eq:df18}
 N_{t,a,s}, \qquad
-SB_t,s, \qquad
+\mli{SB}_t,s, \qquad
 Z_{t,a,s}
 \end{equation}
 
@@ -171,7 +171,7 @@ F_{k,t} = e^{\Gamma_{k,t}}
 ### State dynamics ($t>1$)
 
 \begin{equation}\label{eq:df23}
-SB_{t,s} = \sum_a N_{t,a,s}f_{a,s}
+\mli{SB}_{t,s} = \sum_a N_{t,a,s}f_{a,s}
 \end{equation}
 
 \begin{equation}\label{eq:df24}
@@ -195,7 +195,7 @@ N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A \\
 ### Beverton-Holt recruitment model
 
 \begin{equation}\label{eq:df27}
-R_t = \frac{s_oSB_{t-k}}{1+\beta SB_{t-k}}e^{\delta_{t}-0.5\tau^2}
+R_t = \frac{s_o\mli{SB}_{t-k}}{1+\beta \mli{SB}_{t-k}}e^{\delta_{t}-0.5\tau^2}
 \end{equation}
 
 \begin{table}[ht]
