@@ -14,7 +14,7 @@ Beverton-Holt recruitment.
 ### Parameters
 For the steady-state conditions represented below, we assume the parameter vector Theta in Eq. 1 is unknown and would be estimated by fitting ISCAM to data.
 \begin{equation}\label{eq:df1}
-\Theta = (R_0,\,h,\,M)
+\Theta = \left(R_0,\,h,\,M\right)
 \end{equation}
 
 where $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$.  
@@ -129,9 +129,9 @@ Pacific herring statistical catch-age model using Baranov catch.
 ### Estimated parameters
 
 \begin{equation}\label{eq:df16}
-\Theta = (R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,
+\Theta = \left(R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,
 \Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
-\{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1})
+\{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right)
 \end{equation}
 
 \begin{equation}\label{eq:df17}
