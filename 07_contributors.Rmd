@@ -4,15 +4,15 @@
 
 ```{r, echo=FALSE, include=FALSE}
 contributors <- tibble::tribble(
-  ~Name,                               ~Affiliation,
-  "Jaclyn Cleary",                     "DFO Science, Pacific Region",
-  "Sarah Hawkshaw",                    "DFO Science, Pacific Region",
-  "Matthew Grinnell",                  "DFO Science, Pacific Region",
-  "Chris Grandin",                     "DFO Science, Pacific Region",
-  "Herring Technical Working Group",   "Various (contributions to First Nations observations)",
-  "Victoria Postlethwaite",            "DFO Fisheries Management, Pacific Region (reviewer)",
-  "Brenda Spence",                     "DFO Fisheries Management, Pacific Region (reviewer)",  
-  "Lisa Christensen",                  "DFO Centre for Science Advice, Pacific Region (editor)")
+  ~Name,                             ~Affiliation,
+  "Jaclyn Cleary",                   "DFO Science, Pacific Region",
+  "Sarah Hawkshaw",                  "DFO Science, Pacific Region",
+  "Matthew Grinnell",                "DFO Science, Pacific Region",
+  "Chris Grandin",                   "DFO Science, Pacific Region",
+  "Herring Technical Working Group", "Various (contributions to First Nations observations)",
+  "Victoria Postlethwaite",          "DFO Fisheries Management, Pacific Region (reviewer)",
+  "Brenda Spence",                   "DFO Fisheries Management, Pacific Region (reviewer)",  
+  "Lisa Christensen",                "DFO Centre for Science Advice, Pacific Region (editor)")
 ```
 
 ```{r, results='asis'}

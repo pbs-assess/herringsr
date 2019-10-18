@@ -277,7 +277,8 @@ when the forecast is estimated to be above a fixed commercial fishery cutoff of
 $0.25\mli{SB}_0$ defined in the 1996 stock assessment [@dfo2016].
 This rule is referred to as the "fixed cutoff rule."
 
-Renewal of the Pacific Herring management framework included a commitment to MSE simulation-evaluation of the performance of historical fixed cutoff and alternative MPs in relation to conservation and fisheries management objectives.
+Renewal of the Pacific Herring management framework included a commitment to MSE simulation-evaluation of the performance of historical fixed cutoff and
+alternative MPs in relation to conservation and fisheries management objectives.
 The first cycle of the MSE process was completed for the WCVI and SoG SARs in 2018 [@dfo2019a];
 a similar process was used to evaluate harvest strategies for HG, PRD, and CC in 2019 [@dfo2019c].
 
@@ -313,7 +314,9 @@ The first MSE cycle introduced three hypotheses about future Pacific Herring nat
 3. $M$ is constant over time (conM).
 
 These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
-The DDM scenario was identified as the Reference OM scenario based on discussion at the July 2018 CSAS review process [@dfo2019c], while the DIM and conM scenarios were identified as Robustness OM scenarios. There is however  currently no correct scientifically supported method for predicting the natural mortality and therefore all three scenarios are included. 
+The DDM scenario was identified as the Reference OM scenario based on discussion at the July 2018 CSAS review process [@dfo2019c],
+while the DIM and conM scenarios were identified as Robustness OM scenarios.
+There is however currently no correct scientifically supported method for predicting the natural mortality and therefore all three scenarios are included. 
 
 Results presented here represent all three OM scenarios.
 
