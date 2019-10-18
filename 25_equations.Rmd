@@ -27,7 +27,7 @@ For a given set of growth-, and maturity-at-age parameters $\Phi$
 
 ### Age-schedule information
 
-Growth is assumed to follow von Bertalanffy
+Growth is assumed to follow the von-Bertalanffy growth model:
 \begin{equation}\label{eq:l_as}
 l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right),
 \end{equation}
