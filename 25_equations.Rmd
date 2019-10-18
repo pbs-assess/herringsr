@@ -112,17 +112,15 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \end{equation}
 
 Beverton-Holt recruitment
-Note that we assume that recruitment follows a Beverton-Holt stock recruitment model of the form shown in Eq. 14,
-
-\begin{equation}\label{eq:df14}
-R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
-\end{equation}
-
+Note that we assume that recruitment follows a Beverton-Holt stock recruitment model,
 where the maximum juvenile survival rate alpha is given by:
 
 and the density-dependent term beta is given by:
 
-which simplifes to Eq.D.25.
+which simplifes to Eq.D.14.
+\begin{equation}\label{eq:df14}
+R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
+\end{equation}
 
 The equilibrium yield Ce foragiven fshing mortality rate is given by Eq.15. 
 \begin{equation}\label{eq:df15}
