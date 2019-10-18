@@ -48,7 +48,7 @@ where $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$.
 ### Age-schedule information
 
 \begin{equation}\label{eq:df3}
-l_{a,s} = l_{}\left(1-e^{\left(-k_s\left(a-t_{o,s}\right)\right)}\right)
+l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{o,s}\right)\right)}\right)
 \end{equation}
 
 \begin{equation}\label{eq:df4}
@@ -179,8 +179,8 @@ Z_{t,a,s} = M+\sum_k F_{k,t} v_{k,t,a,s}
 \end{equation}
 
 \begin{equation}\label{eq:df25}
-\hat{C}_{k,t} = \sum_s \sum_a \frac {N_{{t,a,s}}w_{{a,s}}F_{k,t}
-v_{{k,t,a,s}} \left( 1-{e^{-Z_{t,a,s}}} \right) }{Z_{t,a,s}}^{\eta_t}
+\hat{C}_{k,t} = \sum_s \sum_a \frac {N_{t,a,s}w_{a,s}F_{k,t}
+v_{k,t,a,s} \left( 1-{e^{-Z_{t,a,s}}} \right) }{Z_{t,a,s}}^{\eta_t}
 \end{equation}
 
 \begin{equation}\label{eq:df26}
@@ -228,7 +228,7 @@ $M_s$ & & Instantaneous natural mortality rate\\
 $\hat{a}_k, \hat{\gamma}_k$ & & Selectivity parameters for gear $k$\\
 $\Gamma_{k,t}$ & & Logarithm of the instantaneous fishing mortality for gear $k$ in year $t$\\
 $\omega_t$ & & Age-$\acute{a}$ deviates from $\bar{R}$ for years $\acute{t}$ to $T$\\
-$\omega_{\mli{init},t}$ & & Age-$\acute{a}$ deviates from $\bar{R}_{\mli{init}}$ for year $\acute{t}$\\
+$\omega_{\mli{init},t}$ & & Age-$\acute{a}$ deviates from $\bar{R}_\mli{init}$ for year $\acute{t}$\\
 $q_s$ & & Catchability parameter for survey $k$\\
 $\rho$ & & Fraction of the total variance associated with observation error\\
 $\vartheta^2$ & & Total precision (inverse of variance) of the total error\\
