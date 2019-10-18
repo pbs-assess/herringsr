@@ -14,13 +14,13 @@ Beverton-Holt recruitment.
 ### Parameters
 
 For the steady-state condition of the model, we assume the parameter vector
-\begin{equation}\label{eq:df1}
+\begin{equation}\label{eq:Theta1}
 \Theta = \left(R_0,\,h,\,M\right)
 \end{equation}
 is unknown, and can be estimated by fitting the SCA model to data.
 Note the following restrictions: $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$.
-For a given set of growth maturity-at-age parameters $\Phi$ 
-\begin{equation}\label{eq:df2}
+For a given set of growth-, and maturity-at-age parameters $\Phi$ 
+\begin{equation}\label{eq:Phi}
 \Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,
 \acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right).
 \end{equation}
@@ -28,15 +28,15 @@ For a given set of growth maturity-at-age parameters $\Phi$
 ### Age-schedule information
 
 Growth is assumed to follow von Bertalanffy
-\begin{equation}\label{eq:df3}
+\begin{equation}\label{eq:l_as}
 l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right),
 \end{equation}
 mean weight-at-age is given by the allometric relationship
-\begin{equation}\label{eq:df4}
+\begin{equation}\label{eq:w_as}
 w_{a,s} = \acute{a}_s\left(l_{a,s}\right)^{\acute{b}_s},
 \end{equation}
 and age-specific vulnerability is given by an age-based logistic function
-\begin{equation}\label{eq:df5}
+\begin{equation}\label{eq:v_a}
 v_a = \left(1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}\right)^{-1}.
 \end{equation}
 
@@ -53,14 +53,14 @@ Unfished spawning biomass is given by Eq. 11,
 and the recruitment compensation ratio (Myers et al., 1999) is given by Eq. 12.
 The steady-state equilibrium recruitment for a given fishing mortality rate Fe is given by Eq. 13.
 
-\begin{equation}\label{eq:df6}
+\begin{equation}\label{eq:f_as}
 f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 {\dot{\gamma}_s}\right)}\right)^{-1}
 \end{equation}
 
 ### Survivorship
 
-\begin{equation}\label{eq:df7}
+\begin{equation}\label{eq:iota_a1}
 \iota_a = \begin{cases}
 \frac{1}{S}, & a=1\\
 \iota_{a-1}e^{-M}, & 1<a<A\\
@@ -68,7 +68,7 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \end{cases}
 \end{equation}
 
-\begin{equation}\label{eq:df8}
+\begin{equation}\label{eq:iota_a2}
 \iota_a = \begin{cases}
 \frac{1}{S}, & a=1\\
 \hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}, & 1<a<A\\
@@ -100,11 +100,11 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \left(1-e^{\left(-M-F_ev_{a,s}\right)}\right)
 \end{equation}
 
-\begin{equation}\label{eq:df12}
+\begin{equation}\label{eq:SB_0}
 \mli{SB}_0 = R_0\phi_B
 \end{equation}
 
-\begin{equation}\label{eq:df13}
+\begin{equation}\label{eq:kappa}
 \kappa=\frac{4h}{1-h}
 \end{equation}
 
@@ -115,26 +115,25 @@ where the maximum juvenile survival rate alpha is given by:
 and the density-dependent term beta is given by:
 
 which simplifes to Eq.D.14.
-\begin{equation}\label{eq:df14}
+\begin{equation}\label{eq:R_e}
 R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
 \end{equation}
 
 The equilibrium yield Ce foragiven fshing mortality rate is given by Eq.15. 
-\begin{equation}\label{eq:df15}
+\begin{equation}\label{eq:C_e}
 C_e = F_e R_e \phi_q
 \end{equation}
 
- 
-These steady-state conditions are critical for determining various reference points such as FMSY and BMSY.
+These steady-state conditions are critical for determining various reference points such as
+$F\text{MSY}$ and $B_\text{MSY}$.
 
-
-## Catch-age-model
+## Catch-age model
 
 Pacific herring statistical catch-age model using Baranov catch.
 
 ### Estimated parameters
 
-\begin{equation}\label{eq:df16}
+\begin{equation}\label{eq:Theta2}
 \Theta = \left(R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,
 \Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
 \{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right)
@@ -150,7 +149,7 @@ Pacific herring statistical catch-age model using Baranov catch.
 
 ### Unobserved states
 
-\begin{equation}\label{eq:N_tas}
+\begin{equation}\label{eq:N_tas1}
 N_{t,a,s}
 \end{equation}
 
@@ -164,42 +163,42 @@ Z_{t,a,s}
 
 ### Initial states
 
-\begin{equation}\label{eq:df19}
+\begin{equation}\label{eq:N_tas2}
 N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)}
 \end{equation}
 
 where $(\acute{t}-A) < t < 1$, and $2 \leq a \leq A$.   
  
-\begin{equation}\label{eq:df20}
+\begin{equation}\label{eq:N_tas3}
 N_{t,a,s} = \frac{1}{S}\bar{R}e^{\omega_{t}}
 \end{equation}
 
 where $1 \leq t \leq T$, and $a = 1$.  
 
-\begin{equation}\label{eq:df21}
+\begin{equation}\label{eq:v_ka}
 v_{k,a} = \frac{1}{1+e^{-\frac{\left(a - \hat{a}_k\right)}{\hat{\gamma}_k}}}  
 \end{equation}
 
-\begin{equation}\label{eq:df22}
+\begin{equation}\label{eq:F_kt}
 F_{k,t} = e^{\Gamma_{k,t}}
 \end{equation}
 
 ### State dynamics ($t>1$)
 
-\begin{equation}\label{eq:df23}
+\begin{equation}\label{eq:SB_ts}
 \mli{SB}_{t,s} = \sum_a N_{t,a,s}f_{a,s}
 \end{equation}
 
-\begin{equation}\label{eq:df24}
+\begin{equation}\label{eq:Z_tas}
 Z_{t,a,s} = M+\sum_k F_{k,t} v_{k,t,a,s}
 \end{equation}
 
-\begin{equation}\label{eq:df25}
+\begin{equation}\label{eq:C_kt}
 \hat{C}_{k,t} = \sum_s \sum_a \frac {N_{t,a,s}w_{a,s}F_{k,t}
 v_{k,t,a,s} \left( 1-{e^{-Z_{t,a,s}}} \right) }{Z_{t,a,s}}^{\eta_t}
 \end{equation}
 
-\begin{equation}\label{eq:df26}
+\begin{equation}\label{eq:N_tas4}
 N_{t,a,s} = \begin{cases}
 \frac{\alpha E_{t-1}}{1+\beta E_{t-1}} e^{\left(\omega_t-0.5\tau^2\right)}, & a=1\\
 N_{t-1,a-1,s} e^{\left(-Z_{t-1,a-1,s}\right)}, & 1<a<A\\
@@ -209,7 +208,7 @@ N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A\\
 
 ### Beverton-Holt recruitment model
 
-\begin{equation}\label{eq:df27}
+\begin{equation}\label{eq:R_t}
 R_t = \frac{\alpha\mli{SB}_{t-k}}{1+\beta \mli{SB}_{t-k}}e^{\delta_{t}-0.5\tau^2}
 \end{equation}
 
