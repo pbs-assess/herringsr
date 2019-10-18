@@ -14,7 +14,7 @@ Beverton-Holt recruitment.
 ### Parameters
 
 For the steady-state condition of the model, we assume the parameter vector
-\begin{equation}\label{eq:Theta1}
+\begin{equation}\label{eq:Theta_steady}
 \Theta = \left(R_0,\,h,\,M\right)
 \end{equation}
 is unknown, and can be estimated by fitting the SCA model to data.
@@ -60,7 +60,7 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 
 ### Survivorship
 
-\begin{equation}\label{eq:iota_a1}
+\begin{equation}\label{eq:iota_a_1}
 \iota_a = \begin{cases}
 \frac{1}{S}, & a=1\\
 \iota_{a-1}e^{-M}, & 1<a<A\\
@@ -68,7 +68,7 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \end{cases}
 \end{equation}
 
-\begin{equation}\label{eq:iota_a2}
+\begin{equation}\label{eq:iota_a_2}
 \iota_a = \begin{cases}
 \frac{1}{S}, & a=1\\
 \hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}, & 1<a<A\\
@@ -133,7 +133,7 @@ Pacific herring statistical catch-age model using Baranov catch.
 
 ### Estimated parameters
 
-\begin{equation}\label{eq:Theta2}
+\begin{equation}\label{eq:Theta_catch}
 \Theta = \left(R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,
 \Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
 \{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right)
@@ -149,7 +149,7 @@ Pacific herring statistical catch-age model using Baranov catch.
 
 ### Unobserved states
 
-\begin{equation}\label{eq:N_tas1}
+\begin{equation}\label{eq:N_tas_unobs}
 N_{t,a,s}
 \end{equation}
 
@@ -163,13 +163,13 @@ Z_{t,a,s}
 
 ### Initial states
 
-\begin{equation}\label{eq:N_tas2}
+\begin{equation}\label{eq:N_tas_init_1}
 N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)}
 \end{equation}
 
 where $(\acute{t}-A) < t < 1$, and $2 \leq a \leq A$.   
  
-\begin{equation}\label{eq:N_tas3}
+\begin{equation}\label{eq:N_tas_init_2}
 N_{t,a,s} = \frac{1}{S}\bar{R}e^{\omega_{t}}
 \end{equation}
 
@@ -198,7 +198,7 @@ Z_{t,a,s} = M+\sum_k F_{k,t} v_{k,t,a,s}
 v_{k,t,a,s} \left( 1-{e^{-Z_{t,a,s}}} \right) }{Z_{t,a,s}}^{\eta_t}
 \end{equation}
 
-\begin{equation}\label{eq:N_tas4}
+\begin{equation}\label{eq:N_tas_state}
 N_{t,a,s} = \begin{cases}
 \frac{\alpha E_{t-1}}{1+\beta E_{t-1}} e^{\left(\omega_t-0.5\tau^2\right)}, & a=1\\
 N_{t-1,a-1,s} e^{\left(-Z_{t-1,a-1,s}\right)}, & 1<a<A\\
