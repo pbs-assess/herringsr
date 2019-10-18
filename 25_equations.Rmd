@@ -10,9 +10,11 @@ unequal vulnerability-at-age,
 age-specific fecundity, and
 Beverton-Holt recruitment.
 
-## Steady-state model
+## Steady-state model age structured model
 ### Parameters
-For the steady-state conditions represented below, we assume the parameter vector Theta in Eq. 1 is unknown and would be estimated by fitting ISCAM to data.
+
+For the steady-state condition of the model, we assume the parameter vector Theta is unknown and can be estimated by fitting the ISCAM model to data.
+
 \begin{equation}\label{eq:df1}
 \Theta = \left(R_0,\,h,\,M\right)
 \end{equation}
@@ -57,8 +59,7 @@ Note that upper and lower case subscripts denote unfished and fished conditions,
 Unfished spawning biomass is given by Eq. 11,
 and the recruitment compensation ratio (Myers et al., 1999) is given by Eq. 12.
 The steady-state equilibrium recruitment for a given fishing mortality rate Fe is given by Eq. 13.
-Note that we assume that recruitment follows a Beverton-Holt stock recruitment model of the form shown in Eq. 14,
-where the maximum juvenile survival rate so is given by:
+
 
 
 \begin{equation}\label{eq:df6}
@@ -102,8 +103,6 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \left(1-e^{\left(-M-F_ev_{a,s}\right)}\right)
 \end{equation}
 
-### Steady-state conditions
-
 \begin{equation}\label{eq:df12}
 \mli{SB}_0 = R_0\phi_B
 \end{equation}
@@ -113,10 +112,14 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \end{equation}
 
 Beverton-Holt recruitment
+Note that we assume that recruitment follows a Beverton-Holt stock recruitment model of the form shown in Eq. 14,
 
 \begin{equation}\label{eq:df14}
 R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
 \end{equation}
+
+where the maximum juvenile survival rate alpha is given by:
+
 
 \begin{equation}\label{eq:df15}
 C_e = F_e R_e \phi_q
