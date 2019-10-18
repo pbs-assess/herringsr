@@ -1,50 +1,43 @@
 # Equations
 
-This section describes the equations used in the Pacific Herring statistical catch-age model.
+This section describes the equations used in the Pacific Herring statistical catch-age (SCA) model.
 Symbols and constants are described in Table \@ref(tab:variables).
 These equations will not be included in the final document.
 
+## Steady-state model age structured model
 
 Pacific Herring steady-state age-structured model assuming
 unequal vulnerability-at-age,
 age-specific fecundity, and
 Beverton-Holt recruitment.
 
-## Steady-state model age structured model
 ### Parameters
 
-For the steady-state condition of the model, we assume the parameter vector Theta is unknown and can be estimated by fitting the ISCAM model to data.
-
+For the steady-state condition of the model, we assume the parameter vector
 \begin{equation}\label{eq:df1}
 \Theta = \left(R_0,\,h,\,M\right)
 \end{equation}
-
-where $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$.  
-
-For a given set of growth parameters and maturity-at-age parameters defined by Phi in Eq. 2, 
-
+is unknown, and can be estimated by fitting the SCA model to data.
+Note the following restrictions: $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$.  
+For a given set of growth maturity-at-age parameters $\Phi$ 
 \begin{equation}\label{eq:df2}
 \Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,
-\acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right)
+\acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right).
 \end{equation}
 
 ### Age-schedule information
-growth is assumed to follow von Bertalanffy (Eq. 3),
 
+Growth is assumed to follow von Bertalanffy
 \begin{equation}\label{eq:df3}
-l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right)
+l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right),
 \end{equation}
-
-mean weight-at-age is given by the allometric relationship in Eq. 4, and
-
+mean weight-at-age is given by the allometric relationship
 \begin{equation}\label{eq:df4}
-w_{a,s} = \acute{a}_s\left(l_{a,s}\right)^{\acute{b}_s}
+w_{a,s} = \acute{a}_s\left(l_{a,s}\right)^{\acute{b}_s},
 \end{equation}
-
-the age-specific vulnerability is given by an age-based logistic function (Eq. 5).
-
+and age-specific vulnerability is given by an age-based logistic function
 \begin{equation}\label{eq:df5}
-v_a = \left(1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}\right)^{-1} 
+v_a = \left(1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}\right)^{-1}.
 \end{equation}
 
 The terms vulnerability and selectivity are used interchangeably throughout this document, although, technically,
@@ -59,8 +52,6 @@ Note that upper and lower case subscripts denote unfished and fished conditions,
 Unfished spawning biomass is given by Eq. 11,
 and the recruitment compensation ratio (Myers et al., 1999) is given by Eq. 12.
 The steady-state equilibrium recruitment for a given fishing mortality rate Fe is given by Eq. 13.
-
-
 
 \begin{equation}\label{eq:df6}
 f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
