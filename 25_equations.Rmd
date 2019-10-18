@@ -71,17 +71,17 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \begin{equation}\label{eq:df7}
 \iota_a =
 \begin{cases}
-\frac{1}{S} & a = 1 \\
-\iota_{a-1}e^{-M} & a > 1 \\
-\frac{\iota_{a-1}}{(1-e^{-M})} & a = A \\
+\frac{1}{S}, & a = 1 \\
+\iota_{a-1}e^{-M}, & a > 1 \\
+\frac{\iota_{a-1}}{(1-e^{-M})}, & a = A \\
 \end{cases}
 \end{equation}
 
 \begin{equation}\label{eq:df8}
 \iota_a = \begin{cases}
-\frac{1}{S} & a = 1 \\
-\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}} & a > 1 \\
-\frac{\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}}{(1-e^{-M-F_e v_{a,s}})} & a = A \\
+\frac{1}{S}, & a = 1 \\
+\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}, & a > 1 \\
+\frac{\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}}{(1-e^{-M-F_e v_{a,s}})}, & a = A \\
 \end{cases}
 \end{equation}
 
@@ -188,9 +188,9 @@ v_{k,t,a,s} \left( 1-{e^{-Z_{t,a,s}}} \right) }{Z_{t,a,s}}^{\eta_t}
 \begin{equation}\label{eq:df26}
 N_{t,a,s} = 
 \begin{cases}
-\frac{\alpha E_{t-1}}{1+\beta E_{t-1}} e^{\left(\omega_t-0.5\tau^2\right)} & a = 1 \\
-N_{t-1,a-1,s} e^{\left(-Z_{t-1,a-1,s}\right)} & a > 1 \\
-N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)} & a = A \\
+\frac{\alpha E_{t-1}}{1+\beta E_{t-1}} e^{\left(\omega_t-0.5\tau^2\right)}, & a=1 \\
+N_{t-1,a-1,s} e^{\left(-Z_{t-1,a-1,s}\right)}, &a>1 \\
+N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A \\
 \end{cases}
 \end{equation}
 
