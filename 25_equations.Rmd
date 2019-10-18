@@ -153,11 +153,11 @@ Pacific herring statistical catch-age model using Baranov catch.
 N_{t,a,s}
 \end{equation}
 
-\begin{equation}\label{eq:SB_ts}
+\begin{equation}\label{eq:SB_ts_unobs}
 \mli{SB}_{t,s}
 \end{equation}
 
-\begin{equation}\label{eq:Z_tas}
+\begin{equation}\label{eq:Z_tas_unobs}
 Z_{t,a,s}
 \end{equation}
 
@@ -185,11 +185,11 @@ F_{k,t} = e^{\Gamma_{k,t}}
 
 ### State dynamics ($t>1$)
 
-\begin{equation}\label{eq:SB_ts}
+\begin{equation}\label{eq:SB_ts_state}
 \mli{SB}_{t,s} = \sum_a N_{t,a,s}f_{a,s}
 \end{equation}
 
-\begin{equation}\label{eq:Z_tas}
+\begin{equation}\label{eq:Z_tas_state}
 Z_{t,a,s} = M+\sum_k F_{k,t} v_{k,t,a,s}
 \end{equation}
 
