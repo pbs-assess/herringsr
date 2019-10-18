@@ -35,10 +35,10 @@ Beverton-Holt recruitment.
 ### Parameters
 
 \begin{equation}\label{eq:df1}
-\Theta = (R_o,\,h,\,M)
+\Theta = (R_0,\,h,\,M)
 \end{equation}
 
-where $R_o > 0$, $0.2 \leq h < 1.0$, and $M > 0$.  
+where $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$.  
 
 \begin{equation}\label{eq:df2}
 \Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{o,s},\,\acute{a}_s,\,
@@ -104,7 +104,7 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 ### Steady-state conditions
 
 \begin{equation}\label{eq:df12}
-\mli{SB}_o = R_o\phi_B
+\mli{SB}_0 = R_0\phi_B
 \end{equation}
 
 \begin{equation}\label{eq:df13}
@@ -114,7 +114,7 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 Beverton-Holt recruitment
 
 \begin{equation}\label{eq:df14}
-R_e = R_o \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
+R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
 \end{equation}
 
 \begin{equation}\label{eq:df15}
@@ -186,7 +186,7 @@ v_{{k,t,a,s}} \left( 1-{e^{-Z_{t,a,s}}} \right) }{Z_{t,a,s}}^{\eta_t}
 \begin{equation}\label{eq:df26}
 N_{t,a,s} = 
 \begin{cases}
-\frac{s_oE_{t-1}}{1+\beta E_{t-1}} e^{\left(\omega_t-0.5\tau^2\right)}, & a=1 \\
+\frac{s_0E_{t-1}}{1+\beta E_{t-1}} e^{\left(\omega_t-0.5\tau^2\right)}, & a=1 \\
 N_{t-1,a-1,s} e^{\left(-Z_{t-1,a-1,s}\right)}, &a>1 \\
 N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A \\
 \end{cases}
@@ -195,7 +195,7 @@ N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A \\
 ### Beverton-Holt recruitment model
 
 \begin{equation}\label{eq:df27}
-R_t = \frac{s_o\mli{SB}_{t-k}}{1+\beta \mli{SB}_{t-k}}e^{\delta_{t}-0.5\tau^2}
+R_t = \frac{s_0\mli{SB}_{t-k}}{1+\beta \mli{SB}_{t-k}}e^{\delta_{t}-0.5\tau^2}
 \end{equation}
 
 \begin{table}[ht]
@@ -220,7 +220,7 @@ $K$ & $`r major_models[[1]]$dat$num.gears`$ & Number of gears including survey g
 $C_{k,t}$ & & Catch in weight by gear $k$ in year $t$\\
 $I_{k,t}$ & & Relative abundance index for gear $k$ in year $t$\\
 \multicolumn{3}{l}{\textbf{Estimated parameters}}\\
-$R_o$ & & Age-$\acute{a}$ recruits in unfished conditions\\
+$R_0$ & & Age-$\acute{a}$ recruits in unfished conditions\\
 $h$ & & Steepness of the stock-recruitment relationship\\
 $\bar{R}$ & & Average age-$\acute{a}$ recruitment from year $\acute{t}$ to $T$\\
 $\bar{R}_\mli{init}$ & & Average age-$\acute{a}$ recruitment in year $\acute{t}-1$\\
