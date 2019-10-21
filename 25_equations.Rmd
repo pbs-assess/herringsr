@@ -30,7 +30,6 @@ The following list describes modifications specific to the assessment of Pacific
 5. Unfished spawning biomass is represented as $B_0$ in this section, and as $\mli{SB}_0$ in
 the main text.
 
-These equations will not be included in the final document.
 
 ## Steady-state age structured model
 
@@ -39,40 +38,33 @@ unequal vulnerability-at-age,
 age-specific fecundity, and
 Beverton-Holt recruitment.
 
-### Parameters
-
-For the steady-state condition of the model, we assume the parameter vector $\Theta$
+The parameter vector, $\Theta$, under steady state conditions is assumed to be unknown,
 
 \begin{equation}\label{eq:Theta-steady}
 \Theta = \left(R_0,\,h,\,M\right)
 \end{equation}
 
-is unknown, and can be estimated by fitting the SCA model to data with the following restrictions:
-
-$R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$.
-
-For a given set of growth-, and maturity-at-age parameters $\Phi$
+and can be estimated by fitting the SCA model to data with the following restrictions:
+$R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$. For a given set of growth and maturity-at-age parameters,
 
 \begin{equation}\label{eq:Phi}
 \Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,
-\acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right).
+\acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right),
 \end{equation}
 
-### Age-schedule information
-
-The observed length-at-age $l_{a,s}$ uses the Von-Bertalanffy growth model
+growth is assumed to follow the Von-Bertalanffy growth model, where the observed length-at-age $l_{a,s}$ is defined by: 
 
 \begin{equation}\label{eq:l-as}
-l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right),
+l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right)
 \end{equation}
 
-mean weight-at-age is given by the allometric relationship
+and the mean weight-at-age is given by an allometric relationship: 
 
 \begin{equation}\label{eq:w-as}
 w_{a,s} = \acute{a}_s\left(l_{a,s}\right)^{\acute{b}_s},
 \end{equation}
 
-and age-specific vulnerability is given by an age-based logistic function
+and age-specific vulnerability is given by an age-based logistic function:
 
 \begin{equation}\label{eq:v-a}
 v_a = \left(1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}\right)^{-1}.
