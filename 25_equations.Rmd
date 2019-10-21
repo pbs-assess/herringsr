@@ -163,17 +163,17 @@ which simplifes to:
 R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
 \end{equation}
 
-The equilibrium yield Ce foragiven fshing mortality rate is given by Eq.15. 
+The equilibrium yield $C_e$ foragiven fshing mortality rate is given by
 \begin{equation}\label{eq:C-e}
 C_e = F_e R_e \phi_q
 \end{equation}
 
 These steady-state conditions are critical for determining various reference points such as
-$F\text{MSY}$ and $B_\text{MSY}$.
+$F_\text{MSY}$ and $B_\text{MSY}$.
 
 ## Catch-age model
 
-The Pacific herring SCA model using the Baranov catch equation.
+The Pacific Herring SCA model using the Baranov catch equation.
 
 ### Estimated parameters
 
