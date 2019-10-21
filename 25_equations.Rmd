@@ -19,13 +19,13 @@ This section describes all features of ISCAM, some of which however are not impl
 Note that we refer to ISCAM as a statistical catch-age (SCA) model in the main text.
 The following list describes modifications specific to the assessment of Pacific Herring:
 
-1. Data are unsexed, $S = 1$,
+1. Data are unsexed, $S = 1$.
 
-2. Total mortality is constant across ages, $Z_{t,a} = Z_t$,
+2. Total mortality is constant across ages, $Z_{ta} = Z_t$.
 
-3. Fecundity and maturity are synonymous and used interchangeably,
+3. Fecundity and maturity are synonymous and used interchangeably.
 
-4. 100% of $Z_t$ occurs prior to spawning, and
+4. 100% of $Z_t$ occurs prior to spawning.
 
 5. Unfished spawning biomass is represented as $B_0$ in this section, and as $\mli{SB}_0$ in
 the main text.
