@@ -369,7 +369,7 @@ As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&n
 
 ### Prince Rupert District
 
-For PRD the best performing MPs generally had 10% or lower harvest rates, although two MPs with a 20% harvest rate did meet the conservation objective because they use a higher lower control point of $0.5\mli{SB}_0$.
+For PRD the best performing MPs generally had 10% or lower harvest rates, although two MPs with a 20% harvest rate did meet the conservation objective because they use a higher lower OCP (see Reference Points) of $0.5\mli{SB}_0$.
 These MPs also result in more frequent fishery closures due to spawning biomass declined below the lower control point more frequently.
 While several MPs are able to meet core conservation objective of maintaining spawning
 biomass above the LRP with high probability (at least 75%)^\ref{fn:HighProb}^,
