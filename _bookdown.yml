@@ -10,4 +10,10 @@ rmd_files: ["index.Rmd",
             "08_approval.Rmd",
             "09_bibliography.Rmd",
             "10_appendix.Rmd"]
+            #"20_mcmc_HG.Rmd",
+            #"21_mcmc_PRD.Rmd",
+            #"22_mcmc_CC.Rmd",
+            #"23_mcmc_SoG.Rmd",
+            #"24_mcmc_WCVI.Rmd",
+            #"25_equations.Rmd"]
 delete_merged_file: true
