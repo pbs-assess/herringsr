@@ -173,7 +173,7 @@ $F\text{MSY}$ and $B_\text{MSY}$.
 
 ## Catch-age model
 
-Pacific herring statistical catch-age model using Baranov catch.
+The Pacific herring SCA model using the Baranov catch equation.
 
 ### Estimated parameters
 
