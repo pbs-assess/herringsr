@@ -18,7 +18,6 @@ Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested 
 `r assess_yr` and recommend harvest advice for `r assess_yr + 1` as simulation-tested MPs to inform the development of the `r assess_yr`/`r assess_yr + 1` Integrated Fisheries Management Plan, where appropriate.
 Estimated stock trajectories, current status of stocks for `r assess_yr`, management procedure options and harvest advice recommendations from those MPs for `r assess_yr + 1` reflect methods of @cleary2018 and, where applicable, recommendations from the aforementioned 2018 and 2019 MSE analyses.
 These recommendations are described in the section '[Application of MPs and harvest options for `r assess_yr + 1`]'.
-<!-- https://tex.stackexchange.com/questions/430514/how-to-make-cross-references-to-sections-figures-before-they-are-introduced-in-r -->
 
 <!--  Mandatory last paragraph in this section -->
 This Science Response Report results from the Science Response Process of September `r assess_yr` on the Status of Pacific Herring (*Clupea pallasii*) in `r assess_yr` and forecast for `r assess_yr + 1`.
