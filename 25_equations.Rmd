@@ -21,7 +21,7 @@ The following list describes modifications specific to the assessment of Pacific
 
 1. Data are unsexed, $S = 1$,
 
-2. Total mortality is constant across ages, $Z_{ta}$=$Z_t$,
+2. Total mortality is constant across ages, $Z_{ta} = Z_t$,
 
 3. Fecundity and maturity are synonymous and used interchangeably,
 
