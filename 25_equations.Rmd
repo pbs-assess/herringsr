@@ -7,16 +7,17 @@ ISCAM uses a statistical catch-at-age model implemented in a Bayesian estimation
 This section contains the documentation in mathematical form of the underlying ISCAM
 age-structured model, its steady state version that is used to calculate reference points, the
 observation models used in predicting observations, and the components of the objective
-function that formulate the statistical criterion used to estimate model parameters. 
-A documented list of symbols used in model equations is given in Table 34. 
+function that formulate the statistical criterion used to estimate model parameters.
+
+A documented list of symbols used in model equations is given in Table \@ref(tab:variables). 
 The documentation presented here is a revised version of the ISCAM user guide available online. Much of the text and many of the
 equations have been taken directly from the original ISCAM user guide.
 Note that all the model equations are presented for a sex structured model with S sexes. Models
 can therefore be constructed with data for females only, for males and females, or with unsexed
 data.
 
-The model documentation describes all features of the ISCAM catch-age model, some of which
-are not implemented for Pacific Herring. 
+The model documentation describes all features of the ISCAM catch-age model, some of which however
+are not implemented for the Pacific Herring stock assessment. 
 The following list describes modifications specific to the assessment of Pacific Herring:
 1. Data are unsexed, S = 1
 2. Total mortality is constant across ages, Zt;a=Zt
