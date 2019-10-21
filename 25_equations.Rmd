@@ -21,7 +21,7 @@ The following list describes modifications specific to the assessment of Pacific
 
 1. Data are unsexed, $S = 1$,
 
-2. Total mortality is constant across ages, $Z_{ta} = Z_t$,
+2. Total mortality is constant across ages, $Z_{t,a} = Z_t$,
 
 3. Fecundity and maturity are synonymous and used interchangeably,
 
@@ -73,13 +73,13 @@ selectivity refers to the fishing gear, while
 vulnerability refers to all processes affecting the availability of fish to the fishery.
 Selectivity parameters can be fixed or estimated.
 
-Survivorship for unfished and fished populations is defined by Eq. 7 and 8, respectively.
-It is assumed that all individuals ages A and older (i.e., the plus group) have the same total mortality rate.
-The incidence functions refer to the life-time or per-recruit quantities such as spawning biomass per recruit (phi_E, Eq. 9) or vulnerable biomass per recruit (phi_B, Eq. 10).
+Survivorship for unfished and fished populations is defined by \@ref(eq:iota_a_1) and \@ref(eq:iota_a_2), respectively.
+It is assumed that all individuals ages $A$ and older (i.e., the plus group) have the same total mortality rate.
+The incidence functions refer to the life-time or per-recruit quantities such as spawning biomass per recruit ($\phi_E$; \@ref(eq:phi_E)) or vulnerable biomass per recruit ($\phi_B$, \@ref{eq:phi_B}).
 Note that upper and lower case subscripts denote unfished and fished conditions, respectively.
 Unfished spawning biomass is given by Eq. 11,
 and the recruitment compensation ratio (Myers et al., 1999) is given by Eq. 12.
-The steady-state equilibrium recruitment for a given fishing mortality rate Fe is given by Eq. 13.
+The steady-state equilibrium recruitment for a given fishing mortality rate $F_e$ is given by Eq. 13.
 
 \begin{equation}\label{eq:f_as}
 f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
