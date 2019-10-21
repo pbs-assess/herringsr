@@ -1,8 +1,8 @@
-# Equations
-# Model Description
+# Model description
 
-The Pacific Herring stock assessment is conducted using the Integrated Statistical Catch Age Model (ISCAM), developed by S. Martell (Martell et al., 2012). 
-ISCAM uses a statistical catch-at-age model implemented in a Bayesian estimation framework and is written in AD Model Builder. The original source code and documentation for both are available online. 
+The Pacific Herring stock assessment is conducted using the integrated statistical catch age model (ISCAM), developed by S. Martell [@martell2011]. 
+ISCAM is implemented in a Bayesian estimation framework and is written in AD Model Builder [@admb].
+The original source code and documentation for both are available online. 
 
 This section contains the documentation in mathematical form of the underlying ISCAM
 age-structured model, its steady state version that is used to calculate reference points, the
@@ -10,25 +10,24 @@ observation models used in predicting observations, and the components of the ob
 function that formulate the statistical criterion used to estimate model parameters.
 
 A documented list of symbols used in model equations is given in Table \@ref(tab:variables). 
-The documentation presented here is a revised version of the ISCAM user guide available online. Much of the text and many of the
-equations have been taken directly from the original ISCAM user guide.
-Note that all the model equations are presented for a sex structured model with S sexes. Models
-can therefore be constructed with data for females only, for males and females, or with unsexed
-data.
+The documentation presented here is a revised version of the ISCAM user guide available online. 
+Much of the text and many of the equations have been taken directly from the original ISCAM user guide.
+Note that all the model equations are presented for a sex structured model with $S$ sexes.
+Models can therefore be constructed with data for females only, for males and females, or with unsexed data.
 
-The model documentation describes all features of the ISCAM catch-age model, some of which however
-are not implemented for the Pacific Herring stock assessment. 
+This section describes all features of ISCAM, some of which however are not implemented for the Pacific Herring stock assessment.
+Note that we refer to ISCAM as a statistical catch-age (SCA) model in the main text.
 The following list describes modifications specific to the assessment of Pacific Herring:
 
-1. Data are unsexed, S = 1
+1. Data are unsexed $S = 1$,
 
-2. Total mortality is constant across ages, Zt;a=Zt
+2. Total mortality is constant across ages $Z_{t,a} = Z_t$,
 
-3. Fecundity and maturity are synonymous and used interchangeably
+3. Fecundity and maturity are synonymous and used interchangeably,
 
-4. 100% of Zt occurs prior to spawning
+4. 100% of $Z_t$ occurs prior to spawning, and
 
-5. Unfished spawning biomass is represented as B0 in the Model Description, and as SB0 in
+5. Unfished spawning biomass is represented as $B_0$ in this section, and as $\mli{SB}_0$ in
 the main text.
 
 These equations will not be included in the final document.
@@ -47,7 +46,6 @@ For the steady-state condition of the model, we assume the parameter vector
 \Theta = \left(R_0,\,h,\,M\right)
 \end{equation}
 is unknown, and can be estimated by fitting the SCA model to data with the following restrictions:
-
 $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$
 
 For a given set of growth-, and maturity-at-age parameters $\Phi$ 
