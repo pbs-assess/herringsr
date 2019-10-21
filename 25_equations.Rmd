@@ -146,13 +146,19 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \kappa=\frac{4h}{1-h}
 \end{equation}
 
-Beverton-Holt recruitment
-Note that we assume that recruitment follows a Beverton-Holt stock recruitment model,
-where the maximum juvenile survival rate alpha is given by:
+### Beverton-Holt recruitment
+Recruitment is assumed to follow a Beverton-Holt stock recruitment model,
+where the maximum juvenile survival rate $\alpha$ is given by:
+\begin{equation}\label{eq:Alpha}
+\alpha = \frac{\kappa}{\phi_E}  
+\end{equation}
 
-and the density-dependent term beta is given by:
+and the density-dependent term $\beta$ is given by:
+\begin{equation}\label{eq:beta}
+\beta=\frac{\kappa-1}{R_0\phi_E}
+\end{equation}
 
-which simplifes to Eq.D.14.
+which simplifes to:
 \begin{equation}\label{eq:R-e}
 R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
 \end{equation}
