@@ -19,10 +19,15 @@ data.
 The model documentation describes all features of the ISCAM catch-age model, some of which however
 are not implemented for the Pacific Herring stock assessment. 
 The following list describes modifications specific to the assessment of Pacific Herring:
+
 1. Data are unsexed, S = 1
+
 2. Total mortality is constant across ages, Zt;a=Zt
+
 3. Fecundity and maturity are synonymous and used interchangeably
+
 4. 100% of Zt occurs prior to spawning
+
 5. Unfished spawning biomass is represented as B0 in the Model Description, and as SB0 in
 the main text.
 
