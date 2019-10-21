@@ -149,7 +149,7 @@ Specifically, operational control points (OCPs) define the inflection points of 
 
 ### Haida Gwaii
 
-Estimated spawning biomass declined to near historic lows in the mid-1990s and briefy increased through the late 1990s before falling to persistent historic lows from 2000 to 2010 (Figure \@ref(fig:storyboard-hg)d).
+Estimated spawning biomass declined to near historic lows in the mid-1990s and briefly increased through the late 1990s before falling to persistent historic lows from 2000 to 2010 (Figure \@ref(fig:storyboard-hg)d).
 A modest increase in estimated spawning biomass occurred during the early 2010s before falling once again to near historic lows over the most recent few years.
 The increase can be attributed to increases in the spawn index in 2013 and 2015 (Figure \@ref(fig:storyboard-hg)a) that were supported by above average recruitment of age-2 fish in 2012 (Figure \@ref(fig:storyboard-hg)c, d).
 An increasing trend in the estimated natural mortality rate since 1980 (Figure \@ref(fig:storyboard-hg)b) largely absorbed surplus production attributable to above average recruitment events (e.g., 1997 and 2012; Figure \@ref(fig:storyboard-hg)c, d).
