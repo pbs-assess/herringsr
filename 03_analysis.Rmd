@@ -16,7 +16,7 @@ The FSC and recreational harvest are considered minor relative to commercial har
 The commercial SOK fishery is licensed based on pounds of validated SOK product (i.e., eggs adhered to kelp), not tonnes of fish used or spawned.
 Currently there is no basis for validating mortality imposed on the population by this fishery, however methods for estimating SOK mortality are being developed.
 
-Combined commercial removals from `r assess_yr-9` to `r assess_yr` from the roe, food and bait, and special use fisheries the major SARs is presented for in Table \@ref(tab:annual-catch).
+Combined commercial removals from `r assess_yr-9` to `r assess_yr` from the roe, food and bait, and special use fisheries appear in Table \@ref(tab:annual-catch).
 The proportion of coast-wide catch that comes from the SoG was 22% in 1990, and nearly 100% in `r assess_yr`.
 Total SOK harvest or the major SARs from `r assess_yr-9` to `r assess_yr` is presented in Table \@ref(tab:annual-sok-catch).
 
@@ -49,7 +49,7 @@ Statistical Areas, Sections, and Groups are not intended to represent sub-stock 
 
 ## First Nations observations
 
-First Nations observations are provided by First Nations representatives to describe local perspectives in their respective areas.
+Local observations from 2019 were provided by First Nations participants in the Herring Technical Working Group. This working group, established in 2016, consists of DFO Science and Fisheries Management and technical representatives nominated by numerous coastal First Nations and the herring industry. Observations reported here describe local perspectives on Herring in four of the management areas.
 
 <!-- ### Haida Gwaii - not provided in 2019 -->
 
@@ -59,7 +59,7 @@ Observations from the Lax Kw’alaams Band: This year in the Prince Rupert Distr
 Overall, very little spawning was observed this season, and what was observed was non-contiguous and with much fewer layers than observed in previous years.
 Fishermen reported observing isolated pockets of herring in Tuck Inlet schooling in the area for a few days and then disappearing (north of Prince Rupert, Section 042).
 There were also humpback whales observed feeding in the Inlet, possibly causing the herring to move to deeper water to avoid predation and to spawn.
-Lax Kw’alaams fishermen were unable to gathered enough herring to satisfy FSC needs for the community.
+Lax Kw’alaams fishermen were unable to gather enough herring to satisfy FSC needs for the community.
 Lax Kw’alaams Fisheries Technicians spent a full seven days during herring season, monitoring harvest and recording herring behaviour and locations.
 Technicians were unable to locate herring schools in any of the normal geographic areas monitored each year.
 On-grounds correspondence with harvesters confirmed the 2019 season was very poor and most reported seeing no active herring spawning.
@@ -143,9 +143,9 @@ however a USR of $0.6\mli{SB}_0$ is included in this stock status update because
 Stock status relative to the assessment model estimates $0.3\mli{SB}_0$ (LRP) and $0.6\mli{SB}_0$ (USR) are presented for each SAR in Tables \@ref(tab:ref-points-hg) through \@ref(tab:ref-points-wcvi).
 
 The LRP and USR relate stock status to the DFO PA Framework [@dfo2009], and in the assessment of Pacific Herring the same calculations are applied for each SAR.
-In Fisheries Science there is an important distinction between reference points (e.g., LRP, USR) and
+There is an important distinction between reference points (e.g., LRP, USR) and
 the operational control points of the harvest control rule (HCR) or the management procedure used to set catch limits.
-Specifically, operational control points define the inflection points of a HCR, and identify biomass levels where management action is taken (e.g., cease fishing).
+Specifically, operational control points (OCPs) define the inflection points of a HCR, and identify biomass levels where management action is taken. For example, the harvest rate is set to zero and fishing ceases when biomass falls below the lower OCP.
 
 ### Haida Gwaii
 
@@ -193,7 +193,7 @@ An increase in spawning stock biomass was estimated through the mid-2010s
 but remained below levels estimated prior to 2000, and then declining modestly 2016-2018.
 In 2019 there was an increase in estimated spawning biomass.
 The estimated biomass trend largely reflects the trend in the spawn index (Figure \@ref(fig:storyboard-cc)a),
-where fluctuations correspond in opposite phase to the fluctuations in estimated natural mortality (Figure \@ref(fig:storyboard-cc)b).
+where fluctuations correspond opposite to the fluctuations in estimated natural mortality (Figure \@ref(fig:storyboard-cc)b).
 For example, the decline in spawn index (and estimated spawning biomass) to the historic lows of the late 2000s followed a strongly increasing trend in estimated natural mortality through the same period.
 Estimated natural mortality moderated by the late 2000s, which was followed by the increase in spawn index (and estimated spawning biomass) until 2015 whereupon natural mortality again increased.
 Recruitment deviations were slightly negative (lower than predicted by the stock-recruitment function) on average from about 1990 to 2017,
@@ -227,7 +227,8 @@ The model fits an averaged trajectory through the spawn index values of the 2010
 insufficient information to determine whether the decline from 2016 to `r assess_yr` represents a true decline in estimated spawning biomass.
 The model estimates above average recruitment in most years from 2010 to `r assess_yr` (Figure \@ref(fig:storyboard-sog)c)
 with the recruitment deviations showing especially large recruitment of age-2 fish in 2019 (Figure \@ref(fig:storyboard-sog)e).
-The SoG juvenile herring survey reported an increase in abundance of age-0 fish from 2016 to 2017 (unpublished report).
+The SoG juvenile herring survey reported an increase in abundance of age-0 fish from 2016 to 2017 (Strait of Georgia Juvenile Herring Survey, September 2017, Canadian Manuscript Report of
+Fisheries and Aquatic Sciences, unpublished report).
 The sampling program targets prespawning aggregations and the assessment assumes 25% of age-2 herring are mature.
 The large uncertainty around estimated age-2 recruitment in the terminal year of the time series is a common observation
 because these age-2 fish are only partially recruited to the fishing gear.
@@ -368,7 +369,8 @@ As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&n
 
 ### Prince Rupert District
 
-For PRD the best performing MPs generally had 10% or lower harvest rates, although two MPs with a 20% harvest rate did meet the conservation objective because they use a higher lower control point (Section \@ref(#sec-ref-pts)) of $0.5\mli{SB}_0$.
+
+For PRD the best performing MPs generally had 10% or lower harvest rates, although two MPs with a 20% harvest rate did meet the conservation objective because they use a higher lower OCP (Section \@ref(#sec-ref-pts)) of $0.5\mli{SB}_0$.
 These MPs also result in more frequent fishery closures due to spawning biomass declined below the lower control point more frequently.
 While several MPs are able to meet core conservation objective of maintaining spawning
 biomass above the LRP with high probability (at least 75%)^\ref{fn:HighProb}^,
