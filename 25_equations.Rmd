@@ -49,7 +49,7 @@ $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$. For a given set of growth and maturi
 
 \begin{equation}\label{eq:Phi}
 \Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,
-\acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right),
+\acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right)
 \end{equation}
 
 growth is assumed to follow the Von-Bertalanffy growth model, where the observed length-at-age $l_{a,s}$ is defined by: 
@@ -61,13 +61,13 @@ l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right)
 and the mean weight-at-age is given by an allometric relationship: 
 
 \begin{equation}\label{eq:w-as}
-w_{a,s} = \acute{a}_s\left(l_{a,s}\right)^{\acute{b}_s},
+w_{a,s} = \acute{a}_s\left(l_{a,s}\right)^{\acute{b}_s}
 \end{equation}
 
 and age-specific vulnerability is given by an age-based logistic function:
 
 \begin{equation}\label{eq:v-a}
-v_a = \left(1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}\right)^{-1}.
+v_a = \left(1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}\right)^{-1}
 \end{equation}
 
 The terms vulnerability and selectivity are used interchangeably throughout this document, although, technically,
@@ -75,20 +75,13 @@ selectivity refers to the fishing gear, while
 vulnerability refers to all processes affecting the availability of fish to the fishery.
 Selectivity parameters can be fixed or estimated.
 
-Survivorship for unfished and fished populations is defined by Equations \@ref(eq:iota-a-1) and \@ref(eq:iota-a-2), respectively.
-It is assumed that all individuals ages $A$ and older (i.e., the plus group) have the same total mortality rate.
-The incidence functions refer to the life-time or per-recruit quantities such as spawning biomass per recruit (Equation \@ref(eq:phi-E)) or vulnerable biomass per recruit (Equation \@ref(eq:phi-B)).
-Note that upper and lower case subscripts denote unfished and fished conditions, respectively.
-Unfished spawning biomass is given by Eq. 11,
-and the recruitment compensation ratio [@myers1999] is given by Eq. 12.
-The steady-state equilibrium recruitment for a given fishing mortality rate $F_e$ is given by Equation 13.
-
 \begin{equation}\label{eq:f-as}
 f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 {\dot{\gamma}_s}\right)}\right)^{-1}
 \end{equation}
 
-### Survivorship
+Survivorship for unfished and fished populations is defined by Equations \@ref(eq:iota-a-1) and \@ref(eq:iota-a-2), respectively.
+It is assumed that all individuals ages $A$ and older (i.e., the plus group) have the same total mortality rate.
 
 \begin{equation}\label{eq:iota-a-1}
 \iota_a = \begin{cases}
@@ -106,7 +99,8 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \end{cases}
 \end{equation}
 
-### Incidence functions
+The incidence functions refer to the life-time or per-recruit quantities such as spawning biomass per recruit (Equation \@ref(eq:phi-E)) or vulnerable biomass per recruit (Equation \@ref(eq:phi-B)).
+Note that upper and lower case subscripts denote unfished and fished conditions, respectively.
 
 \begin{equation}\label{eq:phi-E}
 \phi_E = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a f_{a,s}
@@ -130,14 +124,20 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \left(1-e^{\left(-M-F_ev_{a,s}\right)}\right)
 \end{equation}
 
+## SH fixing this 
+Unfished spawning biomass is given by,
+
 \begin{equation}\label{eq:B-0}
 \mli{B}_0 = R_0\phi_B
 \end{equation}
 
+and the recruitment compensation ratio [@myers1999] is given by,
 \begin{equation}\label{eq:kappa}
 \kappa=\frac{4h}{1-h}
 \end{equation}
 
+
+The steady-state equilibrium recruitment for a given fishing mortality rate $F_e$ is given by Equation 13.
 ### Beverton-Holt recruitment
 Recruitment is assumed to follow a Beverton-Holt stock recruitment model,
 where the maximum juvenile survival rate $\alpha$ is given by:
