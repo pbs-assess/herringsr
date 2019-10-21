@@ -122,7 +122,7 @@ e. Time series of (log) deviations from the estimated Beverton-Holt recruitment 
 
 f. Phase plot of spawning biomass production for the dive survey period (MPD estimates), with reference line at model estimates of $0.3\mli{SB}_0$.
 
-### Reference points{#sec-ref-pts}
+### Reference points {#sec-ref-pts}
 
 A biological limit reference point (LRP) is defined for the major Pacific Herring SARs at $0.3\mli{SB}_0$ [@kronlund2017].
 Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG in 2018 [@dfo2019a] and then for HG, PRD, and CC in 2019 [@dfo2019c].
@@ -268,7 +268,7 @@ $C_t$ is catch in year $t$, and
 $\mli{SB}_t$ is estimated spawning biomass in year $t$.
 Times series of $U_t$ relative to target harvest rate of `r target_hr*100`% are presented in Figure \@ref(fig:harvest-rate).
 
-## Application of MPs and harvest options for `r assess_yr + 1`{#sec-harv-opts}
+## Application of MPs and harvest options for `r assess_yr + 1` {#sec-harv-opts}
 
 Generally, harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and
 application of a HCR that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988).
@@ -370,7 +370,7 @@ As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&n
 ### Prince Rupert District
 
 
-For PRD the best performing MPs generally had 10% or lower harvest rates, although two MPs with a 20% harvest rate did meet the conservation objective because they use a higher lower OCP (Section \@ref(#sec-ref-pts)) of $0.5\mli{SB}_0$.
+For PRD the best performing MPs generally had 10% or lower harvest rates, although two MPs with a 20% harvest rate did meet the conservation objective because they use a higher lower OCP (Section \@ref(sec-ref-pts)) of $0.5\mli{SB}_0$.
 These MPs also result in more frequent fishery closures due to spawning biomass declined below the lower control point more frequently.
 While several MPs are able to meet core conservation objective of maintaining spawning
 biomass above the LRP with high probability (at least 75%)^\ref{fn:HighProb}^,
