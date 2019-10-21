@@ -42,12 +42,17 @@ Beverton-Holt recruitment.
 ### Parameters
 
 For the steady-state condition of the model, we assume the parameter vector $\Theta$
-\begin{equation}\label{eq:Theta_steady}
+
+\begin{equation}\label{eq:Theta-steady}
 \Theta = \left(R_0,\,h,\,M\right)
 \end{equation}
+
 is unknown, and can be estimated by fitting the SCA model to data with the following restrictions:
+
 $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$.
+
 For a given set of growth-, and maturity-at-age parameters $\Phi$
+
 \begin{equation}\label{eq:Phi}
 \Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,
 \acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right).
@@ -56,15 +61,20 @@ For a given set of growth-, and maturity-at-age parameters $\Phi$
 ### Age-schedule information
 
 The observed length-at-age $l_{a,s}$ uses the Von-Bertalanffy growth model
-\begin{equation}\label{eq:l_as}
+
+\begin{equation}\label{eq:l-as}
 l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right),
 \end{equation}
+
 mean weight-at-age is given by the allometric relationship
-\begin{equation}\label{eq:w_as}
+
+\begin{equation}\label{eq:w-as}
 w_{a,s} = \acute{a}_s\left(l_{a,s}\right)^{\acute{b}_s},
 \end{equation}
+
 and age-specific vulnerability is given by an age-based logistic function
-\begin{equation}\label{eq:v_a}
+
+\begin{equation}\label{eq:v-a}
 v_a = \left(1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}\right)^{-1}.
 \end{equation}
 
@@ -73,7 +83,7 @@ selectivity refers to the fishing gear, while
 vulnerability refers to all processes affecting the availability of fish to the fishery.
 Selectivity parameters can be fixed or estimated.
 
-Survivorship for unfished and fished populations is defined by \@ref(eq:iota_a_1) and \@ref(eq:iota_a_2), respectively.
+Survivorship for unfished and fished populations is defined by \@ref(eq:iota-a-1) and \@ref(eq:iota-a-2), respectively.
 It is assumed that all individuals ages $A$ and older (i.e., the plus group) have the same total mortality rate.
 The incidence functions refer to the life-time or per-recruit quantities such as spawning biomass per recruit ($\phi_E$; \@ref(eq:phi_E)) or vulnerable biomass per recruit ($\phi_B$, \@ref{eq:phi_B}).
 Note that upper and lower case subscripts denote unfished and fished conditions, respectively.
@@ -81,14 +91,14 @@ Unfished spawning biomass is given by Eq. 11,
 and the recruitment compensation ratio (Myers et al., 1999) is given by Eq. 12.
 The steady-state equilibrium recruitment for a given fishing mortality rate $F_e$ is given by Eq. 13.
 
-\begin{equation}\label{eq:f_as}
+\begin{equation}\label{eq:f-as}
 f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 {\dot{\gamma}_s}\right)}\right)^{-1}
 \end{equation}
 
 ### Survivorship
 
-\begin{equation}\label{eq:iota_a_1}
+\begin{equation}\label{eq:iota-a-1}
 \iota_a = \begin{cases}
 \frac{1}{S}, & a=1\\
 \iota_{a-1}e^{-M}, & 1<a<A\\
@@ -96,7 +106,7 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 \end{cases}
 \end{equation}
 
-\begin{equation}\label{eq:iota_a_2}
+\begin{equation}\label{eq:iota-a-2}
 \iota_a = \begin{cases}
 \frac{1}{S}, & a=1\\
 \hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}, & 1<a<A\\
@@ -106,29 +116,29 @@ f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 
 ### Incidence functions
 
-\begin{equation}\label{eq:phi_E}
+\begin{equation}\label{eq:phi-E}
 \phi_E = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a f_{a,s}
 \end{equation}
 
-\begin{equation}\label{eq:phi_e}
+\begin{equation}\label{eq:phi-e}
 \phi_e = \sum_{s=1}^S\sum_{a=1}^\infty \hat{\iota}_{a,s} f_{a,s}
 \end{equation}
 
-\begin{equation}\label{eq:phi_B}
+\begin{equation}\label{eq:phi-B}
 \phi_B = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a w_{a,s} v_{a,s}
 \end{equation}
 
-\begin{equation}\label{eq:phi_b}
+\begin{equation}\label{eq:phi-b}
 \phi_b = \sum_{s=1}^S\sum_{a=1}^\infty \hat{\iota}_{a,s} w_{a,s} v_{a,s}
 \end{equation}
 
-\begin{equation}\label{eq:phi_q}
+\begin{equation}\label{eq:phi-q}
 \phi_q = \sum_{s=1}^S\sum_{a=1}^\infty
 \frac{\hat{\iota}_{a,s} w_{a,s} v_{a,s}}{M+F_ev_{a,s}}
 \left(1-e^{\left(-M-F_ev_{a,s}\right)}\right)
 \end{equation}
 
-\begin{equation}\label{eq:B_0}
+\begin{equation}\label{eq:B-0}
 \mli{B}_0 = R_0\phi_B
 \end{equation}
 
@@ -143,12 +153,12 @@ where the maximum juvenile survival rate alpha is given by:
 and the density-dependent term beta is given by:
 
 which simplifes to Eq.D.14.
-\begin{equation}\label{eq:R_e}
+\begin{equation}\label{eq:R-e}
 R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
 \end{equation}
 
 The equilibrium yield Ce foragiven fshing mortality rate is given by Eq.15. 
-\begin{equation}\label{eq:C_e}
+\begin{equation}\label{eq:C-e}
 C_e = F_e R_e \phi_q
 \end{equation}
 
@@ -161,7 +171,7 @@ Pacific herring statistical catch-age model using Baranov catch.
 
 ### Estimated parameters
 
-\begin{equation}\label{eq:Theta_catch}
+\begin{equation}\label{eq:Theta-catch}
 \Theta = \left(R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,
 \Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
 \{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right)
@@ -177,56 +187,56 @@ Pacific herring statistical catch-age model using Baranov catch.
 
 ### Unobserved states
 
-\begin{equation}\label{eq:N_tas_unobs}
+\begin{equation}\label{eq:N-tas-unobs}
 N_{t,a,s}
 \end{equation}
 
-\begin{equation}\label{eq:B_ts_unobs}
+\begin{equation}\label{eq:B-ts-unobs}
 \mli{B}_{t,s}
 \end{equation}
 
-\begin{equation}\label{eq:Z_tas_unobs}
+\begin{equation}\label{eq:Z-tas-unobs}
 Z_{t,a,s}
 \end{equation}
 
 ### Initial states
 
-\begin{equation}\label{eq:N_tas_init_1}
+\begin{equation}\label{eq:N-tas-init-1}
 N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)}
 \end{equation}
 
 where $(\acute{t}-A) < t < 1$, and $2 \leq a \leq A$.   
  
-\begin{equation}\label{eq:N_tas_init_2}
+\begin{equation}\label{eq:N-tas-init-2}
 N_{t,a,s} = \frac{1}{S}\bar{R}e^{\omega_{t}}
 \end{equation}
 
 where $1 \leq t \leq T$, and $a = 1$.  
 
-\begin{equation}\label{eq:v_ka}
+\begin{equation}\label{eq:v-ka}
 v_{k,a} = \frac{1}{1+e^{-\frac{\left(a - \hat{a}_k\right)}{\hat{\gamma}_k}}}  
 \end{equation}
 
-\begin{equation}\label{eq:F_kt}
+\begin{equation}\label{eq:F-kt}
 F_{k,t} = e^{\Gamma_{k,t}}
 \end{equation}
 
 ### State dynamics ($t>1$)
 
-\begin{equation}\label{eq:B_ts_state}
+\begin{equation}\label{eq:B-ts-state}
 \mli{B}_{t,s} = \sum_a N_{t,a,s}f_{a,s}
 \end{equation}
 
-\begin{equation}\label{eq:Z_tas_state}
+\begin{equation}\label{eq:Z-tas-state}
 Z_{t,a,s} = M+\sum_k F_{k,t} v_{k,t,a,s}
 \end{equation}
 
-\begin{equation}\label{eq:C_kt}
+\begin{equation}\label{eq:C-kt}
 \hat{C}_{k,t} = \sum_s \sum_a \frac {N_{t,a,s}w_{a,s}F_{k,t}
 v_{k,t,a,s} \left( 1-{e^{-Z_{t,a,s}}} \right) }{Z_{t,a,s}}^{\eta_t}
 \end{equation}
 
-\begin{equation}\label{eq:N_tas_state}
+\begin{equation}\label{eq:N-tas-state}
 N_{t,a,s} = \begin{cases}
 \frac{\alpha E_{t-1}}{1+\beta E_{t-1}} e^{\left(\omega_t-0.5\tau^2\right)}, & a=1\\
 N_{t-1,a-1,s} e^{\left(-Z_{t-1,a-1,s}\right)}, & 1<a<A\\
@@ -236,7 +246,7 @@ N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A\\
 
 ### Beverton-Holt recruitment model
 
-\begin{equation}\label{eq:R_t}
+\begin{equation}\label{eq:R-t}
 R_t = \frac{\alpha B_{t-k}}{1+\beta B_{t-k}}e^{\delta_{t}-0.5\tau^2}
 \end{equation}
 
