@@ -18,7 +18,7 @@ Models can therefore be constructed with data for females only, for males and fe
 This section describes all features of ISCAM, some of which however are not implemented for the Pacific Herring stock assessment.
 Note that we refer to ISCAM as a statistical catch-age (SCA) model in the main text.
 The following list describes modifications specific to the assessment of Pacific Herring:
-  
+
 1. Data are unsexed, $S = 1$.
 
 2. Total mortality is constant across ages, $Z_{ta} = Z_t$.
@@ -29,8 +29,6 @@ The following list describes modifications specific to the assessment of Pacific
 
 5. Unfished spawning biomass is represented as $B_0$ in this section, and as $\mli{SB}_0$ in
 the main text.
-
-
 
 ## Equilibrium Considerations: Steady-state age structured model
 
@@ -45,20 +43,17 @@ $\Theta$, is assumed to be unknown,
 \Theta = \left(R_0,\,h,\,M\right)
 \end{equation}
 
-
 and can be estimated by fitting the SCA model to 
 data with the following restrictions:
   
   $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$. 
 
-
 For a given set of growth and maturity-at-age parameters, $\Phi$, growth is assumed to follow the Von-Bertalanffy growth model, which describes the observed length-at-age, $l_{a,s}$, and the mean weight-at-age, $w_{a,s}$, is given by an allometric relationship and age-specific vulnerability, $v_a$, is given by an age-based logistic function.
 
 \begin{equation}\label{eq:Phi}
 \Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,
-             \acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right)
+\acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right)
 \end{equation}
-
 
 \begin{equation}\label{eq:l-as}
 l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right)
@@ -69,7 +64,6 @@ l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right)
 w_{a,s} = \acute{a}_s\left(l_{a,s}\right)^{\acute{b}_s}
 \end{equation}
 
-
 \begin{equation}\label{eq:v-a}
 v_a = \left(1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}\right)^{-1}
 \end{equation}
@@ -77,15 +71,13 @@ v_a = \left(1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}\righ
 The terms vulnerability and selectivity are used interchangeably throughout this document, although, technically,
 selectivity refers to the fishing gear, while
 vulnerability refers to all processes affecting the availability of fish to the fishery.
-Selectivity parameters can be fixed or estimated.
+Selectivity parameters can be fixed or estimated. Fecundity-at-age is defined in terms of weight-at-age and age-based logistic function: 
 
 
-Fecundity-at-age is then defined in terms of weight-at-age and age-based logistic function: 
-  \begin{equation}\label{eq:f-as}
+\begin{equation}\label{eq:f-as}
 f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
-                                 {\dot{\gamma}_s}\right)}\right)^{-1}
+{\dot{\gamma}_s}\right)}\right)^{-1}
 \end{equation}
-
 
 Survivorship for unfished and fished populations is defined by Equations \@ref(eq:iota-a-1) and \@ref(eq:iota-a-2), respectively.
 It is assumed that all individuals ages $A$ and older (i.e., the plus group) have the same total mortality rate.
