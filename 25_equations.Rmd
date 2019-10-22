@@ -1,6 +1,6 @@
 # Model description
 
-The Pacific Herring stock assessment is conducted using the integrated statistical catch age model (ISCAM), developed by S. Martell [@martell2011]. 
+The Pacific Herring stock assessment is conducted using the integrated statistical catch age model [ISCAM; @martell2011]. 
 ISCAM is implemented in a Bayesian estimation framework and is written in AD Model Builder [@admb].
 The original source code and documentation for both are available online. 
 
