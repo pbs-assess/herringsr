@@ -132,15 +132,12 @@ Unfished spawning biomass is calculated by,
 \mli{B}_0 = R_0\phi_B
 \end{equation}
 
-
 and the recruitment compensation ratio [@myers1999] is given by,
 \begin{equation}\label{eq:kappa}
 \kappa=\frac{4h}{1-h}
 \end{equation}
 
-
-### Beverton-Holt recruitment
-Recruitment is assumed to follow a Beverton-Holt stock recruitment model,
+Recruitment is assumed to follow a Beverton-Holt stock recruitment relationship,
 where the maximum juvenile survival rate $\alpha$ is given by:
   \begin{equation}\label{eq:Alpha}
 \alpha = \frac{\kappa}{\phi_E}  
@@ -151,12 +148,12 @@ and the density-dependent term $\beta$ is given by:
 \beta=\frac{\kappa-1}{R_0\phi_E}
 \end{equation}
 
-The steady-state equilibrium recruitment is given by Equation 13.which simplifes to:
+These equations can then be simplified to the steady-state equilibrium recruitment:
   \begin{equation}\label{eq:R-e}
 R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
 \end{equation}
 
-The equilibrium yield $C_e$ foragiven fshing mortality rate is given by
+The equilibrium yield $C_e$ for a given fishing mortality rate, $F_e$ is given by:
 \begin{equation}\label{eq:C-e}
 C_e = F_e R_e \phi_q
 \end{equation}
@@ -164,11 +161,14 @@ C_e = F_e R_e \phi_q
 These steady-state conditions are critical for determining various reference points such as
 $F_\text{MSY}$ and $B_\text{MSY}$.
 
-## Catch-age model
+## Dynamic State Statistical Catch Age Model
 
-The Pacific Herring SCA model using the Baranov catch equation.
-
-### Estimated parameters
+The estimated parameter vector in the dynamic state version of iSCAM is defined by $\Theta$,
+where $R_0$, $h$, and $M$, are the leading population parameters that define the overall scale and productivity of the population. The variance components of the model are partitioned using an errors in variables approach. 
+The key variance parameter is the inverse of the total variance $\vartheta^2$ (i.e., total precision). 
+This parameter can be fixed or estimated, and was fixed for this model. 
+The total variance is partitioned into observation, $\sigma$, and process error, $\tau$,  components by the model parameter $\rho$, 
+which represents the proportion of the total variance that is due to observation error(Punt and Butterworth, 1999; Deriso et al., 2007).
 
 \begin{equation}\label{eq:Theta-catch}
 \Theta = \left(R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,
@@ -184,14 +184,18 @@ The Pacific Herring SCA model using the Baranov catch equation.
 \tau = \sqrt{\left(1-\rho\right)}\vartheta  
 \end{equation}
 
-### Unobserved states
+The unobserved state variables include the numbers-at-age each year, $N_{t,a,s}$, the total
+biomass each year, $B_{t,s}$, the spawning stock biomass $SB_{t,s}$ and the total age-specific total mortality
+rate (Zt;a). The initial numbers-at-age in the first year (Eq. A.31) and the annual recruits
+(Eq. A.32) are treated as estimated parameters and used to initialize the numbers-at-age
+array.
 
 \begin{equation}\label{eq:N-tas-unobs}
-N_{t,a,s}
+N_{t,a,s},SB_{t,s}
 \end{equation}
 
 \begin{equation}\label{eq:B-ts-unobs}
-\mli{B}_{t,s}
+B_{t,s}
 \end{equation}
 
 \begin{equation}\label{eq:Z-tas-unobs}
