@@ -21,4 +21,6 @@ where applicable, recommendations from the aforementioned 2018 and 2019 MSE anal
 These recommendations are described in the Section '\nameref{sec:harv-opts}.'
 
 <!--  Mandatory last paragraph in this section -->
-This Science Response results from the Science Response Process of September 30, 2019 on the Stock Status Update with application of Management Procedures for BC Pacific Herring: 2019 Status and 2020 Forecast.
+This Science Response results from the Science Response Process of
+September 30, 2019 on the
+Stock status update with application of management procedures for BC Pacific Herring: 2019 status and 2020 forecast.
