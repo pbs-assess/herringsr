@@ -80,7 +80,7 @@ vulnerability refers to all processes affecting the availability of fish to the 
 Selectivity parameters can be fixed or estimated.
 
 
-Fecudity-at-age is then defined in terms of weight-at-age and age-based logistic function: 
+Fecundity-at-age is then defined in terms of weight-at-age and age-based logistic function: 
   \begin{equation}\label{eq:f-as}
 f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
                                  {\dot{\gamma}_s}\right)}\right)^{-1}
