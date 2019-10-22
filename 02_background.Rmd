@@ -49,12 +49,14 @@ Observed annual weight-at-age is estimated external to the model, and maturity-a
 In 2017, an updated version of the SCA model was applied to assess each of the `r number_to_word(length(major_regions_short))` major Pacific Herring SARs [@cleary2018].
 The main change from the SCA model used from 2011 to 2016 was the partitioning of variance between observation and process error to improve the estimation of the variance structure [@cleary2018].
 A bridging analysis was used to validate the updated model:
-this showed parameter estimates and biomass trajectories associated with the structural adjustments to be nearly identical to results from previous versions of the model, supporting the adoption of the revised structure [@cleary2018].
+this showed parameter estimates and biomass trajectories associated with the structural adjustments to be nearly identical to results from previous versions of the model,
+supporting the adoption of the revised structure [@cleary2018].
 Other adjustments were made to improve computational efficiency and update input data.
 
 A Bayesian framework was used to estimate time series of spawning biomass, instantaneous natural mortality, and age-2 recruitment from `r minor_start_yr` to `r minor_end_yr`.
 Advice to managers for the major SARs includes posterior estimates of current stock status ($\mli{SB}_{`r minor_end_yr`}$), stock status relative to the LRP of $0.3\mli{SB}_0$, and spawning biomass in `r assess_yr + 1` assuming no catch ($\mli{SB}_{`r assess_yr + 1`}$).
-The projected spawning biomass is based on the current year's recruitment deviations from average predicted by the Beverton-Holt stock-recruit model and estimated natural mortality and weight-at-age, both averaged over the most recent 5-years.
+The projected spawning biomass is based on the current year's recruitment deviations from average predicted by the Beverton-Holt stock-recruit model and
+estimated natural mortality and weight-at-age, both averaged over the most recent 5-years.
 The Markov chain Monte Carlo (MCMC) sampling procedure follows the same method implemented by @cleary2018.
 
 @cleary2018 reported results from two SCA model fits that differed in assumptions about dive survey (from `r new_surv_yr` to `r minor_end_yr`) catchability $q_2$:
