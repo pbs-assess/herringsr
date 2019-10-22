@@ -1,4 +1,4 @@
-# Appendix
+# Appendix\label{sec:app-minor}
 
 We do not conduct formal analyses of stock trend information for the
 `r number_to_word(length(minor_regions_short))`
