@@ -36,15 +36,15 @@ Pacific Herring steady-state age-structured model assuming
 unequal vulnerability-at-age,
 age-specific fecundity, and
 Beverton-Holt recruitment. 
-Under steady state conditions the parameter vector, 
-$\Theta$, is assumed to be unknown and can be estimated by fitting the SCA model to 
+Under steady state conditions the parameter vector 
+$\Theta$ is assumed to be unknown and can be estimated by fitting the SCA model to 
 data, with some restrictions:
 
 \begin{equation}\label{eq:Theta-steady}
 \Theta = \left(R_0,\,h,\,M\right);\,\,\,\,R_0 > 0,\, 0.2 \leq h < 1.0,\, M > 0 
 \end{equation}
 
-For a given set of growth and maturity-at-age parameters, $\Phi$, growth is assumed to follow the Von-Bertalanffy growth model, which describes the observed length-at-age, $l_{a,s}$, and the mean weight-at-age, $w_{a,s}$, is given by an allometric relationship and age-specific vulnerability, $v_a$, is given by an age-based logistic function.
+For a given set of growth and maturity-at-age parameters $\Phi$ growth is assumed to follow the Von-Bertalanffy growth model, which describes the observed length-at-age $l_{a,s}$ and the mean weight-at-age $w_{a,s}$ is given by an allometric relationship and age-specific vulnerability $v_a$ is given by an age-based logistic function.
 
 \begin{equation}\label{eq:Phi}
 \Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,
@@ -55,7 +55,6 @@ For a given set of growth and maturity-at-age parameters, $\Phi$, growth is assu
 l_{a,s} = l\left(1-e^{\left(-k_s\left(a-t_{0,s}\right)\right)}\right)
 \end{equation}
 
-
 \begin{equation}\label{eq:w-as}
 w_{a,s} = \acute{a}_s\left(l_{a,s}\right)^{\acute{b}_s}
 \end{equation}
@@ -64,19 +63,20 @@ w_{a,s} = \acute{a}_s\left(l_{a,s}\right)^{\acute{b}_s}
 v_a = \left(1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}\right)^{-1}
 \end{equation}
 
-The terms vulnerability and selectivity are used interchangeably throughout this document, although, technically,
+The terms vulnerability and selectivity are used interchangeably throughout this document, although technically,
 selectivity refers to the fishing gear, while
 vulnerability refers to all processes affecting the availability of fish to the fishery.
-Selectivity parameters can be fixed or estimated. Fecundity-at-age is defined in terms of weight-at-age and age-based logistic function: 
-
+Selectivity parameters can be fixed or estimated. Fecundity-at-age $f_{a,s}$ is defined in terms of weight-at-age and an age-based logistic function: 
 
 \begin{equation}\label{eq:f-as}
 f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
 {\dot{\gamma}_s}\right)}\right)^{-1}
 \end{equation}
 
-Survivorship for unfished and fished populations is defined by Equations \@ref(eq:iota-a-1) and \@ref(eq:iota-a-2), respectively.
-It is assumed that all individuals ages $A$ and older (i.e., the plus group) have the same total mortality rate.
+Survivorship for unfished and fished populations is 
+defined by Equations \@ref(eq:iota-a-1) and \@ref(eq:iota-a-2), 
+respectively and it is assumed that all individuals ages $A$ and 
+older (i.e., the plus group) have the same total mortality rate.
 
 \begin{equation}\label{eq:iota-a-1}
 \iota_a = \begin{cases}
@@ -93,7 +93,6 @@ It is assumed that all individuals ages $A$ and older (i.e., the plus group) hav
 \frac{\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}}{1-e^{-M-F_e v_{a,s}}}, & a=A\\
 \end{cases}
 \end{equation}
-
 
 The incidence functions refer to the life-time or per-recruit quantities such as spawning biomass per recruit (Equation \@ref(eq:phi-E)) or vulnerable biomass per recruit (Equation \@ref(eq:phi-B)).
 Note that upper and lower case subscripts denote unfished and fished conditions, respectively.
@@ -120,36 +119,39 @@ Note that upper and lower case subscripts denote unfished and fished conditions,
 \left(1-e^{\left(-M-F_ev_{a,s}\right)}\right)
 \end{equation}
 
-
-
-Unfished spawning biomass is calculated by,
+Unfished spawning biomass $B_0$ and the recruitment 
+compensation ratio $\kappa$ [@myers1999] are estimated by:
 
 \begin{equation}\label{eq:B-0}
-\mli{B}_0 = R_0\phi_B
+B_0 = R_0\phi_B
 \end{equation}
 
-and the recruitment compensation ratio [@myers1999] is given by,
 \begin{equation}\label{eq:kappa}
 \kappa=\frac{4h}{1-h}
 \end{equation}
 
-Recruitment is assumed to follow a Beverton-Holt stock recruitment relationship,
-where the maximum juvenile survival rate $\alpha$ is given by:
-  \begin{equation}\label{eq:Alpha}
+Recruitment is assumed to follow a Beverton-Holt 
+stock recruitment relationship,
+where the maximum juvenile survival rate $\alpha$ 
+and the density-dependent term $\beta$ are given by:
+
+\begin{equation}\label{eq:Alpha}
 \alpha = \frac{\kappa}{\phi_E}  
 \end{equation}
 
-and the density-dependent term $\beta$ is given by:
-  \begin{equation}\label{eq:beta}
+\begin{equation}\label{eq:beta}
 \beta=\frac{\kappa-1}{R_0\phi_E}
 \end{equation}
 
-These equations can then be simplified to the steady-state equilibrium recruitment:
-  \begin{equation}\label{eq:R-e}
+These equations can then be simplified to the
+steady-state equilibrium recruitment $R_e$ needed to calculate 
+the equilibrium yield $C_e$ for a given fishing mortality rate $F_e$:
+<!-- SH - write something about phi_q? --> :
+
+\begin{equation}\label{eq:R-e}
 R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
 \end{equation}
 
-The equilibrium yield $C_e$ for a given fishing mortality rate, $F_e$ is given by:
 \begin{equation}\label{eq:C-e}
 C_e = F_e R_e \phi_q
 \end{equation}
