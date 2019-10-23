@@ -94,7 +94,7 @@ older (i.e., the plus group) have the same total mortality rate.
 \end{cases}
 \end{equation}
 
-The incidence functions refer to the life-time or per-recruit quantities such as spawning biomass per recruit (Equation \@ref(eq:phi-E)) or vulnerable biomass per recruit (Equation \@ref(eq:phi-B)).
+The incidence functions refer to the life-time or per-recruit quantities such as spawning biomass per recruit (Equation \ref{eq:phi-E}) or vulnerable biomass per recruit (Equation \ref{eq:phi-B}).
 Note that upper and lower case subscripts denote unfished and fished conditions, respectively.
 
 \begin{equation}\label{eq:phi-E}
