@@ -37,16 +37,12 @@ unequal vulnerability-at-age,
 age-specific fecundity, and
 Beverton-Holt recruitment. 
 Under steady state conditions the parameter vector, 
-$\Theta$, is assumed to be unknown,
+$\Theta$, is assumed to be unknown and can be estimated by fitting the SCA model to 
+data, with some restrictions:
 
 \begin{equation}\label{eq:Theta-steady}
-\Theta = \left(R_0,\,h,\,M\right)
+\Theta = \left(R_0,\,h,\,M\right);\,\,\,\,R_0 > 0,\, 0.2 \leq h < 1.0,\, M > 0 
 \end{equation}
-
-and can be estimated by fitting the SCA model to 
-data with the following restrictions:
-  
-  $R_0 > 0$, $0.2 \leq h < 1.0$, and $M > 0$. 
 
 For a given set of growth and maturity-at-age parameters, $\Phi$, growth is assumed to follow the Von-Bertalanffy growth model, which describes the observed length-at-age, $l_{a,s}$, and the mean weight-at-age, $w_{a,s}$, is given by an allometric relationship and age-specific vulnerability, $v_a$, is given by an age-based logistic function.
 
@@ -184,23 +180,19 @@ which represents the proportion of the total variance that is due to observation
 \tau = \sqrt{\left(1-\rho\right)}\vartheta  
 \end{equation}
 
-The unobserved state variables include the numbers-at-age each year, $N_{t,a,s}$, the total
-biomass each year, $B_{t,s}$, the spawning stock biomass $SB_{t,s}$ and the total age-specific total mortality
-rate (Zt;a). The initial numbers-at-age in the first year (Eq. A.31) and the annual recruits
+The unobserved state variables (Eq. \@ref(eq:N-tas-unobs)) 
+include the numbers-at-age each year, $N_{t,a,s}$, 
+the total biomass each year, $B_{t,s}$, the spawning stock biomass $SB_{t,s}$ 
+and the total age-specific total mortality rate, $Z_{t,a,s}$.
+
+The initial numbers-at-age in the first year (Eq. A.31) and the annual recruits
 (Eq. A.32) are treated as estimated parameters and used to initialize the numbers-at-age
 array.
 
 \begin{equation}\label{eq:N-tas-unobs}
-N_{t,a,s},SB_{t,s}
+N_{t,a,s}, SB_{t,s}, B_{t,s}, Z_{t,a,s}
 \end{equation}
 
-\begin{equation}\label{eq:B-ts-unobs}
-B_{t,s}
-\end{equation}
-
-\begin{equation}\label{eq:Z-tas-unobs}
-Z_{t,a,s}
-\end{equation}
 
 ### Initial states
 
