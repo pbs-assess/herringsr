@@ -1,6 +1,6 @@
 git_dir <- "C:/github"
 if( tolower(Sys.getenv("USERNAME")) == "grinnellm" )  git_dir <- "C:/Grinnell/Git"
-if( tolower(Sys.getenv("USERNAME")) == "grandin" )  git_dir <- "C:/github/main"
+if( tolower(Sys.getenv("USERNAME")) == "grandin" )  git_dir <- "C:/github/pbs-assess"
 curr_dir <- getwd()
 
 cat(crayon::green("\nRebasing new commits from rosettafish...\n"))
