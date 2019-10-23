@@ -41,7 +41,7 @@ $\Theta$ is assumed to be unknown and can be estimated by fitting the SCA model 
 data, with some restrictions:
   
   \begin{equation}\label{eq:Theta-steady}
-\Theta = \left(R_0,\,h,\,M\right);\,\,\,\,R_0 > 0,\, 0.2 \leq h < 1.0,\, M > 0 
+\Theta = \left(R_0,\,h,\,M\right);\,\,\,\,R_0 > 0;\, 0.2 \leq h < 1.0;\, M > 0 
 \end{equation}
 
 For a given set of growth and maturity-at-age parameters $\Phi$ growth is assumed to follow the Von-Bertalanffy growth model, which describes the observed length-at-age $l_{a,s}$ and the mean weight-at-age $w_{a,s}$ is given by an allometric relationship and age-specific vulnerability $v_a$ is given by an age-based logistic function.
@@ -209,16 +209,13 @@ Initial numbers-at-age in the first year (Eq. A.31) and the annual recruits
 (Eq. A.32) are treated as estimated parameters and used to initialize the numbers-at-age
 array.
 \begin{equation}\label{eq:N-tas-init-1}
-N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)}
+N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)};\,\,\left(\acute{t}-A\right) < t < 1;\,\, 2 \leq a \leq A
 \end{equation}
-
-where $(\acute{t}-A) < t < 1$, and $2 \leq a \leq A$.   
 
 \begin{equation}\label{eq:N-tas-init-2}
-N_{t,a,s} = \frac{1}{S}\bar{R}e^{\omega_{t}}
+N_{t,a,s} = \frac{1}{S}\bar{R}e^{\omega_{t}};
+\,\,1 \leq t \leq T;\,\, a = 1.  
 \end{equation}
-
-where $1 \leq t \leq T$, and $a = 1$.  
 
 \begin{equation}\label{eq:v-ka}
 v_{k,a} = \frac{1}{1+e^{-\frac{\left(a - \hat{a}_k\right)}{\hat{\gamma}_k}}}  
