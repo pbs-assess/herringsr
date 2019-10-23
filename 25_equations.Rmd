@@ -40,8 +40,8 @@ Under steady state conditions the parameter vector
 $\Theta$ is assumed to be unknown and can be estimated by fitting the SCA model to 
 data, with some restrictions:
   
-  \begin{equation}\label{eq:Theta-steady}
-\Theta = \left(R_0,\,h,\,M\right);\,\,\,\,R_0 > 0;\, 0.2 \leq h < 1.0;\, M > 0 
+\begin{equation}\label{eq:Theta-steady}
+\Theta = \left(R_0,\,h,\,M\right);\quad R_0 > 0,\, 0.2 \leq h < 1.0,\, M > 0.
 \end{equation}
 
 For a given set of growth and maturity-at-age parameters $\Phi$ growth is assumed to follow the Von-Bertalanffy growth model, which describes the observed length-at-age $l_{a,s}$ and the mean weight-at-age $w_{a,s}$ is given by an allometric relationship and age-specific vulnerability $v_a$ is given by an age-based logistic function.
