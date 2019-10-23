@@ -217,8 +217,14 @@ N_{t,a,s} = \frac{1}{S}\bar{R}e^{\omega_{t}};
 \,\,\,\,1 \leq t \leq T;\,\, a = 1.  
 \end{equation}
 
-Vulnerability-at-age $v_{k,a}$ is assumed to be time-invariant and is modelled using a two-parameter logistic function (Eq. \ref{eq:v-ka})). The annual fishing mortality for 
-each gear $k$ in year $t$ is the exponent of the estimated vector $\Gamma_{k,t}$ (Eq. \ref{eq:F-kt})). The vector of log fishing mortality rate parameters $\Gamma_{k,t}$ is a bounded vector with a minimum value of -30.0 and an upper bound of 3.0. In arithmetic space this corresponds to a minimum value of 9.36e−14 and a maximum value of 20.01 for annual fishing mortality rates. In years where there are zero reported catches for a given fleet, no corresponding fishing mortality rate parameter is estimated and the implicit assumption is there was no fishery in that year.
+Vulnerability-at-age $v_{k,a}$ is assumed to be time-invariant and is modelled using a two-parameter logistic function (Equation \ref{eq:v-ka}).
+The annual fishing mortality for each gear $k$ in year $t$ is the exponent of the estimated vector $\Gamma_{k,t}$ (Equation \ref{eq:F-kt}).
+The vector of log fishing mortality rate parameters $\Gamma_{k,t}$ is a bounded vector with a 
+minimum value of $-30.0$ and a maximum value of $3.0$.
+In arithmetic space this corresponds to a
+minimum value of $9.36^{-14}$ and a maximum value of $20.01$ for annual fishing mortality rates.
+In years where there are zero reported catches for a given fleet,
+no corresponding fishing mortality rate parameter is estimated and the implicit assumption is there was no fishery in that year.
 
 \begin{equation}\label{eq:v-ka}
 v_{k,a} = \frac{1}{1+e^{-\frac{\left(a - \hat{a}_k\right)}{\hat{\gamma}_k}}}  
