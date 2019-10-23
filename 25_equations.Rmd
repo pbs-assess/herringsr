@@ -183,7 +183,7 @@ productivity of the population.
 \end{equation}
 
 The variance components of the model are partitioned using an errors in variables approach. 
-The key variance parameter is the inverse of the total variance $\vartheta^2$ (i.e., total precision). This parameter can be fixed or estimated, and was fixed for this model. The total variance is partitioned into observation $\sigma$ and process error $\tau$  components by the model parameter $\rho$, which represents the proportion of the total variance that is due to observation error(Punt and Butterworth, 1999; Deriso et al., 2007).
+The key variance parameter is the inverse of the total variance $\vartheta^2$ (i.e., total precision). This parameter can be fixed or estimated, and was fixed for this model. The total variance is partitioned into observation $\sigma$ and process error $\tau$  components by the model parameter $\rho$, which represents the proportion of the total variance that is due to observation error [@punt1999; @deriso2007].
 
 \begin{equation}\label{eq:sigma}
 \sigma = \sqrt{\rho}\vartheta
