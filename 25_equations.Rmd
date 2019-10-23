@@ -18,7 +18,7 @@ Models can therefore be constructed with data for females only, for males and fe
 This section describes all features of iSCAM, some of which however are not implemented for the Pacific Herring stock assessment.
 Note that we refer to iSCAM as a statistical catch-age (SCA) model in the main text.
 The following list describes modifications specific to the assessment of Pacific Herring:
-
+  
 1. Data are unsexed, $S = 1$.
 
 2. Total mortality is constant across ages, $Z_{ta} = Z_t$.
@@ -39,8 +39,8 @@ Beverton-Holt recruitment.
 Under steady state conditions the parameter vector 
 $\Theta$ is assumed to be unknown and can be estimated by fitting the SCA model to 
 data, with some restrictions:
-
-\begin{equation}\label{eq:Theta-steady}
+  
+  \begin{equation}\label{eq:Theta-steady}
 \Theta = \left(R_0,\,h,\,M\right);\,\,\,\,R_0 > 0,\, 0.2 \leq h < 1.0,\, M > 0 
 \end{equation}
 
@@ -48,7 +48,7 @@ For a given set of growth and maturity-at-age parameters $\Phi$ growth is assume
 
 \begin{equation}\label{eq:Phi}
 \Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,
-\acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right)
+             \acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right)
 \end{equation}
 
 \begin{equation}\label{eq:l-as}
@@ -67,10 +67,10 @@ The terms vulnerability and selectivity are used interchangeably throughout this
 selectivity refers to the fishing gear, while
 vulnerability refers to all processes affecting the availability of fish to the fishery.
 Selectivity parameters can be fixed or estimated. Fecundity-at-age $f_{a,s}$ is defined in terms of weight-at-age and an age-based logistic function: 
-
-\begin{equation}\label{eq:f-as}
+  
+  \begin{equation}\label{eq:f-as}
 f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
-{\dot{\gamma}_s}\right)}\right)^{-1}
+                                 {\dot{\gamma}_s}\right)}\right)^{-1}
 \end{equation}
 
 Survivorship for unfished and fished populations is 
@@ -121,8 +121,8 @@ Note that upper and lower case subscripts denote unfished and fished conditions,
 
 Unfished spawning biomass $B_0$ and the recruitment 
 compensation ratio $\kappa$ [@myers1999] are estimated by:
-
-\begin{equation}\label{eq:B-0}
+  
+  \begin{equation}\label{eq:B-0}
 B_0 = R_0\phi_B
 \end{equation}
 
@@ -133,9 +133,9 @@ B_0 = R_0\phi_B
 Recruitment is assumed to follow a Beverton-Holt 
 stock recruitment relationship,
 where the maximum juvenile survival rate $\alpha$ 
-and the density-dependent term $\beta$ are given by:
-
-\begin{equation}\label{eq:Alpha}
+  and the density-dependent term $\beta$ are given by:
+  
+  \begin{equation}\label{eq:Alpha}
 \alpha = \frac{\kappa}{\phi_E}  
 \end{equation}
 
@@ -146,9 +146,9 @@ and the density-dependent term $\beta$ are given by:
 These equations can then be simplified to the
 steady-state equilibrium recruitment $R_e$ needed to calculate 
 the equilibrium yield $C_e$ for a given fishing mortality rate $F_e$:
-<!-- SH - write something about phi_q? -->
-
-\begin{equation}\label{eq:R-e}
+  <!-- SH - write something about phi_q? -->
+  
+  \begin{equation}\label{eq:R-e}
 R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
 \end{equation}
 
@@ -178,15 +178,13 @@ productivity of the population.
 
 \begin{equation}\label{eq:Theta-catch}
 \Theta = \left(R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,
-\Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
-\{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right)
+               \Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
+               \{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right)
 \end{equation}
 
 The variance components of the model are partitioned using an errors in variables approach. 
-The key variance parameter is the inverse of the total variance $\vartheta^2$ (i.e., total precision). 
-This parameter can be fixed or estimated, and was fixed for this model. 
-The total variance is partitioned into observation, $\sigma$, and process error, $\tau$,  components by the model parameter $\rho$, 
-which represents the proportion of the total variance that is due to observation error(Punt and Butterworth, 1999; Deriso et al., 2007).
+The key variance parameter is the inverse of the total variance $\vartheta^2$ (i.e., total precision). This parameter can be fixed or estimated, and was fixed for this model. The total variance is partitioned into observation $\sigma$ and process error $\tau$  components by the model parameter $\rho$, which represents the proportion of the total variance that is due to observation error(Punt and Butterworth, 1999; Deriso et al., 2007).
+
 \begin{equation}\label{eq:sigma}
 \sigma = \sqrt{\rho}\vartheta
 \end{equation}
@@ -196,21 +194,17 @@ which represents the proportion of the total variance that is due to observation
 \end{equation}
 
 The unobserved state variables (Eq. \@ref(eq:N-tas-unobs)) 
-include the numbers-at-age each year, $N_{t,a,s}$, 
-the total biomass each year, $B_{t,s}$, the spawning stock biomass $SB_{t,s}$ 
-and the total age-specific total mortality rate, $Z_{t,a,s}$.
-
-The initial numbers-at-age in the first year (Eq. A.31) and the annual recruits
-(Eq. A.32) are treated as estimated parameters and used to initialize the numbers-at-age
-array.
+include the numbers-at-age each year $N_{t,a,s}$, 
+the total biomass each year $B_{t,s}$. the spawning stock biomass $SB_{t,s}$, 
+and the total age-specific total mortality rate $Z_{t,a,s}$.
 
 \begin{equation}\label{eq:N-tas-unobs}
-N_{t,a,s}, SB_{t,s}, B_{t,s}, Z_{t,a,s}
+N_{t,a,s},\.\.SB_{t,s},\.\. B_{t,s},\.\. Z_{t,a,s}
 \end{equation}
 
-
-### Initial states
-
+Initial numbers-at-age in the first year (Eq. A.31) and the annual recruits
+(Eq. A.32) are treated as estimated parameters and used to initialize the numbers-at-age
+array.
 \begin{equation}\label{eq:N-tas-init-1}
 N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)}
 \end{equation}
