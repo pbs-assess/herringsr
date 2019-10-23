@@ -196,7 +196,7 @@ which represents the proportion of the total variance that is due to observation
 \tau = \sqrt{\left(1-\rho\right)}\vartheta  
 \end{equation}
 
-The unobserved state variables (Eq. \@ref(eq:N-tas-unobs)) 
+The unobserved state variables (Eq. \ref{eq:N-tas-unobs})) 
 include the numbers-at-age each year $N_{t,a,s}$, 
 the total biomass each year $B_{t,s}$. the spawning stock biomass $SB_{t,s}$, 
 and the total age-specific total mortality rate $Z_{t,a,s}$.
@@ -205,17 +205,20 @@ and the total age-specific total mortality rate $Z_{t,a,s}$.
 N_{t,a,s},\,\, SB_{t,s},\,\, B_{t,s},\,\, Z_{t,a,s}
 \end{equation}
 
-Initial numbers-at-age in the first year (Eq. A.31) and the annual recruits
-(Eq. A.32) are treated as estimated parameters and used to initialize the numbers-at-age
+Initial numbers-at-age in the first year (Eq. \ref{eq:N-tas-init-1})) and the annual recruits
+(Eq. \ref{eq:N-tas-init-2})) are treated as estimated parameters and used to initialize the numbers-at-age
 array.
 \begin{equation}\label{eq:N-tas-init-1}
-N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)};\,\,\left(\acute{t}-A\right) < t < 1;\,\, 2 \leq a \leq A
+N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)};\,\,\,\,\left(\acute{t}-A\right) < t < 1;\,\, 2 \leq a \leq A
 \end{equation}
 
 \begin{equation}\label{eq:N-tas-init-2}
 N_{t,a,s} = \frac{1}{S}\bar{R}e^{\omega_{t}};
-\,\,1 \leq t \leq T;\,\, a = 1.  
+\,\,\,\,1 \leq t \leq T;\,\, a = 1.  
 \end{equation}
+
+Vulnerability-at-age $v_{k,a}$ is assumed to be time-invariant and is modelled using a two-parameter logistic function (Eq. \ref{eq:v-ka})). The annual fishing mortality for 
+each gear $k$ in year $t$ is the exponent of the estimated vector $\Gamma_{k,t}$ (Eq. \ref{eq:F-kt})). The vector of log fishing mortality rate parameters $\Gamma_{k,t}$ is a bounded vector with a minimum value of -30.0 and an upper bound of 3.0. In arithmetic space this corresponds to a minimum value of 9.36e−14 and a maximum value of 20.01 for annual fishing mortality rates. In years where there are zero reported catches for a given fleet, no corresponding fishing mortality rate parameter is estimated and the implicit assumption is there was no fishery in that year.
 
 \begin{equation}\label{eq:v-ka}
 v_{k,a} = \frac{1}{1+e^{-\frac{\left(a - \hat{a}_k\right)}{\hat{\gamma}_k}}}  
