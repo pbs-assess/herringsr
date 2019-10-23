@@ -1,22 +1,22 @@
 # Model description
 
-The Pacific Herring stock assessment is conducted using the integrated statistical catch age model [ISCAM; @martell2011]. 
-ISCAM is implemented in a Bayesian estimation framework and is written in AD Model Builder [@admb].
+The Pacific Herring stock assessment is conducted using the integrated statistical catch age model [iSCAM; @martell2011]. 
+iSCAM is implemented in a Bayesian estimation framework and is written in AD Model Builder [@admb].
 The original source code and documentation for both are available online. 
 
-This section contains the documentation in mathematical form of the underlying ISCAM
+This section contains the documentation in mathematical form of the underlying iSCAM
 age-structured model, its steady state version that is used to calculate reference points, the
 observation models used in predicting observations, and the components of the objective
 function that formulate the statistical criterion used to estimate model parameters.
 
 A documented list of symbols used in model equations is given in Table \@ref(tab:variables). 
-The documentation presented here is a revised version of the ISCAM user guide available online. 
-Much of the text and many of the equations have been taken directly from the original ISCAM user guide.
+The documentation presented here is a revised version of the iSCAM user guide available online. 
+Much of the text and many of the equations have been taken directly from the original iSCAM user guide.
 Note that all the model equations are presented for a sex structured model with $S$ sexes.
 Models can therefore be constructed with data for females only, for males and females, or with unsexed data.
 
-This section describes all features of ISCAM, some of which however are not implemented for the Pacific Herring stock assessment.
-Note that we refer to ISCAM as a statistical catch-age (SCA) model in the main text.
+This section describes all features of iSCAM, some of which however are not implemented for the Pacific Herring stock assessment.
+Note that we refer to iSCAM as a statistical catch-age (SCA) model in the main text.
 The following list describes modifications specific to the assessment of Pacific Herring:
 
 1. Data are unsexed, $S = 1$.
@@ -158,32 +158,35 @@ C_e = F_e R_e \phi_q
 
 These steady-state conditions are critical for 
 determining various reference points such as
-$F_\text{MSY}$ and $B_\text{MSY}$.  
-ISCAM calculates $F_\text{MSY}$ by finding the value of 
+$F_\text{MSY}$ and $B_\text{MSY}$. iSCAM calculates 
+$F_\text{MSY}$ by finding the value of 
 $F_e$ that results in the zero derivative of Equation \@ref(eq:C-e).
 This is accomplished numerically using a Newton-Raphson method 
 where an initial guess for
 $F_\text{MSY}$ is set equal to $M$. 
 Given an estimate of $F_\text{MSY}$, other reference points such as $MSY$ and
-$B_\text{MSY}$ can be calculated.  
-However, these reference points are not currently used in the 
-Pacific Herring assessment.
+$B_\text{MSY}$ can be calculated. However, these reference points 
+are not currently used in the Pacific Herring assessment.
 
 ## Dynamic State Statistical Catch Age Model
 
-The estimated parameter vector in the dynamic state version of iSCAM is defined by $\Theta$,
-where $R_0$, $h$, and $M$, are the leading population parameters that define the overall scale and productivity of the population. The variance components of the model are partitioned using an errors in variables approach. 
+The estimated parameter vector in the 
+dynamic state version of iSCAM is defined by $\Theta$,
+where $R_0$, $h$, and $M$, are the leading population 
+parameters that define the overall scale and 
+productivity of the population. 
+
+\begin{equation}\label{eq:Theta-catch}
+\Theta = \left(R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,
+\Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
+\{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right)
+\end{equation}
+
+The variance components of the model are partitioned using an errors in variables approach. 
 The key variance parameter is the inverse of the total variance $\vartheta^2$ (i.e., total precision). 
 This parameter can be fixed or estimated, and was fixed for this model. 
 The total variance is partitioned into observation, $\sigma$, and process error, $\tau$,  components by the model parameter $\rho$, 
 which represents the proportion of the total variance that is due to observation error(Punt and Butterworth, 1999; Deriso et al., 2007).
-
-\begin{equation}\label{eq:Theta-catch}
-\Theta = \left(R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,
-               \Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
-               \{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right)
-\end{equation}
-
 \begin{equation}\label{eq:sigma}
 \sigma = \sqrt{\rho}\vartheta
 \end{equation}
