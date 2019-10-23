@@ -199,7 +199,7 @@ the total biomass each year $B_{t,s}$. the spawning stock biomass $SB_{t,s}$,
 and the total age-specific total mortality rate $Z_{t,a,s}$.
 
 \begin{equation}\label{eq:N-tas-unobs}
-N_{t,a,s},\.\.SB_{t,s},\.\. B_{t,s},\.\. Z_{t,a,s}
+N_{t,a,s},\,\, SB_{t,s},\,\, B_{t,s},\,\, Z_{t,a,s}
 \end{equation}
 
 Initial numbers-at-age in the first year (Eq. A.31) and the annual recruits
