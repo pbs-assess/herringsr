@@ -146,7 +146,7 @@ and the density-dependent term $\beta$ are given by:
 These equations can then be simplified to the
 steady-state equilibrium recruitment $R_e$ needed to calculate 
 the equilibrium yield $C_e$ for a given fishing mortality rate $F_e$:
-<!-- SH - write something about phi_q? --> :
+<!-- SH - write something about phi_q? -->
 
 \begin{equation}\label{eq:R-e}
 R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
@@ -156,8 +156,18 @@ R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}
 C_e = F_e R_e \phi_q
 \end{equation}
 
-These steady-state conditions are critical for determining various reference points such as
-$F_\text{MSY}$ and $B_\text{MSY}$.
+These steady-state conditions are critical for 
+determining various reference points such as
+$F_\text{MSY}$ and $B_\text{MSY}$.  
+ISCAM calculates $F_\text{MSY}$ by finding the value of 
+$F_e$ that results in the zero derivative of Equation \@ref(eq:C-e).
+This is accomplished numerically using a Newton-Raphson method 
+where an initial guess for
+$F_\text{MSY}$ is set equal to $M$. 
+Given an estimate of $F_\text{MSY}$, other reference points such as $MSY$ and
+$B_\text{MSY}$ can be calculated.  
+However, these reference points are not currently used in the 
+Pacific Herring assessment.
 
 ## Dynamic State Statistical Catch Age Model
 
