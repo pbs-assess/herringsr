@@ -269,7 +269,8 @@ N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A\\
 \end{cases}
 \end{equation}
 
-Recruitment to age k?check is assumed 
+Recruitment to age k (where k in this case is means the 
+start age which for Pacific Herring is age 2) is assumed 
 to follow a Beverton-Holt model for Pacific herring 
 (Eq. \ref{eq:R-t}) where the maximum juvenile survival 
 rate $\alpha$ is defined by (Eq. \ref{eq:Alpha}) and 
