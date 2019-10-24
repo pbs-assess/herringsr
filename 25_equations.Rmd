@@ -246,12 +246,7 @@ occur simultaneously throughout the year. The sex-specifc
 numbers-at-age are propagated over time using 
 (Eq. \ref{eq:N-tas-state}), where members of the plus group
 (age A) are all assumed to have the same total mortality 
-rate $Z_{t,a,s}$. Recruitment to age k?check is assumed 
-to follow a Beverton-Holt model for Pacific herring 
-(Eq. \ref{eq:R-t}) where the maximum juvenile survival 
-rate $\alpha$ is defined by (Eq. \ref{eq:Alpha}) and 
-$\beta$ is derived from (Eq. \ref{eq:beta}) 
-which is conditional on estimates of $h$ and $R_{o}$.
+rate $Z_{t,a,s}$. 
 
 \begin{equation}\label{eq:B-ts-state}
 \mli{B}_{t,s} = \sum_a N_{t,a,s}f_{a,s}
@@ -274,7 +269,12 @@ N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A\\
 \end{cases}
 \end{equation}
 
-### Beverton-Holt recruitment model
+Recruitment to age k?check is assumed 
+to follow a Beverton-Holt model for Pacific herring 
+(Eq. \ref{eq:R-t}) where the maximum juvenile survival 
+rate $\alpha$ is defined by (Eq. \ref{eq:Alpha}) and 
+$\beta$ is derived from (Eq. \ref{eq:beta}) 
+which is conditional on estimates of $h$ and $R_{o}$.
 
 \begin{equation}\label{eq:R-t}
 R_t = \frac{\alpha B_{t-k}}{1+\beta B_{t-k}}e^{\delta_{t}-0.5\tau^2}
