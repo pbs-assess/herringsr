@@ -333,3 +333,20 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 \bottomrule
 \end{tabular}
 \end{table}
+
+### RESIDUALS, LIKELIHOODS, AND OBJECTIVE FUNCTION VALUE COMPONENTS
+
+The objective function contains five major components:
+1. The negative log-likelihood for the catch data
+2. The negative log-likelihood for the relative abundance data
+3. The negative log-likelihood for the age composition data
+4. The prior distributions for model parameters
+5. Three penalty functions that are invoked to regularize the solution during intermediate
+phases of the non-linear parameter estimation. 
+
+The penalty functions:
+a. constrain the estimates of annual recruitment to conform to a Beverton-Holt stock-recruit
+function
+b. weakly constrain the log recruitment deviations to a normal distribution
+c. weakly constrain estimates of log fishing mortality to a normal distribution
+(N(ln(0:2); 4:0)) to prevent estimates of catch from exceeding estimated biomass.
