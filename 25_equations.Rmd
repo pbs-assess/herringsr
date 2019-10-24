@@ -80,16 +80,16 @@ older (i.e., the plus group) have the same total mortality rate.
 
 \begin{equation}\label{eq:iota-a-1}
 \iota_a = \begin{cases}
-\frac{1}{S}, & a=1\\
-\iota_{a-1}e^{-M}, & 1<a<A\\
+\frac{1}{S}, & a=\acute{a}\\
+\iota_{a-1}e^{-M}, & \acute{a}<a<A\\
 \frac{\iota_{a-1}}{\left(1-e^{-M}\right)}, & a=A\\
 \end{cases}
 \end{equation}
 
 \begin{equation}\label{eq:iota-a-2}
 \iota_a = \begin{cases}
-\frac{1}{S}, & a=1\\
-\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}, & 1<a<A\\
+\frac{1}{S}, & a=\acute{a}\\
+\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}, & \acute{a}<a<A\\
 \frac{\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}}{1-e^{-M-F_e v_{a,s}}}, & a=A\\
 \end{cases}
 \end{equation}
@@ -98,23 +98,23 @@ The incidence functions refer to the life-time or per-recruit quantities such as
 Note that upper and lower case subscripts denote unfished and fished conditions, respectively.
 
 \begin{equation}\label{eq:phi-E}
-\phi_E = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a f_{a,s}
+\phi_E = \sum_{s=1}^S\sum_{a=\acute{a}}^A \iota_a f_{a,s}
 \end{equation}
 
 \begin{equation}\label{eq:phi-e}
-\phi_e = \sum_{s=1}^S\sum_{a=1}^\infty \hat{\iota}_{a,s} f_{a,s}
+\phi_e = \sum_{s=1}^S\sum_{a=\acute{a}}^A \hat{\iota}_{a,s} f_{a,s}
 \end{equation}
 
 \begin{equation}\label{eq:phi-B}
-\phi_B = \sum_{s=1}^S\sum_{a=1}^\infty \iota_a w_{a,s} v_{a,s}
+\phi_B = \sum_{s=1}^S\sum_{a=\acute{a}}^A \iota_a w_{a,s} v_{a,s}
 \end{equation}
 
 \begin{equation}\label{eq:phi-b}
-\phi_b = \sum_{s=1}^S\sum_{a=1}^\infty \hat{\iota}_{a,s} w_{a,s} v_{a,s}
+\phi_b = \sum_{s=1}^S\sum_{a=\acute{a}}^A \hat{\iota}_{a,s} w_{a,s} v_{a,s}
 \end{equation}
 
 \begin{equation}\label{eq:phi-q}
-\phi_q = \sum_{s=1}^S\sum_{a=1}^\infty
+\phi_q = \sum_{s=1}^S\sum_{a=\acute{a}}^A
 \frac{\hat{\iota}_{a,s} w_{a,s} v_{a,s}}{M+F_ev_{a,s}}
 \left(1-e^{\left(-M-F_ev_{a,s}\right)}\right)
 \end{equation}
@@ -249,22 +249,22 @@ numbers-at-age are propagated over time using
 rate $Z_{t,a,s}$. 
 
 \begin{equation}\label{eq:B-ts-state}
-\mli{B}_{t,s} = \sum_a N_{t,a,s}f_{a,s}
+\mli{B}_{t,s} = \sum_{a=\acute{a}}^A N_{t,a,s}f_{a,s}
 \end{equation}
 
 \begin{equation}\label{eq:Z-tas-state}
-Z_{t,a,s} = M+\sum_k F_{k,t} v_{k,t,a,s}
+Z_{t,a,s} = M+\sum_{k=1}^K F_{k,t} v_{k,t,a,s}
 \end{equation}
 
 \begin{equation}\label{eq:C-kt}
-\hat{C}_{k,t} = \sum_s \sum_a \frac {N_{t,a,s}w_{a,s}F_{k,t}
+\hat{C}_{k,t} = \sum_{s=1}^S \sum_{a=\acute{a}}^A \frac {N_{t,a,s}w_{a,s}F_{k,t}
 v_{k,t,a,s} \left( 1-{e^{-Z_{t,a,s}}} \right) }{Z_{t,a,s}}^{\eta_t}
 \end{equation}
 
 \begin{equation}\label{eq:N-tas-state}
 N_{t,a,s} = \begin{cases}
-\frac{\alpha E_{t-1}}{1+\beta E_{t-1}} e^{\left(\omega_t-0.5\tau^2\right)}, & a=1\\
-N_{t-1,a-1,s} e^{\left(-Z_{t-1,a-1,s}\right)}, & 1<a<A\\
+\frac{\alpha E_{t-1}}{1+\beta E_{t-1}} e^{\left(\omega_t-0.5\tau^2\right)}, & a=\acute{a}\\
+N_{t-1,a-1,s} e^{\left(-Z_{t-1,a-1,s}\right)}, & \acute{a}<a<A\\
 N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A\\
 \end{cases}
 \end{equation}
