@@ -1,10 +1,10 @@
 ---
 title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2019 and forecast for 2020"
-title_short: "Pacific Herring status in 2019 and forecast for 2020 -- APPROVED PRE-PUBLICATION"
+title_short: "Pacific Herring status in 2019 and forecast for 2020"
 title_other: "Mise à jour sur l'état des stocks et application des procédures de gestion du Hareng du Pacifique (*Clupea pallasii*) de la Colombie-Britannique: état en 2019 et prévisions pour 2020"
 year: 2019
 month: October
-report_number: nnn -- APPROVED PRE-PUBLICATION
+report_number: nnn
 approver: |
   Carmel Lowe\
   Regional Director
@@ -23,6 +23,7 @@ output:
  csasdown::sr_pdf:
   # csasdown::sr_word:
    french: false
+   prepublication: false
 type:
   sr
 # ------------
