@@ -8,6 +8,7 @@ This section contains the documentation in mathematical form of the underlying i
 age-structured model, its steady state version that is used to calculate reference points, the
 observation models used in predicting observations, and the components of the objective
 function that formulate the statistical criterion used to estimate model parameters.
+This section will not be included in the final document.
 
 A documented list of symbols used in model equations is given in Table \@ref(tab:variables). 
 The documentation presented here is a revised version of the iSCAM user guide available online. 
@@ -19,18 +20,18 @@ This section describes all features of iSCAM, some of which however are not impl
 Note that we refer to iSCAM as a statistical catch-age (SCA) model in the main text.
 The following list describes modifications specific to the assessment of Pacific Herring:
   
-1. Data are unsexed, $S = 1$.
+1. Data are unsexed, $S = 1$,
 
-2. Total mortality is constant across ages, $Z_{ta} = Z_t$.
+2. Total mortality is constant across ages, $Z_{t,a} = Z_t$,
 
-3. Fecundity and maturity are synonymous and used interchangeably.
+3. Fecundity and maturity are synonymous and used interchangeably,
 
-4. 100% of $Z_t$ occurs prior to spawning.
+4. 100% of $Z_t$ occurs prior to spawning, and
 
 5. Unfished spawning biomass is represented as $B_0$ in this section, and as $\mli{SB}_0$ in
 the main text.
 
-## Equilibrium Considerations: Steady-state age structured model
+## Equilibrium considerations: steady-state age structured model
 
 Pacific Herring steady-state age-structured model assuming
 unequal vulnerability-at-age,
@@ -41,14 +42,21 @@ $\Theta$ is assumed to be unknown and can be estimated by fitting the SCA model 
 data, with some restrictions:
   
 \begin{equation}\label{eq:Theta-steady}
-\Theta = \left(R_0,\,h,\,M\right);\quad R_0 > 0,\, 0.2 \leq h < 1.0,\, M > 0.
+\Theta = \left(R_0,\,h,\,M\right);\quad
+R_0 > 0,\,\,
+0.2 \leq h < 1.0,\,\,
+M > 0.
 \end{equation}
 
-For a given set of growth and maturity-at-age parameters $\Phi$ growth is assumed to follow the Von-Bertalanffy growth model, which describes the observed length-at-age $l_{a,s}$ and the mean weight-at-age $w_{a,s}$ is given by an allometric relationship and age-specific vulnerability $v_a$ is given by an age-based logistic function.
+For a given set of growth and maturity-at-age parameters $\Phi$
+growth is assumed to follow the Von-Bertalanffy growth model, which describes
+the observed length-at-age $l_{a,s}$.
+The mean weight-at-age $w_{a,s}$ is given by an allometric relationship,
+and age-specific vulnerability $v_a$ is given by an age-based logistic function.
 
 \begin{equation}\label{eq:Phi}
 \Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,
-             \acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right)
+  \acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right)
 \end{equation}
 
 \begin{equation}\label{eq:l-as}
@@ -66,7 +74,8 @@ v_a = \left(1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}\righ
 The terms vulnerability and selectivity are used interchangeably throughout this document, although technically,
 selectivity refers to the fishing gear, while
 vulnerability refers to all processes affecting the availability of fish to the fishery.
-Selectivity parameters can be fixed or estimated. Fecundity-at-age $f_{a,s}$ is defined in terms of weight-at-age and an age-based logistic function: 
+Selectivity parameters can be fixed or estimated.
+Fecundity-at-age $f_{a,s}$ is defined in terms of weight-at-age and an age-based logistic function: 
   
   \begin{equation}\label{eq:f-as}
 f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
@@ -133,9 +142,9 @@ B_0 = R_0\phi_B
 Recruitment is assumed to follow a Beverton-Holt 
 stock recruitment relationship,
 where the maximum juvenile survival rate $\alpha$ 
-  and the density-dependent term $\beta$ are given by:
+and the density-dependent term $\beta$ are given by:
   
-  \begin{equation}\label{eq:Alpha}
+\begin{equation}\label{eq:alpha}
 \alpha = \frac{\kappa}{\phi_E}  
 \end{equation}
 
@@ -168,7 +177,7 @@ Given an estimate of $F_\text{MSY}$, other reference points such as $MSY$ and
 $B_\text{MSY}$ can be calculated. However, these reference points 
 are not currently used in the Pacific Herring assessment.
 
-## Dynamic State Statistical Catch Age Model
+## Dynamic state: statistical catch-age model
 
 The estimated parameter vector in the 
 dynamic state version of iSCAM is defined by $\Theta$,
@@ -196,7 +205,7 @@ which represents the proportion of the total variance that is due to observation
 \tau = \sqrt{\left(1-\rho\right)}\vartheta  
 \end{equation}
 
-The unobserved state variables (Eq. \ref{eq:N-tas-unobs})) 
+The unobserved state variables (Equation \ref{eq:N-tas-unobs})
 include the numbers-at-age each year $N_{t,a,s}$,
 the spawning stock biomass $B_{t,s}$, 
 and the total age-specific total mortality rate $Z_{t,a,s}$.
@@ -205,16 +214,19 @@ and the total age-specific total mortality rate $Z_{t,a,s}$.
 N_{t,a,s},\,\, SB_{t,s},\,\, B_{t,s},\,\, Z_{t,a,s}
 \end{equation}
 
-Initial numbers-at-age in the first year (Eq. \ref{eq:N-tas-init-1})) and the annual recruits
-(Eq. \ref{eq:N-tas-init-2})) are treated as estimated parameters and used to initialize the numbers-at-age
-array.
+Initial numbers-at-age in the first year (Equation \ref{eq:N-tas-init-1}) and
+the annual recruits (Equation \ref{eq:N-tas-init-2})
+are treated as estimated parameters and used to initialize the numbers-at-age array.
 \begin{equation}\label{eq:N-tas-init-1}
-N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)};\,\,\,\,\left(\acute{t}-A\right) < t < 1;\,\, 2 \leq a \leq A
+N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)};\quad
+\left(\acute{t}-A\right) < t < 1,\,\,
+\acute{a} \leq a \leq A
 \end{equation}
 
 \begin{equation}\label{eq:N-tas-init-2}
-N_{t,a,s} = \frac{1}{S}\bar{R}e^{\omega_{t}};
-\,\,\,\,1 \leq t \leq T;\,\, a = 1.  
+N_{t,a,s} = \frac{1}{S}\bar{R}e^{\omega_{t}};\quad
+\acute{t} \leq t \leq T;\,\,
+a = \acute{a}.  
 \end{equation}
 
 Vulnerability-at-age $v_{k,a}$ is assumed to be time-invariant and is modelled using a two-parameter logistic function (Equation \ref{eq:v-ka}).
@@ -235,16 +247,16 @@ F_{k,t} = e^{\Gamma_{k,t}}
 \end{equation}
 
 State variables in each year are updated using 
-(Eqns. \ref{eq:B-ts-state} - \ref{eq:N-tas-state}), 
+Equations \@ref(eq:B-ts-state) to \@ref(eq:N-tas-state),
 where the spawning biomass is the product of the 
 numbers-at-age and the mature biomass-at-age 
-(Eq. \ref{eq:B-ts-state}). The total mortality rate 
-is given by (Eq. \ref{eq:Z-tas-state}), and the total 
-catch (in weight) for each gear is given by (Eq. \ref{eq:C-kt}), 
+(Equation \ref{eq:B-ts-state}). The total mortality rate 
+is given by Equation \@ref(eq:Z-tas-state), and the total 
+catch (in weight) for each gear is given by Equation \@ref(eq:C-kt), 
 assuming that both natural and fishing mortality 
 occur simultaneously throughout the year. The sex-specifc 
 numbers-at-age are propagated over time using 
-(Eq. \ref{eq:N-tas-state}), where members of the plus group
+(Equation \ref{eq:N-tas-state}), where members of the plus group
 (age A) are all assumed to have the same total mortality 
 rate $Z_{t,a,s}$. 
 
@@ -270,16 +282,41 @@ N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A\\
 \end{equation}
 
 Recruitment to age k (where k in this case refers to the 
-start age which for Pacific Herring is age 2) is assumed 
+start age, which for Pacific Herring is age 2) is assumed 
 to follow a Beverton-Holt model for Pacific herring 
-(Eq. \ref{eq:R-t}) where the maximum juvenile survival 
-rate $\alpha$ is defined by (Eq. \ref{eq:Alpha}) and 
-$\beta$ is derived from (Eq. \ref{eq:beta}) 
-which is conditional on estimates of $h$ and $R_{o}$.
+(Equation \ref{eq:R-t}) where the maximum juvenile survival 
+rate $\alpha$ is defined by Equation \@ref(eq:alpha) and 
+$\beta$ is derived from Equation \@ref(eq:beta),
+which is conditional on estimates of $h$ and $R_0$.
 
 \begin{equation}\label{eq:R-t}
 R_t = \frac{\alpha B_{t-k}}{1+\beta B_{t-k}}e^{\delta_{t}-0.5\tau^2}
 \end{equation}
+
+### Residuals, likelihoods, and objective function value components
+
+The objective function contains five major components:
+
+1. The negative log-likelihood for the catch data,
+
+2. The negative log-likelihood for the relative abundance data,
+
+3. The negative log-likelihood for the age composition data,
+
+4. The prior distributions for model parameters, and
+
+5. Three penalty functions that are invoked to regularize the solution during intermediate
+phases of the non-linear parameter estimation. 
+
+The penalty functions:
+
+a. Constrain the estimates of annual recruitment to conform to a Beverton-Holt stock-recruit
+function,
+
+b. Weakly constrain the log recruitment deviations to a normal distribution, and
+
+c. Weakly constrain estimates of log fishing mortality to a normal distribution
+(N(ln(0:2); 4:0)) to prevent estimates of catch from exceeding estimated biomass.
 
 \begin{table}[ht]
 \centering
@@ -334,20 +371,3 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 \bottomrule
 \end{tabular}
 \end{table}
-
-### RESIDUALS, LIKELIHOODS, AND OBJECTIVE FUNCTION VALUE COMPONENTS
-
-The objective function contains five major components:
-1. The negative log-likelihood for the catch data
-2. The negative log-likelihood for the relative abundance data
-3. The negative log-likelihood for the age composition data
-4. The prior distributions for model parameters
-5. Three penalty functions that are invoked to regularize the solution during intermediate
-phases of the non-linear parameter estimation. 
-
-The penalty functions:
-a. constrain the estimates of annual recruitment to conform to a Beverton-Holt stock-recruit
-function
-b. weakly constrain the log recruitment deviations to a normal distribution
-c. weakly constrain estimates of log fishing mortality to a normal distribution
-(N(ln(0:2); 4:0)) to prevent estimates of catch from exceeding estimated biomass.
