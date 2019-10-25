@@ -2,7 +2,7 @@
 
 The Pacific Herring stock assessment is conducted using the integrated statistical catch age model [iSCAM; @martell2011]. 
 iSCAM is implemented in a Bayesian estimation framework and is written in AD Model Builder [@admb].
-The original source code and documentation for both are available online. 
+The original source code and documentation for iSCAM and AD Model Builder are available online. 
 
 This section contains the documentation in mathematical form of the underlying iSCAM
 age-structured model, its steady state version that is used to calculate reference points, the
@@ -26,7 +26,7 @@ The following list describes modifications specific to the assessment of Pacific
 
 3. Fecundity and maturity are synonymous and used interchangeably,
 
-4. 100% of $Z_t$ occurs prior to spawning, and
+4. Total mortality (i.e., 100% of $Z_t$) occurs prior to spawning, and
 
 5. Unfished spawning biomass is represented as $B_0$ in this section, and as $\mli{SB}_0$ in
 the main text.
