@@ -325,6 +325,30 @@ were the most important contributors to the objective function.
 
 The objective function components are discussed in more detail in the following sections.
 
+### Observed Catch
+
+It is assumed that the measurement errors in the catch observations
+are log-normally distributed, and the residuals given by:
+
+
+\begin{equation}\label{eq:ets_kt}
+\eta_{k,t} = ln(C_{k,t} + o) - ln(\hat{C}_{k,t} + o)
+\end{equation}
+
+where $o$ is a small constant ($e^{-10}$) to ensure the residual is 
+defined in the case of a zero catch observation. The residuals 
+are assumed to be normally distributed with a user-specified standard
+deviation $\sigma_{C}$. At present, it is assumed that observed catches for each 
+gear $k$ have the same standard deviation. The negative loglikelihood (ignoring the scaling constant) for the catch data is given by:
+
+\begin{equation}\label{eq:ets_kt}
+l_{C} = \sum_{k}[T_k ln(\sigma_{C})+
+\frac{\sum_{t}(\eta_{k,t})^2}{2\sigma_{C}^2}] 
+\end{equation}
+
+where $T_k$ is the total number of catch observations for gear type $k$.
+
+
 \begin{table}[ht]
 \centering
 \caption{\label{tab:variables}Description of symbols and constants in the
