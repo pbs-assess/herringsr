@@ -318,6 +318,13 @@ b. Weakly constrain the log recruitment deviations to a normal distribution, and
 c. Weakly constrain estimates of log fishing mortality to a normal distribution
 (N(ln(0:2); 4:0)) to prevent estimates of catch from exceeding estimated biomass.
 
+Sensitivity analysis indicate that the model is insensitive 
+to changes in the penalty function parameters, indicating that
+the other likelihood components and prior probability distributions 
+were the most important contributors to the objective function.
+
+The objective function components are discussed in more detail in the following sections.
+
 \begin{table}[ht]
 \centering
 \caption{\label{tab:variables}Description of symbols and constants in the
