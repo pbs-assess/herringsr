@@ -341,12 +341,41 @@ are assumed to be normally distributed with a user-specified standard
 deviation $\sigma_{C}$. At present, it is assumed that observed catches for each 
 gear $k$ have the same standard deviation. The negative loglikelihood (ignoring the scaling constant) for the catch data is given by:
 
-\begin{equation}\label{eq:ets_kt}
+\begin{equation}\label{eq:lc_kt}
 l_{C} = \sum_{k}[T_k ln(\sigma_{C})+
 \frac{\sum_{t}(\eta_{k,t})^2}{2\sigma_{C}^2}] 
 \end{equation}
 
 where $T_k$ is the total number of catch observations for gear type $k$.
+
+### Relative Abundance 
+
+For Pacific herring the relative abundance data are 
+assumed to be proportional to spawning biomass so the 
+$kth$ survey the vulnerable biomass available to the survey sampling gear:
+
+\begin{equation}\label{eq:V_kt}
+V_{k,t} = \sum_{a}B_{t,a}e^{-\lambda_{k,t}M_{t,a}}f_{a,t} 
+\end{equation}
+
+
+A user specified fraction of the total mortality $\lambda_{k,t}$ 
+adjusts the numbers-at-age to correct for survey timing. 
+The residuals between the observed and predicted relative abundance index is given by:
+
+\begin{equation}\label{eq:epsilon_kt}
+\epsilon_{k,t} = ln(I_{k,t}) - ln(q_k)+ln(V_{k,t})
+\end{equation}
+
+where $I_{k,t}$ is the observed relative abundance index, 
+$q_k$ is the catchability coefficient for index $k$, and 
+$V_{k,t}$ is the predicted vulnerable biomass at the time 
+of sampling. The catchability coefficient $q_k$ is evaluated 
+at its conditional maximum likelihood estimate:
+
+\begin{equation}\label{eq:q_kt}
+q_k = \frac{1}{N_k}\sum_{tEI_{k,t}} ln(I_{k,t}) - ln(V_{k,t})
+\end{equation}
 
 
 \begin{table}[ht]
