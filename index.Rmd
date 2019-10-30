@@ -23,7 +23,7 @@ output:
  csasdown::sr_pdf:
   # csasdown::sr_word:
    french: false
-  # prepub: false
+   # prepub: false
 type:
   sr
 # ------------
@@ -95,3 +95,6 @@ source(here::here("R/hcr.R"))
 
 theme_set(herring_theme())
 ```
+
+<!-- Compile the PDF on the command line: -->
+<!-- bookdown::render_book("index.Rmd") -->
