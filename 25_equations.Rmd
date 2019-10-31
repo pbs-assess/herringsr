@@ -211,7 +211,7 @@ the spawning stock biomass $B_{t,s}$,
 and the total age-specific total mortality rate $Z_{t,a,s}$.
 
 \begin{equation}\label{eq:N-tas-unobs}
-N_{t,a,s},\,\, SB_{t,s},\,\, B_{t,s},\,\, Z_{t,a,s}
+N_{t,a,s},\,\, B_{t,s},\,\, Z_{t,a,s}
 \end{equation}
 
 Initial numbers-at-age in the first year (Equation \ref{eq:N-tas-init-1}) and
@@ -398,8 +398,8 @@ set $\omega_{k,t}$ = 0, or to give 2 times the weight,
 set $\omega_{k,t}$ = 2.0. To assume all observations have the 
 same variance then simply set $\omega_{k,t}$ = 1. 
 Note that if $\omega_{k,t}$ = 0 then Eq. \ref{eq:ell_I} is undefined; 
-therefore, iSCAM adds a small constant to $\omega_{k,t}$ 
-($e^{-10}$, which is equivalent to assuming an extremely large variance) 
+therefore, iSCAM adds a small constant ($e^{-10}$) to $\omega_{k,t}$, 
+which is equivalent to assuming an extremely large variance) 
 to ensure the likelihood can be evaluated.
 
 In the case of the Pacific Herring assessment, 
@@ -497,8 +497,8 @@ deviations is given by the normal density (ignoring the scaling constant):
 Eqs.\@ref(eq:delta-t) and \@ref(eq:l-delta) are key for 
 estimating unfished spawning stock biomass and 
 recruitment compensation via the recruitment models. 
-The relationship between ($\alpha$; $\beta$) and 
-($B_0$; $\kappa$) is defined by Eqs.\@ref(eq:alpha) 
+The relationship between ($\alpha$, $\beta$) and 
+($B_0$, $\kappa$) is defined by Eqs.\@ref(eq:alpha) 
 and \@ref(eq:beta). Where again $\alpha$ is the maximum juvenile 
 survival rate, and $\beta$ is the density effect on recruitment, 
 and $B_0$ is the unfished spawning stock biomass. Unfished steady-state 
@@ -555,7 +555,7 @@ There are two specific constraints that are described here:
 2) constraints to ensure that a parameter vector sums to 0. 
 In iSCAM the user must specify the lower and upper bounds 
 for the leading parameters defined in the control file
-($ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $R$, $\rho$, $\vartheta$). 
+($ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $ln(\ddot{R})$, $\rho$, $\vartheta$). 
 
 All estimated selectivity parameters $\gamma_k$ are estimated in log
 space and have a minimum and maximum values of -5.0 and 5.0, 
@@ -569,7 +569,7 @@ vector of deviations sums to 0. This is necessary in order to be able to estimat
 #### Parameter priors
 
 Each of the seven leading parameters specified in the control file
-($ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $R$, $\rho$, $\vartheta$)
+($ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $ln(\ddot{R})$, $\rho$, $\vartheta$)
 are declared as bounded parameters and in addition the user 
 can also specify an informative prior distribution for each of these parameters. Five distinct prior distributions can be implemented:
 uniform $\mathcal{U}$, normal $\mathcal{N}$, lognormal $\mathcal{L}$, beta $\mathcal{B}$, and gamma $\mathcal{G}$.
