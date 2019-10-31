@@ -47,7 +47,6 @@ plot_wa(major_wa,
         ylim = wa_ylim,
         n_roll = nRollWA,
         translate = french)
-
 ```
 
 (ref:major-pa-cap) Time series of proportion-at-age for Pacific Herring from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.

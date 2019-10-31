@@ -325,7 +325,7 @@ were the most important contributors to the objective function.
 
 The objective function components are discussed in more detail in the following sections.
 
-### Observed Catch
+### Observed catch
 
 It is assumed that the measurement errors in the catch observations
 are log-normally distributed, and the residuals given by:
@@ -348,7 +348,7 @@ l_{C} = \sum_{k}[T_k ln(\sigma_{C})+
 
 where $T_k$ is the total number of catch observations for gear type $k$.
 
-### Relative Abundance 
+### Relative abundance 
 
 For Pacific herring the relative abundance data are 
 assumed to be proportional to spawning biomass so the 
@@ -473,7 +473,7 @@ age-composition data is the log of the residual
 variance weighted by the number observations 
 over years and ages.
 
-### Stock Recruitment
+### Stock recruitment
 
 The Pacific Herring stock assessment assumes Beverton-Holt recruitment. 
 Annual recruitment and the initial age-composition 
@@ -518,7 +518,7 @@ for reference point calculations in cases where there are
 increasing or decreasing trends in
 natural mortality rates trend upwards, estimates of $B_{0}$ decrease.
 
-## Parameter Estimation and Uncertainty
+## Parameter estimation and uncertainty
 
 Parameter estimation and quantifying uncertainty was carried out 
 using the tools available in AD Model Builder. AD Model Builder (ADMB) is a software for creating computer programs to estimate the parameters and associated probability distributions for nonlinear statistical models.
@@ -535,24 +535,25 @@ objective function.
 
 
 #### Negative loglikelihoods 
-The negative loglikelihoods pertain specifically to elements that deal
-with the data and variance partitioning and have already been described in detail in earlier
-sections. There are four specific elements that make up the vector of the objective
-function:
 
+The negative loglikelihoods pertain specifically to elements that deal
+with the data and variance partitioning,
+and have already been described in detail in earlier sections.
+There are four specific elements that make up the vector of the objective function:
 
 \begin{equation}\label{eq:l-sum}
-larrow = l_{C},l_{I},l_{A},l_{\delta}
+\vec{\ell} = \left(\ell_C,\,\ell_I,\,\ell_A,\,\ell_\delta\right).
 \end{equation}
 
-To reiterate, these are the likelihood of the catch data $l_{C}$, 
-likelihood of the survey data $l_{I}$, 
-the likelihood of the age-composition data $l_{A}$, 
-and the likelihood of the stock-recruitment residuals $l_{\delta}$.
-Each of these elements are expressed in negative log-space, and ADMB attempts to estimate
-model parameters by minimizing the sum of these elements.
+To reiterate, these are the likelihood of the catch data $l_C$, 
+likelihood of the survey data $l_I$, 
+the likelihood of the age-composition data $l_A$, 
+and the likelihood of the stock-recruitment residuals $l_\delta$.
+Each of these elements are expressed in negative log-space,
+and ADMB attempts to estimate model parameters by minimizing the sum of these elements.
 
-#### Constraints 
+#### Constraints
+
 There are two specific constraints that are described here: 
 1) parameter bounds, and 
 2) constraints to ensure that a parameter vector sums to 0. 
@@ -569,7 +570,8 @@ minimum value of -30, and a maximum value of 3.0, also hard-wired.
 Log annual recruitment deviations are also constrained to have minimum and maximum values of -15.0 and 15.0 and there is an additional constraint to ensure the 
 vector of deviations sums to 0. This is necessary in order to be able to estimate the average recruitment $\bar{R}$. Finally, the annual log deviations in natural mortality rates are constrained to lie between -5.0 and 5.0.
 
-#### Parameter Priors
+#### Parameter priors
+
 Each of the seven leading parameters specified in the control file
 ($ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $R$, $\rho$, $\vartheta$)
 are declared as bounded parameters and in addition the user 
