@@ -332,7 +332,7 @@ are log-normally distributed, and the residuals given by:
 
 
 \begin{equation}\label{eq:ets_kt}
-\eta_{k,t} = ln(C_{k,t} + o) - ln(\hat{C}_{k,t} + o)
+\eta_{k,t} = \text{ln}\left(C_{k,t} + o) - ln(\hat{C}_{k,t} + o\right)
 \end{equation}
 
 where $o$ is a small constant ($e^{-10}$) to ensure the residual is 
@@ -342,8 +342,8 @@ deviation $\sigma_{C}$. At present, it is assumed that observed catches for each
 gear $k$ have the same standard deviation. The negative loglikelihood (ignoring the scaling constant) for the catch data is given by:
 
 \begin{equation}\label{eq:lc_kt}
-\ell_{C} = \sum_{k}[T_k ln(\sigma_{C})+
-\frac{\sum_{t}(\eta_{k,t})^2}{2\sigma_{C}^2}] 
+\ell_{C} = \sum_{k}\left[T_k \text{ln}\left(\sigma_{C}\right)+
+\frac{\sum_{t}\left(\eta_{k,t}\right)^2}{2\sigma_{C}^2}\right]
 \end{equation}
 
 where $T_k$ is the total number of catch observations for gear type $k$.
@@ -352,19 +352,18 @@ where $T_k$ is the total number of catch observations for gear type $k$.
 
 For Pacific Herring the relative abundance data are 
 assumed to be proportional to spawning biomass so the 
-$kth$ survey the vulnerable biomass available to the survey sampling gear:
+$k^\text{th}$ survey the vulnerable biomass available to the survey sampling gear:
 
 \begin{equation}\label{eq:V_kt}
 V_{k,t} = \sum_{a}B_{t,a}e^{-\lambda_{k,t}M_{t,a}}f_{a,t} 
 \end{equation}
-
 
 A user specified fraction of the total mortality $\lambda_{k,t}$ 
 adjusts the numbers-at-age to correct for survey timing. 
 The residuals between the observed and predicted relative abundance index is given by:
 
 \begin{equation}\label{eq:epsilon_kt}
-\epsilon_{k,t} = ln(I_{k,t}) - ln(q_k)+ln(V_{k,t})
+\epsilon_{k,t} = \text{ln}\left(I_{k,t}\right) - \text{ln}\left(q_k\right)+\text{ln}\left(V_{k,t}\right)
 \end{equation}
 
 where $I_{k,t}$ is the observed relative abundance index, 
@@ -374,15 +373,14 @@ of sampling. The catchability coefficient $q_k$ is evaluated
 at its conditional maximum likelihood estimate:
 
 \begin{equation}\label{eq:q_kt}
-q_k = \frac{1}{N_k}\sum_{tEI_{k,t}} ln(I_{k,t}) - ln(V_{k,t})
+q_k = \frac{1}{N_k}\sum_{tEI_{k,t}} \text{ln}\left(I_{k,t}\right) - \text{ln}\left(V_{k,t}\right)
 \end{equation}
 
-where $N_k$ is the number of relative abundance observations for index $k$ (see Walters and Ludwig [citation],
-1994, for more information). The negative loglikelihood for relative abundance data is given
-by:
+where $N_k$ is the number of relative abundance observations for index $k$ (see Walters and Ludwig [citation], 1994, for more information).
+The negative loglikelihood for relative abundance data is given by:
 
 \begin{equation}\label{eq:l_I}
-\ell_I = \sum_{k}\sum_{tEI_{k,t}} ln(\alpha_{k,t}) + \frac{\epsilon_{k,t}^2}{2\alpha_{k,t}^2}
+\ell_I = \sum_{k}\sum_{tEI_{k,t}} \text{ln}\left(\alpha_{k,t}\right) + \frac{\epsilon_{k,t}^2}{2\alpha_{k,t}^2}
 \end{equation}
 
 The standard deviation $\alpha_{k,t}$ is calculated by:
@@ -448,15 +446,15 @@ The residuals between the observed ($p_{t,a}$)and
 predicted proportions ($\hat{p}_{t,a}$) is given by:
 
 \begin{equation}\label{eq:ets_ta}
-\eta_{t,a} = ln(p_{t,a}) - ln(\hat{p}_{t,a})-\frac{1}{A}
-\sum^{A}_{a=1}[ln(p_{t,a}) - ln(\hat{p}_{t,a})] 
+\eta_{t,a} = \text{ln}\left(p_{t,a}\right) - \text{ln}\left(\hat{p}_{t,a}\right)-\frac{1}{A}
+\sum^{A}_{a=1}\left[\text{ln}\left(p_{t,a}\right) - \text{ln}\left(\hat{p}_{t,a}\right)\right]
 \end{equation}
 
 The conditional maximum likelihood estimate of 
 the variance is given by:
 
 \begin{equation}\label{eq:hattau}
-\hat{\tau}^2=\frac{1}{(A-1)T}\sum^{T}_{t=1}\sum^{A}_{a=1}\eta_{t,a}^2
+\hat{\tau}^2=\frac{1}{\left(A-1\right)T}\sum^{T}_{t=1}\sum^{A}_{a=1}\eta_{t,a}^2
 \end{equation}
 
 The negative loglikelihood evaluated at the conditional 
@@ -464,7 +462,7 @@ maximum likelihood estimate of the variance is given by:
 
 
 \begin{equation}\label{eq:l_A}
-\ell_{A} = (A-1)T ln(\hat{\tau}^2)
+\ell_{A} = \left(A-1\right)T \text{ln}\left(\hat{\tau}^2\right)
 \end{equation}
 
 In short, the multivariate logistic likelihood for 
@@ -483,7 +481,7 @@ spawning stock biomass and recruitment compensation.
 The residuals between the estimated and predicted recruits is given by:
 
 \begin{equation}\label{eq:delta-t}
-\delta_{t} = ln(\bar{R}e^{\omega_{t}}) - R_{t}
+\delta_t = \text{ln}\left(\bar{R}e^{\omega_{t}}\right) - R_t
 \end{equation}
 
 where $R_{t}$ is given by Eq.\@ref(eq:R-t), 
@@ -494,9 +492,8 @@ The negative loglikelihood for the recruitment
 deviations is given by the normal density (ignoring the scaling constant):
   
 \begin{equation}\label{eq:l-delta}
-\ell_{\delta} = nln(\tau) +\frac{\sum^{T}_{t=1} +k^{\delta_{t}^2}}{2\tau^2}
+\ell_{\delta} = nln\left(\tau\right) +\frac{\sum^{T}_{t=1} +k^{\delta_{t}^2}}{2\tau^2}
 \end{equation}
-
 
 Eqs.\@ref(eq:delta-t) and \@ref(eq:l-delta) are key for 
 estimating unfished spawning stock biomass and 
