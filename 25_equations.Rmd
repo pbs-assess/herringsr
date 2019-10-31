@@ -342,7 +342,7 @@ deviation $\sigma_{C}$. At present, it is assumed that observed catches for each
 gear $k$ have the same standard deviation. The negative loglikelihood (ignoring the scaling constant) for the catch data is given by:
 
 \begin{equation}\label{eq:lc_kt}
-l_{C} = \sum_{k}[T_k ln(\sigma_{C})+
+\ell_{C} = \sum_{k}[T_k ln(\sigma_{C})+
 \frac{\sum_{t}(\eta_{k,t})^2}{2\sigma_{C}^2}] 
 \end{equation}
 
@@ -382,13 +382,13 @@ where $N_k$ is the number of relative abundance observations for index $k$ (see 
 by:
 
 \begin{equation}\label{eq:l_I}
-l_I = \sum_{k}\sum_{tEI_{k,t}} ln(\alpha_{k,t}) + \frac{\epsilon_{k,t}^2}{2\alpha_{k,t}^2}
+\ell_I = \sum_{k}\sum_{tEI_{k,t}} ln(\alpha_{k,t}) + \frac{\epsilon_{k,t}^2}{2\alpha_{k,t}^2}
 \end{equation}
 
 The standard deviation $\alpha_{k,t}$ is calculated by:
 
 \begin{equation}\label{eq:alpha_kt}
-\alpha_{k,t} = frac{\rho\varphi^2}{\omega_{k,t}}  
+\alpha_{k,t} = \frac{\rho\varphi^2}{\omega_{k,t}}  
 \end{equation}
 
 where $\rho\varphi^2$ is the proportion of the total error that is 
@@ -465,7 +465,7 @@ maximum likelihood estimate of the variance is given by:
 
 
 \begin{equation}\label{eq:l_A}
-l_{A} = (A-1)T ln(\hat{\tau}^2)
+\ell_{A} = (A-1)T ln(\hat{\tau}^2)
 \end{equation}
 
 In short, the multivariate logistic likelihood for 
@@ -495,7 +495,7 @@ The negative loglikelihood for the recruitment
 deviations is given by the normal density (ignoring the scaling constant):
   
 \begin{equation}\label{eq:l-delta}
-l_{\delta} = nln(\tau) +\frac{\sum^{T}_{t=1} +k^{\delta_{t}^2}}{2\tau^2}
+\ell_{\delta} = nln(\tau) +\frac{\sum^{T}_{t=1} +k^{\delta_{t}^2}}{2\tau^2}
 \end{equation}
 
 
