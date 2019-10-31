@@ -388,7 +388,7 @@ by:
 The standard deviation $\alpha_{k,t}$ is calculated by:
 
 \begin{equation}\label{eq:alpha_kt}
-\alpha_{k,t} = frac{\rho\varphi^2}{\omega_{k,t}}  
+\alpha_{k,t} = \frac{\rho\varphi^2}{\omega_{k,t}}  
 \end{equation}
 
 where $\rho\varphi^2$ is the proportion of the total error that is 
@@ -495,7 +495,7 @@ The negative loglikelihood for the recruitment
 deviations is given by the normal density (ignoring the scaling constant):
   
 \begin{equation}\label{eq:l-delta}
-l_{\delta} = nln(\tau) +\frac{\sum^{T}_{t=1} +k^{\delta_{t}^2}}{2\tau^2}
+\ell_{\delta} = nln(\tau) +\frac{\sum^{T}_{t=1} +k^{\delta_{t}^2}}{2\tau^2}
 \end{equation}
 
 
