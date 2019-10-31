@@ -374,15 +374,15 @@ of sampling. The catchability coefficient $q_k$ is evaluated
 at its conditional maximum likelihood estimate:
 
 \begin{equation}\label{eq:q_kt}
-q_k = \frac{1}{N_k}\sum_{tEI_{k,t}} ln(I_{k,t}) - ln(V_{k,t})
+q_k = \frac{1}{N_k}\sum_{t \in I_{k,t}} ln(I_{k,t}) - ln(V_{k,t})
 \end{equation}
 
 where $N_k$ is the number of relative abundance observations for index $k$ (see Walters and Ludwig [citation],
 1994, for more information). The negative loglikelihood for relative abundance data is given
 by:
 
-\begin{equation}\label{eq:l_I}
-\ell_I = \sum_{k}\sum_{tEI_{k,t}} ln(\alpha_{k,t}) + \frac{\epsilon_{k,t}^2}{2\alpha_{k,t}^2}
+\begin{equation}\label{eq:ell_I}
+\ell_I = \sum_{k}\sum_{t \in I_{k,t}} ln(\alpha_{k,t}) + \frac{\epsilon_{k,t}^2}{2\alpha_{k,t}^2}
 \end{equation}
 
 The standard deviation $\alpha_{k,t}$ is calculated by:
@@ -399,7 +399,7 @@ $\rho\varphi^2$. For example, to omit a particular observation,
 set $\omega_{k,t}$ = 0, or to give 2 times the weight, 
 set $\omega_{k,t}$ = 2.0. To assume all observations have the 
 same variance then simply set $\omega_{k,t}$ = 1. 
-Note that if $\omega_{k,t}$ = 0 then Eq. \ref{eq:l_I} is undefined; 
+Note that if $\omega_{k,t}$ = 0 then Eq. \ref{eq:ell_I} is undefined; 
 therefore, iSCAM adds a small constant to $\omega_{k,t}$ 
 ($e^{-10}$, which is equivalent to assuming an extremely large variance) 
 to ensure the likelihood can be evaluated.
@@ -463,7 +463,7 @@ The negative loglikelihood evaluated at the conditional
 maximum likelihood estimate of the variance is given by:
 
 
-\begin{equation}\label{eq:l_A}
+\begin{equation}\label{eq:ell_A}
 \ell_{A} = (A-1)T ln(\hat{\tau}^2)
 \end{equation}
 
@@ -545,10 +545,10 @@ There are four specific elements that make up the vector of the objective functi
 \vec{\ell} = \left(\ell_C,\,\ell_I,\,\ell_A,\,\ell_\delta\right).
 \end{equation}
 
-To reiterate, these are the likelihood of the catch data $l_C$, 
-likelihood of the survey data $l_I$, 
-the likelihood of the age-composition data $l_A$, 
-and the likelihood of the stock-recruitment residuals $l_\delta$.
+To reiterate, these are the likelihood of the catch data $\ell_C$, 
+likelihood of the survey data $\ell_I$, 
+the likelihood of the age-composition data $\ell_A$, 
+and the likelihood of the stock-recruitment residuals $\ell_\delta$.
 Each of these elements are expressed in negative log-space,
 and ADMB attempts to estimate model parameters by minimizing the sum of these elements.
 
