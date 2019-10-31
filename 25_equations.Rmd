@@ -568,9 +568,9 @@ are declared as bounded parameters and in addition the user
 can also specify an informative prior distribution for each of these parameters. Five distinct prior distributions can be implemented:
 uniform $\mathcal{U}(\text{min}, \text{max})$ where $\text{min}$ and $\text{max}$ are the minima and maxima, respectively,
 normal $\mathcal{N}(\mu, \sigma)$ where $\mu$ and $\sigma$ are the mean and standard deviation, respectively,
-lognormal $\mathcal{L}(\sigma, \mu)$ where $\sigma$ and $\mu$ are the standard deviation and mean, respectively,
+lognormal $\mathcal{L}(\mu, \sigma)$ where $\mu$ and $\sigma$ are the mean and standard deviation, respectively,
 beta $\mathcal{B}(\alpha, \beta)$ where $\alpha$ and $\beta$ are the shape parameters, and
-gamma $\mathcal{G}(k, \Theta)$ where $k$ and $\Theta$ are the shape parameters.
+gamma $\mathcal{G}(\alpha, \beta)$ where $\alpha$ and $\beta$ are the shape parameters.
 For Pacific Herring,
 a bounded recruitment uniform prior was specified for the log of unfished recruitment $\mathcal{U}(-5, 15)$,
 a beta prior was assumed for steepness $\mathcal{B}(10.0, 4.92)$,
