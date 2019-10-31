@@ -526,14 +526,13 @@ iSCAM, and the source code and documentation for the original version of iSCAM (
 GitHub.
 
 There are actually five distinct components that make up the objective function $f$ that ADMB is minimizing:
-\begin{equation}\label{f}
+\begin{multline}\label{eq:f}
 f = \text{negative loglikelihoods} + \text{constraints} +
-\text{priors for parameters} + \text{survey priors} +
-\text{convergence penalties}.
-\end{equation}
+\text{priors for parameters}\\
++ \text{survey priors} + \text{convergence penalties}.
+\end{multline}
   
 The purpose of this section is to completely document all of the components that make up the objective function.
-
 
 #### Negative loglikelihoods 
 
