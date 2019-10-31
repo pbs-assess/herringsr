@@ -338,11 +338,11 @@ are log-normally distributed, and the residuals given by:
 where $o$ is a small constant ($e^{-10}$) to ensure the residual is 
 defined in the case of a zero catch observation. The residuals 
 are assumed to be normally distributed with a user-specified standard
-deviation $\sigma_{C}$. At present, it is assumed that observed catches for each 
+deviation $\sigma_C$. At present, it is assumed that observed catches for each 
 gear $k$ have the same standard deviation. The negative loglikelihood (ignoring the scaling constant) for the catch data is given by:
 
-\begin{equation}\label{eq:lc_kt}
-\ell_{C} = \sum_{k}[T_k ln(\sigma_{C})+
+\begin{equation}\label{eq:ell_C}
+\ell_C = \sum_{k}[T_k ln(\sigma_{C})+
 \frac{\sum_{t}(\eta_{k,t})^2}{2\sigma_{C}^2}] 
 \end{equation}
 
@@ -382,13 +382,13 @@ where $N_k$ is the number of relative abundance observations for index $k$ (see 
 by:
 
 \begin{equation}\label{eq:ell_I}
-\ell_I = \sum_{k}\sum_{t \in I_{k,t}} ln(\alpha_{k,t}) + \frac{\epsilon_{k,t}^2}{2\alpha_{k,t}^2}
+\ell_I = \sum_k \sum_{t \in I_{k,t}} ln(\sigma_{k,t})+\frac{\epsilon_{k,t}^2}{2\sigma_{k,t}^2}
 \end{equation}
 
-The standard deviation $\alpha_{k,t}$ is calculated by:
+The standard deviation $\sigma_{k,t}$ is calculated by:
 
-\begin{equation}\label{eq:alpha_kt}
-\alpha_{k,t} = \frac{\rho\varphi^2}{\omega_{k,t}}  
+\begin{equation}\label{eq:sigma_kt}
+\sigma_{k,t} = \frac{\rho \varphi^2}{ \omega_{k,t}} 
 \end{equation}
 
 where $\rho\varphi^2$ is the proportion of the total error that is 
