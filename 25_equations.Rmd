@@ -541,7 +541,7 @@ likelihood of the survey data $\ell_I$,
 the likelihood of the age-composition data $\ell_A$, 
 and the likelihood of the stock-recruitment residuals $\ell_\delta$.
 Each of these elements are expressed in negative log-space,
-and ADMB attempts to estimate model parameters by minimizing the sum of these elements.
+and iSCAM attempts to estimate model parameters by minimizing the sum of these elements.
 
 #### Constraints
 
