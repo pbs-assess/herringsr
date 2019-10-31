@@ -501,8 +501,8 @@ deviations is given by the normal density (ignoring the scaling constant):
 Eqs.\@ref(eq:delta-t) and \@ref(eq:l-delta) are key for 
 estimating unfished spawning stock biomass and 
 recruitment compensation via the recruitment models. 
-The relationship between ($\alpha$; $\beta$) and 
-($B_0$; $\kappa$) is defined by Eqs.\@ref(eq:alpha) 
+The relationship between ($\alpha$, $\beta$) and 
+($B_0$, $\kappa$) is defined by Eqs.\@ref(eq:alpha) 
 and \@ref(eq:beta). Where again $\alpha$ is the maximum juvenile 
 survival rate, and $\beta$ is the density effect on recruitment, 
 and $B_0$ is the unfished spawning stock biomass. Unfished steady-state 
