@@ -36,7 +36,7 @@ the main text.
 Pacific Herring steady-state age-structured model assuming
 unequal vulnerability-at-age,
 age-specific fecundity, and
-Beverton-Holt recruitment. 
+Beverton-Holt recruitment [@beverton1957]. 
 Under steady state conditions the parameter vector 
 $\Theta$ is assumed to be unknown and can be estimated by fitting the SCA model to 
 data, with some restrictions:
@@ -283,7 +283,7 @@ N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A\\
 
 Recruitment to age k (where k in this case refers to the 
 start age, which for Pacific Herring is age 2) is assumed 
-to follow a Beverton-Holt model [citation] for Pacific Herring 
+to follow a Beverton-Holt model for Pacific Herring 
 (Equation \ref{eq:R-t}) where the maximum juvenile survival 
 rate $\alpha$ is defined by Equation \@ref(eq:alpha) and 
 $\beta$ is derived from Equation \@ref(eq:beta),
@@ -376,7 +376,7 @@ at its conditional maximum likelihood estimate:
 q_k = \frac{1}{N_k}\sum_{tEI_{k,t}} \text{ln}\left(I_{k,t}\right) - \text{ln}\left(V_{k,t}\right)
 \end{equation}
 
-where $N_k$ is the number of relative abundance observations for index $k$ (see Walters and Ludwig [citation], 1994, for more information).
+where $N_k$ is the number of relative abundance observations for index $k$ [see @walters1994 for more information].
 The negative loglikelihood for relative abundance data is given by:
 
 \begin{equation}\label{eq:l_I}
@@ -414,14 +414,14 @@ conditional on estimated values of $\rho$ and $\varphi^2$.
 ### Age Composition
 
 Sampling theory suggest that age composition data are 
-derived from a multinomial distribution (Fournier and Archibald, 1982)[citation]. 
+derived from a multinomial distribution [@fournier1982]. 
 However, iSCAM assumes that age-proportions are obtained
-from a multivariate logistic distribution (Schnute and Richards, 1995; Richards et al., 1997)[citation].
+from a multivariate logistic distribution [@schnute1995; @richards1997].
 iSCAM departs from the traditional multinomial model due to 
 choices regarding weighting of the age-composition data in the objective function. 
 First, the multinomial distribution requires the specification of an effective sample size. 
 This weighting may be done arbitrarily or through iterative 
-re-weighting (McAllister and Ianelli, 1997; Gavaris and Ianelli, 2002), [citation]
+re-weighting [@mcallister1997; @gavaris2002],
 and in the case of multiple and potentially conflicting 
 age-proportions this procedure may fail to converge properly. 
 The assumed effective sample size can have a large impact on the overall model results.
@@ -459,7 +459,6 @@ the variance is given by:
 
 The negative loglikelihood evaluated at the conditional 
 maximum likelihood estimate of the variance is given by:
-
 
 \begin{equation}\label{eq:l_A}
 \ell_{A} = \left(A-1\right)T \text{ln}\left(\hat{\tau}^2\right)
