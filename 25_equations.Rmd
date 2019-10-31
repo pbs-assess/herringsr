@@ -444,8 +444,8 @@ constraint for each year:
 \sum^{A}_{a=1} p_{t,a} = 1 
 \end{equation}
 
-The residuals between the observed ($p_{t,a}$)and 
-predicted proportions ($\hat{p}_{t,a}$) is given by:
+The residuals between the observed $p_{t,a}$and 
+predicted proportions $\hat{p}_{t,a}$ is given by:
 
 \begin{equation}\label{eq:ets_ta}
 \eta_{t,a} = ln(p_{t,a}) - ln(\hat{p}_{t,a})-\frac{1}{A}
