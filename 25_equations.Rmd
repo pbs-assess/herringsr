@@ -1,8 +1,8 @@
 # Model description
 
 The Pacific Herring stock assessment is conducted using the integrated statistical catch age model [iSCAM; @martell2011]. 
-iSCAM is implemented in a Bayesian estimation framework and is written in AD Model Builder [@admb].
-The original source code and documentation for iSCAM and AD Model Builder are available online. 
+iSCAM is implemented in a Bayesian estimation framework and is written in AD Model Builder (ADMB, [@admb]).
+The original source code and documentation for iSCAM and ADMB are available online. 
 
 This section contains the documentation in mathematical form of the underlying iSCAM
 age-structured model, its steady state version that is used to calculate reference points, the
@@ -519,13 +519,7 @@ natural mortality rates trend upwards, estimates of $B_{0}$ decrease.
 
 ## Parameter estimation and uncertainty
 
-Parameter estimation and quantifying uncertainty was carried out 
-using the tools available in AD Model Builder. AD Model Builder (ADMB) is a software for creating computer programs to estimate the parameters and associated probability distributions for nonlinear statistical models.
-The software is freely available from the ADMB project. This software was used to develop
-iSCAM, and the source code and documentation for the original version of iSCAM (on which iSCAM is based) is freely available from the iSCAM project, or from a subversion repository on
-GitHub.
-
-There are actually five distinct components that make up the objective function $f$ that ADMB is minimizing:
+There are five distinct components that make up the objective function $f$ that is being minimized by the iSCAM model:
 \begin{multline}\label{eq:f}
 f = \text{negative loglikelihoods} + \text{constraints} +
 \text{priors for parameters}\\
