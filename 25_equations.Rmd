@@ -1,7 +1,7 @@
 # Model description
 
 The Pacific Herring stock assessment is conducted using the integrated statistical catch age model [iSCAM; @martell2011]. 
-iSCAM is implemented in a Bayesian estimation framework and is written in AD Model Builder (ADMB, [@admb]).
+iSCAM is implemented in a Bayesian estimation framework and is written in AD Model Builder [ADMB; @admb].
 The original source code and documentation for iSCAM and ADMB are available online. 
 
 This section contains the documentation in mathematical form of the underlying iSCAM
@@ -330,9 +330,8 @@ The objective function components are discussed in more detail in the following 
 It is assumed that the measurement errors in the catch observations
 are log-normally distributed, and the residuals given by:
 
-
 \begin{equation}\label{eq:ets_kt}
-\eta_{k,t} = \text{ln}\left(C_{k,t} + o) - ln(\hat{C}_{k,t} + o\right)
+\eta_{k,t} = \text{ln}\left(C_{k,t} + o\right) - \text{ln}\left(\hat{C}_{k,t} + o\right)
 \end{equation}
 
 where $o$ is a small constant ($e^{-10}$) to ensure the residual is 
@@ -355,7 +354,7 @@ assumed to be proportional to spawning biomass so the
 $k^\text{th}$ survey the vulnerable biomass available to the survey sampling gear:
 
 \begin{equation}\label{eq:V_kt}
-V_{k,t} = \sum_{a}B_{t,a}e^{-\lambda_{k,t}M_{t,a}}f_{a,t} 
+V_{k,t} = \sum_{a}B_{t,a}e^{-\lambda_{k,t}M_{t,a}}f_{a,t}.
 \end{equation}
 
 A user specified fraction of the total mortality $\lambda_{k,t}$ 
@@ -461,7 +460,7 @@ The negative loglikelihood evaluated at the conditional
 maximum likelihood estimate of the variance is given by:
 
 \begin{equation}\label{eq:ell_A}
-\ell_A = \left(A-1\right)T \text{ln}\left(\hat{\tau}^2\right)
+\ell_A = \left(A-1\right)T \text{ln}\left(\hat{\tau}^2\right).
 \end{equation}
 
 In short, the multivariate logistic likelihood for 
@@ -483,7 +482,7 @@ The residuals between the estimated and predicted recruits is given by:
 \delta_t = \text{ln}\left(\bar{R}e^{\omega_{t}}\right) - R_t
 \end{equation}
 
-where $R_{t}$ is given by Eq.\@ref(eq:R-t), 
+where $R_t$ is given by Eq.\@ref(eq:R-t), 
 and $k$ is the age at recruitment. 
 Note that a bias correction term for the 
 lognormal process errors is included in Eq.\@ref(eq:R-t).
