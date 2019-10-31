@@ -515,10 +515,11 @@ natural mortality rates trend upwards, estimates of $B_{0}$ decrease.
 
 ## Parameter estimation and uncertainty
 
-There are five distinct components that make up the objective function $f$ that is being minimized by the iSCAM model:
+There are five distinct components that make up the objective function $f$ 
+that is being minimized by the iSCAM model:
 \begin{multline}\label{eq:f}
 f = \text{negative loglikelihoods} + \text{constraints} +
-\text{priors for parameters}\\
+\text{parameter priors}\\
 + \text{survey priors} + \text{convergence penalties}.
 \end{multline}
   
@@ -551,7 +552,7 @@ In iSCAM the user must specify the lower and upper bounds
 for the leading parameters defined in the control file
 ($ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $ln(\ddot{R})$, $\rho$, $\vartheta$). 
 
-All estimated selectivity parameters $\gamma_k$ are estimated in log
+All estimated selectivity parameters $\vec{\gamma_k}$ are estimated in log
 space and have a minimum and maximum values of -5.0 and 5.0, 
 respectively. These values are hard-wired into the code, but should be sufficiently large/small enough to capture a wide range of selectivities. 
 Estimated fishing mortality rates are also constrained (in log space) to have a
