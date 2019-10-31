@@ -1,8 +1,8 @@
 # Model description
 
 The Pacific Herring stock assessment is conducted using the integrated statistical catch age model [iSCAM; @martell2011]. 
-iSCAM is implemented in a Bayesian estimation framework and is written in AD Model Builder [@admb].
-The original source code and documentation for iSCAM and AD Model Builder are available online. 
+iSCAM is implemented in a Bayesian estimation framework and is written in AD Model Builder (ADMB, [@admb]).
+The original source code and documentation for iSCAM and ADMB are available online. 
 
 This section contains the documentation in mathematical form of the underlying iSCAM
 age-structured model, its steady state version that is used to calculate reference points, the
@@ -515,16 +515,11 @@ natural mortality rates trend upwards, estimates of $B_{0}$ decrease.
 
 ## Parameter estimation and uncertainty
 
-Parameter estimation and quantifying uncertainty was carried out 
-using the tools available in AD Model Builder. AD Model Builder (ADMB) is a software for creating computer programs to estimate the parameters and associated probability distributions for nonlinear statistical models.
-The software is freely available from the ADMB project. This software was used to develop
-iSCAM, and the source code and documentation for the original version of iSCAM (on which iSCAM is based) is freely available from the iSCAM project, or from a subversion repository on
-GitHub.
-
-There are actually five distinct components that make up the objective function $f$ that ADMB is minimizing:
+There are five distinct components that make up the objective function $f$ 
+that is being minimized by the iSCAM model:
 \begin{multline}\label{eq:f}
 f = \text{negative loglikelihoods} + \text{constraints} +
-\text{priors for parameters}\\
+\text{parameter priors}\\
 + \text{survey priors} + \text{convergence penalties}.
 \end{multline}
   
@@ -546,7 +541,7 @@ likelihood of the survey data $\ell_I$,
 the likelihood of the age-composition data $\ell_A$, 
 and the likelihood of the stock-recruitment residuals $\ell_\delta$.
 Each of these elements are expressed in negative log-space,
-and ADMB attempts to estimate model parameters by minimizing the sum of these elements.
+and iSCAM attempts to estimate model parameters by minimizing the sum of these elements.
 
 #### Constraints
 
@@ -557,7 +552,7 @@ In iSCAM the user must specify the lower and upper bounds
 for the leading parameters defined in the control file
 ($ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $ln(\ddot{R})$, $\rho$, $\vartheta$). 
 
-All estimated selectivity parameters $\gamma_k$ are estimated in log
+All estimated selectivity parameters $\vec{\gamma_k}$ are estimated in log
 space and have a minimum and maximum values of -5.0 and 5.0, 
 respectively. These values are hard-wired into the code, but should be sufficiently large/small enough to capture a wide range of selectivities. 
 Estimated fishing mortality rates are also constrained (in log space) to have a
