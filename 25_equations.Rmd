@@ -331,7 +331,7 @@ It is assumed that the measurement errors in the catch observations
 are log-normally distributed, and the residuals given by:
 
 \begin{equation}\label{eq:ets_kt}
-\eta_{k,t} = \text{ln}\left(C_{k,t} + o\right) - \text{ln}\left(\hat{C}_{k,t} + o\right)
+\eta_{k,t} = \lognorm\left(C_{k,t} + o\right) - \lognorm\left(\hat{C}_{k,t} + o\right)
 \end{equation}
 
 where $o$ is a small constant ($e^{-10}$) to ensure the residual is 
@@ -341,7 +341,7 @@ deviation $\sigma_C$. At present, it is assumed that observed catches for each
 gear $k$ have the same standard deviation. The negative loglikelihood (ignoring the scaling constant) for the catch data is given by:
 
 \begin{equation}\label{eq:ell_C}
-\ell_C = \sum_k\left[T_k \text{ln}\left(\sigma_C\right)+
+\ell_C = \sum_k\left[T_k \lognorm\left(\sigma_C\right)+
 \frac{\sum_t\left(\eta_{k,t}\right)^2}{2\sigma_C^2}\right] 
 \end{equation}
 
@@ -362,7 +362,7 @@ adjusts the numbers-at-age to correct for survey timing.
 The residuals between the observed and predicted relative abundance index is given by:
 
 \begin{equation}\label{eq:epsilon_kt}
-\epsilon_{k,t} = \text{ln}\left(I_{k,t}\right) - \text{ln}\left(q_k\right)+\text{ln}\left(V_{k,t}\right)
+\epsilon_{k,t} = \lognorm\left(I_{k,t}\right) - \lognorm\left(q_k\right)+\lognorm\left(V_{k,t}\right)
 \end{equation}
 
 where $I_{k,t}$ is the observed relative abundance index, 
@@ -372,14 +372,14 @@ of sampling. The catchability coefficient $q_k$ is evaluated
 at its conditional maximum likelihood estimate:
 
 \begin{equation}\label{eq:q_kt}
-q_k = \frac{1}{N_k}\sum_{t \in I_{k,t}} \text{ln}\left(I_{k,t}\right) - \text{ln}\left(V_{k,t}\right)
+q_k = \frac{1}{N_k}\sum_{t \in I_{k,t}} \lognorm\left(I_{k,t}\right) - \lognorm\left(V_{k,t}\right)
 \end{equation}
 
 where $N_k$ is the number of relative abundance observations for index $k$ [see @walters1994 for more information].
 The negative loglikelihood for relative abundance data is given by:
 
 \begin{equation}\label{eq:ell_I}
-\ell_I = \sum_k \sum_{t \in I_{k,t}} \text{ln}\left(\sigma_{k,t}\right)+\frac{\epsilon_{k,t}^2}{2\sigma_{k,t}^2}
+\ell_I = \sum_k \sum_{t \in I_{k,t}} \lognorm\left(\sigma_{k,t}\right)+\frac{\epsilon_{k,t}^2}{2\sigma_{k,t}^2}
 \end{equation}
 
 The standard deviation $\sigma_{k,t}$ is calculated by:
@@ -410,7 +410,7 @@ data was assigned a relative weight of 1.166.
 The standard deviation in the observation errors is
 conditional on estimated values of $\rho$ and $\varphi^2$.
 
-### Age Composition
+### Age composition
 
 Sampling theory suggest that age composition data are 
 derived from a multinomial distribution [@fournier1982]. 
@@ -441,12 +441,12 @@ constraint for each year:
 \sum^{A}_{a=1} p_{t,a} = 1 
 \end{equation}
 
-The residuals between the observed $p_{t,a}$and 
+The residuals between the observed $p_{t,a}$ and 
 predicted proportions $\hat{p}_{t,a}$ is given by:
 
 \begin{equation}\label{eq:ets_ta}
-\eta_{t,a} = \text{ln}\left(p_{t,a}\right) - \text{ln}\left(\hat{p}_{t,a}\right)-\frac{1}{A}
-\sum^{A}_{a=1}\left[\text{ln}\left(p_{t,a}\right) - \text{ln}\left(\hat{p}_{t,a}\right)\right]
+\eta_{t,a} = \lognorm\left(p_{t,a}\right) - \lognorm\left(\hat{p}_{t,a}\right)-\frac{1}{A}
+\sum^{A}_{a=1}\left[\lognorm\left(p_{t,a}\right) - \lognorm\left(\hat{p}_{t,a}\right)\right]
 \end{equation}
 
 The conditional maximum likelihood estimate of 
@@ -460,7 +460,7 @@ The negative loglikelihood evaluated at the conditional
 maximum likelihood estimate of the variance is given by:
 
 \begin{equation}\label{eq:ell_A}
-\ell_A = \left(A-1\right)T \text{ln}\left(\hat{\tau}^2\right).
+\ell_A = \left(A-1\right)T \lognorm\left(\hat{\tau}^2\right).
 \end{equation}
 
 In short, the multivariate logistic likelihood for 
@@ -479,7 +479,7 @@ spawning stock biomass and recruitment compensation.
 The residuals between the estimated and predicted recruits is given by:
 
 \begin{equation}\label{eq:delta-t}
-\delta_t = \text{ln}\left(\bar{R}e^{\omega_{t}}\right) - R_t
+\delta_t = \lognorm\left(\bar{R}e^{\omega_{t}}\right) - R_t
 \end{equation}
 
 where $R_t$ is given by Eq.\@ref(eq:R-t), 

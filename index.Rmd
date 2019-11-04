@@ -103,5 +103,8 @@ theme_set(herring_theme())
 \newcommand{\dBeta}[2]{$\emph{Beta}\left(#1, #2\right)$}
 \newcommand{\dGamma}[2]{$\emph{Gamma}\left(#1, #2\right)$}
 
+<!-- Other math -->
+\newcommand{\lognorm}{\text{ln}}
+
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->
