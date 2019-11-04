@@ -96,7 +96,12 @@ source(here::here("R/hcr.R"))
 theme_set(herring_theme())
 ```
 
-\newcommand{\dUnif}[2]{$\text{U}\left(#1, #2\right)$}
+<!-- Distributions -->
+\newcommand{\dUnif}[2]{$\emph{U}\left(#1, #2\right)$}
+\newcommand{\dNorm}[2]{$\emph{N}\left(#1, #2\right)$}
+\newcommand{\dLognorm}[2]{$\emph{Lognormal}\left(#1, #2\right)$}
+\newcommand{\dBeta}[2]{$\emph{Beta}\left(#1, #2\right)$}
+\newcommand{\dGamma}[2]{$\emph{Gamma}\left(#1, #2\right)$}
 
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->
