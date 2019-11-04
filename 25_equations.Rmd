@@ -569,18 +569,19 @@ Each of the seven leading parameters specified in the control file
 ($ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $ln(\ddot{R})$, $\rho$, $\vartheta$)
 are declared as bounded parameters and in addition the user 
 can also specify an informative prior distribution for each of these parameters. 
-<!-- TODO: \sigma appears elsewhere, maybe find a different parameter? -->
 Five distinct prior distributions can be implemented:
 
-1) Uniform, $\emph{U}(\text{min}, \text{max})$, where $\text{min}$ 
-and $\text{max}$ are the minima and maxima, respectively,
+<!-- TODO: a and b appear elsewhere; find different parameters? -->
+1) Uniform $\emph{U}(a, b)$, where $a$ and $b$ are the minima and maxima, respectively,
 
+<!-- TODO: \sigma appears elsewhere; find a different parameter? -->
 2) Normal, $\emph{N}(\mu, \sigma^2)$, where $\mu$ and $\sigma^2$ are 
 the mean and variance, respectively,
 
 3) Lognormal, $\emph{Lognormal}(\mu, \sigma^2)$, where $\mu$ and $\sigma^2$ 
 are the mean and variance, respectively,
 
+<!-- TODO: a and b appear elsewhere; find different parameters? -->
 4) Beta, $\emph{beta}(a, b)$ where $a$ and $b$ are the shape parameters, and 
 
 5) Gamma $\emph{Gamma}(a, b)$ where $a$ and $b$ are the shape parameters.
