@@ -96,5 +96,7 @@ source(here::here("R/hcr.R"))
 theme_set(herring_theme())
 ```
 
+\newcommand{\dUnif}[2]{$\text{U}\left(#1, #2\right)$}
+
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->

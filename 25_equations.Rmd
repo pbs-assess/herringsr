@@ -572,7 +572,7 @@ can also specify an informative prior distribution for each of these parameters.
 Five distinct prior distributions can be implemented:
 
 <!-- TODO: a and b appear elsewhere; find different parameters? -->
-1) Uniform $\emph{U}(a, b)$, where $a$ and $b$ are the minima and maxima, respectively,
+1) Uniform \dUnif{a}{b}, where $a$ and $b$ are the minima and maxima, respectively,
 
 <!-- TODO: \sigma appears elsewhere; find a different parameter? -->
 2) Normal, $\emph{N}(\mu, \sigma^2)$, where $\mu$ and $\sigma^2$ are 
@@ -587,7 +587,7 @@ are the mean and variance, respectively,
 5) Gamma $\emph{Gamma}(a, b)$ where $a$ and $b$ are the shape parameters.
 
 For Pacific Herring, a bounded uniform prior was specified for the 
-log of unfished recruitment $\emph{U}(-5, 15)$,
+log of unfished recruitment \dUnif{-5}{15},
 a beta prior was assumed for steepness $\emph{beta}(10.0, 4.92)$,
 a normal prior was specified for the log of natural mortality rate 
 $\mathcal{N}(-0.79, 0.4)$, a bounded uniform prior for both the log 
