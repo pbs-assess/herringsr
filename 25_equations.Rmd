@@ -595,10 +595,10 @@ $\vartheta\sim$\dGamma{25}{28:75}.
 The scaling parameter $q$ for each of the surveys is not treated as an unknown parameter within the code;
 rather, the maximum posterior density estimate for $ln(q)$ conditional on all other parameters is used to scale the predicted spawning biomass to the observed 
 acoustic biomass index.
-For the AM2 version of the Pacific Herring assessment model,
-the prior on $q_1$ was assumed uninformative
+For the AM2 version of the Pacific Herring assessment model used in this analysis,
+$q_1$ is assumed to have an uninformative prior
 $q_1\sim$\dNorm{0}{1}, and 
-the prior on $q_2$ was assumed informative
+$q_2$ is assumed to have an informative prior
 $q_2\sim$\dNorm{1}{0:01}. 
 
 \begin{table}[ht]
