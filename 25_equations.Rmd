@@ -571,15 +571,13 @@ are declared as bounded parameters and in addition the user
 can also specify an informative prior distribution for each of these parameters. 
 Five distinct prior distributions can be implemented:
 
-<!-- TODO: a and b appear elsewhere; find different parameters? -->
+<!-- TODO: a, b, and \sigma appear elsewhere; find different parameters? -->
 1) Uniform \dUnif{a}{b}, where $a$ and $b$ are the minima and maxima, respectively,
 
-<!-- TODO: \sigma appears elsewhere; find a different parameter? -->
 2) Normal \dNorm{\mu}{\sigma^2}, where $\mu$ and $\sigma^2$ are the mean and variance, respectively,
 
 3) Lognormal \dLognorm{\mu}{\sigma^2}, where $\mu$ and $\sigma^2$ are the mean and variance, respectively,
 
-<!-- TODO: a and b appear elsewhere; find different parameters? -->
 4) Beta \dBeta{a}{b}, where $a$ and $b$ are the shape parameters, and 
 
 5) Gamma \dGamma{a}{b}, where $a$ and $b$ are the shape parameters.
