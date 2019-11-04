@@ -595,10 +595,8 @@ $\vartheta\sim$\dGamma{25}{28:75}.
 The spawn survey scaling parameter $q$ for each survey is not treated as an unknown parameter within the code;
 rather, the maximum posterior density estimate for $\lognorm(q)$ conditional on all other parameters scales the predicted spawning biomass to the spawn index.
 For the AM2 version of the Pacific Herring assessment model used in this analysis,
-$q_1$ is assumed to have an uninformative prior
-$q_1\sim$\dUnif{0}{1}, and 
-$q_2$ is assumed to have an informative prior
-$q_2\sim$\dNorm{1}{0.01}. 
+$q_1$ is assumed to have an uninformative prior \dUnif{0}{1}, and 
+$q_2$ is assumed to have an informative prior \dNorm{1}{0.01}. 
 
 \begin{table}[ht]
 \centering
