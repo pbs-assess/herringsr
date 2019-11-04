@@ -584,20 +584,22 @@ Five distinct prior distributions can be implemented:
 
 For Pacific Herring, a bounded uniform prior was specified for the 
 log of unfished recruitment \dUnif{-5}{15},
-a beta prior was assumed for steepness $\emph{Beta}(10.0, 4.92)$,
+a beta prior was assumed for steepness \dBeta{10.0}{4.92},
 a normal prior was specified for the log of natural mortality rate 
-$\mathcal{N}(-0.79, 0.4)$, a bounded uniform prior for both the log 
-of initial recruitment and average recruitment $\emph{U}(-5.0, 15.0)$,
-a beta prior for the variance partitioning parameter 
-$\rho \sim \emph{Beta}(17:086; 39:0559)$, and a gamma prior for the 
-inverse total standard deviation parameter $\vartheta \sim \emph{Gamma}(25; 28:75)$.
-The scaling parameter $q$ for each of the surveys is not treated 
-as an unknown parameter within the code; rather, the maximum posterior 
-density estimate for $ln(q)$ conditional on all other parameters is 
-used to scale the predicted spawning biomass to the observed 
-acoustic biomass index. For the AM2 version of the Pacific Herring 
-assessment model the prior on $q_1$ was assumed uninformative 
-$q_1 \sim \mathcal{N}(0, 1)$, and informative for $q_2 \sim \mathcal{N}(1;0:01)$. 
+\dNorm{-0.79}{0.4}, a bounded uniform prior for both the log 
+of initial recruitment and average recruitment \dUnif{-5.0}{15.0},
+a beta prior for the variance partitioning parameter
+$\rho\sim$\dBeta{17:086}{39:0559}, and a gamma prior for the 
+inverse total standard deviation parameter
+$\vartheta\sim$\dGamma{25}{28:75}.
+The scaling parameter $q$ for each of the surveys is not treated as an unknown parameter within the code;
+rather, the maximum posterior density estimate for $ln(q)$ conditional on all other parameters is used to scale the predicted spawning biomass to the observed 
+acoustic biomass index.
+For the AM2 version of the Pacific Herring assessment model,
+the prior on $q_1$ was assumed uninformative
+$q_1\sim$\dNorm{0}{1}, and 
+the prior on $q_2$ was assumed informative
+$q_2\sim$\dNorm{1}{0:01}. 
 
 \begin{table}[ht]
 \centering
