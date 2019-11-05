@@ -568,17 +568,35 @@ Note: dashes indicate that TAC and HR do not apply, either
 because the MP specifies no fishing, or
 because the MP fails to meet Objective 1.
 
-(ref:decision-table-prd-cap-french) Tableau de décision probabilistes pour le district de Prince Rupert, modèle AM2.
+(ref:decision-table-prd-cap-french) Rendement de la procédure de gestion (PG) dans la principale région d’évaluation des stocks du district de Prince Rupert selon trois scénarios du modèle d'exploitation (ME):
+la mortalité liée à la densité (MLD),
+la mortalité indépendante de la densité (MID), et
+mortalité naturelle constante (conM).
+Les critères de rendement sont calculés sur trois générations de hareng du Pacifique (c.-à-d. 15 ans) à partir du début de la période de projection pour tous les objectifs.
+Les PG sont classés à l'intérieur de chaque scénario en fonction de la réalisation de l'objectif 1.
+Le total autorisé des captures (TAC) recommandé en milliers de tonnes (t) et le taux de recolte (TR) associé sont déclarés pour chaque PG.
+Légende: point de référence limite (PRL);
+$\mli{BR}_t$ est la biomasse reproductrice de l'année $t$;
+$\mli{BR}_0$ est la biomasse reproductrice non pêchée estimée;
+la variabilité annuelle moyenne (VAM);
+$C_t$ est la prise de l'année $t$; et
+$\overline{C}$ est la prise moyenne.
+Les MP sont définis dans @dfo2019a et @dfo2019c.
+Note: les tirets indiquent que le TAC et le TR ne s'appliquent pas non plus
+parce que le PG n'interdit pas la pêche, ou
+parce que le PG n'atteint pas l'objectif 1.
 
-(ref:decision-table-cc-cap) Management procedure (MP) performance for the Central Coast major stock assessment region.
+(ref:decision-table-cc-cap) Management procedure performance for the Central Coast major stock assessment region.
 See Table \@ref(tab:decision-table-prd) for description.
 
-(ref:decision-table-cc-cap-french) Tableau de décision probabilistes pour la côte centrale, modèle AM2.
+(ref:decision-table-cc-cap-french) Rendement de la procédure de gestion dans la principale région d’évaluation des stocks de la côte centrale.
+Voir le tableau \@ref(tab:decision-table-prd) pour la description.
 
-(ref:decision-table-sog-cap) Management procedure (MP) performance for the Strait of Georgia major stock assessment region.
+(ref:decision-table-sog-cap) Management procedure performance for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:decision-table-prd) for description.
 
-(ref:decision-table-sog-cap-french) Tableau de décision probabilistes pour détroit de Georgie, modèle AM2.
+(ref:decision-table-sog-cap-french) (ref:decision-table-cc-cap-french) Rendement de la procédure de gestion dans la principale région d’évaluation des stocks du détroit de Georgie.
+Voir le tableau \@ref(tab:decision-table-prd) pour la description.
 
 \begin{landscape}
 
