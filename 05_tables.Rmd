@@ -162,7 +162,8 @@ make.parameters.est.table(major_models[[model_ind]],
                           xlabel = "tab:hg-parameter-est-table",
                           font.size = 11,
                           space.size = 12,
-                          placement = "ht")
+                          placement = "ht",
+                          translate = french)
 ```
 
 (ref:prd-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Prince Rupert District major stock assessment region.
@@ -179,7 +180,8 @@ make.parameters.est.table(major_models[[model_ind]],
                           xlabel = "tab:prd-parameter-est-table",
                           font.size = 11,
                           space.size = 12,
-                          placement = "ht")
+                          placement = "ht",
+                          translate = french)
 ```
 
 (ref:cc-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Central Coast major stock assessment region.
@@ -196,7 +198,8 @@ make.parameters.est.table(major_models[[model_ind]],
                           xlabel = "tab:cc-parameter-est-table",
                           font.size = 11,
                           space.size = 12,
-                          placement = "ht")
+                          placement = "ht",
+                          translate = french)
 ```
 
 (ref:sog-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Strait of Georgia major stock assessment region.
@@ -213,7 +216,8 @@ make.parameters.est.table(major_models[[model_ind]],
                           xlabel = "tab:sog-parameter-est-table",
                           font.size = 11,
                           space.size = 12,
-                          placement = "ht")
+                          placement = "ht",
+                          translate = french)
 ```
 
 (ref:wcvi-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the West Coast of Vancouver Island major stock assessment region.
@@ -230,7 +234,8 @@ make.parameters.est.table(major_models[[model_ind]],
                           xlabel = "tab:wcvi-parameter-est-table",
                           font.size = 11,
                           space.size = 12,
-                          placement = "ht")
+                          placement = "ht",
+                          translate = french)
 ```
 
 (ref:hg-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Haida Gwaii major stock assessment region.
@@ -247,7 +252,8 @@ make.value.table(major_models[[model_ind]],
                  xlabel = "tab:hg-recruitment-table",
                  font.size = 11,
                  space.size = 12,
-                 placement = "ht")
+                 placement = "ht",
+                 translate = french)
 ```
 
 (ref:prd-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Prince Rupert District major stock assessment region.
@@ -264,7 +270,8 @@ make.value.table(major_models[[model_ind]],
                  xlabel = "tab:prd-recruitment-table",
                  font.size = 11,
                  space.size = 12,
-                 placement = "ht")
+                 placement = "ht",
+                 translate = french)
 ```
 
 (ref:cc-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Central Coast major stock assessment region.
@@ -281,7 +288,8 @@ make.value.table(major_models[[model_ind]],
                  xlabel = "tab:cc-recruitment-table",
                  font.size = 11,
                  space.size = 12,
-                 placement = "ht")
+                 placement = "ht",
+                 translate = french)
 ```
 
 (ref:sog-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Strait of Georgia major stock assessment region.
@@ -298,7 +306,8 @@ make.value.table(major_models[[model_ind]],
                  xlabel = "tab:sog-recruitment-table",
                  font.size = 11,
                  space.size = 12,
-                 placement = "ht")
+                 placement = "ht",
+                 translate = french)
 ```
 
 (ref:wcvi-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the West Coast of Vancouver Island major stock assessment region.
@@ -315,7 +324,8 @@ make.value.table(major_models[[model_ind]],
                  xlabel = "tab:wcvi-recruitment-table",
                  font.size = 11,
                  space.size = 12,
-                 placement = "ht")
+                 placement = "ht",
+                 translate = french)
 ```
 
 (ref:hg-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion
@@ -336,7 +346,8 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              xlabel = "hg-spawning-biomass-depletion-table",
                              font.size = 11,
                              space.size = 12,
-                             placement = "ht")
+                             placement = "ht",
+                             translate = french)
 ```
 
 (ref:prd-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion for the Prince Rupert District major stock assessment region.
@@ -354,7 +365,8 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              xlabel = "prd-spawning-biomass-depletion-table",
                              font.size = 11,
                              space.size = 12,
-                             placement = "ht")
+                             placement = "ht",
+                             translate = french)
 ```
 
 (ref:cc-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion for the Central Coast major stock assessment region.
@@ -372,7 +384,8 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              xlabel = "cc-spawning-biomass-depletion-table",
                              font.size = 11,
                              space.size = 12,
-                             placement = "ht")
+                             placement = "ht",
+                             translate = french)
 ```
 
 (ref:sog-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion for the Strait of Georgia major stock assessment region.
@@ -390,7 +403,8 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              xlabel = "sog-spawning-biomass-depletion-table",
                              font.size = 11,
                              space.size = 12,
-                             placement = "ht")
+                             placement = "ht",
+                             translate = french)
 ```
 
 (ref:wcvi-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion for the West Coast of Vancouver Island major stock assessment region.
@@ -408,7 +422,8 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              xlabel = "wcvi-spawning-biomass-depletion-table",
                              font.size = 11,
                              space.size = 12,
-                             placement = "ht")
+                             placement = "ht",
+                             translate = french)
 ```
 
 (ref:ref-points-hg-cap) Posterior (`r confidence_vals[1]*100`\textsuperscript{th}, 50\textsuperscript{th}, and `r confidence_vals[2]*100`\textsuperscript{th} percentile) estimates of proposed reference points for the Haida Gwaii major stock assessment region.
@@ -417,7 +432,7 @@ Legend: $\mli{SB}_0$ is estimated unfished spawning biomass;
 $\mli{SB}_{t}$ is spawning biomass in year $t$; and
 $\mli{SB}_{`r assess_yr+1`}$ is projected spawning biomass in `r assess_yr+1` assuming no fishing.
 
-(ref:ref-points-hg-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`\textsuperscript{e} percentile, 50\textsuperscript{e}, et `r confidence_vals[2]*100`\textsuperscript{e} percentile) des points de référence proposés pour le modèle de Haida Gwaii.
+(ref:ref-points-hg-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`\textsuperscript{e}, 50\textsuperscript{e}, et `r confidence_vals[2]*100`\textsuperscript{e} percentile) des points de référence proposés pour le modèle de Haida Gwaii.
 Les chiffres indiqués pour la biomasse sont exprimés en milliers de tonnes.
 Légende: $\mli{BR}_0$ est la biomasse reproductrice non-exploitée estimée;
 $\mli{BR}_{t}$ est la biomasse reproductrice en année $t$; et
