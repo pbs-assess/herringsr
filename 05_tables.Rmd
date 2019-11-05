@@ -64,7 +64,7 @@ Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
 (ref:spawn-index-hg-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique dans la principale région d’évaluation des stocks de Haida Gwaii.
 Legend: «Cumshewa» est la section 023; «Juan Perez/Skincuttle» est les sections 021 et 025; «Louscoone» est la section 006; et «Selwyn» est la section 024.
-L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
+Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
 ```{r spawn-index-hg}
 spawn_index_by_area_table(ps[[en2fr("HG", french)]],
@@ -151,7 +151,18 @@ $\tau$ is the standard deviation of process error (i.e., recruitment); and
 $\sigma$ is the standard deviation of observation error (i.e., survey index).
 Note: $\tau$ and $\sigma$ are calculated values.
 
-(ref:hg-parameter-est-cap-french) Not yet translated.
+(ref:hg-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, and `r confidence_vals[2]*100`^e^ percentile) et densité maximale a posteriori (DMP) des paramètres principaux dans la principale région d’évaluation des stocks de Haida Gwaii.
+Légende: $R_0$ est recrutement non pêché de l'âge 2;
+$h$ est l'inclinaison de la relation stock-recrutement;
+$M$ est le taux de mortalité naturelle instantanée;
+$\overline{R}$  est le recrutement moyen de l'âge 2 de `r major_start_yr` à `r major_end_yr`;
+$\overline{R}_\mli{init}$ est le recrutement moyen de l'âge 2 en `r major_start_yr-1`;
+$\rho$ est la fraction de la variance totale associée à l'erreur d'observation;
+$\vartheta$ est la précision de l'erreur totale;
+$q$ est la capturabilité pour les périodes de relevé en surface (de `r major_start_yr` à `r new_surv_yr-1`; $q_1$) et en plongée (de `r new_surv_yr` à `r major_end_yr`; $q_2$);
+$\tau$ est l'écart-type de l'erreur de processus (c.-à-d. le recrutement); and
+$\sigma$ est l'écart-type de l'erreur d'observation (c.-à-d. l'indice du frai).
+Remarque: $\tau$ et $\sigma$ sont des valeurs calculées.
 
 ```{r hg-parameter-est-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
