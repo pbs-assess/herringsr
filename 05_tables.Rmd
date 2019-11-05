@@ -180,7 +180,8 @@ make.parameters.est.table(major_models[[model_ind]],
 (ref:prd-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Prince Rupert District major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-(ref:prd-parameter-est-cap-french) Not yet translated.
+(ref:prd-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, and `r confidence_vals[2]*100`^e^ percentile) et densité maximale a posteriori (DMP) des paramètres principaux dans la principale région d’évaluation des stocks du district de Prince Rupert.
+Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
 
 ```{r prd-parameter-est-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
@@ -198,7 +199,8 @@ make.parameters.est.table(major_models[[model_ind]],
 (ref:cc-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-(ref:cc-parameter-est-cap-french) Not yet translated.
+(ref:cc-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, and `r confidence_vals[2]*100`^e^ percentile) et densité maximale a posteriori (DMP) des paramètres principaux dans la principale région d’évaluation des stocks de la côte centrale.
+Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
 
 ```{r cc-parameter-est-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -216,7 +218,8 @@ make.parameters.est.table(major_models[[model_ind]],
 (ref:sog-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-(ref:sog-parameter-est-cap-french) Not yet translated.
+(ref:sog-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, and `r confidence_vals[2]*100`^e^ percentile) et densité maximale a posteriori (DMP) des paramètres principaux dans la principale région d’évaluation des stocks du détroit de Georgie.
+Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
 
 ```{r sog-parameter-est-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
@@ -234,7 +237,8 @@ make.parameters.est.table(major_models[[model_ind]],
 (ref:wcvi-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-(ref:wcvi-parameter-est-cap-french) Not yet translated.
+(ref:wcvi-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, and `r confidence_vals[2]*100`^e^ percentile) et densité maximale a posteriori (DMP) des paramètres principaux dans la principale région d’évaluation des stocks de la côte ouest de l’île de Vancouver.
+Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
 
 ```{r wcvi-parameter-est-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
@@ -251,7 +255,7 @@ make.parameters.est.table(major_models[[model_ind]],
 
 (ref:hg-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Haida Gwaii major stock assessment region.
 
-(ref:hg-recruitment-cap-french) Not yet translated.
+(ref:hg-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, and `r confidence_vals[2]*100`^e^ percentile) et densité maximale a posteriori (DMP) du recrutement de l'âge 2 (millions) dans la principale région d’évaluation des stocks de Haida Gwaii.
 
 ```{r hg-recruitment-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -269,7 +273,7 @@ make.value.table(major_models[[model_ind]],
 
 (ref:prd-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Prince Rupert District major stock assessment region.
 
-(ref:prd-recruitment-cap-french) Not yet translated.
+(ref:prd-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, and `r confidence_vals[2]*100`^e^ percentile) et densité maximale a posteriori (DMP) du recrutement de l'âge 2 (millions) dans la principale région d’évaluation des stocks du district de Prince Rupert.
 
 ```{r prd-recruitment-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
@@ -287,7 +291,7 @@ make.value.table(major_models[[model_ind]],
 
 (ref:cc-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Central Coast major stock assessment region.
 
-(ref:cc-recruitment-cap-french) Not yet translated.
+(ref:cc-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, and `r confidence_vals[2]*100`^e^ percentile) et densité maximale a posteriori (DMP) du recrutement de l'âge 2 (millions) dans la principale région d’évaluation des stocks de la côte centrale.
 
 ```{r cc-recruitment-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -305,7 +309,7 @@ make.value.table(major_models[[model_ind]],
 
 (ref:sog-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Strait of Georgia major stock assessment region.
 
-(ref:sog-recruitment-cap-french) Not yet translated.
+(ref:sog-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, and `r confidence_vals[2]*100`^e^ percentile) et densité maximale a posteriori (DMP) du recrutement de l'âge 2 (millions) dans la principale région d’évaluation des stocks du détroit de Georgie.
 
 ```{r sog-recruitment-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
@@ -323,7 +327,7 @@ make.value.table(major_models[[model_ind]],
 
 (ref:wcvi-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the West Coast of Vancouver Island major stock assessment region.
 
-(ref:wcvi-recruitment-cap-french) Not yet translated.
+(ref:wcvi-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, and `r confidence_vals[2]*100`^e^ percentile) et densité maximale a posteriori (DMP) du recrutement de l'âge 2 (millions) dans la principale région d’évaluation des stocks de la côte ouest de l’île de Vancouver.
 
 ```{r wcvi-recruitment-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
