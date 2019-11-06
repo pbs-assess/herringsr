@@ -246,7 +246,7 @@ Panel (f): phase plot of spawning biomass production ($\frac{\mli{SB}_{t+1} - \m
 Grey shading becomes darker in chronological order; the triangle indicates `r assess_yr-1`.
 Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% confidence intervals, respectively, for the limit reference point $0.3\mli{SB}_0$, where $\mli{SB}_0$ is estimated unfished spawning biomass.
 
-(ref:storyboard-hg-cap-french) \small{Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
+(ref:storyboard-hg-cap-french) Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
 Panneau (a): ajustement du modèle aux données mises à l’échelle de relevé du frai en milliers de tonnes métriques.
 Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 Panneau (b): estimations a posteriori du taux de mortalité naturelle instantanée.
@@ -259,7 +259,7 @@ Panneau (e): log des écarts du recrutement.
 Panneaux (c et e): les cercles et les lignes verticales indiquent les médianes et les intervalles de crédibilité de `r ci_level*100`%, respectivement.
 Panneau (f): diagramme de phase de la production de la biomasse reproductrice ($\frac{\mli{BR}_{t+1} - \mli{BR}_t + C_{t+1}}{\mli{BR}_t}$) pour la période du relevé de plongée (de `r new_surv_yr` à `r assess_yr-1`; estimations de la densité maximale a posteriori).
 L’ombrage gris est de plus en plus foncé à mesure que l’on avance dans la série chronologique; le triangle indique `r assess_yr-1`.
-Panneaux (d et f): les lignes rouges et l’ombrage indiquent les médianes et les intervalles de confiance de `r ci_level*100`%, respectivement, pour le point de référence limite $0,3\mli{BR}_0$, où $\mli{BR}_0$ est la biomasse reproductrice non exploitée estimée.}
+Panneaux (d et f): les lignes rouges et l’ombrage indiquent les médianes et les intervalles de confiance de `r ci_level*100`%, respectivement, pour le point de référence limite $0,3\mli{BR}_0$, où $\mli{BR}_0$ est la biomasse reproductrice non exploitée estimée.
 
 ```{r storyboard-hg, out.height="6.5in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-hg-cap-french)", "(ref:storyboard-hg-cap)")}
 
@@ -868,14 +868,19 @@ cowplot::plot_grid(plot_a,
 
 ```
 
-(ref:harvest-rate-cap) Time series of effective harvest rate $U$ for Pacific Herring from `r major_start_yr` to `r assess_yr` in the major stock assessment regions.
+(ref:harvest-rate-cap) Time series of effective harvest rate $U$ for Pacific Herring from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
 Effective harvest rate in year $t$ is calculated as $U_t = C_t/(C_t + \mli{SB}_t)$ where
 $C_t$ is catch in year $t$, and
 $\mli{SB}_t$ is estimated spawning biomass in year $t$.
 Black lines and shaded ribbons indicate medians and `r ci_level*100`% confidence intervals for $U_t$, respectively.
 Horizontal dashed lines indicate $U_t = `r target_hr`$.
 
-(ref:harvest-rate-cap-french) `r paste0("Série chronologique du taux de récolte effectif pour le hareng du Pacifique de ", major_start_yr, " à ", assess_yr, " dans les régions d’évaluation des stocks majeurs. Le taux de récolte effectif pour l’année t, Ut est calculé comme $U_t = C_t/(C_t + BSR_t)$ où $C_t$ est est la prise pour l’année $t$, et la $BSR_t$ est la biomasse reproductrice estimée pour l’année $t$. Les lignes noires indiquent les médianes et les zones ombragées indiquent les intervalles de confiance de 90\\% pour la biomasse reproductrice, $BSR_t$. Les lignes en tirets horizontales indiquent $U_t = 0,2$.")`
+(ref:harvest-rate-cap-french) Série chronologique du taux de récolte effectif pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs.
+Le taux de récolte effectif pour l’année $t$ est calculé comme $U_t = C_t/(C_t + \mli{BR}_t)$ où
+$C_t$ est est la prise pour l’année $t$, et
+$BR_t$ est la biomasse reproductrice estimée pour l’année $t$.
+Les lignes noires et les zones ombragées indiquent les médianes et intervalles de confiance de `r ci_level*100`% pour $U_t$, respectivement.
+Les lignes en tirets horizontales indiquent $U_t = `r target_hr`$.
 
 ```{r harvest-rate, fig.asp = 1, fig.cap = ifelse(french, "(ref:harvest-rate-cap-french)", "(ref:harvest-rate-cap)")}
 plot_harvest_rate(major_catch,
@@ -889,11 +894,13 @@ plot_harvest_rate(major_catch,
 ```
 
 (ref:proj-biomass-density-cap) Projected spawning biomass assuming no fishing in `r assess_yr+1` $\mli{SB}_{`r assess_yr+1`}$ in thousands of tonnes (t) for Pacific Herring in the major stock assessment regions.
-Solid and dashed vertical lines indicate medians and `r ci_level*100`% confidence intervals for $\mli{SB}_{`r assess_yr+1`}$, respectively.
+Solid and dashed black lines indicate medians and `r ci_level*100`% confidence intervals for $\mli{SB}_{`r assess_yr+1`}$, respectively.
 Vertical red lines and shaded red areas indicate medians and `r ci_level*100`% confidence intervals for the limit reference point $0.3\mli{SB}_0$, respectively,
 where $\mli{SB}_0$ is estimated unfished spawning biomass.
 
-(ref:proj-biomass-density-cap-french) `r paste0("Biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en ", assess_yr + 1, ", $BSR_{", assess_yr + 1, "}$ en milliers de tonnes pour le hareng du Pacifique dans les régions d’évaluation des stocks majeurs. Les lignes noires verticales indiquent les médianes (lignes pleines) et les intervalles de confiance de 90\\% (lignes tiretées) pour la $BSR_{", assess_yr + 1, "}$. Les lignes rouges verticales indiquent les médianes et les rectangles rouges ombragés indiquent les intervalles de confiance de 90\\% pour le point de référence limite, $0,3BSR_0$, où $BSR_0$ est la biomasse non exploitée estimée.")`
+(ref:proj-biomass-density-cap-french) Biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en `r assess_yr+1` $\mli{BR}_{`r assess_yr+1`}$ en milliers de tonnes pour le hareng du Pacifique dans les régions d’évaluation des stocks majeurs.
+Les lignes noires pleines et tiretées indiquent les médianes et les intervalles de confiance de `r ci_level*100`%  pour $\mli{SB}_{`r assess_yr+1`}$, respectivement.
+Les lignes et rectangles ombragés rouges indiquent les médianes et les intervalles de confiance de `r ci_level*100`% pour le point de référence limite, $0,3BR_0$, où $BR_0$ est la biomasse non exploitée estimée.
 
 ```{r proj-biomass-density, fig.asp = 1, fig.cap = ifelse(french, "(ref:proj-biomass-density-cap-french)", "(ref:proj-biomass-density-cap)")}
 plot_proj_biomass_density(major_models, 
