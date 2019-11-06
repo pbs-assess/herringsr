@@ -13,9 +13,13 @@ from `r minor_start_yr_plot` to `r minor_end_yr`.
 (ref:app-minor-survey-indices-tab-cap) Spawn index in tonnes of Pacific Herring in the minor stock assessment regions (SARs) from `r assess_yr-9` to `r assess_yr`.
 Legend: `r commify(minor_regions_full_parens)`.
 Notes: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$,
-and, if present, 'NA' indicates that data are not available.
+and
+'NA' indicates that data are not available.
 
-(ref:app-minor-survey-indices-tab-cap-french) Not yet translated.
+(ref:app-minor-survey-indices-tab-cap-french) Indice du frai en tonnes pour le hareng du Pacifique dans les régions d’évaluation des stocks mineurs.
+Légende: `r commify(minor_regions_full_parens, and_word="et")`.
+Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$, et 
+«NA» indique que les données ne sont pas disponibles.
 
 ```{r app-minor-survey-indices-tab}
 spawn_index_table(minor_surv_short,
@@ -30,7 +34,8 @@ spawn_index_table(minor_surv_short,
 (ref:minor-catch-cap) Time series of total landed catch in thousands of tonnes (t) of Pacific Herring from `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
 Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fishery; and 'RoeSN' represents the roe seine fishery.
 
-(ref:minor-catch-cap-french) Not yet translated.
+(ref:minor-catch-cap-french) Série chronologique des prises totales débarquées en milliers de tonnes (t) de hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr` dans les régions d’évaluation des stocks mineurs.
+Légende: «Autre» représente la réduction, ainsi que les pêches pratiquées à des fins de subsistance, pour le marché des appâts et pour des usages spéciaux; «RogueFM» représente la pêche au hareng rogué au filet maillant; et «RogueSN» représente la pêche au hareng rogué à la senne.
 
 ```{r app-minor-catch, fig.asp=0.45, fig.cap = ifelse(french, "(ref:minor-catch-cap-french)", "(ref:minor-catch-cap)")}
 plot_catch(minor_catch,
@@ -48,9 +53,14 @@ Biological summaries only include samples collected using seine nets (commercial
 The age-`r age_plus` class is a 'plus group' which includes fish ages `r age_plus` and older.
 Note: vertical axes are cropped at `r wa_ylim[1]` and `r wa_ylim[2]` kg.
 
-<!-- Need to fix automation (i.e., age-3) in french captions, here and elsewhere -->
-
-(ref:minor-wa-cap-french) Not yet translated.
+(ref:minor-wa-cap-french) Série chronologique du poids selon l’âge en kilogrammes (kg) pour les poissons de `r age_highlight` ans (cercles) et des moyennes mobiles sur `r nRollWA` ans du poids selon l’âge (lignes) pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr` dans les régions d’évaluation des stocks mineurs.
+Les lignes indiquent les moyennes mobiles sur `r nRollWA` ans pour le hareng âgé de `r min(as.integer(names(minor_wa)), na.rm=TRUE)` à `r age_plus` ans (en ordre croissant à partir de la ligne inférieure); la ligne noire épaisse met en évidence le hareng âgé de `r age_highlight` ans.
+Les valeurs manquantes du poids selon l’âge (c.-à-d. les années où il n’y a pas d’échantillons biologiques) sont imputées selon l’une des deux méthodes suivantes:
+les valeurs manquantes au début de la série chronologique sont imputées en étendant la première valeur non manquante à rebours;
+les autres valeurs manquantes sont imputées comme la moyenne des `r nRollWA` années précédentes.
+Les résumés biologiques ne comprennent que les échantillons prélevés à l’aide de sennes (pêche commerciale et pêche d’essai) en raison de la sélectivité par taille des autres types d’engins tels que les filets maillants.
+La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui comprend les poissons âgés de `r age_plus` ans et plus.
+Notez que les axes verticaux sont coupés à `r wa_ylim[1]` et `r wa_ylim[2]` kg.
 
 ```{r app-minor-weight-at-age, fig.asp=0.375, fig.cap = ifelse(french, "(ref:minor-wa-cap-french)", "(ref:minor-wa-cap)")}
 plot_wa(minor_wa,
@@ -66,7 +76,10 @@ The black line is the mean age, and the shaded area is the approximate `r ci_lev
 Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet.
 The age-`r age_plus` class is a 'plus group' which includes fish ages `r age_plus` and older.
 
-(ref:minor-pa-cap-french) Not yet translated.
+(ref:minor-pa-cap-french) Série chronologique de la proportion selon l’âge pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr` dans les régions d’évaluation des stocks mineurs.
+La ligne noire correspond à l’âge moyen, et la zone ombragée à la distribution d’environ `r ci_level*100`%.
+Les résumés biologiques ne comprennent que les échantillons prélevés à l’aide de sennes (pêche commerciale et pêche d’essai) en raison de la sélectivité par taille des autres types d’engins tels que les filets maillants.
+La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui comprend les poissons âgés de `r age_plus` ans et plus.
 
 ```{r app-minor-proportions-at-age, fig.asp=0.45, fig.cap = ifelse(french, "(ref:minor-pa-cap-french)", "(ref:minor-pa-cap)")}
 plot_pa(minor_pa,
@@ -85,7 +98,11 @@ dive surveys (`r new_surv_yr` to `r minor_end_yr`).
 The dashed vertical line is the boundary between these two periods.
 Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
-(ref:minor-spawn-index-cap-french) Not yet translated.
+(ref:minor-spawn-index-cap-french) Série chronologique de l’indice du frai en milliers de tonnes pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr` dans les régions d’évaluation des stocks mineurs.
+L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante: relevés en surface (de `r minor_start_yr` à `r new_surv_yr-1`), et
+relevés de plongée (de `r new_surv_yr` à `r minor_end_yr`).
+La ligne verticale en pointillés est la limite entre ces deux périodes.
+L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
 ```{r app-minor-survey-indices-fig, fig.asp=0.45, fig.cap = ifelse(french, "(ref:minor-spawn-index-cap-french)", "(ref:minor-spawn-index-cap)")}
 plot_spawn_ind(minor_surv,
