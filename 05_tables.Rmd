@@ -571,7 +571,7 @@ because the MP fails to meet Objective 1.
 (ref:decision-table-prd-cap-french) Rendement de la procédure de gestion (PG) dans la région d’évaluation des stocks majeur du district de Prince Rupert selon trois scénarios du modèle d'exploitation (ME):
 mortalité naturelle liée à la densité (MLD),
 mortalité naturelle indépendante de la densité (MID), et
-mortalité naturelle constante (conM).
+mortalité naturelle constante (MC).
 Les critères de rendement sont calculés sur trois générations de hareng du Pacifique (c.-à-d. 15 ans) à partir du début de la période de projection pour tous les objectifs.
 Les PG sont classés à l'intérieur de chaque scénario en fonction de la réalisation de l'objectif 1.
 Le total autorisé des captures (TAC) recommandé en milliers de tonnes (t) et le taux de recolte (TR) associé sont déclarés pour chaque PG.
