@@ -22,14 +22,13 @@ The following list describes modifications specific to the assessment of Pacific
   
 1. Data are unsexed, $S = 1$,
 
-2. Total mortality is constant across ages, $Z_{t,a} = Z_t$,
+1. Total mortality is constant across ages, $Z_{t,a} = Z_t$,
 
-3. Fecundity and maturity are synonymous and used interchangeably,
+1. Fecundity and maturity are synonymous and used interchangeably,
 
-4. Total mortality (i.e., 100% of $Z_t$) occurs prior to spawning, and
+1. Total mortality (i.e., 100% of $Z_t$) occurs prior to spawning, and
 
-5. Unfished spawning biomass is represented as $B_0$ in this section, and as $\mli{SB}_0$ in
-the main text.
+1. Unfished spawning biomass is represented as $B_0$ in this section, and as $\mli{SB}_0$ in the main text.
 
 ## Equilibrium considerations: steady-state age structured model
 
@@ -299,23 +298,22 @@ The objective function contains five major components:
 
 1. The negative log-likelihood for the catch data,
 
-2. The negative log-likelihood for the relative abundance data,
+1. The negative log-likelihood for the relative abundance data,
 
-3. The negative log-likelihood for the age composition data,
+1. The negative log-likelihood for the age composition data,
 
-4. The prior distributions for model parameters, and
+1. The prior distributions for model parameters, and
 
-5. Three penalty functions that are invoked to regularize the solution during intermediate
+1. Three penalty functions that are invoked to regularize the solution during intermediate
 phases of the non-linear parameter estimation. 
 
 The penalty functions:
 
-a. Constrain the estimates of annual recruitment to conform to a Beverton-Holt stock-recruit
-function,
+a. Constrain the estimates of annual recruitment to conform to a Beverton-Holt stock-recruit function,
 
-b. Weakly constrain the log recruitment deviations to a normal distribution, and
+a. Weakly constrain the log recruitment deviations to a normal distribution, and
 
-c. Weakly constrain estimates of log fishing mortality to a normal distribution
+a. Weakly constrain estimates of log fishing mortality to a normal distribution
 ($\sim$ $N$(ln(0:2); 4:0)) to prevent estimates of catch from exceeding estimated biomass.
 
 Sensitivity analysis indicate that the model is insensitive 
@@ -546,9 +544,9 @@ and iSCAM attempts to estimate model parameters by minimizing the sum of these e
 
 There are two specific constraints that are described here: 
 
-1) Parameter bounds, and 
+1. Parameter bounds, and 
 
-2) Constraints to ensure that a parameter vector sums to 0. 
+1. Constraints to ensure that a parameter vector sums to 0. 
 
 In iSCAM the user must specify the lower and upper bounds 
 for the leading parameters defined in the control file
@@ -572,15 +570,15 @@ can also specify an informative prior distribution for each of these parameters.
 Five distinct prior distributions can be implemented:
 
 <!-- TODO: a, b, and \sigma appear elsewhere; find different parameters? -->
-1) Uniform \dUnif{a}{b}, where $a$ and $b$ are the minima and maxima, respectively,
+1. Uniform \dUnif{a}{b}, where $a$ and $b$ are the minima and maxima, respectively,
 
-2) Normal \dNorm{\mu}{\sigma^2}, where $\mu$ and $\sigma^2$ are the mean and variance, respectively,
+1. Normal \dNorm{\mu}{\sigma^2}, where $\mu$ and $\sigma^2$ are the mean and variance, respectively,
 
-3) Lognormal \dLognorm{\mu}{\sigma^2}, where $\mu$ and $\sigma^2$ are the mean and variance, respectively,
+1. Lognormal \dLognorm{\mu}{\sigma^2}, where $\mu$ and $\sigma^2$ are the mean and variance, respectively,
 
-4) Beta \dBeta{a}{b}, where $a$ and $b$ are the shape parameters, and 
+1. Beta \dBeta{a}{b}, where $a$ and $b$ are the shape parameters, and 
 
-5) Gamma \dGamma{a}{b}, where $a$ and $b$ are the shape parameters.
+1. Gamma \dGamma{a}{b}, where $a$ and $b$ are the shape parameters.
 
 For Pacific Herring, a bounded uniform prior was specified for the 
 log of unfished recruitment \dUnif{-5}{15},

@@ -132,11 +132,11 @@ Candidate USRs are:
 
 1. $0.4\mli{SB}_0$,
 
-2. $0.6\mli{SB}_0$,
+1. $0.6\mli{SB}_0$,
 
-3. Average spawning biomass from `r major_start_yr` to `r assess_yr`, $\mli{SB}_{\mli{ave}}$, and
+1. Average spawning biomass from `r major_start_yr` to `r assess_yr`, $\mli{SB}_{\mli{ave}}$, and
 
-4. Average spawning biomass during a productive period [@cleary2018], $\mli{SB}_{\mli{ave-prod}}$.
+1. Average spawning biomass during a productive period [@cleary2018], $\mli{SB}_{\mli{ave-prod}}$.
 
 Simulation results showed similar properties between USRs $0.6\mli{SB}_0$ and $\mli{SB}_{\mli{ave}}$ both within and among SARs,
 while the USR based on the average biomass in a productive period, $\mli{SB}_{\mli{ave-prod}}$, was found to be most variable among SARs.
@@ -292,13 +292,13 @@ The first cycle of Pacific Herring MSE includes, as a starting point, four core 
 1. Avoid the LRP with at least 75% probability over three Pacific Herring generations
 (i.e., avoid a biomass limit; $P(\mli{SB}_t > 0.3\mli{SB}_0) \geq 0.75$),
 
-2. Maintain spawning biomass at or above the USR with at least 50% probability over three Pacific Herring generations
+1. Maintain spawning biomass at or above the USR with at least 50% probability over three Pacific Herring generations
 (i.e., achieve a target biomass; $P(\mli{SB}_t \geq 0.6\mli{SB}_0) \geq 0.5$),
 
-3. Maintain average annual variability (AAV) in catch below 25% over three Pacific Herring generations
+1. Maintain average annual variability (AAV) in catch below 25% over three Pacific Herring generations
 (goal reflecting catch variability; $\text{AAV} < 0.25$), and
 
-4. Maximize average annual catch over three Pacific Herring generations
+1. Maximize average annual catch over three Pacific Herring generations
 (goal reflecting catch biomass).
 
 However, a fully specified set of objectives has not yet been developed for each management area.
@@ -312,9 +312,9 @@ The first MSE cycle introduced three hypotheses about future Pacific Herring nat
 
 1. $M$ is a time-varying, density-dependent process (DDM),
 
-2. $M$ is a time-varying, density-independent process (DIM), and
+1. $M$ is a time-varying, density-independent process (DIM), and
 
-3. $M$ is constant over time (conM).
+1. $M$ is constant over time (conM).
 
 These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
 The DDM scenario was identified as the Reference OM scenario based on discussion at the July 2018 CSAS review process [@dfo2019c],
@@ -329,12 +329,12 @@ Several lessons were learned from the analysis:
 Such assessment errors cause over-estimation of spawning biomass and
 result in recommended catch limits such that the realized harvest rate exceeds the intended target specified by a HCR (e.g., over-harvest).
 
-2. Reduction in harvest rate from 20% to 10% was the most effective means of mitigating stock assessment errors by reducing the absolute size of the catch.
+1. Reduction in harvest rate from 20% to 10% was the most effective means of mitigating stock assessment errors by reducing the absolute size of the catch.
 The use of a catch cap, implemented as a maximum annual catch level, was an effective model-free way to further mitigate assessment errors.
 Simulation analyses additionally showed that outcomes are insensitive to the choice of operational control points (OCPs) in the HCR when a low harvest rate (HR) and catch cap are applied.
 This occurs because low biomass levels (associated with the lower OCP) are avoided for these management procedures (MPs).
 
-3. Differences in specification of Pacific Herring MPs, including the HCR components, are expected a priori among SARs.
+1. Differences in specification of Pacific Herring MPs, including the HCR components, are expected a priori among SARs.
 The reasons relate to differences in objectives deemed important by resource users,
 differences in historical and current stock and fishery dynamics, and
 differences in the magnitude and direction of assessment model errors in each SAR.
@@ -431,7 +431,7 @@ Science advice in 2018 recommended discontinuing the use of the historical fixed
 and therefore ignore 22 years of stock and fishery monitoring data,
 as well as substantial changes to the structural form of the assessment model.
 
-2. Use of separate lower and upper OCPs allows for altering the slope of the ramp portion of the HCR to better meet stock and fishery objectives by
+1. Use of separate lower and upper OCPs allows for altering the slope of the ramp portion of the HCR to better meet stock and fishery objectives by
 avoiding fishery closures and encouraging stock growth as more is learned about stock dynamics and the effects of fishing.
 
 In the absence of fishing, spawning biomass in 2020 is forecast at `r f(sog_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\mli{SB}_0$ with `r f(sog_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
