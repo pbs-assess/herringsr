@@ -878,7 +878,7 @@ Horizontal dashed lines indicate $U_t = `r target_hr`$.
 (ref:harvest-rate-cap-french) Série chronologique du taux de récolte effectif pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs.
 Le taux de récolte effectif pour l’année $t$ est calculé comme $U_t = C_t/(C_t + \mli{BR}_t)$ où
 $C_t$ est est la prise pour l’année $t$, et
-$BR_t$ est la biomasse reproductrice estimée pour l’année $t$.
+$\mli{BR}_t$ est la biomasse reproductrice estimée pour l’année $t$.
 Les lignes noires et les zones ombragées indiquent les médianes et intervalles de confiance de `r ci_level*100`% pour $U_t$, respectivement.
 Les lignes en tirets horizontales indiquent $U_t = `r target_hr`$.
 
@@ -900,7 +900,7 @@ where $\mli{SB}_0$ is estimated unfished spawning biomass.
 
 (ref:proj-biomass-density-cap-french) Biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en `r assess_yr+1` $\mli{BR}_{`r assess_yr+1`}$ en milliers de tonnes pour le hareng du Pacifique dans les régions d’évaluation des stocks majeurs.
 Les lignes noires pleines et tiretées indiquent les médianes et les intervalles de confiance de `r ci_level*100`%  pour $\mli{SB}_{`r assess_yr+1`}$, respectivement.
-Les lignes et rectangles ombragés rouges indiquent les médianes et les intervalles de confiance de `r ci_level*100`% pour le point de référence limite, $0,3BR_0$, où $BR_0$ est la biomasse non exploitée estimée.
+Les lignes et rectangles ombragés rouges indiquent les médianes et les intervalles de confiance de `r ci_level*100`% pour le point de référence limite, $0,3\mli{BR}_0$, où $\mli{BR}_0$ est la biomasse non exploitée estimée.
 
 ```{r proj-biomass-density, fig.asp = 1, fig.cap = ifelse(french, "(ref:proj-biomass-density-cap-french)", "(ref:proj-biomass-density-cap)")}
 plot_proj_biomass_density(major_models, 
