@@ -22,11 +22,11 @@ input_data_table(inp_catch,
                  longtable = FALSE)
 ```
 
-(ref:annual-catch-cap) Total landed catch in tonnes of Pacific Herring in the major stock assessment regions (SARs).
+(ref:annual-catch-cap) Total landed catch in tonnes of Pacific Herring in the major stock assessment regions (SARs) from `r assess_yr-9` to `r assess_yr`.
 Legend: `r commify(major_regions_full_parens)`.
 Note: 'WP' indicates that data are withheld due to privacy concerns.
 
-(ref:annual-catch-cap-french) Total des prises débarquées en tonnes de hareng du Pacifique dans les zones d’évaluation des stocks (RESs) majeurs.
+(ref:annual-catch-cap-french) Total des prises débarquées en tonnes de hareng du Pacifique dans les zones d’évaluation des stocks (RESs) majeurs de `r assess_yr-9` à `r assess_yr`.
 Légende: `r commify(major_regions_full_parens, and_word="et")`.
 Remarque: «DT» indique que les données ne sont pas divulguées pour des raisons de confidentialité.
 
@@ -40,11 +40,11 @@ total_landed_catch_table(major_catch_short,
                          longtable = FALSE)
 ```
 
-(ref:annual-sok-catch-cap) Total spawn-on-kelp harvest, reported as pounds of Pacific Herring eggs on kelp, in the major stock assessment regions (SARs).
+(ref:annual-sok-catch-cap) Total spawn-on-kelp harvest, reported as pounds of Pacific Herring eggs on kelp, in the major stock assessment regions (SARs) from `r assess_yr-9` to `r assess_yr`.
 Legend: `r commify(major_regions_full_parens)`.
 Note: 'WP' indicates that data are withheld due to privacy concerns.
 
-(ref:annual-sok-catch-cap-french) Récolte totale d’oeufs sur varech en livres de hareng du Pacifique dans les zones d’évaluation des stocks (RESs) majeurs.
+(ref:annual-sok-catch-cap-french) Récolte totale d’oeufs sur varech en livres de hareng du Pacifique dans les zones d’évaluation des stocks (RESs) majeurs de `r assess_yr-9` à `r assess_yr`.
 Légende: `r commify(major_regions_full_parens, and_word="et")`.
 Remarque: «DT» indique que les données ne sont pas divulguées pour des raisons de confidentialité.
 
@@ -58,11 +58,11 @@ sok_harvest_table(sok,
                   longtable = FALSE)
 ```
 
-(ref:spawn-index-hg-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring in the Haida Gwaii major stock assessment region.
+(ref:spawn-index-hg-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring in the Haida Gwaii major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 Legend: 'Cumshewa' is Section 023; 'Juan Perez/Skincuttle' is Sections 021 and 025; 'Louscoone' is Section 006; and 'Selwyn' is Section 024.
 Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
-(ref:spawn-index-hg-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
+(ref:spawn-index-hg-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii de `r assess_yr-9` à `r assess_yr`.
 Légende: «Cumshewa» est la section 023; «Juan Perez/Skincuttle» est les sections 021 et 025; «Louscoone» est la section 006; et «Selwyn» est la section 024.
 Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
@@ -75,10 +75,10 @@ spawn_index_by_area_table(ps[[en2fr("HG", french)]],
                           longtable = FALSE)
 ```
 
-(ref:spawn-index-pr-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the Prince Rupert District major stock assessment region.
+(ref:spawn-index-pr-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the Prince Rupert District major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-pr-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du district de Prince Rupert.
+(ref:spawn-index-pr-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du district de Prince Rupert de `r assess_yr-9` à `r assess_yr`.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-prd}
@@ -90,10 +90,10 @@ spawn_index_by_area_table(ps[[en2fr("PRD", french)]],
                           longtable = FALSE)
 ```
 
-(ref:spawn-index-cc-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the Central Coast major stock assessment region.
+(ref:spawn-index-cc-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the Central Coast major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-cc-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
+(ref:spawn-index-cc-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale de `r assess_yr-9` à `r assess_yr`.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-cc}
@@ -105,11 +105,11 @@ spawn_index_by_area_table(ps[[en2fr("CC", french)]],
                           longtable = FALSE)
 ```
 
-(ref:spawn-index-sog-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring in the Strait of Georgia major stock assessment region.
+(ref:spawn-index-sog-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring in the Strait of Georgia major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 Legend: '14&17' is Statistical Areas 14 and 17 (excluding Section 173); 'ESoG' is eastern Strait of Georgia; 'Lazo' is above Cape Lazo; and 'SDodd' is South of Dodd Narrows.
 See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-sog-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
+(ref:spawn-index-sog-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie de `r assess_yr-9` à `r assess_yr`.
 Légende: «14&17» fait référence aux zones statistiques 14 et 17 (à l’exclusion de la section 173); «EDG» fait référence à l’est du détroit de Géorgie; «Lazo» fait référence au-dessus du cap Lazo; et «SDodd» fait référence au sud du passage Dodd.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
@@ -122,10 +122,10 @@ spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
                           longtable = FALSE)
 ```
 
-(ref:spawn-index-wcvi-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the West Coast of Vancouver Island major stock assessment region.
+(ref:spawn-index-wcvi-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring in the West Coast of Vancouver Island major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-wcvi-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+(ref:spawn-index-wcvi-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver de `r assess_yr-9` à `r assess_yr`.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-wcvi}
@@ -253,9 +253,9 @@ make.parameters.est.table(major_models[[model_ind]],
                           translate = french)
 ```
 
-(ref:hg-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Haida Gwaii major stock assessment region.
+(ref:hg-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Haida Gwaii major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 
-(ref:hg-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) dans la région d’évaluation des stocks majeur de Haida Gwaii.
+(ref:hg-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) dans la région d’évaluation des stocks majeur de Haida Gwaii de `r assess_yr-9` à `r assess_yr`.
 
 ```{r hg-recruitment-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -271,9 +271,9 @@ make.value.table(major_models[[model_ind]],
                  translate = french)
 ```
 
-(ref:prd-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Prince Rupert District major stock assessment region.
+(ref:prd-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Prince Rupert District major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 
-(ref:prd-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) dans la région d’évaluation des stocks majeur du district de Prince Rupert.
+(ref:prd-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) dans la région d’évaluation des stocks majeur du district de Prince Rupert de `r assess_yr-9` à `r assess_yr`.
 
 ```{r prd-recruitment-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
@@ -289,9 +289,9 @@ make.value.table(major_models[[model_ind]],
                  translate = french)
 ```
 
-(ref:cc-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Central Coast major stock assessment region.
+(ref:cc-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Central Coast major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 
-(ref:cc-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) dans la région d’évaluation des stocks majeur de la côte centrale.
+(ref:cc-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) dans la région d’évaluation des stocks majeur de la côte centrale de `r assess_yr-9` à `r assess_yr`.
 
 ```{r cc-recruitment-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -307,9 +307,9 @@ make.value.table(major_models[[model_ind]],
                  translate = french)
 ```
 
-(ref:sog-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Strait of Georgia major stock assessment region.
+(ref:sog-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the Strait of Georgia major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 
-(ref:sog-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) dans la région d’évaluation des stocks majeur du détroit de Georgie.
+(ref:sog-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) dans la région d’évaluation des stocks majeur du détroit de Georgie de `r assess_yr-9` à `r assess_yr`.
 
 ```{r sog-recruitment-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
@@ -325,9 +325,9 @@ make.value.table(major_models[[model_ind]],
                  translate = french)
 ```
 
-(ref:wcvi-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the West Coast of Vancouver Island major stock assessment region.
+(ref:wcvi-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of age-2 recruitment (millions) for the West Coast of Vancouver Island major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 
-(ref:wcvi-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+(ref:wcvi-recruitment-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver de `r assess_yr-9` à `r assess_yr`.
 
 ```{r wcvi-recruitment-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
@@ -347,13 +347,13 @@ make.value.table(major_models[[model_ind]],
 (i.e., relative spawning biomass $\mli{SB}_t/\mli{SB}_0$, where
 $\mli{SB}_t$ is spawning biomass in year $t$, and
 $\mli{SB}_0$ is estimated unfished spawning biomass)
-for the Haida Gwaii major stock assessment region.
+for the Haida Gwaii major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 
 (ref:hg-spawning-biomass-depletion-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice en milliers de tonnes et déplétion
 (c.-à-d. biomasse reproductrice relative $\mli{BR}_t/\mli{BR}_0$, où
 $\mli{BR}_t$ est la biomasse reproductrice en année $t$, et
 $\mli{BR}_0$ est la biomasse reproductrice non exploitée estimée)
-dans la région d’évaluation des stocks majeur de Haida Gwaii.
+dans la région d’évaluation des stocks majeur de Haida Gwaii de `r assess_yr-9` à `r assess_yr`.
 
 ```{r hg-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -369,10 +369,10 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              translate = french)
 ```
 
-(ref:prd-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion for the Prince Rupert District major stock assessment region.
+(ref:prd-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion for the Prince Rupert District major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 See Table \@ref(hg-spawning-biomass-depletion-table) for description.
 
-(ref:prd-spawning-biomass-depletion-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice en milliers de tonnes et déplétion dans la région d’évaluation des stocks majeur du district de Prince Rupert.
+(ref:prd-spawning-biomass-depletion-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice en milliers de tonnes et déplétion dans la région d’évaluation des stocks majeur du district de Prince Rupert de `r assess_yr-9` à `r assess_yr`.
 Voir le tableau \@ref(hg-spawning-biomass-depletion-table) pour la description.
 
 ```{r prd-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -389,10 +389,10 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              translate = french)
 ```
 
-(ref:cc-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion for the Central Coast major stock assessment region.
+(ref:cc-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion for the Central Coast major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 See Table \@ref(hg-spawning-biomass-depletion-table) for description.
 
-(ref:cc-spawning-biomass-depletion-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice en milliers de tonnes et déplétion dans la région d’évaluation des stocks majeur de la côte centrale.
+(ref:cc-spawning-biomass-depletion-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice en milliers de tonnes et déplétion dans la région d’évaluation des stocks majeur de la côte centrale de `r assess_yr-9` à `r assess_yr`.
 Voir le tableau \@ref(hg-spawning-biomass-depletion-table) pour la description.
 
 ```{r cc-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -409,10 +409,10 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              translate = french)
 ```
 
-(ref:sog-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion for the Strait of Georgia major stock assessment region.
+(ref:sog-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion for the Strait of Georgia major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 See Table \@ref(hg-spawning-biomass-depletion-table) for description.
 
-(ref:sog-spawning-biomass-depletion-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice en milliers de tonnes et déplétion dans la région d’évaluation des stocks majeur du détroit de Georgie.
+(ref:sog-spawning-biomass-depletion-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice en milliers de tonnes et déplétion dans la région d’évaluation des stocks majeur du détroit de Georgie de `r assess_yr-9` à `r assess_yr`.
 Voir le tableau \@ref(hg-spawning-biomass-depletion-table) pour la description.
 
 ```{r sog-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -429,10 +429,10 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              translate = french)
 ```
 
-(ref:wcvi-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion for the West Coast of Vancouver Island major stock assessment region.
+(ref:wcvi-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion for the West Coast of Vancouver Island major stock assessment region from `r assess_yr-9` to `r assess_yr`.
 See Table \@ref(hg-spawning-biomass-depletion-table) for description.
 
-(ref:wcvi-spawning-biomass-depletion-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice en milliers de tonnes et déplétion dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+(ref:wcvi-spawning-biomass-depletion-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice en milliers de tonnes et déplétion dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver de `r assess_yr-9` à `r assess_yr`.
 Voir le tableau \@ref(hg-spawning-biomass-depletion-table) pour la description.
 
 ```{r wcvi-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
