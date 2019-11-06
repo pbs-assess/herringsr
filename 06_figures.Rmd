@@ -257,7 +257,7 @@ Les barres verticales indiquent les prises commerciales $C_t$, à l’exclusion 
 Panneaux (b et d): les lignes et les zones ombragées indiquent les médianes et les intervalles de crédibilité de `r ci_level*100`%, respectivement.
 Panneau (e): log des écarts du recrutement.
 Panneaux (c et e): les cercles et les lignes verticales indiquent les médianes et les intervalles de crédibilité de `r ci_level*100`%, respectivement.
-Panneau (f): diagramme de phase de la production de la biomasse reproductrice ($\frac{\mli{BR}_{t+1} - \mli{BR}_t + C_{t+1}}{\mli{BR}_t}$) pour la période du relevé de plongée (de `r new_surv_yr` à `r assess_yr-1`; estimations de la densité maximale a posteriori).
+Panneau (f): diagramme de phase de la production de la biomasse reproductrice ($\frac{\mli{BR}_{t+1} - \mli{BR}_t + C_{t+1}}{\mli{BR}_t}$) pour la période du relevé de plongée (de `r new_surv_yr` à `r assess_yr-1`; estimations de la densité a posteriori maximale).
 L’ombrage gris est de plus en plus foncé à mesure que l’on avance dans la série chronologique; le triangle indique `r assess_yr-1`.
 Panneaux (d et f): les lignes rouges et l’ombrage indiquent les médianes et les intervalles de confiance de `r ci_level*100`%, respectivement, pour le point de référence limite $0,3\mli{BR}_0$, où $\mli{BR}_0$ est la biomasse reproductrice non exploitée estimée.
 
