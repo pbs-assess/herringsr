@@ -1,8 +1,8 @@
 # Figures
 
 (ref:bc-map-cap) Boundaries for the Pacific Herring stock assessment regions (SARs) in British Columbia.
-The major SARs are `r commify(major_regions_full_parens`.
-The minor SARs are `r commify(minor_regions_full_parens`.
+The major SARs are `r commify(major_regions_full_parens)`.
+The minor SARs are `r commify(minor_regions_full_parens)`.
 Units: kilometres (km).
 
 (ref:bc-map-cap-french) Limites des régions d’évaluation des stocks (RES) du hareng du Pacifique en Colombie-Britannique.
@@ -19,6 +19,7 @@ See Figures \@ref(fig:storyboard-hg) to \@ref(fig:storyboard-wcvi) for catches d
 Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fishery; and 'RoeSN' represents the roe seine fishery.
 
 (ref:major-catch-cap-french) Série chronologique des prises totales débarquées en milliers de tonnes (t) de hareng du Pacifique de `r recent_catch_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs.
+Voir les Figures \@ref(fig:storyboard-hg) à \@ref(fig:storyboard-wcvi) pour les prises durant la période de réduction (`r major_start_yr` à `r recent_catch_yr-1`).
 Légende: «Autre» représente la réduction, ainsi que les pêches pratiquées à des fins de subsistance, pour le marché des appâts et pour des usages spéciaux; «RogueFM» représente la pêche au hareng rogué au filet maillant; et «RogueSN» représente la pêche au hareng rogué à la senne.
 
 ```{r major-catch, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-catch-cap-french)", "(ref:major-catch-cap)")}
@@ -245,7 +246,20 @@ Panel (f): phase plot of spawning biomass production ($\frac{\mli{SB}_{t+1} - \m
 Grey shading becomes darker in chronological order; the triangle indicates `r assess_yr-1`.
 Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% confidence intervals, respectively, for the limit reference point $0.3\mli{SB}_0$, where $\mli{SB}_0$ is estimated unfished spawning biomass.
 
-(ref:storyboard-hg-cap-french) `r paste0("Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii. Panneau (a) : ajustement du modèle aux données mises à l’échelle de relevé du frai en milliers de tonnes métriques. Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai q. Panneau (b) : estimations a posteriori du taux de mortalité naturelle instantanée. Panneau (c) : nombre reconstitué de recrues d’âge 2 en milliers de millions. Panneau (d) : estimation a posteriori de la biomasse reproductrice ($BSR_t$) pour chaque année t en milliers de tonnes. Le cercle et la ligne verticale indiquent la médiane et l’intervalle de crédibilité de 90\\%, respectivement, de la $BSR_{", assess_yr + 1, "}$ (avant la pêche). Les barres verticales indiquent les prises commerciales, à l’exclusion des prises d’oeufs sur varech. Panneaux (b et d) : les lignes et les zones ombragées indiquent les médianes et les intervalles de crédibilité de 90\\%, respectivement. Panneau (e) : log des écarts du recrutement. La ligne rouge correspond à la moyenne mobile sur trois ans de l’écart médian de recrutement. Panneaux (c et e) : les cercles et les lignes verticales indiquent les médianes et les intervalles de crédibilité de 90\\%, respectivement. Panneau (f) : diagramme de phase de la production de la biomasse reproductrice pour la période du relevé de plongée (de ", new_surv_yr, " à ", assess_yr,  "; estimations de la densité maximale a posteriori). L’ombrage gris est de plus en plus foncé à mesure que l’on avance dans la série chronologique; le triangle indique ", assess_yr - 1, ". Panneaux (d et f) : les lignes rouges et l’ombrage indiquent les médianes et les intervalles de confiance de 90\\%, respectivement, pour le point de référence limite, $0,3BSR_0$.")`
+(ref:storyboard-hg-cap-french) \small{Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
+Panneau (a): ajustement du modèle aux données mises à l’échelle de relevé du frai en milliers de tonnes métriques.
+Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
+Panneau (b): estimations a posteriori du taux de mortalité naturelle instantanée.
+Panneau (c): nombre reconstitué de recrues d’âge 2 en milliers de millions.
+Panneau (d): estimation a posteriori de la biomasse reproductrice $\mli{BR_t}$ pour chaque année $t$ en milliers de tonnes.
+Le cercle et la ligne verticale indiquent la médiane et l’intervalle de crédibilité de `r ci_level*100`%, respectivement, de la biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en `r assess_yr+1`.
+Les barres verticales indiquent les prises commerciales $C_t$, à l’exclusion des prises d’oeufs sur varech (voir la figure \@ref(fig:major-catch) pour la légende).
+Panneaux (b et d): les lignes et les zones ombragées indiquent les médianes et les intervalles de crédibilité de `r ci_level*100`%, respectivement.
+Panneau (e): log des écarts du recrutement.
+Panneaux (c et e): les cercles et les lignes verticales indiquent les médianes et les intervalles de crédibilité de `r ci_level*100`%, respectivement.
+Panneau (f): diagramme de phase de la production de la biomasse reproductrice ($\frac{\mli{BR}_{t+1} - \mli{BR}_t + C_{t+1}}{\mli{BR}_t}$) pour la période du relevé de plongée (de `r new_surv_yr` à `r assess_yr-1`; estimations de la densité maximale a posteriori).
+L’ombrage gris est de plus en plus foncé à mesure que l’on avance dans la série chronologique; le triangle indique `r assess_yr-1`.
+Panneaux (d et f): les lignes rouges et l’ombrage indiquent les médianes et les intervalles de confiance de `r ci_level*100`%, respectivement, pour le point de référence limite $0,3\mli{BR}_0$, où $\mli{BR}_0$ est la biomasse reproductrice non exploitée estimée.}
 
 ```{r storyboard-hg, out.height="6.5in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-hg-cap-french)", "(ref:storyboard-hg-cap)")}
 
