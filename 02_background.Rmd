@@ -17,7 +17,7 @@ There is also a small recreational fishery.
 First Nations fish for whole herring, herring roe, and herring eggs for FSC purposes.
 Whole herring are fished by seine, gillnet, rake, dip net, and jig.
 Herring eggs are collected as spawn on seaweed such as kelp, or spawn on set tree boughs. 
-Indigenous harvest of herring for FSC purposes may occur coastwide where authorized by a communal license.
+Indigenous harvest of herring for FSC purposes may occur coast wide where authorized by a communal license.
 
 In addition, Treaty and aboriginal commercial fisheries may occur in some specific management regions.
 Four modern treaties (Nisga’a, Tsawwassen, Maa-nulth, and Tla’amin) have been ratified in British Columbia and articulate a treaty right to FSC harvest of fish.
@@ -30,7 +30,7 @@ The Heiltsuk currently hold nine SOK licenses in this area, and SOK is harvested
 The DFO and Heiltsuk are also committed to annual development of a Joint Fisheries Management Plan for Pacific Herring in the Central Coast.
 
 In `r this_season`, the primary Pacific Herring fisheries were seine roe and gillnet roe fisheries, with a combined coast wide catch of `r total_final_yr_roe_catch` tonnes (t).
-The FB seine fishery had a coast wide catch of `r total_final_yr_other_catch` t.
+The FB seine fishery had a coast wide catch of `r total_final_yr_other_catch`&nbsp;t.
 The roe and FB fisheries only operated in SoG in `r this_season`.
 The SOK fishery was operational in PRD and CC, and special use (SU) minor fishery was operational in SoG only.
 
@@ -53,13 +53,13 @@ this showed parameter estimates and biomass trajectories associated with the str
 supporting the adoption of the revised structure [@cleary2018].
 Other adjustments were made to improve computational efficiency and update input data.
 
-A Bayesian framework was used to estimate time series of spawning biomass, instantaneous natural mortality, and age-2 recruitment from `r minor_start_yr` to `r minor_end_yr`.
-Advice to managers for the major SARs includes posterior estimates of current stock status ($\mli{SB}_{`r minor_end_yr`}$), stock status relative to the LRP of $0.3\mli{SB}_0$, and spawning biomass in `r assess_yr + 1` assuming no catch ($\mli{SB}_{`r assess_yr + 1`}$).
+A Bayesian framework was used to estimate time series of spawning biomass, instantaneous natural mortality, and age-2 recruitment from `r major_start_yr` to `r major_end_yr`.
+Advice to managers for the major SARs includes posterior estimates of current stock status ($\mli{SB}_{`r major_end_yr`}$), stock status relative to the LRP of $0.3\mli{SB}_0$, and spawning biomass in `r major_end_yr + 1` assuming no catch ($\mli{SB}_{`r major_end_yr + 1`}$).
 The projected spawning biomass is based on the current year's recruitment deviations from average predicted by the Beverton-Holt stock-recruit model and
 estimated natural mortality and weight-at-age, both averaged over the most recent 5-years.
 The Markov chain Monte Carlo (MCMC) sampling procedure follows the same method implemented by @cleary2018.
 
-@cleary2018 reported results from two SCA model fits that differed in assumptions about dive survey (from `r new_surv_yr` to `r minor_end_yr`) catchability $q_2$:
+@cleary2018 reported results from two SCA model fits that differed in assumptions about dive survey (from `r new_surv_yr` to `r major_end_yr`) catchability $q_2$:
 assessment model 1 (AM1) where $q_2$ is estimated with a prior distribution assumed; and
 assessment model 2 (AM2) where $q_2 = 1$.
 The assumptions that the dive survey spawn index represents all the spawn deposited and that no eggs are lost to predation are strong.
