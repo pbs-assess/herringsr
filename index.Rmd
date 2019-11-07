@@ -106,3 +106,7 @@ theme_set(herring_theme())
 
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->
+
+<!-- Edits since the 'pre-approved' version -->
+<!-- 1. Added year range to table and figure captions -->
+<!-- 2. Add 'Pacific Herring' to table and figure captions -->
