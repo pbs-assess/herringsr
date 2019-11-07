@@ -112,7 +112,7 @@ spawn_index_by_area_table(ps[[en2fr("CC", french)]],
 Legend: '14&17' is Statistical Areas 14 and 17 (excluding Section 173); 'ESoG' is eastern Strait of Georgia; 'Lazo' is above Cape Lazo; and 'SDodd' is South of Dodd Narrows.
 See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-sog-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr`dans la région d’évaluation des stocks majeur du détroit de Georgie.
+(ref:spawn-index-sog-cap-french) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur du détroit de Georgie.
 Légende: «14&17» fait référence aux zones statistiques 14 et 17 (à l’exclusion de la section 173); «EDG» fait référence à l’est du détroit de Géorgie; «Lazo» fait référence au-dessus du cap Lazo; et «SDodd» fait référence au sud du passage Dodd.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
@@ -142,7 +142,7 @@ spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
                           longtable = FALSE)
 ```
 
-(ref:hg-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Haida Gwaii major stock assessment region.
+(ref:hg-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the Haida Gwaii major stock assessment region.
 Legend: $R_0$ is unfished age-2 recruitment;
 $h$ is steepness of the stock-recruitment relationship;
 $M$ is instantaneous natural mortality rate;
@@ -156,7 +156,7 @@ $\tau$ is the standard deviation of process error (i.e., recruitment); and
 $\sigma$ is the standard deviation of observation error (i.e., survey index).
 Note: $\tau$ and $\sigma$ are calculated values.
 
-(ref:hg-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux dans la région d’évaluation des stocks majeur de Haida Gwaii.
+(ref:hg-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
 Légende: $R_0$ est recrutement non pêché de l'âge 2;
 $h$ est l'inclinaison de la relation stock-recrutement;
 $M$ est le taux de mortalité naturelle instantanée;
@@ -182,10 +182,10 @@ make.parameters.est.table(major_models[[model_ind]],
                           translate = french)
 ```
 
-(ref:prd-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Prince Rupert District major stock assessment region.
+(ref:prd-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the Prince Rupert District major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-(ref:prd-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux dans la région d’évaluation des stocks majeur du district de Prince Rupert.
+(ref:prd-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
 
 ```{r prd-parameter-est-table, results = 'asis', echo = FALSE}
@@ -201,10 +201,10 @@ make.parameters.est.table(major_models[[model_ind]],
                           translate = french)
 ```
 
-(ref:cc-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Central Coast major stock assessment region.
+(ref:cc-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-(ref:cc-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux dans la région d’évaluation des stocks majeur de la côte centrale.
+(ref:cc-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
 Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
 
 ```{r cc-parameter-est-table, results = 'asis', echo = FALSE}
@@ -220,10 +220,10 @@ make.parameters.est.table(major_models[[model_ind]],
                           translate = french)
 ```
 
-(ref:sog-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the Strait of Georgia major stock assessment region.
+(ref:sog-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-(ref:sog-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux dans la région d’évaluation des stocks majeur du détroit de Georgie.
+(ref:sog-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
 Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
 
 ```{r sog-parameter-est-table, results = 'asis', echo = FALSE}
@@ -239,10 +239,10 @@ make.parameters.est.table(major_models[[model_ind]],
                           translate = french)
 ```
 
-(ref:wcvi-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for the West Coast of Vancouver Island major stock assessment region.
+(ref:wcvi-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-(ref:wcvi-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+(ref:wcvi-parameter-est-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
 
 ```{r wcvi-parameter-est-table, results = 'asis', echo = FALSE}
