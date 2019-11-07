@@ -14,6 +14,9 @@ new_surv_yr <- 1988
 # Post-reduction fishery catches
 recent_catch_yr <- 1972
 
+# Number of years to show in tables (+1)
+num_yrs_tab <- 9
+
 # Limits for the weight-at-age plot
 wa_ylim <- c(0.05, 0.15)
 
