@@ -261,7 +261,7 @@ Panneau (f): diagramme de phase de la production de la biomasse reproductrice ($
 L’ombrage gris est de plus en plus foncé à mesure que l’on avance dans la série chronologique; le triangle indique `r assess_yr-1`.
 Panneaux (d et f): les lignes rouges et l’ombrage indiquent les médianes et les intervalles de confiance de `r ci_level*100`%, respectivement, pour le point de référence limite $0,3\mli{BR}_0$, où $\mli{BR}_0$ est la biomasse reproductrice non exploitée estimée.
 
-```{r storyboard-hg, out.height="6.5in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-hg-cap-french)", "(ref:storyboard-hg-cap)")}
+```{r storyboard-hg, out.height="6.4in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-hg-cap-french)", "(ref:storyboard-hg-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -410,7 +410,7 @@ See Figure \@ref(fig:storyboard-hg) for description.
 (ref:storyboard-prd-cap-french) Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-prd, out.height="6.5in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-prd-cap-french)", "(ref:storyboard-prd-cap)")}
+```{r storyboard-prd, out.height="6.4in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-prd-cap-french)", "(ref:storyboard-prd-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -558,7 +558,7 @@ See Figure \@ref(fig:storyboard-hg) for description.
 (ref:storyboard-cc-cap-french) Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-cc, out.height="6.5in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-cc-cap-french)", "(ref:storyboard-cc-cap)")}
+```{r storyboard-cc, out.height="6.4in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-cc-cap-french)", "(ref:storyboard-cc-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -706,7 +706,7 @@ See Figure \@ref(fig:storyboard-hg) for description.
 (ref:storyboard-sog-cap-french) Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-sog, out.height="6.5in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-sog-cap-french)", "(ref:storyboard-sog-cap)")}
+```{r storyboard-sog, out.height="6.4in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-sog-cap-french)", "(ref:storyboard-sog-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -854,7 +854,7 @@ See Figure \@ref(fig:storyboard-hg) for description.
 (ref:storyboard-wcvi-cap-french) Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-wcvi, out.height="6.5in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-french)", "(ref:storyboard-wcvi-cap)")}
+```{r storyboard-wcvi, out.height="6.4in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-french)", "(ref:storyboard-wcvi-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
