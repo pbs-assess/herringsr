@@ -68,7 +68,7 @@ Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide du para
 
 ```{r spawn-index-hg}
 spawn_index_by_area_table(ps[[en2fr("HG", french)]],
-                          cap = ifelse(french, 
+                          cap = ifelse(french,
                                        "(ref:spawn-index-hg-cap-french)",
                                        "(ref:spawn-index-hg-cap)"),
                           first_yr = major_end_yr-num_yrs_tab,
@@ -83,8 +83,8 @@ See Table \@ref(tab:spawn-index-hg) for description.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-prd}
-spawn_index_by_area_table(ps[[en2fr("PRD", french)]], 
-                          cap = ifelse(french, 
+spawn_index_by_area_table(ps[[en2fr("PRD", french)]],
+                          cap = ifelse(french,
                                        "(ref:spawn-index-pr-cap-french)",
                                        "(ref:spawn-index-pr-cap)"),
                           first_yr = major_end_yr-num_yrs_tab,
@@ -100,7 +100,7 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-cc}
 spawn_index_by_area_table(ps[[en2fr("CC", french)]],
-                          cap = ifelse(french, 
+                          cap = ifelse(french,
                                        "(ref:spawn-index-cc-cap-french)",
                                        "(ref:spawn-index-cc-cap)"),
                           first_yr = major_end_yr-num_yrs_tab,
@@ -118,7 +118,7 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-sog}
 spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
-                          cap = ifelse(french, 
+                          cap = ifelse(french,
                                        "(ref:spawn-index-sog-cap-french)",
                                        "(ref:spawn-index-sog-cap)"),
                           first_yr = major_end_yr-num_yrs_tab,
@@ -134,7 +134,7 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-wcvi}
 spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
-                          cap = ifelse(french, 
+                          cap = ifelse(french,
                                        "(ref:spawn-index-wcvi-cap-french)",
                                        "(ref:spawn-index-wcvi-cap)"),
                           first_yr = major_end_yr-num_yrs_tab,
@@ -172,7 +172,7 @@ Remarque: $\tau$ et $\sigma$ sont des valeurs calculées.
 ```{r hg-parameter-est-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
-                          xcaption = ifelse(french, 
+                          xcaption = ifelse(french,
                                             "(ref:hg-parameter-est-cap-french)",
                                             "(ref:hg-parameter-est-cap)"),
                           xlabel = "tab:hg-parameter-est-table",
@@ -191,7 +191,7 @@ Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
 ```{r prd-parameter-est-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
-                          xcaption = ifelse(french, 
+                          xcaption = ifelse(french,
                                             "(ref:prd-parameter-est-cap-french)",
                                             "(ref:prd-parameter-est-cap)"),
                           xlabel = "tab:prd-parameter-est-table",
@@ -210,7 +210,7 @@ Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
 ```{r cc-parameter-est-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
-                          xcaption = ifelse(french, 
+                          xcaption = ifelse(french,
                                             "(ref:cc-parameter-est-cap-french)",
                                             "(ref:cc-parameter-est-cap)"),
                           xlabel = "tab:cc-parameter-est-table",
@@ -229,7 +229,7 @@ Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
 ```{r sog-parameter-est-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
-                          xcaption = ifelse(french, 
+                          xcaption = ifelse(french,
                                             "(ref:sog-parameter-est-cap-french)",
                                             "(ref:sog-parameter-est-cap)"),
                           xlabel = "tab:sog-parameter-est-table",
@@ -248,7 +248,7 @@ Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
 ```{r wcvi-parameter-est-table, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
-                          xcaption = ifelse(french, 
+                          xcaption = ifelse(french,
                                             "(ref:wcvi-parameter-est-cap-french)",
                                             "(ref:wcvi-parameter-est-cap)"),
                           xlabel = "tab:wcvi-parameter-est-table",
@@ -469,7 +469,7 @@ $\mli{BR}_{`r assess_yr+1`}$ est la biomasses reproductrice projetée en supposa
 ```{r ref-points-hg, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.ref.points.table(major_models[[model_ind]],
-                      xcaption = ifelse(french, 
+                      xcaption = ifelse(french,
                                         "(ref:ref-points-hg-cap-french)",
                                         "(ref:ref-points-hg-cap)"),
                       xlabel = "tab:ref-points-hg",
@@ -488,7 +488,7 @@ Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 ```{r ref-points-prd, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.ref.points.table(major_models[[model_ind]],
-                      xcaption = ifelse(french, 
+                      xcaption = ifelse(french,
                                         "(ref:ref-points-prd-cap-french)",
                                         "(ref:ref-points-prd-cap)"),
                       xlabel = "tab:ref-points-prd",
@@ -526,7 +526,7 @@ Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 ```{r ref-points-sog, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.ref.points.table(major_models[[model_ind]],
-                      xcaption = ifelse(french, 
+                      xcaption = ifelse(french,
                                         "(ref:ref-points-sog-cap-french)",
                                         "(ref:ref-points-sog-cap)"),
                       xlabel = "tab:ref-points-sog",
