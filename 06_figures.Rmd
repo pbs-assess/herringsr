@@ -237,7 +237,7 @@ Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey
 Panel (b): posterior estimates of instantaneous natural mortality rate.
 Panel (c): reconstructed number of age-2 recruits in thousands of millions.
 Panel (d): posterior estimate of spawning biomass $\mli{SB_t}$ in year $t$.
-Circle and vertical line indicate the median and `r ci_level*100`% credible interval, respectively, of forecast spawning biomass in `r assess_yr+1` in the absense of fishing.
+Circle and vertical line indicate the median and `r ci_level*100`% credible interval, respectively, of forecast spawning biomass in `r assess_yr+1` in the absence of fishing.
 Vertical bars indicate commercial catch $C_t$, excluding spawn-on-kelp (see Figure \@ref(fig:major-catch) for legend).
 Panels (b & d): lines and shaded areas indicate medians and `r ci_level*100`% credible intervals, respectively.
 Panel (e): log recruitment deviations.
