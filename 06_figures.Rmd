@@ -236,13 +236,13 @@ Panel (a): model fit (maximum posterior density, MPD; lines) to scaled spawn sur
 Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey scaling parameter $q$.
 Panel (b): posterior estimates of instantaneous natural mortality rate.
 Panel (c): reconstructed number of age-2 recruits in thousands of millions.
-Panel (d): posterior estimate of spawning biomass $\mli{SB_t}$ in year $t$.
+Panel (d): posterior estimate of spawning biomass.
 Circle and vertical line indicate the median and `r ci_level*100`% credible interval, respectively, of forecast spawning biomass in `r assess_yr+1` in the absence of fishing.
-Vertical bars indicate commercial catch $C_t$, excluding spawn-on-kelp (see Figure \@ref(fig:major-catch) for legend).
+Vertical bars indicate commercial catch, excluding spawn-on-kelp (see Figure \@ref(fig:major-catch) for legend).
 Panels (b & d): lines and shaded areas indicate medians and `r ci_level*100`% credible intervals, respectively.
 Panel (e): log recruitment deviations.
 Panels (c & e): circles and vertical lines indicate medians and `r ci_level*100`% credible intervals, respectively.
-Panel (f): phase plot of spawning biomass production ($\frac{\mli{SB}_{t+1} - \mli{SB}_t + C_{t+1}}{\mli{SB}_t}$) for the dive survey period (`r new_surv_yr` to `r assess_yr-1`; MPD estimates).
+Panel (f): phase plot of spawning biomass production for the dive survey period (`r new_surv_yr` to `r assess_yr-1`; MPD estimates).
 Grey shading becomes darker in chronological order; the triangle indicates `r assess_yr-1`.
 Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% confidence intervals, respectively, for the limit reference point $0.3\mli{SB}_0$, where $\mli{SB}_0$ is estimated unfished spawning biomass.
 Note: biomass and catch are in thousands of tonnes (t).
@@ -252,13 +252,13 @@ Panneau (a): ajustement du modèle (estimations de la densité a posteriori maxi
 Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 Panneau (b): estimations a posteriori du taux de mortalité naturelle instantanée.
 Panneau (c): nombre reconstitué de recrues d’âge 2 en milliers de millions.
-Panneau (d): estimation a posteriori de la biomasse reproductrice $\mli{BR}_t$ pour chaque année $t$.
+Panneau (d): estimation a posteriori de la biomasse reproductrice.
 Le cercle et la ligne verticale indiquent la médiane et l’intervalle de crédibilité de `r ci_level*100`%, respectivement, de la biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en `r assess_yr+1`.
 Les barres verticales indiquent les prises commerciales $C_t$, à l’exclusion des prises d’oeufs sur varech (voir la figure \@ref(fig:major-catch) pour la légende).
 Panneaux (b et d): les lignes et les zones ombragées indiquent les médianes et les intervalles de crédibilité de `r ci_level*100`%, respectivement.
 Panneau (e): log des écarts du recrutement.
 Panneaux (c et e): les cercles et les lignes verticales indiquent les médianes et les intervalles de crédibilité de `r ci_level*100`%, respectivement.
-Panneau (f): diagramme de phase de la production de la biomasse reproductrice ($\frac{\mli{BR}_{t+1} - \mli{BR}_t + C_{t+1}}{\mli{BR}_t}$) pour la période du relevé de plongée (de `r new_surv_yr` à `r assess_yr-1`; DPM).
+Panneau (f): diagramme de phase de la production de la biomasse reproductrice pour la période du relevé de plongée (de `r new_surv_yr` à `r assess_yr-1`; DPM).
 L’ombrage gris est de plus en plus foncé à mesure que l’on avance dans la série chronologique; le triangle indique `r assess_yr-1`.
 Panneaux (d et f): les lignes rouges et l’ombrage indiquent les médianes et les intervalles de confiance de `r ci_level*100`%, respectivement, pour le point de référence limite $0,3\mli{BR}_0$, où $\mli{BR}_0$ est la biomasse reproductrice non exploitée estimée.
 Note: la biomasse et les prises sont exprimées en milliers de tonnes (t).

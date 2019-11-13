@@ -114,11 +114,11 @@ The panels \ref{item:storyIndex} to \ref{item:storyPhase} show:
 
 (a) Time series reconstruction of number of age-2 recruits,
 
-(a) Time series of total catch and estimated spawning biomass with reference lines at model estimates of $0.3\mli{SB}_0$,
+(a) Time series of estimated spawning biomass $\mli{SB}_t$ and total catch $C_t$ in year $t$, with reference lines at model estimates of $0.3\mli{SB}_0$,
 
 (a) Time series of (log) deviations from the estimated Beverton-Holt recruitment function, and
 
-(a) Phase plot of spawning biomass production for the dive survey period (MPD estimates), with reference lines at model estimates of $0.3\mli{SB}_0$.\label{item:storyPhase}
+(a) Phase plot of spawning biomass production ($\frac{\mli{SB}_{t+1} - \mli{SB}_t + C_{t+1}}{\mli{SB}_t}$) for the dive survey period (MPD estimates), with reference lines at model estimates of $0.3\mli{SB}_0$.\label{item:storyPhase}
 
 Note that spawn survey data (i.e., spawn index) in panel \ref{item:storyIndex} is scaled to abundance via the spawn survey scaling parameter $q$.
 The spawn index has two distinct periods defined by the dominant survey method: 
