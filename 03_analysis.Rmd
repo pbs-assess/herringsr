@@ -104,7 +104,7 @@ Despite the efforts, the herring spawn on bough harvests were not sufficient to 
 
 ## Stock status update
 
-Analyses of stock trend information for AM2 are presented following methods of @cleary2018 for the Pacific Herring major stock assessment areas.
+Analyses of stock trend information for AM2 are presented following methods of @cleary2018 for the Pacific Herring major stock assessment regions.
 Perceptions of stock status based on outputs from the SCA model (AM2) are summarized for each stock in a multi-panel figure (e.g., Figure \@ref(fig:storyboard-hg)).
 The panels \ref{item:storyIndex} to \ref{item:storyPhase} show:
 
