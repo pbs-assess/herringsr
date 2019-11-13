@@ -92,7 +92,7 @@ plot_pa(minor_pa,
 ```
 
 (ref:minor-spawn-index-cap) Time series of spawn index in thousands of tonnes (t) for Pacific Herring from `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
-The spawn index has two distinct periods defned by the dominant survey method:
+The spawn index has two distinct periods defined by the dominant survey method:
 surface surveys (`r minor_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r minor_end_yr`).
 The dashed vertical line is the boundary between these two periods.
