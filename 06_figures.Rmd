@@ -248,7 +248,7 @@ Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% con
 Note: biomass and catch are in thousands of tonnes (t).
 
 (ref:storyboard-hg-cap-french) Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
-Panneau (a): ajustement du modèle (lignes) aux données mises à l’échelle de relevé du frai (points).
+Panneau (a): ajustement du modèle (estimations de la densité a posteriori maximale, DPM; lignes) aux données mises à l’échelle de relevé du frai (points).
 Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 Panneau (b): estimations a posteriori du taux de mortalité naturelle instantanée.
 Panneau (c): nombre reconstitué de recrues d’âge 2 en milliers de millions.
@@ -258,7 +258,7 @@ Les barres verticales indiquent les prises commerciales $C_t$, à l’exclusion 
 Panneaux (b et d): les lignes et les zones ombragées indiquent les médianes et les intervalles de crédibilité de `r ci_level*100`%, respectivement.
 Panneau (e): log des écarts du recrutement.
 Panneaux (c et e): les cercles et les lignes verticales indiquent les médianes et les intervalles de crédibilité de `r ci_level*100`%, respectivement.
-Panneau (f): diagramme de phase de la production de la biomasse reproductrice ($\frac{\mli{BR}_{t+1} - \mli{BR}_t + C_{t+1}}{\mli{BR}_t}$) pour la période du relevé de plongée (de `r new_surv_yr` à `r assess_yr-1`; estimations de la densité a posteriori maximale).
+Panneau (f): diagramme de phase de la production de la biomasse reproductrice ($\frac{\mli{BR}_{t+1} - \mli{BR}_t + C_{t+1}}{\mli{BR}_t}$) pour la période du relevé de plongée (de `r new_surv_yr` à `r assess_yr-1`; DPM).
 L’ombrage gris est de plus en plus foncé à mesure que l’on avance dans la série chronologique; le triangle indique `r assess_yr-1`.
 Panneaux (d et f): les lignes rouges et l’ombrage indiquent les médianes et les intervalles de confiance de `r ci_level*100`%, respectivement, pour le point de référence limite $0,3\mli{BR}_0$, où $\mli{BR}_0$ est la biomasse reproductrice non exploitée estimée.
 Note: la biomasse et les prises sont exprimées en milliers de tonnes (t).
