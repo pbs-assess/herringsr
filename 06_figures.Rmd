@@ -232,7 +232,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 <!-- Haida Gwaii Storyboard -->
 (ref:storyboard-hg-cap) Model output for Pacific Herring in the Haida Gwaii major stock assessment region.
-Panel (a): model fit (median; lines) to scaled spawn survey data (points).
+Panel (a): model fit (median posterior estimate; lines) to scaled spawn survey data (points).
 Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey scaling parameter $q$.
 Panel (b): posterior estimates of instantaneous natural mortality rate.
 Panel (c): reconstructed number of age-2 recruits in thousands of millions.
@@ -248,7 +248,7 @@ Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% con
 Note: biomass and catch are in thousands of tonnes (t).
 
 (ref:storyboard-hg-cap-french) Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
-Panneau (a): ajustement du modèle (médian; lignes) aux données mises à l’échelle de relevé du frai (points).
+Panneau (a): ajustement du modèle (estimations a posteriori médian; lignes) aux données mises à l’échelle de relevé du frai (points).
 Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 Panneau (b): estimations a posteriori du taux de mortalité naturelle instantanée.
 Panneau (c): nombre reconstitué de recrues d’âge 2 en milliers de millions.

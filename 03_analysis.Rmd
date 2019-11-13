@@ -110,7 +110,7 @@ The panels \ref{item:storyIndex} to \ref{item:storyPhase} show:
 
 (a) Time series of model fit to scaled spawn survey data,\label{item:storyIndex}
 
-(a) Time series of instantaneous natural mortality rate ($M$) estimates,
+(a) Time series of instantaneous natural mortality rate $M$ estimates,
 
 (a) Time series reconstruction of number of age-2 recruits,
 
