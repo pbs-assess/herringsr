@@ -111,3 +111,4 @@ theme_set(herring_theme())
 <!-- 1. Added year range to table and figure captions -->
 <!-- 2. Add 'Pacific Herring' to table and figure captions -->
 <!-- 3. Bullet type for storyboard panel description (in Analysis p 6) -->
+<!-- 4. Move q description from storyboard panel list (a) to next paragraph -->
