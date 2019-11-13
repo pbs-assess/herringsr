@@ -232,11 +232,11 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 <!-- Haida Gwaii Storyboard -->
 (ref:storyboard-hg-cap) Model output for Pacific Herring in the Haida Gwaii major stock assessment region.
-Panel (a): model fit (maximum posterior density, MPD; lines) to scaled spawn survey data (points) in thousands of tonnes (t).
+Panel (a): model fit (maximum posterior density, MPD; lines) to scaled spawn survey data (points).
 Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey scaling parameter $q$.
 Panel (b): posterior estimates of instantaneous natural mortality rate.
 Panel (c): reconstructed number of age-2 recruits in thousands of millions.
-Panel (d): posterior estimate of spawning biomass $\mli{SB_t}$ in year $t$ in thousands of tonnes.
+Panel (d): posterior estimate of spawning biomass $\mli{SB_t}$ in year $t$.
 Circle and vertical line indicate the median and `r ci_level*100`% credible interval, respectively, of forecast spawning biomass in `r assess_yr+1` in the absense of fishing.
 Vertical bars indicate commercial catch $C_t$, excluding spawn-on-kelp (see Figure \@ref(fig:major-catch) for legend).
 Panels (b & d): lines and shaded areas indicate medians and `r ci_level*100`% credible intervals, respectively.
@@ -245,6 +245,7 @@ Panels (c & e): circles and vertical lines indicate medians and `r ci_level*100`
 Panel (f): phase plot of spawning biomass production ($\frac{\mli{SB}_{t+1} - \mli{SB}_t + C_{t+1}}{\mli{SB}_t}$) for the dive survey period (`r new_surv_yr` to `r assess_yr-1`; MPD estimates).
 Grey shading becomes darker in chronological order; the triangle indicates `r assess_yr-1`.
 Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% confidence intervals, respectively, for the limit reference point $0.3\mli{SB}_0$, where $\mli{SB}_0$ is estimated unfished spawning biomass.
+Note: biomass and catch are in thousands of tonnes (t).
 
 (ref:storyboard-hg-cap-french) Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
 Panneau (a): ajustement du modèle aux données mises à l’échelle de relevé du frai en milliers de tonnes métriques.
