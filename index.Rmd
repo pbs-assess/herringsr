@@ -110,3 +110,4 @@ theme_set(herring_theme())
 <!-- Edits since the 'pre-approved' version -->
 <!-- 1. Added year range to table and figure captions -->
 <!-- 2. Add 'Pacific Herring' to table and figure captions -->
+<!-- 3. Bullet type for storyboard panel description (in Analysis p 6) -->
