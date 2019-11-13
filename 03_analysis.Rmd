@@ -110,7 +110,7 @@ There are six panels, \ref{item:storyIndex} to \ref{item:storyPhase}:
 
 (a) Time series of maximum posterior density (MPD) estimates of the spawn survey data in thousands of tonnes,\label{item:storyIndex}
 
-(a) Time series of natural mortality ($M$) estimates,
+(a) Time series of instantaneous natural mortality rate ($M$) estimates,
 
 (a) Time series reconstruction of number of age-2 recruits,
 
