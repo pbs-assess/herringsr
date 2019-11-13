@@ -106,24 +106,27 @@ Despite the efforts, the herring spawn on bough harvests were not sufficient to 
 
 Analyses of stock trend information for AM2 are presented following methods of @cleary2018 for the Pacific Herring major stocks.
 Perceptions of stock status based on outputs from the SCA model (AM2) are summarized for each stock in a six-panel figure (e.g., Figure \@ref(fig:storyboard-hg)).
-There are six panels (a to f):
+There are six panels, \ref{item:storyIndex} to \ref{item:storyPhase}:
 
-(a) Time series of maximum posterior density (MPD) estimates of the spawn survey data in thousands of tonnes.
-The spawn survey data (i.e., spawn index) is scaled to abundance via the spawn survey scaling parameter $q$.
-The spawn index has two distinct periods defined by the dominant survey method: surface surveys (`r surv_yr_rng[1]` to `r new_surv_yr-1`), and dive surveys (`r new_surv_yr` to `r surv_yr_rng[2]`).
-Two $q$ parameters are implemented in the estimation procedure:
-$q_1$ with an uninformative prior, and
-$q_2$ with an informative prior approximating 1.0.
+(a) Time series of maximum posterior density (MPD) estimates of the spawn survey data in thousands of tonnes,\label{item:storyIndex}
 
-(b) Time series of natural mortality ($M$) estimates.
+(a) Time series of natural mortality ($M$) estimates,
 
-(c) Time series reconstruction of number of age-2 recruits.
+(a) Time series reconstruction of number of age-2 recruits,
 
-(d) Time series of total catch and estimated spawning biomass with reference line at model estimates of $0.3\mli{SB}_0$.
+(a) Time series of total catch and estimated spawning biomass with reference lines at model estimates of $0.3\mli{SB}_0$,
 
-(e) Time series of (log) deviations from the estimated Beverton-Holt recruitment function.
+(a) Time series of (log) deviations from the estimated Beverton-Holt recruitment function, and
 
-(f) Phase plot of spawning biomass production for the dive survey period (MPD estimates), with reference lines at model estimates of $0.3\mli{SB}_0$.
+(a) Phase plot of spawning biomass production for the dive survey period (MPD estimates), with reference lines at model estimates of $0.3\mli{SB}_0$.\label{item:storyPhase}
+
+Note that spawn survey data (i.e., spawn index) in panel \ref{item:storyIndex} is scaled to abundance via the spawn survey scaling parameter $q$.
+The spawn index has two distinct periods defined by the dominant survey method: 
+surface surveys (`r surv_yr_rng[1]` to `r new_surv_yr-1`), and 
+dive surveys (`r new_surv_yr` to `r surv_yr_rng[2]`).
+Thus, two $q$ parameters are implemented in the estimation procedure:
+$q_1$ (`r surv_yr_rng[1]` to `r new_surv_yr-1`) with an uninformative prior, and
+$q_2$ (`r new_surv_yr` to `r surv_yr_rng[2]`) with an informative prior approximating 1.0.
 
 ### Reference points\label{sec:ref-pts}
 
