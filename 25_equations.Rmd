@@ -355,8 +355,7 @@ The residuals between the observed and predicted relative abundance index is giv
 
 where $I_{k,t}$ is the observed relative abundance index, 
 $q_k$ is the catchability coefficient for index $k$, and 
-$V_{k,t}$ is the predicted vulnerable biomass at the time 
-of sampling.
+$V_{k,t}$ is the predicted vulnerable biomass at the time of sampling.
 The catchability coefficient $q_k$ is evaluated at its conditional maximum likelihood estimate:
 
 \begin{equation}\label{eq:q_kt}
