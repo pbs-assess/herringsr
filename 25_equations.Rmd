@@ -48,11 +48,11 @@ R_0 > 0,\,\,
 M > 0.
 \end{equation}
 
-For a given set of growth and maturity-at-age parameters $\Phi$
+For a given set of growth and maturity-at-age parameters $\Phi$ (Equation \ref{eq:Phi}),
 growth is assumed to follow the Von-Bertalanffy growth model,
-which describes the observed length-at-age $l_{a,s}$.
-The mean weight-at-age $w_{a,s}$ is given by an allometric relationship, and
-age-specific vulnerability $v_a$ is given by an age-based logistic function.
+which describes the observed length-at-age $l_{a,s}$ (Equation \ref{eq:l-as}).
+The mean weight-at-age $w_{a,s}$ is given by an allometric relationship (Equation \ref{eq:w-as}), and
+age-specific vulnerability $v_a$ is given by an age-based logistic function (Equation \ref{eq:v-a}).
 
 \begin{equation}\label{eq:Phi}
 \Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,
@@ -79,7 +79,7 @@ Fecundity-at-age $f_{a,s}$ is defined in terms of weight-at-age and an age-based
   
 \begin{equation}\label{eq:f-as}
 f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
-                                 {\dot{\gamma}_s}\right)}\right)^{-1}
+                                 {\dot{\gamma}_s}\right)}\right)^{-1}.
 \end{equation}
 
 Survivorship for unfished and fished populations is 
@@ -131,12 +131,12 @@ Note that upper and lower case subscripts denote unfished and fished conditions,
 Unfished spawning biomass $B_0$ and
 the recruitment compensation ratio $\kappa$ [@myers1999] are estimated by:
   
-  \begin{equation}\label{eq:B-0}
+\begin{equation}\label{eq:B-0}
 B_0 = R_0\phi_B
 \end{equation}
 
 \begin{equation}\label{eq:kappa}
-\kappa=\frac{4h}{1-h}
+\kappa=\frac{4h}{1-h}.
 \end{equation}
 
 Recruitment is assumed to follow a Beverton-Holt stock recruitment relationship, where
@@ -148,20 +148,20 @@ the density-dependent term $\beta$ are given by:
 \end{equation}
 
 \begin{equation}\label{eq:beta}
-\beta=\frac{\kappa-1}{R_0\phi_E}
+\beta=\frac{\kappa-1}{R_0\phi_E}.
 \end{equation}
 
 These equations can then be simplified to the
 steady-state equilibrium recruitment $R_e$ needed to calculate 
 the equilibrium yield $C_e$ for a given fishing mortality rate $F_e$:
-  <!-- SH - write something about phi_q? -->
+<!-- SH - write something about phi_q? -->
   
-  \begin{equation}\label{eq:R-e}
+\begin{equation}\label{eq:R-e}
 R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
 \end{equation}
 
 \begin{equation}\label{eq:C-e}
-C_e = F_e R_e \phi_q
+C_e = F_e R_e \phi_q .
 \end{equation}
 
 These steady-state conditions are critical for determining various reference points such as
@@ -180,9 +180,7 @@ The estimated parameter vector in the dynamic state version of iSCAM is defined 
 $R_0$, $h$, and $M$ are the leading population parameters that define the overall scale and productivity of the population. 
 
 \begin{equation}\label{eq:Theta-catch}
-\Theta = \left(R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,
-               \Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
-               \{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right)
+\Theta = \left(R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,               \Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,               \{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right)
 \end{equation}
 
 The variance components of the model are partitioned using an errors in variables approach.
@@ -415,7 +413,7 @@ Ignoring the subscript for gear type for clarity,
 the observed and predicted proportions-at-age must satisfy the constraint for each year:
 
 \begin{equation}\label{eq:p_ta}
-\sum^{A}_{a=1} p_{t,a} = 1 
+\sum^{A}_{a=1} p_{t,a} = 1.
 \end{equation}
 
 The residuals between the observed $p_{t,a}$ and 
@@ -423,13 +421,13 @@ predicted proportions $\hat{p}_{t,a}$ is given by:
 
 \begin{equation}\label{eq:ets_ta}
 \eta_{t,a} = \lognorm\left(p_{t,a}\right) - \lognorm\left(\hat{p}_{t,a}\right)-\frac{1}{A}
-\sum^{A}_{a=1}\left[\lognorm\left(p_{t,a}\right) - \lognorm\left(\hat{p}_{t,a}\right)\right]
+\sum^{A}_{a=1}\left[\lognorm\left(p_{t,a}\right) - \lognorm\left(\hat{p}_{t,a}\right)\right].
 \end{equation}
 
 The conditional maximum likelihood estimate of the variance is given by:
 
 \begin{equation}\label{eq:hattau}
-\hat{\tau}^2=\frac{1}{\left(A-1\right)T}\sum^{T}_{t=1}\sum^{A}_{a=1}\eta_{t,a}^2
+\hat{\tau}^2=\frac{1}{\left(A-1\right)T}\sum^{T}_{t=1}\sum^{A}_{a=1}\eta_{t,a}^2.
 \end{equation}
 
 The negative loglikelihood evaluated at the conditional maximum likelihood estimate of the variance is given by:
@@ -459,7 +457,7 @@ Note that a bias correction term for the lognormal process errors is included in
 The negative loglikelihood for the recruitment deviations is given by the normal density (ignoring the scaling constant):
   
 \begin{equation}\label{eq:l-delta}
-\ell_{\delta} = nln\left(\tau\right) +\frac{\sum^{T}_{t=1} +k^{\delta_{t}^2}}{2\tau^2}
+\ell_{\delta} = nln\left(\tau\right) +\frac{\sum^{T}_{t=1} +k^{\delta_{t}^2}}{2\tau^2}.
 \end{equation}
 
 Equations \@ref(eq:delta-t) and \@ref(eq:l-delta) are key for estimating unfished spawning stock biomass and
