@@ -233,7 +233,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 <!-- Haida Gwaii Storyboard -->
 (ref:storyboard-hg-cap) Model output for Pacific Herring in the Haida Gwaii major stock assessment region.
 Panel (a): model fit (median posterior estimate; lines) to scaled spawn survey data (points).
-Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey scaling parameter $q$.
+Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey scaling parameter $q$ (median posterior estimate).
 Panel (b): posterior estimates of instantaneous natural mortality rate.
 Panel (c): reconstructed number of age-2 recruits in thousands of millions.
 Panel (d): posterior estimate of spawning biomass.
