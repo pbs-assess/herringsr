@@ -244,7 +244,7 @@ Vertical bars indicate commercial catch, excluding spawn-on-kelp
 Panels (b & d): lines and shaded areas indicate medians and `r ci_level*100`% credible intervals, respectively.
 Panel (e): log recruitment deviations.
 Panels (c & e): circles and vertical lines indicate medians and `r ci_level*100`% credible intervals, respectively.
-Panel (f): phase plot of spawning biomass production for the dive survey period (`r new_surv_yr` to `r assess_yr-1`; (median posterior estimates).
+Panel (f): phase plot of spawning biomass production for the dive survey period (`r new_surv_yr` to `r assess_yr-1`; median posterior estimates).
 Grey shading becomes darker in chronological order; the triangle indicates `r assess_yr-1`.
 Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% confidence intervals, respectively,
 for the limit reference point $0.3\mli{SB}_0$, where $\mli{SB}_0$ is estimated unfished spawning biomass.
