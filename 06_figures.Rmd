@@ -234,23 +234,27 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 (ref:storyboard-hg-cap) Model output for Pacific Herring in the Haida Gwaii major stock assessment region.
 Panel (a): model fit (median posterior estimate; lines) to scaled spawn survey data (points).
 Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey scaling parameter $q$ (median posterior estimate).
-Panel (b): posterior estimates of instantaneous natural mortality rate.
+Panel (b): posterior estimates of instantaneous natural mortality rate (yr^-1^).
 Panel (c): reconstructed number of age-2 recruits in thousands of millions.
 Panel (d): posterior estimate of spawning biomass.
-Circle and vertical line indicate the median and `r ci_level*100`% credible interval, respectively, of forecast spawning biomass in `r assess_yr+1` in the absence of fishing.
-Vertical bars indicate commercial catch, excluding spawn-on-kelp (see Figure \@ref(fig:major-catch) for legend).
+Circle and vertical line indicate the median and `r ci_level*100`% credible interval, respectively,
+of forecast spawning biomass in `r assess_yr+1` in the absence of fishing.
+Vertical bars indicate commercial catch, excluding spawn-on-kelp
+(see Figure \@ref(fig:major-catch) for legend).
 Panels (b & d): lines and shaded areas indicate medians and `r ci_level*100`% credible intervals, respectively.
 Panel (e): log recruitment deviations.
 Panels (c & e): circles and vertical lines indicate medians and `r ci_level*100`% credible intervals, respectively.
 Panel (f): phase plot of spawning biomass production for the dive survey period (`r new_surv_yr` to `r assess_yr-1`; maximum posterior density estimates).
 Grey shading becomes darker in chronological order; the triangle indicates `r assess_yr-1`.
-Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% confidence intervals, respectively, for the limit reference point $0.3\mli{SB}_0$, where $\mli{SB}_0$ is estimated unfished spawning biomass.
+Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% confidence intervals, respectively,
+for the limit reference point $0.3\mli{SB}_0$, where $\mli{SB}_0$ is estimated unfished spawning biomass.
+Panels (e & f): horizontal dashed lines indicate zero.
 Note: biomass and catch are in thousands of tonnes (t).
 
 (ref:storyboard-hg-cap-french) Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
 Panneau (a): ajustement du modèle (estimations a posteriori médian; lignes) aux données mises à l’échelle de relevé du frai (points).
-Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
-Panneau (b): estimations a posteriori du taux de mortalité naturelle instantanée.
+Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai $q$ (estimations a posteriori médian).
+Panneau (b): estimations a posteriori du taux de mortalité naturelle instantanée (an^-1^).
 Panneau (c): nombre reconstitué de recrues d’âge 2 en milliers de millions.
 Panneau (d): estimation a posteriori de la biomasse reproductrice.
 Le cercle et la ligne verticale indiquent la médiane et l’intervalle de crédibilité de `r ci_level*100`%, respectivement, de la biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en `r assess_yr+1`.
@@ -261,9 +265,10 @@ Panneaux (c et e): les cercles et les lignes verticales indiquent les médianes 
 Panneau (f): diagramme de phase de la production de la biomasse reproductrice pour la période du relevé de plongée (de `r new_surv_yr` à `r assess_yr-1`; estimations de la densité a posteriori maximale).
 L’ombrage gris est de plus en plus foncé à mesure que l’on avance dans la série chronologique; le triangle indique `r assess_yr-1`.
 Panneaux (d et f): les lignes rouges et l’ombrage indiquent les médianes et les intervalles de confiance de `r ci_level*100`%, respectivement, pour le point de référence limite $0,3\mli{BR}_0$, où $\mli{BR}_0$ est la biomasse reproductrice non exploitée estimée.
+Panneaux (e & f): les lignes pointillées horizontales indiquent zéro.
 Note: la biomasse et les prises sont exprimées en milliers de tonnes (t).
 
-```{r storyboard-hg, out.height="6.4in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-hg-cap-french)", "(ref:storyboard-hg-cap)")}
+```{r storyboard-hg, out.height="6.2in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-hg-cap-french)", "(ref:storyboard-hg-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -412,7 +417,7 @@ See Figure \@ref(fig:storyboard-hg) for description.
 (ref:storyboard-prd-cap-french) Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-prd, out.height="6.4in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-prd-cap-french)", "(ref:storyboard-prd-cap)")}
+```{r storyboard-prd, out.height="6.2in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-prd-cap-french)", "(ref:storyboard-prd-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -560,7 +565,7 @@ See Figure \@ref(fig:storyboard-hg) for description.
 (ref:storyboard-cc-cap-french) Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-cc, out.height="6.4in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-cc-cap-french)", "(ref:storyboard-cc-cap)")}
+```{r storyboard-cc, out.height="6.2in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-cc-cap-french)", "(ref:storyboard-cc-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -708,7 +713,7 @@ See Figure \@ref(fig:storyboard-hg) for description.
 (ref:storyboard-sog-cap-french) Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-sog, out.height="6.4in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-sog-cap-french)", "(ref:storyboard-sog-cap)")}
+```{r storyboard-sog, out.height="6.2in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-sog-cap-french)", "(ref:storyboard-sog-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -856,7 +861,7 @@ See Figure \@ref(fig:storyboard-hg) for description.
 (ref:storyboard-wcvi-cap-french) Production d’un modèle pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-wcvi, out.height="6.4in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-french)", "(ref:storyboard-wcvi-cap)")}
+```{r storyboard-wcvi, out.height="6.2in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-french)", "(ref:storyboard-wcvi-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
