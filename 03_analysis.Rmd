@@ -119,7 +119,7 @@ with reference lines at model estimates of $0.3\mli{SB}_0$,
 
 (a) Time series of (log) deviations from the estimated Beverton-Holt recruitment function, and
 
-(a) Phase plot of spawning biomass production ($\frac{\mli{SB}_{t+1} - \mli{SB}_t + C_{t+1}}{\mli{SB}_t}$) for the dive survey period (maximum posterior density estimates),
+(a) Phase plot of spawning biomass production ($\frac{\mli{SB}_{t+1} - \mli{SB}_t + C_{t+1}}{\mli{SB}_t}$) for the dive survey period,
 with reference lines at model estimates of $0.3\mli{SB}_0$.\label{item:storyPhase}
 
 Note that spawn survey data (i.e., spawn index) is scaled to abundance in panel \ref{item:storyIndex} by the spawn survey scaling parameter $q$.
