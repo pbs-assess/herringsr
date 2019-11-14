@@ -451,7 +451,7 @@ The residuals between the estimated and predicted recruits is given by:
 \delta_t = \lognorm\left(\bar{R}e^{\omega_{t}}\right) - R_t
 \end{equation}
 
-where $R_t$ is given by Eq uation \@ref(eq:R-t), and 
+where $R_t$ is given by Equation \@ref(eq:R-t), and 
 $k$ is the age at recruitment. 
 Note that a bias correction term for the lognormal process errors is included in Equation \@ref(eq:R-t).
 The negative loglikelihood for the recruitment deviations is given by the normal density (ignoring the scaling constant):
