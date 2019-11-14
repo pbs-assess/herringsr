@@ -12,8 +12,8 @@ the observation models used in predicting observations, and
 the components of the objective function that formulate the statistical criterion used to estimate model parameters.
 This section will not be included in the final document.
 
-A documented list of symbols used in model equations is given in Table \@ref(tab:variables). 
-The documentation presented here is a revised version of the iSCAM user guide available online. 
+A documented list of symbols used in model equations is given in Table \@ref(tab:variables).
+The documentation presented here is a revised version of the [iSCAM users guide](https://sites.google.com/site/iscamproject/).
 Much of the text and many of the equations have been taken directly from the original iSCAM user guide.
 Note that all the model equations are presented for a sex structured model with $S$ sexes.
 Models can therefore be constructed with data for females only, for males and females, or with unsexed data.
