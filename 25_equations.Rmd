@@ -523,13 +523,16 @@ for the leading parameters defined in the control file
 ($ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $ln(\ddot{R})$, $\rho$, $\vartheta$). 
 
 All estimated selectivity parameters $\vec{\gamma_k}$ are estimated in log
-space and have a minimum and maximum values of -5.0 and 5.0, 
-respectively. These values are hard-wired into the code, but should be sufficiently large/small enough to capture a wide range of selectivities. 
-Estimated fishing mortality rates are also constrained (in log space) to have a
-minimum value of -30, and a maximum value of 3.0, also hard-wired. 
+space and
+have a minimum and maximum values of -5.0 and 5.0, respectively.
+These values are hard-wired into the code, but should be sufficiently large/small enough to capture a wide range of selectivities.
+Estimated fishing mortality rates are also constrained (in log space)
+to have a minimum value of -30, and a maximum value of 3.0, also hard-wired. 
 
-Log annual recruitment deviations are also constrained to have minimum and maximum values of -15.0 and 15.0 and there is an additional constraint to ensure the 
-vector of deviations sums to 0. This is necessary in order to be able to estimate the average recruitment $\bar{R}$. Finally, the annual log deviations in natural mortality rates are constrained to lie between -5.0 and 5.0.
+Log annual recruitment deviations are also constrained to have minimum and maximum values of -15.0 and 15.0
+and there is an additional constraint to ensure the vector of deviations sums to 0.
+This is necessary in order to be able to estimate the average recruitment $\bar{R}$.
+Finally, the annual log deviations in natural mortality rates are constrained to lie between -5.0 and 5.0.
 
 #### Parameter priors
 
@@ -554,12 +557,10 @@ For Pacific Herring, a bounded uniform prior was specified for the
 log of unfished recruitment \dUnif{-5}{15},
 a beta prior was assumed for steepness \dBeta{10.0}{4.92},
 a normal prior was specified for the log of natural mortality rate 
-\dNorm{-0.79}{0.4}, a bounded uniform prior for both the log 
-of initial recruitment and average recruitment \dUnif{-5.0}{15.0},
-a beta prior for the variance partitioning parameter
-$\rho\sim$\dBeta{17:086}{39:0559}, and a gamma prior for the 
-inverse total standard deviation parameter
-$\vartheta\sim$\dGamma{25}{28:75}.
+\dNorm{-0.79}{0.4},
+a bounded uniform prior for both the log of initial recruitment and average recruitment \dUnif{-5.0}{15.0},
+a beta prior for the variance partitioning parameter $\rho\sim$\dBeta{17:086}{39:0559}, and
+a gamma prior for the inverse total standard deviation parameter $\vartheta\sim$\dGamma{25}{28:75}.
 The spawn survey scaling parameter $q$ for each survey is not treated as an unknown parameter within the code;
 rather, the maximum posterior density estimate for $\lognorm(q)$ conditional on all other parameters scales the predicted spawning biomass to the spawn index.
 For the AM2 version of the Pacific Herring assessment model used in this analysis,
