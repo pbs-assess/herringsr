@@ -35,7 +35,7 @@ lot: true
 lof: true
 # Any extra LaTeX code for the header:
 header-includes:
-- \usepackage{needspace} \usepackage{mdframed}
+- \usepackage{needspace} \usepackage{background} \usepackage{varwidth}
 ---
 
 ```{r setup, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}
@@ -104,9 +104,6 @@ theme_set(herring_theme())
 <!-- Other math -->
 \newcommand{\lognorm}{\text{ln}}
 
-<!-- Top and bottom lines -->
-\newmdenv[linewidth=2pt]{topbottom}
-
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->
 
@@ -118,3 +115,21 @@ theme_set(herring_theme())
 <!-- 5. Specify lines and points in storyboard figure panel (a) -->
 <!-- 6. Move production equation from figure caption to panel description -->
 <!-- 7. Other minor edits to the Figure 6 caption -->
+
+\newcommand{\noBG}{\backgroundsetup{contents={}}}
+
+\newcommand{\landscapeBG}{
+  \backgroundsetup{
+    angle=90,
+    opacity=1,
+    scale=1,
+    color=black,
+    nodeanchor=south,
+    position={current page.east},
+    vshift=1.5cm,
+    contents={\begin{varwidth}{\linewidth}{
+      \rule{\linewidth}{0.4pt}\\
+      \begin{center}\thepage{}\end{center}}\end{varwidth}
+    }
+  }
+}
