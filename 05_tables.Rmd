@@ -622,7 +622,7 @@ decision_tables_mp(mp.prd,
 ```
 \end{landscapeBG}
 
-\begin{landscape}
+\begin{landscapeBG}
 ```{r decision-table-cc, results = 'asis', echo = FALSE}
 decision_tables_mp(mp.cc,
                    xcaption = ifelse(french,
@@ -638,9 +638,9 @@ decision_tables_mp(mp.cc,
                    col_align = col_align,
                    translate = french)
 ```
-\end{landscape}
+\end{landscapeBG}
 
-\begin{landscape}
+\begin{landscapeBG}
 ```{r decision-table-sog, results = 'asis', echo = FALSE}
 decision_tables_mp(mp.sog,
                    xcaption = ifelse(french,
@@ -657,4 +657,4 @@ decision_tables_mp(mp.sog,
                    #inc_mps = 9,
                    translate = french)
 ```
-\end{landscape}
+\end{landscapeBG}
