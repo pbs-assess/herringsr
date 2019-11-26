@@ -30,4 +30,3 @@ devtools::install("herringutils", quick = TRUE, dependencies = FALSE)
 cat(crayon::green("\nBuilding and installing csasdown package...\n"))
 devtools::install("csasdown", quick = TRUE, dependencies = FALSE)
 setwd(curr_dir)
-
