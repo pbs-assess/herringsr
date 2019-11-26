@@ -1,5 +1,3 @@
-\noBG
-
 # Context
 
 Pacific Herring abundance in British Columbia (BC) is assessed using a statistical catch-age (SCA) model.
