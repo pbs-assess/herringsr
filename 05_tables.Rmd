@@ -604,8 +604,6 @@ See Table \@ref(tab:decision-table-prd) for description.
 Voir le tableau \@ref(tab:decision-table-prd) pour la description.
 
 \begin{landscape}
-\thispagestyle{empty}
-\landscapeBG
 ```{r decision-table-prd, results = 'asis', echo = FALSE}
 col_align <- "cc|c|c|c|c|c|c|c"
 decision_tables_mp(mp.prd,
@@ -625,8 +623,6 @@ decision_tables_mp(mp.prd,
 \end{landscape}
 
 \begin{landscape}
-\thispagestyle{empty}
-\landscapeBG
 ```{r decision-table-cc, results = 'asis', echo = FALSE}
 decision_tables_mp(mp.cc,
                    xcaption = ifelse(french,
@@ -645,8 +641,6 @@ decision_tables_mp(mp.cc,
 \end{landscape}
 
 \begin{landscape}
-\thispagestyle{empty}
-\landscapeBG
 ```{r decision-table-sog, results = 'asis', echo = FALSE}
 decision_tables_mp(mp.sog,
                    xcaption = ifelse(french,
