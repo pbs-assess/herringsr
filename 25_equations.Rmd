@@ -14,7 +14,7 @@ This section will not be included in the final document.
 
 A documented list of symbols used in model equations is given in Table \@ref(tab:variables).
 The documentation presented here is a revised version of the [iSCAM users guide](https://sites.google.com/site/iscamproject/).
-Much of the text and many of the equations have been taken directly from the original iSCAM user guide.
+Much of the text and many of the equations have been taken directly from this guide.
 Note that all the model equations are presented for a sex structured model with $S$ sexes.
 Models can therefore be constructed with data for females only, for males and females, or with unsexed data.
 
@@ -50,8 +50,8 @@ M > 0.
 
 For a given set of growth and maturity-at-age parameters $\Phi$ (Equation \ref{eq:Phi}),
 growth is assumed to follow the Von-Bertalanffy growth model,
-which describes the observed length-at-age $l_{a,s}$ (Equation \ref{eq:l-as}).
-The mean weight-at-age $w_{a,s}$ is given by an allometric relationship (Equation \ref{eq:w-as}), and
+which describes observed length-at-age $l_{a,s}$ (Equation \ref{eq:l-as}).
+Mean weight-at-age $w_{a,s}$ is given by an allometric relationship (Equation \ref{eq:w-as}), and
 age-specific vulnerability $v_a$ is given by an age-based logistic function (Equation \ref{eq:v-a}).
 
 \begin{equation}\label{eq:Phi}
@@ -75,7 +75,7 @@ The terms vulnerability and selectivity are used interchangeably throughout this
 selectivity refers to the fishing gear, while
 vulnerability refers to all processes affecting the availability of fish to the fishery.
 Selectivity parameters can be fixed or estimated.
-Fecundity-at-age $f_{a,s}$ is defined in terms of weight-at-age and an age-based logistic function: 
+Fecundity-at-age $f_{a,s}$ is defined in terms of weight-at-age and an age-based logistic function
   
 \begin{equation}\label{eq:f-as}
 f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
@@ -103,7 +103,9 @@ and it is assumed that all individuals ages $A$ and older
 \end{cases}
 \end{equation}
 
-The incidence functions refer to the life-time or per-recruit quantities such as spawning biomass per recruit (Equation \ref{eq:phi-E}) or vulnerable biomass per recruit (Equation \ref{eq:phi-B}).
+The incidence functions refer to life-time or per-recruit quantities such as
+spawning biomass per recruit (Equation \ref{eq:phi-E}) or
+vulnerable biomass per recruit (Equation \ref{eq:phi-B}).
 Note that upper and lower case subscripts denote unfished and fished conditions, respectively.
 
 \begin{equation}\label{eq:phi-E}
@@ -129,7 +131,7 @@ Note that upper and lower case subscripts denote unfished and fished conditions,
 \end{equation}
 
 Unfished spawning biomass $B_0$ and
-the recruitment compensation ratio $\kappa$ [@myers1999] are estimated by:
+the recruitment compensation ratio $\kappa$ [@myers1999] are estimated by
   
 \begin{equation}\label{eq:B-0}
 B_0 = R_0\phi_B
@@ -141,7 +143,7 @@ B_0 = R_0\phi_B
 
 Recruitment is assumed to follow a Beverton-Holt stock recruitment relationship, where
 the maximum juvenile survival rate $\alpha$ and
-the density-dependent term $\beta$ are given by:
+the density-dependent term $\beta$ are given by
   
 \begin{equation}\label{eq:alpha}
 \alpha = \frac{\kappa}{\phi_E}  
@@ -153,7 +155,7 @@ the density-dependent term $\beta$ are given by:
 
 These equations can then be simplified to the
 steady-state equilibrium recruitment $R_e$ needed to calculate 
-the equilibrium yield $C_e$ for a given fishing mortality rate $F_e$:
+the equilibrium yield $C_e$ for a given fishing mortality rate $F_e$
 <!-- SH - write something about phi_q? -->
   
 \begin{equation}\label{eq:R-e}
@@ -177,38 +179,42 @@ However, these reference points are not currently used in the Pacific Herring as
 ## Dynamic state: statistical catch-age model
 
 The estimated parameter vector in the dynamic state version of iSCAM is defined by $\Theta$, where
-$R_0$, $h$, and $M$ are the leading population parameters that define the overall scale and productivity of the population. 
+$R_0$, $h$, and $M$ are the leading population parameters that define the overall scale and productivity of the population
 
 \begin{equation}\label{eq:Theta-catch}
-\Theta = \left(R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,\vartheta^2,\,\rho,\,               \Gamma_{k,t},\,\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,               \{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right)
+\Theta = \left(R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,
+  \vartheta^2,\,\rho,\,\Gamma_{k,t},\,
+  \{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
+  \{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right).
 \end{equation}
 
 The variance components of the model are partitioned using an errors in variables approach.
 The key variance parameter is the inverse of the total variance $\vartheta^2$ (i.e., total precision).
-This parameter can be fixed or estimated, and was fixed for this model.
-The total variance is partitioned into observation $\sigma$ and process error $\tau$ components by the model parameter $\rho$,
-which represents the proportion of the total variance that is due to observation error [@punt1999; @deriso2007].
+This parameter can be fixed or estimated, and is fixed for the Pacific Herring model.
+The total variance is partitioned into observation $\sigma$ (Equation \ref{eq:sigma}) and process error $\tau$ (Equation \ref{eq:tau}) components by the model parameter $\rho$,
+which represents the proportion of total variance due to observation error [@punt1999; @deriso2007]:
 
 \begin{equation}\label{eq:sigma}
 \sigma = \sqrt{\rho}\vartheta
 \end{equation}
 
 \begin{equation}\label{eq:tau}
-\tau = \sqrt{\left(1-\rho\right)}\vartheta  
+\tau = \sqrt{\left(1-\rho\right)}\vartheta.
 \end{equation}
 
 The unobserved state variables (Equation \ref{eq:N-tas-unobs})
-include numbers-at-age each year $N_{t,a,s}$,
+include annual numbers-at-age $N_{t,a,s}$,
 spawning stock biomass $B_{t,s}$, and
-total age-specific total mortality rate $Z_{t,a,s}$.
+age-specific total mortality rate $Z_{t,a,s}$
+<!-- total age-specific total mortality rate $Z_{t,a,s}$. -->
 
 \begin{equation}\label{eq:N-tas-unobs}
-N_{t,a,s},\,\, B_{t,s},\,\, Z_{t,a,s}
+N_{t,a,s},\,\, B_{t,s},\,\, Z_{t,a,s}.
 \end{equation}
 
 Initial numbers-at-age in the first year (Equation \ref{eq:N-tas-init-1}) and
-the annual recruits (Equation \ref{eq:N-tas-init-2})
-are treated as estimated parameters and used to initialize the numbers-at-age array.
+annual recruits (Equation \ref{eq:N-tas-init-2})
+are treated as estimated parameters and used to initialize the numbers-at-age array
 
 \begin{equation}\label{eq:N-tas-init-1}
 N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)};\quad
@@ -223,33 +229,32 @@ a = \acute{a}.
 \end{equation}
 
 Vulnerability-at-age $v_{k,a}$ is assumed to be time-invariant and is modelled using a two-parameter logistic function (Equation \ref{eq:v-ka}).
-The annual fishing mortality for each gear $k$ in year $t$ is the exponent of the estimated vector $\Gamma_{k,t}$ (Equation \ref{eq:F-kt}).
+Annual fishing mortality for each gear $k$ in year $t$ is the exponent of the estimated vector $\Gamma_{k,t}$ (Equation \ref{eq:F-kt}).
 The vector of log fishing mortality rate parameters $\Gamma_{k,t}$ is a bounded vector with a 
 minimum value of $-30.0$ and a maximum value of $3.0$.
-In arithmetic space this corresponds to a
+In arithmetic space, this corresponds to a
 minimum value of $9.36^{-14}$ and a maximum value of $20.01$ for annual fishing mortality rates.
-In years where there are zero reported catches for a given fleet,
-no corresponding fishing mortality rate parameter is estimated and the implicit assumption is there was no fishery in that year.
+In years where there are no reported catches for a given fleet,
+no corresponding fishing mortality rate parameter is estimated,
+and the implicit assumption is there was no fishery that year:
 
 \begin{equation}\label{eq:v-ka}
 v_{k,a} = \frac{1}{1+e^{-\frac{\left(a - \hat{a}_k\right)}{\hat{\gamma}_k}}}  
 \end{equation}
 
 \begin{equation}\label{eq:F-kt}
-F_{k,t} = e^{\Gamma_{k,t}}
+F_{k,t} = e^{\Gamma_{k,t}}.
 \end{equation}
 
 State variables in each year are updated using 
 Equations \@ref(eq:B-ts-state) to \@ref(eq:N-tas-state),
-where the spawning biomass is the product of the 
-numbers-at-age and the mature biomass-at-age 
+where the spawning biomass is the product of numbers-at-age and mature biomass-at-age 
 (Equation \ref{eq:B-ts-state}).
-The total mortality rate is given by Equation \@ref(eq:Z-tas-state),
-and the total catch (in weight) for each gear is given by Equation \@ref(eq:C-kt),
+Total mortality rate is given by Equation \@ref(eq:Z-tas-state),
+and total catch (in weight) for each gear is given by Equation \@ref(eq:C-kt),
 assuming that both natural and fishing mortality occur simultaneously throughout the year.
-The sex-specifc numbers-at-age are propagated over time using 
-(Equation \ref{eq:N-tas-state}), where members of the plus group
-(age $A$) are all assumed to have the same total mortality rate $Z_{t,a,s}$. 
+Sex-specifc numbers-at-age are propagated over time using Equation \@ref(eq:N-tas-state),
+where members of the plus group (i.e., age $A$) are all assumed to have the same total mortality rate $Z_{t,a,s}$:
 
 \begin{equation}\label{eq:B-ts-state}
 \mli{B}_{t,s} = \sum_{a=\acute{a}}^A N_{t,a,s}f_{a,s}
@@ -269,18 +274,17 @@ N_{t,a,s} = \begin{cases}
 \frac{\alpha E_{t-1}}{1+\beta E_{t-1}} e^{\left(\omega_t-0.5\tau^2\right)}, & a=\acute{a}\\
 N_{t-1,a-1,s} e^{\left(-Z_{t-1,a-1,s}\right)}, & \acute{a}<a<A\\
 N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A\\
-\end{cases}
+\end{cases}.
 \end{equation}
 
-Recruitment to age $k$
-(where $k$ in this case refers to the start age, which for Pacific Herring is age 2)
-is assumed to follow a Beverton-Holt model for Pacific Herring (Equation \ref{eq:R-t}) where
+Recruitment to age $k$ (where $k$ in this case refers to the start age, which for Pacific Herring is age 2)
+is assumed to follow a Beverton-Holt model for Pacific Herring (Equation \ref{eq:R-t}), where
 the maximum juvenile survival rate $\alpha$ is defined by Equation \@ref(eq:alpha) and
 $\beta$ is derived from Equation \@ref(eq:beta),
-which is conditional on estimates of $h$ and $R_0$.
+which is conditional on estimates of $h$ and $R_0$
 
 \begin{equation}\label{eq:R-t}
-R_t = \frac{\alpha B_{t-k}}{1+\beta B_{t-k}}e^{\delta_{t}-0.5\tau^2}
+R_t = \frac{\alpha B_{t-k}}{1+\beta B_{t-k}}e^{\delta_{t}-0.5\tau^2}.
 \end{equation}
 
 ### Residuals, likelihoods, and objective function value components
@@ -295,8 +299,7 @@ The objective function contains five major components:
 
 1. The prior distributions for model parameters, and
 
-1. Three penalty functions that are invoked to regularize the solution during intermediate
-phases of the non-linear parameter estimation. 
+1. Three penalty functions that are invoked to regularize the solution during intermediate phases of the non-linear parameter estimation. 
 
 The penalty functions:
 
@@ -308,24 +311,22 @@ The penalty functions:
 ($\sim$ $N$(ln(0:2); 4:0)) to prevent estimates of catch from exceeding estimated biomass.
 
 Sensitivity analysis indicate that the model is insensitive to changes in the penalty function parameters,
-indicating that the other likelihood components and
-prior probability distributions were the most important contributors to the objective function.
-
+indicating that the other likelihood components and prior probability distributions were the most important contributors to the objective function.
 The objective function components are discussed in more detail in the following sections.
 
 ### Observed catch
 
-It is assumed that the measurement errors in the catch observations are log-normally distributed, and the residuals given by:
+It is assumed that measurement errors in catch observations are log-normally distributed, and the residuals given by:
 
 \begin{equation}\label{eq:ets_kt}
 \eta_{k,t} = \lognorm\left(C_{k,t} + o\right) - \lognorm\left(\hat{C}_{k,t} + o\right)
 \end{equation}
 
-where $o$ is a small constant ($e^{-10}$) to
+where $o$ is a small constant (i.e., $e^{-10}$) to
 ensure the residual is defined in the case of a zero catch observation.
-The residuals are assumed to be normally distributed with a user-specified standard deviation $\sigma_C$.
+Residuals are assumed to be normally distributed with a user-specified standard deviation $\sigma_C$.
 At present, it is assumed that observed catches for each gear $k$ have the same standard deviation.
-The negative loglikelihood (ignoring the scaling constant) for the catch data is given by:
+The negative loglikelihood (ignoring the scaling constant) for the catch data is given by
 
 \begin{equation}\label{eq:ell_C}
 \ell_C = \sum_k\left[T_k \lognorm\left(\sigma_C\right)+
@@ -336,16 +337,16 @@ where $T_k$ is the total number of catch observations for gear type $k$.
 
 ### Relative abundance 
 
-For Pacific Herring the relative abundance data are assumed to be proportional to spawning biomass
-so the $k^\text{th}$ survey the vulnerable biomass available to the survey sampling gear:
+For Pacific Herring, relative abundance data are assumed to be proportional to spawning biomass.
+Thus, in the $k^\text{th}$ survey, the vulnerable biomass available to the survey sampling gear
 
 \begin{equation}\label{eq:V_kt}
 V_{k,t} = \sum_{a}B_{t,a}e^{-\lambda_{k,t}M_{t,a}}f_{a,t}.
 \end{equation}
 
-A user specified fraction of the total mortality $\lambda_{k,t}$ 
-adjusts the numbers-at-age to correct for survey timing. 
-The residuals between the observed and predicted relative abundance index is given by:
+A user specified fraction of total mortality $\lambda_{k,t}$ 
+adjusts numbers-at-age to correct for survey timing. 
+Residuals between the observed and predicted relative abundance index is given by
 
 \begin{equation}\label{eq:epsilon_kt}
 \epsilon_{k,t} = \lognorm\left(I_{k,t}\right) - \lognorm\left(q_k\right)+\lognorm\left(V_{k,t}\right)
@@ -354,83 +355,80 @@ The residuals between the observed and predicted relative abundance index is giv
 where $I_{k,t}$ is the observed relative abundance index, 
 $q_k$ is the catchability coefficient for index $k$, and 
 $V_{k,t}$ is the predicted vulnerable biomass at the time of sampling.
-The catchability coefficient $q_k$ is evaluated at its conditional maximum likelihood estimate:
+The catchability coefficient $q_k$ is evaluated at its conditional maximum likelihood estimate
 
 \begin{equation}\label{eq:q_kt}
 q_k = \frac{1}{N_k}\sum_{t \in I_{k,t}} \lognorm\left(I_{k,t}\right) - \lognorm\left(V_{k,t}\right)
 \end{equation}
 
 where $N_k$ is the number of relative abundance observations for index $k$ [see @walters1994 for more information].
-The negative loglikelihood for relative abundance data is given by:
+The negative loglikelihood for relative abundance data is given by
 
 \begin{equation}\label{eq:ell_I}
 \ell_I = \sum_k \sum_{t \in I_{k,t}} \lognorm\left(\sigma_{k,t}\right)+\frac{\epsilon_{k,t}^2}{2\sigma_{k,t}^2}
 \end{equation}
 
-The standard deviation $\sigma_{k,t}$ is calculated by:
+and the standard deviation $\sigma_{k,t}$ is calculated by
 
 \begin{equation}\label{eq:sigma_kt}
-\sigma_{k,t} = \frac{\rho \varphi^2}{ \omega_{k,t}} 
+\sigma_{k,t} = \frac{\rho \varphi^2}{ \omega_{k,t}}
 \end{equation}
 
-where $\rho\varphi^2$ is the proportion of the total error that is 
-associated with observation errors, and
+where $\rho\varphi^2$ is the proportion of the total error that is associated with observation errors, and
 $\omega_{k,t}$ is a user specified relative weight for observation $t$ from gear $k$.
 The $\omega_{k,t}$ allow each observation to be weighted relative to the total error $\rho\varphi^2$.
 For example, to omit a particular observation, 
 set $\omega_{k,t} = 0$,
 or to give 2 times the weight, 
 set $\omega_{k,t} = 2.0$.
-To assume all observations have the same variance then simply
+To assume all observations have the same variance,
 set $\omega_{k,t} = 1$. 
 Note that if $\omega_{k,t} = 0$ then Equation \ref{eq:ell_I} is undefined; 
 therefore, iSCAM adds a small constant (i.e., $e^{-10}$) to $\omega_{k,t}$, 
-which is equivalent to assuming an extremely large variance
-to ensure the likelihood can be evaluated.
+which is equivalent to assuming an extremely large variance to ensure the likelihood can be evaluated.
 
-In the case of the Pacific Herring assessment, 
-the spawn survey data since `r new_surv_yr` are assumed to be 1.166 times as precise as
-the pre-dive survey data (`r major_start_yr` to `r new_surv_yr-1`). 
+For the Pacific Herring assessment, 
+spawn survey data since `r new_surv_yr` are assumed to be 1.166 times as precise as the pre-dive survey data (`r major_start_yr` to `r new_surv_yr-1`). 
 To implement this,
 objective function weights for the `r major_start_yr` to `r new_surv_yr-1` data were set equal to unity,
 and the contemporary data was assigned a relative weight of 1.166. 
-The standard deviation in the observation errors is conditional on estimated values of $\rho$ and $\varphi^2$.
+The standard deviation in observation errors is conditional on estimated values of $\rho$ and $\varphi^2$.
 
 ### Age composition
 
 Sampling theory suggest that age composition data are derived from a multinomial distribution [@fournier1982]. 
 However, iSCAM assumes that age-proportions are obtained from a multivariate logistic distribution [@schnute1995; @richards1997].
-iSCAM departs from the traditional multinomial model due to choices regarding weighting of the age-composition data in the objective function. 
+iSCAM departs from the traditional multinomial model due to choices regarding weighting of age-composition data in the objective function. 
 First, the multinomial distribution requires the specification of an effective sample size. 
 This weighting may be done arbitrarily or through iterative re-weighting [@mcallister1997; @gavaris2002],
 and in the case of multiple and potentially conflicting age-proportions this procedure may fail to converge properly.
 The assumed effective sample size can have a large impact on the overall model results.
 
 A feature of the multivariate logistic distribution is that
-age-proportion data can be weighted based on the conditional maximum likelihood estimate of the variance in the age-proportions.
-Therefore, the contribution of the age-composition data to the overall objective function is “self-weighting” and is conditional on other componentsin the model.
+age-proportion data can be weighted based on the conditional maximum likelihood estimate of the variance in age proportions.
+Therefore, the contribution of age-composition data to the overall objective function is “self-weighting” and is conditional on other componentsin the model.
 Ignoring the subscript for gear type for clarity,
-the observed and predicted proportions-at-age must satisfy the constraint for each year:
+the observed and predicted proportions-at-age must satisfy the constraint for each year
 
 \begin{equation}\label{eq:p_ta}
 \sum^{A}_{a=1} p_{t,a} = 1.
 \end{equation}
 
 The residuals between the observed $p_{t,a}$ and 
-predicted proportions $\hat{p}_{t,a}$ is given by:
+predicted proportions $\hat{p}_{t,a}$ is given by
 
 \begin{equation}\label{eq:ets_ta}
 \eta_{t,a} = \lognorm\left(p_{t,a}\right) - \lognorm\left(\hat{p}_{t,a}\right)-\frac{1}{A}
 \sum^{A}_{a=1}\left[\lognorm\left(p_{t,a}\right) - \lognorm\left(\hat{p}_{t,a}\right)\right].
 \end{equation}
 
-The conditional maximum likelihood estimate of the variance is given by:
+The conditional maximum likelihood estimate of the variance is given by
 
 \begin{equation}\label{eq:hattau}
 \hat{\tau}^2=\frac{1}{\left(A-1\right)T}\sum^{T}_{t=1}\sum^{A}_{a=1}\eta_{t,a}^2.
 \end{equation}
 
-The negative loglikelihood evaluated at the conditional maximum likelihood estimate of the variance is given by:
+The negative loglikelihood evaluated at the conditional maximum likelihood estimate of the variance is given by
 
 \begin{equation}\label{eq:ell_A}
 \ell_A = \left(A-1\right)T \lognorm\left(\hat{\tau}^2\right).
@@ -442,10 +440,10 @@ log of the residual variance weighted by the number observations over years and 
 ### Stock recruitment
 
 The Pacific Herring stock assessment assumes Beverton-Holt recruitment. 
-Annual recruitment and the initial age-composition are treated as latent variables in iSCAM, 
-and residuals between estimated recruits and the deterministic stock-recruitment models are used to
+Annual recruitment and the initial age-composition are treated as latent variables in iSCAM, and
+residuals between estimated recruits and the deterministic stock-recruitment models are used to
 estimate unfished spawning stock biomass and recruitment compensation. 
-The residuals between the estimated and predicted recruits is given by:
+The residuals between the estimated and predicted recruits is given by
 
 \begin{equation}\label{eq:delta-t}
 \delta_t = \lognorm\left(\bar{R}e^{\omega_{t}}\right) - R_t
@@ -454,32 +452,30 @@ The residuals between the estimated and predicted recruits is given by:
 where $R_t$ is given by Equation \@ref(eq:R-t), and 
 $k$ is the age at recruitment. 
 Note that a bias correction term for the lognormal process errors is included in Equation \@ref(eq:R-t).
-The negative loglikelihood for the recruitment deviations is given by the normal density (ignoring the scaling constant):
+The negative loglikelihood for the recruitment deviations is given by the normal density (ignoring the scaling constant)
   
 \begin{equation}\label{eq:l-delta}
 \ell_{\delta} = nln\left(\tau\right) +\frac{\sum^{T}_{t=1} +k^{\delta_{t}^2}}{2\tau^2}.
 \end{equation}
 
-Equations \@ref(eq:delta-t) and \@ref(eq:l-delta) are key for estimating unfished spawning stock biomass and
-recruitment compensation via the recruitment models. 
-The relationship between ($\alpha$, $\beta$) and
-($B_0$, $\kappa$) is defined by Equations \@ref(eq:alpha) and \@ref(eq:beta)
-Where again $\alpha$ is the maximum juvenile 
-survival rate,
-$\beta$ is the density effect on recruitment, 
-and $B_0$ is the unfished spawning stock biomass.
+Equations \@ref(eq:delta-t) and \@ref(eq:l-delta) are key for estimating unfished spawning stock biomass and recruitment compensation via the recruitment models. 
+The relationship between ($\alpha$, $\beta$) and ($B_0$, $\kappa$) is defined by 
+Equations \@ref(eq:alpha) and \@ref(eq:beta), where again
+$\alpha$ is the maximum juvenile survival rate,
+$\beta$ is the density effect on recruitment, and
+$B_0$ is the unfished spawning stock biomass.
 Unfished steady-state spawning stock biomass per recruit is given by $\phi_E$ (Equation \ref{eq:phi-E}), 
-which is the sum of products between age-specific survivorship and
-relative fecundity.
+which is the sum of products between age-specific survivorship and relative fecundity.
 In the cases where the natural mortality rate is allowed to vary over time,
 the calculation of $\phi_E$, 
-and the corresponding unfished spawning stock biomass $B_0$ is
+and the corresponding unfished spawning stock biomass $B_0$, is
 based on the average natural mortality rate over the entire time period.
-This subtle calculation has implications for reference point calculations; in cases where there are increasing or decreasing trends in natural mortality rates trend upwards, estimates of $B_0$ decrease.
+This subtle calculation has implications for reference point calculations;
+in cases where there are increasing or decreasing trends in natural mortality rates trend upwards, estimates of $B_0$ decrease.
 
 ## Parameter estimation and uncertainty
 
-There are five distinct components that make up the objective function $f$ that is being minimized by the iSCAM model:
+There are five distinct components that make up the objective function $f$ that is being minimized by iSCAM
 
 \begin{multline}\label{eq:f}
 f = \text{negative loglikelihoods} + \text{constraints} +
@@ -491,10 +487,9 @@ The purpose of this section is to completely document all of the components that
 
 #### Negative loglikelihoods 
 
-The negative loglikelihoods pertain specifically to elements that deal
-with the data and variance partitioning,
+The negative loglikelihoods pertain specifically to elements that deal with the data and variance partitioning,
 and have already been described in detail in earlier sections.
-There are four specific elements that make up the vector of the objective function:
+There are four specific elements that make up objective function vector
 
 \begin{equation}\label{eq:l-sum}
 \vec{\ell} = \left(\ell_C,\,\ell_I,\,\ell_A,\,\ell_\delta\right).
@@ -502,8 +497,8 @@ There are four specific elements that make up the vector of the objective functi
 
 To reiterate, these are the likelihood of the catch data $\ell_C$, 
 likelihood of the survey data $\ell_I$, 
-the likelihood of the age-composition data $\ell_A$, 
-and the likelihood of the stock-recruitment residuals $\ell_\delta$.
+likelihood of the age-composition data $\ell_A$, and
+likelihood of the stock-recruitment residuals $\ell_\delta$.
 Each of these elements are expressed in negative log-space,
 and iSCAM attempts to estimate model parameters by minimizing the sum of these elements.
 
@@ -515,28 +510,25 @@ There are two specific constraints that are described here:
 
 1. Constraints to ensure that a parameter vector sums to 0. 
 
-In iSCAM the user must specify the lower and upper bounds 
-for the leading parameters defined in the control file
-($ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $ln(\ddot{R})$, $\rho$, $\vartheta$). 
+In iSCAM the user must specify the lower and upper bounds for the leading parameters defined in the control file
+(i.e., $ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $ln(\ddot{R})$, $\rho$, and $\vartheta$). 
 
-All estimated selectivity parameters $\vec{\gamma_k}$ are estimated in log
-space and
+All estimated selectivity parameters $\vec{\gamma_k}$ are estimated in log space and
 have a minimum and maximum values of -5.0 and 5.0, respectively.
 These values are hard-wired into the code, but should be sufficiently large/small enough to capture a wide range of selectivities.
 Estimated fishing mortality rates are also constrained (in log space)
 to have a minimum value of -30, and a maximum value of 3.0, also hard-wired. 
 
-Log annual recruitment deviations are also constrained to have minimum and maximum values of -15.0 and 15.0
-and there is an additional constraint to ensure the vector of deviations sums to 0.
-This is necessary in order to be able to estimate the average recruitment $\bar{R}$.
-Finally, the annual log deviations in natural mortality rates are constrained to lie between -5.0 and 5.0.
+Log annual recruitment deviations are also constrained to have minimum and maximum values of -15.0 and 15.0 and
+there is an additional constraint to ensure the vector of deviations sums to 0.
+This is necessary in order to estimate average recruitment $\bar{R}$.
+Finally, annual log deviations in natural mortality rates are constrained to lie between -5.0 and 5.0.
 
 #### Parameter priors
 
 Each of the seven leading parameters specified in the control file
-($ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $ln(\ddot{R})$, $\rho$, $\vartheta$)
-are declared as bounded parameters and in addition the user 
-can also specify an informative prior distribution for each of these parameters. 
+(i.e., $ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $ln(\ddot{R})$, $\rho$, and $\vartheta$)
+are declared as bounded parameters, and in addition users can also specify an informative prior distribution for each of these parameters. 
 Five distinct prior distributions can be implemented:
 
 <!-- TODO: a, b, and \sigma appear elsewhere; find different parameters? -->
@@ -550,11 +542,10 @@ Five distinct prior distributions can be implemented:
 
 1. Gamma \dGamma{a}{b}, where $a$ and $b$ are the shape parameters.
 
-For Pacific Herring, a bounded uniform prior was specified for the 
-log of unfished recruitment \dUnif{-5}{15},
+For Pacific Herring,
+a bounded uniform prior was specified for the log of unfished recruitment \dUnif{-5}{15},
 a beta prior was assumed for steepness \dBeta{10.0}{4.92},
-a normal prior was specified for the log of natural mortality rate 
-\dNorm{-0.79}{0.4},
+a normal prior was specified for the log of natural mortality rate \dNorm{-0.79}{0.4},
 a bounded uniform prior for both the log of initial recruitment and average recruitment \dUnif{-5.0}{15.0},
 a beta prior for the variance partitioning parameter $\rho\sim$\dBeta{17:086}{39:0559}, and
 a gamma prior for the inverse total standard deviation parameter $\vartheta\sim$\dGamma{25}{28:75}.
