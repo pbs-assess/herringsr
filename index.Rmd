@@ -115,6 +115,3 @@ theme_set(herring_theme())
 <!-- 5. Specify lines and points in storyboard figure panel (a) -->
 <!-- 6. Move production equation from figure caption to panel description -->
 <!-- 7. Other minor edits to the Figure 6 caption -->
-
-<!-- \thispagestyle{empty} -->
-<!-- \landscapeBG -->
