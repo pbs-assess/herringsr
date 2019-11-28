@@ -318,7 +318,7 @@ The objective function components are discussed in more detail in the following 
 
 It is assumed that measurement errors in catch observations are log-normally distributed, and the residuals given by:
 
-\begin{equation}\label{eq:ets_kt}
+\begin{equation}\label{eq:eta-kt}
 \eta_{k,t} = \lognorm\left(C_{k,t} + o\right) - \lognorm\left(\hat{C}_{k,t} + o\right)
 \end{equation}
 
@@ -328,7 +328,7 @@ Residuals are assumed to be normally distributed with a user-specified standard 
 At present, it is assumed that observed catches for each gear $k$ have the same standard deviation.
 The negative loglikelihood (ignoring the scaling constant) for the catch data is given by
 
-\begin{equation}\label{eq:ell_C}
+\begin{equation}\label{eq:ell-C}
 \ell_C = \sum_k\left[T_k \lognorm\left(\sigma_C\right)+
 \frac{\sum_t\left(\eta_{k,t}\right)^2}{2\sigma_C^2}\right] 
 \end{equation}
@@ -340,7 +340,7 @@ where $T_k$ is the total number of catch observations for gear type $k$.
 For Pacific Herring, relative abundance data are assumed to be proportional to spawning biomass.
 Thus, in the $k^\text{th}$ survey, the vulnerable biomass available to the survey sampling gear
 
-\begin{equation}\label{eq:V_kt}
+\begin{equation}\label{eq:V-kt}
 V_{k,t} = \sum_{a}B_{t,a}e^{-\lambda_{k,t}M_{t,a}}f_{a,t}.
 \end{equation}
 
@@ -348,7 +348,7 @@ A user specified fraction of total mortality $\lambda_{k,t}$
 adjusts numbers-at-age to correct for survey timing. 
 Residuals between the observed and predicted relative abundance index is given by
 
-\begin{equation}\label{eq:epsilon_kt}
+\begin{equation}\label{eq:epsilon-kt}
 \epsilon_{k,t} = \lognorm\left(I_{k,t}\right) - \lognorm\left(q_k\right)+\lognorm\left(V_{k,t}\right)
 \end{equation}
 
@@ -357,20 +357,20 @@ $q_k$ is the catchability coefficient for index $k$, and
 $V_{k,t}$ is the predicted vulnerable biomass at the time of sampling.
 The catchability coefficient $q_k$ is evaluated at its conditional maximum likelihood estimate
 
-\begin{equation}\label{eq:q_kt}
+\begin{equation}\label{eq:q-k}
 q_k = \frac{1}{N_k}\sum_{t \in I_{k,t}} \lognorm\left(I_{k,t}\right) - \lognorm\left(V_{k,t}\right)
 \end{equation}
 
 where $N_k$ is the number of relative abundance observations for index $k$ [see @walters1994 for more information].
 The negative loglikelihood for relative abundance data is given by
 
-\begin{equation}\label{eq:ell_I}
+\begin{equation}\label{eq:ell-I}
 \ell_I = \sum_k \sum_{t \in I_{k,t}} \lognorm\left(\sigma_{k,t}\right)+\frac{\epsilon_{k,t}^2}{2\sigma_{k,t}^2}
 \end{equation}
 
 and the standard deviation $\sigma_{k,t}$ is calculated by
 
-\begin{equation}\label{eq:sigma_kt}
+\begin{equation}\label{eq:sigma-kt}
 \sigma_{k,t} = \frac{\rho \varphi^2}{ \omega_{k,t}}
 \end{equation}
 
@@ -383,7 +383,7 @@ or to give 2 times the weight,
 set $\omega_{k,t} = 2.0$.
 To assume all observations have the same variance,
 set $\omega_{k,t} = 1$. 
-Note that if $\omega_{k,t} = 0$ then Equation \ref{eq:ell_I} is undefined; 
+Note that if $\omega_{k,t} = 0$ then Equation \ref{eq:ell-I} is undefined; 
 therefore, iSCAM adds a small constant (i.e., $e^{-10}$) to $\omega_{k,t}$, 
 which is equivalent to assuming an extremely large variance to ensure the likelihood can be evaluated.
 
@@ -410,27 +410,27 @@ Therefore, the contribution of age-composition data to the overall objective fun
 Ignoring the subscript for gear type for clarity,
 the observed and predicted proportions-at-age must satisfy the constraint for each year
 
-\begin{equation}\label{eq:p_ta}
+\begin{equation}\label{eq:p-ta}
 \sum^{A}_{a=1} p_{t,a} = 1.
 \end{equation}
 
 The residuals between the observed $p_{t,a}$ and 
 predicted proportions $\hat{p}_{t,a}$ is given by
 
-\begin{equation}\label{eq:ets_ta}
+\begin{equation}\label{eq:eta-ta}
 \eta_{t,a} = \lognorm\left(p_{t,a}\right) - \lognorm\left(\hat{p}_{t,a}\right)-\frac{1}{A}
 \sum^{A}_{a=1}\left[\lognorm\left(p_{t,a}\right) - \lognorm\left(\hat{p}_{t,a}\right)\right].
 \end{equation}
 
 The conditional maximum likelihood estimate of the variance is given by
 
-\begin{equation}\label{eq:hattau}
+\begin{equation}\label{eq:tau-hat}
 \hat{\tau}^2=\frac{1}{\left(A-1\right)T}\sum^{T}_{t=1}\sum^{A}_{a=1}\eta_{t,a}^2.
 \end{equation}
 
 The negative loglikelihood evaluated at the conditional maximum likelihood estimate of the variance is given by
 
-\begin{equation}\label{eq:ell_A}
+\begin{equation}\label{eq:ell-A}
 \ell_A = \left(A-1\right)T \lognorm\left(\hat{\tau}^2\right).
 \end{equation}
 
@@ -454,11 +454,11 @@ $k$ is the age at recruitment.
 Note that a bias correction term for the lognormal process errors is included in Equation \@ref(eq:R-t).
 The negative loglikelihood for the recruitment deviations is given by the normal density (ignoring the scaling constant)
   
-\begin{equation}\label{eq:l-delta}
+\begin{equation}\label{eq:delta-ell}
 \ell_{\delta} = nln\left(\tau\right) +\frac{\sum^{T}_{t=1} +k^{\delta_{t}^2}}{2\tau^2}.
 \end{equation}
 
-Equations \@ref(eq:delta-t) and \@ref(eq:l-delta) are key for estimating unfished spawning stock biomass and recruitment compensation via the recruitment models. 
+Equations \@ref(eq:delta-t) and \@ref(eq:delta-ell) are key for estimating unfished spawning stock biomass and recruitment compensation via the recruitment models. 
 The relationship between ($\alpha$, $\beta$) and ($B_0$, $\kappa$) is defined by 
 Equations \@ref(eq:alpha) and \@ref(eq:beta), where again
 $\alpha$ is the maximum juvenile survival rate,
@@ -491,7 +491,7 @@ The negative loglikelihoods pertain specifically to elements that deal with the 
 and have already been described in detail in earlier sections.
 There are four specific elements that make up objective function vector
 
-\begin{equation}\label{eq:l-sum}
+\begin{equation}\label{eq:ell-vec}
 \vec{\ell} = \left(\ell_C,\,\ell_I,\,\ell_A,\,\ell_\delta\right).
 \end{equation}
 
