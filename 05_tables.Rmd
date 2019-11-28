@@ -603,7 +603,7 @@ See Table \@ref(tab:decision-table-prd) for description.
 (ref:decision-table-sog-cap-french) Rendement de la procédure de gestion pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
 Voir le tableau \@ref(tab:decision-table-prd) pour la description.
 
-\begin{landscapeBG}
+\begin{turn}
 
 ```{r decision-table-prd, results = 'asis', echo = FALSE}
 col_align <- "cc|c|c|c|c|c|c|c"
@@ -655,4 +655,4 @@ decision_tables_mp(mp.sog,
                    translate = french)
 ```
 
-\end{landscapeBG}
+\end{turn}
