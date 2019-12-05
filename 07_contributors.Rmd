@@ -4,7 +4,7 @@
 
 ```{r, echo=FALSE, include=FALSE}
 contributors <- tibble::tribble(
-  ~Name, ~Affiliation,
+  ~Contributor, ~Affiliation,
   "Jaclyn Cleary", "DFO Science, Pacific Region",
   "Sarah Hawkshaw", "DFO Science, Pacific Region",
   "Matthew Grinnell", "DFO Science, Pacific Region",
