@@ -1,6 +1,6 @@
 \needspace{20\baselineskip}
 
-# Tables
+# `r en2fr("Tables", TRUE)`
 
 (ref:data-input-cap) Input data for the `r assess_yr` Pacific Herring stock assessment.
 The spawn index has two distinct periods defined by the dominant survey method:
