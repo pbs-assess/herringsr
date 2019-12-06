@@ -51,19 +51,21 @@ Les pêcheurs Nuu-chah-nulth ont installé des troncs d'arbre entiers et des rid
 
 ## Mise à jour sur l'état des stocks
 
-Les analyses de l'information sur les tendances des stocks pour le modèle ME2 sont présentées selon les méthodes de @cleary2018 pour les principaux stocks de hareng du Pacifique. Les perceptions de l'état des stocks fondées sur les résultats du modèle statistique des prises selon l'âge (ME2) sont résumées pour chaque stock dans une figure à six panneaux (p. ex. la figure \@ref(fig:storyboard-hg)). Les six panneaux (a-f) sont les suivants :
+Les analyses de l'information sur les tendances des stocks pour le modèle ME2 sont présentées selon les méthodes de @cleary2018 pour les principaux stocks de hareng du Pacifique. Les perceptions de l'état des stocks fondées sur les résultats du modèle statistique des prises selon l'âge (ME2) sont résumées pour chaque stock dans une figure à multiple panneaux (p. ex. la figure \@ref(fig:storyboard-hg)). Les panneaux \ref{item:storyIndex} à \ref{item:storyPhase} sont les suivants :
 
-a. La série chronologique des estimations de la densité a posteriori maximale des données de relevé du frai en milliers de tonnes. Les données de relevé du frai (c.-à-d. indice du frai) sont mises à l'échelle de l'abondance à l'aide du paramètre de mise à l'échelle du relevé du frai $q$. L'indice du frai a deux périodes distinctes définies par la méthode de relevé dominante : les relevés en surface (`r surv_yr_rng[1]` to `r new_surv_yr - 1`) et les relevés en plongée (`r new_surv_yr` to `r surv_yr_rng[2]`). Deux paramètres $q$ sont mis en œuvre dans la procédure d'estimation : $q_1$, avec une valeur a priori non informative, et $q_2$, avec une valeur a priori informative d'environ 1,0.
+(a) La série chronologique des estimations de la densité a posteriori maximale des données de relevé du frai en milliers de tonnes,\label{item:storyIndex}
 
-b. La série chronologique des estimations de la mortalité naturelle ($M$).
+(a) La série chronologique des estimations de la mortalité naturelle ($M$),
 
-c. La reconstitution de la série chronologique du nombre de recrues à l'âge 2.
+(a) La reconstitution de la série chronologique du nombre de recrues à l'âge 2,
 
-d. Les séries chronologiques des prises totales et de la biomasse féconde estimée avec la ligne de référence aux estimations du modèle de $0.3\mli{SB}_0$.
+(a) Les séries chronologiques des prises totales et de la biomasse féconde estimée avec la ligne de référence aux estimations du modèle de $0.3\mli{SB}_0$,
 
-e. La série chronologique des écarts (logarithmiques) par rapport à la fonction estimée de recrutement de Beverton-Holt.
+(a) La série chronologique des écarts (logarithmiques) par rapport à la fonction estimée de recrutement de Beverton-Holt, et
 
-f. Le diagramme de phase de la production de biomasse féconde pour la période du relevé en plongée (estimations de la densité a posteriori maximale), avec la ligne de référence aux estimations du modèle de $0.3\mli{SB}_0$.
+(a) Le diagramme de phase de la production de biomasse féconde ($\frac{\mli{SB}_{t+1} - \mli{SB}_t + C_{t+1}}{\mli{SB}_t}$) pour la période du relevé en plongée, avec la ligne de référence aux estimations du modèle de $0.3\mli{SB}_0$.\label{item:storyPhase}
+
+Notez que les données de relevé du frai (c.-à-d. indice du frai) dans le panneau \ref{item:storyIndex} sont mises à l'échelle de l'abondance à l'aide du paramètre de mise à l'échelle du relevé du frai $q$. L'indice du frai a deux périodes distinctes définies par la méthode de relevé dominante : les relevés en surface (`r surv_yr_rng[1]` to `r new_surv_yr - 1`) et les relevés en plongée (`r new_surv_yr` to `r surv_yr_rng[2]`). Deux paramètres $q$ sont mis en œuvre dans la procédure d'estimation : $q_1$, avec une valeur a priori non informative, et $q_2$, avec une valeur a priori informative d'environ 1,0.
 
 ### Points de référence\label{sec:ref-pts}
 
