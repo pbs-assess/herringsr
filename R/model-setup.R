@@ -5,6 +5,7 @@ library(gfutilities)
 library(gfiscamutils)
 library(rosettafish)
 library(herringutils)
+library(kableExtra)
 
 ## ------------------------------------------------------------------------------------------------
 ## Directories and names of stocks
