@@ -178,7 +178,7 @@ The estimated stock biomass has shown little trend from 2005 to 2018, with a mod
 Fluctuations in the trend in spawning biomass appear to be less than those observed in other SARs,
 possibly because some spawn index points are being under- or over-fit (e.g., 2001–2004, 2010-2013) as shown in Figure \@ref(fig:storyboard-prd)a.
 Estimated natural mortality reached historic highs in the late 1960s, before declining through the late 1970s.
-Beginning in about 1980, estimated natural mortality increased through to `r assess_yr`, roughly doubling from 0.25 to 0.5&nbsp;$yr^{-1}$ (Figure \@ref(fig:storyboard-prd)b).
+Beginning in about 1980, estimated natural mortality increased through to `r assess_yr`, roughly doubling from 0.25 to 0.5&nbsp;$\text{yr}^{-1}$ (Figure \@ref(fig:storyboard-prd)b).
 This trend in natural mortality coincides with the decline in spawning biomass (Figure \@ref(fig:storyboard-prd)d);
 recruitment deviations have fluctuated around 0 without any strong positive or negative trends (Figure \@ref(fig:storyboard-prd)e).
 An above average age-2+ recruitment in 2014, 2017-2019, and an increase in the spawn index in the last year were still not sufficient to lead to an increasing trend in biomass (Figure \@ref(fig:storyboard-prd)f).
