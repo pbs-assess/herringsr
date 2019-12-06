@@ -1,18 +1,26 @@
 ---
 title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2019 and forecast for 2020"
+# title: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie Britannique : État en 2019 et prévisions pour 2020"
 title_short: "Pacific Herring status in 2019 and forecast for 2020"
+# title_short: "État du hareng du Pacifique en 2019 et prévisions pour 2020"
 title_other: "Mise à jour sur l'état des stocks et application des procédures de gestion du Hareng du Pacifique (*Clupea pallasii*) de la Colombie-Britannique: état en 2019 et prévisions pour 2020"
+# title_other: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2019 and forecast for 2020"
 year: 2019
 month: October
+# month: Octobre
 report_number: nnn
 approver: |
   Carmel Lowe\
   Regional Director
+#  Directeur régional
 approval_year: 2019
 approval_month: October
+# approval_month: Octobre
 approval_day: 23
 branch: Science Branch
+# branch: Secteur des sciences
 region: Pacific Region
+# region: Région du Pacifique
 address: |
   Pacific Biological Station\
   Fisheries and Oceans Canada, 3190 Hammond Bay Road\
