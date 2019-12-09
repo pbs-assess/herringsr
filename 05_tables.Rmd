@@ -355,9 +355,9 @@ $\SB_0$ is estimated unfished spawning biomass)
 from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Haida Gwaii major stock assessment region.
 
 (ref:hg-spawning-biomass-depletion-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion
-(c.-à-d. biomasse reproductrice relative $\mli{BR}_t/\mli{BR}_0$, où
-$\mli{BR}_t$ est la biomasse reproductrice en année $t$, et
-$\mli{BR}_0$ est la biomasse reproductrice non exploitée estimée)
+(c.-à-d. biomasse reproductrice relative $\SB_t/\SB_0$, où
+$\SB_t$ est la biomasse reproductrice en année $t$, et
+$\SB_0$ est la biomasse reproductrice non exploitée estimée)
 de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de Haida Gwaii.
 
 ```{r hg-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
@@ -462,9 +462,9 @@ $\SB_{`r assess_yr+1`}$ is projected spawning biomass in `r assess_yr+1` assumin
 
 (ref:ref-points-hg-cap-french) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) des points de référence proposés pour le modèle de Haida Gwaii.
 Les chiffres indiqués pour la biomasse sont exprimés en milliers de tonnes.
-Légende: $\mli{BR}_0$ est la biomasse reproductrice non-exploitée estimée;
-$\mli{BR}_{t}$ est la biomasse reproductrice en année $t$; et
-$\mli{BR}_{`r assess_yr+1`}$ est la biomasses reproductrice projetée en supposant qu'il n'y aura pas de pêche en `r assess_yr+1`.
+Légende: $\SB_0$ est la biomasse reproductrice non-exploitée estimée;
+$\SB_{t}$ est la biomasse reproductrice en année $t$; et
+$\SB_{`r assess_yr+1`}$ est la biomasses reproductrice projetée en supposant qu'il n'y aura pas de pêche en `r assess_yr+1`.
 
 ```{r ref-points-hg, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -581,8 +581,8 @@ Les critères de rendement sont calculés sur trois générations de hareng du P
 Les PG sont classés à l'intérieur de chaque scénario en fonction de la réalisation de l'objectif 1.
 Le total autorisé des captures (TAC) recommandé en milliers de tonnes (t) et le taux de recolte (TR) associé sont déclarés pour chaque PG.
 Légende: point de référence limite (PRL);
-$\mli{BR}_t$ est la biomasse reproductrice de l'année $t$;
-$\mli{BR}_0$ est la biomasse reproductrice non pêchée estimée;
+$\SB_t$ est la biomasse reproductrice de l'année $t$;
+$\SB_0$ est la biomasse reproductrice non pêchée estimée;
 la variabilité annuelle moyenne (VAM);
 $C_t$ est la prise de l'année $t$; et
 $\overline{C}$ est la prise moyenne.
