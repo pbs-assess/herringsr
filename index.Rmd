@@ -111,6 +111,7 @@ theme_set(herring_theme())
 
 <!-- Other math -->
 \newcommand{\lognorm}{\text{ln}}
+\newcommand{\SB}{\mli{SB}}
 
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->
@@ -124,7 +125,3 @@ theme_set(herring_theme())
 <!-- 6. Move production equation from figure caption to panel description -->
 <!-- 7. Other minor edits to the Figure 6 caption -->
 <!-- 8. Add definition of SB_0 to first paragraph in Context -->
-
-<!-- TODO: French translation-->
-<!-- 1. Change SB to BR everywhere -->
-<!-- 2. Fix vertical lists -->
