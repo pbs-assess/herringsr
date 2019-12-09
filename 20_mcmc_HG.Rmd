@@ -24,7 +24,7 @@ estimated parameters for the Haida Gwaii major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 In addition, $B_0$ is unfished biomass,
 $\SB_0$ is unfished spawning biomass,
-$\mli{SSB}$ is spawning biomass,
+$\SB$ is spawning biomass,
 $\hat{a}$ is selectivity-at-age-50%, and
 $\hat{\gamma}$ is selectivity standard deviation-at-50%.
 Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:

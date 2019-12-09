@@ -24,7 +24,7 @@ estimated parameters for the West Coast of Vancouver Island major stock assessme
 See Table \@ref(tab:hg-parameter-est-table) for description.
 In addition, $B_0$ is unfished biomass,
 $\SB_0$ is unfished spawning biomass,
-$\mli{SB}$ is spawning biomass,
+$\SB$ is spawning biomass,
 $\hat{a}$ is selectivity-at-age-50%, and
 $\hat{\gamma}$ is selectivity standard deviation-at-50%.
 Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
