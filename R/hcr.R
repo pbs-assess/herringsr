@@ -22,7 +22,7 @@ get_sbt_sbo <- function(name){
 #' 2. [tibble::tibble()] holding the data from the file plus two columns, tac and hr (harvest rate)
 #'  which are the median tac and harverst rate calculated for the region by MP.
 get_hcr <- function(sbt, sbo, fn){
-  mp <- read_csv(fn) %>%
+  mp <- read_csv(fn, col_types=cols()) %>%
     as_tibble() %>%
     arrange(factor(om, levels = c("DDM", "DIM", "conM")),
             desc(obj1),

@@ -122,7 +122,7 @@ sok_file_pattern <- "harvest-sok-*"
 data_path <- here::here("data")
 sok_filenames <- dir(data_path, pattern = sok_file_pattern)
 sok <- sok_filenames %>%
-  map(~read_csv(file.path(data_path, .))) %>%
+  map(~read_csv(file.path(data_path, .), col_types=cols())) %>%
   reduce(rbind)
 sok$Region <- en2fr(sok$Region, french)
 
@@ -135,7 +135,7 @@ ps_shortnames <- toupper(sub(".csv", "", ps_shortnames))
 ps_shortnames[ps_shortnames == "SOG"] <- "SoG"
 ps_filenames <- file.path(data_path, ps_filenames)
 ps <- lapply(ps_filenames, function(x){
-  read_csv(x)})
+  read_csv(x, col_types=cols())})
 names(ps) <- en2fr(ps_shortnames, french)
 
 #Weight-at-age
@@ -168,7 +168,7 @@ minor_surv_short <- get_surv_ind(minor_models,
                                  surv_type)
 
 # Input catch for table 1
-inp_catch <- read_csv(here::here("data/input-data.csv"))
+inp_catch <- read_csv(here::here("data/input-data.csv"), col_types=cols())
 
 #' Get model output values for a given region
 #'
@@ -257,10 +257,7 @@ mcmc_length <- "5 million"
 mcmc_samp_freq <- 1000
 mcmc_ci <- "90\\%"
 
-# -----------------------------------------------------------------------------
-# MP decision tables
-cc_mp <- read_csv("data/mp-cc.csv")
-
+# Format MP tables
 proc_mp <- function(df){
   csas_table(df,
              format = "latex",
