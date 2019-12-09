@@ -1,26 +1,26 @@
 ---
-title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2019 and forecast for 2020"
-# title: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie Britannique : État en 2019 et prévisions pour 2020"
-title_short: "Pacific Herring status in 2019 and forecast for 2020"
-# title_short: "État du hareng du Pacifique en 2019 et prévisions pour 2020"
-title_other: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie Britannique: État en 2019 et prévisions pour 2020"
-# title_other: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2019 and forecast for 2020"
+# title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2019 and forecast for 2020"
+title: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie Britannique : État en 2019 et prévisions pour 2020"
+# title_short: "Pacific Herring status in 2019 and forecast for 2020"
+title_short: "État du hareng du Pacifique en 2019 et prévisions pour 2020"
+# title_other: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie Britannique: État en 2019 et prévisions pour 2020"
+title_other: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2019 and forecast for 2020"
 year: 2019
-month: October
-# month: Octobre
+# month: December
+month: Décembre
 report_number: nnn
 approver: |
   Carmel Lowe\
-  Regional Director
-# Directeur régional
+  Directeur régional
+# Regional Director
 approval_year: 2019
-approval_month: October
-# approval_month: Octobre
+# approval_month: October
+approval_month: Octobre
 approval_day: 23
-branch: Science Branch
-# branch: Secteur des sciences
-region: Pacific Region
-# region: Région du Pacifique
+# branch: Science Branch
+branch: Secteur des sciences
+# region: Pacific Region
+region: Région du Pacifique
 address: |
   Pacific Biological Station\
   Fisheries and Oceans Canada, 3190 Hammond Bay Road\
@@ -29,7 +29,7 @@ phone: (250) 756-7208
 email: csap@dfo-mpo.gc.ca
 output:
   csasdown::sr_pdf:
-   french: false
+   french: true
    # prepub: false
 type:
   sr
@@ -111,7 +111,7 @@ theme_set(herring_theme())
 
 <!-- Other math -->
 \newcommand{\lognorm}{\text{ln}}
-\newcommand{\SB}{\mli{SB}}
+\newcommand{\SB}{\mli{BR}}
 
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->
