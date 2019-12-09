@@ -73,11 +73,11 @@ Un point de référence limite (PRL) biologique est défini pour les régions pr
 
 1. $0.4\mli{SB}_0$,
 
-2. $0.6\mli{SB}_0$,
+1. $0.6\mli{SB}_0$,
 
-3. Moyenne de la biomasse féconde de `r major_start_yr` to `r assess_yr`, $\mli{SB}_{\mli{ave}}$ et
+1. Moyenne de la biomasse féconde de `r major_start_yr` to `r assess_yr`, $\mli{SB}_{\mli{ave}}$ et
 
-4. Moyenne de la biomasse féconde pendant une période productive [@cleary2018], $\mli{SB}_{\mli{ave-prod}}$.
+1. Moyenne de la biomasse féconde pendant une période productive [@cleary2018], $\mli{SB}_{\mli{ave-prod}}$.
 
 Les résultats de la simulation ont montré des propriétés similaires entre les PRS $0.6\mli{SB}_0$ et $\mli{SB}_{\mli{ave}}$, à la fois dans les régions d'évaluation des stocks et parmi celles-ci, tandis que le PRS basé sur la biomasse moyenne au cours d'une période productive, $\mli{SB}_{\mli{ave-prod}}$, s'est révélé être le plus variable parmi les régions d'évaluation des stocks. Les évaluations par simulation n'ont pas sélectionné un seul PRS, mais un PRS de $0.6\mli{SB}_0$ est inclus dans cette mise à jour de l'état des stocks, car cette proposition est suffisamment supérieure au PRL (2*PRL) et il s'agit d'un calcul répétable pour toutes les régions d'évaluation des stocks. L'état des stocks par rapport aux estimations du modèle d'évaluation, $0.3\mli{SB}_0$ (PRL) et $0.6\mli{SB}_0$ (PRS) est présenté dans les tableaux \@ref(tab:ref-points-hg) à \@ref(tab:ref-points-wcvi) pour chaque région d'évaluation des stocks.
 
@@ -133,11 +133,11 @@ Le premier cycle de l'ESG du hareng du Pacifique comprend, comme point de dépar
 
 1. Éviter le PRL avec une probabilité d'au moins 75 % sur trois générations de hareng du Pacifique (c.-à-d. éviter une limite de la biomasse; $P(\mli{SB}_t > 0.3\mli{SB}_0) \geq 0.75$).
 
-2. Maintenir la biomasse féconde à un niveau égal ou supérieur au PRS avec au moins 50 % de probabilité sur trois générations de hareng du Pacifique (c.-à-d. atteindre une biomasse cible; $P(\mli{SB}_t \geq 0.6\mli{SB}_0) \geq 0.5$).
+1. Maintenir la biomasse féconde à un niveau égal ou supérieur au PRS avec au moins 50 % de probabilité sur trois générations de hareng du Pacifique (c.-à-d. atteindre une biomasse cible; $P(\mli{SB}_t \geq 0.6\mli{SB}_0) \geq 0.5$).
 
-3. Maintenir la variabilité annuelle moyenne (VAM) des prises en deçà de 25 % sur trois générations de hareng du Pacifique (objectif reflétant la variabilité des prises; $\text{AAV} < 0.25$).
+1. Maintenir la variabilité annuelle moyenne (VAM) des prises en deçà de 25 % sur trois générations de hareng du Pacifique (objectif reflétant la variabilité des prises; $\text{AAV} < 0.25$).
 
-4. Maximiser les prises annuelles moyennes sur trois générations de hareng du Pacifique (objectif reflétant la biomasse des prises).
+1. Maximiser les prises annuelles moyennes sur trois générations de hareng du Pacifique (objectif reflétant la biomasse des prises).
 
 Toutefois, un ensemble d'objectifs entièrement définis n'a pas encore été établi pour chaque zone de gestion. Le MPO continuera de collaborer avec les Premières Nations de la côte afin d'élaborer des objectifs propres aux pêches à des fins alimentaires, sociales et rituelles ainsi qu'à la pêche de la rogue sur varech. De plus, le MPO continuera de collaborer avec l'industrie du hareng, le gouvernement et les organisations non gouvernementales pour décrire des objectifs plus vastes liés à la conservation, à l'économie et à l'accès.
 
@@ -145,9 +145,9 @@ Les procédures de gestion de chaque région d'évaluation des stocks diffèrent
 
 1. $M$ est un processus variable dans le temps et dépendant de la densité (DDM),
 
-2. $M$ est un processus variable dans le temps et indépendant de la densité (DIM),
+1. $M$ est un processus variable dans le temps et indépendant de la densité (DIM),
 
-3. $M$ est constant dans le temps (conM).
+1. $M$ est constant dans le temps (conM).
 
 Ces trois hypothèses sont prises en compte sous la forme de trois scénarios de modèle opérationnel dans @dfo2019a. Le scénario DDM a été indiqué comme le scénario de modèle opérationnel de référence à la suite des discussions tenues lors du processus d'examen du SCCS de juillet 2018 [@dfo2019c], tandis que les scénarios DIM et conM ont été identifiés comme scénarios de modèle opérationnel de robustesse. Toutefois, il n'existe actuellement aucune méthode scientifiquement fondée pour prédire la mortalité naturelle et les trois scénarios sont donc inclus. 
 
@@ -157,9 +157,9 @@ Plusieurs leçons ont été tirées de l'analyse :
 
 1. Le modèle d'évaluation des prises selon l'âge peut produire d'importantes erreurs d'évaluation (positives). De telles erreurs d'évaluation entraînent une surestimation de la biomasse féconde et donnent lieu à des limites de prises recommandées telles que le taux de récolte réalisé dépasse l'objectif précisé par une règle de contrôle des prises (p. ex. la surexploitation).
 
-2. La réduction du taux de récolte de 20 % à 10 % a été le moyen le plus efficace d'atténuer les erreurs d'évaluation des stocks en réduisant la taille absolue des prises. L'utilisation d'un plafond des prises, mis en œuvre en tant que niveau de prises annuel maximal, était un moyen efficace, sans modèle, d'atténuer davantage les erreurs d'évaluation. Les analyses de simulation ont en outre montré que les résultats sont insensibles au choix des points de contrôle opérationnels (PCO) de la règle de contrôle des prises lorsqu'un faible taux de récolte et un plafond des prises sont appliqués. Cela s'explique par le fait que les faibles niveaux de biomasse (associés au PCO inférieur) sont évités pour ces procédures de gestion.
+1. La réduction du taux de récolte de 20 % à 10 % a été le moyen le plus efficace d'atténuer les erreurs d'évaluation des stocks en réduisant la taille absolue des prises. L'utilisation d'un plafond des prises, mis en œuvre en tant que niveau de prises annuel maximal, était un moyen efficace, sans modèle, d'atténuer davantage les erreurs d'évaluation. Les analyses de simulation ont en outre montré que les résultats sont insensibles au choix des points de contrôle opérationnels (PCO) de la règle de contrôle des prises lorsqu'un faible taux de récolte et un plafond des prises sont appliqués. Cela s'explique par le fait que les faibles niveaux de biomasse (associés au PCO inférieur) sont évités pour ces procédures de gestion.
 
-3. On s'attend a priori à des différences dans les spécifications des procédures de gestion du hareng du Pacifique, y compris les composantes de la règle de contrôle des prises, parmi les régions d'évaluation des stocks. Les raisons sont liées aux différences entre les objectifs jugés importants par les utilisateurs de la ressource, aux différences dans la dynamique historique et actuelle des stocks et des pêches, et aux différences dans l'ampleur et le sens des erreurs du modèle d'évaluation dans chaque région. Les objectifs de conservation tels que ceux qui visent à éviter un seuil de dommage sérieux (c.-à-d. un point de référence limite) conformément au cadre de l'approche de précaution du MPO [@dfo2009] demeurent constants entre les régions d'évaluation des stocks selon les analyses de @kronlund2017.
+1. On s'attend a priori à des différences dans les spécifications des procédures de gestion du hareng du Pacifique, y compris les composantes de la règle de contrôle des prises, parmi les régions d'évaluation des stocks. Les raisons sont liées aux différences entre les objectifs jugés importants par les utilisateurs de la ressource, aux différences dans la dynamique historique et actuelle des stocks et des pêches, et aux différences dans l'ampleur et le sens des erreurs du modèle d'évaluation dans chaque région. Les objectifs de conservation tels que ceux qui visent à éviter un seuil de dommage sérieux (c.-à-d. un point de référence limite) conformément au cadre de l'approche de précaution du MPO [@dfo2009] demeurent constants entre les régions d'évaluation des stocks selon les analyses de @kronlund2017.
 
 Les options de récolte pour `r assess_yr+1` tiennent compte de l'application des procédures de gestion testées par simulation pour chaque région principale d'évaluation des stocks.
 
@@ -205,7 +205,7 @@ En 2018, un avis scientifique recommandait de cesser d'utiliser la règle de con
 
 1. Les valeurs des seuils fixes ont été calculées en dehors du modèle d'évaluation actuel, mises à jour pour la dernière fois en 1996, et ignorent donc 22 années de données de surveillance des stocks et des pêches, ainsi que les changements importants apportés à la forme structurelle du modèle d'évaluation.
 
-2. L'utilisation de PCO inférieurs et supérieurs distincts permet de modifier la pente de la partie correspondant à la rampe de la règle de contrôle des prises afin de mieux répondre aux objectifs relatifs aux stocks et aux pêches en évitant les fermetures des pêches et en encourageant la croissance des stocks à mesure que l'on connaît mieux la dynamique des stocks et les effets de la pêche.
+1. L'utilisation de PCO inférieurs et supérieurs distincts permet de modifier la pente de la partie correspondant à la rampe de la règle de contrôle des prises afin de mieux répondre aux objectifs relatifs aux stocks et aux pêches en évitant les fermetures des pêches et en encourageant la croissance des stocks à mesure que l'on connaît mieux la dynamique des stocks et les effets de la pêche.
 
 La biomasse féconde en 2020 devrait être de `r f(sog_proj_sbt[2])`&nbsp;t (médiane a posteriori) et inférieure au PRL de $0.3\mli{SB}_0$ avec une probabilité de `r f(sog_prob_proj_less_03sbo * 100, 1)`% en l'absence de pêche. 
 
