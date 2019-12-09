@@ -907,7 +907,7 @@ where $\SB_0$ is estimated unfished spawning biomass.
 
 (ref:proj-biomass-density-cap-french) Biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en `r assess_yr+1` $\SB_{`r assess_yr+1`}$ en milliers de tonnes pour le hareng du Pacifique dans les régions d’évaluation des stocks majeurs.
 Les lignes noires pleines et tiretées indiquent les médianes et les intervalles de confiance de `r ci_level*100`%  pour $\SB_{`r assess_yr+1`}$, respectivement.
-Les lignes et rectangles ombragés rouges indiquent les médianes et les intervalles de confiance de `r ci_level*100`% pour le point de référence limite, $0,3\SB_0$, où $\SB_0$ est la biomasse non exploitée estimée.
+Les lignes et rectangles ombragés rouges indiquent les médianes et les intervalles de confiance de `r ci_level*100`% pour le point de référence limite, $0,3\SB_0$, où $\SB_0$ est la biomasse reproductrice non exploitée estimée.
 
 ```{r proj-biomass-density, fig.asp = 1, fig.cap = ifelse(french, "(ref:proj-biomass-density-cap-french)", "(ref:proj-biomass-density-cap)")}
 plot_proj_biomass_density(major_models, 
