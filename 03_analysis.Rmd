@@ -114,13 +114,13 @@ The panels \ref{item:storyIndex} to \ref{item:storyPhase} show:
 
 (a) Time series reconstruction of number of age-2 recruits,
 
-(a) Time series of estimated spawning biomass $\mli{SB}_t$ and total catch $C_t$ in year $t$,
-with reference lines at model estimates of $0.3\mli{SB}_0$,
+(a) Time series of estimated spawning biomass $\SB_t$ and total catch $C_t$ in year $t$,
+with reference lines at model estimates of $0.3\SB_0$,
 
 (a) Time series of (log) deviations from the estimated Beverton-Holt recruitment function, and
 
-(a) Phase plot of spawning biomass production ($\frac{\mli{SB}_{t+1} - \mli{SB}_t + C_{t+1}}{\mli{SB}_t}$) for the dive survey period,
-with reference lines at model estimates of $0.3\mli{SB}_0$.\label{item:storyPhase}
+(a) Phase plot of spawning biomass production ($\frac{\SB_{t+1} - \SB_t + C_{t+1}}{\SB_t}$) for the dive survey period,
+with reference lines at model estimates of $0.3\SB_0$.\label{item:storyPhase}
 
 Note that spawn survey data (i.e., spawn index) is scaled to abundance in panel \ref{item:storyIndex} by the spawn survey scaling parameter $q$.
 The spawn index has two distinct periods defined by the dominant survey method: 
@@ -132,23 +132,23 @@ $q_2$ (`r new_surv_yr` to `r surv_yr_rng[2]`) with an informative prior approxim
 
 ### Reference points\label{sec:ref-pts}
 
-A biological limit reference point (LRP) is defined for the major Pacific Herring SARs at $0.3\mli{SB}_0$ [@kronlund2017].
+A biological limit reference point (LRP) is defined for the major Pacific Herring SARs at $0.3\SB_0$ [@kronlund2017].
 Candidate upper stock references (USR) were introduced in @cleary2018 and implemented as biomass objectives in the simulation analyses for WCVI and SoG in 2018 [@dfo2019a] and then for HG, PRD, and CC in 2019 [@dfo2019c].
 Candidate USRs are:
 
-1. $0.4\mli{SB}_0$,
+1. $0.4\SB_0$,
 
-1. $0.6\mli{SB}_0$,
+1. $0.6\SB_0$,
 
-1. Average spawning biomass from `r major_start_yr` to `r assess_yr`, $\mli{SB}_{\mli{ave}}$, and
+1. Average spawning biomass from `r major_start_yr` to `r assess_yr`, $\SB_{\mli{ave}}$, and
 
-1. Average spawning biomass during a productive period [@cleary2018], $\mli{SB}_{\mli{ave-prod}}$.
+1. Average spawning biomass during a productive period [@cleary2018], $\SB_{\mli{ave-prod}}$.
 
-Simulation results showed similar properties between USRs $0.6\mli{SB}_0$ and $\mli{SB}_{\mli{ave}}$ both within and among SARs,
-while the USR based on the average biomass in a productive period, $\mli{SB}_{\mli{ave-prod}}$, was found to be most variable among SARs.
+Simulation results showed similar properties between USRs $0.6\SB_0$ and $\SB_{\mli{ave}}$ both within and among SARs,
+while the USR based on the average biomass in a productive period, $\SB_{\mli{ave-prod}}$, was found to be most variable among SARs.
 The simulation-evaluations did not select a single USR,
-however a USR of $0.6\mli{SB}_0$ is included in this stock status update because this candidate is sufficiently above the LRP (2*LRP) and it is a repeatable calculation across all SARs.
-Stock status relative to the assessment model estimates $0.3\mli{SB}_0$ (LRP) and $0.6\mli{SB}_0$ (USR) are presented for each SAR in Tables \@ref(tab:ref-points-hg) through \@ref(tab:ref-points-wcvi).
+however a USR of $0.6\SB_0$ is included in this stock status update because this candidate is sufficiently above the LRP (2*LRP) and it is a repeatable calculation across all SARs.
+Stock status relative to the assessment model estimates $0.3\SB_0$ (LRP) and $0.6\SB_0$ (USR) are presented for each SAR in Tables \@ref(tab:ref-points-hg) through \@ref(tab:ref-points-wcvi).
 
 The LRP and USR relate stock status to the DFO PA Framework [@dfo2009], and in the assessment of Pacific Herring the same calculations are applied for each SAR.
 There is an important distinction between reference points (e.g., LRP, USR) and
@@ -166,8 +166,8 @@ Since 2000, the HG stock has been in a low biomass state, with many of these yea
 The most recent year, between 2018 and 2019, biomass remains very low and there is evidence of positive productivity.
 The effective harvest rate $U_t$ since 2000 has been at or near zero (Figure \@ref(fig:harvest-rate)), with the last commercial roe fishery in 2002, and the last commercial SOK fishery in 2004.
 
-Estimated spawning biomass in `r assess_yr` is `r f(hg_final_yr_sbt[2])`&nbsp;t (`r paste0("$\\mli{SB}_{", assess_yr, "}$")`, median posterior value) or 30% of $\mli{SB}_0$ (Tables \@ref(hg-spawning-biomass-depletion-table) & \@ref(tab:ref-points-hg)).
-Spawning biomass in `r assess_yr` is estimated to be at the LRP of $0.3\mli{SB}_0$ with a `r f((1-hg_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-hg)).
+Estimated spawning biomass in `r assess_yr` is `r f(hg_final_yr_sbt[2])`&nbsp;t (`r paste0("$\\SB_{", assess_yr, "}$")`, median posterior value) or 30% of $\SB_0$ (Tables \@ref(hg-spawning-biomass-depletion-table) & \@ref(tab:ref-points-hg)).
+Spawning biomass in `r assess_yr` is estimated to be at the LRP of $0.3\SB_0$ with a `r f((1-hg_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-hg)).
 
 ### Prince Rupert District
 
@@ -188,10 +188,10 @@ resulting in what appears to be a small increase in production.
 An increasing trend in weight-at-age has been observed since about 2010,
 although the change does not appear to be as large as in the HG, CC, SoG and WCVI SARs.
 
-The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(prd_final_yr_sbt[2])`&nbsp;t (posterior median),
-equal to 38.9% of $\mli{SB}_0$ (Tables \@ref(prd-spawning-biomass-depletion-table) & \@ref(tab:ref-points-prd)).
+The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(prd_final_yr_sbt[2])`&nbsp;t (posterior median),
+equal to 38.9% of $\SB_0$ (Tables \@ref(prd-spawning-biomass-depletion-table) & \@ref(tab:ref-points-prd)).
 Commercial fisheries have occurred annually in PRD since the mid-1980s, with the exception of 2019, during which the effective harvest rate $U_t$ was estimated to be at or below 20% (Figure \@ref(fig:harvest-rate)) in all years except 1989.
-Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\mli{SB}_0$ with a `r f((1-prd_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-prd)).
+Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1-prd_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-prd)).
 
 ### Central Coast
 
@@ -219,13 +219,13 @@ and small commercial roe fisheries occurred in 2014, 2015, and 2016.
 A commercial SOK fishery has operated yearly since 2014,
 however these removals are not included in the estimation of $U_t$.
 
-The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(cc_final_yr_sbt[2])`&nbsp;t (posterior median), equal to 60.7% of $\mli{SB}_0$ (Tables \@ref(cc-spawning-biomass-depletion-table) & \@ref(tab:ref-points-cc)).
-Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\mli{SB}_0$ with a `r f((1-cc_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-cc)).
+The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(cc_final_yr_sbt[2])`&nbsp;t (posterior median), equal to 60.7% of $\SB_0$ (Tables \@ref(cc-spawning-biomass-depletion-table) & \@ref(tab:ref-points-cc)).
+Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1-cc_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-cc)).
 
 ### Strait of Georgia
 
 The estimated spawning biomass for the SoG stock decreased in 2019,
-although the uncertainty associated with the last few years of spawning biomass along with the forecast biomass `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, is quite large (Figure \@ref(fig:storyboard-sog)d).
+although the uncertainty associated with the last few years of spawning biomass along with the forecast biomass `r paste0("$\\SB_{", assess_yr, "}$")`, is quite large (Figure \@ref(fig:storyboard-sog)d).
 There was an increasing trend in estimated spawning biomass from about 2010 to 2016 which coincided with a decline in estimated natural mortality that began in the late 2000s (Figure \@ref(fig:storyboard-sog)b).
 The model estimates natural mortality has been increasing since 2016, and has now reached a level last estimated in the early 1970s.
 This coincides with the recent decreasing trend in estimated spawning biomass.
@@ -247,9 +247,9 @@ similar to 1989, 1990, 2012 and 2016 (Figure \@ref(fig:storyboard-sog)f).
 Commercial fisheries have occurred annually in SoG since the early-1970s (following the stock collapse of the late 1960s).
 Since implementing the fixed cutoff HCR in 1986, the effective harvest rate $U_t$ is estimated to fluctuate above and below the `r target_hr*100`% target rate,
 with median estimates above `r target_hr*100`% in 2005, 2006, and most years between 2013 and 2019 (Figure \@ref(fig:harvest-rate)).
-The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(sog_final_yr_sbt[2])`&nbsp;t (posterior median),
-equal to 46.4% of $\mli{SB}_0$ (Tables \@ref(sog-spawning-biomass-depletion-table) & \@ref(tab:ref-points-sog)).
-Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\mli{SB}_0$ with a `r f((1-sog_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-sog)).
+The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(sog_final_yr_sbt[2])`&nbsp;t (posterior median),
+equal to 46.4% of $\SB_0$ (Tables \@ref(sog-spawning-biomass-depletion-table) & \@ref(tab:ref-points-sog)).
+Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1-sog_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-sog)).
 
 ### West Coast of Vancouver Island
 
@@ -263,17 +263,17 @@ The absence of a commercial fishery since 2005 means the realized harvest rate h
 In recent years there has been modest evidence for an increase in production and biomass.
 The production estimates in the 2018-2019 year are at a higher spawning biomass level than those estimated during the low production, low biomass period of the last half of the 2000s and early 2010s (Figure \@ref(fig:storyboard-wcvi)f).
 
-The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\mli{SB}_{", assess_yr, "}$")`, at `r f(wcvi_final_yr_sbt[2])`&nbsp;t (posterior median),
-equal to 44.2% of $\mli{SB}_0$ (Tables \@ref(wcvi-spawning-biomass-depletion-table) & \@ref(tab:ref-points-wcvi)).
-Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\mli{SB}_0$ with a `r f((1-wcvi_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-wcvi)).
+The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(wcvi_final_yr_sbt[2])`&nbsp;t (posterior median),
+equal to 44.2% of $\SB_0$ (Tables \@ref(wcvi-spawning-biomass-depletion-table) & \@ref(tab:ref-points-wcvi)).
+Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1-wcvi_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-wcvi)).
 
 ## Management performance
 
 Management procedure performance can be investigated using time series of effective harvest rate.
 The estimated effective harvest rate $U$ in each year $t$, calculated as
-$U_t = C_t/(C_t + \mli{SB}_t)$, where
+$U_t = C_t/(C_t + \SB_t)$, where
 $C_t$ is catch in year $t$, and
-$\mli{SB}_t$ is estimated spawning biomass in year $t$.
+$\SB_t$ is estimated spawning biomass in year $t$.
 Times series of $U_t$ relative to target harvest rate of `r target_hr*100`% are presented in Figure \@ref(fig:harvest-rate).
 
 ## Application of MPs and harvest options for `r assess_yr + 1`\label{sec:harv-opts}
@@ -283,7 +283,7 @@ application of a HCR that is a hybrid of fixed escapement and a target harvest r
 Although the target harvest rate has varied among regions in recent years (e.g., CC and PRD SARs; @dfo2017),
 the “historical” practice was to apply a target harvest rate of `r target_hr*100`%
 when the forecast is estimated to be above a fixed commercial fishery cutoff of
-$0.25\mli{SB}_0$ defined in the 1996 stock assessment [@dfo2016].
+$0.25\SB_0$ defined in the 1996 stock assessment [@dfo2016].
 This rule is referred to as the "fixed cutoff rule."
 
 Renewal of the Pacific Herring management framework included a commitment to MSE simulation-evaluation of the performance of historical fixed cutoff and
@@ -296,10 +296,10 @@ The first cycle of Pacific Herring MSE includes, as a starting point, four core 
 
 <!-- TODO: I don't like how this first Objective reads compared to the other three. I know it's copied from the MSE papers, but it's ambiguous. I think it should read "Maintain spawning biomass above the LRP with at least 75%...". -->
 1. Avoid the LRP with at least 75% probability over three Pacific Herring generations
-(i.e., avoid a biomass limit; $P(\mli{SB}_t > 0.3\mli{SB}_0) \geq 0.75$),
+(i.e., avoid a biomass limit; $P(\SB_t > 0.3\SB_0) \geq 0.75$),
 
 1. Maintain spawning biomass at or above the USR with at least 50% probability over three Pacific Herring generations
-(i.e., achieve a target biomass; $P(\mli{SB}_t \geq 0.6\mli{SB}_0) \geq 0.5$),
+(i.e., achieve a target biomass; $P(\SB_t \geq 0.6\SB_0) \geq 0.5$),
 
 1. Maintain average annual variability (AAV) in catch below 25% over three Pacific Herring generations
 (goal reflecting catch variability; $\text{AAV} < 0.25$), and
@@ -359,7 +359,7 @@ performed satisfactorily against the conservation objective of maintaining spawn
 (at least 75%).\footnote{\label{fn:HighProb}``High'' probability is defined as 75 to 95\% by the DFO Decision-making framework (DFO 2009).}
 <!-- TODO: automate the citation in the footnote (\citep{dfo2009}) -->
 
-The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3\mli{SB}_0$ with `r f(hg_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-hg) and Figure \@ref(fig:proj-biomass-density)).
+The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3\SB_0$ with `r f(hg_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-hg) and Figure \@ref(fig:proj-biomass-density)).
 
 DFO has committed to developing and implementing a rebuilding plan for Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.[^RebuildHG]
 Work is underway through a technical working group comprised of members of the Council of Haida Nation, DFO, and Parks Canada.
@@ -378,7 +378,7 @@ As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&n
 
 ### Prince Rupert District
 
-For PRD the best performing MPs generally had 10% or lower harvest rates, although two MPs with a 20% harvest rate did meet the conservation objective because they use a higher lower OCP (see Section '\nameref{sec:ref-pts}') of $0.5\mli{SB}_0$.
+For PRD the best performing MPs generally had 10% or lower harvest rates, although two MPs with a 20% harvest rate did meet the conservation objective because they use a higher lower OCP (see Section '\nameref{sec:ref-pts}') of $0.5\SB_0$.
 These MPs also result in more frequent fishery closures due to spawning biomass declined below the lower control point more frequently.
 While several MPs are able to meet core conservation objective of maintaining spawning
 biomass above the LRP with high probability (at least 75%)^\ref{fn:HighProb}^,
@@ -387,12 +387,12 @@ For management regions where multiple MPs meet the conservation objective,
 further ranking of the remaining objectives is needed in order to provide decision-makers with a tractable set of trade-off choices.
 However this was not undertaken with the first MSE cycle because a fully specified set of objectives has not yet been developed for each management area.
 
-Effective harvest rates for the past 10 years average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fluctuate at or near $0.3\mli{SB}_0$ (Figure \@ref(fig:storyboard-prd)d).
+Effective harvest rates for the past 10 years average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fluctuate at or near $0.3\SB_0$ (Figure \@ref(fig:storyboard-prd)d).
 Furthermore, adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity:
 states that were entered rapidly and were preceded by high biomass levels [@kronlund2017].
 
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to decrease slightly from `r f(prd_final_yr_sbt[2])`&nbsp;t in `r assess_yr` to an estimated `r f(prd_proj_sbt[2])`&nbsp;t (posterior medians).
-The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the LRP of $0.3\mli{SB}_0$ with `r f(prd_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-prd)).
+The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the LRP of $0.3\SB_0$ with `r f(prd_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-prd)).
 
 Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-table-prd).
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for PRD,
@@ -408,7 +408,7 @@ For management regions where multiple MPs meet the conservation objective, furth
 However this was not undertaken with the first MSE cycle because a fully specified set of objectives has not yet been developed for each management area.
 
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(cc_proj_sbt[2])`&nbsp;t (posterior median), decreasing from `r f(cc_final_yr_sbt[2])`&nbsp;t in `r assess_yr` (Table \@ref(tab:ref-points-cc)).
-The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3\mli{SB}_0$ with `r f(cc_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
+The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3\SB_0$ with `r f(cc_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
 Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-table-cc).
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for CC,
@@ -423,7 +423,7 @@ Results presented here may inform this on-going commitment.
 
 Closed-loop feedback simulations for the SoG showed that all tested MPs could maintain the spawning biomass above the LRP with 91% probability or higher across all OM scenarios,
 including the historical fixed cutoff MP which applied a constant escapement of 21,200&nbsp;t based on the 1996 stock assessment and `r target_hr*100`% harvest rate [@dfo2019a].
-Management procedures that included a 30,000&nbsp;t catch cap were able to maintain spawning biomass above a biomass level of $0.6\mli{SB}_0$ with 60% probability or higher across all OM scenarios.
+Management procedures that included a 30,000&nbsp;t catch cap were able to maintain spawning biomass above a biomass level of $0.6\SB_0$ with 60% probability or higher across all OM scenarios.
 
 A 30,000&nbsp;t catch cap was evaluated for the SoG;
 this cap was not often triggered, and thus did not limit the commercial fishery very often in simulations.
@@ -441,11 +441,11 @@ as well as substantial changes to the structural form of the assessment model.
 1. Use of separate lower and upper OCPs allows for altering the slope of the ramp portion of the HCR to better meet stock and fishery objectives by
 avoiding fishery closures and encouraging stock growth as more is learned about stock dynamics and the effects of fishing.
 
-In the absence of fishing, spawning biomass in 2020 is forecast at `r f(sog_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\mli{SB}_0$ with `r f(sog_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
+In the absence of fishing, spawning biomass in 2020 is forecast at `r f(sog_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\SB_0$ with `r f(sog_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
 Harvest recommendations for SoG stock in 2018/19 were provided by application of a MP that utilizes stock assessment estimates of
 forecast spawning biomass and 
-operational control points at $0.3\mli{SB}_0$ and $0.6\mli{SB}_0$,
+operational control points at $0.3\SB_0$ and $0.6\SB_0$,
 with a 20% target harvest rate and
 a maximum catch cap of 30,000&nbsp;t [@dfo2019a, Figure 4].
 
@@ -462,12 +462,12 @@ For the WCVI, simulation results showed that no tested MP could meet the conserv
 In addition, for the scenario where $M$ is most similar to the last 10 years (DIM), the historical fixed cutoff HCR only meet the conservation objective 56% of the time.
 
 Of the MPs that were simulation-tested across the three $M$ scenarios, the "best-performing" MP maintained spawning biomass above the LRP with a 74% probability.
-This MP implements a lower control point at the assessment model estimate of $0.5\mli{SB}_0$,
+This MP implements a lower control point at the assessment model estimate of $0.5\SB_0$,
 a 10% target harvest rate, and
 a maximum catch cap of 2,000&nbsp;t.
 
 In the absence of fishing, spawning biomass in 2020 is forecast at `r f(wcvi_proj_sbt[2])`&nbsp;t (posterior median)
-and is forecast to be below the LRP of $0.3\mli{SB}_0$ with `r f(wcvi_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
+and is forecast to be below the LRP of $0.3\SB_0$ with `r f(wcvi_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
 Given the best performing MP for the WCVI did not meet the minimum "high" probability of 75%,
 further simulation-testing of HCRs that include additional measures to ensure persistent stock growth away from the critical zone and towards identified biomass targets may be required.

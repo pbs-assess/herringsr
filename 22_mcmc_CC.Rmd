@@ -23,7 +23,7 @@ make.priors.posts.plot(major_models[[model_ind]],
 estimated parameters for the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 In addition, $B_0$ is unfished biomass,
-$\mli{SB}_0$ is unfished spawning biomass,
+$\SB_0$ is unfished spawning biomass,
 $\mli{SSB}$ is spawning biomass,
 $\hat{a}$ is selectivity-at-age-50%, and
 $\hat{\gamma}$ is selectivity standard deviation-at-50%.
@@ -61,7 +61,7 @@ biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
 ```
 
-(ref:decision-table-cc) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 1-4 in Table \\@ref(tab:decision-table-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\mli{SB}_t$; mean statistics shown with green lines.")`
+(ref:decision-table-cc) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 1-4 in Table \\@ref(tab:decision-table-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
 ```{r hcr-cc, fig.cap = "(ref:decision-table-cc)"}
 region <- "CC"
 probs <- confidence_vals
@@ -93,7 +93,7 @@ cowplot::plot_grid(plot_hcr(mp.lst.cc[[1]][[1]],
                    axis = "tblr")
 ```
 
-(ref:decision-table-cc-2) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 5-8 in Table \\@ref(tab:decision-table-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\mli{SB}_t$; mean statistics shown with green lines.")`
+(ref:decision-table-cc-2) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 5-8 in Table \\@ref(tab:decision-table-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
 ```{r hcr-cc-2, fig.cap = "(ref:decision-table-cc-2)"}
 region <- "CC"
 probs <- confidence_vals 
@@ -124,7 +124,7 @@ cowplot::plot_grid(plot_hcr(mp.lst.cc[[1]][[5]],
                    align = c("v", "h"))
 ```
 
-(ref:decision-table-cc-3) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 9-10 in Table \\@ref(tab:decision-table-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\mli{SB}_t$; mean statistics shown with green lines.")`
+(ref:decision-table-cc-3) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 9-10 in Table \\@ref(tab:decision-table-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
 ```{r hcr-cc-3, fig.cap = "(ref:decision-table-cc-3)"}
 region <- "CC"
 probs <- confidence_vals 

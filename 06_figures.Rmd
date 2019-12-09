@@ -247,7 +247,7 @@ Panels (c & e): circles and vertical lines indicate medians and `r ci_level*100`
 Panel (f): phase plot of spawning biomass production for the dive survey period (`r new_surv_yr` to `r assess_yr-1`; median posterior estimates).
 Grey shading becomes darker in chronological order; the triangle indicates `r assess_yr-1`.
 Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% confidence intervals, respectively,
-for the limit reference point $0.3\mli{SB}_0$, where $\mli{SB}_0$ is estimated unfished spawning biomass.
+for the limit reference point $0.3\SB_0$, where $\SB_0$ is estimated unfished spawning biomass.
 Panels (e & f): horizontal dashed lines indicate zero.
 Note: biomass and catch are in thousands of tonnes (t).
 
@@ -876,9 +876,9 @@ cowplot::plot_grid(plot_a,
 ```
 
 (ref:harvest-rate-cap) Time series of effective harvest rate $U_t$ for Pacific Herring from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
-Effective harvest rate in year $t$ is calculated as $U_t = C_t/(C_t + \mli{SB}_t)$ where
+Effective harvest rate in year $t$ is calculated as $U_t = C_t/(C_t + \SB_t)$ where
 $C_t$ is catch in year $t$, and
-$\mli{SB}_t$ is estimated spawning biomass in year $t$.
+$\SB_t$ is estimated spawning biomass in year $t$.
 Black lines and shaded ribbons indicate medians and `r ci_level*100`% confidence intervals for $U_t$, respectively.
 Horizontal dashed lines indicate $U_t = `r target_hr`$.
 
@@ -900,13 +900,13 @@ plot_harvest_rate(major_catch,
                   translate = french)
 ```
 
-(ref:proj-biomass-density-cap) Projected spawning biomass assuming no fishing in `r assess_yr+1` $\mli{SB}_{`r assess_yr+1`}$ in thousands of tonnes (t) for Pacific Herring in the major stock assessment regions.
-Solid and dashed black lines indicate medians and `r ci_level*100`% confidence intervals for $\mli{SB}_{`r assess_yr+1`}$, respectively.
-Vertical red lines and shaded red areas indicate medians and `r ci_level*100`% confidence intervals for the limit reference point $0.3\mli{SB}_0$, respectively,
-where $\mli{SB}_0$ is estimated unfished spawning biomass.
+(ref:proj-biomass-density-cap) Projected spawning biomass assuming no fishing in `r assess_yr+1` $\SB_{`r assess_yr+1`}$ in thousands of tonnes (t) for Pacific Herring in the major stock assessment regions.
+Solid and dashed black lines indicate medians and `r ci_level*100`% confidence intervals for $\SB_{`r assess_yr+1`}$, respectively.
+Vertical red lines and shaded red areas indicate medians and `r ci_level*100`% confidence intervals for the limit reference point $0.3\SB_0$, respectively,
+where $\SB_0$ is estimated unfished spawning biomass.
 
 (ref:proj-biomass-density-cap-french) Biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en `r assess_yr+1` $\mli{BR}_{`r assess_yr+1`}$ en milliers de tonnes pour le hareng du Pacifique dans les régions d’évaluation des stocks majeurs.
-Les lignes noires pleines et tiretées indiquent les médianes et les intervalles de confiance de `r ci_level*100`%  pour $\mli{SB}_{`r assess_yr+1`}$, respectivement.
+Les lignes noires pleines et tiretées indiquent les médianes et les intervalles de confiance de `r ci_level*100`%  pour $\SB_{`r assess_yr+1`}$, respectivement.
 Les lignes et rectangles ombragés rouges indiquent les médianes et les intervalles de confiance de `r ci_level*100`% pour le point de référence limite, $0,3\mli{BR}_0$, où $\mli{BR}_0$ est la biomasse non exploitée estimée.
 
 ```{r proj-biomass-density, fig.asp = 1, fig.cap = ifelse(french, "(ref:proj-biomass-density-cap-french)", "(ref:proj-biomass-density-cap)")}

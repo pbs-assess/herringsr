@@ -30,7 +30,7 @@ The following list describes modifications specific to the assessment of Pacific
 
 1. Total mortality (i.e., 100% of $Z_t$) occurs prior to spawning, and
 
-1. Unfished spawning biomass is represented as $B_0$ in this section, and as $\mli{SB}_0$ in the main text.
+1. Unfished spawning biomass is represented as $B_0$ in this section, and as $\SB_0$ in the main text.
 
 ## Equilibrium considerations: steady-state age structured model
 
