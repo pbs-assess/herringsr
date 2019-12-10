@@ -20,10 +20,14 @@ spawn_index_table(minor_surv_short,
 ```
 
 (ref:minor-catch-cap) Time series of total landed catch in thousands of tonnes (t) of Pacific Herring from `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
-Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery; 'RoeGN' represents the roe gillnet fishery; and 'RoeSN' represents the roe seine fishery.
+Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery;
+'RoeGN' represents the roe gillnet fishery; and
+'RoeSN' represents the roe seine fishery.
 
 (ref:minor-catch-cap-french) Série chronologique des prises totales débarquées en milliers de tonnes (t) de hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr` dans les régions d’évaluation des stocks mineurs.
-Légende: «Autre» représente la réduction, ainsi que les pêches pratiquées à des fins de subsistance, pour le marché des appâts et pour des usages spéciaux; «RogueFM» représente la pêche au hareng rogué au filet maillant; et «RogueSN» représente la pêche au hareng rogué à la senne.
+Légende: «Autre» représente la réduction, ainsi que les pêches pratiquées à des fins de subsistance, pour le marché des appâts et pour des usages spéciaux;
+«RogueFM» représente la pêche au hareng rogué au filet maillant; et
+«RogueSN» représente la pêche au hareng rogué à la senne.
 
 ```{r app-minor-catch, fig.asp=0.45, fig.cap = ifelse(french, "(ref:minor-catch-cap-french)", "(ref:minor-catch-cap)")}
 plot_catch(minor_catch,
