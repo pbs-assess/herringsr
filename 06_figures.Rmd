@@ -243,7 +243,7 @@ Vertical bars indicate commercial catch, excluding spawn-on-kelp
 (see Figure \@ref(fig:major-catch) for legend).
 Panels (b & d): lines and shaded areas indicate medians and `r ci_level*100`% credible intervals, respectively.
 Panel (e): log recruitment deviations.
-Panels (c & e): circles and vertical lines indicate medians and `r ci_level*100`% credible intervals, respectively.
+Panels (c & e): timeseries start in `r major_start_yr+age_first`; circles and vertical lines indicate medians and `r ci_level*100`% credible intervals, respectively.
 Panel (f): phase plot of spawning biomass production for the dive survey period (`r new_surv_yr` to `r assess_yr-1`; median posterior estimates).
 Grey shading becomes darker in chronological order; the triangle indicates `r assess_yr-1`.
 Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% confidence intervals, respectively,
@@ -261,14 +261,14 @@ Le cercle et la ligne verticale indiquent la médiane et l’intervalle de créd
 Les barres verticales indiquent les prises commerciales $C_t$, à l’exclusion des prises d’oeufs sur varech (voir la figure \@ref(fig:major-catch) pour la légende).
 Panneaux (b et d): les lignes et les zones ombragées indiquent les médianes et les intervalles de crédibilité de `r ci_level*100`%, respectivement.
 Panneau (e): log des écarts du recrutement.
-Panneaux (c et e): les cercles et les lignes verticales indiquent les médianes et les intervalles de crédibilité de `r ci_level*100`%, respectivement.
+Panneaux (c et e): les séries chronologiques commencent en `r major_start_yr+age_first`; les cercles et les lignes verticales indiquent les médianes et les intervalles de crédibilité de `r ci_level*100`%, respectivement.
 Panneau (f): diagramme de phase de la production de la biomasse reproductrice pour la période du relevé de plongée (de `r new_surv_yr` à `r assess_yr-1`; estimations a posteriori médian).
 L’ombrage gris est de plus en plus foncé à mesure que l’on avance dans la série chronologique; le triangle indique `r assess_yr-1`.
 Panneaux (d et f): les lignes rouges et l’ombrage indiquent les médianes et les intervalles de confiance de `r ci_level*100`%, respectivement, pour le point de référence limite $0,3\SB_0$, où $\SB_0$ est la biomasse reproductrice non exploitée estimée.
 Panneaux (e & f): les lignes pointillées horizontales indiquent zéro.
 Note: la biomasse et les prises sont exprimées en milliers de tonnes (t).
 
-```{r storyboard-hg, out.height="6.2in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-hg-cap-french)", "(ref:storyboard-hg-cap)")}
+```{r storyboard-hg, out.height=ifelse(french,"5.5in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-hg-cap-french)", "(ref:storyboard-hg-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -417,7 +417,7 @@ See Figure \@ref(fig:storyboard-hg) for description.
 (ref:storyboard-prd-cap-french) Production d’un modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans la région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-prd, out.height="6.2in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-prd-cap-french)", "(ref:storyboard-prd-cap)")}
+```{r storyboard-prd, out.height=ifelse(french,"5.5in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-prd-cap-french)", "(ref:storyboard-prd-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -565,7 +565,7 @@ See Figure \@ref(fig:storyboard-hg) for description.
 (ref:storyboard-cc-cap-french) Production d’un modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte centrale.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-cc, out.height="6.2in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-cc-cap-french)", "(ref:storyboard-cc-cap)")}
+```{r storyboard-cc, out.height=ifelse(french,"5.5in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-cc-cap-french)", "(ref:storyboard-cc-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -713,7 +713,7 @@ See Figure \@ref(fig:storyboard-hg) for description.
 (ref:storyboard-sog-cap-french) Production d’un modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans la région d’évaluation des stocks majeur du détroit de Georgie.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-sog, out.height="6.2in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-sog-cap-french)", "(ref:storyboard-sog-cap)")}
+```{r storyboard-sog, out.height=ifelse(french,"5.5in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-sog-cap-french)", "(ref:storyboard-sog-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -861,7 +861,7 @@ See Figure \@ref(fig:storyboard-hg) for description.
 (ref:storyboard-wcvi-cap-french) Production d’un modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-wcvi, out.height="6.2in", fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-french)", "(ref:storyboard-wcvi-cap)")}
+```{r storyboard-wcvi, out.height=ifelse(french,"5.5in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-french)", "(ref:storyboard-wcvi-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
