@@ -231,7 +231,8 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 <!-- Haida Gwaii Storyboard -->
-(ref:storyboard-hg-cap) Model output for Pacific Herring from `r major_start_yr` to `r major_end_yr` in the Haida Gwaii major stock assessment region.
+(ref:storyboard-hg-cap) Time series of model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`
+in the Haida Gwaii major stock assessment region.
 Panel (a): model fit (median posterior estimate; lines) to scaled spawn survey data (points).
 Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey scaling parameter $q$ (median posterior estimate).
 Panel (b): posterior estimates of instantaneous natural mortality rate (year^-1^).
@@ -243,7 +244,7 @@ Vertical bars indicate commercial catch, excluding spawn-on-kelp
 (see Figure \@ref(fig:major-catch) for legend).
 Panels (b & d): lines and shaded areas indicate medians and `r ci_level*100`% credible intervals, respectively.
 Panel (e): log recruitment deviations.
-Panels (c & e): timeseries start in `r major_start_yr+age_first`; circles and vertical lines indicate medians and `r ci_level*100`% credible intervals, respectively.
+Panels (c & e): time series start in `r major_start_yr+age_first`; circles and vertical lines indicate medians and `r ci_level*100`% credible intervals, respectively.
 Panel (f): phase plot of spawning biomass production for the dive survey period (`r new_surv_yr` to `r assess_yr-1`; median posterior estimates).
 Grey shading becomes darker in chronological order; the triangle indicates `r assess_yr-1`.
 Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% confidence intervals, respectively,
@@ -251,7 +252,8 @@ for the limit reference point $0.3\SB_0$, where $\SB_0$ is estimated unfished sp
 Panels (e & f): horizontal dashed lines indicate zero.
 Note: biomass and catch are in thousands of tonnes (t).
 
-(ref:storyboard-hg-cap-french) Production d’un modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans la région d’évaluation des stocks majeur de Haida Gwaii.
+(ref:storyboard-hg-cap-french) Séries chronologiques de sorties de modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr`
+dans la région d’évaluation des stocks majeur de Haida Gwaii.
 Panneau (a): ajustement du modèle (estimations a posteriori médian; lignes) aux données mises à l’échelle de relevé du frai (points).
 Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai $q$ (estimations a posteriori médian).
 Panneau (b): estimations a posteriori du taux de mortalité naturelle instantanée (année^-1^).
@@ -411,10 +413,12 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 <!-- Prince Rupert District Storyboard -->
-(ref:storyboard-prd-cap) Model output for Pacific Herring from `r major_start_yr` to `r major_end_yr` in the Prince Rupert District major stock assessment region.
+(ref:storyboard-prd-cap) Time series of model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`
+in the Prince Rupert District major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
 
-(ref:storyboard-prd-cap-french) Production d’un modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans la région d’évaluation des stocks majeur du district de Prince Rupert.
+(ref:storyboard-prd-cap-french) Séries chronologiques de sorties de modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr`
+dans la région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
 ```{r storyboard-prd, out.height=ifelse(french,"5.5in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-prd-cap-french)", "(ref:storyboard-prd-cap)")}
@@ -559,10 +563,12 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 <!-- Central Coast Storyboard -->
-(ref:storyboard-cc-cap) Model output for Pacific Herring from `r major_start_yr` to `r major_end_yr` in the Central Coast major stock assessment region.
+(ref:storyboard-cc-cap) Time series of model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`
+in the Central Coast major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
 
-(ref:storyboard-cc-cap-french) Production d’un modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte centrale.
+(ref:storyboard-cc-cap-french) Séries chronologiques de sorties de modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr`
+dans la région d’évaluation des stocks majeur de la côte centrale.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
 ```{r storyboard-cc, out.height=ifelse(french,"5.5in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-cc-cap-french)", "(ref:storyboard-cc-cap)")}
@@ -707,10 +713,12 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 <!-- Strait of Georgia Storyboard -->
-(ref:storyboard-sog-cap) Model output for Pacific Herring from `r major_start_yr` to `r major_end_yr` in the Strait of Georgia major stock assessment region.
+(ref:storyboard-sog-cap) Time series of model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`
+in the Strait of Georgia major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
 
-(ref:storyboard-sog-cap-french) Production d’un modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans la région d’évaluation des stocks majeur du détroit de Georgie.
+(ref:storyboard-sog-cap-french) Séries chronologiques de sorties de modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr`
+dans la région d’évaluation des stocks majeur du détroit de Georgie.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
 ```{r storyboard-sog, out.height=ifelse(french,"5.5in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-sog-cap-french)", "(ref:storyboard-sog-cap)")}
@@ -855,10 +863,12 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 <!-- West Coast of Vancouver Island Storyboard -->
-(ref:storyboard-wcvi-cap) Model output for Pacific Herring from `r major_start_yr` to `r major_end_yr` in the West Coast of Vancouver Island major stock assessment region.
+(ref:storyboard-wcvi-cap) Time series of model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`
+in the West Coast of Vancouver Island major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
 
-(ref:storyboard-wcvi-cap-french) Production d’un modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+(ref:storyboard-wcvi-cap-french) Séries chronologiques de sorties de modèle pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr`
+dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
 ```{r storyboard-wcvi, out.height=ifelse(french,"5.5in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-french)", "(ref:storyboard-wcvi-cap)")}
