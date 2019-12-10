@@ -36,7 +36,7 @@ plot_catch(minor_catch,
 ```
 
 (ref:minor-wa-cap) Time series of weight-at-age in kilograms (kg) for age-`r age_highlight` (circles) and `r nRollWA`-year running mean weight-at-age (lines) for Pacific Herring from `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
-Lines show `r nRollWA`-year running means for age-`r min(as.integer(names(minor_wa)), na.rm=TRUE)` to age-`r age_plus` herring (incrementing higher from the lowest line);
+Lines show `r nRollWA`-year running means for age-`r age_first` to age-`r age_plus` herring (incrementing higher from the lowest line);
 the thick black line highlights age-`r age_highlight` herring.
 Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods:
 missing values at the beginning of the time series are imputed by extending the frst non-missing value backwards;
@@ -46,7 +46,7 @@ The age-`r age_plus` class is a 'plus group' which includes fish ages `r age_plu
 Note: vertical axes are cropped at `r wa_ylim[1]` and `r wa_ylim[2]` kg.
 
 (ref:minor-wa-cap-french) Série chronologique du poids selon l’âge en kilogrammes (kg) pour les poissons de `r age_highlight` ans (cercles) et des moyennes mobiles sur `r nRollWA` ans du poids selon l’âge (lignes) pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr` dans les régions d’évaluation des stocks mineurs.
-Les lignes indiquent les moyennes mobiles sur `r nRollWA` ans pour le hareng âgé de `r min(as.integer(names(minor_wa)), na.rm=TRUE)` à `r age_plus` ans (en ordre croissant à partir de la ligne inférieure); la ligne noire épaisse met en évidence le hareng âgé de `r age_highlight` ans.
+Les lignes indiquent les moyennes mobiles sur `r nRollWA` ans pour le hareng âgé de `r age_first` à `r age_plus` ans (en ordre croissant à partir de la ligne inférieure); la ligne noire épaisse met en évidence le hareng âgé de `r age_highlight` ans.
 Les valeurs manquantes du poids selon l’âge (c.-à-d. les années où il n’y a pas d’échantillons biologiques) sont imputées selon l’une des deux méthodes suivantes:
 les valeurs manquantes au début de la série chronologique sont imputées en étendant la première valeur non manquante à rebours;
 les autres valeurs manquantes sont imputées comme la moyenne des `r nRollWA` années précédentes.
