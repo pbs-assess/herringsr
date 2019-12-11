@@ -38,7 +38,7 @@ knit: bookdown::render_book
 site: bookdown::bookdown_site
 link-citations: true
 bibliography: bib/refs.bib
-# bibliography: bib/refsFr.bib
+# bibliography: bib/refs_fr.bib
 csl: csl/csas.csl
 lot: true
 lof: true
