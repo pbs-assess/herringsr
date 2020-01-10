@@ -8,7 +8,7 @@ title_other: "Mise à jour de l'état des stocks avec application des procédure
 year: 2020
 month: January
 # month: Janvier
-report_number: nnn
+report_number: 004
 approver: |
   Carmel Lowe\
   Regional Director
