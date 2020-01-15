@@ -15,10 +15,10 @@ relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
 L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
 ```{r data-input}
-input_data_table(inp_catch,
+input_data_table(tab = inp_catch,
                  cap = ifelse(french, "(ref:data-input-cap-french)",
                               "(ref:data-input-cap)"),
-                 french,
+                 translate = french,
                  longtable = FALSE)
 ```
 
@@ -31,12 +31,12 @@ Légende: `r commify(major_regions_full_parens, and_word="et")`.
 Remarque: «DT» indique que les données ne sont pas divulguées pour des raisons de confidentialité.
 
 ```{r annual-catch}
-total_landed_catch_table(major_catch_short,
+total_landed_catch_table(tab = major_catch_short,
                          by_vec = major_regions_short,
                          first_yr = major_end_yr-num_yrs_tab,
                          cap = ifelse(french, "(ref:annual-catch-cap-french)",
                                       "(ref:annual-catch-cap)"),
-                         french,
+                         translate = french,
                          longtable = FALSE)
 ```
 
@@ -49,12 +49,12 @@ Légende: `r commify(major_regions_full_parens, and_word="et")`.
 Remarque: «DT» indique que les données ne sont pas divulguées pour des raisons de confidentialité.
 
 ```{r annual-sok-catch}
-sok_harvest_table(sok,
+sok_harvest_table(tab = sok,
                   by_vec = major_regions_short,
                   first_yr = major_end_yr-num_yrs_tab,
                   cap = ifelse(french, "(ref:annual-sok-catch-cap-french)",
                                "(ref:annual-sok-catch-cap)"),
-                  french,
+                  translate = french,
                   longtable = FALSE)
 ```
 
@@ -72,7 +72,7 @@ spawn_index_by_area_table(ps[[en2fr("HG", french)]],
                                        "(ref:spawn-index-hg-cap-french)",
                                        "(ref:spawn-index-hg-cap)"),
                           first_yr = major_end_yr-num_yrs_tab,
-                          french,
+                          translate = french,
                           longtable = FALSE)
 ```
 
