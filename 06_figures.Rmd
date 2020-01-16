@@ -27,7 +27,7 @@ Légende: «Autre» représente la réduction, ainsi que les pêches pratiquées
 «RogueSN» représente la pêche au hareng rogué à la senne.
 
 ```{r major-catch, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-catch-cap-french)", "(ref:major-catch-cap)")}
-plot_catch(major_catch,
+plot_catch(df = major_catch,
            xlim = c(recent_catch_yr, major_end_yr),
            translate = french)
 ```
@@ -52,7 +52,7 @@ La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui com
 Notez que les axes verticaux sont coupés à `r wa_ylim[1]` et `r wa_ylim[2]` kg.
 
 ```{r major-wa, fig.asp = 1, fig.cap = ifelse(french, "(ref:major-wa-cap-french)", "(ref:major-wa-cap)")}
-plot_wa(major_wa,
+plot_wa(df = major_wa,
         circle_age = age_highlight,
         xlim = c(major_start_yr, major_end_yr),
         ylim = wa_ylim,
@@ -71,7 +71,7 @@ Les résumés biologiques ne comprennent que les échantillons prélevés à l�
 La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui comprend les poissons âgés de `r age_plus` ans et plus.
 
 ```{r major-pa, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-pa-cap-french)", "(ref:major-pa-cap)")}
-plot_pa(major_pa,
+plot_pa(df = major_pa,
         age_plus = age_plus,
         conf = ci_level,
         xlim = c(major_start_yr, major_end_yr),
@@ -94,7 +94,7 @@ La ligne verticale en pointillés est la limite entre ces deux périodes.
 L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
 ```{r major-spawn-index, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-spawn-index-cap-french)", "(ref:major-spawn-index-cap)")}
-plot_spawn_ind(major_surv,
+plot_spawn_ind(df = major_surv,
                xlim = c(major_start_yr, major_end_yr),
                new_surv_yr = new_surv_yr,
                translate = french)
@@ -904,7 +904,7 @@ Les lignes noires et les zones ombragées indiquent les médianes et intervalles
 Les lignes en tirets horizontales indiquent $U_t = `r target_hr`$.
 
 ```{r harvest-rate, fig.asp = 1, fig.cap = ifelse(french, "(ref:harvest-rate-cap-french)", "(ref:harvest-rate-cap)")}
-plot_harvest_rate(major_catch,
+plot_harvest_rate(df = major_catch,
                   major_models,
                   major_regions_full,
                   line_size = 1,

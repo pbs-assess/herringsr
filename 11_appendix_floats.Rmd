@@ -10,13 +10,12 @@ Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide du para
 «NA» indique que les données ne sont pas disponibles.
 
 ```{r app-minor-survey-indices-tab}
-spawn_index_table(minor_surv_short,
+spawn_index_table(tab = minor_surv_short,
                   by_vec = minor_regions_short,
                   first_yr = minor_end_yr-num_yrs_tab,
                   cap = ifelse(french, "(ref:app-minor-survey-indices-tab-cap-french)",
                                "(ref:app-minor-survey-indices-tab-cap)"),
-                  french,
-                  longtable = FALSE)
+                  translate = french)
 ```
 
 (ref:minor-catch-cap) Time series of total landed catch in thousands of tonnes (t) of Pacific Herring from `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
@@ -30,7 +29,7 @@ Légende: «Autre» représente la réduction, ainsi que les pêches pratiquées
 «RogueSN» représente la pêche au hareng rogué à la senne.
 
 ```{r app-minor-catch, fig.asp=0.45, fig.cap = ifelse(french, "(ref:minor-catch-cap-french)", "(ref:minor-catch-cap)")}
-plot_catch(minor_catch,
+plot_catch(df = minor_catch,
            xlim = c(minor_start_yr_plot, minor_end_yr),
            translate = french)
 ```
@@ -55,7 +54,7 @@ La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui com
 Notez que les axes verticaux sont coupés à `r wa_ylim[1]` et `r wa_ylim[2]` kg.
 
 ```{r app-minor-weight-at-age, fig.asp=0.375, fig.cap = ifelse(french, "(ref:minor-wa-cap-french)", "(ref:minor-wa-cap)")}
-plot_wa(minor_wa,
+plot_wa(df = minor_wa,
         circle_age = 3,
         xlim = c(minor_start_yr_plot, minor_end_yr),
         ylim = wa_ylim,
@@ -74,7 +73,7 @@ Les résumés biologiques ne comprennent que les échantillons prélevés à l�
 La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui comprend les poissons âgés de `r age_plus` ans et plus.
 
 ```{r app-minor-proportions-at-age, fig.asp=0.45, fig.cap = ifelse(french, "(ref:minor-pa-cap-french)", "(ref:minor-pa-cap)")}
-plot_pa(minor_pa,
+plot_pa(df = minor_pa,
         age_plus = age_plus,
         conf = ci_level,
         xlim = c(minor_start_yr_plot, minor_end_yr),
@@ -97,7 +96,7 @@ La ligne verticale en pointillés est la limite entre ces deux périodes.
 L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
 ```{r app-minor-survey-indices-fig, fig.asp=0.45, fig.cap = ifelse(french, "(ref:minor-spawn-index-cap-french)", "(ref:minor-spawn-index-cap)")}
-plot_spawn_ind(minor_surv,
+plot_spawn_ind(df = minor_surv,
                xlim = c(minor_start_yr_plot, minor_end_yr),
                new_surv_yr = new_surv_yr,
                translate = french)
