@@ -18,8 +18,7 @@ L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de 
 input_data_table(tab = inp_catch,
                  cap = ifelse(french, "(ref:data-input-cap-french)",
                               "(ref:data-input-cap)"),
-                 translate = french,
-                 longtable = FALSE)
+                 translate = french)
 ```
 
 (ref:annual-catch-cap) Total landed catch in tonnes of Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the major stock assessment regions (SARs).
@@ -36,8 +35,7 @@ total_landed_catch_table(tab = major_catch_short,
                          first_yr = major_end_yr-num_yrs_tab,
                          cap = ifelse(french, "(ref:annual-catch-cap-french)",
                                       "(ref:annual-catch-cap)"),
-                         translate = french,
-                         longtable = FALSE)
+                         translate = french)
 ```
 
 (ref:annual-sok-catch-cap) Total spawn-on-kelp harvest, reported as pounds of Pacific Herring eggs on kelp, from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the major stock assessment regions (SARs).
@@ -54,8 +52,7 @@ sok_harvest_table(tab = sok,
                   first_yr = major_end_yr-num_yrs_tab,
                   cap = ifelse(french, "(ref:annual-sok-catch-cap-french)",
                                "(ref:annual-sok-catch-cap)"),
-                  translate = french,
-                  longtable = FALSE)
+                  translate = french)
 ```
 
 (ref:spawn-index-hg-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Haida Gwaii major stock assessment region.
@@ -72,8 +69,7 @@ spawn_index_by_area_table(ps[[en2fr("HG", french)]],
                                        "(ref:spawn-index-hg-cap-french)",
                                        "(ref:spawn-index-hg-cap)"),
                           first_yr = major_end_yr-num_yrs_tab,
-                          translate = french,
-                          longtable = FALSE)
+                          translate = french)
 ```
 
 (ref:spawn-index-pr-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Prince Rupert District major stock assessment region.
@@ -88,8 +84,7 @@ spawn_index_by_area_table(ps[[en2fr("PRD", french)]],
                                        "(ref:spawn-index-pr-cap-french)",
                                        "(ref:spawn-index-pr-cap)"),
                           first_yr = major_end_yr-num_yrs_tab,
-                          translate = french,
-                          longtable = FALSE)
+                          translate = french)
 ```
 
 (ref:spawn-index-cc-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Central Coast major stock assessment region.
@@ -104,8 +99,7 @@ spawn_index_by_area_table(ps[[en2fr("CC", french)]],
                                        "(ref:spawn-index-cc-cap-french)",
                                        "(ref:spawn-index-cc-cap)"),
                           first_yr = major_end_yr-num_yrs_tab,
-                          translate = french,
-                          longtable = FALSE)
+                          translate = french)
 ```
 
 (ref:spawn-index-sog-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Strait of Georgia major stock assessment region.
@@ -122,8 +116,7 @@ spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
                                        "(ref:spawn-index-sog-cap-french)",
                                        "(ref:spawn-index-sog-cap)"),
                           first_yr = major_end_yr-num_yrs_tab,
-                          translate = french,
-                          longtable = FALSE)
+                          translate = french)
 ```
 
 (ref:spawn-index-wcvi-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the West Coast of Vancouver Island major stock assessment region.
@@ -138,8 +131,7 @@ spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
                                        "(ref:spawn-index-wcvi-cap-french)",
                                        "(ref:spawn-index-wcvi-cap)"),
                           first_yr = major_end_yr-num_yrs_tab,
-                          translate = french,
-                          longtable = FALSE)
+                          translate = french)
 ```
 
 (ref:hg-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the Haida Gwaii major stock assessment region.
