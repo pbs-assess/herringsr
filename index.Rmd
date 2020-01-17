@@ -26,7 +26,7 @@ address: |
   Fisheries and Oceans Canada, 3190 Hammond Bay Road\
   Nanaimo, British Columbia, V9T 6N7, Canada
 phone: (250) 756-7208
-email: csap@dfo-mpo.gc.ca
+email: csas-sccs@dfo-mpo.gc.ca
 output:
   csasdown::sr_pdf:
    french: false
