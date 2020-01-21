@@ -21,12 +21,6 @@ branch: Science Branch
 # branch: Secteur des sciences
 region: Pacific Region
 # region: Région du Pacifique
-address: |
-  Pacific Biological Station\
-  Fisheries and Oceans Canada, 3190 Hammond Bay Road\
-  Nanaimo, British Columbia, V9T 6N7, Canada
-phone: (250) 756-7208
-email: csas-sccs@dfo-mpo.gc.ca
 output:
   csasdown::sr_pdf:
    french: false
