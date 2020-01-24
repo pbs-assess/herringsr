@@ -24,7 +24,7 @@ region: Pacific Region
 output:
   csasdown::sr_pdf:
    french: false
-   # prepub: false
+   prepub: false
 type:
   sr
 # End of options to set
