@@ -8,18 +8,18 @@ The first `r f(mcmc_burnin)` samples were discarded (burn-in),
 leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for posteriors.
 These diagnostics will not be included in the final document.
 
-(ref:sog-priors-posts-figure) Prior probability distributions (lines) with
+(ref:sog-priors-posts-figure-cap) Prior probability distributions (lines) with
 comparative posterior histograms (bars) used in the Strait of Georgia major stock assessment region.
 The dotted red lines are maximum posterior density estimates.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-```{r sog-priors-posts-figure, fig.cap = "(ref:sog-priors-posts-figure)"}
+```{r sog-priors-posts-figure, fig.cap = "(ref:sog-priors-posts-figure-cap)"}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
 ```
 
-(ref:sog-traces-figure) Trace plots for Markov chain Monte Carlo output of
+(ref:sog-traces-figure-cap) Trace plots for Markov chain Monte Carlo output of
 estimated parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 In addition, $B_0$ is unfished biomass,
@@ -30,33 +30,33 @@ $\hat{\gamma}$ is selectivity standard deviation-at-50%.
 Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
 1 is other fisheries, 2 is roe seine, and 3 is roe gillnet.
 
-```{r sog-traces-figure, fig.asp=1, fig.cap="(ref:sog-traces-figure)"}
+```{r sog-traces-figure, fig.asp=1, fig.cap="(ref:sog-traces-figure-cap)"}
 make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
 
-(ref:sog-autocor-figure) Auto-correlation plots for Markov chain Monte Carlo output of
+(ref:sog-autocor-figure-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:sog-traces-figure) for description.
+Figure \@ref(fig:sog-traces-figure-cap) for description.
 
-```{r sog-autocor-figure, fig.asp=1, fig.cap = "(ref:sog-autocor-figure)"}
+```{r sog-autocor-figure, fig.asp=1, fig.cap = "(ref:sog-autocor-figure-cap)"}
 make.autocor.plot(major_models[[model_ind]])
 ```
 
-(ref:sog-pairs-figure) Pairs plots for Markov chain Monte Carlo output of
+(ref:sog-pairs-figure-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:sog-traces-figure) for description.
+Figure \@ref(fig:sog-traces-figure-cap) for description.
 
-```{r sog-pairs-figure, fig.asp=1, fig.cap = "(ref:sog-pairs-figure)"}
+```{r sog-pairs-figure, fig.asp=1, fig.cap = "(ref:sog-pairs-figure-cap)"}
 make.pairs.plot(major_models[[model_ind]])
 ```
 
-(ref:sog-biomass-retro-figure) Maximum posterior density spawning biomass
+(ref:sog-biomass-retro-figure-cap) Maximum posterior density spawning biomass
 with retrospectives for the Strait of Georgia major stock assessment region.
 
-```{r sog-biomass-retro-figure, fig.cap = "(ref:sog-biomass-retro-figure)"}
+```{r sog-biomass-retro-figure, fig.cap = "(ref:sog-biomass-retro-figure-cap)"}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
 ```

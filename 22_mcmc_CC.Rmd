@@ -8,18 +8,18 @@ The first `r f(mcmc_burnin)` samples were discarded (burn-in),
 leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for posteriors.
 These diagnostics will not be included in the final document.
 
-(ref:cc-priors-posts-figure) Prior probability distributions (lines) with
+(ref:cc-priors-posts-figure-cap) Prior probability distributions (lines) with
 comparative posterior histograms (bars) used in the Central Coast major stock assessment region.
 The dotted red lines are maximum posterior density estimates.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-```{r cc-priors-posts-figure, fig.cap = "(ref:cc-priors-posts-figure)"}
+```{r cc-priors-posts-figure, fig.cap = "(ref:cc-priors-posts-figure-cap)"}
 model_ind <- match(en2fr("CC", french), major_regions_short)
 make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
 ```
 
-(ref:cc-traces-figure) Trace plots for Markov chain Monte Carlo output of
+(ref:cc-traces-figure-cap) Trace plots for Markov chain Monte Carlo output of
 estimated parameters for the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 In addition, $B_0$ is unfished biomass,
@@ -30,33 +30,33 @@ $\hat{\gamma}$ is selectivity standard deviation-at-50%.
 Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
 1 is other fisheries, 2 is roe seine, and 3 is roe gillnet.
 
-```{r cc-traces-figure, fig.asp=1, fig.cap="(ref:cc-traces-figure)"}
+```{r cc-traces-figure, fig.asp=1, fig.cap="(ref:cc-traces-figure-cap)"}
 make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
 
-(ref:cc-autocor-figure) Auto-correlation plots for Markov chain Monte Carlo output of
+(ref:cc-autocor-figure-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:cc-traces-figure) for description.
+Figure \@ref(fig:cc-traces-figure-cap) for description.
 
-```{r cc-autocor-figure, fig.asp=1, fig.cap = "(ref:cc-autocor-figure)"}
+```{r cc-autocor-figure, fig.asp=1, fig.cap = "(ref:cc-autocor-figure-cap)"}
 make.autocor.plot(major_models[[model_ind]])
 ```
 
-(ref:cc-pairs-figure) Pairs plots for Markov chain Monte Carlo output of
+(ref:cc-pairs-figure-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:cc-traces-figure) for description.
+Figure \@ref(fig:cc-traces-figure-cap) for description.
 
-```{r cc-pairs-figure, fig.asp=1, fig.cap = "(ref:cc-pairs-figure)"}
+```{r cc-pairs-figure, fig.asp=1, fig.cap = "(ref:cc-pairs-figure-cap)"}
 make.pairs.plot(major_models[[model_ind]])
 ```
 
-(ref:cc-biomass-retro-figure) Maximum posterior density of spawning biomass
+(ref:cc-biomass-retro-figure-cap) Maximum posterior density of spawning biomass
 with retrospectives for the Central Coast major stock assessment region.
 
-```{r cc-biomass-retro-figure, fig.cap = "(ref:cc-biomass-retro-figure)"}
+```{r cc-biomass-retro-figure, fig.cap = "(ref:cc-biomass-retro-figure-cap)"}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
 ```
