@@ -11,6 +11,7 @@ These diagnostics will not be included in the final document.
 (ref:sog-priors-posts-figure-cap) Prior probability distributions (lines) with
 comparative posterior histograms (bars) used in the Strait of Georgia major stock assessment region.
 The dotted red lines are maximum posterior density estimates.
+Legend: ln is natural log.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
 ```{r sog-priors-posts-figure, fig.cap = "(ref:sog-priors-posts-figure-cap)"}

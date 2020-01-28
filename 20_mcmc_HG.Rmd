@@ -11,9 +11,12 @@ These diagnostics will not be included in the final document.
 (ref:hg-priors-posts-figure-cap) Prior probability distributions (lines) with
 comparative posterior histograms (bars) used in the Haida Gwaii major stock assessment region.
 The dotted red lines are maximum posterior density estimates.
+Legend: ln is natural log.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-```{r hg-priors-posts-figure, fig.cap = "(ref:hg-priors-posts-figure-cap)"}
+(ref:hg-priors-posts-figure-cap-fr) French caption.
+
+```{r hg-priors-posts-figure, fig.cap = ifelse(french,"(ref:hg-priors-posts-figure-cap-fr)","(ref:hg-priors-posts-figure-cap)")}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
@@ -30,7 +33,9 @@ $\hat{\gamma}$ is selectivity standard deviation-at-50%.
 Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
 1 is other fisheries, 2 is roe seine, and 3 is roe gillnet.
 
-```{r hg-traces-figure, fig.asp=1, fig.cap="(ref:hg-traces-figure-cap)"}
+(ref:hg-traces-figure-cap-fr) French caption.
+
+```{r hg-traces-figure, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-traces-figure-cap-fr)", "(ref:hg-traces-figure-cap)")}
 make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
@@ -40,7 +45,9 @@ estimated parameters for the Haida Gwaii major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
 Figure \@ref(fig:hg-traces-figure) for description.
 
-```{r hg-autocor-figure, fig.asp=1, fig.cap = "(ref:hg-autocor-figure-cap)"}
+(ref:hg-autocor-figure-cap-fr) French caption.
+
+```{r hg-autocor-figure, fig.asp=1, fig.cap = ifelse(french, "(ref:hg-autocor-figure-cap-fr)", "(ref:hg-autocor-figure-cap)")}
 make.autocor.plot(major_models[[model_ind]])
 ```
 
@@ -49,14 +56,18 @@ estimated parameters for the Haida Gwaii major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
 Figure \@ref(fig:hg-traces-figure) for description.
 
-```{r hg-pairs-figure, fig.asp=1, fig.cap = "(ref:hg-pairs-figure-cap)"}
+(ref:hg-pairs-figure-cap-fr) French caption.
+
+```{r hg-pairs-figure, fig.asp=1, fig.cap = ifelse(french, "(ref:hg-pairs-figure-cap-fr)", "(ref:hg-pairs-figure-cap)")}
 make.pairs.plot(major_models[[model_ind]])
 ```
 
 (ref:hg-biomass-retro-figure-cap) Maximum posterior density of spawning biomass
 with retrospectives for the Haida Gwaii major stock assessment region.
 
-```{r hg-biomass-retro-figure, fig.cap = "(ref:hg-biomass-retro-figure-cap)"}
+(ref:hg-biomass-retro-figure-cap-fr) French caption.
+
+```{r hg-biomass-retro-figure, fig.cap = ifelse(french, "(ref:hg-biomass-retro-figure-cap-fr)", "(ref:hg-biomass-retro-figure-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
 ```
