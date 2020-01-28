@@ -47,7 +47,7 @@ Figure \@ref(fig:prd-traces-figure) for description.
 
 (ref:prd-autocor-figure-cap-fr) French caption.
 
-```{r prd-autocor-figure, fig.asp=1, fig.cap="(ref:prd-autocor-figure-cap)"}
+```{r prd-autocor-figure, fig.asp=1, fig.cap=ifelse(french, "(ref:prd-autocor-figure-cap-fr)", "(ref:prd-autocor-figure-cap)")}
 make.autocor.plot(major_models[[model_ind]])
 ```
 
@@ -56,14 +56,18 @@ estimated parameters for the Prince Rupert District major stock assessment regio
 See Table \@ref(tab:hg-parameter-est-table) and
 Figure \@ref(fig:prd-traces-figure) for description.
 
-```{r prd-pairs-figure, fig.asp=1, fig.cap="(ref:prd-pairs-figure-cap)"}
+(ref:prd-pairs-figure-cap-fr) French caption.
+
+```{r prd-pairs-figure, fig.asp=1, fig.cap=ifelse(french, "(ref:prd-pairs-figure-cap-fr)", "(ref:prd-pairs-figure-cap)")}
 make.pairs.plot(major_models[[model_ind]])
 ```
 
 (ref:prd-biomass-retro-figure-cap) Maximum posterior density of spawning biomass
 with retrospectives for the Prince Rupert District major stock assessment region.
 
-```{r prd-biomass-retro-figure, fig.cap="(ref:prd-biomass-retro-figure-cap)"}
+(ref:prd-biomass-retro-figure-cap-fr) French caption.
+
+```{r prd-biomass-retro-figure, fig.cap=ifelse(french, "(ref:prd-biomass-retro-figure-cap-fr)", "(ref:prd-biomass-retro-figure-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
 ```

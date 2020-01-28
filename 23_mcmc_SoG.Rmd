@@ -14,7 +14,9 @@ The dotted red lines are maximum posterior density estimates.
 Legend: ln is natural log.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-```{r sog-priors-posts-figure, fig.cap="(ref:sog-priors-posts-figure-cap)"}
+(ref:sog-priors-posts-figure-cap-fr) French caption.
+
+```{r sog-priors-posts-figure, fig.cap=ifelse(french, "(ref:sog-priors-posts-figure-cap-fr)", "(ref:sog-priors-posts-figure-cap)")}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
@@ -31,7 +33,9 @@ $\hat{\gamma}$ is selectivity standard deviation-at-50%.
 Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
 1 is other fisheries, 2 is roe seine, and 3 is roe gillnet.
 
-```{r sog-traces-figure, fig.asp=1, fig.cap="(ref:sog-traces-figure-cap)"}
+(ref:sog-traces-figure-cap-fr) French caption.
+
+```{r sog-traces-figure, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-traces-figure-cap-fr)", "(ref:sog-traces-figure-cap)")}
 make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
@@ -41,7 +45,9 @@ estimated parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
 Figure \@ref(fig:sog-traces-figure) for description.
 
-```{r sog-autocor-figure, fig.asp=1, fig.cap="(ref:sog-autocor-figure-cap)"}
+(ref:sog-autocor-figure-cap-fr) French caption.
+
+```{r sog-autocor-figure, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-autocor-figure-cap-fr)", "(ref:sog-autocor-figure-cap)")}
 make.autocor.plot(major_models[[model_ind]])
 ```
 
@@ -50,14 +56,18 @@ estimated parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
 Figure \@ref(fig:sog-traces-figure) for description.
 
-```{r sog-pairs-figure, fig.asp=1, fig.cap="(ref:sog-pairs-figure-cap)"}
+(ref:sog-pairs-figure-cap-fr) French caption.
+
+```{r sog-pairs-figure, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-pairs-figure-cap-fr)", "(ref:sog-pairs-figure-cap)")}
 make.pairs.plot(major_models[[model_ind]])
 ```
 
 (ref:sog-biomass-retro-figure-cap) Maximum posterior density spawning biomass
 with retrospectives for the Strait of Georgia major stock assessment region.
 
-```{r sog-biomass-retro-figure, fig.cap="(ref:sog-biomass-retro-figure-cap)"}
+(ref:sog-biomass-retro-figure-cap-fr) French caption.
+
+```{r sog-biomass-retro-figure, fig.cap=ifelse(french, "(ref:sog-biomass-retro-figure-cap-fr)", "(ref:sog-biomass-retro-figure-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
 ```
