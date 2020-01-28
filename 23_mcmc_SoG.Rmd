@@ -1,7 +1,7 @@
 # Strait of Georgia diagnostics
 
 This section contains Markov chain Monte Carlo (MCMC) diagnostics for the
-Strait of Georgia major stock assessment region statistical catch-age model.
+statistical catch-age model in the Strait of Georgia major stock assessment region.
 The MCMC run had chain length `r mcmc_length`
 with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration.
 The first `r f(mcmc_burnin)` samples were discarded (burn-in), 
