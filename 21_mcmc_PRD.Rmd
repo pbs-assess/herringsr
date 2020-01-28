@@ -14,7 +14,9 @@ The dotted red lines are maximum posterior density estimates.
 Legend: ln is natural log.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-```{r prd-priors-posts-figure, fig.cap = "(ref:prd-priors-posts-figure-cap)"}
+(ref:prd-priors-posts-figure-cap-fr) French caption.
+
+```{r prd-priors-posts-figure, fig.cap=ifelse(french, "(ref:prd-priors-posts-figure-cap-fr)", "(ref:prd-priors-posts-figure-cap)")}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
@@ -31,7 +33,9 @@ $\hat{\gamma}$ is selectivity standard deviation-at-50%.
 Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
 1 is other fisheries, 2 is roe seine, and 3 is roe gillnet.
 
-```{r prd-traces-figure, fig.asp=1, fig.cap="(ref:prd-traces-figure-cap)"}
+(ref:prd-traces-figure-cap-fr) French caption.
+
+```{r prd-traces-figure, fig.asp=1, fig.cap=ifelse(french, "(ref:prd-traces-figure-cap-fr)", "(ref:prd-traces-figure-cap)")}
 make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
@@ -41,7 +45,9 @@ estimated parameters for the Prince Rupert District major stock assessment regio
 See Table \@ref(tab:hg-parameter-est-table) and
 Figure \@ref(fig:prd-traces-figure) for description.
 
-```{r prd-autocor-figure, fig.asp=1, fig.cap = "(ref:prd-autocor-figure-cap)"}
+(ref:prd-autocor-figure-cap-fr) French caption.
+
+```{r prd-autocor-figure, fig.asp=1, fig.cap="(ref:prd-autocor-figure-cap)"}
 make.autocor.plot(major_models[[model_ind]])
 ```
 
@@ -50,20 +56,20 @@ estimated parameters for the Prince Rupert District major stock assessment regio
 See Table \@ref(tab:hg-parameter-est-table) and
 Figure \@ref(fig:prd-traces-figure) for description.
 
-```{r prd-pairs-figure, fig.asp=1, fig.cap = "(ref:prd-pairs-figure-cap)"}
+```{r prd-pairs-figure, fig.asp=1, fig.cap="(ref:prd-pairs-figure-cap)"}
 make.pairs.plot(major_models[[model_ind]])
 ```
 
 (ref:prd-biomass-retro-figure-cap) Maximum posterior density of spawning biomass
 with retrospectives for the Prince Rupert District major stock assessment region.
 
-```{r prd-biomass-retro-figure, fig.cap = "(ref:prd-biomass-retro-figure-cap)"}
+```{r prd-biomass-retro-figure, fig.cap="(ref:prd-biomass-retro-figure-cap)"}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
 ```
 
 (ref:decision-table-prd) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Prince Rupert District, rows 1-4 in Table \\@ref(tab:decision-table-prd). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-prd, fig.cap = "(ref:decision-table-prd)"}
+```{r hcr-prd, fig.cap="(ref:decision-table-prd)"}
 region <- "PRD"
 probs <- confidence_vals
 cowplot::plot_grid(plot_hcr(mp.lst.prd[[1]][[1]],
@@ -95,7 +101,7 @@ cowplot::plot_grid(plot_hcr(mp.lst.prd[[1]][[1]],
 ```
 
 (ref:decision-table-prd-2) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Prince Rupert District, rows 5-8 in Table \\@ref(tab:decision-table-prd). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-prd-2, fig.cap = "(ref:decision-table-prd-2)"}
+```{r hcr-prd-2, fig.cap="(ref:decision-table-prd-2)"}
 region <- "PRD"
 probs <- confidence_vals 
 cowplot::plot_grid(plot_hcr(mp.lst.prd[[1]][[5]],
@@ -126,7 +132,7 @@ cowplot::plot_grid(plot_hcr(mp.lst.prd[[1]][[5]],
 ```
 
 (ref:decision-table-prd-3) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Prince Rupert District, rows 9-10 in Table \\@ref(tab:decision-table-prd). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-prd-3, fig.cap = "(ref:decision-table-prd-3)"}
+```{r hcr-prd-3, fig.cap="(ref:decision-table-prd-3)"}
 region <- "PRD"
 probs <- confidence_vals 
 cowplot::plot_grid(plot_hcr(mp.lst.prd[[1]][[9]],
