@@ -8,21 +8,21 @@ The first `r f(mcmc_burnin)` samples were discarded (burn-in),
 leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for posteriors.
 These diagnostics will not be included in the final document.
 
-(ref:sog-priors-posts-figure-cap) Prior probability distributions (lines) with
+(ref:sog-priors-posts-cap) Prior probability distributions (lines) with
 comparative posterior histograms (bars) used in the Strait of Georgia major stock assessment region.
 The dotted red lines are maximum posterior density estimates.
 Legend: ln is natural log.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 
-(ref:sog-priors-posts-figure-cap-fr) French caption.
+(ref:sog-priors-posts-cap-fr) French caption.
 
-```{r sog-priors-posts, fig.cap=ifelse(french, "(ref:sog-priors-posts-figure-cap-fr)", "(ref:sog-priors-posts-figure-cap)")}
+```{r sog-priors-posts, fig.cap=ifelse(french, "(ref:sog-priors-posts-cap-fr)", "(ref:sog-priors-posts-cap)")}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.priors.posts.plot(major_models[[model_ind]],
                        priors.only = FALSE)
 ```
 
-(ref:sog-traces-figure-cap) Trace plots for Markov chain Monte Carlo output of
+(ref:sog-traces-cap) Trace plots for Markov chain Monte Carlo output of
 estimated parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) for description.
 In addition, $B_0$ is unfished biomass,
@@ -33,41 +33,41 @@ $\hat{\gamma}$ is selectivity standard deviation-at-50%.
 Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
 1 is other fisheries, 2 is roe seine, and 3 is roe gillnet.
 
-(ref:sog-traces-figure-cap-fr) French caption.
+(ref:sog-traces-cap-fr) French caption.
 
-```{r sog-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-traces-figure-cap-fr)", "(ref:sog-traces-figure-cap)")}
+```{r sog-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-traces-cap-fr)", "(ref:sog-traces-cap)")}
 make.traces.plot(major_models[[model_ind]],
                  axis.lab.freq = 200)
 ```
 
-(ref:sog-autocor-figure-cap) Auto-correlation plots for Markov chain Monte Carlo output of
+(ref:sog-autocor-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
 Figure \@ref(fig:sog-traces-figure) for description.
 
-(ref:sog-autocor-figure-cap-fr) French caption.
+(ref:sog-autocor-cap-fr) French caption.
 
-```{r sog-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-autocor-figure-cap-fr)", "(ref:sog-autocor-figure-cap)")}
+```{r sog-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-autocor-cap-fr)", "(ref:sog-autocor-cap)")}
 make.autocor.plot(major_models[[model_ind]])
 ```
 
-(ref:sog-pairs-figure-cap) Pairs plots for Markov chain Monte Carlo output of
+(ref:sog-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
 Figure \@ref(fig:sog-traces-figure) for description.
 
-(ref:sog-pairs-figure-cap-fr) French caption.
+(ref:sog-pairs-cap-fr) French caption.
 
-```{r sog-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-pairs-figure-cap-fr)", "(ref:sog-pairs-figure-cap)")}
+```{r sog-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-pairs-cap-fr)", "(ref:sog-pairs-cap)")}
 make.pairs.plot(major_models[[model_ind]])
 ```
 
-(ref:sog-biomass-retro-figure-cap) Maximum posterior density spawning biomass
+(ref:sog-biomass-retro-cap) Maximum posterior density spawning biomass
 with retrospectives for the Strait of Georgia major stock assessment region.
 
-(ref:sog-biomass-retro-figure-cap-fr) French caption.
+(ref:sog-biomass-retro-cap-fr) French caption.
 
-```{r sog-biomass-retro, fig.cap=ifelse(french, "(ref:sog-biomass-retro-figure-cap-fr)", "(ref:sog-biomass-retro-figure-cap)")}
+```{r sog-biomass-retro, fig.cap=ifelse(french, "(ref:sog-biomass-retro-cap-fr)", "(ref:sog-biomass-retro-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
 ```
