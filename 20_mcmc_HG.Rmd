@@ -38,7 +38,7 @@ make.traces.plot(major_models[[model_ind]],
 (ref:hg-autocor-figure-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Haida Gwaii major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:hg-traces-figure-cap) for description.
+Figure \@ref(fig:hg-traces-figure) for description.
 
 ```{r hg-autocor-figure, fig.asp=1, fig.cap = "(ref:hg-autocor-figure-cap)"}
 make.autocor.plot(major_models[[model_ind]])
@@ -47,7 +47,7 @@ make.autocor.plot(major_models[[model_ind]])
 (ref:hg-pairs-figure-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Haida Gwaii major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:hg-traces-figure-cap) for description.
+Figure \@ref(fig:hg-traces-figure) for description.
 
 ```{r hg-pairs-figure, fig.asp=1, fig.cap = "(ref:hg-pairs-figure-cap)"}
 make.pairs.plot(major_models[[model_ind]])

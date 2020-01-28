@@ -38,7 +38,7 @@ make.traces.plot(major_models[[model_ind]],
 (ref:wcvi-autocor-figure-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:wcvi-traces-figure-cap) for description.
+Figure \@ref(fig:wcvi-traces-figure) for description.
 
 ```{r wcvi-autocor-figure, fig.asp=1, fig.cap = "(ref:wcvi-autocor-figure-cap)"}
 make.autocor.plot(major_models[[model_ind]])
@@ -47,7 +47,7 @@ make.autocor.plot(major_models[[model_ind]])
 (ref:wcvi-pairs-figure-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:wcvi-traces-figure-cap) for description.
+Figure \@ref(fig:wcvi-traces-figure) for description.
 
 ```{r wcvi-pairs-figure, fig.asp=1, fig.cap = "(ref:wcvi-pairs-figure-cap)"}
 make.pairs.plot(major_models[[model_ind]])
