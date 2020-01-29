@@ -39,7 +39,7 @@ Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
 2 represents the roe gillnet fishery, and
 3 represents the roe seine fishery.
 
-(ref:hg-traces-cap-fr) Tracés des résultats de simulation MCCM pour les paramètres estimés
+(ref:hg-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés
 dans la région d’évaluation des stocks majeur de Haida Gwaii.
 Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 De plus, $\SB_0$ est la biomasse non exploitée estimée,
@@ -61,7 +61,9 @@ make.traces.plot(major_models[[model_ind]],
 estimated parameters for the Haida Gwaii major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
-(ref:hg-autocor-cap-fr) French caption.
+(ref:hg-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
+paramètres estimés dans la région d’évaluation des stocks majeur de Haida Gwaii.
+Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r hg-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-autocor-cap-fr)", "(ref:hg-autocor-cap)")}
 make.autocor.plot(major_models[[model_ind]])

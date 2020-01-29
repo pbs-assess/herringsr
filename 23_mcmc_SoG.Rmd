@@ -10,15 +10,11 @@ These diagnostics will not be included in the final document.
 
 (ref:sog-priors-posts-cap) Prior probability distributions (lines) with
 comparative posterior histograms (bars) used in the Strait of Georgia major stock assessment region.
-Red dashed lines are maximum posterior density estimates.
-Legend: ln is natural logarithm.
-See Table \@ref(tab:hg-parameter-est) for description.
+See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-priors-posts) for description.
 
 (ref:sog-priors-posts-cap-fr) Distributions de probabilité a priori (lignes)
 et histogrammes a posteriori comparatifs (barres) utilisés dans la région d’évaluation des stocks majeur du détroit de Georgie.
-Les lignes rouges en pointillés sont des estimations de la densité a posteriori maximale.
-Légende: ln est le logarithme naturel.
-Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
+Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-priors-posts) pour la description.
 
 ```{r sog-priors-posts, fig.cap=ifelse(french, "(ref:sog-priors-posts-cap-fr)", "(ref:sog-priors-posts-cap)")}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
