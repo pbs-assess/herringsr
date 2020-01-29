@@ -26,7 +26,9 @@ make.priors.posts.plot(major_models[[model_ind]],
 estimated parameters for the West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
-(ref:wcvi-traces-cap-fr) French caption.
+(ref:wcvi-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés
+dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r wcvi-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-traces-cap-fr)", "(ref:wcvi-traces-cap)")}
 make.traces.plot(major_models[[model_ind]],
@@ -37,7 +39,9 @@ make.traces.plot(major_models[[model_ind]],
 estimated parameters for the West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
-(ref:wcvi-autocor-cap-fr) French caption.
+(ref:wcvi-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
+paramètres estimés dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r wcvi-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-autocor-cap-fr)", "(ref:wcvi-autocor-cap)")}
 make.autocor.plot(major_models[[model_ind]])

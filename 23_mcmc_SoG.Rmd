@@ -26,7 +26,9 @@ make.priors.posts.plot(major_models[[model_ind]],
 estimated parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
-(ref:sog-traces-cap-fr) French caption.
+(ref:sog-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés
+dans la région d’évaluation des stocks majeur du détroit de Georgie.
+Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r sog-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-traces-cap-fr)", "(ref:sog-traces-cap)")}
 make.traces.plot(major_models[[model_ind]],
@@ -37,7 +39,9 @@ make.traces.plot(major_models[[model_ind]],
 estimated parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
-(ref:sog-autocor-cap-fr) French caption.
+(ref:sog-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
+paramètres estimés dans la région d’évaluation des stocks majeur du détroit de Georgie.
+Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r sog-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-autocor-cap-fr)", "(ref:sog-autocor-cap)")}
 make.autocor.plot(major_models[[model_ind]])
