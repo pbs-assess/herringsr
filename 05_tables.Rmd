@@ -161,13 +161,13 @@ $\tau$ est l'écart-type de l'erreur de processus (c.-à-d. le recrutement); and
 $\sigma$ est l'écart-type de l'erreur d'observation (c.-à-d. l'indice du frai).
 Remarque: $\tau$ et $\sigma$ sont des valeurs calculées.
 
-```{r hg-parameter-est-table, results = 'asis', echo = FALSE}
+```{r hg-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
                           xcaption = ifelse(french,
                                             "(ref:hg-parameter-est-cap-fr)",
                                             "(ref:hg-parameter-est-cap)"),
-                          xlabel = "tab:hg-parameter-est-table",
+                          xlabel = "tab:hg-parameter-est",
                           font.size = 11,
                           space.size = 12,
                           placement = "ht",
@@ -175,18 +175,18 @@ make.parameters.est.table(major_models[[model_ind]],
 ```
 
 (ref:prd-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the Prince Rupert District major stock assessment region.
-See Table \@ref(tab:hg-parameter-est-table) for description.
+See Table \@ref(tab:hg-parameter-est) for description.
 
 (ref:prd-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du district de Prince Rupert.
-Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
+Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
-```{r prd-parameter-est-table, results = 'asis', echo = FALSE}
+```{r prd-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
                           xcaption = ifelse(french,
                                             "(ref:prd-parameter-est-cap-fr)",
                                             "(ref:prd-parameter-est-cap)"),
-                          xlabel = "tab:prd-parameter-est-table",
+                          xlabel = "tab:prd-parameter-est",
                           font.size = 11,
                           space.size = 12,
                           placement = "ht",
@@ -194,18 +194,18 @@ make.parameters.est.table(major_models[[model_ind]],
 ```
 
 (ref:cc-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the Central Coast major stock assessment region.
-See Table \@ref(tab:hg-parameter-est-table) for description.
+See Table \@ref(tab:hg-parameter-est) for description.
 
 (ref:cc-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
-Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
+Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
-```{r cc-parameter-est-table, results = 'asis', echo = FALSE}
+```{r cc-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
                           xcaption = ifelse(french,
                                             "(ref:cc-parameter-est-cap-fr)",
                                             "(ref:cc-parameter-est-cap)"),
-                          xlabel = "tab:cc-parameter-est-table",
+                          xlabel = "tab:cc-parameter-est",
                           font.size = 11,
                           space.size = 12,
                           placement = "ht",
@@ -213,18 +213,18 @@ make.parameters.est.table(major_models[[model_ind]],
 ```
 
 (ref:sog-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the Strait of Georgia major stock assessment region.
-See Table \@ref(tab:hg-parameter-est-table) for description.
+See Table \@ref(tab:hg-parameter-est) for description.
 
 (ref:sog-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
-Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
+Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
-```{r sog-parameter-est-table, results = 'asis', echo = FALSE}
+```{r sog-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
                           xcaption = ifelse(french,
                                             "(ref:sog-parameter-est-cap-fr)",
                                             "(ref:sog-parameter-est-cap)"),
-                          xlabel = "tab:sog-parameter-est-table",
+                          xlabel = "tab:sog-parameter-est",
                           font.size = 11,
                           space.size = 12,
                           placement = "ht",
@@ -232,18 +232,18 @@ make.parameters.est.table(major_models[[model_ind]],
 ```
 
 (ref:wcvi-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the West Coast of Vancouver Island major stock assessment region.
-See Table \@ref(tab:hg-parameter-est-table) for description.
+See Table \@ref(tab:hg-parameter-est) for description.
 
 (ref:wcvi-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
-Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
+Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
-```{r wcvi-parameter-est-table, results = 'asis', echo = FALSE}
+```{r wcvi-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.parameters.est.table(major_models[[model_ind]],
                           xcaption = ifelse(french,
                                             "(ref:wcvi-parameter-est-cap-fr)",
                                             "(ref:wcvi-parameter-est-cap)"),
-                          xlabel = "tab:wcvi-parameter-est-table",
+                          xlabel = "tab:wcvi-parameter-est",
                           font.size = 11,
                           space.size = 12,
                           placement = "ht",
@@ -254,14 +254,14 @@ make.parameters.est.table(major_models[[model_ind]],
 
 (ref:hg-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de hareng du Pacifique de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de Haida Gwaii.
 
-```{r hg-recruitment-table, results = 'asis', echo = FALSE}
+```{r hg-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = major_end_yr-num_yrs_tab,
                  xcaption = ifelse(french, "(ref:hg-recruitment-cap-fr)",
                                    "(ref:hg-recruitment-cap)"),
-                 xlabel = "tab:hg-recruitment-table",
+                 xlabel = "tab:hg-recruitment",
                  font.size = 11,
                  space.size = 12,
                  placement = "ht",
@@ -272,14 +272,14 @@ make.value.table(major_models[[model_ind]],
 
 (ref:prd-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de hareng du Pacifique de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur du district de Prince Rupert.
 
-```{r prd-recruitment-table, results = 'asis', echo = FALSE}
+```{r prd-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = major_end_yr-num_yrs_tab,
                  xcaption = ifelse(french, "(ref:prd-recruitment-cap-fr)",
                                    "(ref:prd-recruitment-cap)"),
-                 xlabel = "tab:prd-recruitment-table",
+                 xlabel = "tab:prd-recruitment",
                  font.size = 11,
                  space.size = 12,
                  placement = "ht",
@@ -290,14 +290,14 @@ make.value.table(major_models[[model_ind]],
 
 (ref:cc-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de hareng du Pacifique de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte centrale.
 
-```{r cc-recruitment-table, results = 'asis', echo = FALSE}
+```{r cc-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = major_end_yr-num_yrs_tab,
                  xcaption = ifelse(french, "(ref:cc-recruitment-cap-fr)",
                                    "(ref:cc-recruitment-cap)"),
-                 xlabel = "tab:cc-recruitment-table",
+                 xlabel = "tab:cc-recruitment",
                  font.size = 11,
                  space.size = 12,
                  placement = "ht",
@@ -308,14 +308,14 @@ make.value.table(major_models[[model_ind]],
 
 (ref:sog-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de hareng du Pacifique de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur du détroit de Georgie.
 
-```{r sog-recruitment-table, results = 'asis', echo = FALSE}
+```{r sog-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = major_end_yr-num_yrs_tab,
                  xcaption = ifelse(french, "(ref:sog-recruitment-cap-fr)",
                                    "(ref:sog-recruitment-cap)"),
-                 xlabel = "tab:sog-recruitment-table",
+                 xlabel = "tab:sog-recruitment",
                  font.size = 11,
                  space.size = 12,
                  placement = "ht",
@@ -326,14 +326,14 @@ make.value.table(major_models[[model_ind]],
 
 (ref:wcvi-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de hareng du Pacifique de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 
-```{r wcvi-recruitment-table, results = 'asis', echo = FALSE}
+```{r wcvi-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.value.table(major_models[[model_ind]],
                  type = 2,
                  syr = major_end_yr-num_yrs_tab,
                  xcaption = ifelse(french, "(ref:wcvi-recruitment-cap-fr)",
                                    "(ref:wcvi-recruitment-cap)"),
-                 xlabel = "tab:wcvi-recruitment-table",
+                 xlabel = "tab:wcvi-recruitment",
                  font.size = 11,
                  space.size = 12,
                  placement = "ht",
@@ -352,14 +352,14 @@ $\SB_t$ est la biomasse reproductrice en année $t$, et
 $\SB_0$ est la biomasse reproductrice non exploitée estimée)
 de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de Haida Gwaii.
 
-```{r hg-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
+```{r hg-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-num_yrs_tab,
                              xcaption = ifelse(french,
                                                "(ref:hg-spawning-biomass-depletion-cap-fr)",
                                                "(ref:hg-spawning-biomass-depletion-cap)"),
-                             xlabel = "hg-spawning-biomass-depletion-table",
+                             xlabel = "tab:hg-spawning-biomass-depletion",
                              font.size = 11,
                              space.size = 12,
                              placement = "ht",
@@ -367,19 +367,19 @@ make.biomass.depletion.table(major_models[[model_ind]],
 ```
 
 (ref:prd-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Prince Rupert District major stock assessment region.
-See Table \@ref(hg-spawning-biomass-depletion-table) for description.
+See Table \@ref(hg-spawning-biomass-depletion) for description.
 
 (ref:prd-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur du district de Prince Rupert.
-Voir le tableau \@ref(hg-spawning-biomass-depletion-table) pour la description.
+Voir le tableau \@ref(hg-spawning-biomass-depletion) pour la description.
 
-```{r prd-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
+```{r prd-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-num_yrs_tab,
                              xcaption = ifelse(french,
                                                "(ref:prd-spawning-biomass-depletion-cap-fr)",
                                                "(ref:prd-spawning-biomass-depletion-cap)"),
-                             xlabel = "prd-spawning-biomass-depletion-table",
+                             xlabel = "tab:prd-spawning-biomass-depletion",
                              font.size = 11,
                              space.size = 12,
                              placement = "ht",
@@ -387,19 +387,19 @@ make.biomass.depletion.table(major_models[[model_ind]],
 ```
 
 (ref:cc-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Central Coast major stock assessment region.
-See Table \@ref(hg-spawning-biomass-depletion-table) for description.
+See Table \@ref(hg-spawning-biomass-depletion) for description.
 
 (ref:cc-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte centrale.
-Voir le tableau \@ref(hg-spawning-biomass-depletion-table) pour la description.
+Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
-```{r cc-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
+```{r cc-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-num_yrs_tab,
                              xcaption = ifelse(french,
                                                "(ref:cc-spawning-biomass-depletion-cap-fr)",
                                                "(ref:cc-spawning-biomass-depletion-cap)"),
-                             xlabel = "cc-spawning-biomass-depletion-table",
+                             xlabel = "tab:cc-spawning-biomass-depletion",
                              font.size = 11,
                              space.size = 12,
                              placement = "ht",
@@ -407,19 +407,19 @@ make.biomass.depletion.table(major_models[[model_ind]],
 ```
 
 (ref:sog-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Strait of Georgia major stock assessment region.
-See Table \@ref(hg-spawning-biomass-depletion-table) for description.
+See Table \@ref(tab:hg-spawning-biomass-depletion) for description.
 
 (ref:sog-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur du détroit de Georgie.
-Voir le tableau \@ref(hg-spawning-biomass-depletion-table) pour la description.
+Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
-```{r sog-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
+```{r sog-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-num_yrs_tab,
                              xcaption = ifelse(french,
                                                "(ref:sog-spawning-biomass-depletion-cap-fr)",
                                                "(ref:sog-spawning-biomass-depletion-cap)"),
-                             xlabel = "sog-spawning-biomass-depletion-table",
+                             xlabel = "tab:sog-spawning-biomass-depletion",
                              font.size = 11,
                              space.size = 12,
                              placement = "ht",
@@ -427,19 +427,19 @@ make.biomass.depletion.table(major_models[[model_ind]],
 ```
 
 (ref:wcvi-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the West Coast of Vancouver Island major stock assessment region.
-See Table \@ref(hg-spawning-biomass-depletion-table) for description.
+See Table \@ref(tab:hg-spawning-biomass-depletion) for description.
 
 (ref:wcvi-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
-Voir le tableau \@ref(hg-spawning-biomass-depletion-table) pour la description.
+Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
-```{r wcvi-spawning-biomass-depletion-table, results = 'asis', echo = FALSE}
+```{r wcvi-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-num_yrs_tab,
                              xcaption = ifelse(french,
                                                "(ref:wcvi-spawning-biomass-depletion-cap-fr)",
                                                "(ref:wcvi-spawning-biomass-depletion-cap)"),
-                             xlabel = "wcvi-spawning-biomass-depletion-table",
+                             xlabel = "tab:wcvi-spawning-biomass-depletion",
                              font.size = 11,
                              space.size = 12,
                              placement = "ht",
@@ -547,7 +547,7 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
-(ref:decision-table-prd-cap) Management procedure (MP) performance for Pacific Herring in the Prince Rupert District major stock assessment region under three operating model (OM) scenarios:
+(ref:decision-prd-cap) Management procedure (MP) performance for Pacific Herring in the Prince Rupert District major stock assessment region under three operating model (OM) scenarios:
 density-dependent natural mortality (DDM),
 density-independent natural mortality (DIM), and
 constant natural mortality (conM).
@@ -565,7 +565,7 @@ Note: dashes indicate that TAC and HR do not apply, either
 because the MP specifies no fishing, or
 because the MP fails to meet Objective 1.
 
-(ref:decision-table-prd-cap-fr) Rendement de la procédure de gestion (PG) pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du district de Prince Rupert selon trois scénarios du modèle d'exploitation (ME):
+(ref:decision-prd-cap-fr) Rendement de la procédure de gestion (PG) pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du district de Prince Rupert selon trois scénarios du modèle d'exploitation (ME):
 mortalité naturelle liée à la densité (MLD),
 mortalité naturelle indépendante de la densité (MID), et
 mortalité naturelle constante (MC).
@@ -583,27 +583,27 @@ Note: les tirets indiquent que le TAC et le TR ne s'appliquent pas non plus
 parce que le PG n'interdit pas la pêche, ou
 parce que le PG n'atteint pas l'objectif 1.
 
-(ref:decision-table-cc-cap) Management procedure performance for Pacific Herring in the Central Coast major stock assessment region.
-See Table \@ref(tab:decision-table-prd) for description.
+(ref:decision-cc-cap) Management procedure performance for Pacific Herring in the Central Coast major stock assessment region.
+See Table \@ref(tab:decision-prd) for description.
 
-(ref:decision-table-cc-cap-fr) Rendement de la procédure de gestion pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
-Voir le tableau \@ref(tab:decision-table-prd) pour la description.
+(ref:decision-cc-cap-fr) Rendement de la procédure de gestion pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
+Voir le tableau \@ref(tab:decision-prd) pour la description.
 
-(ref:decision-table-sog-cap) Management procedure performance for Pacific Herring in the Strait of Georgia major stock assessment region.
-See Table \@ref(tab:decision-table-prd) for description.
+(ref:decision-sog-cap) Management procedure performance for Pacific Herring in the Strait of Georgia major stock assessment region.
+See Table \@ref(tab:decision-prd) for description.
 
-(ref:decision-table-sog-cap-fr) Rendement de la procédure de gestion pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
-Voir le tableau \@ref(tab:decision-table-prd) pour la description.
+(ref:decision-sog-cap-fr) Rendement de la procédure de gestion pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
+Voir le tableau \@ref(tab:decision-prd) pour la description.
 
 \begin{turn}
 
-```{r decision-table-prd, results = 'asis', echo = FALSE}
+```{r decision-prd, results = 'asis', echo = FALSE}
 col_align <- "cc|c|c|c|c|c|c|c"
 decision_tables_mp(mp.prd,
                    xcaption = ifelse(french,
-                                     "(ref:decision-table-prd-cap-fr)",
-                                     "(ref:decision-table-prd-cap)"),
-                   xlabel = "tab:decision-table-prd",
+                                     "(ref:decision-prd-cap-fr)",
+                                     "(ref:decision-prd-cap)"),
+                   xlabel = "tab:decision-prd",
                    font.size = 10,
                    space.size = 14,
                    placement = "ht",
@@ -614,12 +614,12 @@ decision_tables_mp(mp.prd,
                    translate = french)
 ```
 
-```{r decision-table-cc, results = 'asis', echo = FALSE}
+```{r decision-cc, results = 'asis', echo = FALSE}
 decision_tables_mp(mp.cc,
                    xcaption = ifelse(french,
-                                     "(ref:decision-table-cc-cap-fr)",
-                                     "(ref:decision-table-cc-cap)"),
-                   xlabel = "tab:decision-table-cc",
+                                     "(ref:decision-cc-cap-fr)",
+                                     "(ref:decision-cc-cap)"),
+                   xlabel = "tab:decision-cc",
                    font.size = 10,
                    space.size = 14,
                    placement = "ht",
@@ -630,12 +630,12 @@ decision_tables_mp(mp.cc,
                    translate = french)
 ```
 
-```{r decision-table-sog, results = 'asis', echo = FALSE}
+```{r decision-sog, results = 'asis', echo = FALSE}
 decision_tables_mp(mp.sog,
                    xcaption = ifelse(french,
-                                     "(ref:decision-table-sog-cap-fr)",
-                                     "(ref:decision-table-sog-cap)"),
-                   xlabel = "tab:decision-table-sog",
+                                     "(ref:decision-sog-cap-fr)",
+                                     "(ref:decision-sog-cap)"),
+                   xlabel = "tab:decision-sog",
                    font.size = 10,
                    space.size = 14,
                    placement = "ht",

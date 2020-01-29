@@ -12,13 +12,13 @@ These diagnostics will not be included in the final document.
 comparative posterior histograms (bars) used in the Central Coast major stock assessment region.
 Red dashed lines are maximum posterior density estimates.
 Legend: ln is natural logarithm.
-See Table \@ref(tab:hg-parameter-est-table) for description.
+See Table \@ref(tab:hg-parameter-est) for description.
 
 (ref:cc-priors-posts-cap-fr) Distributions de probabilité a priori (lignes)
 et histogrammes a posteriori comparatifs (barres) utilisés dans la région d’évaluation des stocks majeur de la côte centrale.
 Les lignes rouges en pointillés sont des estimations de la densité a posteriori maximale.
 Légende: ln est le logarithme naturel.
-Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
+Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 ```{r cc-priors-posts, fig.cap=ifelse(french, "(ref:cc-priors-posts-cap-fr)", "(ref:cc-priors-posts-cap)")}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -28,7 +28,7 @@ make.priors.posts.plot(major_models[[model_ind]],
 
 (ref:cc-traces-cap) Trace plots for Markov chain Monte Carlo output of
 estimated parameters for the Central Coast major stock assessment region.
-See Table \@ref(tab:hg-parameter-est-table) for description.
+See Table \@ref(tab:hg-parameter-est) for description.
 In addition, $B_0$ is unfished biomass,
 $\SB_0$ is unfished spawning biomass,
 $\SB$ is spawning biomass,
@@ -46,8 +46,7 @@ make.traces.plot(major_models[[model_ind]],
 
 (ref:cc-autocor-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Central Coast major stock assessment region.
-See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:cc-traces) for description.
+See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:cc-traces) for description.
 
 (ref:cc-autocor-cap-fr) French caption.
 
@@ -57,8 +56,7 @@ make.autocor.plot(major_models[[model_ind]])
 
 (ref:cc-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Central Coast major stock assessment region.
-See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:cc-traces) for description.
+See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:cc-traces) for description.
 
 (ref:cc-pairs-cap-fr) French caption.
 
@@ -76,8 +74,8 @@ biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
 ```
 
-(ref:decision-table-cc) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 1-4 in Table \\@ref(tab:decision-table-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-cc, fig.cap="(ref:decision-table-cc)"}
+(ref:decision-cc-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 1-4 in Table \\@ref(tab:decision-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
+```{r hcr-cc, fig.cap="(ref:decision-cc-cap)"}
 region <- "CC"
 probs <- confidence_vals
 cowplot::plot_grid(plot_hcr(mp.lst.cc[[1]][[1]],
@@ -108,8 +106,8 @@ cowplot::plot_grid(plot_hcr(mp.lst.cc[[1]][[1]],
                    axis = "tblr")
 ```
 
-(ref:decision-table-cc-2) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 5-8 in Table \\@ref(tab:decision-table-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-cc-2, fig.cap="(ref:decision-table-cc-2)"}
+(ref:decision-cc-2-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 5-8 in Table \\@ref(tab:decision-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
+```{r hcr-cc-2, fig.cap="(ref:decision-cc-2-cap)"}
 region <- "CC"
 probs <- confidence_vals 
 cowplot::plot_grid(plot_hcr(mp.lst.cc[[1]][[5]],
@@ -139,8 +137,8 @@ cowplot::plot_grid(plot_hcr(mp.lst.cc[[1]][[5]],
                    align = c("v", "h"))
 ```
 
-(ref:decision-table-cc-3) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 9-10 in Table \\@ref(tab:decision-table-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-cc-3, fig.cap="(ref:decision-table-cc-3)"}
+(ref:decision-cc-3-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 9-10 in Table \\@ref(tab:decision-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
+```{r hcr-cc-3, fig.cap="(ref:decision-cc-3-cap)"}
 region <- "CC"
 probs <- confidence_vals 
 cowplot::plot_grid(plot_hcr(mp.lst.cc[[1]][[9]],
