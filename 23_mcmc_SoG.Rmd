@@ -51,7 +51,9 @@ make.autocor.plot(major_models[[model_ind]])
 estimated parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
-(ref:sog-pairs-cap-fr) French caption.
+(ref:sog-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
+les paramètres estimés dans la region d’évaluation des stocks majeur du détroit de Georgie.
+Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r sog-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-pairs-cap-fr)", "(ref:sog-pairs-cap)")}
 make.pairs.plot(major_models[[model_ind]])

@@ -50,7 +50,9 @@ make.autocor.plot(major_models[[model_ind]])
 estimated parameters for the Prince Rupert District major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
-(ref:prd-pairs-cap-fr) French caption.
+(ref:prd-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
+les paramètres estimés dans la region d’évaluation des stocks majeur du district de Prince Rupert.
+Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r prd-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:prd-pairs-cap-fr)", "(ref:prd-pairs-cap)")}
 make.pairs.plot(major_models[[model_ind]])

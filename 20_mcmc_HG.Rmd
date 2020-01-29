@@ -73,7 +73,9 @@ make.autocor.plot(major_models[[model_ind]])
 estimated parameters for the Haida Gwaii major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
-(ref:hg-pairs-cap-fr) French caption.
+(ref:hg-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
+les paramètres estimés dans la region d’évaluation des stocks majeur de Haida Gwaii.
+Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r hg-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-pairs-cap-fr)", "(ref:hg-pairs-cap)")}
 make.pairs.plot(major_models[[model_ind]])
