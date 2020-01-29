@@ -35,9 +35,22 @@ $\SB$ is spawning biomass,
 $\hat{a}$ is selectivity-at-age-50%, and
 $\hat{\gamma}$ is selectivity standard deviation-at-50%.
 Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
-1 is other fisheries, 2 is roe seine, and 3 is roe gillnet.
+1 represents the reduction, the food and bait, as well as the special use fishery,
+2 represents the roe gillnet fishery, and
+3 represents the roe seine fishery.
 
-(ref:hg-traces-cap-fr) French caption.
+(ref:hg-traces-cap-fr) Tracés des résultats de simulation MCCM pour les paramètres estimés
+dans la région d’évaluation des stocks majeur de Haida Gwaii.
+Voir le tableau \@ref(tab:hg-parameter-est-table) pour la description.
+De plus, $\SB_0$ est la biomasse non exploitée estimée,
+$\SB_0$ est la biomasse reproductrice non exploitée estimée,
+$\SB$ est la biomasse reproductrice,
+$\hat{a}$ est sélectivité selon l’âge à 50%, et
+$\hat{\gamma}$ est écart-type de la sélectivité selon l’âge à 50%.
+Les souscriptions sur $\hat{a}$ et $\hat{\gamma}$ représentent des engins comme suit:
+1 représente la réduction, ainsi que les pêches pratiquées à des fins de subsistance, pour le marché des appâts et pour des usages spéciaux, 
+2 représente la pêche au hareng rogué au filet maillant, et
+3 représente la pêche au hareng rogué à la senne.
 
 ```{r hg-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-traces-cap-fr)", "(ref:hg-traces-cap)")}
 make.traces.plot(major_models[[model_ind]],
