@@ -74,7 +74,7 @@ biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
 ```
 
-(ref:hcr-prd-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Prince Rupert District, rows 1-4 in Table \\@ref(tab:hcr-prd). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
+(ref:hcr-prd-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Prince Rupert District, rows 1-4 in Table \\@ref(tab:decision-prd). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
 ```{r hcr-prd, fig.cap="(ref:hcr-prd-cap)"}
 region <- "PRD"
 probs <- confidence_vals
@@ -106,7 +106,7 @@ cowplot::plot_grid(plot_hcr(mp.lst.prd[[1]][[1]],
                    axis = "tblr")
 ```
 
-(ref:hcr-prd-2-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Prince Rupert District, rows 5-8 in Table \\@ref(tab:hcr-prd). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
+(ref:hcr-prd-2-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Prince Rupert District, rows 5-8 in Table \\@ref(tab:decision-prd). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
 ```{r hcr-prd-2, fig.cap="(ref:hcr-prd-2-cap)"}
 region <- "PRD"
 probs <- confidence_vals 
@@ -137,7 +137,7 @@ cowplot::plot_grid(plot_hcr(mp.lst.prd[[1]][[5]],
                    align = c("v", "h"))
 ```
 
-(ref:hcr-prd-3-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Prince Rupert District, rows 9-10 in Table \\@ref(tab:hcr-prd). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
+(ref:hcr-prd-3-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Prince Rupert District, rows 9-10 in Table \\@ref(tab:decision-prd). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
 ```{r hcr-prd-3, fig.cap="(ref:hcr-prd-3-cap)"}
 region <- "PRD"
 probs <- confidence_vals 
