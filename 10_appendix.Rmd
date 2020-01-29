@@ -3,9 +3,9 @@
 We do not conduct formal analyses of stock trend information for the
 `r number_to_word(length(minor_regions_short))`
 Pacific Herring minor SARs: `r commify(minor_regions_full_parens)`.
-However, we provide the spawn index from `r minor_end_yr-num_yrs_tab` to `r minor_end_yr` (Table \@ref(tab:app-minor-survey-indices-tab)).
+However, we provide the spawn index from `r minor_end_yr-num_yrs_tab` to `r minor_end_yr` (Table \@ref(tab:app-minor-survey-indices)).
 We also provide time series of
 landed commercial catch (Figure \@ref(fig:app-minor-catch)),
 biological data including weight-at-age (Figure \@ref(fig:app-minor-weight-at-age)) and proportion-at-age (Figure \@ref(fig:app-minor-proportions-at-age)),
-as well as the spawn index (Figure \@ref(fig:app-minor-survey-indices-fig))
+as well as the spawn index (Figure \@ref(fig:app-minor-survey-indices))
 from `r minor_start_yr_plot` to `r minor_end_yr`.
