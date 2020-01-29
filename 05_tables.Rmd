@@ -340,25 +340,25 @@ make.value.table(major_models[[model_ind]],
                  translate = french)
 ```
 
-(ref:hg-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring spawning biomass in thousands of tonnes and depletion
+(ref:tab:hg-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring spawning biomass in thousands of tonnes and depletion
 (i.e., relative spawning biomass $\SB_t/\SB_0$, where
 $\SB_t$ is spawning biomass in year $t$, and
 $\SB_0$ is estimated unfished spawning biomass)
 from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Haida Gwaii major stock assessment region.
 
-(ref:hg-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion
+(ref:tab:hg-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion
 (c.-à-d. biomasse reproductrice relative $\SB_t/\SB_0$, où
 $\SB_t$ est la biomasse reproductrice en année $t$, et
 $\SB_0$ est la biomasse reproductrice non exploitée estimée)
 de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de Haida Gwaii.
 
-```{r hg-spawning-biomass-depletion, results = 'asis', echo = FALSE}
+```{r tab:hg-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-num_yrs_tab,
                              xcaption = ifelse(french,
-                                               "(ref:hg-spawning-biomass-depletion-cap-fr)",
-                                               "(ref:hg-spawning-biomass-depletion-cap)"),
+                                               "(ref:tab:hg-spawning-biomass-depletion-cap-fr)",
+                                               "(ref:tab:hg-spawning-biomass-depletion-cap)"),
                              xlabel = "tab:hg-spawning-biomass-depletion",
                              font.size = 11,
                              space.size = 12,
@@ -367,10 +367,10 @@ make.biomass.depletion.table(major_models[[model_ind]],
 ```
 
 (ref:prd-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Prince Rupert District major stock assessment region.
-See Table \@ref(hg-spawning-biomass-depletion) for description.
+See Table \@ref(tab:hg-spawning-biomass-depletion) for description.
 
 (ref:prd-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur du district de Prince Rupert.
-Voir le tableau \@ref(hg-spawning-biomass-depletion) pour la description.
+Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 ```{r prd-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
@@ -387,7 +387,7 @@ make.biomass.depletion.table(major_models[[model_ind]],
 ```
 
 (ref:cc-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Central Coast major stock assessment region.
-See Table \@ref(hg-spawning-biomass-depletion) for description.
+See Table \@ref(tab:hg-spawning-biomass-depletion) for description.
 
 (ref:cc-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte centrale.
 Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
