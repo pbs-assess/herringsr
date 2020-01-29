@@ -29,13 +29,6 @@ make.priors.posts.plot(major_models[[model_ind]],
 (ref:prd-traces-cap) Trace plots for Markov chain Monte Carlo output of
 estimated parameters for the Prince Rupert District major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
-In addition, $B_0$ is unfished biomass,
-$\SB_0$ is unfished spawning biomass,
-$\SB$ is spawning biomass,
-$\hat{a}$ is selectivity-at-age-50%, and
-$\hat{\gamma}$ is selectivity standard deviation-at-50%.
-Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
-1 is other fisheries, 2 is roe seine, and 3 is roe gillnet.
 
 (ref:prd-traces-cap-fr) French caption.
 
@@ -46,7 +39,7 @@ make.traces.plot(major_models[[model_ind]],
 
 (ref:prd-autocor-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Prince Rupert District major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:prd-traces) for description.
+See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:prd-autocor-cap-fr) French caption.
 
@@ -56,7 +49,7 @@ make.autocor.plot(major_models[[model_ind]])
 
 (ref:prd-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Prince Rupert District major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:prd-traces) for description.
+See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:prd-pairs-cap-fr) French caption.
 
