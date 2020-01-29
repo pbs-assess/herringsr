@@ -62,7 +62,8 @@ make.pairs.plot(major_models[[model_ind]])
 (ref:cc-biomass-retro-cap) Maximum posterior density of spawning biomass
 with retrospectives for the Central Coast major stock assessment region.
 
-(ref:cc-biomass-retro-cap-fr) French caption.
+(ref:cc-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice
+avec des rétrospectives pour la région d'évaluation des stocks majeur de la côte centrale.
 
 ```{r cc-biomass-retro, fig.cap=ifelse(french, "(ref:cc-biomass-retro-cap-fr)", "(ref:cc-biomass-retro-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],

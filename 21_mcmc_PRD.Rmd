@@ -61,7 +61,8 @@ make.pairs.plot(major_models[[model_ind]])
 (ref:prd-biomass-retro-cap) Maximum posterior density of spawning biomass
 with retrospectives for the Prince Rupert District major stock assessment region.
 
-(ref:prd-biomass-retro-cap-fr) French caption.
+(ref:prd-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice
+avec des rétrospectives pour la région d'évaluation des stocks majeur du district de Prince Rupert.
 
 ```{r prd-biomass-retro, fig.cap=ifelse(french, "(ref:prd-biomass-retro-cap-fr)", "(ref:prd-biomass-retro-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],

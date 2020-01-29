@@ -84,7 +84,8 @@ make.pairs.plot(major_models[[model_ind]])
 (ref:hg-biomass-retro-cap) Maximum posterior density of spawning biomass
 with retrospectives for the Haida Gwaii major stock assessment region.
 
-(ref:hg-biomass-retro-cap-fr) French caption.
+(ref:hg-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice
+avec des rétrospectives pour la région d'évaluation des stocks majeur de Haida Gwaii.
 
 ```{r hg-biomass-retro, fig.cap=ifelse(french, "(ref:hg-biomass-retro-cap-fr)", "(ref:hg-biomass-retro-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],

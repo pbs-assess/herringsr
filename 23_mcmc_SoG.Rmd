@@ -62,7 +62,8 @@ make.pairs.plot(major_models[[model_ind]])
 (ref:sog-biomass-retro-cap) Maximum posterior density spawning biomass
 with retrospectives for the Strait of Georgia major stock assessment region.
 
-(ref:sog-biomass-retro-cap-fr) French caption.
+(ref:sog-biomass-retro-cap-fr) French captionDensité a posteriori maximale de la biomasse reproductrice
+avec des rétrospectives pour la région d'évaluation des stocks majeur du détroit de Georgie.
 
 ```{r sog-biomass-retro, fig.cap=ifelse(french, "(ref:sog-biomass-retro-cap-fr)", "(ref:sog-biomass-retro-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],
