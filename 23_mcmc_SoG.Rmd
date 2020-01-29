@@ -74,8 +74,8 @@ biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(1972, assess_yr))
 ```
 
-(ref:decision-sog-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, rows 1-4 in Table \\@ref(tab:decision-sog). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-sog, fig.cap="(ref:decision-sog-cap)"}
+(ref:hcr-sog-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, rows 1-4 in Table \\@ref(tab:hcr-sog). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
+```{r hcr-sog, fig.cap="(ref:hcr-sog-cap)"}
 region <- "SoG"
 probs <- confidence_vals 
 cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[1]],
@@ -106,8 +106,8 @@ cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[1]],
                    axis = "tblr")
 ```
 
-(ref:decision-sog-2-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, rows 5-8 in Table \\@ref(tab:decision-sog). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-sog-2, fig.height=9, fig.cap="(ref:decision-sog-2-cap)"}
+(ref:hcr-sog-2-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, rows 5-8 in Table \\@ref(tab:hcr-sog). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
+```{r hcr-sog-2, fig.height=9, fig.cap="(ref:hcr-sog-2-cap)"}
 region <- "SoG"
 probs <- confidence_vals 
 cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[5]],
@@ -137,8 +137,8 @@ cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[5]],
                    align = c("v", "h"))
 ```
 
-(ref:decision-sog-3-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, row 9 in Table \\@ref(tab:decision-sog). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-sog-3, fig.height=9, fig.cap="(ref:decision-sog-3-cap)"}
+(ref:hcr-sog-3-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, row 9 in Table \\@ref(tab:hcr-sog). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
+```{r hcr-sog-3, fig.height=9, fig.cap="(ref:hcr-sog-3-cap)"}
 region <- "SoG"
 probs <- confidence_vals 
 cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[9]],
