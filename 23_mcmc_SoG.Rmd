@@ -43,7 +43,7 @@ make.traces.plot(major_models[[model_ind]],
 (ref:sog-autocor-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:sog-traces-figure) for description.
+Figure \@ref(fig:sog-traces) for description.
 
 (ref:sog-autocor-cap-fr) French caption.
 
@@ -54,7 +54,7 @@ make.autocor.plot(major_models[[model_ind]])
 (ref:sog-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:sog-traces-figure) for description.
+Figure \@ref(fig:sog-traces) for description.
 
 (ref:sog-pairs-cap-fr) French caption.
 

@@ -43,7 +43,7 @@ make.traces.plot(major_models[[model_ind]],
 (ref:prd-autocor-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Prince Rupert District major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:prd-traces-figure) for description.
+Figure \@ref(fig:prd-traces) for description.
 
 (ref:prd-autocor-cap-fr) French caption.
 
@@ -54,7 +54,7 @@ make.autocor.plot(major_models[[model_ind]])
 (ref:prd-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Prince Rupert District major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:prd-traces-figure) for description.
+Figure \@ref(fig:prd-traces) for description.
 
 (ref:prd-pairs-cap-fr) French caption.
 

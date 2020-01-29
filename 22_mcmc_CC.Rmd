@@ -43,7 +43,7 @@ make.traces.plot(major_models[[model_ind]],
 (ref:cc-autocor-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:cc-traces-figure) for description.
+Figure \@ref(fig:cc-traces) for description.
 
 (ref:cc-autocor-cap-fr) French caption.
 
@@ -54,7 +54,7 @@ make.autocor.plot(major_models[[model_ind]])
 (ref:cc-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est-table) and
-Figure \@ref(fig:cc-traces-figure) for description.
+Figure \@ref(fig:cc-traces) for description.
 
 (ref:cc-pairs-cap-fr) French caption.
 
