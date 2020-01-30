@@ -436,7 +436,7 @@ Science advice in 2018 recommended discontinuing the use of the historical fixed
 
 1. The fixed cutoff values were calculated outside of the current assessment model, last updated in 1996,
 and therefore ignore 22 years of stock and fishery monitoring data,
-as well as substantial changes to the structural form of the assessment model.
+as well as substantial changes to the structural form of the assessment model, and
 
 1. Use of separate lower and upper OCPs allows for altering the slope of the ramp portion of the HCR to better meet stock and fishery objectives by
 avoiding fishery closures and encouraging stock growth as more is learned about stock dynamics and the effects of fishing.

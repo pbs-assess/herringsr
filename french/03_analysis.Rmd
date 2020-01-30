@@ -134,7 +134,7 @@ Les points de référence supérieurs proposés sont les suivants:
 
 1. $0.6\SB_0$,
 
-1. Moyenne de la biomasse féconde de `r major_start_yr` to `r assess_yr`, $\SB_{\mli{ave}}$ et
+1. Moyenne de la biomasse féconde de `r major_start_yr` to `r assess_yr`, $\SB_{\mli{ave}}$, et
 
 1. Moyenne de la biomasse féconde pendant une période productive [@cleary2018], $\SB_{\mli{ave-prod}}$.
 
@@ -257,11 +257,11 @@ Le classement des objectifs et la sélection des procédures de gestion qui atte
 
 Le premier cycle de l'ESG du hareng du Pacifique comprend, comme point de départ, quatre objectifs principaux de gestion des pêches [@dfo2019c] qui reflètent la politique du MPO et qui ont été appliqués à chacune des régions principales d'évaluation des stocks:
 
-1. Éviter le PRL avec une probabilité d'au moins 75% sur trois générations de hareng du Pacifique (c.-à-d. éviter une limite de la biomasse; $P(\SB_t > 0.3\SB_0) \geq 0.75$).
+1. Éviter le PRL avec une probabilité d'au moins 75% sur trois générations de hareng du Pacifique (c.-à-d. éviter une limite de la biomasse; $P(\SB_t > 0.3\SB_0) \geq 0.75$),
 
-1. Maintenir la biomasse féconde à un niveau égal ou supérieur au PRS avec au moins 50% de probabilité sur trois générations de hareng du Pacifique (c.-à-d. atteindre une biomasse cible; $P(\SB_t \geq 0.6\SB_0) \geq 0.5$).
+1. Maintenir la biomasse féconde à un niveau égal ou supérieur au PRS avec au moins 50% de probabilité sur trois générations de hareng du Pacifique (c.-à-d. atteindre une biomasse cible; $P(\SB_t \geq 0.6\SB_0) \geq 0.5$),
 
-1. Maintenir la variabilité annuelle moyenne (VAM) des prises en deçà de 25% sur trois générations de hareng du Pacifique (objectif reflétant la variabilité des prises; $\text{AAV} < 0.25$).
+1. Maintenir la variabilité annuelle moyenne (VAM) des prises en deçà de 25% sur trois générations de hareng du Pacifique (objectif reflétant la variabilité des prises; $\text{AAV} < 0.25$), et
 
 1. Maximiser les prises annuelles moyennes sur trois générations de hareng du Pacifique (objectif reflétant la biomasse des prises).
 
@@ -275,7 +275,7 @@ Le premier cycle de l'ESG posait trois hypothèses sur la mortalité naturelle f
 
 1. $M$ est un processus variable dans le temps et dépendant de la densité (DDM),
 
-1. $M$ est un processus variable dans le temps et indépendant de la densité (DIM),
+1. $M$ est un processus variable dans le temps et indépendant de la densité (DIM), et
 
 1. $M$ est constant dans le temps (conM).
 
@@ -375,7 +375,7 @@ Les résultats ont également montré que les procédures de gestion dont les pl
 
 En 2018, un avis scientifique recommandait de cesser d'utiliser la règle de contrôle des prises avec seuil fixe historique et d'adopter une règle de contrôle des prises avec deux points de contrôle opérationnel (PCO) pour les raisons suivantes [@dfo2019a]:
 
-1. Les valeurs des seuils fixes ont été calculées en dehors du modèle d'évaluation actuel, mises à jour pour la dernière fois en 1996, et ignorent donc 22 années de données de surveillance des stocks et des pêches, ainsi que les changements importants apportés à la forme structurelle du modèle d'évaluation.
+1. Les valeurs des seuils fixes ont été calculées en dehors du modèle d'évaluation actuel, mises à jour pour la dernière fois en 1996, et ignorent donc 22 années de données de surveillance des stocks et des pêches, ainsi que les changements importants apportés à la forme structurelle du modèle d'évaluation, et
 
 1. L'utilisation de PCO inférieurs et supérieurs distincts permet de modifier la pente de la partie correspondant à la rampe de la règle de contrôle des prises afin de mieux répondre aux objectifs relatifs aux stocks et aux pêches en évitant les fermetures des pêches et en encourageant la croissance des stocks à mesure que l'on connaît mieux la dynamique des stocks et les effets de la pêche.
 
