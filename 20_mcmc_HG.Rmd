@@ -81,15 +81,17 @@ Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) po
 make.pairs.plot(major_models[[model_ind]])
 ```
 
-(ref:hg-biomass-retro-cap) Maximum posterior density of spawning biomass
+(ref:hg-biomass-retro-cap) Maximum posterior density of spawning biomass (lines)
 from `r recent_catch_yr` to `r assess_yr` (base model)
 with retrospectives (-1 to -`r retrospective_yrs` years)
 for the Haida Gwaii major stock assessment region.
+Points indicate estimated unfished spawning biomass.
 
-(ref:hg-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice
+(ref:hg-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice (lignes)
 de `r recent_catch_yr` à `r assess_yr` (modèle de base)
 avec des rétrospectives (-1 à -`r retrospective_yrs` années)
 pour la région d'évaluation des stocks majeur de Haida Gwaii.
+Les points indiquent la biomasse reporductrice non exploitée estimée.
 
 ```{r hg-biomass-retro, fig.cap=ifelse(french, "(ref:hg-biomass-retro-cap-fr)", "(ref:hg-biomass-retro-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],
