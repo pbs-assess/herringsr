@@ -60,14 +60,19 @@ make.pairs.plot(major_models[[model_ind]])
 ```
 
 (ref:cc-biomass-retro-cap) Maximum posterior density of spawning biomass
-with retrospectives for the Central Coast major stock assessment region.
+from `r recent_catch_yr` to `r assess_yr` (base model)
+with retrospectives (-1 to -`r retrospective_yrs` years)
+for the Central Coast major stock assessment region.
 
 (ref:cc-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice
-avec des rétrospectives pour la région d'évaluation des stocks majeur de la côte centrale.
+de `r recent_catch_yr` à `r assess_yr` (modèle de base)
+avec des rétrospectives (-1 à -`r retrospective_yrs` années)
+pour la région d'évaluation des stocks majeur de la côte centrale.
 
 ```{r cc-biomass-retro, fig.cap=ifelse(french, "(ref:cc-biomass-retro-cap-fr)", "(ref:cc-biomass-retro-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],
-                 xlim = c(1972, assess_yr))
+                 xlim = c(recent_catch_yr, assess_yr),
+                 translate = french)
 ```
 
 (ref:hcr-cc-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 1-4 in Table \\@ref(tab:decision-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
