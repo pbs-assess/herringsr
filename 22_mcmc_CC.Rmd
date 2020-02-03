@@ -6,7 +6,7 @@ The MCMC run had chain length `r mcmc_length`
 with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration.
 The first `r f(mcmc_burnin)` samples were discarded (burn-in), 
 leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for posteriors.
-These diagnostics will not be included in the final document.
+This section will not be included in the final document.
 
 (ref:cc-priors-posts-cap) Prior probability distributions (lines) with
 comparative posterior histograms (bars) used in the Central Coast major stock assessment region.
