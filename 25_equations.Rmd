@@ -3,8 +3,8 @@
 The Pacific Herring stock assessment is conducted using the integrated statistical catch age model [iSCAM; @martell2011].
 iSCAM is implemented in a Bayesian estimation framework written in AD Model Builder [ADMB; @admb].
 The original source code and documentation for
-[iSCAM](https://github.com/smartell/iSCAM) and
-[ADMB](http://www.admb-project.org/) are available online.
+\link{https://github.com/smartell/iSCAM}{iSCAM} and
+\link{https://www.admb-project.org/}{ADMB} are available online.
 
 This section contains the documentation in mathematical form of the underlying iSCAM age-structured model,
 its steady state version that is used to calculate reference points,
@@ -13,7 +13,8 @@ the components of the objective function that formulate the statistical criterio
 This section will not be included in the final document.
 
 A documented list of symbols used in model equations is given in Table \@ref(tab:variables).
-The documentation presented here is a revised version of the [iSCAM users guide](https://sites.google.com/site/iscamproject/).
+The documentation presented here is a revised version of the
+\link{https://sites.google.com/site/iscamproject/}{iSCAM users guide}.
 Much of the text and many of the equations have been taken directly from this guide.
 Note that all the model equations are presented for a sex structured model with $S$ sexes.
 Models can therefore be constructed with data for females only, for males and females, or with unsexed data.
