@@ -1,7 +1,7 @@
 # Central Coast diagnostics
 
-This section contains Markov chain Monte Carlo (MCMC) diagnostics for the
-statistical catch-age model in the Central Coast major stock assessment region.
+This section contains Markov chain Monte Carlo (MCMC) diagnostics for the Pacific Herring statistical catch-age model
+in the Central Coast major stock assessment region.
 The MCMC run had chain length `r mcmc_length`
 with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration.
 The first `r f(mcmc_burnin)` samples were discarded (burn-in), 
@@ -9,7 +9,7 @@ leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for posteriors.
 This section will not be included in the final document.
 
 (ref:cc-priors-posts-cap) Prior probability distributions (lines) with
-comparative posterior histograms (bars) used in the Central Coast major stock assessment region.
+comparative posterior histograms (bars) for Pacific Herring in the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-priors-posts) for description.
 
 (ref:cc-priors-posts-cap-fr) Distributions de probabilité a priori (lignes)
@@ -23,7 +23,7 @@ make.priors.posts.plot(major_models[[model_ind]],
 ```
 
 (ref:cc-traces-cap) Trace plots for Markov chain Monte Carlo output of
-estimated parameters for the Central Coast major stock assessment region.
+estimated parameters for Pacific Herring in the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:cc-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés
@@ -36,7 +36,7 @@ make.traces.plot(major_models[[model_ind]],
 ```
 
 (ref:cc-autocor-cap) Auto-correlation plots for Markov chain Monte Carlo output of
-estimated parameters for the Central Coast major stock assessment region.
+estimated parameters for Pacific Herring in the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:cc-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
@@ -48,7 +48,7 @@ make.autocor.plot(major_models[[model_ind]])
 ```
 
 (ref:cc-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
-estimated parameters for the Central Coast major stock assessment region.
+estimated parameters for Pacific Herring in the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:cc-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
@@ -62,7 +62,7 @@ make.pairs.plot(major_models[[model_ind]])
 (ref:cc-biomass-retro-cap) Maximum posterior density of spawning biomass (lines)
 from `r recent_catch_yr` to `r assess_yr` (base model)
 with retrospectives (-1 to -`r retrospective_yrs` years)
-for the Central Coast major stock assessment region.
+for Pacific Herring in the Central Coast major stock assessment region.
 See Figure \@ref(fig:hg-biomass-retro) for description.
 
 (ref:cc-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice (lignes)
