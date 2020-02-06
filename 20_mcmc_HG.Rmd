@@ -122,4 +122,3 @@ plot_bh(major_models[[model_ind]],
         regions=major_regions_full[[model_ind]],
         translate=french)
 ```
-
