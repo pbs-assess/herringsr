@@ -81,19 +81,13 @@ biomass.plot.mpd(major_models[[model_ind]],
 the number of age-`r age_first` recruits in thousands of millions (points), as well as the
 Beverton-Holt stock-recruitment relationship (line)
 for Pacific Herring in the Prince Rupert District major stock assessment region.
-The star indicates unfished spawning biomass and unfished age-`r age_first` recruitment.
-Shading becomes darker in chronological order;
-the triangle indicates `r assess_yr`.
-Note: values are median posterior estimates.
+See Figure \@ref(fig:hg-sr) for description.
 
 (ref:prd-sr-cap-fr) La relation entre la biomasse reproductrice en milliers de tonnes (t) et
 le nombre de recrues d'âge `r age_first` en milliers de millions (points), ainsi que
 la relation stock-recrutement du modèle Beverton-Holt (ligne)
 pour le hareng du Pacifique dans la région d'évaluation des stocks majeur du district de Prince Rupert.
-L'étoile indique la biomasse du stock reproducteur non exploitée et le recrutement de l’âge `r age_first` dans le stock non exploité.
-L’ombrage est de plus en plus foncé à mesure que l’on avance dans la série chronologique;
-le triangle indique `r assess_yr`.
-Remarque: les valeurs sont des estimations médianes postérieures.
+Voir la figure \@ref(fig:hg-sr) pour la description.
 
 ```{r prd-sr, fig.cap=ifelse(french, "(ref:prd-sr-cap-fr)", "(ref:prd-sr-cap)")}
 plot_bh(major_models[[model_ind]],
