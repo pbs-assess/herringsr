@@ -9,11 +9,12 @@ leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for posteriors.
 This section will not be included in the final document.
 
 (ref:wcvi-priors-posts-cap) Prior probability distributions (lines) with
-comparative posterior histograms (bars) for Pacific Herring in the West Coast of Vancouver Island major stock assessment region.
+comparative posterior histograms (bars) for Pacific Herring
+in the West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-priors-posts) for description.
 
 (ref:wcvi-priors-posts-cap-fr) Distributions de probabilité a priori (lignes)
-et histogrammes a posteriori comparatifs (barres) utilisés dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+et histogrammes a posteriori comparatifs (barres) pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-priors-posts) pour la description.
 
 ```{r wcvi-priors-posts, fig.cap=ifelse(french, "(ref:wcvi-priors-posts-cap-fr)", "(ref:wcvi-priors-posts-cap)")}
@@ -26,7 +27,7 @@ make.priors.posts.plot(major_models[[model_ind]],
 estimated parameters for Pacific Herring in the West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
-(ref:wcvi-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés
+(ref:wcvi-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés pour le hareng du Pacifique
 dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
@@ -40,7 +41,7 @@ estimated parameters for Pacific Herring in the West Coast of Vancouver Island m
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:wcvi-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
-paramètres estimés dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+paramètres estimés pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r wcvi-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-autocor-cap-fr)", "(ref:wcvi-autocor-cap)")}
@@ -52,7 +53,7 @@ estimated parameters for Pacific Herring in the West Coast of Vancouver Island m
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:wcvi-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
-les paramètres estimés dans la region d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+les paramètres estimés pour le hareng du Pacifique dans la region d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r wcvi-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-pairs-cap-fr)", "(ref:wcvi-pairs-cap)")}
@@ -68,7 +69,7 @@ See Figure \@ref(fig:hg-biomass-retro) for description.
 (ref:wcvi-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice (lignes)
 de `r recent_catch_yr` à `r assess_yr` (modèle de base)
 avec des rétrospectives (-1 à -`r retrospective_yrs` années)
-pour la région d'évaluation des stocks majeur du détroit de Georgie.
+pour le hareng du Pacifique dans la région d'évaluation des stocks majeur du détroit de Georgie.
 Voir la figure \@ref(fig:hg-biomass-retro) pour la description.
 
 ```{r wcvi-biomass-retro, fig.cap=ifelse(french, "(ref:wcvi-biomass-retro-cap-fr)", "(ref:wcvi-biomass-retro-cap)")}

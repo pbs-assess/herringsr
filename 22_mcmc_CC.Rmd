@@ -13,7 +13,7 @@ comparative posterior histograms (bars) for Pacific Herring in the Central Coast
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-priors-posts) for description.
 
 (ref:cc-priors-posts-cap-fr) Distributions de probabilité a priori (lignes)
-et histogrammes a posteriori comparatifs (barres) utilisés dans la région d’évaluation des stocks majeur de la côte centrale.
+et histogrammes a posteriori comparatifs (barres) pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
 Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-priors-posts) pour la description.
 
 ```{r cc-priors-posts, fig.cap=ifelse(french, "(ref:cc-priors-posts-cap-fr)", "(ref:cc-priors-posts-cap)")}
@@ -23,10 +23,11 @@ make.priors.posts.plot(major_models[[model_ind]],
 ```
 
 (ref:cc-traces-cap) Trace plots for Markov chain Monte Carlo output of
-estimated parameters for Pacific Herring in the Central Coast major stock assessment region.
+estimated parameters for Pacific Herring
+in the Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
-(ref:cc-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés
+(ref:cc-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés pour le hareng du Pacifique
 dans la région d’évaluation des stocks majeur de la côte centrale.
 Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
@@ -40,7 +41,7 @@ estimated parameters for Pacific Herring in the Central Coast major stock assess
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:cc-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
-paramètres estimés dans la région d’évaluation des stocks majeur de la côte centrale.
+paramètres estimés pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
 Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r cc-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:cc-autocor-cap-fr)", "(ref:cc-autocor-cap)")}
@@ -52,7 +53,7 @@ estimated parameters for Pacific Herring in the Central Coast major stock assess
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:cc-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
-les paramètres estimés dans la region d’évaluation des stocks majeur de la côte centrale.
+les paramètres estimés pour le hareng du Pacifique dans la region d’évaluation des stocks majeur de la côte centrale.
 Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r cc-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:cc-pairs-cap-fr)", "(ref:cc-pairs-cap)")}
@@ -68,7 +69,7 @@ See Figure \@ref(fig:hg-biomass-retro) for description.
 (ref:cc-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice (lignes)
 de `r recent_catch_yr` à `r assess_yr` (modèle de base)
 avec des rétrospectives (-1 à -`r retrospective_yrs` années)
-pour la région d'évaluation des stocks majeur de la côte centrale.
+pour le hareng du Pacifique dans la région d'évaluation des stocks majeur de la côte centrale.
 Voir la figure \@ref(fig:hg-biomass-retro) pour la description.
 
 ```{r cc-biomass-retro, fig.cap=ifelse(french, "(ref:cc-biomass-retro-cap-fr)", "(ref:cc-biomass-retro-cap)")}

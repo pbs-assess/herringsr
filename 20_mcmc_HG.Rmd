@@ -15,7 +15,7 @@ Legend: ln is natural logarithm.
 See Table \@ref(tab:hg-parameter-est) for description.
 
 (ref:hg-priors-posts-cap-fr) Distributions de probabilité a priori (lignes)
-et histogrammes a posteriori comparatifs (barres) utilisés dans la région d’évaluation des stocks majeur de Haida Gwaii.
+et histogrammes a posteriori comparatifs (barres) pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
 Les lignes rouges en pointillés sont des estimations de la densité a posteriori maximale.
 Légende: ln est le logarithme naturel.
 Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
@@ -27,7 +27,8 @@ make.priors.posts.plot(major_models[[model_ind]],
 ```
 
 (ref:hg-traces-cap) Trace plots for Markov chain Monte Carlo output of
-estimated parameters for Pacific Herring in the Haida Gwaii major stock assessment region.
+estimated parameters for Pacific Herring
+in the Haida Gwaii major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) for description.
 In addition, $B_0$ is unfished biomass,
 $\SB_0$ is unfished spawning biomass,
@@ -39,7 +40,7 @@ Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
 2 represents the roe gillnet fishery, and
 3 represents the roe seine fishery.
 
-(ref:hg-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés
+(ref:hg-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés pour le hareng du Pacifique
 dans la région d’évaluation des stocks majeur de Haida Gwaii.
 Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 De plus, $\SB_0$ est la biomasse non exploitée estimée,
@@ -62,7 +63,7 @@ estimated parameters for Pacific Herring in the Haida Gwaii major stock assessme
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:hg-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
-paramètres estimés dans la région d’évaluation des stocks majeur de Haida Gwaii.
+paramètres estimés pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
 Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r hg-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-autocor-cap-fr)", "(ref:hg-autocor-cap)")}
@@ -74,7 +75,7 @@ estimated parameters for Pacific Herring in the Haida Gwaii major stock assessme
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:hg-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
-les paramètres estimés dans la region d’évaluation des stocks majeur de Haida Gwaii.
+les paramètres estimés pour le hareng du Pacifique dans la region d’évaluation des stocks majeur de Haida Gwaii.
 Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r hg-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-pairs-cap-fr)", "(ref:hg-pairs-cap)")}
@@ -90,7 +91,7 @@ Points indicate estimated unfished spawning biomass.
 (ref:hg-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice (lignes)
 de `r recent_catch_yr` à `r assess_yr` (modèle de base)
 avec des rétrospectives (-1 à -`r retrospective_yrs` années)
-pour la région d'évaluation des stocks majeur de Haida Gwaii.
+pour le hareng du Pacifique dans la région d'évaluation des stocks majeur de Haida Gwaii.
 Les points indiquent la biomasse reporductrice non exploitée estimée.
 
 ```{r hg-biomass-retro, fig.cap=ifelse(french, "(ref:hg-biomass-retro-cap-fr)", "(ref:hg-biomass-retro-cap)")}
