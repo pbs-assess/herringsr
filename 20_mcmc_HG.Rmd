@@ -99,21 +99,23 @@ biomass.plot.mpd(major_models[[model_ind]],
                  translate = french)
 ```
 
-(ref:hg-sr-cap) Beverton-Holt stock-recruitment relationship using maximum posterior density estimates for Pacific Herring in the
-Haida Gwaii major stock assessment region.
-Points show the relationship between spawning biomass in tonnes (t) and the number of age-`r age_first` recruits in millions.
+(ref:hg-sr-cap) Relationship between spawning biomass in thousands of tonnes (t) and
+the number of age-`r age_first` recruits in thousands of millions (points), as well as the
+Beverton-Holt stock-recruitment relationship (line)
+for Pacific Herring in the Haida Gwaii major stock assessment region.
 The star indicates unfished spawning biomass and unfished age-`r age_first` recruitment.
-Grey shading becomes darker in chronological order.
-The triangle indicates the current year, `r assess_yr`.
-The line indicates the predicted stock-recruitment relationship.
+Shading becomes darker in chronological order;
+the triangle indicates `r assess_yr`.
+Note: values are median posterior estimates.
 
-(ref:hg-sr-cap-fr) Relation stock-recrutement du modèle Beverton-Holt, établie au moyen d’estimations de la densité a posteriori maximale pour le hareng du Pacifique dans
-la région d'évaluation des stocks majeur de Haida Gwaii.
-Les points montrent la relation entre la biomasse reproductrice en tonnes (t) et le nombre de recrues d'âge 2 en millions.
+(ref:hg-sr-cap-fr) La relation entre la biomasse reproductrice en milliers de tonnes (t) et
+le nombre de recrues d'âge `r age_first` en milliers de millions (points), ainsi que
+la relation stock-recrutement du modèle Beverton-Holt (ligne)
+pour le hareng du Pacifique dans la région d'évaluation des stocks majeur de Haida Gwaii.
 L'étoile indique la biomasse du stock reproducteur non exploitée et le recrutement de l’âge `r age_first` dans le stock non exploité.
-L’ombrage gris est de plus en plus foncé à mesure que l’on avance dans la série chronologique
-Le triangle indique l’année en cours, `r assess_yr`.
-La ligne indique le rapport stock-recrutement prévu.
+L’ombrage est de plus en plus foncé à mesure que l’on avance dans la série chronologique;
+le triangle indique `r assess_yr`.
+Remarque: les valeurs sont des estimations médianes postérieures.
 
 ```{r hg-sr, fig.cap=ifelse(french, "(ref:hg-sr-cap-fr)", "(ref:hg-sr-cap)")}
 plot_bh(major_models[[model_ind]],
