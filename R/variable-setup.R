@@ -2,12 +2,6 @@ assess_yr <- 2019 #as.numeric(substr(Sys.Date(), 1, 4))
 last_assess_yr <- assess_yr - 1
 this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
 
-# Minimum age
-age_first <- 2
-
-# Age class of plus group for proportion-at-age
-age_plus <- 10
-
 # Age class to highlight in weight-at-age plots
 age_highlight <- 3
 
@@ -97,6 +91,12 @@ minor_catch <- get_catch(minor_models,
 minor_catch_short <- get_catch(minor_models,
                                minor_regions_short,
                                gear)
+
+# Minimum age
+age_first <- major_models[[1]]$dat$start.age
+
+# Age class of plus group for proportion-at-age
+age_plus <- 10
 
 suppressWarnings(
   ## supress warnings is because the two tables have different factors for the `region` column
