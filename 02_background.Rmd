@@ -53,7 +53,7 @@ this showed parameter estimates and biomass trajectories associated with the str
 supporting the adoption of the revised structure [@cleary2018].
 Other adjustments were made to improve computational efficiency and update input data.
 
-A Bayesian framework was used to estimate time series of spawning biomass, instantaneous natural mortality, and age-2 recruitment from `r major_start_yr` to `r major_end_yr`.
+A Bayesian framework was used to estimate time series of spawning biomass, instantaneous natural mortality, and age-`r age_first` recruitment from `r major_start_yr` to `r major_end_yr`.
 Advice to managers for the major SARs includes posterior estimates of current stock status ($\SB_{`r major_end_yr`}$), stock status relative to the LRP of $0.3\SB_0$, and spawning biomass in `r major_end_yr + 1` assuming no catch ($\SB_{`r major_end_yr + 1`}$).
 The projected spawning biomass is based on the current year's recruitment deviations from average predicted by the Beverton-Holt stock-recruit model and
 estimated natural mortality and weight-at-age, both averaged over the most recent 5-years.

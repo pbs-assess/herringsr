@@ -170,11 +170,11 @@ spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
 maximum posterior density (MPD) estimates of key parameters for the
 Pacific Herring statistical catch-age model in the
 Haida Gwaii major stock assessment region.
-Legend: $R_0$ is unfished age-2 recruitment;
+Legend: $R_0$ is unfished age-`r age_first` recruitment;
 $h$ is steepness of the stock-recruitment relationship;
 $M$ is instantaneous natural mortality rate;
-$\overline{R}$ is average age-2 recruitment from `r major_start_yr` to `r major_end_yr`;
-$\overline{R}_\mli{init}$ is average age-2 recruitment in `r major_start_yr-1`;
+$\overline{R}$ is average age-`r age_first` recruitment from `r major_start_yr` to `r major_end_yr`;
+$\overline{R}_\mli{init}$ is average age-`r age_first` recruitment in `r major_start_yr-1`;
 $\rho$ is the fraction of total variance associated with observation error;
 $\vartheta$ is the precision of total error;
 $q$ is catchability for surface (`r major_start_yr` to `r new_surv_yr-1`; $q_1$) and
@@ -187,11 +187,11 @@ Note: $\tau$ and $\sigma$ are calculated values.
 densité a posteriori maximale (DPM) des paramètres principaux pour le
 modèle statistique des prises selon l’âge de hareng du Pacifique dans la
 région d’évaluation des stocks majeur de Haida Gwaii.
-Légende: $R_0$ est recrutement non pêché de l'âge 2;
+Légende: $R_0$ est recrutement non pêché de l'âge `r age_first`;
 $h$ est l'inclinaison de la relation stock-recrutement;
 $M$ est le taux de mortalité naturelle instantanée;
-$\overline{R}$  est le recrutement moyen de l'âge 2 de `r major_start_yr` à `r major_end_yr`;
-$\overline{R}_\mli{init}$ est le recrutement moyen de l'âge 2 en `r major_start_yr-1`;
+$\overline{R}$  est le recrutement moyen de l'âge `r age_first` de `r major_start_yr` à `r major_end_yr`;
+$\overline{R}_\mli{init}$ est le recrutement moyen de l'âge `r age_first` en `r major_start_yr-1`;
 $\rho$ est la fraction de la variance totale associée à l'erreur d'observation;
 $\vartheta$ est la précision de l'erreur totale;
 $q$ est la capturabilité pour les périodes de relevé en surface (de `r major_start_yr` à `r new_surv_yr-1`; $q_1$) et en plongée (de `r new_surv_yr` à `r major_end_yr`; $q_2$);
@@ -313,12 +313,12 @@ make.parameters.est.table(major_models[[model_ind]],
 ```
 
 (ref:hg-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile)
-and maximum posterior density (MPD) estimates of age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+and maximum posterior density (MPD) estimates of age-`r age_first` recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
 Pacific Herring statistical catch-age model in the
 Haida Gwaii major stock assessment region.
 
 (ref:hg-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
-densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+densité a posteriori maximale (DPM) du recrutement de l'âge `r age_first` (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
 modèle statistique des prises selon l’âge du hareng du Pacifique dans la
 région d’évaluation des stocks majeur de Haida Gwaii.
 
@@ -337,12 +337,12 @@ make.value.table(major_models[[model_ind]],
 ```
 
 (ref:prd-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
-maximum posterior density (MPD) estimates of age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+maximum posterior density (MPD) estimates of age-`r age_first` recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
 Pacific Herring statistical catch-age model in the
 Prince Rupert District major stock assessment region.
 
 (ref:prd-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
-densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+densité a posteriori maximale (DPM) du recrutement de l'âge `r age_first` (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
 modèle statistique des prises selon l’âge du hareng du Pacifique dans la
 région d’évaluation des stocks majeur du district de Prince Rupert.
 
@@ -361,12 +361,12 @@ make.value.table(major_models[[model_ind]],
 ```
 
 (ref:cc-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
-maximum posterior density (MPD) estimates of age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+maximum posterior density (MPD) estimates of age-`r age_first` recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
 Pacific Herring statistical catch-age model in the
 Central Coast major stock assessment region.
 
 (ref:cc-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
-densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+densité a posteriori maximale (DPM) du recrutement de l'âge `r age_first` (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
 modèle statistique des prises selon l’âge du hareng du Pacifique dans la
 région d’évaluation des stocks majeur de la côte centrale.
 
@@ -385,12 +385,12 @@ make.value.table(major_models[[model_ind]],
 ```
 
 (ref:sog-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
-maximum posterior density (MPD) estimates of age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+maximum posterior density (MPD) estimates of age-`r age_first` recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
 Pacific Herring statistical catch-age model in the
 Strait of Georgia major stock assessment region.
 
 (ref:sog-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
-densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+densité a posteriori maximale (DPM) du recrutement de l'âge `r age_first` (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
 modèle statistique des prises selon l’âge du hareng du Pacifique dans la
 région d’évaluation des stocks majeur du détroit de Georgie.
 
@@ -409,12 +409,12 @@ make.value.table(major_models[[model_ind]],
 ```
 
 (ref:wcvi-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
-maximum posterior density (MPD) estimates of age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+maximum posterior density (MPD) estimates of age-`r age_first` recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
 Pacific Herring statistical catch-age model in the
 West Coast of Vancouver Island major stock assessment region.
 
 (ref:wcvi-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
-densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+densité a posteriori maximale (DPM) du recrutement de l'âge `r age_first` (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
 modèle statistique des prises selon l’âge du hareng du Pacifique dans la
 région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 

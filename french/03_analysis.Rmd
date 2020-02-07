@@ -106,7 +106,7 @@ Les panneaux \ref{item:storyIndex} à \ref{item:storyPhase} sont les suivants:
 
 (a) La série chronologique des estimations de la mortalité naturelle ($M$),
 
-(a) La reconstitution de la série chronologique du nombre de recrues à l'âge 2,
+(a) La reconstitution de la série chronologique du nombre de recrues à l'âge `r age_first`,
 
 (a) Les séries chronologiques des prises totales et de la biomasse féconde estimée avec la ligne de référence aux estimations du modèle de $0.3\SB_0$,
 
@@ -151,7 +151,7 @@ Par exemple, le taux de récolte est fixé à zéro et la pêche cesse lorsque l
 
 La biomasse féconde estimée est tombée à quasiment des creux historiques au milieu des années 1990 et est brièvement remontée jusqu'à la fin des années 1990 avant de chuter à des creux historiques persistants de 2000 à 2010 (figure \@ref(fig:storyboard-hg)d).
 Une modeste augmentation de la biomasse féconde estimée s'est produite au début des années 2010 avant de retomber à des creux historiques ces dernières années.
-L'augmentation peut être attribuée à la hausse de l'indice de la biomasse dans les relevés en 2013 et 2015 (figure \@ref(fig:storyboard-hg)a) qui a été soutenue par un recrutement supérieur à la moyenne de poissons d'âge 2 en 2012 (figure \@ref(fig:storyboard-hg)c, d).
+L'augmentation peut être attribuée à la hausse de l'indice de la biomasse dans les relevés en 2013 et 2015 (figure \@ref(fig:storyboard-hg)a) qui a été soutenue par un recrutement supérieur à la moyenne de poissons d'âge `r age_first` en 2012 (figure \@ref(fig:storyboard-hg)c, d).
 Une tendance à la hausse du taux estimé de mortalité naturelle depuis 1980 (figure \@ref(fig:storyboard-hg)b) a largement absorbé la production excédentaire attribuable à des événements de recrutement supérieurs à la moyenne (p. ex. 1997 et 2012; figure \@ref(fig:storyboard-hg)c, d).
 En particulier, la mortalité naturelle estimée a fortement augmenté depuis le début des années 2010, après une baisse par rapport au pic atteint au début des années 2000.
 Depuis 2000, le stock de Haida Gwaii se trouve dans un état de faible biomasse, et bon nombre de ces années ont également affiché une faible productivité qui a empêché la croissance du stock (figure \@ref(fig:storyboard-hg)f).
@@ -208,11 +208,11 @@ Selon le modèle, la mortalité naturelle augmente depuis 2016 et a maintenant a
 Cela coïncide avec la récente tendance à la baisse de la biomasse féconde estimée.
 La grande incertitude des estimations de la biomasse féconde et de la mortalité naturelle en `r assess_yr` peut être en partie attribuable à la tendance à la baisse de l'indice du frai depuis 2017, après la tendance à la hausse amorcée en 2010 (figure \@ref(fig:storyboard-sog)a).
 Le modèle s'ajuste à une trajectoire moyenne des valeurs de l'indice du frai des années 2010 et ne dispose pas, à ce jour, de suffisamment d'information pour déterminer si la baisse de 2016 à `r assess_yr` représente une diminution de la biomasse féconde.
-Le modèle estime un recrutement supérieur à la moyenne la plupart des années entre 2010 et `r assess_yr` (figure \@ref(fig:storyboard-sog)c), les écarts du recrutement révélant un recrutement particulièrement important de poissons d'âge 2 en 2019 (figure \@ref(fig:storyboard-sog)e).
+Le modèle estime un recrutement supérieur à la moyenne la plupart des années entre 2010 et `r assess_yr` (figure \@ref(fig:storyboard-sog)c), les écarts du recrutement révélant un recrutement particulièrement important de poissons d'âge `r age_first` en 2019 (figure \@ref(fig:storyboard-sog)e).
 Le relevé des harengs juvéniles du détroit de Georgia a montré une augmentation de l'abondance des poissons d'âge 0 de 2016 à 2017 (relevé des harengs juvéniles du détroit de Georgia, septembre 2017, Rapport manuscrit canadien des sciences halieutiques et aquatiques, rapport inédit).
-Le programme d'échantillonnage cible les regroupements avant le frai et l'évaluation suppose que 25% des harengs d'âge 2 sont matures.
-La grande incertitude entourant l'estimation du recrutement des poissons d'âge 2 dans l'année terminale de la série chronologique est une observation courante, parce que ces poissons d'âge 2 ne sont que partiellement recrutés dans les engins de pêche.
-Le recrutement estimatif de 2019 pour l'âge 2 sera ajusté par le modèle l'an prochain avec l'ajout des données de l'échantillon de 2020 (c.-à-d. lorsque la cohorte de 2017 sera échantillonnée pour l'âge 3).
+Le programme d'échantillonnage cible les regroupements avant le frai et l'évaluation suppose que 25% des harengs d'âge `r age_first` sont matures.
+La grande incertitude entourant l'estimation du recrutement des poissons d'âge `r age_first` dans l'année terminale de la série chronologique est une observation courante, parce que ces poissons d'âge `r age_first` ne sont que partiellement recrutés dans les engins de pêche.
+Le recrutement estimatif de 2019 pour l'âge `r age_first` sera ajusté par le modèle l'an prochain avec l'ajout des données de l'échantillon de 2020 (c.-à-d. lorsque la cohorte de 2017 sera échantillonnée pour l'âge 3).
 L'analyse de la production excédentaire montre que, pour l'année comprise entre 2018 et 2019, on estime que la région d'évaluation des stocks du détroit de Georgia est dans un état de forte production et de biomasse élevée, semblable à 1989, 1990, 2012 et 2016 (figure \@ref(fig:storyboard-sog)f).
 
 Depuis le début des années 1970 (après l'effondrement du stock à la fin des années 1960), la pêche commerciale est pratiquée chaque année dans le détroit de Georgia.
@@ -227,7 +227,7 @@ La série chronologique de la biomasse féconde estimée montre une baisse depui
 Le faible niveau de la biomasse féconde estimée a persisté de 2006 à 2012 et a depuis lentement augmenté pour revenir à un niveau similaire à celui estimé pour 2000.
 La reconstruction de la biomasse féconde par le modèle suit de près la trajectoire des valeurs de l'indice du frai (figure \@ref(fig:storyboard-wcvi)a).
 L'augmentation de la biomasse féconde depuis 2013 coïncide avec une baisse de la mortalité naturelle estimée, qui avait atteint un sommet historique à la fin des années 2000 (figure \@ref(fig:storyboard-wcvi)b).
-Les écarts du recrutement sont négatifs (inférieurs aux prévisions de la fonction de stock-recrutement) en moyenne depuis environ 2003 (figure \@ref(fig:storyboard-wcvi)e), mais la réduction de la mortalité naturelle estimée et l'absence de prélèvements par une pêche commerciale semblent suffire à compenser ce recrutement inférieur à la moyenne pour les poissons d'âge 2.
+Les écarts du recrutement sont négatifs (inférieurs aux prévisions de la fonction de stock-recrutement) en moyenne depuis environ 2003 (figure \@ref(fig:storyboard-wcvi)e), mais la réduction de la mortalité naturelle estimée et l'absence de prélèvements par une pêche commerciale semblent suffire à compenser ce recrutement inférieur à la moyenne pour les poissons d'âge `r age_first`.
 L'absence de pêche commerciale depuis 2005 signifie que le taux de récolte réalisé est presque nul depuis 14 ans (figure \@ref(fig:harvest-rate)).
 On a noté des preuves modestes d'une augmentation de la production et de la biomasse ces dernières années.
 Les estimations de la production pour l'année 2018-2019 se situent à un niveau de biomasse féconde plus élevé que celui estimé durant la période de faible production et de faible biomasse de la deuxième moitié des années 2000 et du début des années 2010 (figure \@ref(fig:storyboard-wcvi)f).

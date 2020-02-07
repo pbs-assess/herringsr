@@ -112,7 +112,7 @@ The panels \ref{item:storyIndex} to \ref{item:storyPhase} show:
 
 (a) Time series of instantaneous natural mortality rate $M$ estimates,
 
-(a) Time series reconstruction of number of age-2 recruits,
+(a) Time series reconstruction of number of age-`r age_first` recruits,
 
 (a) Time series of estimated spawning biomass $\SB_t$ and total catch $C_t$ in year $t$,
 with reference lines at model estimates of $0.3\SB_0$,
@@ -159,7 +159,7 @@ Specifically, operational control points (OCPs) define the inflection points of 
 
 Estimated spawning biomass declined to near historic lows in the mid-1990s and briefly increased through the late 1990s before falling to persistent historic lows from 2000 to 2010 (Figure \@ref(fig:storyboard-hg)d).
 A modest increase in estimated spawning biomass occurred during the early 2010s before falling once again to near historic lows over the most recent few years.
-The increase can be attributed to increases in the spawn index in 2013 and 2015 (Figure \@ref(fig:storyboard-hg)a) that were supported by above average recruitment of age-2 fish in 2012 (Figure \@ref(fig:storyboard-hg)c, d).
+The increase can be attributed to increases in the spawn index in 2013 and 2015 (Figure \@ref(fig:storyboard-hg)a) that were supported by above average recruitment of age-`r age_first` fish in 2012 (Figure \@ref(fig:storyboard-hg)c, d).
 An increasing trend in the estimated natural mortality rate since 1980 (Figure \@ref(fig:storyboard-hg)b) largely absorbed surplus production attributable to above average recruitment events (e.g., 1997 and 2012; Figure \@ref(fig:storyboard-hg)c, d).
 In particular, estimated natural mortality has increased sharply since the early 2010s following a decline from a peak rate in the early 2000s.
 Since 2000, the HG stock has been in a low biomass state, with many of these years also showing low productivity which has precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
@@ -181,7 +181,7 @@ Estimated natural mortality reached historic highs in the late 1960s, before dec
 Beginning in about 1980, estimated natural mortality increased through to `r assess_yr`, roughly doubling from 0.25 to 0.5&nbsp;$\text{yr}^{-1}$ (Figure \@ref(fig:storyboard-prd)b).
 This trend in natural mortality coincides with the decline in spawning biomass (Figure \@ref(fig:storyboard-prd)d);
 recruitment deviations have fluctuated around 0 without any strong positive or negative trends (Figure \@ref(fig:storyboard-prd)e).
-An above average age-2+ recruitment in 2014, 2017-2019, and an increase in the spawn index in the last year were still not sufficient to lead to an increasing trend in biomass (Figure \@ref(fig:storyboard-prd)f).
+An above average age-`r age_first`+ recruitment in 2014, 2017-2019, and an increase in the spawn index in the last year were still not sufficient to lead to an increasing trend in biomass (Figure \@ref(fig:storyboard-prd)f).
 Commercial catches from 2007-2018 have remained low (below 2,000&nbsp;t) and there was no commercial catch in 2019.
 The estimated natural mortality appears to be unchanged from last year,
 resulting in what appears to be a small increase in production.
@@ -234,13 +234,13 @@ following the increasing trend that began in 2010 (Figure \@ref(fig:storyboard-s
 The model fits an averaged trajectory through the spawn index values of the 2010s and has, to date,
 insufficient information to determine whether the decline from 2016 to `r assess_yr` represents a true decline in estimated spawning biomass.
 The model estimates above average recruitment in most years from 2010 to `r assess_yr` (Figure \@ref(fig:storyboard-sog)c)
-with the recruitment deviations showing especially large recruitment of age-2 fish in 2019 (Figure \@ref(fig:storyboard-sog)e).
+with the recruitment deviations showing especially large recruitment of age-`r age_first` fish in 2019 (Figure \@ref(fig:storyboard-sog)e).
 The SoG juvenile herring survey reported an increase in abundance of age-0 fish from 2016 to 2017 (Strait of Georgia Juvenile Herring Survey, September 2017, Canadian Manuscript Report of
 Fisheries and Aquatic Sciences, unpublished report).
-The sampling program targets prespawning aggregations and the assessment assumes 25% of age-2 herring are mature.
-The large uncertainty around estimated age-2 recruitment in the terminal year of the time series is a common observation
-because these age-2 fish are only partially recruited to the fishing gear.
-The estimated 2019 age-2 recruitment will be adjusted by the model next year with the addition of 2020 sample data (i.e., when the 2017 cohort is sampled as age-3s).
+The sampling program targets prespawning aggregations and the assessment assumes 25% of age-`r age_first` herring are mature.
+The large uncertainty around estimated age-`r age_first` recruitment in the terminal year of the time series is a common observation
+because these age-`r age_first` fish are only partially recruited to the fishing gear.
+The estimated 2019 age-`r age_first` recruitment will be adjusted by the model next year with the addition of 2020 sample data (i.e., when the 2017 cohort is sampled as age-3s).
 Analysis of surplus production shows that for the year between 2018-2019, the SoG SAR is estimated to be in a high production, high biomass state,
 similar to 1989, 1990, 2012 and 2016 (Figure \@ref(fig:storyboard-sog)f).
 
@@ -258,7 +258,7 @@ The low estimated spawning biomass persisted through the 2006 to 2012 period and
 The model reconstruction of spawning biomass closely follows the trajectory of spawn index values (Figure \@ref(fig:storyboard-wcvi)a).
 The increase in spawning biomass from 2013 coincides with a decline in estimated natural mortality from a historic high in the late 2000s (Figure \@ref(fig:storyboard-wcvi)b).
 Recruitment deviations have been negative (lower than predicted by the stock-recruit function) on average since about 2003 (Figure \@ref(fig:storyboard-wcvi)e),
-however the reduction in estimated natural mortality and absence of removals from a commercial fishery appears to be sufficient to offset this below average recruitment of age-2 fish.
+however the reduction in estimated natural mortality and absence of removals from a commercial fishery appears to be sufficient to offset this below average recruitment of age-`r age_first` fish.
 The absence of a commercial fishery since 2005 means the realized harvest rate has been near zero for the last 14 years (Figure \@ref(fig:harvest-rate)).
 In recent years there has been modest evidence for an increase in production and biomass.
 The production estimates in the 2018-2019 year are at a higher spawning biomass level than those estimated during the low production, low biomass period of the last half of the 2000s and early 2010s (Figure \@ref(fig:storyboard-wcvi)f).
