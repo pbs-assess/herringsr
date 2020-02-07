@@ -102,7 +102,7 @@ biomass.plot.mpd(major_models[[model_ind]],
 
 (ref:hg-sr-cap) Relationship between spawning biomass in thousands of tonnes (t) and
 the number of age-`r age_first` recruits in thousands of millions (points), as well as the
-Beverton-Holt stock-recruitment relationship (line)
+predicted Beverton-Holt stock-recruitment relationship (line)
 for the Pacific Herring statistical catch-age model in the Haida Gwaii major stock assessment region.
 The star indicates unfished spawning biomass and unfished age-`r age_first` recruitment.
 Shading becomes darker in chronological order;
@@ -111,7 +111,7 @@ Note: values are median posterior estimates.
 
 (ref:hg-sr-cap-fr) La relation entre la biomasse reproductrice en milliers de tonnes (t) et
 le nombre de recrues d'âge `r age_first` en milliers de millions (points), ainsi que
-la relation stock-recrutement du modèle Beverton-Holt (ligne)
+la relation stock-recrutement du modèle Beverton-Holt prévue (ligne)
 pour le hareng du Pacifique dans la région d'évaluation des stocks majeur de Haida Gwaii.
 L'étoile indique la biomasse du stock reproducteur non exploitée et le recrutement de l’âge `r age_first` dans le stock non exploité.
 L’ombrage est de plus en plus foncé à mesure que l’on avance dans la série chronologique;

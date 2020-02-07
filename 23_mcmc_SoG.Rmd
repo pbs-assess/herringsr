@@ -80,13 +80,13 @@ biomass.plot.mpd(major_models[[model_ind]],
 
 (ref:sog-sr-cap) Relationship between spawning biomass in thousands of tonnes (t) and
 the number of age-`r age_first` recruits in thousands of millions (points), as well as the
-Beverton-Holt stock-recruitment relationship (line)
+predicted Beverton-Holt stock-recruitment relationship (line)
 for the Pacific Herring statistical catch-age model in the Strait of Georgia major stock assessment region.
 See Figure \@ref(fig:hg-sr) for description.
 
 (ref:sog-sr-cap-fr) La relation entre la biomasse reproductrice en milliers de tonnes (t) et
 le nombre de recrues d'âge `r age_first` en milliers de millions (points), ainsi que
-la relation stock-recrutement du modèle Beverton-Holt (ligne)
+la relation stock-recrutement du modèle Beverton-Holt prévue (ligne)
 pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
 Voir la figure \@ref(fig:hg-sr) pour la description.
 
