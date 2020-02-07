@@ -9,7 +9,7 @@ leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for posteriors.
 This section will not be included in the final document.
 
 (ref:wcvi-priors-posts-cap) Prior probability distributions (lines) with
-comparative posterior histograms (bars) for Pacific Herring
+comparative posterior histograms (bars) for the Pacific Herring statistical catch-age model
 in the West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-priors-posts) for description.
 
@@ -24,7 +24,7 @@ make.priors.posts.plot(major_models[[model_ind]],
 ```
 
 (ref:wcvi-traces-cap) Trace plots for Markov chain Monte Carlo output of
-estimated parameters for Pacific Herring in the West Coast of Vancouver Island major stock assessment region.
+estimated parameters for the Pacific Herring statistical catch-age model in the West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:wcvi-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés pour le hareng du Pacifique
@@ -37,7 +37,7 @@ make.traces.plot(major_models[[model_ind]],
 ```
 
 (ref:wcvi-autocor-cap) Auto-correlation plots for Markov chain Monte Carlo output of
-estimated parameters for Pacific Herring in the West Coast of Vancouver Island major stock assessment region.
+estimated parameters for the Pacific Herring statistical catch-age model in the West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:wcvi-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
@@ -49,7 +49,7 @@ make.autocor.plot(major_models[[model_ind]])
 ```
 
 (ref:wcvi-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
-estimated parameters for Pacific Herring in the West Coast of Vancouver Island major stock assessment region.
+estimated parameters for the Pacific Herring statistical catch-age model in the West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:wcvi-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
@@ -63,7 +63,7 @@ make.pairs.plot(major_models[[model_ind]])
 (ref:wcvi-biomass-retro-cap) Maximum posterior density of spawning biomass (lines)
 from `r recent_catch_yr` to `r assess_yr` (base model)
 with retrospectives (-1 to -`r retrospective_yrs` years)
-for Pacific Herring in the West Coast of Vancouver Island major stock assessment region.
+for the Pacific Herring statistical catch-age model in the West Coast of Vancouver Island major stock assessment region.
 See Figure \@ref(fig:hg-biomass-retro) for description.
 
 (ref:wcvi-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice (lignes)
@@ -81,7 +81,7 @@ biomass.plot.mpd(major_models[[model_ind]],
 (ref:wcvi-sr-cap) Relationship between spawning biomass in thousands of tonnes (t) and
 the number of age-`r age_first` recruits in thousands of millions (points), as well as the
 Beverton-Holt stock-recruitment relationship (line)
-for Pacific Herring in the West Coast of Vancouver Island major stock assessment region.
+for the Pacific Herring statistical catch-age model in the West Coast of Vancouver Island major stock assessment region.
 See Figure \@ref(fig:hg-sr) for description.
 
 (ref:wcvi-sr-cap-fr) La relation entre la biomasse reproductrice en milliers de tonnes (t) et

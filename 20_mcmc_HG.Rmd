@@ -9,7 +9,7 @@ leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for posteriors.
 This section will not be included in the final document.
 
 (ref:hg-priors-posts-cap) Prior probability distributions (lines) with
-comparative posterior histograms (bars) for Pacific Herring in the Haida Gwaii major stock assessment region.
+comparative posterior histograms (bars) for the Pacific Herring statistical catch-age model in the Haida Gwaii major stock assessment region.
 Red dashed lines are maximum posterior density estimates.
 Legend: ln is natural logarithm.
 See Table \@ref(tab:hg-parameter-est) for description.
@@ -27,7 +27,7 @@ make.priors.posts.plot(major_models[[model_ind]],
 ```
 
 (ref:hg-traces-cap) Trace plots for Markov chain Monte Carlo output of
-estimated parameters for Pacific Herring
+estimated parameters for the Pacific Herring statistical catch-age model
 in the Haida Gwaii major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) for description.
 In addition, $B_0$ is unfished biomass,
@@ -59,7 +59,7 @@ make.traces.plot(major_models[[model_ind]],
 ```
 
 (ref:hg-autocor-cap) Auto-correlation plots for Markov chain Monte Carlo output of
-estimated parameters for Pacific Herring in the Haida Gwaii major stock assessment region.
+estimated parameters for the Pacific Herring statistical catch-age model in the Haida Gwaii major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:hg-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
@@ -71,7 +71,7 @@ make.autocor.plot(major_models[[model_ind]])
 ```
 
 (ref:hg-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
-estimated parameters for Pacific Herring in the Haida Gwaii major stock assessment region.
+estimated parameters for the Pacific Herring statistical catch-age model in the Haida Gwaii major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
 
 (ref:hg-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
@@ -85,7 +85,7 @@ make.pairs.plot(major_models[[model_ind]])
 (ref:hg-biomass-retro-cap) Maximum posterior density of spawning biomass (lines)
 from `r recent_catch_yr` to `r assess_yr` (base model)
 with retrospectives (-1 to -`r retrospective_yrs` years)
-for Pacific Herring in the Haida Gwaii major stock assessment region.
+for the Pacific Herring statistical catch-age model in the Haida Gwaii major stock assessment region.
 Points indicate estimated unfished spawning biomass.
 
 (ref:hg-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice (lignes)
@@ -103,7 +103,7 @@ biomass.plot.mpd(major_models[[model_ind]],
 (ref:hg-sr-cap) Relationship between spawning biomass in thousands of tonnes (t) and
 the number of age-`r age_first` recruits in thousands of millions (points), as well as the
 Beverton-Holt stock-recruitment relationship (line)
-for Pacific Herring in the Haida Gwaii major stock assessment region.
+for the Pacific Herring statistical catch-age model in the Haida Gwaii major stock assessment region.
 The star indicates unfished spawning biomass and unfished age-`r age_first` recruitment.
 Shading becomes darker in chronological order;
 the triangle indicates `r assess_yr`.
