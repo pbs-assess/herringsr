@@ -96,8 +96,8 @@ theme_set(herring_theme())
 ```
 
 <!-- Distributions -->
-\newcommand{\dUnif}[2]{$\emph{U}\left(#1, #2\right)$}
-\newcommand{\dNorm}[2]{$\emph{N}\left(#1, #2\right)$}
+\newcommand{\dUnif}[2]{$\mathcal{U}\left(#1, #2\right)$}
+\newcommand{\dNorm}[2]{$\mathcal{N}\left(#1, #2\right)$}
 \newcommand{\dLognorm}[2]{$\emph{Lognormal}\left(#1, #2\right)$}
 \newcommand{\dBeta}[2]{$\emph{Beta}\left(#1, #2\right)$}
 \newcommand{\dGamma}[2]{$\emph{Gamma}\left(#1, #2\right)$}
