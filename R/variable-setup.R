@@ -96,7 +96,7 @@ minor_catch_short <- get_catch(minor_models,
 age_first <- major_models[[1]]$dat$start.age
 
 # Age class of plus group for proportion-at-age
-age_plus <- 10
+age_plus <- major_models[[1]]$dat$end.age
 
 suppressWarnings(
   ## supress warnings is because the two tables have different factors for the `region` column

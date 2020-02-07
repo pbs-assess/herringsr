@@ -571,8 +571,8 @@ $t$ & & Index for year\\
 $k$ & & Index for gear\\
 \multicolumn{3}{l}{\textbf{Model dimensions}}\\
 $S$ & $`r major_models[[1]]$dat$num.sex`$ & Number of sexes\\
-$\acute{a},\,A$ & $`r major_models[[1]]$dat$start.age`$, $`r major_models[[1]]$dat$end.age`$ & Youngest and oldest age class ($A$ is a plus group)\\
-$\acute{t},\,T$ & $`r major_models[[1]]$dat$start.yr`$, $`r major_models[[1]]$dat$end.yr`$ & First and last year of catch data\\
+$\acute{a},\,A$ & $`r age_first`$, $`r age_plus`$ & Youngest and oldest age class ($A$ is a plus group)\\
+$\acute{t},\,T$ & $`r major_start_yr`$, $`r major_end_yr`$ & First and last year of catch data\\
 $K$ & $`r major_models[[1]]$dat$num.gears`$ & Number of gears including survey gears\\
 \multicolumn{3}{l}{\textbf{Observations (data)}}\\
 $C_{k,t}$ & & Catch in weight for gear $k$ in year $t$\\
