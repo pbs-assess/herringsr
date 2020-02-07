@@ -2,13 +2,13 @@
 
 # `r en2fr("Tables", translate=french)`
 
-(ref:data-input-cap) Input data for the `r assess_yr` Pacific Herring stock assessment.
+(ref:data-input-cap) Input data for the `r assess_yr` Pacific Herring statistical catch-age model.
 The spawn index has two distinct periods defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
 Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
-(ref:data-input-cap-fr) Données d’entrée pour l’évaluation des stocks de hareng du Pacifique de `r assess_yr`.
+(ref:data-input-cap-fr) Données d’entrée pour le modèle statistique des prises selon l’âge du hareng du Pacifique de `r assess_yr`.
 L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante:
 relevés en surface (de `r major_start_yr` à `r new_surv_yr - 1`), et
 relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
@@ -55,12 +55,22 @@ sok_harvest_table(tab = sok,
                   translate = french)
 ```
 
-(ref:spawn-index-hg-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Haida Gwaii major stock assessment region.
-Legend: 'Cumshewa' is Section 023; 'Juan Perez/Skincuttle' is Sections 021 and 025; 'Louscoone' is Section 006; and 'Selwyn' is Section 024.
+(ref:spawn-index-hg-cap) Spawn index in tonnes, and proportion of the spawn index by Group for
+Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
+Haida Gwaii major stock assessment region.
+Legend: 'Cumshewa' is Section 023;
+'Juan Perez/Skincuttle' is Sections 021 and 025;
+'Louscoone' is Section 006; and
+'Selwyn' is Section 024.
 Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
-(ref:spawn-index-hg-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de Haida Gwaii.
-Légende: «Cumshewa» est la section 023; «Juan Perez/Skincuttle» est les sections 021 et 025; «Louscoone» est la section 006; et «Selwyn» est la section 024.
+(ref:spawn-index-hg-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le
+hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la 
+région d’évaluation des stocks majeur de Haida Gwaii.
+Légende: «Cumshewa» est la section 023;
+«Juan Perez/Skincuttle» est les sections 021 et 025;
+«Louscoone» est la section 006; et
+«Selwyn» est la section 024.
 Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
 ```{r spawn-index-hg}
@@ -72,10 +82,14 @@ spawn_index_by_area_table(ps[[en2fr("HG", french)]],
                           translate = french)
 ```
 
-(ref:spawn-index-pr-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Prince Rupert District major stock assessment region.
+(ref:spawn-index-pr-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for
+Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the 
+Prince Rupert District major stock assessment region.
 See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-pr-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur du district de Prince Rupert.
+(ref:spawn-index-pr-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le
+hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la 
+région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-prd}
@@ -87,10 +101,14 @@ spawn_index_by_area_table(ps[[en2fr("PRD", french)]],
                           translate = french)
 ```
 
-(ref:spawn-index-cc-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Central Coast major stock assessment region.
+(ref:spawn-index-cc-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for
+Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
+Central Coast major stock assessment region.
 See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-cc-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte centrale.
+(ref:spawn-index-cc-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour
+le hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la
+région d’évaluation des stocks majeur de la côte centrale.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-cc}
@@ -102,12 +120,22 @@ spawn_index_by_area_table(ps[[en2fr("CC", french)]],
                           translate = french)
 ```
 
-(ref:spawn-index-sog-cap) Spawn index in tonnes, and proportion of the spawn index by Group for Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Strait of Georgia major stock assessment region.
-Legend: '14&17' is Statistical Areas 14 and 17 (excluding Section 173); 'ESoG' is eastern Strait of Georgia; 'Lazo' is above Cape Lazo; and 'SDodd' is South of Dodd Narrows.
+(ref:spawn-index-sog-cap) Spawn index in tonnes, and proportion of the spawn index by Group for
+Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
+Strait of Georgia major stock assessment region.
+Legend: '14&17' is Statistical Areas 14 and 17 (excluding Section 173);
+'ESoG' is eastern Strait of Georgia;
+'Lazo' is above Cape Lazo; and
+'SDodd' is South of Dodd Narrows.
 See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-sog-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur du détroit de Georgie.
-Légende: «14&17» fait référence aux zones statistiques 14 et 17 (à l’exclusion de la section 173); «EDG» fait référence à l’est du détroit de Géorgie; «Lazo» fait référence au-dessus du cap Lazo; et «SDodd» fait référence au sud du passage Dodd.
+(ref:spawn-index-sog-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le
+hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la 
+région d’évaluation des stocks majeur du détroit de Georgie.
+Légende: «14&17» fait référence aux zones statistiques 14 et 17 (à l’exclusion de la section 173);
+«EDG» fait référence à l’est du détroit de Géorgie;
+«Lazo» fait référence au-dessus du cap Lazo; et
+«SDodd» fait référence au sud du passage Dodd.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-sog}
@@ -119,10 +147,14 @@ spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
                           translate = french)
 ```
 
-(ref:spawn-index-wcvi-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the West Coast of Vancouver Island major stock assessment region.
+(ref:spawn-index-wcvi-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for
+Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
+West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-wcvi-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+(ref:spawn-index-wcvi-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le
+hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la 
+région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-wcvi}
@@ -134,7 +166,10 @@ spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
                           translate = french)
 ```
 
-(ref:hg-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the Haida Gwaii major stock assessment region.
+(ref:hg-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of key parameters for the
+Pacific Herring statistical catch-age model in the
+Haida Gwaii major stock assessment region.
 Legend: $R_0$ is unfished age-2 recruitment;
 $h$ is steepness of the stock-recruitment relationship;
 $M$ is instantaneous natural mortality rate;
@@ -148,7 +183,10 @@ $\tau$ is the standard deviation of process error (i.e., recruitment); and
 $\sigma$ is the standard deviation of observation error (i.e., survey index).
 Note: $\tau$ and $\sigma$ are calculated values.
 
-(ref:hg-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
+(ref:hg-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) des paramètres principaux pour le
+modèle statistique des prises selon l’âge de hareng du Pacifique dans la
+région d’évaluation des stocks majeur de Haida Gwaii.
 Légende: $R_0$ est recrutement non pêché de l'âge 2;
 $h$ est l'inclinaison de la relation stock-recrutement;
 $M$ est le taux de mortalité naturelle instantanée;
@@ -174,10 +212,16 @@ make.parameters.est.table(major_models[[model_ind]],
                           translate = french)
 ```
 
-(ref:prd-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the Prince Rupert District major stock assessment region.
+(ref:prd-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of key parameters for the
+Pacific Herring statistical catch-age model in the
+Prince Rupert District major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) for description.
 
-(ref:prd-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du district de Prince Rupert.
+(ref:prd-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) des paramètres principaux pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 ```{r prd-parameter-est, results = 'asis', echo = FALSE}
@@ -193,10 +237,16 @@ make.parameters.est.table(major_models[[model_ind]],
                           translate = french)
 ```
 
-(ref:cc-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the Central Coast major stock assessment region.
+(ref:cc-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of key parameters for the
+Pacific Herring statistical catch-age model in the
+Central Coast major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) for description.
 
-(ref:cc-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
+(ref:cc-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) des paramètres principaux pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur de la côte centrale.
 Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 ```{r cc-parameter-est, results = 'asis', echo = FALSE}
@@ -212,10 +262,16 @@ make.parameters.est.table(major_models[[model_ind]],
                           translate = french)
 ```
 
-(ref:sog-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the Strait of Georgia major stock assessment region.
+(ref:sog-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of key parameters for the
+Pacific Herring statistical catch-age model in the
+Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) for description.
 
-(ref:sog-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
+(ref:sog-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) des paramètres principaux pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur du détroit de Georgie.
 Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 ```{r sog-parameter-est, results = 'asis', echo = FALSE}
@@ -231,10 +287,16 @@ make.parameters.est.table(major_models[[model_ind]],
                           translate = french)
 ```
 
-(ref:wcvi-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of key parameters for Pacific Herring in the West Coast of Vancouver Island major stock assessment region.
+(ref:wcvi-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of key parameters for the
+Pacific Herring statistical catch-age model in the
+West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-parameter-est) for description.
 
-(ref:wcvi-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) des paramètres principaux pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+(ref:wcvi-parameter-est-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) des paramètres principaux pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 ```{r wcvi-parameter-est, results = 'asis', echo = FALSE}
@@ -250,9 +312,15 @@ make.parameters.est.table(major_models[[model_ind]],
                           translate = french)
 ```
 
-(ref:hg-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Haida Gwaii major stock assessment region.
+(ref:hg-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile)
+and maximum posterior density (MPD) estimates of age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+Pacific Herring statistical catch-age model in the
+Haida Gwaii major stock assessment region.
 
-(ref:hg-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de hareng du Pacifique de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de Haida Gwaii.
+(ref:hg-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur de Haida Gwaii.
 
 ```{r hg-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -268,9 +336,15 @@ make.value.table(major_models[[model_ind]],
                  translate = french)
 ```
 
-(ref:prd-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Prince Rupert District major stock assessment region.
+(ref:prd-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+Pacific Herring statistical catch-age model in the
+Prince Rupert District major stock assessment region.
 
-(ref:prd-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de hareng du Pacifique de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur du district de Prince Rupert.
+(ref:prd-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur du district de Prince Rupert.
 
 ```{r prd-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
@@ -286,9 +360,15 @@ make.value.table(major_models[[model_ind]],
                  translate = french)
 ```
 
-(ref:cc-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Central Coast major stock assessment region.
+(ref:cc-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+Pacific Herring statistical catch-age model in the
+Central Coast major stock assessment region.
 
-(ref:cc-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de hareng du Pacifique de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte centrale.
+(ref:cc-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur de la côte centrale.
 
 ```{r cc-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -304,9 +384,15 @@ make.value.table(major_models[[model_ind]],
                  translate = french)
 ```
 
-(ref:sog-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Strait of Georgia major stock assessment region.
+(ref:sog-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+Pacific Herring statistical catch-age model in the
+Strait of Georgia major stock assessment region.
 
-(ref:sog-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de hareng du Pacifique de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur du détroit de Georgie.
+(ref:sog-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur du détroit de Georgie.
 
 ```{r sog-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
@@ -322,9 +408,15 @@ make.value.table(major_models[[model_ind]],
                  translate = french)
 ```
 
-(ref:wcvi-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in  the West Coast of Vancouver Island major stock assessment region.
+(ref:wcvi-recruitment-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of age-2 recruitment (millions) from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+Pacific Herring statistical catch-age model in the
+West Coast of Vancouver Island major stock assessment region.
 
-(ref:wcvi-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du recrutement de hareng du Pacifique de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+(ref:wcvi-recruitment-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) du recrutement de l'âge 2 (millions) de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 
 ```{r wcvi-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
@@ -340,17 +432,23 @@ make.value.table(major_models[[model_ind]],
                  translate = french)
 ```
 
-(ref:hg-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring spawning biomass in thousands of tonnes and depletion
+(ref:hg-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion
 (i.e., relative spawning biomass $\SB_t/\SB_0$, where
 $\SB_t$ is spawning biomass in year $t$, and
 $\SB_0$ is estimated unfished spawning biomass)
-from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Haida Gwaii major stock assessment region.
+from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+Pacific Herring statistical catch-age model in the
+Haida Gwaii major stock assessment region.
 
-(ref:hg-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion
+(ref:hg-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) du biomasse reproductrice en milliers de tonnes et déplétion
 (c.-à-d. biomasse reproductrice relative $\SB_t/\SB_0$, où
 $\SB_t$ est la biomasse reproductrice en année $t$, et
 $\SB_0$ est la biomasse reproductrice non exploitée estimée)
-de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de Haida Gwaii.
+de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur de Haida Gwaii.
 
 ```{r hg-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -364,10 +462,16 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              translate = french)
 ```
 
-(ref:prd-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Prince Rupert District major stock assessment region.
+(ref:prd-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+Pacific Herring statistical catch-age model in the
+Prince Rupert District major stock assessment region.
 See Table \@ref(tab:hg-spawning-biomass-depletion) for description.
 
-(ref:prd-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur du district de Prince Rupert.
+(ref:prd-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) du biomasse reproductrice en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 ```{r prd-spawning-biomass-depletion, results = 'asis', echo = FALSE}
@@ -384,10 +488,16 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              translate = french)
 ```
 
-(ref:cc-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Central Coast major stock assessment region.
+(ref:cc-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+Pacific Herring statistical catch-age model in the
+Central Coast major stock assessment region.
 See Table \@ref(tab:hg-spawning-biomass-depletion) for description.
 
-(ref:cc-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte centrale.
+(ref:cc-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) du biomasse reproductrice en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur de la côte centrale.
 Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 ```{r cc-spawning-biomass-depletion, results = 'asis', echo = FALSE}
@@ -404,10 +514,16 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              translate = french)
 ```
 
-(ref:sog-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the Strait of Georgia major stock assessment region.
+(ref:sog-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+Pacific Herring statistical catch-age model in the
+Strait of Georgia major stock assessment region.
 See Table \@ref(tab:hg-spawning-biomass-depletion) for description.
 
-(ref:sog-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur du détroit de Georgie.
+(ref:sog-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) du biomasse reproductrice en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur du détroit de Georgie.
 Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 ```{r sog-spawning-biomass-depletion, results = 'asis', echo = FALSE}
@@ -424,10 +540,16 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              translate = french)
 ```
 
-(ref:wcvi-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and maximum posterior density (MPD) estimates of Pacific Herring spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the West Coast of Vancouver Island major stock assessment region.
+(ref:wcvi-spawning-biomass-depletion-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
+maximum posterior density (MPD) estimates of spawning biomass in thousands of tonnes and depletion from `r major_end_yr-num_yrs_tab` to `r major_end_yr` for the
+Pacific Herring statistical catch-age model in the
+West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:hg-spawning-biomass-depletion) for description.
 
-(ref:wcvi-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et densité a posteriori maximale (DPM) du biomasse reproductrice de hareng du Pacifique en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+(ref:wcvi-spawning-biomass-depletion-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+densité a posteriori maximale (DPM) du biomasse reproductrice  en milliers de tonnes et déplétion de `r major_end_yr-num_yrs_tab` à `r major_end_yr` pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 ```{r wcvi-spawning-biomass-depletion, results = 'asis', echo = FALSE}
@@ -444,13 +566,17 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              translate = french)
 ```
 
-(ref:ref-points-hg-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) estimates of proposed reference points for Pacific Herring in the Haida Gwaii major stock assessment region.
+(ref:ref-points-hg-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) estimates of proposed reference points for the
+Pacific Herring statistical catch-age model in the
+Haida Gwaii major stock assessment region.
 All biomass numbers are in thousands of tonnes.
 Legend: $\SB_0$ is estimated unfished spawning biomass;
 $\SB_{t}$ is spawning biomass in year $t$; and
 $\SB_{`r assess_yr+1`}$ is projected spawning biomass in `r assess_yr+1` assuming no fishing.
 
-(ref:ref-points-hg-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) des points de référence proposés pour le modèle de Haida Gwaii.
+(ref:ref-points-hg-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) des points de référence proposés pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur de Haida Gwaii.
 Les chiffres indiqués pour la biomasse sont exprimés en milliers de tonnes.
 Légende: $\SB_0$ est la biomasse reproductrice non-exploitée estimée;
 $\SB_{t}$ est la biomasse reproductrice en année $t$; et
@@ -469,10 +595,14 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
-(ref:ref-points-prd-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) estimates of proposed reference points for Pacific Herring in the Prince Rupert District major stock assessment region.
+(ref:ref-points-prd-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) estimates of proposed reference points for the
+Pacific Herring statistical catch-age model in the
+Prince Rupert District major stock assessment region.
 See Table \@ref(tab:ref-points-hg) for description.
 
-(ref:ref-points-prd-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) des points de référence proposés pour le modèle du district de Prince Rupert.
+(ref:ref-points-prd-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) des points de référence proposés pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-prd, results = 'asis', echo = FALSE}
@@ -488,10 +618,14 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
-(ref:ref-points-cc-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) estimates of proposed reference points for Pacific Herring in the Central Coast major stock assessment region.
+(ref:ref-points-cc-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) estimates of proposed reference points for the
+Pacific Herring statistical catch-age model in the
+Central Coast major stock assessment region.
 See Table \@ref(tab:ref-points-hg) for description.
 
-(ref:ref-points-cc-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) des points de référence proposés pour le modèle de la côte centrale.
+(ref:ref-points-cc-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) des points de référence proposés pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur de la côte centrale.
 Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-cc, results = 'asis', echo = FALSE}
@@ -507,10 +641,14 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
-(ref:ref-points-sog-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) estimates of proposed reference points for Pacific Herring in the Strait of Georgia major stock assessment region.
+(ref:ref-points-sog-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) estimates of proposed reference points for the
+Pacific Herring statistical catch-age model in the
+Strait of Georgia major stock assessment region.
 See Table \@ref(tab:ref-points-hg) for description.
 
-(ref:ref-points-sog-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) des points de référence proposés pour le modèle du détroit de Georgie.
+(ref:ref-points-sog-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) des points de référence proposés pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur du détroit de Georgie.
 Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-sog, results = 'asis', echo = FALSE}
@@ -526,10 +664,14 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
-(ref:ref-points-wcvi-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) estimates of proposed reference points for Pacific Herring in the West Coast of Vancouver Island major stock assessment region.
+(ref:ref-points-wcvi-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) estimates of proposed reference points for the
+Pacific Herring statistical catch-age model in the
+West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:ref-points-hg) for description.
 
-(ref:ref-points-wcvi-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) des points de référence proposés pour le modèle de la côte ouest de l’île de Vancouver.
+(ref:ref-points-wcvi-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) des points de référence proposés pour le
+modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-wcvi, results = 'asis', echo = FALSE}
@@ -545,7 +687,8 @@ make.ref.points.table(major_models[[model_ind]],
                       translate = french)
 ```
 
-(ref:decision-prd-cap) Management procedure (MP) performance for Pacific Herring in the Prince Rupert District major stock assessment region under three operating model (OM) scenarios:
+(ref:decision-prd-cap) Management procedure (MP) performance for the Pacific Herring statistical catch-age model in the
+Prince Rupert District major stock assessment region under three operating model (OM) scenarios:
 density-dependent natural mortality (DDM),
 density-independent natural mortality (DIM), and
 constant natural mortality (conM).
@@ -563,7 +706,8 @@ Note: dashes indicate that TAC and HR do not apply, either
 because the MP specifies no fishing, or
 because the MP fails to meet Objective 1.
 
-(ref:decision-prd-cap-fr) Rendement de la procédure de gestion (PG) pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du district de Prince Rupert selon trois scénarios du modèle d'exploitation (ME):
+(ref:decision-prd-cap-fr) Rendement de la procédure de gestion (PG) pour le modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur du district de Prince Rupert selon trois scénarios du modèle d'exploitation (ME):
 mortalité naturelle liée à la densité (MLD),
 mortalité naturelle indépendante de la densité (MID), et
 mortalité naturelle constante (MC).
@@ -581,16 +725,20 @@ Note: les tirets indiquent que le TAC et le TR ne s'appliquent pas non plus
 parce que le PG n'interdit pas la pêche, ou
 parce que le PG n'atteint pas l'objectif 1.
 
-(ref:decision-cc-cap) Management procedure performance for Pacific Herring in the Central Coast major stock assessment region.
+(ref:decision-cc-cap) Management procedure performance for the Pacific Herring statistical catch-age model in the
+Central Coast major stock assessment region.
 See Table \@ref(tab:decision-prd) for description.
 
-(ref:decision-cc-cap-fr) Rendement de la procédure de gestion pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
+(ref:decision-cc-cap-fr) Rendement de la procédure de gestion pour le modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur de la côte centrale.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
-(ref:decision-sog-cap) Management procedure performance for Pacific Herring in the Strait of Georgia major stock assessment region.
+(ref:decision-sog-cap) Management procedure performance for the Pacific Herring statistical catch-age model in the
+Strait of Georgia major stock assessment region.
 See Table \@ref(tab:decision-prd) for description.
 
-(ref:decision-sog-cap-fr) Rendement de la procédure de gestion pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
+(ref:decision-sog-cap-fr) Rendement de la procédure de gestion pour le modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur du détroit de Georgie.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
 \begin{turn}
