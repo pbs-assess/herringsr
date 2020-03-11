@@ -242,6 +242,7 @@ Panel (a): model fit (median posterior estimate; lines) to scaled spawn survey d
 Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey scaling parameter $q$ (median posterior estimate).
 Panel (b): posterior estimates of instantaneous natural mortality rate (year^-1^).
 Panel (c): reconstructed number of age-`r age_first` recruits in thousands of millions.
+Horizontal line and shaded area indicate median and `r ci_level*100`% credible interval for unfished age-`r age_first` recruitment $R_0$, respectively.
 Panel (d): posterior estimate of spawning biomass.
 Circle and vertical line indicate the median and `r ci_level*100`% credible interval, respectively,
 of forecast spawning biomass in `r assess_yr+1` in the absence of fishing.
@@ -264,6 +265,7 @@ Panneau (a): ajustement du modèle (estimations a posteriori médian; lignes) au
 Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai $q$ (estimations a posteriori médian).
 Panneau (b): estimations a posteriori du taux de mortalité naturelle instantanée (année^-1^).
 Panneau (c): nombre reconstitué de recrues d’âge `r age_first` en milliers de millions.
+La ligne horizontale et la zone ombrée indiquent respectivement la médiane et l'intervalle crédible à `r ci_level*100`% pour le recrutement des poissons d'âge `r age_first` non pêchés $R_0$.
 Panneau (d): estimation a posteriori de la biomasse reproductrice.
 Le cercle et la ligne verticale indiquent la médiane et l’intervalle de crédibilité de `r ci_level*100`%, respectivement, de la biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en `r assess_yr+1`.
 Les barres verticales indiquent les prises commerciales $C_t$, à l’exclusion des prises d’oeufs sur varech (voir la figure \@ref(fig:major-catch) pour la légende).
@@ -276,7 +278,7 @@ Panneaux (d et f): les lignes rouges et l’ombrage indiquent les médianes et l
 Panneaux (e & f): les lignes pointillées horizontales indiquent zéro.
 Note: la biomasse et les prises sont exprimées en milliers de tonnes (t).
 
-```{r storyboard-hg, out.height=ifelse(french,"5.4in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
+```{r storyboard-hg, out.height=ifelse(french,"5.3in","6.1in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -429,7 +431,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-prd, out.height=ifelse(french,"5.4in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
+```{r storyboard-prd, out.height=ifelse(french,"5.3in","6.1in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -581,7 +583,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur de la côte centrale.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-cc, out.height=ifelse(french,"5.4in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)")}
+```{r storyboard-cc, out.height=ifelse(french,"5.3in","6.1in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -733,7 +735,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur du détroit de Georgie.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-sog, out.height=ifelse(french,"5.4in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
+```{r storyboard-sog, out.height=ifelse(french,"5.3in","6.1in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -885,7 +887,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-wcvi, out.height=ifelse(french,"5.4in","6.2in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
+```{r storyboard-wcvi, out.height=ifelse(french,"5.3in","6.1in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
