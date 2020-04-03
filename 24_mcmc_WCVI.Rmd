@@ -57,7 +57,9 @@ les paramètres estimés pour le hareng du Pacifique dans la region d’évaluat
 Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r wcvi-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-pairs-cap-fr)", "(ref:wcvi-pairs-cap)")}
-make.pairs.plot(major_models[[model_ind]])
+make.pairs.plot(major_models[[model_ind]],
+                params=c("ro", "h", "m", "rbar", "rinit", "q1", "q2", "sel1",
+                         "selsd1", "sel2", "selsd2", "sel3", "selsd3"))
 ```
 
 (ref:wcvi-biomass-retro-cap) Maximum posterior density of spawning biomass (lines)
