@@ -949,3 +949,5 @@ plot_proj_biomass_density(major_models,
                           ribbon_alpha = 0.35,
                           translate = french)
 ```
+
+\clearpage

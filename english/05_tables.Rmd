@@ -1,4 +1,4 @@
-\needspace{20\baselineskip}
+\clearpage
 
 # `r en2fr("Tables", translate=french)`
 
@@ -794,3 +794,5 @@ decision_tables_mp(mp.sog,
 ```
 
 \end{turn}
+
+\clearpage
