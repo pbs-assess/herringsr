@@ -10,14 +10,14 @@ knitr-figs-docx
 knitr-figs-pdf
 models*
 _book
-sr.aux
-sr.log
-sr.Rmd
-sr.tex
-sr.upa
-sr.pdf
-sr.knit.md
-sr.utf8.md
+HerringSR.aux
+HerringSR.log
+HerringSR.Rmd
+HerringSR.tex
+HerringSR.upa
+HerringSR.pdf
+HerringSR.knit.md
+HerringSR.utf8.md
 
 *.png
 

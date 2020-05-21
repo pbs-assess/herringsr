@@ -1,4 +1,4 @@
-book_filename: "sr"
+book_filename: "HerringSR"
 rmd_files: ["index.Rmd",
             "english/01_context.Rmd",
             #"french/01_context.Rmd",
