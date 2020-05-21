@@ -10,7 +10,7 @@ Les RES majeurs sont `r commify(major_regions_full_parens, and_word="et")`.
 Les RES mineurs sont `r commify(minor_regions_full_parens, and_word="et")`. 
 Unités: kilomètres (km).
 
-```{r bc-map, fig.cap = ifelse(french, "(ref:bc-map-cap-fr)", "(ref:bc-map-cap)"), out.width = "100%", fig.pos="H"}
+```{r bc-map, fig.cap = ifelse(french, "(ref:bc-map-cap-fr)", "(ref:bc-map-cap)"), out.width = "100%"}
 knitr::include_graphics(here::here(ifelse(french, "figures/BC-FR.png", "figures/BC.png")))
 ```
 

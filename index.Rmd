@@ -73,7 +73,7 @@ opts_chunk$set(collapse = TRUE,
                dev = fig_out_type,
                dpi = fig_dpi,
                fig.align = fig_align,
-               fig.pos = fig_pos)
+               fig.pos = "H")
 options(xtable.comment = FALSE)
 options(tinytex.verbose = TRUE)
 ```
