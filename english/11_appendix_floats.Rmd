@@ -1,3 +1,7 @@
+\clearpage
+
+## `r en2fr("Tables", translate=french)`
+
 (ref:minor-spawn-index-tab-cap) Spawn index in tonnes of Pacific Herring from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr` in the minor stock assessment regions (SARs).
 Legend: `r commify(minor_regions_full_parens)`.
 Notes: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$,
@@ -17,6 +21,10 @@ spawn_index_table(tab = minor_surv_short,
                                "(ref:minor-spawn-index-tab-cap)"),
                   translate = french)
 ```
+
+\clearpage
+
+## Figures
 
 (ref:minor-catch-cap) Time series of total landed catch in thousands of tonnes (t) of Pacific Herring from `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
 Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery;
@@ -101,3 +109,5 @@ plot_spawn_ind(df = minor_surv,
                new_surv_yr = new_surv_yr,
                translate = french)
 ```
+
+\clearpage
