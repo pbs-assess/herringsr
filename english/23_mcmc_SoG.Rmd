@@ -98,8 +98,11 @@ plot_bh(major_models[[model_ind]],
         translate=french)
 ```
 
-(ref:hcr-sog-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, rows 1-4 in Table \\@ref(tab:decision-sog). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-sog, fig.cap="(ref:hcr-sog-cap)"}
+(ref:hcr-sog-cap) Projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$ compared to harvest rate (HR) and total allowable catch (TAC) for the Strait of Georgia major stock assessment area,
+rows 1 to 4 in Table \@ref(tab:decision-sog).
+See Figure \@ref(ref:hcr-prd-cap) for description.
+
+```{r hcr-sog, fig.asp=0.75, fig.cap="(ref:hcr-sog-cap)"}
 region <- "SoG"
 probs <- confidence_vals 
 cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[1]],
@@ -130,8 +133,11 @@ cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[1]],
                    axis = "tblr")
 ```
 
-(ref:hcr-sog-2-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, rows 5-8 in Table \\@ref(tab:decision-sog). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-sog-2, fig.height=9, fig.cap="(ref:hcr-sog-2-cap)"}
+(ref:hcr-sog-2-cap) Projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$ compared to harvest rate (HR) and total allowable catch (TAC) for the Strait of Georgia major stock assessment area,
+rows 5 to 8 in Table \@ref(tab:decision-sog).
+See Figure \@ref(ref:hcr-prd-cap) for description.
+
+```{r hcr-sog-2, fig.asp=0.75, fig.cap="(ref:hcr-sog-2-cap)"}
 region <- "SoG"
 probs <- confidence_vals 
 cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[5]],
@@ -161,8 +167,11 @@ cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[5]],
                    align = c("v", "h"))
 ```
 
-(ref:hcr-sog-3-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Strait of Georgia region, row 9 in Table \\@ref(tab:decision-sog). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-sog-3, fig.height=9, fig.cap="(ref:hcr-sog-3-cap)"}
+(ref:hcr-sog-3-cap) Projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$ compared to harvest rate (HR) and total allowable catch (TAC) for the Strait of Georgia major stock assessment area,
+row 9 in Table \@ref(tab:decision-sog).
+See Figure \@ref(ref:hcr-prd-cap) for description.
+
+```{r hcr-sog-3, fig.asp=0.75, fig.cap="(ref:hcr-sog-3-cap)"}
 region <- "SoG"
 probs <- confidence_vals 
 cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[9]],

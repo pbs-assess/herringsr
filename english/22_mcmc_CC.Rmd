@@ -98,8 +98,11 @@ plot_bh(major_models[[model_ind]],
         translate=french)
 ```
 
-(ref:hcr-cc-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 1-4 in Table \\@ref(tab:decision-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-cc, fig.cap="(ref:hcr-cc-cap)"}
+(ref:hcr-cc-cap) Projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$ compared to harvest rate (HR) and total allowable catch (TAC) for the Central Coast major stock assessment area,
+rows 1 to 4 in Table \@ref(tab:decision-cc).
+See Figure \@ref(ref:hcr-prd-cap) for description.
+
+```{r hcr-cc, fig.asp=0.75, fig.cap="(ref:hcr-cc-cap)"}
 region <- "CC"
 probs <- confidence_vals
 cowplot::plot_grid(plot_hcr(mp.lst.cc[[1]][[1]],
@@ -130,8 +133,11 @@ cowplot::plot_grid(plot_hcr(mp.lst.cc[[1]][[1]],
                    axis = "tblr")
 ```
 
-(ref:hcr-cc-2-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 5-8 in Table \\@ref(tab:decision-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-cc-2, fig.cap="(ref:hcr-cc-2-cap)"}
+(ref:hcr-cc-2-cap) Projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$ compared to harvest rate (HR) and total allowable catch (TAC) for the Central Coast major stock assessment area,
+rows 5 to 8 in Table \@ref(tab:decision-cc).
+See Figure \@ref(ref:hcr-prd-cap) for description.
+
+```{r hcr-cc-2, fig.asp=0.75, fig.cap="(ref:hcr-cc-2-cap)"}
 region <- "CC"
 probs <- confidence_vals 
 cowplot::plot_grid(plot_hcr(mp.lst.cc[[1]][[5]],
@@ -161,8 +167,11 @@ cowplot::plot_grid(plot_hcr(mp.lst.cc[[1]][[5]],
                    align = c("v", "h"))
 ```
 
-(ref:hcr-cc-3-cap) `r paste0("Projected spawning biomass for ", assess_yr + 1, " compared to harvest rate and TAC for the Central Coast region, rows 9-10 in Table \\@ref(tab:decision-cc). Red horizontal and vertical lines show median harvest rate, TAC, and projected $\\SB_t$; mean statistics shown with green lines.")`
-```{r hcr-cc-3, fig.cap="(ref:hcr-cc-3-cap)"}
+(ref:hcr-cc-3-cap) Projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$ compared to harvest rate (HR) and total allowable catch (TAC) for the Central Coast major stock assessment area,
+rows 9 to 10 in Table \@ref(tab:decision-cc).
+See Figure \@ref(ref:hcr-prd-cap) for description.
+
+```{r hcr-cc-3, fig.asp=0.75, fig.cap="(ref:hcr-cc-3-cap)"}
 region <- "CC"
 probs <- confidence_vals 
 cowplot::plot_grid(plot_hcr(mp.lst.cc[[1]][[9]],
