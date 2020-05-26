@@ -2,7 +2,9 @@
 
 ## Données d'entrée
 
-Les données d'entrée pour l'évaluation des stocks sont résumées dans le tableau \@ref(tab:data-input).
+Il existe trois types de données d'entrée utilisées pour l'évaluation du stock de hareng du Pacifique:
+les données de capture, les données biologiques et les données d'abondance.
+Ces ensembles de données sont décrits dans les sections suivantes, et résumés dans le tableau \@ref(tab:data-input).
 Par rapport à l'évaluation précédente, le seul changement apporté aux données d'entrée a été la mise à jour des séries chronologiques pour inclure les données de la saison de pêche du hareng de `r this_season` (du 1er juillet au 30 juin).
 Il convient de noter que dans le présent rapport, nous utilisons le terme "année" au lieu de "saison du hareng"; par conséquent, `r assess_yr` fait référence à la saison du hareng du Pacifique de `r this_season`.
 
@@ -30,8 +32,11 @@ mais dans une moindre mesure pour le district de Prince Rupert.
 
 ### Données sur l'abondance
 
-Les méthodes de relevé du frai en surface (`r surv_yr_rng[1]` to `r new_surv_yr - 1`) et en plongée (`r new_surv_yr` to `r surv_yr_rng[2]`) comprennent la collecte d'information sur la longueur du frai (parallèle à la rive), la largeur du frai (perpendiculaire à la rive) et le nombre de couches d'oeufs par type de végétation, ainsi que d'autres données.
-Ces données sont utilisées pour calculer la densité des oeufs par frai.
+Le relevé de l'indice de frai permet de recueillir des informations sur la longueur du frai (parallèle au rivage), la largeur du frai (perpendiculaire au rivage), le nombre de couches d'œufs par type de végétation, et d'autres données.
+Notez qu'il y a deux périodes de relevé du frai définies par la méthode de relevé prédominante :
+période de surface de `r surv_yr_rng[1]` à `r new_surv_yr - 1`, et
+période de plongée de `r new_surv_yr` à `r surv_yr_rng[2]`.
+Les données de ces relevés sont utilisées pour calculer les densités des oeufs par frai.
 En fin de compte, on calcule le poids estimatif des reproducteurs matures requis pour produire la ponte, appelé "indice du frai".
 L'exécution du relevé du frai en `r surv_yr_rng[2]` a suivi tous les protocoles standard décrits dans @cleary2018.
 Les séries chronologiques de l'indice du frai par région principale d'évaluation des stocks de `r paste(surv_yr_rng, collapse=" to ")` sont résumées dans la figure \@ref(fig:major-spawn-index).

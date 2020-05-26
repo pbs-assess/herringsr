@@ -2,7 +2,8 @@
 
 ## Input data
 
-Input data to the stock assessment are summarized in Table \@ref(tab:data-input).
+There are three types of input data used for the Pacific Herring stock assessment: catch data, biological data, and abundance data.
+These data sets are described in the following sections, and summarized in Table \@ref(tab:data-input).
 Relative to the previous assessment, the only change made to input data was to update the time series to include data from the `r this_season` herring season (July 1 to June 30).
 Note that we refer to 'year' instead of 'herring season' in this report;
 therefore `r assess_yr` refers to the `r this_season` Pacific Herring season.
@@ -32,8 +33,11 @@ There has been an increasing trend in weight-at-age for all major stocks from 20
 
 ### Abundance data
 
-The surface (`r surv_yr_rng[1]` to `r new_surv_yr - 1`) and dive (`r new_surv_yr` to `r surv_yr_rng[2]`) spawn survey methods involve collecting information on spawn length (parallel to shore), spawn width (perpendicular to shore), number of egg layers by vegetation type, and other data.
-These data are used to calculate egg densities per spawn.
+The spawn index survey collects information on spawn length (parallel to shore), spawn width (perpendicular to shore), number of egg layers by vegetation type, and other data.
+Note that there are two spawn survey periods defined by the predominant survey method:
+surface period from `r surv_yr_rng[1]` to `r new_surv_yr - 1`, and
+dive period from `r new_surv_yr` to `r surv_yr_rng[2]`.
+Data from these surveys are used to calculate egg densities per spawn.
 Ultimately, the estimated weight of mature spawners required to produce the egg deposition is calculated and referred to as the 'spawn index'.
 Execution of the `r surv_yr_rng[2]` spawn survey followed all standard protocols as described in @cleary2018.
 Time series of spawn index by major stock assessment region, from `r paste(surv_yr_rng, collapse=" to ")` are summarized in Figure \@ref(fig:major-spawn-index).
