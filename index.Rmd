@@ -12,7 +12,7 @@ report_number: 004
 approver: |
   Carmel Lowe\
   Regional Director
-# Directeur régional
+# Directrice régionale
 approval_year: 2019
 approval_month: October
 # approval_month: Octobre
