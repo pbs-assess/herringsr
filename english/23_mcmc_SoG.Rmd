@@ -100,7 +100,7 @@ plot_bh(major_models[[model_ind]],
 
 (ref:hcr-sog-cap) Projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$ compared to harvest rate (HR) and total allowable catch (TAC) for the Strait of Georgia major stock assessment area,
 rows 1 to 4 in Table \@ref(tab:decision-sog).
-See Figure \@ref(ref:hcr-prd-cap) for description.
+See Figure \@ref(fig:hcr-prd) for description.
 
 ```{r hcr-sog, fig.asp=0.75, fig.cap="(ref:hcr-sog-cap)"}
 region <- "SoG"
@@ -135,7 +135,7 @@ cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[1]],
 
 (ref:hcr-sog-2-cap) Projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$ compared to harvest rate (HR) and total allowable catch (TAC) for the Strait of Georgia major stock assessment area,
 rows 5 to 8 in Table \@ref(tab:decision-sog).
-See Figure \@ref(ref:hcr-prd-cap) for description.
+See Figure \@ref(fig:hcr-prd) for description.
 
 ```{r hcr-sog-2, fig.asp=0.75, fig.cap="(ref:hcr-sog-2-cap)"}
 region <- "SoG"
@@ -169,7 +169,7 @@ cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[5]],
 
 (ref:hcr-sog-3-cap) Projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$ compared to harvest rate (HR) and total allowable catch (TAC) for the Strait of Georgia major stock assessment area,
 row 9 in Table \@ref(tab:decision-sog).
-See Figure \@ref(ref:hcr-prd-cap) for description.
+See Figure \@ref(fig:hcr-prd) for description.
 
 ```{r hcr-sog-3, fig.asp=0.75, fig.cap="(ref:hcr-sog-3-cap)"}
 region <- "SoG"

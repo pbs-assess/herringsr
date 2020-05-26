@@ -135,7 +135,7 @@ cowplot::plot_grid(plot_hcr(mp.lst.prd[[1]][[1]],
 
 (ref:hcr-prd-2-cap) Projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$ compared to harvest rate (HR) and total allowable catch (TAC) for the Prince Rupert District major stock assessment area,
 rows 5 to 8 in Table \@ref(tab:decision-prd).
-See Figure \@ref(ref:hcr-prd-cap) for description.
+See Figure \@ref(fig:hcr-prd) for description.
 
 ```{r hcr-prd-2, fig.asp=0.75, fig.cap="(ref:hcr-prd-2-cap)"}
 region <- "PRD"
@@ -169,7 +169,7 @@ cowplot::plot_grid(plot_hcr(mp.lst.prd[[1]][[5]],
 
 (ref:hcr-prd-3-cap) Projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$ compared to harvest rate (HR) and total allowable catch (TAC) for the Prince Rupert District major stock assessment area,
 rows 9 to 10 in Table \@ref(tab:decision-prd).
-See Figure \@ref(ref:hcr-prd-cap) for description.
+See Figure \@ref(fig:hcr-prd) for description.
 
 ```{r hcr-prd-3, fig.asp=0.75, fig.cap="(ref:hcr-prd-3-cap)"}
 region <- "PRD"
