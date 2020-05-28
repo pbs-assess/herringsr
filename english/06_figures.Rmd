@@ -14,7 +14,7 @@ Unités: kilomètres (km).
 knitr::include_graphics(here::here(ifelse(french, "figures/BC-FR.png", "figures/BC.png")))
 ```
 
-(ref:major-catch-cap) Time series of total landed catch in thousands of tonnes (t) of Pacific Herring from `r recent_catch_yr` to `r major_end_yr` in the major stock assessment regions.
+(ref:major-catch-cap) Time series of total landed Pacific Herring catch in thousands of tonnes (t) from `r recent_catch_yr` to `r major_end_yr` in the major stock assessment regions.
 See Figures \@ref(fig:storyboard-hg) to \@ref(fig:storyboard-wcvi) for catches during the reduction period (`r major_start_yr` to `r recent_catch_yr-1`).
 Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery;
 'RoeGN' represents the roe gillnet fishery; and
@@ -32,7 +32,7 @@ plot_catch(df = major_catch,
            translate = french)
 ```
 
-(ref:major-wa-cap) Time series of weight-at-age in kilograms (kg) for age-`r age_highlight` (circles) and `r nRollWA`-year running mean weight-at-age (lines) for Pacific Herring from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
+(ref:major-wa-cap) Time series of Pacific Herring weight-at-age in kilograms (kg) for age-`r age_highlight` (circles) and `r nRollWA`-year running mean weight-at-age (lines) from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
 Lines show `r nRollWA`-year running means for age-`r age_first` to age-`r age_plus` herring (incrementing up from bottom line);
 the thick black line highlights age-`r age_highlight` herring.
 Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods:
@@ -61,7 +61,7 @@ plot_wa(df = major_wa,
         translate = french)
 ```
 
-(ref:major-pa-cap) Time series of proportion-at-age for Pacific Herring from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
+(ref:major-pa-cap) Time series of Pacific Herring proportion-at-age from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
 The black line is the mean age, and the shaded area is the approximate `r ci_level*100`% distribution.
 Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet.
 The age-`r age_plus` class is a 'plus group' which includes fish ages `r age_plus` and older.
@@ -81,7 +81,7 @@ plot_pa(df = major_pa,
 
 ```
 
-(ref:major-spawn-index-cap) Time series of spawn index in thousands of tonnes (t) for Pacific Herring from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
+(ref:major-spawn-index-cap) Time series of Pacific Herring spawn index in thousands of tonnes (t) from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
 The spawn index has two distinct periods defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).

@@ -21,7 +21,7 @@ input_data_table(tab = inp_catch,
                  translate = french)
 ```
 
-(ref:annual-catch-cap) Total landed catch in tonnes of Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the major stock assessment regions (SARs).
+(ref:annual-catch-cap) Total landed Pacific Herring catch in tonnes from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the major stock assessment regions (SARs).
 Legend: `r commify(major_regions_full_parens)`.
 Note: 'WP' indicates that data are withheld due to privacy concerns.
 
@@ -38,7 +38,7 @@ total_landed_catch_table(tab = major_catch_short,
                          translate = french)
 ```
 
-(ref:annual-sok-catch-cap) Total spawn-on-kelp harvest, reported as pounds of Pacific Herring eggs on kelp, from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the major stock assessment regions (SARs).
+(ref:annual-sok-catch-cap) Total Pacific Herring spawn-on-kelp harvest, reported as pounds eggs on kelp, from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the major stock assessment regions (SARs).
 Legend: `r commify(major_regions_full_parens)`.
 Note: 'WP' indicates that data are withheld due to privacy concerns.
 
@@ -55,8 +55,8 @@ sok_harvest_table(tab = sok,
                   translate = french)
 ```
 
-(ref:spawn-index-hg-cap) Spawn index in tonnes, and proportion of the spawn index by Group for
-Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
+(ref:spawn-index-hg-cap) Pacific Herring spawn index in tonnes, and proportion of the spawn index by Group 
+from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
 Haida Gwaii major stock assessment region.
 Legend: 'Cumshewa' is Section 023;
 'Juan Perez/Skincuttle' is Sections 021 and 025;
@@ -82,8 +82,8 @@ spawn_index_by_area_table(ps[[en2fr("HG", french)]],
                           translate = french)
 ```
 
-(ref:spawn-index-pr-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for
-Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the 
+(ref:spawn-index-pr-cap) Pacific Herring spawn index in tonnes, and proportion of the spawn index by Statistical Area
+from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the 
 Prince Rupert District major stock assessment region.
 See Table \@ref(tab:spawn-index-hg) for description.
 
@@ -101,8 +101,8 @@ spawn_index_by_area_table(ps[[en2fr("PRD", french)]],
                           translate = french)
 ```
 
-(ref:spawn-index-cc-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for
-Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
+(ref:spawn-index-cc-cap) Pacific Herring spawn index in tonnes, and proportion of the spawn index by Statistical Area 
+from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
 Central Coast major stock assessment region.
 See Table \@ref(tab:spawn-index-hg) for description.
 
@@ -120,8 +120,8 @@ spawn_index_by_area_table(ps[[en2fr("CC", french)]],
                           translate = french)
 ```
 
-(ref:spawn-index-sog-cap) Spawn index in tonnes, and proportion of the spawn index by Group for
-Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
+(ref:spawn-index-sog-cap) Pacific Herring spawn index in tonnes, and proportion of the spawn index by Group
+from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
 Strait of Georgia major stock assessment region.
 Legend: '14&17' is Statistical Areas 14 and 17 (excluding Section 173);
 'ESoG' is eastern Strait of Georgia;
@@ -147,8 +147,8 @@ spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
                           translate = french)
 ```
 
-(ref:spawn-index-wcvi-cap) Spawn index in tonnes, and proportion of the spawn index by Statistical Area for
-Pacific Herring from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
+(ref:spawn-index-wcvi-cap) Pacific Herring spawn index in tonnes, and proportion of the spawn index by Statistical Area
+from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
 West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:spawn-index-hg) for description.
 
