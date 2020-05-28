@@ -1,5 +1,3 @@
-\needspace{10\baselineskip}
-
 # Collaborateurs
 
 ```{r, echo=FALSE, include=FALSE}
