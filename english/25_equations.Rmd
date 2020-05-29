@@ -560,7 +560,7 @@ $q_2$ is assumed to have an informative prior \dNorm{1}{0.01}.
 
 ## Tables
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{\label{tab:variables}Description of symbols and constants in the
   Pacific Herring statistical catch-age model.}
@@ -577,7 +577,7 @@ $k$ & & Index for gear\\
 $S$ & $`r major_models[[1]]$dat$num.sex`$ & Number of sexes\\
 $\acute{a},\,A$ & $`r age_first`$, $`r age_plus`$ & Youngest and oldest age class ($A$ is a plus group)\\
 $\acute{t},\,T$ & $`r major_start_yr`$, $`r major_end_yr`$ & First and last year of catch data\\
-$K$ & $`r major_models[[1]]$dat$num.gears`$ & Number of gears including survey gears\\
+$K$ & $`r major_models[[1]]$dat$num.gears`$ & Number of gears, including survey gears\\
 \multicolumn{3}{l}{\textbf{Observations (data)}}\\
 $C_{k,t}$ & & Catch in weight for gear $k$ in year $t$\\
 $I_{k,t}$ & & Relative abundance index for gear $k$ in year $t$\\
