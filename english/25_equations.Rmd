@@ -556,6 +556,10 @@ For the AM2 version of the Pacific Herring assessment model used in this analysi
 $q_1$ is assumed to have an uninformative prior \dUnif{0}{1}, and 
 $q_2$ is assumed to have an informative prior \dNorm{1}{0.01}. 
 
+\clearpage
+
+## Tables
+
 \begin{table}[ht]
 \centering
 \caption{\label{tab:variables}Description of symbols and constants in the
@@ -609,3 +613,5 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\clearpage
