@@ -82,7 +82,7 @@ if(french){
 }
 rebuild_rdata_model_files <- FALSE
 run_retrospectives <- FALSE
-retrospective_yrs <- 10
+retrospective_yrs <- 1:10
 models_dir <- here::here("models")
 
 source(here::here("R/model-setup.R"))
