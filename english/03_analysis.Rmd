@@ -1,5 +1,9 @@
 # Analysis and response
 
+## Management strategy evaluation
+
+Placeholder to describe the MSE process so far
+
 ## Input data
 
 There are three types of input data used for the Pacific Herring stock assessment: catch data, biological data, and abundance data.
