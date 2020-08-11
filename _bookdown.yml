@@ -1,5 +1,7 @@
 book_filename: "HerringSR"
 rmd_files: ["index.Rmd",
+            "english/01_covid.Rmd",
+            #"french/01_covid.Rmd",
             "english/01_context.Rmd",
             #"french/01_context.Rmd",
             "english/02_background.Rmd",
