@@ -35,6 +35,8 @@ bibliography: bib/refs.bib
 csl: csl/csas.csl
 lot: true
 lof: true
+header-includes:
+  - \usepackage{needspace}
 ---
 
 ```{r setup, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}

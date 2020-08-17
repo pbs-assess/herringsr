@@ -73,6 +73,7 @@ Légende: «Cumshewa» est la section 023;
 «Selwyn» est la section 024.
 Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
+\needspace{0.4\textheight}
 ```{r spawn-index-hg}
 spawn_index_by_area_table(ps[[en2fr("HG", french)]],
                           cap = ifelse(french,
@@ -92,6 +93,7 @@ hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la
 région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
+\needspace{0.4\textheight}
 ```{r spawn-index-prd}
 spawn_index_by_area_table(ps[[en2fr("PRD", french)]],
                           cap = ifelse(french,
@@ -111,6 +113,7 @@ le hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans 
 région d’évaluation des stocks majeur de la côte centrale.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
+\needspace{0.4\textheight}
 ```{r spawn-index-cc}
 spawn_index_by_area_table(ps[[en2fr("CC", french)]],
                           cap = ifelse(french,
@@ -138,6 +141,7 @@ Légende: «14&17» fait référence aux zones statistiques 14 et 17 (à l’exc
 «SDodd» fait référence au sud du passage Dodd.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
+\needspace{0.4\textheight}
 ```{r spawn-index-sog}
 spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
                           cap = ifelse(french,
@@ -157,6 +161,7 @@ hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la
 région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
+\needspace{0.4\textheight}
 ```{r spawn-index-wcvi}
 spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
                           cap = ifelse(french,
