@@ -3,7 +3,7 @@
 
 The COVID-19 pandemic impacted our ability to collect and analyse Pacific Herring data throughout British Columbia in 2020. 
 The pandemic and associated provincial response changed rapidly during the Pacific Herring field program season. 
-Despite these challenges, surveyors assessed all major observed spawns in the 5 major stock assessment regions (SARs). 
+Despite these challenges, surveyors assessed all major observed spawns in the five major stock assessment regions (SARs). 
 However, these changes impacted our ability to assess spawn in SARs with later spawns more than SARs with earlier spawns. 
 For example, spawns were surveyed by surface surveys instead of underwater dive surveys in Prince Rupert District and Haida Gwaii.
 
@@ -12,9 +12,6 @@ This delay is most notable for age data which are analysed at the sclerochronolo
 This lab closed on March 16th, and resumed limited ageing analysis on July 6th. 
 This resulted in delayed Pacific Herring ages for 2020, and many other species. 
 To address this backlog efficiently, senior science staff and fisheries managers at DFO are prioritizing species to analyse in the sclerochronology lab. 
-Unfortunately, it may not be possible to analyse all the Pacific Herring age data in time for stock assessments this year. 
+<!-- May need to edit this next sentence -->
+Unfortunately, it was not possible to analyse all the Pacific Herring age data in time for stock assessments this year. 
 Note that although age data are not required for Pacific Herring stock assessments, they are an important component.
-
-Due to the delay in the analysis of biological data, some tables and figures showing biological data have been omitted from this version of the report. 
-We will update data summary reports with biological data for 2020, including age data, when available. 
-We appreciate your patience and understanding as we continue to work from home in these uncertain and changing times.
