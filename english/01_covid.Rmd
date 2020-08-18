@@ -12,7 +12,7 @@ This delay is most notable for age data which are analysed at the sclerochronolo
 This lab closed on March 16th, and resumed limited ageing analysis on July 6th. 
 This resulted in delayed Pacific Herring ages for 2020, and many other species. 
 To address this backlog efficiently, senior science staff and fisheries managers at DFO are prioritizing species to analyse in the sclerochronology lab. 
-<!-- May need to edit these next few sentences -->
+<!-- TODO: May need to edit these next few sentences -->
 Unfortunately, it was not possible to analyse all the Pacific Herring age data in time for stock assessments this year. 
 Note that although age data are not required for Pacific Herring stock assessments, they are an important component.
 Missing age data were imputed by the following method...
