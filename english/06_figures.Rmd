@@ -935,7 +935,7 @@ Solid and dashed black lines indicate medians and `r ci_level*100`% confidence i
 Vertical red lines and shaded red areas indicate medians and `r ci_level*100`% confidence intervals for the limit reference point $0.3\SB_0$, respectively,
 where $\SB_0$ is estimated unfished spawning biomass.
 
-(ref:proj-biomass-density-cap-fr) Les distributions postérieurs de la biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en `r assess_yr+1` $\SB_{`r assess_yr+1`}$ en milliers de tonnes pour les
+(ref:proj-biomass-density-cap-fr) Les distributions postérieures de la biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en `r assess_yr+1` $\SB_{`r assess_yr+1`}$ en milliers de tonnes pour les
 modèles statistiques des prises selon l’âge du hareng du Pacifique dans les régions d’évaluation des stocks majeurs.
 Les lignes noires pleines et tiretées indiquent les médianes et les intervalles de confiance de `r ci_level*100`%  pour $\SB_{`r assess_yr+1`}$, respectivement.
 Les lignes et rectangles ombragés rouges indiquent les médianes et les intervalles de confiance de `r ci_level*100`% pour le point de référence limite, $0,3\SB_0$, où $\SB_0$ est la biomasse reproductrice non exploitée estimée.
