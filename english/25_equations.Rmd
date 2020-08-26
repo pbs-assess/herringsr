@@ -556,8 +556,6 @@ For the AM2 version of the Pacific Herring assessment model used in this analysi
 $q_1$ is assumed to have an uninformative prior \dUnif{0}{1}, and 
 $q_2$ is assumed to have an informative prior \dNorm{1}{0.01}. 
 
-\clearpage
-
 ## Tables
 
 \begin{table}[H]
