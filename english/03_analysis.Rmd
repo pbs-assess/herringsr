@@ -2,15 +2,16 @@
 
 ## Management strategy evaluation
 
-Placeholder to describe the MSE process so far:
+Placeholder to describe the MSE process:
 
 1. MSE background/description, including challenges and strengths.
 
 1. MSE is an iterative process.
 
-1. MSE process for Pacific Herring:
-(a) SoG and WCVI in 2018, and
-(b) HG, PRD, and CC in 2019.
+1. MSE process for Pacific Herring in BC:
+    + SoG and WCVI in 2018, 
+    + HG, PRD, and CC in 2019, and
+    + Updates in 2020.
 
 ## Input data
 
