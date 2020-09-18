@@ -31,8 +31,8 @@ The DFO and Heiltsuk are also committed to annual development of a Joint Fisheri
 
 In `r this_season`, the primary Pacific Herring fisheries were seine roe and gillnet roe fisheries, with a combined coast wide catch of `r total_final_yr_roe_catch` tonnes (t).
 The FB seine fishery had a coast wide catch of `r total_final_yr_other_catch`&nbsp;t.
-The roe and FB fisheries only operated in SoG in `r this_season`.
-The SOK fishery was operational in PRD and CC, and special use (SU) minor fishery was operational in SoG only.
+The roe, FB and special use (SU) fisheries operated in SoG only in `r this_season`.
+Commercial SOK fisheries were not operational in PRD and CC in `r this_season`.
 
 A complete dockside monitoring program exists for all Pacific Herring commercial fisheries and the resulting validated catch data are included in the annual stock assessment process for all fisheries, except SOK.
 The SOK fishery is licenced based on validated pounds of SOK product (eggs on kelp),
@@ -40,7 +40,8 @@ however these landings are not easily combined with catches of whole herring and
 
 The exclusion of SOK fishery data from the annual stock assessment process was identified as a key uncertainty in the most recent CSAS review of the stock assessment framework [@cleary2018].
 Recommendations for addressing this uncertainty will require quantifying ponding mortality and removals (eggs) associated with SOK fisheries.
-Consideration of these uncertainties will also occur at a future stage in the MSE process.
+Although this work is underway, results are not yet available for informing the `r assess_yr`assessment.
+Consideration of these uncertainties will also occur within the MSE process.
 
 ## Description of the stock assessment process
 
