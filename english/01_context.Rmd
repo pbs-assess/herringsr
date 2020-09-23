@@ -17,8 +17,10 @@ In the spring of 2019, the MSE process was initiated for the northern stock regi
 
 
 Results from the MSE process have been included in the annual assessment of Pacific Herring stocks as follows:
-The 2018 stock assessment included updated MP recommendations for SoG and WCVI stock assessment regions for 2019 [@dfo2019b].
-The 2019 stock assessment included MP recommendations for SoG and WCVI stock assessment regions as per 2018 and updated MP recommendations for HG, PRD, and CC [@dfo2020a].
+
+1. The 2018 stock assessment included updated MP recommendations for SoG and WCVI stock assessment regions for 2019 [@dfo2019b].
+
+1. The 2019 stock assessment included MP recommendations for SoG and WCVI stock assessment regions as per 2018 and updated MP recommendations for HG, PRD, and CC [@dfo2020a].
 
 
 Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested that DFO Pacific Science Branch assess the status of British Columbia (BC) Pacific Herring stocks in
