@@ -457,13 +457,12 @@ Results presented here may inform this on-going commitment.
 
 ### Strait of Georgia
 
-Closed-loop feedback simulations for the SoG showed that all tested MPs could maintain the spawning biomass above the LRP with 91% probability or higher across all OM scenarios,
+In 2018, closed-loop feedback simulations for the SoG showed that all tested MPs could maintain the spawning biomass above the LRP with 91% probability or higher across all OM scenarios,
 including the historical fixed cutoff MP which applied a constant escapement of 21,200&nbsp;t based on the 1996 stock assessment and `r target_hr*100`% harvest rate [@dfo2019a].
 Management procedures that included a 30,000&nbsp;t catch cap were able to maintain spawning biomass above a biomass level of $0.6\SB_0$ with 60% probability or higher across all OM scenarios.
 
-A 30,000&nbsp;t catch cap was evaluated for the SoG;
-this cap was not often triggered, and thus did not limit the commercial fishery very often in simulations.
 The purpose of the catch cap is to provide a model-free means of mitigating the effects of large positive assessment errors on a year-to-year basis.
+
 Additional simulation-evaluations were conducted in 2019 to further explore the role of catch caps in mitigating assessment errors [@dfo2019c].
 A comparison of catch caps from 30,000&nbsp;t to 5,000&nbsp;t showed no discernible gain in conservation performance under all 3 OM scenarios.
 Results also showed MPs with catch caps of 20,000&nbsp;t or less rarely exceed the 20% harvest rate for any given projection year (over the 15 year projections).
@@ -477,13 +476,11 @@ as well as substantial changes to the structural form of the assessment model, a
 1. Use of separate lower and upper OCPs allows for altering the slope of the ramp portion of the HCR to better meet stock and fishery objectives by
 avoiding fishery closures and encouraging stock growth as more is learned about stock dynamics and the effects of fishing.
 
-In the absence of fishing, spawning biomass in 2020 is forecast at `r f(sog_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\SB_0$ with `r f(sog_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
+As such, the historical fixed cutoff HCR has now been removed from the list of MP options.
+Additional MPs have been added to the list upon request from Fisheries Management,
+informed by meetings with First Nations, ENGOs, and the fishing industry (TODO: citation?).
 
-Harvest recommendations for SoG stock in 2018/19 were provided by application of a MP that utilizes stock assessment estimates of
-forecast spawning biomass and 
-operational control points at $0.3\SB_0$ and $0.6\SB_0$,
-with a 20% target harvest rate and
-a maximum catch cap of 30,000&nbsp;t [@dfo2019a, Figure 4].
+In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(sog_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\SB_0$ with `r f(sog_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
 Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-sog).
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for SoG,
