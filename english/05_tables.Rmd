@@ -746,6 +746,7 @@ See Table \@ref(tab:decision-prd) for description.
 région d’évaluation des stocks majeur du détroit de Georgie.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
+<!-- TODO: WCVI currently uses the SoG table for a placeholder -->
 (ref:decision-wcvi-cap) Management procedure performance for the Pacific Herring statistical catch-age model in the
 West Coast of Vancour Island major stock assessment region.
 See Table \@ref(tab:decision-prd) for description.
@@ -807,7 +808,7 @@ decision_tables_mp(mp.sog,
 ```
 
 ```{r decision-wcvi, results = 'asis', echo = FALSE}
-decision_tables_mp(mp.wcvi,
+decision_tables_mp(mp.sog,
                    xcaption = ifelse(french,
                                      "(ref:decision-wcvi-cap-fr)",
                                      "(ref:decision-wcvi-cap)"),
