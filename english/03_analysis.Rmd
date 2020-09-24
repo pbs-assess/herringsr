@@ -153,9 +153,9 @@ $q_1$ (`r surv_yr_rng[1]` to `r new_surv_yr-1`) with an uninformative prior, and
 $q_2$ (`r new_surv_yr` to `r surv_yr_rng[2]`) with an informative prior approximating 1.0.
 
 The surface survey methodolody has been used on occasion in years between 1988 and `r surv_yr_rng[2]`. 
-Generally this occurs in instances when herring spawn is observed in locations where there is no dive survey team available, or, when spawning occurs very early (Jan-Feb) or late (May) in the season. 
+Generally this occurs in instances when herring spawn is observed in locations where a dive survey team is not available, or, when spawning occurs very early (Jan-Feb) or late (May) in the season. 
 In these instances, estimates of spawner biomass obtained from a surface survey for a given stock area and year are added to the biomass estimates from the dive survey and $q$=1 is assumed for the combined index.
-In `r surv_yr_rng[2]`, a full surface survey was conducted for the HG and PRD SARs and the resulting survey biomass is assumed continuous with the dive survey time series.
+In `r surv_yr_rng[2]`, a full surface survey was conducted for the HG and PRD SARs and in this assessment the resulting survey biomass is assumed continuous with the dive survey time series.
 
 
 ### Reference points\label{sec:ref-pts}
@@ -186,12 +186,13 @@ Specifically, operational control points (OCPs) define the inflection points of 
 ### Haida Gwaii
 
 Estimated spawning biomass declined to near historic lows in the mid-1990s and briefly increased through the late 1990s before falling to persistent historic lows from 2000 to 2010 (Figure \@ref(fig:storyboard-hg)d).
-A modest increase in estimated spawning biomass occurred during the early 2010s before falling once again to near historic lows over the most recent few years.
-The increase can be attributed to increases in the spawn index in 2013 and 2015 (Figure \@ref(fig:storyboard-hg)a) that were supported by above average recruitment of age-`r age_first` fish in 2012 (Figure \@ref(fig:storyboard-hg)c, d).
+A modest increase in estimated spawning biomass occurred during the early 2010s before falling once again to near historic lows 2016-2018.
+The modest increase can be attributed to increases in the spawn index in 2013 and 2015 (Figure \@ref(fig:storyboard-hg)a) that were supported by above average recruitment of age-`r age_first` fish in 2012 (Figure \@ref(fig:storyboard-hg)c, d).
 An increasing trend in the estimated natural mortality rate since 1980 (Figure \@ref(fig:storyboard-hg)b) largely absorbed surplus production attributable to above average recruitment events (e.g., 1997 and 2012; Figure \@ref(fig:storyboard-hg)c, d).
 In particular, estimated natural mortality has increased sharply since the early 2010s following a decline from a peak rate in the early 2000s.
 Since 2000, the HG stock has been in a low biomass state, with many of these years also showing low productivity which has precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
-The most recent year, between 2018 and 2019, biomass remains very low and there is evidence of positive productivity.
+There is an increase in survey biomass from 2020 however there is insufficient information to inform an increasing trend.
+The most recent year, between 2019 and 2020, biomass remains low relative to historical patterns and there is evidence of positive productivity.
 The effective harvest rate $U_t$ since 2000 has been at or near zero (Figure \@ref(fig:harvest-rate)), with the last commercial roe fishery in 2002, and the last commercial SOK fishery in 2004.
 
 Estimated spawning biomass in `r assess_yr` is `r f(hg_final_yr_sbt[2])`&nbsp;t (`r paste0("$\\SB_{", assess_yr, "}$")`, median posterior value) or 30% of $\SB_0$ (Tables \@ref(tab:hg-spawning-biomass-depletion) & \@ref(tab:ref-points-hg)).
