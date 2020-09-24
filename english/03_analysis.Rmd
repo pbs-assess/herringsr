@@ -52,8 +52,8 @@ surface period from `r surv_yr_rng[1]` to `r new_surv_yr - 1`, and
 dive period from `r new_surv_yr` to `r surv_yr_rng[2]`.
 Data from these surveys are used to calculate egg densities per spawn.
 Ultimately, the estimated weight of mature spawners required to produce the egg deposition is calculated and referred to as the 'spawn index'.
-Execution of the `r surv_yr_rng[2]` spawn survey followed all standard dive survey protocols for SoG, CC, and WCVI SARs as described in @cleary2018.
-A surface survey protocol was used for HG and PRD SARs due to COVID-19.
+Execution of the `r surv_yr_rng[2]` spawn survey followed all standard dive survey protocols for SoG, CC, and WCVI SARs as described in @cleary2018, however
+a surface survey protocol was used for HG and PRD SARs due to COVID-19.
 Time series of spawn index by major stock assessment region, from `r paste(surv_yr_rng, collapse=" to ")` are summarized in Figure \@ref(fig:major-spawn-index).
 In `r surv_yr_rng[2]`, there was a notable increase in survey biomass (index values) for HG and SOG SARs (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-hg) & \@ref(tab:spawn-index-sog)), a small increase in survey biomass for WCVI (Figure \@ref(fig:major-spawn-index) and Table \@ref(tab:spawn-index-wcvi)), and a small decrease in survey biomass for PRD and CC (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-prd) & \@ref(tab:spawn-index-cc)).
 
@@ -66,10 +66,13 @@ Statistical Areas, Sections, and Groups are not intended to represent sub-stock 
 
 ## First Nations observations
 
-<!-- Need to update this section for 2020 -->
+The onset of the COVID-19 pandemic impacted First Nations participation in herring survey activities as well as participation in FSC harvest. 
+Impacts also extended to DFO Science staff in terms of reduced capacity for external engagement. 
+As such, assembling local observations was not possible for the 2020 season. 
 
-Local observations from 2019 were provided by First Nations participants in the Herring Technical Working Group.
-This working group, established in 2016, consists of DFO Science, DFO Fisheries Management, as well as technical representatives nominated by numerous coastal First Nations and the herring industry.
+This report includes local observations from 2019, provided by First Nations participants through the Herring Technical Working Group.
+This working group, established in 2016, consists of DFO Science, DFO Fisheries Management, as well as technical representatives nominated by numerous coastal First Nations and the herring industry. 
+
 Observations reported here describe local perspectives on Pacific Herring in four of the management areas.
 
 <!-- ### Haida Gwaii - not provided in 2019 -->
@@ -148,6 +151,12 @@ dive surveys (`r new_surv_yr` to `r surv_yr_rng[2]`).
 Thus, two $q$ parameters are implemented in the estimation procedure:
 $q_1$ (`r surv_yr_rng[1]` to `r new_surv_yr-1`) with an uninformative prior, and
 $q_2$ (`r new_surv_yr` to `r surv_yr_rng[2]`) with an informative prior approximating 1.0.
+
+The surface survey methodolody has been used on occasion in years between 1988 and `r surv_yr_rng[2]`. 
+Generally this occurs in instances when herring spawn is observed in locations where there is no dive survey team available, or, when spawning occurs very early (Jan-Feb) or late (May) in the season. 
+In these instances, estimates of spawner biomass obtained from a surface survey for a given stock area and year are added to the biomass estimates from the dive survey and $q$=1 is assumed for the combined index.
+In `r surv_yr_rng[2]`, a full surface survey was conducted for the HG and PRD SARs and the resulting survey biomass is assumed continuous with the dive survey time series.
+
 
 ### Reference points\label{sec:ref-pts}
 
