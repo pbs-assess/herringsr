@@ -43,7 +43,6 @@ Significant declines in weight-at-age are evident for all major herring stocks, 
 Declining weight-at-age may be attributed to any number of factors, including fishing effects (i.e., gear selectivity), environmental effects (e.g., changes in ocean productivity), or changes in sampling protocols (e.g., shorter time frame over which samples are collected).
 There has been an increasing trend in weight-at-age for all major stocks from 2012 to `r assess_yr`, although to a lesser degree for PRD.
 
-
 ### Abundance data
 
 The spawn index survey collects information on spawn length (parallel to shore), spawn width (perpendicular to shore), number of egg layers by vegetation type, and other data.
@@ -61,7 +60,7 @@ a small decrease in survey biomass for PRD and CC (Figure \@ref(fig:major-spawn-
 
 ## Spatial spawn distribution
 
-Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) by proportion over the most recent 10 years for the major SARs.
+Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) by proportion over the most recent `r num_yrs_tab+1` years for the major SARs.
 HG and SoG are summarized by Group, while PRD, CC, and WCVI are summarized by Statistical Area;
 the choice of spatial grouping reflects spawning behaviour and biology for each SAR based on the survey data and working group discussions with local First Nations.
 Statistical Areas, Sections, and Groups are not intended to represent sub-stock structure or ‘known’ stocklets.
@@ -182,7 +181,8 @@ Stock status relative to the assessment model estimates $0.3\SB_0$ (LRP) and $0.
 The LRP and USR relate stock status to the DFO PA Framework [@dfo2009], and in the assessment of Pacific Herring the same calculations are applied for each SAR.
 There is an important distinction between reference points (e.g., LRP, USR) and
 the operational control points of the harvest control rule (HCR) or the management procedure used to set catch limits.
-Specifically, operational control points (OCPs) define the inflection points of a HCR, and identify biomass levels where management action is taken. For example, the harvest rate is set to zero and fishing ceases when biomass falls below the lower OCP.
+Specifically, operational control points (OCPs) define the inflection points of a HCR, and identify biomass levels where management action is taken.
+For example, the harvest rate is set to zero and fishing ceases when biomass falls below the lower OCP.
 
 ### Haida Gwaii
 
@@ -238,7 +238,8 @@ For example, the decline in spawn index (and estimated spawning biomass) to the 
 Estimated natural mortality moderated by the late 2000s, which was followed by the increase in spawn index (and estimated spawning biomass) until 2017 whereupon natural mortality ceased declining.
 Recruitment deviations were slightly negative (lower than predicted by the stock-recruitment function) on average from about 1990 to 2017,
 and have increased to above average in 2018 and 2019 (Figure \@ref(fig:storyboard-cc)e).
-The model estimates very similar spawning biomass in 2019 and 2020, and the analysis of surplus production shows there is evidence of strong production in the year between 2018-2019 and 2019-2020, similar to the 1990 to 1999 period (Figure \@ref(fig:storyboard-cc)f).
+The model estimates very similar spawning biomass in 2019 and 2020, and the analysis of surplus production shows there is evidence of strong production in the year between 2018-2019 and 2019-2020,
+similar to the 1990 to 1999 period (Figure \@ref(fig:storyboard-cc)f).
 
 A fixed cutoff HCR was implemented in 1986, and from 1986-2007 the effective harvest rate $U_t$ is estimated to fluctuate above and below the `r target_hr*100`% target rate, with median estimates exceeding `r target_hr*100`% frequently (Figure \@ref(fig:harvest-rate)).
 Occurrences of $U_t$ exceeding the `r target_hr*100`% target harvest rate are due in part to
@@ -293,6 +294,7 @@ however the reduction in estimated natural mortality and absence of removals fro
 The absence of a commercial fishery since 2005 means the realized harvest rate has been near zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
 In recent years there has been modest evidence for an increase in biomass.
 The production estimates in the 2019-2020 year are at a higher spawning biomass level than those estimated during the low production, low biomass period of the last half of the 2000s and early 2010s (Figure \@ref(fig:storyboard-wcvi)f).
+<!-- TODO: Saying "last half of the 2000s" is ambiguous.. 2005, or 2050. Might be best to specify the acualy years-ish. -->
 
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(wcvi_final_yr_sbt[2])`&nbsp;t (posterior median),
 equal to 42.4% of $\SB_0$ (Tables \@ref(tab:wcvi-spawning-biomass-depletion) & \@ref(tab:ref-points-wcvi)).
@@ -324,7 +326,6 @@ a similar process was used to evaluate harvest strategies for HG, PRD, and CC in
 
 The ranking of objectives and selection of MPs that meet objectives using MSE is an iterative process.
 The first cycle of Pacific Herring MSE includes, as a starting point, four core fisheries management objectives [@dfo2019c] which reflect DFO policy, and were applied to each major SAR:
-
 
 1. Maintain spawning biomass above the LRP with at least 75% probability over three Pacific Herring generations
 (i.e., avoid a biomass limit; $P(\SB_t > 0.3\SB_0) \geq 0.75$),
