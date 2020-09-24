@@ -746,6 +746,14 @@ See Table \@ref(tab:decision-prd) for description.
 région d’évaluation des stocks majeur du détroit de Georgie.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
+(ref:decision-wcvi-cap) Management procedure performance for the Pacific Herring statistical catch-age model in the
+West Coast of Vancour Island major stock assessment region.
+See Table \@ref(tab:decision-prd) for description.
+
+(ref:decision-wcvi-cap-fr) Rendement de la procédure de gestion pour le modèle statistique des prises selon l’âge du hareng du Pacifique dans la
+région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
+Voir le tableau \@ref(tab:decision-prd) pour la description.
+
 \begin{turn}
 
 ```{r decision-prd, results = 'asis', echo = FALSE}
@@ -787,6 +795,23 @@ decision_tables_mp(mp.sog,
                                      "(ref:decision-sog-cap-fr)",
                                      "(ref:decision-sog-cap)"),
                    xlabel = "tab:decision-sog",
+                   font.size = 10,
+                   space.size = 14,
+                   placement = "ht",
+                   last_col_header = paste0(assess_yr + 1, " TAC"),
+                   perc_dec_pts = 0,
+                   dec_pts = 2,
+                   col_align = col_align,
+                   #inc_mps = 9,
+                   translate = french)
+```
+
+```{r decision-wcvi, results = 'asis', echo = FALSE}
+decision_tables_mp(mp.wcvi,
+                   xcaption = ifelse(french,
+                                     "(ref:decision-wcvi-cap-fr)",
+                                     "(ref:decision-wcvi-cap)"),
+                   xlabel = "tab:decision-wcvi",
                    font.size = 10,
                    space.size = 14,
                    placement = "ht",
