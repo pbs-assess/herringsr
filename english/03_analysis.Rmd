@@ -426,10 +426,10 @@ Although there is not evidence of a low biomass and low productivity state for P
 adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity:
 states that were entered rapidly and were preceded by high biomass levels [@kronlund2017].
 
-In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to decrease slightly from `r f(prd_final_yr_sbt[2])`&nbsp;t in `r assess_yr` to an estimated `r f(prd_proj_sbt[2])`&nbsp;t (posterior medians).
+In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to an estimated `r f(prd_proj_sbt[2])`&nbsp;t (posterior medians), near-identical to the median estimate for `r assess_yr`.
 The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the LRP of $0.3\SB_0$ with `r f(prd_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-prd)).
 
-Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-prd).
+Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-prd); management procedures and performance metrics appear in identical format to that of September 2019 [@dfo2020a].
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for PRD,
 whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
 Harvest options under the two Robustness OM scenarios are also included.
