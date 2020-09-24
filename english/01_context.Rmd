@@ -22,12 +22,9 @@ Results from the MSE process have been included in the annual assessment of Paci
 
 1. The 2019 stock assessment included MP recommendations for SoG and WCVI stock assessment regions as per 2018 and updated MP recommendations for HG, PRD, and CC [@dfo2020a].
 
-<<<<<<< HEAD
 1. TODO: context for SoG and WCVI Sept 2020 updates
 
 
-=======
->>>>>>> 6a4e0aeadbf7992a1e0c61497be5823aa03f0fcb
 Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested that DFO Pacific Science Branch assess the status of British Columbia (BC) Pacific Herring stocks in
 `r assess_yr` and recommend harvest advice for `r assess_yr + 1` as simulation-tested MPs to inform the development of the `r assess_yr`/`r assess_yr + 1` Integrated Fisheries Management Plan, where appropriate.
 Estimated stock trajectories, current status of stocks for `r assess_yr`, management procedure options and harvest advice recommendations from those MPs for `r assess_yr + 1` reflect methods of @cleary2018 and,
