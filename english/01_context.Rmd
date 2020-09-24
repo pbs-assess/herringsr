@@ -11,17 +11,16 @@ The change was made to use average recruitment generated from a normal distribut
 
 In 2016, DFO committed to renewing the current management framework to address a range of challenges facing Pacific Herring stocks and fisheries in BC.
 Renewal of the management framework includes engaging in a management strategy evaluation (MSE) process to evaluate the performance of candidate management procedures against a range of hypotheses about future stock and fishery dynamics.
-As part of the MSE process, a CSAS regional peer review occurred July 25 and 26, 2018, where performance of Pacific Herring management procedures (MPs) were assessed against conservation objectives for Strait of Georgia (SoG) and West Coast of Vancouver Island (WCVI) stock assessment regions [@dfo2019a].
+As part of the MSE process, a CSAS regional peer review occurred July 25 and 26, 2018,
+where performance of Pacific Herring management procedures (MPs) were assessed against conservation objectives for Strait of Georgia (SoG) and West Coast of Vancouver Island (WCVI) stock assessment regions [@dfo2019a].
 Steps included operating model (OM) development, fitting the OM to Pacific Herring stock and fishery monitoring data (OM conditioning), and closed-loop simulations of MP performance for alternative future natural mortality scenarios.
 In the spring of 2019, the MSE process was initiated for the northern stock regions: Haida Gwaii (HG), Prince Rupert District (PRD), and Central Coast (CC) [@dfo2019c].
-
 
 Results from the MSE process have been included in the annual assessment of Pacific Herring stocks as follows:
 
 1. The 2018 stock assessment included updated MP recommendations for SoG and WCVI stock assessment regions for 2019 [@dfo2019b].
 
 1. The 2019 stock assessment included MP recommendations for SoG and WCVI stock assessment regions as per 2018 and updated MP recommendations for HG, PRD, and CC [@dfo2020a].
-
 
 Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested that DFO Pacific Science Branch assess the status of British Columbia (BC) Pacific Herring stocks in
 `r assess_yr` and recommend harvest advice for `r assess_yr + 1` as simulation-tested MPs to inform the development of the `r assess_yr`/`r assess_yr + 1` Integrated Fisheries Management Plan, where appropriate.
