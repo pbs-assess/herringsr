@@ -9,9 +9,9 @@ Placeholder to describe the MSE process:
 1. MSE is an iterative process.
 
 1. MSE process for Pacific Herring in BC:
-    + SoG and WCVI in 2018, 
-    + HG, PRD, and CC in 2019, and
-    + Updates in 2020.
+    a. SoG and WCVI in 2018, 
+    a. HG, PRD, and CC in 2019, and
+    a. Updates in 2020.
 
 ## Input data
 
@@ -55,7 +55,9 @@ Ultimately, the estimated weight of mature spawners required to produce the egg 
 Execution of the `r surv_yr_rng[2]` spawn survey followed all standard dive survey protocols for SoG, CC, and WCVI SARs as described in @cleary2018, however
 a surface survey protocol was used for HG and PRD SARs due to COVID-19.
 Time series of spawn index by major stock assessment region, from `r paste(surv_yr_rng, collapse=" to ")` are summarized in Figure \@ref(fig:major-spawn-index).
-In `r surv_yr_rng[2]`, there was a notable increase in survey biomass (index values) for HG and SOG SARs (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-hg) & \@ref(tab:spawn-index-sog)), a small increase in survey biomass for WCVI (Figure \@ref(fig:major-spawn-index) and Table \@ref(tab:spawn-index-wcvi)), and a small decrease in survey biomass for PRD and CC (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-prd) & \@ref(tab:spawn-index-cc)).
+In `r surv_yr_rng[2]`, there was a notable increase in survey biomass (index values) for HG and SOG SARs (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-hg) & \@ref(tab:spawn-index-sog)),
+a small increase in survey biomass for WCVI (Figure \@ref(fig:major-spawn-index) and Table \@ref(tab:spawn-index-wcvi)), and
+a small decrease in survey biomass for PRD and CC (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-prd) & \@ref(tab:spawn-index-cc)).
 
 ## Spatial spawn distribution
 
@@ -156,7 +158,6 @@ The surface survey methodolody has been used on occasion in years between 1988 a
 Generally this occurs in instances when herring spawn is observed in locations where a dive survey team is not available, or, when spawning occurs very early (Jan-Feb) or late (May) in the season. 
 In these instances, estimates of spawner biomass obtained from a surface survey for a given stock area and year are added to the biomass estimates from the dive survey and $q$=1 is assumed for the combined index.
 In `r surv_yr_rng[2]`, a full surface survey was conducted for the HG and PRD SARs and in this assessment the resulting survey biomass is assumed continuous with the dive survey time series.
-
 
 ### Reference points\label{sec:ref-pts}
 
