@@ -446,7 +446,7 @@ However this was not undertaken with the first MSE cycle because a fully specifi
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(cc_proj_sbt[2])`&nbsp;t (posterior median), decreasing from `r f(cc_final_yr_sbt[2])`&nbsp;t in `r assess_yr` (Table \@ref(tab:ref-points-cc)).
 The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3\SB_0$ with `r f(cc_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
-Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-cc).
+Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-cc);  management procedures and performance metrics appear in identical format to that of September 2019 [@dfo2020a].
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for CC,
 whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
 Harvest options under the two Robustness OM scenarios are also included.
