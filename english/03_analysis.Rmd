@@ -357,7 +357,7 @@ The first MSE cycle introduced three hypotheses about future Pacific Herring nat
 These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
 The DDM scenario was identified as the Reference OM scenario based on discussion at the July 2018 CSAS review process [@dfo2019c],
 while the DIM and conM scenarios were identified as Robustness OM scenarios.
-There is however currently no correct scientifically supported method for predicting the natural mortality and therefore all three scenarios are included. 
+There is however currently no scientifically supported method for predicting the natural mortality and therefore all three scenarios are included. 
 
 Results presented here represent all three OM scenarios.
 
@@ -368,7 +368,7 @@ Such assessment errors cause over-estimation of spawning biomass and
 result in recommended catch limits such that the realized harvest rate exceeds the intended target specified by a HCR (e.g., over-harvest).
 
 1. Reduction in harvest rate from 20% to 10% was the most effective means of mitigating stock assessment errors by reducing the absolute size of the catch.
-The use of a catch cap, implemented as a maximum annual catch level, was an effective model-free way to further mitigate assessment errors.
+The use of a catch cap, implemented as a maximum annual catch level, was an effective model-free way to further mitigate assessment errors at very high biomass levels.
 Simulation analyses additionally showed that outcomes are insensitive to the choice of operational control points (OCPs) in the HCR when a low harvest rate (HR) and catch cap are applied.
 This occurs because low biomass levels (associated with the lower OCP) are avoided for these management procedures (MPs).
 
@@ -378,7 +378,9 @@ differences in historical and current stock and fishery dynamics, and
 differences in the magnitude and direction of assessment model errors in each SAR.
 Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
 
-Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs for each major SAR.
+Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs for each major SAR. 
+The description of MP evaluations for HG, PRD and CC appearing below has been reproduced from the 2019 assessment [@dfo2020a].
+The description of MP evaluations for SoG and WCVI combined information from the first MSE cycle as reported in [@dfo2020a] with updates from previously September 2020 (TODO: citation).
 
 ### Haida Gwaii
 
@@ -419,8 +421,10 @@ For management regions where multiple MPs meet the conservation objective,
 further ranking of the remaining objectives is needed in order to provide decision-makers with a tractable set of trade-off choices.
 However this was not undertaken with the first MSE cycle because a fully specified set of objectives has not yet been developed for each management area.
 
-Effective harvest rates for the past 10 years (with positive catches) average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth, and is estimated to fluctuate at or near $0.3\SB_0$ (Figure \@ref(fig:storyboard-prd)d).
-Furthermore, adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity:
+Effective harvest rates for the past 10 years (with positive catches) average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth before 2018 and is estimated to fluctuate at or near $0.3\SB_0$ (Figure \@ref(fig:storyboard-prd)d). 
+Spawning biomass depletion increased above $0.3\SB_0$ in 2019 and 2020.  
+Although there is not evidence of a low biomass and low productivity state for PRD in the past 30-years, the 
+adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity:
 states that were entered rapidly and were preceded by high biomass levels [@kronlund2017].
 
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to decrease slightly from `r f(prd_final_yr_sbt[2])`&nbsp;t in `r assess_yr` to an estimated `r f(prd_proj_sbt[2])`&nbsp;t (posterior medians).
