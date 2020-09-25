@@ -197,7 +197,7 @@ The most recent year, between 2019 and 2020, biomass remains low relative to his
 The effective harvest rate $U_t$ since 2000 has been at or near zero (Figure \@ref(fig:harvest-rate)), with the last commercial roe fishery in 2002, and the last commercial SOK fishery in 2004.
 
 <!-- TODO: insert percentages automagically -->
-(Depletion = `r f(hg_final_yr_dt[2])*100`%).
+(Depletion = `r f(hg_final_yr_dt[2]*100)`%).
 Estimated spawning biomass in `r assess_yr` is `r f(hg_final_yr_sbt[2])`&nbsp;t (`r paste0("$\\SB_{", assess_yr, "}$")`, median posterior value) or 65% of $\SB_0$,
 up from 38% in 2019 (Tables \@ref(tab:hg-spawning-biomass-depletion) & \@ref(tab:ref-points-hg)).
 Spawning biomass in `r assess_yr` is estimated to be at the LRP of $0.3\SB_0$ with a `r f((1-hg_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-hg)).
