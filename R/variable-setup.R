@@ -201,12 +201,15 @@ get_vars <- function(region, majors = TRUE, french = FALSE){
   proj_sbt <- as.numeric(proj[proj$value == paste0("sb", assess_yr + 1), -c(1, 2)]) * 1000
   ## Probability that next year (projected) biomass is less than 0.3B0 - vector length 3 - 1 = lower, 2 = median, 3 = upper
   prob_proj_less_03sbo <- refs[rownames(refs) == paste0("psb", assess_yr + 1, "/0.3sbo"),][2]
+  ## Depletion in final year
+  final_yr_dt <- final_yr_sbt / sbo
 
   list(final_yr_sbt = final_yr_sbt,
        sbo = sbo,
        prob_less_03sbo = prob_less_03sbo,
        proj_sbt = proj_sbt,
-       prob_proj_less_03sbo = prob_proj_less_03sbo)
+       prob_proj_less_03sbo = prob_proj_less_03sbo,
+       final_yr_dt = final_yr_dt)
 }
 # -----------------------------------------------------------------------------
 # Haida Gwaii-dependent values
@@ -216,6 +219,7 @@ hg_sbo <- hg_vars[["sbo"]]
 hg_prob_less_03sbo <- hg_vars[["prob_less_03sbo"]]
 hg_proj_sbt <- hg_vars[["proj_sbt"]]
 hg_prob_proj_less_03sbo <- hg_vars[["prob_proj_less_03sbo"]]
+hg_final_yr_dt <- hg_vars[["final_yr_dt"]]
 # -----------------------------------------------------------------------------
 # Prince Rupert District-dependent values
 prd_vars <- get_vars("PRD", french = french)
@@ -224,6 +228,7 @@ prd_sbo <- prd_vars[["sbo"]]
 prd_prob_less_03sbo <- prd_vars[["prob_less_03sbo"]]
 prd_proj_sbt <- prd_vars[["proj_sbt"]]
 prd_prob_proj_less_03sbo <- prd_vars[["prob_proj_less_03sbo"]]
+prd_final_yr_dt <- prd_vars[["final_yr_dt"]]
 # -----------------------------------------------------------------------------
 # Central Coast-dependent values
 cc_vars <- get_vars("CC", french = french)
@@ -232,6 +237,7 @@ cc_sbo <- cc_vars[["sbo"]]
 cc_prob_less_03sbo <- cc_vars[["prob_less_03sbo"]]
 cc_proj_sbt <- cc_vars[["proj_sbt"]]
 cc_prob_proj_less_03sbo <- cc_vars[["prob_proj_less_03sbo"]]
+cc_final_yr_dt <- cc_vars[["final_yr_dt"]]
 # -----------------------------------------------------------------------------
 # Strait of Georgia District-dependent values
 sog_vars <- get_vars("SoG", french = french)
@@ -240,6 +246,7 @@ sog_sbo <- sog_vars[["sbo"]]
 sog_prob_less_03sbo <- sog_vars[["prob_less_03sbo"]]
 sog_proj_sbt <- sog_vars[["proj_sbt"]]
 sog_prob_proj_less_03sbo <- sog_vars[["prob_proj_less_03sbo"]]
+sog_final_yr_dt <- sog_vars[["final_yr_dt"]]
 # -----------------------------------------------------------------------------
 # West Coast of Vancouver Island-dependent values
 wcvi_vars <- get_vars("WCVI", french = french)
@@ -248,7 +255,7 @@ wcvi_sbo <- wcvi_vars[["sbo"]]
 wcvi_prob_less_03sbo <- wcvi_vars[["prob_less_03sbo"]]
 wcvi_proj_sbt <- wcvi_vars[["proj_sbt"]]
 wcvi_prob_proj_less_03sbo <- wcvi_vars[["prob_proj_less_03sbo"]]
-
+wcvi_final_yr_dt <- wcvi_vars[["final_yr_dt"]]
 
 ## Number of mcmc samples, min and max median biomass
 mcmc_num_samples <- nrow(major_models[[1]]$mcmc$params)
