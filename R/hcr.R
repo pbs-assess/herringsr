@@ -87,6 +87,12 @@ sbt_sbo.wcvi <- get_sbt_sbo("WCVI")
 sbt.wcvi <- sbt_sbo.wcvi[[1]]
 sbo.wcvi <- sbt_sbo.wcvi[[2]]
 rel.sbo.wcvi <- rep(1, length(sbo.wcvi))
+mp.lst.wcvi <- get_hcr(sbt.wcvi,
+                      sbo.wcvi,
+                      fn = here("data/mp-wcvi.csv"))
+mp.vals.wcvi <- mp.lst.wcvi[[1]]
+mp.wcvi <- mp.lst.wcvi[[2]]
+
 
 sog.min.esc.rel.50.hr.10.cap.2 <-
   get_hcr_tac_hr(hcr(sbt.sog,
@@ -219,6 +225,103 @@ wcvi.min.hs.3060.hr.10.cap.2.slow <-
                             lrp = 0.3,
                             usr = 0.6,
                             num_end_yrs = 3)))
+
+sog.min.esc.rel.30.hr.10 <-
+  get_hcr_tac_hr(hcr(sbt.sog,
+                     rel.sbo.sog,
+                     tibble(esc = 0.3,
+                            abs_esc = 0,
+                            cap = NA,
+                            hr = 0.1,
+                            lrp = NA,
+                            usr = NA,
+                            num_end_yrs = NA)))
+
+sog.min.esc.rel.30.hr.20 <-
+  get_hcr_tac_hr(hcr(sbt.sog,
+                     rel.sbo.sog,
+                     tibble(esc = 0.3,
+                            abs_esc = 0,
+                            cap = NA,
+                            hr = 0.2,
+                            lrp = NA,
+                            usr = NA,
+                            num_end_yrs = NA)))
+
+sog.min.hs.3040.hr.30 <-
+  get_hcr_tac_hr(hcr(sbt.sog,
+                     sbo.sog,
+                     tibble(esc = NA,
+                            abs_esc = NA,
+                            cap = NA,
+                            hr = 0.3,
+                            lrp = 0.3,
+                            usr = 0.4,
+                            num_end_yrs = NA)))
+
+wcvi.min.hs.3060.hr.10.cap.2 <-
+  get_hcr_tac_hr(hcr(sbt.wcvi,
+                     sbo.wcvi,
+                     tibble(esc = NA,
+                            abs_esc = NA,
+                            cap = 2.0,
+                            hr = 0.1,
+                            lrp = 0.3,
+                            usr = 0.6,
+                            num_end_yrs = NA)))
+
+wcvi.min.hs.3060.hr.15.cap.2 <-
+  get_hcr_tac_hr(hcr(sbt.wcvi,
+                     sbo.wcvi,
+                     tibble(esc = NA,
+                            abs_esc = NA,
+                            cap = 2.0,
+                            hr = 0.15,
+                            lrp = 0.3,
+                            usr = 0.6,
+                            num_end_yrs = NA)))
+wcvi.min.hs.5060.hr.10 <-
+  get_hcr_tac_hr(hcr(sbt.wcvi,
+                     sbo.wcvi,
+                     tibble(esc = NA,
+                            abs_esc = NA,
+                            cap = NA,
+                            hr = 0.1,
+                            lrp = 0.5,
+                            usr = 0.6,
+                            num_end_yrs = NA)))
+wcvi.min.hs.5060.hr.15 <-
+  get_hcr_tac_hr(hcr(sbt.wcvi,
+                     sbo.wcvi,
+                     tibble(esc = NA,
+                            abs_esc = NA,
+                            cap = NA,
+                            hr = 0.15,
+                            lrp = 0.5,
+                            usr = 0.6,
+                            num_end_yrs = NA)))
+
+wcvi.min.esc.rel.30.hr.05 <-
+  get_hcr_tac_hr(hcr(sbt.wcvi,
+                     rel.sbo.wcvi,
+                     tibble(esc = 0.3,
+                            abs_esc = 0,
+                            cap = NA,
+                            hr = 0.05,
+                            lrp = NA,
+                            usr = NA,
+                            num_end_yrs = NA)))
+
+wcvi.consTAC.cap.1 <-
+  get_hcr_tac_hr(hcr(sbt.wcvi,
+                     sbo.wcvi,
+                     tibble(esc = NA,
+                            abs_esc = NA,
+                            cap = 1.0,
+                            hr = NA,
+                            lrp = 0.3,
+                            usr = 0.6,
+                            num_end_yrs = NA)))
 
 hcr.sog <- sog.min.hs.3060.hr.20.cap.30
 
