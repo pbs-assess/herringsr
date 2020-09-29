@@ -245,6 +245,7 @@ An increasing trend in weight-at-age has been observed since about 2010,
 although the change does not appear to be as large as in the HG, CC, SoG and WCVI SARs.
 
 <!-- TODO: insert percentages automagically -->
+(Depletion = `r f(prd_final_yr_dt[2]*100)`%).
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(prd_final_yr_sbt[2])`&nbsp;t (posterior median),
 equal to 46.8% of $\SB_0$ (Tables \@ref(tab:prd-spawning-biomass-depletion) & \@ref(tab:ref-points-prd)).
 Commercial fisheries have occurred annually in PRD since the mid-1980s, with the exception of 2019 and 2020,
@@ -285,6 +286,7 @@ however these removals are not included in the estimation of $U_t$.
 Commercial SOK fishery did not occur in Area 07 in 2020 due to covid-19.
 
 <!-- TODO: insert percentages automagically -->
+(Depletion = `r f(cc_final_yr_dt[2]*100)`%).
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(cc_final_yr_sbt[2])`&nbsp;t (posterior median),
 equal to 74% of $\SB_0$ (Tables \@ref(tab:cc-spawning-biomass-depletion) & \@ref(tab:ref-points-cc)).
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1-cc_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-cc)).
@@ -310,6 +312,7 @@ because these age-`r age_first` fish are only partially recruited to the fishing
 Analysis of surplus production shows that for the year between 2019-2020, the SoG SAR is estimated to be in a high production, high biomass state
 (Figure \@ref(fig:storyboard-sog)f).
 
+(Depletion = `r f(sog_final_yr_dt[2]*100)`%).
 Commercial fisheries have occurred annually in SoG since the early-1970s (following the stock collapse of the late 1960s).
 Since implementing the fixed cutoff HCR in 1986, the effective harvest rate $U_t$ is estimated to fluctuate above and below the `r target_hr*100`% target rate,
 with median estimates above `r target_hr*100`% in 2005, 2006, and in 2016-2018 (Figure \@ref(fig:harvest-rate)).
@@ -332,6 +335,7 @@ The production estimates in the 2019-2020 year are at a higher spawning biomass 
 <!-- TODO: Saying "last half of the 2000s" is ambiguous.. 2005, or 2050. Might be best to specify the acualy years-ish. -->
 
 <!-- TODO: insert percentages automagically -->
+(Depletion = `r f(wcvi_final_yr_dt[2]*100)`%).
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(wcvi_final_yr_sbt[2])`&nbsp;t (posterior median),
 equal to 42.4% of $\SB_0$ (Tables \@ref(tab:wcvi-spawning-biomass-depletion) & \@ref(tab:ref-points-wcvi)).
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1-wcvi_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-wcvi)).
