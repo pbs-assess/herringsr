@@ -317,10 +317,10 @@ wcvi.consTAC.cap.1 <-
                      sbo.wcvi,
                      tibble(esc = NA,
                             abs_esc = NA,
-                            cap = 1.0,
+                            cap = NA,
                             hr = NA,
-                            lrp = 0.3,
-                            usr = 0.6,
+                            lrp = NA,
+                            usr = NA,
                             num_end_yrs = NA)))
 
 hcr.sog <- sog.min.hs.3060.hr.20.cap.30
