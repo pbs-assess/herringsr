@@ -1,5 +1,25 @@
 # Analysis and response
 
+## COVID-19 pandemic
+
+<!-- TODO: This subsection needs updating -->
+The COVID-19 pandemic impacted our ability to collect and analyse Pacific Herring data throughout British Columbia in 2020. 
+The pandemic and associated provincial response changed rapidly during the Pacific Herring field program season. 
+Despite these challenges, surveyors assessed all major observed spawns in the five major stock assessment regions (SARs). 
+The pandemic impacted our ability to assess Pacific Herring spawn in SARs with later spawns more than SARs with earlier spawns. 
+For example, spawns were surveyed by surface surveys instead of underwater dive surveys in Prince Rupert District and Haida Gwaii.
+
+Although Pacific Herring biological samples were collected as usual,
+the pandemic delayed the analysis and availability of biological data for all SARs. 
+Closure of the DFO sclerochronology lab at the Pacific Biological Station from March 16^th^ through July 6^th^ resulted in delayed availability of ages for Pacific 
+Herring samples collected in 2020.
+That said, sclerochronology lab was able to process the full collection of 2020 samples in the summer of 2020 to support the Pacific Herring assessment program.
+
+Additional impacts of the pandemic include:
+delayed timing in final data summary reports,
+reduced availability of Science staff in the spring and summer for area-specific discussions on Pacific Herring data, and
+delayed delivery of stock assessment advice.
+
 ## Management strategy evaluation
 
 Placeholder to describe the MSE process:
