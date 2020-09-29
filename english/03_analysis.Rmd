@@ -529,7 +529,6 @@ For ease of comparison with MSE results [@dfo2019c], all MPs and scenarios liste
 
 <!-- TODO: This needs to be updated -->
 Example link to WCVI MP table (Table \@ref(tab:decision-wcvi)).
-NOTE THAT THIS TABLE CURRENTLY USES THE SoG MP TABLE AS A PLACEHOLDER.
 
 For the WCVI, simulation results showed that no tested MP could meet the conservation objective of maintaining spawning biomass above the LRP with high probability
 (at least 75%)^\ref{fn:HighProb}^ across the three future natural mortality ($M$) scenarios [@dfo2019a].
