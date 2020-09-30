@@ -323,6 +323,28 @@ wcvi.consTAC.cap.1 <-
                             usr = NA,
                             num_end_yrs = NA)))
 
+sog.min.hs.3060.hr.10 <-
+  get_hcr_tac_hr(hcr(sbt.sog,
+                     sbo.sog,
+                     tibble(esc = NA,
+                            abs_esc = NA,
+                            cap = NA,
+                            hr = 0.1,
+                            lrp = 0.3,
+                            usr = 0.6,
+                            num_end_yrs = NA)))
+
+sog.min.hs.3060.hr.15 <-
+  get_hcr_tac_hr(hcr(sbt.sog,
+                     sbo.sog,
+                     tibble(esc = NA,
+                            abs_esc = NA,
+                            cap = NA,
+                            hr = 0.15,
+                            lrp = 0.3,
+                            usr = 0.6,
+                            num_end_yrs = NA)))
+
 hcr.sog <- sog.min.hs.3060.hr.20.cap.30
 
 hcr.wcvi <- wcvi.min.hs.5060.hr.10.cap.2
