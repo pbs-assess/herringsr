@@ -37,37 +37,55 @@ The purpose of MSE is to identify MPs that provide acceptable outcomes related t
 The identification of a preferred management procedure requires a fully specified set of measurable objectives that 
 include reference points (typically categorized as limits and targets) and to the extent possible, 
 specification of objectives related to catch, catch variability, and socio-cultural goals. 
-This is an iterative process conducted with the participation of First Nations, the fishing industry, 
+This is an iterative and ongoing process conducted with the participation of First Nations, the fishing industry, 
 government and non-government organizations.  
 
-
-    
 The first MSE cycles for the WCVI and SOG management areas were completed in 2018 (DFO 2019). 
-Steps included operating model (OM) development, fitting the OM to Pacific Herring stock and fishery monitoring data from 1951-2017, 
+Steps included OM development, fitting the OM to Pacific Herring stock and fishery monitoring data from 1951-2017, 
 and closed-loop simulations of MP performance for alternative future natural mortality scenarios (DFO 2019). 
 That study specifically evaluated whether candidate harvest control rules within management procedures designed 
 for each area could avoid the LRP with a high probability (75-95%) over three herring generations (15-years). 
-The herring assessment model is generally unbiased over many simulation trials. However, annual estimates of 
-spawning biomass can be highly variable, with some years exhibiting large positive or negative assessment
+
+In the spring of 2019, the first cycle of the MSE process was
+extended to the northern Pacific Herring management areas, HG, PRD, and CC with stock and fishery monitoring data updated to include 2018 and
+performance evaluation of area specific MPs (DFO 2020). 
+
+
+The lessons learned from the first MSE cycle for the WCVI and SOG management areas included: 
+(i)	individual stock areas require different MPs because the underlying stock dynamics and response to harvest differs among areas; 
+(ii) long-term management performance and risk of breaching a limit was dominated by the maximum target harvest rate and was less 
+dependent on the particular form of harvest control rule (e.g., hockey stick, constant escapement); and 
+(iii)	a maximum catch cap may be needed to mitigate the effects of positive assessment errors. 
+
+
+A challenge identified with the current Pacific herring assessment model is that, 
+although it is generally unbiased over many simulation trials, the annual estimates of 
+spawning biomass can be highly variable, 
+with some years exhibiting large positive or negative assessment
 errors depending on how the model responds to new data. 
 A very large overestimate of biomass and catch limit may 
 lead to short-term overfishing, which is usually more costly than under-exploitation. 
 The reason is that it can take many years, or even decades in the case of herring, 
 to recover from a low biomass state due to compounding 
 factors such as changes in predation pressure and/or juvenile survival. 
-Simulations for the WCVI management area showed that risks of positive assessment errors could be mitigated via catch caps 
+
+Simulations for the WCVI management area conducted in the first MSE cycle, showed that risks
+of positive assessment errors could be mitigated via catch caps 
 that provide an upper limit to the catch independent of the assessment model.
-For the SOG management area, 
-catch caps investigated in 2018 were too high to take effect very often in the simulations. 
-In order to determine whether MP performance could be improved, 
-supplemental analyses involving lower catch caps were conducted using the same methods and objectives applied by DFO (2019) and it was found that there was no discernable gain in conservation performance under all 3 OM scenarios. 
-Concerns over positive assessment errors leading to overharvesting were investigated by examining simulated harvest rates. 
+For the SOG management area, catch caps investigated in 2018 were too high to take effect very often in the simulations. 
+In order to determine whether MP performance could be improved for SOG a 
+supplemental analyses was conducted involving lower catch caps and it was 
+found that there was no discernable gain in conservation performance.
+
+Concerns over positive assessment errors leading to overharvesting in the SOG management area 
+was further investigated by examining simulated harvest rates. 
 Within a simulation framework overharvesting occurs when simulated harvest rates exceed the MP’s target harvest rate.
 Results for 15-year projections show that median harvest rates never exceed the target maximum harvest rate of 20% for SOG. 
 For individual projection years, the entire harvest rate envelope moves 
 further below the target maximum harvest rate of 20% as catch caps become
 more restrictive. MPs with catch caps of 20 kt or less rarely exceed the 20% target 
-maximum harvest rate and could be considered if this is indeed an operational objective.
+maximum harvest rate.
+
 
 
 ## Input data
