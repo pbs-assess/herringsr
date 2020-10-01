@@ -133,6 +133,7 @@ plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_fu
                                 show_legend = FALSE,
                                 translate = french)
 ```
+
 <!-- Haida Gwaii Storyboard -->
 ```{r natural-mortality-hg, fig.show = "hide", fig.asp = 1}
 plot_b <- plot_natural_mortality(major_models[[model_ind]],
@@ -150,6 +151,7 @@ plot_b <- plot_natural_mortality(major_models[[model_ind]],
                                  annot = "b",
                                  translate = french)
 ```
+
 <!-- Haida Gwaii Storyboard -->
 ```{r recruitment-hg, fig.show = "hide", fig.asp = 1}
 plot_c <- plot_recruitment(major_models[[model_ind]],
@@ -167,6 +169,7 @@ plot_c <- plot_recruitment(major_models[[model_ind]],
                            annot = "c",
                            translate = french)
 ```
+
 <!-- Haida Gwaii Storyboard -->
 ```{r biomass-catch-hg, fig.show = "hide", fig.asp = 1}
 plot_d <- plot_biomass_catch(major_models[[model_ind]],
@@ -190,6 +193,7 @@ plot_d <- plot_biomass_catch(major_models[[model_ind]],
                              annot = "d",
                              translate = french)
 ```
+
 <!-- Haida Gwaii Storyboard -->
 ```{r recruitment-devs-hg, fig.show = "hide", fig.asp = 1}
 plot_e <- plot_recruitment_devs(major_models[[model_ind]],
@@ -211,6 +215,7 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
                                 annot = "e",
                                 translate = french)
 ```
+
 <!-- Haida Gwaii Storyboard -->
 ```{r biomass-phase-hg, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
@@ -235,6 +240,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              annot = "f",
                              translate = french)
 ```
+
 <!-- Haida Gwaii Storyboard -->
 (ref:storyboard-hg-cap) Time series of model output for the
 Pacific Herring statistical catch-age model from `r major_start_yr` to `r major_end_yr` in the
@@ -319,6 +325,7 @@ plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_fu
                                 show_legend = FALSE,
                                 translate = french)
 ```
+
 <!-- Prince Rupert District Storyboard -->
 ```{r natural-mortality-prd, fig.show = "hide", fig.asp = 1}
 plot_b <- plot_natural_mortality(major_models[[model_ind]],
@@ -336,6 +343,7 @@ plot_b <- plot_natural_mortality(major_models[[model_ind]],
                                  annot = "b",
                                  translate = french)
 ```
+
 <!-- Prince Rupert District Storyboard -->
 ```{r recruitment-prd, fig.show = "hide", fig.asp = 1}
 plot_c <- plot_recruitment(major_models[[model_ind]],
@@ -353,6 +361,7 @@ plot_c <- plot_recruitment(major_models[[model_ind]],
                            annot = "c",
                            translate = french)
 ```
+
 <!-- Prince Rupert District Storyboard -->
 ```{r biomass-catch-prd, fig.show = "hide", fig.asp = 1}
 plot_d <- plot_biomass_catch(major_models[[model_ind]],
@@ -376,6 +385,7 @@ plot_d <- plot_biomass_catch(major_models[[model_ind]],
                              annot = "d",
                              translate = french)
 ```
+
 <!-- Prince Rupert District Storyboard -->
 ```{r recruitment-devs-prd, fig.show = "hide", fig.asp = 1}
 plot_e <- plot_recruitment_devs(major_models[[model_ind]],
@@ -397,6 +407,7 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
                                 annot = "e",
                                 translate = french)
 ```
+
 <!-- Prince Rupert District Storyboard -->
 ```{r biomass-phase-prd, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
@@ -421,6 +432,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              annot = "f",
                              translate = french)
 ```
+
 <!-- Prince Rupert District Storyboard -->
 (ref:storyboard-prd-cap) Time series of model output for the
 Pacific Herring statistical catch-age model from `r major_start_yr` to `r major_end_yr` in the
@@ -445,6 +457,7 @@ cowplot::plot_grid(plot_a,
                    rel_heights = c(1.0, 1.0, 1.1))
 
 ```
+
 <!-- Central Coast Storyboard -->
 ```{r scaled-abundance-cc, fig.show = "hide", fig.asp = 1}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -471,6 +484,7 @@ plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_fu
                                 show_legend = FALSE,
                                 translate = french)
 ```
+
 <!-- Central Coast Storyboard -->
 ```{r natural-mortality-cc, fig.show = "hide", fig.asp = 1}
 plot_b <- plot_natural_mortality(major_models[[model_ind]],
@@ -488,6 +502,7 @@ plot_b <- plot_natural_mortality(major_models[[model_ind]],
                                  annot = "b",
                                  translate = french)
 ```
+
 <!-- Central Coast Storyboard -->
 ```{r recruitment-cc, fig.show = "hide", fig.asp = 1}
 plot_c <- plot_recruitment(major_models[[model_ind]],
@@ -505,6 +520,7 @@ plot_c <- plot_recruitment(major_models[[model_ind]],
                            annot = "c",
                            translate = french)
 ```
+
 <!-- Central Coast Storyboard -->
 ```{r biomass-catch-cc, fig.show = "hide", fig.asp = 1}
 plot_d <- plot_biomass_catch(major_models[[model_ind]],
@@ -528,6 +544,7 @@ plot_d <- plot_biomass_catch(major_models[[model_ind]],
                              annot = "d",
                              translate = french)
 ```
+
 <!-- Central Coast Storyboard -->
 ```{r recruitment-devs-cc, fig.show = "hide", fig.asp = 1}
 plot_e <- plot_recruitment_devs(major_models[[model_ind]],
@@ -549,6 +566,7 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
                                 annot = "e",
                                 translate = french)
 ```
+
 <!-- Central Coast Storyboard -->
 ```{r biomass-phase-cc, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
@@ -573,6 +591,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              annot = "f",
                              translate = french)
 ```
+
 <!-- Central Coast Storyboard -->
 (ref:storyboard-cc-cap) Time series of model output for the
 Pacific Herring statistical catch-age model from `r major_start_yr` to `r major_end_yr` in the
@@ -597,6 +616,28 @@ cowplot::plot_grid(plot_a,
                    rel_heights = c(1.0, 1.0, 1.1))
 
 ```
+
+(ref:spawn-section-cc-cap) Scaled spawn survey data for Pacific Herring 
+by Section from `r major_start_yr` to `r major_end_yr` in the
+Central Coast major stock assessment region.
+Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey scaling parameter $q$ (median posterior estimate).
+
+(ref:spawn-section-cc-cap-fr) Données mises à l’échelle de relevé du frai du hareng du Pacifique
+par Section de `r major_start_yr` à `r major_end_yr` dans la
+région d’évaluation des stocks majeur de la côte centrale.
+Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai $q$ (estimations a posteriori médian).
+
+```{r spawn-section-cc, fig.asp = 1, fig.cap = ifelse(french, "(ref:spawn-section-cc-cap-fr)", "(ref:spawn-section-cc-cap)")}
+dat <- tibble(Spawn = sample(x = 1:100, size = 100, replace = TRUE),
+              Year = rep(1:20, times=5),
+              Section=rep(letters[1:5], each = 20))
+ggplot(data = dat, mapping = aes(x = Year, y = Spawn)) +
+        geom_point() +
+        geom_line() +
+        labs(y = "Scaled abundance (1,000 t)") +
+        facet_grid(Section ~ .)
+```
+
 <!-- Strait of Georgia Storyboard -->
 ```{r scaled-abundance-sog, fig.show = "hide", fig.asp = 1}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
@@ -623,6 +664,7 @@ plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_fu
                                 show_legend = FALSE,
                                 translate = french)
 ```
+
 <!-- Strait of Georgia Storyboard -->
 ```{r natural-mortality-sog, fig.show = "hide", fig.asp = 1}
 plot_b <- plot_natural_mortality(major_models[[model_ind]],
@@ -640,6 +682,7 @@ plot_b <- plot_natural_mortality(major_models[[model_ind]],
                                  annot = "b",
                                  translate = french)
 ```
+
 <!-- Strait of Georgia Storyboard -->
 ```{r recruitment-sog, fig.show = "hide", fig.asp = 1}
 plot_c <- plot_recruitment(major_models[[model_ind]],
@@ -657,6 +700,7 @@ plot_c <- plot_recruitment(major_models[[model_ind]],
                            annot = "c",
                            translate = french)
 ```
+
 <!-- Strait of Georgia Storyboard -->
 ```{r biomass-catch-sog, fig.show = "hide", fig.asp = 1}
 plot_d <- plot_biomass_catch(major_models[[model_ind]],
@@ -680,6 +724,7 @@ plot_d <- plot_biomass_catch(major_models[[model_ind]],
                              annot = "d",
                              translate = french)
 ```
+
 <!-- Strait of Georgia Storyboard -->
 ```{r recruitment-devs-sog, fig.show = "hide", fig.asp = 1}
 plot_e <- plot_recruitment_devs(major_models[[model_ind]],
@@ -701,6 +746,7 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
                                 annot = "e",
                                 translate = french)
 ```
+
 <!-- Strait of Georgia Storyboard -->
 ```{r biomass-phase-sog, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
@@ -725,6 +771,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              annot = "f",
                              translate = french)
 ```
+
 <!-- Strait of Georgia Storyboard -->
 (ref:storyboard-sog-cap) Time series of model output for the
 Pacific Herring statistical catch-age model from `r major_start_yr` to `r major_end_yr` in the
@@ -749,6 +796,7 @@ cowplot::plot_grid(plot_a,
                    rel_heights = c(1.0, 1.0, 1.1))
 
 ```
+
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r scaled-abundance-wcvi, fig.show = "hide", fig.asp = 1}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
@@ -775,6 +823,7 @@ plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_fu
                                 show_legend = FALSE,
                                 translate = french)
 ```
+
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r natural-mortality-wcvi, fig.show = "hide", fig.asp = 1}
 plot_b <- plot_natural_mortality(major_models[[model_ind]],
@@ -792,6 +841,7 @@ plot_b <- plot_natural_mortality(major_models[[model_ind]],
                                  annot = "b",
                                  translate = french)
 ```
+
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r recruitment-wcvi, fig.show = "hide", fig.asp = 1}
 plot_c <- plot_recruitment(major_models[[model_ind]],
@@ -809,6 +859,7 @@ plot_c <- plot_recruitment(major_models[[model_ind]],
                            annot = "c",
                            translate = french)
 ```
+
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r biomass-catch-wcvi, fig.show = "hide", fig.asp = 1}
 plot_d <- plot_biomass_catch(major_models[[model_ind]],
@@ -832,6 +883,7 @@ plot_d <- plot_biomass_catch(major_models[[model_ind]],
                              annot = "d",
                              translate = french)
 ```
+
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r recruitment-devs-wcvi, fig.show = "hide", fig.asp = 1}
 plot_e <- plot_recruitment_devs(major_models[[model_ind]],
@@ -853,6 +905,7 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
                                 annot = "e",
                                 translate = french)
 ```
+
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r biomass-phase-wcvi, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
@@ -877,6 +930,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              annot = "f",
                              translate = french)
 ```
+
 <!-- West Coast of Vancouver Island Storyboard -->
 (ref:storyboard-wcvi-cap) Time series of model output for the
 Pacific Herring statistical catch-age model from `r major_start_yr` to `r major_end_yr` in the
