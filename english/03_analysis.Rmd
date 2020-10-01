@@ -330,8 +330,9 @@ The model estimates very similar spawning biomass in 2019 and 2020, and the anal
 similar to the 1990 to 1999 period (Figure \@ref(fig:storyboard-cc)f).
 Surplus production in the year between 2019-2020 is negative.
 
-An examination of spawn biomass by Herring Section shows the increase in herring spawn to have largely occurred in Spiller Channel
-(Section 072 and 078) and Kitasu Bay (Section 067). The appearance of herring spawn in Thompson/ Stryker (Section 074) is the first significant spawn in many years (TODO: Figure).
+An examination of spawn biomass by Herring Section shows the increase in herring spawn to have largely occurred in
+Spiller Channel (Sections 072 and 078) and Kitasu Bay (Section 067).
+The appearance of herring spawn in Thompson/Stryker (Section 074) is the first significant spawn in many years (Figure \@ref(fig:spawn-section-cc)).
 <!-- TODO: add figure -->
 
 A fixed cutoff HCR was implemented in 1986, and from 1986-2007 the effective harvest rate $U_t$ is estimated to fluctuate above and below the `r target_hr*100`% target rate,
@@ -344,7 +345,7 @@ Following a commercial fishery closure from 2007 to 2013, the CC stock reopened 
 and small commercial roe fisheries occurred in 2014, 2015, and 2016.
 A commercial SOK fishery operated yearly from 2014-2020,
 however these removals are not included in the estimation of $U_t$. 
-Commercial SOK fishery did not occur in Area 07 in 2020 due to covid-19.
+Commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19.
 
 <!-- TODO: insert percentages automagically -->
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(cc_final_yr_sbt[2])`&nbsp;t (posterior median),
