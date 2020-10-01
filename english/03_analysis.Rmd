@@ -31,70 +31,101 @@ delayed delivery of stock assessment advice.
     a. HG, PRD, and CC in 2019, and
     a. Updates in 2020. -->
 
+Fisheries and Oceans Canada (DFO) has committed to renewing the current management framework to
+address a range of challenges facing Pacific Herring stocks and fisheries in British Columbia. 
 Renewal of the management framework for Pacific Herring uses MSE to evaluate the performance 
 of candidate MPs against hypotheses about past and future stock and fishery dynamics. 
-The purpose of MSE is to identify MPs that provide acceptable outcomes related to conservation and fishery management objectives. 
+The purpose of the MSE process is to identify MPs that provide acceptable outcomes related to conservation and fishery management objectives. 
 The identification of a preferred management procedure requires a fully specified set of measurable objectives that 
 include reference points (typically categorized as limits and targets) and to the extent possible, 
 specification of objectives related to catch, catch variability, and socio-cultural goals. 
 This is an iterative and ongoing process conducted with the participation of First Nations, the fishing industry, 
 government and non-government organizations.  
 
-The first MSE cycles for the WCVI and SOG management areas were completed in 2018 (DFO 2019). 
+
+The first MSE cycles for the WCVI and SoG management areas were completed in 2018 (DFO 2019). 
 Steps included OM development, fitting the OMs to Pacific Herring stock and fishery monitoring data from 1951-2017, 
 and closed-loop simulations of MP performance for alternative future natural mortality scenarios (DFO 2019). 
 That study specifically evaluated whether candidate harvest control rules within management procedures designed 
 for each area could avoid the LRP with a high probability (75-95%) over three herring generations (15-years). 
-
 In the spring of 2019, the first cycle of the MSE process was
-extended to the northern Pacific Herring management areas, HG, PRD, and CC with stock and fishery monitoring data updated to include 2018 and
+extended to the northern Pacific Herring management areas, HG, PRD, and CC with 
+stock and fishery monitoring data updated to include 2018 and
 performance evaluation of area specific MPs (DFO 2020). 
-
-
-The lessons learned from these first MSE cycles included: 
-(i)	individual stock areas require different MPs because the underlying stock dynamics and response to harvest differs among areas; 
-(ii) long-term management performance and risk of breaching a limit was dominated by the maximum target harvest rate and was less 
-dependent on the particular form of harvest control rule (e.g., hockey stick, constant escapement);
-(iii)	a maximum catch cap may in some cases be needed to mitigate the effects of positive assessment errors;
-(iV) although there are many possible ways to incorporate MP performance in robustness trials into decision-making, 
-there is currently no accepted "best scientific" way of combining results from multiple operating models; and
-(v) when multiple MPs meet the conservation objective, further ranking of the remaining objectives is 
-needed in order to provide decision-makers with a tractable set of trade-off choices. 
-
-
-<!--ThIS IS ADDITIONAL INFORMATION ON EACH OF THE LESSONS LEARNED.  NOT SURE IF WE WANT/NEED THIS MUCH DETAIL?-->
-<!--A challenge identified with the current Pacific herring assessment model is that, 
-although it is generally unbiased over many simulation trials, the annual estimates of 
-spawning biomass can be highly variable, 
-with some years exhibiting large positive or negative assessment
-errors depending on how the model responds to new data. 
-A very large overestimate of biomass and catch limit may 
-lead to short-term overfishing, which is usually more costly than under-exploitation. 
-The reason is that it can take many years, or even decades in the case of herring, 
-to recover from a low biomass state due to compounding 
-factors such as changes in predation pressure and/or juvenile survival. 
-
-Simulations for the WCVI management area conducted in the first MSE cycle, showed that risks
-of positive assessment errors could be mitigated via catch caps 
-that provide an upper limit to the catch independent of the assessment model.
-For the SOG management area, catch caps investigated in 2018 were too high to take effect very often in the simulations. 
-In order to determine whether MP performance could be improved for SOG a 
-supplemental analyses was conducted involving lower catch caps and it was 
-found that there was no discernable gain in conservation performance.
-
-Concerns over positive assessment errors leading to overharvesting in the SOG management area 
-was further investigated by examining simulated harvest rates. 
-Within a simulation framework overharvesting occurs when simulated harvest rates exceed the MP’s target harvest rate.
-Results for 15-year projections show that median harvest rates never exceed the target maximum harvest rate of 20% for SOG. 
-For individual projection years, the entire harvest rate envelope moves 
-further below the target maximum harvest rate of 20% as catch caps become
-more restrictive. MPs with catch caps of 20 kt or less rarely exceed the 20% target 
-maximum harvest rate.-->
-
-In the summer of 2020 the second MSE cycle was initiated for the WCVI and SOG management areas.  
+In the summer of 2020 the second MSE cycle was initiated for the WCVI and SoG management areas.
 In this cycle updates included conditioning the OMs with more recent stock
-and fishery data and evaluating the performance of additional candidate MPs for these management
-areas.
+and fishery data and evaluating the performance of additional candidate MPs for these management areas.  
+
+
+The first cycle of Pacific Herring MSE included four core fisheries management objectives [@dfo2019c] which reflect DFO policy, 
+and were applied to each major SAR:
+
+1. Maintain spawning biomass above the LRP with at least 75% probability over three Pacific Herring generations
+(i.e., avoid a biomass limit; $P(\SB_t > 0.3\SB_0) \geq 0.75$),
+
+1. Maintain spawning biomass at or above the USR with at least 50% probability over three Pacific Herring generations
+(i.e., achieve a target biomass; $P(\SB_t \geq 0.6\SB_0) \geq 0.5$),
+
+1. Maintain average annual variability (AAV) in catch below 25% over three Pacific Herring generations
+(goal reflecting catch variability; $\text{AAV} < 0.25$), and
+
+1. Maximize average annual catch over three Pacific Herring generations
+(goal reflecting catch biomass).
+
+However, a fully specified set of objectives has not yet been developed for each management area.
+DFO will continue to collaborate with coastal First Nations to develop area-specific objectives specific to Food, Social and Ceremonial fisheries as well as spawn-on-kelp (SOK) fisheries.
+In addition, DFO will continue to engage with the herring industry, government, and non-government organizations
+to describe broader objectives related to conservation, economics, and access.
+
+The MPs for each SAR differ in the form of the HCR and choices of catch cap, but use the same monitoring data and assessment model [e.g., @cleary2018].
+The current assessment model assumes natural mortality is time-varying.
+The first MSE cycle introduced three hypotheses about future Pacific Herring natural mortality $M$: 
+
+1. $M$ is a time-varying, density-dependent process (DDM),
+
+1. $M$ is a time-varying, density-independent process (DIM), and
+
+1. $M$ is constant over time (conM).
+
+These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
+The DDM scenario was identified as the Reference OM scenario based on discussion at the July 2018 CSAS review process [@dfo2019c],
+while the DIM and conM scenarios were identified as Robustness OM scenarios.
+There is however currently no scientifically supported method for predicting the natural mortality and therefore all three scenarios are included. 
+
+
+Several lessons were learned from the MSE analyses conducted so far:
+
+1. The catch-at-age stock assessment model can produce large (positive) assessment errors.
+Such assessment errors cause over-estimation of spawning biomass and
+result in recommended catch limits such that the realized harvest rate exceeds the intended target specified by a HCR (e.g., over-harvest).
+
+1. Reduction in harvest rate from 20% to 10% was the most effective means of mitigating 
+stock assessment errors by reducing the absolute size of the catch.
+The use of a catch cap, implemented as a maximum annual catch level, 
+was an effective model-free way to further mitigate assessment errors at very high biomass levels.
+Simulation analyses additionally showed that outcomes are insensitive to the choice of operational 
+control points (OCPs) in the HCR when a low harvest rate (HR) and catch cap are applied.
+This occurs because low biomass levels (associated with the lower OCP) are avoided for these MPs.
+
+1. Differences in specification of Pacific Herring MPs, including the HCR components, are expected a priori among SARs.
+The reasons relate to differences in objectives deemed important by resource users,
+differences in historical and current stock and fishery dynamics, and
+differences in the magnitude and direction of assessment model errors in each SAR.
+Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) 
+in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
+
+1. There are many possible ways to incorporate MP performance in robustness trials into decision-making but, 
+there is currently no accepted scientific way of combining results from multiple operating models;
+
+1. In circumstancese where multiple MPs meet the agreed upon objectives, further criteria, such as ranking secondary objectives, is 
+needed in order to provide decision-makers with a tractable set of trade-off choices; and
+
+<!-- MIGHT NOT WANT TO CINCLUDE THIS ONE -->
+1. MP performance appears to be influenced by terminal year stock status and natural mortality trends used in OM conditioning.  
+If simulations were run for a significant amount of years (ie. 50 years) performance should start to approach equilibrium which
+is unaffected by OM conditioning data.
+
+
 
 ## Input data
 
@@ -422,6 +453,10 @@ Renewal of the Pacific Herring management framework included a commitment to MSE
 alternative MPs in relation to conservation and fisheries management objectives.
 The first cycle of the MSE process was completed for the WCVI and SoG SARs in 2018 [@dfo2019a];
 a similar process was used to evaluate harvest strategies for HG, PRD, and CC in 2019 [@dfo2019c].
+In the summer of 2020 the second MSE cycle was initiated 
+for the WCVI and SoG management areas.
+In this cycle updates included conditioning the OMs with more recent stock
+and fishery data and evaluating the performance of additional candidate MPs for these management areas. 
 
 The ranking of objectives and selection of MPs that meet objectives using MSE is an iterative process.
 The first cycle of Pacific Herring MSE includes, as a starting point, four core fisheries management objectives [@dfo2019c] which reflect DFO policy, and were applied to each major SAR:
@@ -479,7 +514,7 @@ Conservation objectives such as those based on avoiding a threshold to serious h
 
 Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs for each major SAR. 
 The description of MP evaluations for HG, PRD and CC appearing below has been reproduced from the 2019 assessment [@dfo2020a].
-The description of MP evaluations for SoG and WCVI combined information from the first MSE cycle as reported in [@dfo2020a] with updates from previously September 2020 (TODO: citation).
+The description of MP evaluations for SoG and WCVI combined information from the first MSE cycle [@dfo2020a] with updates made in September 2020 (DFO 2020b).
 
 ### Haida Gwaii
 
