@@ -217,10 +217,9 @@ however there is insufficient information to verify an increasing trend.
 The most recent year, between 2019 and 2020, there is evidence of positive productivity, however biomass remains low relative to historical patterns and natural mortality rates remain at historic high levels.
 The effective harvest rate $U_t$ since 2000 has been at or near zero (Figure \@ref(fig:harvest-rate)), with the last commercial roe fishery in 2002, and the last commercial SOK fishery in 2004.
 
-<!-- TODO: insert percentages automagically -->
-(Depletion = `r f(hg_final_yr_dt[2]*100)`%).
-Estimated spawning biomass in `r assess_yr` is `r f(hg_final_yr_sbt[2])`&nbsp;t (`r paste0("$\\SB_{", assess_yr, "}$")`, median posterior value) or 65% of $\SB_0$,
-up from 38% in 2019 (Tables \@ref(tab:hg-spawning-biomass-depletion) & \@ref(tab:ref-points-hg)).
+Estimated spawning biomass in `r assess_yr` is `r f(hg_final_yr_sbt[2])`&nbsp;t (`r paste0("$\\SB_{", assess_yr, "}$")`, median posterior value) or
+`r f(hg_final_yr_dt[2]*100, 1)`% of $\SB_0$, an increase from last year
+(Tables \@ref(tab:hg-spawning-biomass-depletion) & \@ref(tab:ref-points-hg)).
 Spawning biomass in `r assess_yr` is estimated to be at the LRP of $0.3\SB_0$ with a `r f((1-hg_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-hg)).
 
 ### Prince Rupert District
@@ -244,10 +243,9 @@ resulting in what appears to be a small increase in production between 2018 and 
 An increasing trend in weight-at-age has been observed since about 2010,
 although the change does not appear to be as large as in the HG, CC, SoG and WCVI SARs.
 
-<!-- TODO: insert percentages automagically -->
-(Depletion = `r f(prd_final_yr_dt[2]*100)`%).
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(prd_final_yr_sbt[2])`&nbsp;t (posterior median),
-equal to 46.8% of $\SB_0$ (Tables \@ref(tab:prd-spawning-biomass-depletion) & \@ref(tab:ref-points-prd)).
+equal to `r f(prd_final_yr_dt[2]*100, 1)`% of $\SB_0$
+(Tables \@ref(tab:prd-spawning-biomass-depletion) & \@ref(tab:ref-points-prd)).
 Commercial fisheries have occurred annually in PRD since the mid-1980s, with the exception of 2019 and 2020,
 during which the effective harvest rate $U_t$ was estimated to be at or below 20% (Figure \@ref(fig:harvest-rate)) in all years except 1989.
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1-prd_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-prd)).
@@ -286,9 +284,9 @@ however these removals are not included in the estimation of $U_t$.
 Commercial SOK fishery did not occur in Area 07 in 2020 due to covid-19.
 
 <!-- TODO: insert percentages automagically -->
-(Depletion = `r f(cc_final_yr_dt[2]*100)`%).
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(cc_final_yr_sbt[2])`&nbsp;t (posterior median),
-equal to 74% of $\SB_0$ (Tables \@ref(tab:cc-spawning-biomass-depletion) & \@ref(tab:ref-points-cc)).
+equal to `r f(cc_final_yr_dt[2]*100, 1)`% of $\SB_0$
+(Tables \@ref(tab:cc-spawning-biomass-depletion) & \@ref(tab:ref-points-cc)).
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1-cc_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-cc)).
 
 ### Strait of Georgia
@@ -312,13 +310,12 @@ because these age-`r age_first` fish are only partially recruited to the fishing
 Analysis of surplus production shows that for the year between 2019-2020, the SoG SAR is estimated to be in a high production, high biomass state
 (Figure \@ref(fig:storyboard-sog)f).
 
-(Depletion = `r f(sog_final_yr_dt[2]*100)`%).
 Commercial fisheries have occurred annually in SoG since the early-1970s (following the stock collapse of the late 1960s).
 Since implementing the fixed cutoff HCR in 1986, the effective harvest rate $U_t$ is estimated to fluctuate above and below the `r target_hr*100`% target rate,
 with median estimates above `r target_hr*100`% in 2005, 2006, and in 2016-2018 (Figure \@ref(fig:harvest-rate)).
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(sog_final_yr_sbt[2])`&nbsp;t (posterior median),
-<!-- TODO: insert percentages automagically -->
-equal to 70% of $\SB_0$ (Tables \@ref(tab:sog-spawning-biomass-depletion) & \@ref(tab:ref-points-sog)).
+equal to `r f(sog_final_yr_dt[2]*100, 1)`% of $\SB_0$
+(Tables \@ref(tab:sog-spawning-biomass-depletion) & \@ref(tab:ref-points-sog)).
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1-sog_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-sog)).
 
 ### West Coast of Vancouver Island
@@ -331,13 +328,11 @@ Recruitment deviations have been negative (lower than predicted by the stock-rec
 however the reduction in estimated natural mortality and absence of removals from a commercial fishery appears to be sufficient to offset this below average recruitment of age-`r age_first` fish to support biomass growth.
 The absence of a commercial fishery since 2005 means the realized harvest rate has been near zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
 In recent years there has been modest evidence for an increase in biomass.
-The production estimates in the 2019-2020 year are at a higher spawning biomass level than those estimated during the low production, low biomass period of the last half of the 2000s and early 2010s (Figure \@ref(fig:storyboard-wcvi)f).
-<!-- TODO: Saying "last half of the 2000s" is ambiguous.. 2005, or 2050. Might be best to specify the acualy years-ish. -->
+The production estimates in the 2019-2020 year are at a higher spawning biomass level than those estimated during the low production, low biomass period from around 2005 until the early 2010s (Figure \@ref(fig:storyboard-wcvi)f).
 
-<!-- TODO: insert percentages automagically -->
-(Depletion = `r f(wcvi_final_yr_dt[2]*100)`%).
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(wcvi_final_yr_sbt[2])`&nbsp;t (posterior median),
-equal to 42.4% of $\SB_0$ (Tables \@ref(tab:wcvi-spawning-biomass-depletion) & \@ref(tab:ref-points-wcvi)).
+equal to `r f(wcvi_final_yr_dt[2]*100, 1)`% of $\SB_0$
+(Tables \@ref(tab:wcvi-spawning-biomass-depletion) & \@ref(tab:ref-points-wcvi)).
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1-wcvi_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-wcvi)).
 
 ## Management performance
