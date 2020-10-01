@@ -114,16 +114,16 @@ differences in the magnitude and direction of assessment model errors in each SA
 Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) 
 in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
 
-
 1. There are many possible ways to incorporate MP performance in robustness trials into decision-making but, 
 there is currently no accepted scientific way of combining results from multiple operating models;
 
 1. In circumstancese where multiple MPs meet the agreed upon objectives, further criteria, such as ranking secondary objectives, is 
 needed in order to provide decision-makers with a tractable set of trade-off choices; and
 
+<!-- MIGHT NOT WANT TO CINCLUDE THIS ONE -->
 1. MP performance appears to be influenced by terminal year stock status and natural mortality trends used in OM conditioning.  
-If simulations were run for a significant amount of years under a no fishing MP, the stocks should start to approach equilibrium 
-at B0and then the two metrics would converge if you were measuring over a window that excluded the early part of the projection (or in whcih the early years were a very small proportion).
+If simulations were run for a significant amount of years (ie. 50 years) performance should start to approach equilibrium which
+is unaffected by OM conditioning data.
 
 
 
