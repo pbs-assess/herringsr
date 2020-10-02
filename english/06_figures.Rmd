@@ -617,6 +617,7 @@ cowplot::plot_grid(plot_a,
 
 ```
 
+<!-- Central Coast scaled abundace by Section -->
 (ref:spawn-section-cc-cap) Scaled spawn survey data for Pacific Herring 
 by Section from `r major_start_yr` to `r major_end_yr` in the
 Central Coast major stock assessment region.
@@ -633,14 +634,27 @@ L’indice du frai comporte deux périodes distinctes définies par la méthode 
 relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
 
 ```{r spawn-section-cc, fig.asp = 1, fig.cap = ifelse(french, "(ref:spawn-section-cc-cap-fr)", "(ref:spawn-section-cc-cap)")}
-dat <- tibble(Spawn = sample(x = 1:100, size = 100, replace = TRUE),
-              Year = rep(1:20, times=5),
-              Section=rep(letters[1:5], each = 20))
-ggplot(data = dat, mapping = aes(x = Year, y = Spawn)) +
-        geom_point() +
-        geom_line() +
-        labs(y = "Scaled abundance (1,000 t)", title = "PLACEHOLDER") +
-        facet_grid(Section ~ .)
+yrBreaks <- seq(from = 1950, to = 2020, by = 10)
+qVals <- tibble(Survey = c("Surface", "Dive"),
+                q = major_models[[3]]$mcmccalcs$q.quants[2,])
+dat <- read_csv(file = file.path(data_path, "spawn-yr-sec-cc.csv")) %>%
+        left_join( y=qVals, by="Survey") %>%
+        filter(Section %in% c(67, 72:78, 86)) %>%
+        mutate(Survey = factor(Survey, levels = c("Surface", "Dive")),
+               Section = formatC(Section, width = 3, format = "d", flag = "0"),
+               Biomass = Index / q)
+ggplot(data = dat, mapping = aes(x = Year, y = Biomass)) +
+        geom_point(mapping = aes(shape = Survey), size = 1) +
+        geom_line(mapping = aes(group = Survey), size = 0.5) +
+        labs(x = en2fr("Year", french),
+             y = paste0(en2fr("Scaled abundance", french), " (1,000 t)"),
+             shape = en2fr("Survey period", french)) +
+        scale_shape_manual(values = c(2, 1)) +
+        scale_x_continuous(breaks = yrBreaks) +
+        scale_y_continuous(labels = function(x) x / 1000) +
+        facet_wrap(Section ~ ., scales = "free_y") +
+        theme(legend.position = "top",
+              axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
 <!-- Strait of Georgia Storyboard -->
