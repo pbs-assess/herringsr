@@ -17,7 +17,8 @@ Steps included operating model (OM) development, fitting the OM to Pacific Herri
 In the spring of 2019, the MSE process was initiated for the northern stock regions: Haida Gwaii (HG), Prince Rupert District (PRD), and Central Coast (CC) [@dfo2019c]. 
 In the summer of 2020, update were made to the MSE simulations for the WCVI and SOG management areas.  These updates included conditioning the OM with more recent stock and fishery data and evaluating the performance of additional candidate MPs for these management areas. 
 
-Results from the MSE process have been included in the annual assessment of Pacific Herring stocks as follows:
+Since initiation of the Pacific Herring MSE process,
+results have been included in the annual stock assessment as follows:
 
 1. The 2018 stock assessment included updated MP recommendations for SoG and WCVI stock assessment regions for 2019 [@dfo2019b].
 
