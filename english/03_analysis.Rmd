@@ -418,7 +418,7 @@ Times series of $U_t$ relative to target harvest rate of `r target_hr*100`% are 
 
 ## Application of MPs and harvest options for `r assess_yr + 1`\label{sec:harv-opts}
 
-Generally, harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and
+<!--Generally, harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and
 application of a HCR that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988).
 Although the target harvest rate has varied among regions in recent years (e.g., CC and PRD SARs; @dfo2017),
 the “historical” practice was to apply a target harvest rate of `r target_hr*100`%
@@ -487,7 +487,7 @@ This occurs because low biomass levels (associated with the lower OCP) are avoid
 The reasons relate to differences in objectives deemed important by resource users,
 differences in historical and current stock and fishery dynamics, and
 differences in the magnitude and direction of assessment model errors in each SAR.
-Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
+Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.-->
 
 Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs for each major SAR. 
 The description of MP evaluations for HG, PRD and CC appearing below reflects the 2019 assessment [@dfo2020a].
@@ -526,7 +526,7 @@ As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&n
 ### Prince Rupert District
 
 For PRD the best performing MPs generally had 10% or lower harvest rates, although two MPs with a 20% harvest rate did meet the conservation objective because they use a higher lower OCP (see Section '\nameref{sec:ref-pts}') of $0.5\SB_0$.
-These MPs also result in more frequent fishery closures due to spawning biomass declined below the lower control point more frequently.
+These MPs also result in more frequent fishery closures because spawning biomass declines below the lower control point more frequently.
 While several MPs are able to meet core conservation objective of maintaining spawning
 biomass above the LRP with high probability (at least 75%)^\ref{fn:HighProb}^,
 they also imply different trade-offs among biomass (e.g., ecosystem) and yield outcomes.
@@ -535,7 +535,7 @@ further ranking of the remaining objectives is needed in order to provide decisi
 However this was not undertaken with the first MSE cycle because a fully specified set of objectives has not yet been developed for each management area.
 
 Effective harvest rates for the past 10 years (with positive catches) average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth before 2018 and is estimated to fluctuate at or near $0.3\SB_0$ (Figure \@ref(fig:storyboard-prd)d). 
-Spawning biomass depletion increased above $0.3\SB_0$ in 2019 and 2020.  
+Spawning biomass depletion increased above $0.3\SB_0$ in 2019 and 2020.
 Although there is not evidence of a low biomass and low productivity state for PRD in the past 30-years, the 
 adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity:
 states that were entered rapidly and were preceded by high biomass levels [@kronlund2017].
@@ -547,7 +547,7 @@ Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for PRD,
 whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
 Harvest options under the two Robustness OM scenarios are also included.
-For ease of comparison with MSE results [@dfo2019c], all MPs and scenarios listed in Table \@ref(tab:decision-prd) include MP performance against the four core objectives.
+For ease of comparison with MSE results [@dfo2019c], all MPs and scenarios listed in Table \@ref(tab:decision-prd) include  performance metrics for the four core objectives.
 
 ### Central Coast
 
@@ -563,7 +563,7 @@ Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for CC,
 whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
 Harvest options under the two Robustness OM scenarios are also included.
-For ease of comparison with MSE results [@dfo2019c], all MPs and scenarios listed in Table \@ref(tab:decision-cc) include MP performance against the four core objectives.
+For ease of comparison with MSE results [@dfo2019c], all MPs and scenarios listed in Table \@ref(tab:decision-cc) include  performance metrics for the four core objectives.
 
 Additionally, DFO acknowledges commitment to the Heiltsuk Nation for the development of a Joint Fisheries Management Plan for Pacific Herring in the Central Coast in `r assess_yr + 1`.
 Results presented here may inform this on-going commitment.
