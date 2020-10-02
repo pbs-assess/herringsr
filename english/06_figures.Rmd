@@ -625,6 +625,7 @@ Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey
 The spawn index has two distinct periods defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
+Note that only a subset of Sections are shown.
 
 (ref:spawn-section-cc-cap-fr) Données mises à l’échelle de relevé du frai du hareng du Pacifique
 par Section de `r major_start_yr` à `r major_end_yr` dans la
@@ -632,6 +633,7 @@ région d’évaluation des stocks majeur de la côte centrale.
 Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai $q$ (estimations a posteriori médian).
 L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante: relevés en surface (de `r major_start_yr` à `r new_surv_yr-1`), et
 relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
+Notez que seul un sous-ensemble de sections est indiqué.
 
 ```{r spawn-section-cc, fig.asp = 1, fig.cap = ifelse(french, "(ref:spawn-section-cc-cap-fr)", "(ref:spawn-section-cc-cap)")}
 yrBreaks <- seq(from = 1950, to = 2020, by = 10)
