@@ -2,18 +2,17 @@
 
 ## COVID-19 pandemic
 
-<!-- TODO: This subsection needs updating -->
-The COVID-19 pandemic impacted our ability to collect and analyse Pacific Herring data throughout British Columbia in 2020. 
+The COVID-19 pandemic impacted our ability to collect and analyse Pacific Herring data in 2020. 
 The pandemic and associated provincial response changed rapidly during the Pacific Herring field program season. 
-Despite these challenges, surveyors assessed all major observed spawns in the five major stock assessment regions (SARs). 
+Despite these challenges, surveyors assessed all major observed spawns in the five major SARs. 
 The pandemic impacted our ability to assess Pacific Herring spawn in SARs with later spawns more than SARs with earlier spawns. 
-For example, spawns were surveyed by surface surveys instead of underwater dive surveys in Prince Rupert District and Haida Gwaii.
+For example, spawns were surveyed by surface surveys instead of underwater dive surveys in PRD and HG.
 
 Although Pacific Herring biological samples were collected as usual,
 the pandemic delayed the analysis and availability of biological data for all SARs. 
 The DFO sclerochronology lab at the Pacific Biological Station closed from March 16^th^ to July 6^th^,
 which resulted in delayed age data for Pacific Herring samples collected in 2020.
-However, the sclerochronology lab was able to process the full collection of 2020 samples during the summer of 2020 to support the Pacific Herring assessment program.
+However, the lab was able to process the full collection of 2020 samples during the summer of 2020 to support the Pacific Herring assessment program.
 
 Additional impacts of the pandemic include:
 delayed timing in final data summary reports,
@@ -21,15 +20,6 @@ reduced availability of Science staff in the spring and summer for area specific
 delayed delivery of stock assessment advice.
 
 ## Management strategy evaluation
-
-
-<!-- 1. MSE background/description, including challenges and strengths. 
-1. MSE is an iterative process.
-
-1. MSE process for Pacific Herring in BC:
-    a. SoG and WCVI in 2018, 
-    a. HG, PRD, and CC in 2019, and
-    a. Updates in 2020. -->
 
 Fisheries and Oceans Canada (DFO) has committed to renewing the current management framework to
 address a range of challenges facing Pacific Herring stocks and fisheries in British Columbia. 
@@ -39,26 +29,23 @@ The purpose of the MSE process is to identify MPs that provide acceptable outcom
 The identification of a preferred management procedure requires a fully specified set of measurable objectives that 
 include reference points (typically categorized as limits and targets) and to the extent possible, 
 specification of objectives related to catch, catch variability, and socio-cultural goals. 
-This is an iterative and ongoing process conducted with the participation of First Nations, the fishing industry, 
+MSE is an iterative and ongoing process conducted with the participation of First Nations, the fishing industry, 
 government and non-government organizations.  
 
 
 The first MSE cycles for the WCVI and SoG management areas were completed in 2018 (DFO 2019). 
 Steps included OM development, fitting the OMs to Pacific Herring stock and fishery monitoring data from 1951-2017, 
 and closed-loop simulations of MP performance for alternative future natural mortality scenarios (DFO 2019). 
-That study specifically evaluated whether candidate harvest control rules within management procedures designed 
-for each area could avoid the LRP with a high probability (75-95%) over three herring generations (15-years). 
-In the spring of 2019, the first cycle of the MSE process was
-extended to the northern Pacific Herring management areas, HG, PRD, and CC with 
+In the spring of 2019, the MSE process was
+extended to the HG, PRD, and CC management areas with 
 stock and fishery monitoring data updated to include 2018 and
-performance evaluation of area specific MPs (DFO 2020). 
+performance evaluation of area specific MPs (DFO 2020).
 In the summer of 2020 the second MSE cycle was initiated for the WCVI and SoG management areas.
-In this cycle updates included conditioning the OMs with more recent stock
+This included conditioning the OMs with more recent stock
 and fishery data and evaluating the performance of additional candidate MPs for these management areas.  
 
 
-The first cycle of Pacific Herring MSE included four core fisheries management objectives [@dfo2019c] which reflect DFO policy, 
-and were applied to each major SAR:
+A core set of fisheries management objectives [@dfo2019c] have been applied to each major SAR:
 
 1. Maintain spawning biomass above the LRP with at least 75% probability over three Pacific Herring generations
 (i.e., avoid a biomass limit; $P(\SB_t > 0.3\SB_0) \geq 0.75$),
@@ -77,9 +64,9 @@ DFO will continue to collaborate with coastal First Nations to develop area-spec
 In addition, DFO will continue to engage with the herring industry, government, and non-government organizations
 to describe broader objectives related to conservation, economics, and access.
 
-The MPs for each SAR differ in the form of the HCR and choices of catch cap, but use the same monitoring data and assessment model [e.g., @cleary2018].
-The current assessment model assumes natural mortality is time-varying.
-The first MSE cycle introduced three hypotheses about future Pacific Herring natural mortality $M$: 
+The MPs for each SAR differ in the form of the HCR and choices of catch cap, but use the same type of monitoring data and assessment model [e.g., @cleary2018].
+The current stock assessment model assumes natural mortality is time-varying and this
+is reflected in the MSE as three hypotheses about future Pacific Herring natural mortality $M$: 
 
 1. $M$ is a time-varying, density-dependent process (DDM),
 
@@ -90,7 +77,7 @@ The first MSE cycle introduced three hypotheses about future Pacific Herring nat
 These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
 The DDM scenario was identified as the Reference OM scenario based on discussion at the July 2018 CSAS review process [@dfo2019c],
 while the DIM and conM scenarios were identified as Robustness OM scenarios.
-There is however currently no scientifically supported method for predicting the natural mortality and therefore all three scenarios are included. 
+There is however currently no scientifically supported method for predicting the natural mortality and thus all three scenarios are included. 
 
 
 Several lessons were learned from the MSE analyses conducted so far:
@@ -120,10 +107,8 @@ there is currently no accepted scientific way of combining results from multiple
 1. In circumstancese where multiple MPs meet the agreed upon objectives, further criteria, such as ranking secondary objectives, is 
 needed in order to provide decision-makers with a tractable set of trade-off choices; and
 
-<!-- MIGHT NOT WANT TO CINCLUDE THIS ONE -->
-1. MP performance appears to be influenced by terminal year stock status and natural mortality trends used in OM conditioning.  
-If simulations were run for a significant amount of years (ie. 50 years) performance should start to approach equilibrium which
-is unaffected by OM conditioning data.
+1. Outcomes of MP evaluation appears to be influenced by the last 3-5 years stock status and natural mortality trends used in OM conditioning.  
+If simulations were run over a greater number of years (ie. 50 years) performance should start to approach equilibrium and be unaffected by most recent trends in OM conditioning data.
 
 
 
