@@ -318,9 +318,9 @@ wcvi.consTAC.cap.1 <-
                      tibble(esc = NA,
                             abs_esc = NA,
                             cap = NA,
-                            hr = NA,
-                            lrp = NA,
-                            usr = NA,
+                            hr = 0.15,
+                            lrp = 0.5,
+                            usr = 0.6,
                             num_end_yrs = NA)))
 
 sog.min.hs.3060.hr.10 <-
