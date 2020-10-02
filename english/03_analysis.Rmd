@@ -578,7 +578,7 @@ Additional simulation-evaluations were conducted in 2019 to further explore the 
 A comparison of catch caps from 30,000&nbsp;t to 5,000&nbsp;t showed no discernible gain in conservation performance under all 3 OM scenarios.
 Results also showed MPs with catch caps of 20,000&nbsp;t or less rarely exceed the 20% harvest rate for any given projection year (over the 15 year projections).
 
-In September 2020, the SoG OM was updated to include spawn survey data for 2018-2020 and biological data for 2018 and 2019 (MSE SR, in prep.).
+In September 2020, the SoG OM was updated to include spawn survey data for 2018-2020 and biological data for 2018 and 2019 (MSE SR, *In prep.*).
 The updated closed-loop feedback simulations for the SoG show that MPs with harvest rates at 10, 15, and 20% maintain the spawning biomass above the LRP with 75-85% probability over all 3 OM scenarios (Table \@ref(tab:decision-sog)). 
 MPs with harvest rate of 30% did not meet the conservation objective ($p$=69% for the Reference OM).
 
@@ -589,7 +589,7 @@ These options reflect application of MPs to the `r assess_yr + 1` forecast bioma
 whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
 Harvest options under the two Robustness OM scenarios are also included.
 All MPs and scenarios listed in Table \@ref(tab:decision-sog) include updated performance metrics for the four core objectives
-under all 3 scenarios (MSE SR, $In prep.$).
+under all 3 scenarios (MSE SR, *In prep.*).
 
 ### West Coast of Vancouver Island
 In 2018, closed-loop feedback simulations for the WCVI showed the conservation objective could be met under the Reference OM scenario with between 75-87%, but that these MPs failed to meet the conservation objective under the DIM Robustness OM scenario, where natural mortality rates are most similar to the last 10 years ($p$=56-74%).
