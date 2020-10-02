@@ -312,6 +312,7 @@ wcvi.min.esc.rel.30.hr.05 <-
                             usr = NA,
                             num_end_yrs = NA)))
 
+#NOTE this was set incorrectly just to get the 0
 wcvi.consTAC.cap.1 <-
   get_hcr_tac_hr(hcr(sbt.wcvi,
                      sbo.wcvi,
