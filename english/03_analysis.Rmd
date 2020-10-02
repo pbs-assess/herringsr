@@ -513,8 +513,9 @@ differences in the magnitude and direction of assessment model errors in each SA
 Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
 
 Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs for each major SAR. 
-The description of MP evaluations for HG, PRD and CC appearing below has been reproduced from the 2019 assessment [@dfo2020a].
-The description of MP evaluations for SoG and WCVI combined information from the first MSE cycle [@dfo2020a] with updated MP evaluations conducted in September 2020 (in prep.).
+The description of MP evaluations for HG, PRD and CC appearing below reflects the 2019 assessment [@dfo2020a].
+MPs included for SoG and WCVI combines information from the first MSE cycle [@dfo2020a] with updated MP evaluations conducted in September 2020 (MSE SR, $In prep.$).
+Finally, science advice in 2018 recommended discontinuing the use of the historical fixed cutoff HCR [@dfo2019a], as such this MP has been removed from further consideration for all Pacific Herring SARs.
 
 ### Haida Gwaii
 
@@ -599,7 +600,6 @@ A comparison of catch caps from 30,000&nbsp;t to 5,000&nbsp;t showed no discerni
 Results also showed MPs with catch caps of 20,000&nbsp;t or less rarely exceed the 20% harvest rate for any given projection year (over the 15 year projections).
 
 In September 2020, the SoG OM was updated to include spawn survey data for 2018-2020 and biological data for 2018 and 2019 (MSE SR, in prep.).
-Science advice in 2018 recommended discontinuing the use of the historical fixed cutoff HCR [@dfo2019a], as such this MP has been removed from further consideration for SoG.
 The updated closed-loop feedback simulations for the SoG show that MPs with harvest rates at 10, 15, and 20% maintain the spawning biomass above the LRP with 75-85% probability over all 3 OM scenarios (Table \@ref(tab:decision-sog)). 
 MPs with harvest rate of 30% did not meet the conservation objective ($p$=69% for the Reference OM).
 
