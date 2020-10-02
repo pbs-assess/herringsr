@@ -104,7 +104,7 @@ in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs b
 1. There are many possible ways to incorporate MP performance in robustness trials into decision-making but, 
 there is currently no accepted scientific way of combining results from multiple operating models;
 
-1. In circumstancese where multiple MPs meet the agreed upon objectives, further criteria, such as ranking secondary objectives, is 
+1. In situations where multiple MPs meet the agreed upon objectives, further criteria, such as ranking secondary objectives, is 
 needed in order to provide decision-makers with a tractable set of trade-off choices; and
 
 1. Outcomes of MP evaluation appears to be influenced by the last 3-5 years stock status and natural mortality trends used in OM conditioning.  
