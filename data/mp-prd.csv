@@ -1,5 +1,4 @@
 mp,om,label,obj1,obj2,obj3,obj4,catch,esc,abs_esc,hr,cap,num_end_yrs,lrp,usr
-1,DDM,minE12.1_HR0.2,0.61,0.18,41.8,4.74,0.18,12.1,1,0.2,NA,1,NA,NA
 2,DDM,minE0.5B0_HR0.2,0.76,0.28,67.14,2.71,0.58,0.5,0,0.2,NA,1,NA,NA
 3,DDM,minE0.5B0_HR0.1,0.78,0.37,51.86,1.85,0.57,0.5,0,0.1,NA,1,NA,NA
 6,DDM,HS30-60_HR0.1_cap2.5,0.77,0.38,33.35,1.64,0.39,NA,NA,0.1,2.5,1,0.3,0.6
