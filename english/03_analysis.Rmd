@@ -116,13 +116,13 @@ If simulations were run over a greater number of years (ie. 50 years) performanc
 
 There are three types of input data used for the Pacific Herring stock assessment: catch data, biological data, and abundance data.
 These data sets are described in the following sections, and summarized in Table \@ref(tab:data-input).
-Relative to the previous assessment, the only change made to input data was to update the time series to include data from the `r this_season` herring season (July 1 to June 30).
+Relative to the previous assessment, the only change made to input data was to update all data time series to include data from the `r this_season` herring season (July 1 to June 30).
 Note that we refer to 'year' instead of 'herring season' in this report;
 therefore `r assess_yr` refers to the `r this_season` Pacific Herring season.
 
 ### Catch data
 
-For the purposes of stock assessment, catch data are summarized by gear type (aka source) as described in Table \@ref(tab:data-input) and presented in Figure \@ref(fig:major-catch).
+For the purposes of stock assessment, catch data are summarized by gear type as described in Table \@ref(tab:data-input) and presented in Figure \@ref(fig:major-catch).
 As in previous years, catch input to the stock assessment model does not include mortality from the commercial SOK fishery, nor any recreational fisheries or food, social, and ceremonial (FSC) harvest.
 The FSC and recreational harvest are considered minor relative to commercial harvest.
 The commercial SOK fishery is licensed based on pounds of validated SOK product (i.e., eggs adhered to kelp), not tonnes of fish used or spawned.
@@ -130,7 +130,7 @@ Currently there is no basis for validating mortality imposed on the population b
 
 Combined commercial removals from `r assess_yr-9` to `r assess_yr` from the roe, food and bait, and special use fisheries appear in Table \@ref(tab:annual-catch).
 The proportion of coast-wide catch that comes from the SoG was 22% in 1990, and 100% in `r assess_yr`.
-Total SOK harvest or the major SARs from `r assess_yr-9` to `r assess_yr` is presented in Table \@ref(tab:annual-sok-catch).
+Total SOK harvest (pounds of validated product) for the major SARs from `r assess_yr-9` to `r assess_yr` is presented in Table \@ref(tab:annual-sok-catch).
 
 ### Biological data\label{sec:biol-data}
 
@@ -145,12 +145,12 @@ There has been an increasing trend in weight-at-age for all major stocks from 20
 ### Abundance data
 
 The spawn index survey collects information on spawn length (parallel to shore), spawn width (perpendicular to shore), number of egg layers by vegetation type, and other data.
-Note that there are two spawn survey periods defined by the predominant survey method:
+There are two spawn survey periods defined by the predominant survey method:
 surface period from `r surv_yr_rng[1]` to `r new_surv_yr - 1`, and
 dive period from `r new_surv_yr` to `r surv_yr_rng[2]`.
 Data from these surveys are used to calculate egg densities per spawn.
 Ultimately, the estimated weight of mature spawners required to produce the egg deposition is calculated and referred to as the 'spawn index'.
-Execution of the `r surv_yr_rng[2]` spawn survey followed all standard dive survey protocols for SoG, CC, and WCVI SARs as described in @cleary2018, however
+Execution of the `r surv_yr_rng[2]` spawn survey followed standard dive survey protocols for SoG, CC, and WCVI SARs as described in @cleary2018, and
 a surface survey protocol was used for HG and PRD SARs due to COVID-19.
 Time series of spawn index by major stock assessment region, from `r paste(surv_yr_rng, collapse=" to ")` are summarized in Figure \@ref(fig:major-spawn-index).
 In `r surv_yr_rng[2]`, there was a notable increase in survey biomass (index values) for HG and SOG SARs (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-hg) & \@ref(tab:spawn-index-sog)),
@@ -162,7 +162,6 @@ a small decrease in survey biomass for PRD and CC (Figure \@ref(fig:major-spawn-
 Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) by proportion over the most recent `r num_yrs_tab+1` years for the major SARs.
 HG and SoG are summarized by Group, while PRD, CC, and WCVI are summarized by Statistical Area;
 the choice of spatial grouping reflects spawning behaviour and biology for each SAR based on the survey data and working group discussions with local First Nations.
-Statistical Areas, Sections, and Groups are not intended to represent sub-stock structure or ‘known’ stocklets.
 
 ## First Nations observations
 
@@ -173,7 +172,7 @@ As such, assembling local observations was not possible for the 2020 season.
 This report includes local observations from 2019, provided by First Nations participants through the Herring Technical Working Group.
 This working group, established in 2016, consists of DFO Science, DFO Fisheries Management, as well as technical representatives nominated by numerous coastal First Nations and the herring industry. 
 
-Observations reported here describe local perspectives on Pacific Herring in four of the management areas.
+Observations reported here describe local perspectives on Pacific Herring in four of the management areas for 2019/20.
 
 <!-- ### Haida Gwaii - not provided in 2019 -->
 
@@ -275,7 +274,7 @@ Simulation results showed similar properties between USRs $0.6\SB_0$ and $\SB_{\
 while the USR based on the average biomass in a productive period, $\SB_{\mli{ave-prod}}$, was found to be most variable among SARs.
 The simulation-evaluations did not select a single USR,
 however a USR of $0.6\SB_0$ is included in this stock status update because this candidate is sufficiently above the LRP (2*LRP) and it is a repeatable calculation across all SARs.
-Stock status relative to the assessment model estimates $0.3\SB_0$ (LRP) and $0.6\SB_0$ (USR) are presented for each SAR in Tables \@ref(tab:ref-points-hg) through \@ref(tab:ref-points-wcvi).
+Stock status relative to the assessment model estimates $0.3\SB_0$ (LRP) and $0.6\SB_0$ (one candidate USR) are presented for each SAR in Tables \@ref(tab:ref-points-hg) through \@ref(tab:ref-points-wcvi).
 
 The LRP and USR relate stock status to the DFO PA Framework [@dfo2009], and in the assessment of Pacific Herring the same calculations are applied for each SAR.
 There is an important distinction between reference points (e.g., LRP, USR) and
@@ -289,7 +288,7 @@ Estimated spawning biomass declined to near historic lows in the mid-1990s and b
 A modest increase in estimated spawning biomass occurred during the early 2010s before falling once again to near historic lows 2016-2018.
 The modest increase can be attributed to increases in the spawn index in 2013 and 2015 (Figure \@ref(fig:storyboard-hg)a) that were supported by above average recruitment of age-`r age_first` fish in 2012 (Figure \@ref(fig:storyboard-hg)c, d).
 An increasing trend in the estimated natural mortality rate since 1980 (Figure \@ref(fig:storyboard-hg)b) largely absorbed surplus production attributable to above average recruitment events (e.g., 1997 and 2012; Figure \@ref(fig:storyboard-hg)c, d).
-In particular, estimated natural mortality has increased sharply since the early 2010s following a decline from a peak rate in the early 2000s.
+Estimated natural mortality has increased sharply since the early 2010s following a decline from a peak rate in the early 2000s.
 Since 2000, the HG stock has been in a low biomass state, with many of these years also showing low productivity which has precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
 There is an increase in survey biomass in 2019 and 2020, and above-average recruitment of age-2s in 2019,
 however there is insufficient information to verify an increasing trend.
@@ -299,7 +298,7 @@ The effective harvest rate $U_t$ since 2000 has been at or near zero (Figure \@r
 Estimated spawning biomass in `r assess_yr` is `r f(hg_final_yr_sbt[2])`&nbsp;t (`r paste0("$\\SB_{", assess_yr, "}$")`, median posterior value) or
 `r f(hg_final_yr_dt[2]*100, 1)`% of $\SB_0$, an increase from last year
 (Tables \@ref(tab:hg-spawning-biomass-depletion) & \@ref(tab:ref-points-hg)).
-Spawning biomass in `r assess_yr` is estimated to be at the LRP of $0.3\SB_0$ with a `r f((1-hg_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-hg)).
+Spawning biomass in `r assess_yr` is estimated to above the LRP of $0.3\SB_0$ with a `r f((1-hg_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-hg)).
 
 ### Prince Rupert District
 
@@ -319,8 +318,6 @@ An above average age-`r age_first`+ recruitment in 2014, 2017-2018, and an incre
 Commercial catches from 2007-2018 have remained low (below 2,000&nbsp;t) and there was no commercial catch in 2019 and 2020.
 The estimated natural mortality appears to be unchanged from last year,
 resulting in what appears to be a small increase in production between 2018 and 2019, sustaining the 2019 biomass increase through 2020.
-An increasing trend in weight-at-age has been observed since about 2010,
-although the change does not appear to be as large as in the HG, CC, SoG and WCVI SARs.
 
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(prd_final_yr_sbt[2])`&nbsp;t (posterior median),
 equal to `r f(prd_final_yr_dt[2]*100, 1)`% of $\SB_0$
@@ -377,12 +374,9 @@ This coincides with large shifts in survey biomass in recent 5 years, with the i
 The large uncertainty in both spawning biomass and natural mortality estimates in `r assess_yr` may be in part a function of the declining trend in the spawn index starting in 2017
 following the increasing trend that began in 2010 (Figure \@ref(fig:storyboard-sog)a).
 The model fits an averaged trajectory through the spawn index values of the 2010s and has, to date,
-insufficient information to determine whether the decline from 2016 to `r assess_yr` represents a true decline in estimated spawning biomass.
+insufficient information to determine whether the decline from 2016 to 2019 represents a true decline in estimated spawning biomass.
 The model estimates above average recruitment in most years from 2010 to `r assess_yr` (Figure \@ref(fig:storyboard-sog)c)
 with the recruitment deviations showing especially large recruitment of age-`r age_first` fish in 2019 and 2020 (Figure \@ref(fig:storyboard-sog)e).
-The SoG juvenile herring survey reported an increase in abundance of age-0 fish from 2016 to 2017 (Strait of Georgia Juvenile Herring Survey, September 2017, Canadian Manuscript Report of
-Fisheries and Aquatic Sciences, unpublished report).
-The sampling program targets prespawning aggregations and the assessment assumes 25% of age-`r age_first` herring are mature.
 The large uncertainty around estimated age-`r age_first` recruitment in the terminal year of the time series is a common observation
 because these age-`r age_first` fish are only partially recruited to the fishing gear.
 Analysis of surplus production shows that for the year between 2019-2020, the SoG SAR is estimated to be in a high production, high biomass state
@@ -406,7 +400,7 @@ Recruitment deviations have been negative (lower than predicted by the stock-rec
 however the reduction in estimated natural mortality and absence of removals from a commercial fishery appears to be sufficient to offset this below average recruitment of age-`r age_first` fish to support biomass growth.
 The absence of a commercial fishery since 2005 means the realized harvest rate has been near zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
 In recent years there has been modest evidence for an increase in biomass.
-The production estimates in the 2019-2020 year are at a higher spawning biomass level than those estimated during the low production, low biomass period from around 2005 until the early 2010s (Figure \@ref(fig:storyboard-wcvi)f).
+The production estimates in the 2019-2020 year are at zero (Figure \@ref(fig:storyboard-wcvi)f).
 
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(wcvi_final_yr_sbt[2])`&nbsp;t (posterior median),
 equal to `r f(wcvi_final_yr_dt[2]*100, 1)`% of $\SB_0$
