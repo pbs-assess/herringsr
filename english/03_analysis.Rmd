@@ -609,15 +609,19 @@ Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for SoG,
 whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
 Harvest options under the two Robustness OM scenarios are also included.
-All MPs and scenarios listed in Table \@ref(tab:decision-sog) include updated performance metrics for the four core objectives (MSE SR, $In prep.$).
+All MPs and scenarios listed in Table \@ref(tab:decision-sog) include updated performance metrics for the four core objectives
+under all 3 scenarios (MSE SR, $In prep.$).
 
 ### West Coast of Vancouver Island
 In 2018, closed-loop feedback simulations for the WCVI showed the conservation objective could be met under the Reference OM scenario with between 75-87%, but that these MPs failed to meet the conservation objective under the DIM Robustness OM scenario, where natural mortality rates are most similar to the last 10 years ($p$=56-74%).
 
-In September 2020, the WCVI OM was updated to include spawn survey data and biological data from 2018-2019(MSE SR, in prep.).
-The updated closed-loop feedback simulations for the WCVI show that MPs with harvest rates at 5 10 and 15% maintain the spawning biomass above the LRP with between 81-93% probability over all 3 OM scenarios (Table \@ref(tab:decision-wcvi)). 
+In September 2020, the WCVI OM was updated to include spawn survey data and biological data from 2018-2019 (MSE SR, in prep.).
+The updated closed-loop feedback simulations for the WCVI show that MPs with harvest rates of 5, 10, and 15% maintained
+the spawning biomass above the LRP with between 81-93% probability over all 3 OM scenarios (Table \@ref(tab:decision-wcvi)). 
 
-Improved MP performance in the 2020 update relative to the first MSE cycle, under all 3 scenarios, is due to increased spawn index in 2018 and 2019 and increased status relative to $SB_0$. 
+Improved MP performance in the 2020 update for WCVI, relative to the first WCVI MSE cycle, 
+is due to increased spawn index in 2018 and 2019 and increased status relative to $SB_0$. 
+Performance improvement is observed under all 3 scenarios.
 
 In the absence of fishing, spawning biomass in 2020 is forecast at `r f(wcvi_proj_sbt[2])`&nbsp;t (posterior median)
 and is forecast to be below the LRP of $0.3\SB_0$ with `r f(wcvi_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
@@ -626,4 +630,5 @@ Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for WCVI,
 whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
 Harvest options under the two Robustness OM scenarios are also included.
-All MPs and scenarios listed in Table \@ref(tab:decision-wcvi) include updated performance metrics for the four core objectives (MSE SR, $In prep.$).
+All MPs and scenarios listed in Table \@ref(tab:decision-wcvi) include updated performance metrics for the four core objectives
+under all 3 scenarios (MSE SR, $In prep.$).
