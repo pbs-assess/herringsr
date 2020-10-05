@@ -201,8 +201,11 @@ get_vars <- function(region, majors = TRUE, french = FALSE){
   proj_sbt <- as.numeric(proj[proj$value == paste0("sb", assess_yr + 1), -c(1, 2)]) * 1000
   ## Probability that next year (projected) biomass is less than 0.3B0 - vector length 3 - 1 = lower, 2 = median, 3 = upper
   prob_proj_less_03sbo <- refs[rownames(refs) == paste0("psb", assess_yr + 1, "/0.3sbo"),][2]
+  ## Depletion
+  dt <- models[[model_ind]]$mcmccalcs$depl.quants
+  dt_yrs <- as.numeric(colnames(dt))
   ## Depletion in final year
-  final_yr_dt <- final_yr_sbt / sbo
+  final_yr_dt <- dt[, dt_yrs == assess_yr]
 
   list(final_yr_sbt = final_yr_sbt,
        sbo = sbo,
