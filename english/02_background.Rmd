@@ -26,8 +26,14 @@ Ahousaht, Ehattesaht, Hesquiaht, Mowachaht/Muchalaht, and Tla-o-qui-aht (the Tâ€
 have aboriginal rights to fish for any species of fish, with the exception of Geoduck, within their Fishing Territories, and to sell that fish.
 The Department has developed a 2020/21 Five Nations Multi-species Fishery Management Plan (FMP) in consultation with the Five Nations.
 Feedback provided by the Five Nations during consultations was considered and incorporated into the 2020/21 FMP by DFO where possible. 
-The FMP includes specific details about the fishery, such as allocation/access, licensing and designations, fishing area, harvesting opportunities, and fishery monitoring and catch reporting. 
-For further information see the FMP at: http://waves-vagues.dfo-mpo.gc.ca/Library/40869374.pdf.
+The FMP includes specific details about the fishery, such as
+allocation/access,
+licensing and designations,
+fishing area,
+harvesting opportunities,
+as well as fishery monitoring and catch reporting. 
+For further information see the FMP 
+(\link{http://waves-vagues.dfo-mpo.gc.ca/Library/40869374.pdf}{http://waves-vagues.dfo-mpo.gc.ca/Library/40869374.pdf}).
 
 On the Central Coast, Heiltsuk First Nation have an Aboriginal right to commercially fish herring SOK.
 The Heiltsuk currently hold nine SOK licenses in this area, and SOK is harvested using the preferred means of the Heiltsuk, which is open ponding.
