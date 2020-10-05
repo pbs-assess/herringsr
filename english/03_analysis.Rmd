@@ -32,12 +32,12 @@ specification of objectives related to catch, catch variability, and socio-cultu
 MSE is an iterative and ongoing process conducted with the participation of
 First Nations, the fishing industry, as well as government and non-government organizations.  
 
-The first MSE cycles for the WCVI and SoG management areas were completed in 2018 (DFO 2019).
+The first MSE cycles for the SoG and WCVI management areas were completed in 2018 [@dfo2019a].
 Steps included OM development, fitting the OMs to Pacific Herring stock and fishery monitoring data from 1951-2017, 
-and closed-loop simulations of MP performance for alternative future natural mortality scenarios (DFO 2019). 
+and closed-loop simulations of MP performance for alternative future natural mortality scenarios [@dfo2019a].
 In the spring of 2019, the MSE process was extended to the HG, PRD, and CC management areas
 with stock and fishery monitoring data updated to include 2018
-and performance evaluation of area specific MPs (DFO 2020).
+and performance evaluation of area specific MPs [@dfo2019c].
 In the summer of 2020 the second MSE cycle was initiated for the WCVI and SoG management areas.
 This included conditioning the OMs with more recent stock and fishery data,
 and evaluating the performance of additional candidate MPs for these management areas.  
