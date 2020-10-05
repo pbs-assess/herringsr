@@ -29,21 +29,18 @@ The purpose of the MSE process is to identify MPs that provide acceptable outcom
 The identification of a preferred management procedure requires a fully specified set of measurable objectives that 
 include reference points (typically categorized as limits and targets) and to the extent possible, 
 specification of objectives related to catch, catch variability, and socio-cultural goals. 
-MSE is an iterative and ongoing process conducted with the participation of First Nations, the fishing industry, 
-government and non-government organizations.  
+MSE is an iterative and ongoing process conducted with the participation of
+First Nations, the fishing industry, as well as government and non-government organizations.  
 
-
-The first MSE cycles for the WCVI and SoG management areas were completed in 2018 (DFO 2019). 
+The first MSE cycles for the WCVI and SoG management areas were completed in 2018 (DFO 2019).
 Steps included OM development, fitting the OMs to Pacific Herring stock and fishery monitoring data from 1951-2017, 
 and closed-loop simulations of MP performance for alternative future natural mortality scenarios (DFO 2019). 
-In the spring of 2019, the MSE process was
-extended to the HG, PRD, and CC management areas with 
-stock and fishery monitoring data updated to include 2018 and
-performance evaluation of area specific MPs (DFO 2020).
+In the spring of 2019, the MSE process was extended to the HG, PRD, and CC management areas
+with stock and fishery monitoring data updated to include 2018
+and performance evaluation of area specific MPs (DFO 2020).
 In the summer of 2020 the second MSE cycle was initiated for the WCVI and SoG management areas.
-This included conditioning the OMs with more recent stock
-and fishery data and evaluating the performance of additional candidate MPs for these management areas.  
-
+This included conditioning the OMs with more recent stock and fishery data,
+and evaluating the performance of additional candidate MPs for these management areas.  
 
 A core set of fisheries management objectives [@dfo2019c] have been applied to each major SAR:
 
@@ -64,7 +61,8 @@ DFO will continue to collaborate with coastal First Nations to develop area-spec
 In addition, DFO will continue to engage with the herring industry, government, and non-government organizations
 to describe broader objectives related to conservation, economics, and access.
 
-The MPs for each SAR differ in the form of the HCR and choices of catch cap, but use the same type of monitoring data and assessment model [e.g., @cleary2018].
+The MPs for each SAR differ in the form of the HCR and choices of catch cap,
+but use the same type of monitoring data and assessment model [e.g., @cleary2018].
 The current stock assessment model assumes natural mortality is time-varying and this
 is reflected in the MSE as three hypotheses about future Pacific Herring natural mortality $M$: 
 
@@ -79,7 +77,6 @@ The DDM scenario was identified as the Reference OM scenario based on discussion
 while the DIM and conM scenarios were identified as Robustness OM scenarios.
 There is however currently no scientifically supported method for predicting the natural mortality and thus all three scenarios are included. 
 
-
 Several lessons were learned from the MSE analyses conducted so far:
 
 1. The catch-at-age stock assessment model can produce large (positive) assessment errors.
@@ -90,8 +87,8 @@ result in recommended catch limits such that the realized harvest rate exceeds t
 stock assessment errors by reducing the absolute size of the catch.
 The use of a catch cap, implemented as a maximum annual catch level, 
 was an effective model-free way to further mitigate assessment errors at very high biomass levels.
-Simulation analyses additionally showed that outcomes are insensitive to the choice of operational 
-control points (OCPs) in the HCR when a low harvest rate (HR) and catch cap are applied.
+Simulation analyses additionally showed that outcomes are insensitive to the choice of
+operational control points (OCPs) in the HCR when a low harvest rate (HR) and catch cap are applied.
 This occurs because low biomass levels (associated with the lower OCP) are avoided for these MPs.
 
 1. Differences in specification of Pacific Herring MPs, including the HCR components, are expected a priori among SARs.
@@ -102,17 +99,15 @@ Conservation objectives such as those based on avoiding a threshold to serious h
 in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
 
 1. There are many possible ways to incorporate MP performance in robustness trials into decision-making but, 
-there is currently no accepted scientific way of combining results from multiple operating models;
+there is currently no accepted scientific way of combining results from multiple operating models.
 
 1. In situations where multiple MPs meet the agreed upon objectives, further criteria, such as ranking secondary objectives, is 
-needed in order to provide decision-makers with a tractable set of trade-off choices; and
+needed in order to provide decision-makers with a tractable set of trade-off choices.
 
 1. Outcomes of MP evaluations appear to be influenced by the last 3-5 years of stock status and 
 natural mortality trends used to condition the  OM. 
 If simulations were run over a greater number of years (ie. 50 years) performance would start to approach equilibrium and be 
 unaffected by most recent trends in OM conditioning data.
-
-
 
 ## Input data
 
@@ -141,7 +136,10 @@ Biological data inputs to the stock assessment are annual weight-at-age (Figure 
 annual numbers-at-age, shown as proportions-at-age (Figure \@ref(fig:major-pa)).
 
 Significant declines in weight-at-age are evident for all major herring stocks, from the mid-1980s to 2010.
-Declining weight-at-age may be attributed to any number of factors, including fishing effects (i.e., gear selectivity), environmental effects (e.g., changes in ocean productivity), or changes in sampling protocols (e.g., shorter time frame over which samples are collected).
+Declining weight-at-age may be attributed to any number of factors, including
+fishing effects (i.e., gear selectivity),
+environmental effects (e.g., changes in ocean productivity), or
+changes in sampling protocols (e.g., shorter time frame over which samples are collected).
 There has been an increasing trend in weight-at-age for all major stocks from 2012 to `r assess_yr`, although to a lesser degree for PRD.
 
 ### Abundance data
@@ -167,67 +165,63 @@ the choice of spatial grouping reflects spawning behaviour and biology for each 
 
 ## First Nations observations
 
-The onset of the COVID-19 pandemic impacted First Nations participation in herring survey
-activities as well as participation in FSC harvest. 
-Impacts also extended to DFO Science staff in
-terms of reduced capacity for external engagement. 
-As such, assembling local observations was not possible for the 2020 season however discussions with local Nations will proceed with Science and Fisheries Management throughout the consultation period. 
+The onset of the COVID-19 pandemic impacted First Nations participation in herring survey activities as well as participation in FSC harvest. 
+Impacts also extended to DFO Science staff in terms of reduced capacity for external engagement. 
+As such, assembling local observations was not possible for the 2020 season.
+However, discussions with local Nations will proceed with Science and Fisheries Management throughout the consultation period. 
 All efforts will be made to include this information next season.
 
-
-<!--This report includes local observations from 2019, provided by First Nations participants through the Herring Technical Working Group.
-This working group, established in 2016, consists of DFO Science, DFO Fisheries Management, as well as technical representatives nominated by numerous coastal First Nations and the herring industry. 
-
-Observations reported here describe local perspectives on Pacific Herring in four of the management areas for 2019/20.--!>
+<!-- This report includes local observations from 2019, provided by First Nations participants through the Herring Technical Working Group. -->
+<!-- This working group, established in 2016, consists of DFO Science, DFO Fisheries Management, as well as technical representatives nominated by numerous coastal First Nations and the herring industry. -->
 
 <!-- ### Haida Gwaii - not provided in 2019 -->
 
 <!-- ### Prince Rupert District -->
 
-<!-- Observations from the Lax Kw’alaams Band: This year in the Prince Rupert District, Lax Kw’alaams had several fishermen out on the water.
-Overall, very little spawning was observed this season, and what was observed was non-contiguous and with much fewer layers than observed in previous years.
-Fishermen reported observing isolated pockets of herring in Tuck Inlet schooling in the area for a few days and then disappearing (north of Prince Rupert, Section 042).
-There were also humpback whales observed feeding in the Inlet, possibly causing the herring to move to deeper water to avoid predation and to spawn.
-Lax Kw’alaams fishermen were unable to gather enough herring to satisfy FSC needs for the community.
-Lax Kw’alaams Fisheries Technicians spent a full seven days during herring season, monitoring harvest and recording herring behaviour and locations.
-Technicians were unable to locate herring schools in any of the normal geographic areas monitored each year.
-On-grounds correspondence with harvesters confirmed the 2019 season was very poor and most reported seeing no active herring spawning. -->
+<!-- Observations from the Lax Kw’alaams Band: This year in the Prince Rupert District, Lax Kw’alaams had several fishermen out on the water. -->
+<!-- Overall, very little spawning was observed this season, and what was observed was non-contiguous and with much fewer layers than observed in previous years. -->
+<!-- Fishermen reported observing isolated pockets of herring in Tuck Inlet schooling in the area for a few days and then disappearing (north of Prince Rupert, Section 042). -->
+<!-- There were also humpback whales observed feeding in the Inlet, possibly causing the herring to move to deeper water to avoid predation and to spawn. -->
+<!-- Lax Kw’alaams fishermen were unable to gather enough herring to satisfy FSC needs for the community. -->
+<!-- Lax Kw’alaams Fisheries Technicians spent a full seven days during herring season, monitoring harvest and recording herring behaviour and locations. -->
+<!-- Technicians were unable to locate herring schools in any of the normal geographic areas monitored each year. -->
+<!-- On-grounds correspondence with harvesters confirmed the 2019 season was very poor and most reported seeing no active herring spawning. -->
 
 <!-- ### Central Coast -->
 
-<!-- For Klemtu area including Area 6, the spawn was much earlier than in past few years.
-The timing corresponds to what would be considered normal timing of a generation ago, with spawn occurring from March 19^th^ to 25^th^.
-The spawn was relatively long in duration based on previous years, and appeared to cover much of Kitasu Bay, however, the spawn was patchy.
-While some spawn in Kitasu Bay was quite thick, most was only a few layers of eggs deposited.
-Meyers and Thistle Pass showed relatively strong spawn, better than recent years.
-The East Higgins spawn continues to be poor, with only a single small bay experiencing any spawn.
-Spawn in Clifford Bay appeared to be limited to the outer island and northern reach.
-West Aristazabal was generally low, though storm force winds resulted in a reduced presence/observation on West Aristazabal and Clifford Bay in 2019. -->
+<!-- For Klemtu area including Area 6, the spawn was much earlier than in past few years. -->
+<!-- The timing corresponds to what would be considered normal timing of a generation ago, with spawn occurring from March 19^th^ to 25^th^. -->
+<!-- The spawn was relatively long in duration based on previous years, and appeared to cover much of Kitasu Bay, however, the spawn was patchy. -->
+<!-- While some spawn in Kitasu Bay was quite thick, most was only a few layers of eggs deposited. -->
+<!-- Meyers and Thistle Pass showed relatively strong spawn, better than recent years. -->
+<!-- The East Higgins spawn continues to be poor, with only a single small bay experiencing any spawn. -->
+<!-- Spawn in Clifford Bay appeared to be limited to the outer island and northern reach. -->
+<!-- West Aristazabal was generally low, though storm force winds resulted in a reduced presence/observation on West Aristazabal and Clifford Bay in 2019. -->
 
 <!-- ### Strait of Georgia -->
 
 <!-- Observations from Q'ul-lhanumutsun Aquatic Resources Society: No herring spawn was observed south of Dodd Narrows in 2019. -->
 
-<!-- The Tla'amin Nation report observing a very minimal spawning activity in Powell River in 2019.
-A single very light spawn occurred in Okeover Inlet with herring eggs occurring on the rocks and seaweed along the beach. -->
+<!-- The Tla'amin Nation report observing a very minimal spawning activity in Powell River in 2019. -->
+<!-- A single very light spawn occurred in Okeover Inlet with herring eggs occurring on the rocks and seaweed along the beach. -->
 
 <!-- ### West Coast of Vancouver Island -->
 
-<!-- As in most years, small spawning events occurred in Hesquiaht Harbour (Area 24) in January and February, and some February spawning in Areas 23 and 25.
-The main spawning events in all areas were from early to mid-March.
-Nuu-chah-nulth assessment crews found unspawned herring in the eastern part of Area 23 in late March, and a small spawn was reported in early April in Area 23.
-'Sporadic' was the term most people used to describe herring spawn activity in 2019.
+<!-- As in most years, small spawning events occurred in Hesquiaht Harbour (Area 24) in January and February, and some February spawning in Areas 23 and 25. -->
+<!-- The main spawning events in all areas were from early to mid-March. -->
+<!-- Nuu-chah-nulth assessment crews found unspawned herring in the eastern part of Area 23 in late March, and a small spawn was reported in early April in Area 23. -->
+<!-- 'Sporadic' was the term most people used to describe herring spawn activity in 2019. -->
 
-Most spawning events did not cover large areas and were less than a day in duration.
-The exceptions were multi-day spawns around Stuart Bay and Ittatsoo in Area 23 beginning on March 8^th^, and in Hesquiaht Harbour around Anton Spit beginning on March 5^th^.
-There were multiple spawning locations in Area 25 including Nuchatlaht, Esperanza Inlet, Yuquot, and Strange Island.
-Most were small as well, but there were some larger events in a couple of areas, notably around Strange Island, Rosa Island, and Bajo Reef.
+<!-- Most spawning events did not cover large areas and were less than a day in duration. -->
+<!-- The exceptions were multi-day spawns around Stuart Bay and Ittatsoo in Area 23 beginning on March 8^th^, and in Hesquiaht Harbour around Anton Spit beginning on March 5^th^. -->
+<!-- There were multiple spawning locations in Area 25 including Nuchatlaht, Esperanza Inlet, Yuquot, and Strange Island. -->
+<!-- Most were small as well, but there were some larger events in a couple of areas, notably around Strange Island, Rosa Island, and Bajo Reef. -->
 
-Nuu-chah-nulth harvesters set whole trees and lines of tree branches to harvest herring spawn on bough.
-Trees and boughs were set in both usual herring spawning locations, and in active spawning locations in Barkley Sound (Area 23), Clayoquot Sound (Area 24), Nootka Sound, Esperanza Inlet, and Nuchatlitz (Area 25).
-Herring spawn on bough harvests were similar to 2018, mixed.
-In some areas, some trees had four to ten layers on the branches, but most had only one to four layers.
-Despite the efforts, the herring spawn on bough harvests were not sufficient to meet the requests from Nuu-chah-nulth communities. -->
+<!-- Nuu-chah-nulth harvesters set whole trees and lines of tree branches to harvest herring spawn on bough. -->
+<!-- Trees and boughs were set in both usual herring spawning locations, and in active spawning locations in Barkley Sound (Area 23), Clayoquot Sound (Area 24), Nootka Sound, Esperanza Inlet, and Nuchatlitz (Area 25). -->
+<!-- Herring spawn on bough harvests were similar to 2018, mixed. -->
+<!-- In some areas, some trees had four to ten layers on the branches, but most had only one to four layers. -->
+<!-- Despite the efforts, the herring spawn on bough harvests were not sufficient to meet the requests from Nuu-chah-nulth communities. -->
 
 ## Stock status update
 

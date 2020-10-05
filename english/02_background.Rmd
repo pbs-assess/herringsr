@@ -47,7 +47,11 @@ Although this work is underway, results are not yet available for informing the 
 
 ## Description of the stock assessment process
 
-The SCA model is fitted to commercial catch data, fishery and survey proportions-at-age data, and a fishery-independent spawning biomass index to estimate total and spawning biomass, natural mortality, and recruitment.
+The SCA model is fitted to
+commercial catch data,
+fishery and survey proportion-at-age data, and
+a fishery-independent spawning biomass index to estimate
+total and spawning biomass, natural mortality, and recruitment.
 Observed annual weight-at-age is estimated external to the model, and maturity-at-age is a fixed input parameter.
 In 2017, an updated version of the SCA model was applied to assess each of the `r number_to_word(length(major_regions_short))` major Pacific Herring SARs [@cleary2018].
 The main change from the SCA model used from 2011 to 2016 was the partitioning of variance between observation and process error to improve the estimation of the variance structure [@cleary2018].
