@@ -366,7 +366,7 @@ however these removals are not included in the estimation of $U_t$.
 Commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19.
 
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(cc_final_yr_sbt[2])`&nbsp;t (posterior median),
-equal to 69.9% of $\SB_0$
+equal to `r f(cc_final_yr_dt[2]*100, 1)`% of $\SB_0$
 (Tables \@ref(tab:cc-spawning-biomass-depletion) & \@ref(tab:ref-points-cc)).
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1-cc_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-cc)).
 
