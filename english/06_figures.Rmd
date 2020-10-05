@@ -625,6 +625,7 @@ Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey
 The spawn index has two distinct periods defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
+067=Kitasu Bay, 072= Lower Spiller, 078= Upper Spiller.
 Note that only a subset of Sections are shown.
 
 (ref:spawn-section-cc-cap-fr) Données mises à l’échelle de relevé du frai du hareng du Pacifique
