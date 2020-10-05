@@ -25,8 +25,7 @@ output:
   csasdown::sr_pdf:
    french: false
    prepub: true
-type:
-  sr
+type: sr
 knit: bookdown::render_book
 site: bookdown::bookdown_site
 link-citations: true
