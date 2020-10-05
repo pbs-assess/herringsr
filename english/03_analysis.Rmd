@@ -548,7 +548,7 @@ states that were entered rapidly and were preceded by high biomass levels [@kron
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to an estimated `r f(prd_proj_sbt[2])`&nbsp;t (posterior medians), near-identical to the median estimate for `r assess_yr`.
 The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the LRP of $0.3\SB_0$ with `r f(prd_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-prd)).
 
-Harvest options resulting from simulation-tested MPs for `r assess_yr + 1` are presented in Table \@ref(tab:decision-prd).
+Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-prd).
 Management procedures and performance metrics appear in identical format to that of September 2019 [@dfo2020a].
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for PRD,
 whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
@@ -567,7 +567,7 @@ However this was not undertaken with the first MSE cycle because a fully specifi
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(cc_proj_sbt[2])`&nbsp;t (posterior median), decreasing from `r f(cc_final_yr_sbt[2])`&nbsp;t in `r assess_yr` (Table \@ref(tab:ref-points-cc)).
 The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3\SB_0$ with `r f(cc_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
-Harvest options resulting from simulation-tested MPs for `r assess_yr + 1` are presented in Table \@ref(tab:decision-cc).
+Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-cc).
 Management procedures and performance metrics appear in identical format to that of September 2019 [@dfo2020a].
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for CC,
 whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
@@ -591,7 +591,7 @@ MPs with harvest rate of 30% did not meet the conservation objective ($p$=69% fo
 
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(sog_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\SB_0$ with `r f(sog_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
-Harvest options resulting from simulation-tested MPs for `r assess_yr + 1` are presented in Table \@ref(tab:decision-sog).
+Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-sog).
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for SoG,
 whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
 Harvest options under the two Robustness OM scenarios are also included.
@@ -616,7 +616,7 @@ Performance improvement is observed under all 3 scenarios.
 In the absence of fishing, spawning biomass in 2020 is forecast at `r f(wcvi_proj_sbt[2])`&nbsp;t (posterior median)
 and is forecast to be below the LRP of $0.3\SB_0$ with `r f(wcvi_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
-Harvest options for `r assess_yr + 1` are presented in Table \@ref(tab:decision-wcvi).
+Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-wcvi).
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for WCVI,
 whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
 Harvest options under the two Robustness OM scenarios are also included.
