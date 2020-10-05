@@ -229,12 +229,11 @@ Herring spawn on bough harvests were similar to 2018, mixed.
 In some areas, some trees had four to ten layers on the branches, but most had only one to four layers.
 Despite the efforts, the herring spawn on bough harvests were not sufficient to meet the requests from Nuu-chah-nulth communities. -->
 
-
 ## Stock status update
 
 Analyses of stock trend information for AM2 are presented following methods of @cleary2018 for the Pacific Herring major stock assessment regions.
 Perceptions of stock status based on outputs from the SCA model (AM2) are summarized for each stock in a multi-panel figure (e.g., Figure \@ref(fig:storyboard-hg)).
-The panels \ref{item:storyIndex} to \ref{item:storyPhase} show:
+The panels show:
 
 (a) Time series of model fit to scaled spawn survey data,\label{item:storyIndex}
 
