@@ -4,12 +4,12 @@ The `r assess_yr` Science Response includes a formal analyses of stock trend inf
 using the stock assessment framework reviewed in 2017 [@cleary2018] with the data time series updated to 2020.
 
 In the first MSE cycle for HG, none of the MPs tested could meet the conservation objective with at least 75% probability [@dfo2019c],
-thus harvest options are not provided for 2020.
+thus harvest options are not provided for `r assess_yr + 1`.
 DFO has committed to developing and implementing a rebuilding plan for Haida Gwaii Herring by the end of fiscal year 2020/21,
 and supports commercial herring fishery closures for the HG major stock region until April 2021.
 
 The MSE process identifies a range of MPs that meet the conservation objective with at least 75% probability for PRD, CC, SoG, and WCVI management areas for the Reference OM scenario (@dfo2019c; MSE SR, *In prep.*).
-As such, harvest options or MP calculations for `r assess_yr + 1` for these SARs are provided using MPs that meet the minimum conservation criteria under the Reference OM scenario, 
-whereby tables also include MP performance under the DIM and conM Robustness OM scenarios (Tables \@ref(tab:decision-prd) to \@ref(tab:decision-wcvi)).
+As such, harvest options or MP calculations for `r assess_yr + 1` for these SARs are provided using MPs that meet the minimum conservation criteria under the Reference OM scenario.
+Tables also include MP performance under the DIM and conM Robustness OM scenarios (Tables \@ref(tab:decision-prd) to \@ref(tab:decision-wcvi)).
 
 Science advice for the minor SARs is limited to presentation of catch data, biological data, and spawn survey data (\nameref{sec:app-minor}).
