@@ -167,49 +167,53 @@ the choice of spatial grouping reflects spawning behaviour and biology for each 
 
 ## First Nations observations
 
-The onset of the COVID-19 pandemic impacted First Nations participation in herring survey activities as well as participation in FSC harvest. 
-Impacts also extended to DFO Science staff in terms of reduced capacity for external engagement. 
-As such, assembling local observations was not possible for the 2020 season. 
+The onset of the COVID-19 pandemic impacted First Nations participation in herring survey
+activities as well as participation in FSC harvest. 
+Impacts also extended to DFO Science staff in
+terms of reduced capacity for external engagement. 
+As such, assembling local observations was not possible for the 2020 season however discussions with local Nations will proceed with Science and Fisheries Management throughout the consultation period. 
+All efforts will be made to include this information next season.
 
-This report includes local observations from 2019, provided by First Nations participants through the Herring Technical Working Group.
+
+<!--This report includes local observations from 2019, provided by First Nations participants through the Herring Technical Working Group.
 This working group, established in 2016, consists of DFO Science, DFO Fisheries Management, as well as technical representatives nominated by numerous coastal First Nations and the herring industry. 
 
-Observations reported here describe local perspectives on Pacific Herring in four of the management areas for 2019/20.
+Observations reported here describe local perspectives on Pacific Herring in four of the management areas for 2019/20.--!>
 
 <!-- ### Haida Gwaii - not provided in 2019 -->
 
-### Prince Rupert District
+<!-- ### Prince Rupert District -->
 
-Observations from the Lax Kw’alaams Band: This year in the Prince Rupert District, Lax Kw’alaams had several fishermen out on the water.
+<!-- Observations from the Lax Kw’alaams Band: This year in the Prince Rupert District, Lax Kw’alaams had several fishermen out on the water.
 Overall, very little spawning was observed this season, and what was observed was non-contiguous and with much fewer layers than observed in previous years.
 Fishermen reported observing isolated pockets of herring in Tuck Inlet schooling in the area for a few days and then disappearing (north of Prince Rupert, Section 042).
 There were also humpback whales observed feeding in the Inlet, possibly causing the herring to move to deeper water to avoid predation and to spawn.
 Lax Kw’alaams fishermen were unable to gather enough herring to satisfy FSC needs for the community.
 Lax Kw’alaams Fisheries Technicians spent a full seven days during herring season, monitoring harvest and recording herring behaviour and locations.
 Technicians were unable to locate herring schools in any of the normal geographic areas monitored each year.
-On-grounds correspondence with harvesters confirmed the 2019 season was very poor and most reported seeing no active herring spawning.
+On-grounds correspondence with harvesters confirmed the 2019 season was very poor and most reported seeing no active herring spawning. -->
 
-### Central Coast
+<!-- ### Central Coast -->
 
-For Klemtu area including Area 6, the spawn was much earlier than in past few years.
+<!-- For Klemtu area including Area 6, the spawn was much earlier than in past few years.
 The timing corresponds to what would be considered normal timing of a generation ago, with spawn occurring from March 19^th^ to 25^th^.
 The spawn was relatively long in duration based on previous years, and appeared to cover much of Kitasu Bay, however, the spawn was patchy.
 While some spawn in Kitasu Bay was quite thick, most was only a few layers of eggs deposited.
 Meyers and Thistle Pass showed relatively strong spawn, better than recent years.
 The East Higgins spawn continues to be poor, with only a single small bay experiencing any spawn.
 Spawn in Clifford Bay appeared to be limited to the outer island and northern reach.
-West Aristazabal was generally low, though storm force winds resulted in a reduced presence/observation on West Aristazabal and Clifford Bay in 2019.
+West Aristazabal was generally low, though storm force winds resulted in a reduced presence/observation on West Aristazabal and Clifford Bay in 2019. -->
 
-### Strait of Georgia
+<!-- ### Strait of Georgia -->
 
-Observations from Q'ul-lhanumutsun Aquatic Resources Society: No herring spawn was observed south of Dodd Narrows in 2019.
+<!-- Observations from Q'ul-lhanumutsun Aquatic Resources Society: No herring spawn was observed south of Dodd Narrows in 2019. -->
 
-The Tla'amin Nation report observing a very minimal spawning activity in Powell River in 2019.
-A single very light spawn occurred in Okeover Inlet with herring eggs occurring on the rocks and seaweed along the beach.
+<!-- The Tla'amin Nation report observing a very minimal spawning activity in Powell River in 2019.
+A single very light spawn occurred in Okeover Inlet with herring eggs occurring on the rocks and seaweed along the beach. -->
 
-### West Coast of Vancouver Island
+<!-- ### West Coast of Vancouver Island -->
 
-As in most years, small spawning events occurred in Hesquiaht Harbour (Area 24) in January and February, and some February spawning in Areas 23 and 25.
+<!-- As in most years, small spawning events occurred in Hesquiaht Harbour (Area 24) in January and February, and some February spawning in Areas 23 and 25.
 The main spawning events in all areas were from early to mid-March.
 Nuu-chah-nulth assessment crews found unspawned herring in the eastern part of Area 23 in late March, and a small spawn was reported in early April in Area 23.
 'Sporadic' was the term most people used to describe herring spawn activity in 2019.
@@ -223,7 +227,8 @@ Nuu-chah-nulth harvesters set whole trees and lines of tree branches to harvest 
 Trees and boughs were set in both usual herring spawning locations, and in active spawning locations in Barkley Sound (Area 23), Clayoquot Sound (Area 24), Nootka Sound, Esperanza Inlet, and Nuchatlitz (Area 25).
 Herring spawn on bough harvests were similar to 2018, mixed.
 In some areas, some trees had four to ten layers on the branches, but most had only one to four layers.
-Despite the efforts, the herring spawn on bough harvests were not sufficient to meet the requests from Nuu-chah-nulth communities.
+Despite the efforts, the herring spawn on bough harvests were not sufficient to meet the requests from Nuu-chah-nulth communities. -->
+
 
 ## Stock status update
 
