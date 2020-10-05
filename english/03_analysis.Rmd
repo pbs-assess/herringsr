@@ -601,7 +601,7 @@ under all 3 scenarios (MSE SR, *In prep.*).
 ### West Coast of Vancouver Island
 
 The WCVI stock persisted in a low biomass, low productivity state from approx. 2004-2014.
-An increasing trend has been observed in recent years, though biomass levels remain low relative to historical trends.
+An increasing trend has been observed in recent years, with biomass remaining low relative to historical levels, trending around the LRP of $0.3\SB_0$.
 
 In 2018, closed-loop feedback simulations for the WCVI showed the conservation objective could be met under the Reference OM scenario with between 75-87%, but that these MPs failed to meet the conservation objective under the DIM Robustness OM scenario, where natural mortality rates are most similar to the last 10 years ($p$=56-74%).
 
