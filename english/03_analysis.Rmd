@@ -527,6 +527,9 @@ As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&n
 
 ### Prince Rupert District
 
+The PRD estimated stock biomass has shown little trend from 2005 to 2018, with a modest increase
+in 2019. 
+Survey biomass in 2020 is near-identical to 2019. 
 For PRD the best performing MPs generally had 10% or lower harvest rates, although two MPs with a 20% harvest rate did meet the conservation objective because they use a higher lower OCP (see Section '\nameref{sec:ref-pts}') of $0.5\SB_0$.
 These MPs also result in more frequent fishery closures because spawning biomass declines below the lower control point more frequently.
 While several MPs are able to meet core conservation objective of maintaining spawning
