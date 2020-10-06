@@ -47,6 +47,46 @@ get_hcr <- function(sbt, sbo, fn){
                 tac,
                 targ.hr))
 }
+#' Retrieve MP file with decision table data and perform HCR calculations on
+#' the posteriors, with 3 additional Biomass columns
+#'
+#' @param name name of the SAR Region
+#' @param fn file which contains the MP data for the given region
+#'
+#' @return a list of two elements:
+#' 1. A list with the same number of elements as there are rows in the table read in from `fn`. Each of these is a list of
+#'  posteriors of length 2, tac and hr (harvest rate)
+#' 2. [tibble::tibble()] holding the data from the file plus two columns, tac and hr (harvest rate)
+#'  which are the median tac and harverst rate calculated for the region by MP.
+get_hcr_add <- function(sbt, sbo, fn){
+  mp <- read_csv(fn, col_types=cols()) %>%
+    as_tibble() %>%
+    arrange(factor(om, levels = c("DDM", "DIM", "conM")),
+            desc(obj1),
+            desc(obj2)) %>%
+    mutate(tac = NA,
+           targ.hr = NA)
+  mp.lst <- NULL
+  for(rw in seq_len(nrow(mp))){
+    mp.lst[[rw]] <- hcr(sbt, sbo, row = mp[rw,])
+    hcr_meds <- get_hcr_tac_hr(mp.lst[[rw]])
+    mp[rw,]$tac <- hcr_meds[1]
+    mp[rw,]$targ.hr <- hcr_meds[2]
+  }
+  list(mp.lst,
+       mp %>% select(om,
+                     label,
+                     obj1,
+                     obj2,
+                     obj2b,
+                     obj2c,
+                     obj2d,
+                     obj3,
+                     obj4,
+                     catch,
+                     tac,
+                     targ.hr))
+}
 
 sbt_sbo.hg <- get_sbt_sbo("HG")
 sbt.hg <- sbt_sbo.hg[[1]]
