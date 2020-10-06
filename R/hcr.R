@@ -87,9 +87,9 @@ sbt_sbo.wcvi <- get_sbt_sbo("WCVI")
 sbt.wcvi <- sbt_sbo.wcvi[[1]]
 sbo.wcvi <- sbt_sbo.wcvi[[2]]
 rel.sbo.wcvi <- rep(1, length(sbo.wcvi))
-mp.lst.wcvi <- get_hcr(sbt.wcvi,
+mp.lst.wcvi <- get_hcr_add(sbt.wcvi,
                       sbo.wcvi,
-                      fn = here("data/mp-wcvi.csv"))
+                      fn = here("data/mp-wcvi-ExtraObs.csv"))
 mp.vals.wcvi <- mp.lst.wcvi[[1]]
 mp.wcvi <- mp.lst.wcvi[[2]]
 

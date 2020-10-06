@@ -807,7 +807,7 @@ decision_tables_mp(mp.sog,
 ```
 
 ```{r decision-wcvi, results = 'asis', echo = FALSE}
-decision_tables_mp(mp.wcvi,
+decision_tables_mp_add(mp.wcvi,
                    xcaption = ifelse(french,
                                      "(ref:decision-wcvi-cap-fr)",
                                      "(ref:decision-wcvi-cap)"),

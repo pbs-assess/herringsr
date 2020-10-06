@@ -86,6 +86,7 @@ run_retrospectives <- FALSE
 retrospective_yrs <- 1:10
 models_dir <- here::here("models")
 
+source(here::here("R/mp.R"))
 source(here::here("R/model-setup.R"))
 source(here::here("R/variable-setup.R"))
 source(here::here("R/hcr.R"))
