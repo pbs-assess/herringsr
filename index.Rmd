@@ -102,7 +102,8 @@ theme_set(herring_theme())
 
 <!-- Other math -->
 \newcommand{\lognorm}{\text{ln}}
-\newcommand{\SB}{\mli{`r en2fr("SB", translate=french)`}}
+\newcommand{\SB}{\mli{`r en2fr("SB", translate = french)`}}
+\newcommand{\AVE}{\text{`r en2fr("AVE", translate = french)`}}
 
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->
