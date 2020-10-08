@@ -757,7 +757,6 @@ Voir le tableau \@ref(tab:decision-prd) pour la description.
 \begin{turn}
 
 ```{r decision-prd, results = 'asis', echo = FALSE}
-col_align <- "cc|c|c|c|c|c|c|c"
 decision_tables_mp(mp.prd,
                    xcaption = ifelse(french,
                                      "(ref:decision-prd-cap-fr)",
@@ -769,7 +768,6 @@ decision_tables_mp(mp.prd,
                    last_col_header = paste0(assess_yr + 1, " TAC"),
                    perc_dec_pts = 0,
                    dec_pts = 2,
-                   col_align = col_align,
                    translate = french)
 ```
 
@@ -785,7 +783,6 @@ decision_tables_mp(mp.cc,
                    last_col_header = paste0(assess_yr + 1, " TAC"),
                    perc_dec_pts = 0,
                    dec_pts = 2,
-                   col_align = col_align,
                    translate = french)
 ```
 
@@ -801,8 +798,6 @@ decision_tables_mp(mp.sog,
                    last_col_header = paste0(assess_yr + 1, " TAC"),
                    perc_dec_pts = 0,
                    dec_pts = 2,
-                   col_align = col_align,
-                   #inc_mps = 9,
                    translate = french)
 ```
 
@@ -818,8 +813,6 @@ decision_tables_mp_add(mp.wcvi,
                    last_col_header = paste0(assess_yr + 1, " TAC"),
                    perc_dec_pts = 0,
                    dec_pts = 2,
-                   col_align = col_align,
-                   #inc_mps = 9,
                    translate = french)
 ```
 
