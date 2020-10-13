@@ -159,7 +159,8 @@ a small decrease in survey biomass for PRD and CC (Figure \@ref(fig:major-spawn-
 
 ## Spatial spawn distribution
 
-Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index) by proportion over the most recent `r num_yrs_tab+1` years for the major SARs.
+Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index)
+by proportion over the most recent `r num_yrs_tab+1` years for the major SARs.
 HG and SoG are summarized by Group, while PRD, CC, and WCVI are summarized by Statistical Area;
 the choice of spatial grouping reflects spawning behaviour and biology for each SAR based on the survey data and working group discussions with local First Nations.
 
@@ -251,10 +252,13 @@ Thus, two $q$ parameters are implemented in the estimation procedure:
 $q_1$ (`r surv_yr_rng[1]` to `r new_surv_yr-1`) with an uninformative prior, and
 $q_2$ (`r new_surv_yr` to `r surv_yr_rng[2]`) with an informative prior approximating 1.0.
 
-The surface survey methodolody has been used on occasion in years between 1988 and `r surv_yr_rng[2]`. 
-Generally this occurs in instances when herring spawn is observed in locations where a dive survey team is not available, or, when spawning occurs very early (Jan-Feb) or late (May) in the season. 
-In these instances, estimates of spawner biomass obtained from a surface survey for a given stock area and year are added to the biomass estimates from the dive survey and $q$=1 is assumed for the combined index.
-In `r surv_yr_rng[2]`, a full surface survey was conducted for the HG and PRD SARs and in this assessment the resulting survey biomass is assumed continuous with the dive survey time series.
+The surface survey methodology has been used on occasion from `r new_surv_yr` to `r surv_yr_rng[2]`. 
+Generally this occurs in instances when herring spawn is observed in locations where a dive survey team is not available, or
+when spawning occurs very early (January or February) or late (May) in the season. 
+In these instances, spawner biomass estimates obtained from surface surveys for a given stock area and year are added to
+biomass estimates from dive surveys, and $q_2 = 1$ is assumed for the combined index.
+In `r surv_yr_rng[2]`, a full surface survey was conducted for the HG and PRD SARs;
+in this assessment the resulting survey biomass is assumed continuous with the dive survey time series.
 
 ### Reference points\label{sec:ref-pts}
 
