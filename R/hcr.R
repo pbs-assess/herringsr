@@ -37,15 +37,15 @@ get_hcr <- function(sbt, sbo, fn){
     mp[rw,]$targ.hr <- hcr_meds[2]
   }
   list(mp.lst,
-  mp %>% select(om,
-                label,
-                obj1,
-                obj2,
-                obj3,
-                obj4,
-                catch,
-                tac,
-                targ.hr))
+       mp %>% select(om,
+                     label,
+                     obj1,
+                     obja,
+                     obj2,
+                     obj3,
+                     obj4,
+                     tac,
+                     targ.hr))
 }
 #' Retrieve MP file with decision table data and perform HCR calculations on
 #' the posteriors, with 3 additional Biomass columns
@@ -77,13 +77,13 @@ get_hcr_add <- function(sbt, sbo, fn){
        mp %>% select(om,
                      label,
                      obj1,
+                     obja,
                      obj2,
                      obj2b,
                      obj2c,
                      obj2d,
                      obj3,
                      obj4,
-                     catch,
                      tac,
                      targ.hr))
 }
