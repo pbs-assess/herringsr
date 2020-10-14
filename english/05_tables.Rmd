@@ -749,8 +749,6 @@ decision_tables_mp_add(mp.wcvi,
                                      "(ref:decision-wcvi-cap-fr)",
                                      "(ref:decision-wcvi-cap)"),
                    xlabel = "tab:decision-wcvi",
-                   font.size = 10,
-                  space.size = 14,
                    translate = french)
 ```
 
