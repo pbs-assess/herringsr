@@ -63,7 +63,7 @@ Notez que les axes verticaux sont coupés à `r wa_ylim[1]` et `r wa_ylim[2]` kg
 
 ```{r minor-wa, fig.asp = 0.4, fig.cap = ifelse(french, "(ref:minor-wa-cap-fr)", "(ref:minor-wa-cap)")}
 plot_wa(df = minor_wa,
-        circle_age = 3,
+        circle_age = age_highlight,
         xlim = c(minor_start_yr_plot, minor_end_yr),
         ylim = wa_ylim,
         n_roll = nRollWA,
