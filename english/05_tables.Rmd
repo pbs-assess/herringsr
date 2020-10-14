@@ -211,7 +211,7 @@ make.parameters.est.table(major_models[[model_ind]],
                                             "(ref:hg-parameter-est-cap-fr)",
                                             "(ref:hg-parameter-est-cap)"),
                           xlabel = "tab:hg-parameter-est",
-                          font.size = 10,
+                          font.size = 11,
                           translate = french)
 ```
 
@@ -234,7 +234,7 @@ make.parameters.est.table(major_models[[model_ind]],
                                             "(ref:prd-parameter-est-cap-fr)",
                                             "(ref:prd-parameter-est-cap)"),
                           xlabel = "tab:prd-parameter-est",
-                          font.size = 10,
+                          font.size = 11,
                           translate = french)
 ```
 
@@ -257,7 +257,7 @@ make.parameters.est.table(major_models[[model_ind]],
                                             "(ref:cc-parameter-est-cap-fr)",
                                             "(ref:cc-parameter-est-cap)"),
                           xlabel = "tab:cc-parameter-est",
-                          font.size = 10,
+                          font.size = 11,
                           translate = french)
 ```
 
@@ -280,7 +280,7 @@ make.parameters.est.table(major_models[[model_ind]],
                                             "(ref:sog-parameter-est-cap-fr)",
                                             "(ref:sog-parameter-est-cap)"),
                           xlabel = "tab:sog-parameter-est",
-                          font.size = 10,
+                          font.size = 11,
                           translate = french)
 ```
 
@@ -303,7 +303,7 @@ make.parameters.est.table(major_models[[model_ind]],
                                             "(ref:wcvi-parameter-est-cap-fr)",
                                             "(ref:wcvi-parameter-est-cap)"),
                           xlabel = "tab:wcvi-parameter-est",
-                          font.size = 10,
+                          font.size = 11,
                           translate = french)
 ```
 
@@ -325,7 +325,7 @@ make.value.table(major_models[[model_ind]],
                  xcaption = ifelse(french, "(ref:hg-recruitment-cap-fr)",
                                    "(ref:hg-recruitment-cap)"),
                  xlabel = "tab:hg-recruitment",
-                 font.size = 10,
+                 font.size = 11,
                  translate = french)
 ```
 
@@ -347,7 +347,7 @@ make.value.table(major_models[[model_ind]],
                  xcaption = ifelse(french, "(ref:prd-recruitment-cap-fr)",
                                    "(ref:prd-recruitment-cap)"),
                  xlabel = "tab:prd-recruitment",
-                 font.size = 10,
+                 font.size = 11,
                  translate = french)
 ```
 
@@ -369,7 +369,7 @@ make.value.table(major_models[[model_ind]],
                  xcaption = ifelse(french, "(ref:cc-recruitment-cap-fr)",
                                    "(ref:cc-recruitment-cap)"),
                  xlabel = "tab:cc-recruitment",
-                 font.size = 10,
+                 font.size = 11,
                  translate = french)
 ```
 
@@ -391,7 +391,7 @@ make.value.table(major_models[[model_ind]],
                  xcaption = ifelse(french, "(ref:sog-recruitment-cap-fr)",
                                    "(ref:sog-recruitment-cap)"),
                  xlabel = "tab:sog-recruitment",
-                 font.size = 10,
+                 font.size = 11,
                  translate = french)
 ```
 
@@ -413,7 +413,7 @@ make.value.table(major_models[[model_ind]],
                  xcaption = ifelse(french, "(ref:wcvi-recruitment-cap-fr)",
                                    "(ref:wcvi-recruitment-cap)"),
                  xlabel = "tab:wcvi-recruitment",
-                 font.size = 10,
+                 font.size = 11,
                  translate = french)
 ```
 
@@ -441,7 +441,7 @@ make.biomass.depletion.table(major_models[[model_ind]],
                              syr = major_end_yr-num_yrs_tab,
                              xcaption = ifelse(french, "(ref:hg-spawning-biomass-depletion-cap-fr)", "(ref:hg-spawning-biomass-depletion-cap)"),
                              xlabel = "tab:hg-spawning-biomass-depletion",
-                             font.size = 10,
+                             font.size = 11,
                              translate = french)
 ```
 
@@ -465,7 +465,7 @@ make.biomass.depletion.table(major_models[[model_ind]],
                                                "(ref:prd-spawning-biomass-depletion-cap-fr)",
                                                "(ref:prd-spawning-biomass-depletion-cap)"),
                              xlabel = "tab:prd-spawning-biomass-depletion",
-                             font.size = 10,
+                             font.size = 11,
                              translate = french)
 ```
 
@@ -489,7 +489,7 @@ make.biomass.depletion.table(major_models[[model_ind]],
                                                "(ref:cc-spawning-biomass-depletion-cap-fr)",
                                                "(ref:cc-spawning-biomass-depletion-cap)"),
                              xlabel = "tab:cc-spawning-biomass-depletion",
-                             font.size = 10,
+                             font.size = 11,
                              translate = french)
 ```
 
@@ -513,7 +513,7 @@ make.biomass.depletion.table(major_models[[model_ind]],
                                                "(ref:sog-spawning-biomass-depletion-cap-fr)",
                                                "(ref:sog-spawning-biomass-depletion-cap)"),
                              xlabel = "tab:sog-spawning-biomass-depletion",
-                             font.size = 10,
+                             font.size = 11,
                              translate = french)
 ```
 
@@ -537,7 +537,7 @@ make.biomass.depletion.table(major_models[[model_ind]],
                                                "(ref:wcvi-spawning-biomass-depletion-cap-fr)",
                                                "(ref:wcvi-spawning-biomass-depletion-cap)"),
                              xlabel = "tab:wcvi-spawning-biomass-depletion",
-                             font.size = 10,
+                             font.size = 11,
                              translate = french)
 ```
 
@@ -564,7 +564,7 @@ make.ref.points.table(major_models[[model_ind]],
                                         "(ref:ref-points-hg-cap-fr)",
                                         "(ref:ref-points-hg-cap)"),
                       xlabel = "tab:ref-points-hg",
-                      font.size = 10,
+                      font.size = 11,
                       translate = french)
 ```
 
@@ -585,7 +585,7 @@ make.ref.points.table(major_models[[model_ind]],
                                         "(ref:ref-points-prd-cap-fr)",
                                         "(ref:ref-points-prd-cap)"),
                       xlabel = "tab:ref-points-prd",
-                      font.size = 10,
+                      font.size = 11,
                       translate = french)
 ```
 
@@ -606,7 +606,7 @@ make.ref.points.table(major_models[[model_ind]],
                                         "(ref:ref-points-cc-cap-fr)",
                                         "(ref:ref-points-cc-cap)"),
                       xlabel = "tab:ref-points-cc",
-                      font.size = 10,
+                      font.size = 11,
                       translate = french)
 ```
 
@@ -627,7 +627,7 @@ make.ref.points.table(major_models[[model_ind]],
                                         "(ref:ref-points-sog-cap-fr)",
                                         "(ref:ref-points-sog-cap)"),
                       xlabel = "tab:ref-points-sog",
-                      font.size = 10,
+                      font.size = 11,
                       translate = french)
 ```
 
@@ -648,7 +648,7 @@ make.ref.points.table(major_models[[model_ind]],
                                         "(ref:ref-points-wcvi-cap-fr)",
                                         "(ref:ref-points-wcvi-cap)"),
                       xlabel = "tab:ref-points-wcvi",
-                      font.size = 10,
+                      font.size = 11,
                       translate = french)
 ```
 
@@ -749,6 +749,8 @@ decision_tables_mp_add(mp.wcvi,
                                      "(ref:decision-wcvi-cap-fr)",
                                      "(ref:decision-wcvi-cap)"),
                    xlabel = "tab:decision-wcvi",
+                   font.size = 10,
+                  space.size = 14,
                    translate = french)
 ```
 
