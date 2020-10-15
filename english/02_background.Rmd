@@ -71,7 +71,7 @@ The projected spawning biomass is based on the current year's recruitment deviat
 estimated natural mortality and weight-at-age, both averaged over the most recent 5-years.
 The Markov chain Monte Carlo (MCMC) sampling procedure follows the same method implemented by @cleary2018.
 
-@cleary2018 reported results from two SCA model fits that differed in assumptions about dive survey (from `r new_surv_yr` to `r major_end_yr`) catchability $q_2$:
+@cleary2018 reported results from two SCA model fits that differed in assumptions about dive survey catchability $q_2$ (from `r new_surv_yr` to `r major_end_yr`):
 assessment model 1 (AM1) where $q_2$ is estimated with a prior distribution assumed; and
 assessment model 2 (AM2) where $q_2 = 1$.
 The assumptions that the dive survey spawn index represents all the spawn deposited and that no eggs are lost to predation are strong.

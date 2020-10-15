@@ -17,7 +17,7 @@ As part of the MSE process, a CSAS regional peer review occurred July 25 and 26,
 where performance of Pacific Herring management procedures (MPs) were assessed against conservation objectives for Strait of Georgia (SoG) and West Coast of Vancouver Island (WCVI) stock assessment regions [@dfo2019a].
 Steps included operating model (OM) development, fitting the OM to Pacific Herring stock and fishery monitoring data (OM conditioning), and closed-loop simulations of MP performance for alternative future natural mortality scenarios.
 In the spring of 2019, the MSE process was initiated for the northern stock regions: Haida Gwaii (HG), Prince Rupert District (PRD), and Central Coast (CC) [@dfo2019c]. 
-In the summer of 2020, update were made to the MSE simulations for the WCVI and SOG management areas.
+In the summer of 2020, updates were made to the MSE simulations for the WCVI and SOG management areas.
 These updates included conditioning the OM with more recent stock and fishery data and evaluating the performance of additional candidate MPs for these management areas. 
 
 Since initiation of the Pacific Herring MSE process,

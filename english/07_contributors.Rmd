@@ -10,7 +10,7 @@ contributors <- tibble::tribble(
   "Herring Technical Working Group", "Various (contributions to First Nations observations)",
   "Victoria Postlethwaite", "DFO Fisheries Management, Pacific Region (reviewer)",
   "Bryan Rusch", "DFO Fisheries Management, Pacific Region (reviewer)",  
-  "TBC", "DFO Centre for Science Advice, Pacific Region (editor)")
+  "Lisa Christensen", "DFO Centre for Science Advice, Pacific Region (editor)")
 ```
 
 ```{r, results='asis'}
