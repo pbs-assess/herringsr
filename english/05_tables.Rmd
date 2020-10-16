@@ -716,14 +716,14 @@ Voir le tableau \@ref(tab:decision-prd) pour la description.
 West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:decision-prd) for description.
 In addition, $\SB_\text{AVE}$ is average spawning biomass from 1990 to 1999 (calculated over two herring generations).
-Performance criteria $\SB_t >=0.65 \SB_0$, $\SB_t >=0.75 \SB_0$, and $\SB_t >=0.65 \SB_\text{AVE}$ are proposed by
+Performance criteria $\SB_t >=0.65 \SB_0$, $\SB_t >=0.75 \SB_0$, and $\SB_t >= \SB_\text{AVE}$ are proposed by
 the Nuu-chah-nulth Nations (NCN) as biomass targets at $P >= 50$% and $P >= 75$% levels.
 
 (ref:decision-wcvi-cap-fr) Rendement de la procédure de gestion pour le modèle statistique des prises selon l’âge du hareng du Pacifique dans la
 région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 En outre, $\SB_\text{MOY}$ correspond à la biomasse reproductrice moyenne de 1990 à 1999 (calculée sur deux générations de harengs).
-Les critères de performance $\SB_t >=0,65 \SB_0$, $\SB_t >=0,75 \SB_0$, et $\SB_t >=0,65 \SB_\text{AVE}$ sont proposés par
+Les critères de performance $\SB_t >=0,65 \SB_0$, $\SB_t >=0,75 \SB_0$, et $\SB_t >= \SB_\text{AVE}$ sont proposés par
 les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse au niveaux $P >= 50$% et $P >= 75$%.
 
 \begin{turn}
