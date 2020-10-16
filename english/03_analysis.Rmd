@@ -153,7 +153,7 @@ Ultimately, the estimated weight of mature spawners required to produce the egg 
 Execution of the `r surv_yr_rng[2]` spawn survey followed standard dive survey protocols for SoG, CC, and WCVI SARs as described in @cleary2018, and
 a surface survey protocol was used for HG and PRD SARs due to COVID-19.
 Time series of spawn index by major stock assessment region, from `r paste(surv_yr_rng, collapse=" to ")` are summarized in Figure \@ref(fig:major-spawn-index).
-In `r surv_yr_rng[2]`, there was a notable increase in survey biomass (index values) for HG and SOG SARs (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-hg) & \@ref(tab:spawn-index-sog)),
+In `r surv_yr_rng[2]`, there was a notable increase in survey biomass (index values) for HG and SoG SARs (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-hg) & \@ref(tab:spawn-index-sog)),
 a small increase in survey biomass for WCVI (Figure \@ref(fig:major-spawn-index) and Table \@ref(tab:spawn-index-wcvi)), and
 a small decrease in survey biomass for PRD and CC (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-prd) & \@ref(tab:spawn-index-cc)).
 

@@ -13,7 +13,7 @@ if(.Machine$sizeof.pointer == 4)
 
 ## ------------------------------------------------------------------------------------------------
 ## Directories and names of stocks
-major_stock_dir <- list("HG", "PRD", "CC", "SOG", "WCVI")
+major_stock_dir <- list("HG", "PRD", "CC", "SoG", "WCVI")
 minor_stock_dir <- list("A27", "A2W")
 major_model_dirs <- lapply(1:length(major_stock_dir),
                            function(x){
