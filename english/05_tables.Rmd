@@ -668,7 +668,8 @@ $\SB_0$ is estimated unfished spawning biomass;
 average annual variability (AAV); and
 $\overline{C}$ is average catch.
 MPs are defined in @dfo2019a and @dfo2019c.
-Performance criteria $>= 0.4\SB_0$ is proposed by the Herring Industry Advisory Board (HIAB) as a biomass target at $P >= 50$% level.
+Performance criteria $>= 0.4\SB_0$ is proposed by
+the Herring Industry Advisory Board (HIAB) as a biomass target at $P >= 50$% level.
 Note: dashes indicate that TAC and HR do not apply, either
 because the MP specifies no fishing at current projected biomass level, or
 because the MP fails to meet Objective 1.
@@ -689,7 +690,8 @@ $\SB_0$ est la biomasse reproductrice non pêchée estimée;
 la variabilité annuelle moyenne (VAM); et
 $\overline{C}$ est la prise moyenne.
 Les PGs sont définis dans @dfo2019a et @dfo2019c.
-Le critère de performance $>= 0.4\SB_0$ est proposé par le Conseil consultatif de l'industrie du hareng (HIAB) comme objectif de biomasse au niveau $P >= 50$%.
+Le critère de performance $>= 0.4\SB_0$ est proposé par
+le Conseil consultatif de l'industrie du hareng (HIAB) comme objectif de biomasse au niveau $P >= 50$%.
 Note: les tirets indiquent que le TAC et le TR ne s'appliquent pas non plus
 parce que le PG précise qu'il n'y a pas de pêche au niveau actuel de la biomasse projetée, ou
 parce que le PG n'atteint pas l'objectif 1.
@@ -715,14 +717,14 @@ West Coast of Vancouver Island major stock assessment region.
 See Table \@ref(tab:decision-prd) for description.
 In addition, $\SB_\text{AVE}$ is average spawning biomass from 1990 to 1999 (calculated over two herring generations).
 Performance criteria $>=0.65 \SB_0$, $>=0.75 \SB_0$, and $>=0.65 \SB_\text{AVE}$ are proposed by
-the Nuu-chah-nulth Nations (NCN) as biomass targets at $>= 50$ and $>= 75$% levels.
+the Nuu-chah-nulth Nations (NCN) as biomass targets at $P >= 50$% and $P >= 75$% levels.
 
 (ref:decision-wcvi-cap-fr) Rendement de la procédure de gestion pour le modèle statistique des prises selon l’âge du hareng du Pacifique dans la
 région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 En outre, $\SB_\text{MOY}$ correspond à la biomasse reproductrice moyenne de 1990 à 1999 (calculée sur deux générations de harengs).
 Les critères de performance $>=0,65 \SB_0$, $>=0,75 \SB_0$, et $>=0,65 \SB_\text{AVE}$ sont proposés par
-les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse au niveaux $P >= 50$ et $P >= 75$.
+les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse au niveaux $P >= 50$% et $P >= 75$%.
 
 \begin{turn}
 
