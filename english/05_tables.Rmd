@@ -661,6 +661,8 @@ Performance criteria are calculated over three Pacific Herring generations (i.e.
 MPs are ordered within each scenario by performance of achieving Objective 1.
 The recommended total allowable catch (TAC) in thousands of tonnes (t) and associated harvest rate (HR) are reported for each MP.
 Legend: limit reference point (LRP);
+$P$ is probability;
+maximum (max);
 $\SB_t$ is spawning biomass in year $t$;
 $\SB_0$ is estimated unfished spawning biomass;
 $\SB_\text{AVE}$ is average spawning biomass;
@@ -680,6 +682,8 @@ Les critères de rendement sont calculés sur trois générations de hareng du P
 Les PG sont classés à l'intérieur de chaque scénario en fonction de la réalisation de l'objectif 1.
 Le total autorisé des captures (TAC) recommandé en milliers de tonnes (t) et le taux de recolte (TR) associé sont déclarés pour chaque PG.
 Légende: point de référence limite (PRL);
+$P$ est la probabilité;
+maximum (max);
 $\SB_t$ est la biomasse reproductrice de l'année $t$;
 $\SB_0$ est la biomasse reproductrice non pêchée estimée;
 $\SB_\text{MOY}$ est la biomasse reproductrice moyenne;
