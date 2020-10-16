@@ -404,14 +404,15 @@ Notez que seul un sous-ensemble de sections est indiqué.
 yrBreaks <- seq(from = 1950, to = 2020, by = 10)
 qVals <- tibble(Survey = c("Surface", "Dive"),
                 q = major_models[[3]]$mcmccalcs$q.quants[2,])
-dat <- read_csv(file = file.path(data_path, "spawn-yr-sec-cc.csv")) %>%
+dat <- read_csv(file = file.path(data_path, "spawn-yr-sec-cc.csv"),
+                col_types=cols()) %>%
         left_join( y=qVals, by="Survey") %>%
         filter(Section %in% c(67, 72:78, 86)) %>%
         mutate(Survey = factor(Survey, levels = c("Surface", "Dive")),
                Section = formatC(Section, width = 3, format = "d", flag = "0"),
                Biomass = Index / q)
 ggplot(data = dat, mapping = aes(x = Year, y = Biomass)) +
-        geom_point(mapping = aes(shape = Survey), size = 1) +
+        geom_point(mapping = aes(shape = Survey), size = 1, na.rm = TRUE) +
         geom_line(mapping = aes(group = Survey), size = 0.5) +
         labs(x = en2fr("Year", french),
              y = paste0(en2fr("Scaled abundance", french), " (1,000 t)"),
