@@ -1,4 +1,4 @@
-mp,om,label,obj1,obja,obj2,obj2b,obj2c,obj2d,obj3,obj4,catch,esc,abs_esc,hr,cap,num_end_yrs,lrp,usr
+mp,om,label,obj1,hiab,obj2,ncn1,ncn2,ncn3,obj3,obj4,catch,esc,abs_esc,hr,cap,num_end_yrs,lrp,usr
 1,DDM,HS30-60_HR.10_cap2.0,0.91,0.83,0.62,0.55,0.45,0.55,34.71,1.6,0.23,NA,NA,0.1,2,1,0.3,0.6
 2,DDM,HS30-60_HR.15_cap2.0,0.91,0.83,0.61,0.55,0.45,0.55,26.38,1.74,0.22,NA,NA,0.15,2,1,0.3,0.6
 3,DDM,HS50-60_HR.1,0.92,0.83,0.58,0.52,0.4,0.48,55.74,2.47,0.41,NA,NA,0.1,NA,1,0.5,0.6

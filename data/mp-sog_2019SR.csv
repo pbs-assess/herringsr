@@ -1,4 +1,4 @@
-mp,om,label,obj1,obja,obj2,obj3,obj4,catch,esc,abs_esc,hr,cap,num_end_yrs,lrp,usr
+mp,om,label,obj1,hiab,obj2,obj3,obj4,catch,esc,abs_esc,hr,cap,num_end_yrs,lrp,usr
 1,DDM,minE21.2_HR0.2,0.97,0.5,0.78,26.97,39.87,0,21.2,1,0.2,NA,1,NA,NA
 2,DDM,minE21.2_HR0.1,0.99,0.5,0.91,29.64,23.44,0,21.2,1,0.1,NA,1,NA,NA
 4,DDM,minE0.5B0_HR0.2,0.98,0.5,0.79,28.35,39.87,0.03,0.5,0,0.2,NA,1,NA,NA
