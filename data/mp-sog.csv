@@ -19,4 +19,4 @@ mp,om,label,obj1,hiab,obj2,obj3,obj4,catch,esc,abs_esc,hr,cap,num_end_yrs,lrp,us
 4,conM,minE-LRP_HR.1,1,0.98,0.81,30.37,11.25,0.04,0.3,0,0.1,NA,1,NA,NA
 5,conM,minE-LRP_HR.2,0.98,0.93,0.63,32.79,20.31,0.05,0.3,0,0.2,NA,1,NA,NA
 6,conM,HS30-40_HR.3,0.94,0.82,0.45,38.27,27.62,0.06,NA,NA,0.3,NA,1,0.3,0.4
-7,conM,NoFish_FSC,1,1,0.89,0,0.27,1,NA,NA,NA,NA,NA,NA,NA
+7,conM,NoFish_FSC,1,1,0.93,0,0.27,1,NA,NA,NA,NA,NA,NA,NA
