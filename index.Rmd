@@ -13,10 +13,10 @@ approver: |
   Carmel Lowe\
   Regional Director
 # Directrice régionale
-approval_year: 20XX
-approval_month: Month
-# approval_month: Mois
-approval_day: XX
+approval_year: 2020
+approval_month: October
+# approval_month: Octobre
+approval_day: 19
 branch: Science Branch
 region: Pacific Region
 # branch: Secteur des sciences
