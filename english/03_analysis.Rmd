@@ -615,7 +615,7 @@ Improved MP performance in the 2020 update for WCVI, relative to the first WCVI 
 is due to increased spawn index in 2018 and 2019 and increased status relative to $SB_0$. 
 Performance improvement is observed under all 3 scenarios.
 
-In the absence of fishing, spawning biomass in 2020 is forecast at `r f(wcvi_proj_sbt[2])`&nbsp;t (posterior median)
+In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(wcvi_proj_sbt[2])`&nbsp;t (posterior median)
 and is forecast to be below the LRP of $0.3\SB_0$ with `r f(wcvi_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
 Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-wcvi).
