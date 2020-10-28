@@ -2,29 +2,20 @@
 
 La réponse des Sciences de `r assess_yr` comprend une analyse formelle de l’information sur les tendances des stocks dans les principales régions d’évaluation des stocks
 de hareng du Pacifique à l’aide du cadre d’évaluation des stocks examiné en 2017 [@cleary2018]
-et d’une mise à jour de la série chronologique de données jusqu’en 2019.
+et d’une mise à jour de la série chronologique de données jusqu’en `r assess_yr`.
 
 Dans le premier cycle de l’évaluation des stratégies de gestion (ESG) pour Haida Gwaii,
 aucune des procédures de gestion mises à l’essai n’a pu atteindre l’objectif de conservation avec une probabilité d’au moins 75% [@dfo2019c];
-c’est pourquoi des options de récolte ne sont pas proposées pour 2020.
+c’est pourquoi des options de récolte ne sont pas proposées pour `r assess_yr + 1`
 Le MPO s’est engagé à élaborer et à mettre en oeuvre un plan de rétablissement du hareng de Haida Gwaii d’ici la fin de l’exercice financier 2020-2021 et
 appuie les fermetures de la pêche commerciale du hareng dans la région principale de Haida Gwaii jusqu’en avril 2021.
 
-Le processus d’ESG définit une série de procédures de gestion qui répondent à l’objectif de conservation
-avec une probabilité d’au moins 75% pour les zones de gestion du district de Prince Rupert, de la côte centrale et du détroit de Georgia
-pour le scénario de modèle opérationnel de référence [@dfo2019c].
-Les options de récolte en `r assess_yr + 1` pour le district de Prince Rupert, la côte centrale et le détroit de Georgia sont donc présentées en utilisant des procédures de gestion
-qui répondent aux critères minimums de conservation (tableaux \@ref(tab:decision-prd) à \@ref(tab:decision-sog)).
-
-La fermeture de la pêche commerciale a été maintenue dans la zone de gestion de la côte ouest de l’île de Vancouver en 2018-2019
-afin d’appuyer la poursuite du rétablissement.
-Puisque la procédure de gestion la plus performante pour la côte ouest de l’île de Vancouver n’a pas atteint la probabilité «élevée» minimale de 75%,
-il est recommandé de procéder à d’autres essais de simulation des règles de contrôle des prises,
-y compris des mesures supplémentaires pour assurer une croissance persistante des stocks
-et les faire sortir de la zone critique et se rapprocher des cibles fixées pour la biomasse.
-La mise à jour du modèle opérationnel (ajout des données de 2018 et 2019) et l’évaluation d’autres procédures de gestion
-et objectifs (y compris de nouveaux objectifs) sont prévues en 2020-2021.
-La recommandation de récolte pour le stock de la côte ouest de l’île de Vancouver en 2020 est de 0&nbsp;t.
+Le processus MSE identifie une gamme de PG qui répondent à l'objectif de conservation avec une probabilité d'au moins 75%
+pour les zones de gestion DPR, CC, DG, et COIV pour le scénario de référence OM (@dfo2019c; DFO 2020c^\ref{fn:MSESR2020}^).
+Ainsi, les options de récolte ou les calculs de PG pour `r assess_yr + 1` pour ces zones de gestion sont fournis
+en utilisant les PG qui répondent aux critères de conservation minimums dans le scénario de référence de la gestion des océans.
+Les tableaux comprennent également les performances des PG dans le cadre des scénarios MID et MC Robustness OM
+(tableaux \@ref(tab:decision-prd) à \@ref(tab:decision-wcvi)).
 
 L’avis scientifique pour les régions secondaires d’évaluation des stocks se limite à la présentation des données sur les prises,
 des données biologiques et des données d’enquête du frai (\nameref{sec:app-minor}).
