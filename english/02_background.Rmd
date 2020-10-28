@@ -20,9 +20,9 @@ Herring eggs are collected as spawn on seaweed such as kelp, or spawn on set tre
 Indigenous harvest of herring for FSC purposes may occur coast wide where authorized by a communal license.
 
 In addition, Treaty and aboriginal commercial fisheries may occur in some specific management regions.
-Four modern treaties (Nisga’a, Tsawwassen, Maa-nulth, and Tla’amin) have been ratified in British Columbia and articulate a treaty right to FSC harvest of fish.
+Four modern treaties (Nisga'a, Tsawwassen, Maa-nulth, and Tla'amin) have been ratified in British Columbia and articulate a treaty right to FSC harvest of fish.
 On the West Coast of Vancouver Island, five Nuu-chah-nulth First Nations -- 
-Ahousaht, Ehattesaht, Hesquiaht, Mowachaht/Muchalaht, and Tla-o-qui-aht (the T’aaq-wiihak First Nations) --
+Ahousaht, Ehattesaht, Hesquiaht, Mowachaht/Muchalaht, and Tla-o-qui-aht (the T'aaq-wiihak First Nations) --
 have aboriginal rights to fish for any species of fish, with the exception of Geoduck, within their Fishing Territories, and to sell that fish.
 The Department has developed a 2020/21 Five Nations Multi-species Fishery Management Plan (FMP) in consultation with the Five Nations.
 Feedback provided by the Five Nations during consultations was considered and incorporated into the 2020/21 FMP by DFO where possible. 
@@ -45,7 +45,9 @@ The roe, FB and SU fisheries operated in SoG only in `r this_season`.
 Three commercial SOK licences were operational in CC in `r this_season`.
 There were no commercial SOK fisheries in PRD in `r this_season`.
 
-A complete dockside monitoring program exists for all Pacific Herring commercial fisheries and the resulting validated catch data are included in the annual stock assessment process for all fisheries, except SOK.
+A complete dockside monitoring program exists for all Pacific Herring commercial fisheries
+and the resulting validated catch data are included in the annual stock assessment process
+for all fisheries, except SOK.
 
 The exclusion of SOK fishery data from the annual stock assessment process was identified as a key uncertainty in the most recent CSAS review of the stock assessment framework [@cleary2018].
 Recommendations for addressing this uncertainty will require quantifying ponding mortality and removals (eggs) associated with SOK fisheries.
@@ -79,6 +81,8 @@ However, there is little information in the stock assessment data to inform an e
 examination of the Bayes posterior shows the prior is not updated for the HG, CC, SoG, and WCVI SARs, and the estimated value reflects the prior mean [@cleary2018, Appendix D].
 Assuming $q_2 = 1$ produces a "minimum" biomass estimate buffering any other assessment and management implementation errors
 (see @martell2011 and @herring2012).
-Application of AM1 would remove such safeguards despite recent simulation evaluation showing that large (positive) assessment errors are produced by the current assessment model even with $q_2 = 1$ [@dfo2019a].
+Application of AM1 would remove such safeguards despite recent simulation evaluation
+showing that large (positive) assessment errors are produced by the current assessment model
+even with $q_2 = 1$ [@dfo2019a].
 Scaling the assessment with values of $q_2 < 1$ is likely to result in larger absolute assessment errors than those estimated when $q_2 = 1$ [@dfo2019a].
 For these reasons, advice presented here is based on the AM2 parameterization, supported also by comparisons presented in @dfo2016 [, Table A1], and @cleary2018 [, Appendix D].
