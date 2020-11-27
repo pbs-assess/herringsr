@@ -21,7 +21,6 @@ de retarder la formulation d’un avis relatif à l’évaluation des stocks.
 
 Pêches et Océans Canada (MPO) s’est engagé à renouveler le présent cadre de gestion pour s’attaquer
 aux différents enjeux qui touchent les stocks et les pêches de hareng du Pacifique en Colombie Britannique. 
-
 Le renouvellement du cadre de gestion du hareng du Pacifique s’appuie sur une évaluation des
 stratégies de gestion (ESG) afin d’évaluer le rendement des procédures de gestion (PG) proposées par rapport aux hypothèses relatives à la dynamique passée et future des stocks et des pêches. 
 Le but du processus d’ESG consiste à relever les procédures de gestion dont les résultats sont acceptables par rapport aux objectifs de conservation et de gestion des pêches. 
@@ -77,6 +76,7 @@ tandis que les scénarios DIM et conM ont été choisis comme scénarios de mod�
 Toutefois, comme il n’existe actuellement aucune méthode scientifique avérée permettant de prédire la mortalité naturelle, les trois scénarios ont été inclus.
 
 Les analyses effectuées jusqu’à présent dans le cadre des ESG ont permis de tirer plusieurs leçons:
+
 1. Le modèle d’évaluation des prises selon l’âge peut produire d’importantes erreurs (positives) d’évaluation. 
 De telles erreurs d’évaluation entraînent une surestimation de la biomasse féconde et 
 donnent lieu à la recommandation de limites de prises qui font en sorte que le taux de récolte réalisé dépasse la cible voulue, telle qu’elle est précisée par une règle de contrôle des prises (donnant lieu à une surpêche).
