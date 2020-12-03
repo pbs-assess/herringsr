@@ -27,8 +27,8 @@ get_hcr <- function(sbt, sbo, fn){
     arrange(factor(om, levels = c("DDM", "DIM", "conM")),
             desc(obj1),
             desc(obj2)) %>%
-    mutate(tac = NA,
-           targ.hr = NA)
+    mutate(tac = as.double(NA),
+           targ.hr = as.double(NA))
   mp.lst <- NULL
   for(rw in seq_len(nrow(mp))){
     mp.lst[[rw]] <- hcr(sbt, sbo, row = mp[rw,])
@@ -64,8 +64,8 @@ get_hcr_add <- function(sbt, sbo, fn){
     arrange(factor(om, levels = c("DDM", "DIM", "conM")),
             desc(obj1),
             desc(obj2)) %>%
-    mutate(tac = NA,
-           targ.hr = NA)
+    mutate(tac = as.double(NA),
+           targ.hr = as.double(NA))
   mp.lst <- NULL
   for(rw in seq_len(nrow(mp))){
     mp.lst[[rw]] <- hcr(sbt, sbo, row = mp[rw,])
