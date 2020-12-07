@@ -42,13 +42,13 @@ et une évaluation du rendement d’autres procédures de gestion proposées pou
 
 Un ensemble d’objectifs de base en matière de gestion de la pêche [@dfo2019c] a été appliqué à chacune des principales régions d’évaluation des stocks:
 
-1. Maintenir la biomasse du stock reproducteur au-dessus du point de référence limite (PRL) selon une probabilité d’au moins 75 % sur trois générations de hareng du Pacifique 
+1. Maintenir la biomasse du stock reproducteur au-dessus du point de référence limite (PRL) selon une probabilité d’au moins 75% sur trois générations de hareng du Pacifique 
 (c.-à-d. éviter une limite de biomasse; $P(\SB_t > 0.3\SB_0) \geq 0.75$);
 
-1. Maintenir la biomasse du stock reproducteur à un niveau supérieur ou égal au point de référence supérieur (PRS) selon une probabilité d’au moins 50 % sur trois générations de hareng du Pacifique 
+1. Maintenir la biomasse du stock reproducteur à un niveau supérieur ou égal au point de référence supérieur (PRS) selon une probabilité d’au moins 50% sur trois générations de hareng du Pacifique 
 (c.-à-d. atteindre une biomasse cible; $P(\SB_t \geq 0.6\SB_0) \geq 0.5$);
 
-1. Maintenir la variabilité annuelle moyenne des prises à moins de 25 % sur trois générations de hareng du Pacifique 
+1. Maintenir la variabilité annuelle moyenne des prises à moins de 25% sur trois générations de hareng du Pacifique 
 (c.-à-d. un objectif reflétant la variabilité des prises; $\text{AAV} < 0.25$);
 
 1. Optimiser les prises moyennes annuelles sur trois générations de hareng du Pacifique 
@@ -81,7 +81,7 @@ Les analyses effectuées jusqu’à présent dans le cadre des ESG ont permis de
 De telles erreurs d’évaluation entraînent une surestimation de la biomasse féconde et 
 donnent lieu à la recommandation de limites de prises qui font en sorte que le taux de récolte réalisé dépasse la cible voulue, telle qu’elle est précisée par une règle de contrôle des prises (donnant lieu à une surpêche).
 
-1. La réduction du taux de récolte de 20 % à 10 % s’est avérée le moyen le plus efficace d’atténuer 
+1. La réduction du taux de récolte de 20% à 10% s’est avérée le moyen le plus efficace d’atténuer 
 les erreurs d’évaluation des stocks, en réduisant la taille absolue des prises. 
 L’utilisation d’un plafond des prises, mis en œuvre en tant que maximum annuel du niveau de prises, 
 constituait un moyen efficace, sans modèle, d’atténuer davantage les erreurs d’évaluation à des niveaux très élevés de la biomasse. 
@@ -112,7 +112,7 @@ cesserait d’être sensible aux tendances les plus récentes utilisées pour ac
 Trois types de données d’entrée sont utilisées pour l’évaluation des stocks de hareng du Pacifique: les données sur les prises, les données biologiques et les données sur l’abondance. 
 Ces ensembles de données, décrits dans les sections suivantes, sont résumés dans le tableau \@ref(tab:data-input). 
 Le seul changement apporté aux données d’entrée par rapport à l’évaluation précédente a consisté à mettre à jour toutes les séries chronologiques afin d’inclure les données de la saison de hareng `r this_season` (du 1er juillet au 30 juin). 
-Veuillez noter que le présent rapport emploiera le terme « année » plutôt que « saison » du hareng, 
+Veuillez noter que le présent rapport emploiera le terme «année» plutôt que «saison» du hareng, 
 et que `r assess_yr` fait donc référence à la saison `r this_season` du hareng du Pacifique.
 
 ### Données sur les prises
@@ -124,7 +124,7 @@ La pêche commerciale aux œufs sur varech requiert un permis autorisant la coll
 Il est actuellement impossible d’établir avec certitude le taux de mortalité attribuable à cette pêche au sein de la population, mais des méthodes d’estimation de la mortalité attribuable à la pêche aux œufs sur varech sont en cours d’élaboration.
 
 Les prélèvements de la pêche commerciale de `r assess_yr-9` à `r assess_yr`, qu’il s’agisse de hareng rogué, de consommation et d’appât, ou à d’autres fins, figurent au tableau \@ref(tab:annual-catch). 
-À l’échelle de la côte du Pacifique, la proportion de cette récolte provenant du détroit de Georgia est passée de 22 % en 1990 à 100 % en `r assess_yr`. 
+À l’échelle de la côte du Pacifique, la proportion de cette récolte provenant du détroit de Georgia est passée de 22% en 1990 à 100% en `r assess_yr`. 
 La récolte totale d’œufs sur varech (livres du produit validé) dans les principales régions d’évaluation des stocks de `r assess_yr-9` à `r assess_yr` est présentée au tableau \@ref(tab:annual-sok-catch).
 
 ### Données biologiques\label{sec:biol-data}
@@ -147,7 +147,7 @@ L’indice du frai s’appuie sur deux périodes de relevé distinctes définies
 la période du relevé en surface (de `r surv_yr_rng[1]` à `r new_surv_yr - 1`) et 
 la période du relevé en plongée (de `r new_surv_yr` à `r surv_yr_rng[2]`). 
 Les données de ces relevés sont utilisées pour déterminer la densité des œufs par frayère. 
-Ultimement, l’« indice du frai » est le calcul du poids estimatif des reproducteurs matures requis pour produire la ponte observée.
+Ultimement, l’«indice du frai» est le calcul du poids estimatif des reproducteurs matures requis pour produire la ponte observée.
 L’exécution du relevé du frai de `r surv_yr_rng[2]` dans les régions du détroit de Georgia, de la côte centrale et de la côte ouest de l’île de Vancouver a suivi les protocoles de relevé en plongée normalisés décrits dans @cleary2018, 
 mais c’est un protocole de relevé en surface qui a dû être appliqué dans les régions de Haida Gwaii et du district de Prince Rupert en raison de la pandémie de COVID-19. 
 Les séries chronologiques de l’indice du frai de `r paste(surv_yr_rng, collapse=" to ")` pour chaque principale région d’évaluation des stocks sont résumées dans la figure \@ref(fig:major-spawn-index). 
@@ -251,7 +251,7 @@ En `r assess_yr`, on estime que la biomasse du stock reproducteur se situe au-de
 ### District de Prince Rupert
 
 Après avoir atteint des niveaux records d’épuisement au cours des années 1960, la biomasse estimée du stock reproducteur s’était rétablie au milieu des années 1980, 
-s’élevant à environ 50 % du pic historique de la biomasse estimée au début des années 1960 (figure \@ref(fig:storyboard-prd)d). 
+s’élevant à environ 50% du pic historique de la biomasse estimée au début des années 1960 (figure \@ref(fig:storyboard-prd)d). 
 Cependant, après le milieu des années 1980, la biomasse estimée du stock reproducteur a diminué régulièrement avant de se stabiliser à un niveau relativement faible (mais au-dessus des creux historiques) au milieu des années 2000. 
 La biomasse estimée du stock n’a affiché aucune tendance claire entre 2005 et 2018, et a connu une légère augmentation en 2019. 
 La biomasse observée dans le cadre du relevé de 2020 est pratiquement identique à celle de 2019. 
@@ -268,11 +268,11 @@ L’estimation de la mortalité naturelle semble être inchangée par rapport à
 ce qui semble s’être traduit par une légère hausse de la production entre 2018 et 2019, ayant donné lieu à une hausse de la biomasse en 2019 qui s’est poursuivie en 2020.
 
 Selon les estimations du modèle, la biomasse du stock reproducteur en `r assess_yr` se situe à `r paste0("$\\SB_{", assess_yr, "}$")``r f(prd_final_yr_sbt[2])`&nbsp;t (médiane a posteriori), 
-ce qui équivaut à `r f(prd_final_yr_dt[2]*100, 1)` % de $\SB_0$ 
+ce qui équivaut à `r f(prd_final_yr_dt[2]*100, 1)`% de $\SB_0$ 
 (tableaux \@ref(tab:prd-spawning-biomass-depletion) & \@ref(tab:ref-points-prd)). 
 Dans le district de Prince Rupert, la pêche commerciale a été pratiquée chaque année depuis le milieu des années 1980, à l’exception de 2019 et 2020, 
-et le taux de récolte effectif $U_t$ de cette pêche a été estimé à 20 % ou moins (figure \@ref(fig:harvest-rate)) pour toutes les années, sauf 1989. 
-On estime que la biomasse du stock reproducteur en `r assess_yr` est supérieure au PRL à $0.3\SB_0$ selon une probabilité de `r f((1 - prd_prob_less_03sbo) * 100, 1)` % (tableau \@ref(tab:ref-points-prd)). 
+et le taux de récolte effectif $U_t$ de cette pêche a été estimé à 20% ou moins (figure \@ref(fig:harvest-rate)) pour toutes les années, sauf 1989. 
+On estime que la biomasse du stock reproducteur en `r assess_yr` est supérieure au PRL à $0.3\SB_0$ selon une probabilité de `r f((1 - prd_prob_less_03sbo) * 100, 1)`% (tableau \@ref(tab:ref-points-prd)). 
 
 ### Côte centrale
 
@@ -295,9 +295,9 @@ Un examen de la biomasse du hareng par section de hareng montre qu’une augment
 le chenal Spiller (sections 072 et 078) et dans la baie Kitasu (section 067). 
 L’occurrence d’une frayère à Thompson/Stryker (section 074) est le premier frai de taille importante observé depuis plusieurs années (figure \@ref(fig:spawn-section-cc)). 
 
-Une règle de contrôle des prises à seuil fixe a été mise en œuvre en 1986, et l’on estime que, de 1986 à 2007, le taux de récolte effectif $U_t$ a fluctué au-dessus et au-dessous du taux cible de `r target_hr*100` %, 
-les estimations médianes dépassant souvent `r target_hr*100` % (figure \@ref(fig:harvest-rate)). 
-Les occurrences où $U_t$ dépasse le taux de récolte cible de `r target_hr*100` % sont partiellement attribuables à des erreurs positives du modèle d’évaluation et 
+Une règle de contrôle des prises à seuil fixe a été mise en œuvre en 1986, et l’on estime que, de 1986 à 2007, le taux de récolte effectif $U_t$ a fluctué au-dessus et au-dessous du taux cible de `r target_hr*100`%, 
+les estimations médianes dépassant souvent `r target_hr*100`% (figure \@ref(fig:harvest-rate)). 
+Les occurrences où $U_t$ dépasse le taux de récolte cible de `r target_hr*100`% sont partiellement attribuables à des erreurs positives du modèle d’évaluation et 
 à des retards dans la détection de tout changement directionnel dans la tendance.
 
 Après une fermeture de la pêche commerciale de 2007 à 2013 dans la région de la côte centrale, cette pêche a été rouverte en 2014, 
@@ -307,9 +307,9 @@ mais ces prélèvements ne sont pas inclus dans l’estimation de $U_t$.
 La pêche commerciale des œufs sur varech n’a pas été pratiquée dans la région 07 en 2020 en raison de la pandémie de COVID-19.
 
 Selon les estimations du modèle, la biomasse du stock reproducteur en `r assess_yr` se situe à `r paste0("$\\SB_{", assess_yr, "}$")``r f(cc_final_yr_sbt[2])`&nbsp;t (médiane a posteriori), 
-ce qui équivaut à `r f(cc_final_yr_dt[2]*100, 1)` % de $\SB_0$ 
+ce qui équivaut à `r f(cc_final_yr_dt[2]*100, 1)`% de $\SB_0$ 
 (tableaux \@ref(tab:cc-spawning-biomass-depletion) & \@ref(tab:ref-points-cc)).
-On estime que la biomasse du stock reproducteur en `r assess_yr` est supérieure au PRL à $0.3\SB_0$ selon une probabilité de `r f((1 - cc_prob_less_03sbo) * 100, 1)` % (tableau \@ref(tab:ref-points-cc)).
+On estime que la biomasse du stock reproducteur en `r assess_yr` est supérieure au PRL à $0.3\SB_0$ selon une probabilité de `r f((1 - cc_prob_less_03sbo) * 100, 1)`% (tableau \@ref(tab:ref-points-cc)).
 
 ### Détroit de Georgia
 
@@ -329,12 +329,12 @@ en raison du fait que ces poissons d’âge `r age_first` ne sont que partiellem
 Selon l’analyse de la production excédentaire pour l’année de 2019 à 2020, on estime que la région d’évaluation des stocks du détroit de Georgia est dans un état de forte production et de biomasse élevée (figure \@ref(fig:storyboard-sog)f).
 
 Une pêche commerciale dans le détroit de Georgia a été pratiquée chaque année depuis le début des années 1970 (soit depuis le rétablissement du stock après son effondrement à la fin des années 1960). 
-Depuis la mise en œuvre, en 1986, de la règle de contrôle des prises selon un seuil fixe, on estime que le taux de récolte effectif $U_t$ fluctue au-dessus et en dessous du taux cible de `r target_hr*100` %, 
-alors que les estimations médianes ont été supérieures à `r target_hr*100` % en 2005, 2006 et de 2016 à 2018 (figure \@ref(fig:harvest-rate)). 
+Depuis la mise en œuvre, en 1986, de la règle de contrôle des prises selon un seuil fixe, on estime que le taux de récolte effectif $U_t$ fluctue au-dessus et en dessous du taux cible de `r target_hr*100`%, 
+alors que les estimations médianes ont été supérieures à `r target_hr*100`% en 2005, 2006 et de 2016 à 2018 (figure \@ref(fig:harvest-rate)). 
 Selon les estimations du modèle, la biomasse du stock reproducteur en `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, se situait à `r f(sog_final_yr_sbt[2])`&nbsp;t (médiane a posteriori), 
-ce qui équivaut à `r f(sog_final_yr_dt[2]*100, 1)` % de $\SB_0$ 
+ce qui équivaut à `r f(sog_final_yr_dt[2]*100, 1)`% de $\SB_0$ 
 (tableaux \@ref(tab:sog-spawning-biomass-depletion) & \@ref(tab:ref-points-sog)). 
-On estime que la biomasse du stock reproducteur en `r assess_yr` est supérieure au PRL à $0.3\SB_0$ selon une probabilité de `r f((1 - sog_prob_less_03sbo) * 100, 1)` % (tableau \@ref(tab:ref-points-sog)).
+On estime que la biomasse du stock reproducteur en `r assess_yr` est supérieure au PRL à $0.3\SB_0$ selon une probabilité de `r f((1 - sog_prob_less_03sbo) * 100, 1)`% (tableau \@ref(tab:ref-points-sog)).
 
 ### Côte ouest de l’île de Vancouver
 
@@ -349,9 +349,9 @@ Au cours des dernières années, certains signes semblent suggérer une légère
 Les estimations de la production pour l’année 2019-2020 sont à zéro (figure \@ref(fig:storyboard-wcvi)f).
 
 Selon les estimations du modèle, la biomasse du stock reproducteur en `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, se situe à `r f(wcvi_final_yr_sbt[2])`&nbsp;t (médiane a posteriori), 
-ce qui équivaut à `r f(wcvi_final_yr_dt[2]*100, 1)` % de $\SB_0$ 
+ce qui équivaut à `r f(wcvi_final_yr_dt[2]*100, 1)`% de $\SB_0$ 
 (tableaux \@ref(tab:wcvi-spawning-biomass-depletion) et \@ref(tab:ref-points-wcvi)). 
-On estime que la biomasse du stock reproducteur en `r assess_yr` est supérieure au PRL à $0.3\SB_0$ selon une probabilité de `r f((1 - wcvi_prob_less_03sbo) * 100, 1)` % (tableau \@ref(tab:ref-points-wcvi)).
+On estime que la biomasse du stock reproducteur en `r assess_yr` est supérieure au PRL à $0.3\SB_0$ selon une probabilité de `r f((1 - wcvi_prob_less_03sbo) * 100, 1)`% (tableau \@ref(tab:ref-points-wcvi)).
 
 ## Rendement de la gestion
 
@@ -360,14 +360,14 @@ Le taux de récolte effectif estimé $U$ pour chaque année $t$ est calculé sel
 $U_t = C_t/(C_t + \SB_t)$, où 
 $C_t$ représente les prises de l’année 
 $t$, and $\SB_t$ représente la biomasse féconde de l’année $t$. 
-Des séries chronologiques de $U_t$ par rapport au taux de récolte cible de `r target_hr*100` % sont présentées à la figure \@ref(fig:harvest-rate).
+Des séries chronologiques de $U_t$ par rapport au taux de récolte cible de `r target_hr*100`% sont présentées à la figure \@ref(fig:harvest-rate).
 
 ## Application des procédures de gestion et des options de récolte pour `r assess_yr + 1`\label{sec:harv-opts}
 
 Les options de récolte pour `r assess_yr+1` reflètent l’application par simulation des procédures de gestion pour chacune des principales régions d’évaluation des stocks. 
 Les évaluations des procédures de gestion qui sont décrites ci-dessous pour les régions de Haida Gwaii, du district de Prince Rupert et de la côte centrale reflètent l’évaluation de 2019 [@dfo2020a]. 
 Les procédures de gestion incluses pour le détroit de Georgia et la côte ouest de l’île de Vancouver combinent l’information du premier cycle de l’ESG [@dfo2020a] aux évaluations actualisées des procédures de gestion menées en septembre 2020 
-(MPO 2020c, *en préparation.*\footnote{\label{fn:MSESR2020}DFO. 2020c. Updated evaluation of management procedures for Pacific Herring (\emph{Clupea pallasii}) in the Strait of Georgia and the West Coast of Vancouver Island management areas of British Columbia. DFO Can. Sci. Advis. Sec. Sci. Resp. In prep.}). 
+(MPO 2020c, *en préparation.*\footnote{\label{fn:MSESR2020}MPO. 2020c. Updated evaluation of management procedures for Pacific Herring (\emph{Clupea pallasii}) in the Strait of Georgia and the West Coast of Vancouver Island management areas of British Columbia. DFO Can. Sci. Advis. Sec. Sci. Resp. In prep.}). 
 Enfin, un avis scientifique de 2018 a recommandé de mettre fin à l’utilisation de règles de contrôle des prises à seuil fixe historique [@dfo2019a], la procédure de gestion connexe a cessé d’être prise en compte pour l’ensemble des régions d’évaluation des stocks de hareng du Pacifique.
 
 ### Haida Gwaii
@@ -379,20 +379,20 @@ En l’absence de pêche, la biomasse féconde en `r assess_yr + 1` est prévue 
 Les résultats des évaluations par simulation ont révélé qu’aucune des procédures de gestion proposées, 
 y compris celles s’appuyant sur des seuils historiques et celles où aucune pêche n’est pratiquée, 
 n’a obtenu un rendement satisfaisant par rapport à l’objectif de conservation de maintenir la biomasse du stock reproducteur au-dessus du PRL avec une probabilité élevée 
-(au moins 75 %).\footnote{\label{fn:HighProb}``High'' probability is defined as 75 to 95\% by the DFO Decision-making framework (DFO 2009).}
+(au moins 75%).\footnote{\label{fn:HighProb}Le Cadre décisionnel du MPO défnit une probabilité comme étant "élevée" lorsqu’elle se situe entre 75 et 95% (MPO 2009).}
 <!-- TODO: automate the citation in the footnote (\citep{dfo2009}) -->
 
-En l’absence de pêche, la biomasse projetée du stock reproducteur en `r assess_yr + 1` devrait être inférieure à $0.3\SB_0$ avec une probabilité de `r f(hg_prob_proj_less_03sbo * 100, 1)` % (tableau \@ref(tab:ref-points-hg) et figure \@ref(fig:proj-biomass-density)).
+En l’absence de pêche, la biomasse projetée du stock reproducteur en `r assess_yr + 1` devrait être inférieure à $0.3\SB_0$ avec une probabilité de `r f(hg_prob_proj_less_03sbo * 100, 1)`% (tableau \@ref(tab:ref-points-hg) et figure \@ref(fig:proj-biomass-density)).
 
 Le MPO s’est engagé à élaborer et à mettre en œuvre un plan de rétablissement du hareng du Pacifque de Haida Gwaii d’ici la fin de l’exercice 2020-2021.[^RebuildHG] 
 Ces travaux, qui sont en cours, sont menés par un groupe de travail technique composé de membres du Conseil de la Nation Haïda, du MPO et de Parcs Canada. 
-Selon le document « Directives d’élaboration d’un plan de rétablissement conforme à la Politique Cadre de l’approche de précaution: Assurer la croissance d’un stock pour le faire sortir de la zone critique » [@dfo2013], 
+Selon le document «Directives d’élaboration d’un plan de rétablissement conforme à la Politique Cadre de l’approche de précaution: Assurer la croissance d’un stock pour le faire sortir de la zone critique» [@dfo2013], 
 l’objectif principal de tout plan de rétablissement est de promouvoir la croissance du stock pour le sortir de la zone critique (c.-à-d. l’amener au-delà du PRL) en veillant à ce que 
 les prélèvements de toutes les pêches soient maintenus au plus bas niveau possible jusqu’à ce que le stock ait quitté cette zone selon une probabilité élevée. 
 Toutefois, le rétablissement des stocks ne s’arrête pas à ce seul objectif, et le plan de rétablissement visera notamment à 
 déterminer les seuils de biomasse possibles, au-delà du PRL, correspondant à un stock entièrement rétabli.
 
-[^RebuildHG]: En réponse aux recommandations formulées par la Commissaire à l’environnement et au développement durable (CEDD) dans son Rapport no 2 d’octobre 2016 intitulé « Assurer la durabilité des principaux stocks de poissons du Canada – Pêches et Océans Canada », 
+[^RebuildHG]: En réponse aux recommandations formulées par la Commissaire à l’environnement et au développement durable (CEDD) dans son Rapport no 2 d’octobre 2016 intitulé «Assurer la durabilité des principaux stocks de poissons du Canada – Pêches et Océans Canada», 
 le Ministère élaborera des plans de rétablissement visant les principaux stocks de poissons qui se trouvent dans la zone critique de l’approche de précaution, 
 dont le hareng du Pacifque de Haida Gwaii, d’ici la fin de l’exercice 2020-2021.
 
@@ -403,28 +403,28 @@ Le MPO appuie les fermetures de la pêche commerciale du hareng dans la principa
 
 Dans le district de Prince Rupert, la biomasse estimée du stock n’a affiché aucune tendance claire entre 2005 et 2018, et a connu une légère augmentation en 2019. 
 La biomasse observée dans le cadre du relevé de 2020 est presque identique à celle de 2019. 
-Pour le district de Prince Rupert, les procédures de gestion les plus performantes avaient généralement des taux de récolte de 10 % ou moins, mais deux procédures de gestion établissant un taux de récolte de 20 % ont aussi atteint l’objectif de conservation parce qu’elles utilisent un point de contrôle opérationnel (PCO) inférieur plus élevé (voir la section '\nameref{sec:ref-pts}') de $0.5\SB_0$. 
+Pour le district de Prince Rupert, les procédures de gestion les plus performantes avaient généralement des taux de récolte de 10% ou moins, mais deux procédures de gestion établissant un taux de récolte de 20% ont aussi atteint l’objectif de conservation parce qu’elles utilisent un point de contrôle opérationnel (PCO) inférieur plus élevé (voir la section '\nameref{sec:ref-pts}') de $0.5\SB_0$. 
 Ces procédures de gestion entraînent également des fermetures de pêche plus fréquentes, car la biomasse du stock reproducteur chute plus souvent sous le point de contrôle inférieur. 
 Bien que plusieurs procédures de gestion soient en mesure d’atteindre l’objectif de conservation fondamental qui consiste à maintenir la biomasse du stock reproducteur
-au-dessus du PRL selon une probabilité élevée (au moins 75 %)^\ref{fn:HighProb}^, 
+au-dessus du PRL selon une probabilité élevée (au moins 75%)^\ref{fn:HighProb}^, 
 elles impliquent également différents compromis entre la biomasse (p. ex. l’écosystème) et les résultats du rendement. 
 Pour les zones de gestion où plusieurs procédures de gestion atteignent l’objectif de conservation, 
 il est nécessaire d’établir un classement plus détaillé des objectifs qu’il reste à atteindre, afin de présenter aux décideurs un ensemble souple de compromis parmi lesquels choisir. 
 Toutefois, cela n’a pas été fait lors du premier cycle de l’ESG, car un ensemble d’objectifs bien définis n’a pas encore été élaboré pour chacune des zones de gestion.
 
-Les taux de récolte effectifs pour les 10 dernières années sont en moyenne de ~12 % (figure \@ref(fig:harvest-rate)).Pendant cette période, le stock n’a montré aucun signe de croissance avant 2018, et on estime qu’il fluctue autour de $0.3\SB_0$ (figure \@ref(fig:storyboard-prd)d). 
+Les taux de récolte effectifs pour les 10 dernières années sont en moyenne de ~12% (figure \@ref(fig:harvest-rate)).Pendant cette période, le stock n’a montré aucun signe de croissance avant 2018, et on estime qu’il fluctue autour de $0.3\SB_0$ (figure \@ref(fig:storyboard-prd)d). 
 L’épuisement de la biomasse du stock reproducteur a augmenté au-dessus de $0.3\SB_0$ en 2019 et 2020. 
 Bien qu’aucun élément probant n’ait témoigné d’une faible biomasse et d’une faible productivité dans le district de Prince Rupert depuis les 30 dernières années, 
 les régions d’évaluation des stocks adjacentes (Haida Gwaii et la côte centrale) ont affiché depuis les dernières années des périodes prolongées de faible biomasse et de faible productivité, 
 les niveaux élevés de biomasse qu’on y observait précédemment ayant chuté rapidement vers cet état. [@kronlund2017].
 
 En l’absence de pêche, la biomasse estimée du stock reproducteur en `r assess_yr + 1` est prévue à `r f(prd_proj_sbt[2])`&nbsp;t (médiane a posteriori), ce qui est presque identique à la médiane estimée pour `r assess_yr`. 
-Toujours en l’absence de pêche, la biomasse prévue du stock reproducteur en `r assess_yr + 1` devrait être inférieure au PRL de $0.3\SB_0$ selon une probabilité de `r f(prd_prob_proj_less_03sbo * 100, 1)` % (tableau \@ref(tab:ref-points-prd)).
+Toujours en l’absence de pêche, la biomasse prévue du stock reproducteur en `r assess_yr + 1` devrait être inférieure au PRL de $0.3\SB_0$ selon une probabilité de `r f(prd_prob_proj_less_03sbo * 100, 1)`% (tableau \@ref(tab:ref-points-prd)).
 
 Les options de récolte pour `r assess_yr + 1`, découlant de simulations des procédures de gestion, sont présentées au tableau \@ref(tab:decision-prd). 
 Les procédures de gestion et les paramètres de rendement sont présentés selon le même format que celui utilisé en septembre 2019 [@dfo2020a]. 
 Ces options reflètent l’application des procédures de gestion à la biomasse prévue de `r assess_yr + 1` pour le stock du district de Prince Rupert, 
-où chacune de ces procédures de gestion atteint l’objectif de conservation selon une probabilité minimale de 75 % dans le scénario du modèle opérationnel de référence (DDM). 
+où chacune de ces procédures de gestion atteint l’objectif de conservation selon une probabilité minimale de 75% dans le scénario du modèle opérationnel de référence (DDM). 
 Les options de récolte selon les deux scénarios du modèle opérationnel de robustesse sont également incluses. 
 Pour faciliter la comparaison avec les résultats de l’ESG [@dfo2019c], l’ensemble des procédures de gestion et des scénarios énumérés au tableau \@ref(tab:decision-prd) comprennent les paramètres de rendement pour les quatre objectifs principaux.
 
@@ -432,18 +432,18 @@ Pour faciliter la comparaison avec les résultats de l’ESG [@dfo2019c], l’en
 
 Le stock de hareng du Pacifique de la côte centrale est demeuré dans un état de faible biomasse et d’une faible productivité environ de 2005 à 2014. 
 Une tendance à la hausse a toutefois été observée au cours des dernières années, et ce stock affiche généralement une plus grande variabilité (de grandes diminutions ou augmentations) que ce qui était le cas avant 2005. 
-Pour la zone de gestion de la côte centrale, les procédures de gestion qui obtiennent les meilleurs résultats par rapport à l’objectif de conservation ont un taux de récolte de 10 % ou moins et comprennent un éventail de points de contrôle opérationnels parmi lesquels choisir. 
-À l’instar du district de Prince Rupert, les résultats de la simulation relative à la côte centrale indiquent que plusieurs procédures de gestion répondent à l’objectif de conservation de maintenir la biomasse du stock reproducteur au-dessus du PRL avec une probabilité élevée (au moins 75 %).^\ref{fn:HighProb}^. 
+Pour la zone de gestion de la côte centrale, les procédures de gestion qui obtiennent les meilleurs résultats par rapport à l’objectif de conservation ont un taux de récolte de 10% ou moins et comprennent un éventail de points de contrôle opérationnels parmi lesquels choisir. 
+À l’instar du district de Prince Rupert, les résultats de la simulation relative à la côte centrale indiquent que plusieurs procédures de gestion répondent à l’objectif de conservation de maintenir la biomasse du stock reproducteur au-dessus du PRL avec une probabilité élevée (au moins 75%).^\ref{fn:HighProb}^. 
 Pour les zones de gestion où plusieurs procédures de gestion atteignent l’objectif de conservation, il est nécessaire d’établir un classement plus détaillé des objectifs qu’il reste à atteindre, afin de présenter aux décideurs un ensemble souple de compromis parmi lesquels choisir. 
 Toutefois, cela n’a pas été fait lors du premier cycle de l’ESG, car un ensemble d’objectifs bien définis n’a pas encore été élaboré pour chacune des zones de gestion.
 
 En l’absence de pêche, la biomasse du stock reproducteur en `r assess_yr + 1` est prévue à `r f(cc_proj_sbt[2])`&nbsp;t (médiane a posteriori), affichant un déclin de `r f(cc_final_yr_sbt[2])`&nbsp;t à `r assess_yr` (tableau \@ref(tab:ref-points-cc)). 
-Toujours en l’absence de pêche, on estime que la biomasse prévue du stock reproducteur en `r assess_yr + 1` devrait être inférieure au PRL de $0.3\SB_0$ selon une probabilité de `r f(cc_prob_proj_less_03sbo * 100, 1)` %.
+Toujours en l’absence de pêche, on estime que la biomasse prévue du stock reproducteur en `r assess_yr + 1` devrait être inférieure au PRL de $0.3\SB_0$ selon une probabilité de `r f(cc_prob_proj_less_03sbo * 100, 1)`%.
 
 Les options de récolte pour `r assess_yr + 1`, découlant de simulations des procédures de gestion, sont présentées au tableau \@ref(tab:decision-cc). 
 Les procédures de gestion et les paramètres de rendement sont présentés selon le même format que celui utilisé en septembre 2019 [@dfo2020a]. 
 Ces options reflètent l’application des procédures de gestion à la biomasse prévue de `r assess_yr + 1` pour le stock de la côte centrale, 
-où chacune de ces procédures de gestion atteint l’objectif de conservation selon une probabilité minimale de 75 % dans le scénario du modèle opérationnel de référence (DDM). 
+où chacune de ces procédures de gestion atteint l’objectif de conservation selon une probabilité minimale de 75% dans le scénario du modèle opérationnel de référence (DDM). 
 Les options de récolte selon les deux scénarios du modèle opérationnel de robustesse sont également incluses. 
 Pour faciliter la comparaison avec les résultats de l’ESG [@dfo2019c], l’ensemble des procédures de gestion et des scénarios énumérés au tableau \@ref(tab:decision-cc) comprennent les paramètres de rendement pour les quatre objectifs principaux.
 
@@ -452,21 +452,21 @@ Les résultats présentés dans le présent document pourraient contribuer à é
 
 ### Détroit de Georgia
 
-En 2018, des simulations par rétroaction en boucle fermée pour le détroit de Georgia ont montré que toutes les procédures de gestion mises à l’essai pouvaient permettre de maintenir la biomasse du stock reproducteur au-dessus du PRL selon une probabilité de 91 % ou plus, et ce, dans tous les scénarios de modèle opérationnel. 
+En 2018, des simulations par rétroaction en boucle fermée pour le détroit de Georgia ont montré que toutes les procédures de gestion mises à l’essai pouvaient permettre de maintenir la biomasse du stock reproducteur au-dessus du PRL selon une probabilité de 91% ou plus, et ce, dans tous les scénarios de modèle opérationnel. 
 
 Des évaluations par simulation supplémentaires ont été effectuées en 2019 afin d’examiner plus en profondeur le rôle des plafonds des prises dans l’atténuation des erreurs d’évaluation [@dfo2019c]. 
 Une comparaison des plafonds des prises de 30 000&nbsp;t à 5 000&nbsp;t n’a révélé, dans les trois scénarios de modèle opérationnel, aucun gain perceptible quant au rendement en matière de conservation. 
-Les résultats ont aussi montré que les procédures de gestion dont les plafonds des prises sont établis à 20 000&nbsp;t ou moins dépassent rarement le taux de récolte de 20 % pour toute année de projection donnée (des projections échelonnées sur 15 ans).
+Les résultats ont aussi montré que les procédures de gestion dont les plafonds des prises sont établis à 20 000&nbsp;t ou moins dépassent rarement le taux de récolte de 20% pour toute année de projection donnée (des projections échelonnées sur 15 ans).
 
 En septembre 2020, le modèle opérationnel pour le détroit de Georgia été mis à jour afin d’inclure les données des relevés de 2018 à 2020 ainsi que les données biologiques de 2018 et 2019 (MPO 2020 c^\ref{fn:MSESR2020}^). 
-Les simulations par rétroaction en boucle fermée indiquent que les procédures de gestion pour le détroit de Georgia qui établissent des taux de récolte de 10, 15 et 20 % permettent de maintenir la biomasse du stock reproducteur au-dessus du PRL selon une probabilité de 75 à 85 % dans les trois scénarios du modèle opérationnel (tableau \@ref(tab:decision-sog)). 
-Les procédures de gestion établissant un taux de récolte de 30 % n’ont pas atteint l’objectif de conservation ($p$ = 69 % dans le cas du modèle opérationnel de référence).
+Les simulations par rétroaction en boucle fermée indiquent que les procédures de gestion pour le détroit de Georgia qui établissent des taux de récolte de 10, 15 et 20% permettent de maintenir la biomasse du stock reproducteur au-dessus du PRL selon une probabilité de 75 à 85% dans les trois scénarios du modèle opérationnel (tableau \@ref(tab:decision-sog)). 
+Les procédures de gestion établissant un taux de récolte de 30% n’ont pas atteint l’objectif de conservation ($p$ = 69% dans le cas du modèle opérationnel de référence).
 
-En l’absence de pêche, la biomasse féconde prévue en `r assess_yr + 1` est estimée à `r f(sog_proj_sbt[2])`&nbsp;t(médiane a posteriori) et devrait être inférieure au PRL de $0.3\SB_0$ selon une probabilité de `r f(sog_prob_proj_less_03sbo * 100, 1)` %.
+En l’absence de pêche, la biomasse féconde prévue en `r assess_yr + 1` est estimée à `r f(sog_proj_sbt[2])`&nbsp;t(médiane a posteriori) et devrait être inférieure au PRL de $0.3\SB_0$ selon une probabilité de `r f(sog_prob_proj_less_03sbo * 100, 1)`%.
 
 Les options de récolte pour `r assess_yr + 1`, découlant de simulations des procédures de gestion, sont présentées au tableau \@ref(tab:decision-sog). 
 Ces options reflètent l’application des procédures de gestion à la biomasse prévue de `r assess_yr + 1` pour le stock du détroit de Georgia, 
-où chacune de ces procédures de gestion atteint l’objectif de conservation selon une probabilité minimale de 75 % dans le scénario du modèle opérationnel de référence (DDM). 
+où chacune de ces procédures de gestion atteint l’objectif de conservation selon une probabilité minimale de 75% dans le scénario du modèle opérationnel de référence (DDM). 
 Les options de récolte selon les deux scénarios du modèle opérationnel de robustesse sont également incluses. 
 L’ensemble des procédures de gestion et des scénarios énumérés au tableau \@ref(tab:decision-sog) comprennent les paramètres de rendement mis à jour pour les quatre objectifs principaux 
 et selon les trois scénarios de modèle opérationnel (MPO 2020c^\ref{fn:MSESR2020}^).
@@ -476,22 +476,22 @@ et selon les trois scénarios de modèle opérationnel (MPO 2020c^\ref{fn:MSESR2
 Le stock de hareng du Pacifique de la côte ouest de l’île de Vancouver est demeuré dans un état de faible biomasse et de faible productivité environ de 2004 à 2014. 
 Une tendance à la hausse a été observée au cours des dernières années, la biomasse demeurant faible par rapport aux niveaux historiques, oscillant près du PRL de $0.3\SB_0$.
 
-En 2018, les simulations par rétroaction en boucle fermée ont montré que les procédures de gestion pour la côte ouest de l’île de Vancouver pouvaient permettre d’atteindre l’objectif de conservation selon le scénario du modèle opérationnel de référence (selon une probabilité entre 75 % et 87 %), mais que ces procédures n’atteignaient pas l’objectif de conservation dans le cas du scénario du modèle opérationnel de robustesse DIM, où les taux de mortalité naturelle ressembleraient davantage à ceux des 10 dernières années ($p=56$ à 74 %).
+En 2018, les simulations par rétroaction en boucle fermée ont montré que les procédures de gestion pour la côte ouest de l’île de Vancouver pouvaient permettre d’atteindre l’objectif de conservation selon le scénario du modèle opérationnel de référence (selon une probabilité entre 75% et 87%), mais que ces procédures n’atteignaient pas l’objectif de conservation dans le cas du scénario du modèle opérationnel de robustesse DIM, où les taux de mortalité naturelle ressembleraient davantage à ceux des 10 dernières années ($p=56$ à 74%).
 
 En septembre 2020, le modèle opérationnel pour la côte ouest de l’île de Vancouver a été mis à jour afin d’inclure les données des relevés et les données biologiques de 2018 à 2019 (MPO 2020 c^\ref{fn:MSESR2020}^). 
-Les simulations par rétroaction en boucle fermée indiquent que les procédures de gestion pour la côte ouest de l’île de Vancouver qui établissent des taux de récolte de 5, 10 et 15 % permettent de maintenir 
-la biomasse du stock reproducteur au-dessus du PRL selon une probabilité de 81 à 93 % dans les trois scénarios du modèle opérationnel (tableau \@ref(tab:decision-wcvi)). 
+Les simulations par rétroaction en boucle fermée indiquent que les procédures de gestion pour la côte ouest de l’île de Vancouver qui établissent des taux de récolte de 5, 10 et 15% permettent de maintenir 
+la biomasse du stock reproducteur au-dessus du PRL selon une probabilité de 81 à 93% dans les trois scénarios du modèle opérationnel (tableau \@ref(tab:decision-wcvi)). 
 
 Selon la mise à jour de 2020, une amélioration du rendement des procédures de gestion par rapport au premier cycle de l’ESG pour la région d’évaluation de la côte ouest de l’île de Vancouver 
 est attribuable à l’augmentation de l’indice du frai en 2018 et 2019 et à l’amélioration du statut par rapport à $SB_0$. 
 Cette amélioration du rendement est observée dans les trois scénarios.
 
 En l’absence de pêche, la biomasse prévue du stock reproducteur en `r assess_yr + 1` est estimée à `r f(wcvi_proj_sbt[2])`&nbsp;t(médiane a posteriori) 
-et devrait être inférieure au PRL de $0.3\SB_0$ selon une probabilité de `r f(wcvi_prob_proj_less_03sbo * 100, 1)` %.
+et devrait être inférieure au PRL de $0.3\SB_0$ selon une probabilité de `r f(wcvi_prob_proj_less_03sbo * 100, 1)`%.
 
 Les options de récolte pour `r assess_yr + 1`, découlant de simulations des procédures de gestion, sont présentées au tableau \@ref(tab:decision-wcvi). 
 Ces options reflètent l’application des procédures de gestion à la biomasse prévue de `r assess_yr + 1` pour le stock de la côte ouest de l’île de Vancouver, 
-où chacune de ces procédures de gestion atteint l’objectif de conservation selon une probabilité minimale de 75 % dans le scénario du modèle opérationnel de référence (DDM). 
+où chacune de ces procédures de gestion atteint l’objectif de conservation selon une probabilité minimale de 75% dans le scénario du modèle opérationnel de référence (DDM). 
 Les options de récolte selon les deux scénarios du modèle opérationnel de robustesse sont également incluses. 
 L’ensemble des procédures de gestion et des scénarios énumérés au tableau \@ref(tab:decision-wcvi) comprennent les paramètres de rendement mis à jour pour les quatre objectifs principaux 
 et selon les trois scénarios de modèle opérationnel (MPO 2020c^\ref{fn:MSESR2020}^).
