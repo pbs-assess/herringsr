@@ -11,7 +11,7 @@ Le MPO s’est engagé à élaborer et à mettre en oeuvre un plan de rétabliss
 appuie les fermetures de la pêche commerciale du hareng dans la région principale de Haida Gwaii jusqu’en avril 2021.
 
 Le processus MSE identifie une gamme de PG qui répondent à l'objectif de conservation avec une probabilité d'au moins 75%
-pour les zones de gestion DPR, CC, DG, et COIV pour le scénario de référence OM (@dfo2019c; DFO 2020c^\ref{fn:MSESR2020}^).
+pour les zones de gestion DPR, CC, DG, et COIV pour le scénario de référence OM (@dfo2019c; MPO 2020c^\ref{fn:MSESR2020}^).
 Ainsi, les options de récolte ou les calculs de PG pour `r assess_yr + 1` pour ces zones de gestion sont fournis
 en utilisant les PG qui répondent aux critères de conservation minimums dans le scénario de référence de la gestion des océans.
 Les tableaux comprennent également les performances des PG dans le cadre des scénarios MID et MC Robustness OM
