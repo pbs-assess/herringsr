@@ -267,7 +267,7 @@ Les prises commerciales de 2007 à 2018 sont demeurées faibles (moins de 2 000&
 L’estimation de la mortalité naturelle semble être inchangée par rapport à l’an dernier, 
 ce qui semble s’être traduit par une légère hausse de la production entre 2018 et 2019, ayant donné lieu à une hausse de la biomasse en 2019 qui s’est poursuivie en 2020.
 
-Selon les estimations du modèle, la biomasse du stock reproducteur en `r assess_yr` se situe à `r paste0("$\\SB_{", assess_yr, "}$")``r f(prd_final_yr_sbt[2])`&nbsp;t (médiane a posteriori), 
+Selon les estimations du modèle, la biomasse du stock reproducteur en `r assess_yr` `r paste0("$\\SB_{", assess_yr, "}$")` se situe à `r f(prd_final_yr_sbt[2])`&nbsp;t (médiane a posteriori), 
 ce qui équivaut à `r f(prd_final_yr_dt[2]*100, 1)`% de $\SB_0$ 
 (tableaux \@ref(tab:prd-spawning-biomass-depletion) & \@ref(tab:ref-points-prd)). 
 Dans le district de Prince Rupert, la pêche commerciale a été pratiquée chaque année depuis le milieu des années 1980, à l’exception de 2019 et 2020, 
@@ -306,7 +306,7 @@ Une pêche commerciale d’œufs sur varech a été pratiquée chaque année de 
 mais ces prélèvements ne sont pas inclus dans l’estimation de $U_t$. 
 La pêche commerciale des œufs sur varech n’a pas été pratiquée dans la région 07 en 2020 en raison de la pandémie de COVID-19.
 
-Selon les estimations du modèle, la biomasse du stock reproducteur en `r assess_yr` se situe à `r paste0("$\\SB_{", assess_yr, "}$")``r f(cc_final_yr_sbt[2])`&nbsp;t (médiane a posteriori), 
+Selon les estimations du modèle, la biomasse du stock reproducteur en `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")` se situe à `r f(cc_final_yr_sbt[2])`&nbsp;t (médiane a posteriori), 
 ce qui équivaut à `r f(cc_final_yr_dt[2]*100, 1)`% de $\SB_0$ 
 (tableaux \@ref(tab:cc-spawning-biomass-depletion) & \@ref(tab:ref-points-cc)).
 On estime que la biomasse du stock reproducteur en `r assess_yr` est supérieure au PRL à $0.3\SB_0$ selon une probabilité de `r f((1 - cc_prob_less_03sbo) * 100, 1)`% (tableau \@ref(tab:ref-points-cc)).
@@ -490,7 +490,7 @@ En l’absence de pêche, la biomasse prévue du stock reproducteur en `r assess
 et devrait être inférieure au PRL de $0.3\SB_0$ selon une probabilité de `r f(wcvi_prob_proj_less_03sbo * 100, 1)`%.
 
 Les options de récolte pour `r assess_yr + 1`, découlant de simulations des procédures de gestion, sont présentées au tableau \@ref(tab:decision-wcvi). 
-Ces options reflètent l’application des procédures de gestion à la biomasse prévue de `r assess_yr + 1` pour le stock de la côte ouest de l’île de Vancouver, 
+Ces options reflètent l’application des procédures de gestion à la biomasse prévue de `r assess_yr + 1` pour le stock de la côte ouest de l’île de Vancouver,
 où chacune de ces procédures de gestion atteint l’objectif de conservation selon une probabilité minimale de 75% dans le scénario du modèle opérationnel de référence (DDM). 
 Les options de récolte selon les deux scénarios du modèle opérationnel de robustesse sont également incluses. 
 L’ensemble des procédures de gestion et des scénarios énumérés au tableau \@ref(tab:decision-wcvi) comprennent les paramètres de rendement mis à jour pour les quatre objectifs principaux 
