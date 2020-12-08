@@ -7,7 +7,7 @@ contributors <- tibble::tribble(
   "Sarah Hawkshaw", "Secteur des sciences du MPO, région du Pacifique",
   "Matthew Grinnell", "Secteur des sciences du MPO, région du Pacifique",
   "Chris Grandin", "Secteur des sciences du MPO, région du Pacifique (support analytique)",
-  "Groupe de travail technique sur le hareng", "Divers (contributions aux observations des Premières Nations)",
+  # "Groupe de travail technique sur le hareng", "Divers (contributions aux observations des Premières Nations)",
   "Victoria Postlethwaite", "Gestion des pêches du MPO, Région du Pacifique (réviseur)",
   "Bryan Rusch", "Gestion des pêches du MPO, Région du Pacifique (réviseur)",  
   "Lisa Christensen", "Centre des avis scientifiques du Pacifique, MPO (rédactrice)")
