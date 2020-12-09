@@ -32,8 +32,8 @@ licensing and designations,
 fishing area,
 harvesting opportunities,
 as well as fishery monitoring and catch reporting. 
-For further information see the FMP 
-(\link{http://waves-vagues.dfo-mpo.gc.ca/Library/40869374.pdf}{http://waves-vagues.dfo-mpo.gc.ca/Library/40869374.pdf}).
+For further information
+\link{http://waves-vagues.dfo-mpo.gc.ca/Library/40869374.pdf}{see the FMP}.
 
 On the Central Coast, Heiltsuk First Nation have an Aboriginal right to commercially fish herring SOK.
 The Heiltsuk currently hold nine SOK licenses in this area, and SOK is harvested using the preferred means of the Heiltsuk, which is open ponding.

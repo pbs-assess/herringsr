@@ -35,8 +35,8 @@ les licences et les désignations,
 zone de pêche,
 la récolte d'opportunités,
 ainsi que la surveillance de la pêche et la déclaration des captures. 
-Pour de plus amples informations, voir le PGP 
-(\link{http://waves-vagues.dfo-mpo.gc.ca/Library/40869374.pdf}{http://waves-vagues.dfo-mpo.gc.ca/Library/40869374.pdf}).
+Pour de plus amples informations,
+\link{http://waves-vagues.dfo-mpo.gc.ca/Library/40869374.pdf}{voir le PGP}.
 
 Sur la côte centrale, la Première Nation Heiltsuk a le droit ancestral de pêcher le hareng à des fins commerciales.
 Les Heiltsuk détiennent actuellement neuf permis de récolte de la rogue sur varech dans cette région.
