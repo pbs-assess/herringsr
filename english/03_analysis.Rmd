@@ -230,21 +230,21 @@ Analyses of stock trend information for AM2 are presented following methods of @
 Perceptions of stock status based on outputs from the SCA model (AM2) are summarized for each stock in a multi-panel figure (e.g., Figure \@ref(fig:storyboard-hg)).
 The panels show:
 
-(a) Time series of model fit to scaled spawn survey data,\label{item:storyIndex}
+a. Time series of model fit to scaled spawn survey data,\label{item:storyIndex}
 
-(a) Time series of instantaneous natural mortality rate $M$ estimates,
+a. Time series of instantaneous natural mortality rate $M$ estimates,
 
-(a) Time series reconstruction of number of age-`r age_first` recruits,
+a. Time series reconstruction of number of age-`r age_first` recruits,
 
-(a) Time series of estimated spawning biomass $\SB_t$ and total catch $C_t$ in year $t$,
+a. Time series of estimated spawning biomass $\SB_t$ and total catch $C_t$ in year $t$,
 with reference lines at model estimates of $0.3\SB_0$,
 
-(a) Time series of (log) deviations from the estimated Beverton-Holt recruitment function, and
+a. Time series of (log) deviations from the estimated Beverton-Holt recruitment function, and
 
-(a) Phase plot of spawning biomass production ($\frac{\SB_{t+1} - \SB_t + C_{t+1}}{\SB_t}$) for the dive survey period,
+a. Phase plot of spawning biomass production ($\frac{\SB_{t+1} - \SB_t + C_{t+1}}{\SB_t}$) for the dive survey period,
 with reference lines at model estimates of $0.3\SB_0$.\label{item:storyPhase}
 
-Note that spawn survey data (i.e., spawn index) is scaled to abundance in panel \ref{item:storyIndex} by the spawn survey scaling parameter $q$.
+Note that spawn survey data (i.e., spawn index) is scaled to abundance in panel (a) by the spawn survey scaling parameter $q$.
 The spawn index has two distinct periods defined by the dominant survey method: 
 surface surveys (`r surv_yr_rng[1]` to `r new_surv_yr - 1`), and 
 dive surveys (`r new_surv_yr` to `r surv_yr_rng[2]`).

@@ -176,20 +176,20 @@ Les analyses de l’information sur les tendances des stocks pour le modèle d�
 Les perceptions de l’état des stocks fondées sur les résultats du modèle statistique des prises selon l’âge (ME2) sont résumées pour chaque stock dans une figure à multiples panneaux (p. ex. la figure \@ref(fig:storyboard-hg)). 
 Ces panneaux indiquent ce qui suit:
 
-(a) La série chronologique des données de relevé du frai ajustées au modèle;\label{item:storyIndex}
+a. La série chronologique des données de relevé du frai ajustées au modèle;\label{item:storyIndex}
 
-(a) La série chronologique des estimations instantanées du taux de mortalité naturelle $M$;
+a. La série chronologique des estimations instantanées du taux de mortalité naturelle $M$;
 
-(a) La reconstitution des séries chronologiques du nombre selon l’âge `r age_first`des recrues;
+a. La reconstitution des séries chronologiques du nombre selon l’âge `r age_first`des recrues;
 
-(a) La série chronologique de la biomasse estimée du stock reproducteur $\SB_t$ et des prises totales $C_t$ pour l’année $t$, avec lignes de référence aux estimations du modèle de $0.3\SB_0$;
+a. La série chronologique de la biomasse estimée du stock reproducteur $\SB_t$ et des prises totales $C_t$ pour l’année $t$, avec lignes de référence aux estimations du modèle de $0.3\SB_0$;
 
-(a) La série chronologique des écarts (logarithmiques) par rapport à la fonction de recrutement de Beverton-Holt estimée;
+a. La série chronologique des écarts (logarithmiques) par rapport à la fonction de recrutement de Beverton-Holt estimée;
 
-(a) Le diagramme de phase de la production de la biomasse du stock reproducteur ($\frac{\SB_{t+1} - \SB_t + C_{t+1}}{\SB_t}$) pour la période de relevé en plongée, 
+a. Le diagramme de phase de la production de la biomasse du stock reproducteur ($\frac{\SB_{t+1} - \SB_t + C_{t+1}}{\SB_t}$) pour la période de relevé en plongée, 
 avec lignes de référence aux estimations du modèle de $0.3\SB_0$.\label{item:storyPhase}.
 
-Il convient de souligner que les données du relevé du frai (c.-à-d. l’indice du frai) du panneau \ref{item:storyIndex} sont ajustées à l’abondance au moyen du paramètre de mise à l’échelle du relevé du frai $q$. 
+Il convient de souligner que les données du relevé du frai (c.-à-d. l’indice du frai) du panneau (a) sont ajustées à l’abondance au moyen du paramètre de mise à l’échelle du relevé du frai $q$. 
 L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante: 
 les relevés en surface(`r surv_yr_rng[1]` à `r new_surv_yr - 1`) et 
 les relevés en plongée (`r new_surv_yr` à `r surv_yr_rng[2]`). 
