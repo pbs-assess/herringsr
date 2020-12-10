@@ -35,5 +35,5 @@ les options de la procédure de gestion et les recommandations sur les avis de r
 le cas échéant, les recommandations issues des analyses de l’ESG 2018, 2019, et 2020 susmentionnées.
 Ces recommandations sont décrites dans la section ‘\nameref{sec:harv-opts}.’
 
-La présente réponse des Sciences découle du processus de réponse des Sciences du 30 septembre 2020
-sur la Mise à jour de l’état des stocks avec application des procédures de gestion pour le hareng du Pacifique en Colombie¬-Britannique: État en `r assess_yr` et prévisions pour `r assess_yr + 1`.
+La présente réponse des Sciences découle du processus de réponse des Sciences du 30 septembre 2020 sur la
+Mise à jour concernant l’état des stocks et application de procédures de gestion pour le hareng du Pacifique en Colombie-Britannique: État en `r assess_yr` et prévisions pour `r assess_yr + 1`.
