@@ -106,7 +106,7 @@ theme_set(herring_theme())
 \newcommand{\AVE}{\text{`r en2fr("AVE", translate = french)`}}
 
 <!-- Space between table columns -->
-\setlength{\tabcolsep}{3pt}
+\setlength{\tabcolsep}{3.5pt}
 
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->
