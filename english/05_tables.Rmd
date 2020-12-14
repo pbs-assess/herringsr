@@ -38,6 +38,8 @@ total_landed_catch_table(tab = major_catch_short,
                          translate = french)
 ```
 
+\clearpage
+
 (ref:annual-sok-catch-cap) Total Pacific Herring spawn-on-kelp harvest, reported as pounds of eggs on kelp, from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the major stock assessment regions (SARs).
 Legend: `r commify(major_regions_full_parens)`.
 Note: 'WP' indicates that data are withheld due to privacy concerns.
@@ -86,12 +88,12 @@ spawn_index_by_area_table(ps[[en2fr("HG", french)]],
 
 \clearpage
 
-(ref:spawn-index-pr-cap) Pacific Herring spawn index in tonnes, and proportion of the spawn index by Statistical Area
+(ref:spawn-index-prd-cap) Pacific Herring spawn index in tonnes, and proportion of the spawn index by Statistical Area
 from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the 
 Prince Rupert District major stock assessment region.
 See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-pr-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le
+(ref:spawn-index-prd-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par zone statistique pour le
 hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la 
 région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
@@ -99,8 +101,8 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 ```{r spawn-index-prd}
 spawn_index_by_area_table(ps[[en2fr("PRD", french)]],
                           cap = ifelse(french,
-                                       "(ref:spawn-index-pr-cap-fr)",
-                                       "(ref:spawn-index-pr-cap)"),
+                                       "(ref:spawn-index-prd-cap-fr)",
+                                       "(ref:spawn-index-prd-cap)"),
                           first_yr = major_end_yr-num_yrs_tab,
                           translate = french)
 ```
@@ -171,6 +173,8 @@ spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
                           first_yr = major_end_yr-num_yrs_tab,
                           translate = french)
 ```
+
+\clearpage
 
 (ref:hg-parameter-est-cap) Posterior (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ percentile) and
 maximum posterior density (MPD) estimates of key parameters for the
