@@ -11,4 +11,5 @@ del HerringSR.utf8.md
 
 rmdir /S /Q csas-style
 rmdir /S /Q knitr-figs-pdf
+rmdir /S /Q knitr-figs-docx
 rmdir /S /Q _book
