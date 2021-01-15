@@ -97,7 +97,6 @@ L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de 
 ```{r major-spawn-index, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-spawn-index-cap-fr)", "(ref:major-spawn-index-cap)")}
 plot_spawn_ind(df = major_surv,
                xlim = c(major_start_yr, major_end_yr),
-               new_surv_yr = new_surv_yr,
                translate = french)
 ```
 
@@ -111,9 +110,7 @@ ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                 major_models[[model_ind]],
                                 surv_type,
-                                new_surv_yr = new_surv_yr,
                                 xlim = xlim_all,
-                                show_x_axis = FALSE,
                                 translate = french)
 ```
 
@@ -121,7 +118,6 @@ plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_fu
 ```{r natural-mortality-hg, fig.show = "hide", fig.asp = 1}
 plot_b <- plot_natural_mortality(major_models[[model_ind]],
                                  xlim = xlim_all,
-                                 show_x_axis = FALSE,
                                  translate = french)
 ```
 
@@ -129,7 +125,6 @@ plot_b <- plot_natural_mortality(major_models[[model_ind]],
 ```{r recruitment-hg, fig.show = "hide", fig.asp = 1}
 plot_c <- plot_recruitment(major_models[[model_ind]],
                            xlim = xlim_all,
-                           show_x_axis = FALSE,
                            translate = french)
 ```
 
@@ -138,7 +133,6 @@ plot_c <- plot_recruitment(major_models[[model_ind]],
 plot_d <- plot_biomass_catch(major_models[[model_ind]],
                              catch_df = ct,
                              xlim = xlim_all,
-                             show_x_axis = FALSE,
                              translate = french)
 ```
 
@@ -154,7 +148,6 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
 ```{r biomass-phase-hg, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              catch_df = ct,
-                             new_surv_yr = new_surv_yr,
                              translate = french)
 ```
 
@@ -226,9 +219,7 @@ ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                 major_models[[model_ind]],
                                 surv_type,
-                                new_surv_yr = new_surv_yr,
                                 xlim = xlim_all,
-                                show_x_axis = FALSE,
                                 translate = french)
 ```
 
@@ -236,7 +227,6 @@ plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_fu
 ```{r natural-mortality-prd, fig.show = "hide", fig.asp = 1}
 plot_b <- plot_natural_mortality(major_models[[model_ind]],
                                  xlim = xlim_all,
-                                 show_x_axis = FALSE,
                                  translate = french)
 ```
 
@@ -244,7 +234,6 @@ plot_b <- plot_natural_mortality(major_models[[model_ind]],
 ```{r recruitment-prd, fig.show = "hide", fig.asp = 1}
 plot_c <- plot_recruitment(major_models[[model_ind]],
                            xlim = xlim_all,
-                           show_x_axis = FALSE,
                            translate = french)
 ```
 
@@ -253,7 +242,6 @@ plot_c <- plot_recruitment(major_models[[model_ind]],
 plot_d <- plot_biomass_catch(major_models[[model_ind]],
                              catch_df = ct,
                              xlim = xlim_all,
-                             show_x_axis = FALSE,
                              translate = french)
 ```
 
@@ -269,7 +257,6 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
 ```{r biomass-phase-prd, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              catch_df = ct,
-                             new_surv_yr = new_surv_yr,
                              translate = french)
 ```
 
@@ -308,9 +295,7 @@ ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                 major_models[[model_ind]],
                                 surv_type,
-                                new_surv_yr = new_surv_yr,
                                 xlim = xlim_all,
-                                show_x_axis = FALSE,
                                 translate = french)
 ```
 
@@ -318,7 +303,6 @@ plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_fu
 ```{r natural-mortality-cc, fig.show = "hide", fig.asp = 1}
 plot_b <- plot_natural_mortality(major_models[[model_ind]],
                                  xlim = xlim_all,
-                                 show_x_axis = FALSE,
                                  translate = french)
 ```
 
@@ -326,7 +310,6 @@ plot_b <- plot_natural_mortality(major_models[[model_ind]],
 ```{r recruitment-cc, fig.show = "hide", fig.asp = 1}
 plot_c <- plot_recruitment(major_models[[model_ind]],
                            xlim = xlim_all,
-                           show_x_axis = FALSE,
                            translate = french)
 ```
 
@@ -335,7 +318,6 @@ plot_c <- plot_recruitment(major_models[[model_ind]],
 plot_d <- plot_biomass_catch(major_models[[model_ind]],
                              catch_df = ct,
                              xlim = xlim_all,
-                             show_x_axis = FALSE,
                              translate = french)
 ```
 
@@ -351,7 +333,6 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
 ```{r biomass-phase-cc, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              catch_df = ct,
-                             new_surv_yr = new_surv_yr,
                              translate = french)
 ```
 
@@ -435,9 +416,7 @@ ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                 major_models[[model_ind]],
                                 surv_type,
-                                new_surv_yr = new_surv_yr,
                                 xlim = xlim_all,
-                                show_x_axis = FALSE,
                                 translate = french)
 ```
 
@@ -445,7 +424,6 @@ plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_fu
 ```{r natural-mortality-sog, fig.show = "hide", fig.asp = 1}
 plot_b <- plot_natural_mortality(major_models[[model_ind]],
                                  xlim = xlim_all,
-                                 show_x_axis = FALSE,
                                  translate = french)
 ```
 
@@ -453,7 +431,6 @@ plot_b <- plot_natural_mortality(major_models[[model_ind]],
 ```{r recruitment-sog, fig.show = "hide", fig.asp = 1}
 plot_c <- plot_recruitment(major_models[[model_ind]],
                            xlim = xlim_all,
-                           show_x_axis = FALSE,
                            translate = french)
 ```
 
@@ -462,7 +439,6 @@ plot_c <- plot_recruitment(major_models[[model_ind]],
 plot_d <- plot_biomass_catch(major_models[[model_ind]],
                              catch_df = ct,
                              xlim = xlim_all,
-                             show_x_axis = FALSE,
                              translate = french)
 ```
 
@@ -478,7 +454,6 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
 ```{r biomass-phase-sog, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              catch_df = ct,
-                             new_surv_yr = new_surv_yr,
                              translate = french)
 ```
 
@@ -517,9 +492,7 @@ ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                 major_models[[model_ind]],
                                 surv_type,
-                                new_surv_yr = new_surv_yr,
                                 xlim = xlim_all,
-                                show_x_axis = FALSE,
                                 translate = french)
 ```
 
@@ -527,7 +500,6 @@ plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_fu
 ```{r natural-mortality-wcvi, fig.show = "hide", fig.asp = 1}
 plot_b <- plot_natural_mortality(major_models[[model_ind]],
                                  xlim = xlim_all,
-                                 show_x_axis = FALSE,
                                  translate = french)
 ```
 
@@ -535,7 +507,6 @@ plot_b <- plot_natural_mortality(major_models[[model_ind]],
 ```{r recruitment-wcvi, fig.show = "hide", fig.asp = 1}
 plot_c <- plot_recruitment(major_models[[model_ind]],
                            xlim = xlim_all,
-                           show_x_axis = FALSE,
                            translate = french)
 ```
 
@@ -544,7 +515,6 @@ plot_c <- plot_recruitment(major_models[[model_ind]],
 plot_d <- plot_biomass_catch(major_models[[model_ind]],
                              catch_df = ct,
                              xlim = xlim_all,
-                             show_x_axis = FALSE,
                              translate = french)
 ```
 
@@ -560,7 +530,6 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
 ```{r biomass-phase-wcvi, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              catch_df = ct,
-                             new_surv_yr = new_surv_yr,
                              translate = french)
 ```
 
