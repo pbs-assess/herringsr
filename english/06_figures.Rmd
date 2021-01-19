@@ -111,6 +111,7 @@ ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                 major_models[[model_ind]],
                                 surv_type,
+                                new_surv_yr = new_surv_yr,
                                 xlim = xlim_all,
                                 translate = french)
 ```
@@ -149,6 +150,7 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
 ```{r biomass-phase-hg, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              catch_df = ct,
+                             new_surv_yr = new_surv_yr,
                              translate = french)
 ```
 
@@ -220,6 +222,7 @@ ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                 major_models[[model_ind]],
                                 surv_type,
+                                new_surv_yr = new_surv_yr,
                                 xlim = xlim_all,
                                 translate = french)
 ```
@@ -258,6 +261,7 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
 ```{r biomass-phase-prd, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              catch_df = ct,
+                             new_surv_yr = new_surv_yr,
                              translate = french)
 ```
 
@@ -296,6 +300,7 @@ ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                 major_models[[model_ind]],
                                 surv_type,
+                                new_surv_yr = new_surv_yr,
                                 xlim = xlim_all,
                                 translate = french)
 ```
@@ -334,6 +339,7 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
 ```{r biomass-phase-cc, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              catch_df = ct,
+                             new_surv_yr = new_surv_yr,
                              translate = french)
 ```
 
@@ -417,6 +423,7 @@ ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                 major_models[[model_ind]],
                                 surv_type,
+                                new_surv_yr = new_surv_yr,
                                 xlim = xlim_all,
                                 translate = french)
 ```
@@ -455,6 +462,7 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
 ```{r biomass-phase-sog, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              catch_df = ct,
+                             new_surv_yr = new_surv_yr,
                              translate = french)
 ```
 
@@ -493,6 +501,7 @@ ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                 major_models[[model_ind]],
                                 surv_type,
+                                new_surv_yr = new_surv_yr,
                                 xlim = xlim_all,
                                 translate = french)
 ```
@@ -531,6 +540,7 @@ plot_e <- plot_recruitment_devs(major_models[[model_ind]],
 ```{r biomass-phase-wcvi, fig.show = "hide", fig.asp = 1}
 plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              catch_df = ct,
+                             new_surv_yr = new_surv_yr,
                              translate = french)
 ```
 
