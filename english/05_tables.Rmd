@@ -635,6 +635,7 @@ All biomass numbers are in thousands of tonnes.
 Legend: $\SB_0$ is estimated unfished spawning biomass;
 $\SB_{t}$ is spawning biomass in year $t$; and
 $\SB_{`r assess_yr+1`}$ is projected spawning biomass in `r assess_yr+1` assuming no fishing.
+Note that the age-10 class is a 'plus group' which includes fish ages 10 and older.
 
 (ref:ref-points-hg-cap-fr) Estimations a posteriori (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) des points de référence proposés pour le
 modèle statistique des prises selon l’âge du hareng du Pacifique dans la
@@ -643,6 +644,7 @@ Les chiffres indiqués pour la biomasse sont exprimés en milliers de tonnes.
 Légende: $\SB_0$ est la biomasse reproductrice non-exploitée estimée;
 $\SB_{t}$ est la biomasse reproductrice en année $t$; et
 $\SB_{`r assess_yr+1`}$ est la biomasses reproductrice projetée en supposant qu'il n'y aura pas de pêche en `r assess_yr+1`.
+Notez que la classe des 10 ans est un «groupe plus» qui comprend les poissons âgés de 10 ans et plus.
 
 \needspace{0.35\textheight}
 
