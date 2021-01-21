@@ -835,6 +835,8 @@ les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse au niveaux $P >= 50
 
 \begin{turn}
 
+\setlength{\tabcolsep}{3.5pt}
+
 ```{r decision-prd, results = 'asis', echo = FALSE}
 decision_tables_mp(mp.prd,
                    xcaption = ifelse(french,
@@ -870,6 +872,8 @@ decision_tables_mp_add(mp.wcvi,
                    xlabel = "tab:decision-wcvi",
                    translate = french)
 ```
+
+\setlength{\tabcolsep}{6pt}
 
 \end{turn}
 

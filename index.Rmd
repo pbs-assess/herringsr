@@ -25,6 +25,7 @@ output:
   csasdown::sr_pdf:
    french: false
    prepub: false
+   extra_dependencies: ["needspace", "afterpage"]
 type: sr
 knit: bookdown::render_book
 site: bookdown::bookdown_site
@@ -34,8 +35,6 @@ bibliography: bib/refs.bib
 csl: csl/csas.csl
 lot: true
 lof: true
-header-includes:
-  - \usepackage{needspace}
 ---
 
 ```{r setup, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}
@@ -89,6 +88,7 @@ models_dir <- here::here("models")
 source(here::here("R/model-setup.R"))
 source(here::here("R/variable-setup.R"))
 source(here::here("R/hcr.R"))
+source(here::here("R/temp.R"))
 
 theme_set(herring_theme())
 ```
@@ -104,9 +104,6 @@ theme_set(herring_theme())
 \newcommand{\lognorm}{\text{ln}}
 \newcommand{\SB}{\mli{`r en2fr("SB", translate = french)`}}
 \newcommand{\AVE}{\text{`r en2fr("AVE", translate = french)`}}
-
-<!-- Space between table columns -->
-\setlength{\tabcolsep}{3.5pt}
 
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->
