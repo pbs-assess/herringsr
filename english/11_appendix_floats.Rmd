@@ -1,4 +1,4 @@
-\clearpage
+\afterpage{\clearpage}
 
 ## `r en2fr("Tables", translate=french)`
 
@@ -13,6 +13,8 @@ Légende: `r commify(minor_regions_full_parens, and_word="et")`.
 Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$, et 
 «NA» indique que les données ne sont pas disponibles.
 
+\needspace{0.35\textheight}
+
 ```{r minor-spawn-index-tab}
 spawn_index_table(tab = minor_surv_short,
                   by_vec = minor_regions_short,
@@ -22,7 +24,7 @@ spawn_index_table(tab = minor_surv_short,
                   translate = french)
 ```
 
-\clearpage
+\afterpage{\clearpage}
 
 ## Figures
 
@@ -110,4 +112,4 @@ plot_spawn_ind(df = minor_surv,
                translate = french)
 ```
 
-\clearpage
+\afterpage{\clearpage}

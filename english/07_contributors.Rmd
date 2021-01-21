@@ -1,5 +1,7 @@
 # Contributors
 
+\needspace{0.35\textheight}
+
 ```{r, echo=FALSE, include=FALSE}
 contributors <- tibble::tribble(
   ~"Contributor", ~"Affiliation",

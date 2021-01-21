@@ -1,4 +1,4 @@
-\clearpage
+\afterpage{\clearpage}
 
 # `r en2fr("Tables", translate=french)`
 
@@ -877,4 +877,4 @@ decision_tables_mp_add(mp.wcvi,
 
 \end{turn}
 
-\clearpage
+\afterpage{\clearpage}
