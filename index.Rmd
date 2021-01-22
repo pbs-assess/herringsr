@@ -88,7 +88,6 @@ models_dir <- here::here("models")
 source(here::here("R/model-setup.R"))
 source(here::here("R/variable-setup.R"))
 source(here::here("R/hcr.R"))
-source(here::here("R/temp.R"))
 
 theme_set(herring_theme())
 ```
