@@ -1,6 +1,6 @@
-# Contributors
-
 \needspace{0.35\textheight}
+
+# Contributors
 
 ```{r, echo=FALSE, include=FALSE}
 contributors <- tibble::tribble(

@@ -1,3 +1,5 @@
+\needspace{0.35\textheight}
+
 # Collaborateurs
 
 ```{r, echo=FALSE, include=FALSE}

@@ -611,5 +611,3 @@ $\dot{\gamma}_s$ & & Standard deviation at 50\% maturity for sex $s$\\
 \bottomrule
 \end{tabular}
 \end{table}
-
-\clearpage

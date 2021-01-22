@@ -611,5 +611,3 @@ plot_proj_biomass_density(major_models,
                           refpt = "X03B0",
                           translate = french)
 ```
-
-\clearpage
