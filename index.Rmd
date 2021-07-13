@@ -1,22 +1,22 @@
 ---
-title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2020 and forecast for 2021"
-title_short: "Pacific Herring status in 2020 and forecast for 2021"
-title_other: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique: État en 2020 et prévisions pour 2021"
-# title: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique: État en 2020 et prévisions pour 2021"
-# title_short: "État du hareng du Pacifique en 2020 et prévisions pour 2021"
-# title_other: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2020 and forecast for 2021"
+title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2021 and forecast for 2022"
+title_short: "Pacific Herring status in 2021 and forecast for 2022"
+title_other: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique: État en 2021 et prévisions pour 2022"
+# title: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique: État en 2021 et prévisions pour 2022"
+# title_short: "État du hareng du Pacifique en 2021 et prévisions pour 2022"
+# title_other: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2021 and forecast for 2022"
 work_done_year: 2021
-work_done_month: January
-# work_done_month: Janvier
-report_number: 1
+work_done_month: Month
+# work_done_month: Mois
+report_number: nnn
 approver: |
   Carmel Lowe\
   Regional Director
 # Directrice régionale
-approval_year: 2020
-approval_month: October
-# approval_month: Octobre
-approval_day: 19
+approval_year: 2021
+approval_month: month
+# approval_month: Mois
+approval_day: xx
 branch: Science Branch
 region: Pacific Region
 # branch: Secteur des sciences
