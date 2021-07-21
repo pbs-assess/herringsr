@@ -166,14 +166,8 @@ the choice of spatial grouping reflects spawning behaviour and biology for each 
 
 ## First Nations observations
 
-The onset of the COVID-19 pandemic impacted First Nations participation in herring survey activities as well as participation in FSC harvest. 
-Impacts also extended to DFO Science staff in terms of reduced capacity for external engagement. 
-As such, assembling local observations was not possible for the 2020 season.
-However, discussions with local Nations will proceed with Science and Fisheries Management throughout the consultation period. 
-All efforts will be made to include this information next season.
-
-<!-- This report includes local observations from 2019, provided by First Nations participants through the Herring Technical Working Group. -->
-<!-- This working group, established in 2016, consists of DFO Science, DFO Fisheries Management, as well as technical representatives nominated by numerous coastal First Nations and the herring industry. -->
+The COVID-19 pandemic continues to impact First Nations participation in herring survey activities as well as participation in traditional harvest activities (FSC). 
+Assembling local observations was not possible for the 2020 season, however in 2021, local observations were provided by First Nations participants through the Herring Technical Working Group for most areas.
 
 <!-- ### Haida Gwaii - not provided in 2019 -->
 
@@ -206,23 +200,10 @@ All efforts will be made to include this information next season.
 <!-- The Tla'amin Nation report observing a very minimal spawning activity in Powell River in 2019. -->
 <!-- A single very light spawn occurred in Okeover Inlet with herring eggs occurring on the rocks and seaweed along the beach. -->
 
-<!-- ### West Coast of Vancouver Island -->
+### West Coast of Vancouver Island
 
-<!-- As in most years, small spawning events occurred in Hesquiaht Harbour (Area 24) in January and February, and some February spawning in Areas 23 and 25. -->
-<!-- The main spawning events in all areas were from early to mid-March. -->
-<!-- Nuu-chah-nulth assessment crews found unspawned herring in the eastern part of Area 23 in late March, and a small spawn was reported in early April in Area 23. -->
-<!-- 'Sporadic' was the term most people used to describe herring spawn activity in 2019. -->
 
-<!-- Most spawning events did not cover large areas and were less than a day in duration. -->
-<!-- The exceptions were multi-day spawns around Stuart Bay and Ittatsoo in Area 23 beginning on March 8^th^, and in Hesquiaht Harbour around Anton Spit beginning on March 5^th^. -->
-<!-- There were multiple spawning locations in Area 25 including Nuchatlaht, Esperanza Inlet, Yuquot, and Strange Island. -->
-<!-- Most were small as well, but there were some larger events in a couple of areas, notably around Strange Island, Rosa Island, and Bajo Reef. -->
 
-<!-- Nuu-chah-nulth harvesters set whole trees and lines of tree branches to harvest herring spawn on bough. -->
-<!-- Trees and boughs were set in both usual herring spawning locations, and in active spawning locations in Barkley Sound (Area 23), Clayoquot Sound (Area 24), Nootka Sound, Esperanza Inlet, and Nuchatlitz (Area 25). -->
-<!-- Herring spawn on bough harvests were similar to 2018, mixed. -->
-<!-- In some areas, some trees had four to ten layers on the branches, but most had only one to four layers. -->
-<!-- Despite the efforts, the herring spawn on bough harvests were not sufficient to meet the requests from Nuu-chah-nulth communities. -->
 
 ## Stock status update
 
