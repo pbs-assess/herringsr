@@ -71,17 +71,16 @@ sok_harvest_table(tab = sok,
 from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
 Haida Gwaii major stock assessment region.
 Legend: 'Cumshewa/Selwyn' is Section 023 and 024;
-'Juan Perez/Skincuttle' is Sections 021 and 025;
+'Juan Perez/Skincuttle' is Sections 021 and 025; and
 'Louscoone' is Section 006.
 Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
 (ref:spawn-index-hg-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le
 hareng du Pacifique de `r major_end_yr-num_yrs_tab` à `r major_end_yr` dans la 
 région d’évaluation des stocks majeur de Haida Gwaii.
-Légende: «Cumshewa» est la section 023;
-«Juan Perez/Skincuttle» est les sections 021 et 025;
-«Louscoone» est la section 006; et
-«Selwyn» est la section 024.
+Légende: «Cumshewa/Selwyn» est les section 023 et 024;
+«Juan Perez/Skincuttle» est les sections 021 et 025; et
+«Louscoone» est la section 006.
 Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
 \needspace{0.35\textheight}
