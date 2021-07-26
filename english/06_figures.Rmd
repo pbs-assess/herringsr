@@ -395,6 +395,7 @@ qVals <- tibble(Survey = c("Surface", "Dive"),
 dat <- read_csv(file = file.path(data_path, "spawn-yr-sec-cc.csv"),
                 col_types=cols()) %>%
         left_join( y=qVals, by="Survey") %>%
+        mutate(Section = as.numeric(Section)) %>%
         filter(Section %in% c(67, 72:78, 86)) %>%
         mutate(Survey = factor(Survey, levels = c("Surface", "Dive")),
                Section = formatC(Section, width = 3, format = "d", flag = "0"),
