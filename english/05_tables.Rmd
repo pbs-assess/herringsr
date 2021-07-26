@@ -70,10 +70,9 @@ sok_harvest_table(tab = sok,
 (ref:spawn-index-hg-cap) Pacific Herring spawn index in tonnes, and proportion of the spawn index by Group 
 from `r major_end_yr-num_yrs_tab` to `r major_end_yr` in the
 Haida Gwaii major stock assessment region.
-Legend: 'Cumshewa' is Section 023;
+Legend: 'Cumshewa/Selwyn' is Section 023 and 024;
 'Juan Perez/Skincuttle' is Sections 021 and 025;
-'Louscoone' is Section 006; and
-'Selwyn' is Section 024.
+'Louscoone' is Section 006.
 Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
 (ref:spawn-index-hg-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par groupe pour le
