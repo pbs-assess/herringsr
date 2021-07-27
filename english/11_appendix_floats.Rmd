@@ -13,7 +13,7 @@ Légende: `r commify(minor_regions_full_parens, and_word="et")`.
 Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$, et 
 «NA» indique que les données ne sont pas disponibles.
 
-\needspace{0.35\textheight}
+\needspace{0.4\textheight}
 
 ```{r minor-spawn-index-tab}
 spawn_index_table(tab = minor_surv_short,

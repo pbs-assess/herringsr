@@ -1,4 +1,6 @@
-# Appendix\label{sec:app-minor}
+# Appendix\label{sec:app}
+
+## Minor stock assessment regions\label{sec:app-minor}
 
 We do not conduct formal analyses of stock trend information for the
 `r number_to_word(length(minor_regions_short))`
@@ -8,4 +10,21 @@ We also provide time series of
 landed commercial catch (Figure \@ref(fig:minor-catch)),
 biological data including weight-at-age (Figure \@ref(fig:minor-wa)) and proportion-at-age (Figure \@ref(fig:minor-pa)),
 as well as the spawn index (Figure \@ref(fig:minor-spawn-index-fig))
+from `r minor_start_yr_plot` to `r minor_end_yr`.
+
+## Special areas\label{sec:app-special}
+
+We do not conduct formal analyses of stock trend information for the
+Pacific Herring special area, Area 10 (A10).
+Note that special areas are not SARs;
+therefore they are excluded from regular monitoring and analyses.
+In addition, note that Area 10 is a subset of the Central Coast Sections that
+are outside the official SAR boundary (Sections 101, 102, and 103).
+As with the minor SARs,
+we provide the spawn index from `r minor_end_yr-num_yrs_tab` to `r minor_end_yr`
+(Table \@ref(tab:special-spawn-index-tab)).
+We also provide time series of
+landed commercial catch (Figure \@ref(fig:special-catch)),
+biological data including weight-at-age (Figure \@ref(fig:special-wa)) and proportion-at-age (Figure \@ref(fig:special-pa)),
+as well as the spawn index (Figure \@ref(fig:special-spawn-index-fig))
 from `r minor_start_yr_plot` to `r minor_end_yr`.
