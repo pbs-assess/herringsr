@@ -2,26 +2,25 @@
 
 ## `r en2fr("Tables", translate=french)`
 
-(ref:minor-spawn-index-tab-cap) Pacific Herring spawn index in tonnes from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr` in the minor stock assessment regions (SARs).
-Legend: `r commify(minor_regions_full_parens)`.
-Notes: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$,
-and
-'NA' indicates that data are not available.
+(ref:spawn-index-a27-cap) Pacific Herring spawn index in tonnes, and proportion of the spawn index by Section 
+from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr` in the
+Area 27 minor stock assessment region.
+See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:minor-spawn-index-tab-cap-fr) Indice du frai en tonnes pour le hareng du Pacifique de `r  minor_end_yr-num_yrs_tab` à `r minor_end_yr` dans les régions d’évaluation des stocks (RESs) mineurs.
-Légende: `r commify(minor_regions_full_parens, and_word="et")`.
-Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$, et 
-«NA» indique que les données ne sont pas disponibles.
+(ref:spawn-index-a27-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par section pour
+le hareng du Pacifique de `r  minor_end_yr-num_yrs_tab` à `r minor_end_yr` dans la
+région d’évaluation des stocks mineur de la zone 27.
+Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
-\needspace{0.4\textheight}
+\needspace{0.35\textheight}
 
-```{r minor-spawn-index-tab}
-spawn_index_table(tab = minor_surv_short,
-                  by_vec = minor_regions_short,
-                  first_yr = minor_end_yr-num_yrs_tab,
-                  cap = ifelse(french, "(ref:minor-spawn-index-tab-cap-fr)",
-                               "(ref:minor-spawn-index-tab-cap)"),
-                  translate = french)
+```{r spawn-index-a27}
+spawn_index_by_area_table(ps[[en2fr("A27", french)]],
+                          cap = ifelse(french,
+                                       "(ref:spawn-index-a27-cap-fr)",
+                                       "(ref:spawn-index-a27-cap)"),
+                          first_yr = minor_end_yr-num_yrs_tab,
+                          translate = french)
 ```
 
 \afterpage{\clearpage}
