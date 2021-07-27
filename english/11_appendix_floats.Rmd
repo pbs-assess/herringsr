@@ -25,6 +25,29 @@ spawn_index_by_area_table(ps[[en2fr("A27", french)]],
 
 \afterpage{\clearpage}
 
+(ref:spawn-index-a2w-cap) Pacific Herring spawn index in tonnes, and proportion of the spawn index by Section 
+from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr` in the
+Area 2 West minor stock assessment region.
+See Table \@ref(tab:spawn-index-hg) for description.
+
+(ref:spawn-index-a27-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par section pour
+le hareng du Pacifique de `r  minor_end_yr-num_yrs_tab` à `r minor_end_yr` dans la
+région d’évaluation des stocks mineur de la zone 2 ouest.
+Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
+
+\needspace{0.35\textheight}
+
+```{r spawn-index-a2w}
+spawn_index_by_area_table(ps[[en2fr("A2W", french)]],
+                          cap = ifelse(french,
+                                       "(ref:spawn-index-a2w-cap-fr)",
+                                       "(ref:spawn-index-a2w-cap)"),
+                          first_yr = minor_end_yr-num_yrs_tab,
+                          translate = french)
+```
+
+\afterpage{\clearpage}
+
 ## Figures
 
 (ref:minor-catch-cap) Time series of total landed Pacific Herring catch in thousands of tonnes (t) from `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
