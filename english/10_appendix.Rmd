@@ -10,8 +10,9 @@ from `r minor_end_yr-num_yrs_tab` to `r minor_end_yr` for A27 and A2W
 (Tables \@ref(tab:spawn-index-a27) and \@ref(tab:spawn-index-a2w), respectively).
 We also provide time series of
 landed commercial catch (Figure \@ref(fig:minor-catch)),
-biological data including weight-at-age (Figure \@ref(fig:minor-wa)) and proportion-at-age (Figure \@ref(fig:minor-pa)),
-as well as the spawn index (Figure \@ref(fig:minor-spawn-index-fig))
+biological data including weight-at-age (Figure \@ref(fig:minor-wa)) and
+proportion-at-age (Figure \@ref(fig:minor-pa)),
+as well as spawn index (Figure \@ref(fig:minor-spawn-index-fig))
 from `r minor_start_yr_plot` to `r minor_end_yr`.
 
 ## Special areas\label{sec:app-special}
