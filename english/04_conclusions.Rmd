@@ -16,4 +16,5 @@ Tables also include MP performance under the DIM and conM Robustness OM scenario
 (Tables \@ref(tab:decision-prd) to \@ref(tab:decision-wcvi)).
 
 Science advice for the minor SARs is limited to presentation of
-catch data, biological data, and spawn survey data (\nameref{sec:app-minor}).
+catch data, biological data, and spawn survey data 
+(see Section `\nameref{sec:app-minor}').
