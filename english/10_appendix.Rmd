@@ -19,7 +19,7 @@ Pacific Herring special area, Area 10 (A10).
 Note that special areas are not SARs;
 therefore they are excluded from regular monitoring and analyses.
 In addition, note that Area 10 is a subset of the Central Coast Sections that
-are outside the official SAR boundary (Sections 101, 102, and 103).
+are outside the official Central Coast SAR boundary (Sections 101, 102, and 103).
 As with the minor SARs,
 we provide the spawn index from `r minor_end_yr-num_yrs_tab` to `r minor_end_yr`
 (Table \@ref(tab:special-spawn-index-tab)).
