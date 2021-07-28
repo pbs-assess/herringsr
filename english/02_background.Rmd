@@ -5,7 +5,14 @@ The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
 We conduct formal analyses of stock trend information for the Pacific Herring major SARs.
 For the minor SARs, we present catch data, biological data, and spawn survey data 
-(see Section `\nameref{sec:app-minor}').
+(see Section "\nameref{sec:app-minor}").
+This year we have included similar data for the special area, Area 10
+(see Section "\nameref{sec:app-special}").
+Note that special areas are not SARs;
+therefore they are excluded from regular monitoring and analyses.
+In addition, note that Area 10 is a subset of the Central Coast Sections that
+are outside the official Central Coast SAR boundary (Sections 101, 102, and 103).
+
 
 ## Description of the fishery
 
