@@ -190,6 +190,8 @@ get_vars <- function(region, majors = TRUE, french = FALSE){
   }
   sbt <- models[[model_ind]]$mcmccalcs$sbt.quants
   sbt_yrs <- as.numeric(colnames(sbt))
+  ## Previous year spawning biomass - vector length 4 - 1 = lower, 2 = median, 3 = upper, 4 = mpd
+  prev_yr_sbt <- sbt[, sbt_yrs == (assess_yr - 1)] * 1000
   ## Final year spawning biomass - vector length 4 - 1 = lower, 2 = median, 3 = upper, 4 = mpd
   final_yr_sbt <- sbt[, sbt_yrs == assess_yr] * 1000
   refs <- models[[model_ind]]$mcmccalcs$r.quants
@@ -206,8 +208,9 @@ get_vars <- function(region, majors = TRUE, french = FALSE){
   dt_yrs <- as.numeric(colnames(dt))
   ## Depletion in final year
   final_yr_dt <- dt[, dt_yrs == assess_yr]
-
-  list(final_yr_sbt = final_yr_sbt,
+  ## List to return
+  list(prev_yr_sbt = prev_yr_sbt,
+       final_yr_sbt = final_yr_sbt,
        sbo = sbo,
        prob_less_03sbo = prob_less_03sbo,
        proj_sbt = proj_sbt,
@@ -217,6 +220,7 @@ get_vars <- function(region, majors = TRUE, french = FALSE){
 # -----------------------------------------------------------------------------
 # Haida Gwaii-dependent values
 hg_vars <- get_vars("HG", french = french)
+hg_prev_yr_sbt <- hg_vars[["prev_yr_sbt"]]
 hg_final_yr_sbt <- hg_vars[["final_yr_sbt"]]
 hg_sbo <- hg_vars[["sbo"]]
 hg_prob_less_03sbo <- hg_vars[["prob_less_03sbo"]]
@@ -226,6 +230,7 @@ hg_final_yr_dt <- hg_vars[["final_yr_dt"]]
 # -----------------------------------------------------------------------------
 # Prince Rupert District-dependent values
 prd_vars <- get_vars("PRD", french = french)
+prd_prev_yr_sbt <- prd_vars[["prev_yr_sbt"]]
 prd_final_yr_sbt <- prd_vars[["final_yr_sbt"]]
 prd_sbo <- prd_vars[["sbo"]]
 prd_prob_less_03sbo <- prd_vars[["prob_less_03sbo"]]
@@ -235,6 +240,7 @@ prd_final_yr_dt <- prd_vars[["final_yr_dt"]]
 # -----------------------------------------------------------------------------
 # Central Coast-dependent values
 cc_vars <- get_vars("CC", french = french)
+cc_prev_yr_sbt <- cc_vars[["prev_yr_sbt"]]
 cc_final_yr_sbt <- cc_vars[["final_yr_sbt"]]
 cc_sbo <- cc_vars[["sbo"]]
 cc_prob_less_03sbo <- cc_vars[["prob_less_03sbo"]]
@@ -244,6 +250,7 @@ cc_final_yr_dt <- cc_vars[["final_yr_dt"]]
 # -----------------------------------------------------------------------------
 # Strait of Georgia District-dependent values
 sog_vars <- get_vars("SoG", french = french)
+sog_prev_yr_sbt <- sog_vars[["prev_yr_sbt"]]
 sog_final_yr_sbt <- sog_vars[["final_yr_sbt"]]
 sog_sbo <- sog_vars[["sbo"]]
 sog_prob_less_03sbo <- sog_vars[["prob_less_03sbo"]]
@@ -253,6 +260,7 @@ sog_final_yr_dt <- sog_vars[["final_yr_dt"]]
 # -----------------------------------------------------------------------------
 # West Coast of Vancouver Island-dependent values
 wcvi_vars <- get_vars("WCVI", french = french)
+wcvi_prev_yr_sbt <- wcvi_vars[["prev_yr_sbt"]]
 wcvi_final_yr_sbt <- wcvi_vars[["final_yr_sbt"]]
 wcvi_sbo <- wcvi_vars[["sbo"]]
 wcvi_prob_less_03sbo <- wcvi_vars[["prob_less_03sbo"]]
