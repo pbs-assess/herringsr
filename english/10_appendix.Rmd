@@ -8,6 +8,9 @@ Pacific Herring minor SARs: `r commify(minor_regions_full_parens)`.
 However, we provide the spawn index and proportion of spawn index by Section 
 from `r minor_end_yr-num_yrs_tab` to `r minor_end_yr` for A27 and A2W
 (Tables \@ref(tab:spawn-index-a27) and \@ref(tab:spawn-index-a2w), respectively).
+For Area 27, we provide the time series of spawn index by Section from
+`r minor_start_yr_plot` to `r minor_end_yr`
+(Figure \@ref(fig:spawn-section-a27)).
 We also provide time series of
 landed commercial catch (Figure \@ref(fig:minor-catch)),
 biological data including weight-at-age (Figure \@ref(fig:minor-wa)) and
