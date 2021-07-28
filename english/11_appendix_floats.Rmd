@@ -50,30 +50,39 @@ spawn_index_by_area_table(ps[[en2fr("A2W", french)]],
 
 ## Figures
 
-(ref:spawn-section-a27-cap) Spawn survey data for Pacific Herring 
-by Section from `r major_start_yr` to `r major_end_yr` in the
+(ref:spawn-section-a27-cap) Time series of Pacific Herring spawn index in thousands of tonnes (t) by Section from `r minor_start_yr_plot` to `r minor_end_yr` in the
 Area 27 minor stock assessment region.
 The spawn index has two distinct periods defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
+The dashed vertical line is the boundary between these two periods.
+Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
-(ref:spawn-section-a27-cap-fr) Données de relevé du frai du hareng du Pacifique
-par Section de `r major_start_yr` à `r major_end_yr` dans la
+(ref:spawn-section-a27-cap-fr) Série chronologique de l’indice du frai en milliers de tonnes pour le hareng du Pacifique par Section de
+`r minor_start_yr_plot` à `r minor_end_yr` dans dans la
 région d’évaluation des stocks mineur de la zone 27.
 L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante: relevés en surface (de `r major_start_yr` à `r new_surv_yr-1`), et
 relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
+La ligne verticale en pointillés est la limite entre ces deux périodes.
+L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
-```{r spawn-section-a27, fig.asp = 1, fig.cap = ifelse(french, "(ref:spawn-section-a27-cap-fr)", "(ref:spawn-section-a27-cap)")}
+```{r spawn-section-a27, fig.asp = 0.67, fig.cap = ifelse(french, "(ref:spawn-section-a27-cap-fr)", "(ref:spawn-section-a27-cap)")}
 yrBreaks <- seq(from = 1950, to = 2020, by = 10)
 dat <- read_csv(file = file.path(data_path, "spawn-yr-sec-a27.csv"),
                 col_types=cols()) %>%
-        left_join( y=qVals, by="Survey") %>%
+        filter(Year >= minor_start_yr_plot) %>%
         mutate(Section = as.numeric(Section)) %>%
         mutate(Survey = factor(Survey, levels = c("Surface", "Dive")),
                Section = formatC(Section, width = 3, format = "d", flag = "0"))
 ggplot(data = dat, mapping = aes(x = Year, y = Index)) +
         geom_point(mapping = aes(shape = Survey), size = 1, na.rm = TRUE) +
         geom_line(mapping = aes(group = Survey), size = 0.5) +
+        geom_vline(
+                xintercept = new_surv_yr - 0.5, linetype = "dashed", size = 0.25
+        ) +
+        expand_limits(
+                y = c(0, 100), x = c(minor_start_yr_plot, minor_end_yr)
+        ) +
         labs(x = en2fr("Year", french),
              y = paste0(en2fr("Spawn index", french), " (1,000 t)"),
              shape = en2fr("Survey period", french)) +
