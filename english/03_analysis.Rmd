@@ -157,6 +157,13 @@ In `r surv_yr_rng[2]`, there was a notable increase in survey biomass (index val
 a small increase in survey biomass for WCVI (Figure \@ref(fig:major-spawn-index) and Table \@ref(tab:spawn-index-wcvi)), and
 a small decrease in survey biomass for PRD and CC (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-prd) & \@ref(tab:spawn-index-cc)).
 
+## Incidental catch
+
+Describe potential impacts of aquaculture herring incidental catch.
+Currently waiting on detailed data from Aquaculture group
+to include a general summary of the potential impacts in each SAR.
+Possible incidental catch in groundfish trawl too.
+
 ## Spatial spawn distribution
 
 Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index)
