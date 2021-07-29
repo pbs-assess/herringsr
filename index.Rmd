@@ -9,6 +9,8 @@ work_done_year: 2022
 work_done_month: Month
 # work_done_month: Mois
 report_number: 000
+isbn: 000
+cat_no: 000
 approver: |
   Andrew Thomson\
   Regional Director
