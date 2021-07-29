@@ -21,11 +21,11 @@ from `r minor_start_yr_plot` to `r minor_end_yr`.
 ## Special areas\label{sec:app-special}
 
 We do not conduct formal analyses of stock trend information for the
-Pacific Herring special area, Area 10 (A10).
+Pacific Herring special area, Area 10 (A10; Figure \@ref(fig:a10-map)).
 Note that special areas are not SARs;
 therefore they are excluded from regular monitoring and analyses.
 In addition, note that Area 10 is a subset of the Central Coast Sections that
-are outside the SAR boundary (Sections 101, 102, and 103).
+are outside the SAR boundary.
 <!-- TODO: This is a placeholder; need to decide and make tables/figures. -->
 As with the minor SARs,
 we provide the spawn index and proportion of spawn index by Section

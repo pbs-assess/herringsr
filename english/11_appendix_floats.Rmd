@@ -158,4 +158,24 @@ plot_spawn_ind(df = minor_surv,
                translate = french)
 ```
 
+(ref:a10-map-cap) Sections (Sec) included in the Pacific Herring special area,
+Area 10 (A10).
+Note that special areas are not stock assessment regions (SARs);
+therefore they are excluded from regular monitoring and analyses.
+In addition, note that A10 is a subset of the Central Coast Sections that are
+outside the SAR boundary.
+Units: kilometres (km).
+
+(ref:a10-map-cap-fr) Sections (Sec) incluses dans la zone spéciale
+du hareng du Pacifique, zone 10 (Z10).
+Notez que les zones spéciales ne sont pas des régions d'évaluation des stocks (RES);
+elles sont donc exclues de la surveillance et des analyses régulières.
+De plus, notez que Z10 est un sous-ensemble des Sections de la côte centrale
+qui sont en dehors des limites de la RES.
+Unités: kilomètres (km).
+
+```{r a10-map, fig.cap = ifelse(french, "(ref:a10-map-cap-fr)", "(ref:a10-map-cap)"), out.width = "100%"}
+knitr::include_graphics(here::here(ifelse(french, "figures/A10_fr.png", "figures/A10.png")))
+```
+
 \afterpage{\clearpage}

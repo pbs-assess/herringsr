@@ -11,7 +11,7 @@ This year we have included similar data for the special area, Area 10
 Note that special areas are not SARs;
 therefore they are excluded from regular monitoring and analyses.
 In addition, note that Area 10 is a subset of the Central Coast Sections that
-are outside the SAR boundary (Sections 101, 102, and 103).
+are outside the SAR boundary.
 
 
 ## Description of the fishery
