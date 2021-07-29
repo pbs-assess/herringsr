@@ -10,13 +10,13 @@ work_done_month: Month
 # work_done_month: Mois
 report_number: 000
 approver: |
-  Carmel Lowe\
+  Andrew Thomson\
   Regional Director
-# Directrice régionale
-approval_year: 2022
+# Directeur régionale
+approval_year: 2021
 approval_month: Month
 # approval_month: Mois
-approval_day: 000
+approval_day: 00
 branch: Science Branch
 region: Pacific Region
 # branch: Secteur des sciences
