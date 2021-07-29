@@ -110,21 +110,18 @@ plot_catch(df = minor_catch,
            translate = french)
 ```
 
-(ref:minor-wa-cap) Time series of Pacific Herring weight-at-age in kilograms (kg) for age-`r age_highlight` (circles) and `r nRollWA`-year running mean weight-at-age (lines) from `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
-Lines show `r nRollWA`-year running means for age-`r age_first` to age-`r age_plus` herring (incrementing up from bottom line);
-the thick black line highlights age-`r age_highlight` herring.
-Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods:
-values at the beginning of the time series are imputed by extending the first non-missing value backwards;
-other values are imputed as the mean of the previous `r nRollWA` years.
+(ref:minor-wa-cap) Time series of Pacific Herring weight-at-age in kilograms (kg)
+from `r minor_start_yr_plot` to `r minor_end_yr`
+in the minor stock assessment regions.
+The thick black line highlights age-`r age_highlight` herring.
 Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet.
 The age-`r age_plus` class is a 'plus group' which includes fish ages `r age_plus` and older.
 Note: vertical axes are cropped at `r wa_ylim[1]` and `r wa_ylim[2]` kg.
 
-(ref:minor-wa-cap-fr) Série chronologique du poids selon l’âge en kilogrammes (kg) pour les poissons de `r age_highlight` ans (cercles) et des moyennes mobiles sur `r nRollWA` ans du poids selon l’âge (lignes) pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr` dans les régions d’évaluation des stocks mineurs.
-Les lignes indiquent les moyennes mobiles sur `r nRollWA` ans pour le hareng âgé de `r age_first` à `r age_plus` ans (en augmentant à partir de la ligne de fond); la ligne noire épaisse met en évidence le hareng âgé de `r age_highlight` ans.
-Les valeurs manquantes du poids selon l’âge (c.-à-d. les années où il n’y a pas d’échantillons biologiques) sont imputées selon l’une des deux méthodes suivantes:
-les valeurs au début de la série chronologique sont imputées en étendant la première valeur non manquante à rebours;
-les autres valeurs sont imputées comme la moyenne des `r nRollWA` années précédentes.
+(ref:minor-wa-cap-fr) Série chronologique du poids selon l’âge en kilogrammes (kg)
+pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr`
+dans les régions d’évaluation des stocks mineurs.
+La ligne noire épaisse met en évidence le hareng âgé de `r age_highlight` ans.
 Les résumés biologiques ne comprennent que les échantillons prélevés à l’aide de sennes (pêche commerciale et pêche d’essai) en raison de la sélectivité par taille des autres types d’engins tels que les filets maillants.
 La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui comprend les poissons âgés de `r age_plus` ans et plus.
 Notez que les axes verticaux sont coupés à `r wa_ylim[1]` et `r wa_ylim[2]` kg.
@@ -135,6 +132,7 @@ plot_wa(df = minor_wa,
         xlim = c(minor_start_yr_plot, minor_end_yr),
         ylim = wa_ylim,
         n_roll = nRollWA,
+        major = FALSE,
         translate = french)
 ```
 
