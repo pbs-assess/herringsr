@@ -71,6 +71,7 @@ plot_spawn_section(
         model = NA,
         data_file = file.path(data_path, "spawn-yr-sec-a27.csv"),
         sections = NA,
+        yr_range = c(minor_start_yr_plot, minor_end_yr),
         scale = FALSE,
         translate = french)
 ```
