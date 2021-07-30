@@ -38,5 +38,5 @@ These recommendations are described in the Section '\nameref{sec:harv-opts}.'
 
 <!--  Mandatory last paragraph in this section -->
 This Science Response results from the Science Response Process of
-September 15, 2021 on the
-Stock status update with application of management procedures for BC Pacific Herring: `r assess_yr` status and `r assess_yr + 1` forecast.
+XX September 2021 on the
+Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2021 and forecast for 2022.
