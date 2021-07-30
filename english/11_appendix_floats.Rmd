@@ -255,7 +255,7 @@ knitr::include_graphics(here::here(ifelse(french, "figures/A10_fr.png", "figures
 <!-- dans la zone spéciale, zone 10. -->
 <!-- Voir la figure \@ref(fig:minor-catch) pour la description. -->
 
-<!-- ```{r special-catch, fig.asp = 0.45, fig.cap = ifelse(french, "(ref:special-catch-cap-fr)", "(ref:special-catch-cap)")} -->
+<!-- ```{r special-catch, fig.asp = 0.7, fig.cap = ifelse(french, "(ref:special-catch-cap-fr)", "(ref:special-catch-cap)"), fig.width = 3.25, out.width = ".55\\linewidth"} -->
 <!-- plot_catch(df = special_catch, -->
 <!--            xlim = c(special_start_yr_plot, special_end_yr), -->
 <!--            translate = french) -->
@@ -271,7 +271,7 @@ pour le hareng du Pacifique de `r special_start_yr_plot` à `r special_end_yr`
 dans la zone spéciale, zone 10.
 Voir la figure \@ref(fig:minor-wa) pour la description.
 
-```{r special-wa, fig.asp = 0.4, fig.cap = ifelse(french, "(ref:special-wa-cap-fr)", "(ref:special-wa-cap)")}
+```{r special-wa, fig.asp = 0.7, fig.cap = ifelse(french, "(ref:special-wa-cap-fr)", "(ref:special-wa-cap)"), fig.width = 3.25, out.width = ".55\\linewidth"}
 plot_wa(df = special_wa,
         circle_age = age_highlight,
         xlim = c(special_start_yr_plot, special_end_yr),
@@ -291,7 +291,7 @@ pour le hareng du Pacifique de `r special_start_yr_plot` à `r special_end_yr`
 dans la zone spéciale, zone 10.
 Voir la figure \@ref(fig:minor-pa) pour la description.
 
-```{r special-pa, fig.asp = 0.45, fig.cap = ifelse(french, "(ref:special-pa-cap-fr)", "(ref:special-pa-cap)")}
+```{r special-pa, fig.asp = 0.9, fig.cap = ifelse(french, "(ref:special-pa-cap-fr)", "(ref:special-pa-cap)"), fig.width = 3.25, out.width = ".55\\linewidth"}
 plot_pa(df = special_pa,
         age_plus = age_plus,
         conf = ci_level,
@@ -311,7 +311,7 @@ de tonnes pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end
 dans la zone spéciale, zone 10.
 Voir la figure \@ref(fig:minor-spawn-index) pour la description.
 
-```{r special-spawn-index, fig.asp = 0.45, fig.cap = ifelse(french, "(ref:special-spawn-index-cap-fr)", "(ref:special-spawn-index-cap)")}
+```{r special-spawn-index, fig.asp = 0.9, fig.cap = ifelse(french, "(ref:special-spawn-index-cap-fr)", "(ref:special-spawn-index-cap)"), fig.width = 3.25, out.width = ".55\\linewidth"}
 plot_spawn_ind(df = special_surv,
                yr_range = c(special_start_yr_plot, special_end_yr),
                new_surv_yr = new_surv_yr,
