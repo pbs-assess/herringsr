@@ -1,4 +1,4 @@
-assess_yr <- 2021 #as.numeric(substr(Sys.Date(), 1, 4))
+assess_yr <- 2021
 last_assess_yr <- assess_yr - 1
 this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
 
@@ -176,7 +176,7 @@ special_pa <- get_pa(special_models,
                      special_regions_full,
                      gear)
 
-# Survey Indices
+# Survey indices
 major_surv <- get_surv_ind(major_models,
                            major_regions_full,
                            surv_type)
