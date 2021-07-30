@@ -32,7 +32,8 @@ from `r special_end_yr-num_yrs_tab` to `r special_end_yr`
 (Table \@ref(tab:spawn-index-a10)).
 <!-- TODO: This is a placeholder; need to decide and make tables/figures. -->
 We also provide time series of
-landed commercial catch (Figure \@ref(fig:special-catch)),
+<!-- Note: There is no commercial catch in this period (since 1978) -->
+<!-- landed commercial catch (Figure \@ref(fig:special-catch)), -->
 biological data including weight-at-age (Figure \@ref(fig:special-wa)) and proportion-at-age (Figure \@ref(fig:special-pa)),
 as well as the spawn index (Figure \@ref(fig:special-spawn-index))
 from `r special_start_yr_plot` to `r special_end_yr`.
