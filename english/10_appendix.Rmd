@@ -26,11 +26,11 @@ Note that special areas are not SARs;
 therefore they are excluded from regular monitoring and analyses.
 In addition, note that Area 10 is a subset of the Central Coast Sections that
 are outside the SAR boundary.
-<!-- TODO: This is a placeholder; need to decide and make tables/figures. -->
 As with the minor SARs,
 we provide the spawn index and proportion of spawn index by Section
 from `r minor_end_yr-num_yrs_tab` to `r minor_end_yr`
 (Table \@ref(tab:spawn-index-a10)).
+<!-- TODO: This is a placeholder; need to decide and make tables/figures. -->
 We also provide time series of
 landed commercial catch (Figure \@ref(fig:special-catch)),
 biological data including weight-at-age (Figure \@ref(fig:special-wa)) and proportion-at-age (Figure \@ref(fig:special-pa)),

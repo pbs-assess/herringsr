@@ -46,6 +46,27 @@ spawn_index_by_area_table(ps[[en2fr("A2W", french)]],
                           translate = french)
 ```
 
+(ref:spawn-index-a10-cap) Pacific Herring spawn index in tonnes, and proportion of the spawn index by Section 
+from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr` in the
+Area 10 special area.
+See Table \@ref(tab:spawn-index-a27) for description.
+
+(ref:spawn-index-a10-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par section pour
+le hareng du Pacifique de `r  minor_end_yr-num_yrs_tab` à `r minor_end_yr` dans la
+zone spécial de la zone 10.
+Voir le tableau \@ref(tab:spawn-index-a27) pour la description.
+
+\needspace{0.35\textheight}
+
+```{r spawn-index-a10}
+spawn_index_by_area_table(ps[[en2fr("A10", french)]],
+                          cap = ifelse(french,
+                                       "(ref:spawn-index-a10-cap-fr)",
+                                       "(ref:spawn-index-a10-cap)"),
+                          first_yr = minor_end_yr-num_yrs_tab,
+                          translate = french)
+```
+
 \afterpage{\clearpage}
 
 ## Figures
