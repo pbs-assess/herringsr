@@ -27,14 +27,15 @@ nRollRec <- 3
 target_hr <- 0.2
 
 regions <- tribble(
-  ~SAR, ~Region,                      ~RegionName, ~Major,
-  1,       "HG",                    "Haida Gwaii",   TRUE,
-  2,      "PRD",         "Prince Rupert District",   TRUE,
-  3,       "CC",                  "Central Coast",   TRUE,
-  4,      "SoG",              "Strait of Georgia",   TRUE,
-  5,     "WCVI", "West Coast of Vancouver Island",   TRUE,
-  6,      "A27",                        "Area 27",  FALSE,
-  7,      "A2W",                    "Area 2 West",  FALSE)
+  ~SAR, ~Region,                      ~RegionName,     ~Type,
+  1,       "HG",                    "Haida Gwaii",   "Major",
+  2,      "PRD",         "Prince Rupert District",   "Major",
+  3,       "CC",                  "Central Coast",   "Major",
+  4,      "SoG",              "Strait of Georgia",   "Major",
+  5,     "WCVI", "West Coast of Vancouver Island",   "Major",
+  6,      "A27",                        "Area 27",   "Minor",
+  7,      "A2W",                    "Area 2 West",   "Minor",
+  8,      "A10",                        "Area 10", "Special")
 regions$Region <- en2fr(regions$Region, french)
 regions$RegionName <- en2fr(regions$RegionName, french)
 
@@ -56,6 +57,7 @@ surv_type$gearname <- en2fr(surv_type$gearname, french)
 
 major_models <- load.models(unlist(major_model_dirs), inc_retro = TRUE)
 minor_models <- load.models(unlist(minor_model_dirs), inc_retro = FALSE)
+special_models <- load.models(unlist(special_model_dirs), inc_retro = FALSE)
 # Assumes all major region models have the same year range
 major_start_yr <- major_models[[1]]$dat$start.yr
 major_end_yr <- major_models[[1]]$dat$end.yr
@@ -65,20 +67,28 @@ minor_start_yr <- minor_models[[1]]$dat$start.yr
 minor_end_yr <- minor_models[[1]]$dat$end.yr
 minor_yr_range <- minor_start_yr:minor_end_yr
 minor_start_yr_plot <- 1978
+# Assumes all special area models have the same year range
+special_start_yr <- special_models[[1]]$dat$start.yr
+special_end_yr <- special_models[[1]]$dat$end.yr
+special_yr_range <- special_start_yr:special_end_yr
+special_start_yr_plot <- 1978
 
 all_regions_short <- regions$Region
-major_regions_short <- regions$Region[regions$Major]
-minor_regions_short <- regions$Region[!regions$Major]
+major_regions_short <- regions$Region[regions$Type == "Major"]
+minor_regions_short <- regions$Region[regions$Type == "Minor"]
+special_regions_short <- regions$Region[regions$Type == "Special"]
 
 all_regions_full <- regions$RegionName
-major_regions_full <- regions$RegionName[regions$Major]
-minor_regions_full <- regions$RegionName[!regions$Major]
+major_regions_full <- regions$RegionName[regions$Type == "Major"]
+minor_regions_full <- regions$RegionName[regions$Type == "Minor"]
+special_regions_full <- regions$RegionName[regions$Type == "Special"]
 
 all_regions_full_parens <- paste0(all_regions_full,  " (", all_regions_short, ")")
 major_regions_full_parens <- paste0(major_regions_full,  " (", major_regions_short, ")")
 minor_regions_full_parens <- paste0(minor_regions_full,  " (", minor_regions_short, ")")
+special_regions_full_parens <- paste0(special_regions_full,  " (", special_regions_short, ")")
 
-#Catch
+# Catch
 major_catch <- get_catch(major_models,
                          major_regions_full,
                          gear)
@@ -91,6 +101,12 @@ minor_catch <- get_catch(minor_models,
 minor_catch_short <- get_catch(minor_models,
                                minor_regions_short,
                                gear)
+special_catch <- get_catch(special_models,
+                           special_regions_full,
+                           gear)
+special_catch_short <- get_catch(special_models,
+                                 special_regions_short,
+                                 gear)
 
 # Minimum age
 age_first <- major_models[[1]]$dat$start.age
@@ -117,7 +133,7 @@ total_final_yr_other_catch <- total_final_yr_catch %>%
   pull() %>%
   f()
 
-#Spawn-on-kelp
+# Spawn-on-kelp
 sok_file_pattern <- "harvest-sok-*"
 data_path <- here::here("data")
 sok_filenames <- dir(data_path, pattern = sok_file_pattern)
@@ -126,7 +142,7 @@ sok <- sok_filenames %>%
   reduce(rbind)
 sok$Region <- en2fr(sok$Region, french)
 
-#Proportion-of-spawn
+# Proportion-of-spawn
 ps_file_pattern <- "prop-spawn-*"
 data_path <- here::here("data")
 ps_filenames <- dir(data_path, pattern = ps_file_pattern)
@@ -138,22 +154,29 @@ ps <- lapply(ps_filenames, function(x){
   read_csv(x, col_types=cols())})
 names(ps) <- en2fr(ps_shortnames, french)
 
-#Weight-at-age
+# Weight-at-age
 major_wa <- get_wa(major_models,
                    major_regions_full,
                    gear)
 minor_wa <- get_wa(minor_models,
                    minor_regions_full,
                    gear)
-#Proportion-at-age
+special_wa <- get_wa(special_models,
+                     special_regions_full,
+                     gear)
+
+# Proportion-at-age
 major_pa <- get_pa(major_models,
                    major_regions_full,
                    gear)
 minor_pa <- get_pa(minor_models,
                    minor_regions_full,
                    gear)
+special_pa <- get_pa(special_models,
+                     special_regions_full,
+                     gear)
 
-#Survey Indices
+# Survey Indices
 major_surv <- get_surv_ind(major_models,
                            major_regions_full,
                            surv_type)
@@ -166,6 +189,14 @@ minor_surv <- get_surv_ind(minor_models,
 minor_surv_short <- get_surv_ind(minor_models,
                                  minor_regions_short,
                                  surv_type)
+
+special_surv <- get_surv_ind(special_models,
+                             special_regions_full,
+                             surv_type)
+
+special_surv_short <- get_surv_ind(special_models,
+                                   special_regions_short,
+                                   surv_type)
 
 # Input catch for table 1
 inp_catch <- read_csv(here::here("data/input-data.csv"), col_types=cols())
