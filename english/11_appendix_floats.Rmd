@@ -8,11 +8,13 @@
 from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr` in the
 Area 27 minor stock assessment region.
 Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
+Legend: "NA" indicates that data are not available.
 
 (ref:spawn-index-a27-cap-fr) Indice du frai en tonnes et proportion de l’indice du frai par section pour
 le hareng du Pacifique de `r  minor_end_yr-num_yrs_tab` à `r minor_end_yr` dans la
 région d’évaluation des stocks mineur de la zone 27.
 Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
+Légende: "NA" indique que les données ne sont pas disponibles.
 
 ```{r spawn-index-a27}
 spawn_index_by_area_table(ps[[en2fr("A27", french)]],
