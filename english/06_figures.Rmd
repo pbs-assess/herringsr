@@ -97,7 +97,7 @@ L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de 
 ```{r major-spawn-index, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-spawn-index-cap-fr)", "(ref:major-spawn-index-cap)")}
 plot_spawn_ind(df = major_surv,
                new_surv_yr = new_surv_yr,
-               xlim = c(major_start_yr, major_end_yr),
+               yr_range = c(major_start_yr, major_end_yr),
                translate = french)
 ```
 
