@@ -76,7 +76,7 @@ pour le hareng du Pacifique dans la
 région d'évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir la figure \@ref(fig:hg-biomass-retro) pour la description.
 
-```{r wcvi-biomass-retro, fig.asp=0.6, fig.cap=ifelse(french, "(ref:wcvi-biomass-retro-cap-fr)", "(ref:wcvi-biomass-retro-cap)")}
+```{r wcvi-biomass-retro, fig.asp=0.65, fig.cap=ifelse(french, "(ref:wcvi-biomass-retro-cap-fr)", "(ref:wcvi-biomass-retro-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(new_surv_yr, assess_yr),
                  translate = french)

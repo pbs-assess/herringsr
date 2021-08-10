@@ -97,7 +97,7 @@ pour le hareng du Pacifique dans la
 région d'évaluation des stocks majeur de Haida Gwaii.
 Les points indiquent la biomasse reporductrice non exploitée estimée.
 
-```{r hg-biomass-retro, fig.asp=0.6, fig.cap=ifelse(french, "(ref:hg-biomass-retro-cap-fr)", "(ref:hg-biomass-retro-cap)")}
+```{r hg-biomass-retro, fig.asp=0.65, fig.cap=ifelse(french, "(ref:hg-biomass-retro-cap-fr)", "(ref:hg-biomass-retro-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(new_surv_yr, assess_yr),
                  translate = french)
