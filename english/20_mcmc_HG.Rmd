@@ -85,20 +85,21 @@ make.pairs.plot(major_models[[model_ind]],
 ```
 
 (ref:hg-biomass-retro-cap) Maximum posterior density of spawning biomass (lines)
-from `r recent_catch_yr` to `r assess_yr` (base model)
-with retrospectives (-1 to -`r retrospective_yrs` years)
+from `r new_surv_yr` to `r assess_yr` (base model) with retrospectives 
+(-`r min(retrospective_yrs)` to -`r max(retrospective_yrs)` years)
 for the Pacific Herring statistical catch-age model in the Haida Gwaii major stock assessment region.
 Points indicate estimated unfished spawning biomass.
 
 (ref:hg-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice (lignes)
-de `r recent_catch_yr` à `r assess_yr` (modèle de base)
-avec des rétrospectives (-1 à -`r retrospective_yrs` années)
-pour le hareng du Pacifique dans la région d'évaluation des stocks majeur de Haida Gwaii.
+de `r new_surv_yr` à `r assess_yr` (modèle de base) avec des rétrospectives
+(-`r min(retrospective_yrs)` à -`r max(retrospective_yrs)` années)
+pour le hareng du Pacifique dans la
+région d'évaluation des stocks majeur de Haida Gwaii.
 Les points indiquent la biomasse reporductrice non exploitée estimée.
 
 ```{r hg-biomass-retro, fig.asp=0.6, fig.cap=ifelse(french, "(ref:hg-biomass-retro-cap-fr)", "(ref:hg-biomass-retro-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],
-                 xlim = c(recent_catch_yr, assess_yr),
+                 xlim = c(new_surv_yr, assess_yr),
                  translate = french)
 ```
 
