@@ -44,7 +44,7 @@ extending the first non-missing value backwards.
 Biological summaries only include samples collected using seine nets (commercial and test)
 due to size-selectivity of other gear types such as gillnet.
 The age-`r age_plus` class includes fish age `r age_plus` and older.
-Note: vertical axes are cropped `r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
+Note: vertical axes are cropped at `r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
 
 <!-- TODO: Needs editing -->
 (ref:major-wa-cap-fr) Série chronologique du poids selon l’âge en kilogrammes (kg) pour les poissons de `r age_highlight` ans (cercles) et des moyennes mobiles sur `r nRollWA` ans du poids selon l’âge (lignes) pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs.
