@@ -26,7 +26,7 @@ Légende: «Autre» représente la réduction, ainsi que les pêches pratiquées
 «RogueFM» représente la pêche au hareng rogué au filet maillant; et
 «RogueSN» représente la pêche au hareng rogué à la senne.
 
-```{r major-catch, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-catch-cap-fr)", "(ref:major-catch-cap)")}
+```{r major-catch, fig.asp = 1.25, fig.cap = ifelse(french, "(ref:major-catch-cap-fr)", "(ref:major-catch-cap)")}
 plot_catch(df = major_catch,
            xlim = c(recent_catch_yr, major_end_yr),
            translate = french)
@@ -57,7 +57,7 @@ Les résumés biologiques ne comprennent que les échantillons prélevés à l�
 La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui comprend les poissons âgés de `r age_plus` ans et plus.
 Notez que les axes verticaux sont coupés à `r wa_ylim[1]` et `r wa_ylim[2]` kg.
 
-```{r major-wa, fig.asp = 1, fig.cap = ifelse(french, "(ref:major-wa-cap-fr)", "(ref:major-wa-cap)")}
+```{r major-wa, fig.asp = 1.2, fig.cap = ifelse(french, "(ref:major-wa-cap-fr)", "(ref:major-wa-cap)")}
 plot_wa(df = major_wa,
         circle_age = age_highlight,
         xlim = c(major_start_yr, major_end_yr),
@@ -83,7 +83,7 @@ La ligne grey est l’âge moyen, et la zone ombrée est l’intervalle de créd
 Les résumés biologiques ne comprennent que les échantillons prélevés à l’aide de sennes (pêche commerciale et pêche d’essai) en raison de la sélectivité par taille des autres types d’engins tels que les filets maillants.
 La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui comprend les poissons âgés de `r age_plus` ans et plus.
 
-```{r major-pa, fig.asp = 1.2, fig.cap = ifelse(french, "(ref:major-pa-cap-fr)", "(ref:major-pa-cap)")}
+```{r major-pa, fig.asp = 1.25, fig.cap = ifelse(french, "(ref:major-pa-cap-fr)", "(ref:major-pa-cap)")}
 plot_pa(df = major_pa,
         age_plus = age_plus,
         conf = ci_level,
@@ -106,7 +106,7 @@ relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
 La ligne verticale en pointillés est la limite entre ces deux périodes.
 L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
-```{r major-spawn-index, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-spawn-index-cap-fr)", "(ref:major-spawn-index-cap)")}
+```{r major-spawn-index, fig.asp = 1.25, fig.cap = ifelse(french, "(ref:major-spawn-index-cap-fr)", "(ref:major-spawn-index-cap)")}
 plot_spawn_ind(df = major_surv,
                new_surv_yr = new_surv_yr,
                yr_range = c(major_start_yr, major_end_yr),
@@ -590,7 +590,7 @@ $\SB_t$ est la biomasse reproductrice estimée pour l’année $t$.
 Les lignes noires et les zones ombragées indiquent les médianes et intervalles de confiance de `r ci_level*100`% pour $U_t$, respectivement.
 Les lignes en tirets horizontales indiquent $U_t = `r target_hr`$.
 
-```{r harvest-rate, fig.asp = 1, fig.cap = ifelse(french, "(ref:harvest-rate-cap-fr)", "(ref:harvest-rate-cap)")}
+```{r harvest-rate, fig.asp = 1.2, fig.cap = ifelse(french, "(ref:harvest-rate-cap-fr)", "(ref:harvest-rate-cap)")}
 plot_harvest_rate(df = major_catch,
                   major_models,
                   major_regions_full,
