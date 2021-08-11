@@ -32,19 +32,21 @@ plot_catch(df = major_catch,
            translate = french)
 ```
 
-<!-- (ref:major-wa-cap) Time series of Pacific Herring weight-at-age in kilograms (kg) for age-`r age_highlight` (circles) and `r nRollWA`-year running mean weight-at-age (lines) from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions. -->
-<!-- Lines show `r nRollWA`-year running means for age-`r age_first` to age-`r age_plus` herring (incrementing up from bottom line); -->
-<!-- the thick black line highlights age-`r age_highlight` herring. -->
-<!-- Missing weight-at-age values (i.e., years where there are no biological samples) are imputed using one of two methods: -->
-<!-- values at the beginning of the time series are imputed by extending the first non-missing value backwards; -->
-<!-- other values are imputed as the mean of the previous `r nRollWA` years. -->
-<!-- Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. -->
-<!-- The age-`r age_plus` class is a 'plus group' which includes fish ages `r age_plus` and older. -->
-<!-- Note: vertical axes are cropped at `r wa_ylim[1]` and `r wa_ylim[2]` kg. -->
+(ref:major-wa-cap) Time series of Pacific Herring mean weight-at-age in kilograms (kg)
+from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
+Circles show mean for age-`r age_highlight` herring.
+Lines show `r nRollWA`-year running means for age-`r age_first` to age-`r age_plus` herring, incrementing up from bottom line and shaded from darker to ligher.
+The thick line shows age-`r age_highlight` herring.
+In years where there are no biological samples for an age class,
+values are imputed as the mean of the previous `r nRollWA` years,
+except for the beginning of the time series which are imputed by
+extending the first non-missing value backwards.
+Biological summaries only include samples collected using seine nets (commercial and test)
+due to size-selectivity of other gear types such as gillnet.
+The age-`r age_plus` class includes fish age `r age_plus` and older.
+Note: vertical axes are cropped at `r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
 
-(ref:major-wa-cap) Time series of Pacific Herring means for weight-at-age in kilograms (kg) for dominant age-`r age_highlight` (circles) and `r nRollWA`-year running means for age-`r age_first` to age-`r age_plus` herring (lines, incrementing up from bottom line, `r major_start_yr` - `r major_end_yr`). The age-`r age_plus` class includes fish ages `r age_plus` and older. Age classes are shaded to reflect their contribution to the stock in general. In years where there are no biological samples for an age class, values are imputed as the mean of the previous `r nRollWA` years, except for the beginning of the time series which are imputed by extending the first non-missing value backwards. Only seine-net collected samples (commercial and test) are included due to size-selectivity of gillnets. Note: vertical axes are cropped `r wa_ylim[1]` to `r wa_ylim[2]` kg.
-
-<!-- Needs editing -->
+<!-- TODO: Needs editing -->
 (ref:major-wa-cap-fr) Série chronologique du poids selon l’âge en kilogrammes (kg) pour les poissons de `r age_highlight` ans (cercles) et des moyennes mobiles sur `r nRollWA` ans du poids selon l’âge (lignes) pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs.
 Les lignes indiquent les moyennes mobiles sur `r nRollWA` ans pour le hareng âgé de `r age_first` à `r age_plus` ans (en augmentant à partir de la ligne de fond);
 la ligne noire épaisse met en évidence le hareng âgé de `r age_highlight` ans.
@@ -64,17 +66,24 @@ plot_wa(df = major_wa,
         translate = french)
 ```
 
-(ref:major-pa-cap) Time series of Pacific Herring proportion-at-age from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions. Dot size and colour indicates age class proportion for the year. Each year adds up to 100%.
-The gray line is the mean age, and the shaded area is the approximate `r ci_level*100`% credible interval for the mean age.
-Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet.
-The age-`r age_plus` class is a 'plus group' which includes fish ages `r age_plus` and older.
+(ref:major-pa-cap) Time series of Pacific Herring proportion-at-age
+from `r major_start_yr` to `r major_end_yr`
+in the major stock assessment regions.
+Dot size and colour indicates age class proportion for the year;
+each year adds up to 1.0.
+The gray line is the mean age, and
+the shaded area is the approximate `r ci_level*100`% distribution for the mean age.
+Biological summaries only include samples collected using seine nets (commercial and test)
+due to size-selectivity of other gear types such as gillnet.
+The age-`r age_plus` class is a 'plus group' which includes fish age `r age_plus` and older.
 
+<!-- TODO: Needs editing -->
 (ref:major-pa-cap-fr) Série chronologique de la proportion selon l’âge pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs. La taille et la couleur des points indiquent la proportion de la classe d’âge pour l’année. Chaque année, cela représente 100 %. Chaque année, cela représente 100 %.
 La ligne grey est l’âge moyen, et la zone ombrée est l’intervalle de crédibilité approximatif `r ci_level*100`% pour l’âge moyen.
 Les résumés biologiques ne comprennent que les échantillons prélevés à l’aide de sennes (pêche commerciale et pêche d’essai) en raison de la sélectivité par taille des autres types d’engins tels que les filets maillants.
 La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui comprend les poissons âgés de `r age_plus` ans et plus.
 
-```{r major-pa, fig.asp = 1.1, fig.cap = ifelse(french, "(ref:major-pa-cap-fr)", "(ref:major-pa-cap)")}
+```{r major-pa, fig.asp = 1.2, fig.cap = ifelse(french, "(ref:major-pa-cap-fr)", "(ref:major-pa-cap)")}
 plot_pa(df = major_pa,
         age_plus = age_plus,
         conf = ci_level,
