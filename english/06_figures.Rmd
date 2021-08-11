@@ -43,7 +43,7 @@ except for the beginning of the time series which are imputed by
 extending the first non-missing value backwards.
 Biological summaries only include samples collected using seine nets (commercial and test)
 due to size-selectivity of other gear types such as gillnet.
-The age-`r age_plus` class includes fish age `r age_plus` and older.
+The age-`r age_plus` class includes fish ages `r age_plus` and older.
 Note: vertical axes are cropped at `r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
 
 <!-- TODO: Needs editing -->
@@ -75,7 +75,7 @@ The gray line is the mean age, and
 the shaded area is the approximate `r ci_level*100`% distribution for the mean age.
 Biological summaries only include samples collected using seine nets (commercial and test)
 due to size-selectivity of other gear types such as gillnet.
-The age-`r age_plus` class is a 'plus group' which includes fish age `r age_plus` and older.
+The age-`r age_plus` class is a 'plus group' which includes fish ages `r age_plus` and older.
 
 <!-- TODO: Needs editing -->
 (ref:major-pa-cap-fr) Série chronologique de la proportion selon l’âge pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs. La taille et la couleur des points indiquent la proportion de la classe d’âge pour l’année. Chaque année, cela représente 100 %. Chaque année, cela représente 100 %.
