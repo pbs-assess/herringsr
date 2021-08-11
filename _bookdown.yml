@@ -16,11 +16,11 @@ rmd_files: ["index.Rmd",
             "english/09_bibliography.Rmd",
             "english/10_appendix.Rmd",
             #"french/10_appendix.Rmd",
-            "english/11_appendix_floats.Rmd",
-            "english/20_mcmc_HG.Rmd",
-            "english/21_mcmc_PRD.Rmd",
-            "english/22_mcmc_CC.Rmd",
-            "english/23_mcmc_SoG.Rmd",
-            "english/24_mcmc_WCVI.Rmd"]
+            "english/11_appendix_floats.Rmd"]
+            #"english/20_mcmc_HG.Rmd",
+            #"english/21_mcmc_PRD.Rmd",
+            #"english/22_mcmc_CC.Rmd",
+            #"english/23_mcmc_SoG.Rmd",
+            #"english/24_mcmc_WCVI.Rmd",
             #"english/25_equations.Rmd"]
 delete_merged_file: true
