@@ -77,6 +77,7 @@ Voir la figure \@ref(fig:hg-biomass-retro) pour la description.
 ```{r prd-biomass-retro, fig.asp=0.65, fig.cap=ifelse(french, "(ref:prd-biomass-retro-cap-fr)", "(ref:prd-biomass-retro-cap)")}
 biomass.plot.mpd(major_models[[model_ind]],
                  xlim = c(new_surv_yr, assess_yr),
+                 df = major_surv %>% filter(region == major_regions_full[model_ind]),
                  translate = french)
 ```
 
