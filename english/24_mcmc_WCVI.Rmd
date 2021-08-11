@@ -62,14 +62,14 @@ make.pairs.plot(major_models[[model_ind]],
                          "selsd1", "sel2", "selsd2", "sel3", "selsd3"))
 ```
 
-(ref:wcvi-biomass-retro-cap) Maximum posterior density of spawning biomass (lines)
+(ref:wcvi-biomass-retro-cap) Maximum posterior density of spawning biomass in thousands of tonnes (t; lines)
 from `r new_surv_yr` to `r assess_yr` (base model) with retrospectives
 (-`r min(retrospective_yrs)` to -`r max(retrospective_yrs)` years)
 for the Pacific Herring statistical catch-age model in the
 West Coast of Vancouver Island major stock assessment region.
 See Figure \@ref(fig:hg-biomass-retro) for description.
 
-(ref:wcvi-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice (lignes)
+(ref:wcvi-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice en milliers de tonnes (t; lignes)
 de `r new_surv_yr` à `r assess_yr` (modèle de base) avec des rétrospectives
 (-`r min(retrospective_yrs)` à -`r max(retrospective_yrs)` années)
 pour le hareng du Pacifique dans la
