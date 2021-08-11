@@ -8,16 +8,13 @@
 proportion of the spawn index by Section 
 from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr` in the
 Area 27 minor stock assessment region.
-Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
-Legend: "NA" indicates that data are not available.
+See Table \@ref(tab:spawn-index-hg) for description.
 
 (ref:spawn-index-a27-cap-fr) Indice du frai en tonnes et
 proportion de l’indice du frai par section pour
 le hareng du Pacifique de `r  minor_end_yr-num_yrs_tab` à `r minor_end_yr` dans la
 région d’évaluation des stocks mineur de la zone 27.
-Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide
-du paramètre de mise à l’échelle du relevé du frai $q$.
-Légende: "NA" indique que les données ne sont pas disponibles.
+Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-a27}
 spawn_index_by_area_table(ps[[en2fr("A27", french)]],
@@ -34,13 +31,13 @@ spawn_index_by_area_table(ps[[en2fr("A27", french)]],
 proportion of the spawn index by Section 
 from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr` in the
 Area 2 West minor stock assessment region.
-See Table \@ref(tab:spawn-index-a27) for description.
+See Table \@ref(tab:spawn-index-hg) for description.
 
 (ref:spawn-index-a2w-cap-fr) Indice du frai en tonnes et
 proportion de l’indice du frai par section pour
 le hareng du Pacifique de `r  minor_end_yr-num_yrs_tab` à `r minor_end_yr` dans la
 région d’évaluation des stocks mineur de la zone 2 ouest.
-Voir le tableau \@ref(tab:spawn-index-a27) pour la description.
+Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 \needspace{0.35\textheight}
 
@@ -57,13 +54,13 @@ spawn_index_by_area_table(ps[[en2fr("A2W", french)]],
 proportion of the spawn index by Section 
 from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr` in the
 Area 10 special area.
-See Table \@ref(tab:spawn-index-a27) for description.
+See Table \@ref(tab:spawn-index-hg) for description.
 
 (ref:spawn-index-a10-cap-fr) Indice du frai en tonnes et
 proportion de l’indice du frai par section pour
 le hareng du Pacifique de `r  minor_end_yr-num_yrs_tab` à `r minor_end_yr` dans la
 zone spécial de la zone 10.
-Voir le tableau \@ref(tab:spawn-index-a27) pour la description.
+Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 \needspace{0.35\textheight}
 
@@ -84,23 +81,13 @@ spawn_index_by_area_table(ps[[en2fr("A10", french)]],
 in thousands of tonnes (t) by Section
 from `r minor_start_yr_plot` to `r minor_end_yr` in the
 Area 27 minor stock assessment region.
-The spawn index has two distinct periods defined by the dominant survey method:
-surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
-dive surveys (`r new_surv_yr` to `r major_end_yr`).
-The dashed vertical line is the boundary between these two periods.
-Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
+See Figure \@ref(fig:spawn-section-cc) for description.
 
 (ref:spawn-section-a27-cap-fr) Série chronologique de l’indice du frai
 en milliers de tonnes pour le hareng du Pacifique par Section de
 `r minor_start_yr_plot` à `r minor_end_yr` dans dans la
 région d’évaluation des stocks mineur de la zone 27.
-L’indice du frai comporte deux périodes distinctes définies par
-la méthode de relevé dominante:
-relevés en surface (de `r major_start_yr` à `r new_surv_yr-1`), et
-relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
-La ligne verticale en pointillés est la limite entre ces deux périodes.
-L’indice du frai n’est pas mis à l’échelle à l’aide
-du paramètre de mise à l’échelle du relevé du frai $q$.
+Voir la figure \@ref(fig:spawn-section-cc) pour la description.
 
 ```{r spawn-section-a27, fig.asp = 0.67, fig.cap = ifelse(french, "(ref:spawn-section-a27-cap-fr)", "(ref:spawn-section-a27-cap)")}
 plot_spawn_section(
@@ -115,20 +102,13 @@ plot_spawn_section(
 (ref:minor-catch-cap) Time series of total landed Pacific Herring catch
 in thousands of tonnes (t) from `r minor_start_yr_plot` to `r minor_end_yr`
 in the minor stock assessment regions.
-Legend: 'Other' represents the reduction, the food and bait, as well
-as the special use fishery;
-'RoeGN' represents the roe gillnet fishery; and
-'RoeSN' represents the roe seine fishery.
+See Figure \@ref(fig:major-catch) for description.
 
 (ref:minor-catch-cap-fr) Série chronologique des prises totales débarquées en
 milliers de tonnes (t) de hareng du Pacifique de
 `r minor_start_yr_plot` à `r minor_end_yr` dans
 les régions d’évaluation des stocks mineurs.
-Légende: «Autre» représente la réduction, ainsi que
-les pêches pratiquées à des fins de subsistance,
-pour le marché des appâts et pour des usages spéciaux;
-«RogueFM» représente la pêche au hareng rogué au filet maillant; et
-«RogueSN» représente la pêche au hareng rogué à la senne.
+Voir la figure \@ref(fig:major-catch) pour la description.
 
 ```{r minor-catch, fig.asp = 0.45, fig.cap = ifelse(french, "(ref:minor-catch-cap-fr)", "(ref:minor-catch-cap)")}
 plot_catch(df = minor_catch,
@@ -136,26 +116,14 @@ plot_catch(df = minor_catch,
            translate = french)
 ```
 
-(ref:minor-wa-cap) Time series of Pacific Herring weight-at-age in kilograms (kg)
-from `r minor_start_yr_plot` to `r minor_end_yr`
-in the minor stock assessment regions.
-The thick black line highlights age-`r age_highlight` herring.
-Biological summaries only include samples collected using seine nets
-(commercial and test) due to size-selectivity of other gear types such as gillnet.
-The age-`r age_plus` class is a 'plus group'
-which includes fish ages `r age_plus` and older.
-Note: vertical axes are cropped at `r wa_ylim[1]` and `r wa_ylim[2]` kg.
+(ref:minor-wa-cap) Time series of Pacific Herring mean weight-at-age in kilograms (kg)
+from `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
+See Figure \@ref(fig:major-wa) for description.
 
 (ref:minor-wa-cap-fr) Série chronologique du poids selon l’âge en kilogrammes (kg)
 pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr`
 dans les régions d’évaluation des stocks mineurs.
-La ligne noire épaisse met en évidence le hareng âgé de `r age_highlight` ans.
-Les résumés biologiques ne comprennent que les échantillons prélevés
-à l’aide de sennes (pêche commerciale et pêche d’essai) en raison de la
-sélectivité par taille des autres types d’engins tels que les filets maillants.
-La classe des poissons âgés de `r age_plus` ans est un groupe «plus»
-qui comprend les poissons âgés de `r age_plus` ans et plus.
-Notez que les axes verticaux sont coupés à `r wa_ylim[1]` et `r wa_ylim[2]` kg.
+Voir la figure \@ref(fig:major-wa) pour la description.
 
 ```{r minor-wa, fig.asp = 0.4, fig.cap = ifelse(french, "(ref:minor-wa-cap-fr)", "(ref:minor-wa-cap)")}
 plot_wa(df = minor_wa,
@@ -169,23 +137,12 @@ plot_wa(df = minor_wa,
 
 (ref:minor-pa-cap) Time series of Pacific Herring proportion-at-age from
 `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
-The black line is the mean age, and
-the shaded area is the approximate `r ci_level*100`% distribution.
-Biological summaries only include samples collected using seine nets
-(commercial and test) due to size-selectivity of other gear types such as gillnet.
-The age-`r age_plus` class is a 'plus group'
-which includes fish ages `r age_plus` and older.
+See Figure \@ref(fig:major-pa) for description.
 
 (ref:minor-pa-cap-fr) Série chronologique de la proportion selon l’âge
 pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr`
 dans les régions d’évaluation des stocks mineurs.
-La ligne noire correspond à l’âge moyen, et
-la zone ombragée à la distribution d’environ `r ci_level*100`%.
-Les résumés biologiques ne comprennent que les échantillons prélevés à l’aide de
-sennes (pêche commerciale et pêche d’essai) en raison de
-la sélectivité par taille des autres types d’engins tels que les filets maillants.
-La classe des poissons âgés de `r age_plus` ans est un groupe «plus»
-qui comprend les poissons âgés de `r age_plus` ans et plus.
+Voir la figure \@ref(fig:major-pa) pour la description.
 
 ```{r minor-pa, fig.asp = 0.45, fig.cap = ifelse(french, "(ref:minor-pa-cap-fr)", "(ref:minor-pa-cap)")}
 plot_pa(df = minor_pa,
@@ -200,22 +157,12 @@ plot_pa(df = minor_pa,
 (ref:minor-spawn-index-cap) Time series of Pacific Herring spawn index
 in thousands of tonnes (t) from `r minor_start_yr_plot` to `r minor_end_yr`
 in the minor stock assessment regions.
-The spawn index has two distinct periods defined by the dominant survey method:
-surface surveys (`r minor_start_yr_plot` to `r new_surv_yr-1`), and
-dive surveys (`r new_surv_yr` to `r minor_end_yr`).
-The dashed vertical line is the boundary between these two periods.
-Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
+See Figure \@ref(fig:major-spawn-index) for description.
 
 (ref:minor-spawn-index-cap-fr) Série chronologique de l’indice du frai en milliers
 de tonnes pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr`
 dans les régions d’évaluation des stocks mineurs.
-L’indice du frai comporte deux périodes distinctes définies par
-la méthode de relevé dominante:
-relevés en surface (de `r minor_start_yr_plot` à `r new_surv_yr-1`), et
-relevés de plongée (de `r new_surv_yr` à `r minor_end_yr`).
-La ligne verticale en pointillés est la limite entre ces deux périodes.
-L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de
-mise à l’échelle du relevé du frai $q$.
+Voir la figure \@ref(fig:major-spawn-index) pour la description.
 
 ```{r minor-spawn-index, fig.asp = 0.45, fig.cap = ifelse(french, "(ref:minor-spawn-index-cap-fr)", "(ref:minor-spawn-index-cap)")}
 plot_spawn_ind(df = minor_surv,
@@ -247,13 +194,13 @@ knitr::include_graphics(here::here(ifelse(french, "figures/A10_fr.png", "figures
 <!-- (ref:special-catch-cap) Time series of total landed Pacific Herring catch in -->
 <!-- thousands of tonnes (t) from `r special_start_yr_plot` to `r special_end_yr` -->
 <!-- in the special area, Area 10. -->
-<!-- See Figure \@ref(fig:minor-catch) for description. -->
+<!-- See Figure \@ref(fig:major-catch) for description. -->
 
 <!-- (ref:special-catch-cap-fr) Série chronologique des prises totales débarquées -->
 <!-- en milliers de tonnes (t) de hareng du Pacifique de -->
 <!-- `r special_start_yr_plot` à `r special_end_yr` -->
 <!-- dans la zone spéciale, zone 10. -->
-<!-- Voir la figure \@ref(fig:minor-catch) pour la description. -->
+<!-- Voir la figure \@ref(fig:major-catch) pour la description. -->
 
 <!-- ```{r special-catch, fig.asp = 0.7, fig.cap = ifelse(french, "(ref:special-catch-cap-fr)", "(ref:special-catch-cap)"), fig.width = 3.25, out.width = ".55\\linewidth"} -->
 <!-- plot_catch(df = special_catch, -->
@@ -264,12 +211,12 @@ knitr::include_graphics(here::here(ifelse(french, "figures/A10_fr.png", "figures
 (ref:special-wa-cap) Time series of Pacific Herring weight-at-age in kilograms (kg)
 from `r special_start_yr_plot` to `r special_end_yr`
 in the special area, Area 10.
-See Figure \@ref(fig:minor-wa) for description.
+See Figure \@ref(fig:major-wa) for description.
 
 (ref:special-wa-cap-fr) Série chronologique du poids selon l’âge en kilogrammes (kg)
 pour le hareng du Pacifique de `r special_start_yr_plot` à `r special_end_yr`
 dans la zone spéciale, zone 10.
-Voir la figure \@ref(fig:minor-wa) pour la description.
+Voir la figure \@ref(fig:major-wa) pour la description.
 
 ```{r special-wa, fig.asp = 0.7, fig.cap = ifelse(french, "(ref:special-wa-cap-fr)", "(ref:special-wa-cap)"), fig.width = 3.25, out.width = ".55\\linewidth"}
 plot_wa(df = special_wa,
@@ -284,12 +231,12 @@ plot_wa(df = special_wa,
 (ref:special-pa-cap) Time series of Pacific Herring proportion-at-age
 from `r special_start_yr_plot` to `r special_end_yr`
 in the special area, Area 10.
-See Figure \@ref(fig:minor-pa) for description.
+See Figure \@ref(fig:major-pa) for description.
 
 (ref:special-pa-cap-fr) Série chronologique de la proportion selon l’âge
 pour le hareng du Pacifique de `r special_start_yr_plot` à `r special_end_yr`
 dans la zone spéciale, zone 10.
-Voir la figure \@ref(fig:minor-pa) pour la description.
+Voir la figure \@ref(fig:major-pa) pour la description.
 
 ```{r special-pa, fig.asp = 0.9, fig.cap = ifelse(french, "(ref:special-pa-cap-fr)", "(ref:special-pa-cap)"), fig.width = 3.25, out.width = ".55\\linewidth"}
 plot_pa(df = special_pa,
@@ -304,12 +251,12 @@ plot_pa(df = special_pa,
 (ref:special-spawn-index-cap) Time series of Pacific Herring spawn index in
 thousands of tonnes (t) from `r special_start_yr_plot` to `r special_end_yr`
 in the special area, Area 10.
-See Figure \@ref(fig:minor-spawn-index) for description.
+See Figure \@ref(fig:major-spawn-index) for description.
 
 (ref:special-spawn-index-cap-fr) Série chronologique de l’indice du frai en milliers
 de tonnes pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr`
 dans la zone spéciale, zone 10.
-Voir la figure \@ref(fig:minor-spawn-index) pour la description.
+Voir la figure \@ref(fig:major-spawn-index) pour la description.
 
 ```{r special-spawn-index, fig.asp = 0.9, fig.cap = ifelse(french, "(ref:special-spawn-index-cap-fr)", "(ref:special-spawn-index-cap)"), fig.width = 3.25, out.width = ".55\\linewidth"}
 plot_spawn_ind(df = special_surv,
