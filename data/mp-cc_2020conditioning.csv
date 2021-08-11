@@ -9,5 +9,5 @@ mp,om,label,obj1,hiab,obj2,obj3,obj4,catch,esc,abs_esc,hr,cap,num_end_yrs,lrp,us
 8,DIM,NoFish_FSC,0.88,0.78,0.52,0,0.14,1,NA,NA,NA,NA,NA,NA,NA
 3,conM,minE.5B0_HR10,,,,,,,0.5,0,0.1,NA,1,NA,NA
 6,conM,HS30 - 60_HR10_cap5,,,,,,,NA,NA,0.1,5,1,0.3,0.6
-7,conM,HS30 - 60_HR05,,,,,,,NA,NA,0.05,NA,1,0.3,0.6
+7,conM,HS30 - 60_HR05,1,0.97,0.79,42.38,2.69,0.09,NA,NA,0.05,NA,1,0.3,0.6
 8,conM,NoFish_FSC,1,0.98,0.84,0,0.14,1,NA,NA,NA,NA,NA,NA,NA
