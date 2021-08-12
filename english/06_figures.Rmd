@@ -172,8 +172,8 @@ from `r major_start_yr` to `r major_end_yr`
 in the Haida Gwaii major stock assessment region.
 Panel (a): model fit (lines; median posterior estimate) to scaled abundance
 (points; see Figure \@ref(fig:major-spawn-index)).
-The spawn index is scaled to abundance by the median posterior estimate of the
-spawn survey scaling parameter $q$.
+The spawn index is scaled to abundance by the median posterior estimate
+of the scaling parameter $q$.
 Panel (b): posterior estimates of instantaneous natural mortality rate (year^-1^).
 Panel (c): reconstructed age-`r age_first` recruitment in thousands of millions from
 `r major_start_yr + age_first` to `r major_end_yr`.
@@ -191,10 +191,10 @@ Panel (e): log recruitment deviations from
 `r major_start_yr + age_first` to `r major_end_yr`.
 Panels (c & e): points and vertical lines indicate medians and
 `r ci_level*100`% credible intervals, respectively.
-Panel (f): phase plot of spawning biomass production for the dive survey period
-(`r new_surv_yr` to `r assess_yr-1`; median posterior estimates).
+Panel (f): phase plot of spawning biomass production from
+`r new_surv_yr` to `r assess_yr - 1` (median posterior estimates).
 Grey shading becomes darker in chronological order;
-triangle indicates `r assess_yr-1`.
+triangle indicates `r assess_yr - 1`.
 Legend: red lines and shading indicate medians and
 `r ci_level*100`% credible intervals, respectively,
 for the limit reference point $0.3\SB_0$,
