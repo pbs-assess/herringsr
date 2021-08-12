@@ -167,26 +167,34 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- Haida Gwaii Storyboard -->
-(ref:storyboard-hg-cap) Model output for Pacific Herring
+(ref:storyboard-hg-cap) Output from the Pacific Herring statistical catch-age model
 from `r major_start_yr` to `r major_end_yr`
 in the Haida Gwaii major stock assessment region.
-Panel (a): model fit (lines; median posterior estimate) to scaled abundance (points).
-Spawn index is scaled to abundance by the median posterior estimate of the
-spawn survey scaling parameter $q$).
+Panel (a): model fit (lines; median posterior estimate) to scaled abundance
+(points; see Figure \@ref(fig:major-spawn-index)).
+The spawn index is scaled to abundance by the median posterior estimate of the
+spawn survey scaling parameter $q$.
 Panel (b): posterior estimates of instantaneous natural mortality rate (year^-1^).
-Panel (c): reconstructed number of age-`r age_first` recruits in thousands of millions from `r major_start_yr + age_first` to `r major_end_yr`.
-Horizontal line and shaded area indicate median and `r ci_level*100`% credible interval for unfished age-`r age_first` recruitment $R_0$, respectively.
+Panel (c): reconstructed age-`r age_first` recruitment in thousands of millions from
+`r major_start_yr + age_first` to `r major_end_yr`.
+Horizontal line and shaded area indicate median and `r ci_level*100`%
+credible interval for unfished age-`r age_first` recruitment $R_0$, respectively.
 Panel (d): posterior estimate of spawning biomass.
-Point and vertical line indicate the median and `r ci_level*100`% credible interval, respectively,
+Point and vertical line indicate the median and `r ci_level*100`%
+credible interval, respectively,
 of forecast spawning biomass in `r assess_yr+1` in the absence of fishing.
 Vertical bars indicate commercial catch, excluding spawn-on-kelp
-(see Figure \@ref(fig:major-catch) legend).
-Panels (b & d): lines and shaded areas indicate medians and `r ci_level*100`% credible intervals, respectively.
+(see Figure \@ref(fig:major-catch)).
+Panels (b & d): lines and shaded areas indicate medians and `r ci_level*100`%
+credible intervals, respectively.
 Panel (e): log recruitment deviations from
 `r major_start_yr + age_first` to `r major_end_yr`.
-Panels (c & e): points and vertical lines indicate medians and `r ci_level*100`% credible intervals, respectively.
-Panel (f): phase plot of spawning biomass production for the dive survey period (`r new_surv_yr` to `r assess_yr-1`; median posterior estimates).
-Grey shading becomes darker in chronological order; triangle indicates `r assess_yr-1`.
+Panels (c & e): points and vertical lines indicate medians and
+`r ci_level*100`% credible intervals, respectively.
+Panel (f): phase plot of spawning biomass production for the dive survey period
+(`r new_surv_yr` to `r assess_yr-1`; median posterior estimates).
+Grey shading becomes darker in chronological order;
+triangle indicates `r assess_yr-1`.
 Legend: red lines and shading indicate medians and
 `r ci_level*100`% credible intervals, respectively,
 for the limit reference point $0.3\SB_0$,
@@ -282,7 +290,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- Prince Rupert District Storyboard -->
-(ref:storyboard-prd-cap) Model output for Pacific Herring
+(ref:storyboard-prd-cap) Output from the Pacific Herring statistical catch-age model
 from `r major_start_yr` to `r major_end_yr`
 in the Prince Rupert District major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
@@ -360,7 +368,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- Central Coast Storyboard -->
-(ref:storyboard-cc-cap) Model output for Pacific Herring
+(ref:storyboard-cc-cap) Output from the Pacific Herring statistical catch-age model
 from `r major_start_yr` to `r major_end_yr`
 in the Central Coast major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
@@ -469,7 +477,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- Strait of Georgia Storyboard -->
-(ref:storyboard-sog-cap) Model output for Pacific Herring
+(ref:storyboard-sog-cap) Output from the Pacific Herring statistical catch-age model
 from `r major_start_yr` to `r major_end_yr`
 in the Strait of Georgia major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
@@ -547,7 +555,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- West Coast of Vancouver Island Storyboard -->
-(ref:storyboard-wcvi-cap) Model output for Pacific Herring
+(ref:storyboard-wcvi-cap) Output from the Pacific Herring statistical catch-age model
 from `r major_start_yr` to `r major_end_yr`
 in the West Coast of Vancouver Island major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
