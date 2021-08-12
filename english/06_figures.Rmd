@@ -174,7 +174,7 @@ Panel (a): model fit (lines; median posterior estimate) to scaled abundance
 (points; see Figure \@ref(fig:major-spawn-index)).
 The spawn index is scaled to abundance by the median posterior estimate
 of the spawn survey scaling parameter $q$.
-Panel (b): posterior estimates of instantaneous natural mortality rate (year^-1^).
+Panel (b): posterior estimates of instantaneous natural mortality rate $M$ (year^-1^).
 Panel (c): reconstructed age-`r age_first` recruitment in thousands of millions from
 `r major_start_yr + age_first` to `r major_end_yr`.
 Horizontal line and shaded area indicate median and `r ci_level*100`%
