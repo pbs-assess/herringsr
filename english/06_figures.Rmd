@@ -167,7 +167,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- Haida Gwaii Storyboard -->
-(ref:storyboard-hg-cap) Model output for the Pacific Herring
+(ref:storyboard-hg-cap) Model output for Pacific Herring
 from `r major_start_yr` to `r major_end_yr`
 in the Haida Gwaii major stock assessment region.
 Panel (a): model fit (lines; median posterior estimate) to scaled abundance (points).
@@ -282,7 +282,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- Prince Rupert District Storyboard -->
-(ref:storyboard-prd-cap) Model output for the Pacific Herring
+(ref:storyboard-prd-cap) Model output for Pacific Herring
 from `r major_start_yr` to `r major_end_yr`
 in the Prince Rupert District major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
@@ -360,7 +360,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- Central Coast Storyboard -->
-(ref:storyboard-cc-cap) Model output for the Pacific Herring
+(ref:storyboard-cc-cap) Model output for Pacific Herring
 from `r major_start_yr` to `r major_end_yr`
 in the Central Coast major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
@@ -469,7 +469,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- Strait of Georgia Storyboard -->
-(ref:storyboard-sog-cap) Model output for the Pacific Herring
+(ref:storyboard-sog-cap) Model output for Pacific Herring
 from `r major_start_yr` to `r major_end_yr`
 in the Strait of Georgia major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
@@ -547,7 +547,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- West Coast of Vancouver Island Storyboard -->
-(ref:storyboard-wcvi-cap) Model output for the Pacific Herring
+(ref:storyboard-wcvi-cap) Model output for Pacific Herring
 from `r major_start_yr` to `r major_end_yr`
 in the West Coast of Vancouver Island major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
