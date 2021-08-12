@@ -152,10 +152,13 @@ a small decrease in survey biomass for PRD and CC (Figure \@ref(fig:major-spawn-
 ## Incidental catch
 
 <!-- TODO: This is a placeholder; needs to be completed. -->
-Describe potential impacts of aquaculture herring incidental catch.
-Currently waiting on detailed data from Aquaculture group
-to include a general summary of the potential impacts in each SAR.
-Possible incidental catch in groundfish trawl too.
+We have the spreadsheet ("Herring Data Request.xlsx")
+of number released and dead by PFMA (analogous to Statistical Areas)
+from 2015 to 2020 (2020 may be incomplete).
+We may want to tweak years to align with herring seasons?
+Maybe a figure with one panel for each SAR, showing annual releases and mortalities.
+
+On this topic, we could also mention possible incidental catch in other fisheries, such as the groundfish trawl.
 
 ## Spatial spawn distribution
 
