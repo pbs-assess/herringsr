@@ -1,6 +1,6 @@
 # Figures
 
-(ref:bc-map-cap) Boundaries for the Pacific Herring stock assessment regions (SARs) in British Columbia.
+(ref:bc-map-cap) Boundaries for Pacific Herring stock assessment regions (SARs) in British Columbia.
 The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
 Units: kilometres (km).
