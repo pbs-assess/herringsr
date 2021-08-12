@@ -2,22 +2,14 @@
 
 ## COVID-19 pandemic
 
-The COVID-19 pandemic impacted our ability to collect and analyse Pacific Herring data in 2020. 
-The pandemic and associated provincial response changed rapidly during the Pacific Herring field program season. 
-Despite these challenges, surveyors assessed all major observed spawns in the five major SARs. 
-The pandemic impacted our ability to assess Pacific Herring spawn in SARs with later spawns more than SARs with earlier spawns. 
-For example, spawns were surveyed by surface surveys instead of underwater dive surveys in PRD and HG.
-
-Although Pacific Herring biological samples were collected as usual,
-the pandemic delayed the analysis and availability of biological data for all SARs. 
-The DFO sclerochronology lab at the Pacific Biological Station closed from March 16^th^ to July 6^th^,
-which resulted in delayed age data for Pacific Herring samples collected in 2020.
-However, the lab was able to process the full collection of 2020 samples during the summer of 2020 to support the Pacific Herring assessment program.
-
-Additional impacts of the pandemic include:
-delayed timing in final data summary reports,
-reduced availability of Science staff in the spring and summer for area specific discussions on Pacific Herring data, and
-delayed delivery of stock assessment advice.
+Compared to 2020, the COVID-19 pandemic had fewer impacts
+to Pacific Herring data collection and analysis in 2021.
+Spawn surveys proceeded as usual in most areas in 2021,
+with dive surveys in all major areas except Haida Gwaii.
+Haida Gwaii would normally have a dive survey,
+but had surface surveys in 2021 due to COVID-19.
+The collection and analysis of biological data was not affected
+by the COVID-19 pandemic in 2021
 
 ## Management strategy evaluation
 
