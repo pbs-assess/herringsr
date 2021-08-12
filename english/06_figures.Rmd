@@ -166,58 +166,38 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 
+<!-- TODO: Update first line for other SARs -->
 <!-- Haida Gwaii Storyboard -->
-<!-- (ref:storyboard-hg-cap) Time series of model output for the -->
-<!-- Pacific Herring statistical catch-age model from `r major_start_yr` to `r major_end_yr` in the -->
-<!-- Haida Gwaii major stock assessment region. -->
-<!-- Panel (a): model fit (median posterior estimate; lines) to scaled spawn survey data (points). -->
-<!-- Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey scaling parameter $q$ (median posterior estimate). -->
-<!-- Panel (b): posterior estimates of instantaneous natural mortality rate (year^-1^). -->
-<!-- Panel (c): reconstructed number of age-`r age_first` recruits in thousands of millions. -->
-<!-- Horizontal line and shaded area indicate median and `r ci_level*100`% credible interval for unfished age-`r age_first` recruitment $R_0$, respectively. -->
-<!-- Panel (d): posterior estimate of spawning biomass. -->
-<!-- Circle and vertical line indicate the median and `r ci_level*100`% credible interval, respectively, -->
-<!-- of forecast spawning biomass in `r assess_yr+1` in the absence of fishing. -->
-<!-- Vertical bars indicate commercial catch, excluding spawn-on-kelp -->
-<!-- (see Figure \@ref(fig:major-catch) for legend). -->
-<!-- Panels (b & d): lines and shaded areas indicate medians and `r ci_level*100`% credible intervals, respectively. -->
-<!-- Panel (e): log recruitment deviations. -->
-<!-- Panels (c & e): time series start in `r major_start_yr+age_first`; circles and vertical lines indicate medians and `r ci_level*100`% credible intervals, respectively. -->
-<!-- Panel (f): phase plot of spawning biomass production for the dive survey period (`r new_surv_yr` to `r assess_yr-1`; median posterior estimates). -->
-<!-- Grey shading becomes darker in chronological order; the triangle indicates `r assess_yr-1`. -->
-<!-- Panels (d & f): red lines and shading indicate medians and `r ci_level*100`% confidence intervals, respectively, -->
-<!-- for the limit reference point $0.3\SB_0$, where $\SB_0$ is estimated unfished spawning biomass. -->
-<!-- Panels (e & f): horizontal dashed lines indicate zero. -->
-<!-- Note: biomass and catch are in thousands of tonnes (t). -->
+(ref:storyboard-hg-cap) Model output for the Pacific Herring
+from `r major_start_yr` to `r major_end_yr`
+in the Haida Gwaii major stock assessment region.
+Panel (a): model fit (lines; median posterior estimate) to scaled abundance (points).
+Spawn index is scaled to abundance by the median posterior estimate of the
+spawn survey scaling parameter $q$).
+Panel (b): posterior estimates of instantaneous natural mortality rate (year^-1^).
+Panel (c): reconstructed number of age-`r age_first` recruits in thousands of millions from `r major_start_yr + age_first` to `r major_end_yr`.
+Horizontal line and shaded area indicate median and `r ci_level*100`% credible interval for unfished age-`r age_first` recruitment $R_0$, respectively.
+Panel (d): posterior estimate of spawning biomass.
+Point and vertical line indicate the median and `r ci_level*100`% credible interval, respectively,
+of forecast spawning biomass in `r assess_yr+1` in the absence of fishing.
+Vertical bars indicate commercial catch, excluding spawn-on-kelp
+(see Figure \@ref(fig:major-catch) legend).
+Panels (b & d): lines and shaded areas indicate medians and `r ci_level*100`% credible intervals, respectively.
+Panel (e): log recruitment deviations from
+`r major_start_yr + age_first` to `r major_end_yr`.
+Panels (c & e): points and vertical lines indicate medians and `r ci_level*100`% credible intervals, respectively.
+Panel (f): phase plot of spawning biomass production for the dive survey period (`r new_surv_yr` to `r assess_yr-1`; median posterior estimates).
+Grey shading becomes darker in chronological order; triangle indicates `r assess_yr-1`.
+Legend: red lines and shading indicate medians and
+`r ci_level*100`% credible intervals, respectively,
+for the limit reference point $0.3\SB_0$,
+where $\SB_0$ is estimated unfished spawning biomass; and
+horizontal dashed lines indicate zero.
+Note: biomass and catch are in thousands of tonnes (t).
 
-<!-- Once the english and french changes are refined and accepted copy and paste to other regions -->
+(ref:storyboard-hg-cap-fr) Séries chronologiques...
 
-(ref:storyboard-hg-cap) Haida Gwaii stock assessment region time series output (`r major_start_yr` - `r major_end_yr`) for the Pacific Herring statistical catch-age model.\
-Panel (a): Model fit (lines; median posterior estimate) Spawn survey abundance index (points, scaled by median posterior estimate of $q = ?$).\
-Panel (b): Posterior estimates of instantaneous natural mortality rate (year-1).\
-Panel (c): Reconstructed number of age-`r age_first` recruits in thousands of millions, from 1953 onwards. Horizontal line is median for unfished age-`r age_first` recruitment $R_0$.\
-Panel (d): Posterior estimate of spawning biomass. Point is median of forecast spawning biomass in `r assess_yr+1` in the absence of fishing. Coloured vertical bars indicate commercial catch, excluding spawn-on-kelp (yellow = RoeSN; turquois = RoeGN; purple = other see Fig \@ref(fig:major-catch)).\
-Panel (e): Estimated log recruitment deviations from 1953 onwards.\
-Panel (f): Spawning biomass production (dive survey period `r new_surv_yr`-`r assess_yr-1`; median posterior estimates), chronologically shaded light to dark; triangle indicates `r assess_yr-1`.\
-Notes: 	Biomass and catch are in thousands of tonnes (t).\
-Bands and error bars are all `r ci_level*100`% credible intervals.\
-Panels (d & f): Red lines indicate the median limit reference point of 0.3*(estimated unfished spawning biomass). 
-
-
-(ref:storyboard-hg-cap-fr) Séries chronologiques de sorties de modèle pour le
-modèle statistique des prises selon l’âge du hareng du Pacifique (`r major_start_yr`-`r major_end_yr`) dans la région d’évaluation des stocks majeur de Haida Gwaii.\
-Panneau (a): Ajustement du modèle (lignes; estimations a posteriori médian) Indice d’abondance des relevés de frai (points, mis à l’échelle par l’estimation postérieure médiane de $q = ?$)\
-Panneau (b): Estimations a posteriori du taux de mortalité naturelle instantanée (année-1).\
-Panneau (c): Nombre reconstitué de recrues d’âge `r age_first` en milliers de millions, à partir de 1953. La ligne  horizontale et la zone ombrée indiquent respectivement la médiane et l'intervalle crédible à `r ci_level*100`% pour le recrutement des poissons d'âge `r age_first` non pêchés $R_0$.
-Panneau (d): Estimation a posteriori de la biomasse reproductrice. Le point est la médiane de la biomasse reproductrice prévue en `r assess_yr+1`en l’absence de pêche.Les barres verticales colorées indiquent les prises commerciales, à l’exclusion du frai sur varech (jaune = RoeSN; turquois = RoeGN; pourpre = autre voir Fig \@ref(fig:major-catch)).\
-Panneau (e): Estimation log des écarts du recrutement à partir de 1953.\
-Panneau (f): Production de biomasse reproductrice (période d’enquête de plongée `r new_surv_yr`-`r assess_yr-1`; madman a posteriori médian),ombré chronologiquement de la lumière à l’obscurité;le triangle indique `r assess_yr-1`.\
-Notes: La biomasse et les prises sont exprimées en milliers de tonnes (t).\
-Bands and error bars are all `r ci_level*100`% credible intervals.\
-Panneaux (d et f):  Les lignes rouges indiquent le point de référence limite médian de 0,3* (biomasse de frai non pisciée estimée).
-
-
-```{r storyboard-hg, out.height=ifelse(french,"4.9in","5.8in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
+```{r storyboard-hg, fig.asp=ifelse(french, 0.9, 1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -295,7 +275,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-prd, out.height=ifelse(french,"4.9in","5.8in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
+```{r storyboard-prd, fig.asp=ifelse(french, 0.9, 1), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -373,7 +353,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur de la côte centrale.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-cc, out.height=ifelse(french,"4.9in","5.8in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)")}
+```{r storyboard-cc, fig.asp=ifelse(french, 0.9, 1), fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -482,7 +462,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur du détroit de Georgie.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-sog, out.height=ifelse(french,"4.9in","5.8in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
+```{r storyboard-sog, fig.asp=ifelse(french, 0.9, 1), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -560,7 +540,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-wcvi, out.height=ifelse(french,"4.9in","5.8in"), fig.asp=1, fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
+```{r storyboard-wcvi, fig.asp=ifelse(french, 0.9, 1), fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -579,7 +559,7 @@ cowplot::plot_grid(plot_a,
 Effective harvest rate in year $t$ is calculated as $U_t = C_t/(C_t + \SB_t)$ where
 $C_t$ is catch in year $t$, and
 $\SB_t$ is estimated spawning biomass in year $t$.
-Black lines and shaded ribbons indicate medians and `r ci_level*100`% confidence intervals for $U_t$, respectively.
+Black lines and shaded ribbons indicate medians and `r ci_level*100`% credible intervals for $U_t$, respectively.
 Horizontal dashed lines indicate $U_t = `r target_hr`$.
 
 (ref:harvest-rate-cap-fr) Série chronologique du taux de récolte effectif $U_t$ pour les modèles statistiques des prises selon l’âge du hareng du Pacifique de
@@ -600,8 +580,8 @@ plot_harvest_rate(df = major_catch,
 
 (ref:proj-biomass-density-cap) Posterior distributions of projected spawning biomass assuming no fishing in `r assess_yr+1` $\SB_{`r assess_yr+1`}$ in thousands of tonnes (t) for
 Pacific Herring statistical catch-age models in the major stock assessment regions.
-Solid and dashed black lines indicate medians and `r ci_level*100`% confidence intervals for $\SB_{`r assess_yr+1`}$, respectively.
-Vertical red lines and shaded red areas indicate medians and `r ci_level*100`% confidence intervals for the limit reference point $0.3\SB_0$, respectively,
+Solid and dashed black lines indicate medians and `r ci_level*100`% credible intervals for $\SB_{`r assess_yr+1`}$, respectively.
+Vertical red lines and shaded red areas indicate medians and `r ci_level*100`% credible intervals for the limit reference point $0.3\SB_0$, respectively,
 where $\SB_0$ is estimated unfished spawning biomass.
 
 (ref:proj-biomass-density-cap-fr) Les distributions postérieures de la biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en `r assess_yr+1` $\SB_{`r assess_yr+1`}$ en milliers de tonnes pour les
