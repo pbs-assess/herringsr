@@ -26,7 +26,7 @@ Légende: «Autre» représente la réduction, ainsi que les pêches pratiquées
 «RogueFM» représente la pêche au hareng rogué au filet maillant; et
 «RogueSN» représente la pêche au hareng rogué à la senne.
 
-```{r major-catch, fig.asp = 1.25, fig.cap = ifelse(french, "(ref:major-catch-cap-fr)", "(ref:major-catch-cap)")}
+```{r major-catch, fig.asp=ifelse(french, 1.2, 1.25), fig.cap = ifelse(french, "(ref:major-catch-cap-fr)", "(ref:major-catch-cap)")}
 plot_catch(df = major_catch,
            xlim = c(recent_catch_yr, major_end_yr),
            translate = french)
@@ -57,7 +57,7 @@ Les résumés biologiques ne comprennent que les échantillons prélevés à l�
 La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui comprend les poissons âgés de `r age_plus` ans et plus.
 Notez que les axes verticaux sont coupés à `r wa_ylim[1]` et `r wa_ylim[2]` kg.
 
-```{r major-wa, fig.asp = 1.2, fig.cap = ifelse(french, "(ref:major-wa-cap-fr)", "(ref:major-wa-cap)")}
+```{r major-wa, fig.asp=ifelse(french, 1, 1.2), fig.cap = ifelse(french, "(ref:major-wa-cap-fr)", "(ref:major-wa-cap)")}
 plot_wa(df = major_wa,
         circle_age = age_highlight,
         xlim = c(major_start_yr, major_end_yr),
@@ -83,7 +83,7 @@ La ligne grey est l’âge moyen, et la zone ombrée est l’intervalle de créd
 Les résumés biologiques ne comprennent que les échantillons prélevés à l’aide de sennes (pêche commerciale et pêche d’essai) en raison de la sélectivité par taille des autres types d’engins tels que les filets maillants.
 La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui comprend les poissons âgés de `r age_plus` ans et plus.
 
-```{r major-pa, fig.asp = 1.25, fig.cap = ifelse(french, "(ref:major-pa-cap-fr)", "(ref:major-pa-cap)")}
+```{r major-pa, fig.asp=ifelse(french, 1.2, 1.25), fig.cap = ifelse(french, "(ref:major-pa-cap-fr)", "(ref:major-pa-cap)")}
 plot_pa(df = major_pa,
         age_plus = age_plus,
         conf = ci_level,
@@ -106,7 +106,7 @@ relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
 La ligne verticale en pointillés est la limite entre ces deux périodes.
 L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
-```{r major-spawn-index, fig.asp = 1.25, fig.cap = ifelse(french, "(ref:major-spawn-index-cap-fr)", "(ref:major-spawn-index-cap)")}
+```{r major-spawn-index, fig.asp=ifelse(french, 1.25, 1.25), fig.cap = ifelse(french, "(ref:major-spawn-index-cap-fr)", "(ref:major-spawn-index-cap)")}
 plot_spawn_ind(df = major_surv,
                new_surv_yr = new_surv_yr,
                yr_range = c(major_start_yr, major_end_yr),
@@ -215,7 +215,7 @@ Panneaux (d et f): les lignes rouges et l’ombrage indiquent les médianes et l
 Panneaux (e & f): les lignes pointillées horizontales indiquent zéro.
 Note: la biomasse et les prises sont exprimées en milliers de tonnes (t).
 
-```{r storyboard-hg, fig.asp=ifelse(french, 0.9, 1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
+```{r storyboard-hg, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -293,7 +293,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur du district de Prince Rupert.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-prd, fig.asp=ifelse(french, 0.9, 1), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
+```{r storyboard-prd, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -371,7 +371,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur de la côte centrale.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-cc, fig.asp=ifelse(french, 0.9, 1), fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)")}
+```{r storyboard-cc, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -408,7 +408,7 @@ La ligne verticale en pointillés est la limite entre ces deux périodes.
 Légende: 067 est la baie de Kitasu, 074 est Thompson/Stryker, 072 est Lower Spiller, et 078 est Upper Spiller.
 Notez que seul un sous-ensemble de sections est indiqué.
 
-```{r spawn-section-cc, fig.asp = 1, fig.cap = ifelse(french, "(ref:spawn-section-cc-cap-fr)", "(ref:spawn-section-cc-cap)")}
+```{r spawn-section-cc, fig.asp=ifelse(french, 1, 1), fig.cap = ifelse(french, "(ref:spawn-section-cc-cap-fr)", "(ref:spawn-section-cc-cap)")}
 plot_spawn_section(
         model = major_models[[3]], 
         data_file = file.path(data_path, "spawn-yr-sec-cc.csv"),
@@ -480,7 +480,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur du détroit de Georgie.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-sog, fig.asp=ifelse(french, 0.9, 1), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
+```{r storyboard-sog, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -558,7 +558,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 Voir la figure \@ref(fig:storyboard-hg) pour la description.
 
-```{r storyboard-wcvi, fig.asp=ifelse(french, 0.9, 1), fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
+```{r storyboard-wcvi, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
 
 cowplot::plot_grid(plot_a,
                    plot_b,
@@ -588,7 +588,7 @@ $\SB_t$ est la biomasse reproductrice estimée pour l’année $t$.
 Les lignes noires et les zones ombragées indiquent les médianes et intervalles de confiance de `r ci_level*100`% pour $U_t$, respectivement.
 Les lignes en tirets horizontales indiquent $U_t = `r target_hr`$.
 
-```{r harvest-rate, fig.asp = 1.2, fig.cap = ifelse(french, "(ref:harvest-rate-cap-fr)", "(ref:harvest-rate-cap)")}
+```{r harvest-rate, fig.asp=ifelse(french, 1.2, 1.2), fig.cap = ifelse(french, "(ref:harvest-rate-cap-fr)", "(ref:harvest-rate-cap)")}
 plot_harvest_rate(df = major_catch,
                   major_models,
                   major_regions_full,
@@ -607,7 +607,7 @@ modèles statistiques des prises selon l’âge du hareng du Pacifique dans les 
 Les lignes noires pleines et tiretées indiquent les médianes et les intervalles de confiance de `r ci_level*100`%  pour $\SB_{`r assess_yr+1`}$, respectivement.
 Les lignes et rectangles ombragés rouges indiquent les médianes et les intervalles de confiance de `r ci_level*100`% pour le point de référence limite, $0,3\SB_0$, où $\SB_0$ est la biomasse reproductrice non exploitée estimée.
 
-```{r proj-biomass-density, fig.asp = 1, fig.cap = ifelse(french, "(ref:proj-biomass-density-cap-fr)", "(ref:proj-biomass-density-cap)")}
+```{r proj-biomass-density, fig.asp=ifelse(french, 1, 1), fig.cap = ifelse(french, "(ref:proj-biomass-density-cap-fr)", "(ref:proj-biomass-density-cap)")}
 plot_proj_biomass_density(major_models, 
                           major_regions_full, 
                           yr = assess_yr + 1,

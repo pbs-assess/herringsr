@@ -89,7 +89,7 @@ en milliers de tonnes pour le hareng du Pacifique par Section de
 région d’évaluation des stocks mineur de la zone 27.
 Voir la figure \@ref(fig:spawn-section-cc) pour la description.
 
-```{r spawn-section-a27, fig.asp = 0.67, fig.cap = ifelse(french, "(ref:spawn-section-a27-cap-fr)", "(ref:spawn-section-a27-cap)")}
+```{r spawn-section-a27, fig.asp=ifelse(french, 0.67, 0.67), fig.cap = ifelse(french, "(ref:spawn-section-a27-cap-fr)", "(ref:spawn-section-a27-cap)")}
 plot_spawn_section(
         model = NA,
         data_file = file.path(data_path, "spawn-yr-sec-a27.csv"),
@@ -110,7 +110,7 @@ milliers de tonnes (t) de hareng du Pacifique de
 les régions d’évaluation des stocks mineurs.
 Voir la figure \@ref(fig:major-catch) pour la description.
 
-```{r minor-catch, fig.asp = 0.6, fig.cap = ifelse(french, "(ref:minor-catch-cap-fr)", "(ref:minor-catch-cap)")}
+```{r minor-catch, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-catch-cap-fr)", "(ref:minor-catch-cap)")}
 plot_catch(df = minor_catch,
            xlim = c(minor_start_yr_plot, minor_end_yr),
            translate = french)
@@ -125,7 +125,7 @@ pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr`
 dans les régions d’évaluation des stocks mineurs.
 Voir la figure \@ref(fig:major-wa) pour la description.
 
-```{r minor-wa, fig.asp = 0.6, fig.cap = ifelse(french, "(ref:minor-wa-cap-fr)", "(ref:minor-wa-cap)")}
+```{r minor-wa, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-wa-cap-fr)", "(ref:minor-wa-cap)")}
 plot_wa(df = minor_wa,
         circle_age = age_highlight,
         xlim = c(minor_start_yr_plot, minor_end_yr),
@@ -144,7 +144,7 @@ pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr`
 dans les régions d’évaluation des stocks mineurs.
 Voir la figure \@ref(fig:major-pa) pour la description.
 
-```{r minor-pa, fig.asp = 0.6, fig.cap = ifelse(french, "(ref:minor-pa-cap-fr)", "(ref:minor-pa-cap)")}
+```{r minor-pa, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-pa-cap-fr)", "(ref:minor-pa-cap)")}
 plot_pa(df = minor_pa,
         age_plus = age_plus,
         conf = ci_level,
@@ -164,7 +164,7 @@ de tonnes pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end
 dans les régions d’évaluation des stocks mineurs.
 Voir la figure \@ref(fig:major-spawn-index) pour la description.
 
-```{r minor-spawn-index, fig.asp = 0.6, fig.cap = ifelse(french, "(ref:minor-spawn-index-cap-fr)", "(ref:minor-spawn-index-cap)")}
+```{r minor-spawn-index, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-spawn-index-cap-fr)", "(ref:minor-spawn-index-cap)")}
 plot_spawn_ind(df = minor_surv,
                yr_range = c(minor_start_yr_plot, minor_end_yr),
                new_surv_yr = new_surv_yr,
@@ -218,7 +218,7 @@ pour le hareng du Pacifique de `r special_start_yr_plot` à `r special_end_yr`
 dans la zone spéciale, zone 10.
 Voir la figure \@ref(fig:major-wa) pour la description.
 
-```{r special-wa, fig.asp = 0.35, fig.cap = ifelse(french, "(ref:special-wa-cap-fr)", "(ref:special-wa-cap)")}
+```{r special-wa, fig.asp=ifelse(french, 0.35, 0.35), fig.cap = ifelse(french, "(ref:special-wa-cap-fr)", "(ref:special-wa-cap)")}
 plot_wa(df = special_wa,
         circle_age = age_highlight,
         xlim = c(special_start_yr_plot, special_end_yr),
@@ -238,7 +238,7 @@ pour le hareng du Pacifique de `r special_start_yr_plot` à `r special_end_yr`
 dans la zone spéciale, zone 10.
 Voir la figure \@ref(fig:major-pa) pour la description.
 
-```{r special-pa, fig.asp = 0.35, fig.cap = ifelse(french, "(ref:special-pa-cap-fr)", "(ref:special-pa-cap)")}
+```{r special-pa, fig.asp=ifelse(french, 0.35, 0.35), fig.cap = ifelse(french, "(ref:special-pa-cap-fr)", "(ref:special-pa-cap)")}
 plot_pa(df = special_pa,
         age_plus = age_plus,
         conf = ci_level,
@@ -258,7 +258,7 @@ de tonnes pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end
 dans la zone spéciale, zone 10.
 Voir la figure \@ref(fig:major-spawn-index) pour la description.
 
-```{r special-spawn-index, fig.asp = 0.4, fig.cap = ifelse(french, "(ref:special-spawn-index-cap-fr)", "(ref:special-spawn-index-cap)")}
+```{r special-spawn-index, fig.asp=ifelse(french, 0.4, 0.4), fig.cap = ifelse(french, "(ref:special-spawn-index-cap-fr)", "(ref:special-spawn-index-cap)")}
 plot_spawn_ind(df = special_surv,
                yr_range = c(special_start_yr_plot, special_end_yr),
                new_surv_yr = new_surv_yr,
