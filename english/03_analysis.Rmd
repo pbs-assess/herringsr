@@ -130,26 +130,26 @@ we call this incidental catch.
 Similar to SOK harvest as well as FSC and recreational catch,
 incidental catch is not accounted for in the Pacific Herring stock assessment, 
 and is considered minor relative to commercial harvest.
-Although incidental catch is not included in the stock assessment,
-we provide estimates of incidental catch of Pacific Herring in
-aquaculture activities.
-Notes about incidental catch data: 
+Although incidental catch is not included in Pacific Herring stock assessments,
+we provide estimated incidental catch in aquaculture activities
+by SAR from xx to xx (Figure \@ref(fig:major-incidental)).
+<!-- This seems trivial, but is distinguished in the data: -->
+<!-- Incidental catch includes fish caught during aquaculture activities, and -->
+<!-- fish observed when recovering farmed fish carcasses. -->
 
-1. Data is provided by Pacific Fishery Management Area (PFMA) and calendar year from 2015 to 2020.
-    1. PFMAs are analogous to Statistical Areas, but PFMAs are larger.
-    1. Incomplete catch data for 2020.
-1. Data includes:
-    1. Incidental catch (i.e., fish caught during aquaculture activities), and
-    1. Wild mortality (i.e., fish observed when recovering carcasses).
-1. Data indicate the number of fish released and dead.
-    1. Unknown mortality rate for "released" fish.
-    1. Unknown length, weight, age, or sex of fish.
+1. Data is provided by Pacific Fishery Management Area (PFMA) and year.
+    a. PFMAs are analogous to Statistical Areas, but PFMAs are larger.
+    a. Incomplete catch data for 2020.
+1. Data indicate the number of Pacific Herring released and dead.
+    a. Unknown mortality rate for "released" fish.
+    a. Unknown length, weight, age, and sex of fish.
+    a. "Herring-like" fish are assumed to be herring when decomposition hinders identification.
 
 Possible discussion points:
 
-1. How could incidental catch affect herring stocks?
-1. How could ignoring incidental catch affect the assessment?
-1. Mention possible incidental catch in other fisheries such as the groundfish trawl.
+1. How incidental catch affects herring stocks.
+1. How ignoring incidental catch affects stock assessments.
+1. Mention possible incidental catch in other fisheries such as groundfish trawl.
 
 ### Biological data\label{sec:biol-data}
 
