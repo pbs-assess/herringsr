@@ -133,9 +133,19 @@ total_final_yr_other_catch <- total_final_yr_catch %>%
   pull() %>%
   f()
 
+# Data file
+data_path <- here::here("data")
+
+# Incidental catch
+ic_file_pattern <- "incidental-*"
+ic_filenames <- dir(data_path, pattern = ic_file_pattern)
+ic <- ic_filenames %>%
+  map(~read_csv(file.path(data_path, .), col_types=cols())) %>%
+  reduce(rbind)
+ic$Region <- en2fr(ic$Region, french)
+
 # Spawn-on-kelp
 sok_file_pattern <- "harvest-sok-*"
-data_path <- here::here("data")
 sok_filenames <- dir(data_path, pattern = sok_file_pattern)
 sok <- sok_filenames %>%
   map(~read_csv(file.path(data_path, .), col_types=cols())) %>%
@@ -144,7 +154,6 @@ sok$Region <- en2fr(sok$Region, french)
 
 # Proportion-of-spawn
 ps_file_pattern <- "prop-spawn-*"
-data_path <- here::here("data")
 ps_filenames <- dir(data_path, pattern = ps_file_pattern)
 ps_shortnames <- sub("prop-spawn-", "", ps_filenames )
 ps_shortnames <- toupper(sub(".csv", "", ps_shortnames))
