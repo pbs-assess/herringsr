@@ -1,8 +1,10 @@
+# R files
 .Rproj.user
 .Rhistory
 .RData
 .DS_Store
 
+# Folders
 csas-style
 knitr-cache-docx
 knitr-cache-tex
@@ -12,6 +14,7 @@ models
 translation
 _book
 
+# Temporary knitr files
 HerringSR.aux
 HerringSR.log
 HerringSR.Rmd
@@ -21,9 +24,11 @@ HerringSR.pdf
 HerringSR.knit.md
 HerringSR.utf8.md
 
+# General file types
 *.zip
 *.docx
 *.pdf
 *.log
 
-incidental-*.csv
+# Data files
+data/incidental-*.csv
