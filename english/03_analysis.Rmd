@@ -121,6 +121,36 @@ Combined commercial removals from `r assess_yr-9` to `r assess_yr` from the roe,
 The proportion of coast-wide catch that comes from the SoG was 22% in 1990, and 100% in `r assess_yr`.
 Total SOK harvest (pounds of validated product) for the major SARs from `r assess_yr-9` to `r assess_yr` is presented in Table \@ref(tab:annual-sok-catch).
 
+<!-- TODO: Placeholder.. needs work -->
+\textbf{Incidental catch}
+
+Some fisheries and aquaculture activities in BC cause
+incidental mortality to Pacific Herring;
+we call this incidental catch.
+Similar to SOK harvest as well as FSC and recreational catch,
+incidental catch is not accounted for in the Pacific Herring stock assessment, 
+and is considered minor relative to commercial harvest.
+Although incidental catch is not included in the stock assessment,
+we provide estimates of incidental catch of Pacific Herring in
+aquaculture activities.
+Notes about incidental catch data: 
+
+1. Data is provided by Pacific Fishery Management Area (PFMA) and calendar year from 2015 to 2020.
+    1. PFMAs are analogous to Statistical Areas, but PFMAs are larger.
+    1. Incomplete catch data for 2020.
+1. Data includes:
+    1. Incidental catch (i.e., fish caught during aquaculture activities), and
+    1. Wild mortality (i.e., fish observed when recovering carcasses).
+1. Data indicate the number of fish released and dead.
+    1. Unknown mortality rate for "released" fish.
+    1. Unknown length, weight, age, or sex of fish.
+
+Possible discussion points:
+
+1. How could incidental catch affect herring stocks?
+1. How could ignoring incidental catch affect the assessment?
+1. Mention possible incidental catch in other fisheries such as the groundfish trawl.
+
 ### Biological data\label{sec:biol-data}
 
 Biological samples are collected as described in @cleary2018 and Table \@ref(tab:data-input).
@@ -148,17 +178,6 @@ Time series of spawn index by major stock assessment region, from `r paste(surv_
 In `r surv_yr_rng[2]`, there was a notable increase in survey biomass (index values) for HG and SoG SARs (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-hg) & \@ref(tab:spawn-index-sog)),
 a small increase in survey biomass for WCVI (Figure \@ref(fig:major-spawn-index) and Table \@ref(tab:spawn-index-wcvi)), and
 a small decrease in survey biomass for PRD and CC (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-prd) & \@ref(tab:spawn-index-cc)).
-
-## Incidental catch
-
-<!-- TODO: This is a placeholder; needs to be completed. -->
-We have the spreadsheet ("Herring Data Request.xlsx")
-of number released and dead by PFMA (analogous to Statistical Areas)
-from 2015 to 2020 (2020 may be incomplete).
-We may want to tweak years to align with herring seasons?
-Maybe a figure with one panel for each SAR, showing annual releases and mortalities.
-
-On this topic, we could also mention possible incidental catch in other fisheries, such as the groundfish trawl.
 
 ## Spatial spawn distribution
 
