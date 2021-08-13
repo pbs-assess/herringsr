@@ -1,5 +1,5 @@
 mp,om,label,obj1,hiab,obj2,obj3,obj4,catch,esc,abs_esc,hr,cap,num_end_yrs,lrp,usr
-3,DDM,minE0.5B0_HR10,,,,,,,0.5,0,0.1,NA,1,NA,NA
+3,DDM,minE0.5B0_HR10,0.92,0.84,0.57,54.13,3.09,0.32,0.5,0,0.1,NA,1,NA,NA
 6,DDM,HS30 - 60_HR10_cap5,0.93,0.82,0.59,40.11,3.29,0.18,NA,NA,0.1,5,1,0.3,0.6
 7,DDM,HS30 - 60_HR05,0.94,0.85,0.65,43.16,1.9,0.23,NA,NA,0.05,NA,1,0.3,0.6
 8,DDM,NoFish_FSC,0.94,0.88,0.68,0,0.14,1,NA,NA,NA,NA,NA,NA,NA
