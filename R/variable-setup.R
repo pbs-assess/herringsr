@@ -142,7 +142,10 @@ ic_filenames <- dir(data_path, pattern = ic_file_pattern)
 ic <- ic_filenames %>%
   map(~read_csv(file.path(data_path, .), col_types=cols())) %>%
   reduce(rbind)
-ic$Region <- en2fr(ic$Region, french)
+ic <- ic %>%
+  mutate(Region = en2fr(Region, french),
+         Region = factor(Region, regions$Region)
+  )
 
 # Spawn-on-kelp
 sok_file_pattern <- "harvest-sok-*"
