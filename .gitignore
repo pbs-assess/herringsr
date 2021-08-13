@@ -8,9 +8,10 @@ knitr-cache-docx
 knitr-cache-tex
 knitr-figs-docx
 knitr-figs-pdf
-models*
+models
 translation
 _book
+
 HerringSR.aux
 HerringSR.log
 HerringSR.Rmd
@@ -24,3 +25,5 @@ HerringSR.utf8.md
 *.docx
 *.pdf
 *.log
+
+incidental-*.csv
