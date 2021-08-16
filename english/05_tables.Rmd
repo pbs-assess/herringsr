@@ -835,7 +835,7 @@ En outre, $\SB_\text{MOY}$ correspond à la biomasse reproductrice moyenne de 19
 Les critères de performance $\SB_t >=0,65 \SB_0$, $\SB_t >=0,75 \SB_0$, et $\SB_t >= \SB_\text{AVE}$ sont proposés par
 les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse au niveaux $P >= 50$% et $P >= 75$%.
 
-\begin{turn}
+\begin{landscapepage}
 
 \setlength{\tabcolsep}{3.5pt}
 
@@ -877,6 +877,6 @@ decision_tables_mp_add(mp.wcvi,
 
 \setlength{\tabcolsep}{6pt}
 
-\end{turn}
+\end{landscapepage}
 
 \afterpage{\clearpage}
