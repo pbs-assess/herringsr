@@ -33,14 +33,15 @@ plot_catch(df = major_catch,
 ```
 
 <!-- TODO: Proper caption and translation -->
-(ref:major-incidental-cap) Incidental catch.
+(ref:major-incidental-cap) Incidental catch from
+`r min(ic_yrs)` to `r max(ic_yrs)`: major.
 
-(ref:major-incidental-cap-fr) Incidental catch in French.
+(ref:major-incidental-cap-fr) Incidental catch in French from
+`r min(ic_yrs)` to `r max(ic_yrs)`: major.
 
-<!-- TODO: Filter years and regions -->
-```{r major-incidental, fig.asp=ifelse(french, 1.2, 1.25), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)")}
-plot_ic(df = ic,
-        # xlim = c(major_start_yr, major_end_yr),
+```{r major-incidental, fig.asp=ifelse(french, 1, 1), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)")}
+plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
+        xlim = c(min(ic_yrs), max(ic_yrs)),
         translate = french)
 ```
 

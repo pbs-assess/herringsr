@@ -116,6 +116,21 @@ plot_catch(df = minor_catch,
            translate = french)
 ```
 
+<!-- TODO: Proper caption and translation -->
+(ref:minor-incidental-cap) Incidental catch from
+`r min(ic_yrs)` to `r max(ic_yrs)`: minor.
+See Figure \@ref(fig:major-incidental) for description.
+
+(ref:minor-incidental-cap-fr) Incidental catch in French from
+`r min(ic_yrs)` to `r max(ic_yrs)`: minor.
+Voir la figure \@ref(fig:major-incidental) pour la description.
+
+```{r minor-incidental, fig.asp=ifelse(french, 0.35, 0.35), fig.cap = ifelse(french, "(ref:minor-incidental-cap-fr)", "(ref:minor-incidental-cap)")}
+plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Minor"]),
+        xlim = c(min(ic_yrs), max(ic_yrs)),
+        translate = french)
+```
+
 (ref:minor-wa-cap) Time series of Pacific Herring mean weight-at-age in kilograms (kg)
 from `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
 See Figure \@ref(fig:major-wa) for description.

@@ -14,6 +14,9 @@ recent_catch_yr <- 1972
 # Number of years to show in tables (+1)
 num_yrs_tab <- 9
 
+# Years to include for incidental catch
+ic_yrs <- 2016:(assess_yr - 1)
+
 # Limits for the weight-at-age plot
 wa_ylim <- c(0.05,0.20)
 
@@ -145,7 +148,8 @@ ic <- ic_filenames %>%
 ic <- ic %>%
   mutate(Region = en2fr(Region, french),
          Region = factor(Region, regions$Region)
-  )
+  ) %>%
+  filter(Year %in% ic_yrs)
 
 # Spawn-on-kelp
 sok_file_pattern <- "harvest-sok-*"

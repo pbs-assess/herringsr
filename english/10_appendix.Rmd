@@ -13,6 +13,7 @@ For Area 27, we provide the time series of spawn index by Section from
 (Figure \@ref(fig:spawn-section-a27)).
 We also provide time series of
 landed commercial catch (Figure \@ref(fig:minor-catch)),
+incidental catch (Figure \@ref(fig:minor-incidental)),
 biological data including weight-at-age (Figure \@ref(fig:minor-wa)) and
 proportion-at-age (Figure \@ref(fig:minor-pa)),
 as well as spawn index (Figure \@ref(fig:minor-spawn-index))
