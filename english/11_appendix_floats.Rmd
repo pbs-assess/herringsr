@@ -116,13 +116,14 @@ plot_catch(df = minor_catch,
            translate = french)
 ```
 
-<!-- TODO: Proper caption and translation -->
-(ref:minor-incidental-cap) Incidental catch from
-`r min(ic_yrs)` to `r max(ic_yrs)`: minor.
+(ref:minor-incidental-cap) Incidental Pacific Herring catch
+in aquaculture activities in thousands of fish from
+`r min(ic_yrs)` to `r max(ic_yrs)` in the minor stock assessment regions.
 See Figure \@ref(fig:major-incidental) for description.
 
-(ref:minor-incidental-cap-fr) Incidental catch in French from
-`r min(ic_yrs)` to `r max(ic_yrs)`: minor.
+(ref:minor-incidental-cap-fr) Prise accidentelle de hareng du Pacifique dans les
+activités d'aquaculture en milliers de poissons de `r min(ic_yrs)` à 
+`r max(ic_yrs)` dans les régions d'évaluation du stock mineurs.
 Voir la figure \@ref(fig:major-incidental) pour la description.
 
 ```{r minor-incidental, fig.asp=ifelse(french, 0.35, 0.35), fig.cap = ifelse(french, "(ref:minor-incidental-cap-fr)", "(ref:minor-incidental-cap)")}

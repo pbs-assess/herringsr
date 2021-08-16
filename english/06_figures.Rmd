@@ -32,12 +32,13 @@ plot_catch(df = major_catch,
            translate = french)
 ```
 
-<!-- TODO: Proper caption and translation -->
-(ref:major-incidental-cap) Incidental catch from
-`r min(ic_yrs)` to `r max(ic_yrs)`: major.
+(ref:major-incidental-cap) Incidental Pacific Herring catch
+in aquaculture activities in thousands of fish from
+`r min(ic_yrs)` to `r max(ic_yrs)` in the major stock assessment regions.
 
-(ref:major-incidental-cap-fr) Incidental catch in French from
-`r min(ic_yrs)` to `r max(ic_yrs)`: major.
+(ref:major-incidental-cap-fr) Prise accidentelle de hareng du Pacifique dans les
+activités d'aquaculture en milliers de poissons de `r min(ic_yrs)` à 
+`r max(ic_yrs)` dans les régions d'évaluation du stock majeurs.
 
 ```{r major-incidental, fig.asp=ifelse(french, 1, 1), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)")}
 plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
@@ -48,7 +49,7 @@ plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
 (ref:major-wa-cap) Time series of Pacific Herring mean weight-at-age in kilograms (kg)
 from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
 Circles show mean for age-`r age_highlight` herring.
-Lines show `r nRollWA`-year running means for age-`r age_first` to age-`r age_plus` herring, incrementing up from bottom line and shaded from darker to ligher.
+Lines show `r nRollWA`-year running means for age-`r age_first` to age-`r age_plus` herring, incrementing up from bottom line and shaded from darker to lighter.
 The thick line shows age-`r age_highlight` herring.
 In years where there are no biological samples for an age class,
 values are imputed as the mean of the previous `r nRollWA` years,
