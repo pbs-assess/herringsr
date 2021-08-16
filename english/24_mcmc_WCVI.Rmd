@@ -33,7 +33,7 @@ Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) po
 
 ```{r wcvi-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-traces-cap-fr)", "(ref:wcvi-traces-cap)")}
 make.traces.plot(major_models[[model_ind]], 
-                 mcmc_burnin = 7000, #not sure about this burnin
+                 mcmc_burnin = 1000, #not sure about this burnin
                  axis.lab.freq = 200)
 ```
 
@@ -46,7 +46,7 @@ paramètres estimés pour le hareng du Pacifique dans la région d’évaluation
 Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r wcvi-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-autocor-cap-fr)", "(ref:wcvi-autocor-cap)")}
-make.autocor.plot(major_models[[model_ind]], mcmc_burnin = 7000)
+make.autocor.plot(major_models[[model_ind]], mcmc_burnin = 1000)
 ```
 
 (ref:wcvi-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
