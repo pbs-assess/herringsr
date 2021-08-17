@@ -31,6 +31,9 @@ As with the minor SARs,
 we provide the spawn index and proportion of spawn index by Section
 from `r special_end_yr-num_yrs_tab` to `r special_end_yr`
 (Table \@ref(tab:spawn-index-a10)).
+Note that 2021 spawn data may be incomplete;
+data for 2021 are from the DFO dive survey on 14 April 2021, and
+do not include data collected by the Gwa'sala-'Nakwaxda'xw Nation.
 <!-- TODO: This is a placeholder; need to decide and make tables/figures. -->
 We also provide time series of
 <!-- landed commercial catch (Figure \@ref(fig:special-catch)), -->
