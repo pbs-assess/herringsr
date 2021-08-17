@@ -34,13 +34,15 @@ plot_catch(df = major_catch,
 
 (ref:major-incidental-cap) Incidental Pacific Herring catch
 in aquaculture activities in thousands of fish from
-`r min(ic_yrs)` to `r max(ic_yrs)` in the major stock assessment regions.
+`r min(ic_yrs)` to `r max(ic_yrs)` in the major stock assessment regions (SARs).
+Note that we only include SARs with reported incidental catch.
 
 (ref:major-incidental-cap-fr) Prise accidentelle de hareng du Pacifique dans les
 activités d'aquaculture en milliers de poissons de `r min(ic_yrs)` à 
-`r max(ic_yrs)` dans les régions d'évaluation du stock majeurs.
+`r max(ic_yrs)` dans les régions d'évaluation du stock (RES) majeurs.
+Notez que nous n'incluons que les RES avec des prises accidentelles déclarées.
 
-```{r major-incidental, fig.asp=ifelse(french, 1, 1), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)")}
+```{r major-incidental, fig.asp=ifelse(french, 0.8, 0.8), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)")}
 plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
         xlim = c(min(ic_yrs), max(ic_yrs)),
         translate = french)
@@ -60,16 +62,19 @@ due to size-selectivity of other gear types such as gillnet.
 The age-`r age_plus` class includes fish ages `r age_plus` and older.
 Note: vertical axes are cropped at `r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
 
-<!-- TODO: Needs editing -->
-(ref:major-wa-cap-fr) Série chronologique du poids selon l’âge en kilogrammes (kg) pour les poissons de `r age_highlight` ans (cercles) et des moyennes mobiles sur `r nRollWA` ans du poids selon l’âge (lignes) pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs.
-Les lignes indiquent les moyennes mobiles sur `r nRollWA` ans pour le hareng âgé de `r age_first` à `r age_plus` ans (en augmentant à partir de la ligne de fond);
-la ligne noire épaisse met en évidence le hareng âgé de `r age_highlight` ans.
-Les valeurs manquantes du poids selon l’âge (c.-à-d. les années où il n’y a pas d’échantillons biologiques) sont imputées selon l’une des deux méthodes suivantes:
-les valeurs au début de la série chronologique sont imputées en étendant la première valeur non manquante à rebours;
-les autres valeurs sont imputées comme la moyenne des `r nRollWA` années précédentes.
-Les résumés biologiques ne comprennent que les échantillons prélevés à l’aide de sennes (pêche commerciale et pêche d’essai) en raison de la sélectivité par taille des autres types d’engins tels que les filets maillants.
-La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui comprend les poissons âgés de `r age_plus` ans et plus.
-Notez que les axes verticaux sont coupés à `r wa_ylim[1]` et `r wa_ylim[2]` kg.
+(ref:major-wa-cap-fr) Série chronologique du poids moyen à l'âge du hareng du Pacifique en kilogrammes (kg)
+de `r major_start_yr` à `r major_end_yr` dans les régions d'évaluation du stock majeurs.
+Les cercles indiquent la moyenne pour le hareng d'âge `r age_highlight`.
+Les lignes indiquent les moyennes mobiles sur `r nRollWA` ans pour les harengs d'âge `r age_first` à age `r age_plus`, en augmentant à partir de la ligne inférieure et en ombrant de plus en plus.
+La ligne épaisse montre le hareng d'âge "r age_highlight".
+Dans les années où il n'y a pas d'échantillons biologiques pour une classe d'âge,
+les valeurs sont imputées comme la moyenne des années précédentes `r nRollWA`,
+sauf pour le début de la série temporelle qui est imputé par
+en prolongeant la première valeur non manquante en arrière.
+Les résumés biologiques ne comprennent que les échantillons collectés à l'aide de senneurs (commerciaux et d'essai)
+en raison de la sélectivité de taille d'autres types d'engins tels que le filet maillant.
+La classe âge-`r âge_plus` comprend les poissons âgés de `r âge_plus` et plus.
+Note : les axes verticaux sont rognés de `r f(wa_ylim[1], 2)` à `r f(wa_ylim[2], 2)` kg.
 
 ```{r major-wa, fig.asp=ifelse(french, 1, 1.2), fig.cap = ifelse(french, "(ref:major-wa-cap-fr)", "(ref:major-wa-cap)")}
 plot_wa(df = major_wa,
@@ -396,7 +401,7 @@ La ligne verticale en pointillés est la limite entre ces deux périodes.
 Légende: 067 est la baie de Kitasu, 074 est Thompson/Stryker, 072 est Lower Spiller, et 078 est Upper Spiller.
 Notez que seul un sous-ensemble de sections est indiqué.
 
-```{r spawn-section-cc, fig.asp=ifelse(french, 1, 1), fig.cap = ifelse(french, "(ref:spawn-section-cc-cap-fr)", "(ref:spawn-section-cc-cap)")}
+```{r spawn-section-cc, fig.asp=ifelse(french, 0.9, 0.9), fig.cap = ifelse(french, "(ref:spawn-section-cc-cap-fr)", "(ref:spawn-section-cc-cap)")}
 plot_spawn_section(
         model = major_models[[3]], 
         data_file = file.path(data_path, "spawn-yr-sec-cc.csv"),

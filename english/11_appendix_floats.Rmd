@@ -134,12 +134,23 @@ plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Minor"]),
 
 (ref:minor-wa-cap) Time series of Pacific Herring mean weight-at-age in kilograms (kg)
 from `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
-See Figure \@ref(fig:major-wa) for description.
+Circles show mean for age-`r age_highlight` herring.
+Lines show means for age-`r age_first` to age-`r age_plus` herring, incrementing up from bottom line and shaded from darker to lighter.
+The thick line shows age-`r age_highlight` herring.
+Biological summaries only include samples collected using seine nets (commercial and test)
+due to size-selectivity of other gear types such as gillnet.
+The age-`r age_plus` class includes fish ages `r age_plus` and older.
+Note: vertical axes are cropped at `r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
 
-(ref:minor-wa-cap-fr) Série chronologique du poids selon l’âge en kilogrammes (kg)
-pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr`
-dans les régions d’évaluation des stocks mineurs.
-Voir la figure \@ref(fig:major-wa) pour la description.
+(ref:minor-wa-cap-fr) Série chronologique du poids moyen à l'âge du hareng du Pacifique en kilogrammes (kg)
+de `r major_start_yr` à `r major_end_yr` dans les régions d'évaluation du stock minieurs.
+Les cercles indiquent la moyenne pour le hareng d'âge `r age_highlight`.
+Les lignes indiquent les moyennes pour les harengs d'âge `r age_first` à age `r age_plus`, en augmentant à partir de la ligne inférieure et en ombrant de plus en plus.
+La ligne épaisse montre le hareng d'âge "r age_highlight".
+Les résumés biologiques ne comprennent que les échantillons collectés à l'aide de senneurs (commerciaux et d'essai)
+en raison de la sélectivité de taille d'autres types d'engins tels que le filet maillant.
+La classe âge-`r âge_plus` comprend les poissons âgés de `r âge_plus` et plus.
+Note: les axes verticaux sont rognés de `r f(wa_ylim[1], 2)` à `r f(wa_ylim[2], 2)` kg.
 
 ```{r minor-wa, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-wa-cap-fr)", "(ref:minor-wa-cap)")}
 plot_wa(df = minor_wa,
@@ -227,12 +238,12 @@ knitr::include_graphics(here::here(ifelse(french, "figures/A10_fr.png", "figures
 (ref:special-wa-cap) Time series of Pacific Herring weight-at-age in kilograms (kg)
 from `r special_start_yr_plot` to `r special_end_yr`
 in the special area, Area 10.
-See Figure \@ref(fig:major-wa) for description.
+See Figure \@ref(fig:minor-wa) for description.
 
 (ref:special-wa-cap-fr) Série chronologique du poids selon l’âge en kilogrammes (kg)
 pour le hareng du Pacifique de `r special_start_yr_plot` à `r special_end_yr`
 dans la zone spéciale, zone 10.
-Voir la figure \@ref(fig:major-wa) pour la description.
+Voir la figure \@ref(fig:minor-wa) pour la description.
 
 ```{r special-wa, fig.asp=ifelse(french, 0.35, 0.35), fig.cap = ifelse(french, "(ref:special-wa-cap-fr)", "(ref:special-wa-cap)")}
 plot_wa(df = special_wa,
