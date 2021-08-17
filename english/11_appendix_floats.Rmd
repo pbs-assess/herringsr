@@ -149,7 +149,7 @@ Les lignes indiquent les moyennes pour les harengs d'âge `r age_first` à age `
 La ligne épaisse montre le hareng d'âge "r age_highlight".
 Les résumés biologiques ne comprennent que les échantillons collectés à l'aide de senneurs (commerciaux et d'essai)
 en raison de la sélectivité de taille d'autres types d'engins tels que le filet maillant.
-La classe âge-`r âge_plus` comprend les poissons âgés de `r âge_plus` et plus.
+La classe âge-`r age_plus` comprend les poissons âgés de `r age_plus` et plus.
 Note: les axes verticaux sont rognés de `r f(wa_ylim[1], 2)` à `r f(wa_ylim[2], 2)` kg.
 
 ```{r minor-wa, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-wa-cap-fr)", "(ref:minor-wa-cap)")}
