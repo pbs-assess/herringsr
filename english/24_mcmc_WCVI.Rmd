@@ -8,6 +8,10 @@ The first `r f(mcmc_burnin)` samples were discarded (burn-in),
 leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for posteriors.
 This section will not be included in the final document.
 
+Autocorrelation was detected within the mcmc interations for both the reduction fisheries selectivity-at-50% ($\hat{a}_{1}$) and it’s standard deviation ($\hat{\gamma}_{1}$) for the West Coast of Vancouver Island. For the West Coast of Vancouver Island we attempted to ameliorate the issue by using last year’s posterior medians as starting values, increasing the mcmc chain from 5 million to 10 million iterations, and increasing the number of initial iterations discarded as burnin from 1000 to 5000, and then again to 7000.  The thinning rate, choosing 1 out of every 1000 was kept the same. The autocorrelation for both $\hat{a}_{1}$ and $\hat{\gamma}_{1}$ was reduced but still persistent. An attempt to run the chain for 20 million iterations was made, with a 1 in 4000 thin rate, but was not successful due to computing limitations. Since these remedies were not more successful, we reported the results of the 5 million-run chain to be consistent with other regions. 
+Autocorrelation in the mcmc iterations may indicate bias in the posterior distribution. It may be a result of little data, which is the case since the West Coast of Vancouver Island has been closed to commercial fishing since 2005. If and when fisheries open increased data could help inform the model to reduce autocorrelation and any bias as a result. Since the fishery is currently closed we accept that bias may be present, and divert computing and personnel resources toward other matters.
+
+
 (ref:wcvi-priors-posts-cap) Prior probability distributions (lines) with
 comparative posterior histograms (bars) for the Pacific Herring statistical catch-age model
 in the West Coast of Vancouver Island major stock assessment region.

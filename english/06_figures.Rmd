@@ -193,7 +193,7 @@ Panel (c): Reconstructed number of age-`r age_first` recruits in thousands of mi
 Panel (d): Posterior estimate of spawning biomass. Point is median of forecast spawning biomass in `r assess_yr+1` in the absence of fishing. Coloured vertical bars indicate commercial catch, excluding spawn-on-kelp (yellow = RoeSN; turquois = RoeGN; purple = other see Fig \@ref(fig:major-catch)).\
 Panel (e): Estimated log recruitment deviations from 1953 onwards.\
 Panel (f): Spawning biomass production (dive survey period `r new_surv_yr`-`r assess_yr-1`; median posterior estimates), chronologically shaded light to dark; triangles indicates `r assess_yr-1`.\
-Notes: Panels (d & f): Red indicates the median limit reference point = 0.3*(estimated unfished spawning biomass).\
+Notes: Panels (d & f): Red indicates the median limit reference point = 0.3*(estimated unfished spawning biomass).
 Biomass & catch are in thousands of tonnes (t). Bands & error bars are all `r ci_level*100`% credible intervals.
 
 (ref:storyboard-hg-cap-fr) Séries chronologiques de sorties de modèle pour le
@@ -212,10 +212,10 @@ Panneaux (d et f):  Les lignes rouges indiquent le point de référence limite m
 
 cowplot::plot_grid(plot_a,
                    plot_b,
-                   plot_c,
                    plot_d,
-                   plot_e,
+                   plot_c,
                    plot_f,
+                   plot_e,
                    ncol = 2,
                    align = "v",
                    rel_heights = c(1.0, 1.0, 1.1))
