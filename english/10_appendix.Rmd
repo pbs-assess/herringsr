@@ -40,5 +40,5 @@ We also provide time series of
 biological data including weight-at-age (Figure \@ref(fig:special-wa)) and proportion-at-age (Figure \@ref(fig:special-pa)),
 as well as the spawn index (Figure \@ref(fig:special-spawn-index))
 from `r special_start_yr_plot` to `r special_end_yr`.
-Note that there is no commercial catch in Area 10 from 
+Note that there is no commercial catch or incidental catch in Area 10 from 
 `r special_start_yr_plot` to `r special_end_yr`.
