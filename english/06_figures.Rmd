@@ -33,12 +33,12 @@ plot_catch(df = major_catch,
 ```
 
 (ref:major-incidental-cap) Incidental Pacific Herring catch
-in aquaculture activities in thousands of fish from
+in aquaculture activities in number of fish from
 `r min(ic_yrs)` to `r max(ic_yrs)` in the major stock assessment regions (SARs).
 Note that we only include SARs with reported incidental catch.
 
 (ref:major-incidental-cap-fr) Prise accidentelle de hareng du Pacifique dans les
-activités d'aquaculture en milliers de poissons de `r min(ic_yrs)` à 
+activités d'aquaculture en nombre de poissons de `r min(ic_yrs)` à 
 `r max(ic_yrs)` dans les régions d'évaluation du stock (RES) majeurs.
 Notez que nous n'incluons que les RES avec des prises accidentelles déclarées.
 
