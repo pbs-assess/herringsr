@@ -837,7 +837,7 @@ les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse au niveaux $P >= 50
 
 \begin{landscapepage}
 
-\setlength{\tabcolsep}{3.5pt}
+\setlength{\tabcolsep}{3.75pt}
 
 ```{r decision-prd, results = 'asis', echo = FALSE}
 decision_tables_mp(mp.prd,
