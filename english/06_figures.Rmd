@@ -33,25 +33,16 @@ plot_catch(df = major_catch,
 ```
 
 (ref:major-incidental-cap) Incidental Pacific Herring catch
-<<<<<<< Updated upstream
-in aquaculture activities in thousands of fish from
-`r min(ic_yrs)` to `r max(ic_yrs)` in the major stock assessment regions (SARs).
-Notes: data for `r max(ic_yrs)` may be incomplete, and
-figure excludes SARs with no reported incidental catch.
-=======
 in aquaculture activities in thousands of fish 
 `r min(ic_yrs)` to `r max(ic_yrs)` for major stock assessment regions with reported incidental catch.
->>>>>>> Stashed changes
+Notes: Data for `r max(ic_yrs)` may be incomplete. 
+
 
 (ref:major-incidental-cap-fr) Prise accidentelle de hareng du Pacifique dans les
 activités d'aquaculture en milliers de poissons de `r min(ic_yrs)` à 
 `r max(ic_yrs)` dans les régions d'évaluation du stock (RES) majeurs.
-<<<<<<< Updated upstream
-Notes: les données pour `r max(ic_yrs)` peuvent être incomplètes, et
-le figure exclut les RES pour lesquels aucune prise accidentelle n'a été déclarée.
-=======
-Nous n'incluons que les RES avec des prises accidentelles déclarées.
->>>>>>> Stashed changes
+Notes: Les données pour `r max(ic_yrs)` peuvent être incomplètes.
+
 
 ```{r major-incidental, fig.asp=ifelse(french, 0.8, 0.8), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)")}
 plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
@@ -380,43 +371,27 @@ cowplot::plot_grid(plot_a,
 ```
 
 <!-- Central Coast scaled abundance by Section -->
-(ref:spawn-section-cc-cap) Spawn index in 
-thousands of tonnes (t) for selected sections  `r major_start_yr` to `r major_end_yr`
-in the Central Coast major stock assessment region scaled to abundance by $q$ (median posterior estimate).
-The dashed vertical line delineates between two periods defined by the dominant survey method: surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
-dive surveys (`r new_surv_yr` to `r major_end_yr`).
-<<<<<<< Updated upstream
-The dashed vertical line is the boundary between these two periods.
+(ref:spawn-section-cc-cap) Spawn index in thousands of tonnes (t) for selected sections  `r major_start_yr` to `r major_end_yr`
+in the Central Coast stock assessment region scaled to abundance by $q$ (median posterior estimate).
+The dashed vertical line delineates between two periods defined by the dominant survey method: surface surveys (`r major_start_yr` to `r new_surv_yr-1`, circles), and
+dive surveys (`r new_surv_yr` to `r major_end_yr`, triangles).
 Common names for primary spawning areas over the past 30-years: 
 067 is Kitasu Bay,
 072 is Lower Spiller,
 074 is Thompson/Stryker, and
 078 is Upper Spiller.
-Note that only a subset of CC Sections are shown.
 
-(ref:spawn-section-cc-cap-fr) Série chronologique de données mises à l’échelle
-de relevé du frai en milliers de tonnes (t)
-pour le hareng du Pacifique par Section de `r major_start_yr` à `r major_end_yr`
-dans dans la région d’évaluation des stocks majeur de la côte centrale.
-Les données de relevé du frai (l’indice du frai) sont mises à l’échelle de l’abondance à l’aide du paramètre de mise à l’échelle du relevé du frai $q$ (estimations a posteriori médian).
-L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante: relevés en surface (de `r major_start_yr` à `r new_surv_yr-1`), et
-relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
-La ligne verticale en pointillés est la limite entre ces deux périodes.
-Légende: 067 est la baie de Kitasu,
+(ref:spawn-section-cc-cap-fr)Indice de frai en milliers de tonnes (t) pour les sections sélectionnées `r major_start_yr` à `r major_end_yr`
+dans la région d'évaluation du stock de la côte centrale, mis à l'échelle de l'abondance par $q$ (estimation médiane postérieure).
+La ligne verticale en pointillés délimite deux périodes définies par la méthode d'enquête dominante : les enquêtes de surface (`r major_start_yr` à `r new_surv_yr-1`, cercles) et les enquêtes en plongée (`r new_surv_yr-1`, cercles).
+les relevés en plongée (`r new_surv_yr` à `r major_end_yr`, triangles).
+Noms communs des principales zones de frai au cours des 30 dernières années : 
+
+Traduit avec www.DeepL.com/Translator (version gratuite): 
+067 est la baie de Kitasu,
 072 est Lower Spiller,
 074 est Thompson/Stryker, et
 078 est Upper Spiller.
-Notez que seul un sous-ensemble de sections est indiqué.
-=======
-Legend: 067 is Kitasu Bay, 074 is Thompson/Stryker, 072 is Lower Spiller, and 078 is Upper Spiller.
-
-(ref:spawn-section-cc-cap-fr) Indice de frai en 
-milliers de tonnes (t) pour des sections sélectionnées `r major_start_yr` à `r major_end_yr` dans la région d'évaluation du stock majeur de la côte centrale, mis à l'échelle de l'abondance par $q$ (estimation médiane postérieure).
-La ligne verticale en pointillés délimite deux périodes définies par la méthode d'enquête dominante : les enquêtes de surface (`r major_start_yr` à `r new_surv_yr-1`), et les enquêtes en plongée (`r new_surv_yr-1`).
-les relevés en plongée (`r new_surv_yr` à `r major_end_yr`).
-Légende: 067 est la baie de Kitasu, 074 est Thompson/Stryker, 072 est Lower Spiller, et 078 est Upper Spiller.
-
->>>>>>> Stashed changes
 
 ```{r spawn-section-cc, fig.asp=ifelse(french, 0.9, 0.9), fig.cap = ifelse(french, "(ref:spawn-section-cc-cap-fr)", "(ref:spawn-section-cc-cap)")}
 plot_spawn_section(
