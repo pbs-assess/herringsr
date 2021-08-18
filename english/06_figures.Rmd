@@ -394,11 +394,12 @@ The spawn index has two distinct periods defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
 The dashed vertical line is the boundary between these two periods.
-Legend: 067 is Kitasu Bay,
+Common names for primary spawning areas over past 30-years: 
+067 is Kitasu Bay,
 072 is Lower Spiller,
 074 is Thompson/Stryker, and
 078 is Upper Spiller.
-Note that only a subset of Sections are shown.
+Note that only a subset of CC Sections are shown.
 
 (ref:spawn-section-cc-cap-fr) Série chronologique de données mises à l’échelle
 de relevé du frai en milliers de tonnes (t)
