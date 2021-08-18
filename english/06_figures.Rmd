@@ -34,15 +34,15 @@ plot_catch(df = major_catch,
 
 (ref:major-incidental-cap) Incidental Pacific Herring catch
 in aquaculture activities in thousands of fish 
-`r min(ic_yrs)` to `r max(ic_yrs)` for major stock assessment regions with reported incidental catch.
-Notes: Data for `r max(ic_yrs)` may be incomplete. 
-
+`r min(ic_yrs)` to `r max(ic_yrs)` for the major stock assessment regions (SARs).
+Notes: data for `r max(ic_yrs)` may be incomplete, and
+figure excludes SARs with no reported incidental catch.
 
 (ref:major-incidental-cap-fr) Prise accidentelle de hareng du Pacifique dans les
 activités d'aquaculture en milliers de poissons de `r min(ic_yrs)` à 
 `r max(ic_yrs)` dans les régions d'évaluation du stock (RES) majeurs.
-Notes: Les données pour `r max(ic_yrs)` peuvent être incomplètes.
-
+Notes: Les données pour `r max(ic_yrs)` peuvent être incomplètes, et
+la figure exclut les RAS pour lesquels aucune prise accidentelle n'a été déclarée.
 
 ```{r major-incidental, fig.asp=ifelse(french, 0.8, 0.8), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)")}
 plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
@@ -177,10 +177,16 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
                              translate = french)
 ```
 
-<!-- Haida Gwaii Storyboard -->
+<!-- Storyboard caption for all regions -->
+\newcommand{\storyboard}{
+This is the caption.}
 
+<!-- TODO: Translate when we are happy with the English version. -->
+\newcommand{\storyboardfr}{This is the caption in French.}
+
+<!-- Haida Gwaii Storyboard -->
 (ref:storyboard-hg-cap) Haida Gwaii stock assessment region time series output from `r major_start_yr` to `r major_end_yr`.
-Panel (a): Model fit (lines; median posterior estimate) to scaled spawn survey index (points, scaled by median posterior estimate of $q$).
+Panel (a): Model fit (lines\; median posterior estimate) to scaled spawn survey index (points, scaled by median posterior estimate of $q$).
 Panel (b): Posterior estimates of instantaneous natural mortality rate (year-1).
 Panel (c): Reconstructed number of age-`r age_first` recruits in thousands of millions, from 1953 onwards. 
 Horizontal line indicates median unfished age-`r age_first` recruitment $R_0$.
@@ -189,21 +195,13 @@ Point is median posterior forecast spawning biomass in `r assess_yr+1` in the ab
 Coloured vertical bars indicate commercial catch, excluding spawn-on-kelp (yellow = RoeSN; turquoise = RoeGN; purple = other, see Fig \@ref(fig:major-catch)).
 Panel (e): Estimated log recruitment deviations from 1953 onwards.
 Panel (f): Phase plot of spawning biomass production for the dive survey period (`r new_surv_yr`-`r assess_yr-1`; median posterior estimates), chronologically shaded light to dark; triangle indicates `r assess_yr-1`.
-Notes: Panels (d & f): Red lines indicate the median limit reference point = $0.3\SB_0$, where $SB_0$ is the estimated unfished spawning biomass.
-Biomass & catch are in thousands of tonnes (t). All bands & error bars are `r ci_level*100`% credible intervals.
-
+Notes: Panels (d and f): Red lines indicate the median limit reference point = $0.3\SB_0$, where $SB_0$ is the estimated unfished spawning biomass.
+Biomass and catch are in thousands of tonnes (t). All bands and error bars are `r ci_level*100`% credible intervals.
+\storyboard{}
 
 (ref:storyboard-hg-cap-fr) Séries chronologiques de sorties de modèle pour le
 modèle statistique des prises selon l’âge du hareng du Pacifique (`r major_start_yr`-`r major_end_yr`) dans la région d’évaluation des stocks majeur de Haida Gwaii.\
-Panneau (a): Ajustement du modèle (lignes; estimations a posteriori médian) Indice d’abondance des relevés de frai (points, mis à l’échelle par l’estimation postérieure médiane de $q = ?$)\
-Panneau (b): Estimations a posteriori du taux de mortalité naturelle instantanée (année-1).\
-Panneau (c): Nombre reconstitué de recrues d’âge `r age_first` en milliers de millions, à partir de 1953. La ligne  horizontale et la zone ombrée indiquent respectivement la médiane et l'intervalle crédible à `r ci_level*100`% pour le recrutement des poissons d'âge `r age_first` non pêchés $R_0$.
-Panneau (d): Estimation a posteriori de la biomasse reproductrice. Le point est la médiane de la biomasse reproductrice prévue en `r assess_yr+1`en l’absence de pêche.Les barres verticales colorées indiquent les prises commerciales, à l’exclusion du frai sur varech (jaune = RoeSN; turquois = RoeGN; pourpre = autre voir Fig \@ref(fig:major-catch)).\
-Panneau (e): Estimation log des écarts du recrutement à partir de 1953.\
-Panneau (f): Production de biomasse reproductrice (période d’enquête de plongée `r new_surv_yr`-`r assess_yr-1`; madman a posteriori médian),ombré chronologiquement de la lumière à l’obscurité;le triangle indique `r assess_yr-1`.\
-Notes: La biomasse et les prises sont exprimées en milliers de tonnes (t).\
-Bands & error bars are all `r ci_level*100`% credible intervals.\
-Panneaux (d et f):  Les lignes rouges indiquent le point de référence limite médian de 0,3* (biomasse de frai non pisciée estimée).
+\storyboardfr{}
 
 ```{r storyboard-hg, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
 
@@ -275,12 +273,12 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 <!-- Prince Rupert District Storyboard -->
 (ref:storyboard-prd-cap) Output from the Pacific Herring statistical catch-age model `r major_start_yr` to `r major_end_yr`
 in the Prince Rupert District major stock assessment region.
-See Figure \@ref(fig:storyboard-hg) for description.
+\storyboard{}
 
 (ref:storyboard-prd-cap-fr) Séries chronologiques de sorties de modèle pour le
 modèle statistique des prises selon l’âge du hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans la
 région d’évaluation des stocks majeur du district de Prince Rupert.
-Voir la figure \@ref(fig:storyboard-hg) pour la description.
+\storyboardfr{}
 
 ```{r storyboard-prd, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
 
@@ -352,12 +350,12 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 <!-- Central Coast Storyboard -->
 (ref:storyboard-cc-cap) Output from the Pacific Herring statistical catch-age model `r major_start_yr` to `r major_end_yr`
 in the Central Coast major stock assessment region.
-See Figure \@ref(fig:storyboard-hg) for description.
+\storyboard{}
 
 (ref:storyboard-cc-cap-fr) Séries chronologiques de sorties de modèle pour le
 modèle statistique des prises selon l’âge du hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans la
 région d’évaluation des stocks majeur de la côte centrale.
-Voir la figure \@ref(fig:storyboard-hg) pour la description.
+\storyboardfr{}
 
 ```{r storyboard-cc, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)")}
 
@@ -374,23 +372,21 @@ cowplot::plot_grid(plot_a,
 ```
 
 <!-- Central Coast scaled abundance by Section -->
-(ref:spawn-section-cc-cap) Spawn index in thousands of tonnes (t) for selected sections  `r major_start_yr` to `r major_end_yr`
+(ref:spawn-section-cc-cap) Spawn index in thousands of tonnes (t) for selected sections from `r major_start_yr` to `r major_end_yr`
 in the Central Coast stock assessment region scaled to abundance by $q$ (median posterior estimate).
 The dashed vertical line delineates between two periods defined by the dominant survey method: surface surveys (`r major_start_yr` to `r new_surv_yr-1`, circles), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`, triangles).
-Common names for primary spawning areas over the past 30-years: 
+Common names for primary spawning areas over the past 30 years: 
 067 is Kitasu Bay,
 072 is Lower Spiller,
 074 is Thompson/Stryker, and
 078 is Upper Spiller.
 
-(ref:spawn-section-cc-cap-fr)Indice de frai en milliers de tonnes (t) pour les sections sélectionnées `r major_start_yr` à `r major_end_yr`
+(ref:spawn-section-cc-cap-fr) Indice de frai en milliers de tonnes (t) pour les sections sélectionnées de `r major_start_yr` à `r major_end_yr`
 dans la région d'évaluation du stock de la côte centrale, mis à l'échelle de l'abondance par $q$ (estimation médiane postérieure).
-La ligne verticale en pointillés délimite deux périodes définies par la méthode d'enquête dominante : les enquêtes de surface (`r major_start_yr` à `r new_surv_yr-1`, cercles) et les enquêtes en plongée (`r new_surv_yr-1`, cercles).
+La ligne verticale en pointillés délimite deux périodes définies par la méthode d'enquête dominante: les enquêtes de surface (`r major_start_yr` à `r new_surv_yr-1`, cercles) et les enquêtes en plongée (`r new_surv_yr-1`, cercles).
 les relevés en plongée (`r new_surv_yr` à `r major_end_yr`, triangles).
-Noms communs des principales zones de frai au cours des 30 dernières années : 
-
-Traduit avec www.DeepL.com/Translator (version gratuite): 
+Noms communs des principales zones de frai au cours des 30 dernières années: 
 067 est la baie de Kitasu,
 072 est Lower Spiller,
 074 est Thompson/Stryker, et
@@ -461,12 +457,12 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 (ref:storyboard-sog-cap) Output from the Pacific Herring statistical catch-age model
 from `r major_start_yr` to `r major_end_yr`
 in the Strait of Georgia major stock assessment region.
-See Figure \@ref(fig:storyboard-hg) for description.
+\storyboard{}
 
 (ref:storyboard-sog-cap-fr) Séries chronologiques de sorties de modèle pour le
 modèle statistique des prises selon l’âge du hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans la
 région d’évaluation des stocks majeur du détroit de Georgie.
-Voir la figure \@ref(fig:storyboard-hg) pour la description.
+\storyboardfr{}
 
 ```{r storyboard-sog, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
 
@@ -539,12 +535,12 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 (ref:storyboard-wcvi-cap) Output from the Pacific Herring statistical catch-age model
 from `r major_start_yr` to `r major_end_yr`
 in the West Coast of Vancouver Island major stock assessment region.
-See Figure \@ref(fig:storyboard-hg) for description.
+\storyboard{}
 
 (ref:storyboard-wcvi-cap-fr) Séries chronologiques de sorties de modèle pour le
 modèle statistique des prises selon l’âge du hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans la
 région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
-Voir la figure \@ref(fig:storyboard-hg) pour la description.
+\storyboardfr{}
 
 ```{r storyboard-wcvi, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
 
