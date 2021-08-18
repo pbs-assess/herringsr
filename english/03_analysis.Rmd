@@ -416,10 +416,10 @@ Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.
 
 ### Central Coast
 
-Estimated spawning biomass fluctuated around a strongly declining trend from a historic high around 1980
-before reaching a historic low level in the late 2000s (Figure \@ref(fig:storyboard-cc)d).
+Estimated spawning biomass demonstrates a strongly declining trend from a historic high around 1980
+before reaching historic low levels in the period of 2005-2015 (Figure \@ref(fig:storyboard-cc)d).
 An increase in spawning stock biomass was estimated through the mid-2010s
-but remained below levels estimated prior to 2000, with survey biomass declining in 2017 and 2018.
+but remained below levels estimated prior to 2000, with survey biomass declining in 2017, 2018 and 2021.
 In 2019 there was an increase in estimated spawning biomass, with a similar level estimated for 2020.
 The estimated biomass trend largely reflects the trend in the spawn index (Figure \@ref(fig:storyboard-cc)a),
 where fluctuations correspond opposite to the fluctuations in estimated natural mortality (Figure \@ref(fig:storyboard-cc)b).
@@ -427,13 +427,15 @@ For example, the decline in spawn index (and estimated spawning biomass) to the 
 Estimated natural mortality moderated by the late 2000s, which was followed by the increase in spawn index (and estimated spawning biomass) until 2017 whereupon natural mortality ceased declining.
 Recruitment deviations were slightly negative (lower than predicted by the stock-recruitment function) on average from about 1990 to 2017,
 and are above average in 2019 and 2020 (Figure \@ref(fig:storyboard-cc)e).
-The model estimates very similar spawning biomass in 2019 and 2020, and the analysis of surplus production shows there is evidence of strong production in the year between 2016-2017 and between 2018-2019,
+The model estimates very similar spawning biomass from 2019 through 2021 (Table ), and the analysis of surplus production shows there is evidence of strong production in the year between 2016-2017 and between 2018-2019,
 similar to the 1990 to 1999 period (Figure \@ref(fig:storyboard-cc)f).
-Surplus production in the year between 2019-2020 is negative.
+However, surplus production in the year between 2019-2020 and 2020-2021 is estimated to be negative.
 
-An examination of spawn biomass by Herring Section shows the increase in herring spawn to have largely occurred in
+
+An examination of spawn biomass by Herring Section shows the decline in herring spawn to have largely occurred in
 Spiller Channel (Sections 072 and 078) and Kitasu Bay (Section 067).
-The appearance of herring spawn in Thompson/Stryker (Section 074) is the first significant spawn in many years (Figure \@ref(fig:spawn-section-cc)).
+The majority of spawn in 2021 occurred in Thompson/Stryker (Section 074).
+Occurrance of spawn in Thompson/Stryker in 2020 and 2021 represent the first significant spawns for this section in many years (Figure \@ref(fig:spawn-section-cc)).
 
 A fixed cutoff HCR was implemented in 1986, and from 1986 to 2007 the effective harvest rate $U_t$ is estimated to fluctuate above and below the `r target_hr*100`% target rate,
 with median estimates exceeding `r target_hr*100`% frequently (Figure \@ref(fig:harvest-rate)).
@@ -445,7 +447,7 @@ Following a commercial fishery closure from 2007 to 2013, the CC stock reopened 
 and small commercial roe fisheries occurred in 2014, 2015, and 2016.
 A commercial SOK fishery operated yearly from 2014 to 2020,
 however these removals are not included in the estimation of $U_t$. 
-Commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19.
+Commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19, however did successfully resume in 2021 (Table ).
 
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(cc_final_yr_sbt[2])`&nbsp;t (posterior median),
 equal to `r f(cc_final_yr_dt[2]*100, 1)`% of $\SB_0$
