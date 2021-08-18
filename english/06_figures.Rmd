@@ -392,7 +392,10 @@ The spawn index has two distinct periods defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
 The dashed vertical line is the boundary between these two periods.
-Legend: 067 is Kitasu Bay, 074 is Thompson/Stryker, 072 is Lower Spiller, and 078 is Upper Spiller.
+Legend: 067 is Kitasu Bay,
+072 is Lower Spiller,
+074 is Thompson/Stryker, and
+078 is Upper Spiller.
 Note that only a subset of Sections are shown.
 
 (ref:spawn-section-cc-cap-fr) Série chronologique de données mises à l’échelle
@@ -403,7 +406,10 @@ Les données de relevé du frai (l’indice du frai) sont mises à l’échelle 
 L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante: relevés en surface (de `r major_start_yr` à `r new_surv_yr-1`), et
 relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
 La ligne verticale en pointillés est la limite entre ces deux périodes.
-Légende: 067 est la baie de Kitasu, 074 est Thompson/Stryker, 072 est Lower Spiller, et 078 est Upper Spiller.
+Légende: 067 est la baie de Kitasu,
+072 est Lower Spiller,
+074 est Thompson/Stryker, et
+078 est Upper Spiller.
 Notez que seul un sous-ensemble de sections est indiqué.
 
 ```{r spawn-section-cc, fig.asp=ifelse(french, 0.9, 0.9), fig.cap = ifelse(french, "(ref:spawn-section-cc-cap-fr)", "(ref:spawn-section-cc-cap)")}
