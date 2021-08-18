@@ -387,7 +387,7 @@ The dashed vertical line delineates between two periods defined by the dominant 
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
 <<<<<<< Updated upstream
 The dashed vertical line is the boundary between these two periods.
-Common names for primary spawning areas over past 30-years: 
+Common names for primary spawning areas over the past 30-years: 
 067 is Kitasu Bay,
 072 is Lower Spiller,
 074 is Thompson/Stryker, and
