@@ -14,13 +14,13 @@ Unités: kilomètres (km).
 knitr::include_graphics(here::here(ifelse(french, "figures/BC_fr.png", "figures/BC.png")))
 ```
 
-(ref:major-catch-cap) Time series of total landed Pacific Herring catch in thousands of tonnes (t) from `r recent_catch_yr` to `r major_end_yr` in the major stock assessment regions.
+(ref:major-catch-cap) Total landed catch in thousands of tonnes (t) `r recent_catch_yr` to `r major_end_yr` in major stock assessment regions.
 See Figures \@ref(fig:storyboard-hg) to \@ref(fig:storyboard-wcvi) for catches during the reduction period (`r major_start_yr` to `r recent_catch_yr-1`).
-Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery;
+Legend: 'Other' represents the reduction, the food and bait, and the special use fishery;
 'RoeGN' represents the roe gillnet fishery; and
 'RoeSN' represents the roe seine fishery.
 
-(ref:major-catch-cap-fr) Série chronologique des prises totales débarquées en milliers de tonnes (t) de hareng du Pacifique de `r recent_catch_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs.
+(ref:major-catch-cap-fr) Totales débarquées en milliers de tonnes (t)  de `r recent_catch_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs.
 Voir les Figures \@ref(fig:storyboard-hg) à \@ref(fig:storyboard-wcvi) pour les prises durant la période de réduction (`r major_start_yr` à `r recent_catch_yr-1`).
 Légende: «Autre» représente la réduction, ainsi que les pêches pratiquées à des fins de subsistance, pour le marché des appâts et pour des usages spéciaux;
 «RogueFM» représente la pêche au hareng rogué au filet maillant; et
@@ -33,16 +33,25 @@ plot_catch(df = major_catch,
 ```
 
 (ref:major-incidental-cap) Incidental Pacific Herring catch
+<<<<<<< Updated upstream
 in aquaculture activities in thousands of fish from
 `r min(ic_yrs)` to `r max(ic_yrs)` in the major stock assessment regions (SARs).
 Notes: data for `r max(ic_yrs)` may be incomplete, and
 figure excludes SARs with no reported incidental catch.
+=======
+in aquaculture activities in thousands of fish 
+`r min(ic_yrs)` to `r max(ic_yrs)` for major stock assessment regions with reported incidental catch.
+>>>>>>> Stashed changes
 
 (ref:major-incidental-cap-fr) Prise accidentelle de hareng du Pacifique dans les
 activités d'aquaculture en milliers de poissons de `r min(ic_yrs)` à 
 `r max(ic_yrs)` dans les régions d'évaluation du stock (RES) majeurs.
+<<<<<<< Updated upstream
 Notes: les données pour `r max(ic_yrs)` peuvent être incomplètes, et
 le figure exclut les RES pour lesquels aucune prise accidentelle n'a été déclarée.
+=======
+Nous n'incluons que les RES avec des prises accidentelles déclarées.
+>>>>>>> Stashed changes
 
 ```{r major-incidental, fig.asp=ifelse(french, 0.8, 0.8), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)")}
 plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
@@ -50,21 +59,17 @@ plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
         translate = french)
 ```
 
-(ref:major-wa-cap) Time series of Pacific Herring mean weight-at-age in kilograms (kg)
-from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
-Circles show mean for age-`r age_highlight` herring.
-Lines show `r nRollWA`-year running means for age-`r age_first` to age-`r age_plus` herring, incrementing up from bottom line and shaded from darker to lighter.
-The thick line shows age-`r age_highlight` herring.
+(ref:major-wa-cap) Mean weight-at-age in kilograms (kg) `r major_start_yr` to `r major_end_yr` in major stock assessment regions.
+Lines show `r nRollWA`-year running means for age-`r age_first` to age-`r age_plus` herring, incrementing up from bottom line and shaded from darker to lighter, except thickest line shows age-`r age_highlight` herring. Circles show mean for age-`r age_highlight` herring.
 In years where there are no biological samples for an age class,
 values are imputed as the mean of the previous `r nRollWA` years,
 except for the beginning of the time series which are imputed by
 extending the first non-missing value backwards.
-Biological summaries only include samples collected using seine nets (commercial and test)
-due to size-selectivity of other gear types such as gillnet.
+Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet.
 The age-`r age_plus` class includes fish ages `r age_plus` and older.
-Note: vertical axes are cropped at `r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
+vertical axes are cropped at `r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
 
-(ref:major-wa-cap-fr) Série chronologique du poids moyen à l'âge du hareng du Pacifique en kilogrammes (kg)
+(ref:major-wa-cap-fr) Poids moyen à l'âge du hareng du Pacifique en kilogrammes (kg)
 de `r major_start_yr` à `r major_end_yr` dans les régions d'évaluation du stock majeurs.
 Les cercles indiquent la moyenne pour le hareng d'âge `r age_highlight`.
 Les lignes indiquent les moyennes mobiles sur `r nRollWA` ans pour les harengs d'âge `r age_first` à age `r age_plus`, en augmentant à partir de la ligne inférieure et en ombrant de plus en plus.
@@ -76,7 +81,7 @@ en prolongeant la première valeur non manquante en arrière.
 Les résumés biologiques ne comprennent que les échantillons collectés à l'aide de senneurs (commerciaux et d'essai)
 en raison de la sélectivité de taille d'autres types d'engins tels que le filet maillant.
 La classe âge-`r age_plus` comprend les poissons âgés de `r age_plus` et plus.
-Note : les axes verticaux sont rognés de `r f(wa_ylim[1], 2)` à `r f(wa_ylim[2], 2)` kg.
+Les axes verticaux sont rognés de `r f(wa_ylim[1], 2)` à `r f(wa_ylim[2], 2)` kg.
 
 ```{r major-wa, fig.asp=ifelse(french, 1, 1.2), fig.cap = ifelse(french, "(ref:major-wa-cap-fr)", "(ref:major-wa-cap)")}
 plot_wa(df = major_wa,
@@ -87,22 +92,16 @@ plot_wa(df = major_wa,
         translate = french)
 ```
 
-(ref:major-pa-cap) Time series of Pacific Herring proportion-at-age
-from `r major_start_yr` to `r major_end_yr`
-in the major stock assessment regions.
+(ref:major-pa-cap) Proportion-at-age `r major_start_yr` to `r major_end_yr`
+in major stock assessment regions.
 Dot size and colour indicates age class proportion for the year;
-each year adds up to 1.0.
-The gray line is the mean age, and
-the shaded area is the approximate `r ci_level*100`% distribution for the mean age.
-Biological summaries only include samples collected using seine nets (commercial and test)
-due to size-selectivity of other gear types such as gillnet.
-The age-`r age_plus` class is a 'plus group' which includes fish ages `r age_plus` and older.
+each year adds up to 1.0. The gray line is the mean age, and the shaded area is the approximate `r ci_level*100`% credible interval for the mean age. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-`r age_plus` plus class includes fish ages `r age_plus` and older.
 
 <!-- TODO: Needs editing -->
 (ref:major-pa-cap-fr) Série chronologique de la proportion selon l’âge pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs. La taille et la couleur des points indiquent la proportion de la classe d’âge pour l’année. Chaque année, cela représente 100 %. Chaque année, cela représente 100 %.
 La ligne grey est l’âge moyen, et la zone ombrée est l’intervalle de crédibilité approximatif `r ci_level*100`% pour l’âge moyen.
 Les résumés biologiques ne comprennent que les échantillons prélevés à l’aide de sennes (pêche commerciale et pêche d’essai) en raison de la sélectivité par taille des autres types d’engins tels que les filets maillants.
-La classe des poissons âgés de `r age_plus` ans est un groupe «plus» qui comprend les poissons âgés de `r age_plus` ans et plus.
+La classe des  `r age_plus` ans et plus  comprend les poissons âgés de `r age_plus` ans et plus.
 
 ```{r major-pa, fig.asp=ifelse(french, 1.2, 1.25), fig.cap = ifelse(french, "(ref:major-pa-cap-fr)", "(ref:major-pa-cap)")}
 plot_pa(df = major_pa,
@@ -114,14 +113,14 @@ plot_pa(df = major_pa,
 
 ```
 
-(ref:major-spawn-index-cap) Time series of Pacific Herring spawn index in thousands of tonnes (t) from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
-The spawn index has two distinct periods defined by the dominant survey method:
-surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
-dive surveys (`r new_surv_yr` to `r major_end_yr`).
-The dashed vertical line is the boundary between these two periods.
+(ref:major-spawn-index-cap) Spawn index in thousands of tonnes (t)  `r major_start_yr` to `r major_end_yr` in major stock assessment regions.
+The index has two periods defined by the dominant survey method:
+surface surveys (`r major_start_yr` to `r new_surv_yr-1`, circles), and
+dive surveys (`r new_surv_yr` to `r major_end_yr`, triangles).
+The dashed vertical line is the boundary between the two periods.
 Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
-(ref:major-spawn-index-cap-fr) Série chronologique de l’indice du frai en milliers de tonnes pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs.
+(ref:major-spawn-index-cap-fr) L’indice du frai en milliers de tonnes de `r major_start_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs.
 L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante: relevés en surface (de `r major_start_yr` à `r new_surv_yr-1`), et
 relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
 La ligne verticale en pointillés est la limite entre ces deux périodes.
@@ -283,8 +282,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- Prince Rupert District Storyboard -->
-(ref:storyboard-prd-cap) Output from the Pacific Herring statistical catch-age model
-from `r major_start_yr` to `r major_end_yr`
+(ref:storyboard-prd-cap) Output from the Pacific Herring statistical catch-age model `r major_start_yr` to `r major_end_yr`
 in the Prince Rupert District major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
 
@@ -361,8 +359,7 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- Central Coast Storyboard -->
-(ref:storyboard-cc-cap) Output from the Pacific Herring statistical catch-age model
-from `r major_start_yr` to `r major_end_yr`
+(ref:storyboard-cc-cap) Output from the Pacific Herring statistical catch-age model `r major_start_yr` to `r major_end_yr`
 in the Central Coast major stock assessment region.
 See Figure \@ref(fig:storyboard-hg) for description.
 
@@ -386,13 +383,12 @@ cowplot::plot_grid(plot_a,
 ```
 
 <!-- Central Coast scaled abundance by Section -->
-(ref:spawn-section-cc-cap) Time series of Pacific Herring scaled abundance in 
-thousands of tonnes (t) by Section from `r major_start_yr` to `r major_end_yr`
-in the Central Coast major stock assessment region.
-Spawn survey data (i.e., spawn index) is scaled to abundance by the spawn survey scaling parameter $q$ (median posterior estimate).
-The spawn index has two distinct periods defined by the dominant survey method:
-surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
+(ref:spawn-section-cc-cap) Spawn index in 
+thousands of tonnes (t) for selected sections  `r major_start_yr` to `r major_end_yr`
+in the Central Coast major stock assessment region scaled to abundance by $q$ (median posterior estimate).
+The dashed vertical line delineates between two periods defined by the dominant survey method: surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
+<<<<<<< Updated upstream
 The dashed vertical line is the boundary between these two periods.
 Common names for primary spawning areas over the past 30-years: 
 067 is Kitasu Bay,
@@ -414,6 +410,16 @@ Légende: 067 est la baie de Kitasu,
 074 est Thompson/Stryker, et
 078 est Upper Spiller.
 Notez que seul un sous-ensemble de sections est indiqué.
+=======
+Legend: 067 is Kitasu Bay, 074 is Thompson/Stryker, 072 is Lower Spiller, and 078 is Upper Spiller.
+
+(ref:spawn-section-cc-cap-fr) Indice de frai en 
+milliers de tonnes (t) pour des sections sélectionnées `r major_start_yr` à `r major_end_yr` dans la région d'évaluation du stock majeur de la côte centrale, mis à l'échelle de l'abondance par $q$ (estimation médiane postérieure).
+La ligne verticale en pointillés délimite deux périodes définies par la méthode d'enquête dominante : les enquêtes de surface (`r major_start_yr` à `r new_surv_yr-1`), et les enquêtes en plongée (`r new_surv_yr-1`).
+les relevés en plongée (`r new_surv_yr` à `r major_end_yr`).
+Légende: 067 est la baie de Kitasu, 074 est Thompson/Stryker, 072 est Lower Spiller, et 078 est Upper Spiller.
+
+>>>>>>> Stashed changes
 
 ```{r spawn-section-cc, fig.asp=ifelse(french, 0.9, 0.9), fig.cap = ifelse(french, "(ref:spawn-section-cc-cap-fr)", "(ref:spawn-section-cc-cap)")}
 plot_spawn_section(
@@ -579,17 +585,17 @@ cowplot::plot_grid(plot_a,
 
 ```
 
-(ref:harvest-rate-cap) Time series of effective harvest rate $U_t$ for Pacific Herring statistical catch-age models from
-`r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
-Effective harvest rate in year $t$ is calculated as $U_t = C_t/(C_t + \SB_t)$ where
+(ref:harvest-rate-cap) Effective harvest rate $U_t$ for 
+`r major_start_yr` to `r major_end_yr` in major stock assessment regions.
+$U_t = C_t/(C_t + \SB_t)$ where
 $C_t$ is catch in year $t$, and
 $\SB_t$ is estimated spawning biomass in year $t$.
 Black lines and shaded ribbons indicate medians and `r ci_level*100`% credible intervals for $U_t$, respectively.
 Horizontal dashed lines indicate $U_t = `r target_hr`$.
 
-(ref:harvest-rate-cap-fr) Série chronologique du taux de récolte effectif $U_t$ pour les modèles statistiques des prises selon l’âge du hareng du Pacifique de
+(ref:harvest-rate-cap-fr) Taux de récolte effectif $U_t$ de
 `r major_start_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs.
-Le taux de récolte effectif pour l’année $t$ est calculé comme $U_t = C_t/(C_t + \SB_t)$ où
+$U_t = C_t/(C_t + \SB_t)$ où
 $C_t$ est est la prise pour l’année $t$, et
 $\SB_t$ est la biomasse reproductrice estimée pour l’année $t$.
 Les lignes noires et les zones ombragées indiquent les médianes et intervalles de confiance de `r ci_level*100`% pour $U_t$, respectivement.
@@ -603,14 +609,12 @@ plot_harvest_rate(df = major_catch,
                   translate = french)
 ```
 
-(ref:proj-biomass-density-cap) Posterior distributions of projected spawning biomass assuming no fishing in `r assess_yr+1` $\SB_{`r assess_yr+1`}$ in thousands of tonnes (t) for
-Pacific Herring statistical catch-age models in the major stock assessment regions.
+(ref:proj-biomass-density-cap) Posterior distributions of projected spawning biomass assuming no fishing in `r assess_yr+1` $\SB_{`r assess_yr+1`}$ in thousands of tonnes (t) in major stock assessment regions.
 Solid and dashed black lines indicate medians and `r ci_level*100`% credible intervals for $\SB_{`r assess_yr+1`}$, respectively.
 Vertical red lines and shaded red areas indicate medians and `r ci_level*100`% credible intervals for the limit reference point $0.3\SB_0$, respectively,
 where $\SB_0$ is estimated unfished spawning biomass.
 
-(ref:proj-biomass-density-cap-fr) Les distributions postérieures de la biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en `r assess_yr+1` $\SB_{`r assess_yr+1`}$ en milliers de tonnes pour les
-modèles statistiques des prises selon l’âge du hareng du Pacifique dans les régions d’évaluation des stocks majeurs.
+(ref:proj-biomass-density-cap-fr) Les distributions postérieures de la biomasse reproductrice projetée en supposant qu’il n’y aura pas de pêche en `r assess_yr+1` $\SB_{`r assess_yr+1`}$ en milliers de tonnes dans les régions d’évaluation des stocks majeurs.
 Les lignes noires pleines et tiretées indiquent les médianes et les intervalles de confiance de `r ci_level*100`%  pour $\SB_{`r assess_yr+1`}$, respectivement.
 Les lignes et rectangles ombragés rouges indiquent les médianes et les intervalles de confiance de `r ci_level*100`% pour le point de référence limite, $0,3\SB_0$, où $\SB_0$ est la biomasse reproductrice non exploitée estimée.
 
