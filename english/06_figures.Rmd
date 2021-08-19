@@ -224,10 +224,10 @@ modèle statistique des prises selon l’âge du hareng du Pacifique (`r major_s
 
 cowplot::plot_grid(plot_a,
                    plot_b,
-                   plot_d,
                    plot_c,
-                   plot_f,
+                   plot_d,
                    plot_e,
+                   plot_f,
                    ncol = 2,
                    align = "v",
                    rel_heights = c(1.0, 1.0, 1.1))
