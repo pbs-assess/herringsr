@@ -34,7 +34,7 @@ plot_catch(df = major_catch,
 
 (ref:major-incidental-cap) Incidental Pacific Herring catch
 in aquaculture activities in thousands of fish 
-`r min(ic_yrs)` to `r max(ic_yrs)` for the major stock assessment regions (SARs).
+`r min(ic_yrs)` to `r max(ic_yrs)` in the major stock assessment regions (SARs).
 Notes: data for `r max(ic_yrs)` may be incomplete, and
 figure excludes SARs with no reported incidental catch.
 
