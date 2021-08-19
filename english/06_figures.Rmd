@@ -589,7 +589,7 @@ where $\SB_0$ is estimated unfished spawning biomass.
 Les lignes noires pleines et tiretées indiquent les médianes et les intervalles de confiance de `r ci_level*100`%  pour $\SB_{`r assess_yr+1`}$, respectivement.
 Les lignes et rectangles ombragés rouges indiquent les médianes et les intervalles de confiance de `r ci_level*100`% pour le point de référence limite, $0,3\SB_0$, où $\SB_0$ est la biomasse reproductrice non exploitée estimée.
 
-```{r proj-biomass-density, fig.asp=ifelse(french, 1, 1), fig.cap = ifelse(french, "(ref:proj-biomass-density-cap-fr)", "(ref:proj-biomass-density-cap)")}
+```{r proj-biomass-density, fig.asp=ifelse(french, 1.2, 1.2), fig.cap = ifelse(french, "(ref:proj-biomass-density-cap-fr)", "(ref:proj-biomass-density-cap)")}
 plot_proj_biomass_density(major_models, 
                           major_regions_full, 
                           yr = assess_yr + 1,
