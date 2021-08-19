@@ -202,7 +202,7 @@ for the dive survey period (`r new_surv_yr` to `r assess_yr - 1`;
 median posterior estimates).
 Points are chronologically shaded light to dark;
 the triangle indicates `r assess_yr - 1`.
-Notes: biomass and catch are in thousands of tonnes (t), 
+Legend: biomass and catch are in thousands of tonnes (t), 
 red lines indicate the median limit reference point $0.3\SB_0$,
 where $SB_0$ is the estimated unfished spawning biomass, and 
 all bands and error bars are `r ci_level * 100`% credible intervals.}
