@@ -202,7 +202,7 @@ Coloured vertical bars indicate commercial catch, excluding spawn-on-kelp
 for the dive survey period (`r new_surv_yr` to `r assess_yr - 1`;
 median posterior estimates).
 Points are chronologically shaded light to dark;
-the triangle indicates `r assess_yr - 1`.
+triangle indicates `r assess_yr - 1`.
 Legend: biomass and catch are in thousands of tonnes (t),
 points and lines are median posterior estimates,
 bands and error bars are `r ci_level * 100`\% credible intervals, and
