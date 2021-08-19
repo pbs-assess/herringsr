@@ -222,7 +222,6 @@ modèle statistique des prises selon l’âge du hareng du Pacifique (`r major_s
 \storyboardfr{}
 
 ```{r storyboard-hg, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
-
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_d,
@@ -232,7 +231,6 @@ cowplot::plot_grid(plot_a,
                    ncol = 2,
                    align = "v",
                    rel_heights = c(1.0, 1.0, 1.1))
-
 ```
 
 <!-- Prince Rupert District Storyboard -->
@@ -299,7 +297,6 @@ région d’évaluation des stocks majeur du district de Prince Rupert.
 \storyboardfr{}
 
 ```{r storyboard-prd, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
-
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_c,
@@ -309,7 +306,6 @@ cowplot::plot_grid(plot_a,
                    ncol = 2,
                    align = "v",
                    rel_heights = c(1.0, 1.0, 1.1))
-
 ```
 
 <!-- Central Coast Storyboard -->
@@ -376,7 +372,6 @@ région d’évaluation des stocks majeur de la côte centrale.
 \storyboardfr{}
 
 ```{r storyboard-cc, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)")}
-
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_c,
@@ -386,7 +381,6 @@ cowplot::plot_grid(plot_a,
                    ncol = 2,
                    align = "v",
                    rel_heights = c(1.0, 1.0, 1.1))
-
 ```
 
 <!-- Central Coast scaled abundance by Section -->
@@ -488,7 +482,6 @@ région d’évaluation des stocks majeur du détroit de Georgie.
 \storyboardfr{}
 
 ```{r storyboard-sog, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
-
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_c,
@@ -498,7 +491,6 @@ cowplot::plot_grid(plot_a,
                    ncol = 2,
                    align = "v",
                    rel_heights = c(1.0, 1.0, 1.1))
-
 ```
 
 <!-- West Coast of Vancouver Island Storyboard -->
@@ -566,7 +558,6 @@ région d’évaluation des stocks majeur de la côte ouest de l’île de Vanco
 \storyboardfr{}
 
 ```{r storyboard-wcvi, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
-
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_c,
@@ -576,7 +567,6 @@ cowplot::plot_grid(plot_a,
                    ncol = 2,
                    align = "v",
                    rel_heights = c(1.0, 1.0, 1.1))
-
 ```
 
 (ref:harvest-rate-cap) Effective harvest rate $U_t$ for 
