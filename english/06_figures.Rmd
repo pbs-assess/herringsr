@@ -184,9 +184,10 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 <!-- Storyboard caption for all regions -->
 \newcommand{\storyboard}{
 \textbf{Panel (a)}: Model fit (lines; median posterior estimate) to
-scaled abundance (points, spawn index scaled by median posterior estimate of $q$).
+scaled abundance (points).
+Spawn index is scaled to abundance by the median posterior estimate of $q$.
 \textbf{Panel (b)}: Posterior estimates of
-instantaneous natural mortality rate (year-1).
+instantaneous natural mortality rate ($\text{year}^{-1}$).
 \textbf{Panel (c)}: Reconstructed number of age-`r age_first` recruits
 in thousands of millions from `r major_start_yr + age_first` to `r major_end_yr`. 
 Horizontal line indicates median unfished age-`r age_first` recruitment $R_0$.
