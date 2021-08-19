@@ -13,7 +13,6 @@ therefore they are excluded from regular monitoring and analyses.
 In addition, note that Area 10 is a subset of the Central Coast Sections that
 are outside the SAR boundary.
 
-
 ## Description of the fishery
 
 At present, there are several Pacific Herring fisheries in BC.
