@@ -108,10 +108,10 @@ plot_pa(df = major_pa,
 
 ```
 
-(ref:major-spawn-index-cap) Spawn index in thousands of tonnes (t)  `r major_start_yr` to `r major_end_yr` in major stock assessment regions.
+(ref:major-spawn-index-cap) Spawn index in thousands of tonnes (t) from `r major_start_yr` to `r major_end_yr` in major stock assessment regions.
 The index has two periods defined by the dominant survey method:
-surface surveys (`r major_start_yr` to `r new_surv_yr-1`, circles), and
-dive surveys (`r new_surv_yr` to `r major_end_yr`, triangles).
+surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
+dive surveys (`r new_surv_yr` to `r major_end_yr`).
 The dashed vertical line is the boundary between the two periods.
 Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
@@ -376,19 +376,24 @@ cowplot::plot_grid(plot_a,
 ```
 
 <!-- Central Coast scaled abundance by Section -->
-(ref:spawn-section-cc-cap) Spawn index in thousands of tonnes (t) for selected sections from `r major_start_yr` to `r major_end_yr`
-in the Central Coast stock assessment region scaled to abundance by $q$ (median posterior estimate).
-The dashed vertical line delineates between two periods defined by the dominant survey method: surface surveys (`r major_start_yr` to `r new_surv_yr-1`, circles), and
-dive surveys (`r new_surv_yr` to `r major_end_yr`, triangles).
+(ref:spawn-section-cc-cap) Scaled abundance in thousands of tonnes (t) for
+selected sections from `r major_start_yr` to `r major_end_yr`
+in the Central Coast major stock assessment region.
+The spawn index is scaled to abundance by the spawn survey scaling parameter $q$
+(median posterior estimate).
+The dashed vertical line delineates between two periods defined by the dominant survey method:
+surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
+dive surveys (`r new_surv_yr` to `r major_end_yr`).
 Common names for primary spawning areas over the past 30 years: 
 067 is Kitasu Bay,
 072 is Lower Spiller,
 074 is Thompson/Stryker, and
 078 is Upper Spiller.
 
+<!-- TODO: Needs editing -->
 (ref:spawn-section-cc-cap-fr) Indice de frai en milliers de tonnes (t) pour les sections sélectionnées de `r major_start_yr` à `r major_end_yr`
 dans la région d'évaluation du stock de la côte centrale, mis à l'échelle de l'abondance par $q$ (estimation médiane postérieure).
-La ligne verticale en pointillés délimite deux périodes définies par la méthode d'enquête dominante: les enquêtes de surface (`r major_start_yr` à `r new_surv_yr-1`, cercles) et les enquêtes en plongée (`r new_surv_yr-1`, cercles).
+La ligne verticale en pointillés délimite deux périodes définies par la méthode d'enquête dominante: les enquêtes de surface (`r major_start_yr` à `r new_surv_yr-1`) et les enquêtes en plongée (`r new_surv_yr-1`).
 les relevés en plongée (`r new_surv_yr` à `r major_end_yr`, triangles).
 Noms communs des principales zones de frai au cours des 30 dernières années: 
 067 est la baie de Kitasu,
