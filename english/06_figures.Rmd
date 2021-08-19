@@ -83,14 +83,18 @@ plot_wa(df = major_wa,
         translate = french)
 ```
 
-(ref:major-pa-cap) Proportion-at-age `r major_start_yr` to `r major_end_yr`
-in major stock assessment regions.
+(ref:major-pa-cap) Proportion-at-age from `r major_start_yr` to `r major_end_yr`
+in the major stock assessment regions.
 Dot size and colour indicates age class proportion for the year;
-each year adds up to 1.0. The gray line is the mean age, and the shaded area is the approximate `r ci_level*100`% credible interval for the mean age. Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet. The age-`r age_plus` plus class includes fish ages `r age_plus` and older.
+each year adds up to 1.0.
+The gray line is the mean age, and
+the shaded area is the approximate `r ci_level*100`% distribution.
+Biological summaries only include samples collected using seine nets
+(commercial and test) due to size-selectivity of other gear types such as gillnet. The age-`r age_plus` plus class includes fish ages `r age_plus` and older.
 
 <!-- TODO: Needs editing -->
 (ref:major-pa-cap-fr) Série chronologique de la proportion selon l’âge pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs. La taille et la couleur des points indiquent la proportion de la classe d’âge pour l’année. Chaque année, cela représente 100 %. Chaque année, cela représente 100 %.
-La ligne grey est l’âge moyen, et la zone ombrée est l’intervalle de crédibilité approximatif `r ci_level*100`% pour l’âge moyen.
+La ligne grey est l’âge moyen, et la zone ombrée est la distribution `r ci_level*100`%.
 Les résumés biologiques ne comprennent que les échantillons prélevés à l’aide de sennes (pêche commerciale et pêche d’essai) en raison de la sélectivité par taille des autres types d’engins tels que les filets maillants.
 La classe des  `r age_plus` ans et plus  comprend les poissons âgés de `r age_plus` ans et plus.
 
