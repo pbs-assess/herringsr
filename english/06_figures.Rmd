@@ -396,7 +396,7 @@ Noms communs des principales zones de frai au cours des 30 dernières années:
 074 est Thompson/Stryker, et
 078 est Upper Spiller.
 
-```{r spawn-section-cc, fig.asp=ifelse(french, 0.9, 0.9), fig.cap = ifelse(french, "(ref:spawn-section-cc-cap-fr)", "(ref:spawn-section-cc-cap)")}
+```{r spawn-section-cc, fig.asp=ifelse(french, 1.2, 1.2), fig.cap = ifelse(french, "(ref:spawn-section-cc-cap-fr)", "(ref:spawn-section-cc-cap)")}
 plot_spawn_section(
         model = major_models[[3]], 
         data_file = file.path(data_path, "spawn-yr-sec-cc.csv"),
@@ -576,7 +576,7 @@ $\SB_t$ est la biomasse reproductrice estimée pour l’année $t$.
 Les lignes noires et les zones ombragées indiquent les médianes et intervalles de confiance de `r ci_level*100`% pour $U_t$, respectivement.
 Les lignes en tirets horizontales indiquent $U_t = `r target_hr`$.
 
-```{r harvest-rate, fig.asp=ifelse(french, 1.2, 1.2), fig.cap = ifelse(french, "(ref:harvest-rate-cap-fr)", "(ref:harvest-rate-cap)")}
+```{r harvest-rate, fig.asp=ifelse(french, 1.3, 1.3), fig.cap = ifelse(french, "(ref:harvest-rate-cap-fr)", "(ref:harvest-rate-cap)")}
 plot_harvest_rate(df = major_catch,
                   major_models,
                   major_regions_full,
@@ -593,7 +593,8 @@ where $\SB_0$ is estimated unfished spawning biomass.
 Les lignes noires pleines et tiretées indiquent les médianes et les intervalles de confiance de `r ci_level*100`%  pour $\SB_{`r assess_yr+1`}$, respectivement.
 Les lignes et rectangles ombragés rouges indiquent les médianes et les intervalles de confiance de `r ci_level*100`% pour le point de référence limite, $0,3\SB_0$, où $\SB_0$ est la biomasse reproductrice non exploitée estimée.
 
-```{r proj-biomass-density, fig.asp=ifelse(french, 1, 1), fig.cap = ifelse(french, "(ref:proj-biomass-density-cap-fr)", "(ref:proj-biomass-density-cap)")}
+
+```{r proj-biomass-density, fig.asp=ifelse(french, 1.2, 1.2), fig.cap = ifelse(french, "(ref:proj-biomass-density-cap-fr)", "(ref:proj-biomass-density-cap)")}
 plot_proj_biomass_density(major_models, 
                           major_regions_full, 
                           yr = assess_yr + 1,
