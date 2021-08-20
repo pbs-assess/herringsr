@@ -4,10 +4,10 @@
 
 ## `r en2fr("Tables", translate=french)`
 
-(ref:spawn-index-a27-cap) Pacific Herring spawn index in tonnes, and
+(ref:spawn-index-a27-cap) Area 27 SAR:
+Pacific Herring spawn index in tonnes, and
 proportion of the spawn index by Section 
-from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr` in the
-Area 27 minor stock assessment region.
+from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
 
 (ref:spawn-index-a27-cap-fr) Indice du frai en tonnes et
@@ -27,10 +27,10 @@ spawn_index_by_area_table(ps[[en2fr("A27", french)]],
 
 \afterpage{\clearpage}
 
-(ref:spawn-index-a2w-cap) Pacific Herring spawn index in tonnes, and
+(ref:spawn-index-a2w-cap) Area 2 West SAR:
+Pacific Herring spawn index in tonnes, and
 proportion of the spawn index by Section 
-from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr` in the
-Area 2 West minor stock assessment region.
+from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
 
 (ref:spawn-index-a2w-cap-fr) Indice du frai en tonnes et
@@ -50,10 +50,10 @@ spawn_index_by_area_table(ps[[en2fr("A2W", french)]],
                           translate = french)
 ```
 
-(ref:spawn-index-a10-cap) Pacific Herring spawn index in tonnes, and
+(ref:spawn-index-a10-cap) Area 10 special area:
+Pacific Herring spawn index in tonnes, and
 proportion of the spawn index by Section 
-from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr` in the
-Area 10 special area.
+from `r  minor_end_yr-num_yrs_tab` to `r minor_end_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
 
 (ref:spawn-index-a10-cap-fr) Indice du frai en tonnes et
@@ -77,10 +77,9 @@ spawn_index_by_area_table(ps[[en2fr("A10", french)]],
 
 ## Figures
 
-(ref:spawn-section-a27-cap) Pacific Herring spawn index
-in thousands of tonnes (t) by Section
-from `r minor_start_yr_plot` to `r minor_end_yr` in the
-Area 27 minor stock assessment region.
+(ref:spawn-section-a27-cap) Area 27 SAR:
+Pacific Herring spawn index in thousands of tonnes (t) by Section
+from `r minor_start_yr_plot` to `r minor_end_yr`.
 See Figure \@ref(fig:spawn-section-cc) for description.
 
 (ref:spawn-section-a27-cap-fr) L’indice du frai
@@ -235,9 +234,9 @@ knitr::include_graphics(here::here(ifelse(french, "figures/A10_fr.png", "figures
 <!--            translate = french) -->
 <!-- ``` -->
 
-(ref:special-wa-cap) Pacific Herring weight-at-age in kilograms (kg)
-from `r special_start_yr_plot` to `r special_end_yr`
-in the special area, Area 10.
+(ref:special-wa-cap) Area 10 special area:
+Pacific Herring weight-at-age in kilograms (kg)
+from `r special_start_yr_plot` to `r special_end_yr`.
 See Figure \@ref(fig:minor-wa) for description.
 
 (ref:special-wa-cap-fr) Poids selon l’âge en kilogrammes (kg)
@@ -255,9 +254,9 @@ plot_wa(df = special_wa,
         translate = french)
 ```
 
-(ref:special-pa-cap) Pacific Herring proportion-at-age
-from `r special_start_yr_plot` to `r special_end_yr`
-in the special area, Area 10.
+(ref:special-pa-cap) Area 10 special area:
+Pacific Herring proportion-at-age
+from `r special_start_yr_plot` to `r special_end_yr`.
 See Figure \@ref(fig:major-pa) for description.
 
 (ref:special-pa-cap-fr) Proportion selon l’âge
@@ -275,9 +274,9 @@ plot_pa(df = special_pa,
 
 ```
 
-(ref:special-spawn-index-cap) Pacific Herring spawn index in
-thousands of tonnes (t) from `r special_start_yr_plot` to `r special_end_yr`
-in the special area, Area 10.
+(ref:special-spawn-index-cap) Area 10 special area:
+Pacific Herring spawn index in
+thousands of tonnes (t) from `r special_start_yr_plot` to `r special_end_yr`.
 See Figure \@ref(fig:major-spawn-index) for description.
 
 (ref:special-spawn-index-cap-fr) L’indice du frai en milliers
