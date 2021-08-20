@@ -14,9 +14,10 @@ Unités: kilomètres (km).
 knitr::include_graphics(here::here(ifelse(french, "figures/BC_fr.png", "figures/BC.png")))
 ```
 
-(ref:major-catch-cap) Total landed catch in thousands of tonnes (t) `r recent_catch_yr` to `r major_end_yr` in major stock assessment regions.
+(ref:major-catch-cap) Total landed Pacific Herring catch in thousands of tonnes (t)
+from `r recent_catch_yr` to `r major_end_yr` in the major stock assessment regions.
 See Figures \@ref(fig:storyboard-hg) to \@ref(fig:storyboard-wcvi) for catches during the reduction period (`r major_start_yr` to `r recent_catch_yr-1`).
-Legend: 'Other' represents the reduction, the food and bait, and the special use fishery;
+Legend: 'Other' represents the reduction, the food and bait, as well as the special use fishery;
 'RoeGN' represents the roe gillnet fishery; and
 'RoeSN' represents the roe seine fishery.
 
@@ -33,7 +34,7 @@ plot_catch(df = major_catch,
 ```
 
 (ref:major-incidental-cap) Incidental Pacific Herring catch
-in aquaculture activities in thousands of fish 
+in aquaculture activities in thousands of fish from
 `r min(ic_yrs)` to `r max(ic_yrs)` in the major stock assessment regions (SARs).
 Notes: data for `r max(ic_yrs)` may be incomplete, and
 figure excludes SARs with no reported incidental catch.
@@ -50,7 +51,10 @@ plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
         translate = french)
 ```
 
-(ref:major-wa-cap) Mean weight-at-age for Pacific Herring in kilograms (kg) `r major_start_yr` to `r major_end_yr` in major stock assessment regions.Lines show `r nRollWA`-year running means for age-`r age_first` to age-`r age_plus` herring, incrementing up from bottom line and shaded from darker to lighter, except thickest line shows age-`r age_highlight` herring. Circles show mean for age-`r age_highlight` herring.
+(ref:major-wa-cap) Mean weight-at-age for Pacific Herring in kilograms (kg) 
+from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
+Lines show `r nRollWA`-year running means for age-`r age_first` to age-`r age_plus` herring, incrementing up from bottom line and shaded from darker to lighter, except thickest line shows age-`r age_highlight` herring.
+Circles show mean for age-`r age_highlight` herring.
 In years where there are no biological samples for an age class,
 values are imputed as the mean of the previous `r nRollWA` years,
 except for the beginning of the time series which are imputed by
@@ -82,8 +86,8 @@ plot_wa(df = major_wa,
         translate = french)
 ```
 
-(ref:major-pa-cap) Proportion-at-age for Pacific Herring from `r major_start_yr` to `r major_end_yr`
-in the major stock assessment regions.
+(ref:major-pa-cap) Proportion-at-age for Pacific Herring from
+`r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
 Dot size and colour indicates age class proportion for the year;
 each year adds up to 1.0.
 The gray line is the mean age, and
@@ -107,7 +111,8 @@ plot_pa(df = major_pa,
 
 ```
 
-(ref:major-spawn-index-cap) Spawn index in thousands of tonnes (t) for Pacific Herring from `r major_start_yr` to `r major_end_yr` in major stock assessment regions.
+(ref:major-spawn-index-cap) Spawn index in thousands of tonnes (t) for Pacific Herring from `r major_start_yr` to `r major_end_yr`
+in the major stock assessment regions.
 The index has two periods defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
@@ -564,8 +569,8 @@ cowplot::plot_grid(plot_a,
                    rel_heights = c(1.0, 1.0, 1.1))
 ```
 
-(ref:harvest-rate-cap) Effective harvest rate $U_t$ for 
-`r major_start_yr` to `r major_end_yr` for Pacific Herring in major stock assessment regions.
+(ref:harvest-rate-cap) Effective harvest rate $U_t$ for Pacific Herring
+from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
 $U_t = C_t/(C_t + \SB_t)$ where
 $C_t$ is catch in year $t$, and
 $\SB_t$ is estimated spawning biomass in year $t$.
@@ -588,9 +593,12 @@ plot_harvest_rate(df = major_catch,
                   translate = french)
 ```
 
-(ref:proj-biomass-density-cap) Posterior distributions of projected spawning biomass of Pacific Herring assuming no fishing in `r assess_yr+1` $\SB_{`r assess_yr+1`}$ in thousands of tonnes (t) in major stock assessment regions.
-Solid and dashed black lines indicate medians and `r ci_level*100`% credible intervals for $\SB_{`r assess_yr+1`}$, respectively.
-Vertical red lines and shaded red areas indicate medians and `r ci_level*100`% credible intervals for the limit reference point $0.3\SB_0$, respectively,
+(ref:proj-biomass-density-cap) Projected spawning biomass of Pacific Herring assuming no fishing in `r assess_yr+1` $\SB_{`r assess_yr+1`}$ in
+thousands of tonnes (t) in the major stock assessment regions.
+Solid and dashed black lines indicate median posterior estimate and
+`r ci_level*100`% credible intervals for $\SB_{`r assess_yr+1`}$, respectively.
+Vertical red lines and shaded red areas indicate medians and `r ci_level*100`%
+credible intervals for the limit reference point $0.3\SB_0$, respectively,
 where $\SB_0$ is estimated unfished spawning biomass.
 
 (ref:proj-biomass-density-cap-fr) Les distributions postérieures de la biomasse reproductrice projetée pour le hareng du Pacifique en supposant qu’il n’y aura pas de pêche en `r assess_yr+1` $\SB_{`r assess_yr+1`}$ en milliers de tonnes dans les régions d’évaluation des stocks majeurs.
