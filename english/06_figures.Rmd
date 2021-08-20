@@ -209,10 +209,11 @@ where $SB_0$ is the estimated unfished spawning biomass.}
 \newcommand{\storyboardfr}{Placeholder for the caption body in French.}
 
 <!-- Haida Gwaii Storyboard -->
-(ref:storyboard-hg-cap) Haida Gwaii SAR: model output for Pacific Herring
-from `r major_start_yr` to `r major_end_yr`.
+(ref:storyboard-hg-cap) Haida Gwaii SAR:
+model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`.
 \storyboard{}
 
+<!-- TODO: Update these for all SARs -->
 (ref:storyboard-hg-cap-fr) Séries chronologiques de sorties de modèle pour le
 modèle statistique des prises selon l’âge du hareng du Pacifique (`r major_start_yr`-`r major_end_yr`) dans la région d’évaluation des stocks majeur de Haida Gwaii.\
 \storyboardfr{}
@@ -283,8 +284,8 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- Prince Rupert District Storyboard -->
-(ref:storyboard-prd-cap) Output from the Pacific Herring statistical catch-age model `r major_start_yr` to `r major_end_yr`
-in the Prince Rupert District major stock assessment region.
+(ref:storyboard-prd-cap) Prince Rupert District SAR:
+model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`.
 \storyboard{}
 
 (ref:storyboard-prd-cap-fr) Séries chronologiques de sorties de modèle pour le
@@ -292,7 +293,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur du district de Prince Rupert.
 \storyboardfr{}
 
-```{r storyboard-prd, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
+```{r storyboard-prd, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_c,
@@ -358,8 +359,8 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- Central Coast Storyboard -->
-(ref:storyboard-cc-cap) Output from the Pacific Herring statistical catch-age model `r major_start_yr` to `r major_end_yr`
-in the Central Coast major stock assessment region.
+(ref:storyboard-cc-cap) Central Coast SAR:
+model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`.
 \storyboard{}
 
 (ref:storyboard-cc-cap-fr) Séries chronologiques de sorties de modèle pour le
@@ -367,7 +368,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur de la côte centrale.
 \storyboardfr{}
 
-```{r storyboard-cc, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)")}
+```{r storyboard-cc, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)")}
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_c,
@@ -467,9 +468,8 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- Strait of Georgia Storyboard -->
-(ref:storyboard-sog-cap) Output from the Pacific Herring statistical catch-age model
-from `r major_start_yr` to `r major_end_yr`
-in the Strait of Georgia major stock assessment region.
+(ref:storyboard-sog-cap) Strait of Georgia SAR:
+model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`.
 \storyboard{}
 
 (ref:storyboard-sog-cap-fr) Séries chronologiques de sorties de modèle pour le
@@ -477,7 +477,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur du détroit de Georgie.
 \storyboardfr{}
 
-```{r storyboard-sog, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
+```{r storyboard-sog, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_c,
@@ -543,9 +543,8 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 ```
 
 <!-- West Coast of Vancouver Island Storyboard -->
-(ref:storyboard-wcvi-cap) Output from the Pacific Herring statistical catch-age model
-from `r major_start_yr` to `r major_end_yr`
-in the West Coast of Vancouver Island major stock assessment region.
+(ref:storyboard-wcvi-cap) West Coast of Vancouver Island SAR:
+model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`.
 \storyboard{}
 
 (ref:storyboard-wcvi-cap-fr) Séries chronologiques de sorties de modèle pour le
@@ -553,7 +552,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 \storyboardfr{}
 
-```{r storyboard-wcvi, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
+```{r storyboard-wcvi, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_c,
