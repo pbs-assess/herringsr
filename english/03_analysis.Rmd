@@ -647,7 +647,7 @@ For ease of comparison with MSE results [@dfo2019c], all MPs and scenarios liste
 ### Central Coast
 
 The CC stock persisted in a low biomass, low productivity state from approximately 2005 to 2014.
-An increasing trend has been observed in recent years, and overall the stock shows more volatility (large increases/ decreases) than was observed prior to 2005.
+An increasing trend has been observed in recent years, and overall the stock shows more volatility (large increases/ decreases in spawn abundance, Figure \@ref(fig:storyboard-cc)a) than was observed prior to 2005.
 For the CC, MPs performing best against the conservation objective have a 10% or lower harvest rate and include a range of operational control point choices.
 Similar to PRD, the simulation results for CC indicate there are multiple MPs that meet the conservation objective of maintaining spawning biomass above the LRP with high probability (at least 75%)^\ref{fn:HighProb}^.
 For management regions where multiple MPs meet the conservation objective, further ranking of the remaining objectives is needed in order to provide decision makers with a tractable set of trade-off choices.
@@ -657,6 +657,9 @@ In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at 
 The `r assess_yr + 1` spawning biomass is forecast to be below the LRP of $0.3\SB_0$ with `r f(cc_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
 Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-cc).
+MP performance against conservation, biomass and yield objectives (e.g., reported probability values in Table \@ref(tab:decision-cc)) has been updated to include data from 2019 and 2020.  
+That is, the MSE operating model conditioning was updated to include spawn, catch, and biological data for 2019 and 2020, and the MSE simulations were re-run to generate updated probability values.
+
 Management procedures and performance metrics appear in identical format to that of September 2019 [@dfo2020a].
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for CC,
 whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
