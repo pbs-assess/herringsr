@@ -431,11 +431,10 @@ The model estimates very similar spawning biomass from 2019 through 2021 (Table 
 similar to the 1990 to 1999 period (Figure \@ref(fig:storyboard-cc)f).
 However, surplus production in the year between 2019-2020 and 2020-2021 is estimated to be negative.
 
-
-An examination of spawn biomass by Herring Section shows the decline in herring spawn to have largely occurred in
+An examination of spawn biomass by Herring Section shows the recent decline in herring spawn to have largely occurred in
 Spiller Channel (Sections 072 and 078) and Kitasu Bay (Section 067).
 The majority of spawn in 2021 occurred in Thompson/Stryker (Section 074).
-Occurrance of spawn in Thompson/Stryker in 2020 and 2021 represent the first significant spawns for this section in many years (Figure \@ref(fig:spawn-section-cc)).
+Occurrance of spawn in Thompson/Stryker in 2020 and 2021 represents the first significant spawns for this section in many years (Figure \@ref(fig:spawn-section-cc)).
 
 A fixed cutoff HCR was implemented in 1986, and from 1986 to 2007 the effective harvest rate $U_t$ is estimated to fluctuate above and below the `r target_hr*100`% target rate,
 with median estimates exceeding `r target_hr*100`% frequently (Figure \@ref(fig:harvest-rate)).
