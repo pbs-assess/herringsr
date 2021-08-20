@@ -182,29 +182,26 @@ plot_f <- plot_biomass_phase(major_models[[model_ind]],
 
 <!-- Storyboard caption for all regions -->
 \newcommand{\storyboard}{
-\textbf{Panel (a)}: Model fit (lines; median posterior estimate) to
-scaled abundance (points).
-Spawn index is scaled to abundance by the median posterior estimate of $q$.
-\textbf{Panel (b)}: Posterior estimates of
-instantaneous natural mortality rate ($\text{year}^{-1}$).
+\textbf{Panel (a)}: Model fit (lines) to scaled abundance
+(points; Figure \ref{fig:major-spawn-index}).
+Spawn index is scaled to abundance by the spawn index scaling parameter $q$.
+\textbf{Panel (b)}: Instantaneous natural mortality rate ($\text{year}^{-1}$).
 \textbf{Panel (c)}: Reconstructed number of age-`r age_first` recruits
 in thousands of millions from `r major_start_yr + age_first` to `r major_end_yr`. 
-Horizontal line indicates median unfished age-`r age_first` recruitment $R_0$.
-\textbf{Panel (d)}: Posterior estimate of spawning biomass. 
-Point is median posterior forecast spawning biomass in `r assess_yr + 1`
-in the absence of fishing.
-Coloured vertical bars indicate commercial catch, excluding spawn-on-kelp
-(see figure \ref{fig:major-catch}).
-\textbf{Panel (e)}: Estimated log recruitment deviations from
+Horizontal line indicates unfished age-`r age_first` recruitment $R_0$.
+\textbf{Panel (d)}: Spawning biomass (line), and 
+forecast spawning biomass in `r assess_yr + 1` in the absence of fishing (point).
+Coloured vertical bars indicate commercial catch (Figure \ref{fig:major-catch}).
+\textbf{Panel (e)}: Log recruitment deviations from
 `r major_start_yr + age_first` to `r major_end_yr`.
 \textbf{Panel (f)}: Phase plot of spawning biomass production
-for the dive survey period (`r new_surv_yr` to `r assess_yr - 1`;
-median posterior estimates).
+for the dive survey period (`r new_surv_yr` to `r assess_yr - 1`).
 Points are chronologically shaded light to dark;
 triangle indicates `r assess_yr - 1`.
 Legend: biomass and catch are in thousands of tonnes (t),
-points and lines are median posterior estimates,
-bands and error bars are `r ci_level * 100`\% credible intervals, and
+points and time-series lines are median posterior estimates,
+bands and error bars are `r ci_level * 100`\% credible intervals, 
+dashed horizontal lines indicate zero, and
 red lines indicate the median limit reference point $0.3\SB_0$,
 where $SB_0$ is the estimated unfished spawning biomass.}
 
@@ -212,7 +209,7 @@ where $SB_0$ is the estimated unfished spawning biomass.}
 \newcommand{\storyboardfr}{Placeholder for the caption body in French.}
 
 <!-- Haida Gwaii Storyboard -->
-(ref:storyboard-hg-cap) Haida Gwaii stock assessment region time series output
+(ref:storyboard-hg-cap) Haida Gwaii SAR: model output for Pacific Herring
 from `r major_start_yr` to `r major_end_yr`.
 \storyboard{}
 
@@ -220,7 +217,7 @@ from `r major_start_yr` to `r major_end_yr`.
 modèle statistique des prises selon l’âge du hareng du Pacifique (`r major_start_yr`-`r major_end_yr`) dans la région d’évaluation des stocks majeur de Haida Gwaii.\
 \storyboardfr{}
 
-```{r storyboard-hg, fig.asp=ifelse(french, 0.8, 1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
+```{r storyboard-hg, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_c,
@@ -383,9 +380,9 @@ cowplot::plot_grid(plot_a,
 ```
 
 <!-- Central Coast scaled abundance by Section -->
-(ref:spawn-section-cc-cap) Scaled abundance in thousands of tonnes (t) of Pacific Herring for
-selected sections from `r major_start_yr` to `r major_end_yr`
-in the Central Coast major stock assessment region.
+(ref:spawn-section-cc-cap) Central Coast SAR: scaled abundance in
+thousands of tonnes (t) of Pacific Herring in selected Sections
+from `r major_start_yr` to `r major_end_yr`.
 The spawn index is scaled to abundance by the spawn survey scaling parameter $q$
 (median posterior estimate).
 The dashed vertical line delineates between two periods defined by the dominant survey method:
