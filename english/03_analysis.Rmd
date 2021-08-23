@@ -427,7 +427,7 @@ For example, the decline in spawn index (and estimated spawning biomass) to the 
 Estimated natural mortality moderated by the late 2000s, which was followed by the increase in spawn index (and estimated spawning biomass) until 2017 whereupon natural mortality ceased declining.
 Recruitment deviations were slightly negative (lower than predicted by the stock-recruitment function) on average from about 1990 to 2017,
 and are above average in 2019 and 2020 (Figure \@ref(fig:storyboard-cc)e).
-The model estimates very similar spawning biomass from 2019 through 2021 (Table ), and the analysis of surplus production shows there is evidence of strong production in the year between 2016-2017 and between 2018-2019,
+The model estimates very similar spawning biomass from 2019 through 2021 (Table \@ref(tab:cc-spawning-biomass-depletion)), and the analysis of surplus production shows there is evidence of strong production in the year between 2016-2017 and between 2018-2019,
 similar to the 1990 to 1999 period (Figure \@ref(fig:storyboard-cc)f).
 However, surplus production in the year between 2019-2020 and 2020-2021 is estimated to be negative.
 
@@ -446,7 +446,7 @@ Following a commercial fishery closure from 2007 to 2013, the CC stock reopened 
 and small commercial roe fisheries occurred in 2014, 2015, and 2016.
 A commercial SOK fishery operated yearly from 2014 to 2020,
 however these removals are not included in the estimation of $U_t$. 
-Commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19, however did successfully resume in 2021 (Table ).
+Commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19, however did successfully resume in 2021 (Table \@ref(tab:annual-sok-catch)).
 
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(cc_final_yr_sbt[2])`&nbsp;t (posterior median),
 equal to `r f(cc_final_yr_dt[2]*100, 1)`% of $\SB_0$
@@ -612,9 +612,7 @@ identify candidate threshold biomass levels greater than the LRP that are consis
 the Department will develop rebuilding plans for major fish stocks that are in the precautionary approach critical zone,
 including Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.
 
-<!-- TODO: verify new wording with Bryan and VP -->
-DFO supports commercial herring fishery closures for the HG major stock region until April 2021.
-As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&nbsp;t.
+Based on MP evaluations and the ongoing rebuilding plan process, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&nbsp;t.
 
 ### Prince Rupert District
 
