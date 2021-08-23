@@ -394,7 +394,8 @@ The spawn index is scaled to abundance by the spawn survey scaling parameter $q$
 The dashed vertical line delineates between two periods defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
-Common names for primary spawning areas over the past 30 years: 
+<!-- TODO: Remove legend when names get added to panel strip -->
+Common names for primary spawning areas in the dive survey period: 
 067 is Kitasu Bay,
 072 is Lower Spiller,
 074 is Thompson/Stryker, and
