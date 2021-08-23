@@ -600,7 +600,8 @@ performed satisfactorily against the conservation objective of maintaining spawn
 The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3\SB_0$ with `r f(hg_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-hg) and Figure \@ref(fig:proj-biomass-density)).
 
 DFO has committed to developing and implementing a rebuilding plan for Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.[^RebuildHG]
-Work is underway through a technical working group comprised of members of the Council of Haida Nation, DFO, and Parks Canada.
+Work finalizing the draft for consultation continues the technical working group comprised of members of the Council of Haida Nation, DFO, and Parks Canada.
+A 90-day consultation period is anticipated to commence in October 2021.
 Guidance for the Development of Rebuilding Plans under the Precautionary Approach Framework: Growing Stocks out of the Critical Zone [@dfo2013] states that
 the primary objective of any rebuilding plan is to promote stock growth out of the Critical Zone (i.e., to grow the stock above the status-based LRP) by
 ensuring removals from all fishing sources are kept to the lowest possible level until the stock has cleared this zone with high probability.
@@ -611,6 +612,7 @@ identify candidate threshold biomass levels greater than the LRP that are consis
 the Department will develop rebuilding plans for major fish stocks that are in the precautionary approach critical zone,
 including Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.
 
+<!-- TODO: verify new wording with Bryan and VP -->
 DFO supports commercial herring fishery closures for the HG major stock region until April 2021.
 As such, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&nbsp;t.
 
