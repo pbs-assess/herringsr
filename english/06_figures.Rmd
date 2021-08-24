@@ -232,7 +232,7 @@ cowplot::plot_grid(plot_a,
                    plot_f,
                    ncol = 2,
                    align = "v",
-                   rel_heights = c(1.0, 1.0, 1.1))
+                   rel_heights = c(1.1, 1.0, 1.1))
 ```
 
 <!-- Prince Rupert District Storyboard -->
@@ -307,7 +307,7 @@ cowplot::plot_grid(plot_a,
                    plot_f,
                    ncol = 2,
                    align = "v",
-                   rel_heights = c(1.0, 1.0, 1.1))
+                   rel_heights = c(1.1, 1.0, 1.1))
 ```
 
 <!-- Central Coast Storyboard -->
@@ -382,7 +382,7 @@ cowplot::plot_grid(plot_a,
                    plot_f,
                    ncol = 2,
                    align = "v",
-                   rel_heights = c(1.0, 1.0, 1.1))
+                   rel_heights = c(1.1, 1.0, 1.1))
 ```
 
 <!-- Central Coast scaled abundance by Section -->
@@ -492,7 +492,7 @@ cowplot::plot_grid(plot_a,
                    plot_f,
                    ncol = 2,
                    align = "v",
-                   rel_heights = c(1.0, 1.0, 1.1))
+                   rel_heights = c(1.1, 1.0, 1.1))
 ```
 
 <!-- West Coast of Vancouver Island Storyboard -->
@@ -567,7 +567,7 @@ cowplot::plot_grid(plot_a,
                    plot_f,
                    ncol = 2,
                    align = "v",
-                   rel_heights = c(1.0, 1.0, 1.1))
+                   rel_heights = c(1.1, 1.0, 1.1))
 ```
 
 (ref:harvest-rate-cap) Effective harvest rate $U_t$ for Pacific Herring
