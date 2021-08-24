@@ -139,50 +139,50 @@ sbt_yrs <- as.numeric(colnames(major_models[[model_ind]]$mcmccalcs$sbt.quants ))
 xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
 ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 
-plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
-                                major_models[[model_ind]],
-                                surv_type,
-                                new_surv_yr = new_surv_yr,
-                                xlim = xlim_all,
-                                translate = french)
+plot_a_hg <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                   major_models[[model_ind]],
+                                   surv_type,
+                                   new_surv_yr = new_surv_yr,
+                                   xlim = xlim_all,
+                                   translate = french)
 ```
 
 <!-- Haida Gwaii Storyboard -->
 ```{r natural-mortality-hg, fig.show = "hide", fig.asp = 1}
-plot_b <- plot_natural_mortality(major_models[[model_ind]],
-                                 xlim = xlim_all,
-                                 translate = french)
+plot_b_hg <- plot_natural_mortality(major_models[[model_ind]],
+                                    xlim = xlim_all,
+                                    translate = french)
 ```
 
 <!-- Haida Gwaii Storyboard -->
 ```{r recruitment-hg, fig.show = "hide", fig.asp = 1}
-plot_c <- plot_recruitment(major_models[[model_ind]],
-                           xlim = xlim_all,
-                           translate = french)
+plot_c_hg <- plot_recruitment(major_models[[model_ind]],
+                              xlim = xlim_all,
+                              translate = french)
 ```
 
 <!-- Haida Gwaii Storyboard -->
 ```{r biomass-catch-hg, fig.show = "hide", fig.asp = 1}
-plot_d <- plot_biomass_catch(major_models[[model_ind]],
-                             catch_df = ct,
-                             xlim = xlim_all,
-                             translate = french)
-```
-
-<!-- Haida Gwaii Storyboard -->
-```{r recruitment-devs-hg, fig.show = "hide", fig.asp = 1}
-plot_e <- plot_recruitment_devs(major_models[[model_ind]],
-                                run_mean_yrs = nRollRec,
+plot_d_hg <- plot_biomass_catch(major_models[[model_ind]],
+                                catch_df = ct,
                                 xlim = xlim_all,
                                 translate = french)
 ```
 
 <!-- Haida Gwaii Storyboard -->
+```{r recruitment-devs-hg, fig.show = "hide", fig.asp = 1}
+plot_e_hg <- plot_recruitment_devs(major_models[[model_ind]],
+                                   run_mean_yrs = nRollRec,
+                                   xlim = xlim_all,
+                                   translate = french)
+```
+
+<!-- Haida Gwaii Storyboard -->
 ```{r biomass-phase-hg, fig.show = "hide", fig.asp = 1}
-plot_f <- plot_biomass_phase(major_models[[model_ind]],
-                             catch_df = ct,
-                             new_surv_yr = new_surv_yr,
-                             translate = french)
+plot_f_hg <- plot_biomass_phase(major_models[[model_ind]],
+                                catch_df = ct,
+                                new_surv_yr = new_surv_yr,
+                                translate = french)
 ```
 
 <!-- Storyboard caption for all regions -->
@@ -224,12 +224,12 @@ modèle statistique des prises selon l’âge du hareng du Pacifique (`r major_s
 \storyboardfr{}
 
 ```{r storyboard-hg, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
-cowplot::plot_grid(plot_a,
-                   plot_b,
-                   plot_c,
-                   plot_d,
-                   plot_e,
-                   plot_f,
+cowplot::plot_grid(plot_a_hg,
+                   plot_b_hg,
+                   plot_c_hg,
+                   plot_d_hg,
+                   plot_e_hg,
+                   plot_f_hg,
                    ncol = 2,
                    align = "v",
                    rel_heights = c(1.1, 1.0, 1.1))
@@ -242,50 +242,50 @@ sbt_yrs <- as.numeric(colnames(major_models[[model_ind]]$mcmccalcs$sbt.quants ))
 xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
 ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 
-plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
-                                major_models[[model_ind]],
-                                surv_type,
-                                new_surv_yr = new_surv_yr,
-                                xlim = xlim_all,
-                                translate = french)
+plot_a_prd <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                    major_models[[model_ind]],
+                                    surv_type,
+                                    new_surv_yr = new_surv_yr,
+                                    xlim = xlim_all,
+                                    translate = french)
 ```
 
 <!-- Prince Rupert District Storyboard -->
 ```{r natural-mortality-prd, fig.show = "hide", fig.asp = 1}
-plot_b <- plot_natural_mortality(major_models[[model_ind]],
+plot_b_prd <- plot_natural_mortality(major_models[[model_ind]],
+                                     xlim = xlim_all,
+                                     translate = french)
+```
+
+<!-- Prince Rupert District Storyboard -->
+```{r recruitment-prd, fig.show = "hide", fig.asp = 1}
+plot_c_prd <- plot_recruitment(major_models[[model_ind]],
+                               xlim = xlim_all,
+                               translate = french)
+```
+
+<!-- Prince Rupert District Storyboard -->
+```{r biomass-catch-prd, fig.show = "hide", fig.asp = 1}
+plot_d_prd <- plot_biomass_catch(major_models[[model_ind]],
+                                 catch_df = ct,
                                  xlim = xlim_all,
                                  translate = french)
 ```
 
 <!-- Prince Rupert District Storyboard -->
-```{r recruitment-prd, fig.show = "hide", fig.asp = 1}
-plot_c <- plot_recruitment(major_models[[model_ind]],
-                           xlim = xlim_all,
-                           translate = french)
-```
-
-<!-- Prince Rupert District Storyboard -->
-```{r biomass-catch-prd, fig.show = "hide", fig.asp = 1}
-plot_d <- plot_biomass_catch(major_models[[model_ind]],
-                             catch_df = ct,
-                             xlim = xlim_all,
-                             translate = french)
-```
-
-<!-- Prince Rupert District Storyboard -->
 ```{r recruitment-devs-prd, fig.show = "hide", fig.asp = 1}
-plot_e <- plot_recruitment_devs(major_models[[model_ind]],
-                                run_mean_yrs = nRollRec,
-                                xlim = xlim_all,
-                                translate = french)
+plot_e_prd <- plot_recruitment_devs(major_models[[model_ind]],
+                                    run_mean_yrs = nRollRec,
+                                    xlim = xlim_all,
+                                    translate = french)
 ```
 
 <!-- Prince Rupert District Storyboard -->
 ```{r biomass-phase-prd, fig.show = "hide", fig.asp = 1}
-plot_f <- plot_biomass_phase(major_models[[model_ind]],
-                             catch_df = ct,
-                             new_surv_yr = new_surv_yr,
-                             translate = french)
+plot_f_prd <- plot_biomass_phase(major_models[[model_ind]],
+                                 catch_df = ct,
+                                 new_surv_yr = new_surv_yr,
+                                 translate = french)
 ```
 
 <!-- Prince Rupert District Storyboard -->
@@ -299,12 +299,12 @@ région d’évaluation des stocks majeur du district de Prince Rupert.
 \storyboardfr{}
 
 ```{r storyboard-prd, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
-cowplot::plot_grid(plot_a,
-                   plot_b,
-                   plot_c,
-                   plot_d,
-                   plot_e,
-                   plot_f,
+cowplot::plot_grid(plot_a_prd,
+                   plot_b_prd,
+                   plot_c_prd,
+                   plot_d_prd,
+                   plot_e_prd,
+                   plot_f_prd,
                    ncol = 2,
                    align = "v",
                    rel_heights = c(1.1, 1.0, 1.1))
@@ -317,50 +317,50 @@ sbt_yrs <- as.numeric(colnames(major_models[[model_ind]]$mcmccalcs$sbt.quants ))
 xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
 ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 
-plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
-                                major_models[[model_ind]],
-                                surv_type,
-                                new_surv_yr = new_surv_yr,
-                                xlim = xlim_all,
-                                translate = french)
+plot_a_cc <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                   major_models[[model_ind]],
+                                   surv_type,
+                                   new_surv_yr = new_surv_yr,
+                                   xlim = xlim_all,
+                                   translate = french)
 ```
 
 <!-- Central Coast Storyboard -->
 ```{r natural-mortality-cc, fig.show = "hide", fig.asp = 1}
-plot_b <- plot_natural_mortality(major_models[[model_ind]],
-                                 xlim = xlim_all,
-                                 translate = french)
+plot_b_cc <- plot_natural_mortality(major_models[[model_ind]],
+                                    xlim = xlim_all,
+                                    translate = french)
 ```
 
 <!-- Central Coast Storyboard -->
 ```{r recruitment-cc, fig.show = "hide", fig.asp = 1}
-plot_c <- plot_recruitment(major_models[[model_ind]],
-                           xlim = xlim_all,
-                           translate = french)
+plot_c_cc <- plot_recruitment(major_models[[model_ind]],
+                              xlim = xlim_all,
+                              translate = french)
 ```
 
 <!-- Central Coast Storyboard -->
 ```{r biomass-catch-cc, fig.show = "hide", fig.asp = 1}
-plot_d <- plot_biomass_catch(major_models[[model_ind]],
-                             catch_df = ct,
-                             xlim = xlim_all,
-                             translate = french)
-```
-
-<!-- Central Coast Storyboard -->
-```{r recruitment-devs-cc, fig.show = "hide", fig.asp = 1}
-plot_e <- plot_recruitment_devs(major_models[[model_ind]],
-                                run_mean_yrs = nRollRec,
+plot_d_cc <- plot_biomass_catch(major_models[[model_ind]],
+                                catch_df = ct,
                                 xlim = xlim_all,
                                 translate = french)
 ```
 
 <!-- Central Coast Storyboard -->
+```{r recruitment-devs-cc, fig.show = "hide", fig.asp = 1}
+plot_e_cc <- plot_recruitment_devs(major_models[[model_ind]],
+                                   run_mean_yrs = nRollRec,
+                                   xlim = xlim_all,
+                                   translate = french)
+```
+
+<!-- Central Coast Storyboard -->
 ```{r biomass-phase-cc, fig.show = "hide", fig.asp = 1}
-plot_f <- plot_biomass_phase(major_models[[model_ind]],
-                             catch_df = ct,
-                             new_surv_yr = new_surv_yr,
-                             translate = french)
+plot_f_cc <- plot_biomass_phase(major_models[[model_ind]],
+                                catch_df = ct,
+                                new_surv_yr = new_surv_yr,
+                                translate = french)
 ```
 
 <!-- Central Coast Storyboard -->
@@ -374,12 +374,12 @@ région d’évaluation des stocks majeur de la côte centrale.
 \storyboardfr{}
 
 ```{r storyboard-cc, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)")}
-cowplot::plot_grid(plot_a,
-                   plot_b,
-                   plot_c,
-                   plot_d,
-                   plot_e,
-                   plot_f,
+cowplot::plot_grid(plot_a_cc,
+                   plot_b_cc,
+                   plot_c_cc,
+                   plot_d_cc,
+                   plot_e_cc,
+                   plot_f_cc,
                    ncol = 2,
                    align = "v",
                    rel_heights = c(1.1, 1.0, 1.1))
@@ -427,50 +427,50 @@ sbt_yrs <- as.numeric(colnames(major_models[[model_ind]]$mcmccalcs$sbt.quants ))
 xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
 ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 
-plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
-                                major_models[[model_ind]],
-                                surv_type,
-                                new_surv_yr = new_surv_yr,
-                                xlim = xlim_all,
-                                translate = french)
+plot_a_sog <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                    major_models[[model_ind]],
+                                    surv_type,
+                                    new_surv_yr = new_surv_yr,
+                                    xlim = xlim_all,
+                                    translate = french)
 ```
 
 <!-- Strait of Georgia Storyboard -->
 ```{r natural-mortality-sog, fig.show = "hide", fig.asp = 1}
-plot_b <- plot_natural_mortality(major_models[[model_ind]],
+plot_b_sog <- plot_natural_mortality(major_models[[model_ind]],
+                                     xlim = xlim_all,
+                                     translate = french)
+```
+
+<!-- Strait of Georgia Storyboard -->
+```{r recruitment-sog, fig.show = "hide", fig.asp = 1}
+plot_c_sog <- plot_recruitment(major_models[[model_ind]],
+                               xlim = xlim_all,
+                               translate = french)
+```
+
+<!-- Strait of Georgia Storyboard -->
+```{r biomass-catch-sog, fig.show = "hide", fig.asp = 1}
+plot_d_sog <- plot_biomass_catch(major_models[[model_ind]],
+                                 catch_df = ct,
                                  xlim = xlim_all,
                                  translate = french)
 ```
 
 <!-- Strait of Georgia Storyboard -->
-```{r recruitment-sog, fig.show = "hide", fig.asp = 1}
-plot_c <- plot_recruitment(major_models[[model_ind]],
-                           xlim = xlim_all,
-                           translate = french)
-```
-
-<!-- Strait of Georgia Storyboard -->
-```{r biomass-catch-sog, fig.show = "hide", fig.asp = 1}
-plot_d <- plot_biomass_catch(major_models[[model_ind]],
-                             catch_df = ct,
-                             xlim = xlim_all,
-                             translate = french)
-```
-
-<!-- Strait of Georgia Storyboard -->
 ```{r recruitment-devs-sog, fig.show = "hide", fig.asp = 1}
-plot_e <- plot_recruitment_devs(major_models[[model_ind]],
-                                run_mean_yrs = nRollRec,
-                                xlim = xlim_all,
-                                translate = french)
+plot_e_sog <- plot_recruitment_devs(major_models[[model_ind]],
+                                    run_mean_yrs = nRollRec,
+                                    xlim = xlim_all,
+                                    translate = french)
 ```
 
 <!-- Strait of Georgia Storyboard -->
 ```{r biomass-phase-sog, fig.show = "hide", fig.asp = 1}
-plot_f <- plot_biomass_phase(major_models[[model_ind]],
-                             catch_df = ct,
-                             new_surv_yr = new_surv_yr,
-                             translate = french)
+plot_f_sog <- plot_biomass_phase(major_models[[model_ind]],
+                                 catch_df = ct,
+                                 new_surv_yr = new_surv_yr,
+                                 translate = french)
 ```
 
 <!-- Strait of Georgia Storyboard -->
@@ -484,12 +484,12 @@ région d’évaluation des stocks majeur du détroit de Georgie.
 \storyboardfr{}
 
 ```{r storyboard-sog, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
-cowplot::plot_grid(plot_a,
-                   plot_b,
-                   plot_c,
-                   plot_d,
-                   plot_e,
-                   plot_f,
+cowplot::plot_grid(plot_a_sog,
+                   plot_b_sog,
+                   plot_c_sog,
+                   plot_d_sog,
+                   plot_e_sog,
+                   plot_f_sog,
                    ncol = 2,
                    align = "v",
                    rel_heights = c(1.1, 1.0, 1.1))
@@ -502,50 +502,50 @@ sbt_yrs <- as.numeric(colnames(major_models[[model_ind]]$mcmccalcs$sbt.quants ))
 xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
 ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 
-plot_a <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
-                                major_models[[model_ind]],
-                                surv_type,
-                                new_surv_yr = new_surv_yr,
-                                xlim = xlim_all,
-                                translate = french)
+plot_a_wcvi <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                     major_models[[model_ind]],
+                                     surv_type,
+                                     new_surv_yr = new_surv_yr,
+                                     xlim = xlim_all,
+                                     translate = french)
 ```
 
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r natural-mortality-wcvi, fig.show = "hide", fig.asp = 1}
-plot_b <- plot_natural_mortality(major_models[[model_ind]],
-                                 xlim = xlim_all,
-                                 translate = french)
+plot_b_wcvi <- plot_natural_mortality(major_models[[model_ind]],
+                                      xlim = xlim_all,
+                                      translate = french)
 ```
 
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r recruitment-wcvi, fig.show = "hide", fig.asp = 1}
-plot_c <- plot_recruitment(major_models[[model_ind]],
-                           xlim = xlim_all,
-                           translate = french)
-```
-
-<!-- West Coast of Vancouver Island Storyboard -->
-```{r biomass-catch-wcvi, fig.show = "hide", fig.asp = 1}
-plot_d <- plot_biomass_catch(major_models[[model_ind]],
-                             catch_df = ct,
-                             xlim = xlim_all,
-                             translate = french)
-```
-
-<!-- West Coast of Vancouver Island Storyboard -->
-```{r recruitment-devs-wcvi, fig.show = "hide", fig.asp = 1}
-plot_e <- plot_recruitment_devs(major_models[[model_ind]],
-                                run_mean_yrs = nRollRec,
+plot_c_wcvi <- plot_recruitment(major_models[[model_ind]],
                                 xlim = xlim_all,
                                 translate = french)
 ```
 
 <!-- West Coast of Vancouver Island Storyboard -->
+```{r biomass-catch-wcvi, fig.show = "hide", fig.asp = 1}
+plot_d_wcvi <- plot_biomass_catch(major_models[[model_ind]],
+                                  catch_df = ct,
+                                  xlim = xlim_all,
+                                  translate = french)
+```
+
+<!-- West Coast of Vancouver Island Storyboard -->
+```{r recruitment-devs-wcvi, fig.show = "hide", fig.asp = 1}
+plot_e_wcvi <- plot_recruitment_devs(major_models[[model_ind]],
+                                     run_mean_yrs = nRollRec,
+                                     xlim = xlim_all,
+                                     translate = french)
+```
+
+<!-- West Coast of Vancouver Island Storyboard -->
 ```{r biomass-phase-wcvi, fig.show = "hide", fig.asp = 1}
-plot_f <- plot_biomass_phase(major_models[[model_ind]],
-                             catch_df = ct,
-                             new_surv_yr = new_surv_yr,
-                             translate = french)
+plot_f_wcvi <- plot_biomass_phase(major_models[[model_ind]],
+                                  catch_df = ct,
+                                  new_surv_yr = new_surv_yr,
+                                  translate = french)
 ```
 
 <!-- West Coast of Vancouver Island Storyboard -->
@@ -559,12 +559,12 @@ région d’évaluation des stocks majeur de la côte ouest de l’île de Vanco
 \storyboardfr{}
 
 ```{r storyboard-wcvi, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
-cowplot::plot_grid(plot_a,
-                   plot_b,
-                   plot_c,
-                   plot_d,
-                   plot_e,
-                   plot_f,
+cowplot::plot_grid(plot_a_wcvi,
+                   plot_b_wcvi,
+                   plot_c_wcvi,
+                   plot_d_wcvi,
+                   plot_e_wcvi,
+                   plot_f_wcvi,
                    ncol = 2,
                    align = "v",
                    rel_heights = c(1.1, 1.0, 1.1))
