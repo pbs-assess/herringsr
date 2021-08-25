@@ -394,7 +394,8 @@ thousands of tonnes (t) of Pacific Herring in selected Sections
 from `r major_start_yr` to `r major_end_yr`.
 The spawn index is scaled to abundance by the spawn survey scaling parameter $q$
 (median posterior estimate).
-The dashed vertical line delineates between two periods defined by the dominant survey method:
+The dashed vertical line delineates between two periods
+defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
 

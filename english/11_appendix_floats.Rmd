@@ -80,7 +80,10 @@ spawn_index_by_area_table(ps[[en2fr("A10", french)]],
 (ref:spawn-section-a27-cap) Area 27 SAR: spawn index in
 thousands of tonnes (t) of Pacific Herring by Section
 from `r minor_start_yr_plot` to `r minor_end_yr`.
-See Figure \@ref(fig:spawn-section-cc) for description.
+The dashed vertical line delineates between two periods
+defined by the dominant survey method:
+surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
+dive surveys (`r new_surv_yr` to `r major_end_yr`)
 
 (ref:spawn-section-a27-cap-fr) L’indice du frai
 en milliers de tonnes pour le hareng du Pacifique par Section de
