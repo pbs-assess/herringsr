@@ -29,11 +29,11 @@ make.priors.posts.plot(major_models[[model_ind]],
 
 (ref:wcvi-traces-cap) Trace plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model in the West Coast of Vancouver Island major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
 
 (ref:wcvi-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés pour le hareng du Pacifique
 dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r wcvi-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-traces-cap-fr)", "(ref:wcvi-traces-cap)")}
 make.traces.plot(major_models[[model_ind]], 
@@ -43,11 +43,11 @@ make.traces.plot(major_models[[model_ind]],
 
 (ref:wcvi-autocor-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model in the West Coast of Vancouver Island major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
 
 (ref:wcvi-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
 paramètres estimés pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r wcvi-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-autocor-cap-fr)", "(ref:wcvi-autocor-cap)")}
 make.autocor.plot(major_models[[model_ind]], mcmc_burnin = 1000)
@@ -55,11 +55,11 @@ make.autocor.plot(major_models[[model_ind]], mcmc_burnin = 1000)
 
 (ref:wcvi-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model in the West Coast of Vancouver Island major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
 
 (ref:wcvi-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
 les paramètres estimés pour le hareng du Pacifique dans la region d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r wcvi-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-pairs-cap-fr)", "(ref:wcvi-pairs-cap)")}
 make.pairs.plot(major_models[[model_ind]],

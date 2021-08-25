@@ -25,11 +25,11 @@ make.priors.posts.plot(major_models[[model_ind]],
 (ref:prd-traces-cap) Trace plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model
 in the Prince Rupert District major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
 
 (ref:prd-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés pour le hareng du Pacifique
 dans la région d’évaluation des stocks majeur du district de Prince Rupert.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r prd-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:prd-traces-cap-fr)", "(ref:prd-traces-cap)")}
 make.traces.plot(major_models[[model_ind]],
@@ -38,10 +38,10 @@ make.traces.plot(major_models[[model_ind]],
 
 (ref:prd-autocor-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model in the Prince Rupert District major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
 
 (ref:prd-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du district de Prince Rupert.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r prd-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:prd-autocor-cap-fr)", "(ref:prd-autocor-cap)")}
 make.autocor.plot(major_models[[model_ind]])
@@ -49,11 +49,11 @@ make.autocor.plot(major_models[[model_ind]])
 
 (ref:prd-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model in the Prince Rupert District major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
 
 (ref:prd-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
 les paramètres estimés pour le hareng du Pacifique dans la region d’évaluation des stocks majeur du district de Prince Rupert.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r prd-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:prd-pairs-cap-fr)", "(ref:prd-pairs-cap)")}
 make.pairs.plot(major_models[[model_ind]],

@@ -25,11 +25,11 @@ make.priors.posts.plot(major_models[[model_ind]],
 (ref:cc-traces-cap) Trace plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model
 in the Central Coast major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
 
 (ref:cc-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés pour le hareng du Pacifique
 dans la région d’évaluation des stocks majeur de la côte centrale.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r cc-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:cc-traces-cap-fr)", "(ref:cc-traces-cap)")}
 make.traces.plot(major_models[[model_ind]],
@@ -38,11 +38,11 @@ make.traces.plot(major_models[[model_ind]],
 
 (ref:cc-autocor-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model in the Central Coast major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
 
 (ref:cc-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
 paramètres estimés pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r cc-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:cc-autocor-cap-fr)", "(ref:cc-autocor-cap)")}
 make.autocor.plot(major_models[[model_ind]])
@@ -50,11 +50,11 @@ make.autocor.plot(major_models[[model_ind]])
 
 (ref:cc-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model in the Central Coast major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
 
 (ref:cc-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
 les paramètres estimés pour le hareng du Pacifique dans la region d’évaluation des stocks majeur de la côte centrale.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r cc-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:cc-pairs-cap-fr)", "(ref:cc-pairs-cap)")}
 make.pairs.plot(major_models[[model_ind]],

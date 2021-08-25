@@ -12,13 +12,13 @@ This section will not be included in the final document.
 comparative posterior histograms (bars) for the Pacific Herring statistical catch-age model in the Haida Gwaii major stock assessment region.
 Red dashed lines are maximum posterior density estimates.
 Legend: ln is natural logarithm.
-See Table \@ref(tab:hg-parameter-est) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables} for description.
 
 (ref:hg-priors-posts-cap-fr) Distributions de probabilité a priori (lignes)
 et histogrammes a posteriori comparatifs (barres) pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
 Les lignes rouges en pointillés sont des estimations de la densité a posteriori maximale.
 Légende: ln est le logarithme naturel.
-Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables} pour la description.
 
 ```{r hg-priors-posts, fig.cap=ifelse(french,"(ref:hg-priors-posts-cap-fr)","(ref:hg-priors-posts-cap)")}
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -29,7 +29,7 @@ make.priors.posts.plot(major_models[[model_ind]],
 (ref:hg-traces-cap) Trace plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model
 in the Haida Gwaii major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables} for description.
 In addition, $B_0$ is unfished biomass,
 $\SB_0$ is unfished spawning biomass,
 $\SB$ is spawning biomass,
@@ -42,7 +42,7 @@ Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
 
 (ref:hg-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés pour le hareng du Pacifique
 dans la région d’évaluation des stocks majeur de Haida Gwaii.
-Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables} pour la description.
 De plus, $\SB_0$ est la biomasse non exploitée estimée,
 $\SB_0$ est la biomasse reproductrice non exploitée estimée,
 $\SB$ est la biomasse reproductrice,
@@ -60,11 +60,11 @@ make.traces.plot(major_models[[model_ind]],
 
 (ref:hg-autocor-cap) Auto-correlation plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model in the Haida Gwaii major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
 
 (ref:hg-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
 paramètres estimés pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r hg-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-autocor-cap-fr)", "(ref:hg-autocor-cap)")}
 make.autocor.plot(major_models[[model_ind]])
@@ -72,11 +72,11 @@ make.autocor.plot(major_models[[model_ind]])
 
 (ref:hg-pairs-cap) Pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model in the Haida Gwaii major stock assessment region.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
 
 (ref:hg-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
 les paramètres estimés pour le hareng du Pacifique dans la region d’évaluation des stocks majeur de Haida Gwaii.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r hg-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-pairs-cap-fr)", "(ref:hg-pairs-cap)")}
 make.pairs.plot(major_models[[model_ind]],
