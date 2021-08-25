@@ -83,7 +83,8 @@ from `r minor_start_yr_plot` to `r minor_end_yr`.
 The dashed vertical line delineates between two periods
 defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
-dive surveys (`r new_surv_yr` to `r major_end_yr`)
+dive surveys (`r new_surv_yr` to `r major_end_yr`).
+Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
 (ref:spawn-section-a27-cap-fr) L’indice du frai
 en milliers de tonnes pour le hareng du Pacifique par Section de
