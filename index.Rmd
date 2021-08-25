@@ -41,6 +41,7 @@ lof: true
 
 ```{r setup, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}
 library(knitr)
+keep_non_CC <- FALSE #set = FALSE if providing preliminary report to CC
 if(is_latex_output()){
   knitr_figs_dir <- "knitr-figs-pdf/"
   knitr_cache_dir <- "knitr-cache-pdf/"

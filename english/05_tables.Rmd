@@ -90,7 +90,7 @@ Légende: 'NA' indique que les données ne sont pas disponibles.
 
 \needspace{0.35\textheight}
 
-```{r spawn-index-hg}
+```{r spawn-index-hg, eval=keep_non_CC}
 spawn_index_by_area_table(ps[[en2fr("HG", french)]],
                           cap = ifelse(french,
                                        "(ref:spawn-index-hg-cap-fr)",
@@ -114,7 +114,7 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 \needspace{0.35\textheight}
 
-```{r spawn-index-prd}
+```{r spawn-index-prd, eval=keep_non_CC}
 spawn_index_by_area_table(ps[[en2fr("PRD", french)]],
                           cap = ifelse(french,
                                        "(ref:spawn-index-prd-cap-fr)",
@@ -170,7 +170,7 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 \needspace{0.35\textheight}
 
-```{r spawn-index-sog}
+```{r spawn-index-sog, eval=keep_non_CC}
 spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
                           cap = ifelse(french,
                                        "(ref:spawn-index-sog-cap-fr)",
@@ -194,7 +194,7 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 \needspace{0.35\textheight}
 
-```{r spawn-index-wcvi}
+```{r spawn-index-wcvi, eval=keep_non_CC}
 spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
                           cap = ifelse(french,
                                        "(ref:spawn-index-wcvi-cap-fr)",

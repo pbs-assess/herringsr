@@ -18,7 +18,7 @@ $M$ is instantaneous natural mortality rate;
 $\overline{R}$ is average age-`r age_first` recruitment from `r major_start_yr` to `r major_end_yr`;
 $\overline{R}_\mli{init}$ is average age-`r age_first` recruitment in `r major_start_yr-1`;
 $\rho$ is the fraction of total variance associated with observation error;$q$ is catchability for surface (`r major_start_yr` to `r new_surv_yr-1`; $q_1$) and
-dive (`r new_surv_yr` to `r major_end_yr`; $q_2$) survey periods;
+dive (`r new_surv_yr` to `r major_end_yr`; $q_2$) survey periods.
 
 <!-- TODO: Update French translation. -->
 (ref:cc-priors-posts-cap-fr) Distributions de probabilité a priori (lignes)
@@ -125,8 +125,8 @@ make.pairs.plot(major_models[[model_ind]],
 (ref:cc-biomass-retro-cap) Maximum posterior density of spawning biomass in thousands of tonnes (t; lines)
 from `r new_surv_yr` to `r assess_yr` (base model) with retrospectives
 (-`r min(retrospective_yrs)` to -`r max(retrospective_yrs)` years)
-for the Pacific Herring statistical catch-age model in the Central Coast major stock assessment region.
-See Figure \@ref(fig:hg-biomass-retro) for description.
+for the Pacific Herring statistical catch-age model in the Central Coast major stock assessment region. Points indicate estimated unfished spawning biomass.
+Triangles indicate scaled abundance.
 
 <!-- TODO: Update French translation. -->
 (ref:cc-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice en milliers de tonnes (t; lignes)
