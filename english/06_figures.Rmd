@@ -215,7 +215,8 @@ where $SB_0$ is the estimated unfished spawning biomass.}
 
 <!-- Haida Gwaii Storyboard -->
 (ref:storyboard-hg-cap) Haida Gwaii SAR:
-model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`.
+statistical catch-age model output for Pacific Herring
+from `r major_start_yr` to `r major_end_yr`.
 \storyboard{}
 
 <!-- TODO: Update these for all SARs -->
@@ -290,7 +291,8 @@ plot_f_prd <- plot_biomass_phase(major_models[[model_ind]],
 
 <!-- Prince Rupert District Storyboard -->
 (ref:storyboard-prd-cap) Prince Rupert District SAR:
-model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`.
+statistical catch-age model output for Pacific Herring
+from `r major_start_yr` to `r major_end_yr`.
 \storyboard{}
 
 (ref:storyboard-prd-cap-fr) Séries chronologiques de sorties de modèle pour le
@@ -365,7 +367,8 @@ plot_f_cc <- plot_biomass_phase(major_models[[model_ind]],
 
 <!-- Central Coast Storyboard -->
 (ref:storyboard-cc-cap) Central Coast SAR:
-model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`.
+statistical catch-age model output for Pacific Herring
+from `r major_start_yr` to `r major_end_yr`.
 \storyboard{}
 
 (ref:storyboard-cc-cap-fr) Séries chronologiques de sorties de modèle pour le
@@ -475,7 +478,8 @@ plot_f_sog <- plot_biomass_phase(major_models[[model_ind]],
 
 <!-- Strait of Georgia Storyboard -->
 (ref:storyboard-sog-cap) Strait of Georgia SAR:
-model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`.
+statistical catch-age model output for Pacific Herring
+from `r major_start_yr` to `r major_end_yr`.
 \storyboard{}
 
 (ref:storyboard-sog-cap-fr) Séries chronologiques de sorties de modèle pour le
@@ -550,7 +554,8 @@ plot_f_wcvi <- plot_biomass_phase(major_models[[model_ind]],
 
 <!-- West Coast of Vancouver Island Storyboard -->
 (ref:storyboard-wcvi-cap) West Coast of Vancouver Island SAR:
-model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`.
+statistical catch-age model output for Pacific Herring
+from `r major_start_yr` to `r major_end_yr`.
 \storyboard{}
 
 (ref:storyboard-wcvi-cap-fr) Séries chronologiques de sorties de modèle pour le
