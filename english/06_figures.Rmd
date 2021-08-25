@@ -45,7 +45,7 @@ activités d'aquaculture en milliers de poissons de `r min(ic_yrs)` à
 Notes: Les données pour `r max(ic_yrs)` peuvent être incomplètes, et
 la figure exclut les RAS pour lesquels aucune prise accidentelle n'a été déclarée.
 
-```{r major-incidental, fig.asp=ifelse(french, 0.8, 0.8), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)")}
+```{r major-incidental, fig.asp=ifelse(french, 0.8, 0.8), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)"), eval=keep_non_CC}
 plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
         xlim = c(min(ic_yrs), max(ic_yrs)),
         translate = french)
@@ -223,7 +223,7 @@ model output for Pacific Herring from `r major_start_yr` to `r major_end_yr`.
 modèle statistique des prises selon l’âge du hareng du Pacifique (`r major_start_yr`-`r major_end_yr`) dans la région d’évaluation des stocks majeur de Haida Gwaii.\
 \storyboardfr{}
 
-```{r storyboard-hg, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
+```{r storyboard-hg, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)"), eval=keep_non_CC}
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_c,
@@ -298,7 +298,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur du district de Prince Rupert.
 \storyboardfr{}
 
-```{r storyboard-prd, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
+```{r storyboard-prd, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)"), eval=keep_non_CC}
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_c,
@@ -483,7 +483,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur du détroit de Georgie.
 \storyboardfr{}
 
-```{r storyboard-sog, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
+```{r storyboard-sog, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)"), eval=keep_non_CC}
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_c,
@@ -558,7 +558,7 @@ modèle statistique des prises selon l’âge du hareng du Pacifique de `r major
 région d’évaluation des stocks majeur de la côte ouest de l’île de Vancouver.
 \storyboardfr{}
 
-```{r storyboard-wcvi, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
+```{r storyboard-wcvi, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)"), eval=keep_non_CC}
 cowplot::plot_grid(plot_a,
                    plot_b,
                    plot_c,
