@@ -650,15 +650,21 @@ Based on MP evaluations and the ongoing rebuilding plan process, the harvest rec
 
 The PRD estimated stock biomass has shown little trend from 2005 to 2018, with a modest increase
 from 2019 through 2021.
-For PRD, the updated MP evaluations indicate all tested MPs could meet the conservation objective with a minimum 75%
-probability, under all Reference and Robustness OM scenarios.
+
+In summer 2021, the PRD OM was updated to include spawn survey and biological data from 2019 and 2020.
+That is, the MSE operating model conditioning was updated to include
+spawn, catch, and biological data for 2019 and 2020, and
+the MSE simulations were re-run to generate updated probability values for those MPs
+presented in September 2019 [@dfo2020a] and 2020 [@dfo2021].
+The updated closed-loop feedback simulations for the PRD show that MPs with harvest rates at 5, 10, and 20% maintain the spawning biomass above the LRP with 78 to 100% probability over all 3 OM scenarios (Table \@ref(tab:decision-prd)). 
+No new MPs or objectives were included.
 
 While MPs with harvest rates ranging from 5% to 20% were are able to meet core conservation objective of maintaining spawning
 biomass above the LRP with high probability (at least 75%)^\ref{fn:HighProb}^,
 they also imply different trade-offs among biomass (e.g., ecosystem) and yield outcomes.
 For management regions where multiple MPs meet the conservation objective,
 further ranking of the remaining objectives is needed in order to provide decision makers with a tractable set of trade-off choices.
-However this was not undertaken with the first MSE cycle because a fully specified set of objectives has not yet been developed for each management area.
+However this was not undertaken because a fully specified set of objectives has not yet been developed for each management area.
 
 Effective harvest rates for the past 10 years (with positive catches) average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth before 2018 and is estimated to fluctuate at or near $0.3\SB_0$ (Figure \@ref(fig:storyboard-prd)d). 
 Spawning biomass depletion increased above $0.3\SB_0$ in 2019 and remained above in 2020 and 2021.
@@ -669,14 +675,8 @@ states that were entered rapidly and were preceded by high biomass levels [@kron
 In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to an estimated `r f(prd_proj_sbt[2])`&nbsp;t (posterior medians), very close to the median estimate for `r assess_yr`.
 The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the LRP of $0.3\SB_0$ with `r f(prd_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-prd)).
 
-Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-prd).
-MP performance against conservation, biomass and yield objectives
-(e.g., reported probability values in Table \@ref(tab:decision-prd))
-has been updated to include data from 2019 and 2020.
-That is, the MSE operating model conditioning was updated to include
-spawn, catch, and biological data for 2019 and 2020, and
-the MSE simulations were re-run to generate updated probability values for MPs
-presented in September 2019 [@dfo2020a] and 2020 [@dfo2021].
+Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-prd),
+and include probability values that reflect new OM conditioning.
 
 Harvest options listed in Table \@ref(tab:decision-prd) reflect application of MPs to the `r assess_yr + 1` forecast biomass for PRD,
 whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
@@ -685,16 +685,20 @@ For ease of comparison with MSE cycle 1 [@dfo2019c], all MPs and scenarios liste
 
 ### Central Coast
 
-The CC stock persisted in a low biomass, low productivity state
-from approximately 2005 to 2014.
-An increasing trend has been observed in recent years, and
-overall the stock shows more volatility
-(large increases/decreases in spawn abundance, Figure \@ref(fig:storyboard-cc)a)
-than was observed prior to 2005.
-For the CC, MPs performing best against the conservation objective have
-a 10% or lower harvest rate and
-include a range of operational control point choices.
-Similar to PRD, the simulation results for CC indicate that
+The CC stock persisted in a low biomass, low productivity state from approximately 2005 to 2014.
+An increasing trend has been observed in recent years, and overall the stock shows more volatility
+(large increases/decreases in spawn abundance, Figure \@ref(fig:storyboard-cc)a) than was observed prior to 2005.
+
+In summer 2021, the CC OM was updated to include spawn survey and biological data from 2019 and 2020.
+That is, the MSE operating model conditioning was updated to include
+spawn, catch, and biological data for 2019 and 2020, and
+the MSE simulations were re-run to generate updated probability values for those MPs
+presented in September 2019 [@dfo2020a] and 2020 [@dfo2021].
+The updated closed-loop feedback simulations for the CC show that MPs with harvest rates at 5 and 10% maintain the 
+spawning biomass above the LRP with 84 to 100% probability over all 3 OM scenarios (Table \@ref(tab:decision-cc)). 
+No new MPs or objectives were included.
+
+Simulation results for CC indicate 
 there are multiple MPs that meet the conservation objective of
 maintaining spawning biomass above the LRP with high probability
 (at least 75%)^\ref{fn:HighProb}^.
@@ -713,24 +717,10 @@ The `r assess_yr + 1` spawning biomass is forecast to be
 below the LRP of $0.3\SB_0$ with
 `r f(cc_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
-Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
-are presented in Table \@ref(tab:decision-cc).
-MP performance against conservation, biomass and yield objectives
-(e.g., reported probability values in Table \@ref(tab:decision-cc))
-has been updated to include data from 2019 and 2020.
-That is, the MSE operating model conditioning was updated to include
-spawn, catch, and biological data for 2019 and 2020, and
-the MSE simulations were re-run to generate updated probability values for MPs
-presented in September 2019 [@dfo2020a] and 2020 [@dfo2021].
-
-Harvest options listed in Table \@ref(tab:decision-cc) reflect application of MPs
-to the `r assess_yr + 1` forecast biomass for CC,
-whereby each MP meets the conservation objective with a minimum 75% probability
-under the Reference OM (DDM) scenario.
+Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-cc),
+and include probability values that reflect new OM conditioning.
 Harvest options under the two Robustness OM scenarios are also included.
-For ease of comparison with MSE cycle 1 [@dfo2019c],
-all MPs and scenarios listed in Table \@ref(tab:decision-cc) include
-performance metrics for the four core objectives.
+For ease of comparison with MSE cycle 1 [@dfo2019c], all MPs and scenarios listed in Table \@ref(tab:decision-cc) include performance metrics for the four core objectives.
 
 Additionally, DFO acknowledges commitment to the Heiltsuk Nation for
 the development of a Joint Fisheries Management Plan for Pacific Herring
