@@ -396,23 +396,23 @@ Estimated spawning biomass recovered by the mid-1980s from historic low depletio
 to about 50% of the historic high biomass estimated in the early 1960s (Figure \@ref(fig:storyboard-prd)d).
 However, after the mid-1980s, estimated spawning biomass steadily declined before stabilizing at a relatively low level (but above historic lows) by the mid-2000s.
 The estimated stock biomass has shown little trend from 2005 to 2018, with a modest increase in 2019.
-Survey biomass in 2020 is near-identical to that of 2019.
+Survey biomass in 2020 is near-identical to that of 2019; biomass increased again in 2021.
 Fluctuations in the trend in spawning biomass appear to be less than those observed in other SARs,
 possibly because some spawn index points are being under- or over-fit (e.g., 2001 to 2004, and 2010 to 2013) as shown in Figure \@ref(fig:storyboard-prd)a.
 Estimated natural mortality reached historic highs in the late 1960s, before declining through the late 1970s.
-Beginning in about 1980, estimated natural mortality increased through to 2005, roughly doubling from 0.25 to 0.5&nbsp;$\text{yr}^{-1}$ (Figure \@ref(fig:storyboard-prd)b).
-Estimated natural mortality stabilized from 2005 to 2020 at a median rate of 0.45.
-This trend in natural mortality coincides with the decline in spawning biomass (Figure \@ref(fig:storyboard-prd)d);
-recruitment deviations have fluctuated around 0 without any strong positive or negative trends (Figure \@ref(fig:storyboard-prd)e).
-An above average age-`r age_first`+ recruitment in 2014, 2017 to 2018, and an increase in the spawn index in the last two years appears to be sufficient to lead to an increased biomass in 2019 and 2020 relative to 2018 (Figure \@ref(fig:storyboard-prd)f).
-Commercial catches from 2007 to 2018 have remained low (below 2,000&nbsp;t) and there was no commercial catch in 2019 and 2020.
+Beginning in about 1980, estimated natural mortality increased through to 2005, roughly doubling from 0.25 to 0.5&nbsp;$\text{yr}^{-1}$ 
+and then stabilized from 2005 to 2021 at a median rate of 0.45 (Figure \@ref(fig:storyboard-prd)b).
+The trend in natural mortality from 1980 to 2005 coincides with the decline in spawning biomass (Figure \@ref(fig:storyboard-prd)d),
+during which recruitment deviations fluctuated around 0 without any strong positive or negative trends (Figure \@ref(fig:storyboard-prd)e).
+An above average age-`r age_first`+ recruitment in 2014, 2017 and 2018, and an increase in the spawn index in the last three years appears to be sufficient to lead to an increase in estimated spawning biomass in 2019 through 2021, relative to 2018 (Figure \@ref(fig:storyboard-prd)f).
+Commercial catches from 2007 to 2018 have remained low (below 2,000&nbsp;t) and there was no commercial catch in 2019, 2020, and 2021.
 The estimated natural mortality appears to be unchanged from last year,
-resulting in what appears to be a small increase in production between 2018 and 2019, sustaining the 2019 biomass increase through 2020.
+resulting in what appears to be a small increase in production between 2018 and 2019, sustaining the 2019 biomass increase through 2021.
 
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(prd_final_yr_sbt[2])`&nbsp;t (posterior median),
 equal to `r f(prd_final_yr_dt[2]*100, 1)`% of $\SB_0$
 (Tables \@ref(tab:prd-spawning-biomass-depletion) & \@ref(tab:ref-points-prd)).
-Commercial fisheries have occurred annually in PRD since the mid-1980s, with the exception of 2019 and 2020,
+Commercial fisheries have occurred annually in PRD since the mid-1980s, with the exception of 2019 to 2021,
 during which the effective harvest rate $U_t$ was estimated to be at or below 20% (Figure \@ref(fig:harvest-rate)) in all years except 1989.
 Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1 - prd_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-prd)).
 
