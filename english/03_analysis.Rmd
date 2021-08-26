@@ -561,30 +561,55 @@ $0.3\SB_0$ with a `r f((1 - cc_prob_less_03sbo) * 100, 1)`% probability
 
 ### Strait of Georgia
 
-The estimated spawning biomass for the SoG stock declined in 2019, increased in 2020, and declined in 2021.
-Accordingly, the uncertainty associated with the last few years of spawning biomass along with the forecast biomass `r paste0("$\\SB_{", assess_yr, "}$")`, is quite large (Figure \@ref(fig:storyboard-sog)d).
-There was an increasing trend in estimated spawning biomass from about 2010 to 2016 which coincided with a decline in estimated natural mortality that began in the late 2000s (Figure \@ref(fig:storyboard-sog)b).
-The model estimates natural mortality has been increasing since 2016, and has now reached a level last estimated in 1970.
-This coincides with large shifts in survey biomass in recent 5 years, with the index declining from 2016 to 2017, 2018 to 2019,
-and 2020 to 2021.
-The large uncertainty in both spawning biomass and natural mortality estimates in `r assess_yr` may be in part a function of the declining trend in the spawn index starting in 2016
-following the increasing trend that began in 2010 (Figure \@ref(fig:storyboard-sog)a).
-The model fits an averaged trajectory through the spawn index values of the 2010s and is currently
-underfitting the survey data from 2014 though 2016 and 2020.
-The model estimates above average recruitment in most years from 2010 to `r assess_yr` (Figure \@ref(fig:storyboard-sog)c),
-with especially large positive deviations in 2019 and 2020 (Figure \@ref(fig:storyboard-sog)e).
-The large uncertainty around estimated age-`r age_first` recruitment in 2019 and 2020 was observed in the previous years' assessment and 
-remains apparent now that these age-2s are fully recruited to the fishing/ sampling gear.
-Analysis of surplus production shows that for the year between 2019 and 2020, the SoG SAR is estimated to be in a high production, high biomass state, followed by negative production for the year between 2020 and 2021 (Figure \@ref(fig:storyboard-sog)f).
+The estimated spawning biomass for the SoG stock
+declined in 2019,
+increased in 2020, and
+declined in 2021.
+Accordingly, the uncertainty associated with the last few years of spawning biomass
+along with the forecast biomass `r paste0("$\\SB_{", assess_yr, "}$")`,
+is quite large (Figure \@ref(fig:storyboard-sog)d).
+There was an increasing trend in estimated spawning biomass
+from about 2010 to 2016, which coincided with
+a decline in estimated natural mortality that began in the late 2000s
+(Figure \@ref(fig:storyboard-sog)b).
+The model estimates natural mortality has been increasing since 2016,
+and has now reached a level last estimated in the late 1960s.
+This coincides with large shifts in survey biomass in recent 5 years,
+with the index declining from 2016 to 2017, 2018 to 2019, and 2020 to 2021.
+The large uncertainty in both spawning biomass and natural mortality estimates
+in `r assess_yr` may be in part a function of the declining trend
+in the spawn index starting in 2016 following the increasing trend that began in 2010 (Figure \@ref(fig:storyboard-sog)a).
+The model fits an averaged trajectory through the spawn index values of the 2010s
+and is currently underfitting the survey data from 2014 though 2016 and 2020.
+The model estimates above average recruitment in most years from 2010 to
+`r assess_yr` (Figure \@ref(fig:storyboard-sog)c),
+with especially large positive deviations in 2019 and 2020
+(Figure \@ref(fig:storyboard-sog)e).
+The large uncertainty around estimated age-`r age_first` recruitment
+in 2019 and 2020 was observed in the previous years' assessment and
+remains apparent now that these age-2s are fully recruited to the fishing/sampling gear.
+Analysis of surplus production shows that for the year between 2019 and 2020,
+the SoG SAR is estimated to be in a high production, high biomass state,
+followed by negative production for the year between 2020 and 2021
+(Figure \@ref(fig:storyboard-sog)f).
 
-Commercial fisheries have occurred annually in SoG since the early-1970s (following the stock collapse of the late 1960s).
-Since implementing the fixed cutoff HCR in 1986, the effective harvest rate $U_t$ is estimated to fluctuate above and below the `r target_hr*100`% target rate,
-with median estimates distributed evenly above and below `r target_hr*100`% (Figure \@ref(fig:harvest-rate)).
-The model estimates the median effective harvest rate to have exceeded 25% in 2006 and 2017.
-The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(sog_final_yr_sbt[2])`&nbsp;t (posterior median),
+Commercial fisheries have occurred annually in SoG since the early-1970s
+(following the stock collapse of the late 1960s).
+Since implementing the fixed cutoff HCR in 1986,
+the effective harvest rate $U_t$ is estimated to fluctuate
+above and below the `r target_hr*100`% target rate,
+with median estimates distributed evenly above and below `r target_hr*100`%
+(Figure \@ref(fig:harvest-rate)).
+The model estimates the median effective harvest rate exceeded 25% in 2006 and 2017.
+The model estimates spawning biomass in `r assess_yr`,
+`r paste0("$\\SB_{", assess_yr, "}$")`,
+at `r f(sog_final_yr_sbt[2])`&nbsp;t (posterior median),
 equal to `r f(sog_final_yr_dt[2]*100, 1)`% of $\SB_0$
 (Tables \@ref(tab:sog-spawning-biomass-depletion) & \@ref(tab:ref-points-sog)).
-Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1 - sog_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-sog)).
+Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of
+$0.3\SB_0$ with a
+`r f((1 - sog_prob_less_03sbo) * 100, 1)`% probability
+(Table \@ref(tab:ref-points-sog)).
 
 ### West Coast of Vancouver Island
 
