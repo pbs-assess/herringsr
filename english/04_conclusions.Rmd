@@ -9,7 +9,7 @@ DFO has committed to developing and implementing a rebuilding plan for Haida Gwa
 and supports commercial herring fishery closures for the HG major stock region until April 2021.
 
 The MSE process identifies a range of MPs that meet the conservation objective with at least 75% probability for
-PRD, CC, SoG, and WCVI management areas for the Reference OM scenario (@dfo2019c; DFO 2020c^\ref{fn:MSESR2020}^).
+PRD, CC, SoG, and WCVI management areas for the Reference OM scenario (@dfo2019c; @dfo2021b).
 As such, harvest options or MP calculations for `r assess_yr + 1` for these SARs are provided
 using MPs that meet the minimum conservation criteria under the Reference OM scenario.
 Tables also include MP performance under the DIM and conM Robustness OM scenarios
