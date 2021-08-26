@@ -1,6 +1,7 @@
 # Figures
 
-(ref:bc-map-cap) Boundaries for Pacific Herring stock assessment regions (SARs) in British Columbia.
+(ref:bc-map-cap) Boundaries for Pacific Herring stock assessment regions (SARs)
+in British Columbia.
 The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
 Units: kilometres (km).
@@ -47,19 +48,22 @@ la figure exclut les RAS pour lesquels aucune prise accidentelle n'a été décl
 
 ```{r major-incidental, fig.asp=ifelse(french, 0.8, 0.8), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)")}
 plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
-        xlim = c(min(ic_yrs), max(ic_yrs)),
         translate = french)
 ```
 
 (ref:major-wa-cap) Mean weight-at-age for Pacific Herring in kilograms (kg) 
 from `r major_start_yr` to `r major_end_yr` in the major stock assessment regions.
-Lines show `r nRollWA`-year running means for age-`r age_first` to age-`r age_plus` herring, incrementing up from bottom line and shaded from darker to lighter, except thickest line shows age-`r age_highlight` herring.
+Lines show `r nRollWA`-year running means
+for age-`r age_first` to age-`r age_plus` herring,
+incrementing up from bottom line and shaded from darker to lighter,
+except thickest line shows age-`r age_highlight` herring.
 Circles show mean for age-`r age_highlight` herring.
 In years where there are no biological samples for an age class,
 values are imputed as the mean of the previous `r nRollWA` years,
 except for the beginning of the time series which are imputed by
 extending the first non-missing value backwards.
-Biological summaries only include samples collected using seine nets (commercial and test) due to size-selectivity of other gear types such as gillnet.
+Biological summaries only include samples collected using seine nets
+(commercial and test) due to size-selectivity of other gear types such as gillnet.
 The age-`r age_plus` class includes fish ages `r age_plus` and older.
 Vertical axes are cropped at `r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
 
@@ -93,7 +97,8 @@ each year adds up to 1.0.
 The gray line is the mean age, and
 the shaded area is the approximate `r ci_level*100`% distribution.
 Biological summaries only include samples collected using seine nets
-(commercial and test) due to size-selectivity of other gear types such as gillnet. The age-`r age_plus` plus class includes fish ages `r age_plus` and older.
+(commercial and test) due to size-selectivity of other gear types such as gillnet. 
+The age-`r age_plus` plus class includes fish ages `r age_plus` and older.
 
 <!-- TODO: Needs editing -->
 (ref:major-pa-cap-fr) Série chronologique de la proportion selon l’âge pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr` dans les régions d’évaluation des stocks majeurs. La taille et la couleur des points indiquent la proportion de la classe d’âge pour l’année. Chaque année, cela représente 100 %. Chaque année, cela représente 100 %.
