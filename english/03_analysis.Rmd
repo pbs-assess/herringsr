@@ -609,10 +609,11 @@ differences in the magnitude and direction of assessment model errors in each SA
 Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.-->
 
 Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs for each major SAR. 
-The description of MP evaluations for HG, PRD and CC appearing below reflects the 2019 assessment [@dfo2020a].
-MPs included for SoG and WCVI combines information from the first MSE cycle [@dfo2020a] with updated MP evaluations conducted in September 2020
+MPs included for SoG and WCVI combines information from the first MSE cycle [@dfo2019a] with updated MP evaluations conducted in September 2020
 (DFO 2020c, *In prep.*\footnote{\label{fn:MSESR2020}DFO. 2020c. Updated evaluation of management procedures for Pacific Herring (\emph{Clupea pallasii}) in the Strait of Georgia and the West Coast of Vancouver Island management areas of British Columbia. DFO Can. Sci. Advis. Sec. Sci. Resp. In prep.}).
+MPs included for PRD and CC combines information from the first MSE cycle for northern SARs [@dfo2019c] with updated MP evaluations conducted in the summer of 2021 (this document).
 Finally, science advice in 2018 recommended discontinuing the use of the historical fixed cutoff HCR [@dfo2019a], as such this MP has been removed from further consideration for all Pacific Herring SARs.
+Finally, MPs are not provided for HG due to requirements for arebuilding plan (detailed below).
 
 ### Haida Gwaii
 
@@ -630,7 +631,7 @@ The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3
 
 DFO has committed to developing and implementing a rebuilding plan for Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.[^RebuildHG]
 Work finalizing the draft for consultation continues the technical working group comprised of members of the Council of Haida Nation, DFO, and Parks Canada.
-A 90-day consultation period is anticipated to commence in October 2021.
+The consultation period is anticipated to commence in Fall 2021.
 Guidance for the Development of Rebuilding Plans under the Precautionary Approach Framework: Growing Stocks out of the Critical Zone [@dfo2013] states that
 the primary objective of any rebuilding plan is to promote stock growth out of the Critical Zone (i.e., to grow the stock above the status-based LRP) by
 ensuring removals from all fishing sources are kept to the lowest possible level until the stock has cleared this zone with high probability.
