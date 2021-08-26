@@ -123,35 +123,35 @@ Combined commercial removals from `r assess_yr-9` to `r assess_yr` from the roe,
 The proportion of coast-wide catch that comes from the SoG was 22% in 1990, and 100% in `r assess_yr`.
 Total SOK harvest (pounds of validated product) for the major SARs from `r assess_yr-9` to `r assess_yr` is presented in Table \@ref(tab:annual-sok-catch).
 
-<!-- TODO: Placeholder.. needs work -->
 \textbf{Incidental catch}
 
 Some fisheries and aquaculture activities in BC cause
 incidental mortality to Pacific Herring;
-we call this incidental catch.
+referred to as incidental catch.
 Similar to SOK harvest as well as FSC and recreational catch,
 incidental catch is not accounted for in the Pacific Herring stock assessment, 
 and is considered minor relative to commercial harvest.
-Although incidental catch is not included in Pacific Herring stock assessments,
-we provide estimated incidental catch in aquaculture activities by SAR from
+However, incidental catch from finfish aquaculture has been made available to the Herring Science Team, 
+as such we are including newly available information on estimated incidental catch in aquaculture activities by SAR from
 `r min(ic_yrs)` to `r max(ic_yrs)` (Figure \@ref(fig:major-incidental)).
 <!-- This seems trivial to me, but this is distinguished in the data: -->
 <!-- Incidental catch includes fish caught during aquaculture activities, and -->
 <!-- fish observed when recovering farmed fish carcasses. -->
 
-1. Data is provided by Pacific Fishery Management Area (PFMA) and year.
-    a. PFMAs are analogous to Statistical Areas, but PFMAs are larger.
-    a. Incomplete catch data for 2020.
-1. Data indicate the number of Pacific Herring released and dead.
-    a. Unknown mortality rate for "released" fish.
-    a. Unknown length, weight, age, and sex of fish.
+1. Data are reported by Pacific Fishery Management Area (PFMA) and year:
+    a. PFMAs are analogous to Statistical Areas, but PFMAs are larger;
+    a. Catch data for 2020 are considered incomplete.
+1. Data indicate the number of Pacific Herring released and dead, with the following caveats:
+    a. Unknown mortality rate for "released" fish;
+    a. Unknown length, weight, age, and sex of fish;
     a. "Herring-like" fish are assumed to be herring when decomposition hinders identification.
 
-Possible discussion points:
+<!-- TODO: Placeholder.. consider adding text for 2022 -->
 
-1. How incidental catch affects herring stocks.
-1. How ignoring incidental catch affects stock assessments.
-1. Mention possible incidental catch in other fisheries such as groundfish trawl.
+<!-- Possible discussion points: -->
+<!-- 1. How incidental catch affects herring stocks. -->
+<!-- 1. How ignoring incidental catch affects stock assessments. -->
+<!-- 1. Mention possible incidental catch in other fisheries such as groundfish trawl. -->
 
 ### Biological data\label{sec:biol-data}
 
