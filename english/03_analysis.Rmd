@@ -33,6 +33,8 @@ and performance evaluation of area specific MPs [@dfo2019c].
 In the summer of 2020 the second MSE cycle was initiated for the WCVI and SoG management areas.
 This included conditioning the OMs with more recent stock and fishery data,
 and evaluating the performance of additional candidate MPs for these management areas.  
+A similar update was conducted in the summer of 2021 for the PRD and CC management areas.
+Results from MP evaluations reflect most recent updates for all management areas.
 
 A core set of fisheries management objectives [@dfo2019c] have been applied to each major SAR:
 
