@@ -48,6 +48,7 @@ la figure exclut les RAS pour lesquels aucune prise accidentelle n'a été décl
 
 ```{r major-incidental, fig.asp=ifelse(french, 0.8, 0.8), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)")}
 plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
+        xlim = c(min(ic_yrs), max(ic_yrs)),
         translate = french)
 ```
 

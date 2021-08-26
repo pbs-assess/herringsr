@@ -15,7 +15,7 @@ recent_catch_yr <- 1972
 num_yrs_tab <- 9
 
 # Years to include for incidental catch
-ic_yrs <- 2016:(assess_yr - 1)
+ic_yrs <- 2014:(assess_yr - 1)
 
 # Limits for the weight-at-age plot
 wa_ylim <- c(0.05,0.20)

@@ -132,18 +132,18 @@ Similar to SOK harvest as well as FSC and recreational catch,
 incidental catch is not accounted for in the Pacific Herring stock assessment, 
 and is considered minor relative to commercial harvest.
 However, incidental catch from finfish aquaculture has been made available to the Herring Science Team, 
-as such we are including newly available information on estimated incidental catch in aquaculture activities by SAR from
-`r min(ic_yrs)` to `r max(ic_yrs)` (Figure \@ref(fig:major-incidental)).
+as such we are including newly available information on estimated incidental catch in aquaculture activities by SAR from `r min(ic_yrs)` to `r max(ic_yrs)`
+(Figure \@ref(fig:major-incidental)).
 <!-- This seems trivial to me, but this is distinguished in the data: -->
 <!-- Incidental catch includes fish caught during aquaculture activities, and -->
 <!-- fish observed when recovering farmed fish carcasses. -->
 
-1. Data are reported by Pacific Fishery Management Area (PFMA) and year,
-    
+1. Data are reported by Pacific Fishery Management Area (PFMA) and year, and
+
 1. Data indicate the number of Pacific Herring released and dead, with the following caveats:
-    a. Catch data for 2020 are considered incomplete;
-    a. Unknown mortality rate for "released" fish;
-    a. Unknown length, weight, age, and sex of fish;
+    a. Catch data for 2020 are considered incomplete,
+    a. Unknown mortality rate for "released" fish,
+    a. Unknown length, weight, age, and sex of fish, and
     a. "Herring-like" fish are assumed to be herring when decomposition hinders identification.
 
 <!-- TODO: Placeholder.. consider adding text for 2022 -->
