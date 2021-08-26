@@ -214,6 +214,13 @@ special_surv_short <- get_surv_ind(special_models,
                                    special_regions_short,
                                    surv_type)
 
+# Maximum natural mortality
+M_max <-lapply(
+  X = major_models, FUN = function(x) max(x$mcmccalcs$nat.mort.quants)
+) %>%
+  unlist() %>%
+  max(na.rm = TRUE)
+
 # Input catch for table 1
 inp_catch <- read_csv(here::here("data/input-data.csv"), col_types=cols())
 

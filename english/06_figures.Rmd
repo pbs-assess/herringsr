@@ -151,6 +151,7 @@ plot_a_hg <- plot_scaled_abundance(major_surv %>% filter(region == major_regions
 ```{r natural-mortality-hg, fig.show = "hide", fig.asp = 1}
 plot_b_hg <- plot_natural_mortality(major_models[[model_ind]],
                                     xlim = xlim_all,
+                                    y_max = M_max,
                                     translate = french)
 ```
 
@@ -255,6 +256,7 @@ plot_a_prd <- plot_scaled_abundance(major_surv %>% filter(region == major_region
 ```{r natural-mortality-prd, fig.show = "hide", fig.asp = 1}
 plot_b_prd <- plot_natural_mortality(major_models[[model_ind]],
                                      xlim = xlim_all,
+                                     y_max = M_max,
                                      translate = french)
 ```
 
@@ -331,6 +333,7 @@ plot_a_cc <- plot_scaled_abundance(major_surv %>% filter(region == major_regions
 ```{r natural-mortality-cc, fig.show = "hide", fig.asp = 1}
 plot_b_cc <- plot_natural_mortality(major_models[[model_ind]],
                                     xlim = xlim_all,
+                                    y_max = M_max,
                                     translate = french)
 ```
 
@@ -432,6 +435,7 @@ plot_a_sog <- plot_scaled_abundance(major_surv %>% filter(region == major_region
 ```{r natural-mortality-sog, fig.show = "hide", fig.asp = 1}
 plot_b_sog <- plot_natural_mortality(major_models[[model_ind]],
                                      xlim = xlim_all,
+                                     y_max = M_max,
                                      translate = french)
 ```
 
@@ -508,6 +512,7 @@ plot_a_wcvi <- plot_scaled_abundance(major_surv %>% filter(region == major_regio
 ```{r natural-mortality-wcvi, fig.show = "hide", fig.asp = 1}
 plot_b_wcvi <- plot_natural_mortality(major_models[[model_ind]],
                                       xlim = xlim_all,
+                                      y_max = M_max,
                                       translate = french)
 ```
 
