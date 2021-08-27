@@ -126,8 +126,8 @@ Total SOK harvest (pounds of validated product) for the major SARs from `r asses
 \textbf{Incidental catch}
 
 Some fisheries and aquaculture activities in BC cause
-incidental mortality to Pacific Herring;
-referred to as incidental catch.
+incidental mortality to Pacific Herring,
+which is referred to as incidental catch.
 Similar to SOK harvest as well as FSC and recreational catch,
 incidental catch is not accounted for in the Pacific Herring stock assessment, 
 and is considered minor relative to commercial harvest.
