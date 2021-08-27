@@ -255,7 +255,7 @@ No response yet from Mike Reid or Larry Greba
 A-Tlegay Fisheries assisted the herring assessment program by providing additional dive survey coverage and attempting to collect cast net samples on active spawns. 
 A-Tlegay divers surveyed spawn from Willow Point south down to Bates Beach (and beyond), Herring Sections 135 and 141.
 Through an outreach program, spawns were also reported to A-Tlegay from local mainland inlet areas.
-As a result, A-Tlegay was able to dive on 2 spawns in Bute Inlet and 1 spawn in Teakerne Arm (Section 151).
+As a result, A-Tlegay was able to dive on two spawns in Bute Inlet and 1 spawn in Teakerne Arm (Section 151).
 
 I'll wait to hear back from Qualicum, K'omos
 
@@ -345,7 +345,7 @@ The surface survey methodology has been used on occasion from `r new_surv_yr` to
 Generally this occurs in instances when herring spawn is observed in locations where a dive survey team is not available, or
 when spawning occurs very early (January or February) or late (May) in the season. 
 In these instances,
-spawner biomass estimates obtained from surface surveys for
+spawning biomass estimates obtained from surface surveys for
 a given stock area and year are added to
 biomass estimates from dive surveys, and $q_2 = 1$ is assumed for the combined index.
 In 2020 and `r surv_yr_rng[2]`, a full surface survey was conducted for the HG SAR and
@@ -530,7 +530,7 @@ the recent decline in herring spawn to have largely occurred in
 Spiller Channel (Sections 072 and 078) and
 Kitasu Bay (Section 067; Figure \@ref(fig:spawn-section-cc)).
 The majority of spawn in 2021 occurred in Thompson/Stryker (Section 074).
-Occurrance of spawn in Thompson/Stryker in 2020 and 2021
+Occurrence of spawn in Thompson/Stryker in 2020 and 2021
 represents the first significant spawns for this section in many years.
 
 A fixed cutoff HCR was implemented in 1986, and
