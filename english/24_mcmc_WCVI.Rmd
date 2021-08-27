@@ -11,7 +11,7 @@ This section will not be included in the final document.
 Autocorrelation was detected in the estimation of
 fishery selectivity-at-50% ($\hat{a}_1$) and
 its standard deviation ($\hat{\gamma}_1$) for the "other" fisheries category
-(i.e., reduction, food and bait, and special use) in WCVI. 
+(i.e., reduction, food and bait, as well as special use) in WCVI. 
 We attempted to ameliorate the issue by
 using posterior medians from last year as starting values,
 increasing the MCMC chain from 5 million to 10 million iterations, and

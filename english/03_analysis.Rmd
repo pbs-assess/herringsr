@@ -627,7 +627,7 @@ production estimates for the year between 2019 and 2020, and 2020 and 2021 are p
 Investigation of WCVI MCMC diagnostics revealed autocorrelation in the estimation of fishery selectivity-at-50% ($\hat{a}_1$) 
 and its standard deviation ($\hat{\gamma}_1$)
 for the "other" fisheries category
-(i.e., reduction, food and bait, and special use).
+(i.e., reduction, food and bait, as well as special use).
 Autocorrelation in parameter estimation may indicate
 bias in the posterior distribution or local minima. 
 In this instance, autocorrelation likely resulting from
