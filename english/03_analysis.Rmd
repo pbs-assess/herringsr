@@ -855,7 +855,7 @@ In September 2020, the SoG OM was updated to include spawn survey data from 2018
 The updated closed-loop feedback simulations for the SoG show that MPs with harvest rates at 10, 15, and 20% maintain the spawning biomass above the LRP with 75 to 85% probability over all 3 OM scenarios (Table \@ref(tab:decision-sog)). 
 MPs with harvest rate of 30% did not meet the conservation objective ($p$=69% for the Reference OM).
 
-In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(sog_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\SB_0$ with `r f(sog_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
+The spawning biomass in `r assess_yr + 1` is forecast at `r f(sog_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\SB_0$ with `r f(sog_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
 Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-sog).
 These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for SoG,
@@ -869,17 +869,18 @@ under all 3 scenarios [@dfo2021b].
 The WCVI stock persisted in a low biomass, low productivity state from approximately 2004 to 2014.
 An increasing trend has been observed in recent years, with biomass remaining low relative to historical levels, trending around the LRP of $0.3\SB_0$.
 
-In 2018, closed-loop feedback simulations for the WCVI showed the conservation objective could be met under the Reference OM scenario with between 75 and 87%, but that these MPs failed to meet the conservation objective under the DIM Robustness OM scenario, where natural mortality rates are most similar to the last 10 years ($p=56$ to 74%).
+In 2018, closed-loop feedback simulations for the WCVI showed the conservation objective could be met under the Reference OM scenario with between 75 and 87%,
+but that these MPs failed to meet the conservation objective under the DIM Robustness OM scenario, where natural mortality rates are most similar to the last
+10 years ($p=56$ to 74%).
 
 In September 2020, the WCVI OM was updated to include spawn survey data and biological data from 2018 to 2019 [@dfo2021b].
 The updated closed-loop feedback simulations for the WCVI show that MPs with harvest rates of 5, 10, and 15% maintained
 the spawning biomass above the LRP with between 81 and 93% probability over all 3 OM scenarios (Table \@ref(tab:decision-wcvi)). 
-
 Improved MP performance in the 2020 update for WCVI, relative to the first WCVI MSE cycle, 
 is due to increased spawn index in 2018 and 2019 and increased status relative to $SB_0$. 
 Performance improvement is observed under all 3 scenarios.
 
-In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(wcvi_proj_sbt[2])`&nbsp;t (posterior median)
+Spawning biomass in `r assess_yr + 1` is forecast at `r f(wcvi_proj_sbt[2])`&nbsp;t (posterior median)
 and is forecast to be below the LRP of $0.3\SB_0$ with `r f(wcvi_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
 Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-wcvi).
