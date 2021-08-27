@@ -138,8 +138,9 @@ as such we are including newly available information on estimated incidental cat
 <!-- Incidental catch includes fish caught during aquaculture activities, and -->
 <!-- fish observed when recovering farmed fish carcasses. -->
 
-1. Data are reported by Pacific Fishery Management Area (PFMA) which are 
-analogous to Statistical Areas, but PFMAs are larger, and
+1. Data are reported by Pacific Fishery Management Area (PFMA)
+which are analogous to Statistical Areas, but
+PFMAs are larger and can extend beyond SAR boundaries, and
 
 1. Data indicate the number of Pacific Herring released and dead,
 with the following caveats:
