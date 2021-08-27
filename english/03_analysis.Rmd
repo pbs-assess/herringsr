@@ -620,22 +620,16 @@ Historically high natural mortality rates occur in the late 2000s and have since
 Recruitment deviations have been negative (lower than predicted by the stock-recruit function) on average since about 2003 (Figure \@ref(fig:storyboard-wcvi)e), with the exception of 2015, 2020 and 2021.
 The reduction in estimated natural mortality below historical high levels and absence of removals from a commercial fishery appear
 to be sufficient to offset this below average recruitment of age-`r age_first` fish to support biomass growth.
-The absence of a commercial fishery since 2005 means the realized harvest rate has been near zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
-In recent years there has been modest evidence for an increase in biomass.
-The production estimates for the year between 2019 and 2020, and 2020 and 2021 are positive (Figure \@ref(fig:storyboard-wcvi)f).
+The absence of a commercial fishery since 2005 means the realized harvest rate has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
+There is  modest evidence for an increase in biomass above the LRP over since 2016 and
+production estimates for the year between 2019 and 2020, and 2020 and 2021 are positive (Figure \@ref(fig:storyboard-wcvi)f).
 
-We detected autocorrelation in MCMC iterations for WCVI for two parameters:
-reduction fisheries selectivity-at-50% $\hat{a}_1$ and
-its standard deviation $\hat{\gamma}_1$.
-MCMC autocorrelation may indicate bias in posterior distributions,
-and could be caused by having insufficient data,
-which may be the case for WCVI because
-it has been closed to commercial fishing since 2005.
-When fisheries open, more data could help inform the model
-to reduce autocorrelation and resulting bias.
-<!-- TODO: Not sure we want to include this last sentence? -->
-Since the fishery is currently closed, we accept that bias may be present, and
-focus our computing and personnel resources toward other matters.
+Investigation of WCVI MCMC diagnostics revealed autocorrelation in the estimation of fishery selectivity-at-50% ($\hat{a}_1$) 
+and it’s standard deviation ($\hat{\gamma}_1$) for the other fisheries category (reduction, the food and bait, and special use fishery).
+Autocorrelation in parameter estimation may indicate bias in the posterior distribution or local minima. 
+In this instance, autocorrelation likely resulting from there being no new commercial fishery data since 2005. 
+Running longer chains resulted in only minor improvements.
+If and when fisheries resume in future years, the addition of new fishery data may reduce this apparent autocorrelation and any resulting bias.
 
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(wcvi_final_yr_sbt[2])`&nbsp;t (posterior median),
 equal to `r f(wcvi_final_yr_dt[2]*100, 1)`% of $\SB_0$
