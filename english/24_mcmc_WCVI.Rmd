@@ -8,17 +8,23 @@ The first `r f(mcmc_burnin)` samples were discarded (i.e., burn-in),
 leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for posteriors.
 This section will not be included in the final document.
 
-Autocorrelation was detected in the estimation of fishery  selectivity-at-50% ($\hat{a}_1$) and it’s standard deviation 
-($\hat{\gamma}_1$) for the other fisheries category (reduction, the food and bait, and special use fishery) in WCVI. 
-We attempted to ameliorate the issue by using last year’s posterior medians as starting values, increasing the MCMC chain 
-from 5 million to 10 million iterations, and increasing the number of initial iterations discarded as burn-in from 1000 to 5000,
-and then again to 7000.
-The thinning rate, choosing 1 out of every 1000 was kept the same. 
-The autocorrelation for both $\hat{a}_1$ and $\hat{\gamma}_1$ was reduced but still persistent. 
-An attempt to run the chain for 20 million iterations, with a 1 in 4000 thin rate, was also made but
-was not successful due to computer limitations. 
-Since these remedies did not eliminate the autocorrelation, and had little impact on the estimation of $SB_t$ and $SB_0$, 
-we have reported the results of the 5 million-run chain to be consistent with other regions.
+Autocorrelation was detected in the estimation of
+fishery selectivity-at-50% ($\hat{a}_1$) and
+its standard deviation ($\hat{\gamma}_1$) for the "other" fisheries category
+(i.e., reduction, food and bait, and special use) in WCVI. 
+We attempted to ameliorate the issue by
+using posterior medians from last year as starting values,
+increasing the MCMC chain from 5 million to 10 million iterations, and
+increasing the number of initial iterations discarded as burn-in from
+1,000 to 5,000, and then again to 7,000.
+The thinning rate, choosing 1 out of every 1,000 was kept the same. 
+The autocorrelation for both $\hat{a}_1$ and $\hat{\gamma}_1$ was reduced
+but still persistent. 
+An attempt to run the chain for 20 million iterations, with a 1 in 4,000 thin rate, was also made but was not successful due to computer limitations. 
+Since these remedies did not eliminate the autocorrelation, and
+had little impact on the estimation of $SB_t$ and $SB_0$, 
+we have reported the results of the 5 million-run chain
+to be consistent with other SARs.
 
 (ref:wcvi-priors-posts-cap) West Coast of Vancouver Island SAR:
 prior probability distributions (lines) with

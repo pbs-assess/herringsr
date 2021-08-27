@@ -625,11 +625,17 @@ There is  modest evidence for an increase in biomass above the LRP over since 20
 production estimates for the year between 2019 and 2020, and 2020 and 2021 are positive (Figure \@ref(fig:storyboard-wcvi)f).
 
 Investigation of WCVI MCMC diagnostics revealed autocorrelation in the estimation of fishery selectivity-at-50% ($\hat{a}_1$) 
-and it’s standard deviation ($\hat{\gamma}_1$) for the other fisheries category (reduction, the food and bait, and special use fishery).
-Autocorrelation in parameter estimation may indicate bias in the posterior distribution or local minima. 
-In this instance, autocorrelation likely resulting from there being no new commercial fishery data since 2005. 
+and its standard deviation ($\hat{\gamma}_1$)
+for the "other" fisheries category
+(i.e., reduction, food and bait, and special use).
+Autocorrelation in parameter estimation may indicate
+bias in the posterior distribution or local minima. 
+In this instance, autocorrelation likely resulting from
+there being no new commercial fishery data since 2005. 
 Running longer chains resulted in only minor improvements.
-If and when fisheries resume in future years, the addition of new fishery data may reduce this apparent autocorrelation and any resulting bias.
+If and when fisheries resume in future years,
+the addition of new fishery data may reduce this apparent autocorrelation and
+any resulting bias.
 
 The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(wcvi_final_yr_sbt[2])`&nbsp;t (posterior median),
 equal to `r f(wcvi_final_yr_dt[2]*100, 1)`% of $\SB_0$
@@ -735,83 +741,137 @@ for a rebuilding plan (detailed below).
 
 ### Haida Gwaii
 
-The HG stock persisted in a low biomass, low productivity state from approximately 2000 to 2018.
-The stock was below the LRP for much of that period and shows little evidence of sustained stock growth despite the absence of commercial fisheries since 2002 (2004 for the SOK fishery).
-Survey biomass increased in 2019 and 2020, however biomass estimates are highly uncertain given persistent high natural mortality rates.
-In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at `r f(hg_proj_sbt[2])`&nbsp;t (posterior median).
+The HG stock persisted in a low biomass, low productivity state
+from approximately 2000 to 2018.
+The stock was below the LRP for much of that period and shows
+little evidence of sustained stock growth despite the absence of
+commercial fisheries since 2002 (and since 2004 for the SOK fishery).
+Survey biomass increased in 2019 and 2020, however
+biomass estimates are highly uncertain given persistent high natural mortality.
+In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast at
+`r f(hg_proj_sbt[2])`&nbsp;t (posterior median).
 Results of the simulation-evaluations found that none of the proposed MPs, 
 including the historical and no fishing MPs,
-performed satisfactorily against the conservation objective of maintaining spawning biomass above the LRP with high probability
-(at least 75%).\footnote{\label{fn:HighProb}``High'' probability is defined as 75 to 95\% by the DFO Decision-making framework (DFO 2009).}
+performed satisfactorily against the conservation objective of
+maintaining spawning biomass above the LRP with high probability
+(i.e., at least 75%).\footnote{\label{fn:HighProb}``High'' probability is defined as 75 to 95\% by the DFO Decision-making framework (DFO 2009).}
 <!-- TODO: automate the citation in the footnote (\citep{dfo2009}) -->
 
-The projected spawning biomass in `r assess_yr + 1` is forecast to be below $0.3\SB_0$ with `r f(hg_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-hg) and Figure \@ref(fig:proj-biomass-density)).
+The projected spawning biomass in `r assess_yr + 1` is forecast to be
+below the LRP of $0.3\SB_0$ with
+`r f(hg_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing
+(Table \@ref(tab:ref-points-hg) and Figure \@ref(fig:proj-biomass-density)).
 
-DFO has committed to developing and implementing a rebuilding plan for Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.[^RebuildHG]
-Work finalizing the draft for consultation continues the technical working group comprised of members of the Council of Haida Nation, DFO, and Parks Canada.
-The consultation period is anticipated to commence in Fall 2021.
-Guidance for the Development of Rebuilding Plans under the Precautionary Approach Framework: Growing Stocks out of the Critical Zone [@dfo2013] states that
-the primary objective of any rebuilding plan is to promote stock growth out of the Critical Zone (i.e., to grow the stock above the status-based LRP) by
-ensuring removals from all fishing sources are kept to the lowest possible level until the stock has cleared this zone with high probability.
-Stock rebuilding does not end having met this goal, however, and one of the goals of the rebuilding plan will be to
-identify candidate threshold biomass levels greater than the LRP that are consistent with a rebuilt state.
+DFO has committed to developing and implementing a rebuilding plan for
+Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.[^RebuildHG]
+Work finalizing the draft for consultation continues via a 
+technical working group comprised of members of
+the Council of Haida Nation, DFO, and Parks Canada.
+The consultation period is anticipated to commence in fall 2021.
+Guidance for the
+"Development of Rebuilding Plans under the Precautionary Approach Framework:
+Growing Stocks out of the Critical Zone" [@dfo2013] states that
+the primary objective of any rebuilding plan is to
+promote stock growth out of the Critical Zone
+(i.e., to grow the stock above the status-based LRP) by
+ensuring removals from all fishing sources are kept to the lowest possible level
+until the stock has cleared this zone with high probability.
+Stock rebuilding does not end having met this goal, however, and
+one of the goals of the rebuilding plan will be to
+identify candidate threshold biomass levels greater than the LRP
+that are consistent with a rebuilt state.
 
-[^RebuildHG]: In response to recommendations in the Commissioner of the Environment and Sustainable Development (CESD) October 2016 Report 2 - Sustaining Canada’s Major Fish Stocks - Fisheries and Oceans Canada,
-the Department will develop rebuilding plans for major fish stocks that are in the precautionary approach critical zone,
+[^RebuildHG]: In response to recommendations in the
+Commissioner of the Environment and Sustainable Development (CESD) October 2016
+Report 2 - Sustaining Canada’s Major Fish Stocks - Fisheries and Oceans Canada,
+the Department will develop rebuilding plans for major fish stocks that are
+in the precautionary approach critical zone,
 including Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.
 
-Based on MP evaluations and the ongoing rebuilding plan process, the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&nbsp;t.
+Based on MP evaluations and the ongoing rebuilding plan process,
+the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&nbsp;t.
+Because Haida Gwaii has an on-going rebuilding plan process,
+we did not update the HG OM with recent data
+(as we did for PRD and CC; see below).
 
 ### Prince Rupert District
 
-The PRD estimated stock biomass has shown little trend from 2005 to 2018, with a modest increase
-from 2019 through 2021.
+The PRD estimated stock biomass has shown little trend from 2005 to 2018,
+with a modest increase from 2019 to 2021.
 
-In summer 2021, the PRD OM was updated to include spawn survey and biological data from 2019 and 2020.
-That is, the MSE operating model conditioning was updated to include
-spawn, catch, and biological data for 2019 and 2020, and
-the MSE simulations were re-run to generate updated probability values for those MPs
+In summer 2021, we updated the PRD OM using data from 2019 and 2020.
+That is, we updated the MSE operating model conditioning to include
+spawn, catch, and biological data for 2019 and 2020, and we
+re-ran MSE simulations to generate updated probability values for the MPs
 presented in September 2019 [@dfo2020a] and 2020 [@dfo2021].
-The updated closed-loop feedback simulations for the PRD show that MPs with harvest rates at 5, 10, and 20% maintain the spawning biomass above the LRP with 78 to 100% probability over all 3 OM scenarios (Table \@ref(tab:decision-prd)). 
+The updated closed-loop feedback simulations for PRD show that
+MPs with harvest rates at 5, 10, and 20% maintain spawning biomass
+above the LRP with 78 to 100% probability, over all three OM scenarios
+(Table \@ref(tab:decision-prd)). 
 No new MPs or objectives were included.
 
-While MPs with harvest rates ranging from 5% to 20% were are able to meet core conservation objective of maintaining spawning
-biomass above the LRP with high probability (at least 75%)^\ref{fn:HighProb}^,
-they also imply different trade-offs among biomass (e.g., ecosystem) and yield outcomes.
+While MPs with harvest rates ranging from 5% to 20%
+were are able to meet core conservation objective of
+maintaining spawning biomass above the LRP with high probability
+(i.e., at least 75%)^\ref{fn:HighProb}^,
+they also imply different trade-offs among biomass (e.g., ecosystem)
+and yield outcomes.
 For management regions where multiple MPs meet the conservation objective,
-further ranking of the remaining objectives is needed in order to provide decision makers with a tractable set of trade-off choices.
-However this was not undertaken because a fully specified set of objectives has not yet been developed for each management area.
+further ranking of the remaining objectives is needed
+in order to provide decision makers with a tractable set of trade-off choices.
+However this was not undertaken because a fully specified set of objectives
+has not yet been developed for each management area.
 
-Effective harvest rates for the past 10 years (with positive catches) average ~12% (Figure \@ref(fig:harvest-rate)), during which the stock showed no sign of growth before 2018 and is estimated to fluctuate at or near $0.3\SB_0$ (Figure \@ref(fig:storyboard-prd)d). 
-Spawning biomass depletion increased above $0.3\SB_0$ in 2019 and remained above in 2020 and 2021.
-Although there is not evidence of a low biomass and low productivity state for PRD in the past 30-years, the 
-adjacent SARs (HG and CC) show evidence of recent prolonged periods of low biomass and low productivity:
-states that were entered rapidly and were preceded by high biomass levels [@kronlund2017].
+Effective harvest rates for the past 10 years (with positive catches)
+average ~12% (Figure \@ref(fig:harvest-rate)),
+during which the stock showed no sign of growth before 2018 and
+is estimated to fluctuate at or near the LRP of $0.3\SB_0$
+(Figure \@ref(fig:storyboard-prd)d). 
+Spawning biomass depletion increased above $0.3\SB_0$ in 2019 and
+remained above in 2020 and 2021.
+Although there is not evidence of a low biomass and low productivity state
+for PRD in the past 30-years, adjacent SARs (HG and CC)
+show evidence of recent prolonged periods of low biomass and low productivity:
+states that were entered rapidly and were preceded by high biomass levels
+[@kronlund2017].
 
-In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast to an estimated `r f(prd_proj_sbt[2])`&nbsp;t (posterior medians), very close to the median estimate for `r assess_yr`.
-The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the LRP of $0.3\SB_0$ with `r f(prd_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing (Table \@ref(tab:ref-points-prd)).
+In the absence of fishing, spawning biomass in `r assess_yr + 1` is forecast
+at an estimated `r f(prd_proj_sbt[2])`&nbsp;t (posterior medians),
+very close to the median estimate for `r assess_yr`.
+The forecast spawning biomass in `r assess_yr + 1` is estimated to be below the LRP
+of $0.3\SB_0$ with `r f(prd_prob_proj_less_03sbo * 100, 1)`% probability
+in the absence of fishing (Table \@ref(tab:ref-points-prd)).
 
-Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-prd),
+Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
+are presented in Table \@ref(tab:decision-prd),
 and include probability values that reflect new OM conditioning.
-
-Harvest options listed in Table \@ref(tab:decision-prd) reflect application of MPs to the `r assess_yr + 1` forecast biomass for PRD,
-whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
+Harvest options listed in Table \@ref(tab:decision-prd) reflect
+application of MPs to the `r assess_yr + 1` forecast biomass for PRD,
+whereby each MP meets the conservation objective with a minimum 75% probability
+under the Reference OM (i.e., DDM) scenario.
 Harvest options under the two Robustness OM scenarios are also included.
-For ease of comparison with MSE cycle 1 [@dfo2019c], all MPs and scenarios listed in Table \@ref(tab:decision-prd) include performance metrics for the four core objectives.
+For ease of comparison with MSE cycle 1 [@dfo2019c],
+all MPs and scenarios listed in Table \@ref(tab:decision-prd)
+include performance metrics for the four core objectives.
 
 ### Central Coast
 
-The CC stock persisted in a low biomass, low productivity state from approximately 2005 to 2014.
-An increasing trend has been observed in recent years, and overall the stock shows more volatility
-(large increases/decreases in spawn abundance, Figure \@ref(fig:storyboard-cc)a) than was observed prior to 2005.
+The CC stock persisted in a low biomass, low productivity state from
+approximately 2005 to 2014.
+An increasing trend has been observed in recent years,
+and overall the stock shows more volatility
+(i.e., large increases/decreases in spawn abundance;
+Figure \@ref(fig:storyboard-cc)a) than was observed prior to 2005.
 
-In summer 2021, the CC OM was updated to include spawn survey and biological data from 2019 and 2020.
-That is, the MSE operating model conditioning was updated to include
-spawn, catch, and biological data for 2019 and 2020, and
-the MSE simulations were re-run to generate updated probability values for those MPs
+Similar to PRD, we updated the CC OM in summer 2021 using data from 2019 and 2020.
+That is, we updated the MSE operating model conditioning to include
+spawn, catch, and biological data for 2019 and 2020, and we
+re-ran MSE simulations to generate updated probability values for the MPs
 presented in September 2019 [@dfo2020a] and 2020 [@dfo2021].
-The updated closed-loop feedback simulations for the CC show that MPs with harvest rates at 5 and 10% maintain the 
-spawning biomass above the LRP with 84 to 100% probability over all 3 OM scenarios (Table \@ref(tab:decision-cc)). 
+The updated closed-loop feedback simulations for CC show that MPs
+with harvest rates at 5 and 10% maintain spawning biomass
+above the LRP with 84 to 100% probability over all three OM scenarios
+(Table \@ref(tab:decision-cc)). 
 No new MPs or objectives were included.
 
 Simulation results for CC indicate 
@@ -833,10 +893,13 @@ The `r assess_yr + 1` spawning biomass is forecast to be
 below the LRP of $0.3\SB_0$ with
 `r f(cc_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
-Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-cc),
+Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
+are presented in Table \@ref(tab:decision-cc),
 and include probability values that reflect new OM conditioning.
 Harvest options under the two Robustness OM scenarios are also included.
-For ease of comparison with MSE cycle 1 [@dfo2019c], all MPs and scenarios listed in Table \@ref(tab:decision-cc) include performance metrics for the four core objectives.
+For ease of comparison with MSE cycle 1 [@dfo2019c],
+all MPs and scenarios listed in Table \@ref(tab:decision-cc) include
+performance metrics for the four core objectives.
 
 Additionally, DFO acknowledges commitment to the Heiltsuk Nation for
 the development of a Joint Fisheries Management Plan for Pacific Herring
@@ -851,41 +914,70 @@ Additional simulation-evaluations were conducted in 2019 to further explore the 
 A comparison of catch caps from 30,000&nbsp;t to 5,000&nbsp;t showed no discernible gain in conservation performance under all 3 OM scenarios.
 Results also showed MPs with catch caps of 20,000&nbsp;t or less rarely exceed the 20% harvest rate for any given projection year (over the 15 year projections).
 
-In September 2020, the SoG OM was updated to include spawn survey data from 2018 to 2020 and biological data for 2018 and 2019 [@dfo2021b].
-The updated closed-loop feedback simulations for the SoG show that MPs with harvest rates at 10, 15, and 20% maintain the spawning biomass above the LRP with 75 to 85% probability over all 3 OM scenarios (Table \@ref(tab:decision-sog)). 
-MPs with harvest rate of 30% did not meet the conservation objective ($p$=69% for the Reference OM).
+In September 2020, the SoG OM was updated to include spawn survey data
+from 2018 to 2020 and biological data for 2018 and 2019 [@dfo2021b].
+The updated closed-loop feedback simulations for the SoG show that MPs
+with harvest rates at 10, 15, and 20% maintain the spawning biomass
+above the LRP with 75 to 85% probability over all three OM scenarios
+(Table \@ref(tab:decision-sog)). 
+MPs with harvest rate of 30% did not meet the conservation objective
+($p$=69% for the Reference OM).
 
-The spawning biomass in `r assess_yr + 1` is forecast at `r f(sog_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be below the LRP of $0.3\SB_0$ with `r f(sog_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
+The spawning biomass in `r assess_yr + 1` is forecast at
+`r f(sog_proj_sbt[2])`&nbsp;t (posterior median) and is forecast to be
+below the LRP of $0.3\SB_0$ with
+`r f(sog_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
-Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-sog).
-These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for SoG,
-whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
+Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
+are presented in Table \@ref(tab:decision-sog).
+These options reflect application of MPs to the `r assess_yr + 1`
+forecast biomass for SoG,
+whereby each MP meets the conservation objective with a minimum
+75% probability under the Reference OM (DDM) scenario.
 Harvest options under the two Robustness OM scenarios are also included.
-All MPs and scenarios listed in Table \@ref(tab:decision-sog) include updated performance metrics for the four core objectives
-under all 3 scenarios [@dfo2021b].
+All MPs and scenarios listed in Table \@ref(tab:decision-sog) include
+updated performance metrics for the four core objectives
+under all three scenarios [@dfo2021b].
 
 ### West Coast of Vancouver Island
 
-The WCVI stock persisted in a low biomass, low productivity state from approximately 2004 to 2014.
-An increasing trend has been observed in recent years, with biomass remaining low relative to historical levels, trending around the LRP of $0.3\SB_0$.
+The WCVI stock persisted in a low biomass, low productivity state from
+approximately 2004 to 2014.
+An increasing trend has been observed in recent years,
+with biomass remaining low relative to historical levels,
+trending around the LRP of $0.3\SB_0$.
 
-In 2018, closed-loop feedback simulations for the WCVI showed the conservation objective could be met under the Reference OM scenario with between 75 and 87%,
-but that these MPs failed to meet the conservation objective under the DIM Robustness OM scenario, where natural mortality rates are most similar to the last
-10 years ($p=56$ to 74%).
+In 2018, closed-loop feedback simulations for the WCVI showed
+the conservation objective could be met under the Reference OM scenario
+with between 75 and 87% probability,
+but that these MPs failed to meet the conservation objective under the DIM
+Robustness OM scenario, where natural mortality rates are
+most similar to the last 10 years ($p=56$ to 74%).
 
-In September 2020, the WCVI OM was updated to include spawn survey data and biological data from 2018 to 2019 [@dfo2021b].
-The updated closed-loop feedback simulations for the WCVI show that MPs with harvest rates of 5, 10, and 15% maintained
-the spawning biomass above the LRP with between 81 and 93% probability over all 3 OM scenarios (Table \@ref(tab:decision-wcvi)). 
-Improved MP performance in the 2020 update for WCVI, relative to the first WCVI MSE cycle, 
-is due to increased spawn index in 2018 and 2019 and increased status relative to $SB_0$. 
-Performance improvement is observed under all 3 scenarios.
+In September 2020, the WCVI OM was updated to include
+spawn survey data and biological data from 2018 to 2019 [@dfo2021b].
+The updated closed-loop feedback simulations for the WCVI show that
+MPs with harvest rates of 5, 10, and 15% maintained spawning biomass
+above the LRP with between 81 and 93% probability,
+over all three OM scenarios (Table \@ref(tab:decision-wcvi)). 
+Improved MP performance in the 2020 update for WCVI,
+relative to the first WCVI MSE cycle, 
+is due to an increased spawn index in 2018 and 2019 and
+increased status relative to $SB_0$. 
+Performance improvement is observed under all three scenarios.
 
-Spawning biomass in `r assess_yr + 1` is forecast at `r f(wcvi_proj_sbt[2])`&nbsp;t (posterior median)
-and is forecast to be below the LRP of $0.3\SB_0$ with `r f(wcvi_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
+Spawning biomass in `r assess_yr + 1` is forecast at
+`r f(wcvi_proj_sbt[2])`&nbsp;t (posterior median)
+and is forecast to be below the LRP of $0.3\SB_0$ with
+`r f(wcvi_prob_proj_less_03sbo * 100, 1)`% probability in the absence of fishing.
 
-Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs, are presented in Table \@ref(tab:decision-wcvi).
-These options reflect application of MPs to the `r assess_yr + 1` forecast biomass for WCVI,
-whereby each MP meets the conservation objective with a minimum 75% probability under the Reference OM (DDM) scenario.
+Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
+are presented in Table \@ref(tab:decision-wcvi).
+These options reflect application of MPs to the `r assess_yr + 1`
+forecast biomass for WCVI,
+whereby each MP meets the conservation objective with a minimum
+75% probability under the Reference OM (DDM) scenario.
 Harvest options under the two Robustness OM scenarios are also included.
-All MPs and scenarios listed in Table \@ref(tab:decision-wcvi) include updated performance metrics for the four core objectives
-under all 3 scenarios [@dfo2021b].
+All MPs and scenarios listed in Table \@ref(tab:decision-wcvi) include
+updated performance metrics for the four core objectives
+under all three scenarios [@dfo2021b].
