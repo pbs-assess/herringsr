@@ -616,12 +616,13 @@ $0.3\SB_0$ with a
 The time series of estimated spawning biomass shows a decline from the late 1980s through to a historic low in the 2000s (Figure \@ref(fig:storyboard-wcvi)d).
 The low estimated spawning biomass persisted through the 2006 to 2012 period and has since slowly increased to a level similar to that estimated for 2000.
 The model reconstruction of spawning biomass closely follows the trajectory of spawn index values (Figure \@ref(fig:storyboard-wcvi)a).
-Historically high natural mortality rates occur in the late 2000s and these rates have since declined (Figure \@ref(fig:storyboard-wcvi)b).
-Recruitment deviations have been negative (lower than predicted by the stock-recruit function) on average since about 2003 (Figure \@ref(fig:storyboard-wcvi)e),
-however the reduction in estimated natural mortality and absence of removals from a commercial fishery appears to be sufficient to offset this below average recruitment of age-`r age_first` fish to support biomass growth.
+Historically high natural mortality rates occur in the late 2000s and have since declined, though show an increasing trend from 2015 to 2021 (Figure \@ref(fig:storyboard-wcvi)b).
+Recruitment deviations have been negative (lower than predicted by the stock-recruit function) on average since about 2003 (Figure \@ref(fig:storyboard-wcvi)e), with the exception of 2015, 2020 and 2021.
+The reduction in estimated natural mortality below historical high levels and absence of removals from a commercial fishery appear
+to be sufficient to offset this below average recruitment of age-`r age_first` fish to support biomass growth.
 The absence of a commercial fishery since 2005 means the realized harvest rate has been near zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
 In recent years there has been modest evidence for an increase in biomass.
-The production estimates in the 2019-2020 year are at zero (Figure \@ref(fig:storyboard-wcvi)f).\
+The production estimates for the year between 2019 and 2020, and 2020 and 2021 are positive (Figure \@ref(fig:storyboard-wcvi)f).
 
 We detected autocorrelation in MCMC iterations for WCVI for two parameters:
 reduction fisheries selectivity-at-50% $\hat{a}_1$ and
