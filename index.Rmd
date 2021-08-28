@@ -87,6 +87,7 @@ rebuild_rdata_model_files <- FALSE
 run_retrospectives <- FALSE
 retrospective_yrs <- 1:10
 models_dir <- here::here("models")
+show_ic_figures <- TRUE  # Show/hide incidental catch figures
 
 source(here::here("R/model-setup.R"))
 source(here::here("R/variable-setup.R"))

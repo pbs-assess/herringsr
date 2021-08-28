@@ -47,7 +47,7 @@ activités d'aquaculture en milliers de poissons de `r min(ic_yrs)` à
 Notes: Les données pour `r max(ic_yrs)` peuvent être incomplètes, et
 la figure exclut les RAS pour lesquels aucune prise accidentelle n'a été déclarée.
 
-```{r major-incidental, fig.asp=ifelse(french, 0.8, 0.8), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)")}
+```{r major-incidental, fig.asp=ifelse(french, 0.8, 0.8), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)"), eval = show_ic_figures}
 plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
         xlim = c(min(ic_yrs), max(ic_yrs)),
         translate = french)

@@ -128,7 +128,7 @@ activités d'aquaculture en milliers de poissons de `r min(ic_yrs)` à
 `r max(ic_yrs)` dans les régions d'évaluation du stock mineurs.
 Voir la figure \@ref(fig:major-incidental) pour la description.
 
-```{r minor-incidental, fig.asp=ifelse(french, 0.35, 0.35), fig.cap = ifelse(french, "(ref:minor-incidental-cap-fr)", "(ref:minor-incidental-cap)")}
+```{r minor-incidental, fig.asp=ifelse(french, 0.35, 0.35), fig.cap = ifelse(french, "(ref:minor-incidental-cap-fr)", "(ref:minor-incidental-cap)"), eval = show_ic_figures}
 plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Minor"]),
         xlim = c(min(ic_yrs), max(ic_yrs)),
         translate = french)
