@@ -344,3 +344,29 @@ proc_mp <- function(df){
                            "Catch < 650t\nmin"))
 
 }
+
+# Text for "stock status update"
+stock_status_text <- function(SAR, this_yr = assess_yr) {
+  vars <- get(paste0(tolower(SAR), "_vars"))
+  paste0("Compared to last year, estimated spawning biomass in ", this_yr,
+         " $\\SB_{", this_yr, "}$",
+         ifelse(vars$final_yr_sbt[2] > vars$prev_yr_sbt[2],
+                " increased",
+                " decreased"),
+         " to ", f(vars$final_yr_sbt[2]),
+         "$\\,\\text{t}$ (posterior median), which is equal to ",
+         f(vars$final_yr_dt[2]*100, 1),
+         "% of $\\SB_0$ (Tables ",
+         "\\@ref(tab:", tolower(SAR), "-spawning-biomass-depletion) & ",
+         "\\@ref(tab:ref-points-", tolower(SAR), ")).",
+         " Spawning biomass in ", this_yr,
+         " is estimated to be above the LRP of $0.3\\SB_0$ with a ",
+         f((1 - vars$prob_less_03sbo) * 100, 1),
+         "% probability (Table ",
+         "\\@ref(tab:ref-points-", tolower(SAR), ")).")
+}
+
+# Text for "application of MPs.."
+application_mp_text <- function(){
+
+}
