@@ -433,15 +433,7 @@ The effective harvest rate $U_t$ since 2000 has been at or near zero
 with the last commercial roe fishery in 2002,
 and the last commercial SOK fishery in 2004.
 
-Estimated spawning biomass in `r assess_yr` is `r f(hg_final_yr_sbt[2])`&nbsp;t 
-(`r paste0("$\\SB_{", assess_yr, "}$")`, median posterior value) or
-`r f(hg_final_yr_dt[2]*100, 1)`% of $\SB_0$, 
-`r ifelse(hg_final_yr_sbt[2] - hg_prev_yr_sbt[2] > 0, "an increase", "a decrease")` 
-from last year
-(Tables \@ref(tab:hg-spawning-biomass-depletion) & \@ref(tab:ref-points-hg)).
-Spawning biomass in `r assess_yr` is estimated to be above the LRP of $0.3\SB_0$
-with a `r f((1 - hg_prob_less_03sbo) * 100, 1)`% probability
-(Table \@ref(tab:ref-points-hg)).
+`r stock_status_text(SAR = "HG")`
 Management measures to support long-term recovery of herring stocks in Haida Gwaii
 are being developed through the Rebuilding Plan process
 (Section '\nameref{sec:harv-opts}').
@@ -484,19 +476,11 @@ The estimated natural mortality appears to be unchanged from last year,
 resulting in what appears to be a small increase in production
 between 2018 and 2019, sustaining the 2019 biomass increase through 2021.
 
-The model estimates spawning biomass in `r assess_yr`,
-`r paste0("$\\SB_{", assess_yr, "}$")`,
-at `r f(prd_final_yr_sbt[2])`&nbsp;t (posterior median),
-equal to `r f(prd_final_yr_dt[2]*100, 1)`% of $\SB_0$
-(Tables \@ref(tab:prd-spawning-biomass-depletion) & \@ref(tab:ref-points-prd)).
+`r stock_status_text(SAR = "PRD")`
 Commercial fisheries have occurred annually in PRD since the mid-1980s,
 with the exception of 2019 to 2021,
 during which the effective harvest rate $U_t$ was estimated to be at or below 20% 
 (Figure \@ref(fig:harvest-rate)) in all years except 1989.
-Spawning biomass in `r assess_yr` is estimated to be greater than
-the LRP of $0.3\SB_0$ with a
-`r f((1 - prd_prob_less_03sbo) * 100, 1)`% probability
-(Table \@ref(tab:ref-points-prd)).
 
 ### Central Coast
 
@@ -555,14 +539,7 @@ however these removals are not included in the estimation of $U_t$.
 Commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19,
 however did they successfully resume in 2021 (Table \@ref(tab:annual-sok-catch)).
 
-The model estimates spawning biomass in `r assess_yr`
-`r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(cc_final_yr_sbt[2])`&nbsp;t 
-(posterior median),
-equal to `r f(cc_final_yr_dt[2]*100, 1)`% of $\SB_0$
-(Tables \@ref(tab:cc-spawning-biomass-depletion) & \@ref(tab:ref-points-cc)).
-Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of
-$0.3\SB_0$ with a `r f((1 - cc_prob_less_03sbo) * 100, 1)`% probability
-(Table \@ref(tab:ref-points-cc)).
+`r stock_status_text(SAR = "CC")`
 
 ### Strait of Georgia
 
@@ -606,15 +583,8 @@ above and below the `r target_hr*100`% target rate,
 with median estimates distributed evenly above and below `r target_hr*100`%
 (Figure \@ref(fig:harvest-rate)).
 The model estimates the median effective harvest rate exceeded 25% in 2006 and 2017.
-The model estimates spawning biomass in `r assess_yr`,
-`r paste0("$\\SB_{", assess_yr, "}$")`,
-at `r f(sog_final_yr_sbt[2])`&nbsp;t (posterior median),
-equal to `r f(sog_final_yr_dt[2]*100, 1)`% of $\SB_0$
-(Tables \@ref(tab:sog-spawning-biomass-depletion) & \@ref(tab:ref-points-sog)).
-Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of
-$0.3\SB_0$ with a
-`r f((1 - sog_prob_less_03sbo) * 100, 1)`% probability
-(Table \@ref(tab:ref-points-sog)).
+
+`r stock_status_text(SAR = "SoG")`
 
 ### West Coast of Vancouver Island
 
@@ -629,7 +599,8 @@ The absence of a commercial fishery since 2005 means the realized harvest rate h
 There is  modest evidence for an increase in biomass above the LRP over since 2016 and
 production estimates for the year between 2019 and 2020, and 2020 and 2021 are positive (Figure \@ref(fig:storyboard-wcvi)f).
 
-Investigation of WCVI MCMC diagnostics revealed autocorrelation in the estimation of fishery selectivity-at-50% ($\hat{a}_1$) 
+Investigation of WCVI MCMC diagnostics revealed autocorrelation in the estimation of
+fishery selectivity-at-50% ($\hat{a}_1$) 
 and its standard deviation ($\hat{\gamma}_1$)
 for the "other" fisheries category
 (i.e., reduction, food and bait, as well as special use).
@@ -642,10 +613,7 @@ If and when fisheries resume in future years,
 the addition of new fishery data may reduce this apparent autocorrelation and
 any resulting bias.
 
-The model estimates spawning biomass in `r assess_yr`, `r paste0("$\\SB_{", assess_yr, "}$")`, at `r f(wcvi_final_yr_sbt[2])`&nbsp;t (posterior median),
-equal to `r f(wcvi_final_yr_dt[2]*100, 1)`% of $\SB_0$
-(Tables \@ref(tab:wcvi-spawning-biomass-depletion) & \@ref(tab:ref-points-wcvi)).
-Spawning biomass in `r assess_yr` is estimated to be greater than the LRP of $0.3\SB_0$ with a `r f((1 - wcvi_prob_less_03sbo) * 100, 1)`% probability (Table \@ref(tab:ref-points-wcvi)).
+`r stock_status_text(SAR = "WCVI")`
 
 ## Management performance
 
