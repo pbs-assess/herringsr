@@ -346,9 +346,13 @@ proc_mp <- function(df){
 }
 
 # Text for "Stock status update"
-stock_status_text <- function(SAR, this_yr = assess_yr) {
+stock_status_text <- function(SAR, this_yr = assess_yr, p_lrp = 0.3) {
   vars <- get(paste0(tolower(SAR), "_vars"))
-  paste0("Compared to last year, estimated spawning biomass in ", this_yr,
+  paste0("Estimated unfished spawning biomass $\\SB_0$ is ",
+         f(vars$sbo[2]), "$\\,\\text{t}$ (posterior median), and the ",
+         "LRP of $", p_lrp, "\\SB_0$ is ",
+         f(p_lrp*vars$sbo[2]), "$\\,\\text{t}$. ",
+         "Compared to last year, estimated spawning biomass in ", this_yr,
          " $\\SB_{", this_yr, "}$",
          ifelse(vars$final_yr_sbt[2] > vars$prev_yr_sbt[2],
                 " increased",
@@ -360,21 +364,24 @@ stock_status_text <- function(SAR, this_yr = assess_yr) {
          "\\@ref(tab:", tolower(SAR), "-spawning-biomass-depletion) & ",
          "\\@ref(tab:ref-points-", tolower(SAR), ")). ",
          "Spawning biomass in ", this_yr,
-         " is estimated to be above the LRP of $0.3\\SB_0$ with a ",
+         " is estimated to be above the LRP with a ",
          f((1 - vars$prob_less_03sbo) * 100, 1),
          "% probability (Table ",
          "\\@ref(tab:ref-points-", tolower(SAR), ")).")
 }
 
 # Text for "Application of MPs.."
-proj_biomass_text <- function(SAR, next_yr = assess_yr + 1){
+proj_biomass_text <- function(SAR, next_yr = assess_yr + 1, p_lrp = 0.3){
   vars <- get(paste0(tolower(SAR), "_vars"))
   paste0("In the absence of fishing, spawning biomass in ", next_yr,
          " $\\SB_{", next_yr, "}$ ",
          "is forecast to be ",
          f(vars$proj_sbt[2]),
-         "$\\,\\text{t}$ (posterior median). ",
-         "This forecast is below the LRP of $0.3\\SB_0$ with ",
+         "$\\,\\text{t}$ (posterior median; Table ",
+         "\\@ref(tab:ref-points-", tolower(SAR), ")). ",
+         "Spawning biomass in ", next_yr,
+         " is forecast to below the LRP of $", p_lrp, "\\SB_0$ (",
+         f(p_lrp*vars$sbo[2]), "$\\,\\text{t}$) with a ",
          f(vars$prob_proj_less_03sbo * 100, 1),
          "% probability, in the absence of fishing (Table ",
          "\\@ref(tab:ref-points-", tolower(SAR), ") and Figure ",
