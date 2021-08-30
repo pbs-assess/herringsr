@@ -349,9 +349,9 @@ proc_mp <- function(df){
 stock_status_text <- function(SAR, this_yr = assess_yr, p_lrp = 0.3) {
   vars <- get(paste0(tolower(SAR), "_vars"))
   paste0("Estimated unfished spawning biomass $\\SB_0$ is ",
-         f(vars$sbo[2]), "$\\,\\text{t}$ (posterior median), and the ",
+         f(vars$sbo[2]), "$\\,\\text{t}$, and the ",
          "LRP of $", p_lrp, "\\SB_0$ is ",
-         f(p_lrp*vars$sbo[2]), "$\\,\\text{t}$. ",
+         f(p_lrp*vars$sbo[2]), "$\\,\\text{t}$ (posterior medians). ",
          "Compared to last year, estimated spawning biomass in ", this_yr,
          " $\\SB_{", this_yr, "}$",
          ifelse(vars$final_yr_sbt[2] > vars$prev_yr_sbt[2],
