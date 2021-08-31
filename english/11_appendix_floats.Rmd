@@ -102,14 +102,14 @@ plot_spawn_section(
         translate = french)
 ```
 
-(ref:minor-catch-cap) Total landed Pacific Herring catch in thousands of tonnes (t)
-from `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
+(ref:minor-catch-cap) Total landed Pacific Herring catch
+in thousands of tonnes (t)
+from `r minor_start_yr_plot` to `r minor_end_yr` in the minor SARs.
 See Figure \@ref(fig:major-catch) for description.
 
 (ref:minor-catch-cap-fr) Prises totales débarquées en
 milliers de tonnes (t) de hareng du Pacifique de
-`r minor_start_yr_plot` à `r minor_end_yr` dans
-les régions d’évaluation des stocks mineurs.
+`r minor_start_yr_plot` à `r minor_end_yr` dans les RES mineurs.
 Voir la figure \@ref(fig:major-catch) pour la description.
 
 ```{r minor-catch, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-catch-cap-fr)", "(ref:minor-catch-cap)")}
@@ -120,12 +120,12 @@ plot_catch(df = minor_catch,
 
 (ref:minor-incidental-cap) Incidental Pacific Herring catch
 in aquaculture activities in thousands of fish from
-`r min(ic_yrs)` to `r max(ic_yrs)` in the minor stock assessment regions (SARs).
+`r min(ic_yrs)` to `r max(ic_yrs)` in the minor SARs.
 See Figure \@ref(fig:major-incidental) for description.
 
 (ref:minor-incidental-cap-fr) Prise accidentelle de hareng du Pacifique dans les
 activités d'aquaculture en milliers de poissons de `r min(ic_yrs)` à 
-`r max(ic_yrs)` dans les régions d'évaluation du stock mineurs.
+`r max(ic_yrs)` dans les RES mineurs.
 Voir la figure \@ref(fig:major-incidental) pour la description.
 
 ```{r minor-incidental, fig.asp=ifelse(french, 0.35, 0.35), fig.cap = ifelse(french, "(ref:minor-incidental-cap-fr)", "(ref:minor-incidental-cap)"), eval = show_ic_figures}
@@ -135,7 +135,7 @@ plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Minor"]),
 ```
 
 (ref:minor-wa-cap) Mean weight-at-age for Pacific Herring in kilograms (kg) 
-from `r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
+from `r minor_start_yr_plot` to `r minor_end_yr` in the minor SARs.
 Circles show mean for age-`r age_highlight` herring.
 Lines show means for age-`r age_first` to age-`r age_plus` herring, incrementing up from bottom line and shaded from darker to lighter.
 The thick line shows age-`r age_highlight` herring.
@@ -145,7 +145,7 @@ The age-`r age_plus` class includes fish ages `r age_plus` and older.
 Note: vertical axes are cropped at `r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
 
 (ref:minor-wa-cap-fr) Poids moyen à l'âge du hareng du Pacifique en kilogrammes (kg)
-de `r major_start_yr` à `r major_end_yr` dans les régions d'évaluation du stock minieurs.
+de `r major_start_yr` à `r major_end_yr` dans les RES minieurs.
 Les cercles indiquent la moyenne pour le hareng d'âge `r age_highlight`.
 Les lignes indiquent les moyennes pour les harengs d'âge `r age_first` à age `r age_plus`, en augmentant à partir de la ligne inférieure et en ombrant de plus en plus.
 La ligne épaisse montre le hareng d'âge "r age_highlight".
@@ -165,12 +165,12 @@ plot_wa(df = minor_wa,
 ```
 
 (ref:minor-pa-cap) Proportion-at-age for Pacific Herring from
-`r minor_start_yr_plot` to `r minor_end_yr` in the minor stock assessment regions.
+`r minor_start_yr_plot` to `r minor_end_yr` in the minor SARs.
 See Figure \@ref(fig:major-pa) for description.
 
 (ref:minor-pa-cap-fr) Proportion selon l’âge
 pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr`
-dans les régions d’évaluation des stocks mineurs.
+dans les RES mineurs.
 Voir la figure \@ref(fig:major-pa) pour la description.
 
 ```{r minor-pa, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-pa-cap-fr)", "(ref:minor-pa-cap)")}
@@ -183,13 +183,14 @@ plot_pa(df = minor_pa,
 
 ```
 
-(ref:minor-spawn-index-cap) Spawn index in thousands of tonnes (t) for Pacific Herring from `r minor_start_yr_plot` to `r minor_end_yr`
-in the minor stock assessment regions.
+(ref:minor-spawn-index-cap) Spawn index in thousands of tonnes (t)
+for Pacific Herring from `r minor_start_yr_plot` to `r minor_end_yr`
+in the minor SARs.
 See Figure \@ref(fig:major-spawn-index) for description.
 
 (ref:minor-spawn-index-cap-fr) L’indice du frai en milliers
-de tonnes pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr`
-dans les régions d’évaluation des stocks mineurs.
+de tonnes pour le hareng du Pacifique de
+`r minor_start_yr_plot` à `r minor_end_yr` dans les RES mineurs.
 Voir la figure \@ref(fig:major-spawn-index) pour la description.
 
 ```{r minor-spawn-index, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-spawn-index-cap-fr)", "(ref:minor-spawn-index-cap)")}
