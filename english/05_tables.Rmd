@@ -25,11 +25,11 @@ input_data_table(tab = inp_catch,
 
 \afterpage{\clearpage}
 
-(ref:annual-catch-cap) Total landed Pacific Herring catch in tonnes from `r major_end_yr - num_yrs_tab` to `r major_end_yr` in the major stock assessment regions (SARs).
+(ref:annual-catch-cap) Total landed Pacific Herring catch in tonnes from `r major_end_yr - num_yrs_tab` to `r major_end_yr` in the major SARs.
 Legend: `r commify(major_regions_full_parens)`.
 Note: 'WP' indicates that data are withheld due to privacy concerns.
 
-(ref:annual-catch-cap-fr) Total des prises débarquées en tonnes de hareng du Pacifique de `r major_end_yr - num_yrs_tab` à `r major_end_yr` dans les regions d’évaluation des stocks (RESs) majeurs.
+(ref:annual-catch-cap-fr) Total des prises débarquées en tonnes de hareng du Pacifique de `r major_end_yr - num_yrs_tab` à `r major_end_yr` dans les RES majeurs.
 Légende: `r commify(major_regions_full_parens, and_word="et")`.
 Remarque: «DT» indique que les données ne sont pas divulguées pour des raisons de confidentialité.
 
@@ -48,11 +48,10 @@ total_landed_catch_table(tab = major_catch_short,
 
 (ref:annual-sok-catch-cap) Total Pacific Herring spawn-on-kelp harvest,
 reported as pounds of eggs on kelp,
-from `r major_end_yr - num_yrs_tab` to `r major_end_yr`
-in the major stock assessment regions (SARs).
+from `r major_end_yr - num_yrs_tab` to `r major_end_yr` in the major SARs.
 See Table \@ref(tab:annual-catch) for description.
 
-(ref:annual-sok-catch-cap-fr) Récolte totale d’oeufs sur varech en livres de hareng du Pacifique de `r major_end_yr - num_yrs_tab` à `r major_end_yr` dans les regions d’évaluation des stocks (RESs) majeurs.
+(ref:annual-sok-catch-cap-fr) Récolte totale d’oeufs sur varech en livres de hareng du Pacifique de `r major_end_yr - num_yrs_tab` à `r major_end_yr` dans les RES majeurs.
 Légende: `r commify(major_regions_full_parens, and_word="et")`.
 Remarque: «DT» indique que les données ne sont pas divulguées pour des raisons de confidentialité.
 
