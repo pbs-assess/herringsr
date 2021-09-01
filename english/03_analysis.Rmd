@@ -32,7 +32,7 @@ with stock and fishery monitoring data updated to include 2018
 and performance evaluation of area specific MPs [@dfo2019c].
 In the summer of 2020 the second MSE cycle was initiated for the WCVI and SoG management areas.
 This included conditioning the OMs with more recent stock and fishery data,
-and evaluating the performance of additional candidate MPs for these management areas.  
+and evaluating the performance of additional candidate MPs for these management areas.
 A similar update was conducted in the summer of 2021 for the PRD and CC management areas.
 Results from MP evaluations reflect most recent updates for all management areas.
 
@@ -179,12 +179,17 @@ surface period from `r surv_yr_rng[1]` to `r new_surv_yr - 1`, and
 dive period from `r new_surv_yr` to `r surv_yr_rng[2]`.
 Data from these surveys are used to calculate egg densities per spawn.
 Ultimately, the estimated weight of mature spawners required to produce the egg deposition is calculated and referred to as the 'spawn index'.
-Execution of the `r surv_yr_rng[2]` spawn survey followed standard dive survey protocols for SoG, CC, and WCVI SARs as described in @cleary2018, and
-a surface survey protocol was used for HG and PRD SARs due to COVID-19.
-Time series of spawn index by major stock assessment region, from `r paste(surv_yr_rng, collapse=" to ")` are summarized in Figure \@ref(fig:major-spawn-index).
-In `r surv_yr_rng[2]`, there was a notable increase in survey biomass (index values) for HG and SoG SARs (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-hg) & \@ref(tab:spawn-index-sog)),
-a small increase in survey biomass for WCVI (Figure \@ref(fig:major-spawn-index) and Table \@ref(tab:spawn-index-wcvi)), and
-a small decrease in survey biomass for PRD and CC (Figure \@ref(fig:major-spawn-index) and Tables \@ref(tab:spawn-index-prd) & \@ref(tab:spawn-index-cc)).
+The `r surv_yr_rng[2]` spawn survey followed standard dive survey protocols
+for the PRD, CC, SoG, and WCVI SARs as described in @cleary2018, and
+a surface survey protocol for the HG SAR due to COVID-19.
+Time series of spawn index by major stock assessment region
+from `r paste(surv_yr_rng, collapse=" to ")`
+are summarized in Figure \@ref(fig:major-spawn-index).
+In `r surv_yr_rng[2]`, there was an
+increase in survey biomass (i.e., index values) for the PRD and WCVI SARs, and
+a decrease in survey biomass for HG, CC, and SoG SARs
+(Figure \@ref(fig:major-spawn-index) and
+Tables \@ref(tab:spawn-index-hg) to \@ref(tab:spawn-index-wcvi)).
 
 ## Spatial spawn distribution
 
@@ -195,8 +200,14 @@ the choice of spatial grouping reflects spawning behaviour and biology for each 
 
 ## First Nations observations
 
-The COVID-19 pandemic continues to impact First Nations participation in herring survey activities as well as participation in traditional harvest activities (FSC). 
-Assembling local observations was not possible for the 2020 season, however in 2021, local observations were provided by coastal First Nations participants for most areas.
+The COVID-19 pandemic continues to impact First Nations participation
+in herring survey activities as well as participation
+in traditional harvest activities (FSC). 
+Assembling local observations was not possible for the 2020 season,
+however in 2021, local observations were provided by
+coastal First Nations participants for most areas.
+<!-- TODO: JC to check this next sentence -->
+The following text in this section is provided by First Nations collaborators.
 
 ### Haida Gwaii
 
@@ -212,7 +223,7 @@ This year the bulk of the spawning occurred on the Skincuttle side, but in other
 
 \textbf{Juan Perez Sound}
 
-These inlets normally will support spawns when there are a lot of recruitment in the population and first time spawners can out number old repeat spawners. That has not been the case now for some time. Lately spawns have been small and infrequent in the inlets of Juan Perez Sound, as was the case in 2021.
+These inlets normally will support spawns when there are a lot of recruits in the population and first time spawners can out number old repeat spawners. That has not been the case now for some time. Lately spawns have been small and infrequent in the inlets of Juan Perez Sound, as was the case in 2021.
 
 \textbf{Louscoone Inlet}
 
@@ -434,8 +445,8 @@ with the last commercial roe fishery in 2002,
 and the last commercial SOK fishery in 2004.
 
 `r stock_status_text(SAR = "HG")`
-Management measures to support long-term recovery of herring stocks in Haida Gwaii
-are being developed through the Rebuilding Plan process
+Management measures to support long-term recovery of herring stocks in
+Haida Gwaii are being developed through the Rebuilding Plan process
 (Section '\nameref{sec:harv-opts}').
 
 ### Prince Rupert District

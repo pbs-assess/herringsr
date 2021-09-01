@@ -46,7 +46,7 @@ have aboriginal rights to fish for any species of fish,
 with the exception of Geoduck,
 within their Fishing Territories, and to sell that fish.
 The DFO has developed a 2020/21 Five Nations
-Multi-species Fishery Management Plan (FMP)
+Multispecies Fishery Management Plan (FMP) that includes herring,
 in consultation with the Five Nations.
 Feedback provided by the Five Nations during consultations was considered and
 incorporated into the 2020/21 FMP by DFO where possible. 
@@ -86,7 +86,7 @@ of the stock assessment framework [@cleary2018].
 Recommendations for addressing this uncertainty will require quantifying
 ponding mortality and removals (eggs) associated with SOK fisheries.
 Although this work is underway,
-results are not yet available for informing the stock assessment.
+results are not yet available to inform the stock assessment.
 
 ## Description of the stock assessment process
 
