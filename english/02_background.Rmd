@@ -7,9 +7,12 @@ stock assessment regions (SARs; Figure \@ref(fig:bc-map)).
 The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
 We conduct formal analyses of stock trend information for the major SARs.
-For the minor SARs, we present catch data, biological data, and spawn survey data 
+For the minor SARs, we present catch data, biological data, and spawn survey data
+<!-- TODO: JC expand on why we don't to stock assessments for minor SARs? -->
+<!-- Not sure that is necessary -->
 (see Section "\nameref{sec:app-minor}").
 This year we have included similar data for the special area, Area 10
+<!-- TODO: JC to say why we are including A10 this year, if required -->
 (see Section "\nameref{sec:app-special}").
 Note that special areas are not SARs;
 therefore they are excluded from regular monitoring and analyses.
