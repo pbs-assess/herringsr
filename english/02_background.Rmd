@@ -37,6 +37,9 @@ Herring eggs are collected as spawn on seaweed such as kelp (i.e., SOK), or
 spawn on set tree boughs. 
 Indigenous harvest of herring for FSC purposes may occur coast wide where authorized by a communal license.
 
+<!-- TODO: JC update this paragraph with 2021/22 FMP (send to Andrea Gorurk-->
+<!-- for review). Also, Bryan doesn't think we are saying -->
+<!-- "T'aaq-wiihak First Nations" anymore -->
 In addition, Treaty and aboriginal commercial fisheries may occur
 in some specific management regions.
 Four modern treaties (Nisga'a, Tsawwassen, Maa-nulth, and Tla'amin)

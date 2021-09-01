@@ -9,7 +9,8 @@ In the first MSE cycle for HG,
 none of the MPs tested could meet the conservation objective with
 at least 75% probability [@dfo2019c],
 thus harvest options are not provided for `r assess_yr + 1`.
-<!-- TODO: JC need to update next sentence -->
+<!-- TODO: JC need to update next sentence; continuing development -->
+<!-- of the rebuilding plan -->
 DFO has committed to developing and implementing a rebuilding plan
 for Haida Gwaii Herring by the end of fiscal year 2020/21,
 and supports commercial herring fishery closures for the HG SAR until April 2022.
