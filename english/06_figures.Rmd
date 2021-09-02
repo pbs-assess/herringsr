@@ -244,9 +244,59 @@ cowplot::plot_grid(plot_a_hg,
                    rel_heights = c(1.1, 1.0, 1.1))
 ```
 ```{r ppt-plots-hg, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)"), eval= slides}
+plot_a_hg <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                   major_models[[model_ind]],
+                                   surv_type,
+                                   new_surv_yr = new_surv_yr,
+                                   xlim = xlim_all,
+                                   y_axis_label_newline_length = 20,
+                                   translate = french)
+
+plot_b_hg <- plot_natural_mortality(major_models[[model_ind]],
+                                    xlim = xlim_all,
+                                    y_max = M_max,
+                                    y_axis_label_newline_length = 20,
+                                    translate = french)
+
+plot_c_hg_x_none <- plot_recruitment(major_models[[model_ind]],
+                              xlim = xlim_all,
+                              y_axis_label_newline_length = 17,
+                              translate = french)
+
+plot_c_hg_x_down <- plot_recruitment(major_models[[model_ind]],
+                              xlim = xlim_all,
+                              show_x_axis = TRUE,
+                              y_axis_label_newline_length = 17,
+                              translate = french) + labs(x = NULL)
+
+plot_c_hg_show_x_up <- plot_c_hg_x_down  + scale_x_continuous(breaks = seq(from = 1900, to = 2100, by = 10),
+                       labels = NULL, name = NULL,
+                       sec.axis = sec_axis(~ ., name = NULL,
+                         breaks = seq(from = 1900, to = 2100, by = 10),
+                         labels = seq(from = 1900, to = 2100, by = 10))
+                       )
+
+plot_d_hg <- plot_biomass_catch(major_models[[model_ind]],
+                                catch_df = ct,
+                                xlim = xlim_all,
+                                y_axis_label_newline_length = 20,
+                                translate = french)
+
+plot_e_hg <- plot_recruitment_devs(major_models[[model_ind]],
+                                   run_mean_yrs = nRollRec,
+                                   xlim = xlim_all,
+                                   y_axis_label_newline_length = 20,
+                                   translate = french)
+
+plot_f_hg <- plot_biomass_phase(major_models[[model_ind]],
+                                catch_df = ct,
+                                new_surv_yr = new_surv_yr,
+                                y_axis_label_newline_length = 20,
+                                translate = french)
+
 storyboard_hg_ppt_v <- cowplot::plot_grid(plot_a_hg,
                    plot_b_hg,
-                   plot_c_hg,
+                   plot_c_hg_x_none,
                    plot_d_hg,
                    plot_e_hg,
                    plot_f_hg,
@@ -258,7 +308,7 @@ ggsave(filename = here("figures","storyboard_hg_ppt_v.png"),  width=8, height=4,
 
 storyboard_hg_ppt_h <- cowplot::plot_grid(plot_a_hg,
                    plot_b_hg,
-                   plot_c_hg,
+                   plot_c_hg_show_x,
                    plot_d_hg,
                    plot_e_hg,
                    plot_f_hg,
@@ -275,13 +325,14 @@ plot_c_hg_ppt <- plot_recruitment(major_models[[model_ind]],
 
 shortstory_hg_ppt <- cowplot::plot_grid(plot_a_hg,
                    plot_b_hg,
-                   plot_c_hg_ppt,
+                   plot_c_hg_x_down,
                    plot_d_hg,
                    ncol = 2,
                    align = "v")
 ggsave(filename = here("figures","shortstory_hg_ppt.png"),  width=8, height=4, dpi=300)
 
 ```
+
 <!-- Prince Rupert District Storyboard -->
 ```{r scaled-abundance-prd, fig.show = "hide", fig.asp = 1}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
