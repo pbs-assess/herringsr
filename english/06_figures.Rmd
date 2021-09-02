@@ -460,6 +460,15 @@ plot_spawn_section(
         sections = c(67, 72:78, 86),
         translate = french)
 ```
+```{r spawn-section-cc-ppt, fig.asp=ifelse(french, 1.2, 1.2), fig.cap = ifelse(french, "(ref:spawn-section-cc-cap-fr)", "(ref:spawn-section-cc-cap)"), eval=slides}
+CC_spawn_section_ppt <-plot_spawn_section(
+        model = major_models[[3]], 
+        data_file = file.path(data_path, "spawn-yr-sec-cc.csv"),
+        ncol =3,
+        sections = c(67, 72:78, 86),
+        translate = french)
+ggsave(filename = here("figures","CC_spawn_section_ppt.png"),  width=8, height=4, dpi=300)
+```
 
 <!-- Strait of Georgia Storyboard -->
 ```{r scaled-abundance-sog, fig.show = "hide", fig.asp = 1}
