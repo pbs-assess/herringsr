@@ -97,6 +97,7 @@ theme_set(herring_theme())
 ```{r output-options}
 keep_non_CC <- TRUE #set = FALSE if providing preliminary report to CC
 show_ic_figures <- TRUE  # Show/hide incidental catch figures
+slides <- TRUE #set = TRUE if you want common figures in .png slide format in figures folder.
 ```
 
 <!-- Distributions -->
