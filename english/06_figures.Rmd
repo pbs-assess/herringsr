@@ -231,6 +231,7 @@ from `r major_start_yr` to `r major_end_yr`.
 modèle statistique des prises selon l’âge du hareng du Pacifique (`r major_start_yr`-`r major_end_yr`) dans la région d’évaluation des stocks majeur de Haida Gwaii.\
 \storyboardfr{}
 
+
 ```{r storyboard-hg, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
 cowplot::plot_grid(plot_a_hg,
                    plot_b_hg,
@@ -242,7 +243,45 @@ cowplot::plot_grid(plot_a_hg,
                    align = "v",
                    rel_heights = c(1.1, 1.0, 1.1))
 ```
+```{r ppt-plots-hg, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)"), eval= slides}
+storyboard_hg_ppt_v <- cowplot::plot_grid(plot_a_hg,
+                   plot_b_hg,
+                   plot_c_hg,
+                   plot_d_hg,
+                   plot_e_hg,
+                   plot_f_hg,
+                   ncol = 2,
+                   align = "v",
+                   rel_heights = c(1.1, 1.0, 1.1))
 
+ggsave(filename = here("figures","storyboard_hg_ppt_v.png"),  width=8, height=4, dpi=300)
+
+storyboard_hg_ppt_h <- cowplot::plot_grid(plot_a_hg,
+                   plot_b_hg,
+                   plot_c_hg,
+                   plot_d_hg,
+                   plot_e_hg,
+                   plot_f_hg,
+                   ncol = 3,
+                   align = "h"
+                   )
+ggsave(filename = here("figures","storyboard_hg_ppt_h.png"),  width=8, height=4, dpi=300)
+ggsave(filename = here("figures","plot_d_hg_ppt.png"), plot = plot_d_hg,  width=8, height=4, dpi=300)
+
+plot_c_hg_ppt <- plot_recruitment(major_models[[model_ind]],
+                              xlim = xlim_all,
+                              show_x_axis = TRUE,
+                              translate = french) + labs(x = NULL)
+
+shortstory_hg_ppt <- cowplot::plot_grid(plot_a_hg,
+                   plot_b_hg,
+                   plot_c_hg_ppt,
+                   plot_d_hg,
+                   ncol = 2,
+                   align = "v")
+ggsave(filename = here("figures","shortstory_hg_ppt.png"),  width=8, height=4, dpi=300)
+
+```
 <!-- Prince Rupert District Storyboard -->
 ```{r scaled-abundance-prd, fig.show = "hide", fig.asp = 1}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
