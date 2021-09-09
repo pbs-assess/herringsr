@@ -123,40 +123,7 @@ Combined commercial removals from `r assess_yr-9` to `r assess_yr` from the roe,
 The proportion of coast-wide catch that comes from the SoG was 22% in 1990, and 100% in `r assess_yr`.
 Total SOK harvest (pounds of validated product) for the major SARs from `r assess_yr-9` to `r assess_yr` is presented in Table \@ref(tab:annual-sok-catch).
 
-\textbf{Incidental catch}
 
-Some fisheries and aquaculture activities in BC cause
-incidental mortality to Pacific Herring,
-which is referred to as incidental catch.
-Similar to SOK harvest as well as FSC and recreational catch,
-incidental catch is not accounted for in the Pacific Herring stock assessment, 
-and is considered minor relative to commercial harvest.
-However, incidental catch from finfish aquaculture
-has been made available to the Herring Science Team. 
-We are including newly available information on estimated incidental catch in
-aquaculture activities by SAR from `r min(ic_yrs)` to `r max(ic_yrs)`
-(Figure \@ref(fig:major-incidental)).
-
-Incidental catch data are reported by Pacific Fishery Management Area (PFMA)
-which are analogous to Statistical Areas, but
-PFMAs are larger and can extend beyond SAR boundaries.
-Data indicate the number of Pacific Herring dead and released,
-with the following caveats:
-
-1. Catch data for 2020 are considered incomplete,
-
-2. Unknown mortality rate for "released" fish,
-
-3. Unknown length, weight, age, and sex of fish, and
-
-4. "Herring-like" fish are assumed to be herring
-when decomposition hinders identification.
-
-<!-- TODO: Placeholder.. consider adding text for 2022 -->
-<!-- Possible discussion points: -->
-<!-- 1. How incidental catch affects herring stocks. -->
-<!-- 1. How ignoring incidental catch affects stock assessments. -->
-<!-- 1. Mention possible incidental catch in other fisheries such as groundfish trawl. -->
 
 ### Biological data\label{sec:biol-data}
 
@@ -193,10 +160,52 @@ Tables \@ref(tab:spawn-index-hg) to \@ref(tab:spawn-index-wcvi)).
 
 ## Spatial spawn distribution
 
-Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) summarize the spatial distribution of survey spawn biomass (i.e., the spawn index)
+Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) 
+summarize the spatial distribution of survey spawn biomass (i.e., the spawn index)
 by proportion over the most recent `r num_yrs_tab+1` years for the major SARs.
 HG and SoG are summarized by Group, while PRD, CC, and WCVI are summarized by Statistical Area;
-the choice of spatial grouping reflects spawning behaviour and biology for each SAR based on the survey data and working group discussions with local First Nations.
+the choice of spatial grouping reflects spawning behaviour and biology for each SAR based on the 
+survey data and working group discussions with local First Nations.
+
+## Incidental catch
+
+In order to advance progress towards a holistics ecosystem-based management (EBM) 
+approach for Pacific Herring we are presenting here the information currently 
+available to describe indirect effects on herring populations, such as incidental mortality. 
+Some fisheries and aquaculture activities in BC cause
+incidental mortality to Pacific Herring.
+Similar to SOK harvest as well as FSC and recreational catch,
+incidental catch is currently only indirectly accounted for 
+in the Pacific Herring stock assessment through the annual mortality estimates, 
+and is considered minor relative to commercial harvest.
+However, incidental catch from finfish aquaculture
+has been made available to the Herring Science Team. 
+We are including newly available information on estimated incidental catch in
+aquaculture activities by SAR from `r min(ic_yrs)` to `r max(ic_yrs)`
+(Figure \@ref(fig:major-incidental)).
+
+Incidental catch data are reported by Pacific Fishery Management Area (PFMA)
+which are analogous to Statistical Areas, but
+PFMAs are larger and can extend beyond SAR boundaries.
+Data indicate the number of Pacific Herring dead and released,
+with the following caveats:
+
+1. Catch data for 2020 are considered incomplete,
+
+2. Unknown mortality rate for "released" fish,
+
+3. Unknown length, weight, age, and sex of fish, and
+
+4. "Herring-like" fish are assumed to be herring
+when decomposition hinders identification.
+
+<!-- TODO: Placeholder.. consider adding text for 2022 -->
+<!-- Possible discussion points: -->
+<!-- 1. How incidental catch affects herring stocks. -->
+<!-- 1. How ignoring incidental catch affects stock assessments. -->
+<!-- 1. Mention possible incidental catch in other fisheries such as groundfish trawl. -->
+<!-- SH NOTES. I think this section needs to move to its own header similar to the First Nations Obs  -->
+<!-- Add context for the SFF Policy on managing bycatch  -->
 
 ## First Nations observations
 
@@ -633,7 +642,7 @@ The estimated effective harvest rate $U$ in each year $t$, calculated as
 $U_t = C_t/(C_t + \SB_t)$, where
 $C_t$ is catch in year $t$, and
 $\SB_t$ is estimated spawning biomass in year $t$.
-Times series of $U_t$ relative to target harvest rate of `r target_hr*100`% are presented in Figure \@ref(fig:harvest-rate).
+Time series of $U_t$ relative to target harvest rate of `r target_hr*100`% are presented in Figure \@ref(fig:harvest-rate).
 
 ## Application of MPs and harvest options for `r assess_yr + 1`\label{sec:harv-opts}
 
