@@ -118,14 +118,14 @@ plot_catch(df = minor_catch,
            translate = french)
 ```
 
-(ref:minor-incidental-cap) Incidental Pacific Herring catch
+(ref:minor-incidental-cap) Incidental Pacific Herring mortality
 in aquaculture activities in thousands of fish from
 `r min(ic_yrs)` to `r max(ic_yrs)` in the minor SARs.
 See Figure \@ref(fig:major-incidental) for description.
 
-(ref:minor-incidental-cap-fr) Prise accidentelle de hareng du Pacifique dans les
-activités d'aquaculture en milliers de poissons de `r min(ic_yrs)` à 
-`r max(ic_yrs)` dans les RES mineurs.
+(ref:minor-incidental-cap-fr) Mortalité accidentelle de hareng du Pacifique
+dans les activités d'aquaculture en milliers de poissons
+de `r min(ic_yrs)` à `r max(ic_yrs)` dans les RES mineurs.
 Voir la figure \@ref(fig:major-incidental) pour la description.
 
 ```{r minor-incidental, fig.asp=ifelse(french, 0.35, 0.35), fig.cap = ifelse(french, "(ref:minor-incidental-cap-fr)", "(ref:minor-incidental-cap)"), eval = show_ic_figures}

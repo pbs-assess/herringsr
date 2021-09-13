@@ -178,22 +178,22 @@ such as incidental mortality.
 Some fisheries and aquaculture activities in BC cause
 incidental mortality to Pacific Herring.
 Similar to SOK harvest as well as FSC and recreational catch,
-incidental catch is currently only indirectly accounted for 
+incidental mortality is currently only indirectly accounted for 
 in the Pacific Herring stock assessment through the annual mortality estimates, 
 and is considered minor relative to commercial harvest.
-However, incidental catch from finfish aquaculture
+However, incidental mortality from finfish aquaculture
 has been made available to the Herring Science Team. 
-We are including newly available information on estimated incidental catch in
+We are including newly available information on estimated incidental mortality in
 aquaculture activities by SAR from `r min(ic_yrs)` to `r max(ic_yrs)`
 (Figure \@ref(fig:major-incidental)).
 
-Incidental catch data are reported by Pacific Fishery Management Area (PFMA)
+Incidental mortality data are reported by Pacific Fishery Management Area (PFMA)
 which are analogous to Statistical Areas, but
 PFMAs are larger and can extend beyond SAR boundaries.
 Data indicate the number of Pacific Herring dead and released,
 with the following caveats:
 
-1. Catch data for 2020 are considered incomplete,
+1. Data for 2020 are considered incomplete,
 
 2. Unknown mortality rate for "released" fish,
 
@@ -202,13 +202,11 @@ with the following caveats:
 4. "Herring-like" fish are assumed to be herring
 when decomposition hinders identification.
 
-<!-- TODO: Placeholder.. consider adding text for 2022 -->
-<!-- Possible discussion points: -->
-<!-- 1. How incidental catch affects herring stocks -->
-<!-- 1. How ignoring incidental catch affects stock assessments -->
-<!-- Other incidental catch such as groundfish bycatch (we have groundfish bycatch data; talk to Marisa) -->
+<!-- TODO: Consider adding text for 2022 -->
+<!-- How incidental catch affects herring stocks -->
+<!-- How ignoring incidental catch affects stock assessments -->
+<!-- Include incidental catch from groundfish (we have groundfish bycatch data; talk to Marisa) -->
 <!-- Add context for the SFF Policy on managing bycatch -->
-<!-- Include SOK discussion here (remove from "Input data" section) -->
 
 ## First Nations observations
 
