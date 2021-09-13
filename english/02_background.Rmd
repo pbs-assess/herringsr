@@ -27,7 +27,7 @@ to fish for Food, Social, and Ceremonial (FSC) purposes.
 Commercial fishing opportunities consist of four directed fisheries:
 food and bait (FB),
 special use (SU),
-spawn-on-kelp (SOK) products, and
+spawn-on-kelp (SOK), and
 roe herring.
 There is also a small recreational fishery.
 
@@ -37,33 +37,40 @@ Herring eggs are collected as spawn on seaweed such as kelp (i.e., SOK), or
 spawn on set tree boughs. 
 Indigenous harvest of herring for FSC purposes may occur coast wide where authorized by a communal license.
 
-<!-- TODO: JC update this paragraph with 2021/22 FMP (MG sent to Andrea -->
-<!-- Gorurk for review on Sept 1). Also, Bryan doesn't think we are -->
-<!-- saying "T'aaq-wiihak First Nations" anymore -->
+<!-- TODO: JC review (this text sent by Andrea) -->
 In addition, treaty and aboriginal commercial fisheries may occur
 in some specific management regions.
 Four modern treaties (Nisga'a, Tsawwassen, Maa-nulth, and Tla'amin)
 have been ratified in British Columbia and
 articulate a treaty right to FSC harvest of fish.
-On the West Coast of Vancouver Island, five Nuu-chah-nulth First Nations -- 
-Ahousaht, Ehattesaht, Hesquiaht, Mowachaht/Muchalaht, and Tla-o-qui-aht
-(the T'aaq-wiihak First Nations) --
+Five Nuu-chah-nulth First Nations located on the West Coast of Vancouver Island
+- Ahousaht, Ehattesaht, Hesquiaht, Mowachaht/Muchalaht, and Tla-o-qui-aht
+(the T’aaq-wiihak First Nations) -
 have aboriginal rights to fish for any species of fish,
 with the exception of Geoduck,
-within their Fishing Territories, and to sell that fish.
-The DFO has developed a 2020/21 Five Nations
-Multispecies Fishery Management Plan (FMP) that includes herring,
-in consultation with the Five Nations.
-Feedback provided by the Five Nations during consultations was considered and
-incorporated into the 2020/21 FMP by DFO where possible. 
+within their Fishing Territories and to sell that fish.
+The Department has developed a 2021/22 Five Nations Multi-species Fishery Management Plan (FMP).
+Feedback provided by the Five Nations during consultations was considered by DFO in the development of the 2021/22 FMP.
 The FMP includes specific details about the fishery, such as
 allocation/access,
 licensing and designations,
 fishing area,
-harvesting opportunities,
-as well as fishery monitoring and catch reporting. 
+harvesting opportunities, and
+fishery monitoring and catch reporting.
 For further information
-\link{http://waves-vagues.dfo-mpo.gc.ca/Library/40869374.pdf}{see the FMP}.
+\link{https://waves-vagues.dfo-mpo.gc.ca/Library/40953798.pdf}{see the FMP}.
+The implementation of the Five Nations’ right-based sale fishery
+is an ongoing process.
+The 2021/22 FMP was developed to implement
+the right-based multi-species fishery
+to accommodate the Five Nations’ Aboriginal rights
+consistent with the British Columbia Supreme Court’s 2018 decision.
+On April 19, 2021, the British Columbia Court of Appeal released its
+decision in relation to the appeal brought forward by the Five Nations.
+As a result, the department is reviewing the 2021/22 FMP.
+Following this review, the 2021/22 FMP may be amended and
+in-season management changes to this IFMP may occur.
+Changes to the FMP will be announced by fishery notice. 
 
 On the Central Coast,
 Heiltsuk First Nation have an Aboriginal right to commercially fish herring SOK.

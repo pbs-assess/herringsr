@@ -383,17 +383,13 @@ n’a obtenu un rendement satisfaisant par rapport à l’objectif de conservati
 
 En l’absence de pêche, la biomasse projetée du stock reproducteur en `r assess_yr + 1` devrait être inférieure à $0.3\SB_0$ avec une probabilité de `r f(hg_prob_proj_less_03sbo * 100, 1)`% (tableau \@ref(tab:ref-points-hg) et figure \@ref(fig:proj-biomass-density)).
 
-Le MPO s’est engagé à élaborer et à mettre en œuvre un plan de rétablissement du hareng du Pacifque de Haida Gwaii d’ici la fin de l’exercice 2020-2021.[^RebuildHG] 
+Le MPO s’est engagé à élaborer et à mettre en œuvre un plan de rétablissement du hareng du Pacifque de Haida Gwaii d’ici la fin de l’exercice 2020-2021.
 Ces travaux, qui sont en cours, sont menés par un groupe de travail technique composé de membres du Conseil de la Nation Haïda, du MPO et de Parcs Canada. 
 Selon le document «Directives d’élaboration d’un plan de rétablissement conforme à la Politique Cadre de l’approche de précaution: Assurer la croissance d’un stock pour le faire sortir de la zone critique» [@dfo2013], 
 l’objectif principal de tout plan de rétablissement est de promouvoir la croissance du stock pour le sortir de la zone critique (c.-à-d. l’amener au-delà du PRL) en veillant à ce que 
 les prélèvements de toutes les pêches soient maintenus au plus bas niveau possible jusqu’à ce que le stock ait quitté cette zone selon une probabilité élevée. 
 Toutefois, le rétablissement des stocks ne s’arrête pas à ce seul objectif, et le plan de rétablissement visera notamment à 
 déterminer les seuils de biomasse possibles, au-delà du PRL, correspondant à un stock entièrement rétabli.
-
-[^RebuildHG]: En réponse aux recommandations formulées par la Commissaire à l’environnement et au développement durable (CEDD) dans son Rapport no 2 d’octobre 2016 intitulé «Assurer la durabilité des principaux stocks de poissons du Canada – Pêches et Océans Canada», 
-le Ministère élaborera des plans de rétablissement visant les principaux stocks de poissons qui se trouvent dans la zone critique de l’approche de précaution, 
-dont le hareng du Pacifque de Haida Gwaii, d’ici la fin de l’exercice 2020-2021.
 
 Le MPO appuie les fermetures de la pêche commerciale du hareng dans la principale zone du stock de Haida Gwaii jusqu’en avril 2021.
 À ce titre, la recommandation sur les prises pour le stock de Haida Gwaii en `r assess_yr + 1` est de 0&nbsp;t.

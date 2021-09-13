@@ -7,9 +7,9 @@ to Pacific Herring data collection and analysis in 2021.
 Spawn surveys proceeded as usual in most areas in 2021,
 with dive surveys in all major areas except Haida Gwaii.
 Haida Gwaii would normally have a dive survey,
-but had surface surveys in 2021 due to COVID-19.
+but had a surface survey in 2021 due to COVID-19.
 The collection and analysis of biological data was not affected
-by the COVID-19 pandemic in 2021
+by the COVID-19 pandemic in 2021.
 
 ## Management strategy evaluation
 
@@ -98,6 +98,7 @@ there is currently no accepted scientific way of combining results from multiple
 1. In situations where multiple MPs meet the agreed upon objectives, further criteria, such as ranking secondary objectives, is 
 needed in order to provide decision-makers with a tractable set of trade-off choices.
 
+<!-- TODO: JC -- VP asks "Is it more heavily influenced? The way it's written now it seems like the other years don't impact it at all, perhaps that is the case just wanted to confirm." -->
 1. Outcomes of MP evaluations appear to be influenced by the last three to five years of stock status and 
 natural mortality trends used to condition the  OM. 
 If simulations were run over a greater number of years (i.e., 50 years) performance would start to approach equilibrium and be 
@@ -142,8 +143,8 @@ There has been an increasing trend in weight-at-age for all major stocks from 20
 
 The spawn index survey collects information on spawn length (parallel to shore), spawn width (perpendicular to shore), number of egg layers by vegetation type, and other data.
 There are two spawn survey periods defined by the predominant survey method:
-surface period from `r surv_yr_rng[1]` to `r new_surv_yr - 1`, and
-dive period from `r new_surv_yr` to `r surv_yr_rng[2]`.
+surface survey period from `r surv_yr_rng[1]` to `r new_surv_yr - 1`, and
+dive survey period from `r new_surv_yr` to `r surv_yr_rng[2]`.
 Data from these surveys are used to calculate egg densities per spawn.
 Ultimately, the estimated weight of mature spawners required to produce the egg deposition is calculated and referred to as the 'spawn index'.
 The `r surv_yr_rng[2]` spawn survey followed standard dive survey protocols
@@ -203,10 +204,10 @@ when decomposition hinders identification.
 
 <!-- TODO: Placeholder.. consider adding text for 2022 -->
 <!-- Possible discussion points: -->
-<!-- 1. How incidental catch affects herring stocks. -->
-<!-- 1. How ignoring incidental catch affects stock assessments. -->
-<!-- 1. Mention possible incidental catch in other fisheries such as groundfish trawl. -->
-<!-- Add context for the SFF Policy on managing bycatch  -->
+<!-- 1. How incidental catch affects herring stocks -->
+<!-- 1. How ignoring incidental catch affects stock assessments -->
+<!-- Other incidental catch such as groundfish bycatch (we have groundfish bycatch data; talk to Marisa) -->
+<!-- Add context for the SFF Policy on managing bycatch -->
 <!-- Include SOK discussion here (remove from "Input data" section) -->
 
 ## First Nations observations
@@ -558,8 +559,8 @@ the CC stock reopened to commercial fisheries in 2014,
 and small commercial roe fisheries occurred in 2014, 2015, and 2016.
 A commercial SOK fishery operated yearly from 2014 to 2020,
 however these removals are not included in the estimation of $U_t$. 
-Commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19,
-however did they successfully resume in 2021 (Table \@ref(tab:annual-sok-catch)).
+A commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19,
+however it successfully resumed in 2021 (Table \@ref(tab:annual-sok-catch)).
 
 `r stock_status_text(SAR = "CC")`
 
@@ -578,7 +579,7 @@ a decline in estimated natural mortality that began in the late 2000s
 (Figure \@ref(fig:storyboard-sog)b).
 The model estimates natural mortality has been increasing since 2016,
 and has now reached a level last estimated in the late 1960s.
-This coincides with large shifts in survey biomass in recent 5 years,
+This coincides with large shifts in survey biomass in the last five years,
 with the index declining from 2016 to 2017, 2018 to 2019, and 2020 to 2021.
 The large uncertainty in both spawning biomass and natural mortality estimates
 in `r assess_yr` may be in part a function of the declining trend
@@ -618,7 +619,7 @@ Recruitment deviations have been negative (lower than predicted by the stock-rec
 The reduction in estimated natural mortality below historical high levels and absence of removals from a commercial fishery appear
 to be sufficient to offset this below average recruitment of age-`r age_first` fish to support biomass growth.
 The absence of a commercial fishery since 2005 means the realized harvest rate has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
-There is  modest evidence for an increase in biomass above the LRP over since 2016 and
+There is  modest evidence for an increase in biomass above the LRP since 2016 and
 production estimates for the year between 2019 and 2020, and 2020 and 2021 are positive (Figure \@ref(fig:storyboard-wcvi)f).
 
 Investigation of WCVI MCMC diagnostics revealed autocorrelation in the estimation of
@@ -753,7 +754,8 @@ maintaining spawning biomass above the LRP with high probability
 `r proj_biomass_text(SAR = "HG")`
 
 DFO has committed to developing and implementing a rebuilding plan for
-Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.[^RebuildHG]
+Haida Gwaii Pacific Herring.
+<!-- TODO: JC VP recommended we remove the rebuilding plan footnote/reference -->
 Work finalizing the draft for consultation continues via a 
 technical working group comprised of members of
 the Council of Haida Nation, DFO, and Parks Canada.
@@ -770,13 +772,6 @@ Stock rebuilding does not end having met this goal, however, and
 one of the goals of the rebuilding plan will be to
 identify candidate threshold biomass levels greater than the LRP
 that are consistent with a rebuilt state.
-
-[^RebuildHG]: In response to recommendations in the
-Commissioner of the Environment and Sustainable Development (CESD) October 2016
-Report 2 - Sustaining Canada’s Major Fish Stocks - Fisheries and Oceans Canada,
-the Department will develop rebuilding plans for major fish stocks that are
-in the precautionary approach critical zone,
-including Haida Gwaii Pacific Herring by the end of fiscal year 2020/21.
 
 Based on MP evaluations and the ongoing rebuilding plan process,
 the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&nbsp;t.
@@ -801,7 +796,7 @@ above the LRP with 78 to 100% probability, over all three OM scenarios
 No new MPs or objectives were included.
 
 While MPs with harvest rates ranging from 5% to 20%
-were are able to meet core conservation objective of
+were able to meet the core conservation objective of
 maintaining spawning biomass above the LRP with high probability
 (i.e., at least 75%)^\ref{fn:HighProb}^,
 they also imply different trade-offs among biomass (e.g., ecosystem)
