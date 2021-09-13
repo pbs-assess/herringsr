@@ -167,11 +167,13 @@ HG and SoG are summarized by Group, while PRD, CC, and WCVI are summarized by St
 the choice of spatial grouping reflects spawning behaviour and biology for each SAR based on the 
 survey data and working group discussions with local First Nations.
 
-## Incidental catch
+## Incidental mortality
 
-In order to advance progress towards a holistics ecosystem-based management (EBM) 
-approach for Pacific Herring we are presenting here the information currently 
-available to describe indirect effects on herring populations, such as incidental mortality. 
+In order to advance progress towards
+a holistic ecosystem-based management (EBM) approach for Pacific Herring
+we present the information currently available
+to describe indirect effects on herring populations,
+such as incidental mortality. 
 Some fisheries and aquaculture activities in BC cause
 incidental mortality to Pacific Herring.
 Similar to SOK harvest as well as FSC and recreational catch,
@@ -204,8 +206,8 @@ when decomposition hinders identification.
 <!-- 1. How incidental catch affects herring stocks. -->
 <!-- 1. How ignoring incidental catch affects stock assessments. -->
 <!-- 1. Mention possible incidental catch in other fisheries such as groundfish trawl. -->
-<!-- SH NOTES. I think this section needs to move to its own header similar to the First Nations Obs  -->
 <!-- Add context for the SFF Policy on managing bycatch  -->
+<!-- Include SOK discussion here (remove from "Input data" section) -->
 
 ## First Nations observations
 
