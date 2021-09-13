@@ -98,9 +98,8 @@ there is currently no accepted scientific way of combining results from multiple
 1. In situations where multiple MPs meet the agreed upon objectives, further criteria, such as ranking secondary objectives, is 
 needed in order to provide decision-makers with a tractable set of trade-off choices.
 
-<!-- TODO: JC -- VP asks "Is it more heavily influenced? The way it's written now it seems like the other years don't impact it at all, perhaps that is the case just wanted to confirm." -->
-1. Outcomes of MP evaluations appear to be influenced by the last three to five years of stock status and 
-natural mortality trends used to condition the  OM. 
+1. Outcomes of MP evaluations appear to be more heavily influenced by the last three to five years of stock status and 
+natural mortality trends used to condition the OM. 
 If simulations were run over a greater number of years (i.e., 50 years) performance would start to approach equilibrium and be 
 unaffected by most recent trends in OM conditioning data.
 
@@ -272,7 +271,16 @@ to satisfy FSC needs for the majority of the community.
 
 ### Central Coast
 
-No response yet from Mike Reid or Larry Greba
+<!-- TODO:JC No response yet from Mike Reid, anticipated Sept 22 or we will remove -->
+
+The overall herring spawn continued to improve in 2021 as the stock has continued to build over the past few years.
+Kitasu Bay appeared to have similar or higher abundance that 2020.
+Herring sizes were typical for the area but seemed to be more uniform in overall size.
+The spawn was longer than average with 7-8 days of continuous spawn that appeared to cover much of Kitasu Bay.
+The sea lion activity was significant as in previous years but due to the high abundance of herring they chose to avoid the
+herring ponds which in previous years was targeted by feeding sea lions.
+The community food gathering was successful for both spawn on branch and there was some surplus from SOK operations to support the community as well.
+Kelp size and quality was very good in the Bay as compared to previous years.
 
 ### Strait of Georgia
 
@@ -282,6 +290,8 @@ A-Tlegay Fisheries assisted the herring assessment program by providing addition
 A-Tlegay divers surveyed spawn from Willow Point south down to Bates Beach (and beyond), Herring Sections 135 and 141.
 Through an outreach program, spawns were also reported to A-Tlegay from local mainland inlet areas.
 As a result, A-Tlegay was able to dive on two spawns in Bute Inlet and 1 spawn in Teakerne Arm (Section 151).
+
+<!-- TODO:JC Check for any last emails
 
 I'll wait to hear back from Qualicum, K'omos
 
@@ -295,7 +305,7 @@ Refining info from Tla'amin
 
 \textbf{Southern SoG}
 
-Waiting for input from Tim, Nicole, Chad
+Waiting for input from Tim, Nicole, Chad -->
 
 ### West Coast of Vancouver Island
 
