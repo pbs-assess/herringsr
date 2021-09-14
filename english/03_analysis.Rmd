@@ -178,9 +178,9 @@ Some fisheries and aquaculture activities in BC cause
 incidental mortality to Pacific Herring.
 Similar to SOK harvest as well as FSC and recreational catch,
 incidental mortality is currently only indirectly accounted for 
-in the Pacific Herring stock assessment through the annual mortality estimates, 
+in the Pacific Herring stock assessment through estimating annual rates of natural mortality, 
 and is considered minor relative to commercial harvest.
-However, incidental mortality from finfish aquaculture
+However, data for incidental mortality from finfish aquaculture
 has been made available to the Herring Science Team. 
 We are including newly available information on estimated incidental mortality in
 aquaculture activities by SAR from `r min(ic_yrs)` to `r max(ic_yrs)`
@@ -215,8 +215,7 @@ in traditional harvest activities (FSC).
 Assembling local observations was not possible for the 2020 season,
 however in 2021, local observations were provided by
 coastal First Nations participants for most areas.
-<!-- TODO: JC to check this next sentence -->
-The following text in this section is provided by First Nations collaborators.
+The following descriptions were provided by First Nations contributors.
 
 ### Haida Gwaii
 
