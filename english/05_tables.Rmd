@@ -818,11 +818,11 @@ herring MP 'HS30-60_HR.2' with two alternative roe allocations
 to explore movement of TAC between the seine roe and gillnet roe fleets.
 The 'MP and allocation' column includes the shape of HCR and
 the allocation scenario
-(proportion of TAC for roe seine and roe gillnet, respectively).
+(proportion of TAC for seine roe and gillnet roe, respectively).
 The 'no adjust' MP represents the status quo allocation
 based on average catches from the past 20 years.
 Final allocation indicates the proportion
-for food and bait, roe seine, and roe gillnet, respectively.
+for food and bait, seine roe, and gillnet roe, respectively.
 Performance metrics are given for the
 density-dependent natural mortality operating model scenarios only.
 Legend: $C_t$ is catch in year $t$.
@@ -858,6 +858,8 @@ decision_tables_mp(mp.prd,
                    translate = french)
 ```
 
+\clearpage
+
 ```{r decision-cc, results = 'asis', echo = FALSE}
 decision_tables_mp(mp.cc,
                    xcaption = ifelse(french,
@@ -867,6 +869,8 @@ decision_tables_mp(mp.cc,
                    translate = french)
 ```
 
+\clearpage
+
 ```{r decision-sog, results = 'asis', echo = FALSE}
 decision_tables_mp(mp.sog,
                    xcaption = ifelse(french,
@@ -875,6 +879,8 @@ decision_tables_mp(mp.sog,
                    xlabel = "tab:decision-sog",
                    translate = french)
 ```
+
+\clearpage
 
 ```{r allocation-sog, results = 'asis', echo=FALSE}
 allocation <- tibble::tribble(
@@ -888,9 +894,10 @@ allocation <- tibble::tribble(
 csasdown::csas_table(x = allocation, format = "latex",
                      caption = ifelse(french, "(ref:allocation-sog-cap-fr)", 
                                       "(ref:allocation-sog-cap)"),
-                     align = c("l", "r", "r", "r", "r", "r", "c")) %>%
-   kable_styling(full_width = FALSE, latex_options = "HOLD_position")
+                     align = c("l", "r", "r", "r", "r", "r", "c"))
 ```
+
+\clearpage
 
 ```{r decision-wcvi, results = 'asis', echo = FALSE}
 decision_tables_mp_add(mp.wcvi,
