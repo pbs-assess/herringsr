@@ -9,9 +9,8 @@ In the first MSE cycle for HG,
 none of the MPs tested could meet the conservation objective with
 at least 75% probability [@dfo2019c],
 thus harvest options are not provided for `r assess_yr + 1`.
-<!-- TODO: JC to check this next sentence -->
 DFO has committed to developing and implementing a rebuilding plan for
-Haida Gwaii Herring; based on this commitment and MP evaluations,
+Haida Gwaii Herring. Based on MP evaluations,
 the harvest recommendation for the HG SAR is 0&nbsp;t.
 
 The MSE process identifies a range of MPs that meet the conservation objective
