@@ -103,6 +103,8 @@ natural mortality trends used to condition the OM.
 If simulations were run over a greater number of years (i.e., 50 years) performance would start to approach equilibrium and be 
 unaffected by most recent trends in OM conditioning data.
 
+<!-- TODO: Placeholder for TAC allocation between seine and gillnet -->
+
 ## Input data
 
 There are three types of input data used for the Pacific Herring stock assessment: catch data, biological data, and abundance data.
@@ -762,7 +764,6 @@ maintaining spawning biomass above the LRP with high probability
 
 DFO has committed to developing and implementing a rebuilding plan for
 Haida Gwaii Pacific Herring.
-<!-- TODO: JC VP recommended we remove the rebuilding plan footnote/reference -->
 Work finalizing the draft for consultation continues via a 
 technical working group comprised of members of
 the Council of Haida Nation, DFO, and Parks Canada.
@@ -916,6 +917,9 @@ Harvest options under the two Robustness OM scenarios are also included.
 All MPs and scenarios listed in Table \@ref(tab:decision-sog) include
 updated performance metrics for the four core objectives
 under all three scenarios [@dfo2021b].
+
+<!-- TODO: TAC allocation/transfer -->
+TAC allocation (Table \@ref(tab:allocation-sog)).
 
 ### West Coast of Vancouver Island
 

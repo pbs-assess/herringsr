@@ -27,7 +27,7 @@ output:
   csasdown::sr_pdf:
    french: false
    prepub: false
-   extra_dependencies: ["needspace", "afterpage"]
+   extra_dependencies: ["needspace", "afterpage", "bm"]
 type: sr
 knit: bookdown::render_book
 site: bookdown::bookdown_site
