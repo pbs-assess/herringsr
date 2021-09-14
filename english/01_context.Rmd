@@ -54,7 +54,6 @@ MP recommendations for HG, PRD, and CC as per 2019 [@dfo2020a].
 1. The 2021 stock assessment includes MP recommendations
 for SoG and WCVI stock assessment regions as per 2020 [@dfo2021], and
 updated MP recommendations for PRD and CC.
-<!-- TODO: JC to check the following text (2 lines re HG rebuilding) -->
 Management measures to support long-term recovery of HG herring
 are being developed through the Rebuilding Plan process.
 
