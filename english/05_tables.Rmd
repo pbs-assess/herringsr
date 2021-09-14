@@ -818,11 +818,11 @@ herring MP 'HS30-60_HR20' with two alternative roe allocations
 to explore the movement of total allowable catch (TAC)
 between the roe seine and roe gillnet fleets.
 The 'MP and allocation' column indicates
-the shape of the harvest control rule and the allocation scenario
+the harvest control rule and allocation scenario
 (i.e., proportion of TAC for roe seine and roe gillnet, respectively).
 The 'no adjust' MP represents the status quo allocation
 based on average catches from the past 20 years.
-Final allocation indicates the proportion
+Final allocation indicates the proportion of TAC
 for food and bait, roe seine, and roe gillnet, respectively.
 Performance metrics are given for the
 density-dependent natural mortality operating model scenarios only.
