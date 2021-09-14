@@ -811,18 +811,18 @@ région d’évaluation des stocks majeur du détroit de Georgie.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
 (ref:allocation-sog-cap) Strait of Georgia SAR:
-management procedure (MP) performance for seine roe and gillnet roe allocation.
+management procedure (MP) performance for roe seine and roe gillnet allocation.
 For this analysis,
 simulations use the most recent spawn index as a biomass estimate, and
 herring MP 'HS30-60_HR.2' with two alternative roe allocations
-to explore movement of TAC between the seine roe and gillnet roe fleets.
+to explore movement of TAC between the roe seine and roe gillnet fleets.
 The 'MP and allocation' column includes the shape of HCR and
 the allocation scenario
-(proportion of TAC for seine roe and gillnet roe, respectively).
+(proportion of TAC for roe seine and roe gillnet, respectively).
 The 'no adjust' MP represents the status quo allocation
 based on average catches from the past 20 years.
 Final allocation indicates the proportion
-for food and bait, seine roe, and gillnet roe, respectively.
+for food and bait, roe seine, and roe gillnet, respectively.
 Performance metrics are given for the
 density-dependent natural mortality operating model scenarios only.
 Legend: $C_t$ is catch in year $t$.
