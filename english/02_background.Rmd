@@ -7,13 +7,12 @@ stock assessment regions (SARs; Figure \@ref(fig:bc-map)).
 The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
 We conduct formal analyses of stock trend information for the major SARs.
-For the minor SARs, we present catch data, biological data, and spawn survey data
-<!-- TODO: JC expand on why we don't to stock assessments for minor SARs? -->
-<!-- Not sure that is necessary -->
+For the minor SARs, we present available catch data, biological data, and spawn survey data
 (see Section "\nameref{sec:app-minor}").
-This year we have included similar data for the special area, Area 10
-<!-- TODO: JC to say why we are including A10 this year, if required -->
+Beginning in 2021 we include similar data for the special area, Area 10
 (see Section "\nameref{sec:app-special}").
+Formal analyses of stock trends are not included for minor SARs and special areas due to
+data availability.
 Note that special areas are not SARs;
 therefore they are excluded from regular monitoring and analyses.
 In addition, note that Area 10 is a subset of the Central Coast Sections that
@@ -37,7 +36,6 @@ Herring eggs are collected as spawn on seaweed such as kelp (i.e., SOK), or
 spawn on set tree boughs. 
 Indigenous harvest of herring for FSC purposes may occur coast wide where authorized by a communal license.
 
-<!-- TODO: JC review (this text sent by Andrea) -->
 In addition, treaty and aboriginal commercial fisheries may occur
 in some specific management regions.
 Four modern treaties (Nisga'a, Tsawwassen, Maa-nulth, and Tla'amin)
