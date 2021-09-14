@@ -814,7 +814,7 @@ Voir le tableau \@ref(tab:decision-prd) pour la description.
 management procedure (MP) performance for roe seine and roe gillnet allocation.
 For this analysis,
 simulations use the most recent spawn index as a biomass estimate, and
-herring MP 'HS30-60_HR.2' with two alternative roe allocations
+herring MP 'HS30-60_HR20' with two alternative roe allocations
 to explore the movement of total allowable catch (TAC)
 between the roe seine and roe gillnet fleets.
 The 'MP and allocation' column indicates
@@ -887,9 +887,9 @@ decision_tables_mp(mp.sog,
 allocation <- tibble::tribble(
   ~"MP and allocation", ~"$\\bm{P(\\SB_t > 0.3\\SB_0)}$", ~"$\\bm{P(\\SB_t > 0.6\\SB_0)}$", ~"AAV", ~"$\\bm{\\overline{C}}$", ~"$\\bm{P(C_t < 650\\,\\text{t})}$", ~"Final allocation",
   "NoFish_FSC", "0.77", "0.44", "0.00", "0.14", "1.00", "-",
-  "HS30-60_HR.2_alloc (no adjust)", "0.69", "0.25", "80.17", "9.43", "0.36",	"0.21, 0.40, 0.39",
-  "HS30-60_HR.2_alloc (0.1, 0.9)", "0.69", "0.25", "80.14", "9.51", "0.36", "0.21, 0.08, 0.71",
-  "HS30-60_HR.2_alloc (0.9, 0.1)", "0.69", "0.25", "80.26", "9.36", "0.36", "0.21, 0.71, 0.08") %>%
+  "HS30-60_HR20_alloc (no adjust)", "0.69", "0.25", "80.17", "9.43", "0.36",	"0.21, 0.40, 0.39",
+  "HS30-60_HR20_alloc (0.1, 0.9)", "0.69", "0.25", "80.14", "9.51", "0.36", "0.21, 0.08, 0.71",
+  "HS30-60_HR20_alloc (0.9, 0.1)", "0.69", "0.25", "80.26", "9.36", "0.36", "0.21, 0.71, 0.08") %>%
   mutate(`MP and allocation` = gsub(pattern = "_", replacement = "\\\\_",
                            x = `MP and allocation`) )
 csasdown::csas_table(x = allocation, format = "latex",
