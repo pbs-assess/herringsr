@@ -922,7 +922,9 @@ the simulation approach does not provide insight into
 year-to-year changes in age composition, spawn distribution, or spawning behaviour.
 Finally, probability values in Table \@ref(tab:allocation-sog) should not be directly compared
 to those in Table \@ref(tab:decision-sog) due to differences in assessment method implemented
-in the simulations (index-based vs. current stock assessment model).
+in the simulations (index-based vs. current stock assessment model) and the conditioning data 
+used (spawn survey data up to 2020 and biological data up to 2019 vs. both spawn survey and 
+biological data up to 2020).
 
 ### West Coast of Vancouver Island
 
