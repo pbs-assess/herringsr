@@ -895,7 +895,8 @@ In 2021, we investigated the sensitivity of SoG MP performance to changes in
 allocation of TAC between the roe seine and roe gillnet fleets.
 The recent 20 year average catches from
 the food and bait, roe seine, and roe gillnet 
-fisheries show a roughly even allocation between these fleets (21%, 40%, and 39%)
+fleets show a roughly even allocation between these fleets
+(21%, 40%, and 39% respectively)
 and represents the status quo allocation used for this analysis.
 
 We consider two changes in allocation of TAC between roe seine and roe gillnet fleets:

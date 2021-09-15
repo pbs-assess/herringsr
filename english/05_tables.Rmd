@@ -813,17 +813,17 @@ Voir le tableau \@ref(tab:decision-prd) pour la description.
 (ref:allocation-sog-cap) Strait of Georgia SAR:
 management procedure (MP) performance for roe seine and roe gillnet allocation.
 For this analysis,
-simulations use the most recent spawn index as a biomass estimate, and
+simulations use the most recent spawn index as a biomass estimate and
 herring MP 'HS30-60_HR20' with two alternative roe allocations
 to explore the movement of total allowable catch (TAC)
 between the roe seine and roe gillnet fleets.
 The 'MP and allocation' column indicates
 the harvest control rule and allocation scenario
-(i.e., proportion of TAC for roe seine and roe gillnet, respectively).
+(i.e., proportion of TAC for roe seine and roe gillnet fleets, respectively).
 The 'no adjust' MP represents the status quo allocation
 based on average catches from the past 20 years.
 Final allocation indicates the proportion of TAC
-for food and bait (FB), roe seine, and roe gillnet.
+for the food and bait (FB), roe seine, and roe gillnet fleets.
 Performance metrics for objectives are given for the
 density-dependent natural mortality operating model scenarios only.
 Legend: $C_t$ is catch in year $t$.
