@@ -906,7 +906,7 @@ MPs consider only movement between roe fleets,
 thus no changes are made to the overall food and bait allocation.
 Comparisons among TAC allocation are implemented using the HS30-60_HR20 MP with an index
 based procedure.
-This analysis was designed to invesitgate relative differences between allocation
+This analysis was designed to investigate relative differences between allocation
 MPs.
 Thus we used an index-based approach in lieu of fitting the assessment model to calculate the TAC
 for each simulated year, to save computational time.
