@@ -893,21 +893,26 @@ under all three scenarios [@dfo2021b].
 <!-- TODO: TAC allocation/transfer -->
 In 2021, we investigated the sensitivity of SoG MP performance to changes in 
 allocation of TAC between the roe seine and roe gillnet fleets.
-The recent ten-year average catches from the food and bait, roe seine and roe gillnet 
-fisheries show a roughly even allocation between these fleets (21%, 40%, and 39%) and 
-represents the status quo allocation used for this analysis.
+The recent 20 year average catches from
+the food and bait, roe seine, and roe gillnet 
+fisheries show a roughly even allocation between these fleets (21%, 40%, and 39%)
+and represents the status quo allocation used for this analysis.
 
-We consider two changes in allocation of TAC between roe seine and roe gillnet fleets: high gillnet allocation
-(90% gillnet) and high seine allocation (90% seine).
-MPs consider only movement between roe fleets, thus no changes are made to the overall food and bait allocation.
+We consider two changes in allocation of TAC between roe seine and roe gillnet fleets:
+high gillnet allocation (90% gillnet) and
+high seine allocation (90% seine).
+MPs consider only movement between roe fleets,
+thus no changes are made to the overall food and bait allocation.
 Comparisons among TAC allocation are implemented using the HS30-60_HR20 MP.
 
-Results are presented in Table \@ref(tab:allocation-sog) and show there is no difference in 
-conservation performance between simulated TAC allocation procedures.
-That is, in simulation, movement of TAC between the roe fishery fleets does not appear to impact the probability 
+Results show there is no difference in conservation performance
+between simulated TAC allocation procedures (Table \@ref(tab:allocation-sog)).
+That is, in simulation, movement of TAC between the roe fishery fleets
+does not appear to impact the probability 
 of avoiding the LRP over the 15-year simulation period.
 Note that these results consider current stock status of SoG herring, and
-that due to structure of the current herring simulationmodel, the simulation approach does not provide insight into 
+that due to structure of the current herring simulation model,
+the simulation approach does not provide insight into 
 year-to-year changes in age composition, spawn distribution, or spawning behaviour.
 
 ### West Coast of Vancouver Island
