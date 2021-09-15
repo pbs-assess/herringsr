@@ -811,10 +811,11 @@ région d’évaluation des stocks majeur du détroit de Georgie.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
 (ref:allocation-sog-cap) Strait of Georgia SAR:
-management procedure (MP) performance for roe seine and roe gillnet allocation.
+management procedure (MP) performance for roe seine and roe gillnet allocation
+for Pacific Herring.
 For this analysis,
 simulations use the most recent spawn index as a biomass estimate and
-herring MP 'HS30-60_HR20' with two alternative roe allocations
+MP 'HS30-60_HR20' with two alternative roe allocations
 to explore the movement of total allowable catch (TAC)
 between the roe seine and roe gillnet fleets.
 The 'MP and allocation' column indicates
@@ -884,7 +885,7 @@ decision_tables_mp(mp.sog,
 \clearpage
 
 ```{r allocation-sog, results = 'asis', echo=FALSE}
-allocation <- tibble::tribble(
+alloc <- tibble::tribble(
   ~"MP and allocation", ~"$P(\\SB_t > 0.3\\SB_0)$", ~"$P(\\SB_t > 0.6\\SB_0)$", ~"AAV", ~"$\\overline{C}$", ~"$P(C_t < 650\\,\\text{t})$", ~"FB", ~"Seine", ~"Gillnet",
   "NoFish_FSC", "0.81", "0.45", "0.00", "0.14", "1.00", "-", "-", "-",
   "HS30-60_HR20_alloc (no adjust)", "0.72", "0.26", "79.18", "10.26", "0.33",	"0.21", "0.40", "0.39",
@@ -892,11 +893,11 @@ allocation <- tibble::tribble(
   "HS30-60_HR20_alloc (0.9, 0.1)", "0.72", "0.26", "78.93", "10.20", "0.33", "0.21", "0.71", "0.08") %>%
   mutate(`MP and allocation` = gsub(pattern = "_", replacement = "\\\\_",
                                     x = `MP and allocation`) )
-  # TODO: Get the rename part working for the French translation
-  # rename(`MP and allocation` = en2fr("MP and allocation", translate = french),
-  #        AAV = en2fr("AAV", translate = french),
-  #        Seine = en2fr("Seine", translate = french),
-  #        Gillnet = en2fr("Gillnet", translate = french))
+names(alloc)[names(alloc) == "MP and allocation"] <- 
+  en2fr("MP and allocation", translate = french)
+names(alloc)[names(alloc) == "AAV"] <- en2fr("AAV", translate = french)
+names(alloc)[names(alloc) == "Seine"] <- en2fr("Seine", translate = french)
+names(alloc)[names(alloc) == "Gillnet"] <- en2fr("Gillnet", translate = french)
 top_head <- c(" " = 1, "Objectives" = 5, " " = 3)
 names(top_head) <- c(" ", en2fr("Objectives", translate = french), " ")
 middle_head <- c(" " = 1, "Conservation" = 1, "Biomass" = 1, "Yield" = 3,
@@ -905,8 +906,8 @@ names(middle_head) <- c(" ", en2fr("Conservation", translate = french),
                         en2fr("Biomass", translate = french),
                         en2fr("Yield", translate = french),
                         en2fr("Final allocation", translate = french))
-n_cols <- ncol(allocation)
-csasdown::csas_table(x = allocation, format = "latex",
+n_cols <- ncol(alloc)
+csasdown::csas_table(x = alloc, format = "latex", #bold_header = FALSE,
                      caption = ifelse(french, "(ref:allocation-sog-cap-fr)", 
                                       "(ref:allocation-sog-cap)"),
                      align = c("l", rep("r", times = n_cols - 1))) %>%
