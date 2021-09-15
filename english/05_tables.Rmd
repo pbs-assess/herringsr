@@ -910,7 +910,7 @@ n_cols <- ncol(alloc)
 csasdown::csas_table(x = alloc, format = "latex", #bold_header = FALSE,
                      caption = ifelse(french, "(ref:allocation-sog-cap-fr)", 
                                       "(ref:allocation-sog-cap)"),
-                     align = c("l", rep("r", times = n_cols - 1))) %>%
+                     align = c("l", rep("c", times = n_cols - 1))) %>%
   add_header_above(middle_head, bold = TRUE) %>%
   add_header_above(top_head, bold = TRUE)
 ```
