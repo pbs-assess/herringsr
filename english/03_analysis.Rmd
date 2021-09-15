@@ -904,17 +904,25 @@ high gillnet allocation (90% gillnet) and
 high seine allocation (90% seine).
 MPs consider only movement between roe fleets,
 thus no changes are made to the overall food and bait allocation.
-Comparisons among TAC allocation are implemented using the HS30-60_HR20 MP.
+Comparisons among TAC allocation are implemented using the HS30-60_HR20 MP with an index
+based procedure.
+This analysis was designed to invesitgate relative differences between allocation
+MPs.
+Thus we used an index-based approach in lieu of fitting the assessment model to calculate the TAC
+for each simulated year, to save computational time.
 
 Results show there is no difference in conservation performance
 between simulated TAC allocation procedures (Table \@ref(tab:allocation-sog)).
-That is, in simulation, movement of TAC between the roe fishery fleets
+That is, the simulations show that movement of TAC between the roe fishery fleets
 does not appear to impact the probability 
 of avoiding the LRP over the 15-year simulation period.
 Note that these results consider current stock status of SoG herring, and
 that due to structure of the current herring simulation model,
 the simulation approach does not provide insight into 
 year-to-year changes in age composition, spawn distribution, or spawning behaviour.
+Finally, probability values in Table \@ref(tab:allocation-sog) should not be directly compared
+to those in Table \@ref(tab:decision-sog) due to differences in assessment method implemented
+in the simulations (index-based vs. current stock assessment model).
 
 ### West Coast of Vancouver Island
 
