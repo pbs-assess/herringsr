@@ -821,10 +821,10 @@ The 'MP and allocation' column indicates
 the harvest control rule and allocation scenario
 (i.e., proportion of TAC for roe seine and roe gillnet, respectively).
 The 'no adjust' MP represents the status quo allocation
-based on average catches from the past 10 years.
+based on average catches from the past 20 years.
 Final allocation indicates the proportion of TAC
-for food and bait, roe seine, and roe gillnet, respectively.
-Performance metrics are given for the
+for food and bait (FB), roe seine, and roe gillnet.
+Performance metrics for objectives are given for the
 density-dependent natural mortality operating model scenarios only.
 Legend: $C_t$ is catch in year $t$.
 See Table \@ref(tab:decision-prd) for description.
@@ -885,17 +885,32 @@ decision_tables_mp(mp.sog,
 
 ```{r allocation-sog, results = 'asis', echo=FALSE}
 allocation <- tibble::tribble(
-  ~"MP and allocation", ~"$\\bm{P(\\SB_t > 0.3\\SB_0)}$", ~"$\\bm{P(\\SB_t > 0.6\\SB_0)}$", ~"AAV", ~"$\\bm{\\overline{C}}$", ~"$\\bm{P(C_t < 650\\,\\text{t})}$", ~"Final allocation",
-  "NoFish_FSC", "0.77", "0.44", "0.00", "0.14", "1.00", "-",
-  "HS30-60_HR20_alloc (no adjust)", "0.69", "0.25", "80.17", "9.43", "0.36",	"0.21, 0.40, 0.39",
-  "HS30-60_HR20_alloc (0.1, 0.9)", "0.69", "0.25", "80.14", "9.51", "0.36", "0.21, 0.08, 0.71",
-  "HS30-60_HR20_alloc (0.9, 0.1)", "0.69", "0.25", "80.26", "9.36", "0.36", "0.21, 0.71, 0.08") %>%
+  ~"MP and allocation", ~"$P(\\SB_t > 0.3\\SB_0)$", ~"$P(\\SB_t > 0.6\\SB_0)$", ~"AAV", ~"$\\overline{C}$", ~"$P(C_t < 650\\,\\text{t})$", ~"FB", ~"Seine", ~"Gillnet",
+  "NoFish_FSC", "0.81", "0.45", "0.00", "0.14", "1.00", "-", "-", "-",
+  "HS30-60_HR20_alloc (no adjust)", "0.72", "0.26", "79.18", "10.26", "0.33",	"0.21", "0.40", "0.39",
+  "HS30-60_HR20_alloc (0.1, 0.9)", "0.72", "0.26", "79.44", "10.35", "0.33", "0.21", "0.08", "0.71",
+  "HS30-60_HR20_alloc (0.9, 0.1)", "0.72", "0.26", "78.93", "10.20", "0.33", "0.21", "0.71", "0.08") %>%
   mutate(`MP and allocation` = gsub(pattern = "_", replacement = "\\\\_",
-                           x = `MP and allocation`) )
+                                    x = `MP and allocation`) )
+  # rename(`MP and allocation` = en2fr("MP and allocation", translate = french),
+  #        AAV = en2fr("AAV", translate = french),
+  #        Seine = en2fr("Seine", translate = french),
+  #        Gillnet = en2fr("Gillnet", translate = french))
+top_head <- c(" " = 1, "Objectives" = 5, " " = 3)
+names(top_head) <- c(" ", en2fr("Objectives", translate = french), " ")
+middle_head <- c(" " = 1, "Conservation" = 1, "Biomass" = 1, "Yield" = 3,
+                 "Final allocation" = 3)
+names(middle_head) <- c(" ", en2fr("Conservation", translate = french),
+                        en2fr("Biomass", translate = french),
+                        en2fr("Yield", translate = french),
+                        en2fr("Final allocation", translate = french))
+n_cols <- ncol(allocation)
 csasdown::csas_table(x = allocation, format = "latex",
                      caption = ifelse(french, "(ref:allocation-sog-cap-fr)", 
                                       "(ref:allocation-sog-cap)"),
-                     align = c("l", "r", "r", "r", "r", "r", "c"))
+                     align = c("l", rep("r", times = n_cols - 1))) %>%
+  add_header_above(middle_head, bold = TRUE) %>%
+  add_header_above(top_head, bold = TRUE)
 ```
 
 \clearpage
