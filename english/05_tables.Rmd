@@ -892,6 +892,7 @@ allocation <- tibble::tribble(
   "HS30-60_HR20_alloc (0.9, 0.1)", "0.72", "0.26", "78.93", "10.20", "0.33", "0.21", "0.71", "0.08") %>%
   mutate(`MP and allocation` = gsub(pattern = "_", replacement = "\\\\_",
                                     x = `MP and allocation`) )
+  # TODO: Get the rename part working for the French translation
   # rename(`MP and allocation` = en2fr("MP and allocation", translate = french),
   #        AAV = en2fr("AAV", translate = french),
   #        Seine = en2fr("Seine", translate = french),
