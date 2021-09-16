@@ -894,10 +894,15 @@ alloc <- tibble::tribble(
   mutate(`MP and allocation` = gsub(pattern = "_", replacement = "\\\\_",
                                     x = `MP and allocation`) )
 names(alloc)[names(alloc) == "MP and allocation"] <- 
-  en2fr("MP and allocation", translate = french)
-names(alloc)[names(alloc) == "AAV"] <- en2fr("AAV", translate = french)
-names(alloc)[names(alloc) == "Seine"] <- en2fr("Seine", translate = french)
-names(alloc)[names(alloc) == "Gillnet"] <- en2fr("Gillnet", translate = french)
+  latex.bold(en2fr("MP and allocation", translate = french))
+names(alloc)[names(alloc) == "AAV"] <- 
+  en2fr("AAV", translate = french)
+names(alloc)[names(alloc) == "FB"] <- 
+  latex.bold(en2fr("FB", translate = french))
+names(alloc)[names(alloc) == "Seine"] <- 
+  latex.bold(en2fr("Seine", translate = french))
+names(alloc)[names(alloc) == "Gillnet"] <- 
+  latex.bold(en2fr("Gillnet", translate = french))
 top_head <- c(" " = 1, "Objectives" = 5, " " = 3)
 names(top_head) <- c(" ", en2fr("Objectives", translate = french), " ")
 middle_head <- c(" " = 1, "Conservation" = 1, "Biomass" = 1, "Yield" = 3,
@@ -907,7 +912,7 @@ names(middle_head) <- c(" ", en2fr("Conservation", translate = french),
                         en2fr("Yield", translate = french),
                         en2fr("Final allocation", translate = french))
 n_cols <- ncol(alloc)
-csasdown::csas_table(x = alloc, format = "latex", #bold_header = FALSE,
+csasdown::csas_table(x = alloc, format = "latex", bold_header = FALSE,
                      caption = ifelse(french, "(ref:allocation-sog-cap-fr)", 
                                       "(ref:allocation-sog-cap)"),
                      align = c("l", rep("c", times = n_cols - 1))) %>%
