@@ -830,7 +830,28 @@ density-dependent natural mortality operating model scenarios only.
 Legend: $C_t$ is catch in year $t$.
 See Table \@ref(tab:decision-prd) for description.
 
-(ref:allocation-sog-cap-fr) Caption in French.
+(ref:allocation-sog-cap-fr) Détroit de Géorgie RES:
+performance de la procédure de gestion (PG) pour
+l'allocation des senneurs et des filets maillants à roe
+pour le hareng du Pacifique.
+Pour cette analyse, les simulations utilisent l'indice de frai
+le plus récent comme estimation de la biomasse et la PG 'HS30-60_HR20'
+avec deux allocations alternatives de rogue pour explorer
+le mouvement du total admissible des captures (TAC)
+entre la senne et le filet maillant.
+La colonne "PG et allocation" indique la règle de contrôle de l'exploitation
+et le scénario d'allocation (c'est-à-dire la proportion du TAC pour
+les flottes de pêche à la senne et au filet maillant à la rogue, respectivement).
+Le PG "no adjust" représente l'allocation du statu quo,
+basée sur les captures moyennes des dernières 20 années.
+L'allocation finale indique la proportion du TAC pour
+les flottes de pêche de consommation et d'appâts (CA), 
+de senneurs, et de filets maillants à oeufs.
+Les mesures de performance pour les objectifs sont données
+pour les scénarios du modèle opérationnel de mortalité naturelle
+en fonction de la densité uniquement.
+Légende: $C_t$ représente les captures de l'année $t$.
+Voir le tableau \@ref(tab:decision-prd) pour la description.
 
 (ref:decision-wcvi-cap) West Coast of Vancouver Island SAR:
 management procedure (MP) performance for the Pacific Herring
