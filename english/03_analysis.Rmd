@@ -103,8 +103,6 @@ natural mortality trends used to condition the OM.
 If simulations were run over a greater number of years (i.e., 50 years) performance would start to approach equilibrium and be 
 unaffected by most recent trends in OM conditioning data.
 
-<!-- TODO: Placeholder for TAC allocation between seine and gillnet -->
-
 ## Input data
 
 There are three types of input data used for the Pacific Herring stock assessment: catch data, biological data, and abundance data.
@@ -890,7 +888,6 @@ All MPs and scenarios listed in Table \@ref(tab:decision-sog) include
 updated performance metrics for the four core objectives
 under all three scenarios [@dfo2021b].
 
-<!-- TODO: TAC allocation/transfer -->
 In 2021, we investigated the sensitivity of SoG MP performance to changes in 
 allocation of TAC between the roe seine and roe gillnet fleets.
 The recent 20 year average catches from
@@ -904,12 +901,12 @@ high gillnet allocation (90% gillnet) and
 high seine allocation (90% seine).
 MPs consider only movement between roe fleets,
 thus no changes are made to the overall food and bait allocation.
-Comparisons among TAC allocation are implemented using the HS30-60_HR20 MP with an index
-based procedure.
+Comparisons among TAC allocation are implemented using the HS30-60_HR20 MP
+with an index based procedure.
 This analysis was designed to investigate relative differences between allocation
 MPs.
-Thus we used an index-based approach in lieu of fitting the assessment model to calculate the TAC
-for each simulated year, to save computational time.
+Thus we used an index-based approach in lieu of fitting the assessment model
+to calculate the TAC for each simulated year, to save computational time.
 
 Results show there is no difference in conservation performance
 between simulated TAC allocation procedures (Table \@ref(tab:allocation-sog)).
@@ -920,11 +917,13 @@ Note that these results consider current stock status of SoG herring, and
 that due to structure of the current herring simulation model,
 the simulation approach does not provide insight into 
 year-to-year changes in age composition, spawn distribution, or spawning behaviour.
-Finally, probability values in Table \@ref(tab:allocation-sog) should not be directly compared
-to those in Table \@ref(tab:decision-sog) due to differences in assessment method implemented
-in the simulations (index-based vs. current stock assessment model) and the conditioning data 
-used (spawn survey data up to 2020 and biological data up to 2019 vs. both spawn survey and 
-biological data up to 2020).
+Finally, probability values in Table \@ref(tab:allocation-sog)
+should not be directly compared to those in Table \@ref(tab:decision-sog)
+due to differences in assessment method implemented in the simulations
+(index-based vs. current stock assessment model) and
+the conditioning data used
+(spawn survey data up to 2020 and biological data up to 2019 vs.
+both spawn survey and biological data up to 2020).
 
 ### West Coast of Vancouver Island
 
