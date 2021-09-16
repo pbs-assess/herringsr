@@ -55,8 +55,8 @@ licensing and designations,
 fishing area,
 harvesting opportunities, and
 fishery monitoring and catch reporting.
-For further information
-\link{https://waves-vagues.dfo-mpo.gc.ca/Library/40953798.pdf}{see the FMP}.
+For further information see the
+\link{https://waves-vagues.dfo-mpo.gc.ca/Library/40953798.pdf}{FMP}.
 The implementation of the Five Nations’ right-based sale fishery
 is an ongoing process.
 The 2021/22 FMP was developed to implement
