@@ -157,9 +157,9 @@ xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
 ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 
 plot_a_hg <- plot_scaled_abundance(
-  major_surv %>% filter(region == major_regions_full[model_ind]),
-  major_models[[model_ind]],
-  surv_type,
+  df = major_surv %>% filter(region == major_regions_full[model_ind]),
+  model = major_models[[model_ind]],
+  gear = surv_type,
   new_surv_yr = new_surv_yr,
   xlim = xlim_all,
   translate = french
@@ -169,7 +169,7 @@ plot_a_hg <- plot_scaled_abundance(
 <!-- Haida Gwaii Storyboard -->
 ```{r natural-mortality-hg, fig.show = "hide", fig.asp = 1}
 plot_b_hg <- plot_natural_mortality(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   xlim = xlim_all,
   y_max = M_max,
   translate = french
@@ -179,7 +179,7 @@ plot_b_hg <- plot_natural_mortality(
 <!-- Haida Gwaii Storyboard -->
 ```{r recruitment-hg, fig.show = "hide", fig.asp = 1}
 plot_c_hg <- plot_recruitment(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   xlim = xlim_all,
   translate = french
 )
@@ -188,7 +188,7 @@ plot_c_hg <- plot_recruitment(
 <!-- Haida Gwaii Storyboard -->
 ```{r biomass-catch-hg, fig.show = "hide", fig.asp = 1}
 plot_d_hg <- plot_biomass_catch(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   catch_df = ct,
   xlim = xlim_all,
   translate = french
@@ -198,7 +198,7 @@ plot_d_hg <- plot_biomass_catch(
 <!-- Haida Gwaii Storyboard -->
 ```{r recruitment-devs-hg, fig.show = "hide", fig.asp = 1}
 plot_e_hg <- plot_recruitment_devs(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   run_mean_yrs = nRollRec,
   xlim = xlim_all,
   translate = french
@@ -208,7 +208,7 @@ plot_e_hg <- plot_recruitment_devs(
 <!-- Haida Gwaii Storyboard -->
 ```{r biomass-phase-hg, fig.show = "hide", fig.asp = 1}
 plot_f_hg <- plot_biomass_phase(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
   translate = french
@@ -276,9 +276,9 @@ xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
 ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 
 plot_a_prd <- plot_scaled_abundance(
-  major_surv %>% filter(region == major_regions_full[model_ind]),
-  major_models[[model_ind]],
-  surv_type,
+  df = major_surv %>% filter(region == major_regions_full[model_ind]),
+  model = major_models[[model_ind]],
+  gear = surv_type,
   new_surv_yr = new_surv_yr,
   xlim = xlim_all,
   translate = french
@@ -288,7 +288,7 @@ plot_a_prd <- plot_scaled_abundance(
 <!-- Prince Rupert District Storyboard -->
 ```{r natural-mortality-prd, fig.show = "hide", fig.asp = 1}
 plot_b_prd <- plot_natural_mortality(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   xlim = xlim_all,
   y_max = M_max,
   translate = french
@@ -298,7 +298,7 @@ plot_b_prd <- plot_natural_mortality(
 <!-- Prince Rupert District Storyboard -->
 ```{r recruitment-prd, fig.show = "hide", fig.asp = 1}
 plot_c_prd <- plot_recruitment(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   xlim = xlim_all,
   translate = french
 )
@@ -307,7 +307,7 @@ plot_c_prd <- plot_recruitment(
 <!-- Prince Rupert District Storyboard -->
 ```{r biomass-catch-prd, fig.show = "hide", fig.asp = 1}
 plot_d_prd <- plot_biomass_catch(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   catch_df = ct,
   xlim = xlim_all,
   translate = french
@@ -317,7 +317,7 @@ plot_d_prd <- plot_biomass_catch(
 <!-- Prince Rupert District Storyboard -->
 ```{r recruitment-devs-prd, fig.show = "hide", fig.asp = 1}
 plot_e_prd <- plot_recruitment_devs(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   run_mean_yrs = nRollRec,
   xlim = xlim_all,
   translate = french
@@ -327,7 +327,7 @@ plot_e_prd <- plot_recruitment_devs(
 <!-- Prince Rupert District Storyboard -->
 ```{r biomass-phase-prd, fig.show = "hide", fig.asp = 1}
 plot_f_prd <- plot_biomass_phase(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
   translate = french
@@ -367,9 +367,9 @@ xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
 ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 
 plot_a_cc <- plot_scaled_abundance(
-  major_surv %>% filter(region == major_regions_full[model_ind]),
-  major_models[[model_ind]],
-  surv_type,
+  df = major_surv %>% filter(region == major_regions_full[model_ind]),
+  model = major_models[[model_ind]],
+  gear = surv_type,
   new_surv_yr = new_surv_yr,
   xlim = xlim_all,
   translate = french
@@ -379,7 +379,7 @@ plot_a_cc <- plot_scaled_abundance(
 <!-- Central Coast Storyboard -->
 ```{r natural-mortality-cc, fig.show = "hide", fig.asp = 1}
 plot_b_cc <- plot_natural_mortality(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   xlim = xlim_all,
   y_max = M_max,
   translate = french
@@ -389,7 +389,7 @@ plot_b_cc <- plot_natural_mortality(
 <!-- Central Coast Storyboard -->
 ```{r recruitment-cc, fig.show = "hide", fig.asp = 1}
 plot_c_cc <- plot_recruitment(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   xlim = xlim_all,
   translate = french
 )
@@ -398,7 +398,7 @@ plot_c_cc <- plot_recruitment(
 <!-- Central Coast Storyboard -->
 ```{r biomass-catch-cc, fig.show = "hide", fig.asp = 1}
 plot_d_cc <- plot_biomass_catch(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   catch_df = ct,
   xlim = xlim_all,
   translate = french
@@ -408,7 +408,7 @@ plot_d_cc <- plot_biomass_catch(
 <!-- Central Coast Storyboard -->
 ```{r recruitment-devs-cc, fig.show = "hide", fig.asp = 1}
 plot_e_cc <- plot_recruitment_devs(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   run_mean_yrs = nRollRec,
   xlim = xlim_all,
   translate = french
@@ -418,7 +418,7 @@ plot_e_cc <- plot_recruitment_devs(
 <!-- Central Coast Storyboard -->
 ```{r biomass-phase-cc, fig.show = "hide", fig.asp = 1}
 plot_f_cc <- plot_biomass_phase(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
   translate = french
@@ -484,9 +484,9 @@ xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
 ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 
 plot_a_sog <- plot_scaled_abundance(
-  major_surv %>% filter(region == major_regions_full[model_ind]),
-  major_models[[model_ind]],
-  surv_type,
+  df = major_surv %>% filter(region == major_regions_full[model_ind]),
+  model = major_models[[model_ind]],
+  gear = surv_type,
   new_surv_yr = new_surv_yr,
   xlim = xlim_all,
   translate = french
@@ -496,7 +496,7 @@ plot_a_sog <- plot_scaled_abundance(
 <!-- Strait of Georgia Storyboard -->
 ```{r natural-mortality-sog, fig.show = "hide", fig.asp = 1}
 plot_b_sog <- plot_natural_mortality(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   xlim = xlim_all,
   y_max = M_max,
   translate = french
@@ -506,7 +506,7 @@ plot_b_sog <- plot_natural_mortality(
 <!-- Strait of Georgia Storyboard -->
 ```{r recruitment-sog, fig.show = "hide", fig.asp = 1}
 plot_c_sog <- plot_recruitment(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   xlim = xlim_all,
   translate = french
 )
@@ -515,7 +515,7 @@ plot_c_sog <- plot_recruitment(
 <!-- Strait of Georgia Storyboard -->
 ```{r biomass-catch-sog, fig.show = "hide", fig.asp = 1}
 plot_d_sog <- plot_biomass_catch(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   catch_df = ct,
   xlim = xlim_all,
   translate = french
@@ -525,7 +525,7 @@ plot_d_sog <- plot_biomass_catch(
 <!-- Strait of Georgia Storyboard -->
 ```{r recruitment-devs-sog, fig.show = "hide", fig.asp = 1}
 plot_e_sog <- plot_recruitment_devs(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   run_mean_yrs = nRollRec,
   xlim = xlim_all,
   translate = french
@@ -535,7 +535,7 @@ plot_e_sog <- plot_recruitment_devs(
 <!-- Strait of Georgia Storyboard -->
 ```{r biomass-phase-sog, fig.show = "hide", fig.asp = 1}
 plot_f_sog <- plot_biomass_phase(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
   translate = french
@@ -575,9 +575,9 @@ xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
 ct <- major_catch %>% filter(region == major_regions_full[model_ind])
 
 plot_a_wcvi <- plot_scaled_abundance(
-  major_surv %>% filter(region == major_regions_full[model_ind]),
-  major_models[[model_ind]],
-  surv_type,
+  df = major_surv %>% filter(region == major_regions_full[model_ind]),
+  model = major_models[[model_ind]],
+  gear = surv_type,
   new_surv_yr = new_surv_yr,
   xlim = xlim_all,
   translate = french
@@ -587,7 +587,7 @@ plot_a_wcvi <- plot_scaled_abundance(
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r natural-mortality-wcvi, fig.show = "hide", fig.asp = 1}
 plot_b_wcvi <- plot_natural_mortality(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   xlim = xlim_all,
   y_max = M_max,
   translate = french
@@ -597,7 +597,7 @@ plot_b_wcvi <- plot_natural_mortality(
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r recruitment-wcvi, fig.show = "hide", fig.asp = 1}
 plot_c_wcvi <- plot_recruitment(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   xlim = xlim_all,
   translate = french
 )
@@ -606,7 +606,7 @@ plot_c_wcvi <- plot_recruitment(
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r biomass-catch-wcvi, fig.show = "hide", fig.asp = 1}
 plot_d_wcvi <- plot_biomass_catch(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   catch_df = ct,
   xlim = xlim_all,
   translate = french
@@ -616,7 +616,7 @@ plot_d_wcvi <- plot_biomass_catch(
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r recruitment-devs-wcvi, fig.show = "hide", fig.asp = 1}
 plot_e_wcvi <- plot_recruitment_devs(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   run_mean_yrs = nRollRec,
   xlim = xlim_all,
   translate = french
@@ -626,7 +626,7 @@ plot_e_wcvi <- plot_recruitment_devs(
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r biomass-phase-wcvi, fig.show = "hide", fig.asp = 1}
 plot_f_wcvi <- plot_biomass_phase(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
   translate = french
@@ -698,8 +698,8 @@ Les lignes et rectangles ombragés rouges indiquent les médianes et les interva
 
 ```{r proj-biomass-density, fig.asp=ifelse(french, 1.2, 1.2), fig.cap = ifelse(french, "(ref:proj-biomass-density-cap-fr)", "(ref:proj-biomass-density-cap)")}
 plot_proj_biomass_density(
-  major_models,
-  major_regions_full,
+  models = major_models,
+  regions = major_regions_full,
   yr = assess_yr + 1,
   refpt = "X03B0",
   translate = french

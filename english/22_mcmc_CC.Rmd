@@ -20,7 +20,10 @@ Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-priors-pos
 
 ```{r cc-priors-posts, fig.cap=ifelse(french, "(ref:cc-priors-posts-cap-fr)", "(ref:cc-priors-posts-cap)")}
 model_ind <- match(en2fr("CC", french), major_regions_short)
-make.priors.posts.plot(major_models[[model_ind]], priors.only = FALSE)
+make.priors.posts.plot(
+  model = major_models[[model_ind]],
+  priors.only = FALSE
+)
 ```
 
 (ref:cc-traces-cap) Central Coast SAR:
@@ -33,7 +36,9 @@ dans la région d’évaluation des stocks majeur de la côte centrale.
 Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r cc-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:cc-traces-cap-fr)", "(ref:cc-traces-cap)")}
-make.traces.plot(major_models[[model_ind]], axis.lab.freq = 200)
+make.traces.plot(
+  model = major_models[[model_ind]]
+)
 ```
 
 (ref:cc-autocor-cap) Central Coast SAR:
@@ -46,7 +51,9 @@ paramètres estimés pour le hareng du Pacifique dans la région d’évaluation
 Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r cc-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:cc-autocor-cap-fr)", "(ref:cc-autocor-cap)")}
-make.autocor.plot(major_models[[model_ind]])
+make.autocor.plot(
+  model = major_models[[model_ind]]
+)
 ```
 
 (ref:cc-pairs-cap) Central Coast SAR:
@@ -60,7 +67,7 @@ Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figu
 
 ```{r cc-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:cc-pairs-cap-fr)", "(ref:cc-pairs-cap)")}
 make.pairs.plot(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   params = c(
     "ro", "h", "m", "rbar", "rinit", "q1", "q2", "sel1", "selsd1", "sel2",
     "selsd2", "sel3", "selsd3"
@@ -84,7 +91,7 @@ Voir la figure \@ref(fig:hg-biomass-retro) pour la description.
 
 ```{r cc-biomass-retro, fig.asp=0.65, fig.cap=ifelse(french, "(ref:cc-biomass-retro-cap-fr)", "(ref:cc-biomass-retro-cap)")}
 biomass.plot.mpd(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   xlim = c(new_surv_yr, assess_yr),
   df = major_surv %>% filter(region == major_regions_full[model_ind]),
   translate = french
@@ -106,7 +113,7 @@ Voir la figure \@ref(fig:hg-sr) pour la description.
 
 ```{r cc-sr, fig.asp=0.4, fig.cap=ifelse(french, "(ref:cc-sr-cap-fr)", "(ref:cc-sr-cap)")}
 plot_bh(
-  major_models[[model_ind]],
+  model = major_models[[model_ind]],
   regions = major_regions_full[[model_ind]],
   translate = french
 )
@@ -123,30 +130,30 @@ region <- "CC"
 probs <- confidence_vals
 cowplot::plot_grid(
   plot_hcr(
-    mp.lst.cc[[1]][[1]],
-    sbt.cc,
+    hcr.lst = mp.lst.cc[[1]][[1]],
+    sbt.lst = sbt.cc,
     mp = mp.cc[1, ]$label,
     region = region,
     probs = probs
   ),
   plot_hcr(
-    mp.lst.cc[[1]][[2]],
-    sbt.cc,
+    hcr.lst = mp.lst.cc[[1]][[2]],
+    sbt.lst = sbt.cc,
     mp = mp.cc[2, ]$label,
     region = region,
     probs = probs
   ),
   plot_hcr(
-    mp.lst.cc[[1]][[3]],
-    sbt.cc,
+    hcr.lst = mp.lst.cc[[1]][[3]],
+    sbt.lst = sbt.cc,
     mp = mp.cc[3, ]$label,
     region = region,
     probs = probs,
     show.x.axes = TRUE
   ),
   plot_hcr(
-    mp.lst.cc[[1]][[4]],
-    sbt.cc,
+    hcr.lst = mp.lst.cc[[1]][[4]],
+    sbt.lst = sbt.cc,
     mp = mp.cc[4, ]$label,
     region = region,
     probs = probs,
@@ -170,30 +177,30 @@ region <- "CC"
 probs <- confidence_vals
 cowplot::plot_grid(
   plot_hcr(
-    mp.lst.cc[[1]][[5]],
-    sbt.cc,
+    hcr.lst = mp.lst.cc[[1]][[5]],
+    sbt.lst = sbt.cc,
     mp = mp.cc[5, ]$label,
     region = region,
     probs = probs
   ),
   plot_hcr(
-    mp.lst.cc[[1]][[6]],
-    sbt.cc,
+    hcr.lst = mp.lst.cc[[1]][[6]],
+    sbt.lst = sbt.cc,
     mp = mp.cc[6, ]$label,
     region = region,
     probs = probs
   ),
   plot_hcr(
-    mp.lst.cc[[1]][[7]],
-    sbt.cc,
+    hcr.lst = mp.lst.cc[[1]][[7]],
+    sbt.lst = sbt.cc,
     mp = mp.cc[7, ]$label,
     region = region,
     probs = probs,
     show.x.axes = TRUE
   ),
   plot_hcr(
-    mp.lst.cc[[1]][[8]],
-    sbt.cc,
+    hcr.lst = mp.lst.cc[[1]][[8]],
+    sbt.lst = sbt.cc,
     mp = mp.cc[8, ]$label,
     region = region,
     probs = probs,
@@ -214,21 +221,24 @@ See Figure \@ref(fig:hcr-prd) for description.
 ```{r hcr-cc-3, fig.asp=0.75, fig.cap="(ref:hcr-cc-3-cap)"}
 region <- "CC"
 probs <- confidence_vals
-cowplot::plot_grid(plot_hcr(mp.lst.cc[[1]][[9]],
-  sbt.cc,
-  mp = mp.cc[9, ]$label,
-  region = region,
-  probs = probs
-),
-plot_hcr(mp.lst.cc[[1]][[10]],
-  sbt.cc,
-  mp = mp.cc[10, ]$label,
-  region = region,
-  probs = probs,
-  show.x.axes = TRUE
-),
-nrow = 2,
-ncol = 1,
-align = c("v", "h")
+cowplot::plot_grid(
+  plot_hcr(
+    hcr.lst = mp.lst.cc[[1]][[9]],
+    sbt.lst = sbt.cc,
+    mp = mp.cc[9, ]$label,
+    region = region,
+    probs = probs
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.cc[[1]][[10]],
+    sbt.lst = sbt.cc,
+    mp = mp.cc[10, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  nrow = 2,
+  ncol = 1,
+  align = c("v", "h")
 )
 ```

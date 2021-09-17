@@ -18,14 +18,12 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-a27}
 spawn_index_by_area_table(
-        ps[[en2fr("A27", french)]],
-        cap = ifelse(
-                french,
-                "(ref:spawn-index-a27-cap-fr)",
-                "(ref:spawn-index-a27-cap)"
-        ),
-        first_yr = minor_end_yr - num_yrs_tab,
-        translate = french
+  tab = ps[[en2fr("A27", french)]],
+  cap = ifelse(
+    french, "(ref:spawn-index-a27-cap-fr)", "(ref:spawn-index-a27-cap)"
+  ),
+  first_yr = minor_end_yr - num_yrs_tab,
+  translate = french
 )
 ```
 
@@ -47,9 +45,9 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-a2w}
 spawn_index_by_area_table(
-  ps[[en2fr("A2W", french)]],
+  tab = ps[[en2fr("A2W", french)]],
   cap = ifelse(
-          french, "(ref:spawn-index-a2w-cap-fr)", "(ref:spawn-index-a2w-cap)"
+    french, "(ref:spawn-index-a2w-cap-fr)", "(ref:spawn-index-a2w-cap)"
   ),
   first_yr = minor_end_yr - num_yrs_tab,
   translate = french
@@ -72,9 +70,9 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-a10}
 spawn_index_by_area_table(
-  ps[[en2fr("A10", french)]],
+  tab = ps[[en2fr("A10", french)]],
   cap = ifelse(
-          french, "(ref:spawn-index-a10-cap-fr)", "(ref:spawn-index-a10-cap)"
+    french, "(ref:spawn-index-a10-cap-fr)", "(ref:spawn-index-a10-cap)"
   ),
   first_yr = minor_end_yr - num_yrs_tab,
   translate = french
