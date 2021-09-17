@@ -32,3 +32,6 @@ HerringSR.utf8.md
 
 # Data files
 data/incidental-*.csv
+
+#figures for presentations
+*.png
