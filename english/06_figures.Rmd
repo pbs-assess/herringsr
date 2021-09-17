@@ -309,6 +309,7 @@ plot_d_multi <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
                                 xlim = xlim_all,
                                 y_axis_label_newline_length = 20,
+                                label_points = TRUE,
                                 translate = french)
 
 plot_e_multi <- plot_recruitment_devs(major_models[[model_ind]],
@@ -336,7 +337,7 @@ storyboard_multi_ppt_h <- cowplot::plot_grid(plot_a_multi_x_down,
 
 ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
 
-shortstory_ppt <- cowplot::plot_grid(plot_a_multi,
+ shortstory_ppt <- cowplot::plot_grid(plot_a_multi,
                    plot_b_multi,
                    plot_c_multi_x_down,
                    plot_d_multi,
@@ -438,108 +439,124 @@ cowplot::plot_grid(plot_a_prd,
                    align = "v",
                    rel_heights = c(1.1, 1.0, 1.1))
 ```
+
 ```{r ppt-plots-prd, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)"), eval= slides}
-plot_a_prd <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+reg <- regions$Region
+region_abbreviation <-reg[model_ind]
+
+plot_a_multi <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                    major_models[[model_ind]],
                                    surv_type,
                                    new_surv_yr = new_surv_yr,
                                    xlim = xlim_all,
+                                   show_x_axis = FALSE,
                                    y_axis_label_newline_length = 20,
+                                   x_axis_position = "bottom",
                                    translate = french)
 
-plot_b_prd <- plot_natural_mortality(major_models[[model_ind]],
+plot_a_multi_x_down <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                   major_models[[model_ind]],
+                                   surv_type,
+                                   new_surv_yr = new_surv_yr,
+                                   xlim = xlim_all,
+                                   show_x_axis = TRUE,
+                                   y_axis_label_newline_length = 20,
+                                   x_axis_position = "bottom",
+                                   translate = french)
+
+plot_b_multi <- plot_natural_mortality(major_models[[model_ind]],
                                     xlim = xlim_all,
                                     y_max = M_max,
                                     y_axis_label_newline_length = 20,
+                                    show_x_axis = FALSE,
+                                    #x_axis_position = "bottom",
                                     translate = french)
 
-plot_c_prd_x_none <- plot_recruitment(major_models[[model_ind]],
-                              xlim = xlim_all,
-                              y_axis_label_newline_length = 17,
-                              translate = french)
+plot_b_multi_x_down <- plot_natural_mortality(major_models[[model_ind]],
+                                    xlim = xlim_all,
+                                    show_x_axis = TRUE,
+                                    y_max = M_max,
+                                    y_axis_label_newline_length = 20,
+                                    x_axis_position = "bottom",
+                                    translate = french)
 
-plot_c_prd_x_down <- plot_recruitment(major_models[[model_ind]],
+plot_c_multi_x_none <- plot_recruitment(major_models[[model_ind]],
+                              xlim = xlim_all,
+                              show_x_axis = FALSE,
+                              y_axis_label_newline_length = 17,
+                              x_axis_position = "bottom",
+                              translate = french) 
+
+plot_c_multi_x_down <- plot_recruitment(major_models[[model_ind]],
                               xlim = xlim_all,
                               show_x_axis = TRUE,
                               y_axis_label_newline_length = 17,
-                              #x_axis_position= "bottom",
+                              x_axis_position = "bottom",
                               translate = french) + labs(x = NULL)
 
-plot_c_prd_x_up <- plot_c_prd_x_down  + scale_x_continuous(breaks = seq(from = 1900, to = 2100, by = 10),
-                       labels = NULL, name = NULL,
-                       sec.axis = sec_axis(~ ., name = NULL,
-                         breaks = seq(from = 1900, to = 2100, by = 10),
-                         labels = seq(from = 1900, to = 2100, by = 10))
-                       )
+plot_c_multi_x_up <- plot_recruitment(major_models[[model_ind]],
+                              xlim = xlim_all,
+                              show_x_axis = TRUE,
+                              y_axis_label_newline_length = 17,
+                              x_axis_position = "top",
+                              translate = french)
 
-plot_d_prd <- plot_biomass_catch(major_models[[model_ind]],
+plot_d_multi <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
                                 xlim = xlim_all,
                                 y_axis_label_newline_length = 20,
                                 translate = french)
 
-plot_e_prd <- plot_recruitment_devs(major_models[[model_ind]],
+plot_e_multi <- plot_recruitment_devs(major_models[[model_ind]],
                                    run_mean_yrs = nRollRec,
                                    xlim = xlim_all,
                                    y_axis_label_newline_length = 20,
                                    translate = french)
 
-plot_f_prd <- plot_biomass_phase(major_models[[model_ind]],
+plot_f_multi <- plot_biomass_phase(major_models[[model_ind]],
                                 catch_df = ct,
                                 new_surv_yr = new_surv_yr,
                                 y_axis_label_newline_length = 20,
                                 translate = french)
 
-storyboard_prd_ppt_v <- cowplot::plot_grid(plot_a_prd,
-                   plot_b_prd,
-                   plot_c_prd_x_none,
-                   plot_d_prd,
-                   plot_e_prd,
-                   plot_f_prd,
-                   ncol = 2,
-                   align = "v",
-                   rel_heights = c(1.1, 1.0, 1.1))
 
-ggsave(filename = here("figures","storyboard_prd_ppt_v.png"),  width=8, height=4, dpi=300)
-
-storyboard_prd_ppt_h <- cowplot::plot_grid(plot_a_prd,
-                   plot_b_prd,
-                   plot_c_prd_x_none,
-                   plot_d_prd,
-                   plot_e_prd,
-                   plot_f_prd,
+storyboard_multi_ppt_h <- cowplot::plot_grid(plot_a_multi_x_down,
+                   plot_b_multi_x_down,
+                   plot_c_multi_x_down,
+                   plot_d_multi,
+                   plot_e_multi,
+                   plot_f_multi,
                    ncol = 3,
                    align = "h"
                    )
-ggsave(filename = here("figures","storyboard_prd_ppt_h.png"),  width=8, height=4, dpi=300)
 
-plot_d_prd <- plot_biomass_catch(major_models[[model_ind]],
+ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
+
+shortstory_ppt <- cowplot::plot_grid(plot_a_multi,
+                   plot_b_multi,
+                   plot_c_multi_x_down,
+                   plot_d_multi,
+                   ncol = 2,
+                   align = "v"
+                   )
+ggsave(filename = here("figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
+
+plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
                                 xlim = xlim_all,
+                                line_size = 1,
                                 x_axis_label_size = 20,
                                 x_axis_tick_label_size = 20,
                                 y_axis_label_size = 20,
                                 y_axis_tick_label_size = 20,
                                 y_axis_label_newline_length = 40,
-                                translate = french)
+                                annot = region_abbreviation,
+                                label_points = TRUE,
+                                translate = french) 
 
-ggsave(filename = here("figures","plot_d_prd_ppt.png"), plot = plot_d_prd,  width=9, height=4.5, dpi=300)
-
-plot_c_prd_ppt <- plot_recruitment(major_models[[model_ind]],
-                              xlim = xlim_all,
-                              show_x_axis = TRUE,
-                              translate = french) + labs(x = NULL)
-
-shortstory_prd_ppt <- cowplot::plot_grid(plot_a_prd,
-                   plot_b_prd,
-                   plot_c_prd_x_down,
-                   plot_d_prd,
-                   ncol = 2,
-                   align = "v")
-ggsave(filename = here("figures","shortstory_prd_ppt.png"),  width=8, height=4, dpi=300)
+ggsave(filename = here("figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
 
 ```
-
 <!-- Central Coast Storyboard -->
 ```{r scaled-abundance-cc, fig.show = "hide", fig.asp = 1}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -650,105 +667,121 @@ CC_spawn_section_ppt <-plot_spawn_section(
         translate = french)
 ggsave(filename = here("figures","CC_spawn_section_ppt.png"),  width=8, height=4, dpi=300)
 ```
-
 ```{r ppt-plots-cc, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)"), eval= slides}
-plot_a_cc <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+reg <- regions$Region
+region_abbreviation <-reg[model_ind]
+
+plot_a_multi <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                    major_models[[model_ind]],
                                    surv_type,
                                    new_surv_yr = new_surv_yr,
                                    xlim = xlim_all,
+                                   show_x_axis = FALSE,
                                    y_axis_label_newline_length = 20,
+                                   x_axis_position = "bottom",
                                    translate = french)
 
-plot_b_cc <- plot_natural_mortality(major_models[[model_ind]],
+plot_a_multi_x_down <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                   major_models[[model_ind]],
+                                   surv_type,
+                                   new_surv_yr = new_surv_yr,
+                                   xlim = xlim_all,
+                                   show_x_axis = TRUE,
+                                   y_axis_label_newline_length = 20,
+                                   x_axis_position = "bottom",
+                                   translate = french)
+
+plot_b_multi <- plot_natural_mortality(major_models[[model_ind]],
                                     xlim = xlim_all,
                                     y_max = M_max,
                                     y_axis_label_newline_length = 20,
+                                    show_x_axis = FALSE,
+                                    #x_axis_position = "bottom",
                                     translate = french)
 
-plot_c_cc_x_none <- plot_recruitment(major_models[[model_ind]],
-                              xlim = xlim_all,
-                              y_axis_label_newline_length = 17,
-                              translate = french)
+plot_b_multi_x_down <- plot_natural_mortality(major_models[[model_ind]],
+                                    xlim = xlim_all,
+                                    show_x_axis = TRUE,
+                                    y_max = M_max,
+                                    y_axis_label_newline_length = 20,
+                                    x_axis_position = "bottom",
+                                    translate = french)
 
-plot_c_cc_x_down <- plot_recruitment(major_models[[model_ind]],
+plot_c_multi_x_none <- plot_recruitment(major_models[[model_ind]],
+                              xlim = xlim_all,
+                              show_x_axis = FALSE,
+                              y_axis_label_newline_length = 17,
+                              x_axis_position = "bottom",
+                              translate = french) 
+
+plot_c_multi_x_down <- plot_recruitment(major_models[[model_ind]],
                               xlim = xlim_all,
                               show_x_axis = TRUE,
                               y_axis_label_newline_length = 17,
+                              x_axis_position = "bottom",
                               translate = french) + labs(x = NULL)
 
-plot_c_cc_x_up <- plot_c_cc_x_down  + scale_x_continuous(breaks = seq(from = 1900, to = 2100, by = 10),
-                       labels = NULL, name = NULL,
-                       sec.axis = sec_axis(~ ., name = NULL,
-                         breaks = seq(from = 1900, to = 2100, by = 10),
-                         labels = seq(from = 1900, to = 2100, by = 10))
-                       )
+plot_c_multi_x_up <- plot_recruitment(major_models[[model_ind]],
+                              xlim = xlim_all,
+                              show_x_axis = TRUE,
+                              y_axis_label_newline_length = 17,
+                              x_axis_position = "top",
+                              translate = french)
 
-plot_d_cc <- plot_biomass_catch(major_models[[model_ind]],
+plot_d_multi <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
                                 xlim = xlim_all,
                                 y_axis_label_newline_length = 20,
                                 translate = french)
 
-plot_e_cc <- plot_recruitment_devs(major_models[[model_ind]],
+plot_e_multi <- plot_recruitment_devs(major_models[[model_ind]],
                                    run_mean_yrs = nRollRec,
                                    xlim = xlim_all,
                                    y_axis_label_newline_length = 20,
                                    translate = french)
 
-plot_f_cc <- plot_biomass_phase(major_models[[model_ind]],
+plot_f_multi <- plot_biomass_phase(major_models[[model_ind]],
                                 catch_df = ct,
                                 new_surv_yr = new_surv_yr,
                                 y_axis_label_newline_length = 20,
                                 translate = french)
 
-storyboard_cc_ppt_v <- cowplot::plot_grid(plot_a_cc,
-                   plot_b_cc,
-                   plot_c_cc_x_none,
-                   plot_d_cc,
-                   plot_e_cc,
-                   plot_f_cc,
-                   ncol = 2,
-                   align = "v",
-                   rel_heights = c(1.1, 1.0, 1.1))
 
-ggsave(filename = here("figures","storyboard_cc_ppt_v.png"),  width=8, height=4, dpi=300)
-
-storyboard_cc_ppt_h <- cowplot::plot_grid(plot_a_cc,
-                   plot_b_cc,
-                   plot_c_cc_x_none,
-                   plot_d_cc,
-                   plot_e_cc,
-                   plot_f_cc,
+storyboard_multi_ppt_h <- cowplot::plot_grid(plot_a_multi_x_down,
+                   plot_b_multi_x_down,
+                   plot_c_multi_x_down,
+                   plot_d_multi,
+                   plot_e_multi,
+                   plot_f_multi,
                    ncol = 3,
                    align = "h"
                    )
-ggsave(filename = here("figures","storyboard_cc_ppt_h.png"),  width=8, height=4, dpi=300)
 
-plot_d_cc <- plot_biomass_catch(major_models[[model_ind]],
+ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
+
+shortstory_ppt <- cowplot::plot_grid(plot_a_multi,
+                   plot_b_multi,
+                   plot_c_multi_x_down,
+                   plot_d_multi,
+                   ncol = 2,
+                   align = "v"
+                   )
+ggsave(filename = here("figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
+
+plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
                                 xlim = xlim_all,
+                                line_size = 1,
                                 x_axis_label_size = 20,
                                 x_axis_tick_label_size = 20,
                                 y_axis_label_size = 20,
                                 y_axis_tick_label_size = 20,
                                 y_axis_label_newline_length = 40,
-                                translate = french)
+                                annot = region_abbreviation,
+                                label_points = TRUE,
+                                translate = french) 
 
-ggsave(filename = here("figures","plot_d_cc_ppt.png"), plot = plot_d_cc,  width=9, height=4.5, dpi=300)
-
-plot_c_cc_ppt <- plot_recruitment(major_models[[model_ind]],
-                              xlim = xlim_all,
-                              show_x_axis = TRUE,
-                              translate = french) + labs(x = NULL)
-
-shortstory_cc_ppt <- cowplot::plot_grid(plot_a_cc,
-                   plot_b_cc,
-                   plot_c_cc_x_down,
-                   plot_d_cc,
-                   ncol = 2,
-                   align = "v")
-ggsave(filename = here("figures","shortstory_cc_ppt.png"),  width=8, height=4, dpi=300)
+ggsave(filename = here("figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
 
 ```
 
@@ -828,103 +861,122 @@ cowplot::plot_grid(plot_a_sog,
                    align = "v",
                    rel_heights = c(1.1, 1.0, 1.1))
 ```
+
 ```{r ppt-plots-sog, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)"), eval= slides}
-plot_a_sog <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+reg <- regions$Region
+region_abbreviation <-reg[model_ind]
+
+plot_a_multi <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                    major_models[[model_ind]],
                                    surv_type,
                                    new_surv_yr = new_surv_yr,
                                    xlim = xlim_all,
+                                   show_x_axis = FALSE,
                                    y_axis_label_newline_length = 20,
+                                   x_axis_position = "bottom",
                                    translate = french)
 
-plot_b_sog <- plot_natural_mortality(major_models[[model_ind]],
+plot_a_multi_x_down <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                   major_models[[model_ind]],
+                                   surv_type,
+                                   new_surv_yr = new_surv_yr,
+                                   xlim = xlim_all,
+                                   show_x_axis = TRUE,
+                                   y_axis_label_newline_length = 20,
+                                   x_axis_position = "bottom",
+                                   translate = french)
+
+plot_b_multi <- plot_natural_mortality(major_models[[model_ind]],
                                     xlim = xlim_all,
                                     y_max = M_max,
                                     y_axis_label_newline_length = 20,
+                                    show_x_axis = FALSE,
+                                    #x_axis_position = "bottom",
                                     translate = french)
 
-plot_c_sog_x_none <- plot_recruitment(major_models[[model_ind]],
-                              xlim = xlim_all,
-                              y_axis_label_newline_length = 17,
-                              translate = french)
+plot_b_multi_x_down <- plot_natural_mortality(major_models[[model_ind]],
+                                    xlim = xlim_all,
+                                    show_x_axis = TRUE,
+                                    y_max = M_max,
+                                    y_axis_label_newline_length = 20,
+                                    x_axis_position = "bottom",
+                                    translate = french)
 
-plot_c_sog_x_down <- plot_recruitment(major_models[[model_ind]],
+plot_c_multi_x_none <- plot_recruitment(major_models[[model_ind]],
+                              xlim = xlim_all,
+                              show_x_axis = FALSE,
+                              y_axis_label_newline_length = 17,
+                              x_axis_position = "bottom",
+                              translate = french) 
+
+plot_c_multi_x_down <- plot_recruitment(major_models[[model_ind]],
                               xlim = xlim_all,
                               show_x_axis = TRUE,
                               y_axis_label_newline_length = 17,
-                              #x_axis_position= "bottom",
+                              x_axis_position = "bottom",
                               translate = french) + labs(x = NULL)
 
-plot_c_sog_x_up <- plot_c_sog_x_down  + scale_x_continuous(breaks = seq(from = 1900, to = 2100, by = 10),
-                       labels = NULL, name = NULL,
-                       sec.axis = sec_axis(~ ., name = NULL,
-                         breaks = seq(from = 1900, to = 2100, by = 10),
-                         labels = seq(from = 1900, to = 2100, by = 10))
-                       )
+plot_c_multi_x_up <- plot_recruitment(major_models[[model_ind]],
+                              xlim = xlim_all,
+                              show_x_axis = TRUE,
+                              y_axis_label_newline_length = 17,
+                              x_axis_position = "top",
+                              translate = french)
 
-plot_d_sog <- plot_biomass_catch(major_models[[model_ind]],
+plot_d_multi <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
                                 xlim = xlim_all,
                                 y_axis_label_newline_length = 20,
                                 translate = french)
 
-plot_e_sog <- plot_recruitment_devs(major_models[[model_ind]],
+plot_e_multi <- plot_recruitment_devs(major_models[[model_ind]],
                                    run_mean_yrs = nRollRec,
                                    xlim = xlim_all,
                                    y_axis_label_newline_length = 20,
                                    translate = french)
 
-plot_f_sog <- plot_biomass_phase(major_models[[model_ind]],
+plot_f_multi <- plot_biomass_phase(major_models[[model_ind]],
                                 catch_df = ct,
                                 new_surv_yr = new_surv_yr,
                                 y_axis_label_newline_length = 20,
                                 translate = french)
 
-storyboard_sog_ppt_v <- cowplot::plot_grid(plot_a_sog,
-                   plot_b_sog,
-                   plot_c_sog_x_none,
-                   plot_d_sog,
-                   plot_e_sog,
-                   plot_f_sog,
-                   ncol = 2,
-                   align = "v",
-                   rel_heights = c(1.1, 1.0, 1.1))
 
-ggsave(filename = here("figures","storyboard_sog_ppt_v.png"),  width=8, height=4, dpi=300)
-
-storyboard_sog_ppt_h <- cowplot::plot_grid(plot_a_sog,
-                   plot_b_sog,
-                   plot_c_sog_x_none,
-                   plot_d_sog,
-                   plot_e_sog,
-                   plot_f_sog,
+storyboard_multi_ppt_h <- cowplot::plot_grid(plot_a_multi_x_down,
+                   plot_b_multi_x_down,
+                   plot_c_multi_x_down,
+                   plot_d_multi,
+                   plot_e_multi,
+                   plot_f_multi,
                    ncol = 3,
                    align = "h"
                    )
-ggsave(filename = here("figures","storyboard_sog_ppt_h.png"),  width=8, height=4, dpi=300)
-plot_d_sog <- plot_biomass_catch(major_models[[model_ind]],
+
+ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
+
+shortstory_ppt <- cowplot::plot_grid(plot_a_multi,
+                   plot_b_multi,
+                   plot_c_multi_x_down,
+                   plot_d_multi,
+                   ncol = 2,
+                   align = "v"
+                   )
+ggsave(filename = here("figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
+
+plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
                                 xlim = xlim_all,
+                                line_size = 1,
                                 x_axis_label_size = 20,
                                 x_axis_tick_label_size = 20,
                                 y_axis_label_size = 20,
                                 y_axis_tick_label_size = 20,
                                 y_axis_label_newline_length = 40,
-                                translate = french)
-ggsave(filename = here("figures","plot_d_sog_ppt.png"), plot = plot_d_sog,  width=9, height=4.5, dpi=300)
+                                annot = region_abbreviation,
+                                label_points = TRUE,
+                                translate = french) 
 
-plot_c_sog_ppt <- plot_recruitment(major_models[[model_ind]],
-                              xlim = xlim_all,
-                              show_x_axis = TRUE,
-                              translate = french) + labs(x = NULL)
-
-shortstory_sog_ppt <- cowplot::plot_grid(plot_a_sog,
-                   plot_b_sog,
-                   plot_c_sog_x_down,
-                   plot_d_sog,
-                   ncol = 2,
-                   align = "v")
-ggsave(filename = here("figures","shortstory_sog_ppt.png"),  width=8, height=4, dpi=300)
+ggsave(filename = here("figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
 
 ```
 
@@ -1004,104 +1056,122 @@ cowplot::plot_grid(plot_a_wcvi,
                    align = "v",
                    rel_heights = c(1.1, 1.0, 1.1))
 ```
+
 ```{r ppt-plots-wcvi, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)"), eval= slides}
-plot_a_wcvi <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+reg <- regions$Region
+region_abbreviation <-reg[model_ind]
+
+plot_a_multi <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                    major_models[[model_ind]],
                                    surv_type,
                                    new_surv_yr = new_surv_yr,
                                    xlim = xlim_all,
+                                   show_x_axis = FALSE,
                                    y_axis_label_newline_length = 20,
+                                   x_axis_position = "bottom",
                                    translate = french)
 
-plot_b_wcvi <- plot_natural_mortality(major_models[[model_ind]],
+plot_a_multi_x_down <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                   major_models[[model_ind]],
+                                   surv_type,
+                                   new_surv_yr = new_surv_yr,
+                                   xlim = xlim_all,
+                                   show_x_axis = TRUE,
+                                   y_axis_label_newline_length = 20,
+                                   x_axis_position = "bottom",
+                                   translate = french)
+
+plot_b_multi <- plot_natural_mortality(major_models[[model_ind]],
                                     xlim = xlim_all,
                                     y_max = M_max,
                                     y_axis_label_newline_length = 20,
+                                    show_x_axis = FALSE,
+                                    #x_axis_position = "bottom",
                                     translate = french)
 
-plot_c_wcvi_x_none <- plot_recruitment(major_models[[model_ind]],
-                              xlim = xlim_all,
-                              y_axis_label_newline_length = 17,
-                              translate = french)
+plot_b_multi_x_down <- plot_natural_mortality(major_models[[model_ind]],
+                                    xlim = xlim_all,
+                                    show_x_axis = TRUE,
+                                    y_max = M_max,
+                                    y_axis_label_newline_length = 20,
+                                    x_axis_position = "bottom",
+                                    translate = french)
 
-plot_c_wcvi_x_down <- plot_recruitment(major_models[[model_ind]],
+plot_c_multi_x_none <- plot_recruitment(major_models[[model_ind]],
+                              xlim = xlim_all,
+                              show_x_axis = FALSE,
+                              y_axis_label_newline_length = 17,
+                              x_axis_position = "bottom",
+                              translate = french) 
+
+plot_c_multi_x_down <- plot_recruitment(major_models[[model_ind]],
                               xlim = xlim_all,
                               show_x_axis = TRUE,
                               y_axis_label_newline_length = 17,
-                              #x_axis_position= "bottom",
+                              x_axis_position = "bottom",
                               translate = french) + labs(x = NULL)
 
-plot_c_wcvi_x_up <- plot_c_wcvi_x_down  + scale_x_continuous(breaks = seq(from = 1900, to = 2100, by = 10),
-                       labels = NULL, name = NULL,
-                       sec.axis = sec_axis(~ ., name = NULL,
-                         breaks = seq(from = 1900, to = 2100, by = 10),
-                         labels = seq(from = 1900, to = 2100, by = 10))
-                       )
+plot_c_multi_x_up <- plot_recruitment(major_models[[model_ind]],
+                              xlim = xlim_all,
+                              show_x_axis = TRUE,
+                              y_axis_label_newline_length = 17,
+                              x_axis_position = "top",
+                              translate = french)
 
-plot_d_wcvi <- plot_biomass_catch(major_models[[model_ind]],
+plot_d_multi <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
                                 xlim = xlim_all,
                                 y_axis_label_newline_length = 20,
                                 translate = french)
 
-plot_e_wcvi <- plot_recruitment_devs(major_models[[model_ind]],
+plot_e_multi <- plot_recruitment_devs(major_models[[model_ind]],
                                    run_mean_yrs = nRollRec,
                                    xlim = xlim_all,
                                    y_axis_label_newline_length = 20,
                                    translate = french)
 
-plot_f_wcvi <- plot_biomass_phase(major_models[[model_ind]],
+plot_f_multi <- plot_biomass_phase(major_models[[model_ind]],
                                 catch_df = ct,
                                 new_surv_yr = new_surv_yr,
                                 y_axis_label_newline_length = 20,
                                 translate = french)
 
-storyboard_wcvi_ppt_v <- cowplot::plot_grid(plot_a_wcvi,
-                   plot_b_wcvi,
-                   plot_c_wcvi_x_none,
-                   plot_d_wcvi,
-                   plot_e_wcvi,
-                   plot_f_wcvi,
-                   ncol = 2,
-                   align = "v",
-                   rel_heights = c(1.1, 1.0, 1.1))
 
-ggsave(filename = here("figures","storyboard_wcvi_ppt_v.png"),  width=8, height=4, dpi=300)
-
-storyboard_wcvi_ppt_h <- cowplot::plot_grid(plot_a_wcvi,
-                   plot_b_wcvi,
-                   plot_c_wcvi_x_none,
-                   plot_d_wcvi,
-                   plot_e_wcvi,
-                   plot_f_wcvi,
+storyboard_multi_ppt_h <- cowplot::plot_grid(plot_a_multi_x_down,
+                   plot_b_multi_x_down,
+                   plot_c_multi_x_down,
+                   plot_d_multi,
+                   plot_e_multi,
+                   plot_f_multi,
                    ncol = 3,
                    align = "h"
                    )
-ggsave(filename = here("figures","storyboard_wcvi_ppt_h.png"),  width=8, height=4, dpi=300)
-plot_d_wcvi <- plot_biomass_catch(major_models[[model_ind]],
+
+ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
+
+shortstory_ppt <- cowplot::plot_grid(plot_a_multi,
+                   plot_b_multi,
+                   plot_c_multi_x_down,
+                   plot_d_multi,
+                   ncol = 2,
+                   align = "v"
+                   )
+ggsave(filename = here("figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
+
+plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
                                 xlim = xlim_all,
+                                line_size = 1,
                                 x_axis_label_size = 20,
                                 x_axis_tick_label_size = 20,
                                 y_axis_label_size = 20,
                                 y_axis_tick_label_size = 20,
                                 y_axis_label_newline_length = 40,
-                                translate = french)
+                                annot = region_abbreviation,
+                                label_points = TRUE,
+                                translate = french) 
 
-ggsave(filename = here("figures","plot_d_wcvi_ppt.png"), plot = plot_d_wcvi,  width=9, height=4.5, dpi=300)
-
-plot_c_wcvi_ppt <- plot_recruitment(major_models[[model_ind]],
-                              xlim = xlim_all,
-                              show_x_axis = TRUE,
-                              translate = french) + labs(x = NULL)
-
-shortstory_wcvi_ppt <- cowplot::plot_grid(plot_a_wcvi,
-                   plot_b_wcvi,
-                   plot_c_wcvi_x_down,
-                   plot_d_wcvi,
-                   ncol = 2,
-                   align = "v")
-ggsave(filename = here("figures","shortstory_wcvi_ppt.png"),  width=8, height=4, dpi=300)
+ggsave(filename = here("figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
 
 ```
 (ref:harvest-rate-cap) Effective harvest rate $U_t$ for Pacific Herring
