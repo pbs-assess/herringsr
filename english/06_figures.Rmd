@@ -253,7 +253,7 @@ plot_a_multi <- plot_scaled_abundance(major_surv %>% filter(region == major_regi
                                    surv_type,
                                    new_surv_yr = new_surv_yr,
                                    xlim = xlim_all,
-                                   show_x_axis = TRUE,
+                                   show_x_axis = FALSE,
                                    y_axis_label_newline_length = 20,
                                    x_axis_position = "bottom",
                                    translate = french)
@@ -272,7 +272,8 @@ plot_b_multi <- plot_natural_mortality(major_models[[model_ind]],
                                     xlim = xlim_all,
                                     y_max = M_max,
                                     y_axis_label_newline_length = 20,
-                                    x_axis_position = "bottom",
+                                    show_x_axis = FALSE,
+                                    #x_axis_position = "bottom",
                                     translate = french)
 
 plot_b_multi_x_down <- plot_natural_mortality(major_models[[model_ind]],
@@ -354,6 +355,7 @@ plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 y_axis_tick_label_size = 20,
                                 y_axis_label_newline_length = 40,
                                 annot = region_abbreviation,
+                                label_points = TRUE,
                                 translate = french) 
 
 ggsave(filename = here("figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
