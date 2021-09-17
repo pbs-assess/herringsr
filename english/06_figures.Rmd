@@ -304,7 +304,6 @@ plot_f_multi <- plot_biomass_phase(major_models[[model_ind]],
                                 translate = french)
 
 
-
 storyboard_multi_ppt_h <- cowplot::plot_grid(plot_a_multi,
                    plot_b_multi,
                    plot_c_multi_x_none,
@@ -314,8 +313,17 @@ storyboard_multi_ppt_h <- cowplot::plot_grid(plot_a_multi,
                    ncol = 3,
                    align = "h"
                    )
-#filename <- paste0("storyboard_", region_abbreviation, "_ppt.png")
+
 ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
+
+shortstory_ppt <- cowplot::plot_grid(plot_a_multi,
+                   plot_b_multi,
+                   plot_c_multi_x_down,
+                   plot_d_multi,
+                   ncol = 2,
+                   align = "v"
+                   )
+ggsave(filename = here("figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
 
 plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
@@ -328,25 +336,8 @@ plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 y_axis_label_newline_length = 40,
                                 annot = region_abbreviation,
                                 translate = french) 
-        
-plot_d_single 
 
 ggsave(filename = here("figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
-
-
-
-plot_c_ppt <- plot_recruitment(major_models[[model_ind]],
-                              xlim = xlim_all,
-                              show_x_axis = TRUE,
-                              translate = french) + labs(x = NULL)
-
-shortstory_ppt <- cowplot::plot_grid(plot_a_multi,
-                   plot_b_multi,
-                   plot_c_multi_x_down,
-                   plot_d_multi,
-                   ncol = 2,
-                   align = "v")
-ggsave(filename = here("figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
 
 ```
 
