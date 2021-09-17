@@ -738,9 +738,7 @@ Work finalizing the draft for consultation continues via a
 technical working group comprised of members of
 the Council of Haida Nation, DFO, and Parks Canada.
 The consultation period is anticipated to commence in fall 2021.
-Guidance for the
-"Development of Rebuilding Plans under the Precautionary Approach Framework:
-Growing Stocks out of the Critical Zone" [@dfo2013] states that
+Guidance for developing rebuilding plans [@dfo2013] states that
 the primary objective of any rebuilding plan is to
 promote stock growth out of the Critical Zone
 (i.e., to grow the stock above the status-based LRP) by
