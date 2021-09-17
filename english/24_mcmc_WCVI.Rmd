@@ -38,8 +38,10 @@ Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-priors-pos
 
 ```{r wcvi-priors-posts, fig.cap=ifelse(french, "(ref:wcvi-priors-posts-cap-fr)", "(ref:wcvi-priors-posts-cap)")}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
-make.priors.posts.plot(major_models[[model_ind]],
-                       priors.only = FALSE)
+make.priors.posts.plot(
+  model = major_models[[model_ind]],
+  priors.only = FALSE
+  )
 ```
 
 (ref:wcvi-traces-cap) West Coast of Vancouver Island SAR:
@@ -52,9 +54,11 @@ dans la région d’évaluation des stocks majeur de la côte ouest de l’île 
 Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r wcvi-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-traces-cap-fr)", "(ref:wcvi-traces-cap)")}
-make.traces.plot(major_models[[model_ind]], 
-                 mcmc_burnin = 1000, #not sure about this burnin
-                 axis.lab.freq = 200)
+# TODO: not sure about this burnin
+make.traces.plot(
+  model = major_models[[model_ind]],
+  mcmc_burnin = 1000
+)
 ```
 
 (ref:wcvi-autocor-cap) West Coast of Vancouver Island SAR:
@@ -67,7 +71,10 @@ paramètres estimés pour le hareng du Pacifique dans la région d’évaluation
 Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r wcvi-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-autocor-cap-fr)", "(ref:wcvi-autocor-cap)")}
-make.autocor.plot(major_models[[model_ind]], mcmc_burnin = 1000)
+make.autocor.plot(
+  model = major_models[[model_ind]],
+  mcmc_burnin = 1000
+)
 ```
 
 (ref:wcvi-pairs-cap) West Coast of Vancouver Island SAR:
@@ -80,9 +87,13 @@ les paramètres estimés pour le hareng du Pacifique dans la region d’évaluat
 Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r wcvi-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-pairs-cap-fr)", "(ref:wcvi-pairs-cap)")}
-make.pairs.plot(major_models[[model_ind]],
-                params=c("ro", "h", "m", "rbar", "rinit", "q1", "q2", "sel1",
-                         "selsd1", "sel2", "selsd2", "sel3", "selsd3"))
+make.pairs.plot(
+  model = major_models[[model_ind]],
+  params = c(
+    "ro", "h", "m", "rbar", "rinit", "q1", "q2", "sel1", "selsd1", "sel2",
+    "selsd2", "sel3", "selsd3"
+  )
+)
 ```
 
 (ref:wcvi-biomass-retro-cap) West Coast of Vancouver Island SAR:
@@ -100,10 +111,12 @@ région d'évaluation des stocks majeur de la côte ouest de l’île de Vancouv
 Voir la figure \@ref(fig:hg-biomass-retro) pour la description.
 
 ```{r wcvi-biomass-retro, fig.asp=0.65, fig.cap=ifelse(french, "(ref:wcvi-biomass-retro-cap-fr)", "(ref:wcvi-biomass-retro-cap)")}
-biomass.plot.mpd(major_models[[model_ind]],
-                 xlim = c(new_surv_yr, assess_yr),
-                 df = major_surv %>% filter(region == major_regions_full[model_ind]),
-                 translate = french)
+biomass.plot.mpd(
+  model = major_models[[model_ind]],
+  xlim = c(new_surv_yr, assess_yr),
+  df = major_surv %>% filter(region == major_regions_full[model_ind]),
+  translate = french
+)
 ```
 
 (ref:wcvi-sr-cap) West Coast of Vancouver Island SAR:
@@ -120,7 +133,9 @@ pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de
 Voir la figure \@ref(fig:hg-sr) pour la description.
 
 ```{r wcvi-sr, fig.asp=0.4, fig.cap=ifelse(french, "(ref:wcvi-sr-cap-fr)", "(ref:wcvi-sr-cap)")}
-plot_bh(major_models[[model_ind]],
-        regions=major_regions_full[[model_ind]],
-        translate=french)
+plot_bh(
+  model = major_models[[model_ind]],
+  regions = major_regions_full[[model_ind]],
+  translate = french
+)
 ```

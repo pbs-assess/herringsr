@@ -24,8 +24,10 @@ Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables} pour la des
 
 ```{r hg-priors-posts, fig.cap=ifelse(french,"(ref:hg-priors-posts-cap-fr)","(ref:hg-priors-posts-cap)")}
 model_ind <- match(en2fr("HG", french), major_regions_short)
-make.priors.posts.plot(major_models[[model_ind]],
-                       priors.only = FALSE)
+make.priors.posts.plot(
+  model = major_models[[model_ind]],
+  priors.only = FALSE
+)
 ```
 
 (ref:hg-traces-cap) Haida Gwaii SAR:
@@ -56,8 +58,9 @@ Les souscriptions sur $\hat{a}$ et $\hat{\gamma}$ représentent des engins comme
 3 représente la pêche au hareng rogué à la senne.
 
 ```{r hg-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-traces-cap-fr)", "(ref:hg-traces-cap)")}
-make.traces.plot(major_models[[model_ind]],
-                 axis.lab.freq = 200)
+make.traces.plot(
+  model = major_models[[model_ind]]
+)
 ```
 
 (ref:hg-autocor-cap) Haida Gwaii SAR:
@@ -70,7 +73,9 @@ paramètres estimés pour le hareng du Pacifique dans la région d’évaluation
 Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r hg-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-autocor-cap-fr)", "(ref:hg-autocor-cap)")}
-make.autocor.plot(major_models[[model_ind]])
+make.autocor.plot(
+  model = major_models[[model_ind]]
+)
 ```
 
 (ref:hg-pairs-cap) Haida Gwaii SAR:
@@ -83,9 +88,13 @@ les paramètres estimés pour le hareng du Pacifique dans la region d’évaluat
 Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r hg-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-pairs-cap-fr)", "(ref:hg-pairs-cap)")}
-make.pairs.plot(major_models[[model_ind]],
-                params=c("ro", "h", "m", "rbar", "rinit", "q1", "q2", "sel1",
-                         "selsd1", "sel2", "selsd2", "sel3", "selsd3"))
+make.pairs.plot(
+  model = major_models[[model_ind]],
+  params = c(
+    "ro", "h", "m", "rbar", "rinit", "q1", "q2", "sel1", "selsd1", "sel2",
+    "selsd2", "sel3", "selsd3"
+  )
+)
 ```
 
 (ref:hg-biomass-retro-cap) Haida Gwaii SAR:
@@ -105,10 +114,12 @@ Les points indiquent la biomasse reporductrice non exploitée estimée.
 Les triangles indiquent l'abondance à l'échelle.
 
 ```{r hg-biomass-retro, fig.asp=0.65, fig.cap=ifelse(french, "(ref:hg-biomass-retro-cap-fr)", "(ref:hg-biomass-retro-cap)")}
-biomass.plot.mpd(major_models[[model_ind]],
-                 xlim = c(new_surv_yr, assess_yr),
-                 df = major_surv %>% filter(region == major_regions_full[model_ind]),
-                 translate = french)
+biomass.plot.mpd(
+  model = major_models[[model_ind]],
+  xlim = c(new_surv_yr, assess_yr),
+  df = major_surv %>% filter(region == major_regions_full[model_ind]),
+  translate = french
+)
 ```
 
 (ref:hg-sr-cap) Haida Gwaii SAR:
@@ -131,7 +142,9 @@ le triangle indique `r assess_yr`.
 Remarque: les valeurs sont des estimations médianes postérieures.
 
 ```{r hg-sr, fig.asp=0.4, fig.cap=ifelse(french, "(ref:hg-sr-cap-fr)", "(ref:hg-sr-cap)")}
-plot_bh(major_models[[model_ind]],
-        regions=major_regions_full[[model_ind]],
-        translate=french)
+plot_bh(
+  model = major_models[[model_ind]],
+  regions = major_regions_full[[model_ind]],
+  translate = french
+)
 ```
