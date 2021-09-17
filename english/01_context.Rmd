@@ -9,7 +9,7 @@ Also introduced in the 2017 assessment was
 the estimation of stock productivity and current stock status
 relative to the new limit reference point (LRP) of $0.3\SB_0$ [@kronlund2017],
 where $\SB_0$ is estimated unfished spawning biomass.
-Since 2017, the structure of the SCA model has not changed.
+The structure of the SCA model has not changed since 2017.
 <!-- In 2020 an update was made to the forecasting model.
 Historically the model has used the estimated terminal year recruits when projecting the model one year ahead.
 The change was made to use average recruitment generated from a normal distribution. -->
@@ -27,13 +27,19 @@ against conservation objectives for the
 Strait of Georgia (SoG) and West Coast of Vancouver Island (WCVI)
 stock assessment regions [@dfo2019a].
 Steps included operating model (OM) development,
-fitting the OM to Pacific Herring stock and fishery monitoring data (OM conditioning), and
-closed-loop simulations of MP performance for alternative future natural mortality scenarios.
-In the spring of 2019, the MSE process was initiated for the northern stock regions:
-Haida Gwaii (HG), Prince Rupert District (PRD), and Central Coast (CC) [@dfo2019c]. 
-In the summer of 2020, updates were made to the MSE simulations for the WCVI and SoG management areas,
+fitting the OM to Pacific Herring stock and fishery monitoring data
+(OM conditioning), and
+closed-loop simulations of MP performance for alternative
+future natural mortality scenarios.
+In the spring of 2019,
+the MSE process was initiated for the northern stock regions:
+Haida Gwaii (HG), Prince Rupert District (PRD), and Central Coast (CC)
+[@dfo2019c]. 
+In the summer of 2020,
+updates were made to the MSE simulations for the WCVI and SoG management areas,
 and in the summer of 2021,
-similar updates were made to the MSE simulations for the PRD and CC management areas.
+similar updates were made to the MSE simulations for the
+PRD and CC management areas.
 For all four stocks, updates include
 conditioning the OM with more recent stock and fishery data and
 evaluating the performance of additional candidate MPs for these management areas.
