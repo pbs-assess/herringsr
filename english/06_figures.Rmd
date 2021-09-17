@@ -170,6 +170,7 @@ plot_c_hg <- plot_recruitment(major_models[[model_ind]],
 
 <!-- Haida Gwaii Storyboard -->
 ```{r biomass-catch-hg, fig.show = "hide", fig.asp = 1}
+
 plot_d_hg <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
                                 xlim = xlim_all,
@@ -319,19 +320,16 @@ ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_p
 plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
                                 xlim = xlim_all,
+                                line_size = 1,
                                 x_axis_label_size = 20,
                                 x_axis_tick_label_size = 20,
                                 y_axis_label_size = 20,
                                 y_axis_tick_label_size = 20,
                                 y_axis_label_newline_length = 40,
-                                translate = french)
-#working on this now
-#plot_d_single +
-#        + 
-#  geom_label_repel(aes(label = Name),
-#                  box.padding   = 0.35, 
-#                  point.padding = 0.5,
-#                  segment.color = 'grey50')
+                                annot = region_abbreviation,
+                                translate = french) 
+        
+plot_d_single 
 
 ggsave(filename = here("figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
 
@@ -344,7 +342,7 @@ plot_c_ppt <- plot_recruitment(major_models[[model_ind]],
 
 shortstory_ppt <- cowplot::plot_grid(plot_a_multi,
                    plot_b_multi,
-                   plot_c_multi_x_none,
+                   plot_c_multi_x_down,
                    plot_d_multi,
                    ncol = 2,
                    align = "v")
