@@ -1,21 +1,37 @@
 git_dir <- "C:/github"
-if( tolower(Sys.getenv("USERNAME")) == "grinnellm" )  git_dir <- "C:/Grinnell/Git"
-if( tolower(Sys.getenv("USERNAME")) == "grandin" )  git_dir <- "C:/github/pbs-assess"
+if (tolower(Sys.getenv("USERNAME")) == "grinnellm") {
+  git_dir <- "C:/Grinnell/Git"
+}
+if (tolower(Sys.getenv("USERNAME")) == "grandin") {
+  git_dir <- "C:/github/pbs-assess"
+}
 curr_dir <- getwd()
 
-if( tolower(Sys.getenv("USERNAME")) != "grinnellm" ) {
+if (tolower(Sys.getenv("USERNAME")) != "grinnellm") {
   cat(crayon::green("\nRebasing new commits from rosettafish...\n"))
-  shell(paste0("cd ", file.path(git_dir, "rosettafish"), " && git pull --rebase"))
+  shell(
+    paste0("cd ", file.path(git_dir, "rosettafish"), " && git pull --rebase")
+  )
   cat(crayon::green("\nRebasing new commits from gfutilities...\n"))
-  shell(paste0("cd ", file.path(git_dir, "gfutilities"), " && git pull --rebase"))
+  shell(
+    paste0("cd ", file.path(git_dir, "gfutilities"), " && git pull --rebase")
+  )
   cat(crayon::green("\nRebasing new commits from gfiscamutils...\n"))
-  shell(paste0("cd ", file.path(git_dir, "gfiscamutils"), " && git pull --rebase"))
+  shell(
+    paste0("cd ", file.path(git_dir, "gfiscamutils"), " && git pull --rebase")
+  )
   cat(crayon::green("\nRebasing new commits from herringutils...\n"))
-  shell(paste0("cd ", file.path(git_dir, "herringutils"), " && git pull --rebase"))
+  shell(
+    paste0("cd ", file.path(git_dir, "herringutils"), " && git pull --rebase")
+  )
   cat(crayon::green("\nRebasing new commits from csasdown...\n"))
-  shell(paste0("cd ", file.path(git_dir, "csasdown"), " && git pull --rebase"))
+  shell(
+    paste0("cd ", file.path(git_dir, "csasdown"), " && git pull --rebase")
+  )
   cat(crayon::green("\nRebasing new commits from herringsr...\n"))
-  shell(paste0("cd ", file.path(git_dir, "herringsr"), " && git pull --rebase"))
+  shell(
+    paste0("cd ", file.path(git_dir, "herringsr"), " && git pull --rebase")
+  )
 }
 
 setwd(git_dir)

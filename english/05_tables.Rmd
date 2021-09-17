@@ -16,10 +16,11 @@ relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
 L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
 ```{r data-input}
-input_data_table(tab = inp_catch,
-                 cap = ifelse(french, "(ref:data-input-cap-fr)",
-                              "(ref:data-input-cap)"),
-                 translate = french)
+input_data_table(
+  tab = inp_catch,
+  cap = ifelse(french, "(ref:data-input-cap-fr)", "(ref:data-input-cap)"),
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -37,12 +38,13 @@ Remarque: «DT» indique que les données ne sont pas divulguées pour des raiso
 \needspace{0.35\textheight}
 
 ```{r annual-catch}
-total_landed_catch_table(tab = major_catch_short,
-                         by_vec = major_regions_short,
-                         first_yr = major_end_yr - num_yrs_tab,
-                         cap = ifelse(french, "(ref:annual-catch-cap-fr)",
-                                      "(ref:annual-catch-cap)"),
-                         translate = french)
+total_landed_catch_table(
+  tab = major_catch_short,
+  by_vec = major_regions_short,
+  first_yr = major_end_yr - num_yrs_tab,
+  cap = ifelse(french, "(ref:annual-catch-cap-fr)", "(ref:annual-catch-cap)"),
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -60,12 +62,15 @@ Remarque: «DT» indique que les données ne sont pas divulguées pour des raiso
 \needspace{0.35\textheight}
 
 ```{r annual-sok-catch}
-sok_harvest_table(tab = sok,
-                  by_vec = major_regions_short,
-                  first_yr = major_end_yr - num_yrs_tab,
-                  cap = ifelse(french, "(ref:annual-sok-catch-cap-fr)",
-                               "(ref:annual-sok-catch-cap)"),
-                  translate = french)
+sok_harvest_table(
+  tab = sok,
+  by_vec = major_regions_short,
+  first_yr = major_end_yr - num_yrs_tab,
+  cap = ifelse(
+    french, "(ref:annual-sok-catch-cap-fr)", "(ref:annual-sok-catch-cap)"
+  ),
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -92,12 +97,14 @@ Légende: 'NA' indique que les données ne sont pas disponibles.
 \needspace{0.35\textheight}
 
 ```{r spawn-index-hg}
-spawn_index_by_area_table(ps[[en2fr("HG", french)]],
-                          cap = ifelse(french,
-                                       "(ref:spawn-index-hg-cap-fr)",
-                                       "(ref:spawn-index-hg-cap)"),
-                          first_yr = major_end_yr - num_yrs_tab,
-                          translate = french)
+spawn_index_by_area_table(
+  ps[[en2fr("HG", french)]],
+  cap = ifelse(
+    french, "(ref:spawn-index-hg-cap-fr)", "(ref:spawn-index-hg-cap)"
+  ),
+  first_yr = major_end_yr - num_yrs_tab,
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -116,12 +123,14 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 \needspace{0.35\textheight}
 
 ```{r spawn-index-prd}
-spawn_index_by_area_table(ps[[en2fr("PRD", french)]],
-                          cap = ifelse(french,
-                                       "(ref:spawn-index-prd-cap-fr)",
-                                       "(ref:spawn-index-prd-cap)"),
-                          first_yr = major_end_yr - num_yrs_tab,
-                          translate = french)
+spawn_index_by_area_table(
+  ps[[en2fr("PRD", french)]],
+  cap = ifelse(
+    french, "(ref:spawn-index-prd-cap-fr)", "(ref:spawn-index-prd-cap)"
+  ),
+  first_yr = major_end_yr - num_yrs_tab,
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -140,12 +149,14 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 \needspace{0.35\textheight}
 
 ```{r spawn-index-cc}
-spawn_index_by_area_table(ps[[en2fr("CC", french)]],
-                          cap = ifelse(french,
-                                       "(ref:spawn-index-cc-cap-fr)",
-                                       "(ref:spawn-index-cc-cap)"),
-                          first_yr = major_end_yr - num_yrs_tab,
-                          translate = french)
+spawn_index_by_area_table(
+  ps[[en2fr("CC", french)]],
+  cap = ifelse(
+    french, "(ref:spawn-index-cc-cap-fr)", "(ref:spawn-index-cc-cap)"
+  ),
+  first_yr = major_end_yr - num_yrs_tab,
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -172,12 +183,14 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 \needspace{0.35\textheight}
 
 ```{r spawn-index-sog}
-spawn_index_by_area_table(ps[[en2fr("SoG", french)]],
-                          cap = ifelse(french,
-                                       "(ref:spawn-index-sog-cap-fr)",
-                                       "(ref:spawn-index-sog-cap)"),
-                          first_yr = major_end_yr - num_yrs_tab,
-                          translate = french)
+spawn_index_by_area_table(
+  ps[[en2fr("SoG", french)]],
+  cap = ifelse(
+    french, "(ref:spawn-index-sog-cap-fr)", "(ref:spawn-index-sog-cap)"
+  ),
+  first_yr = major_end_yr - num_yrs_tab,
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -196,12 +209,14 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 \needspace{0.35\textheight}
 
 ```{r spawn-index-wcvi}
-spawn_index_by_area_table(ps[[en2fr("WCVI", french)]],
-                          cap = ifelse(french,
-                                       "(ref:spawn-index-wcvi-cap-fr)",
-                                       "(ref:spawn-index-wcvi-cap)"),
-                          first_yr = major_end_yr - num_yrs_tab,
-                          translate = french)
+spawn_index_by_area_table(
+  ps[[en2fr("WCVI", french)]],
+  cap = ifelse(
+    french, "(ref:spawn-index-wcvi-cap-fr)", "(ref:spawn-index-wcvi-cap)"
+  ),
+  first_yr = major_end_yr - num_yrs_tab,
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -244,12 +259,14 @@ Remarque: $\tau$ et $\sigma$ sont des valeurs calculées.
 
 ```{r hg-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
-make.parameters.est.table(major_models[[model_ind]],
-                          xcaption = ifelse(french,
-                                            "(ref:hg-parameter-est-cap-fr)",
-                                            "(ref:hg-parameter-est-cap)"),
-                          xlabel = "tab:hg-parameter-est",
-                          translate = french)
+make.parameters.est.table(
+  major_models[[model_ind]],
+  xcaption = ifelse(
+    french, "(ref:hg-parameter-est-cap-fr)", "(ref:hg-parameter-est-cap)"
+  ),
+  xlabel = "tab:hg-parameter-est",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -268,12 +285,14 @@ Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 ```{r prd-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
-make.parameters.est.table(major_models[[model_ind]],
-                          xcaption = ifelse(french,
-                                            "(ref:prd-parameter-est-cap-fr)",
-                                            "(ref:prd-parameter-est-cap)"),
-                          xlabel = "tab:prd-parameter-est",
-                          translate = french)
+make.parameters.est.table(
+  major_models[[model_ind]],
+  xcaption = ifelse(
+    french, "(ref:prd-parameter-est-cap-fr)", "(ref:prd-parameter-est-cap)"
+  ),
+  xlabel = "tab:prd-parameter-est",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -292,12 +311,14 @@ Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 ```{r cc-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
-make.parameters.est.table(major_models[[model_ind]],
-                          xcaption = ifelse(french,
-                                            "(ref:cc-parameter-est-cap-fr)",
-                                            "(ref:cc-parameter-est-cap)"),
-                          xlabel = "tab:cc-parameter-est",
-                          translate = french)
+make.parameters.est.table(
+  major_models[[model_ind]],
+  xcaption = ifelse(
+    french, "(ref:cc-parameter-est-cap-fr)", "(ref:cc-parameter-est-cap)"
+  ),
+  xlabel = "tab:cc-parameter-est",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -316,12 +337,14 @@ Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 ```{r sog-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
-make.parameters.est.table(major_models[[model_ind]],
-                          xcaption = ifelse(french,
-                                            "(ref:sog-parameter-est-cap-fr)",
-                                            "(ref:sog-parameter-est-cap)"),
-                          xlabel = "tab:sog-parameter-est",
-                          translate = french)
+make.parameters.est.table(
+  major_models[[model_ind]],
+  xcaption = ifelse(
+    french, "(ref:sog-parameter-est-cap-fr)", "(ref:sog-parameter-est-cap)"
+  ),
+  xlabel = "tab:sog-parameter-est",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -340,12 +363,14 @@ Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 ```{r wcvi-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
-make.parameters.est.table(major_models[[model_ind]],
-                          xcaption = ifelse(french,
-                                            "(ref:wcvi-parameter-est-cap-fr)",
-                                            "(ref:wcvi-parameter-est-cap)"),
-                          xlabel = "tab:wcvi-parameter-est",
-                          translate = french)
+make.parameters.est.table(
+  major_models[[model_ind]],
+  xcaption = ifelse(
+    french, "(ref:wcvi-parameter-est-cap-fr)", "(ref:wcvi-parameter-est-cap)"
+  ),
+  xlabel = "tab:wcvi-parameter-est",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -366,13 +391,16 @@ région d’évaluation des stocks majeur de Haida Gwaii.
 
 ```{r hg-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
-make.value.table(major_models[[model_ind]],
-                 type = 2,
-                 syr = major_end_yr - num_yrs_tab,
-                 xcaption = ifelse(french, "(ref:hg-recruitment-cap-fr)",
-                                   "(ref:hg-recruitment-cap)"),
-                 xlabel = "tab:hg-recruitment",
-                 translate = french)
+make.value.table(
+  major_models[[model_ind]],
+  type = 2,
+  syr = major_end_yr - num_yrs_tab,
+  xcaption = ifelse(
+    french, "(ref:hg-recruitment-cap-fr)", "(ref:hg-recruitment-cap)"
+  ),
+  xlabel = "tab:hg-recruitment",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -391,13 +419,16 @@ région d’évaluation des stocks majeur du district de Prince Rupert.
 
 ```{r prd-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
-make.value.table(major_models[[model_ind]],
-                 type = 2,
-                 syr = major_end_yr - num_yrs_tab,
-                 xcaption = ifelse(french, "(ref:prd-recruitment-cap-fr)",
-                                   "(ref:prd-recruitment-cap)"),
-                 xlabel = "tab:prd-recruitment",
-                 translate = french)
+make.value.table(
+  major_models[[model_ind]],
+  type = 2,
+  syr = major_end_yr - num_yrs_tab,
+  xcaption = ifelse(
+    french, "(ref:prd-recruitment-cap-fr)", "(ref:prd-recruitment-cap)"
+  ),
+  xlabel = "tab:prd-recruitment",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -416,13 +447,16 @@ région d’évaluation des stocks majeur de la côte centrale.
 
 ```{r cc-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
-make.value.table(major_models[[model_ind]],
-                 type = 2,
-                 syr = major_end_yr - num_yrs_tab,
-                 xcaption = ifelse(french, "(ref:cc-recruitment-cap-fr)",
-                                   "(ref:cc-recruitment-cap)"),
-                 xlabel = "tab:cc-recruitment",
-                 translate = french)
+make.value.table(
+  major_models[[model_ind]],
+  type = 2,
+  syr = major_end_yr - num_yrs_tab,
+  xcaption = ifelse(
+    french, "(ref:cc-recruitment-cap-fr)", "(ref:cc-recruitment-cap)"
+  ),
+  xlabel = "tab:cc-recruitment",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -441,13 +475,16 @@ région d’évaluation des stocks majeur du détroit de Georgie.
 
 ```{r sog-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
-make.value.table(major_models[[model_ind]],
-                 type = 2,
-                 syr = major_end_yr - num_yrs_tab,
-                 xcaption = ifelse(french, "(ref:sog-recruitment-cap-fr)",
-                                   "(ref:sog-recruitment-cap)"),
-                 xlabel = "tab:sog-recruitment",
-                 translate = french)
+make.value.table(
+  major_models[[model_ind]],
+  type = 2,
+  syr = major_end_yr - num_yrs_tab,
+  xcaption = ifelse(
+    french, "(ref:sog-recruitment-cap-fr)", "(ref:sog-recruitment-cap)"
+  ),
+  xlabel = "tab:sog-recruitment",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -466,13 +503,16 @@ région d’évaluation des stocks majeur de la côte ouest de l’île de Vanco
 
 ```{r wcvi-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
-make.value.table(major_models[[model_ind]],
-                 type = 2,
-                 syr = major_end_yr - num_yrs_tab,
-                 xcaption = ifelse(french, "(ref:wcvi-recruitment-cap-fr)",
-                                   "(ref:wcvi-recruitment-cap)"),
-                 xlabel = "tab:wcvi-recruitment",
-                 translate = french)
+make.value.table(
+  major_models[[model_ind]],
+  type = 2,
+  syr = major_end_yr - num_yrs_tab,
+  xcaption = ifelse(
+    french, "(ref:wcvi-recruitment-cap-fr)", "(ref:wcvi-recruitment-cap)"
+  ),
+  xlabel = "tab:wcvi-recruitment",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -501,11 +541,17 @@ région d’évaluation des stocks majeur de Haida Gwaii.
 
 ```{r hg-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
-make.biomass.depletion.table(major_models[[model_ind]],
-                             syr = major_end_yr - num_yrs_tab,
-                             xcaption = ifelse(french, "(ref:hg-spawning-biomass-depletion-cap-fr)", "(ref:hg-spawning-biomass-depletion-cap)"),
-                             xlabel = "tab:hg-spawning-biomass-depletion",
-                             translate = french)
+make.biomass.depletion.table(
+  major_models[[model_ind]],
+  syr = major_end_yr - num_yrs_tab,
+  xcaption = ifelse(
+    french,
+    "(ref:hg-spawning-biomass-depletion-cap-fr)",
+    "(ref:hg-spawning-biomass-depletion-cap)"
+  ),
+  xlabel = "tab:hg-spawning-biomass-depletion",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -526,13 +572,17 @@ Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 ```{r prd-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
-make.biomass.depletion.table(major_models[[model_ind]],
-                             syr = major_end_yr - num_yrs_tab,
-                             xcaption = ifelse(french,
-                                               "(ref:prd-spawning-biomass-depletion-cap-fr)",
-                                               "(ref:prd-spawning-biomass-depletion-cap)"),
-                             xlabel = "tab:prd-spawning-biomass-depletion",
-                             translate = french)
+make.biomass.depletion.table(
+  major_models[[model_ind]],
+  syr = major_end_yr - num_yrs_tab,
+  xcaption = ifelse(
+    french,
+    "(ref:prd-spawning-biomass-depletion-cap-fr)",
+    "(ref:prd-spawning-biomass-depletion-cap)"
+  ),
+  xlabel = "tab:prd-spawning-biomass-depletion",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -553,13 +603,17 @@ Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 ```{r cc-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
-make.biomass.depletion.table(major_models[[model_ind]],
-                             syr = major_end_yr - num_yrs_tab,
-                             xcaption = ifelse(french,
-                                               "(ref:cc-spawning-biomass-depletion-cap-fr)",
-                                               "(ref:cc-spawning-biomass-depletion-cap)"),
-                             xlabel = "tab:cc-spawning-biomass-depletion",
-                             translate = french)
+make.biomass.depletion.table(
+  major_models[[model_ind]],
+  syr = major_end_yr - num_yrs_tab,
+  xcaption = ifelse(
+    french,
+    "(ref:cc-spawning-biomass-depletion-cap-fr)",
+    "(ref:cc-spawning-biomass-depletion-cap)"
+  ),
+  xlabel = "tab:cc-spawning-biomass-depletion",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -580,13 +634,17 @@ Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 ```{r sog-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
-make.biomass.depletion.table(major_models[[model_ind]],
-                             syr = major_end_yr - num_yrs_tab,
-                             xcaption = ifelse(french,
-                                               "(ref:sog-spawning-biomass-depletion-cap-fr)",
-                                               "(ref:sog-spawning-biomass-depletion-cap)"),
-                             xlabel = "tab:sog-spawning-biomass-depletion",
-                             translate = french)
+make.biomass.depletion.table(
+  major_models[[model_ind]],
+  syr = major_end_yr - num_yrs_tab,
+  xcaption = ifelse(
+    french,
+    "(ref:sog-spawning-biomass-depletion-cap-fr)",
+    "(ref:sog-spawning-biomass-depletion-cap)"
+  ),
+  xlabel = "tab:sog-spawning-biomass-depletion",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -607,13 +665,17 @@ Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 ```{r wcvi-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
-make.biomass.depletion.table(major_models[[model_ind]],
-                             syr = major_end_yr - num_yrs_tab,
-                             xcaption = ifelse(french,
-                                               "(ref:wcvi-spawning-biomass-depletion-cap-fr)",
-                                               "(ref:wcvi-spawning-biomass-depletion-cap)"),
-                             xlabel = "tab:wcvi-spawning-biomass-depletion",
-                             translate = french)
+make.biomass.depletion.table(
+  major_models[[model_ind]],
+  syr = major_end_yr - num_yrs_tab,
+  xcaption = ifelse(
+    french,
+    "(ref:wcvi-spawning-biomass-depletion-cap-fr)",
+    "(ref:wcvi-spawning-biomass-depletion-cap)"
+  ),
+  xlabel = "tab:wcvi-spawning-biomass-depletion",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -644,12 +706,16 @@ Notez que la classe des 10 ans est un «groupe plus» qui comprend les poissons 
 
 ```{r ref-points-hg, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
-make.ref.points.table(major_models[[model_ind]],
-                      xcaption = ifelse(french,
-                                        "(ref:ref-points-hg-cap-fr)",
-                                        "(ref:ref-points-hg-cap)"),
-                      xlabel = "tab:ref-points-hg",
-                      translate = french)
+make.ref.points.table(
+  major_models[[model_ind]],
+  xcaption = ifelse(
+    french,
+    "(ref:ref-points-hg-cap-fr)",
+    "(ref:ref-points-hg-cap)"
+  ),
+  xlabel = "tab:ref-points-hg",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -667,12 +733,16 @@ Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-prd, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
-make.ref.points.table(major_models[[model_ind]],
-                      xcaption = ifelse(french,
-                                        "(ref:ref-points-prd-cap-fr)",
-                                        "(ref:ref-points-prd-cap)"),
-                      xlabel = "tab:ref-points-prd",
-                      translate = french)
+make.ref.points.table(
+  major_models[[model_ind]],
+  xcaption = ifelse(
+    french,
+    "(ref:ref-points-prd-cap-fr)",
+    "(ref:ref-points-prd-cap)"
+  ),
+  xlabel = "tab:ref-points-prd",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -690,12 +760,16 @@ Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-cc, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
-make.ref.points.table(major_models[[model_ind]],
-                      xcaption = ifelse(french,
-                                        "(ref:ref-points-cc-cap-fr)",
-                                        "(ref:ref-points-cc-cap)"),
-                      xlabel = "tab:ref-points-cc",
-                      translate = french)
+make.ref.points.table(
+  major_models[[model_ind]],
+  xcaption = ifelse(
+    french,
+    "(ref:ref-points-cc-cap-fr)",
+    "(ref:ref-points-cc-cap)"
+  ),
+  xlabel = "tab:ref-points-cc",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -713,12 +787,16 @@ Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-sog, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
-make.ref.points.table(major_models[[model_ind]],
-                      xcaption = ifelse(french,
-                                        "(ref:ref-points-sog-cap-fr)",
-                                        "(ref:ref-points-sog-cap)"),
-                      xlabel = "tab:ref-points-sog",
-                      translate = french)
+make.ref.points.table(
+  major_models[[model_ind]],
+  xcaption = ifelse(
+    french,
+    "(ref:ref-points-sog-cap-fr)",
+    "(ref:ref-points-sog-cap)"
+  ),
+  xlabel = "tab:ref-points-sog",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -736,12 +814,16 @@ Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 ```{r ref-points-wcvi, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
-make.ref.points.table(major_models[[model_ind]],
-                      xcaption = ifelse(french,
-                                        "(ref:ref-points-wcvi-cap-fr)",
-                                        "(ref:ref-points-wcvi-cap)"),
-                      xlabel = "tab:ref-points-wcvi",
-                      translate = french)
+make.ref.points.table(
+  major_models[[model_ind]],
+  xcaption = ifelse(
+    french,
+    "(ref:ref-points-wcvi-cap-fr)",
+    "(ref:ref-points-wcvi-cap)"
+  ),
+  xlabel = "tab:ref-points-wcvi",
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -873,34 +955,40 @@ les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse au niveaux $P >= 50
 \setlength{\tabcolsep}{3.75pt}
 
 ```{r decision-prd, results = 'asis', echo = FALSE}
-decision_tables_mp(mp.prd,
-                   xcaption = ifelse(french,
-                                     "(ref:decision-prd-cap-fr)",
-                                     "(ref:decision-prd-cap)"),
-                   xlabel = "tab:decision-prd",
-                   translate = french)
+decision_tables_mp(
+  mp.prd,
+  xcaption = ifelse(
+    french, "(ref:decision-prd-cap-fr)", "(ref:decision-prd-cap)"
+  ),
+  xlabel = "tab:decision-prd",
+  translate = french
+)
 ```
 
 \clearpage
 
 ```{r decision-cc, results = 'asis', echo = FALSE}
-decision_tables_mp(mp.cc,
-                   xcaption = ifelse(french,
-                                     "(ref:decision-cc-cap-fr)",
-                                     "(ref:decision-cc-cap)"),
-                   xlabel = "tab:decision-cc",
-                   translate = french)
+decision_tables_mp(
+  mp.cc,
+  xcaption = ifelse(
+    french, "(ref:decision-cc-cap-fr)", "(ref:decision-cc-cap)"
+  ),
+  xlabel = "tab:decision-cc",
+  translate = french
+)
 ```
 
 \clearpage
 
 ```{r decision-sog, results = 'asis', echo = FALSE}
-decision_tables_mp(mp.sog,
-                   xcaption = ifelse(french,
-                                     "(ref:decision-sog-cap-fr)",
-                                     "(ref:decision-sog-cap)"),
-                   xlabel = "tab:decision-sog",
-                   translate = french)
+decision_tables_mp(
+  mp.sog,
+  xcaption = ifelse(
+    french, "(ref:decision-sog-cap-fr)", "(ref:decision-sog-cap)"
+  ),
+  xlabel = "tab:decision-sog",
+  translate = french
+)
 ```
 
 \clearpage
@@ -909,34 +997,44 @@ decision_tables_mp(mp.sog,
 alloc <- tibble::tribble(
   ~"MP and allocation", ~"$P(\\SB_t > 0.3\\SB_0)$", ~"$P(\\SB_t > 0.6\\SB_0)$", ~"AAV", ~"$\\overline{C}$", ~"$P(C_t < 650\\,\\text{t})$", ~"FB", ~"Seine", ~"Gillnet",
   "NoFish_FSC", "0.81", "0.45", "0.00", "0.14", "1.00", "-", "-", "-",
-  "HS30-60_HR20_alloc (no adjust)", "0.72", "0.26", "79.18", "10.26", "0.33",	"0.21", "0.40", "0.39",
+  "HS30-60_HR20_alloc (no adjust)", "0.72", "0.26", "79.18", "10.26", "0.33", "0.21", "0.40", "0.39",
   "HS30-60_HR20_alloc (0.1, 0.9)", "0.72", "0.26", "79.44", "10.35", "0.33", "0.21", "0.08", "0.71",
-  "HS30-60_HR20_alloc (0.9, 0.1)", "0.72", "0.26", "78.93", "10.20", "0.33", "0.21", "0.71", "0.08") %>%
-  mutate(`MP and allocation` = gsub(pattern = "_", replacement = "\\\\_",
-                                    x = `MP and allocation`) )
-names(alloc)[names(alloc) == "MP and allocation"] <- 
+  "HS30-60_HR20_alloc (0.9, 0.1)", "0.72", "0.26", "78.93", "10.20", "0.33", "0.21", "0.71", "0.08"
+) %>%
+  mutate(`MP and allocation` = gsub(
+    pattern = "_", replacement = "\\\\_",
+    x = `MP and allocation`
+  ))
+names(alloc)[names(alloc) == "MP and allocation"] <-
   latex.bold(en2fr("MP and allocation", translate = french))
-names(alloc)[names(alloc) == "AAV"] <- 
+names(alloc)[names(alloc) == "AAV"] <-
   en2fr("AAV", translate = french)
-names(alloc)[names(alloc) == "FB"] <- 
+names(alloc)[names(alloc) == "FB"] <-
   latex.bold(en2fr("FB", translate = french))
-names(alloc)[names(alloc) == "Seine"] <- 
+names(alloc)[names(alloc) == "Seine"] <-
   latex.bold(en2fr("Seine", translate = french))
-names(alloc)[names(alloc) == "Gillnet"] <- 
+names(alloc)[names(alloc) == "Gillnet"] <-
   latex.bold(en2fr("Gillnet", translate = french))
 top_head <- c(" " = 1, "Objectives" = 5, " " = 3)
 names(top_head) <- c(" ", en2fr("Objectives", translate = french), " ")
-middle_head <- c(" " = 1, "Conservation" = 1, "Biomass" = 1, "Yield" = 3,
-                 "Final allocation" = 3)
-names(middle_head) <- c(" ", en2fr("Conservation", translate = french),
-                        en2fr("Biomass", translate = french),
-                        en2fr("Yield", translate = french),
-                        en2fr("Final allocation", translate = french))
+middle_head <- c(
+  " " = 1, "Conservation" = 1, "Biomass" = 1, "Yield" = 3,
+  "Final allocation" = 3
+)
+names(middle_head) <- c(
+  " ", en2fr("Conservation", translate = french),
+  en2fr("Biomass", translate = french),
+  en2fr("Yield", translate = french),
+  en2fr("Final allocation", translate = french)
+)
 n_cols <- ncol(alloc)
-csasdown::csas_table(x = alloc, format = "latex", bold_header = FALSE,
-                     caption = ifelse(french, "(ref:allocation-sog-cap-fr)", 
-                                      "(ref:allocation-sog-cap)"),
-                     align = c("l", rep("c", times = n_cols - 1))) %>%
+csasdown::csas_table(
+  x = alloc, format = "latex", bold_header = FALSE,
+  caption = ifelse(
+    french, "(ref:allocation-sog-cap-fr)", "(ref:allocation-sog-cap)"
+  ),
+  align = c("l", rep("c", times = n_cols - 1))
+) %>%
   add_header_above(middle_head, bold = TRUE) %>%
   add_header_above(top_head, bold = TRUE)
 ```
@@ -944,12 +1042,14 @@ csasdown::csas_table(x = alloc, format = "latex", bold_header = FALSE,
 \clearpage
 
 ```{r decision-wcvi, results = 'asis', echo = FALSE}
-decision_tables_mp_add(mp.wcvi,
-                   xcaption = ifelse(french,
-                                     "(ref:decision-wcvi-cap-fr)",
-                                     "(ref:decision-wcvi-cap)"),
-                   xlabel = "tab:decision-wcvi",
-                   translate = french)
+decision_tables_mp_add(
+  mp.wcvi,
+  xcaption = ifelse(
+    french, "(ref:decision-wcvi-cap-fr)", "(ref:decision-wcvi-cap)"
+  ),
+  xlabel = "tab:decision-wcvi",
+  translate = french
+)
 ```
 
 \setlength{\tabcolsep}{6pt}

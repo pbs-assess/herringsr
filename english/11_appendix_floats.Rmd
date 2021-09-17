@@ -17,12 +17,16 @@ région d’évaluation des stocks mineur de la zone 27.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-a27}
-spawn_index_by_area_table(ps[[en2fr("A27", french)]],
-                          cap = ifelse(french,
-                                       "(ref:spawn-index-a27-cap-fr)",
-                                       "(ref:spawn-index-a27-cap)"),
-                          first_yr = minor_end_yr-num_yrs_tab,
-                          translate = french)
+spawn_index_by_area_table(
+        ps[[en2fr("A27", french)]],
+        cap = ifelse(
+                french,
+                "(ref:spawn-index-a27-cap-fr)",
+                "(ref:spawn-index-a27-cap)"
+        ),
+        first_yr = minor_end_yr - num_yrs_tab,
+        translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -42,12 +46,14 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 \needspace{0.35\textheight}
 
 ```{r spawn-index-a2w}
-spawn_index_by_area_table(ps[[en2fr("A2W", french)]],
-                          cap = ifelse(french,
-                                       "(ref:spawn-index-a2w-cap-fr)",
-                                       "(ref:spawn-index-a2w-cap)"),
-                          first_yr = minor_end_yr-num_yrs_tab,
-                          translate = french)
+spawn_index_by_area_table(
+  ps[[en2fr("A2W", french)]],
+  cap = ifelse(
+          french, "(ref:spawn-index-a2w-cap-fr)", "(ref:spawn-index-a2w-cap)"
+  ),
+  first_yr = minor_end_yr - num_yrs_tab,
+  translate = french
+)
 ```
 
 (ref:spawn-index-a10-cap) Area 10 special area: 
@@ -65,12 +71,14 @@ Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 \needspace{0.35\textheight}
 
 ```{r spawn-index-a10}
-spawn_index_by_area_table(ps[[en2fr("A10", french)]],
-                          cap = ifelse(french,
-                                       "(ref:spawn-index-a10-cap-fr)",
-                                       "(ref:spawn-index-a10-cap)"),
-                          first_yr = minor_end_yr-num_yrs_tab,
-                          translate = french)
+spawn_index_by_area_table(
+  ps[[en2fr("A10", french)]],
+  cap = ifelse(
+          french, "(ref:spawn-index-a10-cap-fr)", "(ref:spawn-index-a10-cap)"
+  ),
+  first_yr = minor_end_yr - num_yrs_tab,
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}
@@ -94,12 +102,13 @@ Voir la figure \@ref(fig:spawn-section-cc) pour la description.
 
 ```{r spawn-section-a27, fig.asp=ifelse(french, 0.67, 0.67), fig.cap = ifelse(french, "(ref:spawn-section-a27-cap-fr)", "(ref:spawn-section-a27-cap)")}
 plot_spawn_section(
-        model = NA,
-        data_file = file.path(data_path, "spawn-yr-sec-a27.csv"),
-        sections = NA,
-        yr_range = c(minor_start_yr_plot, minor_end_yr),
-        scale = FALSE,
-        translate = french)
+  model = NA,
+  data_file = file.path(data_path, "spawn-yr-sec-a27.csv"),
+  sections = NA,
+  yr_range = c(minor_start_yr_plot, minor_end_yr),
+  scale = FALSE,
+  translate = french
+)
 ```
 
 (ref:minor-catch-cap) Total landed Pacific Herring catch
@@ -113,9 +122,11 @@ milliers de tonnes (t) de hareng du Pacifique de
 Voir la figure \@ref(fig:major-catch) pour la description.
 
 ```{r minor-catch, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-catch-cap-fr)", "(ref:minor-catch-cap)")}
-plot_catch(df = minor_catch,
-           xlim = c(minor_start_yr_plot, minor_end_yr),
-           translate = french)
+plot_catch(
+  df = minor_catch,
+  xlim = c(minor_start_yr_plot, minor_end_yr),
+  translate = french
+)
 ```
 
 (ref:minor-incidental-cap) Incidental Pacific Herring mortality
@@ -129,9 +140,11 @@ de `r min(ic_yrs)` à `r max(ic_yrs)` dans les RES mineurs.
 Voir la figure \@ref(fig:major-incidental) pour la description.
 
 ```{r minor-incidental, fig.asp=ifelse(french, 0.35, 0.35), fig.cap = ifelse(french, "(ref:minor-incidental-cap-fr)", "(ref:minor-incidental-cap)"), eval = show_ic_figures}
-plot_ic(df = ic %>% filter(Region %in% regions$Region[regions$Type == "Minor"]),
-        xlim = c(min(ic_yrs), max(ic_yrs)),
-        translate = french)
+plot_ic(
+  df = ic %>% filter(Region %in% regions$Region[regions$Type == "Minor"]),
+  xlim = c(min(ic_yrs), max(ic_yrs)),
+  translate = french
+)
 ```
 
 (ref:minor-wa-cap) Mean weight-at-age for Pacific Herring in kilograms (kg) 
@@ -155,13 +168,15 @@ La classe âge-`r age_plus` comprend les poissons âgés de `r age_plus` et plus
 Note: les axes verticaux sont rognés de `r f(wa_ylim[1], 2)` à `r f(wa_ylim[2], 2)` kg.
 
 ```{r minor-wa, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-wa-cap-fr)", "(ref:minor-wa-cap)")}
-plot_wa(df = minor_wa,
-        circle_age = age_highlight,
-        xlim = c(minor_start_yr_plot, minor_end_yr),
-        ylim = wa_ylim,
-        n_roll = nRollWA,
-        major = FALSE,
-        translate = french)
+plot_wa(
+  df = minor_wa,
+  circle_age = age_highlight,
+  xlim = c(minor_start_yr_plot, minor_end_yr),
+  ylim = wa_ylim,
+  n_roll = nRollWA,
+  major = FALSE,
+  translate = french
+)
 ```
 
 (ref:minor-pa-cap) Proportion-at-age for Pacific Herring from
@@ -174,13 +189,14 @@ dans les RES mineurs.
 Voir la figure \@ref(fig:major-pa) pour la description.
 
 ```{r minor-pa, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-pa-cap-fr)", "(ref:minor-pa-cap)")}
-plot_pa(df = minor_pa,
-        age_plus = age_plus,
-        conf = ci_level,
-        xlim = c(minor_start_yr_plot, minor_end_yr),
-        ylim = c(1, age_plus),
-        translate = french)
-
+plot_pa(
+  df = minor_pa,
+  age_plus = age_plus,
+  conf = ci_level,
+  xlim = c(minor_start_yr_plot, minor_end_yr),
+  ylim = c(1, age_plus),
+  translate = french
+)
 ```
 
 (ref:minor-spawn-index-cap) Spawn index in thousands of tonnes (t)
@@ -194,10 +210,12 @@ de tonnes pour le hareng du Pacifique de
 Voir la figure \@ref(fig:major-spawn-index) pour la description.
 
 ```{r minor-spawn-index, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-spawn-index-cap-fr)", "(ref:minor-spawn-index-cap)")}
-plot_spawn_ind(df = minor_surv,
-               yr_range = c(minor_start_yr_plot, minor_end_yr),
-               new_surv_yr = new_surv_yr,
-               translate = french)
+plot_spawn_ind(
+  df = minor_surv,
+  yr_range = c(minor_start_yr_plot, minor_end_yr),
+  new_surv_yr = new_surv_yr,
+  translate = french
+)
 ```
 
 (ref:a10-map-cap) Sections (Sec) included in the Pacific Herring special area,
@@ -217,7 +235,9 @@ qui sont en dehors des limites de la RES.
 Unités: kilomètres (km).
 
 ```{r a10-map, fig.cap = ifelse(french, "(ref:a10-map-cap-fr)", "(ref:a10-map-cap)"), out.width = "100%"}
-knitr::include_graphics(here::here(ifelse(french, "figures/A10_fr.png", "figures/A10.png")))
+knitr::include_graphics(
+  here::here(ifelse(french, "figures/A10_fr.png", "figures/A10.png"))
+)
 ```
 
 <!-- (ref:special-catch-cap) Time series of total landed Pacific Herring catch in -->
@@ -247,13 +267,15 @@ dans la zone spéciale, zone 10.
 Voir la figure \@ref(fig:minor-wa) pour la description.
 
 ```{r special-wa, fig.asp=ifelse(french, 0.35, 0.35), fig.cap = ifelse(french, "(ref:special-wa-cap-fr)", "(ref:special-wa-cap)")}
-plot_wa(df = special_wa,
-        circle_age = age_highlight,
-        xlim = c(special_start_yr_plot, special_end_yr),
-        ylim = wa_ylim,
-        n_roll = nRollWA,
-        major = FALSE,
-        translate = french)
+plot_wa(
+  df = special_wa,
+  circle_age = age_highlight,
+  xlim = c(special_start_yr_plot, special_end_yr),
+  ylim = wa_ylim,
+  n_roll = nRollWA,
+  major = FALSE,
+  translate = french
+)
 ```
 
 (ref:special-pa-cap) Proportion-at-age for Pacific Herring from
@@ -266,13 +288,14 @@ dans la zone spéciale, zone 10.
 Voir la figure \@ref(fig:major-pa) pour la description.
 
 ```{r special-pa, fig.asp=ifelse(french, 0.35, 0.35), fig.cap = ifelse(french, "(ref:special-pa-cap-fr)", "(ref:special-pa-cap)")}
-plot_pa(df = special_pa,
-        age_plus = age_plus,
-        conf = ci_level,
-        xlim = c(special_start_yr_plot, special_end_yr),
-        ylim = c(1, age_plus),
-        translate = french)
-
+plot_pa(
+  df = special_pa,
+  age_plus = age_plus,
+  conf = ci_level,
+  xlim = c(special_start_yr_plot, special_end_yr),
+  ylim = c(1, age_plus),
+  translate = french
+)
 ```
 
 (ref:special-spawn-index-cap) Spawn index in thousands of tonnes (t) for Pacific Herring from `r minor_start_yr_plot` to `r minor_end_yr`
@@ -285,10 +308,12 @@ dans la zone spéciale, zone 10.
 Voir la figure \@ref(fig:major-spawn-index) pour la description.
 
 ```{r special-spawn-index, fig.asp=ifelse(french, 0.4, 0.4), fig.cap = ifelse(french, "(ref:special-spawn-index-cap-fr)", "(ref:special-spawn-index-cap)")}
-plot_spawn_ind(df = special_surv,
-               yr_range = c(special_start_yr_plot, special_end_yr),
-               new_surv_yr = new_surv_yr,
-               translate = french)
+plot_spawn_ind(
+  df = special_surv,
+  yr_range = c(special_start_yr_plot, special_end_yr),
+  new_surv_yr = new_surv_yr,
+  translate = french
+)
 ```
 
 \afterpage{\clearpage}

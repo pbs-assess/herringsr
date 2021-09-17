@@ -20,8 +20,7 @@ Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-priors-pos
 
 ```{r sog-priors-posts, fig.cap=ifelse(french, "(ref:sog-priors-posts-cap-fr)", "(ref:sog-priors-posts-cap)")}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
-make.priors.posts.plot(major_models[[model_ind]],
-                       priors.only = FALSE)
+make.priors.posts.plot(major_models[[model_ind]], priors.only = FALSE)
 ```
 
 (ref:sog-traces-cap) Strait of Georgia SAR:
@@ -34,8 +33,7 @@ dans la région d’évaluation des stocks majeur du détroit de Georgie.
 Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r sog-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-traces-cap-fr)", "(ref:sog-traces-cap)")}
-make.traces.plot(major_models[[model_ind]],
-                 axis.lab.freq = 200)
+make.traces.plot(major_models[[model_ind]], axis.lab.freq = 200)
 ```
 
 (ref:sog-autocor-cap) Strait of Georgia SAR:
@@ -61,9 +59,13 @@ les paramètres estimés pour le hareng du Pacifique dans la region d’évaluat
 Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r sog-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-pairs-cap-fr)", "(ref:sog-pairs-cap)")}
-make.pairs.plot(major_models[[model_ind]],
-                params=c("ro", "h", "m", "rbar", "rinit", "q1", "q2", "sel1",
-                         "selsd1", "sel2", "selsd2", "sel3", "selsd3"))
+make.pairs.plot(
+  major_models[[model_ind]],
+  params=c(
+    "ro", "h", "m", "rbar", "rinit", "q1", "q2", "sel1", "selsd1", "sel2",
+    "selsd2", "sel3", "selsd3"
+  )
+)
 ```
 
 (ref:sog-biomass-retro-cap) Strait of Georgia SAR:
@@ -81,10 +83,12 @@ région d'évaluation des stocks majeur du détroit de Georgie.
 Voir la figure \@ref(fig:hg-biomass-retro) pour la description.
 
 ```{r sog-biomass-retro, fig.asp=0.65, fig.cap=ifelse(french, "(ref:sog-biomass-retro-cap-fr)", "(ref:sog-biomass-retro-cap)")}
-biomass.plot.mpd(major_models[[model_ind]],
-                 xlim = c(new_surv_yr, assess_yr),
-                 df = major_surv %>% filter(region == major_regions_full[model_ind]),
-                 translate = french)
+biomass.plot.mpd(
+  major_models[[model_ind]],
+  xlim = c(new_surv_yr, assess_yr),
+  df = major_surv %>% filter(region == major_regions_full[model_ind]),
+  translate = french
+)
 ```
 
 (ref:sog-sr-cap) Strait of Georgia SAR:
@@ -101,9 +105,11 @@ pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du
 Voir la figure \@ref(fig:hg-sr) pour la description.
 
 ```{r sog-sr, fig.asp=0.4, fig.cap=ifelse(french, "(ref:sog-sr-cap-fr)", "(ref:sog-sr-cap)")}
-plot_bh(major_models[[model_ind]],
-        regions=major_regions_full[[model_ind]],
-        translate=french)
+plot_bh(
+  major_models[[model_ind]],
+  regions=major_regions_full[[model_ind]],
+  translate=french
+)
 ```
 
 (ref:hcr-sog-cap) Strait of Georgia SAR:
@@ -115,32 +121,42 @@ See Figure \@ref(fig:hcr-prd) for description.
 ```{r hcr-sog, fig.asp=0.75, fig.cap="(ref:hcr-sog-cap)"}
 region <- "SoG"
 probs <- confidence_vals 
-cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[1]],
-                            sbt.sog,
-                            mp = mp.sog[1,]$label,
-                            region = region,
-                            probs = probs),
-                   plot_hcr(mp.lst.sog[[1]][[2]],
-                            sbt.sog,
-                            mp = mp.sog[2,]$label,
-                            region = region,
-                            probs = probs),
-                   plot_hcr(mp.lst.sog[[1]][[3]],
-                            sbt.sog,
-                            mp = mp.sog[3,]$label,
-                            region = region,
-                            probs = probs,
-                            show.x.axes = TRUE),
-                   plot_hcr(mp.lst.sog[[1]][[4]],
-                            sbt.sog,
-                            mp = mp.sog[4,]$label,
-                            region = region,
-                            probs = probs,
-                            show.x.axes = TRUE),
-                   nrow = 2,
-                   ncol = 2,
-                   align = "hv",
-                   axis = "tblr")
+cowplot::plot_grid(
+  plot_hcr(
+    mp.lst.sog[[1]][[1]],
+    sbt.sog,
+    mp = mp.sog[1,]$label,
+    region = region,
+    probs = probs
+  ),
+  plot_hcr(
+    mp.lst.sog[[1]][[2]],
+    sbt.sog,
+    mp = mp.sog[2,]$label,
+    region = region,
+    probs = probs
+  ),
+  plot_hcr(
+    mp.lst.sog[[1]][[3]],
+    sbt.sog,
+    mp = mp.sog[3,]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    mp.lst.sog[[1]][[4]],
+    sbt.sog,
+    mp = mp.sog[4,]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  nrow = 2,
+  ncol = 2,
+  align = "hv",
+  axis = "tblr"
+)
 ```
 
 (ref:hcr-sog-2-cap) Strait of Georgia SAR:
@@ -152,31 +168,41 @@ See Figure \@ref(fig:hcr-prd) for description.
 ```{r hcr-sog-2, fig.asp=0.75, fig.cap="(ref:hcr-sog-2-cap)"}
 region <- "SoG"
 probs <- confidence_vals 
-cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[5]],
-                            sbt.sog,
-                            mp = mp.sog[5,]$label,
-                            region = region,
-                            probs = probs),
-                   plot_hcr(mp.lst.sog[[1]][[6]],
-                            sbt.sog,
-                            mp = mp.sog[6,]$label,
-                            region = region,
-                            probs = probs),
-                   plot_hcr(mp.lst.sog[[1]][[7]],
-                            sbt.sog,
-                            mp = mp.sog[7,]$label,
-                            region = region,
-                            probs = probs,
-                            show.x.axes = TRUE),
-                   plot_hcr(mp.lst.sog[[1]][[8]],
-                            sbt.sog,
-                            mp = mp.sog[8,]$label,
-                            region = region,
-                            probs = probs,
-                            show.x.axes = TRUE),
-                   nrow = 2,
-                   ncol = 2,
-                   align = c("v", "h"))
+cowplot::plot_grid(
+  plot_hcr(
+    mp.lst.sog[[1]][[5]],
+    sbt.sog,
+    mp = mp.sog[5,]$label,
+    region = region,
+    probs = probs
+  ),
+  plot_hcr(
+    mp.lst.sog[[1]][[6]],
+    sbt.sog,
+    mp = mp.sog[6,]$label,
+    region = region,
+    probs = probs
+  ),
+  plot_hcr(
+    mp.lst.sog[[1]][[7]],
+    sbt.sog,
+    mp = mp.sog[7,]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    mp.lst.sog[[1]][[8]],
+    sbt.sog,
+    mp = mp.sog[8,]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  nrow = 2,
+  ncol = 2,
+  align = c("v", "h")
+)
 ```
 
 (ref:hcr-sog-3-cap) Strait of Georgia SAR:
@@ -188,13 +214,17 @@ See Figure \@ref(fig:hcr-prd) for description.
 ```{r hcr-sog-3, fig.asp=0.75, fig.cap="(ref:hcr-sog-3-cap)"}
 region <- "SoG"
 probs <- confidence_vals 
-cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[9]],
-                            sbt.sog,
-                            mp = mp.sog[9,]$label,
-                            region = region,
-                            probs = probs,
-                            show.x.axes = TRUE),
-                   nrow = 1,
-                   ncol = 1,
-                   align = c("v", "h"))
+cowplot::plot_grid(
+  plot_hcr(
+    mp.lst.sog[[1]][[9]],
+    sbt.sog,
+    mp = mp.sog[9,]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  nrow = 1,
+  ncol = 1,
+  align = c("v", "h")
+)
 ```
