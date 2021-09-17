@@ -253,12 +253,31 @@ plot_a_multi <- plot_scaled_abundance(major_surv %>% filter(region == major_regi
                                    surv_type,
                                    new_surv_yr = new_surv_yr,
                                    xlim = xlim_all,
+                                   show_x_axis = TRUE,
+                                   y_axis_label_newline_length = 20,
+                                   x_axis_position = "bottom",
+                                   translate = french)
+
+plot_a_multi_x_down <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                   major_models[[model_ind]],
+                                   surv_type,
+                                   new_surv_yr = new_surv_yr,
+                                   xlim = xlim_all,
+                                   show_x_axis = TRUE,
                                    y_axis_label_newline_length = 20,
                                    x_axis_position = "bottom",
                                    translate = french)
 
 plot_b_multi <- plot_natural_mortality(major_models[[model_ind]],
                                     xlim = xlim_all,
+                                    y_max = M_max,
+                                    y_axis_label_newline_length = 20,
+                                    x_axis_position = "bottom",
+                                    translate = french)
+
+plot_b_multi_x_down <- plot_natural_mortality(major_models[[model_ind]],
+                                    xlim = xlim_all,
+                                    show_x_axis = TRUE,
                                     y_max = M_max,
                                     y_axis_label_newline_length = 20,
                                     x_axis_position = "bottom",
@@ -304,9 +323,9 @@ plot_f_multi <- plot_biomass_phase(major_models[[model_ind]],
                                 translate = french)
 
 
-storyboard_multi_ppt_h <- cowplot::plot_grid(plot_a_multi,
-                   plot_b_multi,
-                   plot_c_multi_x_none,
+storyboard_multi_ppt_h <- cowplot::plot_grid(plot_a_multi_x_down,
+                   plot_b_multi_x_down,
+                   plot_c_multi_x_down,
                    plot_d_multi,
                    plot_e_multi,
                    plot_f_multi,
