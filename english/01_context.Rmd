@@ -14,8 +14,8 @@ Since 2017, the structure of the SCA model has not changed.
 Historically the model has used the estimated terminal year recruits when projecting the model one year ahead.
 The change was made to use average recruitment generated from a normal distribution. -->
 
-In 2016, DFO committed to renewing the current management framework
-to address a range of challenges facing Pacific Herring stocks and fisheries in BC.
+In 2016, DFO committed to renewing the current management framework to
+address a range of challenges facing Pacific Herring stocks and fisheries in BC.
 Renewal of the management framework includes engaging in
 a management strategy evaluation (MSE) process to evaluate
 the performance of candidate management procedures against
@@ -23,7 +23,9 @@ a range of hypotheses about future stock and fishery dynamics.
 As part of the MSE process,
 a CSAS regional peer review occurred July 25 and 26, 2018,
 where performance of Pacific Herring management procedures (MPs) were assessed
-against conservation objectives for the Strait of Georgia (SoG) and West Coast of Vancouver Island (WCVI) stock assessment regions [@dfo2019a].
+against conservation objectives for the
+Strait of Georgia (SoG) and West Coast of Vancouver Island (WCVI)
+stock assessment regions [@dfo2019a].
 Steps included operating model (OM) development,
 fitting the OM to Pacific Herring stock and fishery monitoring data (OM conditioning), and
 closed-loop simulations of MP performance for alternative future natural mortality scenarios.
