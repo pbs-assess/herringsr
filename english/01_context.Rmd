@@ -9,8 +9,7 @@ Also introduced in the 2017 assessment was
 the estimation of stock productivity and current stock status
 relative to the new limit reference point (LRP) of $0.3\SB_0$ [@kronlund2017],
 where $\SB_0$ is estimated unfished spawning biomass.
-The structure of the 2017 model was not changed for the
-2018, 2019, or 2020 stock assessments.
+Since 2017, the structure of the SCA model has not changed.
 <!-- In 2020 an update was made to the forecasting model.
 Historically the model has used the estimated terminal year recruits when projecting the model one year ahead.
 The change was made to use average recruitment generated from a normal distribution. -->
