@@ -248,14 +248,14 @@ cowplot::plot_grid(plot_a_hg,
 reg <- regions$Region
 region_abbreviation <-reg[model_ind]
 
-plot_a_multi <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+plot_a_multi_x_up <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                    major_models[[model_ind]],
                                    surv_type,
                                    new_surv_yr = new_surv_yr,
                                    xlim = xlim_all,
-                                   show_x_axis = FALSE,
+                                   show_x_axis = TRUE, 
                                    y_axis_label_newline_length = 20,
-                                   x_axis_position = "bottom",
+                                   x_axis_position = "top",
                                    translate = french)
 
 plot_a_multi_x_down <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
@@ -268,12 +268,12 @@ plot_a_multi_x_down <- plot_scaled_abundance(major_surv %>% filter(region == maj
                                    x_axis_position = "bottom",
                                    translate = french)
 
-plot_b_multi <- plot_natural_mortality(major_models[[model_ind]],
+plot_b_multi_x_up <- plot_natural_mortality(major_models[[model_ind]],
                                     xlim = xlim_all,
                                     y_max = M_max,
                                     y_axis_label_newline_length = 20,
-                                    show_x_axis = FALSE,
-                                    #x_axis_position = "bottom",
+                                    show_x_axis = TRUE,
+                                    x_axis_position = "top",
                                     translate = french)
 
 plot_b_multi_x_down <- plot_natural_mortality(major_models[[model_ind]],
@@ -337,8 +337,8 @@ storyboard_multi_ppt_h <- cowplot::plot_grid(plot_a_multi_x_down,
 
 ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
 
- shortstory_ppt <- cowplot::plot_grid(plot_a_multi,
-                   plot_b_multi,
+ shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
+                   plot_b_multi_x_up,
                    plot_c_multi_x_down,
                    plot_d_multi,
                    ncol = 2,
