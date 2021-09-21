@@ -910,7 +910,7 @@ between simulated TAC allocation procedures (Table \@ref(tab:allocation-sog)).
 That is, the simulations show that movement of TAC between the roe fishery fleets
 does not appear to impact the probability 
 of avoiding the LRP over the 15-year simulation period.
-Note that these results consider current stock status of SoG herring, and
+Note that these results consider recent stock status of SoG herring, and
 that due to structure of the current herring simulation model,
 the simulation approach does not provide insight into 
 year-to-year changes in age composition, spawn distribution, or spawning behaviour.
