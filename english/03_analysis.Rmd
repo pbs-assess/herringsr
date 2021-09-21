@@ -888,10 +888,9 @@ under all three scenarios [@dfo2021b].
 
 In 2021, we investigated the sensitivity of SoG MP performance to changes in 
 allocation of TAC between the roe seine and roe gillnet fleets.
-The recent 20 year average catches from
+The recent 20 year average catches show 
 the food and bait, roe seine, and roe gillnet 
-fleets show a roughly even allocation between these fleets
-(21%, 40%, and 39% respectively)
+fleets take 21%, 40%, and 39% of the catch
 and represents the status quo allocation used for this analysis.
 
 We consider two changes in allocation of TAC between roe seine and roe gillnet fleets:
@@ -915,6 +914,10 @@ Note that these results consider current stock status of SoG herring, and
 that due to structure of the current herring simulation model,
 the simulation approach does not provide insight into 
 year-to-year changes in age composition, spawn distribution, or spawning behaviour.
+However, these results do indicate that given the overlap in catch at age 
+between the two fleets, the harvest rates applied to the population and the 
+age structure of the population, the differences in age and size selectivity 
+between the two gears is not large enough to impact the status of the population.
 Finally, probability values in Table \@ref(tab:allocation-sog)
 should not be directly compared to those in Table \@ref(tab:decision-sog)
 due to differences in assessment method implemented in the simulations
