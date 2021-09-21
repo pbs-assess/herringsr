@@ -523,9 +523,9 @@ Kitasu Bay/ East Higgins (Section 067; Figure \@ref(fig:spawn-section-cc)).
 The majority of Area 07 spawn in 2021 appeared concentrated in one section: Thompson/Stryker (Section 074).
 Occurrence of spawn in Thompson/Stryker in 2020 and 2021
 represents the first significant spawns for this section in many years.
-The recent drop in spawn observations in Spiller Channel (Sections 072 and 078) brings the spawn biomass
-down to the low levels observed around 2010.
-The mechanisms driving the volatility of spawn in this area in not well understood.
+The decline in spawn observations in 2020 and 2021 in Spiller Channel (Sections 072 and 078) brings 
+the spawn biomass in those Sections down to the low levels observed around 2010 (Figure \@ref(fig:storyboard-cc)d).
+The mechanisms driving fluctuations of spawn throughout the Central Coast are not well understood.
 
 A fixed cutoff HCR was implemented in 1986, and
 from 1986 to 2007 the effective harvest rate $U_t$ is estimated to fluctuate
@@ -818,9 +818,9 @@ include performance metrics for the four core objectives.
 The CC stock persisted in a low biomass, low productivity state from
 approximately 2005 to 2014.
 An increasing trend has been observed in recent years,
-and overall the stock shows more volatility
-(i.e., large increases/decreases in spawn abundance;
-Figure \@ref(fig:storyboard-cc)a) than was observed prior to 2005.
+and overall the stock shows 
+larger increases/ decreases in spawn abundance
+(Figure \@ref(fig:storyboard-cc)a) than was observed prior to 2005.
 
 Similar to PRD, we updated the CC OM in summer 2021 using data from 2019 and 2020.
 That is, we updated the MSE operating model conditioning to include
