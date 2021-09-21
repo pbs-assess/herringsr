@@ -519,10 +519,13 @@ in the years between 2019/2020 and 2020/2021.
 An examination of spawn biomass by Herring Section shows
 the recent decline in herring spawn to have largely occurred in
 Spiller Channel (Sections 072 and 078) and
-Kitasu Bay (Section 067; Figure \@ref(fig:spawn-section-cc)).
-The majority of spawn in 2021 occurred in Thompson/Stryker (Section 074).
+Kitasu Bay/ East Higgins (Section 067; Figure \@ref(fig:spawn-section-cc)).
+The majority of Area 07 spawn in 2021 appeared concentrated in one section: Thompson/Stryker (Section 074).
 Occurrence of spawn in Thompson/Stryker in 2020 and 2021
 represents the first significant spawns for this section in many years.
+The recent drop in spawn observations in Spiller Channel (Sections 072 and 078) brings the spawn biomass
+down to the low levels observed around 2010.
+The mechanisms driving the volatility of spawn in this area in not well understood.
 
 A fixed cutoff HCR was implemented in 1986, and
 from 1986 to 2007 the effective harvest rate $U_t$ is estimated to fluctuate
