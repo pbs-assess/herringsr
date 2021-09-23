@@ -502,7 +502,8 @@ For example, the decline in spawn index (and estimated spawning biomass) to
 the historic lows around 2008 followed an increasing trend in
 estimated natural mortality through the same period.
 Estimated natural mortality moderated around 2008,
-which was followed by an increase in spawn index (and estimated spawning biomass) 
+which was followed by an increase in spawn index
+(and estimated spawning biomass) 
 until 2017 whereupon natural mortality ceased declining.
 Recruitment deviations were slightly negative
 (i.e., lower than predicted by the stock-recruit function)
@@ -520,12 +521,15 @@ An examination of spawn biomass by Herring Section shows
 the recent decline in herring spawn to have largely occurred in
 Spiller Channel (Sections 072 and 078) and
 Kitasu Bay/East Higgins (Section 067; Figure \@ref(fig:spawn-section-cc)).
-The majority of Area 07 spawn in 2021 appeared concentrated in one section: Thompson/Stryker (Section 074).
+The majority of Area 07 spawn in 2021 appears concentrated in
+Thompson/Stryker (Section 074).
 Occurrence of spawn in Thompson/Stryker in 2020 and 2021
 represents the first significant spawns for this section in many years.
 The decline in spawn observations in 2020 and 2021 in Spiller Channel (Sections 072 and 078) brings 
-the spawn biomass in those Sections down to the low levels observed around 2010 (Figure \@ref(fig:storyboard-cc)d).
-The mechanisms driving fluctuations of spawn throughout the Central Coast are not well understood.
+the spawn biomass in those Sections down to the low levels observed around 2010
+(Figure \@ref(fig:storyboard-cc)d).
+The mechanisms driving fluctuations of spawn throughout the Central Coast
+are not well understood.
 
 A fixed cutoff HCR was implemented in 1986, and
 from 1986 to 2007 the effective harvest rate $U_t$ is estimated to fluctuate
