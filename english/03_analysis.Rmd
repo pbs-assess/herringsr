@@ -178,15 +178,16 @@ Some fisheries and aquaculture activities in BC cause
 incidental mortality to Pacific Herring.
 Similar to SOK harvest as well as FSC and recreational catch,
 incidental mortality is currently only indirectly accounted for 
-in the Pacific Herring stock assessment through estimating annual rates of natural mortality, 
+in Pacific Herring stock assessment by
+estimating annual rates of natural mortality, 
 and is considered minor relative to commercial harvest.
-However, data for incidental mortality from finfish aquaculture
-has been made available to the Herring Science Team. 
-We are including newly available information on estimated incidental mortality in
-aquaculture activities by SAR from `r min(ic_yrs)` to `r max(ic_yrs)`
-(Figure \@ref(fig:major-incidental)).
 
-Incidental mortality data are reported by Pacific Fishery Management Area (PFMA)
+This year we include newly available data for incidental mortality in
+finfish aquaculture activities
+by SAR from `r min(ic_yrs)` to `r max(ic_yrs)`
+(Figure \@ref(fig:major-incidental)).
+Note that incidental mortality data are reported by
+Pacific Fishery Management Area (PFMA)
 which are analogous to Statistical Areas, but
 PFMAs are larger and can extend beyond SAR boundaries.
 Data indicate the number of Pacific Herring dead and released,
@@ -200,12 +201,6 @@ with the following caveats:
 
 4. "Herring-like" fish are assumed to be herring
 when decomposition hinders identification.
-
-<!-- TODO: Consider adding text for 2022 -->
-<!-- How incidental catch affects herring stocks -->
-<!-- How ignoring incidental catch affects stock assessments -->
-<!-- Include incidental catch from groundfish (we have groundfish bycatch data; talk to Marisa) -->
-<!-- Add context for the SFF Policy on managing bycatch -->
 
 ## First Nations observations
 
