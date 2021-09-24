@@ -251,9 +251,7 @@ However, Lax Kw’alaams fishermen were unable to gather enough herring to satis
 
 ### Central Coast
 
-<!-- TODO: JC No response yet from Mike Reid, anticipated Sept 22 or we will remove -->
-
-The overall herring spawn continued to improve in 2021 as the stock has continued to build over the past few years.
+Observations in Area 06: The overall herring spawn continued to improve in 2021 as the stock has continued to build over the past few years.
 Kitasu Bay appeared to have similar or higher abundance that 2020.
 Herring sizes were typical for the area but seemed to be more uniform in overall size.
 The spawn was longer than average with 7 to 8 days of continuous spawn that appeared to cover much of Kitasu Bay.
@@ -261,6 +259,29 @@ The sea lion activity was significant as in previous years but due to the high a
 herring ponds which in previous years were directly targeted by feeding sea lions.
 The community food gathering was successful for both spawn on branch and there was some surplus from SOK operations to support the community as well.
 Kelp size and quality was very good in the Bay as compared to previous years.
+
+Observations in Area 07: The 2021 herring season saw drastic changes to the herring spawning patterns, 
+yield and roe thickness compared to previous years.
+The normal pattern for the herring spawning is when herring spawn in one location for 5 to 7 days in specific areas.
+This season the herring were spawning very sporadically and for short periods of time.
+In most areas the spawn would last only for a day and then herring would move to another location.
+
+Predation by whales, seals and sea lions has increased dramatically in the last 20 years and more so in the last few years 
+causing shifts in spawning behavior and patterns. 
+Fishers observed multiple whales right up in the shallows feeding on the herring and disrupting or stopping the spawn.
+
+Most of the spawning in the Spiller area was limited to inside and outside of the Tate Lagoon area with 
+minimal spawning in the rest of Spiller area. 
+Inside Tate Lagoon, the average layers were generally around 3 to 4 layers.
+Fishers set kelp in every identified spawn location including Spiller, Thompson, Norman Morrison, Dundavin, 
+Idol, Foote, mid spiller, Bachelor, Berry and Mustang bay all of which saw an average of 2 to 3 layers.
+
+Our fishers reported that despite having kelp set at multiple spawn areas, the herring observed were smaller 
+on average and the layers of roe on the kelp was minimal indicating smaller spawning herring. 
+The build up of roe took long and averaged only 2 to 3 layers. 
+
+The consensus among fishers and mgmt. was that this year was worse than the previous two years 
+and were unable to attain sufficient FSC or fulfill our herring roe spawn on kelp quota despite a lot of effort.  
 
 ### Strait of Georgia
 
@@ -709,7 +730,7 @@ updated MP evaluations conducted in September 2020 [@dfo2021b].
 MPs included for PRD and CC combines information from
 the first MSE cycle for northern SARs [@dfo2019c] with
 updated MP evaluations conducted in the summer of 2021 (this document).
-Finally, science advice in 2018 recommended
+Science advice in 2018 recommended
 discontinuing the use of the historical fixed cutoff HCR [@dfo2019a];
 as such this MP has been removed from further consideration
 for all Pacific Herring SARs.
@@ -802,7 +823,15 @@ states that were entered rapidly and were preceded by high biomass levels
 
 Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
 are presented in Table \@ref(tab:decision-prd),
-and include probability values that reflect new OM conditioning.
+and include probability values that reflect updated OM conditioning.
+The updated simulations show an improvement in MP performance relative to the 
+conservation objective, driven by an increase in spawn index and lower
+estimated natural mortality rates in the most recent years of the historical 
+time series, relative to 2018 OM conditioning.
+This outcome corroborates previous observations that MP evaluations appear to be more 
+heavily influenced by the last three to five years of stock status and natural 
+mortality trends used to condition the OM.
+
 Harvest options listed in Table \@ref(tab:decision-prd) reflect
 application of MPs to the `r assess_yr + 1` forecast biomass for PRD,
 whereby each MP meets the conservation objective with a minimum 75% probability
