@@ -876,7 +876,19 @@ for each management area.
 
 Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
 are presented in Table \@ref(tab:decision-cc),
-and include probability values that reflect new OM conditioning.
+and include probability values that reflect updated OM conditioning.
+The updated simulations show an improvement in MP performance relative to the 
+conservation objective, driven by an increase in spawn index and lower
+estimated natural mortality rates in the most recent years of the historical 
+time series, relative to 2018 OM conditioning.
+This outcome corroborates previous observations that MP evaluations appear to be more 
+heavily influenced by the last three to five years of stock status and natural 
+mortality trends used to condition the OM.
+
+Harvest options listed in Table \@ref(tab:decision-cc) reflect
+application of MPs to the `r assess_yr + 1` forecast biomass for CC,
+whereby each MP meets the conservation objective with a minimum 75% probability
+under the Reference OM (i.e., DDM) scenario.
 Harvest options under the two Robustness OM scenarios are also included.
 For ease of comparison with MSE cycle 1 [@dfo2019c],
 all MPs and scenarios listed in Table \@ref(tab:decision-cc) include
