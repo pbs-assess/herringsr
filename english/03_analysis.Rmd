@@ -266,21 +266,23 @@ The normal pattern for the herring spawning is when herring spawn in one locatio
 This season the herring were spawning very sporadically and for short periods of time.
 In most areas the spawn would last only for a day and then herring would move to another location.
 
-Predation by whales, seals and sea lions has increased dramatically in the last 20 years and more so in the last few years 
-causing shifts in spawning behavior and patterns. 
+Predation by whales, seals, and sea lions has increased dramatically in the last 20 years and more so in the last few years 
+causing shifts in spawning behaviour and patterns. 
 Fishers observed multiple whales right up in the shallows feeding on the herring and disrupting or stopping the spawn.
 
 Most of the spawning in the Spiller area was limited to inside and outside of the Tate Lagoon area with 
 minimal spawning in the rest of Spiller area. 
 Inside Tate Lagoon, the average layers were generally around 3 to 4 layers.
-Fishers set kelp in every identified spawn location including Spiller, Thompson, Norman Morrison, Dundavin, 
-Idol, Foote, mid spiller, Bachelor, Berry and Mustang bay all of which saw an average of 2 to 3 layers.
+Fishers set kelp in every identified spawn location including
+Spiller, Thompson, Norman Morrison, Dundavin, 
+Idol, Foote, mid spiller, Bachelor, Berry, and Mustang Bay
+all of which saw an average of 2 to 3 layers.
 
 Our fishers reported that despite having kelp set at multiple spawn areas, the herring observed were smaller 
 on average and the layers of roe on the kelp was minimal indicating smaller spawning herring. 
 The build up of roe took long and averaged only 2 to 3 layers. 
 
-The consensus among fishers and mgmt. was that this year was worse than the previous two years 
+The consensus among fishers and management was that this year was worse than the previous two years 
 and were unable to attain sufficient FSC or fulfill our herring roe spawn on kelp quota despite a lot of effort.  
 
 ### Strait of Georgia
@@ -828,7 +830,8 @@ The updated simulations show an improvement in MP performance relative to the
 conservation objective, driven by an increase in spawn index and lower
 estimated natural mortality rates in the most recent years of the historical 
 time series, relative to 2018 OM conditioning.
-This outcome corroborates previous observations that MP evaluations appear to be more 
+This outcome corroborates previous observations that
+MP evaluations appear to be more 
 heavily influenced by the last three to five years of stock status and natural 
 mortality trends used to condition the OM.
 
