@@ -885,7 +885,7 @@ spatial distribution of stocks.
 
 `r proj_biomass_text(SAR = "CC")`
 
-Additionally, DFO acknowledges commitment to the Heiltsuk Nation for
+Finally, DFO acknowledges commitment to the Heiltsuk Nation for
 the development of a Joint Fisheries Management Plan for Pacific Herring
 in the Central Coast in `r assess_yr + 1`.
 Results presented here may inform this on going commitment.
