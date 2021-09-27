@@ -850,49 +850,40 @@ and overall the stock shows
 larger increases/decreases in spawn abundance
 (Figure \@ref(fig:storyboard-cc)a) than was observed prior to 2005.
 
-Similar to PRD, we updated the CC OM in summer 2021 using data from 2019 and 2020.
-That is, we updated the MSE operating model conditioning to include
-spawn, catch, and biological data for 2019 and 2020, and we
-re-ran MSE simulations to generate updated probability values for the MPs
-presented in September 2019 [@dfo2020a] and 2020 [@dfo2021].
-The updated closed-loop feedback simulations for CC show that MPs
-with harvest rates at 5 and 10% maintain spawning biomass
-above the LRP with 84 to 100% probability over all three OM scenarios
-(Table \@ref(tab:decision-cc)). 
+Similar to PRD, in the summer 2021 we updated the conditioning of the MSE 
+operating model with 2019 and 2020 spawn, catch, and biological data. 
+We re-ran MSE simulations to generate updated probability values for 
+the MPs presented in September 2019 [@dfo2020a] and 2020 [@dfo2021].  
 No new MPs or objectives were included.
+Management procedures, harvest options, and updated probabilities of 
+obtaining objectives for 2022 under the three OM scenarios are presented 
+in Table \@ref(tab:decision-cc). 
+Harvest options listed in Table \@ref(tab:decision-cc) reflect application 
+of MPs to the 2022 forecast biomass for CC, whereby each MP meets the 
+conservation objective with a minimum 75% probability under the Reference OM 
+(i.e., DDM) scenario.
 
-Simulation results for CC indicate 
-there are multiple MPs that meet the conservation objective of
-maintaining spawning biomass above the LRP with high probability
-(at least 75%)^\ref{fn:HighProb}^.
-For management regions where multiple MPs meet the conservation objective,
-further ranking of the remaining objectives is needed in order to
-provide decision makers with a tractable set of trade-off choices.
+Relative to 2018 OM conditioning the updated simulations show an improvement
+in MP performance of the conservation objective, driven by an increase in
+estimated spawn index and lower estimated natural mortality rates in the 
+most recent years of the time series. This corroborates previous observations 
+that MP evaluations seem more heavily influenced by the last three to five 
+years of stock status and natural mortality trends.
+
+The updated simulations show that MPs with harvest rates at 5% and 10% 
+maintain spawning biomass above the LRP with 84 to 100% probability over all 
+three OM scenarios (Table \@ref(tab:decision-cc)).
+Since multiple MPs meet the conservation objective of maintaining spawning 
+biomass above the LRP with at least 75%, further ranking of the objectives 
+provides decision makers with a tractable set of trade-off choices.
 However this was not undertaken with the first MSE cycle because
 a fully specified set of objectives has not yet been developed
 for each management area.
+Additionally, the current CC operating model is unable to directly address
+Heilstuk Nation conservation objectives related to age and size of herring, and 
+spatial distribution of stocks.
 
 `r proj_biomass_text(SAR = "CC")`
-
-Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
-are presented in Table \@ref(tab:decision-cc),
-and include probability values that reflect updated OM conditioning.
-The updated simulations show an improvement in MP performance relative to the 
-conservation objective, driven by an increase in spawn index and lower
-estimated natural mortality rates in the most recent years of the historical 
-time series, relative to 2018 OM conditioning.
-This outcome corroborates previous observations that MP evaluations appear to be more 
-heavily influenced by the last three to five years of stock status and natural 
-mortality trends used to condition the OM.
-
-Harvest options listed in Table \@ref(tab:decision-cc) reflect
-application of MPs to the `r assess_yr + 1` forecast biomass for CC,
-whereby each MP meets the conservation objective with a minimum 75% probability
-under the Reference OM (i.e., DDM) scenario.
-Harvest options under the two Robustness OM scenarios are also included.
-For ease of comparison with MSE cycle 1 [@dfo2019c],
-all MPs and scenarios listed in Table \@ref(tab:decision-cc) include
-performance metrics for the four core objectives.
 
 Additionally, DFO acknowledges commitment to the Heiltsuk Nation for
 the development of a Joint Fisheries Management Plan for Pacific Herring
