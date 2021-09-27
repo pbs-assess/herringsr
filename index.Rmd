@@ -6,8 +6,8 @@ title_other: "Mise à jour de l'état des stocks avec application des procédure
 # title_short: "État du hareng du Pacifique en 2021 et prévisions pour 2022"
 # title_other: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2021 and forecast for 2022"
 work_done_year: 2021
-work_done_month: Month
-# work_done_month: Mois
+work_done_month: November
+# work_done_month: Novembre
 report_number: 000
 isbn: 978-0-660-XXXXX-X
 cat_no: Fs70-X/2022-XXXE-PDF
@@ -26,7 +26,7 @@ region: Pacific Region
 output:
   csasdown::sr_pdf:
    french: false
-   prepub: false
+   prepub: true
    extra_dependencies: ["needspace", "afterpage"]
 type: sr
 knit: bookdown::render_book
