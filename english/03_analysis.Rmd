@@ -888,7 +888,7 @@ a fully specified set of objectives has not yet been developed
 for each management area.
 Additionally, the current CC operating model is unable to directly address
 Heilstuk Nation conservation objectives related to age and size of herring, nor 
-objectives on a finer spatial scale.
+objectives on a finer spatial scale or those specific to SOK fisheries.
 These limitations exist for all five major stocks.
 
 `r proj_biomass_text(SAR = "CC")`
