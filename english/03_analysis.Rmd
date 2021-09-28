@@ -13,52 +13,80 @@ by the COVID-19 pandemic in 2021.
 
 ## Management strategy evaluation
 
-Fisheries and Oceans Canada (DFO) has committed to renewing the current management framework to
-address a range of challenges facing Pacific Herring stocks and fisheries in British Columbia. 
-Renewal of the management framework for Pacific Herring uses MSE to evaluate the performance 
-of candidate MPs against hypotheses about past and future stock and fishery dynamics. 
-The purpose of the MSE process is to identify MPs that provide acceptable outcomes related to conservation and fishery management objectives. 
-The identification of a preferred management procedure requires a fully specified set of measurable objectives that 
-include reference points (typically categorized as limits and targets) and to the extent possible, 
-specification of objectives related to catch, catch variability, and socio-cultural goals. 
+Fisheries and Oceans Canada (DFO) has committed to
+renewing the current management framework to
+address a range of challenges facing Pacific Herring stocks and fisheries
+in British Columbia. 
+Renewal of the management framework for Pacific Herring uses MSE to
+evaluate the performance of candidate MPs against
+hypotheses about past and future stock and fishery dynamics. 
+The purpose of the MSE process is to
+identify MPs that provide acceptable outcomes related to
+conservation and fishery management objectives. 
+The identification of a preferred management procedure requires
+a fully specified set of measurable objectives that include
+reference points (typically categorized as limits and targets) and
+to the extent possible,
+specification of objectives related to
+catch, catch variability, and socio-cultural goals. 
 MSE is an iterative and ongoing process conducted with the participation of
-First Nations, the fishing industry, as well as government and non-government organizations.  
+First Nations, the fishing industry, as well as
+government and non-government organizations.  
 
 The first MSE cycles for the SoG and WCVI management areas were completed in 2018 [@dfo2019a].
-Steps included OM development, fitting the OMs to Pacific Herring stock and fishery monitoring data from 1951 to 2017, 
-and closed-loop simulations of MP performance for alternative future natural mortality scenarios [@dfo2019a].
-In the spring of 2019, the MSE process was extended to the HG, PRD, and CC management areas
+Steps included
+OM development,
+fitting the OMs to Pacific Herring stock and fishery monitoring data
+from 1951 to 2017, and
+closed-loop simulations of MP performance for
+alternative future natural mortality scenarios [@dfo2019a].
+In the spring of 2019,
+the MSE process was extended to the HG, PRD, and CC management areas
 with stock and fishery monitoring data updated to include 2018
 and performance evaluation of area specific MPs [@dfo2019c].
-In the summer of 2020 the second MSE cycle was initiated for the WCVI and SoG management areas.
-This included conditioning the OMs with more recent stock and fishery data,
-and evaluating the performance of additional candidate MPs for these management areas.
-A similar update was conducted in the summer of 2021 for the PRD and CC management areas.
+In the summer of 2020,
+the second MSE cycle was initiated for the WCVI and SoG management areas.
+This included conditioning the OMs with more recent stock and fishery data, and
+evaluating the performance of additional candidate MPs
+for these management areas.
+A similar update was conducted in the summer of 2021
+for the PRD and CC management areas.
 Results from MP evaluations reflect most recent updates for all management areas.
 
 A core set of fisheries management objectives [@dfo2019c] have been applied to each major SAR:
 
-1. Maintain spawning biomass above the LRP with at least 75% probability over three Pacific Herring generations
+1. Maintain spawning biomass above the LRP with at least 75% probability
+over three Pacific Herring generations
 (i.e., avoid a biomass limit; $P(\SB_t > 0.3\SB_0) \geq 0.75$),
 
-1. Maintain spawning biomass at or above the USR with at least 50% probability over three Pacific Herring generations
+1. Maintain spawning biomass at or above the USR with at least 50% probability 
+over three Pacific Herring generations
 (i.e., achieve a target biomass; $P(\SB_t \geq 0.6\SB_0) \geq 0.5$),
 
-1. Maintain average annual variability (AAV) in catch below 25% over three Pacific Herring generations
+1. Maintain average annual variability (AAV) in catch below 25%
+over three Pacific Herring generations
 (goal reflecting catch variability; $\text{AAV} < 0.25$), and
 
-1. Maximize average annual catch over three Pacific Herring generations
+1. Maximize average annual catch
+over three Pacific Herring generations
 (goal reflecting catch biomass).
 
-However, a fully specified set of objectives has not yet been developed for each management area.
-DFO will continue to collaborate with coastal First Nations to develop area-specific objectives specific to Food, Social and Ceremonial fisheries as well as spawn-on-kelp (SOK) fisheries.
-In addition, DFO will continue to engage with the herring industry, government, and non-government organizations
+However, a fully specified set of objectives has not yet been developed
+for each management area.
+DFO will continue to collaborate with coastal First Nations to
+develop area-specific objectives specific to
+Food, Social and Ceremonial fisheries as well as
+spawn-on-kelp (SOK) fisheries.
+In addition, DFO will continue to engage with
+the herring industry, government, and non-government organizations
 to describe broader objectives related to conservation, economics, and access.
 
 The MPs for each SAR differ in the form of the HCR and choices of catch cap,
-but use the same type of monitoring data and assessment model [e.g., @cleary2018].
-The current stock assessment model assumes natural mortality is time-varying and this
-is reflected in the MSE as three hypotheses about future Pacific Herring natural mortality $M$: 
+but use the same type of monitoring data and assessment model
+[e.g., @cleary2018].
+The current stock assessment model assumes natural mortality is
+time-varying and this is reflected in the MSE as
+three hypotheses about future Pacific Herring natural mortality $M$: 
 
 1. $M$ is a time-varying, density-dependent process (DDM),
 
@@ -67,85 +95,128 @@ is reflected in the MSE as three hypotheses about future Pacific Herring natural
 1. $M$ is constant over time (conM).
 
 These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
-The DDM scenario was identified as the Reference OM scenario based on discussion at the July 2018 CSAS review process [@dfo2019c],
+The DDM scenario was identified as the Reference OM scenario based on
+discussion at the July 2018 CSAS review process [@dfo2019c],
 while the DIM and conM scenarios were identified as Robustness OM scenarios.
-There is however currently no scientifically supported method for predicting the natural mortality and thus all three scenarios are included. 
+There is however currently no scientifically supported method to
+predict natural mortality;
+thus all three scenarios are included. 
 
 Several lessons were learned from the MSE analyses conducted so far:
 
-1. The catch-at-age stock assessment model can produce large (positive) assessment errors.
+1. The catch-at-age stock assessment model can produce large (positive)
+assessment errors.
 Such assessment errors cause over-estimation of spawning biomass and
-result in recommended catch limits such that the realized harvest rate exceeds the intended target specified by a HCR (e.g., over-harvest).
+result in recommended catch limits such that the realized harvest rate exceeds
+the intended target specified by a HCR (e.g., over-harvest).
 
-1. Reduction in harvest rate from 20% to 10% was the most effective means of mitigating 
-stock assessment errors by reducing the absolute size of the catch.
+1. Reduction in harvest rate from 20% to 10% was the most effective means of
+mitigating stock assessment errors by
+reducing the absolute size of the catch.
 The use of a catch cap, implemented as a maximum annual catch level, 
-was an effective model-free way to further mitigate assessment errors at very high biomass levels.
-Simulation analyses additionally showed that outcomes are insensitive to the choice of
-operational control points (OCPs) in the HCR when a low harvest rate (HR) and catch cap are applied.
-This occurs because low biomass levels (associated with the lower OCP) are avoided for these MPs.
+is an effective model-free way to
+further mitigate assessment errors at very high biomass levels.
+Simulation analyses additionally showed that outcomes
+are insensitive to the choice of operational control points (OCPs)
+in the HCR when a low harvest rate (HR) and catch cap are applied.
+This occurs because low biomass levels (associated with the lower OCP)
+are avoided for these MPs.
 
-1. Differences in specification of Pacific Herring MPs, including the HCR components, are expected a priori among SARs.
-The reasons relate to differences in objectives deemed important by resource users,
+1. Differences in specification of Pacific Herring MPs,
+including HCR components, are expected a priori among SARs.
+The reasons relate to
+differences in objectives deemed important by resource users,
 differences in historical and current stock and fishery dynamics, and
 differences in the magnitude and direction of assessment model errors in each SAR.
-Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) 
-in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.
+Conservation objectives such as those based on
+avoiding a threshold to serious harm (i.e., a limit reference point) 
+in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs
+based on the analyses of @kronlund2017.
 
-1. There are many possible ways to incorporate MP performance in robustness trials into decision-making but, 
-there is currently no accepted scientific way of combining results from multiple operating models.
+1. There are many possible ways to incorporate MP performance in
+robustness trials into decision-making but, 
+there is currently no accepted scientific way of
+combining results from multiple operating models.
 
-1. In situations where multiple MPs meet the agreed upon objectives, further criteria, such as ranking secondary objectives, is 
-needed in order to provide decision-makers with a tractable set of trade-off choices.
+1. In situations where multiple MPs meet the agreed upon objectives,
+further criteria, such as ranking secondary objectives, is needed in order to
+provide decision-makers with a tractable set of trade-off choices.
 
-1. Outcomes of MP evaluations appear to be more heavily influenced by the last three to five years of stock status and 
+1. Outcomes of MP evaluations appear to be more heavily influenced by
+the last three to five years of stock status and 
 natural mortality trends used to condition the OM. 
-If simulations were run over a greater number of years (i.e., 50 years) performance would start to approach equilibrium and be 
+If simulations were run over a greater number of years (i.e., 50 years)
+performance would start to approach equilibrium and be 
 unaffected by most recent trends in OM conditioning data.
 
 ## Input data
 
-There are three types of input data used for the Pacific Herring stock assessment: catch data, biological data, and abundance data.
-These data sets are described in the following sections, and summarized in Table \@ref(tab:data-input).
-Relative to the previous assessment, the only change made to input data was to update all data time series to include data from the `r this_season` herring season (July 1 to June 30).
+There are three types of input data used for the Pacific Herring stock assessment:
+catch data, biological data, and abundance data.
+These data sets are described in the following sections, and
+summarized in Table \@ref(tab:data-input).
+Relative to the previous assessment,
+the only change made to input data was to update all data time series
+to include data from the `r this_season` herring season (July 1 to June 30).
 Note that we refer to 'year' instead of 'herring season' in this report;
 therefore `r assess_yr` refers to the `r this_season` Pacific Herring season.
 
 ### Catch data
 
-For the purposes of stock assessment, catch data are summarized by gear type as described in Table \@ref(tab:data-input) and presented in Figure \@ref(fig:major-catch).
-As in previous years, catch input to the stock assessment model does not include mortality from the commercial SOK fishery, nor any recreational fisheries or food, social, and ceremonial (FSC) harvest.
+For the purposes of stock assessment,
+catch data are summarized by gear type as described in
+Table \@ref(tab:data-input) and presented in Figure \@ref(fig:major-catch).
+As in previous years, catch input to the stock assessment model
+does not include mortality from the commercial SOK fishery,
+nor any recreational fisheries or food, social, and ceremonial (FSC) harvest.
 The FSC and recreational harvest are considered minor relative to commercial harvest.
-The commercial SOK fishery is licensed based on pounds of validated SOK product (i.e., eggs adhered to kelp), not tonnes of fish used or spawned.
-Currently there is no basis for validating mortality imposed on the population by this fishery, however methods for estimating SOK mortality are being developed.
+The commercial SOK fishery is licensed based on pounds of validated SOK product
+(i.e., eggs adhered to kelp), not tonnes of fish used or spawned.
+Currently there is no basis for validating mortality
+imposed on the population by this fishery, however
+methods for estimating SOK mortality are being developed.
 
-Combined commercial removals from `r assess_yr-9` to `r assess_yr` from the roe, food and bait, and special use fisheries appear in Table \@ref(tab:annual-catch).
-The proportion of coast-wide catch that comes from the SoG was 22% in 1990, and 100% in `r assess_yr`.
-Total SOK harvest (pounds of validated product) for the major SARs from `r assess_yr-9` to `r assess_yr` is presented in Table \@ref(tab:annual-sok-catch).
-
-
+Combined commercial removals from `r assess_yr-9` to `r assess_yr`
+from the roe, food and bait, and special use fisheries
+appear in Table \@ref(tab:annual-catch).
+The proportion of coast-wide catch that comes from SoG was
+22% in 1990, and 100% in `r assess_yr`.
+Total SOK harvest (pounds of validated product) for the major SARs
+from `r assess_yr-9` to `r assess_yr` is presented in
+Table \@ref(tab:annual-sok-catch).
 
 ### Biological data\label{sec:biol-data}
 
-Biological samples are collected as described in @cleary2018 and Table \@ref(tab:data-input).
-Biological data inputs to the stock assessment are annual weight-at-age (Figure \@ref(fig:major-wa)) and 
-annual numbers-at-age, shown as proportions-at-age (Figure \@ref(fig:major-pa)).
+Biological samples are collected as described in
+@cleary2018 and Table \@ref(tab:data-input).
+Biological data inputs to the stock assessment are
+annual weight-at-age (Figure \@ref(fig:major-wa)) and 
+annual number-at-age, shown as proportion-at-age (Figure \@ref(fig:major-pa)).
 
-Significant declines in weight-at-age are evident for all major herring stocks, from the mid-1980s to 2010.
+Significant declines in weight-at-age are evident for all major herring stocks,
+from the mid-1980s to 2010.
 Declining weight-at-age may be attributed to any number of factors, including
 fishing effects (i.e., gear selectivity),
 environmental effects (e.g., changes in ocean productivity), or
 changes in sampling protocols (e.g., shorter time frame over which samples are collected).
-There has been an increasing trend in weight-at-age for all major stocks from 2012 to `r assess_yr`, although to a lesser degree for PRD.
+There has been an increasing trend in weight-at-age for all major stocks
+from 2012 to `r assess_yr`,
+although to a lesser degree for PRD.
 
 ### Abundance data
 
-The spawn index survey collects information on spawn length (parallel to shore), spawn width (perpendicular to shore), number of egg layers by vegetation type, and other data.
+The spawn index survey collects information on
+spawn length (i.e., distance parallel to shore),
+spawn width (i.e., distance perpendicular to shore),
+number of egg layers by vegetation type, and
+other data.
 There are two spawn survey periods defined by the predominant survey method:
 surface survey period from `r surv_yr_rng[1]` to `r new_surv_yr - 1`, and
 dive survey period from `r new_surv_yr` to `r surv_yr_rng[2]`.
 Data from these surveys are used to calculate egg densities per spawn.
-Ultimately, the estimated weight of mature spawners required to produce the egg deposition is calculated and referred to as the 'spawn index'.
+Ultimately, the estimated weight of mature spawners required
+to produce the egg deposition is calculated and
+referred to as the 'spawn index'.
 The `r surv_yr_rng[2]` spawn survey followed standard dive survey protocols
 for the PRD, CC, SoG, and WCVI SARs as described in @cleary2018, and
 a surface survey protocol for the HG SAR due to COVID-19.
@@ -161,10 +232,13 @@ Tables \@ref(tab:spawn-index-hg) to \@ref(tab:spawn-index-wcvi)).
 ## Spatial spawn distribution
 
 Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) 
-summarize the spatial distribution of survey spawn biomass (i.e., the spawn index)
+summarize the spatial distribution of survey spawn biomass
+(i.e., the spawn index)
 by proportion over the most recent `r num_yrs_tab+1` years for the major SARs.
-HG and SoG are summarized by Group, while PRD, CC, and WCVI are summarized by Statistical Area;
-the choice of spatial grouping reflects spawning behaviour and biology for each SAR based on the 
+HG and SoG are summarized by Group, while
+PRD, CC, and WCVI are summarized by Statistical Area;
+the choice of spatial grouping reflects spawning behaviour and
+biology for each SAR based on the
 survey data and working group discussions with local First Nations.
 
 ## Incidental mortality
@@ -363,17 +437,24 @@ The spawn index has two distinct periods defined by the dominant survey method:
 surface surveys (`r surv_yr_rng[1]` to `r new_surv_yr - 1`), and 
 dive surveys (`r new_surv_yr` to `r surv_yr_rng[2]`).
 Thus, two $q$ parameters are implemented in the estimation procedure:
-$q_1$ (`r surv_yr_rng[1]` to `r new_surv_yr - 1`) with an uninformative prior, and
-$q_2$ (`r new_surv_yr` to `r surv_yr_rng[2]`) with an informative prior approximating 1.0.
+$q_1$ (`r surv_yr_rng[1]` to `r new_surv_yr - 1`)
+with an uninformative prior, and
+$q_2$ (`r new_surv_yr` to `r surv_yr_rng[2]`)
+with an informative prior approximating 1.0.
 
-The surface survey methodology has been used on occasion from `r new_surv_yr` to `r surv_yr_rng[2]`. 
-Generally this occurs in instances when herring spawn is observed in locations where a dive survey team is not available, or
-when spawning occurs very early (January or February) or late (May) in the season. 
+The surface survey methodology has been used on occasion
+from `r new_surv_yr` to `r surv_yr_rng[2]`. 
+Generally this occurs when herring spawn is observed in locations where
+a dive survey team is not available, or
+when spawning occurs very early (e.g., January or February) or
+late (e.g., May) in the season. 
 In these instances,
 spawning biomass estimates obtained from surface surveys for
 a given stock area and year are added to
-biomass estimates from dive surveys, and $q_2 = 1$ is assumed for the combined index.
-In 2020 and `r surv_yr_rng[2]`, a full surface survey was conducted for the HG SAR and
+biomass estimates from dive surveys,
+and $q_2 = 1$ is assumed for the combined index.
+In 2020 and `r surv_yr_rng[2]`,
+a full surface survey was conducted for the HG SAR and
 in this assessment the resulting survey biomass estimates are
 assumed continuous with the dive survey time series.
 
@@ -390,9 +471,11 @@ Candidate USRs are:
 
 1. $0.6\SB_0$,
 
-1. Average spawning biomass from `r major_start_yr` to `r assess_yr`, $\SB_{\mli{ave}}$, and
+1. Average spawning biomass from `r major_start_yr` to `r assess_yr`,
+$\SB_{\mli{ave}}$, and
 
-1. Average spawning biomass during a productive period [@cleary2018], $\SB_{\mli{ave-prod}}$.
+1. Average spawning biomass during a productive period [@cleary2018],
+$\SB_{\mli{ave-prod}}$.
 
 Simulation results showed similar properties between USRs
 $0.6\SB_0$ and $\SB_{\mli{ave}}$ both within and among SARs,
@@ -464,7 +547,8 @@ Estimated spawning biomass recovered by the mid-1980s from
 historic low depletion levels following the collapse of the 1960s,
 to about 50% of the historic high biomass estimated in the early 1960s
 (Figure \@ref(fig:storyboard-prd)d).
-However, after the mid-1980s, estimated spawning biomass steadily declined before
+However, after the mid-1980s,
+estimated spawning biomass steadily declined before
 stabilizing at a relatively low level (but above historic lows) by around 2005.
 The estimated stock biomass has shown little trend from 2005 to 2018,
 with a modest increase in 2019.
@@ -543,7 +627,8 @@ The majority of Area 07 spawn in 2021 appears concentrated in
 Thompson/Stryker (Section 074).
 Occurrence of spawn in Thompson/Stryker in 2020 and 2021
 represents the first significant spawns for this section in many years.
-The decline in spawn observations in 2020 and 2021 in Spiller Channel (Sections 072 and 078) brings 
+The decline in spawn observations in 2020 and 2021 in Spiller Channel
+(Sections 072 and 078) brings 
 the spawn biomass in those Sections down to the low levels observed around 2010
 (Figure \@ref(fig:storyboard-cc)d).
 The mechanisms driving fluctuations of spawn throughout the Central Coast
@@ -596,7 +681,8 @@ with especially large positive deviations in 2019 and 2020
 (Figure \@ref(fig:storyboard-sog)e).
 The large uncertainty around estimated age-`r age_first` recruitment
 in 2019 and 2020 was observed in the previous years' assessment and
-remains apparent now that these age-2s are fully recruited to the fishing/sampling gear.
+remains apparent now that these age-2s are
+fully recruited to the fishing/sampling gear.
 Analysis of surplus production shows that for the year between 2019 and 2020,
 the SoG SAR is estimated to be in a high production, high biomass state,
 followed by negative production for the year between 2020 and 2021
@@ -615,16 +701,30 @@ The model estimates the median effective harvest rate exceeded 25% in 2006 and 2
 
 ### West Coast of Vancouver Island
 
-The time series of estimated spawning biomass shows a decline from the late 1980s through to a historic low in the 2000s (Figure \@ref(fig:storyboard-wcvi)d).
-The low estimated spawning biomass persisted through the 2006 to 2012 period and has since slowly increased to a level similar to that estimated for 2000.
-The model reconstruction of spawning biomass closely follows the trajectory of spawn index values (Figure \@ref(fig:storyboard-wcvi)a).
-Historically high natural mortality rates occur in the late 2000s and have since declined, though show an increasing trend from 2015 to 2021 (Figure \@ref(fig:storyboard-wcvi)b).
-Recruitment deviations have been negative (lower than predicted by the stock-recruit function) on average since about 2003 (Figure \@ref(fig:storyboard-wcvi)e), with the exception of 2015, 2020 and 2021.
-The reduction in estimated natural mortality below historical high levels and absence of removals from a commercial fishery appear
-to be sufficient to offset this below average recruitment of age-`r age_first` fish to support biomass growth.
-The absence of a commercial fishery since 2005 means the realized harvest rate has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
-There is  modest evidence for an increase in biomass above the LRP since 2016 and
-production estimates for the year between 2019 and 2020, and 2020 and 2021 are positive (Figure \@ref(fig:storyboard-wcvi)f).
+The time series of estimated spawning biomass shows a decline
+from the late 1980s through to a historic low in the 2000s
+(Figure \@ref(fig:storyboard-wcvi)d).
+The low estimated spawning biomass persisted through the 2006 to 2012 period
+and has since slowly increased to a level similar to that estimated for 2000.
+The model reconstruction of spawning biomass closely follows the trajectory
+of spawn index values (Figure \@ref(fig:storyboard-wcvi)a).
+Historically high natural mortality rates occur in the late 2000s and
+have since declined, though show an increasing trend from 2015 to 2021
+(Figure \@ref(fig:storyboard-wcvi)b).
+Recruitment deviations have been negative
+(i.e., lower than predicted by the stock-recruit function)
+on average since about 2003 (Figure \@ref(fig:storyboard-wcvi)e),
+with the exception of 2015, 2020 and 2021.
+The reduction in estimated natural mortality below historical high levels and
+absence of removals from a commercial fishery appear
+to be sufficient to offset this below average recruitment of
+age-`r age_first` fish to support biomass growth.
+The absence of a commercial fishery since 2005 means the realized harvest rate
+has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
+There is  modest evidence for an increase in biomass above the LRP
+since 2016 and
+production estimates for the year between 2019 and 2020, and 2020 and 2021
+are positive (Figure \@ref(fig:storyboard-wcvi)f).
 
 Investigation of WCVI MCMC diagnostics revealed autocorrelation in the estimation of
 fishery selectivity-at-50% ($\hat{a}_1$) 
@@ -636,7 +736,7 @@ bias in the posterior distribution or local minima.
 In this instance, autocorrelation likely resulting from
 there being no new commercial fishery data since 2005. 
 Running longer chains resulted in only minor improvements.
-If and when fisheries resume in future years,
+If and when fisheries resume in the future,
 the addition of new fishery data may reduce this apparent autocorrelation and
 any resulting bias.
 
@@ -644,12 +744,14 @@ any resulting bias.
 
 ## Management performance
 
-Management procedure performance can be investigated using time series of effective harvest rate.
+Management procedure performance can be investigated using time series of
+effective harvest rate.
 The estimated effective harvest rate $U$ in each year $t$, calculated as
 $U_t = C_t/(C_t + \SB_t)$, where
 $C_t$ is catch in year $t$, and
 $\SB_t$ is estimated spawning biomass in year $t$.
-Time series of $U_t$ relative to target harvest rate of `r target_hr*100`% are presented in Figure \@ref(fig:harvest-rate).
+Time series of $U_t$ relative to target harvest rate of `r target_hr*100`%
+are presented in Figure \@ref(fig:harvest-rate).
 
 ## Application of MPs and harvest options for `r assess_yr + 1`\label{sec:harv-opts}
 
@@ -753,7 +855,8 @@ including the historical and no fishing MPs,
 performed satisfactorily against the conservation objective of
 maintaining spawning biomass above the LRP with high probability
 (i.e., at least 75%).\footnote{\label{fn:HighProb}``High'' probability is defined as 75 to 95\% by the DFO Decision-making framework (DFO 2009).}
-<!-- TODO: automate the citation in the footnote (\citep{dfo2009}) -->
+<!-- TODO: MG automate the citation in the footnote (\citep{dfo2009}) -->
+<!-- Or add the citation with no footnote "(i.e., at least 75%; DFO 2009)" -->
 
 `r proj_biomass_text(SAR = "HG")`
 
@@ -827,13 +930,14 @@ Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
 are presented in Table \@ref(tab:decision-prd),
 and include probability values that reflect updated OM conditioning.
 
-Relative to 2018 OM conditioning, the updated simulations show an improvement in MP 
-performance relative of the conservation objective, driven by an increase in spawn index and lower
+Relative to 2018 OM conditioning, the updated simulations show an improvement
+in MP performance relative of the conservation objective,
+driven by an increase in spawn index and lower
 estimated natural mortality rates in the most recent years of the historical 
 time series (up to 2020).
-This outcome corroborates previous observations that MP evaluations appear to be more 
-heavily influenced by the last three to five years of stock status and natural 
-mortality trends used to condition the OM.
+This outcome corroborates previous observations that MP evaluations appear
+to be more heavily influenced by the last three to five years of
+stock status and natural mortality trends used to condition the OM.
 
 Harvest options listed in Table \@ref(tab:decision-prd) reflect
 application of MPs to the `r assess_yr + 1` forecast biomass for PRD,
@@ -900,11 +1004,18 @@ Results presented here may inform this on going commitment.
 
 ### Strait of Georgia
 
-In 2018, closed-loop feedback simulations for the SoG showed that all tested MPs could maintain the spawning biomass above the LRP with 91% probability or higher across all OM scenarios. 
+In 2018, closed-loop feedback simulations for the SoG showed that
+all tested MPs could maintain the spawning biomass above the LRP
+with 91% probability or higher across all OM scenarios. 
 
-Additional simulation-evaluations were conducted in 2019 to further explore the role of catch caps in mitigating assessment errors [@dfo2019c].
-A comparison of catch caps from 30,000&nbsp;t to 5,000&nbsp;t showed no discernible gain in conservation performance under all 3 OM scenarios.
-Results also showed MPs with catch caps of 20,000&nbsp;t or less rarely exceed the 20% harvest rate for any given projection year (over the 15 year projections).
+Additional simulation-evaluations were conducted in 2019 to
+further explore the role of catch caps in
+mitigating assessment errors [@dfo2019c].
+A comparison of catch caps from 30,000&nbsp;t to 5,000&nbsp;t showed
+no discernible gain in conservation performance under all 3 OM scenarios.
+Results also showed MPs with catch caps of 20,000&nbsp;t or less
+rarely exceed the 20% harvest rate for any given projection year
+(over the 15 year projections).
 
 In September 2020, the SoG OM was updated to include spawn survey data
 from 2018 to 2020 and biological data for 2018 and 2019 [@dfo2021b].
@@ -936,20 +1047,21 @@ fleets take 21%, 40%, and 39% of the catch
 and represents the status quo allocation used for this analysis.
 
 We consider two changes in allocation of TAC between roe seine and roe gillnet fleets:
-high gillnet allocation (90% gillnet) and
-high seine allocation (90% seine).
+high gillnet allocation (i.e., 90% gillnet) and
+high seine allocation (i.e., 90% seine).
 MPs consider only movement between roe fleets,
 thus no changes are made to the overall food and bait allocation.
 Comparisons among TAC allocation are implemented using the HS30-60_HR20 MP
 with an index based procedure.
-This analysis was designed to investigate relative differences between allocation
-MPs.
+This analysis was designed to investigate relative differences
+between allocation MPs.
 Thus we used an index-based approach in lieu of fitting the assessment model
 to calculate the TAC for each simulated year, to save computational time.
 
 Results show there is no difference in conservation performance
 between simulated TAC allocation procedures (Table \@ref(tab:allocation-sog)).
-That is, the simulations show that movement of TAC between the roe fishery fleets
+That is, the simulations show that movement of TAC between
+the roe fishery fleets
 does not appear to impact the probability 
 of avoiding the LRP over the 15-year simulation period.
 Note that these results consider recent stock status of SoG herring, and
