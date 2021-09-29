@@ -48,19 +48,19 @@ Since initiation of the Pacific Herring MSE process,
 results have been included in the annual stock assessment as follows:
 
 1. The 2018 stock assessment included updated MP recommendations
-for SoG and WCVI SARs for 2019 [@dfo2019b].
+for the SoG and WCVI SARs for 2019 [@dfo2019b].
 
 1. The 2019 stock assessment included MP recommendations
-for SoG and WCVI SARs as per 2018, and
-updated MP recommendations for HG, PRD, and CC [@dfo2020a].
+for the SoG and WCVI SARs as per 2018, and
+updated MP recommendations for the HG, PRD, and CC SARs [@dfo2020a].
 
 1. The 2020 stock assessment includes updated MP recommendations
-for SoG and WCVI SARs, and
-MP recommendations for HG, PRD, and CC as per 2019 [@dfo2020a].  
+for the SoG and WCVI SARs, and
+MP recommendations for HG, PRD, and CC SARs as per 2019 [@dfo2020a].  
 
 1. The 2021 stock assessment includes MP recommendations
-for SoG and WCVI SARs as per 2020 [@dfo2021], and
-updated MP recommendations for PRD and CC.
+for the SoG and WCVI SARs as per 2020 [@dfo2021], and
+updated MP recommendations for the PRD and CC SARs.
 Management measures to support long-term recovery of HG herring
 are being developed through the rebuilding plan process.
 
