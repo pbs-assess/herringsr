@@ -2,8 +2,8 @@
 
 Pacific Herring abundance in British Columbia (BC) is assessed using
 a statistical catch-age (SCA) model.
-In 2017, the Pacific Herring stock assessment included updates to the model
-[integrated statistical catch-age model; @martell2011],
+In 2017, the Pacific Herring stock assessment included
+updates to the SCA model [@martell2011],
 and a bridging analysis to support these changes [@cleary2018].
 Also introduced in the 2017 assessment was
 the estimation of stock productivity and current stock status
@@ -21,20 +21,20 @@ a management strategy evaluation (MSE) process to evaluate
 the performance of candidate management procedures against
 a range of hypotheses about future stock and fishery dynamics.
 As part of the MSE process,
-a CSAS regional peer review occurred July 25 and 26, 2018,
+a CSAS regional peer review occurred in the summer of 2018,
 where performance of Pacific Herring management procedures (MPs) were assessed
 against conservation objectives for the
 Strait of Georgia (SoG) and West Coast of Vancouver Island (WCVI)
-stock assessment regions [@dfo2019a].
+stock assessment regions [SARs, @dfo2019a].
 Steps included operating model (OM) development,
 fitting the OM to Pacific Herring stock and fishery monitoring data
 (OM conditioning), and
 closed-loop simulations of MP performance for alternative
 future natural mortality scenarios.
 In the spring of 2019,
-the MSE process was initiated for the northern stock regions:
+the MSE process was initiated for the
 Haida Gwaii (HG), Prince Rupert District (PRD), and Central Coast (CC)
-[@dfo2019c]. 
+SARs [@dfo2019c].
 In the summer of 2020,
 updates were made to the MSE simulations for the WCVI and SoG management areas,
 and in the summer of 2021,
@@ -48,21 +48,21 @@ Since initiation of the Pacific Herring MSE process,
 results have been included in the annual stock assessment as follows:
 
 1. The 2018 stock assessment included updated MP recommendations
-for SoG and WCVI stock assessment regions for 2019 [@dfo2019b].
+for SoG and WCVI SARs for 2019 [@dfo2019b].
 
 1. The 2019 stock assessment included MP recommendations
-for SoG and WCVI stock assessment regions as per 2018, and
+for SoG and WCVI SARs as per 2018, and
 updated MP recommendations for HG, PRD, and CC [@dfo2020a].
 
 1. The 2020 stock assessment includes updated MP recommendations
-for SoG and WCVI stock assessment regions, and
+for SoG and WCVI SARs, and
 MP recommendations for HG, PRD, and CC as per 2019 [@dfo2020a].  
 
 1. The 2021 stock assessment includes MP recommendations
-for SoG and WCVI stock assessment regions as per 2020 [@dfo2021], and
+for SoG and WCVI SARs as per 2020 [@dfo2021], and
 updated MP recommendations for PRD and CC.
 Management measures to support long-term recovery of HG herring
-are being developed through the Rebuilding Plan process.
+are being developed through the rebuilding plan process.
 
 Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested
 that DFO Pacific Science Branch assess the status of
@@ -82,6 +82,4 @@ These recommendations are described in the Section '\nameref{sec:harv-opts}.'
 
 <!--  Mandatory last paragraph in this section -->
 This Science Response results from the Science Response Process of
-15 September 2021 on the
-"Stock status update with application of management procedures for Pacific Herring
-(*Clupea pallasii*) in British Columbia: Status in 2021 and forecast for 2022."
+15 September 2021 on the "`r rmarkdown::metadata$title`."

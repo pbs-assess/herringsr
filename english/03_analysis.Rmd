@@ -220,7 +220,7 @@ referred to as the 'spawn index'.
 The `r surv_yr_rng[2]` spawn survey followed standard dive survey protocols
 for the PRD, CC, SoG, and WCVI SARs as described in @cleary2018, and
 a surface survey protocol for the HG SAR due to COVID-19.
-Time series of spawn index by major stock assessment region
+Time series of spawn index by major stock assessment region (SAR)
 from `r paste(surv_yr_rng, collapse=" to ")`
 are summarized in Figure \@ref(fig:major-spawn-index).
 In `r surv_yr_rng[2]`, there was an
@@ -538,7 +538,7 @@ and the last commercial SOK fishery in 2004.
 
 `r stock_status_text(SAR = "HG")`
 Management measures to support long-term recovery of herring stocks in
-Haida Gwaii are being developed through the Rebuilding Plan process
+Haida Gwaii are being developed through the rebuilding plan process
 (Section '\nameref{sec:harv-opts}').
 
 ### Prince Rupert District
