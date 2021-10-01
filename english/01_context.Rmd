@@ -25,7 +25,7 @@ a CSAS regional peer review occurred in the summer of 2018,
 where performance of Pacific Herring management procedures (MPs) were assessed
 against conservation objectives for the
 Strait of Georgia (SoG) and West Coast of Vancouver Island (WCVI)
-stock assessment regions [SARs, @dfo2019a].
+stock assessment regions (SARs) [@dfo2019a].
 Steps included operating model (OM) development,
 fitting the OM to Pacific Herring stock and fishery monitoring data
 (OM conditioning), and
