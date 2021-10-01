@@ -1,7 +1,7 @@
 # Context
 
-Pacific Herring abundance in British Columbia (BC) is assessed using
-a statistical catch-age (SCA) model [@martell2011].
+Pacific Herring (*Clupea pallasii*) abundance in British Columbia (BC) is
+assessed using a statistical catch-age (SCA) model [@martell2011].
 In 2017, the Pacific Herring stock assessment included
 updates to the SCA model,
 and a bridging analysis to support these changes [@cleary2018].
