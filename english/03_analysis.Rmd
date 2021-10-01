@@ -539,7 +539,7 @@ and the last commercial SOK fishery in 2004.
 `r stock_status_text(SAR = "HG")`
 Management measures to support long-term recovery of herring stocks in
 Haida Gwaii are being developed through the rebuilding plan process
-(Section '\nameref{sec:harv-opts}').
+(Section "\nameref{sec:harv-opts}").
 
 ### Prince Rupert District
 

@@ -46,6 +46,7 @@ evaluating the performance of additional candidate MPs for these management area
 
 Since initiation of the Pacific Herring MSE process,
 results have been included in the annual stock assessment as follows:
+<!-- TODO: These 3 "as per" statements are not clear -->
 
 1. The 2018 stock assessment included updated MP recommendations
 for the SoG and WCVI SARs for 2019 [@dfo2019b].
@@ -77,8 +78,8 @@ management procedure options, and
 harvest advice recommendations from those MPs for `r assess_yr + 1`
 reflect methods of @cleary2018 and,
 where applicable,
-recommendations from the aforementioned 2018, 2019 and 2020 MSE analyses.
-These recommendations are described in the Section '\nameref{sec:harv-opts}.'
+recommendations from the aforementioned 2018, 2019 and 2020 MSE analyses
+(Section "\nameref{sec:harv-opts}").
 
 <!--  Mandatory last paragraph in this section -->
 This Science Response results from the Science Response Process of

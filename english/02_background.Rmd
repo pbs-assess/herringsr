@@ -9,9 +9,9 @@ The minor SARs are `r commify(minor_regions_full_parens)`.
 We conduct formal analyses of stock trend information for the major SARs.
 For the minor SARs, we present available
 catch data, biological data, and spawn survey data
-(see Section "\nameref{sec:app-minor}").
+(Section "\nameref{sec:app-minor}").
 Beginning in 2021 we include similar data for the special area, Area 10
-(see Section "\nameref{sec:app-special}").
+(Section "\nameref{sec:app-special}").
 Formal analyses of stock trends are not included for
 minor SARs and special areas due to data availability.
 Note that special areas are not SARs;

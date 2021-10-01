@@ -24,7 +24,7 @@ Tables also include MP performance under the DIM and conM Robustness OM scenario
 
 Science advice for the minor SARs is limited to
 presentation of catch data, biological data, and spawn survey data 
-(see Section "\nameref{sec:app-minor}").
+(Section "\nameref{sec:app-minor}").
 Similarly, science advice for the special area, Area 10 is limited to
 presentation of catch data, biological data, and spawn survey data 
-(see Section "\nameref{sec:app-special}").
+(Section "\nameref{sec:app-special}").
