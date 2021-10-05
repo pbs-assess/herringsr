@@ -366,22 +366,6 @@ A-Tlegay divers surveyed spawn from Willow Point south down to Bates Beach (and 
 Through an outreach program, spawns were also reported to A-Tlegay from local mainland inlet areas.
 As a result, A-Tlegay was able to dive on two spawns in Bute Inlet and 1 spawn in Teakerne Arm (Section 151).
 
-<!-- TODO: JC Check for any last emails
-
-I'll wait to hear back from Qualicum, K'omos
-
-Waiting for input from Mark Recalma, heredity chief Qualicum 
-
-Haven't heard yet from Corey Frank, K'omos
-
-\textbf{Eastern SoG}
-
-Refining info from Tla'amin
-
-\textbf{Southern SoG}
-
-Waiting for input from Tim, Nicole, Chad -->
-
 ### West Coast of Vancouver Island
 
 In general, herring spawn was sporadic and short in duration in Barkley and Nootka Sounds with a spawn lasting several days in Hesquiaht Harbour. 
@@ -754,77 +738,6 @@ Time series of $U_t$ relative to target harvest rate of `r target_hr*100`%
 are presented in Figure \@ref(fig:harvest-rate).
 
 ## Application of MPs and harvest options for `r assess_yr + 1`\label{sec:harv-opts}
-
-<!--Generally, harvest advice for the major stocks of Pacific Herring has been based on a 1-year forecast of pre-fishery spawning biomass and
-application of a HCR that is a hybrid of fixed escapement and a target harvest rate (e.g., @hall1988).
-Although the target harvest rate has varied among regions in recent years (e.g., CC and PRD SARs; @dfo2017),
-the “historical” practice was to apply a target harvest rate of `r target_hr*100`%
-when the forecast is estimated to be above a fixed commercial fishery cutoff of
-$0.25\SB_0$ defined in the 1996 stock assessment [@dfo2016].
-This rule is referred to as the "fixed cutoff rule."
-
-Renewal of the Pacific Herring management framework included a commitment to MSE simulation-evaluation of the performance of historical fixed cutoff and
-alternative MPs in relation to conservation and fisheries management objectives.
-The first cycle of the MSE process was completed for the WCVI and SoG SARs in 2018 [@dfo2019a];
-a similar process was used to evaluate harvest strategies for HG, PRD, and CC in 2019 [@dfo2019c].
-In the summer of 2020 the second MSE cycle was initiated 
-for the WCVI and SoG management areas.
-In this cycle updates included conditioning the OMs with more recent stock
-and fishery data and evaluating the performance of additional candidate MPs for these management areas. 
-
-The ranking of objectives and selection of MPs that meet objectives using MSE is an iterative process.
-The first cycle of Pacific Herring MSE includes, as a starting point, four core fisheries management objectives [@dfo2019c] which reflect DFO policy, and were applied to each major SAR:
-
-1. Maintain spawning biomass above the LRP with at least 75% probability over three Pacific Herring generations
-(i.e., avoid a biomass limit; $P(\SB_t > 0.3\SB_0) \geq 0.75$),
-
-1. Maintain spawning biomass at or above the USR with at least 50% probability over three Pacific Herring generations
-(i.e., achieve a target biomass; $P(\SB_t \geq 0.6\SB_0) \geq 0.5$),
-
-1. Maintain average annual variability (AAV) in catch below 25% over three Pacific Herring generations
-(goal reflecting catch variability; $\text{AAV} < 0.25$), and
-
-1. Maximize average annual catch over three Pacific Herring generations
-(goal reflecting catch biomass).
-
-However, a fully specified set of objectives has not yet been developed for each management area.
-DFO will continue to collaborate with coastal First Nations to develop area-specific objectives specific to Food, Social and Ceremonial fisheries as well as spawn-on-kelp (SOK) fisheries.
-In addition, DFO will continue to engage with the herring industry, government, and non-government organizations
-to describe broader objectives related to conservation, economics, and access.
-
-The MPs for each SAR differ in the form of the HCR and choices of catch cap, but use the same monitoring data and assessment model [e.g., @cleary2018].
-The current assessment model assumes natural mortality is time-varying.
-The first MSE cycle introduced three hypotheses about future Pacific Herring natural mortality $M$: 
-
-1. $M$ is a time-varying, density-dependent process (DDM),
-
-1. $M$ is a time-varying, density-independent process (DIM), and
-
-1. $M$ is constant over time (conM).
-
-These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
-The DDM scenario was identified as the Reference OM scenario based on discussion at the July 2018 CSAS review process [@dfo2019c],
-while the DIM and conM scenarios were identified as Robustness OM scenarios.
-There is however currently no scientifically supported method for predicting the natural mortality and therefore all three scenarios are included. 
-
-Results presented here represent all three OM scenarios.
-
-Several lessons were learned from the analysis:
-
-1. The catch-at-age stock assessment model can produce large (positive) assessment errors.
-Such assessment errors cause over-estimation of spawning biomass and
-result in recommended catch limits such that the realized harvest rate exceeds the intended target specified by a HCR (e.g., over-harvest).
-
-1. Reduction in harvest rate from 20% to 10% was the most effective means of mitigating stock assessment errors by reducing the absolute size of the catch.
-The use of a catch cap, implemented as a maximum annual catch level, was an effective model-free way to further mitigate assessment errors at very high biomass levels.
-Simulation analyses additionally showed that outcomes are insensitive to the choice of operational control points (OCPs) in the HCR when a low harvest rate (HR) and catch cap are applied.
-This occurs because low biomass levels (associated with the lower OCP) are avoided for these management procedures (MPs).
-
-1. Differences in specification of Pacific Herring MPs, including the HCR components, are expected a priori among SARs.
-The reasons relate to differences in objectives deemed important by resource users,
-differences in historical and current stock and fishery dynamics, and
-differences in the magnitude and direction of assessment model errors in each SAR.
-Conservation objectives such as those based on avoiding a threshold to serious harm (i.e., a limit reference point) in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs based on the analyses of @kronlund2017.-->
 
 Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs
 for each major SAR. 
