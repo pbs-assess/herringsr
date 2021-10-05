@@ -57,7 +57,7 @@ updated MP recommendations for the HG, PRD, and CC SARs [@dfo2020a].
 
 1. The 2020 stock assessment includes updated MP recommendations
 for the SoG and WCVI SARs, and
-MP recommendations for HG, PRD, and CC SARs as per 2019 [@dfo2020a].  
+MP recommendations for HG, PRD, and CC SARs as per 2019 [@dfo2020a].
 
 1. The 2021 stock assessment includes MP recommendations
 for the SoG and WCVI SARs as per 2020 [@dfo2021], and
@@ -81,6 +81,6 @@ where applicable,
 recommendations from the aforementioned 2018, 2019 and 2020 MSE analyses
 (Section "\nameref{sec:harv-opts}").
 
-<!--  Mandatory last paragraph in this section -->
+<!-- Mandatory last paragraph in this section -->
 This Science Response results from the Science Response Process of
 15 September 2021 on the "`r rmarkdown::metadata$title`."

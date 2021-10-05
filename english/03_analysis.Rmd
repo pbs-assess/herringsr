@@ -31,7 +31,7 @@ specification of objectives related to
 catch, catch variability, and socio-cultural goals. 
 MSE is an iterative and ongoing process conducted with the participation of
 First Nations, the fishing industry, as well as
-government and non-government organizations.  
+government and non-government organizations. 
 
 The first MSE cycles for the SoG and WCVI management areas were completed in 2018 [@dfo2019a].
 Steps included
@@ -357,7 +357,7 @@ on average and the layers of roe on the kelp was minimal indicating smaller spaw
 The build up of roe took long and averaged only 2 to 3 layers. 
 
 The consensus among fishers and management was that this year was worse than the previous two years 
-and were unable to attain sufficient FSC or fulfill our herring roe spawn on kelp quota despite a lot of effort.  
+and were unable to attain sufficient FSC or fulfill our herring roe spawn on kelp quota despite a lot of effort. 
 
 ### Strait of Georgia
 
@@ -384,7 +384,7 @@ Waiting for input from Tim, Nicole, Chad -->
 
 ### West Coast of Vancouver Island
 
-In general, herring spawn was sporadic and short in duration in Barkley and Nootka Sounds with a spawn lasting several days in Hesquiaht Harbour.  
+In general, herring spawn was sporadic and short in duration in Barkley and Nootka Sounds with a spawn lasting several days in Hesquiaht Harbour. 
 
 In Nootka, herring were in the deep off of Yuquot for a couple of weeks and then they moved outside to Bajo Reef/Beano Creek area in mid-March.
 Bird and marine mammal activity shifted from the vicinity of Yuquot out to Bajo/Beano area.
@@ -392,7 +392,7 @@ Ray Williams of Yuquot reported a small spawn in the lower end of Tahsis Inlet, 
 There was a small harvest of spawn on kelp (60 lb total) just off the rocks of Escalante. 
 
 There was a small spawn in the shallows in the Port Langford area of Nuchatlitz on March 9^th^ and later in Rosa Harbour.
-Only 20% of the trees set for spawn-on-bough collections were successful in the area.  
+Only 20% of the trees set for spawn-on-bough collections were successful in the area. 
 
 In Area 23, the spawns were small and short in duration around mid-March.
 The main spawn was around Muscle Beach to Macoha on March 12^th^.
@@ -404,7 +404,7 @@ Other spawn investigated around this time was at Mussel beach.
 At the end of March a small spawn was reported at Lyall point. 
 
 In Area 24, most spawning activity was in and around Hesquiaht Harbour from about the first week in March until near the end of the month.
-Hesquiaht Harbour is not a great area for SOB due to the prevalence of sandy bottom  substrates and windy conditions.  
+Hesquiaht Harbour is not a great area for SOB due to the prevalence of sandy bottom substrates and windy conditions. 
 
 ## Stock status update
 
@@ -721,7 +721,7 @@ to be sufficient to offset this below average recruitment of
 age-`r age_first` fish to support biomass growth.
 The absence of a commercial fishery since 2005 means the realized harvest rate
 has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
-There is  modest evidence for an increase in biomass above the LRP
+There is modest evidence for an increase in biomass above the LRP
 since 2016 and
 production estimates for the year between 2019 and 2020, and 2020 and 2021
 are positive (Figure \@ref(fig:storyboard-wcvi)f).
