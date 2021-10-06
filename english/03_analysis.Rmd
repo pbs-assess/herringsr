@@ -520,7 +520,7 @@ The effective harvest rate $U_t$ since 2000 has been at or near zero
 with the last commercial roe fishery in 2002,
 and the last commercial SOK fishery in 2004.
 
-`r stock_status_text(SAR = "HG")`
+`r stock_status_text(SAR = "HG", translate = french)`
 Management measures to support long-term recovery of herring stocks in
 Haida Gwaii are being developed through the rebuilding plan process
 (Section "\nameref{sec:harv-opts}").
@@ -564,7 +564,7 @@ The estimated natural mortality appears to be unchanged from last year,
 resulting in what appears to be a small increase in production
 between 2018 and 2019, sustaining the 2019 biomass increase through 2021.
 
-`r stock_status_text(SAR = "PRD")`
+`r stock_status_text(SAR = "PRD", translate = french)`
 Commercial fisheries have occurred annually in PRD since the mid-1980s,
 with the exception of 2019 to 2021,
 during which the effective harvest rate $U_t$ was estimated to be at or below 20% 
@@ -635,7 +635,7 @@ however these removals are not included in the estimation of $U_t$.
 A commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19,
 however it successfully resumed in 2021 (Table \@ref(tab:annual-sok-catch)).
 
-`r stock_status_text(SAR = "CC")`
+`r stock_status_text(SAR = "CC", translate = french)`
 
 ### Strait of Georgia
 
@@ -681,7 +681,7 @@ with median estimates distributed evenly above and below `r target_hr*100`%
 (Figure \@ref(fig:harvest-rate)).
 The model estimates the median effective harvest rate exceeded 25% in 2006 and 2017.
 
-`r stock_status_text(SAR = "SoG")`
+`r stock_status_text(SAR = "SoG", translate = french)`
 
 ### West Coast of Vancouver Island
 
@@ -724,7 +724,7 @@ If and when fisheries resume in the future,
 the addition of new fishery data may reduce this apparent autocorrelation and
 any resulting bias.
 
-`r stock_status_text(SAR = "WCVI")`
+`r stock_status_text(SAR = "WCVI", translate = french)`
 
 ## Management performance
 
@@ -769,7 +769,7 @@ performed satisfactorily against the conservation objective of
 maintaining spawning biomass above the LRP with high probability
 (i.e., at least 75%).^[``High'' probability is defined as 75 to 95% by the DFO decision-making framework [@dfo2009].]
 
-`r proj_biomass_text(SAR = "HG")`
+`r proj_biomass_text(SAR = "HG", translate = french)`
 
 DFO has committed to developing and implementing a rebuilding plan for
 Haida Gwaii Pacific Herring.
@@ -835,7 +835,7 @@ show evidence of recent prolonged periods of low biomass and low productivity:
 states that were entered rapidly and were preceded by high biomass levels
 [@kronlund2017].
 
-`r proj_biomass_text(SAR = "PRD")`
+`r proj_biomass_text(SAR = "PRD", translate = french)`
 
 Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
 are presented in Table \@ref(tab:decision-prd),
@@ -906,7 +906,7 @@ Heilstuk Nation conservation objectives related to age and size of herring, nor
 objectives on a finer spatial scale or those specific to SOK fisheries.
 These limitations exist for all five major stocks.
 
-`r proj_biomass_text(SAR = "CC")`
+`r proj_biomass_text(SAR = "CC", translate = french)`
 
 Finally, DFO acknowledges commitment to the Heiltsuk Nation for
 the development of a Joint Fisheries Management Plan for Pacific Herring
@@ -937,7 +937,7 @@ above the LRP with 75 to 85% probability over all three OM scenarios
 MPs with harvest rate of 30% did not meet the conservation objective
 ($p$=69% for the Reference OM).
 
-`r proj_biomass_text(SAR = "SoG")`
+`r proj_biomass_text(SAR = "SoG", translate = french)`
 
 Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
 are presented in Table \@ref(tab:decision-sog).
@@ -1018,7 +1018,7 @@ is due to an increased spawn index in 2018 and 2019 and
 increased status relative to $SB_0$. 
 Performance improvement is observed under all three scenarios.
 
-`r proj_biomass_text(SAR = "WCVI")`
+`r proj_biomass_text(SAR = "WCVI", translate = french)`
 
 Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
 are presented in Table \@ref(tab:decision-wcvi).
