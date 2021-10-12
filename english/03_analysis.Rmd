@@ -728,13 +728,14 @@ any resulting bias.
 
 ## Management performance
 
-Management procedure performance can be investigated using time series of
-effective harvest rate.
-The estimated effective harvest rate $U$ in each year $t$, calculated as
+Management procedure performance can be investigated using
+the time series of effective harvest rate $U$.
+Estimated effective harvest rate $U$ in each year $t$ is
 $U_t = C_t/(C_t + \SB_t)$, where
 $C_t$ is catch in year $t$, and
 $\SB_t$ is estimated spawning biomass in year $t$.
-Time series of $U_t$ relative to target harvest rate of `r target_hr*100`%
+Time series of $U_t$ relative to
+the target harvest rate of `r target_hr*100`%
 are presented in Figure \@ref(fig:harvest-rate).
 
 ## Application of MPs and harvest options for `r assess_yr + 1`\label{sec:harv-opts}
@@ -767,7 +768,7 @@ Results of the simulation-evaluations found that none of the proposed MPs,
 including the historical and no fishing MPs,
 performed satisfactorily against the conservation objective of
 maintaining spawning biomass above the LRP with high probability
-(i.e., at least 75%).^[``High'' probability is defined as 75 to 95% by the DFO decision-making framework [@dfo2009].]
+[i.e., at least 75%, @dfo2009].\footnote{\label{fn:HighProb}``High'' probability is defined as 75 to 95\% by the DFO decision-making framework (DFO 2009).}
 
 `r proj_biomass_text(SAR = "HG", next_yr = assess_yr + 1, translate = french)`
 
