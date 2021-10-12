@@ -200,66 +200,6 @@ M_max <- lapply(
 # Input catch for table 1
 inp_catch <- read_csv(here::here("data/input-data.csv"), col_types = cols())
 
-#' Get model output values for a given region
-#'
-#' @param region the short form for the region as defined in the
-#'   `major_regions_short` vector`
-#' @param majors if TRUE, use major models list (`major_models`), if FALSE use
-#'   minor models list (`minor_models`)
-#' @param french if TRUE, use french
-#'
-#' @return a list of values as required for the report
-#'
-#' @examples
-#' hg_vars <- get_vars("HG")
-get_vars <- function(region, majors = TRUE, french = FALSE) {
-  if (majors) {
-    model_ind <- match(en2fr(region, french), major_regions_short)
-    models <- major_models
-  } else {
-    model_ind <- match(en2fr(region, french), minor_regions_short)
-    models <- minor_models
-  }
-  sbt <- models[[model_ind]]$mcmccalcs$sbt.quants
-  sbt_yrs <- as.numeric(colnames(sbt))
-  # Previous year spawning biomass - vector length 4:
-  # 1 = lower, 2 = median, 3 = upper, 4 = mpd
-  prev_yr_sbt <- sbt[, sbt_yrs == (assess_yr - 1)] * 1000
-  # Final year spawning biomass - vector length 4:
-  # 1 = lower, 2 = median, 3 = upper, 4 = mpd
-  final_yr_sbt <- sbt[, sbt_yrs == assess_yr] * 1000
-  refs <- models[[model_ind]]$mcmccalcs$r.quants
-  sbo <- refs[rownames(refs) == "sbo", ][2:4] * 1000
-  # Probability that final year biomass is less than 0.3B0 - vector length 3:
-  # 1 = lower, 2 = median, 3 = upper
-  prob_less_03sbo <-
-    refs[rownames(refs) == paste0("psb", assess_yr, "/0.3sbo"), ][2]
-  proj <- as_tibble(models[[model_ind]]$mcmccalcs$r.quants, rownames = "value")
-  # Projected biomass for next year - vector length 3:
-  # 1 = lower, 2 = median, 3 = upper
-  proj_sbt <-
-    as.numeric(proj[proj$value == paste0("sb", assess_yr + 1), -c(1, 2)]) * 1000
-  # Probability that next year (projected) biomass is less than 0.3B0 -
-  # vector length 3 - 1 = lower, 2 = median, 3 = upper
-  prob_proj_less_03sbo <-
-    refs[rownames(refs) == paste0("psb", assess_yr + 1, "/0.3sbo"), ][2]
-  # Depletion
-  dt <- models[[model_ind]]$mcmccalcs$depl.quants
-  dt_yrs <- as.numeric(colnames(dt))
-  # Depletion in final year
-  final_yr_dt <- dt[, dt_yrs == assess_yr]
-  # List to return
-  list(
-    prev_yr_sbt = prev_yr_sbt,
-    final_yr_sbt = final_yr_sbt,
-    sbo = sbo,
-    prob_less_03sbo = prob_less_03sbo,
-    proj_sbt = proj_sbt,
-    prob_proj_less_03sbo = prob_proj_less_03sbo,
-    final_yr_dt = final_yr_dt
-  )
-}
-
 # SARs - dependent values
 hg_vars <- get_vars("HG", french = french)
 prd_vars <- get_vars("PRD", french = french)
@@ -290,53 +230,5 @@ proc_mp <- function(df) {
       "Yield\nObj 4\nmax",
       "Catch < 650t\nmin"
     )
-  )
-}
-
-# Text for "Stock status update"
-stock_status_text <- function(SAR, this_yr = assess_yr, p_lrp = 0.3) {
-  vars <- get(paste0(tolower(SAR), "_vars"))
-  paste0(
-    "Estimated unfished spawning biomass $\\SB_0$ is ",
-    f(vars$sbo[2]), "$\\,\\text{t}$, and the ",
-    "LRP of $", p_lrp, "\\SB_0$ is ",
-    f(p_lrp * vars$sbo[2]), "$\\,\\text{t}$ (posterior medians). ",
-    "Compared to last year, estimated spawning biomass in ", this_yr,
-    " $\\SB_{", this_yr, "}$",
-    ifelse(vars$final_yr_sbt[2] > vars$prev_yr_sbt[2],
-      " increased",
-      " decreased"
-    ),
-    " to ", f(vars$final_yr_sbt[2]),
-    "$\\,\\text{t}$ (posterior median), which is equal to ",
-    f(vars$final_yr_dt[2] * 100, 1),
-    "% of $\\SB_0$ (Tables ",
-    "\\@ref(tab:", tolower(SAR), "-spawning-biomass-depletion) & ",
-    "\\@ref(tab:ref-points-", tolower(SAR), ")). ",
-    "Spawning biomass in ", this_yr,
-    " is estimated to be above the LRP with a ",
-    f((1 - vars$prob_less_03sbo) * 100, 1),
-    "% probability (Table ",
-    "\\@ref(tab:ref-points-", tolower(SAR), "))."
-  )
-}
-
-# Text for "Application of MPs.."
-proj_biomass_text <- function(SAR, next_yr = assess_yr + 1, p_lrp = 0.3) {
-  vars <- get(paste0(tolower(SAR), "_vars"))
-  paste0(
-    "In the absence of fishing, spawning biomass in ", next_yr,
-    " $\\SB_{", next_yr, "}$ ",
-    "is forecast to be ",
-    f(vars$proj_sbt[2]),
-    "$\\,\\text{t}$ (posterior median; Table ",
-    "\\@ref(tab:ref-points-", tolower(SAR), ")). ",
-    "Spawning biomass in ", next_yr,
-    " is forecast to below the LRP of $", p_lrp, "\\SB_0$ (",
-    f(p_lrp * vars$sbo[2]), "$\\,\\text{t}$) with a ",
-    f(vars$prob_proj_less_03sbo * 100, 1),
-    "% probability, in the absence of fishing (Table ",
-    "\\@ref(tab:ref-points-", tolower(SAR), ") and Figure ",
-    "\\@ref(fig:proj-biomass-density))."
   )
 }
