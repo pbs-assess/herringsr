@@ -82,7 +82,7 @@ options(tinytex.verbose = TRUE)
 ```{r load-libraries, cache=FALSE}
 french <- rmarkdown::metadata$output$`csasdown::sr_pdf`$french
 if(french){
-  options(OutDec =  ",")
+  options(OutDec = ",")
 }
 rebuild_rdata_model_files <- FALSE
 run_retrospectives <- FALSE
