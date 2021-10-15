@@ -43,11 +43,11 @@ lof: true
 
 ```{r setup, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}
 library(knitr)
-if(is_latex_output()){
+if (is_latex_output()) {
   knitr_figs_dir <- "knitr-figs-pdf/"
   knitr_cache_dir <- "knitr-cache-pdf/"
   fig_out_type <- "pdf"
-}else{
+} else {
   knitr_figs_dir <- "knitr-figs-docx/"
   knitr_cache_dir <- "knitr-cache-docx/"
   fig_out_type <- "png"
@@ -58,30 +58,32 @@ fig_out_width <- "6.5in"
 fig_dpi <- 320
 fig_align <- "center"
 fig_pos <- "ht"
-opts_chunk$set(collapse = TRUE,
-               warning = FALSE,
-               message = FALSE,
-               comment = "#>",
-               fig.path = knitr_figs_dir,
-               cache.path = knitr_cache_dir,
-               fig.asp = fig_asp,
-               fig.width = fig_width,
-               out.width = fig_out_width,
-               echo = FALSE,
-               #  autodep = TRUE,
-               #  cache = TRUE,
-               cache.comments = FALSE,
-               dev = fig_out_type,
-               dpi = fig_dpi,
-               fig.align = fig_align,
-               fig.pos = "H")
+opts_chunk$set(
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  comment = "#>",
+  fig.path = knitr_figs_dir,
+  cache.path = knitr_cache_dir,
+  fig.asp = fig_asp,
+  fig.width = fig_width,
+  out.width = fig_out_width,
+  echo = FALSE,
+  #  autodep = TRUE,
+  #  cache = TRUE,
+  cache.comments = FALSE,
+  dev = fig_out_type,
+  dpi = fig_dpi,
+  fig.align = fig_align,
+  fig.pos = "H"
+)
 options(xtable.comment = FALSE)
 options(tinytex.verbose = TRUE)
 ```
 
 ```{r load-libraries, cache=FALSE}
 french <- rmarkdown::metadata$output$`csasdown::sr_pdf`$french
-if(french){
+if (french) {
   options(OutDec = ",")
 }
 rebuild_rdata_model_files <- FALSE
@@ -97,8 +99,8 @@ theme_set(herring_theme())
 ```
 
 ```{r output-options}
-keep_non_CC <- TRUE #set = FALSE if providing preliminary report to CC
-show_ic_figures <- TRUE  # Show/hide incidental catch figures
+keep_non_CC <- TRUE # set = FALSE if providing preliminary report to CC
+show_ic_figures <- TRUE # Show/hide incidental catch figures
 ```
 
 <!-- Distributions -->
