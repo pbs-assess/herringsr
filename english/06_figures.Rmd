@@ -335,7 +335,7 @@ storyboard_multi_ppt_h <- cowplot::plot_grid(plot_a_multi_x_down,
                    align = "h"
                    )
 
-ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
+ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
 
  shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    plot_b_multi_x_up,
@@ -344,7 +344,25 @@ ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_p
                    ncol = 2,
                    align = "v"
                    )
-ggsave(filename = here("figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
+ggsave(filename = here("figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=5, dpi=300)
+plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                   major_models[[model_ind]],
+                                   surv_type,
+                                   new_surv_yr = new_surv_yr,
+                                   xlim = xlim_all,
+                                   point_size = 4,
+                                   line_size = 2,
+                                   x_axis_label_size = 20,
+                                   x_axis_tick_label_size = 20,
+                                   y_axis_label_size = 20,
+                                   y_axis_tick_label_size = 20,
+                                   y_axis_label_newline_length = 40,
+                                   annot = region_abbreviation,
+                                   show_x_axis = TRUE,
+                                   x_axis_position = "bottom",
+                                   translate = french)
+
+ggsave(filename = here("figures", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
 
 plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
@@ -359,7 +377,7 @@ plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 label_points = TRUE,
                                 translate = french) 
 
-ggsave(filename = here("figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
+ggsave(filename = here("figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=5, dpi=300)
 
 ```
 
@@ -541,6 +559,25 @@ ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_p
                    align = "v"
                    )
 ggsave(filename = here("figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
+
+plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                   major_models[[model_ind]],
+                                   surv_type,
+                                   new_surv_yr = new_surv_yr,
+                                   xlim = xlim_all,
+                                   point_size = 4,
+                                   line_size = 2,
+                                   x_axis_label_size = 20,
+                                   x_axis_tick_label_size = 20,
+                                   y_axis_label_size = 20,
+                                   y_axis_tick_label_size = 20,
+                                   y_axis_label_newline_length = 40,
+                                   annot = region_abbreviation,
+                                   show_x_axis = TRUE,
+                                   x_axis_position = "bottom",
+                                   translate = french)
+
+ggsave(filename = here("figures", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
 
 plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
@@ -770,6 +807,25 @@ ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_p
                    )
 ggsave(filename = here("figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
 
+plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                   major_models[[model_ind]],
+                                   surv_type,
+                                   new_surv_yr = new_surv_yr,
+                                   xlim = xlim_all,
+                                   point_size = 4,
+                                   line_size = 2,
+                                   x_axis_label_size = 20,
+                                   x_axis_tick_label_size = 20,
+                                   y_axis_label_size = 20,
+                                   y_axis_tick_label_size = 20,
+                                   y_axis_label_newline_length = 40,
+                                   annot = region_abbreviation,
+                                   show_x_axis = TRUE,
+                                   x_axis_position = "bottom",
+                                   translate = french)
+
+ggsave(filename = here("figures", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
+
 plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
                                 xlim = xlim_all,
@@ -964,6 +1020,25 @@ ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_p
                    )
 ggsave(filename = here("figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
 
+plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                   major_models[[model_ind]],
+                                   surv_type,
+                                   new_surv_yr = new_surv_yr,
+                                   xlim = xlim_all,
+                                   point_size = 4,
+                                   line_size = 2,
+                                   x_axis_label_size = 20,
+                                   x_axis_tick_label_size = 20,
+                                   y_axis_label_size = 20,
+                                   y_axis_tick_label_size = 20,
+                                   y_axis_label_newline_length = 40,
+                                   annot = region_abbreviation,
+                                   show_x_axis = TRUE,
+                                   x_axis_position = "bottom",
+                                   translate = french)
+
+ggsave(filename = here("figures", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
+
 plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
                                 xlim = xlim_all,
@@ -1151,7 +1226,7 @@ storyboard_multi_ppt_h <- cowplot::plot_grid(plot_a_multi_x_down,
 
 ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
 
- shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
+shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    plot_b_multi_x_up,
                    plot_c_multi_x_down,
                    plot_d_multi,
@@ -1159,6 +1234,25 @@ ggsave(filename = here("figures", paste0("storyboard_", region_abbreviation, "_p
                    align = "v"
                    )
 ggsave(filename = here("figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=4, dpi=300)
+
+plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
+                                   major_models[[model_ind]],
+                                   surv_type,
+                                   new_surv_yr = new_surv_yr,
+                                   xlim = xlim_all,
+                                   point_size = 4,
+                                   line_size = 2,
+                                   x_axis_label_size = 20,
+                                   x_axis_tick_label_size = 20,
+                                   y_axis_label_size = 20,
+                                   y_axis_tick_label_size = 20,
+                                   y_axis_label_newline_length = 40,
+                                   annot = region_abbreviation,
+                                   show_x_axis = TRUE,
+                                   x_axis_position = "bottom",
+                                   translate = french)
+
+ggsave(filename = here("figures", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
 
 plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
@@ -1219,4 +1313,90 @@ plot_proj_biomass_density(major_models,
                           yr = assess_yr + 1,
                           refpt = "X03B0",
                           translate = french)
+```
+```{r stacked-biomass, fig.asp=ifelse(french, 1.2, 1.2), fig.cap = ifelse(french, "(ref:stacked-biomass-cap-fr)", "(ref:stacked-biomass-cap)")}
+
+#need install.packages("library(gcookbook)") for stacked graphs.
+
+unique(major_catch$region)
+
+french <- FALSE
+my_catch <- major_catch %>%
+  filter(year <= major_end_yr) %>%
+  group_by(year, region) %>%
+  summarise_at(vars(value),
+               list(value = sum)) 
+my_catch$region <- recode_factor(my_catch$region, 
+                                 "Haida Gwaii" = "HG", 
+                                 "Prince Rupert District" = "PRD", 
+                                 "Central Coast" = "CC", 
+                                 "Strait of Georgia" = "SOG",
+                                 "West Coast of Vancouver Island" = "WCVI")
+unique(my_catch$year)
+zero_catch <- expand.grid(year = c(my_catch$year), region = unique(my_catch$region), value = 0)
+
+my_catch <- bind_rows(my_catch, zero_catch)%>%
+  group_by(year, region) %>%
+  summarise(value = sum(value))%>%
+  ungroup()
+
+my_catch <- my_catch %>%
+  filter(!row_number() %in% c(-1))
+
+g <- ggplot(my_catch, aes(x = year, y = value, fill = region)) +
+        geom_area()+
+        ylab("Catch 1000 t") +
+        scale_x_continuous(breaks = seq(from = 1900, to = 2100, by = 10),
+              name = NULL,
+              position = "top") +
+        theme(axis.text=element_text(size=16),
+              axis.title=element_text(size=16), #,face="bold"),
+              axis.title.x=element_blank())
+
+
+#different colours
+g2 <- ggplot(my_catch, aes(x = year, y = value, fill = region)) + 
+  geom_area(colour = NA, alpha = .4) +
+  scale_fill_brewer(palette = "Blues") +
+  geom_line(position = "stack", size = .2) +
+  ylab("Catch 1000t ") +
+  theme(axis.text=element_text(size=16),
+              axis.title=element_text(size=16), #face="bold"),
+              axis.title.x=element_blank())
+
+ggsave(filename = here("figures", paste0("catch_stacked.png")), plot = g,  width=9, height=5, dpi=300)
+
+hg.mod <- major_models[[1]]
+prd.mod <- major_models[[2]]
+cc.mod <- major_models[[3]]
+sog.mod <- major_models[[4]]
+wcvi.mod <- major_models[[5]]
+year <- hg.mod$mpd$yrs
+HG <- hg.mod$mpd$sbt
+PRD <- prd.mod$mpd$sbt
+CC <- cc.mod$mpd$sbt
+SOG <- sog.mod$mpd$sbt
+WCVI <- wcvi.mod$mpd$sbt
+
+df <- data.frame(year, HG, PRD, CC, SOG, WCVI) %>%
+        head(-1)#remove next years prediction
+
+df <- gather(df, key = "region", value = "spawning_biomass", HG:WCVI, factor_key=TRUE)
+        
+spawning_biomass_stacked <- ggplot(df, aes(x = year, y = spawning_biomass, fill = region)) +
+  geom_area() +
+  ylab(newline_format("Spawning Biomass 1000 t", 15)) +
+  scale_x_continuous(breaks = seq(from = 1900, to = 2100, by = 10),
+        name = NULL,
+        position = "bottom") +
+  theme(axis.text=element_text(size=16),
+              axis.title=element_text(size=16), #,face="bold"),
+              axis.title.x=element_blank())
+
+ggsave(filename = here("figures", paste0("spawning_biomass_stacked.png")), plot = spawning_biomass_stacked,  width=9, height=4.5, dpi=300)
+
+z <- cowplot::plot_grid(g, spawning_biomass_stacked, ncol = 1, align = "v")
+
+ggsave(filename = here("figures", paste0("summed_picture.png")), plot = z,  width=11, height=6, dpi=300)
+        
 ```

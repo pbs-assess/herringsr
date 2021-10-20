@@ -6,6 +6,7 @@ library(gfiscamutils)
 library(rosettafish)
 library(herringutils)
 library(kableExtra)
+library(gcookbook)#added for stacked figures
 
 # Warning if using 32-bit R
 if(.Machine$sizeof.pointer == 4)
