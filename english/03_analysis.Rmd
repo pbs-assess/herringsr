@@ -145,7 +145,7 @@ provide decision-makers with a tractable set of trade-off choices.
 1. Outcomes of MP evaluations appear to be more heavily influenced by
 the last three to five years of stock status and 
 natural mortality trends used to condition the OM. 
-If simulations were run over a greater number of years (i.e., 50 years)
+If simulations were run over a greater number of years (e.g., 50 years)
 performance would start to approach equilibrium and be 
 unaffected by most recent trends in OM conditioning data.
 
