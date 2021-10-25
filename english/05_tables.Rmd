@@ -709,8 +709,8 @@ Légende: $\SB_0$ est la biomasse reproductrice estimée non pêchée;
 $\SB_{t}$ est la biomasse reproductrice de l'année $t$; et
 $\SB_{`r assess_yr+1`}$ est la biomasse reproductrice projetée en
 `r assess_yr+1` en supposant l'absence de pêche.
-Notez que la classe âge-`r âge_plus` est un 'groupe plus'
-qui inclut les poissons âgés de `r âge_plus` et plus.
+Notez que la classe âge-`r age_plus` est un 'groupe plus'
+qui inclut les poissons âgés de `r age_plus` et plus.
 
 \needspace{0.35\textheight}
 
