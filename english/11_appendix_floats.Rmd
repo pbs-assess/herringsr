@@ -10,10 +10,10 @@ proportion of  spawn index by Section
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-a27-cap-fr) Indice du frai en tonnes et
-proportion de l’indice du frai par section pour
-le hareng du Pacifique de `r  minor_end_yr-num_yrs_tab` à `r minor_end_yr` dans la
-région d’évaluation des stocks mineur de la zone 27.
+(ref:spawn-index-a27-cap-fr) RES de la zone 27:
+indice de frai en tonnes pour le hareng du Pacifique, et
+proportion de l'indice de frai par section 
+de `r major_end_yr - num_yrs_tab` à `r major_end_yr`.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 ```{r spawn-index-a27}
@@ -35,10 +35,10 @@ proportion of  spawn index by Section
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-a2w-cap-fr) Indice du frai en tonnes et
-proportion de l’indice du frai par section pour
-le hareng du Pacifique de `r  minor_end_yr-num_yrs_tab` à `r minor_end_yr` dans la
-région d’évaluation des stocks mineur de la zone 2 ouest.
+(ref:spawn-index-a2w-cap-fr) RES de la zone 2 ouest:
+indice de frai en tonnes pour le hareng du Pacifique, et
+proportion de l'indice de frai par section
+de `r major_end_yr - num_yrs_tab` à `r major_end_yr`.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 \needspace{0.35\textheight}
@@ -60,10 +60,10 @@ proportion of  spawn index by Section
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
 
-(ref:spawn-index-a10-cap-fr) Indice du frai en tonnes et
-proportion de l’indice du frai par section pour
-le hareng du Pacifique de `r  minor_end_yr-num_yrs_tab` à `r minor_end_yr` dans la
-zone spécial de la zone 10.
+(ref:spawn-index-a10-cap-fr) Zone spécial de la zone 10:
+indice de frai en tonnes pour le hareng du Pacifique, et
+proportion de l'indice de frai par section
+de `r major_end_yr - num_yrs_tab` à `r major_end_yr`.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
 \needspace{0.35\textheight}
