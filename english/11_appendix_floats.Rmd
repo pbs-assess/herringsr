@@ -83,8 +83,8 @@ spawn_index_by_area_table(
 
 ## Figures
 
-(ref:spawn-section-a27-cap) Area 27 SAR: spawn index in
-thousands of tonnes (t) of Pacific Herring by Section
+(ref:spawn-section-a27-cap) Area 27 SAR:
+spawn index in thousands of tonnes (t) of Pacific Herring by Section
 from `r minor_start_yr_plot` to `r minor_end_yr`.
 The dashed vertical line delineates between two periods
 defined by the dominant survey method:
@@ -92,11 +92,15 @@ surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
 Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
-(ref:spawn-section-a27-cap-fr) L’indice du frai
-en milliers de tonnes pour le hareng du Pacifique par Section de
-`r minor_start_yr_plot` à `r minor_end_yr` dans dans la
-région d’évaluation des stocks mineur de la zone 27.
-Voir la figure \@ref(fig:spawn-section-cc) pour la description.
+(ref:spawn-section-a27-cap-fr) RES de la zone 27:
+indice de frai en milliers de tonnes (t) de hareng du Pacifique par section
+de `r minor_start_yr_plot` à `r minor_end_yr`.
+La ligne verticale en pointillés délimite deux périodes
+définies par la méthode de relevé dominante :
+les relevés de surface (`r major_start_yr` à `r new_surv_yr-1`), et
+les relevés en plongée (`r new_surv_yr` à `r major_end_yr`).
+Note: l'indice de frai n'est pas mis à l'échelle par
+le paramètre d'échelle de l'enquête sur le frai $q$.
 
 ```{r spawn-section-a27, fig.asp=ifelse(french, 0.67, 0.67), fig.cap = ifelse(french, "(ref:spawn-section-a27-cap-fr)", "(ref:spawn-section-a27-cap)")}
 plot_spawn_section(
@@ -109,14 +113,14 @@ plot_spawn_section(
 )
 ```
 
-(ref:minor-catch-cap) Total landed Pacific Herring catch
-in thousands of tonnes (t)
+(ref:minor-catch-cap) Total landed Pacific Herring catch in
+thousands of tonnes (t)
 from `r minor_start_yr_plot` to `r minor_end_yr` in the minor SARs.
 See Figure \@ref(fig:major-catch) for description.
 
-(ref:minor-catch-cap-fr) Prises totales débarquées en
-milliers de tonnes (t) de hareng du Pacifique de
-`r minor_start_yr_plot` à `r minor_end_yr` dans les RES mineurs.
+(ref:minor-catch-cap-fr) Prises totales débarquées de
+hareng du Pacifique en milliers de tonnes (t) de
+`r minor_start_yr_plot` à `r minor_end_yr` dans les RES mineurs
 Voir la figure \@ref(fig:major-catch) pour la description.
 
 ```{r minor-catch, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-catch-cap-fr)", "(ref:minor-catch-cap)")}
@@ -148,22 +152,31 @@ plot_ic(
 (ref:minor-wa-cap) Mean weight-at-age for Pacific Herring in kilograms (kg) 
 from `r minor_start_yr_plot` to `r minor_end_yr` in the minor SARs.
 Circles show mean for age-`r age_highlight` herring.
-Lines show means for age-`r age_first` to age-`r age_plus` herring, incrementing up from bottom line and shaded from darker to lighter.
+Lines show means for age-`r age_first` to age-`r age_plus` herring,
+incrementing up from bottom line and shaded from darker to lighter.
 The thick line shows age-`r age_highlight` herring.
-Biological summaries only include samples collected using seine nets (commercial and test)
+Biological summaries only include samples collected using seine nets
+(commercial and test)
 due to size-selectivity of other gear types such as gillnet.
 The age-`r age_plus` class includes fish ages `r age_plus` and older.
-Note: vertical axes are cropped at `r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
+Note: vertical axes are cropped at
+`r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
 
-(ref:minor-wa-cap-fr) Poids moyen à l'âge du hareng du Pacifique en kilogrammes (kg)
-de `r major_start_yr` à `r major_end_yr` dans les RES minieurs.
+(ref:minor-wa-cap-fr) Poids moyen à l'âge pour le hareng du Pacifique
+en kilogrammes (kg) de `r minor_start_yr_plot` à `r minor_end_yr`
+dans les RESs mineurs.
 Les cercles indiquent la moyenne pour le hareng d'âge `r age_highlight`.
-Les lignes indiquent les moyennes pour les harengs d'âge `r age_first` à age `r age_plus`, en augmentant à partir de la ligne inférieure et en ombrant de plus en plus.
-La ligne épaisse montre le hareng d'âge "r age_highlight".
-Les résumés biologiques ne comprennent que les échantillons collectés à l'aide de senneurs (commerciaux et d'essai)
-en raison de la sélectivité de taille d'autres types d'engins tels que le filet maillant.
-La classe âge-`r age_plus` comprend les poissons âgés de `r age_plus` et plus.
-Note: les axes verticaux sont rognés de `r f(wa_ylim[1], 2)` à `r f(wa_ylim[2], 2)` kg.
+Les lignes montrent les moyennes pour les harengs age-`r age_first` à
+age-`r age_plus`, incrémentées à partir de la ligne inférieure et ombrées
+du plus foncé au plus clair.
+La ligne épaisse montre le hareng d'âge `r age_highlight`.
+Les résumés biologiques ne comprennent que les échantillons recueillis
+à l'aide de senneurs (commerciaux et d'essai)
+en raison de la sélectivité de taille des autres types d'engins
+tels que le filet maillant.
+La classe âge-`r âge_plus` comprend les poissons âgés de `r âge_plus` et plus.
+Note: les axes verticaux sont rognés
+de `r f(wa_ylim[1], 2)` à `r f(wa_ylim[2], 2)` kg.
 
 ```{r minor-wa, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-wa-cap-fr)", "(ref:minor-wa-cap)")}
 plot_wa(
@@ -202,9 +215,9 @@ for Pacific Herring from `r minor_start_yr_plot` to `r minor_end_yr`
 in the minor SARs.
 See Figure \@ref(fig:major-spawn-index) for description.
 
-(ref:minor-spawn-index-cap-fr) L’indice du frai en milliers
-de tonnes pour le hareng du Pacifique de
-`r minor_start_yr_plot` à `r minor_end_yr` dans les RES mineurs.
+(ref:minor-spawn-index-cap-fr) Indice de frai en milliers de tonnes (t)
+pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr`
+dans les RES mineurs.
 Voir la figure \@ref(fig:major-spawn-index) pour la description.
 
 ```{r minor-spawn-index, fig.asp=ifelse(french, 0.6, 0.6), fig.cap = ifelse(french, "(ref:minor-spawn-index-cap-fr)", "(ref:minor-spawn-index-cap)")}
@@ -256,11 +269,12 @@ knitr::include_graphics(
 <!-- ``` -->
 
 (ref:special-wa-cap) Mean weight-at-age for Pacific Herring in kilograms (kg) 
-from `r special_start_yr_plot` to `r special_end_yr` in the special area, Area 10.
+from `r special_start_yr_plot` to `r special_end_yr`
+in the special area, Area 10.
 See Figure \@ref(fig:minor-wa) for description.
 
-(ref:special-wa-cap-fr) Poids selon l’âge en kilogrammes (kg)
-pour le hareng du Pacifique de `r special_start_yr_plot` à `r special_end_yr`
+(ref:special-wa-cap-fr) Poids moyen à l'âge pour le hareng du Pacifique
+en kilogrammes (kg) de `r specia_start_yr_plot` à `r specia_end_yr`
 dans la zone spéciale, zone 10.
 Voir la figure \@ref(fig:minor-wa) pour la description.
 
@@ -296,12 +310,13 @@ plot_pa(
 )
 ```
 
-(ref:special-spawn-index-cap) Spawn index in thousands of tonnes (t) for Pacific Herring from `r minor_start_yr_plot` to `r minor_end_yr`
+(ref:special-spawn-index-cap) Spawn index in thousands of tonnes (t)
+for Pacific Herring from `r special_start_yr_plot` to `r special_end_yr`
 in the special area, Area 10.
 See Figure \@ref(fig:major-spawn-index) for description.
 
-(ref:special-spawn-index-cap-fr) L’indice du frai en milliers
-de tonnes pour le hareng du Pacifique de `r minor_start_yr_plot` à `r minor_end_yr`
+(ref:special-spawn-index-cap-fr) Indice de frai en milliers de tonnes (t)
+pour le hareng du Pacifique de `r special_start_yr_plot` à `r special_end_yr`
 dans la zone spéciale, zone 10.
 Voir la figure \@ref(fig:major-spawn-index) pour la description.
 

@@ -27,7 +27,7 @@ as well as the special use fishery;
 'RoeGN' represents the roe gillnet fishery; and
 'RoeSN' represents the roe seine fishery.
 
-(ref:major-catch-cap-fr) Total des captures débarquées de
+(ref:major-catch-cap-fr) Prises totales débarquées en
 hareng du Pacifique en milliers de tonnes (t)
 de `r recent_catch_yr` à `r major_end_yr` dans les RES majeurs.
 Voir les Figures \@ref(fig:storyboard-hg) à \@ref(fig:storyboard-wcvi)
