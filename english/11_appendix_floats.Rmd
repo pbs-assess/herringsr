@@ -174,7 +174,7 @@ Les résumés biologiques ne comprennent que les échantillons recueillis
 à l'aide de senneurs (commerciaux et d'essai)
 en raison de la sélectivité de taille des autres types d'engins
 tels que le filet maillant.
-La classe âge-`r âge_plus` comprend les poissons âgés de `r âge_plus` et plus.
+La classe âge-`r age_plus` comprend les poissons âgés de `r age_plus` et plus.
 Note: les axes verticaux sont rognés
 de `r f(wa_ylim[1], 2)` à `r f(wa_ylim[2], 2)` kg.
 
@@ -274,7 +274,7 @@ in the special area, Area 10.
 See Figure \@ref(fig:minor-wa) for description.
 
 (ref:special-wa-cap-fr) Poids moyen à l'âge pour le hareng du Pacifique
-en kilogrammes (kg) de `r specia_start_yr_plot` à `r specia_end_yr`
+en kilogrammes (kg) de `r special_start_yr_plot` à `r special_end_yr`
 dans la zone spéciale, zone 10.
 Voir la figure \@ref(fig:minor-wa) pour la description.
 
