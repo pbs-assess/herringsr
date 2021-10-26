@@ -717,7 +717,7 @@ cowplot::plot_grid(
 
 (ref:harvest-rate-cap) Effective harvest rate $U_t$ for Pacific Herring
 from `r major_start_yr` to `r major_end_yr` in the major SARs.
-$U_t = C_t/(C_t + \SB_t)$ where
+Effective harvest rate is $U_t = C_t/(C_t + \SB_t)$ where
 $C_t$ is catch in year $t$, and
 $\SB_t$ is estimated spawning biomass in year $t$.
 Black lines and shaded ribbons indicate
@@ -727,7 +727,7 @@ Horizontal dashed lines indicate $U_t = `r target_hr`$.
 (ref:harvest-rate-cap-fr) Taux de récolte effectif $U_t$ de
 `r major_start_yr` à `r major_end_yr`
 pour le hareng du Pacifique dans les RES majeurs.
-$U_t = C_t/(C_t + \SB_t)$ où
+Taux de récolte effectif est $U_t = C_t/(C_t + \SB_t)$, où
 $C_t$ est est la prise pour l’année $t$, et
 $\SB_t$ est la biomasse reproductrice estimée pour l’année $t$.
 Les lignes noires et les zones ombragées indiquent
