@@ -954,7 +954,7 @@ Les mesures de performance pour les objectifs sont données uniquement
 pour les scénarios du modèle d'exploitation
 de la mortalité naturelle en fonction de la densité.
 Légende: $C_t$ représente les captures de l'année $t$.
-Voir le tableau `@ref(tab:decision-prd) pour la description.
+Voir le tableau \@ref(tab:decision-prd) pour la description.
 
 (ref:decision-wcvi-cap) West Coast of Vancouver Island SAR:
 management procedure (MP) performance for the Pacific Herring
