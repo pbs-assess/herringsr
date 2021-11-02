@@ -105,7 +105,7 @@ tels que le filet maillant.
 La classe âge-`r age_plus` comprend les poissons âgés de `r age_plus` et plus.
 Les axes verticaux sont rognés de `r f(wa_ylim[1], 2)` à `r f(wa_ylim[2], 2)` kg.
 
-```{r major-wa, fig.asp=ifelse(french, 1, 1.2), fig.cap = ifelse(french, "(ref:major-wa-cap-fr)", "(ref:major-wa-cap)")}
+```{r major-wa, fig.asp=ifelse(french, 1, 1.15), fig.cap = ifelse(french, "(ref:major-wa-cap-fr)", "(ref:major-wa-cap)")}
 plot_wa(
   df = major_wa,
   circle_age = age_highlight,
@@ -306,7 +306,7 @@ sortie du modèle statistique de capture-âge pour le hareng du Pacifique
 de `r major_start_yr` à `r major_end_yr`.
 \storyboardfr{}
 
-```{r storyboard-hg, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
+```{r storyboard-hg, fig.asp=ifelse(french, 0.8, 1.05), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)")}
 cowplot::plot_grid(
   plot_a_hg,
   plot_b_hg,
@@ -397,7 +397,7 @@ sortie du modèle statistique de capture-âge pour le hareng du Pacifique
 de `r major_start_yr` à `r major_end_yr`.
 \storyboardfr{}
 
-```{r storyboard-prd, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
+```{r storyboard-prd, fig.asp=ifelse(french, 0.8, 1.05), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)")}
 cowplot::plot_grid(
   plot_a_prd,
   plot_b_prd,
@@ -488,7 +488,7 @@ sortie du modèle statistique de capture-âge pour le hareng du Pacifique
 de `r major_start_yr` à `r major_end_yr`.
 \storyboardfr{}
 
-```{r storyboard-cc, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)")}
+```{r storyboard-cc, fig.asp=ifelse(french, 0.8, 1.05), fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)")}
 cowplot::plot_grid(
   plot_a_cc,
   plot_b_cc,
@@ -610,7 +610,7 @@ sortie du modèle statistique de capture-âge pour le hareng du Pacifique
 de `r major_start_yr` à `r major_end_yr`.
 \storyboardfr{}
 
-```{r storyboard-sog, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
+```{r storyboard-sog, fig.asp=ifelse(french, 0.8, 1.05), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
 cowplot::plot_grid(
   plot_a_sog,
   plot_b_sog,
@@ -701,7 +701,7 @@ sortie du modèle statistique de capture-âge pour le hareng du Pacifique
 de `r major_start_yr` à `r major_end_yr`.
 \storyboardfr{}
 
-```{r storyboard-wcvi, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
+```{r storyboard-wcvi, fig.asp=ifelse(french, 0.8, 1.05), fig.cap = ifelse(french, "(ref:storyboard-wcvi-cap-fr)", "(ref:storyboard-wcvi-cap)")}
 cowplot::plot_grid(
   plot_a_wcvi,
   plot_b_wcvi,
@@ -735,7 +735,7 @@ les médianes et intervalles de confiance de `r ci_level*100`%
 pour $U_t$, respectivement.
 Les lignes en tirets horizontales indiquent $U_t = `r target_hr`$.
 
-```{r harvest-rate, fig.asp=ifelse(french, 1.3, 1.3), fig.cap = ifelse(french, "(ref:harvest-rate-cap-fr)", "(ref:harvest-rate-cap)")}
+```{r harvest-rate, fig.asp=ifelse(french, 1.25, 1.25), fig.cap = ifelse(french, "(ref:harvest-rate-cap-fr)", "(ref:harvest-rate-cap)")}
 plot_harvest_rate(
   df = major_catch,
   major_models,
