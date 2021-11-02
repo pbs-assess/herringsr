@@ -80,4 +80,4 @@ recommendations from the aforementioned 2018, 2019 and 2020 MSE analyses
 
 <!-- Mandatory last paragraph in this section -->
 This Science Response results from the Science Response Process of
-15 September 2021 on the "`r rmarkdown::metadata$title`."
+September 15, 2021 on the `r rmarkdown::metadata$title`.
