@@ -2,30 +2,30 @@
 
 ## Pandémie de COVID-19
 
-Par rapport à 2020, la pandémie de COVID-19 a eu moins de répercussions sur la collecte et l’analyse des données sur le hareng du Pacifique en 2021.
-Les relevés de frai se sont déroulés comme d’habitude dans la plupart des zones en 2021, avec des relevés en plongée dans toutes les zones principales, sauf Haida Gwaii.
-Haida Gwaii devrait normalement faire l’objet de relevés en plongée, mais a fait l’objet de relevés en surface en 2021 en raison de la COVID-19.
-La collecte et l’analyse des données biologiques n’ont pas été affectées par la pandémie de COVID-19 en 2021.
+Par rapport à 2020, la pandémie de COVID-19 a eu moins de répercussions sur la collecte et l'analyse des données sur le hareng du Pacifique en 2021.
+Les relevés de frai se sont déroulés comme d'habitude dans la plupart des zones en 2021, avec des relevés en plongée dans toutes les zones principales, sauf Haida Gwaii.
+Haida Gwaii devrait normalement faire l'objet de relevés en plongée, mais a fait l'objet de relevés en surface en 2021 en raison de la COVID-19.
+La collecte et l'analyse des données biologiques n'ont pas été affectées par la pandémie de COVID-19 en 2021.
 
 ## Évaluation de la stratégie de gestion
 
-Pêches et Océans Canada (MPO) s’est engagé à renouveler le présent cadre de gestion pour s’attaquer à l’éventail de difficultés qui touchent les stocks et les pêches de hareng du Pacifique en Colombie-Britannique. 
-Le renouvellement du cadre de gestion du hareng du Pacifique utilise l’ESG pour évaluer le rendement des PG possibles par rapport aux hypothèses sur la dynamique passée et future des stocks et de la pêche. 
-Le but du processus d’ESG consiste à relever les procédures de gestion dont les résultats sont acceptables par rapport aux objectifs de conservation et de gestion des pêches. 
-La détermination d’une procédure de gestion privilégiée nécessite un ensemble d’objectifs mesurables bien définis qui comprennent des points de référence (généralement classés comme limites et cibles) et, dans la mesure du possible, la spécification d’objectifs liés aux prises, à leur variabilité et à des buts socioculturels. 
-L’ESG est un processus itératif et continu, mené en collaboration avec les Premières Nations, l’industrie de la pêche et des organisations gouvernementales et non gouvernementales. 
+Pêches et Océans Canada (MPO) s'est engagé à renouveler le présent cadre de gestion pour s'attaquer à l'éventail de difficultés qui touchent les stocks et les pêches de hareng du Pacifique en Colombie-Britannique. 
+Le renouvellement du cadre de gestion du hareng du Pacifique utilise l'ESG pour évaluer le rendement des PG possibles par rapport aux hypothèses sur la dynamique passée et future des stocks et de la pêche. 
+Le but du processus d'ESG consiste à relever les procédures de gestion dont les résultats sont acceptables par rapport aux objectifs de conservation et de gestion des pêches. 
+La détermination d'une procédure de gestion privilégiée nécessite un ensemble d'objectifs mesurables bien définis qui comprennent des points de référence (généralement classés comme limites et cibles) et, dans la mesure du possible, la spécification d'objectifs liés aux prises, à leur variabilité et à des buts socioculturels. 
+L'ESG est un processus itératif et continu, mené en collaboration avec les Premières Nations, l'industrie de la pêche et des organisations gouvernementales et non gouvernementales. 
 
-Pour les zones de gestion du détroit de Georgia et de la côte ouest de l’île de Vancouver, les premiers cycles de l’ESG ont été déterminés en 2018 [@dfo2019a].
-Ces étapes comprenaient l’élaboration d’un modèle opérationnel, l’adaptation de ce modèle aux données de surveillance des stocks et des pêches de hareng du Pacifique de 1951 à 2017, et des simulations en boucle fermée du rendement des PG pour d’autres scénarios de mortalité naturelle future [@dfo2019a].
-Au printemps 2019, le processus de l’ESG a été étendu aux zones de gestion de Haida Gwaii, du district de Prince Rupert et de la côte centrale et les données de surveillance des stocks et des pêches ont été mises à jour pour inclure celles de 2018 et de l’évaluation du rendement des procédures de gestion propres à chaque zone [@dfo2019c].
-À l’été 2020, le deuxième cycle de l’ESG a été amorcé pour les zones de gestion du détroit de Georgia et de la côte ouest de l’île de Vancouver.
-Cela comprenait le conditionnement des MO selon les plus récentes données relatives au stock et à la pêche et une évaluation du rendement d’autres procédures de gestion proposées pour ces deux zones.
-Une mise à jour similaire a été réalisée au cours de l’été 2021 pour les zones de gestion du DPR et de la CC.
+Pour les zones de gestion du détroit de Georgia et de la côte ouest de l'île de Vancouver, les premiers cycles de l'ESG ont été déterminés en 2018 [@dfo2019a].
+Ces étapes comprenaient l'élaboration d'un modèle opérationnel, l'adaptation de ce modèle aux données de surveillance des stocks et des pêches de hareng du Pacifique de 1951 à 2017, et des simulations en boucle fermée du rendement des PG pour d'autres scénarios de mortalité naturelle future [@dfo2019a].
+Au printemps 2019, le processus de l'ESG a été étendu aux zones de gestion de Haida Gwaii, du district de Prince Rupert et de la côte centrale et les données de surveillance des stocks et des pêches ont été mises à jour pour inclure celles de 2018 et de l'évaluation du rendement des procédures de gestion propres à chaque zone [@dfo2019c].
+À l'été 2020, le deuxième cycle de l'ESG a été amorcé pour les zones de gestion du détroit de Georgia et de la côte ouest de l'île de Vancouver.
+Cela comprenait le conditionnement des MO selon les plus récentes données relatives au stock et à la pêche et une évaluation du rendement d'autres procédures de gestion proposées pour ces deux zones.
+Une mise à jour similaire a été réalisée au cours de l'été 2021 pour les zones de gestion du DPR et de la CC.
 Les résultats des évaluations des procédures de gestion reflètent les mises à jour les plus récentes pour toutes les zones de gestion.
 
-Un ensemble d’objectifs de base en matière de gestion de la pêche [@dfo2019c] a été appliqué à chacune des principales régions d’évaluation des stocks :
+Un ensemble d'objectifs de base en matière de gestion de la pêche [@dfo2019c] a été appliqué à chacune des principales régions d'évaluation des stocks:
 
-1. Maintenir la biomasse féconde au-dessus du point de référence limite (PRL) selon une probabilité d’au moins 75 % sur trois générations de hareng du Pacifique (c.-à-d. éviter une limite de la biomasse; $P(\SB_t > 0.3\SB_0) \geq 0.75$),
+1. Maintenir la biomasse féconde au-dessus du point de référence limite (PRL) selon une probabilité d'au moins 75 % sur trois générations de hareng du Pacifique (c.-à-d. éviter une limite de la biomasse; $P(\SB_t > 0.3\SB_0) \geq 0.75$),
 
 1. Maintenir la biomasse féconde à un niveau égal ou supérieur au PRS avec au moins 50 % de probabilité sur trois générations de hareng du Pacifique (c.-à-d. atteindre une biomasse cible; $P(\SB_t \geq 0.6\SB_0) \geq 0.5$),
 
@@ -33,12 +33,12 @@ Un ensemble d’objectifs de base en matière de gestion de la pêche [@dfo2019c
 
 1. Maximiser les prises annuelles moyennes sur trois générations de hareng du Pacifique (objectif reflétant la biomasse des prises).
 
-Toutefois, un ensemble d’objectifs entièrement définis n’a pas encore été établi pour chaque zone de gestion.
-Le MPO continuera de collaborer avec les Premières Nations de la côte afin d’élaborer des objectifs propres aux pêches à des fins alimentaires, sociales et rituelles ainsi qu’à la pêche des œufs sur varech.
-De plus, le MPO continuera de collaborer avec l’industrie du hareng, le gouvernement et les organisations non gouvernementales pour décrire des objectifs plus vastes liés à la conservation, à l’économie et à l’accès.
+Toutefois, un ensemble d'objectifs entièrement définis n'a pas encore été établi pour chaque zone de gestion.
+Le MPO continuera de collaborer avec les Premières Nations de la côte afin d'élaborer des objectifs propres aux pêches à des fins alimentaires, sociales et rituelles ainsi qu'à la pêche des œufs sur varech.
+De plus, le MPO continuera de collaborer avec l'industrie du hareng, le gouvernement et les organisations non gouvernementales pour décrire des objectifs plus vastes liés à la conservation, à l'économie et à l'accès.
 
-Les PG de chaque RES diffèrent par la forme de la RCP et le choix du plafond des prises, mais utilisent le même type de données de surveillance et le même modèle d’évaluation [e.g., @cleary2018].
-Le modèle d’évaluation actuel des stocks suppose que la mortalité naturelle varie dans le temps et cela se reflète dans l’ESG sous la forme de trois hypothèses relatives à la mortalité naturelle future de hareng du Pacifique $M$ : 
+Les PG de chaque RES diffèrent par la forme de la RCP et le choix du plafond des prises, mais utilisent le même type de données de surveillance et le même modèle d'évaluation [e.g., @cleary2018].
+Le modèle d'évaluation actuel des stocks suppose que la mortalité naturelle varie dans le temps et cela se reflète dans l'ESG sous la forme de trois hypothèses relatives à la mortalité naturelle future de hareng du Pacifique $M$: 
 
 1. $M$ est un processus variable dans le temps et dépendant de la densité (DDM),
 
@@ -47,230 +47,230 @@ Le modèle d’évaluation actuel des stocks suppose que la mortalité naturelle
 1. $M$ est constant dans le temps (conM).
 
 Ces trois hypothèses sont prises en compte sous la forme de trois scénarios de modèle opérationnel (MO) dans @dfo2019a.
-Le scénario DDM a été indiqué comme le scénario de MO de référence à la suite des discussions tenues lors du processus d’examen du SCCS de juillet 2018 [@dfo2019c], tandis que les scénarios DIM et conM ont été identifiés comme scénarios de MO de robustesse.
-Toutefois, comme il n’existe actuellement aucune méthode scientifique avérée permettant de prédire la mortalité naturelle, les trois scénarios ont donc été inclus. 
+Le scénario DDM a été indiqué comme le scénario de MO de référence à la suite des discussions tenues lors du processus d'examen du SCCS de juillet 2018 [@dfo2019c], tandis que les scénarios DIM et conM ont été identifiés comme scénarios de MO de robustesse.
+Toutefois, comme il n'existe actuellement aucune méthode scientifique avérée permettant de prédire la mortalité naturelle, les trois scénarios ont donc été inclus. 
 
-Les analyses effectuées jusqu’à présent dans le cadre des ESG ont permis de tirer plusieurs leçons :
+Les analyses effectuées jusqu'à présent dans le cadre des ESG ont permis de tirer plusieurs leçons:
 
-1. Le modèle d’évaluation des prises selon l’âge peut produire d’importantes erreurs d’évaluation (positives).
-De telles erreurs d’évaluation entraînent une surestimation de la biomasse féconde et donnent lieu à des limites de prises recommandées telles que le taux de récolte réalisé dépasse l’objectif visé précisé par une règle de contrôle des prises (p. ex. la surexploitation).
+1. Le modèle d'évaluation des prises selon l'âge peut produire d'importantes erreurs d'évaluation (positives).
+De telles erreurs d'évaluation entraînent une surestimation de la biomasse féconde et donnent lieu à des limites de prises recommandées telles que le taux de récolte réalisé dépasse l'objectif visé précisé par une règle de contrôle des prises (p. ex. la surexploitation).
 
-1. La réduction du taux de récolte de 20 % à 10 % a été le moyen le plus efficace d’atténuer les erreurs d’évaluation des stocks en réduisant la taille absolue des prises.
-L’utilisation d’un plafond des prises, mis en œuvre en tant que niveau de prises annuel maximal, est un moyen efficace, sans modèle, d’atténuer davantage les erreurs d’évaluation à des niveaux très élevés de la biomasse.
-Les analyses de simulation ont en outre montré que les résultats sont insensibles au choix des points de contrôle opérationnels (PCO) de la RCP lorsqu’un faible taux de récolte et un plafond des prises sont appliqués.
-Cela s’explique du fait que les faibles niveaux de biomasse (associés au PCO inférieur) sont évités pour ces procédures de gestion.
+1. La réduction du taux de récolte de 20 % à 10 % a été le moyen le plus efficace d'atténuer les erreurs d'évaluation des stocks en réduisant la taille absolue des prises.
+L'utilisation d'un plafond des prises, mis en œuvre en tant que niveau de prises annuel maximal, est un moyen efficace, sans modèle, d'atténuer davantage les erreurs d'évaluation à des niveaux très élevés de la biomasse.
+Les analyses de simulation ont en outre montré que les résultats sont insensibles au choix des points de contrôle opérationnels (PCO) de la RCP lorsqu'un faible taux de récolte et un plafond des prises sont appliqués.
+Cela s'explique du fait que les faibles niveaux de biomasse (associés au PCO inférieur) sont évités pour ces procédures de gestion.
 
-1. On s’attend a priori à des différences dans les spécifications des PG du hareng du Pacifique, y compris les composantes de la règle de contrôle des prises (RCP), parmi les régions d’évaluation des stocks.
-Les raisons sont liées aux différences entre les objectifs jugés importants par les utilisateurs de la ressource, aux différences dans la dynamique historique et actuelle des stocks et des pêches, et aux différences dans l’ampleur et le sens des erreurs du modèle d’évaluation dans chaque région.
-Les objectifs de conservation tels que ceux qui visent à éviter un seuil de dommage sérieux (c.-à-d. un point de référence limite) conformément au cadre de l’AP du MPO [@dfo2009] demeurent constants entre les régions d’évaluation des stocks selon les analyses de @kronlund2017.
+1. On s'attend a priori à des différences dans les spécifications des PG du hareng du Pacifique, y compris les composantes de la règle de contrôle des prises (RCP), parmi les régions d'évaluation des stocks.
+Les raisons sont liées aux différences entre les objectifs jugés importants par les utilisateurs de la ressource, aux différences dans la dynamique historique et actuelle des stocks et des pêches, et aux différences dans l'ampleur et le sens des erreurs du modèle d'évaluation dans chaque région.
+Les objectifs de conservation tels que ceux qui visent à éviter un seuil de dommage sérieux (c.-à-d. un point de référence limite) conformément au cadre de l'AP du MPO [@dfo2009] demeurent constants entre les régions d'évaluation des stocks selon les analyses de @kronlund2017.
 
-1. Il existe de nombreuses façons possibles d’intégrer le rendement des PG dans les essais de robustesse au processus décisionnel, mais il n’existe actuellement aucune « meilleure méthode scientifique » reconnue pour combiner les résultats de plusieurs modèles opérationnels.
+1. Il existe de nombreuses façons possibles d'intégrer le rendement des PG dans les essais de robustesse au processus décisionnel, mais il n'existe actuellement aucune «meilleure méthode scientifique» reconnue pour combiner les résultats de plusieurs modèles opérationnels.
 
-1. Pour les régions de gestion où plusieurs PG atteignent l’objectif convenu, il est nécessaire d’établir d’autres critères, comme un classement des objectifs secondaires afin de fournir aux décideurs un ensemble de choix de compromis souples.
+1. Pour les régions de gestion où plusieurs PG atteignent l'objectif convenu, il est nécessaire d'établir d'autres critères, comme un classement des objectifs secondaires afin de fournir aux décideurs un ensemble de choix de compromis souples.
 
-1. Les résultats des évaluations des procédures de gestion semblent être influencés par l’état des stocks et les tendances de mortalité naturelle des trois à cinq dernières années, utilisées pour conditionner le modèle opérationnel. 
-Si les simulations étaient exécutées sur un plus grand nombre d’années (par exemple, 50 ans), le rendement commencerait à s’approcher de l’équilibre, et cesserait d’être sensible aux tendances les plus récentes utilisées pour actualiser les données du modèle opérationnel.
+1. Les résultats des évaluations des procédures de gestion semblent être influencés par l'état des stocks et les tendances de mortalité naturelle des trois à cinq dernières années, utilisées pour conditionner le modèle opérationnel. 
+Si les simulations étaient exécutées sur un plus grand nombre d'années (par exemple, 50 ans), le rendement commencerait à s'approcher de l'équilibre, et cesserait d'être sensible aux tendances les plus récentes utilisées pour actualiser les données du modèle opérationnel.
 
-## Données d’entrée
+## Données d'entrée
 
-Trois types de données d’entrée sont utilisées pour l’évaluation des stocks de hareng du Pacifique :
-les données sur les prises, les données biologiques et les données sur l’abondance.
+Trois types de données d'entrée sont utilisées pour l'évaluation des stocks de hareng du Pacifique:
+les données sur les prises, les données biologiques et les données sur l'abondance.
 Ces ensembles de données, décrits dans les sections suivantes, sont résumés dans le tableau \@ref(tab:data-input).
-Le seul changement apporté aux données d’entrée par rapport à l’évaluation précédente a consisté à mettre à jour toutes les séries chronologiques afin d’inclure les données de la saison de hareng `r this_season` (du 1er juillet au 30 juin).
-Il convient de noter que dans le présent rapport, nous utilisons le terme « année » au lieu de « saison du hareng »; par conséquent, `r assess_yr` fait référence à la `r this_season` saison du hareng du Pacifique.
+Le seul changement apporté aux données d'entrée par rapport à l'évaluation précédente a consisté à mettre à jour toutes les séries chronologiques afin d'inclure les données de la saison de hareng `r this_season` (du 1er juillet au 30 juin).
+Il convient de noter que dans le présent rapport, nous utilisons le terme «année» au lieu de «saison du hareng»; par conséquent, `r assess_yr` fait référence à la `r this_season` saison du hareng du Pacifique.
 
 ### Données sur les prises
 
-Aux fins de l’évaluation des stocks, les données sur les prises sont résumées par type d’engin, tel que décrit au tableau \@ref(tab:data-input) et présenté à la figure \@ref(fig:major-catch).
-Comme les années précédentes, les données sur les prises utilisées dans le modèle d’évaluation des stocks ne tiennent pas compte de la mortalité attribuable à la pêche commerciale de rogue sur varech, ni aux pêches récréatives ou à la récolte à des fins alimentaires, sociales et rituelles (ASR).
+Aux fins de l'évaluation des stocks, les données sur les prises sont résumées par type d'engin, tel que décrit au tableau \@ref(tab:data-input) et présenté à la figure \@ref(fig:major-catch).
+Comme les années précédentes, les données sur les prises utilisées dans le modèle d'évaluation des stocks ne tiennent pas compte de la mortalité attribuable à la pêche commerciale de rogue sur varech, ni aux pêches récréatives ou à la récolte à des fins alimentaires, sociales et rituelles (ASR).
 La récolte à des fins ASR et récréatives est considérée comme secondaire par rapport à la pêche commerciale.
 La pêche commerciale de la rogue sur varech requiert un permis délivré en fonction du poids validé du produit de la collecte (c.-à-d. les œufs adhérant au varech), et non des tonnes de poissons utilisés ou pondus.
-Il est impossible actuellement de valider le taux de mortalité attribuable à cette pêche dans la population, mais des méthodes d’estimation de la mortalité attribuable à la pêche de rogue sur varech sont en cours d’élaboration.
+Il est impossible actuellement de valider le taux de mortalité attribuable à cette pêche dans la population, mais des méthodes d'estimation de la mortalité attribuable à la pêche de rogue sur varech sont en cours d'élaboration.
 
-Les prélèvements commerciaux combinés de `r assess_yr-9` à `r assess_yr` dans les pêches de rogue, de consommation et à l’appât, ainsi que dans les pêches à des fins spéciales sont présentés dans le tableau \@ref(tab:annual-catch).
+Les prélèvements commerciaux combinés de `r assess_yr-9` à `r assess_yr` dans les pêches de rogue, de consommation et à l'appât, ainsi que dans les pêches à des fins spéciales sont présentés dans le tableau \@ref(tab:annual-catch).
 La proportion des prises côtières totales qui proviennent du DG était de 22 % en 1990, et de 100 % en `r assess_yr`.
 La récolte totale de rogue sur varech (poids validé du produit) pour les principales RES de `r assess_yr-9` à `r assess_yr` est présentée dans le tableau \@ref(tab:annual-sok-catch).
 
 ### Données biologiques\label{sec:biol-data}
 
 Les échantillons biologiques sont collectés comme décrit dans @cleary2018 et le tableau \@ref(tab:data-input).
-Les données biologiques utilisées pour l’évaluation des stocks sont le poids annuel selon l’âge (figure \@ref(fig:major-wa)) et les nombres annuels selon l’âge, exprimés en proportion selon l’âge (figure \@ref(fig:major-pa)).
+Les données biologiques utilisées pour l'évaluation des stocks sont le poids annuel selon l'âge (figure \@ref(fig:major-wa)) et les nombres annuels selon l'âge, exprimés en proportion selon l'âge (figure \@ref(fig:major-pa)).
 
-Des baisses importantes du poids selon l’âge sont évidentes pour tous les principaux stocks de hareng, du milieu des années 1980 à 2010.
-Cette diminution du poids selon l’âge pourrait être attribuable à divers facteurs, y compris les effets de la pêche (c.-à-d. la sélectivité des engins de pêche) et les effets environnementaux (p. ex. les changements de la productivité des océans), ou les modifications apportées aux protocoles d’échantillonnage (p. ex. le raccourcissement de la période de collecte des échantillons).
-Une tendance à la hausse du poids selon l’âge se dégage pour tous les principaux stocks de 2012 à `r assess_yr`, mais dans une moindre mesure pour le DPR.
+Des baisses importantes du poids selon l'âge sont évidentes pour tous les principaux stocks de hareng, du milieu des années 1980 à 2010.
+Cette diminution du poids selon l'âge pourrait être attribuable à divers facteurs, y compris les effets de la pêche (c.-à-d. la sélectivité des engins de pêche) et les effets environnementaux (p. ex. les changements de la productivité des océans), ou les modifications apportées aux protocoles d'échantillonnage (p. ex. le raccourcissement de la période de collecte des échantillons).
+Une tendance à la hausse du poids selon l'âge se dégage pour tous les principaux stocks de 2012 à `r assess_yr`, mais dans une moindre mesure pour le DPR.
 
-### Données sur l’abondance
+### Données sur l'abondance
 
-Pour établir l’indice du frai, le relevé recueille des données sur la longueur du frai (c.-à-d. distance parallèle à la rive), la largeur du frai (c.-à-d. distance perpendiculaire à la rive) et le nombre de couches d’œufs par type de végétation, ainsi que d’autres données.
-L’indice du frai s’appuie sur deux périodes de relevé distinctes définies par la méthode de relevé dominante :
+Pour établir l'indice du frai, le relevé recueille des données sur la longueur du frai (c.-à-d. distance parallèle à la rive), la largeur du frai (c.-à-d. distance perpendiculaire à la rive) et le nombre de couches d'œufs par type de végétation, ainsi que d'autres données.
+L'indice du frai s'appuie sur deux périodes de relevé distinctes définies par la méthode de relevé dominante:
 la période des relevés en surface de `r surv_yr_rng[1]` à `r new_surv_yr - 1`, et
 la période des relevés en plongée de `r new_surv_yr` à `r surv_yr_rng[2]`.
 Les données de ces relevés sont utilisées pour déterminer la densité des œufs par frayère.
-En fin de compte, on calcule le poids estimatif des reproducteurs matures requis pour produire la ponte, appelé « indice du frai ».
-Le `r surv_yr_rng[2]` relevé du frai dans les régions d’évaluation des stocks du DPR, de la côte centrale, du détroit de Georgia et de la côte ouest de l’île de Vancouver a suivi les protocoles de relevé en plongée normalisés décrits dans @cleary2018, et un protocole de relevé en surface a dû être appliqué dans la région de HG en raison de la COVID-19.
-Les séries chronologiques de l’indice du frai par région principale d’évaluation des stocks (RES) de `r paste(surv_yr_rng, collapse=“ to “)` sont résumées sur la figure \@ref(fig:major-spawn-index).
-En `r surv_yr_rng[2]`, il y a eu une augmentation de la biomasse dans les relevés (c’est-à-dire les valeurs de l’indice) dans les RES du DPR et de la COIV, et une diminution de la biomasse dans les relevés dans les RES de HG, de la CC et du DG (figure \@ref(fig:major-spawn-index) et tableaux \@ref(tab:spawn-index-hg) à \@ref(tab:spawn-index-wcvi)).
+En fin de compte, on calcule le poids estimatif des reproducteurs matures requis pour produire la ponte, appelé «indice du frai».
+Le `r surv_yr_rng[2]` relevé du frai dans les régions d'évaluation des stocks du DPR, de la côte centrale, du détroit de Georgia et de la côte ouest de l'île de Vancouver a suivi les protocoles de relevé en plongée normalisés décrits dans @cleary2018, et un protocole de relevé en surface a dû être appliqué dans la région de HG en raison de la COVID-19.
+Les séries chronologiques de l'indice du frai par région principale d'évaluation des stocks (RES) de `r paste(surv_yr_rng, collapse=" to ")` sont résumées sur la figure \@ref(fig:major-spawn-index).
+En `r surv_yr_rng[2]`, il y a eu une augmentation de la biomasse dans les relevés (c'est-à-dire les valeurs de l'indice) dans les RES du DPR et de la COIV, et une diminution de la biomasse dans les relevés dans les RES de HG, de la CC et du DG (figure \@ref(fig:major-spawn-index) et tableaux \@ref(tab:spawn-index-hg) à \@ref(tab:spawn-index-wcvi)).
 
 ## Répartition spatiale du frai
 
-Les tableaux \@ref(tab:spawn-index-hg) à \@ref(tab:spawn-index-wcvi) résument la répartition spatiale de la biomasse du frai du relevé (c.-à-d. l’indice du frai) par proportion au cours `r num_yrs_tab+1` des dernières années pour les principales RES.
-Les données de Haida Gwaii et du détroit de Georgia sont résumées par groupe, tandis que celles du district de Prince Rupert, de la côte centrale et de la côte ouest de l’île de Vancouver sont résumées par zone statistique;
-ce choix du regroupement spatial reflète le comportement et la biologie du frai observé dans chaque région d’évaluation en fonction des données du relevé et des discussions des groupes de travail avec les Premières Nations locales.
+Les tableaux \@ref(tab:spawn-index-hg) à \@ref(tab:spawn-index-wcvi) résument la répartition spatiale de la biomasse du frai du relevé (c.-à-d. l'indice du frai) par proportion au cours `r num_yrs_tab+1` des dernières années pour les principales RES.
+Les données de Haida Gwaii et du détroit de Georgia sont résumées par groupe, tandis que celles du district de Prince Rupert, de la côte centrale et de la côte ouest de l'île de Vancouver sont résumées par zone statistique;
+ce choix du regroupement spatial reflète le comportement et la biologie du frai observé dans chaque région d'évaluation en fonction des données du relevé et des discussions des groupes de travail avec les Premières Nations locales.
 
 ## La mortalité accidentelle
 
 Afin de progresser vers une approche de gestion écosystémique globale pour le hareng du Pacifique, nous présentons les informations actuellement disponibles pour décrire les effets indirects sur les populations de hareng, tels que la mortalité accidentelle. 
-Certaines activités de pêche et d’aquaculture en Colombie-Britannique entraînent une mortalité accidentelle du hareng du Pacifique.
-À l’instar de la récolte de rogue sur varech, ainsi que des prises des pêches ASR et récréatives, la mortalité accidentelle n’est actuellement prise en compte qu’indirectement dans l’évaluation du stock de hareng du Pacifique, par l’estimation des taux annuels de mortalité naturelle, et est considérée comme secondaire par rapport à la pêche commerciale.
+Certaines activités de pêche et d'aquaculture en Colombie-Britannique entraînent une mortalité accidentelle du hareng du Pacifique.
+À l'instar de la récolte de rogue sur varech, ainsi que des prises des pêches ASR et récréatives, la mortalité accidentelle n'est actuellement prise en compte qu'indirectement dans l'évaluation du stock de hareng du Pacifique, par l'estimation des taux annuels de mortalité naturelle, et est considérée comme secondaire par rapport à la pêche commerciale.
 
-Cette année, nous incluons de nouvelles données disponibles sur la mortalité accidentelle dans les activités d’aquaculture des poissons à nageoires par RES de `r min(ic_yrs)` à `r max(ic_yrs)` (figure  \@ref(fig:major-incidental)).
-Il est à noter que les données sur la mortalité accidentelle sont déclarées par secteur de gestion des pêches du Pacifique (SGPP), qui sont analogues aux zones statistiques, mais les SGPP sont plus vastes et peuvent s’étendre au-delà des limites des RES.
-Les données indiquent le nombre de harengs du Pacifique morts et remis à l’eau, avec les mises en garde suivantes :
+Cette année, nous incluons de nouvelles données disponibles sur la mortalité accidentelle dans les activités d'aquaculture des poissons à nageoires par RES de `r min(ic_yrs)` à `r max(ic_yrs)` (figure  \@ref(fig:major-incidental)).
+Il est à noter que les données sur la mortalité accidentelle sont déclarées par secteur de gestion des pêches du Pacifique (SGPP), qui sont analogues aux zones statistiques, mais les SGPP sont plus vastes et peuvent s'étendre au-delà des limites des RES.
+Les données indiquent le nombre de harengs du Pacifique morts et remis à l'eau, avec les mises en garde suivantes:
 
 1. les données de 2020 sont considérées comme incomplètes,
 
-2. le taux de mortalité des poissons « remis à l’eau » n’est pas connu,
+2. le taux de mortalité des poissons «remis à l'eau» n'est pas connu,
 
-3. la longueur, le poids, l’âge et le sexe des poissons ne sont pas connus,
+3. la longueur, le poids, l'âge et le sexe des poissons ne sont pas connus,
 
-4. les poissons « de type hareng » sont censés être des harengs lorsque la décomposition empêche l’identification.
+4. les poissons «de type hareng» sont censés être des harengs lorsque la décomposition empêche l'identification.
 
 ## Observations des Premières Nations
 
-La pandémie de COVID-19 continue d’avoir un impact sur la participation des Premières Nations aux activités de relevé du hareng ainsi que sur la participation aux activités de pêche traditionnelle (à des fins ASR). 
-Il n’a pas été possible de rassembler les observations locales pour la saison 2020, mais en 2021, les observations locales ont été fournies par les participants des Premières Nations côtières pour la plupart des zones.
+La pandémie de COVID-19 continue d'avoir un impact sur la participation des Premières Nations aux activités de relevé du hareng ainsi que sur la participation aux activités de pêche traditionnelle (à des fins ASR). 
+Il n'a pas été possible de rassembler les observations locales pour la saison 2020, mais en 2021, les observations locales ont été fournies par les participants des Premières Nations côtières pour la plupart des zones.
 Les descriptions suivantes ont été fournies par des contributeurs des Premières Nations.
 
 ### Haida Gwaii
 
-Le stock de Selwyn Inlet et Cumshewa Inlet a connu un déclin constant au cours de la dernière décennie, à un point tel que la saison dernière, il n’y avait presque plus de frai.
-Le frai a eu lieu très tard dans la saison (fin avril) et s’est déroulé à l’extérieur de Selwyn, près de Rockfish Harbour (plutôt qu’à l’intérieur de Selwyn, près de Traynor Bay). 
-Le frai de cette année a été considéré comme assez minime pour les normes de Selwyn Inlet et insuffisant pour s’étendre à Cumshewa Inlet.
+Le stock de Selwyn Inlet et Cumshewa Inlet a connu un déclin constant au cours de la dernière décennie, à un point tel que la saison dernière, il n'y avait presque plus de frai.
+Le frai a eu lieu très tard dans la saison (fin avril) et s'est déroulé à l'extérieur de Selwyn, près de Rockfish Harbour (plutôt qu'à l'intérieur de Selwyn, près de Traynor Bay). 
+Le frai de cette année a été considéré comme assez minime pour les normes de Selwyn Inlet et insuffisant pour s'étendre à Cumshewa Inlet.
 
 Cette année, dans la zone de Skincuttle et de Upper Burnaby, la majeure partie du frai a eu lieu du côté de Skincuttle, mais les autres années, il a eu lieu plus au nord du rétrécissement dans la partie supérieure de Burnaby Strait.
 Ce stock se maintient à peine.
-L’abondance est suffisamment faible pour que le recrutement naturel compense à peine la mortalité naturelle. Nous observons donc certaines années de léger rétablissement suivies d’autres années de déclin, mais aucune croissance réelle, même en l’absence de pêche depuis près de 20 ans.
+L'abondance est suffisamment faible pour que le recrutement naturel compense à peine la mortalité naturelle. Nous observons donc certaines années de léger rétablissement suivies d'autres années de déclin, mais aucune croissance réelle, même en l'absence de pêche depuis près de 20 ans.
 
-Les bras de mer de la baie Juan Perez accueillent normalement des frayeurs lorsqu’il y a beaucoup de recrues dans la population et que les reproducteurs qui fraient pour la première fois sont plus nombreux que les reproducteurs âgés à ponte multiple.
-Ce n’est plus le cas depuis un certain temps.
+Les bras de mer de la baie Juan Perez accueillent normalement des frayeurs lorsqu'il y a beaucoup de recrues dans la population et que les reproducteurs qui fraient pour la première fois sont plus nombreux que les reproducteurs âgés à ponte multiple.
+Ce n'est plus le cas depuis un certain temps.
 Dernièrement, les frayères ont été petites et peu fréquentes dans les bras de mer de la baie Juan Perez, comme ce fut le cas en 2021.
 
-Cela fait maintenant plusieurs années qu’il n’y a pas eu de présence significative de harengs dans la partie extérieure du bras Louscoone.
-Pendant les années d’abondance, le stock local se trouvait toujours bien à l’intérieur du bras de mer et présentait souvent un frai très léger près de la tête de la baie en début de saison (du début à mi-mars).
+Cela fait maintenant plusieurs années qu'il n'y a pas eu de présence significative de harengs dans la partie extérieure du bras Louscoone.
+Pendant les années d'abondance, le stock local se trouvait toujours bien à l'intérieur du bras de mer et présentait souvent un frai très léger près de la tête de la baie en début de saison (du début à mi-mars).
 Ce stock a rarement dépassé les 500 tonnes, mais ces dernières années, il a été beaucoup moins important.
-L’autre stock semble être plus migrateur – on le trouve dans les parties extérieures du bras Louscoone et il fraie rarement à l’intérieur de Louscoone.
+L'autre stock semble être plus migrateur – on le trouve dans les parties extérieures du bras Louscoone et il fraie rarement à l'intérieur de Louscoone.
 Une théorie veut que la partie extérieure de Louscoone soit utilisée comme zone de transit et que ces harengs migrent ensuite ailleurs (peut-être vers la côte centrale) pour frayer.
-Aujourd’hui, l’abondance n’est pas assez élevée pour permettre au hareng de se développer dans la partie extérieure de Louscoone en début de saison – nous ne voyons donc que des preuves du stock local mineur.
+Aujourd'hui, l'abondance n'est pas assez élevée pour permettre au hareng de se développer dans la partie extérieure de Louscoone en début de saison – nous ne voyons donc que des preuves du stock local mineur.
 
-Des efforts ont été déployés pour la récolte traditionnelle de k’aaw dans les bras de mer Skincuttle et Selwyn entre le début et la mi-avril 2021. 
-Les lignes ouvertes de varech installées dans la baie de Jedway, dans le bras mer Skincuttle, ont été fructueuses avec environ 2 000 livres de k’aaw de bonne qualité récoltées. 
-Les lignes de varech ouvertes installées dans l’anse juste au sud de Traynor Bay, Selwyn Inlet, ont été infructueuses en raison de l’absence de frai. 
-Il n’y a pas eu d’autres tentatives (connues) de récolte de k’aaw à Haida Gwaii pendant la saison de hareng 2021.
+Des efforts ont été déployés pour la récolte traditionnelle de k'aaw dans les bras de mer Skincuttle et Selwyn entre le début et la mi-avril 2021. 
+Les lignes ouvertes de varech installées dans la baie de Jedway, dans le bras mer Skincuttle, ont été fructueuses avec environ 2 000 livres de k'aaw de bonne qualité récoltées. 
+Les lignes de varech ouvertes installées dans l'anse juste au sud de Traynor Bay, Selwyn Inlet, ont été infructueuses en raison de l'absence de frai. 
+Il n'y a pas eu d'autres tentatives (connues) de récolte de k'aaw à Haida Gwaii pendant la saison de hareng 2021.
 
 ### District de Prince Rupert
 
-Dans l’ensemble, très peu de frai a été observé cette saison par les membres et le personnel de la bande Lax Kw’alaams.
-Les techniciens des pêches des Lax Kw’alaams, en coordination avec les gardiens de Metlakatla, ont passé dix jours entiers pendant la saison du hareng à surveiller la récolte et à consigner le comportement et les emplacements du hareng.
-Au cours des relevés, les techniciens n’ont pas pu localiser de bancs de harengs dans les zones géographiques habituelles surveillées chaque année.
-Cette année, dans le district de Prince Rupert, les Lax Kw’alaams avaient plusieurs pêcheurs sur l’eau.
-La correspondance sur le terrain avec les pêcheurs a confirmé que le frai du hareng au cours de la saison 2021 était assez faible et éphémère, et la plupart ont déclaré n’avoir vu aucun frai actif de hareng dans les zones de récolte importantes.
+Dans l'ensemble, très peu de frai a été observé cette saison par les membres et le personnel de la bande Lax Kw'alaams.
+Les techniciens des pêches des Lax Kw'alaams, en coordination avec les gardiens de Metlakatla, ont passé dix jours entiers pendant la saison du hareng à surveiller la récolte et à consigner le comportement et les emplacements du hareng.
+Au cours des relevés, les techniciens n'ont pas pu localiser de bancs de harengs dans les zones géographiques habituelles surveillées chaque année.
+Cette année, dans le district de Prince Rupert, les Lax Kw'alaams avaient plusieurs pêcheurs sur l'eau.
+La correspondance sur le terrain avec les pêcheurs a confirmé que le frai du hareng au cours de la saison 2021 était assez faible et éphémère, et la plupart ont déclaré n'avoir vu aucun frai actif de hareng dans les zones de récolte importantes.
 Cependant, la récolte pour répondre aux besoins ASR a signalé de manière fortuite du frai dans quelques zones et était plus prometteuse que les années précédentes.
 Quelques autres membres de la communauté ont pu obtenir du frai sur les branches pour la première fois depuis de nombreuses années, avec des couches suffisantes pour justifier une petite récolte.
-Cependant, les pêcheurs des Lax Kw’alaams n’ont pas été en mesure de récolter suffisamment de hareng pour répondre aux besoins ASR de la majorité des membres de la communauté.
+Cependant, les pêcheurs des Lax Kw'alaams n'ont pas été en mesure de récolter suffisamment de hareng pour répondre aux besoins ASR de la majorité des membres de la communauté.
 
 ### Côte centrale
 
-Observations dans la zone 06 : Le frai global du hareng a continué de s’améliorer en 2021, le stock ayant continué de se développer au cours des dernières années.
+Observations dans la zone 06: Le frai global du hareng a continué de s'améliorer en 2021, le stock ayant continué de se développer au cours des dernières années.
 Kitasu Bay semblait avoir une abondance similaire ou supérieure à celle de 2020.
-La taille des harengs était typique de la zone, mais semblait plus uniforme dans l’ensemble.
+La taille des harengs était typique de la zone, mais semblait plus uniforme dans l'ensemble.
 Le frai a été plus long que la moyenne avec 7 à 8 jours de frai continu qui semblait couvrir une grande partie de Kitasu Bay.
-L’activité des otaries était importante, comme les années précédentes, mais en raison de la forte abondance de harengs, les lions de mer semblaient éviter les étangs de harengs qui, les années précédentes, étaient directement ciblés par les otaries pour se nourrir.
-La récolte de nourriture pour la communauté a été un succès, tant pour le frai sur des branches, et il y a eu un surplus des activités de récolte d’œufs sur varech pour soutenir la communauté également.
+L'activité des otaries était importante, comme les années précédentes, mais en raison de la forte abondance de harengs, les lions de mer semblaient éviter les étangs de harengs qui, les années précédentes, étaient directement ciblés par les otaries pour se nourrir.
+La récolte de nourriture pour la communauté a été un succès, tant pour le frai sur des branches, et il y a eu un surplus des activités de récolte d'œufs sur varech pour soutenir la communauté également.
 La taille et la qualité de la rogue étaient très bonnes dans la baie par rapport aux années précédentes.
 
-Observations dans la zone 07 : La saison de hareng 2021 a vu des changements draconiens dans les schémas de frai du hareng, la récolte et l’épaisseur de la rogue par rapport aux années précédentes.
-Le schéma normal de frai du hareng est le suivant : le hareng fraie en un seul endroit pendant 5 à 7 jours dans des zones spécifiques.
+Observations dans la zone 07: La saison de hareng 2021 a vu des changements draconiens dans les schémas de frai du hareng, la récolte et l'épaisseur de la rogue par rapport aux années précédentes.
+Le schéma normal de frai du hareng est le suivant: le hareng fraie en un seul endroit pendant 5 à 7 jours dans des zones spécifiques.
 Cette saison, les harengs ont frayé de façon très sporadique et pendant de courtes périodes.
-Dans la plupart des zones, le frai ne dure qu’un jour, puis le hareng se déplace vers un autre endroit.
+Dans la plupart des zones, le frai ne dure qu'un jour, puis le hareng se déplace vers un autre endroit.
 
 La prédation par les baleines, les phoques et les otaries a augmenté de façon spectaculaire au cours des 20 dernières années et plus encore au cours des dernières années, provoquant des changements dans le comportement et les habitudes de frai. 
 Les pêcheurs ont observé plusieurs baleines dans les hauts-fonds se nourrissant de harengs et perturbant ou stoppant le frai.
 
-La majeure partie du frai dans la zone de Spiller était limité à l’intérieur et à l’extérieur de la zone de Tate Lagoon avec un frai minimal dans le reste de la zone de Spiller. 
-À l’intérieur de Tate Lagoon, les couches moyennes étaient généralement de 3 à 4 couches.
+La majeure partie du frai dans la zone de Spiller était limité à l'intérieur et à l'extérieur de la zone de Tate Lagoon avec un frai minimal dans le reste de la zone de Spiller. 
+À l'intérieur de Tate Lagoon, les couches moyennes étaient généralement de 3 à 4 couches.
 Les pêcheurs ont placé du varech dans tous les lieux de frai identifiés, y compris Spiller, Thompson, Norman Morrison, Dundavin, Idol, Foote, mid Spiller, Bachelor, Berry et Mustang Bay, qui ont tous vu une moyenne de 2 à 3 couches.
 
-Nos pêcheurs ont signalé que malgré la pose de varech à plusieurs endroits de frai, les harengs observés étaient en moyenne plus petits et les couches d’œufs sur le varech étaient minimes, ce qui indique des harengs reproducteurs plus petits. 
-Le développement du stock de rogue a été long et n’a atteint en moyenne que 2 à 3 couches d’œufs. 
+Nos pêcheurs ont signalé que malgré la pose de varech à plusieurs endroits de frai, les harengs observés étaient en moyenne plus petits et les couches d'œufs sur le varech étaient minimes, ce qui indique des harengs reproducteurs plus petits. 
+Le développement du stock de rogue a été long et n'a atteint en moyenne que 2 à 3 couches d'œufs. 
 
-Le consensus parmi les pêcheurs et la direction était que cette année était pire que les deux années précédentes et que nous n’avons pas pu obtenir un accès ASR suffisant ou remplir notre quota de frai de rogue sur varech malgré beaucoup d’efforts. 
+Le consensus parmi les pêcheurs et la direction était que cette année était pire que les deux années précédentes et que nous n'avons pas pu obtenir un accès ASR suffisant ou remplir notre quota de frai de rogue sur varech malgré beaucoup d'efforts. 
 
 ### Détroit de Georgia
 
-Dans le nord du détroit de Georgie, A-Tlegay Fisheries a aidé le programme d’évaluation du hareng en fournissant une couverture supplémentaire de relevés en plongée et en essayant de prélever des échantillons à l’épervier sur les frayères actives. 
-Les plongeurs de A-Tlegay ont relevé le frai de Willow Point vers le sud jusqu’à Bates Beach (et au-delà), sections 135 et 141 du hareng.
-Par le biais d’un programme de sensibilisation, des frayères ont également été signalées à A-Tlegay à partir des zones locales du bras de mer continental.
+Dans le nord du détroit de Georgie, A-Tlegay Fisheries a aidé le programme d'évaluation du hareng en fournissant une couverture supplémentaire de relevés en plongée et en essayant de prélever des échantillons à l'épervier sur les frayères actives. 
+Les plongeurs de A-Tlegay ont relevé le frai de Willow Point vers le sud jusqu'à Bates Beach (et au-delà), sections 135 et 141 du hareng.
+Par le biais d'un programme de sensibilisation, des frayères ont également été signalées à A-Tlegay à partir des zones locales du bras de mer continental.
 Par conséquent, A-Tlegay a pu plonger sur deux frayères dans le bras de mer Bute et une frayère dans le bras de mer Teakerne (section 151).
 
-### Côte ouest de l’île de Vancouver
+### Côte ouest de l'île de Vancouver
 
 En général, le frai du hareng était sporadique et de courte durée dans les baies Barkley et Nootka, avec un frai de plusieurs jours dans le port de Hesquiaht. 
 
-Dans la baie Nootka, le hareng était dans les eaux profondes au large de Yuquot pendant quelques semaines, puis il s’est déplacé vers l’extérieur, dans la zone du récif Bajo/ruisseau Beano, à la mi-mars.
-L’activité des oiseaux et des mammifères marins s’est déplacée des environs de Yuquot vers la zone de Bajo/Beano.
-Ray Williams de Yuquot a signalé un petit frai dans la partie inférieure de Tahsis Inlet, mais il n’a pas pu être localisé par l’équipe de reconnaissance du frai.
-Il y a eu une petite récolte de frai sur du varech (60 lb au total) juste au large des rochers d’Escalante. 
+Dans la baie Nootka, le hareng était dans les eaux profondes au large de Yuquot pendant quelques semaines, puis il s'est déplacé vers l'extérieur, dans la zone du récif Bajo/ruisseau Beano, à la mi-mars.
+L'activité des oiseaux et des mammifères marins s'est déplacée des environs de Yuquot vers la zone de Bajo/Beano.
+Ray Williams de Yuquot a signalé un petit frai dans la partie inférieure de Tahsis Inlet, mais il n'a pas pu être localisé par l'équipe de reconnaissance du frai.
+Il y a eu une petite récolte de frai sur du varech (60 lb au total) juste au large des rochers d'Escalante. 
 
 Il y a eu un petit frai dans les hauts-fonds de la zone de Port Langford à Nuchatlitz le 9 mars et plus tard à Rosa Harbour.
 Seuls 20 % des arbres destinés à la récolte des œufs sur branches ont réussi dans la région. 
 
 Dans la zone 23, les frayères étaient petites et de courte durée vers la mi-mars.
-Le frai principal a eu lieu autour de Muscle Beach jusqu’à Macoha en mars 12^th^.
-On a signalé que la plupart des arbres implantés pour la récolte des œufs sur branches avaient principalement 2 à 4 couches d’œufs et ont été remis dans l’eau pour éclore.
+Le frai principal a eu lieu autour de Muscle Beach jusqu'à Macoha en mars 12^th^.
+On a signalé que la plupart des arbres implantés pour la récolte des œufs sur branches avaient principalement 2 à 4 couches d'œufs et ont été remis dans l'eau pour éclore.
 
-Il y avait plusieurs arbres à usage domestique implantés par les Premières Nations à ce frai actif lors des collectes d’échantillons.
-De l’activité a été notée devant la plage au nord et au sud de la rivière Maggie, mais ils ne semblaient pas frayer activement.
+Il y avait plusieurs arbres à usage domestique implantés par les Premières Nations à ce frai actif lors des collectes d'échantillons.
+De l'activité a été notée devant la plage au nord et au sud de la rivière Maggie, mais ils ne semblaient pas frayer activement.
 Une autre frayère étudiée à cette époque se trouvait à Mussel Beach.
 À la fin du mois de mars, un petit frai a été signalé à Lyall point. 
 
-Dans la zone 24, la plupart des activités de frai ont eu lieu dans et autour du port de Hesquiaht, de la première semaine de mars jusqu’à la fin du mois.
-Le port de Hesquiaht n’est pas une zone idéale pour la récolte d’œufs sur varech en raison de la prédominance des substrats de fond sablonneux et des conditions venteuses. 
+Dans la zone 24, la plupart des activités de frai ont eu lieu dans et autour du port de Hesquiaht, de la première semaine de mars jusqu'à la fin du mois.
+Le port de Hesquiaht n'est pas une zone idéale pour la récolte d'œufs sur varech en raison de la prédominance des substrats de fond sablonneux et des conditions venteuses. 
 
-## Mise à jour sur l’état des stocks
+## Mise à jour sur l'état des stocks
 
-Les analyses de l’information sur les tendances des stocks pour le modèle ME2 sont présentées selon les méthodes de @cleary2018 pour les principales RES des stocks de hareng du Pacifique.
-Les perceptions de l’état des stocks fondées sur les résultats du modèle statistique des prises selon l’âge (ME2) sont résumées pour chaque stock dans une figure à plusieurs panneaux (p. ex. la figure \@ref(fig:storyboard-hg)).
-Ces panneaux indiquent ce qui suit :
+Les analyses de l'information sur les tendances des stocks pour le modèle ME2 sont présentées selon les méthodes de @cleary2018 pour les principales RES des stocks de hareng du Pacifique.
+Les perceptions de l'état des stocks fondées sur les résultats du modèle statistique des prises selon l'âge (ME2) sont résumées pour chaque stock dans une figure à plusieurs panneaux (p. ex. la figure \@ref(fig:storyboard-hg)).
+Ces panneaux indiquent ce qui suit:
 
-a. Ajustement du modèle aux données mises à l’échelle de relevé du frai,
+a. Ajustement du modèle aux données mises à l'échelle de relevé du frai,
 
 a. Estimations des taux de mortalité naturelle instantanée $M$,
 
-a. Nombre de recrues d’âge-`r age_first`,
+a. Nombre de recrues d'âge-`r age_first`,
 
-a. Biomasse du stock reproducteur $\SB_t$ et total des prises $C_t$ pour l’année $t$, avec la ligne de référence aux estimations du modèle de $0.3\SB_0$,
+a. Biomasse du stock reproducteur $\SB_t$ et total des prises $C_t$ pour l'année $t$, avec la ligne de référence aux estimations du modèle de $0.3\SB_0$,
 
 a. Écarts du recrutement (échelle logarithmique) par rapport à la fonction estimée de recrutement de Beverton-Holt, et
 
 a. Production de la biomasse du stock reproducteur ($\frac{\SB_{t+1} - \SB_t + C_{t+1}}{\SB_t}$) pour la période du relevé en plongée, avec la ligne de référence aux estimations du modèle de $0.3\SB_0$.
 
-Il convient de souligner que les données du relevé du frai (c.-à-d. l’indice du frai) du panneau (a) sont ajustées à l’abondance au moyen du paramètre de mise à l’échelle du relevé du frai $q$.
-L’indice du frai a deux périodes distinctes définies par la méthode de relevé dominante : les relevés en surface (`r surv_yr_rng[1]` à `r new_surv_yr - 1`), et les relevés en plongée (`r new_surv_yr` à `r surv_yr_rng[2]`).
-Donc, deux paramètres $q$ sont mis en œuvre dans la procédure d’estimation :
+Il convient de souligner que les données du relevé du frai (c.-à-d. l'indice du frai) du panneau (a) sont ajustées à l'abondance au moyen du paramètre de mise à l'échelle du relevé du frai $q$.
+L'indice du frai a deux périodes distinctes définies par la méthode de relevé dominante: les relevés en surface (`r surv_yr_rng[1]` à `r new_surv_yr - 1`), et les relevés en plongée (`r new_surv_yr` à `r surv_yr_rng[2]`).
+Donc, deux paramètres $q$ sont mis en œuvre dans la procédure d'estimation:
 $q_1$ (`r surv_yr_rng[1]`à `r new_surv_yr - 1`) avec une valeur a priori non informative,
-$q_2$ (`r new_surv_yr`à `r surv_yr_rng[2]`) avec une valeur a priori informative d’environ 1,0.
+$q_2$ (`r new_surv_yr`à `r surv_yr_rng[2]`) avec une valeur a priori informative d'environ 1,0.
 
-La méthodologie du relevé en surface a été utilisée à l’occasion de `r new_surv_yr` à `r surv_yr_rng[2]`. 
-Cela se produit généralement lorsque le frai du hareng est observé à des endroits où une équipe de relevé en plongée n’est pas disponible, ou lorsque le frai a lieu très tôt (p. ex. en janvier ou février) ou très tard (p. ex. en mai) dans la saison. 
-Dans ces cas, les estimations de la biomasse de frai obtenues à partir des relevés en surface pour une zone de stock et une année données sont ajoutées aux estimations de la biomasse provenant des relevés en plongée, et le paramètre $q_2 = 1$ est utilisé pour obtenir l’indice combiné.
-En 2020 et `r surv_yr_rng[2]`, les relevés effectués dans les régions d’évaluation des stocks de Haida Gwaii et dans cette évaluation les estimations de la biomasse de relevés subséquents sont présumées continues avec les séries chronologiques des relevés en plongée.
+La méthodologie du relevé en surface a été utilisée à l'occasion de `r new_surv_yr` à `r surv_yr_rng[2]`. 
+Cela se produit généralement lorsque le frai du hareng est observé à des endroits où une équipe de relevé en plongée n'est pas disponible, ou lorsque le frai a lieu très tôt (p. ex. en janvier ou février) ou très tard (p. ex. en mai) dans la saison. 
+Dans ces cas, les estimations de la biomasse de frai obtenues à partir des relevés en surface pour une zone de stock et une année données sont ajoutées aux estimations de la biomasse provenant des relevés en plongée, et le paramètre $q_2 = 1$ est utilisé pour obtenir l'indice combiné.
+En 2020 et `r surv_yr_rng[2]`, les relevés effectués dans les régions d'évaluation des stocks de Haida Gwaii et dans cette évaluation les estimations de la biomasse de relevés subséquents sont présumées continues avec les séries chronologiques des relevés en plongée.
 
 ### Points de référence\label{sec:ref-pts}
 
-Un point de référence limite (PRL) biologique est défini pour les principales régions d’évaluation des stocks du hareng du Pacifique à $0.3\SB_0$ [@kronlund2017].
+Un point de référence limite (PRL) biologique est défini pour les principales régions d'évaluation des stocks du hareng du Pacifique à $0.3\SB_0$ [@kronlund2017].
 Les points de référence supérieurs (PRS) proposés des stocks ont été introduits dans @cleary2018 et mis en œuvre comme objectifs de biomasse dans les analyses de simulation pour la COIV et le DG en 2018 [@dfo2019a] puis pour HG, le DPR et la CC en 2019 [@dfo2019c].
-Les points de référence supérieurs proposés sont les suivants :
+Les points de référence supérieurs proposés sont les suivants:
 
 1. $0.4\SB_0$,
 
@@ -280,259 +280,260 @@ Les points de référence supérieurs proposés sont les suivants :
 
 1. Moyenne de la biomasse reproductrice pendant une période productive [@cleary2018], $\SB_{\mli{ave-prod}}$.
 
-Les résultats de la simulation ont montré des propriétés similaires entre les PRS $0.6\SB_0$ and $\SB_{\mli{ave}}$ à la fois dans les régions d’évaluation des stocks et parmi celles-ci, tandis que le PRS basé sur la biomasse moyenne au cours d’une période productive, $\SB_{\mli{ave-prod}}$, s’est révélé être le plus variable parmi les régions d’évaluation des stocks.
-Les évaluations par simulation n’ont pas sélectionné un seul PRS, mais un PRS de $0.6\SB_0$ est inclus dans cette mise à jour de l’état des stocks, car cette proposition est suffisamment supérieure au PRL (2*LRP) et qu’il s’agit d’un calcul répétable pour toutes les régions d’évaluation des stocks.
-L’état des stocks par rapport aux estimations du modèle d’évaluation $0.3\SB_0$ (PRL) et $0.6\SB_0$ (l’un des PRS suggérés), est présenté pour chaque RES dans les tableaux \@ref(tab:ref-points-hg) à \@ref(tab:ref-points-wcvi).
+Les résultats de la simulation ont montré des propriétés similaires entre les PRS $0.6\SB_0$ and $\SB_{\mli{ave}}$ à la fois dans les régions d'évaluation des stocks et parmi celles-ci, tandis que le PRS basé sur la biomasse moyenne au cours d'une période productive, $\SB_{\mli{ave-prod}}$, s'est révélé être le plus variable parmi les régions d'évaluation des stocks.
+Les évaluations par simulation n'ont pas sélectionné un seul PRS, mais un PRS de $0.6\SB_0$ est inclus dans cette mise à jour de l'état des stocks, car cette proposition est suffisamment supérieure au PRL (2*LRP) et qu'il s'agit d'un calcul répétable pour toutes les régions d'évaluation des stocks.
+L'état des stocks par rapport aux estimations du modèle d'évaluation $0.3\SB_0$ (PRL) et $0.6\SB_0$ (l'un des PRS suggérés), est présenté pour chaque RES dans les tableaux \@ref(tab:ref-points-hg) à \@ref(tab:ref-points-wcvi).
 
-Le PRL et le PRS établissent un lien entre l’état des stocks et le cadre de l’approche de précaution (AP) du MPO [@dfo2009], et, dans la présente évaluation du hareng du Pacifique, les mêmes calculs sont appliqués pour chaque région d’évaluation des stocks.
+Le PRL et le PRS établissent un lien entre l'état des stocks et le cadre de l'approche de précaution (AP) du MPO [@dfo2009], et, dans la présente évaluation du hareng du Pacifique, les mêmes calculs sont appliqués pour chaque région d'évaluation des stocks.
 Il existe une distinction importante entre les points de référence (p. ex. PRL, PRS) et les points de contrôle opérationnels de la règle de contrôle des prises (RCP) ou la procédure de gestion utilisée pour fixer les limites de prises.
-Plus précisément, les points de contrôle opérationnels (PCO) définissent les points d’inflexion d’une RCP et indiquent les niveaux de biomasse auxquels des mesures de gestion sont prises.
+Plus précisément, les points de contrôle opérationnels (PCO) définissent les points d'inflexion d'une RCP et indiquent les niveaux de biomasse auxquels des mesures de gestion sont prises.
 Par exemple, le taux de récolte est fixé à zéro et la pêche cesse lorsque la biomasse devient inférieure au PCO inférieur.
 
 ### Haida Gwaii
 
-La biomasse reproductrice estimée a diminué jusqu’à atteindre des creux historiques au milieu des années 1990 et a brièvement augmenté jusqu’à la fin des années 1990 avant de tomber à des creux historiques persistants de 2000 à 2010 (figure \@ref(fig:storyboard-hg)d).
-Une modeste augmentation de la biomasse féconde estimée s’est produite au début des années 2010 avant de retomber à des creux historiques de 2016 à 2018.
-L’augmentation peut être attribuée à la hausse de l’indice du frai dans les relevés en 2013 et 2015 (figure \@ref(fig:storyboard-hg)a) qui a été soutenue par un recrutement supérieur à la moyenne de poissons d’âge-`r age_first` en 2012 (figure \@ref(fig:storyboard-hg)c, d).
+La biomasse reproductrice estimée a diminué jusqu'à atteindre des creux historiques au milieu des années 1990 et a brièvement augmenté jusqu'à la fin des années 1990 avant de tomber à des creux historiques persistants de 2000 à 2010 (figure \@ref(fig:storyboard-hg)d).
+Une modeste augmentation de la biomasse féconde estimée s'est produite au début des années 2010 avant de retomber à des creux historiques de 2016 à 2018.
+L'augmentation peut être attribuée à la hausse de l'indice du frai dans les relevés en 2013 et 2015 (figure \@ref(fig:storyboard-hg)a) qui a été soutenue par un recrutement supérieur à la moyenne de poissons d'âge-`r age_first` en 2012 (figure \@ref(fig:storyboard-hg)c, d).
 Une tendance à la hausse du taux estimé de mortalité naturelle depuis 1980 (figure \@ref(fig:storyboard-hg)b) a largement absorbé la production excédentaire attribuable à des événements de recrutement supérieurs à la moyenne
 (par exemple, 1997 et 2012; figure \@ref(fig:storyboard-hg)c, d).
 La mortalité naturelle estimée a fortement augmenté depuis le début des années 2010, après une baisse par rapport au pic atteint vers 2002.
 Depuis 2000, le stock de HG se trouve dans un état de faible biomasse, et bon nombre de ces années ont également affiché une faible productivité qui a empêché la croissance du stock (figure \@ref(fig:storyboard-hg)f).
-Il y a une augmentation de la biomasse du relevé en 2019 et 2020, et un recrutement supérieur à la moyenne des poissons d’âge 2 en 2018, et un recrutement inférieur à la moyenne en 2019 et 2020.
-Au cours des deux années les plus récentes, entre 2019 et 2020 et 2020 et 2021, on estime que la production n’est ni positive ni négative (c’est-à-dire que la production est égale à 0), précédée de deux années consécutives de productivité positive.
-Dans l’ensemble, la biomasse reste faible par rapport aux tendances historiques et les taux de mortalité naturelle restent à des niveaux historiquement élevés (jusqu’en 2016).
+Il y a une augmentation de la biomasse du relevé en 2019 et 2020, et un recrutement supérieur à la moyenne des poissons d'âge 2 en 2018, et un recrutement inférieur à la moyenne en 2019 et 2020.
+Au cours des deux années les plus récentes, entre 2019 et 2020 et 2020 et 2021, on estime que la production n'est ni positive ni négative (c'est-à-dire que la production est égale à 0), précédée de deux années consécutives de productivité positive.
+Dans l'ensemble, la biomasse reste faible par rapport aux tendances historiques et les taux de mortalité naturelle restent à des niveaux historiquement élevés (jusqu'en 2016).
 Les trois dernières années montrent une baisse de la mortalité naturelle estimée, en réponse à une augmentation de la biomasse féconde (2019-2021) et à un recrutement inférieur à la moyenne (2019-2021).
-Le taux de récolte effectif $U_t$ depuis 2000 a été égal à zéro ou proche de zéro (figure \@ref(fig:harvest-rate)), avec la dernière pêche commerciale d’œufs de poisson en 2002, et la dernière pêche commerciale de rogue sur varech en 2004.
+Le taux de récolte effectif $U_t$ depuis 2000 a été égal à zéro ou proche de zéro (figure \@ref(fig:harvest-rate)), avec la dernière pêche commerciale d'œufs de poisson en 2002, et la dernière pêche commerciale de rogue sur varech en 2004.
 
-`r stock_status_text(SAR = “HG”)`
-Des mesures de gestion visant à soutenir le rétablissement à long terme des stocks de hareng de Haida Gwaii sont en cours d’élaboration selon le processus relatif au plan de rétablissement (Section “\nameref{sec:harv-opts}”).
+`r stock_status_text(SAR = "HG", this_yr = assess_yr, translate = french)`
+Des mesures de gestion visant à soutenir le rétablissement à long terme des stocks de hareng de Haida Gwaii sont en cours d'élaboration selon le processus relatif au plan de rétablissement (Section «\nameref{sec:harv-opts}»).
 
 ### District de Prince Rupert
 
-La biomasse reproductrice estimée s’est rétablie au milieu des années 1980 à partir des faibles niveaux historiques d’épuisement qui ont suivi l’effondrement des années 1960, à environ 50 % de la biomasse historique maximale estimée au début des années 1960 (figure \@ref(fig:storyboard-prd)d).
+La biomasse reproductrice estimée s'est rétablie au milieu des années 1980 à partir des faibles niveaux historiques d'épuisement qui ont suivi l'effondrement des années 1960, à environ 50 % de la biomasse historique maximale estimée au début des années 1960 (figure \@ref(fig:storyboard-prd)d).
 Toutefois, après le milieu des années 1980, la biomasse féconde estimée a diminué régulièrement avant de se stabiliser à un niveau relativement bas (mais au-dessus des creux historiques) vers 2005.
 La biomasse estimée du stock a montré peu de tendances entre 2005 et 2018 avec une modeste augmentation en 2019.
 La biomasse observée dans le cadre du relevé de 2020 est presque identique à celle de 2019; la biomasse a encore augmenté en 2021.
-Les fluctuations de la tendance de la biomasse reproductrice semblent être inférieures à celles observées dans d’autres régions d’évaluation des stocks, peut-être parce que certains points de référence de l’indice du frai sont sous-ajustés ou surajustés (p. ex. de 2001 à 2004, et de 2010 à 2013) comme il est indiqué à la figure \@ref(fig:storyboard-prd)a.
+Les fluctuations de la tendance de la biomasse reproductrice semblent être inférieures à celles observées dans d'autres régions d'évaluation des stocks, peut-être parce que certains points de référence de l'indice du frai sont sous-ajustés ou surajustés (p. ex. de 2001 à 2004, et de 2010 à 2013) comme il est indiqué à la figure \@ref(fig:storyboard-prd)a.
 La mortalité naturelle estimée a atteint des sommets historiques à la fin des années 1960, avant de diminuer à la fin des années 1970.
-À partir de 1980 environ, la mortalité naturelle estimée a augmenté jusqu’en 2005, doublant à peu près de 0,25 à 0,5&nbsp;$\text{yr}^{-1}$, puis elle s’est stabilisée, de 2005 à 2021, à un taux médian de 0,45 (figure \@ref(fig:storyboard-prd)b).
+À partir de 1980 environ, la mortalité naturelle estimée a augmenté jusqu'en 2005, doublant à peu près de 0,25 à 0,5&nbsp;$\text{yr}^{-1}$, puis elle s'est stabilisée, de 2005 à 2021, à un taux médian de 0,45 (figure \@ref(fig:storyboard-prd)b).
 La tendance de la mortalité naturelle de 1980 à 2005 coïncide avec le déclin de la biomasse reproductrice (figure \@ref(fig:storyboard-prd)d), période pendant laquelle les écarts du recrutement ont fluctué autour de 0 sans forte tendance positive ou négative (figure \@ref(fig:storyboard-prd)e).
-Un recrutement supérieur à la moyenne d’âge-`r age_first`+ en 2014, 2017, et 2018, et l’augmentation de l’indice du frai au cours des trois dernières années n’étaient toujours pas suffisants pour relever la tendance de la biomasse en 2019 et 2021, par rapport à 2018 (figure \@ref(fig:storyboard-prd)f).
-Les prises commerciales de 2007 à 2018 sont demeurées faibles (moins de 2 000&nbsp;t) et aucune prise n’a été attribuable à la pêche commerciale en 2019, 2020, ou 2021.
-L’estimation de la mortalité naturelle semble inchangée par rapport à l’an dernier, ce qui se traduit par une apparente légère augmentation de la production entre 2018 et 2019, ayant donné lieu à une hausse de la biomasse en 2019 qui s’est poursuivie en 2021.
+Un recrutement supérieur à la moyenne d'âge-`r age_first`+ en 2014, 2017, et 2018, et l'augmentation de l'indice du frai au cours des trois dernières années n'étaient toujours pas suffisants pour relever la tendance de la biomasse en 2019 et 2021, par rapport à 2018 (figure \@ref(fig:storyboard-prd)f).
+Les prises commerciales de 2007 à 2018 sont demeurées faibles (moins de 2 000&nbsp;t) et aucune prise n'a été attribuable à la pêche commerciale en 2019, 2020, ou 2021.
+L'estimation de la mortalité naturelle semble inchangée par rapport à l'an dernier, ce qui se traduit par une apparente légère augmentation de la production entre 2018 et 2019, ayant donné lieu à une hausse de la biomasse en 2019 qui s'est poursuivie en 2021.
 
-`r stock_status_text(SAR = “PRD”)`
+`r stock_status_text(SAR = "PRD", this_yr = assess_yr, translate = french)`
 La pêche commerciale a été pratiquée chaque année dans le DPR depuis le milieu des années 1980, sauf de 2019 à 2021, au cours de laquelle le taux de récolte effectif $U_t$ a été estimé à 20 % ou moins (figure \@ref(fig:harvest-rate)) pour toutes les années, sauf 1989.
 
 ### Côte centrale
 
-La biomasse estimée du stock reproducteur est passée d’un sommet historique vers 1980 à des niveaux historiquement bas entre 2005 et 2015 (figure \@ref(fig:storyboard-cc)d).
-On l’a estimée en hausse jusqu’au milieu des années 2010, mais elle est demeurée inférieure aux niveaux estimés avant 2000, et le relevé de la biomasse a diminué en 2017, 2018 et 2021.
-La biomasse du stock reproducteur a ensuite augmenté en 2019, et s’est maintenue à un niveau similaire en 2020.
-La tendance de la biomasse estimée reflète en grande partie la tendance de l’indice du frai (figure \@ref(fig:storyboard-cc)a), où les fluctuations correspondent en phase opposée aux fluctuations de la mortalité naturelle estimée (figure \@ref(fig:storyboard-cc)b).
-Par exemple, la baisse de l’indice du frai (et de la biomasse féconde estimée) jusqu’aux creux historiques vers 2008 a suivi une tendance à la hausse de la mortalité naturelle estimée pendant la même période.
-La mortalité naturelle estimée s’est modérée vers 2008, ce qui a donné suite à une augmentation de l’indice du frai (et de la biomasse estimée du stock reproducteur) jusqu’en 2017, après quoi la mortalité naturelle a de nouveau augmenté.
-Les écarts du recrutement ont été légèrement négatifs (c’est-à-dire, inférieurs aux prévisions de la fonction de stock-recrutement) en moyenne entre 1990 et 2017 environ, et ont augmenté jusqu’à dépasser la moyenne en 2019 et 2020 (figure \@ref(fig:storyboard-cc)e).
-Selon les estimations du modèle, la biomasse du stock reproducteur est très semblable à celle de 2019 à 2021 (tableau \@ref(tab:cc-spawning-biomass-depletion)), et l’analyse de la production excédentaire indique une forte production durant l’année 2016-2017 et l’année 2018-2019, semblable à celle de la période de 1990 à 1999 (figure \@ref(fig:storyboard-cc)f).
+La biomasse estimée du stock reproducteur est passée d'un sommet historique vers 1980 à des niveaux historiquement bas entre 2005 et 2015 (figure \@ref(fig:storyboard-cc)d).
+On l'a estimée en hausse jusqu'au milieu des années 2010, mais elle est demeurée inférieure aux niveaux estimés avant 2000, et le relevé de la biomasse a diminué en 2017, 2018 et 2021.
+La biomasse du stock reproducteur a ensuite augmenté en 2019, et s'est maintenue à un niveau similaire en 2020.
+La tendance de la biomasse estimée reflète en grande partie la tendance de l'indice du frai (figure \@ref(fig:storyboard-cc)a), où les fluctuations correspondent en phase opposée aux fluctuations de la mortalité naturelle estimée (figure \@ref(fig:storyboard-cc)b).
+Par exemple, la baisse de l'indice du frai (et de la biomasse féconde estimée) jusqu'aux creux historiques vers 2008 a suivi une tendance à la hausse de la mortalité naturelle estimée pendant la même période.
+La mortalité naturelle estimée s'est modérée vers 2008, ce qui a donné suite à une augmentation de l'indice du frai (et de la biomasse estimée du stock reproducteur) jusqu'en 2017, après quoi la mortalité naturelle a de nouveau augmenté.
+Les écarts du recrutement ont été légèrement négatifs (c'est-à-dire, inférieurs aux prévisions de la fonction de stock-recrutement) en moyenne entre 1990 et 2017 environ, et ont augmenté jusqu'à dépasser la moyenne en 2019 et 2020 (figure \@ref(fig:storyboard-cc)e).
+Selon les estimations du modèle, la biomasse du stock reproducteur est très semblable à celle de 2019 à 2021 (tableau \@ref(tab:cc-spawning-biomass-depletion)), et l'analyse de la production excédentaire indique une forte production durant l'année 2016-2017 et l'année 2018-2019, semblable à celle de la période de 1990 à 1999 (figure \@ref(fig:storyboard-cc)f).
 Toutefois, on estime que la production excédentaire sera négative au cours des années 2019-2020 et 2020-2021.
 
-Un examen de la biomasse du frai par section de hareng montre que le récent déclin du frai du hareng s’est produit en grande partie dans le chenal Spiller (sections 072 et 078) et dans la baie Kitasu et le passage East Higgins (section 067; figure \@ref(fig:spawn-section-cc)).
+Un examen de la biomasse du frai par section de hareng montre que le récent déclin du frai du hareng s'est produit en grande partie dans le chenal Spiller (sections 072 et 078) et dans la baie Kitasu et le passage East Higgins (section 067; figure \@ref(fig:spawn-section-cc)).
 La majorité du frai de la zone 07 en 2021 semble concentrée dans les rivières Thompson/Stryker (section 074).
 La présence de frayères dans les rivières Thompson/Stryker en 2020 et 2021 représente les premières frayères importantes pour cette section depuis de nombreuses années.
 La diminution des observations de frai en 2020 et 2021 dans le chenal Spiller (sections 072 et 078) ramène la biomasse de frai dans ces sections aux faibles niveaux observés vers 2010 (figure \@ref(fig:storyboard-cc)d).
 Les mécanismes qui dictent les fluctuations du frai sur la côte centrale ne sont pas bien compris.
 
 Une RCP avec un seuil fixe a été mise en œuvre en 1986 et, de 1986 à 2007, on estime que le taux de récolte effectif $U_t$ a fluctué au-dessus et au-dessous du taux cible de `r target_hr*100`% et les estimations médianes dépassant fréquemment `r target_hr*100`% (figure \@ref(fig:harvest-rate)).
-Les occurrences de $U_t$ dépassant le taux de récolte cible de `r target_hr*100`% sont dues en partie à des erreurs positives du modèle d’évaluation et à des retards dans la détection d’un changement directionnel dans la tendance.
+Les occurrences de $U_t$ dépassant le taux de récolte cible de `r target_hr*100`% sont dues en partie à des erreurs positives du modèle d'évaluation et à des retards dans la détection d'un changement directionnel dans la tendance.
 
 Après la fermeture de la pêche commerciale de 2007 à 2013, la pêche commerciale du stock de la CC a été rouverte en 2014 et de petites pêches commerciales au hareng rogué ont eu lieu en 2014, 2015 et 2016.
-Une pêche commerciale d’œufs sur varech est pratiquée chaque année de 2014 à 2020, toutefois ces prélèvements ne sont pas inclus dans l’estimation de $U_t$. 
-La pêche commerciale des œufs sur varech n’a pas été pratiquée dans la région 07 en 2020 en raison de la pandémie de COVID-19, mais elle a repris avec succès en 2021 (tableau \@ref(tab:annual-sok-catch)).
+Une pêche commerciale d'œufs sur varech est pratiquée chaque année de 2014 à 2020, toutefois ces prélèvements ne sont pas inclus dans l'estimation de $U_t$. 
+La pêche commerciale des œufs sur varech n'a pas été pratiquée dans la région 07 en 2020 en raison de la pandémie de COVID-19, mais elle a repris avec succès en 2021 (tableau \@ref(tab:annual-sok-catch)).
 
-`r stock_status_text(SAR = “CC”)`
+`r stock_status_text(SAR = "CC", this_yr = assess_yr, translate = french)`
 
 ### Détroit de Georgia
 
 La biomasse reproductrice estimée pour le stock du DG a diminué en 2019, a augmenté en 2020 et a diminué en 2021.
-Par conséquent, l’incertitude associée aux dernières années et aux prévisions de la biomasse `r paste0(“$\\SB_{“, assess_yr, “}$”)`, est assez grande (figure \@ref(fig:storyboard-sog)d).
+Par conséquent, l'incertitude associée aux dernières années et aux prévisions de la biomasse `r paste0("$\\SB_{", assess_yr, "}$")`, est assez grande (figure \@ref(fig:storyboard-sog)d).
 Il y a eu une tendance à la hausse de la biomasse féconde estimée entre 2010 et 2016, qui a coïncidé avec la baisse de la mortalité naturelle estimée qui a commencé à la fin des années 2000 (figure \@ref(fig:storyboard-sog)b).
 Selon le modèle, la mortalité naturelle augmente depuis 2016 et a maintenant atteint un niveau estimé pour la dernière fois au début des années 1960.
-Cette hausse coïncide avec d’importants changements dans la biomasse observée dans le cadre des relevés des cinq dernières années, l’indice ayant diminué de 2016 à 2017, de 2018 à 2019 et de 2020 à 2021.
-La grande incertitude des estimations de la biomasse féconde et de la mortalité naturelle en `r assess_yr` peut être en partie attribuable à la tendance à la baisse de l’indice du frai depuis 2016, après la tendance à la hausse amorcée en 2010 (figure \@ref(fig:storyboard-sog)a).
-Le modèle s’ajuste à une trajectoire moyenne des valeurs de l’indice du frai des années 2010 et est actuellement sous-adapté aux données de relevés de 2014 à 2016 et 2020.
+Cette hausse coïncide avec d'importants changements dans la biomasse observée dans le cadre des relevés des cinq dernières années, l'indice ayant diminué de 2016 à 2017, de 2018 à 2019 et de 2020 à 2021.
+La grande incertitude des estimations de la biomasse féconde et de la mortalité naturelle en `r assess_yr` peut être en partie attribuable à la tendance à la baisse de l'indice du frai depuis 2016, après la tendance à la hausse amorcée en 2010 (figure \@ref(fig:storyboard-sog)a).
+Le modèle s'ajuste à une trajectoire moyenne des valeurs de l'indice du frai des années 2010 et est actuellement sous-adapté aux données de relevés de 2014 à 2016 et 2020.
 Le modèle estime un recrutement supérieur à la moyenne pour la plupart des années entre 2010 et `r assess_yr` (figure \@ref(fig:storyboard-sog)c)), avec des écarts positifs particulièrement importants en 2019 et 2020.
 (Figure \@ref(fig:storyboard-sog)e).
-La grande incertitude entourant l’estimation du recrutement des poissons d’âge-`r age_first` en 2019 et 2020 a été observée dans l’évaluation des années précédentes et demeure apparente maintenant que ces poissons d’âge 2 sont pleinement recrutés par les engins d’échantillonnage et de pêche.
-L’analyse de la production excédentaire montre que, pour l’année comprise entre 2019 et 2020, on estime que la RES du DG est dans un état de forte production et de biomasse élevée, suivie d’une production négative pour l’année 2020 et l’année 2021 (figure \@ref(fig:storyboard-sog)f).
+La grande incertitude entourant l'estimation du recrutement des poissons d'âge-`r age_first` en 2019 et 2020 a été observée dans l'évaluation des années précédentes et demeure apparente maintenant que ces poissons d'âge 2 sont pleinement recrutés par les engins d'échantillonnage et de pêche.
+L'analyse de la production excédentaire montre que, pour l'année comprise entre 2019 et 2020, on estime que la RES du DG est dans un état de forte production et de biomasse élevée, suivie d'une production négative pour l'année 2020 et l'année 2021 (figure \@ref(fig:storyboard-sog)f).
 
-Depuis le début des années 1970 (après l’effondrement du stock à la fin des années 1960), la pêche commerciale est pratiquée chaque année dans le DG.
+Depuis le début des années 1970 (après l'effondrement du stock à la fin des années 1960), la pêche commerciale est pratiquée chaque année dans le DG.
 Depuis la mise en œuvre de la RCP avec un seuil fixe en 1986, on estime que le taux de récolte effectif $U_t$ fluctue au-dessus et en dessous du taux cible de `r target_hr*100`%, avec des estimations médianes réparties de manière uniforme au-dessus et en deçà de `r target_hr*100`% (figure \@ref(fig:harvest-rate)).
 Le modèle estime que le taux de récolte effectif médian a dépassé 25 % en 2006 et 2017.
 
-`r stock_status_text(SAR = “SoG”)`
+`r stock_status_text(SAR = "SoG", this_yr = assess_yr, translate = french)`
 
-### Côte ouest de l’île de Vancouver
+### Côte ouest de l'île de Vancouver
 
-La série chronologique de la biomasse reproductrice estimée montre une baisse depuis la fin des années 1980 jusqu’à atteindre un creux historique dans les années 2000 (figure \@ref(fig:storyboard-wcvi)d).
+La série chronologique de la biomasse reproductrice estimée montre une baisse depuis la fin des années 1980 jusqu'à atteindre un creux historique dans les années 2000 (figure \@ref(fig:storyboard-wcvi)d).
 Le faible niveau de la biomasse féconde estimée a persisté de 2006 à 2012 et a depuis lentement augmenté pour revenir à un niveau similaire à celui estimé pour 2000.
-La reconstruction du modèle de la biomasse reproductrice suit de près la trajectoire des valeurs de l’indice du frai (figure \@ref(fig:storyboard-wcvi)a).
-Les taux de mortalité naturelle avaient atteint un sommet historique à la fin des années 2000 et ont diminué depuis, même s’ils montrent une tendance à la hausse de 2015 à 2021 (figure \@ref(fig:storyboard-wcvi)b).
-Les écarts du recrutement sont négatifs (c’est-à-dire inférieurs aux prévisions de la fonction de stock-recrutement) en moyenne depuis environ 2003 (figure \@ref(fig:storyboard-wcvi)e),), à l’exception des années 2015, 2020 et 2021.
-Les niveaux historiquement élevés de la baisse de la mortalité naturelle estimée et l’absence de prélèvements par une pêche commerciale semblent suffire à compenser ce recrutement inférieur à la moyenne pour les poissons d’âge-`r age_first` pour soutenir la croissance de la biomasse.
-L’absence de pêche commerciale depuis 2005 signifie que le taux de récolte réalisé est nul depuis 15 ans (figure \@ref(fig:harvest-rate)).
-Il existe des preuves modestes d’une augmentation au-dessus du PRL depuis 2016 et les estimations de production pour les années 2019 et 2020, et 2020 et 2021 sont positives (figure \@ref(fig:storyboard-wcvi)f).
+La reconstruction du modèle de la biomasse reproductrice suit de près la trajectoire des valeurs de l'indice du frai (figure \@ref(fig:storyboard-wcvi)a).
+Les taux de mortalité naturelle avaient atteint un sommet historique à la fin des années 2000 et ont diminué depuis, même s'ils montrent une tendance à la hausse de 2015 à 2021 (figure \@ref(fig:storyboard-wcvi)b).
+Les écarts du recrutement sont négatifs (c'est-à-dire inférieurs aux prévisions de la fonction de stock-recrutement) en moyenne depuis environ 2003 (figure \@ref(fig:storyboard-wcvi)e),), à l'exception des années 2015, 2020 et 2021.
+Les niveaux historiquement élevés de la baisse de la mortalité naturelle estimée et l'absence de prélèvements par une pêche commerciale semblent suffire à compenser ce recrutement inférieur à la moyenne pour les poissons d'âge-`r age_first` pour soutenir la croissance de la biomasse.
+L'absence de pêche commerciale depuis 2005 signifie que le taux de récolte réalisé est nul depuis 15 ans (figure \@ref(fig:harvest-rate)).
+Il existe des preuves modestes d'une augmentation au-dessus du PRL depuis 2016 et les estimations de production pour les années 2019 et 2020, et 2020 et 2021 sont positives (figure \@ref(fig:storyboard-wcvi)f).
 
-L’examen des diagnostics MCCM de la COIV a révélé une autocorrélation dans l’estimation de la sélectivité des pêches à 50 % ($\hat{a}_1$) et son écart-type ($\hat{\gamma}_1$) pour les « autres » catégories des pêches (c’est-à-dire, les pêches minotières, les pêches au hareng de consommation et d’appât, et les pêches au hareng destiné à des usages spéciaux).
-L’autocorrélation dans l’estimation des paramètres peut indiquer un biais dans la répartition postérieure ou des minima locaux. 
-Dans ce cas, l’autocorrélation résulte probablement du fait qu’il n’y a pas de nouvelles données sur la pêche commerciale depuis 2005. 
-L’utilisation de chaînes plus longues n’a apporté que des améliorations mineures.
-Si et quand les pêches reprennent à l’avenir, l’ajout de nouvelles données sur les pêches peut réduire cette autocorrélation apparente et tout biais qui en résulte.
+L'examen des diagnostics MCCM de la COIV a révélé une autocorrélation dans l'estimation de la sélectivité des pêches à 50 % ($\hat{a}_1$) et son écart-type ($\hat{\gamma}_1$) pour les «autres» catégories des pêches (c'est-à-dire, les pêches minotières, les pêches au hareng de consommation et d'appât, et les pêches au hareng destiné à des usages spéciaux).
+L'autocorrélation dans l'estimation des paramètres peut indiquer un biais dans la répartition postérieure ou des minima locaux. 
+Dans ce cas, l'autocorrélation résulte probablement du fait qu'il n'y a pas de nouvelles données sur la pêche commerciale depuis 2005. 
+L'utilisation de chaînes plus longues n'a apporté que des améliorations mineures.
+Si et quand les pêches reprennent à l'avenir, l'ajout de nouvelles données sur les pêches peut réduire cette autocorrélation apparente et tout biais qui en résulte.
 
-`r stock_status_text(SAR = “WCVI”)`
+`r stock_status_text(SAR = "WCVI", this_yr = assess_yr, translate = french)`
 
 ## Rendement de la gestion
 
-Le rendement de la procédure de gestion peut être étudié à l’aide de la série chronologique du taux de récolte effectif.
+Le rendement de la procédure de gestion peut être étudié à l'aide de la série chronologique du taux de récolte effectif.
 Le taux de récolte effectif estimatif $U$ pour chaque année $t$, est calculé selon la formule
 $U_t = C_t/(C_t + \SB_t)$, où
-$C_t$ est les prises de l’année $t$, et
+$C_t$ est les prises de l'année $t$, et
 $\SB_t$ est la biomasse féconde estimée en $t$.
 Des séries chronologiques de $U_t$ par rapport au taux de récolte cible de `r target_hr*100`% présentées sur la figure \@ref(fig:harvest-rate).
 
 ## Application des PG et des options de récolte pour `r assess_yr + 1`\label{sec:harv-opts}
 
-Les options de récolte pour `r assess_yr+1` tiennent compte de l’application des PG testées par simulation pour chaque principale RES. 
-Les PG incluses pour le DG et la COIV combinent l’information du premier cycle de l’ESG [@dfo2019a] aux évaluations actualisées des PG réalisées en septembre 2020 [@dfo2021b].
-Les PG incluses pour le DPR et la CC combinent l’information du premier cycle de l’ESG pour les RES du Nord [@dfo2019c] aux évaluations actualisées des PG réalisées à l’été 2021 (ce document).
-Un avis scientifique de 2018 a recommandé de mettre fin à l’utilisation de règles de contrôle des prises à seuil fixe historique [@dfo2019a]; la procédure de gestion connexe a donc cessé d’être prise en compte pour l’ensemble des régions d’évaluation des stocks de hareng du Pacifique.
-Enfin, les PG ne sont pas prévues pour HG en raison des exigences d’un plan de rétablissement (détaillées ci-dessous).
+Les options de récolte pour `r assess_yr+1` tiennent compte de l'application des PG testées par simulation pour chaque principale RES. 
+Les PG incluses pour le DG et la COIV combinent l'information du premier cycle de l'ESG [@dfo2019a] aux évaluations actualisées des PG réalisées en septembre 2020 [@dfo2021b].
+Les PG incluses pour le DPR et la CC combinent l'information du premier cycle de l'ESG pour les RES du Nord [@dfo2019c] aux évaluations actualisées des PG réalisées à l'été 2021 (ce document).
+Un avis scientifique de 2018 a recommandé de mettre fin à l'utilisation de règles de contrôle des prises à seuil fixe historique [@dfo2019a]; la procédure de gestion connexe a donc cessé d'être prise en compte pour l'ensemble des régions d'évaluation des stocks de hareng du Pacifique.
+Enfin, les PG ne sont pas prévues pour HG en raison des exigences d'un plan de rétablissement (détaillées ci-dessous).
 
 ### Haida Gwaii
 
 Le stock de hareng du Pacifique de Haida Gwaii est demeuré dans un état de faible biomasse et de faible productivité environ de 2000 à 2018.
-Il s’est situé en dessous du PRL pendant une grande partie de cette période, et montre peu de signes de croissance soutenue malgré l’absence de pêches commerciales depuis 2002 (et depuis 2004 pour la pêche d’œufs sur varech).
+Il s'est situé en dessous du PRL pendant une grande partie de cette période, et montre peu de signes de croissance soutenue malgré l'absence de pêches commerciales depuis 2002 (et depuis 2004 pour la pêche d'œufs sur varech).
 Les relevés de 2019 et 2020 ont observé une augmentation de la biomasse, mais les estimations de la biomasse sont très incertaines en raison de la mortalité naturelle qui demeure élevée.
-Les résultats des évaluations par simulation ont révélé qu’aucune des PG proposées, y compris les PG historiques et les PG sans pêche, n’a obtenu un rendement satisfaisant par rapport à l’objectif de conservation de maintenir la biomasse féconde au-dessus du PRL avec une probabilité élevée (au moins (c.-à.-d. au moins 75 %).^[``Le Cadre décisionnel du MPO définit une probabilité comme étant « élevée » lorsqu’elle se situe entre 75 et 95 % [@dfo2009].]
+Les résultats des évaluations par simulation ont révélé qu'aucune des PG proposées, y compris les PG historiques et les PG sans pêche, n'a obtenu un rendement satisfaisant par rapport à l'objectif de conservation de maintenir la biomasse féconde au-dessus du PRL avec une probabilité élevée
+[i.e., c.-à.-d. au moins 75 %, @dfo2009].\footnote{\label{fn:HighProb}Le Cadre décisionnel du MPO définit une probabilité comme étant «élevée» lorsqu'elle se situe entre 75 et 95 \% (MPO 2009).}
 
-`r proj_biomass_text(SAR = “HG”)`
+`r proj_biomass_text(SAR = "HG", next_yr = assess_yr + 1, translate = french)`
 
-Le MPO s’est engagé à élaborer et à mettre en œuvre un plan de rétablissement du hareng du Pacifique de Haida Gwaii.
-Le travail de finalisation de l’ébauche pour consultation se poursuit par l’intermédiaire d’un groupe de travail technique composé de membres du Conseil de la Nation haïda, du MPO et de Parcs Canada.
-La période de consultation devrait commencer à l’automne 2021.
-Les Directives d’élaboration des plans de rétablissement [@dfo2013] indiquent que l’objectif premier de tout plan de rétablissement est de favoriser la croissance des stocks pour les faire sortir de la zone critique (c.-à-d. de les faire passer au-dessus du PRL fondé sur l’état des stocks) en s’assurant que les prélèvements résultant de toutes les sources de pêche sont maintenus au niveau le plus bas possible qui permettra, avec un taux de probabilité élevé, d’assurer la progression du stock hors de la zone critique.
-Toutefois, le rétablissement des stocks ne s’arrête pas là, et l’un des objectifs du plan de rétablissement sera de déterminer les seuils de biomasse possibles, supérieurs au PRL, qui sont compatibles avec un état reconstitué.
+Le MPO s'est engagé à élaborer et à mettre en œuvre un plan de rétablissement du hareng du Pacifique de Haida Gwaii.
+Le travail de finalisation de l'ébauche pour consultation se poursuit par l'intermédiaire d'un groupe de travail technique composé de membres du Conseil de la Nation haïda, du MPO et de Parcs Canada.
+La période de consultation devrait commencer à l'automne 2021.
+Les Directives d'élaboration des plans de rétablissement [@dfo2013] indiquent que l'objectif premier de tout plan de rétablissement est de favoriser la croissance des stocks pour les faire sortir de la zone critique (c.-à-d. de les faire passer au-dessus du PRL fondé sur l'état des stocks) en s'assurant que les prélèvements résultant de toutes les sources de pêche sont maintenus au niveau le plus bas possible qui permettra, avec un taux de probabilité élevé, d'assurer la progression du stock hors de la zone critique.
+Toutefois, le rétablissement des stocks ne s'arrête pas là, et l'un des objectifs du plan de rétablissement sera de déterminer les seuils de biomasse possibles, supérieurs au PRL, qui sont compatibles avec un état reconstitué.
 
 Sur la base des évaluations des procédures de gestion et du processus relatif au plan de rétablissement en cours, la recommandation de récolte pour le stock de HG `r assess_yr + 1` est 0&nbsp;t.
-Comme Haida Gwaii a un processus relatif au plan de rétablissement en cours, nous n’avons pas mis à jour le MO de HG selon les données récentes (comme nous l’avons fait pour le DPR et la CC; voir ci-dessous).
+Comme Haida Gwaii a un processus relatif au plan de rétablissement en cours, nous n'avons pas mis à jour le MO de HG selon les données récentes (comme nous l'avons fait pour le DPR et la CC; voir ci-dessous).
 
 ### District de Prince Rupert
 
 La biomasse estimée du stock du DPR a montré peu de tendances entre 2005 et 2018 avec une modeste augmentation de 2019 à 2021.
 
-À l’été 2021, nous avons mis à jour le conditionnement du modèle opérationnel de l’ESG pour le DPR à l’aide des données sur le frai, des données sur les prises et des données biologiques de 2019 et 2020.
-Nous avons refait des simulations de l’ESG pour générer des valeurs de probabilité actualisées pour les PG présentés en septembre 2019 [@dfo2020a] et en 2020 [@dfo2021].
-Aucune nouvelle PG ni aucun nouvel objectif n’ont été inclus.
+À l'été 2021, nous avons mis à jour le conditionnement du modèle opérationnel de l'ESG pour le DPR à l'aide des données sur le frai, des données sur les prises et des données biologiques de 2019 et 2020.
+Nous avons refait des simulations de l'ESG pour générer des valeurs de probabilité actualisées pour les PG présentés en septembre 2019 [@dfo2020a] et en 2020 [@dfo2021].
+Aucune nouvelle PG ni aucun nouvel objectif n'ont été inclus.
 
 Les simulations par rétroaction en boucle fermée actualisées indiquent que les procédures de gestion pour le DPR qui établissent des taux de récolte de 5, 10 et 20 % permettent de maintenir la biomasse du stock reproducteur au-dessus du PRL selon une probabilité de 78 à 100 % dans les trois scénarios du MO (tableau \@ref(tab:decision-prd)). 
 
-Bien que les PG comportant des taux de récolte 5 % à 20 % ont été en mesure d’atteindre l’objectif de conservation principal de consistant à maintenir la biomasse féconde au-dessus du PRL avec une probabilité élevée (c.-à.-d. au moins 75 %)^\ref{fn:HighProb}^, elles impliquent également des compromis différents entre la biomasse (p. ex. écosystème) et le rendement.
-Pour les régions de gestion où plusieurs PG atteignent l’objectif de conservation, il est nécessaire d’établir un classement plus détaillé des objectifs restants afin de fournir aux décideurs un ensemble de choix de compromis souples.
-Toutefois, cela n’a pas été fait parce qu’un ensemble d’objectifs bien définis n’a pas encore été élaboré pour chaque zone de gestion.
+Bien que les PG comportant des taux de récolte 5 % à 20 % ont été en mesure d'atteindre l'objectif de conservation principal de consistant à maintenir la biomasse féconde au-dessus du PRL avec une probabilité élevée (c.-à.-d. au moins 75 %)^\ref{fn:HighProb}^, elles impliquent également des compromis différents entre la biomasse (p. ex. écosystème) et le rendement.
+Pour les régions de gestion où plusieurs PG atteignent l'objectif de conservation, il est nécessaire d'établir un classement plus détaillé des objectifs restants afin de fournir aux décideurs un ensemble de choix de compromis souples.
+Toutefois, cela n'a pas été fait parce qu'un ensemble d'objectifs bien définis n'a pas encore été élaboré pour chaque zone de gestion.
 
-Les taux de récolte effectifs pour les 10 dernières années sont en moyenne de ~12 % (figure \@ref(fig:harvest-rate)), durant lesquelles le stock n’a montré aucun signe de croissance avant 2018 et on estime qu’il fluctue autour ou est proche du PRL de $0.3\SB_0$ (figure \@ref(fig:storyboard-prd)d). 
-L’épuisement de la biomasse du stock reproducteur a augmenté au-dessus de $0.3\SB_0$ en 2019 et est demeurée supérieure en 2020 et 2021.
-Bien qu’aucun élément probant n’ait témoigné d’une faible biomasse et d’une faible productivité dans le district de Prince Rupert depuis les 30 dernières années, les régions d’évaluation des stocks adjacentes (HG et la CC) affichent des signes de périodes récentes prolongées de faible biomasse et de faible productivité, des états qui sont apparus rapidement et ont été précédés par des niveaux élevés de biomasse.
+Les taux de récolte effectifs pour les 10 dernières années sont en moyenne de ~12 % (figure \@ref(fig:harvest-rate)), durant lesquelles le stock n'a montré aucun signe de croissance avant 2018 et on estime qu'il fluctue autour ou est proche du PRL de $0.3\SB_0$ (figure \@ref(fig:storyboard-prd)d). 
+L'épuisement de la biomasse du stock reproducteur a augmenté au-dessus de $0.3\SB_0$ en 2019 et est demeurée supérieure en 2020 et 2021.
+Bien qu'aucun élément probant n'ait témoigné d'une faible biomasse et d'une faible productivité dans le district de Prince Rupert depuis les 30 dernières années, les régions d'évaluation des stocks adjacentes (HG et la CC) affichent des signes de périodes récentes prolongées de faible biomasse et de faible productivité, des états qui sont apparus rapidement et ont été précédés par des niveaux élevés de biomasse.
 [@kronlund2017].
 
-`r proj_biomass_text(SAR = “PRD”)`
+`r proj_biomass_text(SAR = "PRD", next_yr = assess_yr + 1, translate = french)`
 
 Les options de récolte pour `r assess_yr + 1`, découlant de simulations des procédures de gestion, sont présentées dans le tableau \@ref(tab:decision-prd), et comprennent des valeurs de probabilité qui reflètent le conditionnement actualisé du MO.
 
-Par rapport au conditionnement du modèle opérationnel en 2018, les simulations actualisées indiquent une amélioration du rendement des PG par rapport à l’objectif de conservation, sous l’effet d’une augmentation de l’indice de frai estimé et de taux de mortalité naturelle estimés plus faibles dans les années les plus récentes des séries chronologiques historiques (jusqu’en 2020).
-Ce résultat corrobore les observations précédentes selon lesquelles les évaluations des procédures de gestion semblent être influencées par l’état des stocks et les tendances de mortalité naturelle des trois à cinq dernières années, utilisées pour conditionner le modèle opérationnel.
+Par rapport au conditionnement du modèle opérationnel en 2018, les simulations actualisées indiquent une amélioration du rendement des PG par rapport à l'objectif de conservation, sous l'effet d'une augmentation de l'indice de frai estimé et de taux de mortalité naturelle estimés plus faibles dans les années les plus récentes des séries chronologiques historiques (jusqu'en 2020).
+Ce résultat corrobore les observations précédentes selon lesquelles les évaluations des procédures de gestion semblent être influencées par l'état des stocks et les tendances de mortalité naturelle des trois à cinq dernières années, utilisées pour conditionner le modèle opérationnel.
 
-Les options de récolte énumérées dans le tableau \@ref(tab:decision-prd) reflètent l’application des PG à la biomasse prévue pour le DPR en `r assess_yr + 1`, chaque PG ayant une probabilité d’au moins 75 % d’atteindre l’objectif de conservation selon le scénario de MO de référence (DDM).
+Les options de récolte énumérées dans le tableau \@ref(tab:decision-prd) reflètent l'application des PG à la biomasse prévue pour le DPR en `r assess_yr + 1`, chaque PG ayant une probabilité d'au moins 75 % d'atteindre l'objectif de conservation selon le scénario de MO de référence (DDM).
 Les options de récolte selon les deux scénarios de MO de robustesse sont également incluses.
-Pour faciliter la comparaison avec le cycle 1 de l’évaluation des stratégies de gestion [@dfo2019c], tous les PG et scénarios énumérés dans le tableau \@ref(tab:decision-prd) comprennent des mesures de rendement pour les quatre objectifs fondamentaux.
+Pour faciliter la comparaison avec le cycle 1 de l'évaluation des stratégies de gestion [@dfo2019c], tous les PG et scénarios énumérés dans le tableau \@ref(tab:decision-prd) comprennent des mesures de rendement pour les quatre objectifs fondamentaux.
 
 ### Côte centrale
 
-Le stock de hareng du Pacifique de la côte centrale est demeuré dans un état de faible biomasse et d’une faible productivité environ de 2005 à 2014.
-Une tendance à la hausse a toutefois été observée au cours des dernières années, et ce stock affiche généralement de plus grandes augmentations/diminutions de l’abondance du frai (figure \@ref(fig:storyboard-cc)a) que ce qui était le cas avant 2005.
+Le stock de hareng du Pacifique de la côte centrale est demeuré dans un état de faible biomasse et d'une faible productivité environ de 2005 à 2014.
+Une tendance à la hausse a toutefois été observée au cours des dernières années, et ce stock affiche généralement de plus grandes augmentations/diminutions de l'abondance du frai (figure \@ref(fig:storyboard-cc)a) que ce qui était le cas avant 2005.
 
-Comme pour le DPR, à l’été 2021, nous avons mis à jour le conditionnement du modèle opérationnel de l’ESG à l’aide des données sur le frai, des données sur les prises et des données biologiques de 2019 et 2020. 
-Nous avons refait des simulations de l’ESG pour générer des valeurs de probabilité actualisées pour les PG présentés en septembre 2019 [@dfo2020a] et en 2020 [@dfo2021].
-Aucune nouvelle PG ni aucun nouvel objectif n’ont été inclus.
+Comme pour le DPR, à l'été 2021, nous avons mis à jour le conditionnement du modèle opérationnel de l'ESG à l'aide des données sur le frai, des données sur les prises et des données biologiques de 2019 et 2020. 
+Nous avons refait des simulations de l'ESG pour générer des valeurs de probabilité actualisées pour les PG présentés en septembre 2019 [@dfo2020a] et en 2020 [@dfo2021].
+Aucune nouvelle PG ni aucun nouvel objectif n'ont été inclus.
 
-Les procédures de gestion, les options de récolte et les probabilités actualisées d’atteindre les objectifs pour 2022 dans le cadre des trois scénarios du MO sont présentées dans le tableau \@ref(tab:decision-cc). 
-Les options de récolte énumérées dans le tableau \@ref(tab:decision-cc) reflètent l’application des PG à la biomasse prévue pour la CC en 2022, chaque PG ayant une probabilité d’au moins 75 % d’atteindre l’objectif de conservation selon le scénario de MO de référence (DDM).
+Les procédures de gestion, les options de récolte et les probabilités actualisées d'atteindre les objectifs pour 2022 dans le cadre des trois scénarios du MO sont présentées dans le tableau \@ref(tab:decision-cc). 
+Les options de récolte énumérées dans le tableau \@ref(tab:decision-cc) reflètent l'application des PG à la biomasse prévue pour la CC en 2022, chaque PG ayant une probabilité d'au moins 75 % d'atteindre l'objectif de conservation selon le scénario de MO de référence (DDM).
 
-Par rapport au conditionnement du modèle opérationnel en 2018, les simulations actualisées indiquent une amélioration du rendement des PG à l’égard de l’objectif de conservation, sous l’effet d’une augmentation de l’indice de frai estimé et de taux de mortalité naturelle estimés plus faibles dans les années les plus récentes des séries chronologiques (jusqu’en 2020).
-Cela corrobore les observations précédentes selon lesquelles les évaluations des PG semblent plus fortement influencées par les trois à cinq dernières années de l’état des stocks et des tendances de la mortalité naturelle.
-Notez que cette dernière mise à jour n’inclut pas les données de 2021, qui indiquent une baisse de l’indice du frai par rapport aux observations de 2019 et 2020 (figure \@ref(fig:storyboard-cc)a).
+Par rapport au conditionnement du modèle opérationnel en 2018, les simulations actualisées indiquent une amélioration du rendement des PG à l'égard de l'objectif de conservation, sous l'effet d'une augmentation de l'indice de frai estimé et de taux de mortalité naturelle estimés plus faibles dans les années les plus récentes des séries chronologiques (jusqu'en 2020).
+Cela corrobore les observations précédentes selon lesquelles les évaluations des PG semblent plus fortement influencées par les trois à cinq dernières années de l'état des stocks et des tendances de la mortalité naturelle.
+Notez que cette dernière mise à jour n'inclut pas les données de 2021, qui indiquent une baisse de l'indice du frai par rapport aux observations de 2019 et 2020 (figure \@ref(fig:storyboard-cc)a).
 
 Les simulations actualisées indiquent que les procédures de gestion qui établissent des taux de récolte de 5 % et 10 % permettent de maintenir la biomasse du stock reproducteur au-dessus du PRL selon une probabilité de 84 à 100 % dans les trois scénarios du MO (tableau \@ref(tab:decision-cc)).
-Étant donné que plusieurs PG répondent à l’objectif de conservation consistant à maintenir la biomasse des géniteurs au-dessus du PLR dans une proportion d’au moins 75 %, un classement plus détaillé des objectifs fournit aux décideurs un ensemble de choix de compromis souples.
-Toutefois, cela n’a pas été fait lors du premier cycle de l’ESG parce qu’un ensemble d’objectifs bien définis n’a pas encore été élaboré pour chaque zone de gestion.
-De plus, le modèle opérationnel actuel de la CC ne permet pas d’aborder directement les objectifs de conservation de la Nation Heilstuk liés à l’âge et à la taille des harengs, ni les objectifs à une échelle spatiale plus fine ou ceux propres aux pêches d’œufs sur varech.
-Ces limitations existent pour l’ensemble des cinq principaux stocks.
+Étant donné que plusieurs PG répondent à l'objectif de conservation consistant à maintenir la biomasse des géniteurs au-dessus du PLR dans une proportion d'au moins 75 %, un classement plus détaillé des objectifs fournit aux décideurs un ensemble de choix de compromis souples.
+Toutefois, cela n'a pas été fait lors du premier cycle de l'ESG parce qu'un ensemble d'objectifs bien définis n'a pas encore été élaboré pour chaque zone de gestion.
+De plus, le modèle opérationnel actuel de la CC ne permet pas d'aborder directement les objectifs de conservation de la Nation Heilstuk liés à l'âge et à la taille des harengs, ni les objectifs à une échelle spatiale plus fine ou ceux propres aux pêches d'œufs sur varech.
+Ces limitations existent pour l'ensemble des cinq principaux stocks.
 
-`r proj_biomass_text(SAR = “CC”)`
+`r proj_biomass_text(SAR = "CC", next_yr = assess_yr + 1, translate = french)`
 
-Enfin, le MPO souligne qu’il s’est engagé envers la Nation Heiltsuk à élaborer un plan conjoint de gestion des pêches du hareng du Pacifique sur la côte centrale en `r assess_yr + 1`.
+Enfin, le MPO souligne qu'il s'est engagé envers la Nation Heiltsuk à élaborer un plan conjoint de gestion des pêches du hareng du Pacifique sur la côte centrale en `r assess_yr + 1`.
 Les résultats présentés ici peuvent étayer cet engagement en cours.
 
 ### Détroit de Georgia
 
-En 2018, des simulations par rétroaction en boucle fermée pour le détroit de Georgia ont montré que toutes les procédures de gestion mises à l’essai pouvaient permettre de maintenir la biomasse du stock reproducteur au-dessus du PRL selon une probabilité de 91 % ou plus, et ce, dans tous les scénarios de modèle opérationnel. 
+En 2018, des simulations par rétroaction en boucle fermée pour le détroit de Georgia ont montré que toutes les procédures de gestion mises à l'essai pouvaient permettre de maintenir la biomasse du stock reproducteur au-dessus du PRL selon une probabilité de 91 % ou plus, et ce, dans tous les scénarios de modèle opérationnel. 
 
-D’autres évaluations par simulation ont été effectuées en 2019 afin d’explorer plus à fond le rôle des plafonds des prises dans l’atténuation des erreurs d’évaluation [@dfo2019c].
-Une comparaison des plafonds des prises de 30 000&nbsp;t à 5 000&nbsp;t n’a fait apparaître aucun gain perceptible dans les performances de conservation avec les trois scénarios de MO.
+D'autres évaluations par simulation ont été effectuées en 2019 afin d'explorer plus à fond le rôle des plafonds des prises dans l'atténuation des erreurs d'évaluation [@dfo2019c].
+Une comparaison des plafonds des prises de 30 000&nbsp;t à 5 000&nbsp;t n'a fait apparaître aucun gain perceptible dans les performances de conservation avec les trois scénarios de MO.
 Les résultats ont également montré que les PG dont les plafonds des prises sont de 20 000&nbsp;t ou moins dépassent rarement le taux de récolte de 20 % pour une année de projection donnée (sur les projections sur 15 ans).
 
-En septembre 2020, le modèle opérationnel pour le DG a été mis à jour afin d’inclure les données des relevés du frai de 2018 à 2020 et les données biologiques de 2018 et 2019 [@dfo2021b].
+En septembre 2020, le modèle opérationnel pour le DG a été mis à jour afin d'inclure les données des relevés du frai de 2018 à 2020 et les données biologiques de 2018 et 2019 [@dfo2021b].
 Les simulations par rétroaction en boucle fermée actualisées indiquent que les procédures de gestion pour le DG qui établissent des taux de récolte de 10, 15 et 20 % permettent de maintenir la biomasse du stock reproducteur au-dessus du PRL selon une probabilité de 75 à 85 % dans les trois scénarios du MO (tableau \@ref(tab:decision-sog)). 
-Les procédures de gestion établissant un taux de récolte de 30 % n’ont pas atteint l’objectif de conservation ($p$=69 % dans le cas du modèle opérationnel de référence).
+Les procédures de gestion établissant un taux de récolte de 30 % n'ont pas atteint l'objectif de conservation ($p$=69 % dans le cas du modèle opérationnel de référence).
 
-`r proj_biomass_text(SAR = “SoG”)`
+`r proj_biomass_text(SAR = "SoG", next_yr = assess_yr + 1, translate = french)`
 
 Les options de récolte pour `r assess_yr + 1`, découlant de simulations des procédures de gestion, sont présentées dans le tableau \@ref(tab:decision-sog).
-Ces options reflètent l’application des PG à la biomasse prévue en `r assess_yr + 1` pour le DG, chaque PG ayant une probabilité d’au moins 75 % d’atteindre l’objectif de conservation selon le scénario de MO de référence (DDM).
+Ces options reflètent l'application des PG à la biomasse prévue en `r assess_yr + 1` pour le DG, chaque PG ayant une probabilité d'au moins 75 % d'atteindre l'objectif de conservation selon le scénario de MO de référence (DDM).
 Les options de récolte selon les deux scénarios de MO de robustesse sont également incluses.
 Tous les PG et scénarios énumérés dans le tableau \@ref(tab:decision-sog) comprennent des mesures de rendement actualisées pour les quatre objectifs fondamentaux dans les trois scénarios [@dfo2021b].
 
 En 2021, nous avons étudié la sensibilité du rendement des procédures de gestion du stock du DG aux changements dans la répartition du TAC entre les flottilles de pêche du hareng rogué à la senne et aux filets maillants.
-La moyenne récente des prises sur 20 ans montre que les flottilles de la pêche du hareng pour consommation et du hareng-appât pêche, de la pêche du hareng rogué au filet maillant, de la pêche du hareng rogué à la senne prennent 21 %, 40 % et 39 % des captures et représente l’allocation de statu quo utilisée pour cette analyse.
+La moyenne récente des prises sur 20 ans montre que les flottilles de la pêche du hareng pour consommation et du hareng-appât pêche, de la pêche du hareng rogué au filet maillant, de la pêche du hareng rogué à la senne prennent 21 %, 40 % et 39 % des captures et représente l'allocation de statu quo utilisée pour cette analyse.
 
-Nous envisageons deux changements dans la répartition du TAC entre les flottilles de pêche du hareng rogué à la senne et aux filets maillants :
-l’allocation élevée pour les filets maillants (c’est-à-dire 90 % de filets maillants),
-l’allocation élevée pour les sennes (c’est-à-dire 90 % de sennes).
-Les PG ne prennent en compte que les mouvements entre les flottilles du hareng rogué, de sorte qu’aucun changement n’est apporté à l’allocation globale de nourriture et d’appâts.
-Les comparaisons entre les allocations de TAC sont mises en œuvre en utilisant la PG HS30-60_HR20 avec une procédure fondée sur l’indice.
-Cette analyse a été conçue pour étudier les différences relatives entre les procédures de gestion de l’allocation.
-Nous avons donc utilisé une approche fondée sur l’indice au lieu d’ajuster le modèle d’évaluation pour calculer le TAC pour chaque année simulée, afin d’économiser du temps de calcul.
+Nous envisageons deux changements dans la répartition du TAC entre les flottilles de pêche du hareng rogué à la senne et aux filets maillants:
+l'allocation élevée pour les filets maillants (c'est-à-dire 90 % de filets maillants),
+l'allocation élevée pour les sennes (c'est-à-dire 90 % de sennes).
+Les PG ne prennent en compte que les mouvements entre les flottilles du hareng rogué, de sorte qu'aucun changement n'est apporté à l'allocation globale de nourriture et d'appâts.
+Les comparaisons entre les allocations de TAC sont mises en œuvre en utilisant la PG HS30-60_HR20 avec une procédure fondée sur l'indice.
+Cette analyse a été conçue pour étudier les différences relatives entre les procédures de gestion de l'allocation.
+Nous avons donc utilisé une approche fondée sur l'indice au lieu d'ajuster le modèle d'évaluation pour calculer le TAC pour chaque année simulée, afin d'économiser du temps de calcul.
 
-Les résultats montrent qu’il n’y a pas de différence dans le rendement en matière de conservation entre les procédures d’allocation des TAC simulées (tableau \@ref(tab:allocation-sog)).
-En d’autres termes, les simulations montrent que le mouvement des TAC entre les flottes de pêche du hareng rogué ne semble pas avoir d’incidence sur la probabilité d’éviter le point de référence limite (PLR) sur la période de simulation de 15 ans.
-Il est à noter que ces résultats tiennent compte de l’état récent des stocks de harengs du DG et qu’en raison de la structure du modèle de simulation actuel du hareng, l’approche de simulation ne permet pas de comprendre les changements d’une année sur l’autre dans la composition par âge, la répartition du frai ou le comportement de frai.
-Cependant, ces résultats indiquent qu’étant donné le chevauchement des prises par âge entre les deux flottes, les taux de récolte appliqués à la population et la structure d’âge de la population, les différences de sélectivité par âge et par taille entre les deux engins ne sont pas assez importantes pour avoir un impact sur l’état de la population.
-Enfin, les valeurs de probabilité dans le tableau \@ref(tab:allocation-sog) ne doivent pas être directement comparées à celles du tableau \@ref(tab:decision-sog) en raison des différences dans la méthode d’évaluation mise en œuvre dans les simulations (modèle d’évaluation du stock basé sur un indice par rapport au modèle actuel) et des données de conditionnement utilisées (données des relevés du frai jusqu’en 2020 et données biologiques jusqu’en 2019 par rapport aux données des relevés du frai et aux données biologiques jusqu’en 2020).
+Les résultats montrent qu'il n'y a pas de différence dans le rendement en matière de conservation entre les procédures d'allocation des TAC simulées (tableau \@ref(tab:allocation-sog)).
+En d'autres termes, les simulations montrent que le mouvement des TAC entre les flottes de pêche du hareng rogué ne semble pas avoir d'incidence sur la probabilité d'éviter le point de référence limite (PLR) sur la période de simulation de 15 ans.
+Il est à noter que ces résultats tiennent compte de l'état récent des stocks de harengs du DG et qu'en raison de la structure du modèle de simulation actuel du hareng, l'approche de simulation ne permet pas de comprendre les changements d'une année sur l'autre dans la composition par âge, la répartition du frai ou le comportement de frai.
+Cependant, ces résultats indiquent qu'étant donné le chevauchement des prises par âge entre les deux flottes, les taux de récolte appliqués à la population et la structure d'âge de la population, les différences de sélectivité par âge et par taille entre les deux engins ne sont pas assez importantes pour avoir un impact sur l'état de la population.
+Enfin, les valeurs de probabilité dans le tableau \@ref(tab:allocation-sog) ne doivent pas être directement comparées à celles du tableau \@ref(tab:decision-sog) en raison des différences dans la méthode d'évaluation mise en œuvre dans les simulations (modèle d'évaluation du stock basé sur un indice par rapport au modèle actuel) et des données de conditionnement utilisées (données des relevés du frai jusqu'en 2020 et données biologiques jusqu'en 2019 par rapport aux données des relevés du frai et aux données biologiques jusqu'en 2020).
 
-### Côte ouest de l’île de Vancouver
+### Côte ouest de l'île de Vancouver
 
-Le stock de hareng du Pacifique de la côte ouest de l’île de Vancouver est demeuré dans un état de faible biomasse et de faible productivité environ de 2004 à 2014.
+Le stock de hareng du Pacifique de la côte ouest de l'île de Vancouver est demeuré dans un état de faible biomasse et de faible productivité environ de 2004 à 2014.
 Une tendance à la hausse a été observée au cours des dernières années, la biomasse demeurant faible par rapport aux niveaux historiques, oscillant près du PRL de $0.3\SB_0$.
 
-En 2018, les simulations par rétroaction en boucle fermée ont montré que les procédures de gestion pour la côte ouest de l’île de Vancouver pouvaient permettre d’atteindre l’objectif de conservation selon le scénario du modèle opérationnel de référence (selon une probabilité entre 75 % et 87 %), mais que ces procédures n’atteignaient pas l’objectif de conservation dans le cas du scénario du modèle opérationnel de robustesse DIM, où les taux de mortalité naturelle ressembleraient davantage à ceux des 10 dernières années ($p=56$ à 74 %).
+En 2018, les simulations par rétroaction en boucle fermée ont montré que les procédures de gestion pour la côte ouest de l'île de Vancouver pouvaient permettre d'atteindre l'objectif de conservation selon le scénario du modèle opérationnel de référence (selon une probabilité entre 75 % et 87 %), mais que ces procédures n'atteignaient pas l'objectif de conservation dans le cas du scénario du modèle opérationnel de robustesse DIM, où les taux de mortalité naturelle ressembleraient davantage à ceux des 10 dernières années ($p=56$ à 74 %).
 
-En septembre 2020, le modèle opérationnel pour la côte ouest de l’île de Vancouver a été mis à jour afin d’inclure les données des relevés du frai et les données biologiques de 2018 à 2019 [@dfo2021b].
-Les simulations par rétroaction en boucle fermée actualisées indiquent que les procédures de gestion pour la côte ouest de l’île de Vancouver qui établissent des taux de récolte de 5, 10 et 15 % permettent de maintenir la biomasse du stock reproducteur au-dessus du PRL selon une probabilité de 81 à 93 % dans les trois scénarios du modèle opérationnel (tableau \@ref(tab:decision-wcvi)). 
-Selon la mise à jour de 2020, une amélioration du rendement des procédures de gestion par rapport au premier cycle de l’ESG pour la région d’évaluation de la côte ouest de l’île de Vancouver, est attribuable à l’augmentation de l’indice du frai en 2018 et 2019 et à l’amélioration du statut par rapport à $SB_0$. 
+En septembre 2020, le modèle opérationnel pour la côte ouest de l'île de Vancouver a été mis à jour afin d'inclure les données des relevés du frai et les données biologiques de 2018 à 2019 [@dfo2021b].
+Les simulations par rétroaction en boucle fermée actualisées indiquent que les procédures de gestion pour la côte ouest de l'île de Vancouver qui établissent des taux de récolte de 5, 10 et 15 % permettent de maintenir la biomasse du stock reproducteur au-dessus du PRL selon une probabilité de 81 à 93 % dans les trois scénarios du modèle opérationnel (tableau \@ref(tab:decision-wcvi)). 
+Selon la mise à jour de 2020, une amélioration du rendement des procédures de gestion par rapport au premier cycle de l'ESG pour la région d'évaluation de la côte ouest de l'île de Vancouver, est attribuable à l'augmentation de l'indice du frai en 2018 et 2019 et à l'amélioration du statut par rapport à $SB_0$. 
 Cette amélioration du rendement est observée dans les trois scénarios.
 
-`r proj_biomass_text(SAR = “WCVI”)`
+`r proj_biomass_text(SAR = "WCVI", next_yr = assess_yr + 1, translate = french)`
 
 Les options de récolte pour `r assess_yr + 1`, découlant de simulations des procédures de gestion, sont présentées dans le tableau \@ref(tab:decision-wcvi).
-Ces options reflètent l’application des PG à la biomasse prévue en `r assess_yr + 1` pour la COIV, chaque PG ayant une probabilité d’au moins 75 % d’atteindre l’objectif de conservation selon le scénario de MO de référence (DDM).
+Ces options reflètent l'application des PG à la biomasse prévue en `r assess_yr + 1` pour la COIV, chaque PG ayant une probabilité d'au moins 75 % d'atteindre l'objectif de conservation selon le scénario de MO de référence (DDM).
 Les options de récolte selon les deux scénarios de MO de robustesse sont également incluses.
 Tous les PG et scénarios énumérés dans le tableau \@ref(tab:decision-wcvi) comprennent des mesures de rendement actualisées pour les quatre objectifs fondamentaux dans les trois scénarios [@dfo2021b].

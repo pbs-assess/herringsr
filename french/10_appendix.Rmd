@@ -1,21 +1,21 @@
 # Annexe\label{sec:app}
 
-## Régions secondaires d’évaluation des stocks\label{sec:app-minor}
+## Régions secondaires d'évaluation des stocks\label{sec:app-minor}
 
-Nous n’effectuons pas d’analyses formelles de l’information sur les tendances des stocks
-`r number_to_word(length(minor_regions_short))` pour les régions secondaires d’évaluation des stocks de hareng du Pacifique : `r commify(minor_regions_full_parens)`.
-Cependant, nous fournissons l’indice du frai et la proportion de l’indice du frai par section de `r minor_end_yr-num_yrs_tab` à `r minor_end_yr` pour la zone 27 et la zone 2O.
+Nous n'effectuons pas d'analyses formelles de l'information sur les tendances des stocks
+`r number_to_word(length(minor_regions_short))` pour les régions secondaires d'évaluation des stocks de hareng du Pacifique: `r commify(minor_regions_full_parens)`.
+Cependant, nous fournissons l'indice du frai et la proportion de l'indice du frai par section de `r minor_end_yr-num_yrs_tab` à `r minor_end_yr` pour la zone 27 et la zone 2O.
 (Tableaux \@ref(tab:spawn-index-a27) et \@ref(tab:spawn-index-a2w), respectivement).
-Pour la zone 27, nous présentons les séries chronologiques de l’indice du frai par section de
+Pour la zone 27, nous présentons les séries chronologiques de l'indice du frai par section de
 `r minor_start_yr_plot` à `r minor_end_yr` (Figure \@ref(fig:spawn-section-a27)).
-Nous présentons également les séries chronologiques des prises commerciales débarquées (figure \@ref(fig:minor-catch)), des prises accidentelles (figure \@ref(fig:minor-incidental)), des données biologiques, y compris le poids selon l’âge (figure \@ref(fig:minor-wa)) et la proportion selon l’âge (figure \@ref(fig:minor-pa)), ainsi que l’indice du frai (figure \@ref(fig:minor-spawn-index)) de `r minor_start_yr_plot` à `r minor_end_yr`.
+Nous présentons également les séries chronologiques des prises commerciales débarquées (figure \@ref(fig:minor-catch)), des prises accidentelles (figure \@ref(fig:minor-incidental)), des données biologiques, y compris le poids selon l'âge (figure \@ref(fig:minor-wa)) et la proportion selon l'âge (figure \@ref(fig:minor-pa)), ainsi que l'indice du frai (figure \@ref(fig:minor-spawn-index)) de `r minor_start_yr_plot` à `r minor_end_yr`.
 
 ## Zones spéciales\label{sec:app-special}
 
-Nous n’effectuons pas d’analyses formelles de l’information sur les tendances des stocks pour la zone spéciale du hareng du Pacifique, la zone 10 (Z10; figure \@ref(fig:a10-map)).
-Notez que les zones spéciales ne sont pas des régions d’évaluation des stocks; elles sont donc exclues de la surveillance et des analyses régulières.
-De plus, il faut noter que la zone 10 est un sous-ensemble des sections de la côte centrale qui se trouvent à l’extérieur des limites de la région d’évaluation des stocks.
-Comme pour les régions secondaires d’évaluation des stocks, nous présentons l’indice du frai et la proportion de l’indice du frai par section de `r special_end_yr-num_yrs_tab` à `r special_end_yr` (tableau \@ref(tab:spawn-index-a10)).
-Il est à noter que les données de 2021 sur le frai peuvent être incomplètes; les données de 2021 proviennent des relevés en plongée de Pêches et Océans Canada (MPO) du 14 avril 2021 et ne comprennent pas les données recueillies par la Première Nation Gwa’sala-’Nakwaxda’xw.
-Nous présentons également les séries chronologiques des données biologiques, y compris le poids selon l’âge (figure \@ref(fig:special-wa)) et la proportion selon l’âge (figure \@ref(fig:special-pa)), ainsi que l’indice du frai (figure \@ref(fig:special-spawn-index)) de `r special_start_yr_plot` à `r special_end_yr`.
-Notez qu’il n’y a pas de prise commerciale ni de prise accidentelle dans la zone 10 de `r special_start_yr_plot` à `r special_end_yr`.
+Nous n'effectuons pas d'analyses formelles de l'information sur les tendances des stocks pour la zone spéciale du hareng du Pacifique, la zone 10 (Z10; figure \@ref(fig:a10-map)).
+Notez que les zones spéciales ne sont pas des régions d'évaluation des stocks; elles sont donc exclues de la surveillance et des analyses régulières.
+De plus, il faut noter que la zone 10 est un sous-ensemble des sections de la côte centrale qui se trouvent à l'extérieur des limites de la région d'évaluation des stocks.
+Comme pour les régions secondaires d'évaluation des stocks, nous présentons l'indice du frai et la proportion de l'indice du frai par section de `r special_end_yr-num_yrs_tab` à `r special_end_yr` (tableau \@ref(tab:spawn-index-a10)).
+Il est à noter que les données de 2021 sur le frai peuvent être incomplètes; les données de 2021 proviennent des relevés en plongée de Pêches et Océans Canada (MPO) du 14 avril 2021 et ne comprennent pas les données recueillies par la Première Nation Gwa'sala-'Nakwaxda'xw.
+Nous présentons également les séries chronologiques des données biologiques, y compris le poids selon l'âge (figure \@ref(fig:special-wa)) et la proportion selon l'âge (figure \@ref(fig:special-pa)), ainsi que l'indice du frai (figure \@ref(fig:special-spawn-index)) de `r special_start_yr_plot` à `r special_end_yr`.
+Notez qu'il n'y a pas de prise commerciale ni de prise accidentelle dans la zone 10 de `r special_start_yr_plot` à `r special_end_yr`.
