@@ -96,7 +96,7 @@ Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 indice de frai en milliers de tonnes (t) de hareng du Pacifique par section
 de `r minor_start_yr_plot` à `r minor_end_yr`.
 La ligne verticale en pointillés délimite deux périodes
-définies par la méthode de relevé dominante :
+définies par la méthode de relevé dominante:
 les relevés de surface (`r major_start_yr` à `r new_surv_yr-1`), et
 les relevés en plongée (`r new_surv_yr` à `r major_end_yr`).
 Note: l'indice de frai n'est pas mis à l'échelle par
@@ -141,7 +141,7 @@ dans les activités d'aquaculture en milliers de poissons
 de `r min(ic_yrs)` à `r max(ic_yrs)` dans les RES mineurs.
 Voir la figure \@ref(fig:major-incidental) pour la description.
 
-```{r minor-incidental, fig.asp=ifelse(french, 0.35, 0.35), fig.cap = ifelse(french, "(ref:minor-incidental-cap-fr)", "(ref:minor-incidental-cap)"), eval = show_ic_figures}
+```{r minor-incidental, fig.asp=ifelse(french, 0.4, 0.35), fig.cap = ifelse(french, "(ref:minor-incidental-cap-fr)", "(ref:minor-incidental-cap)"), eval = show_ic_figures}
 plot_ic(
   df = ic %>% filter(Region %in% regions$Region[regions$Type == "Minor"]),
   xlim = c(min(ic_yrs), max(ic_yrs)),
