@@ -982,8 +982,8 @@ decision_tables_mp(
     french, "(ref:decision-prd-cap-fr)", "(ref:decision-prd-cap)"
   ),
   xlabel = "tab:decision-prd",
-  font.size = ifelse(french, 9, 11),
-  space.size = ifelse(french, 12, 14),
+  font.size = ifelse(french, 10, 11),
+  space.size = ifelse(french, 13, 14),
   translate = french
 )
 ```
@@ -997,8 +997,8 @@ decision_tables_mp(
     french, "(ref:decision-cc-cap-fr)", "(ref:decision-cc-cap)"
   ),
   xlabel = "tab:decision-cc",
-  font.size = ifelse(french, 9, 11),
-  space.size = ifelse(french, 12, 14),
+  font.size = ifelse(french, 10, 11),
+  space.size = ifelse(french, 13, 14),
   translate = french
 )
 ```
@@ -1012,8 +1012,8 @@ decision_tables_mp(
     french, "(ref:decision-sog-cap-fr)", "(ref:decision-sog-cap)"
   ),
   xlabel = "tab:decision-sog",
-  font.size = ifelse(french, 9, 11),
-  space.size = ifelse(french, 12, 14),
+  font.size = ifelse(french, 10, 11),
+  space.size = ifelse(french, 13, 14),
   translate = french
 )
 ```
@@ -1075,8 +1075,8 @@ decision_tables_mp_add(
     french, "(ref:decision-wcvi-cap-fr)", "(ref:decision-wcvi-cap)"
   ),
   xlabel = "tab:decision-wcvi",
-  font.size = ifelse(french, 9, 11),
-  space.size = ifelse(french, 12, 14),
+  font.size = ifelse(french, 10, 11),
+  space.size = ifelse(french, 13, 14),
   translate = french
 )
 ```
