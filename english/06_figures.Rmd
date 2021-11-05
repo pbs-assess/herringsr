@@ -133,7 +133,7 @@ La taille et la couleur des points indiquent la proportion
 de la classe d'âge pour l'année;
 la somme de chaque année est égale à 1,0.
 La ligne grise est l'âge moyen, et la zone ombragée est
-la distribution approximative `r ci_level*100`%.
+la distribution approximative `r ci_level*100` %.
 Les résumés biologiques n'incluent que les échantillons
 collectés à l'aide de senneurs (commerciaux et d'essai)
 en raison de la sélectivité de taille des autres types d'engins
@@ -290,7 +290,7 @@ Les points sont chronologiquement ombragés du clair au foncé;
 Le triangle indique `r assess_yr - 1`.
 Légende: la biomasse et les captures sont exprimées en milliers de tonnes (t),
 les points et les lignes de la série chronologique sont des estimations médianes postérieures,
-les bandes et les barres d'erreur sont les intervalles crédibles `r ci_level * 100`\%, 
+les bandes et les barres d'erreur sont les intervalles crédibles `r ci_level * 100` \%, 
 les lignes horizontales en pointillés indiquent zéro, et
 lignes rouges indiquent le point de référence de la limite médiane $0.3\SB_0$,
 où $\SB_0$ est la biomasse reproductrice non pêchée estimée.}
@@ -731,7 +731,7 @@ Taux de récolte effectif est $U_t = C_t/(C_t + \SB_t)$, où
 $C_t$ est est la prise pour l’année $t$, et
 $\SB_t$ est la biomasse reproductrice estimée pour l’année $t$.
 Les lignes noires et les zones ombragées indiquent
-les médianes et intervalles de confiance de `r ci_level*100`%
+les médianes et intervalles de confiance de `r ci_level*100` %
 pour $U_t$, respectivement.
 Les lignes en tirets horizontales indiquent $U_t = `r target_hr`$.
 
@@ -759,10 +759,10 @@ biomasse reproductrice projetée pour le hareng du Pacifique
 en supposant qu’il n’y aura pas de pêche en `r assess_yr + 1`
 $\SB_{`r assess_yr+1`}$ en milliers de tonnes dans les RES majeurs.
 Les lignes noires pleines et tiretées indiquent
-les médianes et les intervalles de confiance de `r ci_level*100`%
+les médianes et les intervalles de confiance de `r ci_level*100` %
 pour $\SB_{`r assess_yr + 1`}$, respectivement.
 Les lignes et rectangles ombragés rouges indiquent
-les médianes et les intervalles de confiance de `r ci_level*100`%
+les médianes et les intervalles de confiance de `r ci_level*100` %
 pour le point de référence limite, $0,3\SB_0$,
 où $\SB_0$ est la biomasse reproductrice non exploitée estimée.
 

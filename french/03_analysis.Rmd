@@ -342,8 +342,8 @@ La présence de frayères dans les rivières Thompson/Stryker en 2020 et 2021 re
 La diminution des observations de frai en 2020 et 2021 dans le chenal Spiller (sections 072 et 078) ramène la biomasse de frai dans ces sections aux faibles niveaux observés vers 2010 (figure \@ref(fig:storyboard-cc)d).
 Les mécanismes qui dictent les fluctuations du frai sur la côte centrale ne sont pas bien compris.
 
-Une RCP avec un seuil fixe a été mise en œuvre en 1986 et, de 1986 à 2007, on estime que le taux de récolte effectif $U_t$ a fluctué au-dessus et au-dessous du taux cible de `r target_hr*100`% et les estimations médianes dépassant fréquemment `r target_hr*100`% (figure \@ref(fig:harvest-rate)).
-Les occurrences de $U_t$ dépassant le taux de récolte cible de `r target_hr*100`% sont dues en partie à des erreurs positives du modèle d'évaluation et à des retards dans la détection d'un changement directionnel dans la tendance.
+Une RCP avec un seuil fixe a été mise en œuvre en 1986 et, de 1986 à 2007, on estime que le taux de récolte effectif $U_t$ a fluctué au-dessus et au-dessous du taux cible de `r target_hr*100` % et les estimations médianes dépassant fréquemment `r target_hr*100` % (figure \@ref(fig:harvest-rate)).
+Les occurrences de $U_t$ dépassant le taux de récolte cible de `r target_hr*100` % sont dues en partie à des erreurs positives du modèle d'évaluation et à des retards dans la détection d'un changement directionnel dans la tendance.
 
 Après la fermeture de la pêche commerciale de 2007 à 2013, la pêche commerciale du stock de la CC a été rouverte en 2014 et de petites pêches commerciales au hareng rogué ont eu lieu en 2014, 2015 et 2016.
 Une pêche commerciale d'œufs sur varech est pratiquée chaque année de 2014 à 2020, toutefois ces prélèvements ne sont pas inclus dans l'estimation de $U_t$. 
@@ -366,7 +366,7 @@ La grande incertitude entourant l'estimation du recrutement des poissons d'âge-
 L'analyse de la production excédentaire montre que, pour l'année comprise entre 2019 et 2020, on estime que la RES du DG est dans un état de forte production et de biomasse élevée, suivie d'une production négative pour l'année 2020 et l'année 2021 (figure \@ref(fig:storyboard-sog)f).
 
 Depuis le début des années 1970 (après l'effondrement du stock à la fin des années 1960), la pêche commerciale est pratiquée chaque année dans le DG.
-Depuis la mise en œuvre de la RCP avec un seuil fixe en 1986, on estime que le taux de récolte effectif $U_t$ fluctue au-dessus et en dessous du taux cible de `r target_hr*100`%, avec des estimations médianes réparties de manière uniforme au-dessus et en deçà de `r target_hr*100`% (figure \@ref(fig:harvest-rate)).
+Depuis la mise en œuvre de la RCP avec un seuil fixe en 1986, on estime que le taux de récolte effectif $U_t$ fluctue au-dessus et en dessous du taux cible de `r target_hr*100` %, avec des estimations médianes réparties de manière uniforme au-dessus et en deçà de `r target_hr*100` % (figure \@ref(fig:harvest-rate)).
 Le modèle estime que le taux de récolte effectif médian a dépassé 25 % en 2006 et 2017.
 
 `r stock_status_text(SAR = "SoG", this_yr = assess_yr, translate = french)`
@@ -397,7 +397,7 @@ Le taux de récolte effectif estimatif $U$ pour chaque année $t$, est calculé 
 $U_t = C_t/(C_t + \SB_t)$, où
 $C_t$ est les prises de l'année $t$, et
 $\SB_t$ est la biomasse féconde estimée en $t$.
-Des séries chronologiques de $U_t$ par rapport au taux de récolte cible de `r target_hr*100`% présentées sur la figure \@ref(fig:harvest-rate).
+Des séries chronologiques de $U_t$ par rapport au taux de récolte cible de `r target_hr*100` % présentées sur la figure \@ref(fig:harvest-rate).
 
 ## Application des PG et des options de récolte pour `r assess_yr + 1`\label{sec:harv-opts}
 

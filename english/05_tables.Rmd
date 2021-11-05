@@ -887,7 +887,7 @@ $\overline{C}$ est la prise moyenne.
 Les PM sont définis dans @dfo2019a et @dfo2019c.
 Le critère de performance $\SB_t >= 0,4\SB_0$ est proposé par
 le Herring Industry Advisory Board (HIAB) comme
-objectif de biomasse au niveau $P >= 50$%.
+objectif de biomasse au niveau $P >= 50$ %.
 Note: les tirets indiquent que le TAC et la TR ne s'appliquent pas,
 soit parce que le PM spécifie l'interdiction de la pêche
 au niveau actuel de la biomasse projetée,
@@ -969,7 +969,7 @@ rendement de la procédure de gestion pour le modèle statistique de prises-âge
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 En outre, $\SB_\text{MOY}$ correspond à la biomasse reproductrice moyenne de 1990 à 1999, calculée sur deux générations de hareng du Pacifique.
 Les critères de performance $\SB_t >=0,65 \SB_0$, $\SB_t >=0,75 \SB_0$, et $\SB_t >= \SB_\text{AVE}$ sont proposés par
-les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse au niveaux $P >= 50$% et $P >= 75$%.
+les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse au niveaux $P >= 50$ % et $P >= 75$ %.
 
 \begin{landscapepage}
 
