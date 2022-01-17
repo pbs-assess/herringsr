@@ -223,6 +223,7 @@ plot_d_hg <- plot_biomass_catch(
   catch_df = ct,
   xlim = xlim_all,
   prod_yrs = prod_years$HG,
+  prop_prod = 0.75,
   translate = french
 )
 ```
