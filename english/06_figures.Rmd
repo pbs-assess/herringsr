@@ -365,7 +365,7 @@ plot_d_prd <- plot_biomass_catch(
   catch_df = ct,
   xlim = xlim_all,
   prod_yrs = prod_period$PRD$yrs,
-  prop_prod = prod_periodPRD$prop,
+  prop_prod = prod_period$PRD$prop,
   translate = french
 )
 ```

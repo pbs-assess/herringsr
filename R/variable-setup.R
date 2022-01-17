@@ -233,7 +233,7 @@ proc_mp <- function(df) {
   )
 }
 
-# Year range for the productive period
+# Years and proportion for productive period
 prod_period <- list(
   HG = list(yrs = 1975:1985, prop = 0.75),
   PRD = list(yrs = 1990:1999, prop = 1.0),
