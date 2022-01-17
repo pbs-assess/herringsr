@@ -232,3 +232,12 @@ proc_mp <- function(df) {
     )
   )
 }
+
+# Year range for the productive period
+prod_years <- list(
+  "HG" = 1975:1985,
+  "PRD" = 1990:1999,
+  "CC" = 1990:1999,
+  "SoG" = 1990:1999,
+  "WCVI" = 1990:1999
+)
