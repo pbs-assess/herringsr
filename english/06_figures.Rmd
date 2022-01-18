@@ -244,6 +244,8 @@ plot_f_hg <- plot_biomass_phase(
   model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
+  prod_yrs = prod_period$HG$yrs,
+  prop_prod = prod_period$HG$prop,
   translate = french
 )
 ```
@@ -386,6 +388,8 @@ plot_f_prd <- plot_biomass_phase(
   model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
+  prod_yrs = prod_period$PRD$yrs,
+  prop_prod = prod_period$PRD$prop,
   translate = french
 )
 ```
@@ -479,6 +483,8 @@ plot_f_cc <- plot_biomass_phase(
   model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
+  prod_yrs = prod_period$CC$yrs,
+  prop_prod = prod_period$CC$prop,
   translate = french
 )
 ```
@@ -603,6 +609,8 @@ plot_f_sog <- plot_biomass_phase(
   model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
+  prod_yrs = prod_period$SoG$yrs,
+  prop_prod = prod_period$SoG$prop,
   translate = french
 )
 ```
@@ -696,6 +704,8 @@ plot_f_wcvi <- plot_biomass_phase(
   model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
+  prod_yrs = prod_period$WCVI$yrs,
+  prop_prod = prod_period$WCVI$prop,
   translate = french
 )
 ```
