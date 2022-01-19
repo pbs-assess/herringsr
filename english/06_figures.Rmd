@@ -192,6 +192,7 @@ plot_a_hg <- plot_scaled_abundance(
   model = major_models[[model_ind]],
   gear = surv_type,
   new_surv_yr = new_surv_yr,
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -201,6 +202,7 @@ plot_a_hg <- plot_scaled_abundance(
 ```{r natural-mortality-hg, fig.show = "hide", fig.asp = 1}
 plot_b_hg <- plot_natural_mortality(
   model = major_models[[model_ind]],
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   y_max = M_max,
   translate = french
@@ -211,6 +213,7 @@ plot_b_hg <- plot_natural_mortality(
 ```{r recruitment-hg, fig.show = "hide", fig.asp = 1}
 plot_c_hg <- plot_recruitment(
   model = major_models[[model_ind]],
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -222,8 +225,8 @@ plot_d_hg <- plot_biomass_catch(
   model = major_models[[model_ind]],
   catch_df = ct,
   xlim = xlim_all,
-  prod_yrs = prod_period$HG$yrs,
-  prop_prod = prod_period$HG$prop,
+  prod_yrs = prod_period[[model_ind]]$yrs,
+  prop_prod = prod_period[[model_ind]]$prop,
   translate = french
 )
 ```
@@ -233,6 +236,7 @@ plot_d_hg <- plot_biomass_catch(
 plot_e_hg <- plot_recruitment_devs(
   model = major_models[[model_ind]],
   run_mean_yrs = nRollRec,
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -244,8 +248,8 @@ plot_f_hg <- plot_biomass_phase(
   model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
-  prod_yrs = prod_period$HG$yrs,
-  prop_prod = prod_period$HG$prop,
+  prod_yrs = prod_period[[model_ind]]$yrs,
+  prop_prod = prod_period[[model_ind]]$prop,
   translate = french
 )
 ```
@@ -336,6 +340,7 @@ plot_a_prd <- plot_scaled_abundance(
   model = major_models[[model_ind]],
   gear = surv_type,
   new_surv_yr = new_surv_yr,
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -345,6 +350,7 @@ plot_a_prd <- plot_scaled_abundance(
 ```{r natural-mortality-prd, fig.show = "hide", fig.asp = 1}
 plot_b_prd <- plot_natural_mortality(
   model = major_models[[model_ind]],
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   y_max = M_max,
   translate = french
@@ -355,6 +361,7 @@ plot_b_prd <- plot_natural_mortality(
 ```{r recruitment-prd, fig.show = "hide", fig.asp = 1}
 plot_c_prd <- plot_recruitment(
   model = major_models[[model_ind]],
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -366,8 +373,8 @@ plot_d_prd <- plot_biomass_catch(
   model = major_models[[model_ind]],
   catch_df = ct,
   xlim = xlim_all,
-  prod_yrs = prod_period$PRD$yrs,
-  prop_prod = prod_period$PRD$prop,
+  prod_yrs = prod_period[[model_ind]]$yrs,
+  prop_prod = prod_period[[model_ind]]$prop,
   translate = french
 )
 ```
@@ -377,6 +384,7 @@ plot_d_prd <- plot_biomass_catch(
 plot_e_prd <- plot_recruitment_devs(
   model = major_models[[model_ind]],
   run_mean_yrs = nRollRec,
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -388,8 +396,8 @@ plot_f_prd <- plot_biomass_phase(
   model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
-  prod_yrs = prod_period$PRD$yrs,
-  prop_prod = prod_period$PRD$prop,
+  prod_yrs = prod_period[[model_ind]]$yrs,
+  prop_prod = prod_period[[model_ind]]$prop,
   translate = french
 )
 ```
@@ -431,6 +439,7 @@ plot_a_cc <- plot_scaled_abundance(
   model = major_models[[model_ind]],
   gear = surv_type,
   new_surv_yr = new_surv_yr,
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -440,6 +449,7 @@ plot_a_cc <- plot_scaled_abundance(
 ```{r natural-mortality-cc, fig.show = "hide", fig.asp = 1}
 plot_b_cc <- plot_natural_mortality(
   model = major_models[[model_ind]],
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   y_max = M_max,
   translate = french
@@ -450,6 +460,7 @@ plot_b_cc <- plot_natural_mortality(
 ```{r recruitment-cc, fig.show = "hide", fig.asp = 1}
 plot_c_cc <- plot_recruitment(
   model = major_models[[model_ind]],
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -461,8 +472,8 @@ plot_d_cc <- plot_biomass_catch(
   model = major_models[[model_ind]],
   catch_df = ct,
   xlim = xlim_all,
-  prod_yrs = prod_period$CC$yrs,
-  prop_prod = prod_period$CC$prop,
+  prod_yrs = prod_period[[model_ind]]$yrs,
+  prop_prod = prod_period[[model_ind]]$prop,
   translate = french
 )
 ```
@@ -472,6 +483,7 @@ plot_d_cc <- plot_biomass_catch(
 plot_e_cc <- plot_recruitment_devs(
   model = major_models[[model_ind]],
   run_mean_yrs = nRollRec,
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -483,8 +495,8 @@ plot_f_cc <- plot_biomass_phase(
   model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
-  prod_yrs = prod_period$CC$yrs,
-  prop_prod = prod_period$CC$prop,
+  prod_yrs = prod_period[[model_ind]]$yrs,
+  prop_prod = prod_period[[model_ind]]$prop,
   translate = french
 )
 ```
@@ -557,6 +569,7 @@ plot_a_sog <- plot_scaled_abundance(
   model = major_models[[model_ind]],
   gear = surv_type,
   new_surv_yr = new_surv_yr,
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -566,6 +579,7 @@ plot_a_sog <- plot_scaled_abundance(
 ```{r natural-mortality-sog, fig.show = "hide", fig.asp = 1}
 plot_b_sog <- plot_natural_mortality(
   model = major_models[[model_ind]],
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   y_max = M_max,
   translate = french
@@ -576,6 +590,7 @@ plot_b_sog <- plot_natural_mortality(
 ```{r recruitment-sog, fig.show = "hide", fig.asp = 1}
 plot_c_sog <- plot_recruitment(
   model = major_models[[model_ind]],
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -587,8 +602,8 @@ plot_d_sog <- plot_biomass_catch(
   model = major_models[[model_ind]],
   catch_df = ct,
   xlim = xlim_all,
-  prod_yrs = prod_period$SoG$yrs,
-  prop_prod = prod_period$SoG$prop,
+  prod_yrs = prod_period[[model_ind]]$yrs,
+  prop_prod = prod_period[[model_ind]]$prop,
   translate = french
 )
 ```
@@ -598,6 +613,7 @@ plot_d_sog <- plot_biomass_catch(
 plot_e_sog <- plot_recruitment_devs(
   model = major_models[[model_ind]],
   run_mean_yrs = nRollRec,
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -609,8 +625,8 @@ plot_f_sog <- plot_biomass_phase(
   model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
-  prod_yrs = prod_period$SoG$yrs,
-  prop_prod = prod_period$SoG$prop,
+  prod_yrs = prod_period[[model_ind]]$yrs,
+  prop_prod = prod_period[[model_ind]]$prop,
   translate = french
 )
 ```
@@ -652,6 +668,7 @@ plot_a_wcvi <- plot_scaled_abundance(
   model = major_models[[model_ind]],
   gear = surv_type,
   new_surv_yr = new_surv_yr,
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -661,6 +678,7 @@ plot_a_wcvi <- plot_scaled_abundance(
 ```{r natural-mortality-wcvi, fig.show = "hide", fig.asp = 1}
 plot_b_wcvi <- plot_natural_mortality(
   model = major_models[[model_ind]],
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   y_max = M_max,
   translate = french
@@ -671,6 +689,7 @@ plot_b_wcvi <- plot_natural_mortality(
 ```{r recruitment-wcvi, fig.show = "hide", fig.asp = 1}
 plot_c_wcvi <- plot_recruitment(
   model = major_models[[model_ind]],
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -682,8 +701,8 @@ plot_d_wcvi <- plot_biomass_catch(
   model = major_models[[model_ind]],
   catch_df = ct,
   xlim = xlim_all,
-  prod_yrs = prod_period$WCVI$yrs,
-  prop_prod = prod_period$WCVI$prop,
+  prod_yrs = prod_period[[model_ind]]$yrs,
+  prop_prod = prod_period[[model_ind]]$prop,
   translate = french
 )
 ```
@@ -693,6 +712,7 @@ plot_d_wcvi <- plot_biomass_catch(
 plot_e_wcvi <- plot_recruitment_devs(
   model = major_models[[model_ind]],
   run_mean_yrs = nRollRec,
+  prod_yrs = prod_period[[model_ind]]$yrs,
   xlim = xlim_all,
   translate = french
 )
@@ -704,8 +724,8 @@ plot_f_wcvi <- plot_biomass_phase(
   model = major_models[[model_ind]],
   catch_df = ct,
   new_surv_yr = new_surv_yr,
-  prod_yrs = prod_period$WCVI$yrs,
-  prop_prod = prod_period$WCVI$prop,
+  prod_yrs = prod_period[[model_ind]]$yrs,
+  prop_prod = prod_period[[model_ind]]$prop,
   translate = french
 )
 ```
