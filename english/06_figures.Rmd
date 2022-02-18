@@ -227,6 +227,7 @@ plot_d_hg <- plot_biomass_catch(
   xlim = xlim_all,
   prod_yrs = prod_period[[model_ind]]$yrs,
   prop_prod = prod_period[[model_ind]]$prop,
+  col_catch = TRUE,
   translate = french
 )
 ```
@@ -375,6 +376,7 @@ plot_d_prd <- plot_biomass_catch(
   xlim = xlim_all,
   prod_yrs = prod_period[[model_ind]]$yrs,
   prop_prod = prod_period[[model_ind]]$prop,
+  col_catch = TRUE,
   translate = french
 )
 ```
@@ -474,6 +476,7 @@ plot_d_cc <- plot_biomass_catch(
   xlim = xlim_all,
   prod_yrs = prod_period[[model_ind]]$yrs,
   prop_prod = prod_period[[model_ind]]$prop,
+  col_catch = TRUE,
   translate = french
 )
 ```
@@ -604,6 +607,7 @@ plot_d_sog <- plot_biomass_catch(
   xlim = xlim_all,
   prod_yrs = prod_period[[model_ind]]$yrs,
   prop_prod = prod_period[[model_ind]]$prop,
+  col_catch = TRUE,
   translate = french
 )
 ```
@@ -703,6 +707,7 @@ plot_d_wcvi <- plot_biomass_catch(
   xlim = xlim_all,
   prod_yrs = prod_period[[model_ind]]$yrs,
   prop_prod = prod_period[[model_ind]]$prop,
+  col_catch = TRUE,
   translate = french
 )
 ```
