@@ -1,13 +1,8 @@
 # `r en2fr("Sources of information", translate=french)`
 
-\noindent
-\vspace{-2em}
-\setlength{\parindent}{-0.2in}
-\setlength{\leftskip}{0.2in}
-\setlength{\parskip}{8pt}
-
 <div id="refs"></div>
 
+<!-- Required for proper indentation in following sections -->
 \setlength{\parindent}{0in} 
 \setlength{\leftskip}{0in} 
 \setlength{\parskip}{4pt}
