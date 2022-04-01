@@ -1,12 +1,3 @@
-library(tidyverse)
-library(here)
-library(csasdown)
-library(gfutilities)
-library(gfiscamutils)
-library(rosettafish)
-library(herringutils)
-library(kableExtra)
-
 # Warning if using 32-bit R
 if (.Machine$sizeof.pointer == 4) {
   warning("May run out of memory in 32-bit R")
