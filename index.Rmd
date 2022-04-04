@@ -29,16 +29,21 @@ output:
   csasdown::sr_pdf:
     french: false
     prepub: false
-    extra_dependencies: ["needspace", "afterpage"]
+    copy_sty: true
+    line_nums: false
+    line_nums_mod: 1
+    draft_watermark: false
+    highlight: tango
 type: sr
 knit: bookdown::render_book
 site: bookdown::bookdown_site
 link-citations: true
 bibliography: bib/refs.bib
 # bibliography: bib/refs_fr.bib
-csl: csl/csas.csl
 lot: true
 lof: true
+header-includes:
+  - \usepackage{needspace} \usepackage{afterpage}
 ---
 
 ```{r setup, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}
@@ -77,19 +82,48 @@ opts_chunk$set(
   fig.align = fig_align,
   fig.pos = "H"
 )
-options(xtable.comment = FALSE)
-options(tinytex.verbose = TRUE)
+options(
+  xtable.comment = FALSE,
+  kableExtra.latex.load_packages = FALSE,
+  width = 80,
+  scipen = 999
+)
 ```
 
 ```{r load-libraries, cache=FALSE}
-french <- rmarkdown::metadata$output$`csasdown::sr_pdf`$french
-if (french) {
+meta <- rmarkdown::metadata$output
+if (is.null(meta)) {
+  options(french = FALSE)
+} else {
+  if (length(grep("pdf", names(meta)))) {
+    french <- meta$`csasdown::sr_pdf`$french
+    options(french = french)
+    prepub <- meta$`csasdown::sr_pdf`$prepub
+  } else if (length(grep("word", names(meta)))) {
+    french <- meta$`csasdown::sr_word`$french
+    options(french = french)
+    prepub <- meta$`csasdown::sr_word`$prepub
+  }
+}
+csl <- "csl/csas.csl"
+if (getOption("french")) {
+  csl <- "csl/csas-french.csl"
   options(OutDec = ",")
 }
+
 rebuild_rdata_model_files <- FALSE
 run_retrospectives <- FALSE
 retrospective_yrs <- 1:10
 models_dir <- here::here("models")
+
+library(tidyverse)
+library(kableExtra)
+library(here)
+library(rosettafish)
+library(csasdown)
+library(gfutilities)
+library(gfiscamutils)
+library(herringutils)
 
 source(here::here("R/model-setup.R"))
 source(here::here("R/variable-setup.R"))
@@ -114,6 +148,10 @@ show_ic_figures <- TRUE # Show/hide incidental catch figures
 \newcommand{\lognorm}{\text{ln}}
 \newcommand{\SB}{\mli{`r en2fr("SB", translate = french)`}}
 \newcommand{\AVE}{\text{`r en2fr("AVE", translate = french)`}}
+
+---
+csl: `r csl`    
+---
 
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->
