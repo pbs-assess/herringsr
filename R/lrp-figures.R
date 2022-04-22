@@ -77,7 +77,7 @@ figure_2 <- function(models, ct) {
     ) +
     geom_hline(
       data = sbt, aes(yintercept = Cutoff),
-      linetype = "dashed", colour = "blue"
+      linetype = "dashed", colour = "black"
     ) +
     scale_x_continuous(
       breaks = seq(from = 1950, to = 2020, by = 10),
