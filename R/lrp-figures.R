@@ -146,7 +146,7 @@ fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
     breaks = seq(from = 1950, to = 2020, by = 10),
     labels = seq(from = 1950, to = 2020, by = 10)
   ) +
-  facet_wrap(~Region, scales = "free_y", ncol = 2) +
+  facet_wrap(~Region, scales = "free_y", ncol = 1) +
   labs(y = "Spawning biomass (1,000 t)") +
   scale_fill_grey(start = 0.5, end = 1) +
   guides(fill = "none")
@@ -167,7 +167,7 @@ fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year, group = Period)) +
     breaks = seq(from = 1950, to = 2020, by = 10),
     labels = seq(from = 1950, to = 2020, by = 10)
   ) +
-  facet_wrap(~Region, scales = "free_y", ncol = 2) +
+  facet_wrap(~Region, scales = "free_y", ncol = 1) +
   labs(y = "Spawning biomass production (1,000 t)") +
   scale_fill_grey(start = 0.5, end = 1) +
   scale_shape_manual(values = c(24, 21)) +
@@ -222,15 +222,21 @@ fig_4 <- ggplot(
 ggsave("Figure4.png", plot = fig_4, height = 7.5, width = 6, dpi = 600)
 
 # Write tables: supplementary info
-for(i in 1:length(major_regions_full)) {
-  out <- lrp_dat %>%
-    filter(Region == major_regions_full[i]) %>%
-    select(Region, Year, Period, Biomass, Depletion, Catch, HarvRate,
-           Production, ProdRate) %>%
-    # TODO: Need to make it two decimals
-    mutate_if(is.double, round) %>%
-    # TODO: Need to remove spaces from names
-    write_csv(file = paste(major_regions_full[i], "csv", sep="."))
-}
+write_supp_info <- function(dat, reg_names = major_regions_short) {
+  # Region names
+  r_names <- unique(dat$Region)
+  # Loop over regions
+  for(i in 1:length(r_names)) {
+    out <- dat %>%
+      filter(Region == major_regions_full[i]) %>%
+      select(Region, Year, Period, Biomass, Depletion, Catch, HarvRate,
+             Production, ProdRate) %>%
+      # TODO: Need to make it two decimals
+      mutate_if(is.double, round) %>%
+      # TODO: Need to remove spaces from names
+      write_csv(file = paste(major_regions_full[i], "csv", sep="."))
+  } # End loop over regions
+} # End write_supp_info function
 
-
+# Write the tables
+write_supp_info(dat = lrp_dat)
