@@ -222,19 +222,18 @@ fig_4 <- ggplot(
 ggsave("Figure4.png", plot = fig_4, height = 8, width = 6, dpi = 600)
 
 # Write tables: supplementary info
-write_supp_info <- function(dat, reg_names = major_regions_short) {
-  # Region names
-  r_names <- unique(dat$Region)
+write_supp_info <- function(dat, reg_names_short = major_regions_short,
+                            reg_names_long = major_regions_full) {
   # Loop over regions
-  for(i in 1:length(r_names)) {
+  for(i in 1:length(reg_names_short)) {
     out <- dat %>%
-      filter(Region == major_regions_full[i]) %>%
+      filter(Region == reg_names_long[i]) %>%
       select(Region, Year, Period, Biomass, Depletion, Catch, HarvRate,
              Production, ProdRate) %>%
-      # TODO: Need to make it two decimals
-      mutate_if(is.double, round) %>%
-      # TODO: Need to remove spaces from names
-      write_csv(file = paste(major_regions_full[i], "csv", sep="."))
+      mutate(Year = as.integer(Year)) %>%
+      mutate_if(is.double, formatC, digits = 2, format = "f") %>%
+      arrange(Year) %>%
+      write_csv(file = paste(reg_names_short[i], "csv", sep="."))
   } # End loop over regions
 } # End write_supp_info function
 
