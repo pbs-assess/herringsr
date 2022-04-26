@@ -80,9 +80,6 @@ get_lrp_data <- function(models, ct, q_value = 0.2, n_roll = 3,
         catchNext = lead(Catch),
         # Calculate production
         Production = BiomassNext - Biomass + catchNext,
-        ProdSmooth = rollmean(
-          x = Production, k = n_roll, align = "right", fill = NA
-        ),
         ProdRate = Production / Biomass,
         # Calculate depletion
         Depletion = Biomass / SB0,
@@ -92,11 +89,16 @@ get_lrp_data <- function(models, ct, q_value = 0.2, n_roll = 3,
       ) %>%
       select(
         Region, Year, Period, Biomass, Depletion, Catch, HarvRate, Production,
-        ProdSmooth, ProdRate, SB0, Cutoff, Below
+        ProdRate, SB0, Cutoff, Below
       )
-    # Kludge to set the first few "ProdSmooth" values in the Dive survey to NA
-    dat$ProdSmooth[dat$Year %in%
-      first_yr_dive:(first_yr_dive + n_roll - 2)] <- NA
+    # Special group for rolling mean
+    dat <- dat %>%
+      group_by(Period) %>%
+      mutate(ProdSmooth = rollmean(
+        x = Production, k = n_roll, align = "right", fill = NA
+      )
+      ) %>%
+      ungroup
     # If it's the first model start the output
     if (i == 1) {
       res <- dat
@@ -144,10 +146,11 @@ fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
     breaks = seq(from = 1950, to = 2020, by = 10),
     labels = seq(from = 1950, to = 2020, by = 10)
   ) +
-  facet_wrap(vars(Region), scales = "free_y", ncol = 2) +
+  facet_wrap(~Region, scales = "free_y", ncol = 2) +
   labs(y = "Spawning biomass (1,000 t)") +
   scale_fill_grey(start = 0.5, end = 1) +
   guides(fill = "none")
+  # theme(panel.grid.minor = element_line(size = 0.5), panel.grid.major = element_line(size = 1))
 
 # Save as PNG
 ggsave("Figure2.png", plot = fig_2, height = 6, width = 6, dpi = 600)
@@ -164,7 +167,7 @@ fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year, group = Period)) +
     breaks = seq(from = 1950, to = 2020, by = 10),
     labels = seq(from = 1950, to = 2020, by = 10)
   ) +
-  facet_wrap(vars(Region), scales = "free_y", ncol = 2) +
+  facet_wrap(~Region, scales = "free_y", ncol = 2) +
   labs(y = "Spawning biomass production (1,000 t)") +
   scale_fill_grey(start = 0.5, end = 1) +
   scale_shape_manual(values = c(24, 21)) +
@@ -209,7 +212,7 @@ fig_4 <- ggplot(
   ) +
   guides(color = "none") +
   expand_limits(x = 0) +
-  facet_wrap(vars(Region), scales = "free", ncol = 2) +
+  facet_wrap(~Region, scales = "free", ncol = 2) +
   labs(
     x = "Spawning biomass (1,000 t)",
     y = "Spawning biomass production (1,000 t)"
@@ -217,3 +220,17 @@ fig_4 <- ggplot(
 
 # Save as PNG
 ggsave("Figure4.png", plot = fig_4, height = 7.5, width = 6, dpi = 600)
+
+# Write tables: supplementary info
+for(i in 1:length(major_regions_full)) {
+  out <- lrp_dat %>%
+    filter(Region == major_regions_full[i]) %>%
+    select(Region, Year, Period, Biomass, Depletion, Catch, HarvRate,
+           Production, ProdRate) %>%
+    # TODO: Need to make it two decimals
+    mutate_if(is.double, round) %>%
+    # TODO: Need to remove spaces from names
+    write_csv(file = paste(major_regions_full[i], "csv", sep="."))
+}
+
+
