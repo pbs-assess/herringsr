@@ -124,7 +124,7 @@ lrp_dat <- get_lrp_data(models = major_models, ct = major_catch)
 
 # Figure 2: Spawning biomass and catch (based on `plot_biomass_catch`)
 fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
-  geom_col(mapping = aes(y = Catch)) +
+  geom_col(mapping = aes(y = Catch), fill = "grey", width = 0.67) +
   geom_line(mapping = aes(y = Biomass)) +
   geom_point(mapping = aes(y = Biomass, fill = Below), shape = 21) +
   geom_hline(
@@ -153,7 +153,7 @@ fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
   # theme(panel.grid.minor = element_line(size = 0.5), panel.grid.major = element_line(size = 1))
 
 # Save as PNG
-ggsave("Figure2.png", plot = fig_2, height = 6, width = 6, dpi = 600)
+ggsave("Figure2.png", plot = fig_2, height = 8, width = 6, dpi = 600)
 
 # Figure 3: Production and production rate
 fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year, group = Period)) +
@@ -174,7 +174,7 @@ fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year, group = Period)) +
   guides(fill = "none", shape = "none")
 
 # Save as PNG
-ggsave("Figure3.png", plot = fig_3, height = 6, width = 6, dpi = 600)
+ggsave("Figure3.png", plot = fig_3, height = 8, width = 6, dpi = 600)
 
 # Figure 4: Production vs production rate (based on `plot_biomass_phase`)
 fig_4 <- ggplot(
@@ -219,7 +219,7 @@ fig_4 <- ggplot(
   )
 
 # Save as PNG
-ggsave("Figure4.png", plot = fig_4, height = 7.5, width = 6, dpi = 600)
+ggsave("Figure4.png", plot = fig_4, height = 8, width = 6, dpi = 600)
 
 # Write tables: supplementary info
 write_supp_info <- function(dat, reg_names = major_regions_short) {
