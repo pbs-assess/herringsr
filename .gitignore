@@ -33,7 +33,12 @@ HerringSR.utf8.md
 # Data files
 data/incidental-*.csv
 
-# Figures
+# Figures and tables
 Figure2.png
 Figure3.png
 Figure4.png
+HG.csv
+PRD.csv
+CC.csv
+SoG.csv
+WCVI.csv
