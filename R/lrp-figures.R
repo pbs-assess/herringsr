@@ -7,8 +7,12 @@
 #   bookdown::render_book("index.Rmd")
 # Then `source` this file
 
-# Suppress summarise info
-options(dplyr.summarise.inform = FALSE)
+# Libraries
+library(zoo)
+library(ggrepel)
+
+# Suppress summarise info and allow overlaps
+options(dplyr.summarise.inform = FALSE, ggrepel.max.overlaps = 100)
 
 # Fixed cut-offs
 cut_off_values <- c(
@@ -19,14 +23,17 @@ cut_off_values <- c(
   "West Coast of Vancouver Island" = 18.8
 )
 
-# Get the data
-get_lrp_data <- function(models,
-                         ct,
-                         yrs = 1951:2021,
-                         q_value = 0.2,
-                         first_yr_dive = 1988,
+# Parameters
+first_yr_dive <- 1988 # First year of the dive survey
+yrs <- 1951:2021 # Years to include
+last_yr_prod <- max(yrs) - 1 # Last year to include production
+
+# Get the data: requires a models object, catch data, quantile for biomass
+# threshold, window for rolling mean, fixed cutoff values, and region names
+get_lrp_data <- function(models, ct, q_value = 0.2, n_roll = 3,
                          cut_offs = cut_off_values,
                          reg_names = major_regions_full) {
+
   # Wrangle catch
   ct <- ct %>%
     rename(Year = year, Region = region) %>%
@@ -62,7 +69,7 @@ get_lrp_data <- function(models,
     # Subset catch
     ct_sub <- ct %>%
       filter(Region == reg_names[i]) %>%
-      complete(Year = yrs, fill=list(Region = reg_names[i], Catch = 0))
+      complete(Year = yrs, fill = list(Region = reg_names[i], Catch = 0))
     # Merge biomass and catch
     dat <- sbt %>%
       full_join(y = ct_sub, by = c("Region", "Year")) %>%
@@ -71,16 +78,25 @@ get_lrp_data <- function(models,
       mutate(
         BiomassNext = lead(Biomass),
         catchNext = lead(Catch),
+        # Calculate production
         Production = BiomassNext - Biomass + catchNext,
+        ProdSmooth = rollmean(
+          x = Production, k = n_roll, align = "right", fill = NA
+        ),
         ProdRate = Production / Biomass,
+        # Calculate depletion
         Depletion = Biomass / SB0,
+        # Calculate harvest rate
         HarvRate = Catch / (Catch + Biomass),
         Period = ifelse(Year < first_yr_dive, "Surface", "Dive")
       ) %>%
       select(
         Region, Year, Period, Biomass, Depletion, Catch, HarvRate, Production,
-        ProdRate, SB0, Cutoff, Below
+        ProdSmooth, ProdRate, SB0, Cutoff, Below
       )
+    # Kludge to set the first few "ProdSmooth" values in the Dive survey to NA
+    dat$ProdSmooth[dat$Year %in%
+      first_yr_dive:(first_yr_dive + n_roll - 2)] <- NA
     # If it's the first model start the output
     if (i == 1) {
       res <- dat
@@ -92,7 +108,8 @@ get_lrp_data <- function(models,
   res <- res %>%
     mutate(
       Region = factor(x = Region, levels = reg_names),
-      Period = factor(x = Period, levels = c("Surface", "Dive"))) %>%
+      Period = factor(x = Period, levels = c("Surface", "Dive"))
+    ) %>%
     arrange(Region, Year)
   # Return res
   return(res)
@@ -104,48 +121,99 @@ lrp_dat <- get_lrp_data(models = major_models, ct = major_catch)
 # Figure 1: Region map (OK for now)
 
 # Figure 2: Spawning biomass and catch (based on `plot_biomass_catch`)
-figure_2 <- function(dat) {
-  # Plot
-  p <- ggplot(data = dat, mapping = aes(x = Year)) +
-    geom_col(mapping = aes(y = Catch)) +
-    geom_line(mapping = aes(y = Biomass)) +
-    geom_point(mapping = aes(y = Biomass, fill = Below), shape = 21) +
-    geom_hline(
-      mapping = aes(yintercept = SB0 * 0.1), linetype = "solid", colour = "red"
-    ) +
-    geom_hline(
-      mapping = aes(yintercept = SB0 * 0.25), linetype = "solid", colour = "blue"
-    ) +
-    geom_hline(
-      mapping = aes(yintercept = SB0 * 0.3), linetype = "solid", colour = "green"
-    ) +
-    geom_hline(
-      mapping = aes(yintercept = SB0), linetype = "solid", colour = "black"
-    ) +
-    geom_hline(
-      mapping = aes(yintercept = Cutoff), linetype = "dashed", colour = "black"
-    ) +
-    scale_x_continuous(
-      breaks = seq(from = 1950, to = 2020, by = 10),
-      labels = seq(from = 1950, to = 2020, by = 10)
-    ) +
-    facet_wrap(vars(Region), scales = "free_y", ncol = 2) +
-    labs(y = "Spawning biomass (1,000 t)") +
-    scale_fill_grey(start = 0.5, end = 1) +
-    guides(fill = "none")
-  # Save as PNG
-  ggsave("Figure2.png", plot = p, height = 6, width = 6)
-} # End of figure_2 function
+fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
+  geom_col(mapping = aes(y = Catch)) +
+  geom_line(mapping = aes(y = Biomass)) +
+  geom_point(mapping = aes(y = Biomass, fill = Below), shape = 21) +
+  geom_hline(
+    mapping = aes(yintercept = SB0 * 0.1), linetype = "solid", colour = "red"
+  ) +
+  geom_hline(
+    mapping = aes(yintercept = SB0 * 0.25), linetype = "solid", colour = "blue"
+  ) +
+  geom_hline(
+    mapping = aes(yintercept = SB0 * 0.3), linetype = "solid", colour = "green"
+  ) +
+  geom_hline(
+    mapping = aes(yintercept = SB0), linetype = "solid", colour = "black"
+  ) +
+  geom_hline(
+    mapping = aes(yintercept = Cutoff), linetype = "dashed", colour = "black"
+  ) +
+  scale_x_continuous(
+    breaks = seq(from = 1950, to = 2020, by = 10),
+    labels = seq(from = 1950, to = 2020, by = 10)
+  ) +
+  facet_wrap(vars(Region), scales = "free_y", ncol = 2) +
+  labs(y = "Spawning biomass (1,000 t)") +
+  scale_fill_grey(start = 0.5, end = 1) +
+  guides(fill = "none")
 
-# Make figure 2 (spawning biomass and catch)
-# fig_2 <- figure_2(dat = lrp_dat)
+# Save as PNG
+ggsave("Figure2.png", plot = fig_2, height = 6, width = 6, dpi = 600)
 
 # Figure 3: Production and production rate
-figure_3 <- function(models, ct) {
+fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year, group = Period)) +
+  geom_point(
+    mapping = aes(y = Production, fill = Below, shape = Period), na.rm = TRUE
+  ) +
+  geom_line(mapping = aes(y = ProdSmooth), na.rm = TRUE) +
+  # geom_vline(xintercept = first_yr_dive - 0.5, linetype = "dashed") +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  scale_x_continuous(
+    breaks = seq(from = 1950, to = 2020, by = 10),
+    labels = seq(from = 1950, to = 2020, by = 10)
+  ) +
+  facet_wrap(vars(Region), scales = "free_y", ncol = 2) +
+  labs(y = "Spawning biomass production (1,000 t)") +
+  scale_fill_grey(start = 0.5, end = 1) +
+  scale_shape_manual(values = c(24, 21)) +
+  guides(fill = "none", shape = "none")
 
-} # End of figure_3 function
-
-# Make figure 3 (production and production rate)
-# fig_3 <- figure_3(models = major_models, ct = major_catch)
+# Save as PNG
+ggsave("Figure3.png", plot = fig_3, height = 6, width = 6, dpi = 600)
 
 # Figure 4: Production vs production rate (based on `plot_biomass_phase`)
+fig_4 <- ggplot(
+  data = filter(lrp_dat, Period == "Dive"),
+  mapping = aes(x = Biomass, y = Production)
+) +
+  geom_point(
+    data = filter(lrp_dat, Period == "Dive", Year != last_yr_prod),
+    mapping = aes(color = Year), shape = 19, na.rm = TRUE
+  ) +
+  geom_point(
+    data = filter(lrp_dat, Period == "Dive", Year == last_yr_prod),
+    shape = 24, color = "black", fill = "white", na.rm = TRUE
+  ) +
+  geom_vline(
+    mapping = aes(xintercept = SB0 * 0.1), linetype = "solid", colour = "red"
+  ) +
+  geom_vline(
+    mapping = aes(xintercept = SB0 * 0.25), linetype = "solid", colour = "blue"
+  ) +
+  geom_vline(
+    mapping = aes(xintercept = SB0 * 0.3), linetype = "solid", colour = "green"
+  ) +
+  geom_vline(
+    mapping = aes(xintercept = SB0), linetype = "solid", colour = "black"
+  ) +
+  geom_vline(
+    mapping = aes(xintercept = Cutoff), linetype = "dashed", colour = "black"
+  ) +
+  scale_color_gradient(low = "lightgrey", high = "black") +
+  geom_path(na.rm = TRUE) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_text_repel(
+    aes(label = Year), segment.colour = "lightgrey", size = 2, na.rm = TRUE
+  ) +
+  guides(color = "none") +
+  expand_limits(x = 0) +
+  facet_wrap(vars(Region), scales = "free", ncol = 2) +
+  labs(
+    x = "Spawning biomass (1,000 t)",
+    y = "Spawning biomass production (1,000 t)"
+  )
+
+# Save as PNG
+ggsave("Figure4.png", plot = fig_4, height = 7.5, width = 6, dpi = 600)
