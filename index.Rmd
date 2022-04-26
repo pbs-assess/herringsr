@@ -150,7 +150,7 @@ show_ic_figures <- TRUE # Show/hide incidental catch figures
 \newcommand{\AVE}{\text{`r en2fr("AVE", translate = french)`}}
 
 ---
-csl: `r csl`    
+csl: `r csl`
 ---
 
 <!-- Compile the PDF on the command line: -->
