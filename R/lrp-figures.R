@@ -30,7 +30,10 @@ last_yr_prod <- max(yrs) - 1 # Last year to include production
 
 # Get the data: requires a models object, catch data, quantile for biomass
 # threshold, window for rolling mean, fixed cutoff values, and region names
-get_lrp_data <- function(models, ct, q_value = 0.2, n_roll = 3,
+get_lrp_data <- function(models,
+                         ct,
+                         q_value = 0.2,
+                         n_roll = 3,
                          cut_offs = cut_off_values,
                          reg_names = major_regions_full) {
 
@@ -80,6 +83,9 @@ get_lrp_data <- function(models, ct, q_value = 0.2, n_roll = 3,
         catchNext = lead(Catch),
         # Calculate production
         Production = BiomassNext - Biomass + catchNext,
+        ProdSmooth = rollmean(
+          x = Production, k = n_roll, align = "right", fill = NA
+        ),
         ProdRate = Production / Biomass,
         # Calculate depletion
         Depletion = Biomass / SB0,
@@ -89,16 +95,8 @@ get_lrp_data <- function(models, ct, q_value = 0.2, n_roll = 3,
       ) %>%
       select(
         Region, Year, Period, Biomass, Depletion, Catch, HarvRate, Production,
-        ProdRate, SB0, Cutoff, Below
+        ProdSmooth, ProdRate, SB0, Cutoff, Below
       )
-    # Special group for rolling mean
-    dat <- dat %>%
-      group_by(Period) %>%
-      mutate(ProdSmooth = rollmean(
-        x = Production, k = n_roll, align = "right", fill = NA
-      )
-      ) %>%
-      ungroup
     # If it's the first model start the output
     if (i == 1) {
       res <- dat
@@ -125,7 +123,7 @@ lrp_dat <- get_lrp_data(models = major_models, ct = major_catch)
 # Figure 2: Spawning biomass and catch (based on `plot_biomass_catch`)
 fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
   geom_col(mapping = aes(y = Catch), fill = "grey", width = 0.67) +
-  geom_line(mapping = aes(y = Biomass)) +
+  geom_path(mapping = aes(y = Biomass)) +
   geom_point(mapping = aes(y = Biomass, fill = Below), shape = 21) +
   geom_hline(
     mapping = aes(yintercept = SB0 * 0.1), linetype = "solid", colour = "red"
@@ -139,9 +137,7 @@ fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
   geom_hline(
     mapping = aes(yintercept = SB0), linetype = "solid", colour = "black"
   ) +
-  # geom_hline(
-  #   mapping = aes(yintercept = Cutoff), linetype = "dashed", colour = "black"
-  # ) +
+  geom_vline(xintercept = first_yr_dive - 0.5, linetype = "dotted") +
   scale_x_continuous(
     breaks = seq(from = 1950, to = 2020, by = 10),
     labels = seq(from = 1950, to = 2020, by = 10)
@@ -150,19 +146,18 @@ fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
   labs(y = "Spawning biomass (1,000 t)") +
   scale_fill_grey(start = 0.5, end = 1) +
   guides(fill = "none")
-  # theme(panel.grid.minor = element_line(size = 0.5), panel.grid.major = element_line(size = 1))
 
 # Save as PNG
 ggsave("Figure2.png", plot = fig_2, height = 8, width = 6, dpi = 600)
 
 # Figure 3: Production and production rate
-fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year, group = Period)) +
+fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
+  geom_path(mapping = aes(y = Production), na.rm = TRUE) +
   geom_point(
-    mapping = aes(y = Production, fill = Below, shape = Period), na.rm = TRUE
+    mapping = aes(y = Production, fill = Below), shape = 21, na.rm = TRUE
   ) +
-  geom_line(mapping = aes(y = ProdSmooth), na.rm = TRUE) +
-  # geom_vline(xintercept = first_yr_dive - 0.5, linetype = "dashed") +
   geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_vline(xintercept = first_yr_dive - 0.5, linetype = "dotted") +
   scale_x_continuous(
     breaks = seq(from = 1950, to = 2020, by = 10),
     labels = seq(from = 1950, to = 2020, by = 10)
@@ -170,7 +165,6 @@ fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year, group = Period)) +
   facet_wrap(~Region, scales = "free_y", ncol = 1) +
   labs(y = "Spawning biomass production (1,000 t)") +
   scale_fill_grey(start = 0.5, end = 1) +
-  scale_shape_manual(values = c(24, 21)) +
   guides(fill = "none", shape = "none")
 
 # Save as PNG
@@ -181,6 +175,7 @@ fig_4 <- ggplot(
   data = lrp_dat %>% filter(Period == "Dive"),
   mapping = aes(x = Biomass, y = Production)
 ) +
+  geom_path(na.rm = TRUE) +
   geom_point(
     data = lrp_dat %>% filter(Period == "Dive", Year != last_yr_prod),
     mapping = aes(color = Year), shape = 19, na.rm = TRUE
@@ -201,11 +196,7 @@ fig_4 <- ggplot(
   geom_vline(
     mapping = aes(xintercept = SB0), linetype = "solid", colour = "black"
   ) +
-  # geom_vline(
-  #   mapping = aes(xintercept = Cutoff), linetype = "dashed", colour = "black"
-  # ) +
   scale_color_gradient(low = "lightgrey", high = "black") +
-  geom_path(na.rm = TRUE) +
   geom_hline(yintercept = 0, linetype = "dashed") +
   geom_text_repel(data = lrp_dat %>% filter(Period == "Dive", Year %% 2 == 0),
     aes(label = Year), segment.colour = "lightgrey", size = 2, na.rm = TRUE
@@ -222,7 +213,8 @@ fig_4 <- ggplot(
 ggsave("Figure4.png", plot = fig_4, height = 8, width = 6, dpi = 600)
 
 # Write tables: supplementary info
-write_supp_info <- function(dat, reg_names_short = major_regions_short,
+write_supp_info <- function(dat,
+                            reg_names_short = major_regions_short,
                             reg_names_long = major_regions_full) {
   # Loop over regions
   for(i in 1:length(reg_names_short)) {
