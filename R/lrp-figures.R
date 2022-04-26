@@ -139,9 +139,9 @@ fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
   geom_hline(
     mapping = aes(yintercept = SB0), linetype = "solid", colour = "black"
   ) +
-  geom_hline(
-    mapping = aes(yintercept = Cutoff), linetype = "dashed", colour = "black"
-  ) +
+  # geom_hline(
+  #   mapping = aes(yintercept = Cutoff), linetype = "dashed", colour = "black"
+  # ) +
   scale_x_continuous(
     breaks = seq(from = 1950, to = 2020, by = 10),
     labels = seq(from = 1950, to = 2020, by = 10)
@@ -178,15 +178,15 @@ ggsave("Figure3.png", plot = fig_3, height = 8, width = 6, dpi = 600)
 
 # Figure 4: Production vs production rate (based on `plot_biomass_phase`)
 fig_4 <- ggplot(
-  data = filter(lrp_dat, Period == "Dive"),
+  data = lrp_dat %>% filter(Period == "Dive"),
   mapping = aes(x = Biomass, y = Production)
 ) +
   geom_point(
-    data = filter(lrp_dat, Period == "Dive", Year != last_yr_prod),
+    data = lrp_dat %>% filter(Period == "Dive", Year != last_yr_prod),
     mapping = aes(color = Year), shape = 19, na.rm = TRUE
   ) +
   geom_point(
-    data = filter(lrp_dat, Period == "Dive", Year == last_yr_prod),
+    data = lrp_dat %>% filter(Period == "Dive", Year == last_yr_prod),
     shape = 24, color = "black", fill = "white", na.rm = TRUE
   ) +
   geom_vline(
@@ -201,13 +201,13 @@ fig_4 <- ggplot(
   geom_vline(
     mapping = aes(xintercept = SB0), linetype = "solid", colour = "black"
   ) +
-  geom_vline(
-    mapping = aes(xintercept = Cutoff), linetype = "dashed", colour = "black"
-  ) +
+  # geom_vline(
+  #   mapping = aes(xintercept = Cutoff), linetype = "dashed", colour = "black"
+  # ) +
   scale_color_gradient(low = "lightgrey", high = "black") +
   geom_path(na.rm = TRUE) +
   geom_hline(yintercept = 0, linetype = "dashed") +
-  geom_text_repel(
+  geom_text_repel(data = lrp_dat %>% filter(Period == "Dive", Year %% 2 == 0),
     aes(label = Year), segment.colour = "lightgrey", size = 2, na.rm = TRUE
   ) +
   guides(color = "none") +
