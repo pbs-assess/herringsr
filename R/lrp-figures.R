@@ -178,11 +178,11 @@ fig_4 <- ggplot(
   geom_path(na.rm = TRUE) +
   geom_point(
     data = lrp_dat %>% filter(Period == "Dive", Year != last_yr_prod),
-    mapping = aes(color = Year), shape = 19, na.rm = TRUE
+    mapping = aes(color = Year), shape = 19, size = 2, na.rm = TRUE
   ) +
   geom_point(
     data = lrp_dat %>% filter(Period == "Dive", Year == last_yr_prod),
-    shape = 24, color = "black", fill = "white", na.rm = TRUE
+    shape = 24, size = 2, color = "black", fill = "white", na.rm = TRUE
   ) +
   geom_vline(
     mapping = aes(xintercept = SB0 * 0.1), linetype = "solid", colour = "red"
@@ -199,7 +199,7 @@ fig_4 <- ggplot(
   scale_color_gradient(low = "lightgrey", high = "black") +
   geom_hline(yintercept = 0, linetype = "dashed") +
   geom_text_repel(data = lrp_dat %>% filter(Period == "Dive", Year %% 2 == 0),
-    aes(label = Year), segment.colour = "lightgrey", size = 2, na.rm = TRUE
+    aes(label = Year), segment.colour = "lightgrey", size = 2.5, na.rm = TRUE
   ) +
   guides(color = "none") +
   expand_limits(x = 0) +
