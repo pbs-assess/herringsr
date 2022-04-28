@@ -69,6 +69,20 @@ get_lrp_data <- function(models,
       ) %>%
       select(Region, Year, Median, Cutoff, SB0, Below) %>%
       rename(Biomass = Median)
+    # Get depletion
+    dt <- models[[i]]$mcmccalcs$depl.quants %>%
+      t() %>%
+      as_tibble(rownames = "year") %>%
+      mutate(year = as.numeric(year)) %>%
+      filter(year %in% yrs)
+    names(dt) <- c("Year", "Lower", "Median", "Upper", "MPD")
+    # Wrangle depletion
+    dt <- dt %>%
+      mutate(Region = reg_names[i]) %>%
+      rename(Depletion = Median)
+    # Merge biomass and depletion
+    sbt <- sbt %>%
+      full_join(y = dt, by = c("Region", "Year"))
     # Subset catch
     ct_sub <- ct %>%
       filter(Region == reg_names[i]) %>%
@@ -87,8 +101,6 @@ get_lrp_data <- function(models,
           x = Production, k = n_roll, align = "right", fill = NA
         ),
         ProdRate = Production / Biomass,
-        # Calculate depletion
-        Depletion = Biomass / SB0,
         # Calculate harvest rate
         HarvRate = Catch / (Catch + Biomass),
         Period = ifelse(Year < first_yr_dive, "Surface", "Dive")
@@ -148,7 +160,7 @@ fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
   guides(fill = "none")
 
 # Save as PNG
-ggsave("Figure2.png", plot = fig_2, height = 8, width = 6, dpi = 600)
+ggsave("lrp_ms/Figure2.png", plot = fig_2, height = 8, width = 6, dpi = 600)
 
 # Figure 3: Production and production rate
 fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
@@ -168,7 +180,7 @@ fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
   guides(fill = "none", shape = "none")
 
 # Save as PNG
-ggsave("Figure3.png", plot = fig_3, height = 8, width = 6, dpi = 600)
+ggsave("lrp_ms/Figure3.png", plot = fig_3, height = 8, width = 6, dpi = 600)
 
 # Figure 4: Production vs production rate (based on `plot_biomass_phase`)
 fig_4 <- ggplot(
@@ -210,7 +222,7 @@ fig_4 <- ggplot(
   )
 
 # Save as PNG
-ggsave("Figure4.png", plot = fig_4, height = 8, width = 6, dpi = 600)
+ggsave("lrp_ms/Figure4.png", plot = fig_4, height = 8, width = 6, dpi = 600)
 
 # Write tables: supplementary info
 write_supp_info <- function(dat,
@@ -225,7 +237,7 @@ write_supp_info <- function(dat,
       mutate(Year = as.integer(Year)) %>%
       mutate_if(is.double, formatC, digits = 2, format = "f") %>%
       arrange(Year) %>%
-      write_csv(file = paste(reg_names_short[i], "csv", sep="."))
+      write_csv(file = paste("lrp_ms/", reg_names_short[i], ".csv", sep=""))
   } # End loop over regions
 } # End write_supp_info function
 
