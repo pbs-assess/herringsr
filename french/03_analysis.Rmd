@@ -253,7 +253,7 @@ a. Biomasse du stock reproducteur $\SB_t$ et total des prises $C_t$ pour l'anné
 
 a. Écarts du recrutement (échelle logarithmique) par rapport à la fonction estimée de recrutement de Beverton-Holt, et
 
-a. Production de la biomasse du stock reproducteur ($\SB_{t+1} - \SB_t + C_{t+1}$) pour la période du relevé en plongée, avec la ligne de référence aux estimations du modèle de $0.3\SB_0$.
+a. Production de la biomasse du stock reproducteur $p_t = \SB_{t+1} - \SB_t + C_{t+1}$ pour la période du relevé en plongée, avec la ligne de référence aux estimations du modèle de $0.3\SB_0$.
 
 Il convient de souligner que les données du relevé du frai (c.-à-d. l'indice du frai) du panneau (a) sont ajustées à l'abondance au moyen du paramètre de mise à l'échelle du relevé du frai $q$.
 L'indice du frai a deux périodes distinctes définies par la méthode de relevé dominante: les relevés en surface (`r surv_yr_rng[1]` à `r new_surv_yr - 1`), et les relevés en plongée (`r new_surv_yr` à `r surv_yr_rng[2]`).

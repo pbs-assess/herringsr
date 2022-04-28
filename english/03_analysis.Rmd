@@ -411,7 +411,7 @@ with reference lines at model estimates of $0.3\SB_0$,
 a. Recruitment deviations (log scale) from the
 Beverton-Holt recruitment function, and
 
-a. Spawning biomass production ($\SB_{t+1} - \SB_t + C_{t+1}$)
+a. Spawning biomass production $P_t = \SB_{t+1} - \SB_t + C_{t+1}$
 for the dive survey period,
 with reference lines at model estimates of $0.3\SB_0$.
 
