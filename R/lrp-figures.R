@@ -14,6 +14,12 @@ library(ggrepel)
 # Suppress summarise info and allow overlaps
 options(dplyr.summarise.inform = FALSE, ggrepel.max.overlaps = 100)
 
+# Output folder
+ms_out <- "lrp_ms"
+
+# Make it if it's not there
+if(!ms_out %in% list.files()) dir.create(ms_out)
+
 # Fixed cut-offs
 cut_off_values <- c(
   "Haida Gwaii" = 10.7,
@@ -160,7 +166,8 @@ fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
   guides(fill = "none")
 
 # Save as PNG
-ggsave("lrp_ms/Figure2.png", plot = fig_2, height = 8, width = 6, dpi = 600)
+ggsave(file.path(ms_out, "Figure2.png"), plot = fig_2, dpi = 600,
+       height = 8, width = 6)
 
 # Figure 3: Production and production rate
 fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
@@ -180,7 +187,8 @@ fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
   guides(fill = "none", shape = "none")
 
 # Save as PNG
-ggsave("lrp_ms/Figure3.png", plot = fig_3, height = 8, width = 6, dpi = 600)
+ggsave(file.path(ms_out, "Figure3.png"), plot = fig_3, dpi = 600,
+       height = 8, width = 6)
 
 # Figure 4: Production vs production rate (based on `plot_biomass_phase`)
 fig_4 <- ggplot(
@@ -222,7 +230,8 @@ fig_4 <- ggplot(
   )
 
 # Save as PNG
-ggsave("lrp_ms/Figure4.png", plot = fig_4, height = 8, width = 6, dpi = 600)
+ggsave(file.path(ms_out, "Figure4.png"), plot = fig_4, dpi = 600,
+       height = 8, width = 6)
 
 # Write tables: supplementary info
 write_supp_info <- function(dat,
@@ -237,7 +246,9 @@ write_supp_info <- function(dat,
       mutate(Year = as.integer(Year)) %>%
       mutate_if(is.double, formatC, digits = 2, format = "f") %>%
       arrange(Year) %>%
-      write_csv(file = paste("lrp_ms/", reg_names_short[i], ".csv", sep=""))
+      write_csv(
+        file = file.path(ms_out, paste(reg_names_short[i], "csv", sep=""))
+      )
   } # End loop over regions
 } # End write_supp_info function
 

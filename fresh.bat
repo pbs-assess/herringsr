@@ -14,3 +14,4 @@ rmdir /S /Q csas-style
 rmdir /S /Q knitr-figs-pdf
 rmdir /S /Q knitr-figs-docx
 rmdir /S /Q _book
+rmdir /S /Q lrp_ms
