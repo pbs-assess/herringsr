@@ -22,11 +22,7 @@ if(!ms_out %in% list.files()) dir.create(ms_out)
 
 # Fixed cut-offs
 cut_off_values <- c(
-  "Haida Gwaii" = 10.7,
-  "Prince Rupert District" = 12.1,
-  "Central Coast" = 17.6,
-  "Strait of Georgia" = 21.2,
-  "West Coast of Vancouver Island" = 18.8
+  "HG" = 10.7, "PRD" = 12.1, "CC" = 17.6, "SoG" = 21.2, "WCVI" = 18.8
 )
 
 # Parameters
@@ -41,7 +37,8 @@ get_lrp_data <- function(models,
                          q_value = 0.2,
                          n_roll = 3,
                          cut_offs = cut_off_values,
-                         reg_names = major_regions_full) {
+                         reg_names_short = major_regions_short,
+                         reg_names_long = major_regions_full) {
 
   # Wrangle catch
   ct <- ct %>%
@@ -66,14 +63,15 @@ get_lrp_data <- function(models,
     sbt <- sbt %>%
       mutate(
         # Order is important here: regions are ordered in the SR code
-        Region = reg_names[i],
-        Cutoff = cut_offs[which(names(cut_offs) == reg_names[i])],
+        Region = reg_names_long[i],
+        Reg = reg_names_short[i],
+        Cutoff = cut_offs[which(names(cut_offs) == reg_names_short[i])],
         # Median SB_0
         SB0 = models[[i]]$mcmccalcs$r.quants["sbo", "\\textbf{50\\%}"],
         # Is biomass above or below the quantile?
         Below = ifelse(Median < quant, "Below", "NotBelow")
       ) %>%
-      select(Region, Year, Median, Cutoff, SB0, Below) %>%
+      select(Region, Reg, Year, Median, Cutoff, SB0, Below) %>%
       rename(Biomass = Median)
     # Get depletion
     dt <- models[[i]]$mcmccalcs$depl.quants %>%
@@ -84,15 +82,15 @@ get_lrp_data <- function(models,
     names(dt) <- c("Year", "Lower", "Median", "Upper", "MPD")
     # Wrangle depletion
     dt <- dt %>%
-      mutate(Region = reg_names[i]) %>%
+      mutate(Region = reg_names_long[i]) %>%
       rename(Depletion = Median)
     # Merge biomass and depletion
     sbt <- sbt %>%
       full_join(y = dt, by = c("Region", "Year"))
     # Subset catch
     ct_sub <- ct %>%
-      filter(Region == reg_names[i]) %>%
-      complete(Year = yrs, fill = list(Region = reg_names[i], Catch = 0))
+      filter(Region == reg_names_long[i]) %>%
+      complete(Year = yrs, fill = list(Region = reg_names_long[i], Catch = 0))
     # Merge biomass and catch
     dat <- sbt %>%
       full_join(y = ct_sub, by = c("Region", "Year")) %>%
@@ -100,9 +98,9 @@ get_lrp_data <- function(models,
       # Calculate production and production rate
       mutate(
         BiomassNext = lead(Biomass),
-        catchNext = lead(Catch),
+        CatchNext = lead(Catch),
         # Calculate production
-        Production = BiomassNext - Biomass + catchNext,
+        Production = BiomassNext - Biomass + CatchNext,
         ProdSmooth = rollmean(
           x = Production, k = n_roll, align = "right", fill = NA
         ),
@@ -112,8 +110,8 @@ get_lrp_data <- function(models,
         Period = ifelse(Year < first_yr_dive, "Surface", "Dive")
       ) %>%
       select(
-        Region, Year, Period, Biomass, Depletion, Catch, HarvRate, Production,
-        ProdSmooth, ProdRate, SB0, Cutoff, Below
+        Region, Reg, Year, Period, Biomass, Depletion, Catch, HarvRate,
+        Production, ProdSmooth, ProdRate, SB0, Cutoff, Below
       )
     # If it's the first model start the output
     if (i == 1) {
@@ -125,7 +123,8 @@ get_lrp_data <- function(models,
   # Set factor levels and sort by region and year
   res <- res %>%
     mutate(
-      Region = factor(x = Region, levels = reg_names),
+      Region = factor(x = Region, levels = reg_names_long),
+      Reg = factor(x = Reg, levels = reg_names_short),
       Period = factor(x = Period, levels = c("Surface", "Dive"))
     ) %>%
     arrange(Region, Year)
@@ -160,7 +159,7 @@ fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
     breaks = seq(from = 1950, to = 2020, by = 10),
     labels = seq(from = 1950, to = 2020, by = 10)
   ) +
-  facet_wrap(~Region, scales = "free_y", ncol = 1) +
+  facet_wrap(Reg ~ ., scales = "free_y", ncol = 1, strip.position = "right") +
   labs(y = "Spawning biomass (1,000 t)") +
   scale_fill_grey(start = 0.5, end = 1) +
   guides(fill = "none")
@@ -181,7 +180,7 @@ fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
     breaks = seq(from = 1950, to = 2020, by = 10),
     labels = seq(from = 1950, to = 2020, by = 10)
   ) +
-  facet_wrap(~Region, scales = "free_y", ncol = 1) +
+  facet_wrap(~Reg, scales = "free_y", ncol = 1, strip.position = "right") +
   labs(y = "Spawning biomass production (1,000 t)") +
   scale_fill_grey(start = 0.5, end = 1) +
   guides(fill = "none", shape = "none")
@@ -224,7 +223,7 @@ fig_4 <- ggplot(
   ) +
   guides(color = "none") +
   expand_limits(x = 0) +
-  facet_wrap(~Region, scales = "free", ncol = 2) +
+  facet_wrap(~Reg, scales = "free", ncol = 2) +
   labs(
     x = "Spawning biomass (1,000 t)",
     y = "Spawning biomass production (1,000 t)"
