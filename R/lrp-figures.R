@@ -12,7 +12,7 @@ library(zoo)
 library(ggrepel)
 
 # Suppress summarise info and allow overlaps
-options(dplyr.summarise.inform = FALSE, ggrepel.max.overlaps = 100)
+options(dplyr.summarise.inform = FALSE, ggrepel.max.overlaps = Inf)
 
 # Output folder
 ms_out <- "lrp_ms"
@@ -219,7 +219,8 @@ fig_4 <- ggplot(
   scale_color_gradient(low = "lightgrey", high = "black") +
   geom_hline(yintercept = 0, linetype = "dashed") +
   geom_text_repel(data = lrp_dat %>% filter(Period == "Dive", Year %% 2 == 0),
-    aes(label = Year), segment.colour = "lightgrey", size = 2.5, na.rm = TRUE
+    aes(label = Year), segment.colour = "grey", size = 3, na.rm = TRUE,
+    force = 10, force_pull = 0
   ) +
   guides(color = "none") +
   expand_limits(x = 0) +
