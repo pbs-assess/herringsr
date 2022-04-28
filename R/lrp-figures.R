@@ -234,21 +234,22 @@ ggsave(file.path(ms_out, "Figure4.png"), plot = fig_4, dpi = 600,
        height = 8, width = 6)
 
 # Write tables: supplementary info
-write_supp_info <- function(dat,
-                            reg_names_short = major_regions_short,
-                            reg_names_long = major_regions_full) {
+write_supp_info <- function(dat, reg_names = major_regions_short) {
   # Loop over regions
-  for(i in 1:length(reg_names_short)) {
+  for(i in 1:length(reg_names)) {
     out <- dat %>%
-      filter(Region == reg_names_long[i]) %>%
-      select(Region, Year, Period, Biomass, Depletion, Catch, HarvRate,
-             Production, ProdRate) %>%
+      filter(Reg == reg_names[i]) %>%
+      select(
+        Year, Period, Biomass, Depletion, Catch, HarvRate, Production, ProdRate
+      ) %>%
+      rename(
+        B = Biomass, D = Depletion, C = Catch, U = HarvRate, P = Production,
+        'P/B' = ProdRate
+      ) %>%
       mutate(Year = as.integer(Year)) %>%
       mutate_if(is.double, formatC, digits = 2, format = "f") %>%
       arrange(Year) %>%
-      write_csv(
-        file = file.path(ms_out, paste(reg_names_short[i], "csv", sep=""))
-      )
+      write_csv(file = file.path(ms_out, paste(reg_names[i], "csv", sep="")))
   } # End loop over regions
 } # End write_supp_info function
 
