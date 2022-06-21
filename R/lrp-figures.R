@@ -30,16 +30,25 @@ first_yr_dive <- 1988 # First year of the dive survey
 yrs <- 1951:2021 # Years to include
 last_yr_prod <- max(yrs) - 1 # Last year to include production
 
+# Years with historic and recent LP-LB states
+LPLB <- list(
+  HG = list(early = 1965:1969, recent = 2000:2010),
+  PRD = list(early = 1967:1972, recent = NA),
+  CC = list(early = 1964:1969, recent = 2006:2011),
+  SOG = list(early = 1965:1970, recent = NA),
+  WCVI = list(early = 1966:1969, recent = 2004:2014)
+)
+
 # Get the data: requires a models object, catch data, quantile for biomass
 # threshold, window for rolling mean, fixed cutoff values, and region names
 get_lrp_data <- function(models,
                          ct,
+                         lplb = LPLB,
                          q_value = 0.2,
                          n_roll = 3,
                          cut_offs = cut_off_values,
                          reg_names_short = major_regions_short,
                          reg_names_long = major_regions_full) {
-
   # Wrangle catch
   ct <- ct %>%
     rename(Year = year, Region = region) %>%
@@ -50,6 +59,8 @@ get_lrp_data <- function(models,
     select(Region, Year, Catch)
   # Loop over models
   for (i in 1:length(models)) {
+    # Get LP-LB
+    shade = lplb[[i]]
     # Get spawning biomass
     sbt <- models[[i]]$mcmccalcs$sbt.quants %>%
       t() %>%
@@ -87,6 +98,13 @@ get_lrp_data <- function(models,
     # Merge biomass and depletion
     sbt <- sbt %>%
       full_join(y = dt, by = c("Region", "Year"))
+    # Merge shading
+    sbt <- sbt %>%
+      mutate(
+        LPLB = "No",
+        LPLB = ifelse(Year %in% shade$early, "Early", LPLB),
+        LPLB = ifelse(Year %in% shade$recent, "Recent", LPLB)
+      )
     # Subset catch
     ct_sub <- ct %>%
       filter(Region == reg_names_long[i]) %>%
@@ -111,7 +129,7 @@ get_lrp_data <- function(models,
       ) %>%
       select(
         Region, Reg, Year, Period, Biomass, Depletion, Catch, HarvRate,
-        Production, ProdSmooth, ProdRate, SB0, Cutoff, Below
+        Production, ProdSmooth, ProdRate, SB0, Cutoff, Below, LPLB
       )
     # If it's the first model start the output
     if (i == 1) {
@@ -120,12 +138,16 @@ get_lrp_data <- function(models,
       res <- rbind(res, dat)
     } # End if appending
   } # End loop over models
+  # Update factor levels
+  reg_names_short[reg_names_short == "SoG"] <- "SOG"
   # Set factor levels and sort by region and year
   res <- res %>%
     mutate(
       Region = factor(x = Region, levels = reg_names_long),
+      Reg = ifelse(Reg == "SoG", "SOG", Reg),
       Reg = factor(x = Reg, levels = reg_names_short),
-      Period = factor(x = Period, levels = c("Surface", "Dive"))
+      Period = factor(x = Period, levels = c("Surface", "Dive")),
+      LPLB = factor(x = LPLB, levels = c("No", "Early", "Recent"))
     ) %>%
     arrange(Region, Year)
   # Return res
@@ -135,13 +157,24 @@ get_lrp_data <- function(models,
 # Get the data
 lrp_dat <- get_lrp_data(models = major_models, ct = major_catch)
 
-# Figure 1: Region map (OK for now)
+# Figure 1: Region map
+# Made by tweaking code in ../DataSummaries/Summary.R for `BCMap`:
+# shapes$regCentDF <- shapes$regCentDF[shapes$regCentDF$Region %in% allRegions$major, ]
+# shapes$regCentDF$Region[shapes$regCentDF$Region == "SoG"] <- "SOG"
+# shapes$regAllDF <- shapes$regAllDF[1:922, ]
+# And made by tweaking code in ../SpawnIndex/tr
+# sf_reg <- sf_sec %>%
+#   group_by(Region) %>%
+#   summarise() %>%
+#   ungroup() %>%
+#   filter(Region %in% c("HG", "PRD", "CC", "SoG", "WCVI")) %>%
+#   mutate(Region = ifelse(Region == "SoG", "SOG", Region))
 
 # Figure 2: Spawning biomass and catch (based on `plot_biomass_catch`)
 fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
   geom_col(mapping = aes(y = Catch), fill = "grey", width = 0.67) +
   geom_path(mapping = aes(y = Biomass)) +
-  geom_point(mapping = aes(y = Biomass, fill = Below), shape = 21) +
+  geom_point(mapping = aes(y = Biomass, fill = LPLB), shape = 21) +
   geom_hline(
     mapping = aes(yintercept = SB0 * 0.1), linetype = "solid", colour = "red"
   ) +
@@ -161,7 +194,7 @@ fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
   ) +
   facet_wrap(Reg ~ ., scales = "free_y", ncol = 1, strip.position = "right") +
   labs(y = "Spawning biomass (1,000 t)") +
-  scale_fill_grey(start = 0.5, end = 1) +
+  scale_fill_grey(start = 1, end = 0) +
   guides(fill = "none")
 
 # Save as PNG
@@ -172,7 +205,7 @@ ggsave(file.path(ms_out, "Figure2.png"), plot = fig_2, dpi = 600,
 fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
   geom_path(mapping = aes(y = Production), na.rm = TRUE) +
   geom_point(
-    mapping = aes(y = Production, fill = Below), shape = 21, na.rm = TRUE
+    mapping = aes(y = Production, fill = LPLB), shape = 21, na.rm = TRUE
   ) +
   geom_hline(yintercept = 0, linetype = "dashed") +
   geom_vline(xintercept = first_yr_dive - 0.5, linetype = "dotted") +
@@ -182,7 +215,7 @@ fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
   ) +
   facet_wrap(~Reg, scales = "free_y", ncol = 1, strip.position = "right") +
   labs(y = "Spawning biomass production (1,000 t)") +
-  scale_fill_grey(start = 0.5, end = 1) +
+  scale_fill_grey(start = 1, end = 0) +
   guides(fill = "none", shape = "none")
 
 # Save as PNG
