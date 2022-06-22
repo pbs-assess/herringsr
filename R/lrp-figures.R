@@ -168,7 +168,8 @@ lrp_dat <- get_lrp_data(models = major_models, ct = major_catch)
 #   summarise() %>%
 #   ungroup() %>%
 #   filter(Region %in% c("HG", "PRD", "CC", "SoG", "WCVI")) %>%
-#   mutate(Region = ifelse(Region == "SoG", "SOG", Region))
+#   mutate(Region = ifelse(Region == "SoG", "SOG", Region)) %>%
+#   sf_remove_holes()
 
 # Figure 2: Spawning biomass and catch (based on `plot_biomass_catch`)
 fig_2 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
