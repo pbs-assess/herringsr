@@ -91,7 +91,7 @@ sbt_sbo.cc <- get_sbt_sbo("CC")
 sbt.cc <- sbt_sbo.cc[[1]]
 sbo.cc <- sbt_sbo.cc[[2]]
 rel.sbo.cc <- rep(1, length(sbo.cc))
-mp.lst.cc <- get_hcr(sbt.cc, sbo.cc, fn = here("data/mp-cc.csv"))
+mp.lst.cc <- get_hcr(sbt.cc, sbo.cc, fn = here("data", "mp-cc.csv"))
 mp.vals.cc <- mp.lst.cc[[1]]
 mp.cc <- mp.lst.cc[[2]]
 
@@ -99,7 +99,7 @@ sbt_sbo.prd <- get_sbt_sbo("PRD")
 sbt.prd <- sbt_sbo.prd[[1]]
 sbo.prd <- sbt_sbo.prd[[2]]
 rel.sbo.prd <- rep(1, length(sbo.prd))
-mp.lst.prd <- get_hcr(sbt.prd, sbo.prd, fn = here("data/mp-prd.csv"))
+mp.lst.prd <- get_hcr(sbt.prd, sbo.prd, fn = here("data", "mp-prd.csv"))
 mp.vals.prd <- mp.lst.prd[[1]]
 mp.prd <- mp.lst.prd[[2]]
 
@@ -107,7 +107,7 @@ sbt_sbo.sog <- get_sbt_sbo("SoG")
 sbt.sog <- sbt_sbo.sog[[1]]
 sbo.sog <- sbt_sbo.sog[[2]]
 rel.sbo.sog <- rep(1, length(sbo.sog))
-mp.lst.sog <- get_hcr(sbt.sog, sbo.sog, fn = here("data/mp-sog.csv"))
+mp.lst.sog <- get_hcr(sbt.sog, sbo.sog, fn = here("data", "mp-sog.csv"))
 mp.vals.sog <- mp.lst.sog[[1]]
 mp.sog <- mp.lst.sog[[2]]
 
@@ -115,7 +115,7 @@ sbt_sbo.wcvi <- get_sbt_sbo("WCVI")
 sbt.wcvi <- sbt_sbo.wcvi[[1]]
 sbo.wcvi <- sbt_sbo.wcvi[[2]]
 rel.sbo.wcvi <- rep(1, length(sbo.wcvi))
-mp.lst.wcvi <- get_hcr_add(sbt.wcvi, sbo.wcvi, fn = here("data/mp-wcvi.csv"))
+mp.lst.wcvi <- get_hcr_add(sbt.wcvi, sbo.wcvi, fn = here("data", "mp-wcvi.csv"))
 mp.vals.wcvi <- mp.lst.wcvi[[1]]
 mp.wcvi <- mp.lst.wcvi[[2]]
 

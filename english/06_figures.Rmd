@@ -12,7 +12,7 @@ Unités: kilomètres (km).
 
 ```{r bc-map, fig.cap = ifelse(french, "(ref:bc-map-cap-fr)", "(ref:bc-map-cap)"), out.width = "100%"}
 knitr::include_graphics(
-  here::here(ifelse(french, "figures/BC_fr.png", "figures/BC.png"))
+  here(ifelse(french, "figures/BC_fr.png", "figures/BC.png"))
 )
 ```
 

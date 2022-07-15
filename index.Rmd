@@ -89,7 +89,18 @@ options(
 ```
 
 ```{r load-libraries, cache=FALSE}
-meta <- rmarkdown::metadata$output
+library(tidyverse)
+library(stringr)
+library(kableExtra)
+library(here)
+library(rmarkdown)
+library(rosettafish)
+library(csasdown)
+library(gfutilities)
+library(gfiscamutils)
+library(herringutils)
+
+meta <- metadata$output
 if (is.null(meta)) {
   options(french = FALSE)
 } else {
@@ -112,33 +123,26 @@ if (getOption("french")) {
 rebuild_rdata_model_files <- FALSE
 run_retrospectives <- FALSE
 retrospective_yrs <- 1:10
-models_dir <- here::here("models")
+models_dir <- here("models")
 
-library(tidyverse)
-library(stringr)
-library(kableExtra)
-library(here)
-library(rosettafish)
-library(csasdown)
-library(gfutilities)
-library(gfiscamutils)
-library(herringutils)
-
-cat_no <- paste0(
-  "Fs70-7/",
-  rmarkdown::metadata$work_done_year,
-  "-",
-  str_pad(string = rmarkdown::metadata$report_number, width = 3, pad = "0"),
-  ifelse(french, "F", "E"),
-  "PDF"
-)
-
-source(here::here("R/model-setup.R"))
-source(here::here("R/variable-setup.R"))
-source(here::here("R/hcr.R"))
+source(here("R", "model-setup.R"))
+source(here("R", "variable-setup.R"))
+source(here("R", "hcr.R"))
 
 theme_set(herring_theme())
 ```
+
+```{r catalog}
+cat_no <- paste0(
+  "Fs70-7/",
+  metadata$work_done_year,
+  "-",
+  str_pad(string = metadata$report_number, width = 3, pad = "0"),
+  ifelse(french, "F", "E"),
+  "PDF"
+)
+```
+
 
 ```{r output-options}
 keep_non_CC <- TRUE # set = FALSE if providing preliminary report to CC

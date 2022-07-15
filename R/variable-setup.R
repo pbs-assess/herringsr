@@ -137,7 +137,7 @@ total_final_yr_other_catch <- total_final_yr_catch %>%
   f()
 
 # Data file
-data_path <- here::here("data")
+data_path <- here("data")
 
 # Incidental catch
 ic_file_pattern <- "incidental-*"
@@ -198,7 +198,7 @@ M_max <- lapply(
   max(na.rm = TRUE)
 
 # Input catch for table 1
-inp_catch <- read_csv(here::here("data/input-data.csv"), col_types = cols())
+inp_catch <- read_csv(here("data", "input-data.csv"), col_types = cols())
 
 # SARs - dependent values
 hg_vars <- get_vars("HG", french = french)
