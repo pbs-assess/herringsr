@@ -62,6 +62,8 @@ updated MP recommendations for the PRD and CC SARs.
 Management measures to support long-term recovery of HG herring
 are being developed through the rebuilding plan process.
 
+1. The 2022 stock assessment includes...
+
 Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested
 that DFO Pacific Science Branch assess the status of
 British Columbia (BC) Pacific Herring stocks in `r assess_yr` and

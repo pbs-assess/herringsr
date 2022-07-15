@@ -1,5 +1,5 @@
 # Years
-assess_yr <- 2021
+assess_yr <- 2022
 last_assess_yr <- assess_yr - 1
 this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
 
