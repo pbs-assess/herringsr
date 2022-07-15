@@ -46,6 +46,7 @@ header-includes:
 
 ```{r setup, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}
 library(knitr)
+
 if (is_latex_output()) {
   knitr_figs_dir <- "knitr-figs-pdf/"
   knitr_cache_dir <- "knitr-cache-pdf/"
@@ -55,6 +56,7 @@ if (is_latex_output()) {
   knitr_cache_dir <- "knitr-cache-docx/"
   fig_out_type <- "png"
 }
+
 fig_asp <- 0.618
 fig_width <- 6.5
 fig_out_width <- "6.5in"
@@ -80,6 +82,7 @@ opts_chunk$set(
   fig.align = fig_align,
   fig.pos = "H"
 )
+
 options(
   xtable.comment = FALSE,
   kableExtra.latex.load_packages = FALSE,
@@ -88,19 +91,12 @@ options(
 )
 ```
 
-```{r load-libraries, cache=FALSE}
-library(tidyverse)
-library(stringr)
-library(kableExtra)
-library(here)
+```{r metadata}
 library(rmarkdown)
-library(rosettafish)
-library(csasdown)
-library(gfutilities)
-library(gfiscamutils)
-library(herringutils)
+library(stringr)
 
 meta <- metadata$output
+
 if (is.null(meta)) {
   options(french = FALSE)
 } else {
@@ -114,11 +110,32 @@ if (is.null(meta)) {
     prepub <- meta$`csasdown::sr_word`$prepub
   }
 }
+
 csl <- "csl/csas.csl"
 if (getOption("french")) {
   csl <- "csl/csas-french.csl"
   options(OutDec = ",")
 }
+
+cat_no <- paste0(
+  "Fs70-7/",
+  metadata$work_done_year,
+  "-",
+  str_pad(string = metadata$report_number, width = 3, pad = "0"),
+  ifelse(french, "F", "E"),
+  "PDF"
+)
+```
+
+```{r load-libraries, cache=FALSE}
+library(tidyverse)
+library(kableExtra)
+library(here)
+library(rosettafish)
+library(csasdown)
+library(gfutilities)
+library(gfiscamutils)
+library(herringutils)
 
 rebuild_rdata_model_files <- FALSE
 run_retrospectives <- FALSE
@@ -131,18 +148,6 @@ source(here("R", "hcr.R"))
 
 theme_set(herring_theme())
 ```
-
-```{r catalog}
-cat_no <- paste0(
-  "Fs70-7/",
-  metadata$work_done_year,
-  "-",
-  str_pad(string = metadata$report_number, width = 3, pad = "0"),
-  ifelse(french, "F", "E"),
-  "PDF"
-)
-```
-
 
 ```{r output-options}
 keep_non_CC <- TRUE # set = FALSE if providing preliminary report to CC
