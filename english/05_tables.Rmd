@@ -18,6 +18,7 @@ L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de 
 ```{r data-input}
 input_data_table(
   tab = inp_catch,
+  last_year = major_end_yr,
   cap = ifelse(french, "(ref:data-input-cap-fr)", "(ref:data-input-cap)"),
   translate = french
 )
