@@ -10,7 +10,7 @@ special_stock_dir <- list("A10")
 major_model_dirs <- lapply(
   1:length(major_stock_dir),
   function(x) {
-    file.path(models_dir, major_stock_dir[[x]], "AM2")
+    file.path(models_dir, major_stock_dir[[x]])
   }
 )
 lapply(
@@ -22,14 +22,14 @@ lapply(
 minor_model_dirs <- lapply(
   1:length(minor_stock_dir),
   function(x) {
-    file.path(models_dir, minor_stock_dir[[x]], "AM2")
+    file.path(models_dir, minor_stock_dir[[x]])
   }
 )
 
 special_model_dirs <- lapply(
   1:length(special_stock_dir),
   function(x) {
-    file.path(models_dir, special_stock_dir[[x]], "AM2")
+    file.path(models_dir, special_stock_dir[[x]])
   }
 )
 
