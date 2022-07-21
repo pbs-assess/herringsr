@@ -9,7 +9,7 @@ IF /I "%CONTINUE%" NEQ "Y" GOTO END
 
 cd models/HG
 iscam
-iscam -mcmc 5000000 -mcsave 1000
+iscam -mcmc 20000 -mcsave 10
 if exist mcmc rd /s /q mcmc
 md mcmc
 iscam -mceval
@@ -17,7 +17,7 @@ mv *.csv mcmc
 
 cd ../PRD
 iscam
-iscam -mcmc 5000000 -mcsave 1000
+iscam -mcmc 20000 -mcsave 10
 if exist mcmc rd /s /q mcmc
 md mcmc
 iscam -mceval
@@ -25,7 +25,7 @@ mv *.csv mcmc
 
 cd ../CC
 iscam
-iscam -mcmc 5000000 -mcsave 1000
+iscam -mcmc 20000 -mcsave 10
 if exist mcmc rd /s /q mcmc
 md mcmc
 iscam -mceval
@@ -33,7 +33,7 @@ mv *.csv mcmc
 
 cd ../SoG
 iscam
-iscam -mcmc 5000000 -mcsave 1000
+iscam -mcmc 20000 -mcsave 10
 if exist mcmc rd /s /q mcmc
 md mcmc
 iscam -mceval
@@ -41,7 +41,7 @@ mv *.csv mcmc
 
 cd ../WCVI
 iscam
-iscam -mcmc 5000000 -mcsave 1000
+iscam -mcmc 20000 -mcsave 10
 if exist mcmc rd /s /q mcmc
 md mcmc
 iscam -mceval
