@@ -138,8 +138,8 @@ library(gfiscamutils)
 library(herringutils)
 
 rebuild_rdata_model_files <- FALSE
-run_retrospectives <- FALSE
-retrospective_yrs <- 1:10
+run_retros <- FALSE
+retro_yrs <- 1:10
 models_dir <- here("models")
 
 source(here("R", "model-setup.R"))

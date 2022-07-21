@@ -15,8 +15,8 @@ major_model_dirs <- lapply(
 )
 lapply(
   major_model_dirs, run_retro,
-  yrs = retrospective_yrs,
-  overwrite = run_retrospectives
+  yrs = retro_yrs,
+  overwrite = run_retros
 )
 
 minor_model_dirs <- lapply(
