@@ -18,10 +18,12 @@ md temp
 mv *.ctl temp
 mv *.dat temp
 mv *.pfc temp
+mv iscam.exe temp
 del /q *.*
 mv temp/*.ctl .
 mv temp/*.dat .
 mv temp/*.pfc .
+mv temp/iscam.exe .
 rd /s /q temp
 iscam
 iscam -mcmc %num_mcmc% -mcsave %nth_save%
@@ -37,10 +39,12 @@ md temp
 mv *.ctl temp
 mv *.dat temp
 mv *.pfc temp
+mv iscam.exe temp
 del /q *.*
 mv temp/*.ctl .
 mv temp/*.dat .
 mv temp/*.pfc .
+mv temp/iscam.exe .
 rd /s /q temp
 iscam
 iscam -mcmc %num_mcmc% -mcsave %nth_save%
@@ -56,10 +60,12 @@ md temp
 mv *.ctl temp
 mv *.dat temp
 mv *.pfc temp
+mv iscam.exe temp
 del /q *.*
 mv temp/*.ctl .
 mv temp/*.dat .
 mv temp/*.pfc .
+mv temp/iscam.exe .
 rd /s /q temp
 iscam
 iscam -mcmc %num_mcmc% -mcsave %nth_save%
@@ -75,10 +81,12 @@ md temp
 mv *.ctl temp
 mv *.dat temp
 mv *.pfc temp
+mv iscam.exe temp
 del /q *.*
 mv temp/*.ctl .
 mv temp/*.dat .
 mv temp/*.pfc .
+mv temp/iscam.exe .
 rd /s /q temp
 iscam
 iscam -mcmc %num_mcmc% -mcsave %nth_save%
@@ -94,10 +102,12 @@ md temp
 mv *.ctl temp
 mv *.dat temp
 mv *.pfc temp
+mv iscam.exe temp
 del /q *.*
 mv temp/*.ctl .
 mv temp/*.dat .
 mv temp/*.pfc .
+mv temp/iscam.exe .
 rd /s /q temp
 iscam
 iscam -mcmc %num_mcmc% -mcsave %nth_save%
