@@ -147,9 +147,9 @@ mcmc_samp_freq <- 10
 mcmc_burnin <- 10
 mcmc_num_samples <- (mcmc_length / mcmc_samp_freq) - mcmc_burnin
 
-run_sca_models <- TRUE
-rebuild_rdata_model_files <- TRUE
-run_retros <- TRUE
+run_sca_models <- FALSE
+rebuild_rdata_model_files <- FALSE
+run_retros <- FALSE
 retro_yrs <- 1:10
 
 if(run_sca_models) source(here("R", "run-sca.R"))
