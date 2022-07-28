@@ -5,7 +5,7 @@ in the Strait of Georgia major stock assessment region.
 The MCMC run had chain length `r mcmc_length`
 with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration (i.e., thinning).
 The first `r f(mcmc_burnin)` samples were discarded (i.e., burn-in),
-leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for posteriors.
+leaving `r f(mcmc_num_samples)` samples for posteriors.
 This section will not be included in the final document.
 
 (ref:sog-priors-posts-cap) Strait of Georgia SAR:
