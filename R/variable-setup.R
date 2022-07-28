@@ -2,6 +2,9 @@
 last_assess_yr <- assess_yr - 1
 this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
 
+# MCMC
+mcmc_num_samples <- (mcmc_length / mcmc_samp_freq) - mcmc_burnin
+
 # Age class to highlight in weight-at-age plots
 age_highlight <- 3
 
