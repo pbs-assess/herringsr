@@ -4,9 +4,6 @@ if (.Machine$sizeof.pointer == 4) {
 }
 
 # Directories and names of stocks
-major_stock_dir <- list("HG", "PRD", "CC", "SoG", "WCVI")
-minor_stock_dir <- list("A27", "A2W")
-special_stock_dir <- list("A10")
 major_model_dirs <- lapply(
   1:length(major_stock_dir),
   function(x) {
@@ -39,6 +36,7 @@ fixed_cutoffs <- c(10.7, 12.1, 17.6, 21.2, 18.8)
 # Level of confidence interval
 confidence_vals <- c(0.05, 0.95)
 ci_level <- confidence_vals[2] - confidence_vals[1]
+mcmc_ci <- paste(ci_level * 100, "\\%", sep = "")
 
 # Build major model files
 build_herring_rdata_files(
@@ -48,7 +46,7 @@ build_herring_rdata_files(
   load.proj = TRUE,
   lower = confidence_vals[1],
   upper = confidence_vals[2],
-  burnin = 1000,
+  burnin = mcmc_burnin,
   thin = 1,
   fixed.cutoffs = fixed_cutoffs,
   which.model = 2
@@ -62,7 +60,7 @@ build_herring_rdata_files(
   load.proj = TRUE,
   lower = confidence_vals[1],
   upper = confidence_vals[2],
-  burnin = 1000,
+  burnin = mcmc_burnin,
   thin = 1,
   fixed.cutoffs = fixed_cutoffs,
   which.model = 2
@@ -76,7 +74,7 @@ build_herring_rdata_files(
   load.proj = TRUE,
   lower = confidence_vals[1],
   upper = confidence_vals[2],
-  burnin = 1000,
+  burnin = mcmc_burnin,
   thin = 1,
   fixed.cutoffs = fixed_cutoffs,
   which.model = 2

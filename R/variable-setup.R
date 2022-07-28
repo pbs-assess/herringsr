@@ -1,5 +1,4 @@
 # Years
-assess_yr <- 2022
 last_assess_yr <- assess_yr - 1
 this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
 
@@ -206,13 +205,6 @@ prd_vars <- get_vars("PRD", french = french)
 cc_vars <- get_vars("CC", french = french)
 sog_vars <- get_vars("SoG", french = french)
 wcvi_vars <- get_vars("WCVI", french = french)
-
-# Number of mcmc samples, min and max median biomass
-mcmc_num_samples <- nrow(major_models[[1]]$mcmc$params)
-mcmc_burnin <- mcmc_num_samples - nrow(major_models[[1]]$mcmccalcs$p.dat)
-mcmc_length <- "5 million"
-mcmc_samp_freq <- 1000
-mcmc_ci <- "90\\%"
 
 # Format MP tables
 proc_mp <- function(df) {
