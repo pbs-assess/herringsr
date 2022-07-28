@@ -37,7 +37,7 @@ Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figu
 
 ```{r sog-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-traces-cap-fr)", "(ref:sog-traces-cap)")}
 make.traces.plot(
-  model = major_models[[model_ind]]
+  model = major_models[[model_ind]], mcmc_burnin = mcmc_burnin
 )
 ```
 
@@ -52,7 +52,7 @@ Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figu
 
 ```{r sog-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-autocor-cap-fr)", "(ref:sog-autocor-cap)")}
 make.autocor.plot(
-  model = major_models[[model_ind]]
+  model = major_models[[model_ind]], mcmc_burnin = mcmc_burnin
 )
 ```
 

@@ -37,7 +37,7 @@ Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figu
 
 ```{r prd-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:prd-traces-cap-fr)", "(ref:prd-traces-cap)")}
 make.traces.plot(
-  model = major_models[[model_ind]]
+  model = major_models[[model_ind]], mcmc_burnin = mcmc_burnin
 )
 ```
 
@@ -51,7 +51,7 @@ Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figu
 
 ```{r prd-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:prd-autocor-cap-fr)", "(ref:prd-autocor-cap)")}
 make.autocor.plot(
-  model = major_models[[model_ind]]
+  model = major_models[[model_ind]], mcmc_burnin = mcmc_burnin
 )
 ```
 

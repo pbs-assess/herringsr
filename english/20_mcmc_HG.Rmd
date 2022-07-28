@@ -59,7 +59,7 @@ Les souscriptions sur $\hat{a}$ et $\hat{\gamma}$ représentent des engins comme
 
 ```{r hg-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-traces-cap-fr)", "(ref:hg-traces-cap)")}
 make.traces.plot(
-  model = major_models[[model_ind]]
+  model = major_models[[model_ind]], mcmc_burnin = mcmc_burnin
 )
 ```
 
@@ -74,7 +74,7 @@ Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figu
 
 ```{r hg-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-autocor-cap-fr)", "(ref:hg-autocor-cap)")}
 make.autocor.plot(
-  model = major_models[[model_ind]]
+  model = major_models[[model_ind]], mcmc_burnin = mcmc_burnin
 )
 ```
 

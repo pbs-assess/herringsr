@@ -54,10 +54,8 @@ dans la région d’évaluation des stocks majeur de la côte ouest de l’île 
 Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r wcvi-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-traces-cap-fr)", "(ref:wcvi-traces-cap)")}
-# TODO: not sure about this burnin
 make.traces.plot(
-  model = major_models[[model_ind]],
-  mcmc_burnin = 1000
+  model = major_models[[model_ind]],  mcmc_burnin = mcmc_burnin
 )
 ```
 
@@ -72,8 +70,7 @@ Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figu
 
 ```{r wcvi-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:wcvi-autocor-cap-fr)", "(ref:wcvi-autocor-cap)")}
 make.autocor.plot(
-  model = major_models[[model_ind]],
-  mcmc_burnin = 1000
+  model = major_models[[model_ind]], mcmc_burnin = mcmc_burnin
 )
 ```
 
