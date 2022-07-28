@@ -16,8 +16,6 @@ run_sca <- function(sars,
     sar <- sars[i]
     # Change directory
     setwd(dir = here(models_loc, sar))
-    # Message
-    cat("Running SCA model in ", getwd(), "...", sep = "")
     # Get directories
     dirs <- list.dirs(full.names = FALSE, recursive = FALSE)
     # Remove directories
@@ -62,8 +60,6 @@ run_sca <- function(sars,
     file.remove(csvs)
     # Re-set the working directory
     setwd(dir = here())
-    # Update message
-    cat(" done.\n")
   } # End i loop over SARs
 } # End run_sca function
 
