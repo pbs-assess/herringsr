@@ -1,14 +1,3 @@
-require(here)
-models_dir <- here("models")
-major_stock_dir <- list("HG", "PRD", "CC", "SoG", "WCVI")
-minor_stock_dir <- list("A27", "A2W")
-special_stock_dir <- list("A10")
-assess_yr <- 2022
-mcmc_length <- 200
-mcmc_samp_freq <- 10
-mcmc_burnin <- 10
-mcmc_num_samples <- (mcmc_length / mcmc_samp_freq) - mcmc_burnin
-
 # Function to run SCA
 run_sca <- function(sars,
                     models_loc = models_dir,
