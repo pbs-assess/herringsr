@@ -67,5 +67,5 @@ run_sca <- function(sars,
   } # End i loop over SARs
 } # End run_sca function
 
-# Run SCAs
-run_sca(sars = major_stock_dir)
+# Run SCAs if requested
+if (run_sca_models) run_sca(sars = major_stock_dir)
