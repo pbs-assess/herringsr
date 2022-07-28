@@ -1,19 +1,10 @@
-# TODO: Question.. Do you want to run the SCA models (Y/N)?
-
 # Variables
-year <- "2022"
-num_mcmc <- 20000
-save_nth <- 10
-model_dir <- "models"
-sars <- c("HG", "PRD", "CC", "SoG", "WCVI")
-files_keep <- c(
-  "iscam.exe", "xyz.ctl", "xyz.dat", "iscam.dat", "xyz.pfc"
-)
+files_keep <- c("iscam.exe", "xyz.ctl", "xyz.dat", "iscam.dat", "xyz.pfc")
 
 # Loop over SARs
-for (i in seq(sars)) {
+for (i in seq(major_stock_dir)) {
   # Change directory
-  setwd(dir = here(model_dir, sars[i]))
+  setwd(dir = here(models_dir, major_stock_dir[i]))
   # Message
   cat("Running SCA model in ", getwd(), "...", sep = "")
   # Get directories
@@ -28,7 +19,7 @@ for (i in seq(sars)) {
   # Update file names to keep
   keepers <- gsub(
     pattern = "xyz",
-    replacement = paste("Herring", sars[i], year, sep = ""),
+    replacement = paste("Herring", major_stock_dir[i], assess_yr, sep = ""),
     x = files_keep
   )
   # Get files
@@ -47,7 +38,7 @@ for (i in seq(sars)) {
   # Run iscam
   system("iscam")
   # Run iscam: MCMCs
-  system(paste("iscam -mcmc", num_mcmc, "-mcsave", save_nth))
+  system(paste("iscam -mcmc", mcmc_length, "-mcsave", mcmc_samp_freq))
   # Run iscam: eval
   system("iscam -mceval")
   # Make folder to hold MCMC output
