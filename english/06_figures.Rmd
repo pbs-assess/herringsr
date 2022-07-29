@@ -180,6 +180,27 @@ plot_spawn_ind(
 )
 ```
 
+(ref:coastwide-biomass-catch-cap) Spawning biomass and catch
+in thousands of tonnes (t)
+for Pacific Herring from `r major_start_yr` to `r major_end_yr`
+in the major SARs.
+Spawning biomass is represented by median posterior estimates.
+
+(ref:coastwide-biomass-catch-cap-fr) Biomasse reproductrice et prises
+en milliers de tonnes (t)
+pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr`
+dans les principaux RESs.
+La biomasse reproductrice est représentée par
+les estimations médianes postérieures.
+
+```{r coastwide-biomass-catch, fig.asp=1, fig.cap=ifelse(french, "(ref:coastwide-biomass-catch-cap-fr)", "(ref:coastwide-biomass-catch-cap)")}
+plot_coastwide_biomass_catch(
+  models = major_models,
+  catch = major_catch,
+  reg_names = major_regions_full,
+  translate = french)
+```
+
 <!-- Haida Gwaii Storyboard -->
 ```{r scaled-abundance-hg, fig.show = "hide", fig.asp = 1}
 model_ind <- match(en2fr("HG", french), major_regions_short)

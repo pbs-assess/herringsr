@@ -932,7 +932,6 @@ density-dependent natural mortality operating model scenarios only.
 Legend: $C_t$ is catch in year $t$.
 See Table \@ref(tab:decision-prd) for description.
 
-
 (ref:allocation-sog-cap-fr) RES du détroit de Georgie:
 la performance de la procédure de gestion (PG) pour
 l'allocation de la senne à oeufs et du filet maillant à oeufs
