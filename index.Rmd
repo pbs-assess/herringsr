@@ -137,12 +137,12 @@ library(gfutilities)
 library(gfiscamutils)
 library(herringutils)
 
+assess_yr <- 2022
+
 models_dir <- here("models")
 major_stock_dir <- list("HG", "PRD", "CC", "SoG", "WCVI")
 minor_stock_dir <- list("A27", "A2W")
 special_stock_dir <- list("A10")
-
-assess_yr <- 2022
 
 mcmc_length <- 20000
 mcmc_samp_freq <- 10
