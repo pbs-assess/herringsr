@@ -492,6 +492,8 @@ biomass falls below the lower OCP.
 <!-- TODO: Not sure where to put this -->
 Coast wide spawning biomass and catch is shown in
 Figure \@ref(fig:coastwide-biomass-catch).
+Total biomass and spawning biomass are shown in 
+Figure \@ref(fig:biomass-total-biomass).
 
 ### Haida Gwaii
 
