@@ -489,6 +489,10 @@ of a HCR, and identify biomass levels where management action is taken.
 For example, the harvest rate is set to zero and fishing ceases when
 biomass falls below the lower OCP.
 
+<!-- TODO: Not sure where to put this -->
+Coast wide spawning biomass and catch is shown in
+Figure \@ref(fig:coastwide-biomass-catch).
+
 ### Haida Gwaii
 
 Estimated spawning biomass declined to near historic lows in the mid-1990s and
