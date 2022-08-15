@@ -256,7 +256,8 @@ in Pacific Herring stock assessment by
 estimating annual rates of natural mortality, 
 and is considered minor relative to commercial harvest.
 
-This year we include newly available data for incidental mortality in
+Again this year,
+we include available data for incidental mortality in
 finfish aquaculture activities
 by SAR from `r min(ic_yrs)` to `r max(ic_yrs)`
 (Figure \@ref(fig:major-incidental)).
@@ -267,7 +268,7 @@ PFMAs are larger and can extend beyond SAR boundaries.
 Data indicate the number of Pacific Herring dead and released,
 with the following caveats:
 
-1. Data for 2020 are considered incomplete,
+1. Data for `r max(ic_yrs)` are considered incomplete,
 
 2. Unknown mortality rate for "released" fish,
 
@@ -275,6 +276,9 @@ with the following caveats:
 
 4. "Herring-like" fish are assumed to be herring
 when decomposition hinders identification.
+
+Note that we sometimes update data in previous years
+as DFO receives additional reports.
 
 ## First Nations observations
 
@@ -400,7 +404,13 @@ Herring observed in spawning aggregations were small in size.
 
 Analyses of stock trend information for AM2 are presented following
 methods of @cleary2018 for the Pacific Herring major SARs.
-Perceptions of stock status based on outputs from the SCA model (AM2)
+As in previous years,
+MCMC runs have chain length `r f(mcmc_length)`
+with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration (i.e., thinning).
+The first `r f(mcmc_burnin)` samples are discarded (i.e., burn-in),
+leaving `r f(mcmc_num_samples)` samples for posteriors.
+Perceptions of stock status based on outputs (i.e., posteriors)
+from the SCA model (AM2)
 are summarized for each stock in a multi-panel figure
 (e.g., Figure \@ref(fig:storyboard-hg)).
 The panels show:
