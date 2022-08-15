@@ -53,7 +53,7 @@ in aquaculture activities in thousands of fish from
 `r min(ic_yrs)` to `r max(ic_yrs)` in the major SARs.
 Notes: data for `r max(ic_yrs)` may be incomplete,
 figure may include data outside SAR boundaries, and
-figure excludes SARs with no reported incidental mortality
+figure excludes SARs with no reported incidental mortality.
 
 (ref:major-incidental-cap-fr) Mortalité accidentelle de hareng du Pacifique
 dans les activités d'aquaculture en milliers de poissons
