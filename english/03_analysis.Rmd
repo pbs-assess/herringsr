@@ -244,9 +244,8 @@ survey data and working group discussions with local First Nations.
 ## Incidental mortality
 
 In order to advance progress towards
-a holistic ecosystem-based management (EBM) approach for Pacific Herring
-we present the information currently available
-to describe indirect effects on herring populations,
+a holistic ecosystem-based management (EBM) approach for Pacific Herring,
+we present information to describe indirect effects on herring populations
 such as incidental mortality. 
 Some fisheries and aquaculture activities in BC cause
 incidental mortality to Pacific Herring.
@@ -257,8 +256,7 @@ estimating annual rates of natural mortality,
 and is considered minor relative to commercial harvest.
 
 Again this year,
-we include available data for incidental mortality in
-finfish aquaculture activities
+we include data for incidental mortality in finfish aquaculture activities
 by SAR from `r min(ic_yrs)` to `r max(ic_yrs)`
 (Figure \@ref(fig:major-incidental)).
 Note that incidental mortality data are reported by
