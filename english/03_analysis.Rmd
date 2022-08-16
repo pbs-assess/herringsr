@@ -287,13 +287,15 @@ The following descriptions were provided by First Nations contributors.
 
 ### Haida Gwaii
 
-<!-- TODO: Add FN observations. -->
+<!-- TODO: Add FN observations from Victor. -->
 
 ### Prince Rupert District
 
-<!-- TODO: Add FN observations. -->
+<!-- TODO: Add FN observations from Penny. -->
 
 ### Central Coast
+
+<!-- TODO: Add FN observations from Larry (Area 06) and Mike (Area 07). -->
 
 FSC harvesters in Area 08 observed only brief spot spawns
 lasting 24 hours or less.
@@ -416,9 +418,16 @@ are assumed to be continuous with the dive survey time series.
 
 A biological limit reference point (LRP) is defined for the major
 Pacific Herring SARs at $0.3\SB_0$ [@kronlund2017].
-Candidate upper stock references (USR) were introduced in @cleary2018 and
+Candidate upper stock reference (USR) points were introduced in @cleary2018 and
 implemented as biomass objectives in the simulation analyses for WCVI and SoG
 in 2018 [@dfo2019a] and then for HG, PRD, and CC in 2019 [@dfo2019c].
+An analysis of USR options was undertaken beginning in the winter of 2022, with
+results presented in the following Science Response (currently in press).
+<!-- TODO-MG: please add a footnote to the 'currently in press' (prev line.)
+Footnote should read: CSAS Science Response: August 30, 2022 Management 
+Strategy Evaluation Update and Evaluation of Upper Stock Reference Point Options 
+for Pacific Herring (Clupea pallasii) in British Columbia, Canada-->
+
 Candidate USRs are:
 
 1. $0.4\SB_0$,
