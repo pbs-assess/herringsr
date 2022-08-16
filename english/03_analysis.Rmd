@@ -281,14 +281,17 @@ as DFO receives additional reports.
 The COVID-19 pandemic continues to impact First Nations participation
 in Pacific Herring survey activities as well as participation
 in traditional harvest activities such as FSC.
-<!-- Assembling local observations was not possible for the 2020 season, -->
-<!-- however in 2021, local observations were provided by -->
-<!-- coastal First Nations participants for most areas. -->
+In `r assess_yr`, local observations were provided by
+coastal First Nations participants for most areas.
 The following descriptions were provided by First Nations contributors.
 
 ### Haida Gwaii
 
+<!-- TODO: Add FN observations. -->
+
 ### Prince Rupert District
+
+<!-- TODO: Add FN observations. -->
 
 ### Central Coast
 
