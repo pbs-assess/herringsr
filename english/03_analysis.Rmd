@@ -2,14 +2,12 @@
 
 ## COVID-19 pandemic
 
-Compared to 2020, the COVID-19 pandemic had fewer impacts
-to Pacific Herring data collection and analysis in 2021.
-Spawn surveys proceeded as usual in most areas in 2021,
-with dive surveys in all major areas except Haida Gwaii.
-Haida Gwaii would normally have a dive survey,
-but had a surface survey in 2021 due to COVID-19.
+Compared to 2020 and 2021, the COVID-19 pandemic had fewer impacts
+to Pacific Herring data collection and analysis in 2022.
+Spawn surveys proceeded as usual in most areas in 2022,
+with dive surveys in all major SARs.
 The collection and analysis of biological data was not affected
-by the COVID-19 pandemic in 2021.
+by the COVID-19 pandemic in 2022.
 
 ## Management strategy evaluation
 
@@ -98,9 +96,10 @@ These three hypotheses are captured as three operating model (OM) scenarios in @
 The DDM scenario was identified as the Reference OM scenario based on
 discussion at the July 2018 CSAS review process [@dfo2019c],
 while the DIM and conM scenarios were identified as Robustness OM scenarios.
-There is however currently no scientifically supported method to
-predict natural mortality;
-thus all three scenarios are included. 
+In 2022 we removed the conM scenario from the list of
+plausible natural mortality hypotheses because
+MP performance has been found to be consistently over-optimistic.
+As such, OM updates are presented for the DDM and DIM OM scenarios only.
 
 Several lessons were learned from the MSE analyses conducted so far:
 
@@ -218,14 +217,13 @@ Ultimately, the estimated weight of mature spawners required
 to produce the egg deposition is calculated and
 referred to as the 'spawn index'.
 The `r surv_yr_rng[2]` spawn survey followed standard dive survey protocols
-for the PRD, CC, SoG, and WCVI SARs as described in @cleary2018, and
-a surface survey protocol for the HG SAR due to COVID-19.
+for the HG, PRD, CC, SoG, and WCVI SARs as described in @cleary2018.
 Time series of spawn index by major stock assessment region (SAR)
 from `r paste(surv_yr_rng, collapse=" to ")`
 are summarized in Figure \@ref(fig:major-spawn-index).
 In `r surv_yr_rng[2]`, there was an
-increase in survey biomass (i.e., index values) for the PRD and WCVI SARs, and
-a decrease in survey biomass for HG, CC, and SoG SARs
+increase in survey biomass (i.e., index values) for the PRD and SoG SARs, and
+a decrease in survey biomass for HG, CC, and WCVI SARs
 (Figure \@ref(fig:major-spawn-index) and
 Tables \@ref(tab:spawn-index-hg) to \@ref(tab:spawn-index-wcvi)).
 
@@ -402,10 +400,14 @@ spawning biomass estimates obtained from surface surveys for
 a given stock area and year are added to
 biomass estimates from dive surveys,
 and $q_2 = 1$ is assumed for the combined index.
-In 2020 and `r surv_yr_rng[2]`,
-a full surface survey was conducted for the HG SAR and
-in this assessment the resulting survey biomass estimates are
-assumed continuous with the dive survey time series.
+The \link{https://github.com/grinnellm/Reports}{Pacific Herring data summary reports}
+show the proportion of spawn survey data (i.e., spawn index)
+from the surface and dive survey methods by year and SAR.
+Note that only surface surveys were conducted
+for HG in 2020 and 2021, as well as
+for PRD in 2020 (due to the COVID-19 pandemic).
+These surface survey observations are treated as dive survey observations and
+are assumed to be continuous with the dive survey time series.
 
 ### Reference points\label{sec:ref-pts}
 
