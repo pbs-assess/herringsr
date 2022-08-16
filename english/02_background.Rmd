@@ -39,7 +39,6 @@ spawn on set tree boughs.
 Indigenous harvest of herring for FSC purposes may occur coast wide
 where authorized by a communal license.
 
-<!-- TODO: Waiting for updated text from Andrea for this paragraph -->
 In addition, treaty and aboriginal commercial fisheries may occur
 in some specific management regions.
 Four modern treaties (Nisga'a, Tsawwassen, Maa-nulth, and Tla'amin)
@@ -47,32 +46,37 @@ have been ratified in British Columbia and
 articulate a treaty right to FSC harvest of fish.
 Five Nuu-chah-nulth First Nations located on the West Coast of Vancouver Island
 -- Ahousaht, Ehattesaht, Hesquiaht, Mowachaht/Muchalaht, and Tla-o-qui-aht
-(the T’aaq-wiihak First Nations) --
+(the Five Nations) --
 have aboriginal rights to fish for any species of fish,
 with the exception of Geoduck,
 within their Fishing Territories and to sell that fish.
-DFO developed a 2021/22 Five Nations Multi-species Fishery Management Plan (FMP).
-Feedback provided by the Five Nations during consultations was considered
-by DFO in the development of the 2021/22 FMP.
+DFO developed a 2022/23 Five Nations Multi-species Fishery Management Plan (FMP).
 The FMP includes specific details about the fishery, such as
 allocation/access,
 licensing and designations,
 fishing area,
-harvesting opportunities, as well as
+harvesting opportunities, and
 fishery monitoring and catch reporting.
-For further information see the
-\link{https://waves-vagues.dfo-mpo.gc.ca/Library/40953798.pdf}{FMP}.
+Feedback provided by the Five Nations during consultations was considered
+and incorporated into the 2022/23 FMP by DFO where possible.
+
 The implementation of the Five Nations’ right-based sale fishery
 is an ongoing process.
-The 2021/22 FMP was developed to implement the right-based multi-species fishery
-to accommodate the Five Nations’ Aboriginal rights
-consistent with the 2018 decision of the British Columbia Supreme Court.
-On April 19, 2021, the British Columbia Court of Appeal released its
-decision in relation to the appeal brought forward by the Five Nations.
-As a result, the department is reviewing the 2021/22 FMP.
-Following this review, the 2021/22 FMP may be amended and
-in-season management changes to this IFMP may occur.
-Changes to the FMP will be announced by fishery notice. 
+The 2022/23 FMP is the fourth Multi-Species FMP developed to implement 
+the right-based multi-species fishery to accommodate the Five Nations’ 
+Aboriginal rights consistent with the British Columbia Supreme Court’s 
+2018 decision. 
+Version 2 of the 2021 FMP, issued on December 2, 2021, was the first 
+Multi-Species FMP developed following the British Columbia Court of Appeal (BCCA) 
+decision of April 19, 2021, in Ahousaht Indian Band and Nation v. Canada, 
+2021 BCCA 155, but it only partially implemented it.  
+The 2022/23 FMP addresses most of the remaining issues raised by the BCCA decision, 
+leaving some items left to review.
+It is DFO’s intention to continue to review the FMP and make further changes 
+in-season and amend the FMP if required. 
+
+For further information the 2022/23 FMP may be obtained online at: 
+\link{https://waves-vagues.dfo-mpo.gc.ca/Library/40953798.pdf}{FMP}.
 
 On the Central Coast,
 Heiltsuk First Nation have an Aboriginal right to commercially harvest
