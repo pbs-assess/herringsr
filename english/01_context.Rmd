@@ -40,17 +40,17 @@ This assessment incorporates new science advice on
 choice of upper stock reference (USR) points
 for four Pacific Herring major SARs (PRD, CC, SoG, and WCVI).
 An analysis of options was completed in 2022 [REF] and
-implementation of USRs will be in the 2022/23 IFMP.
+implementation of USRs will be in the 
+2022/23 Integrated Fisheries Management Plan (IFMP).
 To support on-going consultations,
 five USR options are presented for PRD, CC, SoG and WCVI
-(Section XXX).
-
+(Section "\nameref{sec:harv-opts}").
 For these four stocks
 we also update OM conditioning to include
 stock and fishery data from 1951 to 2021.
 These updates also appear in [DFO USR-SR REF].
 MP evaluations presented in the harvest option tables 
-reflect the latest OM updates (Figures/Tables XXX).
+reflect the latest OM updates.
 
 Since initiation of the Pacific Herring MSE process,
 results have been included in the annual stock assessment as follows:
@@ -91,7 +91,7 @@ that DFO Pacific Science Branch assess the status of
 British Columbia (BC) Pacific Herring stocks in `r assess_yr` and
 recommend harvest advice for `r assess_yr + 1`
 as simulation-tested MPs to inform the development of the
-`r assess_yr`/`r assess_yr + 1` Integrated Fisheries Management Plan,
+`r assess_yr`/`r assess_yr + 1` IFMP,
 where appropriate.
 Estimated stock trajectories,
 current status of stocks for `r assess_yr`,
