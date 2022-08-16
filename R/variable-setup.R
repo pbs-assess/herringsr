@@ -6,26 +6,29 @@ this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
 mcmc_num_samples <- (mcmc_length / mcmc_samp_freq) - mcmc_burnin
 
 # Check MCMC parameters
-check_mcmc <- function(mcmc_in, model_dir) {
+check_mcmc <- function(
+    mcmc_in = list(length = mcmc_length, samp_freq = mcmc_samp_freq),
+    model) {
+  # Get model folder
+  model_dir = file.path(models_dir, model)
   # Get chain length from iscam output
   out_length <- scan(file = file.path(model_dir, "sims"), quiet = TRUE)[2]
   # Error if chains not the same length
   if(mcmc_in$length != out_length)
-    stop("Wrong MCMC chain length.", call. = FALSE)
+    stop("Wrong MCMC chain length in ", model, ".")
   # Read a CSV file
   blob <- readLines(con = file.path(model_dir, "mcmc", "iscam_m_mcmc.csv"))
   # Determine sample frequency from iscam output
   out_samp_freq <- out_length / (length(blob) - 1)
   # Error if sample frequencies not the same
   if(mcmc_in$samp_freq != out_samp_freq)
-    stop("Wrong MCMC sample frequency.", call. = FALSE)
+    stop("Wrong MCMC sample frequency in ", model, ".")
 } # End check_mcmc function
 
 # Check MCMC pars
-check_mcmc(
-  mcmc_in = list(length = mcmc_length, samp_freq = mcmc_samp_freq),
-  model_dir = file.path(models_dir, major_stock_dir[1])
-  )
+for (i in seq(major_stock_dir)){
+  check_mcmc(model = major_stock_dir[i])
+}
 
 # Age class to highlight in weight-at-age plots
 age_highlight <- 3
