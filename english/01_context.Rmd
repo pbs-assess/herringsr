@@ -1,6 +1,7 @@
 # Context
 
 <!-- TODO: (JC) Add citation for Benson et al. (2022) -->
+New herring work [@benson2022].
 
 Pacific Herring (*Clupea pallasii*) abundance in British Columbia (BC) is
 assessed using a statistical catch-age (SCA) model [@martell2011].
@@ -30,11 +31,11 @@ fitting the OM to Pacific Herring stock and fishery monitoring data
 (OM conditioning), and
 closed-loop simulations of MP performance for alternative
 future natural mortality scenarios.
-In 2019, the MSE process was initiated for the
+In 2019, DFO initiated the MSE process for the
 Haida Gwaii (HG), Prince Rupert District (PRD), and Central Coast (CC)
 SARs [@dfo2019c].
-In 2020, updates were made to the MSE simulations for the SoG and WCVI SARs,
-and in 2021, similar updates were made for the PRD and CC SARs.
+Updates were made to the MSE simulations for the SoG and WCVI SARs in 2020,
+and similar updates were made for the PRD and CC SARs in 2021.
 
 This assessment incorporates new science advice on
 choice of upper stock reference (USR) points
