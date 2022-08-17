@@ -421,13 +421,8 @@ Pacific Herring SARs at $0.3\SB_0$ [@kronlund2017].
 Candidate upper stock reference (USR) points were introduced in @cleary2018 and
 implemented as biomass objectives in the simulation analyses for WCVI and SoG
 in 2018 [@dfo2019a] and then for HG, PRD, and CC in 2019 [@dfo2019c].
-An analysis of USR options was undertaken beginning in the winter of 2022, with
-results presented in a Science Response (currently in press).
-
-<!-- TODO-MG: please add a footnote to the 'currently in press' (prev line.)
-Footnote should read: CSAS Science Response: August 30, 2022 Management 
-Strategy Evaluation Update and Evaluation of Upper Stock Reference Point Options 
-for Pacific Herring (Clupea pallasii) in British Columbia, Canada-->
+An analysis of USR options was undertaken beginning in 2022, with
+results presented in a Science Response (in press).^[CSAS Science Response: August 30, 2022 Management strategy evaluation update and evaluation of upper stock reference point options for Pacific Herring (*Clupea pallasii*) in British Columbia, Canada.]
 
 Five USR options were evaluated:
 <!-- TODO- ensure order here matches the table columns-->
@@ -453,13 +448,13 @@ The simulation-evaluations did not select a single USR as this needs to
 be informed by the consultative process which is on-going.
 Final USR choices for major SARs will be reported in the 2022 draft Herring IFMP.
 
-
 Stock status relative to the assessment model estimates $0.3\SB_0$ (LRP) and
 USR options are presented for PRD, CC, SoG, and WCVI SARs
 in Tables \@ref(tab:ref-points-prd) through \@ref(tab:ref-points-wcvi).
 
 The LRP and USR relate stock status to the DFO PA Framework [@dfo2009], and
-in the assessment of Pacific Herring the same calculations are applied for each SAR.
+in the assessment of Pacific Herring
+the same calculations are applied for each SAR.
 There is an important distinction between reference points (e.g., LRP, USR) and
 operational control points of the harvest control rule (HCR)
 or the management procedure used to set catch limits.
