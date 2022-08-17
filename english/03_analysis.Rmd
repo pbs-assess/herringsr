@@ -432,7 +432,7 @@ for Pacific Herring (Clupea pallasii) in British Columbia, Canada-->
 Five USR options were evaluated:
 <!-- TODO- ensure order here matches the table columns-->
 
-1. Average spawning biomass during a productive period, $0.80\SB_{\mli{productive_period}}$ (80\% Bmsy proxy),
+1. Average spawning biomass during a productive period, $0.80\SB_{\mli{productive period}}$ (80\% Bmsy proxy),
 
 1. $0.4\SB_0$,
 
@@ -441,7 +441,7 @@ Five USR options were evaluated:
 1. $0.6\SB_0$, and
 
 1. Average spawning biomass from `r major_start_yr` to `r assess_yr`,
-$\SB_{\mli{long-term ave}}$.
+$\SB_{\mli{longterm ave}}$.
 
 <!-- TODO-JC: update this text-->
 Simulation results showed similar properties between USRs
