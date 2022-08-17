@@ -422,35 +422,41 @@ Candidate upper stock reference (USR) points were introduced in @cleary2018 and
 implemented as biomass objectives in the simulation analyses for WCVI and SoG
 in 2018 [@dfo2019a] and then for HG, PRD, and CC in 2019 [@dfo2019c].
 An analysis of USR options was undertaken beginning in the winter of 2022, with
-results presented in the following Science Response (currently in press).
+results presented in a Science Response (currently in press).
+
 <!-- TODO-MG: please add a footnote to the 'currently in press' (prev line.)
 Footnote should read: CSAS Science Response: August 30, 2022 Management 
 Strategy Evaluation Update and Evaluation of Upper Stock Reference Point Options 
 for Pacific Herring (Clupea pallasii) in British Columbia, Canada-->
 
-Candidate USRs are:
+Five USR options were evaluated:
+<!-- TODO- ensure order here matches the table columns-->
+
+1. Average spawning biomass during a productive period, $0.80\SB_{\mli{productive_period}}$ (80\% Bmsy proxy),
 
 1. $0.4\SB_0$,
 
-1. $0.6\SB_0$,
+1. $0.5\SB_0$,
+
+1. $0.6\SB_0$, and
 
 1. Average spawning biomass from `r major_start_yr` to `r assess_yr`,
-$\SB_{\mli{ave}}$, and
+$\SB_{\mli{long-term ave}}$.
 
-1. Average spawning biomass during a productive period [@cleary2018],
-$\SB_{\mli{ave-prod}}$.
-
+<!-- TODO-JC: update this text-->
 Simulation results showed similar properties between USRs
 $0.6\SB_0$ and $\SB_{\mli{ave}}$ both within and among SARs,
 while the USR based on the average biomass in a productive period,
 $\SB_{\mli{ave-prod}}$, was found to be most variable among SARs.
-The simulation-evaluations did not select a single USR,
-however a USR of $0.6\SB_0$ is included in this stock status update because
-this candidate is sufficiently above the LRP (2*LRP) and
-it is a repeatable calculation across all SARs.
+
+The simulation-evaluations did not select a single USR as this needs to
+be informed by the consultative process which is on-going.
+Final USR choices for major SARs will be reported in the 2022 draft Herring IFMP.
+
+
 Stock status relative to the assessment model estimates $0.3\SB_0$ (LRP) and
-$0.6\SB_0$ (one candidate USR) are presented for each SAR
-in Tables \@ref(tab:ref-points-hg) through \@ref(tab:ref-points-wcvi).
+USR options are presented for PRD, CC, SoG, and WCVI SARs
+in Tables \@ref(tab:ref-points-prd) through \@ref(tab:ref-points-wcvi).
 
 The LRP and USR relate stock status to the DFO PA Framework [@dfo2009], and
 in the assessment of Pacific Herring the same calculations are applied for each SAR.
