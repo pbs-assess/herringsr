@@ -93,9 +93,9 @@ three hypotheses about future Pacific Herring natural mortality $M$:
 1. $M$ is constant over time (conM).
 
 These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
-The DDM scenario was identified as the Reference OM scenario based on
+The DDM scenario was identified as the reference OM scenario based on
 discussion at the July 2018 CSAS review process [@dfo2019c],
-while the DIM and conM scenarios were identified as Robustness OM scenarios.
+while the DIM and conM scenarios were identified as robustness OM scenarios.
 In 2022 we removed the conM scenario from the list of
 plausible natural mortality hypotheses because
 MP performance has been found to be consistently over-optimistic.
@@ -889,8 +889,8 @@ stock status and natural mortality trends used to condition the OM.
 Harvest options listed in Table \@ref(tab:decision-prd) reflect
 application of MPs to the `r assess_yr + 1` forecast biomass for PRD,
 whereby each MP meets the conservation objective with a minimum 75% probability
-under the Reference OM (i.e., DDM) scenario.
-Harvest options under the two Robustness OM scenarios are also included.
+under the reference OM (i.e., DDM) scenario.
+Harvest options under the two robustness OM scenarios are also included.
 For ease of comparison with MSE cycle 1 [@dfo2019c],
 all MPs and scenarios listed in Table \@ref(tab:decision-prd)
 include performance metrics for the four core objectives.
@@ -915,7 +915,7 @@ obtaining objectives for 2022 under the three OM scenarios are presented
 in Table \@ref(tab:decision-cc). 
 Harvest options listed in Table \@ref(tab:decision-cc) reflect application 
 of MPs to the 2022 forecast biomass for CC, whereby each MP meets the 
-conservation objective with a minimum 75% probability under the Reference OM 
+conservation objective with a minimum 75% probability under the reference OM 
 (i.e., DDM) scenario.
 
 Relative to 2018 OM conditioning, the updated simulations show an improvement
@@ -971,7 +971,7 @@ with harvest rates at 10, 15, and 20% maintain the spawning biomass
 above the LRP with 75 to 85% probability over all three OM scenarios
 (Table \@ref(tab:decision-sog)). 
 MPs with harvest rate of 30% did not meet the conservation objective
-($p$=69% for the Reference OM).
+($p$=69% for the reference OM).
 
 `r proj_biomass_text(SAR = "SoG", next_yr = assess_yr + 1, translate = french)`
 
@@ -980,8 +980,8 @@ are presented in Table \@ref(tab:decision-sog).
 These options reflect application of MPs to the `r assess_yr + 1`
 forecast biomass for SoG,
 whereby each MP meets the conservation objective with a minimum
-75% probability under the Reference OM (DDM) scenario.
-Harvest options under the two Robustness OM scenarios are also included.
+75% probability under the reference OM (DDM) scenario.
+Harvest options under the two robustness OM scenarios are also included.
 All MPs and scenarios listed in Table \@ref(tab:decision-sog) include
 updated performance metrics for the four core objectives
 under all three scenarios [@dfo2021b].
@@ -1036,10 +1036,10 @@ with biomass remaining low relative to historical levels,
 trending around the LRP of $0.3\SB_0$.
 
 In 2018, closed-loop feedback simulations for the WCVI showed
-the conservation objective could be met under the Reference OM scenario
+the conservation objective could be met under the reference OM scenario
 with between 75 and 87% probability,
 but that these MPs failed to meet the conservation objective under the DIM
-Robustness OM scenario, where natural mortality rates are
+robustness OM scenario, where natural mortality rates are
 most similar to the last 10 years ($p=56$ to 74%).
 
 In September 2020, the WCVI OM was updated to include
@@ -1061,8 +1061,8 @@ are presented in Table \@ref(tab:decision-wcvi).
 These options reflect application of MPs to the `r assess_yr + 1`
 forecast biomass for WCVI,
 whereby each MP meets the conservation objective with a minimum
-75% probability under the Reference OM (DDM) scenario.
-Harvest options under the two Robustness OM scenarios are also included.
+75% probability under the reference OM (DDM) scenario.
+Harvest options under the two robustness OM scenarios are also included.
 All MPs and scenarios listed in Table \@ref(tab:decision-wcvi) include
 updated performance metrics for the four core objectives
 under all three scenarios [@dfo2021b].
