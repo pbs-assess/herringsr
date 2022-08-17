@@ -1,6 +1,7 @@
 # Central Coast diagnostics
 
-This section contains Markov chain Monte Carlo (MCMC) diagnostics for the Pacific Herring statistical catch-age model
+This section contains Markov chain Monte Carlo (MCMC) diagnostics
+for the Pacific Herring statistical catch-age model
 in the Central Coast major stock assessment region.
 The MCMC run had chain length `r f(mcmc_length)`
 with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration (i.e., thinning).
@@ -12,11 +13,15 @@ This section will not be included in the final document.
 prior probability distributions (lines) with
 comparative posterior histograms (bars)
 for the Pacific Herring statistical catch-age model.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-priors-posts) for description.
+See Table \@ref(tab:hg-parameter-est) and
+Figure \@ref(fig:hg-priors-posts) for description.
 
 (ref:cc-priors-posts-cap-fr) Distributions de probabilité a priori (lignes)
-et histogrammes a posteriori comparatifs (barres) pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-priors-posts) pour la description.
+et histogrammes a posteriori comparatifs (barres)
+pour le hareng du Pacifique dans
+la région d’évaluation des stocks majeur de la côte centrale.
+Voir le tableau \@ref(tab:hg-parameter-est) et
+la figure \@ref(fig:hg-priors-posts) pour la description.
 
 ```{r cc-priors-posts, fig.cap=ifelse(french, "(ref:cc-priors-posts-cap-fr)", "(ref:cc-priors-posts-cap)")}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -29,11 +34,15 @@ make.priors.posts.plot(
 (ref:cc-traces-cap) Central Coast SAR:
 trace plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model.
-See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and
+Figure \@ref(fig:hg-traces) for description.
 
-(ref:cc-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés pour le hareng du Pacifique
+(ref:cc-traces-cap-fr) Tracés des résultats de simulation
+Monte Carlo par chaîne de Markov pour les paramètres estimés
+pour le hareng du Pacifique
 dans la région d’évaluation des stocks majeur de la côte centrale.
-Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et
+la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r cc-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:cc-traces-cap-fr)", "(ref:cc-traces-cap)")}
 make.traces.plot(
@@ -44,11 +53,15 @@ make.traces.plot(
 (ref:cc-autocor-cap) Central Coast SAR:
 autocorrelation plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model.
-See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and
+Figure \@ref(fig:hg-traces) for description.
 
-(ref:cc-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
-paramètres estimés pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de la côte centrale.
-Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
+(ref:cc-autocor-cap-fr) Diagrammes d’autocorrélation des résultats
+de simulation Monte Carlo par chaîne de Markov pour les
+paramètres estimés pour le hareng du Pacifique
+dans la région d’évaluation des stocks majeur de la côte centrale.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et
+la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r cc-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:cc-autocor-cap-fr)", "(ref:cc-autocor-cap)")}
 make.autocor.plot(
@@ -59,11 +72,15 @@ make.autocor.plot(
 (ref:cc-pairs-cap) Central Coast SAR:
 pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model.
-See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and
+Figure \@ref(fig:hg-traces) for description.
 
-(ref:cc-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
-les paramètres estimés pour le hareng du Pacifique dans la region d’évaluation des stocks majeur de la côte centrale.
-Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
+(ref:cc-pairs-cap-fr) Diagrammes par paires des résultats de
+simulation Monte Carlo par chaîne de Markov pour
+les paramètres estimés pour le hareng du Pacifique
+dans la region d’évaluation des stocks majeur de la côte centrale.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et
+la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r cc-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:cc-pairs-cap-fr)", "(ref:cc-pairs-cap)")}
 make.pairs.plot(
@@ -82,7 +99,8 @@ from `r new_surv_yr` to `r assess_yr` (base model) with retrospectives
 for the Pacific Herring statistical catch-age model.
 See Figure \@ref(fig:hg-biomass-retro) for description.
 
-(ref:cc-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice en milliers de tonnes (t; lignes)
+(ref:cc-biomass-retro-cap-fr) Densité a posteriori maximale
+de la biomasse reproductrice en milliers de tonnes (t; lignes)
 de `r new_surv_yr` à `r assess_yr` (modèle de base) avec des rétrospectives
 (-`r min(retro_yrs)` à -`r max(retro_yrs)` années)
 pour le hareng du Pacifique dans la
@@ -105,10 +123,12 @@ as well as the predicted Beverton-Holt stock-recruitment relationship (line)
 for the Pacific Herring statistical catch-age model.
 See Figure \@ref(fig:hg-sr) for description.
 
-(ref:cc-sr-cap-fr) La relation entre la biomasse reproductrice en milliers de tonnes (t) et
-le nombre de recrues d'âge `r age_first` en milliers de millions (points), ainsi que
-la relation stock-recrutement du modèle Beverton-Holt prévue (ligne)
-pour le hareng du Pacifique dans la region d’évaluation des stocks majeur de la côte centrale.
+(ref:cc-sr-cap-fr) La relation entre la biomasse reproductrice
+en milliers de tonnes (t) et
+le nombre de recrues d'âge `r age_first` en milliers de millions (points),
+ainsi que la relation stock-recrutement du modèle Beverton-Holt prévue (ligne)
+pour le hareng du Pacifique
+dans la region d’évaluation des stocks majeur de la côte centrale.
 Voir la figure \@ref(fig:hg-sr) pour la description.
 
 ```{r cc-sr, fig.asp=0.4, fig.cap=ifelse(french, "(ref:cc-sr-cap-fr)", "(ref:cc-sr-cap)")}

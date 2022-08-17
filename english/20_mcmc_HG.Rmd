@@ -1,6 +1,7 @@
 # Haida Gwaii diagnostics
 
-This section contains Markov chain Monte Carlo (MCMC) diagnostics for the Pacific Herring statistical catch-age model
+This section contains Markov chain Monte Carlo (MCMC) diagnostics
+for the Pacific Herring statistical catch-age model
 in the Haida Gwaii major stock assessment region.
 The MCMC run had chain length `r f(mcmc_length)`
 with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration (i.e., thinning).
@@ -17,10 +18,14 @@ Legend: ln is natural logarithm.
 See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables} for description.
 
 (ref:hg-priors-posts-cap-fr) Distributions de probabilité a priori (lignes)
-et histogrammes a posteriori comparatifs (barres) pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
-Les lignes rouges en pointillés sont des estimations de la densité a posteriori maximale.
+et histogrammes a posteriori comparatifs (barres)
+pour le hareng du Pacifique dans la région d’évaluation des stocks
+majeur de Haida Gwaii.
+Les lignes rouges en pointillés sont des estimations
+de la densité a posteriori maximale.
 Légende: ln est le logarithme naturel.
-Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables} pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}
+pour la description.
 
 ```{r hg-priors-posts, fig.cap=ifelse(french,"(ref:hg-priors-posts-cap-fr)","(ref:hg-priors-posts-cap)")}
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -44,16 +49,21 @@ Subscripts on $\hat{a}$ and $\hat{\gamma}$ represent gears as follows:
 2 represents the roe gillnet fishery, and
 3 represents the roe seine fishery.
 
-(ref:hg-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés pour le hareng du Pacifique
+(ref:hg-traces-cap-fr) Tracés des résultats de simulation
+Monte Carlo par chaîne de Markov pour les paramètres estimés
+pour le hareng du Pacifique
 dans la région d’évaluation des stocks majeur de Haida Gwaii.
-Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables} pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}
+pour la description.
 De plus, $\SB_0$ est la biomasse non exploitée estimée,
 $\SB_0$ est la biomasse reproductrice non exploitée estimée,
 $\SB$ est la biomasse reproductrice,
 $\hat{a}$ est sélectivité selon l’âge à 50%, et
 $\hat{\gamma}$ est écart-type de la sélectivité selon l’âge à 50%.
-Les souscriptions sur $\hat{a}$ et $\hat{\gamma}$ représentent des engins comme suit:
-1 représente la réduction, ainsi que les pêches pratiquées à des fins de subsistance, pour le marché des appâts et pour des usages spéciaux, 
+Les souscriptions sur $\hat{a}$ et $\hat{\gamma}$ représentent
+des engins comme suit:
+1 représente la réduction, ainsi que les pêches pratiquées à des fins
+de subsistance, pour le marché des appâts et pour des usages spéciaux, 
 2 représente la pêche au hareng rogué au filet maillant, et
 3 représente la pêche au hareng rogué à la senne.
 
@@ -66,11 +76,15 @@ make.traces.plot(
 (ref:hg-autocor-cap) Haida Gwaii SAR:
 autocorrelation plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model.
-See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and
+Figure \@ref(fig:hg-traces) for description.
 
-(ref:hg-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
-paramètres estimés pour le hareng du Pacifique dans la région d’évaluation des stocks majeur de Haida Gwaii.
-Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
+(ref:hg-autocor-cap-fr) Diagrammes d’autocorrélation des résultats
+de simulation Monte Carlo par chaîne de Markov pour les
+paramètres estimés pour le hareng du Pacifique
+dans la région d’évaluation des stocks majeur de Haida Gwaii.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et
+la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r hg-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-autocor-cap-fr)", "(ref:hg-autocor-cap)")}
 make.autocor.plot(
@@ -81,11 +95,15 @@ make.autocor.plot(
 (ref:hg-pairs-cap) Haida Gwaii SAR:
 pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model.
-See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and
+Figure \@ref(fig:hg-traces) for description.
 
-(ref:hg-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
-les paramètres estimés pour le hareng du Pacifique dans la region d’évaluation des stocks majeur de Haida Gwaii.
-Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
+(ref:hg-pairs-cap-fr) Diagrammes par paires des résultats
+de simulation Monte Carlo par chaîne de Markov pour
+les paramètres estimés pour le hareng du Pacifique
+dans la region d’évaluation des stocks majeur de Haida Gwaii.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et
+la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r hg-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:hg-pairs-cap-fr)", "(ref:hg-pairs-cap)")}
 make.pairs.plot(
@@ -105,7 +123,8 @@ for the Pacific Herring statistical catch-age model.
 Points indicate estimated unfished spawning biomass.
 Triangles indicate scaled abundance.
 
-(ref:hg-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice en milliers de tonnes (t; lignes)
+(ref:hg-biomass-retro-cap-fr) Densité a posteriori maximale
+de la biomasse reproductrice en milliers de tonnes (t; lignes)
 de `r new_surv_yr` à `r assess_yr` (modèle de base) avec des rétrospectives
 (-`r min(retro_yrs)` à -`r max(retro_yrs)` années)
 pour le hareng du Pacifique dans la
@@ -127,17 +146,23 @@ relationship between spawning biomass in thousands of tonnes (t) and
 the number of age-`r age_first` recruits in thousands of millions (points),
 as well as the predicted Beverton-Holt stock-recruitment relationship (line)
 for the Pacific Herring statistical catch-age model.
-The star indicates unfished spawning biomass and unfished age-`r age_first` recruitment.
+The star indicates unfished spawning biomass and
+unfished age-`r age_first` recruitment.
 Shading becomes darker in chronological order;
 the triangle indicates `r assess_yr`.
 Note: values are median posterior estimates.
 
-(ref:hg-sr-cap-fr) La relation entre la biomasse reproductrice en milliers de tonnes (t) et
-le nombre de recrues d'âge `r age_first` en milliers de millions (points), ainsi que
-la relation stock-recrutement du modèle Beverton-Holt prévue (ligne)
-pour le hareng du Pacifique dans la région d'évaluation des stocks majeur de Haida Gwaii.
-L'étoile indique la biomasse du stock reproducteur non exploitée et le recrutement de l’âge `r age_first` dans le stock non exploité.
-L’ombrage est de plus en plus foncé à mesure que l’on avance dans la série chronologique;
+(ref:hg-sr-cap-fr) La relation entre la biomasse reproductrice
+en milliers de tonnes (t) et
+le nombre de recrues d'âge `r age_first` en milliers de millions (points),
+ainsi que la relation stock-recrutement
+du modèle Beverton-Holt prévue (ligne)
+pour le hareng du Pacifique
+dans la région d'évaluation des stocks majeur de Haida Gwaii.
+L'étoile indique la biomasse du stock reproducteur non exploitée et
+le recrutement de l’âge `r age_first` dans le stock non exploité.
+L’ombrage est de plus en plus foncé à mesure que l’on avance
+dans la série chronologique;
 le triangle indique `r assess_yr`.
 Remarque: les valeurs sont des estimations médianes postérieures.
 

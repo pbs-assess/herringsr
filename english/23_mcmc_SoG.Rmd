@@ -1,6 +1,7 @@
 # Strait of Georgia diagnostics
 
-This section contains Markov chain Monte Carlo (MCMC) diagnostics for the Pacific Herring statistical catch-age model
+This section contains Markov chain Monte Carlo (MCMC) diagnostics
+for the Pacific Herring statistical catch-age model
 in the Strait of Georgia major stock assessment region.
 The MCMC run had chain length `r f(mcmc_length)`
 with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration (i.e., thinning).
@@ -12,11 +13,15 @@ This section will not be included in the final document.
 prior probability distributions (lines) with
 comparative posterior histograms (bars)
 for the Pacific Herring statistical catch-age model.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-priors-posts) for description.
+See Table \@ref(tab:hg-parameter-est) and
+Figure \@ref(fig:hg-priors-posts) for description.
 
 (ref:sog-priors-posts-cap-fr) Distributions de probabilité a priori (lignes)
-et histogrammes a posteriori comparatifs (barres) pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-priors-posts) pour la description.
+et histogrammes a posteriori comparatifs (barres)
+pour le hareng du Pacifique
+dans la région d’évaluation des stocks majeur du détroit de Georgie.
+Voir le tableau \@ref(tab:hg-parameter-est) et
+la figure \@ref(fig:hg-priors-posts) pour la description.
 
 ```{r sog-priors-posts, fig.cap=ifelse(french, "(ref:sog-priors-posts-cap-fr)", "(ref:sog-priors-posts-cap)")}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
@@ -29,11 +34,15 @@ make.priors.posts.plot(
 (ref:sog-traces-cap) Strait of Georgia SAR:
 trace plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model.
-See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and
+Figure \@ref(fig:hg-traces) for description.
 
-(ref:sog-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés pour le hareng du Pacifique
+(ref:sog-traces-cap-fr) Tracés des résultats de simulation
+Monte Carlo par chaîne de Markov pour les paramètres estimés
+pour le hareng du Pacifique
 dans la région d’évaluation des stocks majeur du détroit de Georgie.
-Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et
+la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r sog-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-traces-cap-fr)", "(ref:sog-traces-cap)")}
 make.traces.plot(
@@ -44,11 +53,15 @@ make.traces.plot(
 (ref:sog-autocor-cap) Strait of Georgia SAR:
 autocorrelation plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model.
-See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and
+Figure \@ref(fig:hg-traces) for description.
 
-(ref:sog-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
-paramètres estimés pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
-Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
+(ref:sog-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de
+simulation Monte Carlo par chaîne de Markov pour les
+paramètres estimés pour le hareng du Pacifique
+dans la région d’évaluation des stocks majeur du détroit de Georgie.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et
+la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r sog-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-autocor-cap-fr)", "(ref:sog-autocor-cap)")}
 make.autocor.plot(
@@ -59,11 +72,15 @@ make.autocor.plot(
 (ref:sog-pairs-cap) Strait of Georgia SAR:
 pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model.
-See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and
+Figure \@ref(fig:hg-traces) for description.
 
-(ref:sog-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
-les paramètres estimés pour le hareng du Pacifique dans la region d’évaluation des stocks majeur du détroit de Georgie.
-Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
+(ref:sog-pairs-cap-fr) Diagrammes par paires des résultats de
+simulation Monte Carlo par chaîne de Markov pour
+les paramètres estimés pour le hareng du Pacifique
+dans la region d’évaluation des stocks majeur du détroit de Georgie.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et
+la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r sog-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-pairs-cap-fr)", "(ref:sog-pairs-cap)")}
 make.pairs.plot(
@@ -82,7 +99,8 @@ from `r new_surv_yr` to `r assess_yr` (base model) with retrospectives
 for the Pacific Herring statistical catch-age model.
 See Figure \@ref(fig:hg-biomass-retro) for description.
 
-(ref:sog-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice en milliers de tonnes (t; lignes)
+(ref:sog-biomass-retro-cap-fr) Densité a posteriori maximale
+de la biomasse reproductrice en milliers de tonnes (t; lignes)
 de `r new_surv_yr` à `r assess_yr` (modèle de base) avec des rétrospectives
 (-`r min(retro_yrs)` à -`r max(retro_yrs)` années)
 pour le hareng du Pacifique dans la
@@ -105,10 +123,12 @@ as well as the predicted Beverton-Holt stock-recruitment relationship (line)
 for the Pacific Herring statistical catch-age model.
 See Figure \@ref(fig:hg-sr) for description.
 
-(ref:sog-sr-cap-fr) La relation entre la biomasse reproductrice en milliers de tonnes (t) et
-le nombre de recrues d'âge `r age_first` en milliers de millions (points), ainsi que
-la relation stock-recrutement du modèle Beverton-Holt prévue (ligne)
-pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
+(ref:sog-sr-cap-fr) La relation entre la biomasse reproductrice
+en milliers de tonnes (t) et
+le nombre de recrues d'âge `r age_first` en milliers de millions (points),
+ainsi que la relation stock-recrutement du modèle Beverton-Holt prévue (ligne)
+pour le hareng du Pacifique
+dans la région d’évaluation des stocks majeur du détroit de Georgie.
 Voir la figure \@ref(fig:hg-sr) pour la description.
 
 ```{r sog-sr, fig.asp=0.4, fig.cap=ifelse(french, "(ref:sog-sr-cap-fr)", "(ref:sog-sr-cap)")}
