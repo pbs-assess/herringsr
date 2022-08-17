@@ -80,7 +80,6 @@ derived from the latest OM updates
 USR options from [DFO 2022 REF] are included to
 support selection of stock-specific USRs
 for implementation through the 2022/23 IFMP.
-
 Management measures to support long-term recovery of HG herring,
 including rebuilding objectives and USR,
 are documented in the draft HG Herring Rebuilding Plan [REF]
