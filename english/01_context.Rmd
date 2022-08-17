@@ -40,7 +40,7 @@ and similar updates were made for the PRD and CC SARs in 2021.
 This assessment incorporates new science advice on
 choice of upper stock reference (USR) points
 for four Pacific Herring major SARs (PRD, CC, SoG, and WCVI).
-An analysis of options was completed in 2022 [REF] and
+An analysis of options was completed in 2022 [@dfo2022] and
 implementation of USRs will be in the 
 2022/23 Integrated Fisheries Management Plan (IFMP).
 To support on-going consultations,
@@ -49,7 +49,7 @@ five USR options are presented for PRD, CC, SoG and WCVI
 For these four stocks
 we also update OM conditioning to include
 stock and fishery data from 1951 to 2021.
-These updates also appear in [DFO USR-SR REF].
+These updates also appear in @dfo2022.
 MP evaluations presented in the harvest option tables 
 reflect the latest OM updates.
 
@@ -78,12 +78,12 @@ are being developed through the rebuilding plan process.
 MP recommendations for PRD, CC, SoG, and WCVI,
 derived from the latest OM updates 
 (historic stock and fishery data from 1951-2021).
-USR options from [DFO 2022 REF] are included to
+USR options from @dfo2022 are included to
 support selection of stock-specific USRs
 for implementation through the 2022/23 IFMP.
 Management measures to support long-term recovery of HG herring,
 including rebuilding objectives and USR,
-are documented in the draft HG Herring Rebuilding Plan [REF]
+are documented in the draft HG Herring Rebuilding Plan [REF?]
 (draft consultation period: fall 2022).
 
 Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested

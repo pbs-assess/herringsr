@@ -467,11 +467,8 @@ Pacific Herring SARs at $0.3\SB_0$ [@kronlund2017].
 Candidate upper stock reference (USR) points were introduced in @cleary2018 and
 implemented as biomass objectives in the simulation analyses for WCVI and SoG
 in 2018 [@dfo2019a] and then for HG, PRD, and CC in 2019 [@dfo2019c].
-An analysis of USR options was undertaken beginning in 2022, with
-results presented in a Science Response (in press).^[CSAS Science Response:
-August 30, 2022 Management strategy evaluation update and
-evaluation of upper stock reference point options
-for Pacific Herring (*Clupea pallasii*) in British Columbia, Canada.]
+An analysis of USR options was undertaken in 2022 with
+results presented in a Science Response [@df02022].
 
 Five USR options were evaluated:
 <!-- TODO- ensure order here matches the table columns-->
