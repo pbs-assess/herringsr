@@ -287,7 +287,53 @@ The following descriptions were provided by First Nations contributors.
 
 ### Haida Gwaii
 
-<!-- TODO: Add FN observations from Victor. -->
+The Selwyn Inlet stock has been showing a declining trend
+for at least the past 10 years.
+In 2021 the spawn occurred very late in the season (late April),
+was located in outer Selwyn near Rockfish Harbour, and
+was very light in deposition.
+The spawn in 2022 was considered to be more consistent
+in timing (mid April) and location (inside Selwyn near Traynor Bay), and
+deposition was better than in 2021, but
+the herring spawn was still very minimal for Selwyn Inlet standards. 
+
+This year in the Skincuttle and Upper Burnaby area,
+most spawning occurred on the Skincuttle side and
+on the east side of Burnaby Island out near Scudder Point.
+This stock is just barely maintaining itself.
+Abundance is low enough that natural recruitment
+just barely makes up for natural mortality,
+so we see some years of slight recovery followed by other years of decline,
+but no real growth even in the absence of a fishery for almost 20 years.
+Spawns in 2022 were found to be mostly light to medium in deposition. 
+
+The Juan Perez Sound inlets normally supports spawns
+when there are a lot of recruits in the population
+and first time spawners can out number older repeat spawners.
+That has not been the case now for some time.
+Lately spawns have been small and infrequent
+in the inlets of Juan Perez Sound, as was the case in 2022.
+
+There has not been a significant presence of herring
+in outer Louscoone for a number of years.
+In years of abundance, the local stock
+was always found to be well up inside the inlet and
+often presented a very light spawn near the head
+early in the season (early to mid March).
+This stock seldom exceeded 500 tons,
+however in recent years it has been much less.
+Other stocks, found in the outer portions of Louscoone Inlet,
+are thought to be more migratory and rarely spawn in Louscoone. 
+
+There was some effort for the traditional harvest of k’aaw
+in both Skincuttle Inlet and Selwyn Inlet in early to mid April.
+There were a few open kelp lines set up in Skincuttle Inlet
+from which only about 1,000 lb of marginal to good quality k’aaw was harvested.
+There were open kelp lines set up in the cove
+just south of Traynor Bay, Selwyn Inlet,
+but were reported to be unsuccessful due to disturbances by whales in the area.
+There were no other known attempts to harvest k’aaw
+on Haida Gwaii during the 2022 herring season.
 
 ### Prince Rupert District
 
@@ -422,7 +468,10 @@ Candidate upper stock reference (USR) points were introduced in @cleary2018 and
 implemented as biomass objectives in the simulation analyses for WCVI and SoG
 in 2018 [@dfo2019a] and then for HG, PRD, and CC in 2019 [@dfo2019c].
 An analysis of USR options was undertaken beginning in 2022, with
-results presented in a Science Response (in press).^[CSAS Science Response: August 30, 2022 Management strategy evaluation update and evaluation of upper stock reference point options for Pacific Herring (*Clupea pallasii*) in British Columbia, Canada.]
+results presented in a Science Response (in press).^[CSAS Science Response:
+August 30, 2022 Management strategy evaluation update and
+evaluation of upper stock reference point options
+for Pacific Herring (*Clupea pallasii*) in British Columbia, Canada.]
 
 Five USR options were evaluated:
 <!-- TODO- ensure order here matches the table columns-->
