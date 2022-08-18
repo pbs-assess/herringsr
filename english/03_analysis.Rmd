@@ -537,7 +537,7 @@ with many of these years also showing low productivity
 which has precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
 There is an increase in survey biomass in 2019 and 2020, and
 above-average recruitment of age-2s in 2018, and
-below-average recruitment in 2019 and 2020.
+below-average recruitment in 2019, 2020 and 2022.
 In the most recent two years, between 2019 and 2020 and 2020 and 2021,
 production is estimated to be neither positive nor negative
 (i.e., production is 0),
