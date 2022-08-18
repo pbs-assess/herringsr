@@ -468,7 +468,7 @@ Candidate upper stock reference (USR) points were introduced in @cleary2018 and
 implemented as biomass objectives in the simulation analyses for WCVI and SoG
 in 2018 [@dfo2019a] and then for HG, PRD, and CC in 2019 [@dfo2019c].
 An analysis of USR options was undertaken in 2022 with
-results presented in a Science Response [@dfo2022].
+results presented in @dfo2022.
 
 Five USR options were evaluated:
 <!-- TODO- ensure order here matches the table columns-->
