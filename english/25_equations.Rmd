@@ -702,7 +702,7 @@ $\bar{R}$ & & Average age-$\acute{a}$ recruitment from year $\acute{t}$ to $T$\\
 $\bar{R}_\mli{init}$ & & Average age-$\acute{a}$ recruitment in year $\acute{t}-1$\\
 $M_s$ & & Instantaneous natural mortality rate\\
 $\hat{a}_k$ & & Selectivity parameter for gear $k$\\
-$\hat{\gamma}_k$ & & Selectivity parameter for gear $k$\\
+$\hat{\gamma}_k$ & & Standard deviation in selectivity parameter for gear $k$\\
 $\Gamma_{k,t}$ & & Logarithm of the instantaneous fishing mortality for gear $k$ in year $t$\\
 $\omega_t$ & & Age-$\acute{a}$ deviates from $\bar{R}$ for years $\acute{t}$ to $T$\\
 $\omega_{\mli{init},t}$ & & Age-$\acute{a}$ deviates from $\bar{R}_\mli{init}$ in year $\acute{t}$\\
