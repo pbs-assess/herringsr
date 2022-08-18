@@ -1,8 +1,5 @@
 # Context
 
-<!-- TODO: (JC) Add citation for Benson et al. (2022) -->
-New herring work [@benson2022].
-
 Pacific Herring (*Clupea pallasii*) abundance in British Columbia (BC) is
 assessed using a statistical catch-age (SCA) model [@martell2011].
 In 2017, the Pacific Herring stock assessment included
@@ -36,6 +33,9 @@ Haida Gwaii (HG), Prince Rupert District (PRD), and Central Coast (CC)
 SARs [@dfo2019c].
 Updates were made to the MSE simulations for the SoG and WCVI SARs in 2020,
 and similar updates were made for the PRD and CC SARs in 2021.
+
+<!-- TODO: (JC) Include Benson et al. (2022) -->
+Refer to new herring work [@benson2022].
 
 This assessment incorporates new science advice on
 choice of upper stock reference (USR) points
