@@ -639,9 +639,9 @@ The majority of Area 07 spawn in 2021 appears concentrated in
 Thompson/Stryker (Section 074).
 Occurrence of spawn in Thompson/Stryker in 2020-2022.
 represents the first significant spawns for this section in many years.
-The decline in spawn observations in 2020 and 2021 in Spiller Channel
+The 2020-2022 decline in spawn observations in Spiller Channel
 (Sections 072 and 078) brings 
-the spawn biomass in those Sections down to the low levels observed around 2010
+the -spawn biomass in those Sections down to the low levels observed around 2010
 (Figure \@ref(fig:storyboard-cc)d).
 The mechanisms driving fluctuations of spawn throughout the Central Coast
 are not well understood.
