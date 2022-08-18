@@ -44,6 +44,8 @@ header-includes:
   - \usepackage{needspace} \usepackage{afterpage}
 ---
 
+\sloppy
+
 ```{r setup, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}
 library(knitr)
 
