@@ -1,5 +1,5 @@
 \afterpage{\clearpage}
-\needspace{0.35\textheight}
+\needspace{0.5\textheight}
 
 # `r en2fr("Tables", translate=french)`
 
