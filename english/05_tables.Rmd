@@ -3,17 +3,22 @@
 
 # `r en2fr("Tables", translate=french)`
 
-(ref:data-input-cap) Input data for the `r assess_yr` Pacific Herring statistical catch-age model for the major SARs.
+(ref:data-input-cap) Input data for the `r assess_yr` Pacific Herring
+statistical catch-age model for the major SARs.
 The spawn index has two distinct periods defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
 Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 
-(ref:data-input-cap-fr) Données d'entrée pour le modèle statistique `r assess_yr` de capture et d'âge du hareng du Pacifique pour les RES majeurs.
-L’indice du frai comporte deux périodes distinctes définies par la méthode de relevé dominante:
+(ref:data-input-cap-fr) Données d'entrée pour
+le modèle statistique `r assess_yr` de capture et d'âge du
+hareng du Pacifique pour les RES majeurs.
+L’indice du frai comporte deux périodes distinctes définies
+par la méthode de relevé dominante:
 relevés en surface (de `r major_start_yr` à `r new_surv_yr - 1`), et
 relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
-L’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
+L’indice du frai n’est pas mis à l’échelle
+à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
 
 ```{r data-input}
 input_data_table(
@@ -32,9 +37,12 @@ in the major stock assessment regions (SARs).
 Legend: `r commify(major_regions_full_parens)`.
 Note: 'WP' indicates that data are withheld due to privacy concerns.
 
-(ref:annual-catch-cap-fr) Total des prises débarquées en tonnes de hareng du Pacifique de `r major_end_yr - num_yrs_tab` à `r major_end_yr` dans les regions d’évaluation des stocks (RESs) majeurs.
+(ref:annual-catch-cap-fr) Total des prises débarquées en tonnes de hareng du
+Pacifique de `r major_end_yr - num_yrs_tab` à `r major_end_yr`
+dans les regions d’évaluation des stocks (RESs) majeurs.
 Légende: `r commify(major_regions_full_parens, and_word = "et")`.
-Remarque: «DT» indique que les données ne sont pas divulguées pour des raisons de confidentialité.
+Remarque: «DT» indique que les données ne sont pas divulguées
+pour des raisons de confidentialité.
 
 \needspace{0.35\textheight}
 
@@ -56,7 +64,9 @@ from `r major_end_yr - num_yrs_tab` to `r major_end_yr`
 in the major stock assessment regions (SARs).
 See Table \@ref(tab:annual-catch) for description.
 
-(ref:annual-sok-catch-cap-fr) Récolte totale d’oeufs sur varech en livres de hareng du Pacifique de `r major_end_yr - num_yrs_tab` à `r major_end_yr` dans les regions d’évaluation des stocks (RES) majeurs.
+(ref:annual-sok-catch-cap-fr) Récolte totale d’oeufs sur varech en livres de
+hareng du Pacifique de `r major_end_yr - num_yrs_tab` à `r major_end_yr`
+dans les regions d’évaluation des stocks (RES) majeurs.
 Voir le tableau \@ref(tab:annual-catch) pour la description.
 
 \needspace{0.35\textheight}
@@ -92,7 +102,8 @@ de `r major_end_yr - num_yrs_tab` à `r major_end_yr`.
 Légende: «Cumshewa/Selwyn» est les section 023 et 024;
 «Juan Perez/Skincuttle» est les sections 021 et 025; et
 «Louscoone» est la section 006.
-Remarque: l’indice du frai n’est pas mis à l’échelle à l’aide du paramètre de mise à l’échelle du relevé du frai $q$, et
+Remarque: l’indice du frai n’est pas mis à l’échelle
+à l’aide du paramètre de mise à l’échelle du relevé du frai $q$, et
 «NA» indique que les données ne sont pas disponibles.
 
 \needspace{0.35\textheight}
@@ -178,7 +189,8 @@ See Table \@ref(tab:spawn-index-hg) for description.
 indice du frai en tonnes et proportion de l’indice du frai
 par groupe pour le hareng du Pacifique
 de `r major_end_yr - num_yrs_tab` à `r major_end_yr`.
-Légende: «14&17» fait référence aux zones statistiques 14 et 17 (à l’exclusion de la section 173);
+Légende: «14&17» fait référence aux zones statistiques 14 et 17
+(à l’exclusion de la section 173);
 «EDG» fait référence à l’est du détroit de Géorgie;
 «Lazo» fait référence au-dessus du cap Lazo; et
 «SDodd» fait référence au sud du passage Dodd.
@@ -234,11 +246,14 @@ percentile) and maximum posterior density (MPD) estimates.
 Legend: $R_0$ is unfished age-`r age_first` recruitment;
 $h$ is steepness of the stock-recruitment relationship;
 $M$ is instantaneous natural mortality rate;
-$\overline{R}$ is average age-`r age_first` recruitment from `r major_start_yr` to `r major_end_yr`;
-$\overline{R}_\mli{init}$ is average age-`r age_first` recruitment in `r major_start_yr-1`;
+$\overline{R}$ is average age-`r age_first` recruitment
+from `r major_start_yr` to `r major_end_yr`;
+$\overline{R}_\mli{init}$ is average age-`r age_first` recruitment
+in `r major_start_yr-1`;
 $\rho$ is the fraction of total variance associated with observation error;
 $\vartheta$ is the precision of total error;
-$q$ is catchability for surface (`r major_start_yr` to `r new_surv_yr-1`; $q_1$) and
+$q$ is catchability for
+surface (`r major_start_yr` to `r new_surv_yr-1`; $q_1$) and
 dive (`r new_surv_yr` to `r major_end_yr`; $q_2$) survey periods;
 $\tau$ is the standard deviation of process error (i.e., recruitment); and
 $\sigma$ is the standard deviation of observation error (i.e., survey index).
@@ -247,16 +262,21 @@ Note: $\tau$ and $\sigma$ are calculated values.
 (ref:hg-parameter-est-cap-fr) RES de Haida Gwaii:
 paramètres clés du modèle statistique de capture-âge du hareng du Pacifique.
 Les paramètres sont résumés par le postérieur
-(`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile) et
+(`r confidence_vals[1]*100`^e^, 50^e^, et
+`r confidence_vals[2]*100`^e^ centile) et
 densité a posteriori maximale (DPM).
 Légende: $R_0$ est recrutement non pêché de l'âge `r age_first`;
 $h$ est l'inclinaison de la relation stock-recrutement;
 $M$ est le taux de mortalité naturelle instantanée;
-$\overline{R}$  est le recrutement moyen de l'âge `r age_first` de `r major_start_yr` à `r major_end_yr`;
-$\overline{R}_\mli{init}$ est le recrutement moyen de l'âge `r age_first` en `r major_start_yr-1`;
+$\overline{R}$  est le recrutement moyen de l'âge `r age_first` de
+`r major_start_yr` à `r major_end_yr`;
+$\overline{R}_\mli{init}$ est le recrutement moyen de l'âge `r age_first` en
+`r major_start_yr-1`;
 $\rho$ est la fraction de la variance totale associée à l'erreur d'observation;
 $\vartheta$ est la précision de l'erreur totale;
-$q$ est la capturabilité pour les périodes de relevé en surface (de `r major_start_yr` à `r new_surv_yr-1`; $q_1$) et en plongée (de `r new_surv_yr` à `r major_end_yr`; $q_2$);
+$q$ est la capturabilité pour les périodes de relevé
+en surface (de `r major_start_yr` à `r new_surv_yr-1`; $q_1$) et
+en plongée (de `r new_surv_yr` à `r major_end_yr`; $q_2$);
 $\tau$ est l'écart-type de l'erreur de processus (c.-à-d. le recrutement); and
 $\sigma$ est l'écart-type de l'erreur d'observation (c.-à-d. l'indice du frai).
 Remarque: $\tau$ et $\sigma$ sont des valeurs calculées.
@@ -408,7 +428,8 @@ make.value.table(
 \afterpage{\clearpage}
 
 (ref:prd-recruitment-cap) Prince Rupert District SAR:
-age-`r age_first` recruitment from `r major_end_yr - num_yrs_tab` to `r major_end_yr` 
+age-`r age_first` recruitment
+from `r major_end_yr - num_yrs_tab` to `r major_end_yr` 
 for the Pacific Herring statistical catch-age model.
 See Table \@ref(tab:hg-recruitment) for description.
 
@@ -437,7 +458,8 @@ make.value.table(
 \afterpage{\clearpage}
 
 (ref:cc-recruitment-cap) Central Coast SAR:
-age-`r age_first` recruitment from `r major_end_yr - num_yrs_tab` to `r major_end_yr` 
+age-`r age_first` recruitment
+from `r major_end_yr - num_yrs_tab` to `r major_end_yr` 
 for the Pacific Herring statistical catch-age model.
 See Table \@ref(tab:hg-recruitment) for description.
 
@@ -466,7 +488,8 @@ make.value.table(
 \afterpage{\clearpage}
 
 (ref:sog-recruitment-cap) Strait of Georgia SAR:
-age-`r age_first` recruitment from `r major_end_yr - num_yrs_tab` to `r major_end_yr` 
+age-`r age_first` recruitment
+from `r major_end_yr - num_yrs_tab` to `r major_end_yr` 
 for the Pacific Herring statistical catch-age model.
 See Table \@ref(tab:hg-recruitment) for description.
 
@@ -495,7 +518,8 @@ make.value.table(
 \afterpage{\clearpage}
 
 (ref:wcvi-recruitment-cap) West Coast of Vancouver Island SAR:
-age-`r age_first` recruitment from `r major_end_yr - num_yrs_tab` to `r major_end_yr` 
+age-`r age_first` recruitment
+from `r major_end_yr - num_yrs_tab` to `r major_end_yr` 
 for the Pacific Herring statistical catch-age model.
 See Table \@ref(tab:hg-recruitment) for description.
 
@@ -529,7 +553,8 @@ spawning biomass and depletion from
 Pacific Herring statistical catch-age model.
 Spawning biomass and depletion are summarised by the posterior
 (`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ 
-percentile) and maximum posterior density (MPD) estimates in thousands of tonnes.
+percentile) and maximum posterior density (MPD) estimates
+in thousands of tonnes.
 Note: depletion is relative spawning biomass $\SB_t/\SB_0$, where
 $\SB_t$ is spawning biomass in year $t$, and
 $\SB_0$ is estimated unfished spawning biomass.
@@ -704,7 +729,8 @@ fish ages `r age_plus` and older.
 
 (ref:ref-points-hg-cap-fr) RES de Haida Gwaii:
 Les points de référence sont résumés par des estimations postérieures
-(`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^ centile).
+(`r confidence_vals[1]*100`^e^, 50^e^,
+et `r confidence_vals[2]*100`^e^ centile).
 Tous les chiffres relatifs à la biomasse sont exprimés en milliers de tonnes.
 Légende: $\SB_0$ est la biomasse reproductrice estimée non pêchée;
 $\SB_{t}$ est la biomasse reproductrice de l'année $t$; et
@@ -846,9 +872,12 @@ Performance metrics are given for three operating model (OM) scenarios:
 density-dependent natural mortality (DDM),
 density-independent natural mortality (DIM), and
 constant natural mortality (conM).
-Performance criteria are calculated over three Pacific Herring generations (i.e., 15 years) from the start of the projection period for all objectives (Obj).
+Performance criteria are calculated over three Pacific Herring generations
+(i.e., 15 years) from the start of the projection period
+for all objectives (Obj).
 MPs are ordered within each scenario by performance of achieving Objective 1.
-The recommended total allowable catch (TAC) in thousands of tonnes (t) and associated harvest rate (HR) are reported for each MP.
+The recommended total allowable catch (TAC) in thousands of tonnes (t) and
+associated harvest rate (HR) are reported for each MP.
 Legend: limit reference point (LRP);
 $P$ is probability;
 maximum (max);
@@ -858,7 +887,8 @@ average annual variability (AAV); and
 $\overline{C}$ is average catch.
 MPs are defined in @dfo2019a and @dfo2019c.
 Performance criteria $\SB_t >= 0.4\SB_0$ is proposed by
-the Herring Industry Advisory Board (HIAB) as a biomass target at $P >= 50$% level.
+the Herring Industry Advisory Board (HIAB)
+as a biomass target at $P >= 50$% level.
 Note: dashes indicate that TAC and HR do not apply, either
 because the MP specifies no fishing at current projected biomass level, or
 because the MP fails to meet Objective 1.
@@ -960,16 +990,23 @@ Voir le tableau \@ref(tab:decision-prd) pour la description.
 management procedure (MP) performance for the Pacific Herring
 statistical catch-age model.
 See Table \@ref(tab:decision-prd) for description.
-In addition, $\SB_\text{AVE}$ is average spawning biomass from 1990 to 1999, calculated over two Pacific Herring generations.
-Performance criteria $\SB_t >=0.65 \SB_0$, $\SB_t >=0.75 \SB_0$, and $\SB_t >= \SB_\text{AVE}$ are proposed by
-the Nuu-chah-nulth Nations (NCN) as biomass targets at $P >= 50$% and $P >= 75$% levels.
+In addition, $\SB_\text{AVE}$ is average spawning biomass from 1990 to 1999,
+calculated over two Pacific Herring generations.
+Performance criteria $\SB_t >=0.65 \SB_0$, $\SB_t >=0.75 \SB_0$, and
+$\SB_t >= \SB_\text{AVE}$ are proposed by
+the Nuu-chah-nulth Nations (NCN) as biomass targets
+at $P >= 50$% and $P >= 75$% levels.
 
 (ref:decision-wcvi-cap-fr) RES de la côte ouest de l’île de Vancouver:
-rendement de la procédure de gestion pour le modèle statistique de prises-âges du hareng du Pacifique.
+rendement de la procédure de gestion pour le modèle statistique
+de prises-âges du hareng du Pacifique.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
-En outre, $\SB_\text{MOY}$ correspond à la biomasse reproductrice moyenne de 1990 à 1999, calculée sur deux générations de hareng du Pacifique.
-Les critères de performance $\SB_t >=0,65 \SB_0$, $\SB_t >=0,75 \SB_0$, et $\SB_t >= \SB_\text{AVE}$ sont proposés par
-les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse au niveaux $P >= 50$ % et $P >= 75$ %.
+En outre, $\SB_\text{MOY}$ correspond à la biomasse reproductrice moyenne
+de 1990 à 1999, calculée sur deux générations de hareng du Pacifique.
+Les critères de performance $\SB_t >=0,65 \SB_0$, $\SB_t >=0,75 \SB_0$, et
+$\SB_t >= \SB_\text{AVE}$ sont proposés par
+les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse
+au niveaux $P >= 50$ % et $P >= 75$ %.
 
 \begin{landscapepage}
 

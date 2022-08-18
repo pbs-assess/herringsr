@@ -305,7 +305,8 @@ plot_f_hg <- plot_biomass_phase(
 Spawn index is scaled to abundance by the spawn index scaling parameter $q$.
 \textbf{Panel (b)}: Instantaneous natural mortality rate ($\text{year}^{-1}$).
 \textbf{Panel (c)}: Reconstructed number of age-`r age_first` recruits
-in thousands of millions from `r major_start_yr + age_first` to `r major_end_yr`. 
+in thousands of millions from
+`r major_start_yr + age_first` to `r major_end_yr`. 
 Horizontal line indicates unfished age-`r age_first` recruitment $R_0$.
 \textbf{Panel (d)}: Spawning biomass (line), and 
 forecast spawning biomass in `r assess_yr + 1` in the absence of fishing (point).
@@ -326,14 +327,17 @@ where $SB_0$ is the estimated unfished spawning biomass.}
 \newcommand{\storyboardfr}{
 \textbf{Panneau (a)}: Ajustement du modèle (lignes) à l'abondance à l'échelle
 (points; figure \ref{fig:major-spawn-index}).
-L'indice de frai est mis à l'échelle de l'abondance par le paramètre d'échelle de l'indice de frai $q$.
-\textbf{Panneau (b)}: Taux de mortalité naturelle instantanée ( $\text{année}^{-1}$).
+L'indice de frai est mis à l'échelle de l'abondance
+par le paramètre d'échelle de l'indice de frai $q$.
+\textbf{Panneau (b)}: Taux de mortalité naturelle instantanée 
+($\text{année}^{-1}$).
 \textbf{Panneau (c)}: Reconstitution du nombre de recrues d'âge `r age_first`.
 en milliers de millions, de `r major_start_yr + age_first` à `r major_end_yr`. 
 La ligne horizontale indique le recrutement non pêché $R_0$.
 \textbf{Panneau (d)}: Biomasse féconde (ligne), et 
 biomasse féconde prévue en `r assess_yr + 1` en l'absence de pêche (point).
-Les barres verticales colorées indiquent les prises commerciales (figure \ref{fig:major-catch}).
+Les barres verticales colorées indiquent les prises commerciales
+(figure \ref{fig:major-catch}).
 \textbf{Panneau (e)}: Écarts logarithmiques du recrutement par rapport à
 `r major_start_yr + age_first` à `r major_end_yr`.
 \textbf{Panneau (f)}: Diagramme de phase de la production de biomasse de frai
@@ -341,8 +345,10 @@ pour la période de relevé de plongée (`r new_surv_yr` à `r assess_yr - 1`).
 Les points sont chronologiquement ombragés du clair au foncé;
 Le triangle indique `r assess_yr - 1`.
 Légende: la biomasse et les captures sont exprimées en milliers de tonnes (t),
-les points et les lignes de la série chronologique sont des estimations médianes postérieures,
-les bandes et les barres d'erreur sont les intervalles crédibles `r ci_level * 100` \%, 
+les points et les lignes de la série chronologique sont
+des estimations médianes postérieures,
+les bandes et les barres d'erreur sont
+les intervalles crédibles `r ci_level * 100` \%, 
 les lignes horizontales en pointillés indiquent zéro, et
 lignes rouges indiquent le point de référence de la limite médiane $0.3\SB_0$,
 où $\SB_0$ est la biomasse reproductrice non pêchée estimée.}
