@@ -517,36 +517,34 @@ Figure \@ref(fig:biomass-total-biomass).
 
 ### Haida Gwaii
 
-Estimated spawning biomass declined to near historic lows in the mid-1990s and
-briefly increased through the late 1990s before falling to
-persistent historic lows from 2000 to 2010 (Figure \@ref(fig:storyboard-hg)d).
-A modest increase in estimated spawning biomass occurred during the early 2010s
-before falling once again to near historic lows from 2016 to 2018.
-The modest increase can be attributed to increases in the spawn index in
-2013 and 2015 (Figure \@ref(fig:storyboard-hg)a) that were supported by
-above average recruitment of age-`r age_first` fish in 2012
-(Figure \@ref(fig:storyboard-hg)c, d).
-An increasing trend in the estimated natural mortality rate since 1980
+Estimated spawning biomass historic lows occured in the late 1960s predicated by
+estimated low recruitment and high estimated natural mortality (Figure \@ref(fig:storyboard-hg)a 
+\@ref(fig:storyboard-hg)b, & \@ref(fig:storyboard-hg)e). Under variable 
+estimated recruitment, estimated spawning biomass recovered
+ from that point through the early 1980s supported by 
+ dropping estimated natural mortality. Estimated natural mortality started raising at that point
+ leading to near historic lows in estimated biomass in the mid-1990s. A reprieve 
+ in the estimated low biomass was spurred by through the late 1990s by above average
+ estimated recruitment
+ before falling to persistent historic lows in estimated biomass from 2000 to 2010 (Figure \@ref(fig:storyboard-hg)d).
+Above average estimated recruitment of age-`r age_first` fish in 2012 supported 
+modest increases in the spawn index in 2013 and 2015 before falling once again to 
+near historic lows from 2016 to 2018 (Figure \@ref(fig:storyboard-hg)a, c,d) 
+The increasing trend in the estimated natural mortality rate since 1980
 (Figure \@ref(fig:storyboard-hg)b) largely absorbed surplus production
 attributable to above average recruitment events
 (e.g., 1997 and 2012; Figure \@ref(fig:storyboard-hg)c, d).
-Estimated natural mortality has increased sharply since the early 2010s
-following a decline from a peak rate around 2002.
-Since 2000, the HG stock has been in a low biomass state,
+Estimated natural mortality has declined from a peak rate around 2002 and in the 
+last 5 years has decreased sharply.Dispite the decine in estimated natural mortality, 
+the HG stock has been in a low biomass state,
 with many of these years also showing low productivity
-which has precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
+which has largely precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
 There is an increase in survey biomass in 2019 and 2020, and
 above-average recruitment of age-2s in 2018, and
 below-average recruitment in 2019, 2020 and 2022.
-In the most recent two years, between 2019 and 2020 and 2020 and 2021,
-production is estimated to be neither positive nor negative
-(i.e., production is 0),
-preceded by two consecutive years of positive productivity.
-Overall, biomass remains low relative to historical patterns and
-natural mortality rates remain at historic high levels (up to 2016).
-The most recent 3 years show a decline in estimated natural mortality,
-responding to an increase in spawn biomass (2019-2021) and
-below average recruitment (2019-2021).
+Estimated productivity in the 2021-2022 is positive but follows two years of 
+negative productivity.
+Overall, biomass remains low relative to historical patterns.
 The effective harvest rate $U_t$ since 2000 has been at or near zero
 (Figure \@ref(fig:harvest-rate)),
 with the last commercial roe fishery in 2002,
@@ -673,7 +671,7 @@ increasing trend in estimated spawning biomass. In 2021 there was a decline
 and in 2022 estimated spawning biomass was maintained at 2021 levels and above what was forecast for the year. 
 
 Trends of increasing estimated spawning biomass
-usually coincide with declines in estimated natural mortality For example increasing 
+usually coincide with declines in estimated natural mortality. For example increasing 
 biomass from about 2010 to 2016 can be attributed to a decline in natural mortality
 that began in the late 2000s (Figure \@ref(fig:storyboard-sog)b).
 The model estimates natural mortality has been increasing since 2016,
