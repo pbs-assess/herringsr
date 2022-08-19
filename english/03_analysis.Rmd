@@ -594,26 +594,17 @@ there were no commercial catches in 2019-2022.
 
 ### Central Coast
 
-Estimated spawning biomass declined from a historic high around 1980
-to historic low levels in the period of 2005 to 2015
-(Figure \@ref(fig:storyboard-cc)d). There were moderate increases 
-estimated through the mid-2010s. More recently there were survey biomass declines in 2017, 2018, 
-an increase in 2019 maintained in 2020, and declines in 2021 and 2022.
-The estimated biomass trend largely reflects the trend in the spawn index
-(Figure \@ref(fig:storyboard-cc)a),
-where fluctuations correspond oppositely to the fluctuations in
-estimated natural mortality (Figure \@ref(fig:storyboard-cc)b).
-For example, the decline in spawn index (and estimated spawning biomass) to
-the historic low around 2008 followed an increasing trend in
-estimated natural mortality through the same period.
-Estimated natural mortality moderated around 2008,
-which was followed by an increase in spawn index
-(and estimated spawning biomass) 
-until 2017 whereupon natural mortality ceased declining.
-Recruitment deviations were slightly negative
-(i.e., lower than predicted by the stock-recruit function)
-on average from about 1990 to 2017,
-and were above average 2019-2021 (Figure \@ref(fig:storyboard-cc)e).
+Estimated spawning biomass reached a historic high around 1980
+following low estimated natural mortality rates and one of the highest estimated 
+recruitments in 1979 (Figure \@ref(fig:storyboard-cc)a, b, c). From there a jagged 
+decline of estimated spawning biomass appears to be influenced initially by 
+higher estimated natural mortality rates and highly variable estimated recruitment.
+An increase in estimated natural mortality leads historically low estimated biomass
+levels in the period of 2005 to 2015. Decreasing estimated natural mortality 
+lead to moderate general increases in biomass through 2020. In 2021 and 2022
+increasing estimated natural mortality rates have deceased estimated biomass, 
+which has been mitigated in part by higher than average estimated recruitment
+(Figure \@ref(fig:storyboard-cc)a, b, e),
 The model estimates very similar spawning biomass in 2021 and 2022
 (Table \@ref(tab:cc-spawning-biomass-depletion)),
 and the analysis of surplus production shows there is evidence of
