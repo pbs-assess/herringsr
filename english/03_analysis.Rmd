@@ -522,7 +522,7 @@ estimated low recruitment and high estimated natural mortality (Figure \@ref(fig
 \@ref(fig:storyboard-hg)b, & \@ref(fig:storyboard-hg)e). Under variable 
 estimated recruitment, estimated spawning biomass recovered
  from that point through the early 1980s supported by 
- dropping estimated natural mortality. Estimated natural mortality started raising at that point
+ dropping estimated natural mortality rates. Estimated natural mortality started raising at that point
  leading to near historic lows in estimated biomass in the mid-1990s. A reprieve 
  in the estimated low biomass was spurred by through the late 1990s by above average
  estimated recruitment
@@ -535,7 +535,7 @@ The increasing trend in the estimated natural mortality rate since 1980
 attributable to above average recruitment events
 (e.g., 1997 and 2012; Figure \@ref(fig:storyboard-hg)c, d).
 Estimated natural mortality has declined from a peak rate around 2002 and in the 
-last 5 years has decreased sharply.Dispite the decine in estimated natural mortality, 
+last 5 years has decreased sharply. Despite the decline in estimated natural mortality, 
 the HG stock has been in a low biomass state,
 with many of these years also showing low productivity
 which has largely precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
