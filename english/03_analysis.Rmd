@@ -661,43 +661,42 @@ and small commercial roe fisheries occurred in 2014, 2015, and 2016.
 A commercial SOK fishery operated yearly from 2014 to 2020,
 however these removals are not included in the estimation of $U_t$. 
 A commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19,
-however it successfully resumed in 2021 (Table \@ref(tab:annual-sok-catch)).
+however it successfully resumed in 2021 and continued in 2022. (Table \@ref(tab:annual-sok-catch)).
 
 `r stock_status_text(SAR = "CC", this_yr = assess_yr, translate = french)`
 
 ### Strait of Georgia
 
-The estimated spawning biomass for the SoG stock
-declined in 2019,
-increased in 2020, and
-declined in 2021.
-Accordingly, the uncertainty associated with the last few years of spawning biomass
+The estimated spawning biomass for the SoG stock had a historical low in the later part of the 1960's,
+and some deep dips in the mid 1980's and late 2000's. From 2010 to 2020 there is an
+increasing trend in estimated spawning biomass. In 2021 there was a decline 
+and in 2022 estimated spawning biomass was maintained at 2021 levels and above what was forecast for the year. 
+
+Trends of increasing estimated spawning biomass
+usually coincide with declines in estimated natural mortality For example increasing 
+biomass from about 2010 to 2016 can be attributed to a decline in natural mortality
+that began in the late 2000s (Figure \@ref(fig:storyboard-sog)b).
+The model estimates natural mortality has been increasing since 2016,
+and has now reached a level last estimated in the late 1960s. Greater estimated biomass 
+declines in the face of increasing mortality have been ameliorated by above
+average estimated recruitment in most years from 2010 to
+`r assess_yr` with the estimated recruitment at an all time high in 2022.(Figure \@ref(fig:storyboard-sog)e). 
+Overall estimated production has been declining from the 2017-2018 season to present (Figure \@ref(fig:storyboard-sog)f).
+
+The uncertainty associated with the last few years of spawning biomass
 along with the forecast biomass `r paste0("$\\SB_{", assess_yr, "}$")`,
 is quite large (Figure \@ref(fig:storyboard-sog)d).
-There was an increasing trend in estimated spawning biomass
-from about 2010 to 2016, which coincided with
-a decline in estimated natural mortality that began in the late 2000s
-(Figure \@ref(fig:storyboard-sog)b).
-The model estimates natural mortality has been increasing since 2016,
-and has now reached a level last estimated in the late 1960s.
-This coincides with large shifts in survey biomass in the last five years,
-with the index declining from 2016 to 2017, 2018 to 2019, and 2020 to 2021.
 The large uncertainty in both spawning biomass and natural mortality estimates
-in `r assess_yr` may be in part a function of the declining trend
-in the spawn index starting in 2016 following the increasing trend that began in 2010 (Figure \@ref(fig:storyboard-sog)a).
-The model fits an averaged trajectory through the spawn index values of the 2010s
-and is currently underfitting the survey data from 2014 though 2016 and 2020.
-The model estimates above average recruitment in most years from 2010 to
-`r assess_yr` (Figure \@ref(fig:storyboard-sog)c),
-with especially large positive deviations in 2019 and 2020
-(Figure \@ref(fig:storyboard-sog)e).
+in `r assess_yr` may be in part a function of large opposing fluctuations
+in the spawn index (Figure \@ref(fig:storyboard-sog)a) and also due to the uncertainty
+around the estimated age-`r age_first` recruitment.
 The large uncertainty around estimated age-`r age_first` recruitment
 in 2019 and 2020 was observed in the previous years' assessment and
 remains apparent now that these age-2s are
 fully recruited to the fishing/sampling gear.
 Analysis of surplus production shows that for the year between 2019 and 2020,
 the SoG SAR is estimated to be in a high production, high biomass state,
-followed by negative production for the year between 2020 and 2021
+but has now fallen to negative production for the year between 2021 and 2022
 (Figure \@ref(fig:storyboard-sog)f).
 
 Commercial fisheries have occurred annually in SoG since the early-1970s
