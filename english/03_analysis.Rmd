@@ -557,47 +557,40 @@ Haida Gwaii are being developed through the rebuilding plan process
 
 ### Prince Rupert District
 
-Estimated spawning biomass recovered by the mid-1980s from
-historic low depletion levels following the collapse of the 1960s,
-to about 50% of the historic high biomass estimated in the early 1960s
-(Figure \@ref(fig:storyboard-prd)d).
+Estimated spawning biomass reached a recorded history high in the early 1960s 
+spurred by both lowest estimated mortality rate and high estimated recruitment
+(Figure \@ref(fig:storyboard-prd)a, b, e). This was 
+followed immediately by below average recruitment and a rise to the highest 
+estimated mortality rate, more than doubling the rate within 10 years.
+In response the stock collapsed to the lowest estimated values of spawning biomass. 
+Dropping estimated natural mortality rates seem to have helped the spawning biomass
+recover by the mid-1980s to about 50% of the historic high even amid mostly below average recruitment.
+(Figure \@ref(fig:storyboard-prd)b, d, e).
 However, after the mid-1980s,
-estimated spawning biomass steadily declined before
-stabilizing at a relatively low level (but above historic lows) by around 2005, 
+estimated spawning biomass steadily declined amid slowly rising mortality rates 
+and variable recruitment.
+before stabilizing at a relatively low level (but above historic lows) by around 2005, 
 which was maintained until 2018.
-The estimated stock biomass showed a modest increase in 2019,
-almost no change in 2020, a smaller increase in 2021, and almost no change again in 2022.
+The estimated stock biomass has shown modest increases in the years since with 
+above average age-`r age_first`+ recruitments in 2014, 2017 and 2018 and 
+dropping natural mortality rates.
+(Figure \@ref(fig:storyboard-prd)c, d, f). Productivity is relatively high 
+compared to the last 30 years
+(Figure \@ref(fig:storyboard-prd) f).
+
 Fluctuations in the trend in spawning biomass appear to be less
 than those observed in other SARs,
 possibly because some spawn index points are being under- or over-fit
 (e.g., 2001 to 2004, and 2010 to 2013)
 as shown in Figure \@ref(fig:storyboard-prd)a.
-Estimated natural mortality reached historic highs in the late 1960s,
-before declining through the late 1970s.
-It increased through in the 1980 through to 2005, 
-roughly doubling from 0.25 to 0.5&nbsp;$\text{yr}^{-1}$ 
-and then stabilized from 2005 to 2021 at a median rate of 0.45
-(Figure \@ref(fig:storyboard-prd)b).
-The increasing trend in natural mortality from 1980 to 2005 coincides with
-the decline in spawning biomass (Figure \@ref(fig:storyboard-prd)d),
-during which recruitment deviations fluctuated around 0
-without any strong positive or negative trends
-(Figure \@ref(fig:storyboard-prd)e).
-Above average age-`r age_first`+ recruitments in 2014, 2017 and 2018,
-and an increase in the spawn index in the last three years
-appears to be sufficient to lead to an increase in estimated spawning biomass
-in 2019 through 2021, relative to 2018 (Figure \@ref(fig:storyboard-prd)f).
-Commercial catches from 2007 to 2018 remained low (below 2,000&nbsp;t) and
-there were no commercial catches in 2019-2022.
-The estimated natural mortality appears to have declined the last two years,
-resulting in what appears to be a small increase in production
-between 2018 and 2019, sustaining the 2019 biomass increase through 2022.
 
 `r stock_status_text(SAR = "PRD", this_yr = assess_yr, translate = french)`
 Commercial fisheries have occurred annually in PRD since the mid-1980s,
 with the exception of 2019 to 2022,
 during which the effective harvest rate $U_t$ was estimated to be at or below 20% 
 (Figure \@ref(fig:harvest-rate)) in all years except 1989.
+Commercial catches from 2007 to 2018 remained low (below 2,000&nbsp;t) and
+there were no commercial catches in 2019-2022.
 
 ### Central Coast
 
