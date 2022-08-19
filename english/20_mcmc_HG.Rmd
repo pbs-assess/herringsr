@@ -116,20 +116,22 @@ make.pairs.plot(
 ```
 
 (ref:hg-biomass-retro-cap) Haida Gwaii SAR:
-maximum posterior density of spawning biomass in thousands of tonnes (t; lines)
+maximum posterior density (MPD)
+of spawning biomass in thousands of tonnes (t; lines)
 from `r new_surv_yr` to `r assess_yr` (base model) with retrospectives 
 (-`r min(retro_yrs)` to -`r max(retro_yrs)` years)
 for the Pacific Herring statistical catch-age model.
-Points indicate estimated unfished spawning biomass.
+Points indicate MPD of long-term estimated unfished spawning biomass.
 Triangles indicate scaled abundance.
 
-(ref:hg-biomass-retro-cap-fr) Densité a posteriori maximale
+(ref:hg-biomass-retro-cap-fr) Densité a posteriori maximale (DPM)
 de la biomasse reproductrice en milliers de tonnes (t; lignes)
 de `r new_surv_yr` à `r assess_yr` (modèle de base) avec des rétrospectives
 (-`r min(retro_yrs)` à -`r max(retro_yrs)` années)
 pour le hareng du Pacifique dans la
 région d'évaluation des stocks majeur de Haida Gwaii.
-Les points indiquent la biomasse reporductrice non exploitée estimée.
+Les points indiquent la DPM de la biomasse reporductrice non exploitée estimée
+à long terme.
 Les triangles indiquent l'abondance à l'échelle.
 
 ```{r hg-biomass-retro, fig.asp=0.65, fig.cap=ifelse(french, "(ref:hg-biomass-retro-cap-fr)", "(ref:hg-biomass-retro-cap)")}

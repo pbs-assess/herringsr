@@ -93,13 +93,14 @@ make.pairs.plot(
 ```
 
 (ref:cc-biomass-retro-cap) Central Coast SAR:
-maximum posterior density of spawning biomass in thousands of tonnes (t; lines)
+maximum posterior density (MPD)
+of spawning biomass in thousands of tonnes (t; lines)
 from `r new_surv_yr` to `r assess_yr` (base model) with retrospectives 
 (-`r min(retro_yrs)` to -`r max(retro_yrs)` years)
 for the Pacific Herring statistical catch-age model.
 See Figure \@ref(fig:hg-biomass-retro) for description.
 
-(ref:cc-biomass-retro-cap-fr) Densité a posteriori maximale
+(ref:cc-biomass-retro-cap-fr) Densité a posteriori maximale (DPM)
 de la biomasse reproductrice en milliers de tonnes (t; lignes)
 de `r new_surv_yr` à `r assess_yr` (modèle de base) avec des rétrospectives
 (-`r min(retro_yrs)` à -`r max(retro_yrs)` années)
