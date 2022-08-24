@@ -599,7 +599,7 @@ following low estimated natural mortality rates and one of the highest estimated
 recruitments in 1979 (Figure \@ref(fig:storyboard-cc)a, b, c). From there a jagged 
 decline of estimated spawning biomass appears to be influenced initially by 
 higher estimated natural mortality rates and highly variable estimated recruitment.
-An increase in estimated natural mortality leads historically low estimated biomass
+An increase in estimated natural mortality lead to historically low estimated biomass
 levels in the period of 2005 to 2015. Decreasing estimated natural mortality 
 lead to moderate general increases in biomass through 2020. In 2021 and 2022
 increasing estimated natural mortality rates have deceased estimated biomass, 
@@ -650,20 +650,26 @@ however it successfully resumed in 2021 and continued in 2022. (Table \@ref(tab:
 ### Strait of Georgia
 
 The estimated spawning biomass for the SoG stock had a historical low in the later part of the 1960's,
-and some deep dips in the mid 1980's and late 2000's. From 2010 to 2020 there is an
-increasing trend in estimated spawning biomass. In 2021 there was a decline 
-and in 2022 estimated spawning biomass was maintained at 2021 levels and above what was forecast for the year. 
-
-Trends of increasing estimated spawning biomass
-usually coincide with declines in estimated natural mortality. For example increasing 
-biomass from about 2010 to 2016 can be attributed to a decline in natural mortality
-that began in the late 2000s (Figure \@ref(fig:storyboard-sog)b).
-The model estimates natural mortality has been increasing since 2016,
-and has now reached a level last estimated in the late 1960s. Greater estimated biomass 
+driven by lower than average estimated recruitment and increasing estimated natural mortality. 
+(Figure \@ref(fig:storyboard-sog)a, b, e) 
+As natural mortality started to drop estimated biomass estimates rose again.
+(Figure \@ref(fig:storyboard-sog)b, d) 
+Some deep dips in estimated biomass in the mid 1980's and late 2000's were 
+improved by above average recruitment. From 2010 to 2020 there is an
+increasing trend in estimated spawning biomass spurred by  above average 
+estimated recruitment.
+(Figure \@ref(fig:storyboard-sog)b, d, e)
+From 2015 to `r assess_yr` estimated mortality has increased sharply to levels
+not seen since the late 1960s and early 1970s when biomass was at its lowest 
+levels estimated. Greater estimated biomass 
 declines in the face of increasing mortality have been ameliorated by above
 average estimated recruitment in most years from 2010 to
-`r assess_yr` with the estimated recruitment at an all time high in 2022.(Figure \@ref(fig:storyboard-sog)e). 
-Overall estimated production has been declining from the 2017-2018 season to present (Figure \@ref(fig:storyboard-sog)f).
+`r assess_yr` with the estimated recruitment at an all time high in 2022
+(Figure \@ref(fig:storyboard-sog)e). 
+Overall estimated production has been declining from the 2017-2018 season 
+to present (Figure \@ref(fig:storyboard-sog)f).
+In 2022 estimated spawning biomass was 
+maintained at 2021 levels and above what was forecast for the year. 
 
 The uncertainty associated with the last few years of spawning biomass
 along with the forecast biomass `r paste0("$\\SB_{", assess_yr, "}$")`,
@@ -694,20 +700,28 @@ The model estimates the median effective harvest rate exceeded 25% in 2006 and 2
 
 ### West Coast of Vancouver Island
 
-The time series of estimated spawning biomass shows a decline
-from the late 1980s through to a historic low in the 2000s
-(Figure \@ref(fig:storyboard-wcvi)d).
-The low estimated spawning biomass persisted through the 2006 to 2012 period
-and has since slowly increased to a level similar to that estimated for 2000.
+The time series of estimated spawning biomass reached an estimated peak in the 
+mid to late 1970s during a time period of the lowest estimated natural mortality 
+and variable recruitment
+(Figure \@ref(fig:storyboard-wcvi)a, b, c). 
+From the late 1980s through to the 2000s a variable rise in estimated mortality
+and a generally variable but low recruitment led to the lowest estimated biomass
+on record
+(Figure \@ref(fig:storyboard-wcvi)a, b, c).
+The low estimated spawning biomass persisted through the 2006 to 2012 period 
+influenced by negative recruitment deviations 
+(i.e., lower than predicted by the stock-recruit function)
+and the highest estimated natural mortality on record
+(Figure \@ref(fig:storyboard-wcvi)a, b, f). 
+Some estimated biomass gains were made in the 2010s with
+lower estimated natural mortality and higher recruitment in 2015. 
+Since then estimated natural mortality has risen. 
+Biomas and production has been maintained in part by higher than average estimated recruitment 
+in 2020 and 2021.
+(Figure \@ref(fig:storyboard-wcvi) d, f).
 The model reconstruction of spawning biomass closely follows the trajectory
 of spawn index values (Figure \@ref(fig:storyboard-wcvi)a).
-Historically high natural mortality rates occur in the late 2000s and
-have since declined, though show an increasing trend from 2015 to 2021
-(Figure \@ref(fig:storyboard-wcvi)b).
-Recruitment deviations have been negative
-(i.e., lower than predicted by the stock-recruit function)
-on average since about 2003 (Figure \@ref(fig:storyboard-wcvi)e),
-with the exception of 2015, 2020 and 2021.
+
 The reduction in estimated natural mortality below historical high levels and
 absence of removals from a commercial fishery appear
 to be sufficient to offset this below average recruitment of
@@ -728,7 +742,7 @@ Autocorrelation in parameter estimation may indicate
 bias in the posterior distribution or local minima. 
 In this instance, autocorrelation likely resulting from
 there being no new commercial fishery data since 2005. 
-Running longer chains resulted in only minor improvements.
+Running longer chains in 2021 resulted in only minor improvements.
 If and when fisheries resume in the future,
 the addition of new fishery data may reduce this apparent autocorrelation and
 any resulting bias.
