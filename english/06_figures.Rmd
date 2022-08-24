@@ -206,14 +206,12 @@ in thousands of tonnes (t)
 for Pacific Herring from `r major_start_yr` to `r major_end_yr`
 in the major SARs.
 Biomass is represented by median posterior estimates.
-CURRENTLY TOTAL BIOMASS IS MPD!
 
 (ref:biomass-total-biomass-cap-fr) Biomasse totale et biomasse reproductrice 
 en milliers de tonnes (t)
 pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr`
 dans les principaux RESs.
 La biomasse est représentée par les estimations médianes postérieures.
-CURRENTLY TOTAL BIOMASS IS MPD!
 
 ```{r biomass-total-biomass, fig.asp=1.25, fig.cap=ifelse(french, "(ref:biomass-total-biomass-cap-fr)", "(ref:biomass-total-biomass-cap)")}
 plot_biomass_total_biomass(

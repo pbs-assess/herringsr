@@ -102,7 +102,7 @@ MP performance has been found to be consistently over-optimistic.
 As such, OM updates are presented for the DDM and DIM OM scenarios only.
 
 Several lessons were learned from the MSE analyses conducted so far:
-
+<!-- TODO-JC: review this list and add wording to #1 and #2-->
 1. The catch-at-age stock assessment model can produce large (positive)
 assessment errors.
 Such assessment errors cause over-estimation of spawning biomass and
@@ -471,9 +471,9 @@ An analysis of USR options was undertaken in 2022 with
 results presented in @dfo2022.
 
 Five USR options were evaluated:
-<!-- TODO- ensure order here matches the table columns-->
 
-1. Average spawning biomass during a productive period, $0.80\SB_{\mli{productive period}}$ (80\% Bmsy proxy),
+1. Average spawning biomass during a productive period,
+$\SB_{\mli{productive period}}$ ($B_\text{MSY}$ proxy),
 
 1. $0.4\SB_0$,
 
