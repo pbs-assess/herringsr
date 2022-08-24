@@ -518,8 +518,8 @@ Figure \@ref(fig:biomass-total-biomass).
 ### Haida Gwaii
 
 Estimated spawning biomass historic lows occured in the late 1960s predicated by
-estimated low recruitment and high estimated natural mortality (Figure \@ref(fig:storyboard-hg)a 
-\@ref(fig:storyboard-hg)b, & \@ref(fig:storyboard-hg)e). Under variable 
+estimated low recruitment and high estimated natural mortality 
+(Figure \@ref(fig:storyboard-hg)a, b, & e). Under variable 
 estimated recruitment, estimated spawning biomass recovered
  from that point through the early 1980s supported by 
  dropping estimated natural mortality rates. Estimated natural mortality started raising at that point
@@ -781,12 +781,13 @@ for a rebuilding plan (detailed below).
 ### Haida Gwaii
 
 The HG stock persisted in a low biomass, low productivity state
-from approximately 2000 to 2018.
+from approximately 2000 to 2018
+(Figure \@ref(fig:storyboard-hg)).
 The stock was below the LRP for much of that period and shows
 little evidence of sustained stock growth despite the absence of
 commercial fisheries since 2002 (and since 2004 for the SOK fishery).
-Survey biomass increased in 2019 and 2020, however
-biomass estimates are highly uncertain given persistent high natural mortality.
+Survey biomass increased in 2019 and 2020, and in the 2021-2022 year productivity
+was positive however biomass estimates are highly uncertain given persistent high natural mortality.
 Results of the simulation-evaluations found that none of the proposed MPs, 
 including the historical and no fishing MPs,
 performed satisfactorily against the conservation objective of
@@ -820,18 +821,21 @@ we did not update the HG OM with recent data
 
 ### Prince Rupert District
 
+<!-- TODO-JC: Update these regional texts with USR work.-->
+
 The PRD estimated stock biomass has shown little trend from 2005 to 2018,
-with a modest increase from 2019 to 2021.
+with an moderate increase from 2019 to 2022.
 
-In the summer 2021, we updated the conditioning of the MSE operating model
-for PRD with 2019 and 2020 spawn, catch, and biological data.
+In the summer 2022, we updated the conditioning of the MSE operating model
+for PRD with 2021 spawn, catch, and biological data.
 We re-ran MSE simulations to generate updated probability values for the MPs
-presented in September 2019 [@dfo2020a] and 2020 [@dfo2021].
-No new MPs or objectives were included.
-
+presented in September 2019 [@dfo2020a] and 2020 [@dfo2021] and 2022 (in press).
+No new MPs were included however probability metrics for candidate USRs were
+estimated.
+<!-- TODO-: Make %'s auto update.-->
 The updated closed-loop feedback simulations for PRD show that
 MPs with harvest rates at 5, 10, and 20% maintain spawning biomass
-above the LRP with 78 to 100% probability, over all three OM scenarios
+above the LRP with 85 to 100% probability, over both OM scenarios
 (Table \@ref(tab:decision-prd)). 
 
 While MPs with harvest rates ranging from 5% to 20%
@@ -840,23 +844,21 @@ maintaining spawning biomass above the LRP with high probability
 (i.e., at least 75%)^\ref{fn:HighProb}^,
 they also imply different trade-offs among biomass (e.g., ecosystem)
 and yield outcomes.
-For management regions where multiple MPs meet the conservation objective,
-further ranking of the remaining objectives is needed
-in order to provide decision makers with a tractable set of trade-off choices.
-However this was not undertaken because a fully specified set of objectives
-has not yet been developed for each management area.
+Since multiple MPs meet the conservation objective,
+other socio-economic reasons may
+drive the choice for a particular MP. 
 
 Effective harvest rates for the past 10 years (with positive catches)
-average ~12% (Figure \@ref(fig:harvest-rate)),
-during which the stock showed no sign of growth before 2018 and
+<!-- TODO-MG: Update the average effective harvest rate (Make automatically update?).-->
+average ~12% [needs updating would be nice to auto update] (Figure \@ref(fig:harvest-rate)),
+The stock showed no sign of growth before 2018 and
 is estimated to fluctuate at or near the LRP of $0.3\SB_0$
 (Figure \@ref(fig:storyboard-prd)d). 
-Spawning biomass depletion increased above $0.3\SB_0$ in 2019 and
-remained above in 2020 and 2021.
-Although there is not evidence of a low biomass and low productivity state
-for PRD in the past 30-years, adjacent SARs (HG and CC)
+Spawning biomass increased above $0.3\SB_0$ in 2019 and has
+remained above since.
+Adjacent SARs (HG and CC)
 show evidence of recent prolonged periods of low biomass and low productivity:
-states that were entered rapidly and were preceded by high biomass levels
+however these states were entered rapidly and were preceded by high biomass levels
 [@kronlund2017].
 
 `r proj_biomass_text(SAR = "PRD", next_yr = assess_yr + 1, translate = french)`
@@ -865,20 +867,11 @@ Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
 are presented in Table \@ref(tab:decision-prd),
 and include probability values that reflect updated OM conditioning.
 
-Relative to 2018 OM conditioning, the updated simulations show an improvement
-in MP performance relative of the conservation objective,
-driven by an increase in spawn index and lower
-estimated natural mortality rates in the most recent years of the historical 
-time series (up to 2020).
-This outcome corroborates previous observations that MP evaluations appear
-to be more heavily influenced by the last three to five years of
-stock status and natural mortality trends used to condition the OM.
-
 Harvest options listed in Table \@ref(tab:decision-prd) reflect
 application of MPs to the `r assess_yr + 1` forecast biomass for PRD,
 whereby each MP meets the conservation objective with a minimum 75% probability
-under the reference OM (i.e., DDM) scenario.
-Harvest options under the two robustness OM scenarios are also included.
+under both DDM and DIM OM scenarios.
+Harvest options under the two most robust OM scenarios are also included.
 For ease of comparison with MSE cycle 1 [@dfo2019c],
 all MPs and scenarios listed in Table \@ref(tab:decision-prd)
 include performance metrics for the four core objectives.
@@ -887,44 +880,29 @@ include performance metrics for the four core objectives.
 
 The CC stock persisted in a low biomass, low productivity state from
 approximately 2005 to 2014.
-An increasing trend has been observed in recent years,
-and overall the stock shows 
-larger increases/decreases in spawn abundance
-(Figure \@ref(fig:storyboard-cc)a) than was observed prior to 2005.
+An increasing trend has been observed in since in all but the 
+most recent years (Figure \@ref(fig:storyboard-cc)a).
 
-Similar to PRD, in the summer 2021 we updated the conditioning of the MSE 
-operating model with 2019 and 2020 spawn, catch, and biological data. 
+In the 2022 summer we updated the conditioning of the MSE 
+operating model with 2021 spawn, catch, and biological data. 
 We re-ran MSE simulations to generate updated probability values for 
-the MPs presented in September 2019 [@dfo2020a] and 2020 [@dfo2021].
-No new MPs or objectives were included.
+the MPs presented in September 2019 [@dfo2020a], 2020 [@dfo2021].
+No new MPs were included however probability metrics for candidate USRs were estimated.
 
 Management procedures, harvest options, and updated probabilities of 
-obtaining objectives for 2022 under the three OM scenarios are presented 
+obtaining objectives for 2022 under the two OM scenarios are presented 
 in Table \@ref(tab:decision-cc). 
 Harvest options listed in Table \@ref(tab:decision-cc) reflect application 
 of MPs to the 2022 forecast biomass for CC, whereby each MP meets the 
-conservation objective with a minimum 75% probability under the reference OM 
-(i.e., DDM) scenario.
-
-Relative to 2018 OM conditioning, the updated simulations show an improvement
-in MP performance of the conservation objective, driven by an increase in
-estimated spawn index and lower estimated natural mortality rates in the 
-most recent years of the time series (up to 2020).
-This corroborates previous observations 
-that MP evaluations seem more heavily influenced by the last three to five 
-years of stock status and natural mortality trends.
-Note this latest update does not include data from 2021, which show a decline in 
-spawn index over the 2019 and 2020 observations (Figure \@ref(fig:storyboard-cc)a).
+conservation objective with a minimum 75% probability under either DDM or DIM OM 
+scenario.
 
 The updated simulations show that MPs with harvest rates at 5% and 10% 
-maintain spawning biomass above the LRP with 84 to 100% probability over all 
+maintain spawning biomass above the LRP with 80 to 100% probability over all 
 three OM scenarios (Table \@ref(tab:decision-cc)).
 Since multiple MPs meet the conservation objective of maintaining spawning 
-biomass above the LRP with at least 75%, further ranking of the objectives 
-provides decision makers with a tractable set of trade-off choices.
-However this was not undertaken with the first MSE cycle because
-a fully specified set of objectives has not yet been developed
-for each management area.
+biomass above the LRP with at least 75%, other socio-economic reasons may
+drive the choice for a particular MP. 
 Additionally, the current CC operating model is unable to directly address
 Heilstuk Nation conservation objectives related to age and size of herring, nor 
 objectives on a finer spatial scale or those specific to SOK fisheries.
@@ -939,27 +917,22 @@ Results presented here may inform this on going commitment.
 
 ### Strait of Georgia
 
-In 2018, closed-loop feedback simulations for the SoG showed that
-all tested MPs could maintain the spawning biomass above the LRP
-with 91% probability or higher across all OM scenarios. 
+In 2022, with updated information from 2021
+closed-loop feedback simulations for the SoG showed that
+only 3 tested MPs could maintain the spawning biomass above the LRP
+with 75% probability or higher for two generations across both the OM scenarios.
+The three MPs including the no-fish MP, the Lenfest MP and the 
+30-60% hockey-stick MP with a 10% harvest rate
+(Table \@ref(tab:decision-sog)).
 
 Additional simulation-evaluations were conducted in 2019 to
 further explore the role of catch caps in
 mitigating assessment errors [@dfo2019c].
 A comparison of catch caps from 30,000&nbsp;t to 5,000&nbsp;t showed
-no discernible gain in conservation performance under all 3 OM scenarios.
+no discernible gain in conservation performance under both OM scenarios.
 Results also showed MPs with catch caps of 20,000&nbsp;t or less
 rarely exceed the 20% harvest rate for any given projection year
 (over the 15 year projections).
-
-In September 2020, the SoG OM was updated to include spawn survey data
-from 2018 to 2020 and biological data for 2018 and 2019 [@dfo2021b].
-The updated closed-loop feedback simulations for the SoG show that MPs
-with harvest rates at 10, 15, and 20% maintain the spawning biomass
-above the LRP with 75 to 85% probability over all three OM scenarios
-(Table \@ref(tab:decision-sog)). 
-MPs with harvest rate of 30% did not meet the conservation objective
-($p$=69% for the reference OM).
 
 `r proj_biomass_text(SAR = "SoG", next_yr = assess_yr + 1, translate = french)`
 
@@ -972,8 +945,9 @@ whereby each MP meets the conservation objective with a minimum
 Harvest options under the two robustness OM scenarios are also included.
 All MPs and scenarios listed in Table \@ref(tab:decision-sog) include
 updated performance metrics for the four core objectives
-under all three scenarios [@dfo2021b].
+under both scenarios [@dfo2021b].
 
+<!-- TODO-JC: Perhaps remove findings form last year.-->
 In 2021, we investigated the sensitivity of SoG MP performance to changes in 
 allocation of TAC between the roe seine and roe gillnet fleets.
 The recent 20 year average catches show 
@@ -1019,38 +993,24 @@ both spawn survey and biological data up to 2020).
 
 The WCVI stock persisted in a low biomass, low productivity state from
 approximately 2004 to 2014.
-An increasing trend has been observed in recent years,
-with biomass remaining low relative to historical levels,
-trending around the LRP of $0.3\SB_0$.
+In recent years
+biomass remained low relative to historical levels,
+but above the LRP of $0.3\SB_0$.
 
-In 2018, closed-loop feedback simulations for the WCVI showed
-the conservation objective could be met under the reference OM scenario
-with between 75 and 87% probability,
-but that these MPs failed to meet the conservation objective under the DIM
-robustness OM scenario, where natural mortality rates are
+In 2022, with updated 2021 data, closed-loop feedback simulations for the WCVI showed
+the conservation objective could be met under the DDM OM scenario
+with between 80 and 84% probability,
+but all MPs failed to meet the conservation objective under the DIM 
+OM scenario, where natural mortality rates are
+<!-- TODO-: Update numbers.-->
 most similar to the last 10 years ($p=56$ to 74%).
-
-In September 2020, the WCVI OM was updated to include
-spawn survey data and biological data from 2018 to 2019 [@dfo2021b].
-The updated closed-loop feedback simulations for the WCVI show that
-MPs with harvest rates of 5, 10, and 15% maintained spawning biomass
-above the LRP with between 81 and 93% probability,
-over all three OM scenarios (Table \@ref(tab:decision-wcvi)). 
-Improved MP performance in the 2020 update for WCVI,
-relative to the first WCVI MSE cycle, 
-is due to an increased spawn index in 2018 and 2019 and
-increased status relative to $SB_0$. 
-Performance improvement is observed under all three scenarios.
 
 `r proj_biomass_text(SAR = "WCVI", next_yr = assess_yr + 1, translate = french)`
 
 Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
 are presented in Table \@ref(tab:decision-wcvi).
 These options reflect application of MPs to the `r assess_yr + 1`
-forecast biomass for WCVI,
-whereby each MP meets the conservation objective with a minimum
-75% probability under the reference OM (DDM) scenario.
-Harvest options under the two robustness OM scenarios are also included.
+forecast biomass for WCVI, under the two OM scenarios.
 All MPs and scenarios listed in Table \@ref(tab:decision-wcvi) include
 updated performance metrics for the four core objectives
-under all three scenarios [@dfo2021b].
+under both scenarios [@dfo2021b].
