@@ -471,9 +471,9 @@ An analysis of USR options was undertaken in 2022 with
 results presented in @dfo2022.
 
 Five USR options were evaluated:
-<!-- TODO-MG: take the 0.80 and 80% out of the first line-->
 
-1. Average spawning biomass during a productive period, $0.80\SB_{\mli{productive period}}$ (80\% Bmsy proxy),
+1. Average spawning biomass during a productive period,
+$\SB_{\mli{productive period}}$ ($B_\text{MSY}$ proxy),
 
 1. $0.4\SB_0$,
 
