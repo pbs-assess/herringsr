@@ -861,10 +861,7 @@ Since multiple MPs meet the conservation objective,
 other socio-economic reasons may
 drive the choice for a particular MP. 
 
-Effective harvest rates for the past 10 years (with positive catches)
-<!-- TODO-MG: Update the average effective harvest rate (Make automatically update?).-->
-average ~12% [needs updating would be nice to auto update]
-(Figure \@ref(fig:harvest-rate)).
+`r mean_harvest_text(SAR = "PRD", translate = french)`
 The stock showed no sign of growth before 2018 and
 is estimated to fluctuate at or near the LRP of $0.3\SB_0$
 (Figure \@ref(fig:storyboard-prd)d). 
@@ -904,6 +901,7 @@ the MPs presented in September 2019 [@dfo2020a], 2020 [@dfo2021].
 No new MPs were included however probability metrics
 for candidate USRs were estimated.
 
+`r mean_harvest_text(SAR = "CC", translate = french)`
 Management procedures, harvest options, and updated probabilities of 
 obtaining objectives for 2022 under the two OM scenarios are presented 
 in Table \@ref(tab:decision-cc). 
@@ -951,6 +949,7 @@ rarely exceed the 20% harvest rate for any given projection year
 
 `r proj_biomass_text(SAR = "SoG", next_yr = assess_yr + 1, translate = french)`
 
+`r mean_harvest_text(SAR = "SoG", translate = french)`
 Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
 are presented in Table \@ref(tab:decision-sog).
 These options reflect application of MPs to the `r assess_yr + 1`
