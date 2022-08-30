@@ -2,12 +2,10 @@
 
 ## COVID-19 pandemic
 
-Compared to 2020 and 2021, the COVID-19 pandemic had fewer impacts
-to Pacific Herring data collection and analysis in 2022.
-Spawn surveys proceeded as usual in most areas in 2022,
+Unlike impacts of COVID 19 in 2020 and 2021, collection and analysis of biological 
+data was not affected by the COVID-19 pandemic in 2022.
+Spawn surveys proceeded as usual in 2022,
 with dive surveys in all major SARs.
-The collection and analysis of biological data was not affected
-by the COVID-19 pandemic in 2022.
 
 ## Management strategy evaluation
 
@@ -714,7 +712,7 @@ in 2006 and 2017.
 
 The time series of estimated spawning biomass reached an estimated peak in the 
 mid to late 1970s during a time period of the lowest estimated natural mortality 
-and variable recruitment
+and variable estimated recruitment
 (Figure \@ref(fig:storyboard-wcvi)a, b, c). 
 From the late 1980s through to the 2000s a variable rise in estimated mortality
 and a generally variable but low recruitment led to the lowest estimated biomass
@@ -726,18 +724,14 @@ influenced by negative recruitment deviations
 and the highest estimated natural mortality on record
 (Figure \@ref(fig:storyboard-wcvi)a, b, f). 
 Some estimated biomass gains were made in the 2010s with
-lower estimated natural mortality and higher recruitment in 2015. 
+lower estimated natural mortality and higher estimated recruitment in 2015. 
 Since then estimated natural mortality has risen. 
-Biomas and production has been maintained in part by
+Biomass and production has been maintained in part by
 higher than average estimated recruitment in 2020 and 2021.
 (Figure \@ref(fig:storyboard-wcvi) d, f).
 The model reconstruction of spawning biomass closely follows the trajectory
 of spawn index values (Figure \@ref(fig:storyboard-wcvi)a).
 
-The reduction in estimated natural mortality below historical high levels and
-absence of removals from a commercial fishery appear
-to be sufficient to offset this below average recruitment of
-age-`r age_first` fish to support biomass growth.
 The absence of a commercial fishery since 2005 means the realized harvest rate
 has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
 There is modest evidence for an increase in biomass above the LRP
@@ -792,14 +786,14 @@ for a rebuilding plan (detailed below).
 
 ### Haida Gwaii
 
-The HG stock persisted in a low biomass, low productivity state
+The HG stock persisted in a low biomass state
 from approximately 2000 to 2018
 (Figure \@ref(fig:storyboard-hg)).
 The stock was below the LRP for much of that period and shows
 little evidence of sustained stock growth despite the absence of
 commercial fisheries since 2002 (and since 2004 for the SOK fishery).
 Survey biomass increased in 2019 and 2020, and in the 2021-2022 year productivity
-was positive however biomass estimates are highly uncertain given persistent high natural mortality.
+was positive however biomass estimates.
 Results of the simulation-evaluations found that none of the proposed MPs, 
 including the historical and no fishing MPs,
 performed satisfactorily against the conservation objective of
@@ -836,8 +830,15 @@ we did not update the HG OM with recent data
 
 <!-- TODO-JC: Update these regional texts with USR work.-->
 
-The PRD estimated stock biomass has shown little trend from 2005 to 2018,
-with an moderate increase from 2019 to 2022.
+The PRD estimated stock biomass showed little trend from 2005 to 2018, 
+fluctuating at or near the LRP of $0.3\SB_0$
+(Figure \@ref(fig:storyboard-prd)d). 
+Spawning biomass increased above $0.3\SB_0$ in 2019 and has
+remained above since.
+Adjacent SARs (HG and CC)
+show evidence of recent prolonged periods of low biomass and low productivity:
+however these states were entered rapidly and were preceded by
+high biomass levels [@kronlund2017].
 
 In the summer 2022, we updated the conditioning of the MSE operating model
 for PRD with 2021 spawn, catch, and biological data.
@@ -850,6 +851,7 @@ The updated closed-loop feedback simulations for PRD show that
 MPs with harvest rates at 5, 10, and 20% maintain spawning biomass
 above the LRP with 85 to 100% probability, over both OM scenarios
 (Table \@ref(tab:decision-prd)). 
+`r mean_harvest_text(SAR = "PRD", translate = french)`
 
 While MPs with harvest rates ranging from 5% to 20%
 were able to meet the core conservation objective of
@@ -860,17 +862,6 @@ and yield outcomes.
 Since multiple MPs meet the conservation objective,
 other socio-economic reasons may
 drive the choice for a particular MP. 
-
-`r mean_harvest_text(SAR = "PRD", translate = french)`
-The stock showed no sign of growth before 2018 and
-is estimated to fluctuate at or near the LRP of $0.3\SB_0$
-(Figure \@ref(fig:storyboard-prd)d). 
-Spawning biomass increased above $0.3\SB_0$ in 2019 and has
-remained above since.
-Adjacent SARs (HG and CC)
-show evidence of recent prolonged periods of low biomass and low productivity:
-however these states were entered rapidly and were preceded by
-high biomass levels [@kronlund2017].
 
 `r proj_biomass_text(SAR = "PRD", next_yr = assess_yr + 1, translate = french)`
 
@@ -899,10 +890,8 @@ operating model with 2021 spawn, catch, and biological data.
 We re-ran MSE simulations to generate updated probability values for 
 the MPs presented in September 2019 [@dfo2020a], 2020 [@dfo2021].
 No new MPs were included however probability metrics
-for candidate USRs were estimated.
-
-`r mean_harvest_text(SAR = "CC", translate = french)`
-Management procedures, harvest options, and updated probabilities of 
+for candidate USRs were estimated.Management procedures, harvest options, 
+and updated probabilities of 
 obtaining objectives for 2022 under the two OM scenarios are presented 
 in Table \@ref(tab:decision-cc). 
 Harvest options listed in Table \@ref(tab:decision-cc) reflect application 
@@ -912,7 +901,8 @@ scenario.
 
 The updated simulations show that MPs with harvest rates at 5% and 10% 
 maintain spawning biomass above the LRP with 80 to 100% probability over all 
-three OM scenarios (Table \@ref(tab:decision-cc)).
+both OM scenarios (Table \@ref(tab:decision-cc)).
+`r mean_harvest_text(SAR = "CC", translate = french)`
 Since multiple MPs meet the conservation objective of maintaining spawning 
 biomass above the LRP with at least 75%, other socio-economic reasons may
 drive the choice for a particular MP. 
@@ -933,10 +923,18 @@ Results presented here may inform this on going commitment.
 In 2022, with updated information from 2021
 closed-loop feedback simulations for the SoG showed that
 only 3 tested MPs could maintain the spawning biomass above the LRP
-with 75% probability or higher for two generations across both the OM scenarios.
+with 75% probability or higher for three generations (a.k.a. the conservation objective) 
+across both the OM scenarios.
 The three MPs including the no-fish MP, the Lenfest MP and the 
 30-60% hockey-stick MP with a 10% harvest rate
-(Table \@ref(tab:decision-sog)).
+(Table \@ref(tab:decision-sog)).This can be compared to 2020 when 
+all evaluated MP's met the conservation objective (range 75-87%) in both
+the DDM and DIM scenarios, or compared to 2018 when biomass was trending upward 
+and the range was 97% or above.The 15 year projections of the performance 
+objectives are sensitive to trends in the spawn index during the recent 3-5 year period. 
+So while the simulations give a relative ranking of performance, 
+and an estimate of how the MPs might preform over time, 
+it is prudent understand that they are estimates given the information at hand.
 
 Additional simulation-evaluations were conducted in 2019 to
 further explore the role of catch caps in
