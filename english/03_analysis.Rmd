@@ -2,7 +2,8 @@
 
 ## COVID-19 pandemic
 
-Unlike impacts of COVID 19 in 2020 and 2021, collection and analysis of biological 
+Unlike impacts of COVID-19 in 2020 and 2021,
+collection and analysis of biological 
 data was not affected by the COVID-19 pandemic in 2022.
 Spawn surveys proceeded as usual in 2022,
 with dive surveys in all major SARs.
@@ -519,7 +520,8 @@ Figure \@ref(fig:biomass-total-biomass).
 
 ### Haida Gwaii
 
-Estimated spawning biomass historic lows occurred in the late 1960s predicated by
+Estimated spawning biomass historic lows occurred in the late 1960s
+predicated by
 estimated low recruitment and high estimated natural mortality 
 (Figure \@ref(fig:storyboard-hg)a, b, & e). Under variable 
 estimated recruitment, estimated spawning biomass recovered
@@ -527,12 +529,14 @@ from that point through the early 1980s supported by
 dropping estimated natural mortality rates.
 Estimated natural mortality started raising at that point
 leading to near historic lows in estimated biomass in the mid-1990s. A reprieve 
-in the estimated low biomass was spurred by through the late 1990s by above average
-estimated recruitment
-before falling to persistent historic lows in estimated biomass from 2000 to 2010
+in the estimated low biomass was spurred by through the late 1990s
+by above average estimated recruitment
+before falling to persistent historic lows in estimated biomass
+from 2000 to 2010
 (Figure \@ref(fig:storyboard-hg)d).
 Above average estimated recruitment of age-`r age_first` fish in 2012 supported 
-modest increases in the spawn index in 2013 and 2015 before falling once again to 
+modest increases in the spawn index in 2013 and 2015
+before falling once again to 
 near historic lows from 2016 to 2018 (Figure \@ref(fig:storyboard-hg)a, c,d) 
 The increasing trend in the estimated natural mortality rate since 1980
 (Figure \@ref(fig:storyboard-hg)b) largely absorbed surplus production
@@ -566,18 +570,21 @@ spurred by both lowest estimated mortality rate and high estimated recruitment
 (Figure \@ref(fig:storyboard-prd)a, b, e). This was 
 followed immediately by below average recruitment and a rise to the highest 
 estimated mortality rate, more than doubling the rate within 10 years.
-In response the stock collapsed to the lowest estimated values of spawning biomass. 
-Dropping estimated natural mortality rates seem to have helped the spawning biomass
+In response the stock collapsed to the lowest estimated values
+of spawning biomass. 
+Dropping estimated natural mortality rates seem
+to have helped the spawning biomass
 recover by the mid-1980s to about 50% of the historic high
 even amid mostly below average recruitment.
 (Figure \@ref(fig:storyboard-prd)b, d, e).
 However, after the mid-1980s,
 estimated spawning biomass steadily declined amid slowly rising mortality rates 
 and variable recruitment.
-before stabilizing at a relatively low level (but above historic lows) by around 2005, 
+before stabilizing at a relatively low level (but above historic lows)
+by around 2005, 
 which was maintained until 2018.
 The estimated stock biomass has shown modest increases in the years since with 
-above average age-`r age_first`+ recruitments in 2014, 2017 and 2018 and 
+above average age-`r age_first`+ recruitment in 2014, 2017 and 2018 and 
 dropping natural mortality rates.
 (Figure \@ref(fig:storyboard-prd)c, d, f). Productivity is relatively high 
 compared to the last 30 years
@@ -592,7 +599,8 @@ as shown in Figure \@ref(fig:storyboard-prd)a.
 `r stock_status_text(SAR = "PRD", this_yr = assess_yr, translate = french)`
 Commercial fisheries have occurred annually in PRD since the mid-1980s,
 with the exception of 2019 to 2022,
-during which the effective harvest rate $U_t$ was estimated to be at or below 20% 
+during which the effective harvest rate $U_t$
+was estimated to be at or below 20% 
 (Figure \@ref(fig:harvest-rate)) in all years except 1989.
 Commercial catches from 2007 to 2018 remained low (below 2,000&nbsp;t) and
 there were no commercial catches in 2019-2022.
@@ -600,11 +608,15 @@ there were no commercial catches in 2019-2022.
 ### Central Coast
 
 Estimated spawning biomass reached a historic high around 1980
-following low estimated natural mortality rates and one of the highest estimated 
-recruitments in 1979 (Figure \@ref(fig:storyboard-cc)a, b, c). From there a jagged 
+following low estimated natural mortality rates and
+one of the highest estimated 
+recruitments in 1979 (Figure \@ref(fig:storyboard-cc)a, b, c).
+From there a jagged 
 decline of estimated spawning biomass appears to be influenced initially by 
-higher estimated natural mortality rates and highly variable estimated recruitment.
-An increase in estimated natural mortality lead to historically low estimated biomass
+higher estimated natural mortality rates and
+highly variable estimated recruitment.
+An increase in estimated natural mortality lead to
+historically low estimated biomass
 levels in the period of 2005 to 2015. Decreasing estimated natural mortality 
 lead to moderate general increases in biomass through 2020. In 2021 and 2022
 increasing estimated natural mortality rates have deceased estimated biomass, 
@@ -711,8 +723,8 @@ in 2006 and 2017.
 ### West Coast of Vancouver Island
 
 The time series of estimated spawning biomass reached an estimated peak in the 
-mid to late 1970s during a time period of the lowest estimated natural mortality 
-and variable estimated recruitment
+mid to late 1970s during a time period of the
+lowest estimated natural mortality and variable estimated recruitment
 (Figure \@ref(fig:storyboard-wcvi)a, b, c). 
 From the late 1980s through to the 2000s a variable rise in estimated mortality
 and a generally variable but low recruitment led to the lowest estimated biomass
@@ -792,7 +804,8 @@ from approximately 2000 to 2018
 The stock was below the LRP for much of that period and shows
 little evidence of sustained stock growth despite the absence of
 commercial fisheries since 2002 (and since 2004 for the SOK fishery).
-Survey biomass increased in 2019 and 2020, and in the 2021-2022 year productivity
+Survey biomass increased in 2019 and 2020,
+and in the 2021-2022 year productivity
 was positive however biomass estimates.
 Results of the simulation-evaluations found that none of the proposed MPs, 
 including the historical and no fishing MPs,
@@ -896,8 +909,8 @@ obtaining objectives for 2022 under the two OM scenarios are presented
 in Table \@ref(tab:decision-cc). 
 Harvest options listed in Table \@ref(tab:decision-cc) reflect application 
 of MPs to the 2022 forecast biomass for CC, whereby each MP meets the 
-conservation objective with a minimum 75% probability under either DDM or DIM OM 
-scenario.
+conservation objective with a minimum 75% probability
+under either DDM or DIM OM scenario.
 
 The updated simulations show that MPs with harvest rates at 5% and 10% 
 maintain spawning biomass above the LRP with 80 to 100% probability over all 
@@ -923,7 +936,8 @@ Results presented here may inform this on going commitment.
 In 2022, with updated information from 2021
 closed-loop feedback simulations for the SoG showed that
 only 3 tested MPs could maintain the spawning biomass above the LRP
-with 75% probability or higher for three generations (a.k.a. the conservation objective) 
+with 75% probability or higher for three generations
+(a.k.a. the conservation objective) 
 across both the OM scenarios.
 The three MPs including the no-fish MP, the Lenfest MP and the 
 30-60% hockey-stick MP with a 10% harvest rate
@@ -931,7 +945,8 @@ The three MPs including the no-fish MP, the Lenfest MP and the
 all evaluated MP's met the conservation objective (range 75-87%) in both
 the DDM and DIM scenarios, or compared to 2018 when biomass was trending upward 
 and the range was 97% or above.The 15 year projections of the performance 
-objectives are sensitive to trends in the spawn index during the recent 3-5 year period. 
+objectives are sensitive to trends in the spawn index
+during the recent 3-5 year period. 
 So while the simulations give a relative ranking of performance, 
 and an estimate of how the MPs might preform over time, 
 it is prudent understand that they are estimates given the information at hand.
@@ -989,11 +1004,14 @@ of avoiding the LRP over the 15-year simulation period.
 Note that these results consider recent stock status of SoG herring, and
 that due to structure of the current herring simulation model,
 the simulation approach does not provide insight into 
-year-to-year changes in age composition, spawn distribution, or spawning behaviour.
+year-to-year changes in age composition,
+spawn distribution, or
+spawning behaviour.
 However, these results do indicate that given the overlap in catch at age 
 between the two fleets, the harvest rates applied to the population and the 
 age structure of the population, the differences in age and size selectivity 
-between the two gears is not large enough to impact the status of the population.
+between the two gears is not large enough
+to impact the status of the population.
 Finally, probability values in Table \@ref(tab:allocation-sog)
 should not be directly compared to those in Table \@ref(tab:decision-sog)
 due to differences in assessment method implemented in the simulations
