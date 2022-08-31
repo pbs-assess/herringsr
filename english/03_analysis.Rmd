@@ -519,7 +519,7 @@ Figure \@ref(fig:biomass-total-biomass).
 
 ### Haida Gwaii
 
-Estimated spawning biomass historic lows occured in the late 1960s predicated by
+Estimated spawning biomass historic lows occurred in the late 1960s predicated by
 estimated low recruitment and high estimated natural mortality 
 (Figure \@ref(fig:storyboard-hg)a, b, & e). Under variable 
 estimated recruitment, estimated spawning biomass recovered
@@ -882,7 +882,7 @@ include performance metrics for the four core objectives.
 
 The CC stock persisted in a low biomass, low productivity state from
 approximately 2005 to 2014.
-An increasing trend has been observed in since in all but the 
+An increasing trend has been observed in all but the 
 most recent years (Figure \@ref(fig:storyboard-cc)a).
 
 In the 2022 summer we updated the conditioning of the MSE 
