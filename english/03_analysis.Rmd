@@ -995,30 +995,12 @@ between allocation MPs.
 Thus we used an index-based approach in lieu of fitting the assessment model
 to calculate the TAC for each simulated year, to save computational time.
 
-Results show there is no difference in conservation performance
-between simulated TAC allocation procedures (Table \@ref(tab:allocation-sog)).
-That is, the simulations show that movement of TAC between
+There is no difference in conservation performance
+between simulated TAC allocation procedures [@dfo2021c].
+That is, simulations show that movement of TAC between
 the roe fishery fleets
 does not appear to impact the probability 
 of avoiding the LRP over the 15-year simulation period.
-Note that these results consider recent stock status of SoG herring, and
-that due to structure of the current herring simulation model,
-the simulation approach does not provide insight into 
-year-to-year changes in age composition,
-spawn distribution, or
-spawning behaviour.
-However, these results do indicate that given the overlap in catch at age 
-between the two fleets, the harvest rates applied to the population and the 
-age structure of the population, the differences in age and size selectivity 
-between the two gears is not large enough
-to impact the status of the population.
-Finally, probability values in Table \@ref(tab:allocation-sog)
-should not be directly compared to those in Table \@ref(tab:decision-sog)
-due to differences in assessment method implemented in the simulations
-(index-based vs. current stock assessment model) and
-the conditioning data used
-(spawn survey data up to 2020 and biological data up to 2019 vs.
-both spawn survey and biological data up to 2020).
 
 ### West Coast of Vancouver Island
 
