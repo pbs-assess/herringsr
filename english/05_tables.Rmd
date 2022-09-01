@@ -942,50 +942,6 @@ See Table \@ref(tab:decision-prd) for description.
 rendement de la procédure de gestion pour le modèle statistique de prises-âges du hareng du Pacifique.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
-(ref:allocation-sog-cap) Strait of Georgia SAR:
-management procedure (MP) performance for roe seine and roe gillnet allocation
-for Pacific Herring.
-For this analysis,
-simulations use the most recent spawn index as a biomass estimate and
-MP 'HS30-60_HR20' with two alternative roe allocations
-to explore the movement of total allowable catch (TAC)
-between the roe seine and roe gillnet fleets.
-The 'MP and allocation' column indicates
-the harvest control rule and allocation scenario
-(i.e., proportion of TAC for roe seine and roe gillnet fleets, respectively).
-The 'no adjust' MP represents the status quo allocation
-based on average catches from the past 20 years.
-Final allocation indicates the proportion of TAC
-for the food and bait (FB), roe seine, and roe gillnet fleets.
-Performance metrics for objectives are given for the
-density-dependent natural mortality operating model scenarios only.
-Legend: $C_t$ is catch in year $t$.
-See Table \@ref(tab:decision-prd) for description.
-
-(ref:allocation-sog-cap-fr) RES du détroit de Georgie:
-la performance de la procédure de gestion (PG) pour
-l'allocation de la senne à oeufs et du filet maillant à oeufs
-pour le hareng du Pacifique.
-Pour cette analyse, les simulations utilisent l'indice de frai
-le plus récent comme estimation de la biomasse
-et la PG 'HS30-60_HR20' avec deux allocations alternatives
-de rogue pour explorer le mouvement du total admissible des captures (TAC)
-entre les flottes de senneurs et de filets maillants à rogue.
-La colonne "PG et allocation" indique la règle de contrôle de l'exploitation
-et le scénario d'allocation
-(c'est-à-dire la proportion du TAC pour les flottes de pêche à la senne et
-au filet maillant à la rogue, respectivement).
-Le PG "no adjust" représente l'allocation du statu quo
-basée sur les captures moyennes des 20 dernières années.
-L'allocation finale indique la proportion du TAC pour
-les flottes de pêche de consommation et d'appât (CA),
-de senneurs, et de filets maillants à la rogue.
-Les mesures de performance pour les objectifs sont données uniquement
-pour les scénarios du modèle d'exploitation
-de la mortalité naturelle en fonction de la densité.
-Légende: $C_t$ représente les captures de l'année $t$.
-Voir le tableau \@ref(tab:decision-prd) pour la description.
-
 (ref:decision-wcvi-cap) West Coast of Vancouver Island SAR:
 management procedure (MP) performance for the Pacific Herring
 statistical catch-age model.
@@ -1053,55 +1009,6 @@ decision_tables_mp(
   space.size = ifelse(french, 13, 14),
   translate = french
 )
-```
-
-\clearpage
-
-```{r allocation-sog, results = 'asis', echo=FALSE}
-alloc <- tibble::tribble(
-  ~"MP and allocation", ~"$P(\\SB_t > 0.3\\SB_0)$", ~"$P(\\SB_t > 0.6\\SB_0)$", ~"AAV", ~"$\\overline{C}$", ~"$P(C_t < 650\\,\\text{t})$", ~"FB", ~"Seine", ~"Gillnet",
-  "NoFish_FSC", "0.81", "0.45", "0.00", "0.14", "1.00", "-", "-", "-",
-  "HS30-60_HR20_alloc (no adjust)", "0.72", "0.26", "79.18", "10.26", "0.33", "0.21", "0.40", "0.39",
-  "HS30-60_HR20_alloc (0.1, 0.9)", "0.72", "0.26", "79.44", "10.35", "0.33", "0.21", "0.08", "0.71",
-  "HS30-60_HR20_alloc (0.9, 0.1)", "0.72", "0.26", "78.93", "10.20", "0.33", "0.21", "0.71", "0.08"
-) %>%
-  mutate(`MP and allocation` = gsub(
-    pattern = "_", replacement = "\\\\_",
-    x = `MP and allocation`
-  )) %>%
-  mutate_if(is.character, gsub, pattern = ".", replacement = ",", fixed = TRUE)
-names(alloc)[names(alloc) == "MP and allocation"] <-
-  latex.bold(en2fr("MP and allocation", translate = french))
-names(alloc)[names(alloc) == "AAV"] <-
-  en2fr("AAV", translate = french)
-names(alloc)[names(alloc) == "FB"] <-
-  latex.bold(en2fr("FB", translate = french))
-names(alloc)[names(alloc) == "Seine"] <-
-  latex.bold(en2fr("Seine", translate = french))
-names(alloc)[names(alloc) == "Gillnet"] <-
-  latex.bold(en2fr("Gillnet", translate = french))
-top_head <- c(" " = 1, "Objectives" = 5, " " = 3)
-names(top_head) <- c(" ", en2fr("Objectives", translate = french), " ")
-middle_head <- c(
-  " " = 1, "Conservation" = 1, "Biomass" = 1, "Yield" = 3,
-  "Final allocation" = 3
-)
-names(middle_head) <- c(
-  " ", en2fr("Conservation", translate = french),
-  en2fr("Biomass", translate = french),
-  en2fr("Yield", translate = french),
-  en2fr("Final allocation", translate = french)
-)
-n_cols <- ncol(alloc)
-csasdown::csas_table(
-  x = alloc, format = "latex", bold_header = FALSE,
-  caption = ifelse(
-    french, "(ref:allocation-sog-cap-fr)", "(ref:allocation-sog-cap)"
-  ),
-  align = c("l", rep("c", times = n_cols - 1))
-) %>%
-  add_header_above(middle_head, bold = TRUE) %>%
-  add_header_above(top_head, bold = TRUE)
 ```
 
 \clearpage
