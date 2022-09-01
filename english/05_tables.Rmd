@@ -994,6 +994,7 @@ decision_tables_mp(
     french, "(ref:decision-sog-cap-fr)", "(ref:decision-sog-cap)"
   ),
   xlabel = "tab:decision-sog",
+  p_sb_ave_prod = "0.8",
   font.size = ifelse(french, 10, 11),
   space.size = ifelse(french, 13, 14),
   translate = french
