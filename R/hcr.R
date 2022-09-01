@@ -12,7 +12,7 @@ get_sbt_sbo <- function(name) {
 }
 
 #' Retrieve MP file with decision table data and perform HCR calculations on
-#' the posteriors
+#' the posteriors, with 3 additional Biomass columns
 #'
 #' @param name name of the SAR Region
 #' @param fn file which contains the MP data for the given region
@@ -42,41 +42,6 @@ get_hcr <- function(sbt, sbo, fn) {
   list(
     mp.lst,
     mp %>% select(
-      om, label, obj1, hiab, obj2, obj3, obj4, tac, targ.hr
-    )
-  )
-}
-#' Retrieve MP file with decision table data and perform HCR calculations on
-#' the posteriors, with 3 additional Biomass columns
-#'
-#' @param name name of the SAR Region
-#' @param fn file which contains the MP data for the given region
-#'
-#' @return a list of two elements: 1. A list with the same number of elements as
-#'   there are rows in the table read in from `fn`. Each of these is a list of
-#'   posteriors of length 2, tac and hr (harvest rate) 2. [tibble::tibble()]
-#'   holding the data from the file plus two columns, tac and hr (harvest rate)
-#'   which are the median tac and harverst rate calculated for the region by MP.
-get_hcr_add <- function(sbt, sbo, fn) {
-  mp <- read_csv(fn, col_types = cols()) %>%
-    as_tibble() %>%
-    arrange(
-      factor(om, levels = c("DDM", "DIM", "conM")), desc(obj1), desc(obj2)
-    ) %>%
-    mutate(
-      tac = as.double(NA),
-      targ.hr = as.double(NA)
-    )
-  mp.lst <- NULL
-  for (rw in seq_len(nrow(mp))) {
-    mp.lst[[rw]] <- hcr(sbt, sbo, row = mp[rw, ])
-    hcr_meds <- get_hcr_tac_hr(mp.lst[[rw]])
-    mp[rw, ]$tac <- hcr_meds[1]
-    mp[rw, ]$targ.hr <- hcr_meds[2]
-  }
-  list(
-    mp.lst,
-    mp %>% select(
       om, label, obj1, hiab, obj2, ncn1, ncn2, ncn3, obj3, obj4, tac, targ.hr
     )
   )
@@ -87,14 +52,6 @@ sbt.hg <- sbt_sbo.hg[[1]]
 sbo.hg <- sbt_sbo.hg[[2]]
 rel.sbo.hg <- rep(1, length(sbo.hg))
 
-sbt_sbo.cc <- get_sbt_sbo("CC")
-sbt.cc <- sbt_sbo.cc[[1]]
-sbo.cc <- sbt_sbo.cc[[2]]
-rel.sbo.cc <- rep(1, length(sbo.cc))
-mp.lst.cc <- get_hcr(sbt.cc, sbo.cc, fn = here("data", "mp-cc.csv"))
-mp.vals.cc <- mp.lst.cc[[1]]
-mp.cc <- mp.lst.cc[[2]]
-
 sbt_sbo.prd <- get_sbt_sbo("PRD")
 sbt.prd <- sbt_sbo.prd[[1]]
 sbo.prd <- sbt_sbo.prd[[2]]
@@ -102,6 +59,14 @@ rel.sbo.prd <- rep(1, length(sbo.prd))
 mp.lst.prd <- get_hcr(sbt.prd, sbo.prd, fn = here("data", "mp-prd.csv"))
 mp.vals.prd <- mp.lst.prd[[1]]
 mp.prd <- mp.lst.prd[[2]]
+
+sbt_sbo.cc <- get_sbt_sbo("CC")
+sbt.cc <- sbt_sbo.cc[[1]]
+sbo.cc <- sbt_sbo.cc[[2]]
+rel.sbo.cc <- rep(1, length(sbo.cc))
+mp.lst.cc <- get_hcr(sbt.cc, sbo.cc, fn = here("data", "mp-cc.csv"))
+mp.vals.cc <- mp.lst.cc[[1]]
+mp.cc <- mp.lst.cc[[2]]
 
 sbt_sbo.sog <- get_sbt_sbo("SoG")
 sbt.sog <- sbt_sbo.sog[[1]]
@@ -115,7 +80,7 @@ sbt_sbo.wcvi <- get_sbt_sbo("WCVI")
 sbt.wcvi <- sbt_sbo.wcvi[[1]]
 sbo.wcvi <- sbt_sbo.wcvi[[2]]
 rel.sbo.wcvi <- rep(1, length(sbo.wcvi))
-mp.lst.wcvi <- get_hcr_add(sbt.wcvi, sbo.wcvi, fn = here("data", "mp-wcvi.csv"))
+mp.lst.wcvi <- get_hcr(sbt.wcvi, sbo.wcvi, fn = here("data", "mp-wcvi.csv"))
 mp.vals.wcvi <- mp.lst.wcvi[[1]]
 mp.wcvi <- mp.lst.wcvi[[2]]
 
