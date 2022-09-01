@@ -892,6 +892,12 @@ as a biomass target at $P >= 50$% level.
 Note: dashes indicate that TAC and HR do not apply, either
 because the MP specifies no fishing at current projected biomass level, or
 because the MP fails to meet Objective 1.
+<!-- In addition, $\SB_\text{AVE}$ is average spawning biomass from 1990 to 1999, -->
+<!-- calculated over two Pacific Herring generations. -->
+<!-- Performance criteria $\SB_t >=0.65 \SB_0$, $\SB_t >=0.75 \SB_0$, and -->
+<!-- $\SB_t >= \SB_\text{AVE}$ are proposed by -->
+<!-- the Nuu-chah-nulth Nations (NCN) as biomass targets -->
+<!-- at $P >= 50$% and $P >= 75$% levels. -->
 
 (ref:decision-prd-cap-fr) RES du district de Prince Rupert:
 rendement de la procédure de gestion (PG) pour
@@ -923,6 +929,12 @@ Note: les tirets indiquent que le TAC et la TR ne s'appliquent pas,
 soit parce que le PM spécifie l'interdiction de la pêche
 au niveau actuel de la biomasse projetée,
 soit parce que le PM ne répond pas à l'objectif 1.
+<!-- En outre, $\SB_\text{MOY}$ correspond à la biomasse reproductrice moyenne -->
+<!-- de 1990 à 1999, calculée sur deux générations de hareng du Pacifique. -->
+<!-- Les critères de performance $\SB_t >=0,65 \SB_0$, $\SB_t >=0,75 \SB_0$, et -->
+<!-- $\SB_t >= \SB_\text{AVE}$ sont proposés par -->
+<!-- les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse -->
+<!-- au niveaux $P >= 50$ % et $P >= 75$ %. -->
 
 (ref:decision-cc-cap) Central Coast SAR:
 management procedure performance for the Pacific Herring
@@ -946,23 +958,11 @@ Voir le tableau \@ref(tab:decision-prd) pour la description.
 management procedure (MP) performance for the Pacific Herring
 statistical catch-age model.
 See Table \@ref(tab:decision-prd) for description.
-In addition, $\SB_\text{AVE}$ is average spawning biomass from 1990 to 1999,
-calculated over two Pacific Herring generations.
-Performance criteria $\SB_t >=0.65 \SB_0$, $\SB_t >=0.75 \SB_0$, and
-$\SB_t >= \SB_\text{AVE}$ are proposed by
-the Nuu-chah-nulth Nations (NCN) as biomass targets
-at $P >= 50$% and $P >= 75$% levels.
 
 (ref:decision-wcvi-cap-fr) RES de la côte ouest de l’île de Vancouver:
 rendement de la procédure de gestion pour le modèle statistique
 de prises-âges du hareng du Pacifique.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
-En outre, $\SB_\text{MOY}$ correspond à la biomasse reproductrice moyenne
-de 1990 à 1999, calculée sur deux générations de hareng du Pacifique.
-Les critères de performance $\SB_t >=0,65 \SB_0$, $\SB_t >=0,75 \SB_0$, et
-$\SB_t >= \SB_\text{AVE}$ sont proposés par
-les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse
-au niveaux $P >= 50$ % et $P >= 75$ %.
 
 \begin{landscapepage}
 
