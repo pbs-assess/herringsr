@@ -868,10 +868,9 @@ make.ref.points.table(
 (ref:decision-prd-cap) Prince Rupert District SAR:
 management procedure (MP) performance for the Pacific Herring
 statistical catch-age model.
-Performance metrics are given for three operating model (OM) scenarios:
-density-dependent natural mortality (DDM),
-density-independent natural mortality (DIM), and
-constant natural mortality (conM).
+Performance metrics are given for two operating model (OM) scenarios:
+density-dependent natural mortality (DDM) and
+density-independent natural mortality (DIM).
 Performance criteria are calculated over three Pacific Herring generations
 (i.e., 15 years) from the start of the projection period
 for all objectives (Obj).
@@ -879,34 +878,28 @@ MPs are ordered within each scenario by performance of achieving Objective 1.
 The recommended total allowable catch (TAC) in thousands of tonnes (t) and
 associated harvest rate (HR) are reported for each MP.
 Legend: limit reference point (LRP);
+upper stock reference (USR);
 $P$ is probability;
 maximum (max);
 $\SB_t$ is spawning biomass in year $t$;
 $\SB_0$ is estimated unfished spawning biomass;
+$\overline{SB}_\mli{Prod}$ is average spawning biomass
+during a productive period;
+$\overline{SB}$ is average spawning biomass;
 average annual variability (AAV); and
 $\overline{C}$ is average catch.
 MPs are defined in @dfo2019a and @dfo2019c.
-Performance criteria $\SB_t >= 0.4\SB_0$ is proposed by
-the Herring Industry Advisory Board (HIAB)
-as a biomass target at $P >= 50$% level.
 Note: dashes indicate that TAC and HR do not apply, either
 because the MP specifies no fishing at current projected biomass level, or
 because the MP fails to meet Objective 1.
-<!-- In addition, $\SB_\text{AVE}$ is average spawning biomass from 1990 to 1999, -->
-<!-- calculated over two Pacific Herring generations. -->
-<!-- Performance criteria $\SB_t >=0.65 \SB_0$, $\SB_t >=0.75 \SB_0$, and -->
-<!-- $\SB_t >= \SB_\text{AVE}$ are proposed by -->
-<!-- the Nuu-chah-nulth Nations (NCN) as biomass targets -->
-<!-- at $P >= 50$% and $P >= 75$% levels. -->
 
 (ref:decision-prd-cap-fr) RES du district de Prince Rupert:
 rendement de la procédure de gestion (PG) pour
 le modèle statistique de prises-âges du hareng du Pacifique.
-Les critères de performance sont donnés pour trois scénarios
+Les critères de performance sont donnés pour deux scénarios
 du modèle d'exploitation (ME):
-mortalité naturelle en fonction de la densité (MLD),
-mortalité naturelle indépendante de la densité (NID), et
-mortalité naturelle constante (MC).
+mortalité naturelle en fonction de la densité (MLD) et
+mortalité naturelle indépendante de la densité (NID).
 Les critères de performance sont calculés sur trois générations
 de hareng du Pacifique (c'est-à-dire 15 ans)
 à partir du début de la période de projection pour tous les objectifs (Obj).
@@ -915,26 +908,21 @@ en fonction de leur capacité à atteindre l'objectif 1.
 Le total autorisé des captures (TAC) recommandé en milliers de tonnes (t) et le
 taux de récolte (TR) associé sont indiqués pour chaque PG.
 Légende: point de référence limite (PRL);
+point de référence supérieur du stock (RSS);
 $P$ est la probabilité;
 maximum (max);
 $\SB_t$ est la biomasse reproductrice de l'année $t$;
 $\SB_0$ est la biomasse reproductrice estimée non pêchée;
+$\overline{SB}_\mli{Prod}$ est la biomass reproductrice moyenne
+dans un periode productive;
+$\overline{SB}$ est la biomass reproductrice moyenne;
 variabilité annuelle moyenne (VAM); et
 $\overline{C}$ est la prise moyenne.
 Les PM sont définis dans @dfo2019a et @dfo2019c.
-Le critère de performance $\SB_t >= 0,4\SB_0$ est proposé par
-le Herring Industry Advisory Board (HIAB) comme
-objectif de biomasse au niveau $P >= 50$ %.
 Note: les tirets indiquent que le TAC et la TR ne s'appliquent pas,
 soit parce que le PM spécifie l'interdiction de la pêche
 au niveau actuel de la biomasse projetée,
 soit parce que le PM ne répond pas à l'objectif 1.
-<!-- En outre, $\SB_\text{MOY}$ correspond à la biomasse reproductrice moyenne -->
-<!-- de 1990 à 1999, calculée sur deux générations de hareng du Pacifique. -->
-<!-- Les critères de performance $\SB_t >=0,65 \SB_0$, $\SB_t >=0,75 \SB_0$, et -->
-<!-- $\SB_t >= \SB_\text{AVE}$ sont proposés par -->
-<!-- les Nations Nuu-chah-nulth (NCN) comme objectifs de biomasse -->
-<!-- au niveaux $P >= 50$ % et $P >= 75$ %. -->
 
 (ref:decision-cc-cap) Central Coast SAR:
 management procedure performance for the Pacific Herring
