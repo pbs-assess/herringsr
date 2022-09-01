@@ -951,11 +951,12 @@ statistical catch-age model.
 See Table \@ref(tab:decision-prd) for description.
 
 (ref:decision-sog-cap-fr) RES du détroit de Georgie:
-rendement de la procédure de gestion pour le modèle statistique de prises-âges du hareng du Pacifique.
+rendement de la procédure de gestion pour le modèle statistique
+de prises-âges du hareng du Pacifique.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
 (ref:decision-wcvi-cap) West Coast of Vancouver Island SAR:
-management procedure (MP) performance for the Pacific Herring
+management procedure performance for the Pacific Herring
 statistical catch-age model.
 See Table \@ref(tab:decision-prd) for description.
 
@@ -1014,7 +1015,7 @@ decision_tables_mp(
 \clearpage
 
 ```{r decision-wcvi, results = 'asis', echo = FALSE}
-decision_tables_mp_add(
+decision_tables_mp(
   df = mp.wcvi,
   xcaption = ifelse(
     french, "(ref:decision-wcvi-cap-fr)", "(ref:decision-wcvi-cap)"
