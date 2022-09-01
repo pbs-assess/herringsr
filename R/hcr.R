@@ -26,7 +26,7 @@ get_hcr <- function(sbt, sbo, fn) {
   mp <- read_csv(fn, col_types = cols()) %>%
     as_tibble() %>%
     arrange(
-      factor(om, levels = c("DDM", "DIM", "conM")), desc(obj1), desc(obj2)
+      factor(om, levels = c("DDM", "DIM")), desc(obj1), desc(obj2)
     ) %>%
     mutate(
       tac = as.double(NA),
