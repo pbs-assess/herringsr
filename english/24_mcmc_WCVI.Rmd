@@ -156,3 +156,129 @@ plot_bh(
   translate = french
 )
 ```
+
+(ref:hcr-wcvi-1-cap) West Coast of Vancouver Island SAR:
+projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
+compared to harvest rate (HR) and total allowable catch (TAC;
+rows 2 to 7 in Table \@ref(tab:decision-wcvi)).
+See Figure \@ref(fig:hcr-prd-1) for description.
+
+```{r hcr-wcvi-1, fig.asp=1, fig.cap="(ref:hcr-wcvi-1-cap)"}
+region <- "WCVI"
+probs <- confidence_vals
+cowplot::plot_grid(
+  plot_hcr(
+    hcr.lst = mp.lst.wcvi[[1]][[2]],
+    sbt.lst = sbt.wcvi,
+    mp = mp.wcvi[2, ]$label,
+    region = region,
+    probs = probs
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.wcvi[[1]][[3]],
+    sbt.lst = sbt.wcvi,
+    mp = mp.wcvi[3, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.wcvi[[1]][[4]],
+    sbt.lst = sbt.wcvi,
+    mp = mp.wcvi[4, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.wcvi[[1]][[5]],
+    sbt.lst = sbt.wcvi,
+    mp = mp.wcvi[5, ]$label,
+    region = region,
+    probs = probs
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.wcvi[[1]][[6]],
+    sbt.lst = sbt.wcvi,
+    mp = mp.wcvi[6, ]$label,
+    region = region,
+    probs = probs
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.wcvi[[1]][[7]],
+    sbt.lst = sbt.wcvi,
+    mp = mp.wcvi[7, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  nrow = 3,
+  ncol = 2,
+  align = "hv",
+  axis = "tblr"
+)
+```
+
+(ref:hcr-wcvi-2-cap) West Coast of Vancouver Island  SAR:
+projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
+compared to harvest rate (HR) and total allowable catch (TAC;
+rows 9 to 14 in Table \@ref(tab:decision-wcvi)).
+See Figure \@ref(fig:hcr-prd-1) for description.
+
+```{r hcr-wcvi-2, fig.asp=1, fig.cap="(ref:hcr-wcvi-2-cap)"}
+region <- "SoG"
+probs <- confidence_vals
+cowplot::plot_grid(
+  plot_hcr(
+    hcr.lst = mp.lst.wcvi[[1]][[9]],
+    sbt.lst = sbt.wcvi,
+    mp = mp.wcvi[9, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.wcvi[[1]][[10]],
+    sbt.lst = sbt.wcvi,
+    mp = mp.wcvi[10, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.wcvi[[1]][[11]],
+    sbt.lst = sbt.wcvi,
+    mp = mp.wcvi[11, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.wcvi[[1]][[12]],
+    sbt.lst = sbt.wcvi,
+    mp = mp.wcvi[12, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.wcvi[[1]][[13]],
+    sbt.lst = sbt.wcvi,
+    mp = mp.wcvi[13, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.wcvi[[1]][[14]],
+    sbt.lst = sbt.wcvi,
+    mp = mp.wcvi[14, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  nrow = 3,
+  ncol = 2,
+  align = c("v", "h")
+)
+```

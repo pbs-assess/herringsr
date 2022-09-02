@@ -140,15 +140,17 @@ plot_bh(
 )
 ```
 
-(ref:hcr-prd-cap) Prince Rupert District SAR:
+(ref:hcr-prd-1-cap) Prince Rupert District SAR:
 projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
-compared to harvest rate (HR) and total allowable catch (TAC)
-(rows 1 to 4 in Table \@ref(tab:decision-prd)).
+compared to harvest rate (HR) and total allowable catch (TAC;
+rows 2 to 7 in Table \@ref(tab:decision-prd)).
+Note: the first row is omitted because
+the management procedure specifies no fishing.
 Red horizontal and vertical lines show median HR, TAC,
 and $\SB_{`r assess_yr+1`}$;
 green lines show mean statistics.
 
-```{r hcr-prd, fig.asp=0.75, fig.cap="(ref:hcr-prd-cap)"}
+```{r hcr-prd-1, fig.asp=1, fig.cap="(ref:hcr-prd-1-cap)"}
 region <- "PRD"
 probs <- confidence_vals
 cowplot::plot_grid(
@@ -175,30 +177,13 @@ cowplot::plot_grid(
     show.x.axes = TRUE
   ),
   plot_hcr(
-    mp.lst.prd[[1]][[4]],
-    sbt.prd,
+    hcr.lst = mp.lst.prd[[1]][[4]],
+    sbt.lst = sbt.prd,
     mp = mp.prd[4, ]$label,
     region = region,
     probs = probs,
     show.x.axes = TRUE
   ),
-  nrow = 2,
-  ncol = 2,
-  align = "hv",
-  axis = "tblr"
-)
-```
-
-(ref:hcr-prd-2-cap) Prince Rupert District SAR:
-projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
-compared to harvest rate (HR) and total allowable catch (TAC)
-(rows 5 to 8 in Table \@ref(tab:decision-prd)).
-See Figure \@ref(fig:hcr-prd) for description.
-
-```{r hcr-prd-2, fig.asp=0.75, fig.cap="(ref:hcr-prd-2-cap)"}
-region <- "PRD"
-probs <- confidence_vals
-cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[5]],
     sbt.lst = sbt.prd,
@@ -221,27 +206,20 @@ cowplot::plot_grid(
     probs = probs,
     show.x.axes = TRUE
   ),
-  plot_hcr(
-    hcr.lst = mp.lst.prd[[1]][[8]],
-    sbt.lst = sbt.prd,
-    mp = mp.prd[8, ]$label,
-    region = region,
-    probs = probs,
-    show.x.axes = TRUE
-  ),
-  nrow = 2,
+  nrow = 3,
   ncol = 2,
-  align = c("v", "h")
+  align = "hv",
+  axis = "tblr"
 )
 ```
 
-(ref:hcr-prd-3-cap) Prince Rupert District SAR:
+(ref:hcr-prd-2-cap) Prince Rupert District SAR:
 projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
-compared to harvest rate (HR) and total allowable catch (TAC)
-(rows 9 to 10 in Table \@ref(tab:decision-prd)).
-See Figure \@ref(fig:hcr-prd) for description.
+compared to harvest rate (HR) and total allowable catch (TAC;
+rows 9 to 14 in Table \@ref(tab:decision-prd)).
+See Figure \@ref(fig:hcr-prd-1) for description.
 
-```{r hcr-prd-3, fig.asp=0.75, fig.cap="(ref:hcr-prd-3-cap)"}
+```{r hcr-prd-2, fig.asp=1, fig.cap="(ref:hcr-prd-2-cap)"}
 region <- "PRD"
 probs <- confidence_vals
 cowplot::plot_grid(
@@ -261,8 +239,40 @@ cowplot::plot_grid(
     probs = probs,
     show.x.axes = TRUE
   ),
-  nrow = 2,
-  ncol = 1,
+  plot_hcr(
+    hcr.lst = mp.lst.prd[[1]][[11]],
+    sbt.lst = sbt.prd,
+    mp = mp.prd[11, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.prd[[1]][[12]],
+    sbt.lst = sbt.prd,
+    mp = mp.prd[12, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.prd[[1]][[13]],
+    sbt.lst = sbt.prd,
+    mp = mp.prd[13, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.prd[[1]][[14]],
+    sbt.lst = sbt.prd,
+    mp = mp.prd[14, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  nrow = 3,
+  ncol = 2,
   align = c("v", "h")
 )
 ```

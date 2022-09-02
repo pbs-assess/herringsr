@@ -140,23 +140,16 @@ plot_bh(
 )
 ```
 
-(ref:hcr-sog-cap) Strait of Georgia SAR:
+(ref:hcr-sog-1-cap) Strait of Georgia SAR:
 projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
-compared to harvest rate (HR) and total allowable catch (TAC)
-(rows 1 to 4 in Table \@ref(tab:decision-sog)).
-See Figure \@ref(fig:hcr-prd) for description.
+compared to harvest rate (HR) and total allowable catch (TAC;
+rows 2 to 7 in Table \@ref(tab:decision-sog)).
+See Figure \@ref(fig:hcr-prd-1) for description.
 
-```{r hcr-sog, fig.asp=0.75, fig.cap="(ref:hcr-sog-cap)"}
+```{r hcr-sog-1, fig.asp=1, fig.cap="(ref:hcr-sog-1-cap)"}
 region <- "SoG"
 probs <- confidence_vals
 cowplot::plot_grid(
-  plot_hcr(
-    hcr.lst = mp.lst.sog[[1]][[1]],
-    sbt.lst = sbt.sog,
-    mp = mp.sog[1, ]$label,
-    region = region,
-    probs = probs
-  ),
   plot_hcr(
     hcr.lst = mp.lst.sog[[1]][[2]],
     sbt.lst = sbt.sog,
@@ -180,23 +173,6 @@ cowplot::plot_grid(
     probs = probs,
     show.x.axes = TRUE
   ),
-  nrow = 2,
-  ncol = 2,
-  align = "hv",
-  axis = "tblr"
-)
-```
-
-(ref:hcr-sog-2-cap) Strait of Georgia SAR:
-projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
-compared to harvest rate (HR) and total allowable catch (TAC)
-(rows 5 to 8 in Table \@ref(tab:decision-sog)).
-See Figure \@ref(fig:hcr-prd) for description.
-
-```{r hcr-sog-2, fig.asp=0.75, fig.cap="(ref:hcr-sog-2-cap)"}
-region <- "SoG"
-probs <- confidence_vals
-cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.sog[[1]][[5]],
     sbt.lst = sbt.sog,
@@ -219,27 +195,20 @@ cowplot::plot_grid(
     probs = probs,
     show.x.axes = TRUE
   ),
-  plot_hcr(
-    hcr.lst = mp.lst.sog[[1]][[8]],
-    sbt.lst = sbt.sog,
-    mp = mp.sog[8, ]$label,
-    region = region,
-    probs = probs,
-    show.x.axes = TRUE
-  ),
-  nrow = 2,
+  nrow = 3,
   ncol = 2,
-  align = c("v", "h")
+  align = "hv",
+  axis = "tblr"
 )
 ```
 
-(ref:hcr-sog-3-cap) Strait of Georgia SAR:
+(ref:hcr-sog-2-cap) Strait of Georgia SAR:
 projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
-compared to harvest rate (HR) and total allowable catch (TAC)
-(row 9 in Table \@ref(tab:decision-sog)).
-See Figure \@ref(fig:hcr-prd) for description.
+compared to harvest rate (HR) and total allowable catch (TAC;
+rows 9 to 14 in Table \@ref(tab:decision-sog)).
+See Figure \@ref(fig:hcr-prd-1) for description.
 
-```{r hcr-sog-3, fig.asp=0.75, fig.cap="(ref:hcr-sog-3-cap)"}
+```{r hcr-sog-2, fig.asp=1, fig.cap="(ref:hcr-sog-2-cap)"}
 region <- "SoG"
 probs <- confidence_vals
 cowplot::plot_grid(
@@ -251,8 +220,48 @@ cowplot::plot_grid(
     probs = probs,
     show.x.axes = TRUE
   ),
-  nrow = 1,
-  ncol = 1,
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[10]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[10, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[11]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[11, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[12]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[12, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[13]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[13, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[14]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[14, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  nrow = 3,
+  ncol = 2,
   align = c("v", "h")
 )
 ```
