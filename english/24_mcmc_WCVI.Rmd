@@ -226,7 +226,7 @@ rows 9 to 14 in Table \@ref(tab:decision-wcvi)).
 See Figure \@ref(fig:hcr-prd-1) for description.
 
 ```{r hcr-wcvi-2, fig.asp=1, fig.cap="(ref:hcr-wcvi-2-cap)"}
-region <- "SoG"
+region <- "WCVI"
 probs <- confidence_vals
 cowplot::plot_grid(
   plot_hcr(

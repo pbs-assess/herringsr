@@ -144,8 +144,8 @@ plot_bh(
 projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
 compared to harvest rate (HR) and total allowable catch (TAC;
 rows 2 to 7 in Table \@ref(tab:decision-prd)).
-Note: the first row is omitted because
-the management procedure specifies no fishing.
+Note: management procedures that specify no fishing
+are excluded from this figure.
 Red horizontal and vertical lines show median HR, TAC,
 and $\SB_{`r assess_yr+1`}$;
 green lines show mean statistics.
@@ -154,13 +154,6 @@ green lines show mean statistics.
 region <- "PRD"
 probs <- confidence_vals
 cowplot::plot_grid(
-  plot_hcr(
-    hcr.lst = mp.lst.prd[[1]][[1]],
-    sbt.lst = sbt.prd,
-    mp = mp.prd[1, ]$label,
-    region = region,
-    probs = probs
-  ),
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[2]],
     sbt.lst = sbt.prd,
