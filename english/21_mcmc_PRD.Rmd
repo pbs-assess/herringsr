@@ -150,7 +150,7 @@ Red horizontal and vertical lines show median HR, TAC,
 and $\SB_{`r assess_yr+1`}$;
 green lines show mean statistics.
 
-```{r hcr-prd-1, fig.asp=1, fig.cap="(ref:hcr-prd-1-cap)"}
+```{r hcr-prd-1, fig.asp=1, fig.cap="(ref:hcr-prd-1-cap)", eval=FALSE}
 region <- "PRD"
 probs <- confidence_vals
 cowplot::plot_grid(
@@ -212,7 +212,7 @@ compared to harvest rate (HR) and total allowable catch (TAC;
 rows 9 to 14 in Table \@ref(tab:decision-prd)).
 See Figure \@ref(fig:hcr-prd-1) for description.
 
-```{r hcr-prd-2, fig.asp=1, fig.cap="(ref:hcr-prd-2-cap)"}
+```{r hcr-prd-2, fig.asp=1, fig.cap="(ref:hcr-prd-2-cap)", eval=FALSE}
 region <- "PRD"
 probs <- confidence_vals
 cowplot::plot_grid(
