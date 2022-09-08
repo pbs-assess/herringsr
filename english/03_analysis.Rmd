@@ -195,9 +195,8 @@ fishing effects (i.e., gear selectivity),
 environmental effects (e.g., changes in ocean productivity), or
 changes in sampling protocols
 (e.g., shorter time frame over which samples are collected).
-There has been an increasing trend in weight-at-age for all major stocks
-from 2012 to `r assess_yr`,
-although to a lesser degree for PRD.
+Declines in appear to have ceased 
+In the years since 2010, there appears to be no further declines in weight-at-age.
 
 ### Abundance data
 
