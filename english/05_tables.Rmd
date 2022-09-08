@@ -889,9 +889,9 @@ $\overline{SB}$ is average spawning biomass;
 average annual variability (AAV); and
 $\overline{C}$ is average catch.
 MPs are defined in @dfo2019a and @dfo2019c.
-Note: dashes indicate that TAC and HR do not apply, either
+Note: 'NA' indicates that TAC and HR do not apply, either
 because the MP specifies no fishing at current projected biomass level, or
-because the MP fails to meet Objective 1.
+because the MP specifies no fishing.
 
 (ref:decision-prd-cap-fr) RES du district de Prince Rupert:
 rendement de la procédure de gestion (PG) pour
@@ -919,10 +919,10 @@ $\overline{SB}$ est la biomass reproductrice moyenne;
 variabilité annuelle moyenne (VAM); et
 $\overline{C}$ est la prise moyenne.
 Les PM sont définis dans @dfo2019a et @dfo2019c.
-Note: les tirets indiquent que le TAC et la TR ne s'appliquent pas,
+Note: «NA» indique que le TAC et la TR ne s'appliquent pas,
 soit parce que le PM spécifie l'interdiction de la pêche
 au niveau actuel de la biomasse projetée,
-soit parce que le PM ne répond pas à l'objectif 1.
+soit parce que le PM spécifie l'interdiction de la pêche.
 
 (ref:decision-cc-cap) Central Coast SAR:
 management procedure performance for the Pacific Herring
