@@ -53,7 +53,6 @@ reflect the latest OM updates.
 
 Since initiation of the Pacific Herring MSE process,
 results have been included in the annual stock assessment as follows:
-<!-- TODO: These 3 "as per" statements are not clear -->
 
 1. The 2018 stock assessment includes MP recommendations
 for the SoG and WCVI SARs [@dfo2019a].

@@ -18,8 +18,9 @@ Renewal of the management framework for Pacific Herring uses MSE to
 evaluate the performance of candidate MPs against
 hypotheses about past and future stock and fishery dynamics. 
 The purpose of the MSE process is to
-identify MPs that provide acceptable outcomes related to
-conservation and fishery management objectives. 
+identify and eliminate MPs that incur unacceptable risks to a stock (poor 
+choices) and to identify MPs that provide acceptable outcomes related to
+conservation and fishery management objectives.
 The identification of a preferred management procedure requires
 a fully specified set of measurable objectives that include
 reference points (typically categorized as limits and targets) and
@@ -32,7 +33,7 @@ government and non-government organizations.
 
 The first MSE cycles for the SoG and WCVI management areas were completed in 2018 [@dfo2019a].
 Steps included
-OM development,
+OM development [@benson2022],
 fitting the OMs to Pacific Herring stock and fishery monitoring data
 from 1951 to 2017, and
 closed-loop simulations of MP performance for
@@ -40,14 +41,9 @@ alternative future natural mortality scenarios [@dfo2019a].
 In the spring of 2019,
 the MSE process was extended to the HG, PRD, and CC management areas
 with stock and fishery monitoring data updated to include 2018
-and performance evaluation of area specific MPs [@dfo2019c].
-In the summer of 2020,
-the second MSE cycle was initiated for the WCVI and SoG management areas.
-This included conditioning the OMs with more recent stock and fishery data, and
-evaluating the performance of additional candidate MPs
-for these management areas.
-A similar update was conducted in the summer of 2021
-for the PRD and CC management areas.
+and performance evaluation of area specific MPs [@dfo2019c],
+with subsequent updates outlined in Section "\nameref{sec:harv-opts}".
+<!-- TODO-MG: change sec:harv-opts to "point to" the Context-->
 Results from MP evaluations reflect most recent updates for all management areas.
 
 A core set of fisheries management objectives [@dfo2019c] have been applied to each major SAR:
@@ -66,14 +62,13 @@ over three Pacific Herring generations
 
 1. Maximize average annual catch
 over three Pacific Herring generations
-(goal reflecting catch biomass).
+(goal reflecting catch averages).
 
 However, a fully specified set of objectives has not yet been developed
 for each management area.
 DFO will continue to collaborate with coastal First Nations to
 develop area-specific objectives specific to
-Food, Social and Ceremonial fisheries as well as
-spawn-on-kelp (SOK) fisheries.
+Food, Social and Ceremonial fisheries as well as SOK fisheries.
 In addition, DFO will continue to engage with
 the herring industry, government, and non-government organizations
 to describe broader objectives related to conservation, economics, and access.
@@ -91,7 +86,7 @@ three hypotheses about future Pacific Herring natural mortality $M$:
 
 1. $M$ is constant over time (conM).
 
-These three hypotheses are captured as three operating model (OM) scenarios in @dfo2019a.
+These three hypotheses are captured as three operating model (OM) scenarios in @benson2022.
 The DDM scenario was identified as the reference OM scenario based on
 discussion at the July 2018 CSAS review process [@dfo2019c],
 while the DIM and conM scenarios were identified as robustness OM scenarios.
