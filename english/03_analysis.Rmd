@@ -2,8 +2,9 @@
 
 ## COVID-19 pandemic
 
-Unlike impacts of COVID 19 in 2020 and 2021, collection and analysis of biological 
-data was not affected by the COVID-19 pandemic in 2022.
+Unlike the past two years,
+the COVID-19 pandemic had a minor impact on
+the collection and analysis of biological data in 2022.
 Spawn surveys proceeded as usual in 2022,
 with dive surveys in all major SARs.
 
