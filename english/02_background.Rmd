@@ -33,7 +33,7 @@ First Nations fish for whole herring, herring roe, and
 herring eggs for FSC purposes.
 Whole herring are fished by seine, gillnet, rake, dip net, and jig.
 Herring eggs are collected as spawn on seaweed such as kelp (i.e., SOK), or
-spawn on set tree boughs. 
+spawn on tree boughs placed in spawning locations. 
 Indigenous harvest of herring for FSC purposes may occur coast wide
 where authorized by a communal license.
 
@@ -138,8 +138,8 @@ stock status relative to the LRP of $0.3\SB_0$, and
 spawning biomass in `r major_end_yr + 1` assuming no catch
 ($\SB_{`r major_end_yr + 1`}$).
 The projected spawning biomass is based on
-the current year's recruitment deviations from average
-predicted by the Beverton-Holt stock-recruit model and
+the current year's recruitment deviations from average as 
+predicted by the Beverton-Holt stock-recruit model, and
 estimated natural mortality and weight-at-age,
 both averaged over the most recent 5-years.
 The Markov chain Monte Carlo (MCMC) sampling procedure follows the same method implemented by @cleary2018.
