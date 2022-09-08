@@ -23,7 +23,7 @@ where performance of Pacific Herring management procedures (MPs) were assessed
 against conservation objectives for the
 Strait of Georgia (SoG) and West Coast of Vancouver Island (WCVI)
 stock assessment regions (SARs) [@dfo2019a].
-Steps included operating model (OM) development,
+Steps included operating model (OM) development [@benson2022],
 fitting the OM to Pacific Herring stock and fishery monitoring data
 (OM conditioning), and
 closed-loop simulations of MP performance for alternative
@@ -31,25 +31,23 @@ future natural mortality scenarios.
 In 2019, DFO initiated the MSE process for the
 Haida Gwaii (HG), Prince Rupert District (PRD), and Central Coast (CC)
 SARs [@dfo2019c].
-Updates were made to the MSE simulations for the SoG and WCVI SARs in 2020,
-and similar updates were made for the PRD and CC SARs in 2021.
-
-<!-- TODO: (JC) Include Benson et al. (2022) -->
-Refer to new herring work [@benson2022].
+Updates to MP evaluations were then conducted for SoG and WCVI SARs in 2020 
+[@dfo2021b],
+and for all SARs herein.
 
 This assessment incorporates new science advice on
 choice of upper stock reference (USR) points
 for four Pacific Herring major SARs (PRD, CC, SoG, and WCVI).
 An analysis of options was completed in 2022 [@dfo2022] and
-implementation of USRs will be in the 
+implementation of USRs will occur through the 
 2022/23 Integrated Fisheries Management Plan (IFMP).
 To support on-going consultations,
 five USR options are presented for PRD, CC, SoG and WCVI
 (Section "\nameref{sec:harv-opts}").
 For these four stocks
-we also update OM conditioning to include
-stock and fishery data from 1951 to 2021.
-These updates also appear in @dfo2022.
+we also update conditioning of the Herring OM [@benson2022]
+by including stock and fishery data from 1951 to 2021.
+These updates first appear in @dfo2022.
 MP evaluations presented in the harvest option tables 
 reflect the latest OM updates.
 
@@ -57,28 +55,30 @@ Since initiation of the Pacific Herring MSE process,
 results have been included in the annual stock assessment as follows:
 <!-- TODO: These 3 "as per" statements are not clear -->
 
-1. The 2018 stock assessment included updated MP recommendations
-for the SoG and WCVI SARs for 2019 [@dfo2019b].
+1. The 2018 stock assessment includes MP recommendations
+for the SoG and WCVI SARs [@dfo2019a].
 
-1. The 2019 stock assessment included MP recommendations
-for the SoG and WCVI SARs as per 2018, and
-updated MP recommendations for the HG, PRD, and CC SARs [@dfo2020a].
+1. The 2019 stock assessment includes MP recommendations for the 
+HG, PRD, and CC SARs [@dfo2020a] and implements the previous years' MP 
+recommendations for the SoG and WCVI SARs. 
 
-1. The 2020 stock assessment includes updated MP recommendations
-for the SoG and WCVI SARs, and
-MP recommendations for HG, PRD, and CC SARs as per 2019 [@dfo2020a].
+1. The 2020 stock assessment includes an update to MP recommendations
+for the SoG and WCVI SARs [@dfo2021b] and implements the previous
+years' MP recommendations for HG, PRD, and CC SARs.
 
-1. The 2021 stock assessment includes MP recommendations
-for the SoG and WCVI SARs as per 2020 [@dfo2021], and
-updated MP recommendations for the PRD and CC SARs.
-Management measures to support long-term recovery of HG herring
-are being developed through the rebuilding plan process.
+1. The 2021 stock assessment includes an update to MP recommendations 
+for the PRD and CC SARs [@dfo2021c] and implements the previous years
+MP recommendations for the SoG and WCVI SARs.
 
-1. The 2022 stock assessment includes
+MPs are not updated for HG because management measures to support 
+long-term recovery of HG herring are being developed through the 
+rebuilding plan process.
+
+The 2022 stock assessment includes
 MP recommendations for PRD, CC, SoG, and WCVI,
-derived from the latest OM updates 
-(historic stock and fishery data from 1951-2021).
-USR options from @dfo2022 are included to
+derived by updating Herring OMs conditioning [@benson2022] using 
+the latest historic stock and fishery data from 1951-2021.
+USR options first presented in @dfo2022 are included to
 support selection of stock-specific USRs
 for implementation through the 2022/23 IFMP.
 Management measures to support long-term recovery of HG herring,
@@ -99,9 +99,9 @@ Estimated stock trajectories,
 current status of stocks for `r assess_yr`,
 management procedure options, and
 harvest advice recommendations from those MPs for `r assess_yr + 1`
-reflect methods of @cleary2018 and,
+reflect methods of @cleary2018 and @benson2022 and,
 where applicable,
-recommendations from the aforementioned 2018, 2019 and 2020 MSE analyses
+recommendations from the aforementioned 2018, 2019, 2020, and 2021 MSE analyses
 (Section "\nameref{sec:harv-opts}").
 
 <!-- Mandatory last paragraph in this section -->
