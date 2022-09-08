@@ -99,10 +99,10 @@ Several lessons were learned from the MSE analyses conducted so far:
 <!-- TODO-JC: review this list and add wording to #1 and #2-->
 
 1. The catch-at-age stock assessment model can produce large (positive)
-assessment errors.
-Such assessment errors cause over-estimation of spawning biomass and
-result in recommended catch limits such that the realized harvest rate exceeds
-the intended target specified by a HCR (e.g., over-harvest).
+assessment errors and in such cases, assessment errors can cause 
+over-estimation of the spawning biomass.
+However Herring OMs simulate these phenomena and thus assessment errors
+are accounted for in the MP evaluations.
 
 1. Reduction in harvest rate from 20% to 10% was the most effective means of
 mitigating stock assessment errors by
@@ -122,10 +122,9 @@ The reasons relate to
 differences in objectives deemed important by resource users,
 differences in historical and current stock and fishery dynamics, and
 differences in the magnitude and direction of assessment model errors in each SAR.
-Conservation objectives such as those based on
-avoiding a threshold to serious harm (i.e., a limit reference point) 
-in alignment with the DFO PA Framework [@dfo2009] are held constant among SARs
-based on the analyses of @kronlund2017.
+Conservation objectives such as those based on avoiding a biological limit
+reference point (LRP) in alignment with the DFO PA Policy [@dfo2009] are held 
+constant among SARs based on the analyses of @kronlund2017.
 
 1. There are many possible ways to incorporate MP performance in
 robustness trials into decision-making but, 
