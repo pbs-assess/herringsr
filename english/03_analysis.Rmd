@@ -906,7 +906,7 @@ The SoG has the largest biomass of the major SARs
 and comprises more than 50% of the total coast wide biomass 
 (Figure \@ref(fig:coastwide-biomass-catch)).
 Estimated spawning biomass trends remained stable and high from
-2011 through 2020, and increases in estimated natural mortality rates
+2011 through 2020, though increases in estimated natural mortality rates
 have increased in the last 3-5 years.
 SoG MP evaluations are implemented using the Herring OM [@benson2022] and
 were first presented in 2018 [@dfo2019a].
@@ -928,34 +928,19 @@ In this case it may be important to consider how these recent most MP updates
 for SoG (Table \@ref(tab:decision-sog)) may be influenced by the the last 
 three to five years of natural mortality trends used to condition the OM. 
 
+MSE updates presented here show the conservation objective is met with the
+minimum 75% probability when simulating MPs with 10% and 15% harvest rates.
+However MPs with 20% harvest rates, e.g., HS30-60_HR20 
+and minE30_HR20, which were previously shown to meet the minimum 75% 
+probability level (@dfo2019a and @dfo2021b) now show probability values ranging
+from 67% to 74% (across both DDM and DIM OMs).
 
-
-In 2022, with updated information from 2021
-closed-loop feedback simulations for the SoG showed that
-only 3 tested MPs could maintain the spawning biomass above the LRP
-with 75% probability or higher for three generations
-(a.k.a. the conservation objective) 
-across both the OM scenarios.
-The three MPs including the no-fish MP, the Lenfest MP and the 
-30-60% hockey-stick MP with a 10% harvest rate
-(Table \@ref(tab:decision-sog)).This can be compared to 2020 when 
-all evaluated MP's met the conservation objective (range 75 to 87%) in both
-the DDM and DIM scenarios, or compared to 2018 when biomass was trending upward 
-and the range was 97% or above.The 15 year projections of the performance 
-objectives are sensitive to trends in the spawn index
-during the recent three to five year period. 
-So while the simulations give a relative ranking of performance, 
-and an estimate of how the MPs might preform over time, 
-it is prudent understand that they are estimates given the information at hand.
-
-Additional simulation-evaluations were conducted in 2019 to
-further explore the role of catch caps in
-mitigating assessment errors [@dfo2019c].
-A comparison of catch caps from 30,000&nbsp;t to 5,000&nbsp;t showed
-no discernible gain in conservation performance under both OM scenarios.
-Results also showed MPs with catch caps of 20,000&nbsp;t or less
-rarely exceed the 20% harvest rate for any given projection year
-(over the 15 year projections).
+In situations where estimated natural mortality trends show a sudden increasing
+or decreasing trend in the terminal three to five years, MP evaluations may more 
+reliably reflect the relative ranking of MP performance, as opposed to realized 
+short term performance.
+In all cases the simulated MP performance from previous years can inform 
+selection or elimination of MPs.
 
 `r proj_biomass_text(SAR = "SoG", next_yr = assess_yr + 1, translate = french)`
 
@@ -964,54 +949,10 @@ Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
 are presented in Table \@ref(tab:decision-sog).
 These options reflect application of MPs to the `r assess_yr + 1`
 forecast biomass for SoG,
-whereby each MP meets the conservation objective with a minimum
-75% probability under the reference OM (DDM) scenario.
-Harvest options under the two robustness OM scenarios are also included.
+whereby each MP meets (or has been shown to meet) the conservation objective 
+with a minimum 75% probability.
 All MPs and scenarios listed in Table \@ref(tab:decision-sog) include
 updated performance metrics under both scenarios [@dfo2021b].
-
-<!-- TODO-JC: Perhaps remove findings form last year.-->
-In 2021, we investigated the sensitivity of SoG MP performance to changes in 
-allocation of TAC between the roe seine and roe gillnet fleets.
-The recent 20 year average catches show 
-the food and bait, roe seine, and roe gillnet 
-fleets take 21%, 40%, and 39% of the catch
-and represents the status quo allocation used for this analysis.
-
-We consider two changes in allocation of TAC
-between roe seine and roe gillnet fleets:
-high gillnet allocation (i.e., 90% gillnet) and
-high seine allocation (i.e., 90% seine).
-MPs consider only movement between roe fleets,
-thus no changes are made to the overall food and bait allocation.
-Comparisons among TAC allocation are implemented using the HS30-60_HR20 MP
-with an index based procedure.
-This analysis was designed to investigate relative differences
-between allocation MPs.
-Thus we used an index-based approach in lieu of fitting the assessment model
-to calculate the TAC for each simulated year, to save computational time.
-
-Results show there is no difference in conservation performance
-between simulated TAC allocation procedures [@dfo2021c].
-That is, the simulations show that movement of TAC between
-the roe fishery fleets
-does not appear to impact the probability 
-of avoiding the LRP over the 15-year simulation period.
-Note that these results consider recent stock status of SoG herring, and
-that due to structure of the current herring simulation model,
-the simulation approach does not provide insight into 
-year-to-year changes in age composition, spawn distribution, or spawning behaviour.
-However, these results do indicate that given the overlap in catch at age 
-between the two fleets, the harvest rates applied to the population and the 
-age structure of the population, the differences in age and size selectivity 
-between the two gears is not large enough to impact the status of the population.
-Finally, probability values in Table \@ref(tab:allocation-sog)
-should not be directly compared to those in Table \@ref(tab:decision-sog)
-due to differences in assessment method implemented in the simulations
-(index-based vs. current stock assessment model) and
-the conditioning data used
-(spawn survey data up to 2020 and biological data up to 2019 vs.
-both spawn survey and biological data up to 2020).
 
 ### West Coast of Vancouver Island
 
