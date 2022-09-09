@@ -918,7 +918,15 @@ objective ranging from 91% to 100% [@dfo2019a], depending on the scenario and MP
 Subsequent updates in 2020 show a decline in conservation performance with
 probabilities ranging from 75% to 88% (DDM and DIM only, @dfo2021b), and the
 updates included here show probabilities ranging from 67% to 87%
-(Table \@ref(tab:decision-sog).
+(Table \@ref(tab:decision-sog)).
+
+These comparisons highlights the importance of considering the learned
+lessons from the MSE process (Section "Management strategy evaluation")
+when selecting or eliminating MPs.
+<!-- TODO-MG: make/ add Section reference for previous line-->
+In this case it may be important to consider how these recent most MP updates 
+for SoG (Table \@ref(tab:decision-sog)) may be influenced by the the last 
+three to five years of natural mortality trends used to condition the OM. 
 
 
 
