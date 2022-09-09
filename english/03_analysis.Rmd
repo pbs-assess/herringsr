@@ -333,11 +333,11 @@ on Haida Gwaii during the 2022 herring season.
 
 ### Prince Rupert District
 
-<!-- TODO: Add FN observations from Penny. -->
+Comments for PRD had not provided at the time draft was submitted.
 
 ### Central Coast
 
-<!-- TODO: Add FN observations from Larry (Area 06) and Mike (Area 07). -->
+Comments for Area06 and Area07 had not provided at the time draft was submitted.
 
 FSC harvesters in Area 08 observed only brief spot spawns
 lasting 24 hours or less.
@@ -357,6 +357,9 @@ however, no observations were made or reported this year.
 which doesn’t indicate it didn’t happen.
 Bute Inlet is very remote.
 No other indications of spawn activity were observed or reported.
+
+Comments covering southern areas of SoG had not provided at the 
+time draft was submitted.
 
 ### West Coast of Vancouver Island
 
@@ -396,8 +399,8 @@ but no trees were set as most people had left the area for the season.
 
 ## Stock status update
 
-Analyses of stock trend information for AM2 are presented following
-methods of @cleary2018 for the Pacific Herring major SARs.
+Analyses of stock trend information is presented following
+methods of @cleary2018 for the Pacific Herring major SARs (AM2 only).
 As in previous years,
 Markov chain Monte Carlo (MCMC) runs have chain length `r f(mcmc_length)`
 with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration (i.e., thinning).
@@ -469,7 +472,7 @@ results presented in @dfo2022.
 Five USR options were evaluated:
 
 1. Average spawning biomass during a productive period,
-$\SB_{\mli{productive period}}$ ($B_\text{MSY}$ proxy),
+$\SB_{\mli{productive-period}}$ ($B_\text{MSY}$ proxy),
 
 1. $0.4\SB_0$,
 
@@ -478,57 +481,62 @@ $\SB_{\mli{productive period}}$ ($B_\text{MSY}$ proxy),
 1. $0.6\SB_0$, and
 
 1. Average spawning biomass from `r major_start_yr` to `r assess_yr`,
-$\SB_{\mli{longterm ave}}$.
+$\SB_{\mli{long-term}}$.
 
-<!-- TODO-JC: review this text-->
-The simulation-evaluations did not select a single USR as this needs to
-be informed by the consultative process which is on-going.
-Final USR choices for major SARs will be reported in the 2022 draft Herring IFMP.
+Implementing the USR as a target biomass objective within the simulation 
+evaluation process allows us to identify MP performance in achieving USRs, 
+including whether a given USR option can be achieved in the absence of 
+commercial fisheries. 
+Implementation of USRs for major Herring SARs will occur through the 
+2022/23 draft IFMP.
 
 Stock status relative to the assessment model estimates $0.3\SB_0$ (LRP) and
 USR options are presented for PRD, CC, SoG, and WCVI SARs
 in Tables \@ref(tab:ref-points-prd) through \@ref(tab:ref-points-wcvi).
 
-The LRP and USR relate stock status to the DFO PA Framework [@dfo2009], and
+The LRP and USR relate stock status to the DFO PA Policy [@dfo2009], and
 in the assessment of Pacific Herring
 the same calculations are applied for each SAR.
 There is an important distinction between reference points (e.g., LRP, USR) and
 operational control points of the harvest control rule (HCR)
 or the management procedure used to set catch limits.
 Specifically, operational control points (OCPs) define the inflection points
-of a HCR, and identify biomass levels where management action is taken.
-For example, the harvest rate is set to zero and fishing ceases when
-biomass falls below the lower OCP.
+of a HCR and identify biomass levels where management action is taken,
+whereas the LRP and USR are implemented as management objectives.
 
-<!-- TODO: Not sure where to put this -->
-Coast wide spawning biomass and catch is shown in
-Figure \@ref(fig:coastwide-biomass-catch).
-Total biomass and spawning biomass are shown in 
-Figure \@ref(fig:biomass-total-biomass).
+### Coast wide trends
+
+Coast wide trends in Pacific Herring biomass and contribution by SAR show 
+an increasing trend in estimated spawning biomass from 2010-2020 with low 
+variability in catches (Figure \@ref(fig:coastwide-biomass-catch)).
+
+We also include time series of total estimated biomass and spawning biomass for 
+each SAR (Figure \@ref(fig:biomass-total-biomass)) where these trends 
+and the coast wide trends are presented using median posterior estimates.
 
 ### Haida Gwaii
 
 Estimated spawning biomass historic lows occurred in the late 1960s predicated by
 estimated low recruitment and high estimated natural mortality 
-(Figure \@ref(fig:storyboard-hg)a, b, & e). Under variable 
-estimated recruitment, estimated spawning biomass recovered
+(Figure \@ref(fig:storyboard-hg)a, b, e). 
+Under variable estimated recruitment, estimated spawning biomass recovered
 from that point through the early 1980s supported by 
-dropping estimated natural mortality rates.
-Estimated natural mortality started raising at that point
-leading to near historic lows in estimated biomass in the mid-1990s. A reprieve 
-in the estimated low biomass was spurred by through the late 1990s by above average
-estimated recruitment
-before falling to persistent historic lows in estimated biomass from 2000 to 2010
-(Figure \@ref(fig:storyboard-hg)d).
+declining rates of estimated natural mortality.
+As the estimated natural mortality agai began increasing, HG herring reached
+near historic lows in estimated biomass in the mid-1990s. 
+A reprieve in the estimated low biomass was spurred by through the late 1990s 
+by above average estimated recruitment before biomass declined to persistent 
+historic lows in estimated from 2000 to 2010 (Figure \@ref(fig:storyboard-hg)d).
 Above average estimated recruitment of age-`r age_first` fish in 2012 supported 
 modest increases in the spawn index in 2013 and 2015 before falling once again to 
-near historic lows from 2016 to 2018 (Figure \@ref(fig:storyboard-hg)a, c,d) 
+near historic lows from 2016 to 2018 (Figure \@ref(fig:storyboard-hg)a, c, d).
 The increasing trend in the estimated natural mortality rate since 1980
 (Figure \@ref(fig:storyboard-hg)b) largely absorbed surplus production
 attributable to above average recruitment events
 (e.g., 1997 and 2012; Figure \@ref(fig:storyboard-hg)c, d).
 Estimated natural mortality has declined from a peak rate around 2002 and in the 
-last 5 years has decreased sharply. Despite the decline in estimated natural mortality, 
+last 5 years has decreased sharply. 
+Despite the decline in estimated natural mortality, 
 the HG stock has been in a low biomass state,
 with many of these years also showing low productivity
 which has largely precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
@@ -545,8 +553,9 @@ and the last commercial SOK fishery in 2004.
 
 `r stock_status_text(SAR = "HG", this_yr = assess_yr, translate = french)`
 Management measures to support long-term recovery of herring stocks in
-Haida Gwaii are being developed through the rebuilding plan process
-(Section "\nameref{sec:harv-opts}").
+Haida Gwaii are being developed through the rebuilding plan process^1.
+<!-- TODO: MG- can you make the ^1 a superscript that links to the HC rebuilding 
+footnote (appears in Context)--> 
 
 ### Prince Rupert District
 
