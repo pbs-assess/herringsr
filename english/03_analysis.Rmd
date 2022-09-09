@@ -31,7 +31,8 @@ MSE is an iterative and ongoing process conducted with the participation of
 First Nations, the fishing industry, as well as
 government and non-government organizations. 
 
-The first MSE cycles for the SoG and WCVI management areas were completed in 2018 [@dfo2019a].
+The first MSE cycles for the SoG and WCVI management areas
+were completed in 2018 [@dfo2019a].
 Steps included
 OM development [@benson2022],
 fitting the OMs to Pacific Herring stock and fishery monitoring data
@@ -42,11 +43,12 @@ In the spring of 2019,
 the MSE process was extended to the HG, PRD, and CC management areas
 with stock and fishery monitoring data updated to include 2018
 and performance evaluation of area specific MPs [@dfo2019c],
-with subsequent updates outlined in Section "\nameref{sec:harv-opts}".
-<!-- TODO-MG: change sec:harv-opts to "point to" the Context-->
-Results from MP evaluations reflect most recent updates for all management areas.
+with subsequent updates outlined in Section "\nameref{sec:context}".
+Results from MP evaluations reflect
+most recent updates for all management areas.
 
-A core set of fisheries management objectives [@dfo2019c] have been applied to each major SAR:
+A core set of fisheries management objectives [@dfo2019c]
+have been applied to each major SAR:
 
 1. Maintain spawning biomass above the LRP with at least 75% probability
 over three Pacific Herring generations
@@ -555,9 +557,8 @@ and the last commercial SOK fishery in 2004.
 
 `r stock_status_text(SAR = "HG", this_yr = assess_yr, translate = french)`
 Management measures to support long-term recovery of herring stocks in
-Haida Gwaii are being developed through the rebuilding plan process^1.
-<!-- TODO: MG- can you make the ^1 a superscript that links to the HC rebuilding 
-footnote (appears in Context)--> 
+Haida Gwaii are being developed through
+the rebuilding plan process.$^{\ref{fn:rebuild}}$
 
 ### Prince Rupert District
 
@@ -919,7 +920,8 @@ Results presented here may inform this on going commitment.
 In 2022, with updated information from 2021
 closed-loop feedback simulations for the SoG showed that
 only 3 tested MPs could maintain the spawning biomass above the LRP
-with 75% probability or higher for three generations (a.k.a. the conservation objective) 
+with 75% probability or higher for three generations
+(a.k.a. the conservation objective) 
 across both the OM scenarios.
 The three MPs including the no-fish MP, the Lenfest MP and the 
 30-60% hockey-stick MP with a 10% harvest rate
@@ -927,7 +929,8 @@ The three MPs including the no-fish MP, the Lenfest MP and the
 all evaluated MP's met the conservation objective (range 75-87%) in both
 the DDM and DIM scenarios, or compared to 2018 when biomass was trending upward 
 and the range was 97% or above.The 15 year projections of the performance 
-objectives are sensitive to trends in the spawn index during the recent 3-5 year period. 
+objectives are sensitive to trends in the spawn index
+during the recent 3-5 year period. 
 So while the simulations give a relative ranking of performance, 
 and an estimate of how the MPs might preform over time, 
 it is prudent understand that they are estimates given the information at hand.
