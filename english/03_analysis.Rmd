@@ -877,7 +877,7 @@ No new MPs were included however probability metrics for the five USRs options
 [@dfo2022] were estimated and have been added to the harvest options tables.
 <!-- TODO-: Make %'s auto update.JC: Defer until after SR is submitted-->
 The updated simulations show that MPs with harvest rates at 5% and 10% 
-maintain spawning biomass above the LRP with 80 to 100% probability over all 
+maintain spawning biomass above the LRP with 81 to 92% probability over all 
 both OM scenarios (Table \@ref(tab:decision-cc)).
 `r mean_harvest_text(SAR = "CC", translate = french)`
 
@@ -887,7 +887,7 @@ conservation objective with a minimum 75% probability under either DDM or DIM
 OM scenario.
 
 Since multiple MPs meet the conservation objective of maintaining spawning 
-biomass above the LRP with at least 75%, other socio-economic reasons may
+biomass above the LRP with at least 75%, other socio-economic objectives  may
 drive the choice for a particular MP. 
 Additionally, the current CC operating model is unable to directly address
 Heilstuk Nation conservation objectives related to age and size of herring, nor 
