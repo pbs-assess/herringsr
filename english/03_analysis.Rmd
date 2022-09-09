@@ -706,19 +706,20 @@ mid to late 1970s during a time period of the lowest estimated natural mortality
 and variable estimated recruitment
 (Figure \@ref(fig:storyboard-wcvi)a, b, c). 
 From the late 1980s through to the 2000s a variable rise in estimated mortality
-and a generally variable but low recruitment led to the lowest estimated biomass
-on record
+and a generally variable but low recruitment led to decline trend over these 
+years, down from the peaks observed in the late 1970s 
 (Figure \@ref(fig:storyboard-wcvi)a, b, c).
+
 The low estimated spawning biomass persisted through the 2006 to 2012 period 
 influenced by negative recruitment deviations 
 (i.e., lower than predicted by the stock-recruit function)
-and the highest estimated natural mortality on record
+and the highest estimated natural mortality rates since 1950
 (Figure \@ref(fig:storyboard-wcvi)a, b, f). 
 Some estimated biomass gains were made in the 2010s with
 lower estimated natural mortality and higher estimated recruitment in 2015. 
-Since then estimated natural mortality has risen. 
+Since then estimated natural mortality has again increased. 
 Biomass and production has been maintained in part by
-higher than average estimated recruitment in 2020 and 2021.
+higher than average estimated recruitment in 2020 and 2021
 (Figure \@ref(fig:storyboard-wcvi) d, f).
 The model reconstruction of spawning biomass closely follows the trajectory
 of spawn index values (Figure \@ref(fig:storyboard-wcvi)a).
