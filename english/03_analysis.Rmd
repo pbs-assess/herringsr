@@ -984,7 +984,7 @@ Thus we used an index-based approach in lieu of fitting the assessment model
 to calculate the TAC for each simulated year, to save computational time.
 
 Results show there is no difference in conservation performance
-between simulated TAC allocation procedures (Table \@ref(tab:allocation-sog)).
+between simulated TAC allocation procedures [@dfo2021c].
 That is, the simulations show that movement of TAC between
 the roe fishery fleets
 does not appear to impact the probability 
