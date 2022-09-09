@@ -743,7 +743,7 @@ there being no new commercial fishery data since 2005.
 Running longer chains in 2021 resulted in only minor improvements.
 If and when fisheries resume in the future,
 the addition of new fishery data may reduce this apparent autocorrelation and
-any resulting bias.
+any resulting bias
 
 `r stock_status_text(SAR = "WCVI", this_yr = assess_yr, translate = french)`
 
