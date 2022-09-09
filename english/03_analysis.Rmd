@@ -765,8 +765,9 @@ are presented in Figure \@ref(fig:harvest-rate).
 ## Application of MPs and harvest options for `r assess_yr + 1`\label{sec:harv-opts}
 
 Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs
-for each major SAR, derived by updating Herring OMs conditioning [@benson2022] 
-using the latest historic stock and fishery data from 1951-2021.
+for each major SAR, derived from the Herring OM [@benson2022]. 
+OM conditioning was updated using the latest historic stock and fishery data from 
+1951 to 2021.
 MPs are not provided for HG as this is now conducted within the
 rebuilding plan process.
 
@@ -778,8 +779,9 @@ from approximately 2000 to 2018
 The stock was below the LRP for much of that period and shows
 little evidence of sustained stock growth despite the absence of
 commercial fisheries since 2002 (and since 2004 for the SOK fishery).
-Survey biomass increased in 2019 and 2020, and in the 2021/2022 season
-productivity was positive however biomass estimates.
+Survey biomass increased from 2019 to 2020, remained stable for 2021
+and declined from 2021 to 2022.
+Spawn biomass production was positive in 2021.
 Results of the simulation-evaluations found that none of the proposed MPs, 
 including the historical and no fishing MPs,
 performed satisfactorily against the conservation objective of
@@ -809,8 +811,7 @@ that are consistent with a rebuilt state.
 Based on MP evaluations and the ongoing rebuilding plan process,
 the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&nbsp;t.
 Because Haida Gwaii has an on-going rebuilding plan process,
-we did not update the HG OM with recent data
-(as we did for PRD and CC; see below).
+we did not update the HG MP evaluations with recent data.
 
 ### Prince Rupert District
 
