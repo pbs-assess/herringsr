@@ -746,7 +746,7 @@ there being no new commercial fishery data since 2005.
 Running longer chains in 2021 resulted in only minor improvements.
 If and when fisheries resume in the future,
 the addition of new fishery data may reduce this apparent autocorrelation and
-any resulting bias
+any resulting bias.
 
 `r stock_status_text(SAR = "WCVI", this_yr = assess_yr, translate = french)`
 
@@ -765,19 +765,10 @@ are presented in Figure \@ref(fig:harvest-rate).
 ## Application of MPs and harvest options for `r assess_yr + 1`\label{sec:harv-opts}
 
 Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs
-for each major SAR. 
-MPs included for SoG and WCVI combines information from
-the first MSE cycle [@dfo2019a] with
-updated MP evaluations conducted in September 2020 [@dfo2021b].
-MPs included for PRD and CC combines information from
-the first MSE cycle for northern SARs [@dfo2019c] with
-updated MP evaluations conducted in the summer of 2021 (this document).
-Science advice in 2018 recommended
-discontinuing the use of the historical fixed cutoff HCR [@dfo2019a];
-as such this MP has been removed from further consideration
-for all Pacific Herring SARs.
-Finally, MPs are not provided for HG due to requirements
-for a rebuilding plan (detailed below).
+for each major SAR, derived by updating Herring OMs conditioning [@benson2022] 
+using the latest historic stock and fishery data from 1951-2021.
+MPs are not provided for HG as this is now conducted within the
+rebuilding plan process.
 
 ### Haida Gwaii
 
