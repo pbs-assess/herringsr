@@ -76,7 +76,7 @@ rebuilding plan process.
 The 2022 stock assessment includes
 MP recommendations for PRD, CC, SoG, and WCVI,
 derived by updating Herring OMs conditioning [@benson2022] using 
-the latest historic stock and fishery data from 1951-2021.
+the latest historic stock and fishery data from 1951 to 2021.
 USR options first presented in @dfo2022 are included to
 support selection of stock-specific USRs
 for implementation through the 2022/23 IFMP.
