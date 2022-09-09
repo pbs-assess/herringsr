@@ -598,54 +598,52 @@ there were no commercial catches in 2019-2022 (exception: SOK).
 
 Estimated spawning biomass reached a historic high around 1980
 following low estimated natural mortality rates and one of the highest estimated 
-recruitments in 1979 (Figure \@ref(fig:storyboard-cc)a, b, c). From there a jagged 
+recruitments in 1979 (Figure \@ref(fig:storyboard-cc)a, b, c). 
+From there a jagged 
 decline of estimated spawning biomass appears to be influenced initially by 
 higher estimated natural mortality rates and highly variable estimated recruitment.
 An increase in estimated natural mortality lead to historically low estimated biomass
-levels in the period of 2005 to 2015. Decreasing estimated natural mortality 
-lead to moderate general increases in biomass through 2020. In 2021 and 2022
-increasing estimated natural mortality rates have deceased estimated biomass, 
-which has been mitigated in part by higher than average estimated recruitment
-(Figure \@ref(fig:storyboard-cc)a, b, e),
+levels in the period of 2005 to 2015. 
+Decreasing estimated natural mortality lead to moderate general increases in 
+biomass through 2020. 
+In 2021 and 2022 increasing estimated natural mortality rates have deceased 
+estimated biomass, which has been mitigated in part by higher than average 
+estimated recruitment (Figure \@ref(fig:storyboard-cc)a, b, e).
 The model estimates very similar spawning biomass in 2021 and 2022
 (Table \@ref(tab:cc-spawning-biomass-depletion)),
 and the analysis of surplus production shows there is evidence of
 strong production in the year between 2016/2017 and between 2018/2019,
 similar to the 1990 to 1999 period (Figure \@ref(fig:storyboard-cc)f).
 However, surplus production is estimated to be negative
-in the years between 2019-2021 and near 0 for 2021 to 2022.
+in the years between 2019-2021 and near 0 for 2021-2022.
 
 An examination of spawn biomass by Herring Section shows
 the recent decline in herring spawn to have largely occurred in
 Spiller Channel (Sections 072 and 078) and
 Kitasu Bay/East Higgins (Section 067; Figure \@ref(fig:spawn-section-cc)).
-The majority of Area 07 spawn in 2021 appears concentrated in
+The majority of Area 07 spawn in 2021 and 2022 appears concentrated in
 Thompson/Stryker (Section 074).
-Occurrence of spawn in Thompson/Stryker in 2020-2022.
-represents the first significant spawns for this section in many years.
-The 2020-2022 decline in spawn observations in Spiller Channel
-(Sections 072 and 078) brings 
-the -spawn biomass in those Sections down to the low levels observed around 2010
-(Figure \@ref(fig:storyboard-cc)d).
+Occurrence of spawn in Thompson/Stryker from 2020 to 2022
+represents the first significant spawns for this Section in many years.
 The mechanisms driving fluctuations of spawn throughout the Central Coast
 are not well understood.
 
 A fixed cutoff HCR was implemented in 1986, and
 from 1986 to 2007 the effective harvest rate $U_t$ is estimated to fluctuate
 above and below the `r target_hr*100`% target rate,
-with median estimates exceeding `r target_hr*100`% frequently
+with median estimates exceeding `r target_hr*100`% in some of these years
 (Figure \@ref(fig:harvest-rate)).
 Occurrences of $U_t$ exceeding the `r target_hr*100`% target harvest rate
 are due in part to positive assessment model errors, and
 lags in detecting a directional change in the trend.
 
 Following a commercial fishery closure from 2007 to 2013,
-the CC stock reopened to commercial fisheries in 2014,
-and small commercial roe fisheries occurred in 2014, 2015, and 2016.
-A commercial SOK fishery operated yearly from 2014 to 2020,
-however these removals are not included in the estimation of $U_t$. 
+the CC stock was reopened to commercial fisheries
+and commercial roe fisheries occurred in 2014, 2015, and 2016.
+Commercial SOK fisheries operated yearly from 2014 to 2021 (exception: 2020).
+SOK removals are not included in the estimation of $U_t$. 
 A commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19,
-however it successfully resumed in 2021 and continued in 2022
+and was not permitted in 2022
 (Table \@ref(tab:annual-sok-catch)).
 
 `r stock_status_text(SAR = "CC", this_yr = assess_yr, translate = french)`
@@ -655,26 +653,25 @@ however it successfully resumed in 2021 and continued in 2022
 The estimated spawning biomass for the SoG stock
 had a historical low in the later part of the 1960's,
 driven by lower than average estimated recruitment and
-increasing estimated natural mortality. 
-(Figure \@ref(fig:storyboard-sog)a, b, e) 
-As natural mortality started to drop estimated biomass estimates rose again.
-(Figure \@ref(fig:storyboard-sog)b, d) 
+increasing estimated natural mortality (Figure \@ref(fig:storyboard-sog)a, b, e).
+Following this, as natural mortality declined, the estimated spawning biomass 
+grew (Figure \@ref(fig:storyboard-sog)b, d).
 Some deep dips in estimated biomass in the mid 1980's and late 2000's were 
-improved by above average recruitment. From 2010 to 2020 there is an
-increasing trend in estimated spawning biomass spurred by  above average 
-estimated recruitment.
-(Figure \@ref(fig:storyboard-sog)b, d, e)
-From 2015 to `r assess_yr` estimated mortality has increased sharply to levels
-not seen since the late 1960s and early 1970s when biomass was at its lowest 
-levels estimated. Greater estimated biomass 
-declines in the face of increasing mortality have been ameliorated by above
-average estimated recruitment in most years from 2010 to
+improved by above average recruitment. 
+From 2010 to 2020 there is an increasing trend in estimated spawning 
+biomass spurred by above average estimated recruitment 
+(Figure \@ref(fig:storyboard-sog)b, d, e).
+
+From 2015 to `r assess_yr` estimated natural mortality trend has been increasing,
+after a previously long stable period (1980-2010). 
+Greater estimated biomass declines in the face of increasing mortality have 
+been ameliorated by above average estimated recruitment in most years from 2010 to
 `r assess_yr` with the estimated recruitment at an all time high in 2022
 (Figure \@ref(fig:storyboard-sog)e). 
-Overall estimated production has been declining from the 2017-2018 season 
-to present (Figure \@ref(fig:storyboard-sog)f).
+Estimated production was very high in the 2017-2018 season, declining from there
+in the recent three years (Figure \@ref(fig:storyboard-sog)f).
 In 2022 estimated spawning biomass was 
-maintained at 2021 levels and above what was forecast for the year. 
+maintained at 2021 levels and above what was forecast for the year.
 
 The uncertainty associated with the last few years of spawning biomass
 along with the forecast biomass `r paste0("$\\SB_{", assess_yr, "}$")`,
@@ -689,8 +686,8 @@ in 2019 and 2020 was observed in the previous years' assessment and
 remains apparent now that these age-2s are
 fully recruited to the fishing/sampling gear.
 Analysis of surplus production shows that for the year between 2019 and 2020,
-the SoG SAR is estimated to be in a high production, high biomass state,
-but has now fallen to negative production for the year between 2021 and 2022
+the SoG SAR is estimated to be in high biomass state with neutral production,
+and that production is negative  for the year between 2021 and 2022
 (Figure \@ref(fig:storyboard-sog)f).
 
 Commercial fisheries have occurred annually in SoG since the early-1970s
@@ -712,19 +709,20 @@ mid to late 1970s during a time period of the lowest estimated natural mortality
 and variable estimated recruitment
 (Figure \@ref(fig:storyboard-wcvi)a, b, c). 
 From the late 1980s through to the 2000s a variable rise in estimated mortality
-and a generally variable but low recruitment led to the lowest estimated biomass
-on record
+and a generally variable but low recruitment led to decline trend over these 
+years, down from the peaks observed in the late 1970s 
 (Figure \@ref(fig:storyboard-wcvi)a, b, c).
+
 The low estimated spawning biomass persisted through the 2006 to 2012 period 
 influenced by negative recruitment deviations 
 (i.e., lower than predicted by the stock-recruit function)
-and the highest estimated natural mortality on record
+and the highest estimated natural mortality rates since 1950
 (Figure \@ref(fig:storyboard-wcvi)a, b, f). 
 Some estimated biomass gains were made in the 2010s with
 lower estimated natural mortality and higher estimated recruitment in 2015. 
-Since then estimated natural mortality has risen. 
+Since then estimated natural mortality has again increased. 
 Biomass and production has been maintained in part by
-higher than average estimated recruitment in 2020 and 2021.
+higher than average estimated recruitment in 2020 and 2021
 (Figure \@ref(fig:storyboard-wcvi) d, f).
 The model reconstruction of spawning biomass closely follows the trajectory
 of spawn index values (Figure \@ref(fig:storyboard-wcvi)a).
@@ -748,7 +746,7 @@ there being no new commercial fishery data since 2005.
 Running longer chains in 2021 resulted in only minor improvements.
 If and when fisheries resume in the future,
 the addition of new fishery data may reduce this apparent autocorrelation and
-any resulting bias.
+any resulting bias
 
 `r stock_status_text(SAR = "WCVI", this_yr = assess_yr, translate = french)`
 
