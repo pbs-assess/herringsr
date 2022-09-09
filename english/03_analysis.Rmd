@@ -963,13 +963,12 @@ biomass remained low relative to historical levels,
 but above the LRP of $0.3\SB_0$.
 
 In 2022, with updated 2021 data, closed-loop feedback simulations
-for WCVI showed the conservation objective could be met
+for WCVI showed the conservation objective is met
 under the DDM OM scenario
 with between 80 and 84% probability,
-but all MPs failed to meet the conservation objective under the DIM 
+and the same MPs failed to meet the conservation objective under the DIM 
 OM scenario, where natural mortality rates are
-<!-- TODO-: Update numbers.-->
-most similar to the last 10 years ($p=$ 56 to 74%).
+most similar to the last 10 years ($p=$ 61 to 65%).
 
 `r proj_biomass_text(SAR = "WCVI", next_yr = assess_yr + 1, translate = french)`
 
