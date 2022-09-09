@@ -5,10 +5,6 @@ stock trend information for the Pacific Herring major SARs
 using the stock assessment framework reviewed in 2017 [@cleary2018]
 with data updated to include `r assess_yr`.
 
-In the first MSE cycle for HG,
-none of the MPs tested met the conservation objective with
-at least 75% probability [@dfo2019c],
-thus harvest options are not provided for `r assess_yr + 1`.
 DFO has committed to developing and implementing a rebuilding plan for
 Haida Gwaii Pacific Herring.
 Based on MP evaluations, the harvest recommendation for the HG SAR is 0&nbsp;t.
@@ -16,11 +12,11 @@ Based on MP evaluations, the harvest recommendation for the HG SAR is 0&nbsp;t.
 The MSE process identifies a range of MPs that meet the conservation objective
 with at least 75% probability for the PRD, CC, SoG, and WCVI SARs
 for the DDM reference OM scenario [@dfo2019c; @dfo2021b].
-As such, harvest options or MP calculations for `r assess_yr + 1` for these SARs
-are provided using MPs that meet the minimum conservation criteria
-under the DDM reference OM scenario.
-Tables also include MP performance under the DIM robustness OM scenario
-(Tables \@ref(tab:decision-prd) to \@ref(tab:decision-wcvi)).
+Harvest options or MP calculations for `r assess_yr + 1` for these four SARs
+is combined with MP evaluations (probabilities) arising from the latest MSE 
+update.
+Tables also include MP performance and harvest options for the DIM robustness 
+OM scenario (Tables \@ref(tab:decision-prd) to \@ref(tab:decision-wcvi)).
 
 Science advice for the minor SARs is limited to
 presentation of catch data, biological data, and spawn survey data 
