@@ -25,7 +25,7 @@ The identification of a preferred management procedure requires
 a fully specified set of measurable objectives that include
 reference points (typically categorized as limits and targets) and
 to the extent possible,
-specification of objectives related to
+specification of measurable objectives related to
 catch, catch variability, and socio-cultural goals. 
 MSE is an iterative and ongoing process conducted with the participation of
 First Nations, the fishing industry, as well as
@@ -60,11 +60,11 @@ over three Pacific Herring generations
 
 1. Maintain average annual variability (AAV) in catch below 25%
 over three Pacific Herring generations
-(goal reflecting catch variability; $\text{AAV} < 0.25$), and
+(i.e., minimize catch variability; $\text{AAV} < 0.25$), and
 
 1. Maximize average annual catch
 over three Pacific Herring generations
-(goal reflecting catch averages).
+(i.e., maximize average catch).
 
 However, a fully specified set of objectives has not yet been developed
 for each management area.
@@ -98,7 +98,6 @@ MP performance has been found to be consistently over-optimistic.
 As such, OM updates are presented for the DDM and DIM OM scenarios only.
 
 Several lessons were learned from the MSE analyses conducted so far:
-<!-- TODO-JC: review this list and add wording to #1 and #2-->
 
 1. The catch-at-age stock assessment model can produce large (positive)
 assessment errors and in such cases, assessment errors can cause 
@@ -143,6 +142,8 @@ natural mortality trends used to condition the OM.
 If simulations were run over a greater number of years (e.g., 50 years)
 performance would start to approach equilibrium and be 
 unaffected by most recent trends in OM conditioning data.
+This phenomenon is important to consider when selecting or eliminating MPs, 
+especially if probabilities are considerably different between MP updates.
 
 ## Input data
 
@@ -815,8 +816,6 @@ we did not update the HG MP evaluations with recent data.
 
 ### Prince Rupert District
 
-<!-- TODO-JC: Update these regional texts with USR work.-->
-
 The PRD estimated stock biomass showed little trend from 2005 to 2018, 
 fluctuating at or near the LRP of $0.3\SB_0$
 (Figure \@ref(fig:storyboard-prd)d). 
@@ -902,6 +901,26 @@ in the Central Coast in `r assess_yr + 1`.
 Results presented here may inform this on going commitment.
 
 ### Strait of Georgia
+
+The SoG has the largest biomass of the major SARs
+and comprises more than 50% of the total coast wide biomass 
+(Figure \@ref(fig:coastwide-biomass-catch)).
+Estimated spawning biomass trends remained stable and high from
+2011 through 2020, and increases in estimated natural mortality rates
+have increased in the last 3-5 years.
+SoG MP evaluations are implemented using the Herring OM [@benson2022] and
+were first presented in 2018 [@dfo2019a].
+MP updates were conducted in 2020 [@dfo2021b] and again herein.
+Each update shows differences in MP performance against the conservation 
+objective over both OM scenarios.
+Initial simulations show the probability of meeting the conservation 
+objective ranging from 91% to 100% [@dfo2019a], depending on the scenario and MP.
+Subsequent updates in 2020 show a decline in conservation performance with
+probabilities ranging from 75% to 88% (DDM and DIM only, @dfo2021b), and the
+updates included here show probabilities ranging from 67% to 87%
+(Table \@ref(tab:decision-sog).
+
+
 
 In 2022, with updated information from 2021
 closed-loop feedback simulations for the SoG showed that
