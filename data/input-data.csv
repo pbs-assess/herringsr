@@ -1,13 +1,13 @@
-Source, Data, Years
-Roe gillnet fishery, Catch, 1972 to 2021
-Roe seine fishery, Catch, 1972 to 2021
-Other fisheries, Catch, 1951 to 2021
-Test fishery (seine), Biological: number-at-age, 1975 to 2021
-Test fishery (seine), Biological: weight-at-age, 1975 to 2021
-Roe seine fishery, Biological: number-at-age, 1972 to 2021
-Roe seine fishery, Biological: weight-at-age, 1972 to 2021
-Roe gillnet fishery, Biological: number-at-age, 1972 to 2021
-Other fisheries, Biological: number-at-age, 1951 to 2021
-Other fisheries, Biological: weight-at-age, 1951 to 2021
-Surface survey, Abundance: spawn index, 1951 to 1987
-Dive survey, Abundance: spawn index, 1988 to 2021
+Source,Gear,Data,DataType,YearStart,YearEnd
+Roe gillnet fishery,,Catch,,1972,
+Roe seine fishery,,Catch,,1972,
+Other fisheries,,Catch,,1951,
+Test fishery,seine,Biological,number-at-age,1975,
+Test fishery,seine,Biological,weight-at-age,1975,
+Roe seine fishery,,Biological,number-at-age,1972,
+Roe seine fishery,,Biological,weight-at-age,1972,
+Roe gillnet fishery,,Biological,number-at-age,1972,
+Other fisheries,,Biological,number-at-age,1951,
+Other fisheries,,Biological,weight-at-age,1951,
+Surface survey,,Abundance,spawn index,1951,1987
+Dive survey,,Abundance,spawn index,1988,

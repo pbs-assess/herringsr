@@ -1,98 +1,87 @@
 # Renseignements de base
 
-En Colombie-Britannique, le hareng du Pacifique est géré selon
-`r number_to_word(length(major_regions_short))` régions principales d’évaluation des stocks et
-`r number_to_word(length(minor_regions_short))` régions secondaires d’évaluation des stocks (figure \@ref(fig:bc-map)).
-Les régions principales d’évaluation des stocks sont `r commify(major_regions_full_parens)`.
-Les régions secondaires d’évaluation des stocks sont `r commify(minor_regions_full_parens)`.
-Nous effectuons des analyses formelles de l’information sur les tendances des stocks pour les régions principales d’évaluation des stocks de hareng du Pacifique.
-Pour les régions secondaires, nous présentons les données sur les prises, les données biologiques et les données des relevés du frai (\nameref{sec:app-minor}).
+En Colombie-Britannique, le hareng du Pacifique est géré selon `r number_to_word(length(major_regions_short))` régions principales d'évaluation des stocks et `r number_to_word(length(minor_regions_short))` régions secondaires d'évaluation des stocks (RES; figure \@ref(fig:bc-map)).
+Les régions principales d'évaluation des stocks sont `r commify(major_regions_full_parens)`.
+Les régions secondaires d'évaluation des stocks sont `r commify(minor_regions_full_parens)`.
+Nous effectuons des analyses formelles de l'information sur les tendances des stocks pour les principales régions d'évaluation des stocks.
+Pour les régions secondaires d'évaluation des stocks, nous présentons les données sur les prises, les données biologiques et les données de relevé du frai qui sont disponibles.
+(Section «\nameref{sec:app-minor}»).
+À partir de 2021, nous incluons des données similaires pour la zone spéciale, la zone 10.
+(Section «\nameref{sec:app-special}»).
+Les analyses formelles de l'information sur les tendances des stocks ne sont pas incluses pour les régions secondaires d'évaluation des stocks et les zones spéciales en raison de la disponibilité des données.
+Notez que les zones spéciales ne sont pas des régions d'évaluation des stocks; elles sont donc exclues de la surveillance et des analyses régulières.
+De plus, il faut noter que la zone 10 est un sous-ensemble des sections de la côte centrale qui se trouvent à l'extérieur des limites de la région d'évaluation des stocks.
 
 ## Description de la pêche
 
-À l’heure actuelle, il y a plusieurs pêches du hareng du Pacifique en Colombie-Britannique.
+À l'heure actuelle, il y a plusieurs pêches du hareng du Pacifique en Colombie Britannique.
 Les Premières Nations ont un accès prioritaire, après la conservation, à la pêche à des fins alimentaires, sociales et rituelles (ASR).
 Les possibilités de pêche commerciale sont composées de quatre pêches dirigées:
-consommation et hareng-appât (CA), usage spécial (US), rogue sur varech (RSV), et hareng rogué.
+la pêche de nourriture et d'appâts (FB),
+la pêche en vue d'une utilisation spéciale (SU),
+les produits d'œufs sur varech (SOK) et
+le hareng prêt à frayer.
 Il existe également une petite pêche récréative.
 
-Les Premières Nations pêchent le hareng entier, la rogue sur varech et le hareng rogué à des fins ASR.
-Le hareng entier est pêché à la senne, au filet maillant, au râteau, à l’épuisette et à la turlutte.
-Les oeufs de hareng sont récoltés sous forme de rogue sur des algues marines, comme le varech, 
-ou sous forme de rogue sur des branches d’arbres.
-La pêche autochtone du hareng à des fins ASR peut avoir lieu sur toute la côte lorsqu’elle est autorisée par un permis communautaire.
+Les Premières Nations pêchent le hareng entier, la rogue de hareng et les œufs de hareng à des fins ASR.
+Le hareng entier est pêché à la senne, au filet maillant, au râteau, à l'épuisette et à la turlutte.
+Les œufs de hareng sont récoltés sous forme de frai sur des algues marines comme le varech (c'est-à-dire, SOK) ou de frai sur des branches d'arbres établies. 
+La pêche autochtone du hareng à des fins ASR peut avoir lieu sur toute la côte lorsqu'elle est autorisée par un permis communautaire.
 
-De plus, la pêche commerciale autochtone et la pêche commerciale en vertu d’un traité peuvent être pratiquées dans certaines zones de gestion particulières.
+De plus, la pêche commerciale autochtone et la pêche commerciale en vertu d'un traité peuvent être pratiquées dans certaines zones de gestion particulières.
 Quatre traités modernes (Nisga'a, Tsawwassen, Maa-nulth et Tla'amin) ont été ratifiés en Colombie-Britannique et énoncent un droit issu de traités à la pêche du poisson à des fins ASR.
-Sur la côte ouest de l’île de Vancouver, cinq Premières Nations Nuu-chah-nulth
-– Ahousaht, Ehattesaht, Hesquiaht, Mowachaht/Muchalaht et Tla-o-qui-aht (les Premières Nations T'aaaq-wiihak) –
-ont le droit de pêcher toutes les espèces de poissons, sauf la panope, dans leurs territoires de pêche, et de vendre ce poisson.
-Le Ministère a élaboré un plan de gestion des pêches (PGP) plurispécifique des cinq Nations pour 2020/2021 en consultation avec les cinq Nations.
-Les commentaires fournis par les cinq Nations lors des consultations ont été pris en compte et intégrés au PGP 2020/21 par le MPO dans la mesure du possible.
-Le PGP comprend des détails spécifiques sur la pêche, tels que
-attribution/accès,
-les licences et les désignations,
-zone de pêche,
-la récolte d'opportunités,
-ainsi que la surveillance de la pêche et la déclaration des captures. 
-Pour de plus amples informations,
-\link{http://waves-vagues.dfo-mpo.gc.ca/Library/40869374.pdf}{voir le PGP}.
+Cinq Premières Nations Nuu-chah-nulth habitent la côte Ouest de l'île de Vancouver
+– Ahousaht, Ehattesaht, Hesquiaht, Mowachaht/Muchalaht et Tla-o-qui-aht (les Premières Nations T'aaaq-wiihak) – ont le droit de pêcher toutes les espèces de poissons, sauf le panope, dans leurs territoires de pêche, et de vendre ce poisson.
+Le MPO a élaboré un plan de gestion des pêches (PGP) plurispécifique des cinq Nations pour 2021-2022.
+Les commentaires fournis par les cinq Nations lors des consultations ont été pris en compte par le MPO dans l'élaboration du PGP de 2021-2022.
+Le PGP comprend des détails précis sur la pêche, comme l'allocation et l'accès, les permis et les désignations, les zones de pêche, les possibilités de récolte, ainsi que la surveillance de la pêche et la déclaration des prises.
+Pour de plus amples renseignements, prière de consulter les
+\link{https://waves-vagues.dfo-mpo.gc.ca/Library/40953798.pdf}{FMP}.
+La mise en œuvre de la pêche fondée sur les droits des cinq Nations est un processus continu.
+Le PGP de 2021-2022 a été élaboré pour mettre en œuvre la pêche plurispécifique fondée sur les droits afin de tenir compte des droits ancestraux des cinq Nations, conformément à la décision de 2018 de la Cour suprême de la Colombie-Britannique.
+Le 19 avril 2021, la Cour d'appel de la Colombie-Britannique a rendu sa décision concernant l'appel interjeté par les cinq Nations.
+En conséquence, le Ministère est en train de réviser le PGP de 2021-2022.
+À la suite de cette révision, le PGP de 2021-2022 pourrait être modifié et des changements de gestion en cours de saison pourraient être apportés à ce PGP.
+Les changements apportés au PGP seront annoncés par des avis sur les pêches. 
 
-Sur la côte centrale, la Première Nation Heiltsuk a le droit ancestral de pêcher le hareng à des fins commerciales.
-Les Heiltsuk détiennent actuellement neuf permis de récolte de la rogue sur varech dans cette région.
-Cette récolte se fait par le moyen privilégié par les Heiltsuk, c’est-à-dire en étang ouvert.
+Sur la côte centrale, la Première Nation Heiltsuk a le droit ancestral de pêcher les œufs sur varech des harengs du Pacifique à des fins commerciales.
+Les Heiltsuk détiennent actuellement neuf permis SOK dans cette région, et la récolte des produits SOK se fait par le moyen préféré des Heiltsuk, c'est-à-dire en étang ouvert.
 Le MPO et les Heiltsuk se sont également engagés à élaborer chaque année un plan conjoint de gestion des pêches du hareng du Pacifique sur la côte centrale.
 
-En `r this_season`, les principales pêches du hareng du Pacifique ont été les pêches de rogue à la senne et au filet maillant,
-avec des prises totales de `r total_final_yr_roe_catch` tonnes pour l’ensemble de la côte.
-Dans la pêche du CA à la senne, les prises totales à l’échelle de la côte étaient de `r total_final_yr_other_catch`t.
-Les pêches de rogue, CA, et US n’ont été exploitées que dans le DG en `r this_season`.
-Trois licences commerciales RSV étaient opérationnelles en CC en `r this_season`.
-Il n'y a pas eu de pêche commerciale du RSV dans le PRD en `r this_season`.
+En `r this_season`, les principales pêches du hareng du Pacifique ont été les pêches d'œufs à la senne et au filet maillant, avec une prise totale de `r total_final_yr_roe_catch` tonnes pour l'ensemble de la côte.
+Dans la pêche du hareng-appât à la senne, les prises totales à l'échelle de la côte étaient de
+`r total_final_yr_other_catch`&nbsp;t.
+Les pêches de rogue et de hareng-appât et au hareng pour des usages spéciaux n'ont été exploitées que dans le détroit de Georgie en `r this_season`.
+Trois exploitants d'œufs sur varech ont participé à la pêche d'œufs sur varech dans la CC en `r this_season`.
+Il n'y avait pas de pêche commerciale d'œufs sur varech dans le DPR en `r this_season`.
 
-Il existe un programme complet de vérification à quai pour toutes les pêches commerciales au hareng du Pacifique,
-et les données validées sur les prises qui en résultent sont incluses dans le processus annuel d’évaluation des stocks
-pour toutes les pêches, sauf la pêche de rogue sur varech.
+Il existe un programme complet de vérification à quai pour toutes les pêches commerciales au hareng du Pacifique et les données validées sur les prises qui en résultent sont incluses dans le processus annuel d'évaluation des stocks pour toutes les pêches, sauf la pêche d'œufs sur varech.
 
-L’exclusion des données sur la pêche de rogue sur varech du processus annuel d’évaluation des stocks a été indiquée comme une incertitude importante dans le dernier examen du cadre d’évaluation des stocks par le SCCS [@cleary2018].
-Les recommandations visant à dissiper cette incertitude exigeront de quantifier la mortalité à la mise en étang
-et les prélèvements (oeufs) associés à la pêche de rogue sur varech.
-Bien que ce travail soit en cours, les résultats ne sont pas encore disponibles pour alimenter l'évaluation des stocks.
+L'exclusion des données sur la pêche d'œufs sur varech du processus annuel d'évaluation des stocks a été indiquée comme une incertitude importante dans le dernier examen du cadre d'évaluation des stocks par le SCCS [@cleary2018].
+Les recommandations visant à dissiper cette incertitude exigeront de quantifier la mortalité à la mise en étang et les prélèvements (œufs) associés à la pêche d'œufs sur varech.
+Bien que ce travail soit en cours, les résultats ne sont pas encore disponibles pour informer l'évaluation des stocks.
 
-## Description du processus d’évaluation des stocks
+## Description du processus d'évaluation des stocks
 
-Le modèle statistique des prises selon l’âge est ajusté aux données sur les prises commerciales,
-aux données sur les proportions selon l’âge dans les pêches et les relevés et
-à un indice de la biomasse du stock reproducteur indépendant de la pêche
-afin d’estimer la biomasse totale et la biomasse du stock reproducteur, la mortalité naturelle et le recrutement.
-Le poids selon l’âge annuel observé est estimé en dehors du modèle, et la maturité selon l’âge est un paramètre d’entrée fixe.
-En 2017, une version mise à jour du modèle statistique des prises selon l’âge a été appliquée pour évaluer chacune des `r number_to_word(length(major_regions_short))` régions principales d’évaluation des stocks de hareng du Pacifique [@cleary2018].
-Le principal changement par rapport au modèle statistique des prises selon l’âge utilisé de 2011 à 2016 réside dans le partage de l’écart entre
-l’erreur d’observation et l’erreur de processus afin d’améliorer l’estimation de la structure de l’écart [@cleary2018].
-Une analyse de cheminement a permis de valider le modèle mis à jour:
-elle a montré que les estimations des paramètres et les trajectoires de la biomasse associées aux ajustements structurels étaient presque identiques aux résultats des versions précédentes du modèle,
-ce qui appuie l’adoption de la structure révisée [@cleary2018].
+Le modèle statistique des prises selon l'âge est ajusté aux données sur les prises commerciales, aux données sur la proportion selon l'âge dans les pêches et les relevés et à un indice de la biomasse du stock reproducteur indépendant de la pêche afin d'estimer la biomasse totale et la biomasse du stock reproducteur, la mortalité naturelle et le recrutement.
+Le poids selon l'âge annuel observé est estimé en dehors du modèle, et la maturité selon l'âge est un paramètre d'entrée fixe.
+En 2017, une version mise à jour du modèle statistique des prises selon l'âge a été appliquée pour évaluer chacune des `r number_to_word(length(major_regions_short))` principales RES de hareng du Pacifique [@cleary2018].
+Le principal changement par rapport au modèle statistique des prises selon l'âge utilisé de 2011 à 2016 réside dans le partage de l'écart entre l'erreur d'observation et l'erreur de processus afin d'améliorer l'estimation de la structure de l'écart [@cleary2018].
+Une analyse de cheminement a permis de valider le modèle mis à jour: elle a montré que les estimations des paramètres et les trajectoires de la biomasse associées aux ajustements structurels étaient presque identiques aux résultats des versions précédentes du modèle, ce qui appuie l'adoption de la structure révisée [@cleary2018].
 
-Un cadre bayésien a été utilisé pour estimer les séries chronologiques de la biomasse du stock reproducteur,
-de la mortalité naturelle instantanée et du recrutement à l’âge `r age_first` entre `r major_start_yr` et `r major_end_yr`.
-L’avis aux gestionnaires concernant les régions principales d’évaluation des stocks comprend des estimations a posteriori de l’état actuel des stocks ($\SB_{`r major_end_yr`}$),
-de l’état des stocks par rapport au PRL de $0.3\SB_0$ et
-de la biomasse du stock reproducteur en `r assess_yr + 1` en supposant des prises nulles $\SB_{`r assess_yr + 1`}$).
-La biomasse du stock reproducteur projetée est fondée sur les écarts du recrutement de l’année en cours par rapport à la moyenne prévue par le modèle de stock-recrutement de Beverton Holt et
-sur les estimations de la mortalité naturelle et du poids selon l’âge,
-toutes deux calculées en moyenne sur les cinq années les plus récentes.
-La procédure d’échantillonnage selon la méthode de Monte Carlo par chaîne de Markov (MCCM) suit la même méthode que celle mise en oeuvre par @cleary2018.
+Un cadre bayésien a été utilisé pour estimer les séries chronologiques de la biomasse du stock reproducteur, de la mortalité naturelle instantanée et du recrutement à l'âge -`r age_first` entre `r major_start_yr` et `r major_end_yr`.
+L'avis aux gestionnaires concernant les principales RES comprennent des estimations a posteriori de l'état actuel des stocks ($\SB_{`r major_end_yr`}$), de l'état des stocks par rapport au PRL de $0.3\SB_0$, et de la biomasse du stock reproducteur en `r major_end_yr + 1` en supposant des prises nulles ($\SB_{`r major_end_yr + 1`}$).
+La biomasse du stock reproducteur projetée est fondée sur les écarts du recrutement de l'année en cours par rapport à la moyenne prévue par le modèle de stock-recrutement de Beverton Holt et sur les estimations de la mortalité naturelle et du poids selon l'âge, toutes deux calculées en moyenne sur les cinq années les plus récentes.
+La procédure d'échantillonnage selon la méthode de Monte Carlo par chaîne de Markov (MCCM) suit la même méthode que celle mise en œuvre par @cleary2018.
 
-@cleary2018 a présenté les résultats de deux ajustements du modèle statistique des prises selon l’âge dont les hypothèses sur la capturabilité $q_2$ du relevé en plongée étaient différentes (de `r new_surv_yr` à `r major_end_yr`):
-le modèle d’évaluation 1 (ME1), où $q_2$ est estimée avec une distribution a priori présumée; et
-le modèle d’évaluation 2 (ME2), où $q_2 = 1$.
-Les hypothèses selon lesquelles l’indice de la rogue lors des relevés en plongée représente la totalité des rogues déposées et qu’aucun oeuf n’est perdu à cause de la prédation sont solides.
-Toutefois, les données de l’évaluation des stocks contiennent peu d’information permettant d’étayer une estimation de $q_2$;
-l’examen de la distribution a posteriori de Bayes montre que la valeur a priori n’est pas mise à jour pour les régions d’évaluation des stocks
-de Haida Gwaii, de la côte centrale, du détroit de Georgia et de la côte ouest de l’île de Vancouver et
-que la valeur estimée reflète la moyenne de l’a priori [@cleary2018, annexe D].
-En supposant que $q_2 = 1$, on obtient une estimation "minimale" de la biomasse, ce qui atténue toute autre erreur d'évaluation et de mise en oeuvre de la gestion (voir @martell2011 et @herring2012).
-L’application du ME1 éliminerait de telles mesures de protection malgré la récente évaluation de simulation montrant que
-le modèle d’évaluation actuel produit d’importantes erreurs d’évaluation (positives), même avec $q_2 = 1$ [@dfo2019a].
-La mise à l’échelle de l’évaluation avec des valeurs de $q_2 < 1$ devrait entraîner des erreurs d’évaluation absolues plus importantes que celles estimées lorsque $q_2 = 1$.
-C’est pourquoi l’avis présenté ici repose sur le paramétrage ME2, étayé également par les comparaisons décrites dans @dfo2016 [, tableau A1] et @cleary2018 [, annexe D].
+@cleary2018 ont présenté les résultats de deux ajustements du modèle statistique des prises selon l'âge dont les hypothèses sur la capturabilité $q_2$
+(de `r new_surv_yr` à `r major_end_yr`):
+le modèle d'évaluation 1 (ME1), où $q_2$ est estimée avec une distribution a priori présumée; et
+le modèle d'évaluation 2 (ME2); où $q_2 = 1$.
+Les hypothèses selon lesquelles l'indice du frai lors des relevés en plongée représente la totalité des œufs déposés et qu'aucun œuf n'est perdu à cause de la prédation sont solides.
+Toutefois, les données de l'évaluation des stocks contiennent peu d'information permettant d'étayer une estimation de $q_2$; l'examen de la distribution a posteriori de Bayes montre que la valeur a priori n'est pas mise à jour pour les régions d'évaluation des stocks de HG, de la CC, du DG et de la COIV et que la valeur estimée reflète la moyenne de l'a priori [@cleary2018, Appendix D].
+L'hypothèse que $q_2 = 1$produit au moins une estimation «minimale» de la biomasse isole toutes les autres erreurs d'évaluation et de mise en œuvre de la gestion
+[@martell2011; @herring2012].
+L'application du ME1 éliminerait de telles mesures de protection malgré la récente évaluation de simulation montrant que le modèle d'évaluation actuel produit d'importantes erreurs d'évaluation (positives), même avec $q_2 = 1$ [@dfo2019a].
+La mise à l'échelle de l'évaluation avec des valeurs de $q_2 < 1$ devrait entraîner des erreurs d'évaluation absolues plus importantes que celles estimées lorsque $q_2 = 1$ [@dfo2019a].
+C'est pourquoi l'avis présenté ici utilise sur le paramétrage ME2, étayé également par les comparaisons décrites dans @dfo2016 [, Table A1], et @cleary2018 [, Appendix D].

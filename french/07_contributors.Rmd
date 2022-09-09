@@ -4,7 +4,7 @@
 
 ```{r, echo=FALSE, include=FALSE}
 contributors <- tibble::tribble(
-  ~"Collaborateur", ~"Organisme d’appartenance",
+  ~"Collaborateur", ~"Organisme d'appartenance",
   "Jaclyn Cleary", "Secteur des sciences du MPO, région du Pacifique",
   "Sarah Hawkshaw", "Secteur des sciences du MPO, région du Pacifique",
   "Matthew Grinnell", "Secteur des sciences du MPO, région du Pacifique",
@@ -17,7 +17,7 @@ contributors <- tibble::tribble(
 ```
 
 ```{r, results='asis'}
-csasdown::csas_table( x=contributors, format="latex" ) %>%
-   kable_styling( full_width=FALSE ) %>%
-   column_spec(1, width="11em")
+csasdown::csas_table(x = contributors, format = "latex") %>%
+   kable_styling(full_width = FALSE) %>%
+   column_spec(1, width = "11em")
 ```

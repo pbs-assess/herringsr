@@ -7,17 +7,16 @@ contributors <- tibble::tribble(
   ~"Contributor", ~"Affiliation",
   "Jaclyn Cleary", "DFO Science, Pacific Region",
   "Sarah Hawkshaw", "DFO Science, Pacific Region",
-  "Matthew Grinnell", "DFO Science, Pacific Region",
   "Sarah Power", "DFO Science, Pacific Region",
-  "Chris Grandin", "DFO Science, Pacific Region (analytical support)",
+  "Matthew Grinnell", "DFO Science, Pacific Region",
+  #"Chris Grandin", "DFO Science, Pacific Region (analytical support)",
   # "Herring Technical Working Group", "Various (contributions to First Nations observations)",
-  "Victoria Postlethwaite", "DFO Fisheries Management, Pacific Region (reviewer)",
-  "Marisa Keefe", "DFO Fisheries Management, Pacific Region (reviewer)",
-  "Bryan Rusch", "DFO Fisheries Management, Pacific Region (reviewer)")
+  "Bryan Rusch", "DFO Fisheries Management, Pacific Region (reviewer)",
+  "Marisa Keefe", "DFO Fisheries Management, Pacific Region (reviewer)")
 ```
 
 ```{r, results='asis'}
-csasdown::csas_table( x=contributors, format="latex" ) %>%
-   kable_styling( full_width=FALSE ) %>%
-   column_spec(1, width="11em")
+csasdown::csas_table(x = contributors, format = "latex") %>%
+   kable_styling(full_width = FALSE) %>%
+   column_spec(1, width = "11em")
 ```

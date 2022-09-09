@@ -1,6 +1,34 @@
-assess_yr <- 2021
+# Years
 last_assess_yr <- assess_yr - 1
 this_season <- paste(assess_yr - 1, assess_yr, sep = "/")
+
+# MCMC
+mcmc_num_samples <- (mcmc_length / mcmc_samp_freq) - mcmc_burnin
+
+# Check MCMC parameters
+check_mcmc <- function(
+    mcmc_in = list(length = mcmc_length, samp_freq = mcmc_samp_freq),
+    model) {
+  # Get model folder
+  model_dir = file.path(models_dir, model)
+  # Get chain length from iscam output
+  out_length <- scan(file = file.path(model_dir, "sims"), quiet = TRUE)[2]
+  # Error if chains not the same length
+  if(mcmc_in$length != out_length)
+    stop("Wrong MCMC chain length in ", model, ".")
+  # Read a CSV file
+  blob <- readLines(con = file.path(model_dir, "mcmc", "iscam_m_mcmc.csv"))
+  # Determine sample frequency from iscam output
+  out_samp_freq <- out_length / (length(blob) - 1)
+  # Error if sample frequencies not the same
+  if(mcmc_in$samp_freq != out_samp_freq)
+    stop("Wrong MCMC sample frequency in ", model, ".")
+} # End check_mcmc function
+
+# Check MCMC pars
+for (i in seq(major_stock_dir)){
+  check_mcmc(model = major_stock_dir[i])
+}
 
 # Age class to highlight in weight-at-age plots
 age_highlight <- 3
@@ -18,7 +46,7 @@ num_yrs_tab <- 9
 ic_yrs <- 2014:(assess_yr - 1)
 
 # Limits for the weight-at-age plot
-wa_ylim <- c(0.05,0.20)
+wa_ylim <- c(0.05, 0.20)
 
 # Number of years to calculate running mean weight-at-age (window)
 nRollWA <- 5
@@ -38,24 +66,27 @@ regions <- tribble(
   5,     "WCVI", "West Coast of Vancouver Island",   "Major",
   6,      "A27",                        "Area 27",   "Minor",
   7,      "A2W",                    "Area 2 West",   "Minor",
-  8,      "A10",                        "Area 10", "Special")
+  8,      "A10",                        "Area 10", "Special"
+)
 regions$Region <- en2fr(regions$Region, french)
 regions$RegionName <- en2fr(regions$RegionName, french)
 
 gear <- tribble(
-  ~gear,   ~gearname,
-      1,     "Other",
-      2,     "RoeSN",
-      3,     "RoeGN")
+  ~gear, ~gearname,
+  1, "Other",
+  2, "RoeSN",
+  3, "RoeGN"
+)
 gear$gearname <- en2fr(gear$gearname, french)
 roe_gear <- c(2, 3)
 
-# Survey gear follows the fishery gears above, but q parameters exist only for survey
-# gears so they are included here as `qind`
+# Survey gear follows the fishery gears above, but q parameters exist only for
+# survey gears so they are included here as `qind`
 surv_type <- tribble(
-  ~gear,   ~gearname, ~qind,
-      4,   "Surface",     1,
-      5,      "Dive",     2)
+  ~gear, ~gearname, ~qind,
+  4, "Surface", 1,
+  5, "Dive", 2
+)
 surv_type$gearname <- en2fr(surv_type$gearname, french)
 
 major_models <- load.models(unlist(major_model_dirs), inc_retro = TRUE)
@@ -86,30 +117,26 @@ major_regions_full <- regions$RegionName[regions$Type == "Major"]
 minor_regions_full <- regions$RegionName[regions$Type == "Minor"]
 special_regions_full <- regions$RegionName[regions$Type == "Special"]
 
-all_regions_full_parens <- paste0(all_regions_full,  " (", all_regions_short, ")")
-major_regions_full_parens <- paste0(major_regions_full,  " (", major_regions_short, ")")
-minor_regions_full_parens <- paste0(minor_regions_full,  " (", minor_regions_short, ")")
-special_regions_full_parens <- paste0(special_regions_full,  " (", special_regions_short, ")")
+all_regions_full_parens <- paste0(
+  all_regions_full, " (", all_regions_short, ")"
+)
+major_regions_full_parens <- paste0(
+  major_regions_full, " (", major_regions_short, ")"
+)
+minor_regions_full_parens <- paste0(
+  minor_regions_full, " (", minor_regions_short, ")"
+)
+special_regions_full_parens <- paste0(
+  special_regions_full, " (", special_regions_short, ")"
+)
 
 # Catch
-major_catch <- get_catch(major_models,
-                         major_regions_full,
-                         gear)
-major_catch_short <- get_catch(major_models,
-                               major_regions_short,
-                               gear)
-minor_catch <- get_catch(minor_models,
-                         minor_regions_full,
-                         gear)
-minor_catch_short <- get_catch(minor_models,
-                               minor_regions_short,
-                               gear)
-special_catch <- get_catch(special_models,
-                           special_regions_full,
-                           gear)
-special_catch_short <- get_catch(special_models,
-                                 special_regions_short,
-                                 gear)
+major_catch <- get_catch(major_models, major_regions_full, gear)
+major_catch_short <- get_catch(major_models, major_regions_short, gear)
+minor_catch <- get_catch(minor_models, minor_regions_full, gear)
+minor_catch_short <- get_catch(minor_models, minor_regions_short, gear)
+special_catch <- get_catch(special_models, special_regions_full, gear)
+special_catch_short <- get_catch(special_models, special_regions_short, gear)
 
 # Minimum age
 age_first <- major_models[[1]]$dat$start.age
@@ -118,36 +145,37 @@ age_first <- major_models[[1]]$dat$start.age
 age_plus <- major_models[[1]]$dat$end.age
 
 suppressWarnings(
-  ## supress warnings is because the two tables have different factors for the `region` column
-  ## and are therefore coerced to character types before binding
+  # supress warnings is because the two tables have different factors for the
+  # `region` column and are therefore coerced to character types before binding
   total_final_yr_catch <- bind_rows(major_catch_short, minor_catch_short) %>%
     filter(year == assess_yr)
 )
 
 total_final_yr_roe_catch <- total_final_yr_catch %>%
-  filter(gear %in% !!gear$gearname[c(2,3)]) %>%
+  filter(gear %in% !!gear$gearname[c(2, 3)]) %>%
   summarize(catch = sum(value) * 1000) %>%
   pull() %>%
   f()
 
 total_final_yr_other_catch <- total_final_yr_catch %>%
-  filter(!gear %in% !!gear$gearname[c(2,3)]) %>%
+  filter(!gear %in% !!gear$gearname[c(2, 3)]) %>%
   summarize(catch = sum(value) * 1000) %>%
   pull() %>%
   f()
 
 # Data file
-data_path <- here::here("data")
+data_path <- here("data")
 
 # Incidental catch
 ic_file_pattern <- "incidental-*"
 ic_filenames <- dir(data_path, pattern = ic_file_pattern)
 ic <- ic_filenames %>%
-  map(~read_csv(file.path(data_path, .), col_types=cols())) %>%
+  map(~ read_csv(file.path(data_path, .), col_types = cols())) %>%
   reduce(rbind)
 ic <- ic %>%
-  mutate(Region = en2fr(Region, french),
-         Region = factor(Region, regions$Region)
+  mutate(
+    Region = en2fr(Region, french),
+    Region = factor(Region, regions$Region)
   ) %>%
   filter(Year %in% ic_yrs)
 
@@ -155,236 +183,81 @@ ic <- ic %>%
 sok_file_pattern <- "harvest-sok-*"
 sok_filenames <- dir(data_path, pattern = sok_file_pattern)
 sok <- sok_filenames %>%
-  map(~read_csv(file.path(data_path, .), col_types=cols())) %>%
+  map(~ read_csv(file.path(data_path, .), col_types = cols())) %>%
   reduce(rbind)
 sok$Region <- en2fr(sok$Region, french)
 
 # Proportion-of-spawn
 ps_file_pattern <- "prop-spawn-*"
 ps_filenames <- dir(data_path, pattern = ps_file_pattern)
-ps_shortnames <- sub("prop-spawn-", "", ps_filenames )
+ps_shortnames <- sub("prop-spawn-", "", ps_filenames)
 ps_shortnames <- toupper(sub(".csv", "", ps_shortnames))
 ps_shortnames[ps_shortnames == "SOG"] <- "SoG"
 ps_filenames <- file.path(data_path, ps_filenames)
-ps <- lapply(ps_filenames, function(x){
-  read_csv(x, col_types=cols())})
+ps <- lapply(ps_filenames, function(x) read_csv(x, col_types = cols()))
 names(ps) <- en2fr(ps_shortnames, french)
 
 # Weight-at-age
-major_wa <- get_wa(major_models,
-                   major_regions_full,
-                   gear)
-minor_wa <- get_wa(minor_models,
-                   minor_regions_full,
-                   gear)
-special_wa <- get_wa(special_models,
-                     special_regions_full,
-                     gear)
+major_wa <- get_wa(major_models, major_regions_full, gear)
+minor_wa <- get_wa(minor_models, minor_regions_full, gear)
+special_wa <- get_wa(special_models, special_regions_full, gear)
 
 # Proportion-at-age
-major_pa <- get_pa(major_models,
-                   major_regions_full,
-                   gear)
-minor_pa <- get_pa(minor_models,
-                   minor_regions_full,
-                   gear)
-special_pa <- get_pa(special_models,
-                     special_regions_full,
-                     gear)
+major_pa <- get_pa(major_models, major_regions_full, gear)
+minor_pa <- get_pa(minor_models, minor_regions_full, gear)
+special_pa <- get_pa(special_models, special_regions_full, gear)
 
 # Survey indices
-major_surv <- get_surv_ind(major_models,
-                           major_regions_full,
-                           surv_type)
+major_surv <- get_surv_ind(major_models, major_regions_full, surv_type)
 surv_yr_rng <- range(major_surv$year)
-
-minor_surv <- get_surv_ind(minor_models,
-                           minor_regions_full,
-                           surv_type)
-
-minor_surv_short <- get_surv_ind(minor_models,
-                                 minor_regions_short,
-                                 surv_type)
-
-special_surv <- get_surv_ind(special_models,
-                             special_regions_full,
-                             surv_type)
-
-special_surv_short <- get_surv_ind(special_models,
-                                   special_regions_short,
-                                   surv_type)
+minor_surv <- get_surv_ind(minor_models, minor_regions_full, surv_type)
+minor_surv_short <- get_surv_ind(minor_models, minor_regions_short, surv_type)
+special_surv <- get_surv_ind(special_models, special_regions_full, surv_type)
+special_surv_short <- get_surv_ind(
+  special_models, special_regions_short, surv_type
+)
 
 # Maximum natural mortality
-M_max <-lapply(
+M_max <- lapply(
   X = major_models, FUN = function(x) max(x$mcmccalcs$nat.mort.quants)
 ) %>%
   unlist() %>%
   max(na.rm = TRUE)
 
 # Input catch for table 1
-inp_catch <- read_csv(here::here("data/input-data.csv"), col_types=cols())
+inp_catch <- read_csv(here("data", "input-data.csv"), col_types = cols())
 
-#' Get model output values for a given region
-#'
-#' @param region the short form for the region as defined in the `major_regions_short` vector`
-#' @param majors if TRUE, use major models list (`major_models`), if FALSE use minor models list (`minor_models`)
-#' @param french if TRUE, use french
-#'
-#' @return a list of values as required for the report
-#'
-#' @examples
-#' hg_vars <- get_vars("HG")
-get_vars <- function(region, majors = TRUE, french = FALSE){
-  if(majors){
-    model_ind <- match(en2fr(region, french), major_regions_short)
-    models <- major_models
-  }else{
-    model_ind <- match(en2fr(region, french), minor_regions_short)
-    models <- minor_models
-  }
-  sbt <- models[[model_ind]]$mcmccalcs$sbt.quants
-  sbt_yrs <- as.numeric(colnames(sbt))
-  ## Previous year spawning biomass - vector length 4 - 1 = lower, 2 = median, 3 = upper, 4 = mpd
-  prev_yr_sbt <- sbt[, sbt_yrs == (assess_yr - 1)] * 1000
-  ## Final year spawning biomass - vector length 4 - 1 = lower, 2 = median, 3 = upper, 4 = mpd
-  final_yr_sbt <- sbt[, sbt_yrs == assess_yr] * 1000
-  refs <- models[[model_ind]]$mcmccalcs$r.quants
-  sbo <- refs[rownames(refs) == "sbo",][2:4] * 1000
-  ## Probability that final year biomass is less than 0.3B0 - vector length 3 - 1 = lower, 2 = median, 3 = upper
-  prob_less_03sbo <- refs[rownames(refs) == paste0("psb", assess_yr, "/0.3sbo"),][2]
-  proj <- as_tibble(models[[model_ind]]$mcmccalcs$r.quants, rownames = "value")
-  ## Projected biomass for next year - vector length 3 - 1 = lower, 2 = median, 3 = upper
-  proj_sbt <- as.numeric(proj[proj$value == paste0("sb", assess_yr + 1), -c(1, 2)]) * 1000
-  ## Probability that next year (projected) biomass is less than 0.3B0 - vector length 3 - 1 = lower, 2 = median, 3 = upper
-  prob_proj_less_03sbo <- refs[rownames(refs) == paste0("psb", assess_yr + 1, "/0.3sbo"),][2]
-  ## Depletion
-  dt <- models[[model_ind]]$mcmccalcs$depl.quants
-  dt_yrs <- as.numeric(colnames(dt))
-  ## Depletion in final year
-  final_yr_dt <- dt[, dt_yrs == assess_yr]
-  ## List to return
-  list(prev_yr_sbt = prev_yr_sbt,
-       final_yr_sbt = final_yr_sbt,
-       sbo = sbo,
-       prob_less_03sbo = prob_less_03sbo,
-       proj_sbt = proj_sbt,
-       prob_proj_less_03sbo = prob_proj_less_03sbo,
-       final_yr_dt = final_yr_dt)
-}
-# -----------------------------------------------------------------------------
-# Haida Gwaii-dependent values
+# SARs - dependent values
 hg_vars <- get_vars("HG", french = french)
-hg_prev_yr_sbt <- hg_vars[["prev_yr_sbt"]]
-hg_final_yr_sbt <- hg_vars[["final_yr_sbt"]]
-hg_sbo <- hg_vars[["sbo"]]
-hg_prob_less_03sbo <- hg_vars[["prob_less_03sbo"]]
-hg_proj_sbt <- hg_vars[["proj_sbt"]]
-hg_prob_proj_less_03sbo <- hg_vars[["prob_proj_less_03sbo"]]
-hg_final_yr_dt <- hg_vars[["final_yr_dt"]]
-# -----------------------------------------------------------------------------
-# Prince Rupert District-dependent values
 prd_vars <- get_vars("PRD", french = french)
-prd_prev_yr_sbt <- prd_vars[["prev_yr_sbt"]]
-prd_final_yr_sbt <- prd_vars[["final_yr_sbt"]]
-prd_sbo <- prd_vars[["sbo"]]
-prd_prob_less_03sbo <- prd_vars[["prob_less_03sbo"]]
-prd_proj_sbt <- prd_vars[["proj_sbt"]]
-prd_prob_proj_less_03sbo <- prd_vars[["prob_proj_less_03sbo"]]
-prd_final_yr_dt <- prd_vars[["final_yr_dt"]]
-# -----------------------------------------------------------------------------
-# Central Coast-dependent values
 cc_vars <- get_vars("CC", french = french)
-cc_prev_yr_sbt <- cc_vars[["prev_yr_sbt"]]
-cc_final_yr_sbt <- cc_vars[["final_yr_sbt"]]
-cc_sbo <- cc_vars[["sbo"]]
-cc_prob_less_03sbo <- cc_vars[["prob_less_03sbo"]]
-cc_proj_sbt <- cc_vars[["proj_sbt"]]
-cc_prob_proj_less_03sbo <- cc_vars[["prob_proj_less_03sbo"]]
-cc_final_yr_dt <- cc_vars[["final_yr_dt"]]
-# -----------------------------------------------------------------------------
-# Strait of Georgia District-dependent values
 sog_vars <- get_vars("SoG", french = french)
-sog_prev_yr_sbt <- sog_vars[["prev_yr_sbt"]]
-sog_final_yr_sbt <- sog_vars[["final_yr_sbt"]]
-sog_sbo <- sog_vars[["sbo"]]
-sog_prob_less_03sbo <- sog_vars[["prob_less_03sbo"]]
-sog_proj_sbt <- sog_vars[["proj_sbt"]]
-sog_prob_proj_less_03sbo <- sog_vars[["prob_proj_less_03sbo"]]
-sog_final_yr_dt <- sog_vars[["final_yr_dt"]]
-# -----------------------------------------------------------------------------
-# West Coast of Vancouver Island-dependent values
 wcvi_vars <- get_vars("WCVI", french = french)
-wcvi_prev_yr_sbt <- wcvi_vars[["prev_yr_sbt"]]
-wcvi_final_yr_sbt <- wcvi_vars[["final_yr_sbt"]]
-wcvi_sbo <- wcvi_vars[["sbo"]]
-wcvi_prob_less_03sbo <- wcvi_vars[["prob_less_03sbo"]]
-wcvi_proj_sbt <- wcvi_vars[["proj_sbt"]]
-wcvi_prob_proj_less_03sbo <- wcvi_vars[["prob_proj_less_03sbo"]]
-wcvi_final_yr_dt <- wcvi_vars[["final_yr_dt"]]
-
-## Number of mcmc samples, min and max median biomass
-mcmc_num_samples <- nrow(major_models[[1]]$mcmc$params)
-mcmc_burnin <- mcmc_num_samples - nrow(major_models[[1]]$mcmccalcs$p.dat)
-mcmc_length <- "5 million"
-mcmc_samp_freq <- 1000
-mcmc_ci <- "90\\%"
 
 # Format MP tables
-proc_mp <- function(df){
-  csas_table(df,
-             format = "latex",
-             bold_header = TRUE,
-             col_names = c("Scenario",
-                           "MP",
-                           "Label",
-                           "Conservation\nObj 1 (LRP)\n>75%",
-                           "Biomass\nObj 2\n>50%",
-                           "Yield\nObj 3\n<25%",
-                           "Yield\nObj 4\nmax",
-                           "Catch < 650t\nmin"))
-
-}
-
-# Text for "Stock status update"
-stock_status_text <- function(SAR, this_yr = assess_yr, p_lrp = 0.3) {
-  vars <- get(paste0(tolower(SAR), "_vars"))
-  paste0("Estimated unfished spawning biomass $\\SB_0$ is ",
-         f(vars$sbo[2]), "$\\,\\text{t}$, and the ",
-         "LRP of $", p_lrp, "\\SB_0$ is ",
-         f(p_lrp*vars$sbo[2]), "$\\,\\text{t}$ (posterior medians). ",
-         "Compared to last year, estimated spawning biomass in ", this_yr,
-         " $\\SB_{", this_yr, "}$",
-         ifelse(vars$final_yr_sbt[2] > vars$prev_yr_sbt[2],
-                " increased",
-                " decreased"),
-         " to ", f(vars$final_yr_sbt[2]),
-         "$\\,\\text{t}$ (posterior median), which is equal to ",
-         f(vars$final_yr_dt[2]*100, 1),
-         "% of $\\SB_0$ (Tables ",
-         "\\@ref(tab:", tolower(SAR), "-spawning-biomass-depletion) & ",
-         "\\@ref(tab:ref-points-", tolower(SAR), ")). ",
-         "Spawning biomass in ", this_yr,
-         " is estimated to be above the LRP with a ",
-         f((1 - vars$prob_less_03sbo) * 100, 1),
-         "% probability (Table ",
-         "\\@ref(tab:ref-points-", tolower(SAR), ")).")
-}
-
-# Text for "Application of MPs.."
-proj_biomass_text <- function(SAR, next_yr = assess_yr + 1, p_lrp = 0.3){
-  vars <- get(paste0(tolower(SAR), "_vars"))
-  paste0("In the absence of fishing, spawning biomass in ", next_yr,
-         " $\\SB_{", next_yr, "}$ ",
-         "is forecast to be ",
-         f(vars$proj_sbt[2]),
-         "$\\,\\text{t}$ (posterior median; Table ",
-         "\\@ref(tab:ref-points-", tolower(SAR), ")). ",
-         "Spawning biomass in ", next_yr,
-         " is forecast to below the LRP of $", p_lrp, "\\SB_0$ (",
-         f(p_lrp*vars$sbo[2]), "$\\,\\text{t}$) with a ",
-         f(vars$prob_proj_less_03sbo * 100, 1),
-         "% probability, in the absence of fishing (Table ",
-         "\\@ref(tab:ref-points-", tolower(SAR), ") and Figure ",
-         "\\@ref(fig:proj-biomass-density))."
+proc_mp <- function(df) {
+  csas_table(
+    df,
+    format = "latex",
+    bold_header = TRUE,
+    col_names = c(
+      "Scenario",
+      "MP",
+      "Label",
+      "Conservation\nObj 1 (LRP)\n>75%",
+      "Biomass\nObj 2\n>50%",
+      "Yield\nObj 3\n<25%",
+      "Yield\nObj 4\nmax",
+      "Catch < 650t\nmin"
+    )
   )
 }
+
+# Years and proportion for productive period
+prod_period <- list(
+  HG = list(yrs = 1975:1985, prop = 0.75),
+  PRD = list(yrs = 1990:1999, prop = 1.0),
+  CC = list(yrs = 1990:1999, prop = 1.0),
+  SoG = list(yrs = 1990:1999, prop = 1.0),
+  WCVI = list(yrs = 1990:1999, prop = 1.0)
+)

@@ -1,90 +1,120 @@
 # Strait of Georgia diagnostics
 
-This section contains Markov chain Monte Carlo (MCMC) diagnostics for the Pacific Herring statistical catch-age model
+This section contains Markov chain Monte Carlo (MCMC) diagnostics
+for the Pacific Herring statistical catch-age model
 in the Strait of Georgia major stock assessment region.
-The MCMC run had chain length `r mcmc_length`
+The MCMC run had chain length `r f(mcmc_length)`
 with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration (i.e., thinning).
 The first `r f(mcmc_burnin)` samples were discarded (i.e., burn-in),
-leaving `r f(mcmc_num_samples-mcmc_burnin)` samples for posteriors.
+leaving `r f(mcmc_num_samples)` samples for posteriors.
 This section will not be included in the final document.
 
 (ref:sog-priors-posts-cap) Strait of Georgia SAR:
 prior probability distributions (lines) with
 comparative posterior histograms (bars)
 for the Pacific Herring statistical catch-age model.
-See Table \@ref(tab:hg-parameter-est) and Figure \@ref(fig:hg-priors-posts) for description.
+See Table \@ref(tab:hg-parameter-est) and
+Figure \@ref(fig:hg-priors-posts) for description.
 
 (ref:sog-priors-posts-cap-fr) Distributions de probabilité a priori (lignes)
-et histogrammes a posteriori comparatifs (barres) pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
-Voir le tableau \@ref(tab:hg-parameter-est) et la figure \@ref(fig:hg-priors-posts) pour la description.
+et histogrammes a posteriori comparatifs (barres)
+pour le hareng du Pacifique
+dans la région d’évaluation des stocks majeur du détroit de Georgie.
+Voir le tableau \@ref(tab:hg-parameter-est) et
+la figure \@ref(fig:hg-priors-posts) pour la description.
 
 ```{r sog-priors-posts, fig.cap=ifelse(french, "(ref:sog-priors-posts-cap-fr)", "(ref:sog-priors-posts-cap)")}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
-make.priors.posts.plot(major_models[[model_ind]],
-                       priors.only = FALSE)
+make.priors.posts.plot(
+  model = major_models[[model_ind]],
+  priors.only = FALSE
+)
 ```
 
 (ref:sog-traces-cap) Strait of Georgia SAR:
 trace plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model.
-See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and
+Figure \@ref(fig:hg-traces) for description.
 
-(ref:sog-traces-cap-fr) Tracés des résultats de simulation Monte Carlo par chaîne de Markov pour les paramètres estimés pour le hareng du Pacifique
+(ref:sog-traces-cap-fr) Tracés des résultats de simulation
+Monte Carlo par chaîne de Markov pour les paramètres estimés
+pour le hareng du Pacifique
 dans la région d’évaluation des stocks majeur du détroit de Georgie.
-Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et
+la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r sog-traces, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-traces-cap-fr)", "(ref:sog-traces-cap)")}
-make.traces.plot(major_models[[model_ind]],
-                 axis.lab.freq = 200)
+make.traces.plot(
+  model = major_models[[model_ind]], mcmc_burnin = mcmc_burnin
+)
 ```
 
 (ref:sog-autocor-cap) Strait of Georgia SAR:
 autocorrelation plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model.
-See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and
+Figure \@ref(fig:hg-traces) for description.
 
-(ref:sog-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de simulation Monte Carlo par chaîne de Markov pour les
-paramètres estimés pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
-Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
+(ref:sog-autocor-cap-fr) Diagrammes d’autocorrélation des résultats de
+simulation Monte Carlo par chaîne de Markov pour les
+paramètres estimés pour le hareng du Pacifique
+dans la région d’évaluation des stocks majeur du détroit de Georgie.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et
+la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r sog-autocor, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-autocor-cap-fr)", "(ref:sog-autocor-cap)")}
-make.autocor.plot(major_models[[model_ind]])
+make.autocor.plot(
+  model = major_models[[model_ind]], mcmc_burnin = mcmc_burnin
+)
 ```
 
 (ref:sog-pairs-cap) Strait of Georgia SAR:
 pairs plots for Markov chain Monte Carlo output of
 estimated parameters for the Pacific Herring statistical catch-age model.
-See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and Figure \@ref(fig:hg-traces) for description.
+See Tables \@ref(tab:hg-parameter-est) and \ref{tab:variables}, and
+Figure \@ref(fig:hg-traces) for description.
 
-(ref:sog-pairs-cap-fr) Diagrammes par paires des résultats de simulation Monte Carlo par chaîne de Markov pour
-les paramètres estimés pour le hareng du Pacifique dans la region d’évaluation des stocks majeur du détroit de Georgie.
-Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et la figure \@ref(fig:hg-traces) pour la description.
+(ref:sog-pairs-cap-fr) Diagrammes par paires des résultats de
+simulation Monte Carlo par chaîne de Markov pour
+les paramètres estimés pour le hareng du Pacifique
+dans la region d’évaluation des stocks majeur du détroit de Georgie.
+Voir les tableaux \@ref(tab:hg-parameter-est) et \ref{tab:variables}, et
+la figure \@ref(fig:hg-traces) pour la description.
 
 ```{r sog-pairs, fig.asp=1, fig.cap=ifelse(french, "(ref:sog-pairs-cap-fr)", "(ref:sog-pairs-cap)")}
-make.pairs.plot(major_models[[model_ind]],
-                params=c("ro", "h", "m", "rbar", "rinit", "q1", "q2", "sel1",
-                         "selsd1", "sel2", "selsd2", "sel3", "selsd3"))
+make.pairs.plot(
+  model = major_models[[model_ind]],
+  params = c(
+    "ro", "h", "m", "rbar", "rinit", "q1", "q2", "sel1", "selsd1", "sel2",
+    "selsd2", "sel3", "selsd3"
+  )
+)
 ```
 
 (ref:sog-biomass-retro-cap) Strait of Georgia SAR:
-maximum posterior density of spawning biomass in thousands of tonnes (t; lines)
+maximum posterior density (MPD)
+of spawning biomass in thousands of tonnes (t; lines)
 from `r new_surv_yr` to `r assess_yr` (base model) with retrospectives 
-(-`r min(retrospective_yrs)` to -`r max(retrospective_yrs)` years)
+(-`r min(retro_yrs)` to -`r max(retro_yrs)` years)
 for the Pacific Herring statistical catch-age model.
 See Figure \@ref(fig:hg-biomass-retro) for description.
 
-(ref:sog-biomass-retro-cap-fr) Densité a posteriori maximale de la biomasse reproductrice en milliers de tonnes (t; lignes)
+(ref:sog-biomass-retro-cap-fr) Densité a posteriori maximale (DPM)
+de la biomasse reproductrice en milliers de tonnes (t; lignes)
 de `r new_surv_yr` à `r assess_yr` (modèle de base) avec des rétrospectives
-(-`r min(retrospective_yrs)` à -`r max(retrospective_yrs)` années)
+(-`r min(retro_yrs)` à -`r max(retro_yrs)` années)
 pour le hareng du Pacifique dans la
 région d'évaluation des stocks majeur du détroit de Georgie.
 Voir la figure \@ref(fig:hg-biomass-retro) pour la description.
 
 ```{r sog-biomass-retro, fig.asp=0.65, fig.cap=ifelse(french, "(ref:sog-biomass-retro-cap-fr)", "(ref:sog-biomass-retro-cap)")}
-biomass.plot.mpd(major_models[[model_ind]],
-                 xlim = c(new_surv_yr, assess_yr),
-                 df = major_surv %>% filter(region == major_regions_full[model_ind]),
-                 translate = french)
+biomass.plot.mpd(
+  model = major_models[[model_ind]],
+  xlim = c(new_surv_yr, assess_yr),
+  df = major_surv %>% filter(region == major_regions_full[model_ind]),
+  translate = french
+)
 ```
 
 (ref:sog-sr-cap) Strait of Georgia SAR:
@@ -94,107 +124,144 @@ as well as the predicted Beverton-Holt stock-recruitment relationship (line)
 for the Pacific Herring statistical catch-age model.
 See Figure \@ref(fig:hg-sr) for description.
 
-(ref:sog-sr-cap-fr) La relation entre la biomasse reproductrice en milliers de tonnes (t) et
-le nombre de recrues d'âge `r age_first` en milliers de millions (points), ainsi que
-la relation stock-recrutement du modèle Beverton-Holt prévue (ligne)
-pour le hareng du Pacifique dans la région d’évaluation des stocks majeur du détroit de Georgie.
+(ref:sog-sr-cap-fr) La relation entre la biomasse reproductrice
+en milliers de tonnes (t) et
+le nombre de recrues d'âge `r age_first` en milliers de millions (points),
+ainsi que la relation stock-recrutement du modèle Beverton-Holt prévue (ligne)
+pour le hareng du Pacifique
+dans la région d’évaluation des stocks majeur du détroit de Georgie.
 Voir la figure \@ref(fig:hg-sr) pour la description.
 
 ```{r sog-sr, fig.asp=0.4, fig.cap=ifelse(french, "(ref:sog-sr-cap-fr)", "(ref:sog-sr-cap)")}
-plot_bh(major_models[[model_ind]],
-        regions=major_regions_full[[model_ind]],
-        translate=french)
+plot_bh(
+  model = major_models[[model_ind]],
+  regions = major_regions_full[[model_ind]],
+  translate = french
+)
 ```
 
-(ref:hcr-sog-cap) Strait of Georgia SAR:
+(ref:hcr-sog-1-cap) Strait of Georgia SAR:
 projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
-compared to harvest rate (HR) and total allowable catch (TAC)
-(rows 1 to 4 in Table \@ref(tab:decision-sog)).
-See Figure \@ref(fig:hcr-prd) for description.
+compared to harvest rate (HR) and total allowable catch (TAC;
+rows 2 to 7 in Table \@ref(tab:decision-sog)).
+See Figure \@ref(fig:hcr-prd-1) for description.
 
-```{r hcr-sog, fig.asp=0.75, fig.cap="(ref:hcr-sog-cap)"}
+```{r hcr-sog-1, fig.asp=1, fig.cap="(ref:hcr-sog-1-cap)", eval=FALSE}
 region <- "SoG"
-probs <- confidence_vals 
-cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[1]],
-                            sbt.sog,
-                            mp = mp.sog[1,]$label,
-                            region = region,
-                            probs = probs),
-                   plot_hcr(mp.lst.sog[[1]][[2]],
-                            sbt.sog,
-                            mp = mp.sog[2,]$label,
-                            region = region,
-                            probs = probs),
-                   plot_hcr(mp.lst.sog[[1]][[3]],
-                            sbt.sog,
-                            mp = mp.sog[3,]$label,
-                            region = region,
-                            probs = probs,
-                            show.x.axes = TRUE),
-                   plot_hcr(mp.lst.sog[[1]][[4]],
-                            sbt.sog,
-                            mp = mp.sog[4,]$label,
-                            region = region,
-                            probs = probs,
-                            show.x.axes = TRUE),
-                   nrow = 2,
-                   ncol = 2,
-                   align = "hv",
-                   axis = "tblr")
+probs <- confidence_vals
+cowplot::plot_grid(
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[2]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[2, ]$label,
+    region = region,
+    probs = probs
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[3]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[3, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[4]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[4, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[5]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[5, ]$label,
+    region = region,
+    probs = probs
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[6]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[6, ]$label,
+    region = region,
+    probs = probs
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[7]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[7, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  nrow = 3,
+  ncol = 2,
+  align = "hv",
+  axis = "tblr"
+)
 ```
 
 (ref:hcr-sog-2-cap) Strait of Georgia SAR:
 projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
-compared to harvest rate (HR) and total allowable catch (TAC)
-(rows 5 to 8 in Table \@ref(tab:decision-sog)).
-See Figure \@ref(fig:hcr-prd) for description.
+compared to harvest rate (HR) and total allowable catch (TAC;
+rows 9 to 14 in Table \@ref(tab:decision-sog)).
+See Figure \@ref(fig:hcr-prd-1) for description.
 
-```{r hcr-sog-2, fig.asp=0.75, fig.cap="(ref:hcr-sog-2-cap)"}
+```{r hcr-sog-2, fig.asp=1, fig.cap="(ref:hcr-sog-2-cap)", eval=FALSE}
 region <- "SoG"
-probs <- confidence_vals 
-cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[5]],
-                            sbt.sog,
-                            mp = mp.sog[5,]$label,
-                            region = region,
-                            probs = probs),
-                   plot_hcr(mp.lst.sog[[1]][[6]],
-                            sbt.sog,
-                            mp = mp.sog[6,]$label,
-                            region = region,
-                            probs = probs),
-                   plot_hcr(mp.lst.sog[[1]][[7]],
-                            sbt.sog,
-                            mp = mp.sog[7,]$label,
-                            region = region,
-                            probs = probs,
-                            show.x.axes = TRUE),
-                   plot_hcr(mp.lst.sog[[1]][[8]],
-                            sbt.sog,
-                            mp = mp.sog[8,]$label,
-                            region = region,
-                            probs = probs,
-                            show.x.axes = TRUE),
-                   nrow = 2,
-                   ncol = 2,
-                   align = c("v", "h"))
-```
-
-(ref:hcr-sog-3-cap) Strait of Georgia SAR:
-projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
-compared to harvest rate (HR) and total allowable catch (TAC)
-(row 9 in Table \@ref(tab:decision-sog)).
-See Figure \@ref(fig:hcr-prd) for description.
-
-```{r hcr-sog-3, fig.asp=0.75, fig.cap="(ref:hcr-sog-3-cap)"}
-region <- "SoG"
-probs <- confidence_vals 
-cowplot::plot_grid(plot_hcr(mp.lst.sog[[1]][[9]],
-                            sbt.sog,
-                            mp = mp.sog[9,]$label,
-                            region = region,
-                            probs = probs,
-                            show.x.axes = TRUE),
-                   nrow = 1,
-                   ncol = 1,
-                   align = c("v", "h"))
+probs <- confidence_vals
+cowplot::plot_grid(
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[9]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[9, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[10]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[10, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[11]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[11, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[12]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[12, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[13]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[13, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  plot_hcr(
+    hcr.lst = mp.lst.sog[[1]][[14]],
+    sbt.lst = sbt.sog,
+    mp = mp.sog[14, ]$label,
+    region = region,
+    probs = probs,
+    show.x.axes = TRUE
+  ),
+  nrow = 3,
+  ncol = 2,
+  align = c("v", "h")
+)
 ```

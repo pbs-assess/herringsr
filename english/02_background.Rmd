@@ -7,14 +7,15 @@ stock assessment regions (SARs; Figure \@ref(fig:bc-map)).
 The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
 We conduct formal analyses of stock trend information for the major SARs.
-For the minor SARs, we present catch data, biological data, and spawn survey data 
-(see Section "\nameref{sec:app-minor}").
-This year we have included similar data for the special area, Area 10
-(see Section "\nameref{sec:app-special}").
-Note that special areas are not SARs;
-therefore they are excluded from regular monitoring and analyses.
-In addition, note that Area 10 is a subset of the Central Coast Sections that
-are outside the SAR boundary.
+For the minor SARs, we present available
+catch data, biological data, and spawn survey data
+(Section "\nameref{sec:app-minor}").
+Beginning in 2021 we include similar data for the special area, Area 10
+(Section "\nameref{sec:app-special}").
+Formal analyses of stock trends are not included for
+minor SARs and special areas due to data availability.
+Note that Area 10 is a subset of the Central Coast
+and is outside the SAR boundary.
 
 ## Description of the fishery
 
@@ -24,43 +25,60 @@ to fish for Food, Social, and Ceremonial (FSC) purposes.
 Commercial fishing opportunities consist of four directed fisheries:
 food and bait (FB),
 special use (SU),
-spawn-on-kelp (SOK) products, and
+spawn-on-kelp (SOK), and
 roe herring.
 There is also a small recreational fishery.
 
-First Nations fish for whole herring, herring roe, and herring eggs for FSC purposes.
+First Nations fish for whole herring, herring roe, and
+herring eggs for FSC purposes.
 Whole herring are fished by seine, gillnet, rake, dip net, and jig.
 Herring eggs are collected as spawn on seaweed such as kelp (i.e., SOK), or
-spawn on set tree boughs. 
-Indigenous harvest of herring for FSC purposes may occur coast wide where authorized by a communal license.
+spawn on tree boughs placed in spawning locations. 
+Indigenous harvest of herring for FSC purposes may occur coast wide
+where authorized by a communal license.
 
-In addition, Treaty and aboriginal commercial fisheries may occur
+In addition, treaty and aboriginal commercial fisheries may occur
 in some specific management regions.
 Four modern treaties (Nisga'a, Tsawwassen, Maa-nulth, and Tla'amin)
 have been ratified in British Columbia and
 articulate a treaty right to FSC harvest of fish.
-On the West Coast of Vancouver Island, five Nuu-chah-nulth First Nations -- 
-Ahousaht, Ehattesaht, Hesquiaht, Mowachaht/Muchalaht, and Tla-o-qui-aht
-(the T'aaq-wiihak First Nations) --
+Five Nuu-chah-nulth First Nations located on the West Coast of Vancouver Island
+-- Ahousaht, Ehattesaht, Hesquiaht, Mowachaht/Muchalaht, and Tla-o-qui-aht
+(the Five Nations) --
 have aboriginal rights to fish for any species of fish,
 with the exception of Geoduck,
-within their Fishing Territories, and to sell that fish.
-The DFO has developed a 2020/21 Five Nations
-Multi-species Fishery Management Plan (FMP)
-in consultation with the Five Nations.
-Feedback provided by the Five Nations during consultations was considered and
-incorporated into the 2020/21 FMP by DFO where possible. 
+within their Fishing Territories and to sell that fish.
+DFO developed a 2022/23 Five Nations Multi-Species Fishery Management Plan (FMP).
 The FMP includes specific details about the fishery, such as
 allocation/access,
 licensing and designations,
 fishing area,
-harvesting opportunities,
-as well as fishery monitoring and catch reporting. 
-For further information
-\link{http://waves-vagues.dfo-mpo.gc.ca/Library/40869374.pdf}{see the FMP}.
+harvesting opportunities, and
+fishery monitoring and catch reporting.
+Feedback provided by the Five Nations during consultations was considered
+and incorporated into the 2022/23 FMP by DFO where possible.
+
+The implementation of the Five Nations’ right-based sale fishery
+is an ongoing process.
+The 2022/23 FMP is the fourth Multi-Species FMP developed to implement 
+the right-based multi-species fishery to accommodate the Five Nations’ 
+Aboriginal rights consistent with the British Columbia Supreme Court’s 
+2018 decision. 
+Version 2 of the 2021 FMP, issued on December 2, 2021, was the first 
+Multi-Species FMP developed following the British Columbia Court of Appeal (BCCA)
+decision of April 19, 2021, in Ahousaht Indian Band and Nation v. Canada, 
+2021 BCCA 155, but it only partially implemented it.
+
+The 2022/23 FMP addresses most of the remaining issues
+raised by the BCCA decision, leaving some items left to review.
+It is DFO's intention to continue to review the FMP and make further changes 
+in-season and amend the FMP if required. 
+For further information see the 2022/23
+\link{https://waves-vagues.dfo-mpo.gc.ca/Library/40953798.pdf}{FMP}.
 
 On the Central Coast,
-Heiltsuk First Nation have an Aboriginal right to commercially fish herring SOK.
+Heiltsuk First Nation have an Aboriginal right to commercially harvest
+Pacific Herring SOK.
 The Heiltsuk currently hold nine SOK licenses in this area,
 and SOK is harvested using the preferred means of the Heiltsuk,
 which is open ponding.
@@ -73,8 +91,7 @@ with a combined coast wide catch of `r total_final_yr_roe_catch` tonnes (t).
 The FB seine fishery had a coast wide catch of
 `r total_final_yr_other_catch`&nbsp;t.
 The roe, FB and SU fisheries operated in SoG only in `r this_season`.
-Three SOK operators participated in the CC SOK fisheries in `r this_season`.
-There were no commercial SOK fisheries in PRD in `r this_season`.
+All areas were closed for commercial SOK fisheries in `r this_season`.
 
 A complete dockside monitoring program exists for all Pacific Herring
 commercial fisheries and the resulting validated catch data are included
@@ -86,7 +103,7 @@ of the stock assessment framework [@cleary2018].
 Recommendations for addressing this uncertainty will require quantifying
 ponding mortality and removals (eggs) associated with SOK fisheries.
 Although this work is underway,
-results are not yet available for informing the stock assessment.
+results are not yet available to inform the stock assessment.
 
 ## Description of the stock assessment process
 
@@ -100,7 +117,8 @@ recruitment.
 Observed annual weight-at-age is estimated external to the model, and
 maturity-at-age is a fixed input parameter.
 In 2017, an updated version of the SCA model was applied to assess each of the
-`r number_to_word(length(major_regions_short))` major Pacific Herring SARs [@cleary2018].
+`r number_to_word(length(major_regions_short))`
+major Pacific Herring SARs [@cleary2018].
 The main change from the SCA model used from 2011 to 2016 was
 the partitioning of variance between observation and process error
 to improve the estimation of the variance structure [@cleary2018].
@@ -120,8 +138,8 @@ stock status relative to the LRP of $0.3\SB_0$, and
 spawning biomass in `r major_end_yr + 1` assuming no catch
 ($\SB_{`r major_end_yr + 1`}$).
 The projected spawning biomass is based on
-the current year's recruitment deviations from average
-predicted by the Beverton-Holt stock-recruit model and
+the current year's recruitment deviations from average as 
+predicted by the Beverton-Holt stock-recruit model, and
 estimated natural mortality and weight-at-age,
 both averaged over the most recent 5-years.
 The Markov chain Monte Carlo (MCMC) sampling procedure follows the same method implemented by @cleary2018.
@@ -140,7 +158,7 @@ the HG, CC, SoG, and WCVI SARs, and
 the estimated value reflects the prior mean [@cleary2018, Appendix D].
 Assuming $q_2 = 1$ produces a "minimum" biomass estimate
 buffering any other assessment and management implementation errors
-(see @martell2011 and @herring2012).
+[@martell2011; @herring2012].
 Application of AM1 would remove such safeguards
 despite recent simulation evaluation showing that
 large (positive) assessment errors are produced by the current assessment model

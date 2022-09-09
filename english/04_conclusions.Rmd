@@ -1,30 +1,30 @@
 # Conclusions
 
-The `r assess_yr` Science Response includes a formal analyses of
+The `r assess_yr` Science Response includes formal analyses of
 stock trend information for the Pacific Herring major SARs
 using the stock assessment framework reviewed in 2017 [@cleary2018]
-with the data updated to include `r assess_yr`
+with data updated to include `r assess_yr`.
 
 In the first MSE cycle for HG,
-none of the MPs tested could meet the conservation objective with
+none of the MPs tested met the conservation objective with
 at least 75% probability [@dfo2019c],
 thus harvest options are not provided for `r assess_yr + 1`.
-DFO has committed to developing and implementing a rebuilding plan
-for Haida Gwaii Herring by the end of fiscal year 2020/21,
-and supports commercial herring fishery closures for the HG SAR until April 2021.
+DFO has committed to developing and implementing a rebuilding plan for
+Haida Gwaii Pacific Herring.
+Based on MP evaluations, the harvest recommendation for the HG SAR is 0&nbsp;t.
 
 The MSE process identifies a range of MPs that meet the conservation objective
-with at least 75% probability for PRD, CC, SoG, and WCVI SARs
-for the Reference OM scenario (@dfo2019c; @dfo2021b).
+with at least 75% probability for the PRD, CC, SoG, and WCVI SARs
+for the DDM reference OM scenario [@dfo2019c; @dfo2021b].
 As such, harvest options or MP calculations for `r assess_yr + 1` for these SARs
 are provided using MPs that meet the minimum conservation criteria
-under the Reference OM scenario.
-Tables also include MP performance under the DIM and conM Robustness OM scenarios
+under the DDM reference OM scenario.
+Tables also include MP performance under the DIM robustness OM scenario
 (Tables \@ref(tab:decision-prd) to \@ref(tab:decision-wcvi)).
 
 Science advice for the minor SARs is limited to
 presentation of catch data, biological data, and spawn survey data 
-(see Section "\nameref{sec:app-minor}").
+(Section "\nameref{sec:app-minor}").
 Similarly, science advice for the special area, Area 10 is limited to
 presentation of catch data, biological data, and spawn survey data 
-(see Section "\nameref{sec:app-special}").
+(Section "\nameref{sec:app-special}").
