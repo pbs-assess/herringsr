@@ -650,26 +650,25 @@ and was not permitted in 2022
 The estimated spawning biomass for the SoG stock
 had a historical low in the later part of the 1960's,
 driven by lower than average estimated recruitment and
-increasing estimated natural mortality. 
-(Figure \@ref(fig:storyboard-sog)a, b, e) 
-As natural mortality started to drop estimated biomass estimates rose again.
-(Figure \@ref(fig:storyboard-sog)b, d) 
+increasing estimated natural mortality (Figure \@ref(fig:storyboard-sog)a, b, e).
+Following this, as natural mortality declined, the estimated spawning biomass 
+grew (Figure \@ref(fig:storyboard-sog)b, d).
 Some deep dips in estimated biomass in the mid 1980's and late 2000's were 
-improved by above average recruitment. From 2010 to 2020 there is an
-increasing trend in estimated spawning biomass spurred by  above average 
-estimated recruitment.
-(Figure \@ref(fig:storyboard-sog)b, d, e)
-From 2015 to `r assess_yr` estimated mortality has increased sharply to levels
-not seen since the late 1960s and early 1970s when biomass was at its lowest 
-levels estimated. Greater estimated biomass 
-declines in the face of increasing mortality have been ameliorated by above
-average estimated recruitment in most years from 2010 to
+improved by above average recruitment. 
+From 2010 to 2020 there is an increasing trend in estimated spawning 
+biomass spurred by above average estimated recruitment 
+(Figure \@ref(fig:storyboard-sog)b, d, e).
+
+From 2015 to `r assess_yr` estimated natural mortality trend has been increasing,
+after a previously long stable period (1980-2010). 
+Greater estimated biomass declines in the face of increasing mortality have 
+been ameliorated by above average estimated recruitment in most years from 2010 to
 `r assess_yr` with the estimated recruitment at an all time high in 2022
 (Figure \@ref(fig:storyboard-sog)e). 
-Overall estimated production has been declining from the 2017-2018 season 
-to present (Figure \@ref(fig:storyboard-sog)f).
+Estimated production was very high in the 2017-2018 season, declining from there
+in the recent three years (Figure \@ref(fig:storyboard-sog)f).
 In 2022 estimated spawning biomass was 
-maintained at 2021 levels and above what was forecast for the year. 
+maintained at 2021 levels and above what was forecast for the year.
 
 The uncertainty associated with the last few years of spawning biomass
 along with the forecast biomass `r paste0("$\\SB_{", assess_yr, "}$")`,
@@ -684,8 +683,8 @@ in 2019 and 2020 was observed in the previous years' assessment and
 remains apparent now that these age-2s are
 fully recruited to the fishing/sampling gear.
 Analysis of surplus production shows that for the year between 2019 and 2020,
-the SoG SAR is estimated to be in a high production, high biomass state,
-but has now fallen to negative production for the year between 2021 and 2022
+the SoG SAR is estimated to be in high biomass state with neutral production,
+and that production is negative  for the year between 2021 and 2022
 (Figure \@ref(fig:storyboard-sog)f).
 
 Commercial fisheries have occurred annually in SoG since the early-1970s
