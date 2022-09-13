@@ -341,8 +341,41 @@ at the time the draft was submitted.
 
 ### Central Coast
 
-Observations for Areas 06 and 07 had not been provided
-at the time the draft was submitted.
+<!-- TODO: JC to review the Heiltsuk observations -->
+
+Heiltsuk herring observations for 2022:
+This herring season spawning behavior was similar to last year
+where herring spawned sporadically throughout the areas and
+in different areas than in previous years.
+This trend seems to be driven by whales, sea lions and seal populations,
+and water temperature.
+Younger and smaller age classes spawn in
+the normal shallower water of 0 to 5 or 10 fathoms,
+while the older and larger age classes now spawn deeper in 10 to 15 fathoms.
+The deeper spawn was harder to locate and set kelp and boughs on. 
+The shallower herring spawns lasted a day and a half,
+and yielded minimal spawn for the spawn on kelp fishery.
+Predation of whales, seals and sea lions has continued to
+disrupt and move the spawning herring around
+causing the deeper water spawns and shifting locations. 
+Water temperature is suspected to influence herring spawning behavior
+as well as predation.
+Water temperatures this year and last year have been colder than normal;
+local fishers identified this as the primary driver for
+the changing spawning behavior with predation as the second.  
+
+Sounding vessels and test boat skippers reported
+adequate tonnage in areas with estimates of 32,000t to 36,000t
+for the CC and shared that this was the low end of their estimate.   
+ 
+Heiltsuk fishers, sounding vessels captains and HIRMD staff observed
+that the dive survey vessels were late this year and cause for concern.
+For example, the spawn that took place in Spiller
+was not surveyed until 12 days afterwards.
+This delayed survey would have missed
+the greater portion of surviving spawn after predation.
+Concerns raised that the overall Central Coast spawn survey
+may not yield adequate data that reflects the actual biomass. 
 
 FSC harvesters in Area 08 observed only brief spot spawns
 lasting 24 hours or less.
@@ -363,8 +396,12 @@ which doesn’t indicate it didn’t happen.
 Bute Inlet is very remote.
 No other indications of spawn activity were observed or reported.
 
-Observations for southern SoG had not been provided
-at the time the draft was submitted.
+<!-- TODO: JC to review Cowichan Tribes observations -->
+
+In the southern SoG, the Cowichan Tribes
+did not actively observe herring spawn but some signs were seen.
+For example, a huge mass/frenzy of birds were observed
+in Active Pass on March 4th.
 
 ### West Coast of Vancouver Island
 
