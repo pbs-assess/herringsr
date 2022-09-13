@@ -9,8 +9,6 @@ contributors <- tibble::tribble(
   "Sarah Power", "DFO Science, Pacific Region",
   "Matthew Grinnell", "DFO Science, Pacific Region",
   "Sarah Hawkshaw", "DFO Science, Pacific Region",
-  #"Chris Grandin", "DFO Science, Pacific Region (analytical support)",
-  # "Herring Technical Working Group", "Various (contributions to First Nations observations)",
   "Bryan Rusch", "DFO Fisheries Management, Pacific Region (reviewer)",
   "Marisa Keefe", "DFO Fisheries Management, Pacific Region (reviewer)")
 ```
