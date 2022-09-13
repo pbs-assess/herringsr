@@ -29,7 +29,6 @@ As with the minor SARs,
 we provide the spawn index and proportion of spawn index by Section
 from `r special_end_yr-num_yrs_tab` to `r special_end_yr`
 (Table \@ref(tab:spawn-index-a10)).
-<!-- TODO: Not sure what we want to say here -->
 Note that 2022 spawn data may be incomplete;
 DFO has not received data collected by the Gwa'sala-'Nakwaxda'xw Nation.
 We also provide
