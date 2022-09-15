@@ -12,16 +12,16 @@ catch data, biological data, and spawn survey data
 (Section "\nameref{sec:app-minor}").
 Beginning in 2021 we include similar data for the special area, Area 10
 (Section "\nameref{sec:app-special}").
-Formal analyses of stock trends are not included for
-minor SARs and special areas due to data availability.
 Note that Area 10 is a subset of the Central Coast
 and is outside the SAR boundary.
+Formal analyses of stock trends are not included for
+minor SARs or special areas.
 
 ## Description of the fishery
 
 At present, there are several Pacific Herring fisheries in BC.
 First Nations have priority access, after conservation,
-to fish for Food, Social, and Ceremonial (FSC) purposes.
+to fish for food, social, and ceremonial (FSC) purposes.
 Commercial fishing opportunities consist of four directed fisheries:
 food and bait (FB),
 special use (SU),
@@ -40,15 +40,15 @@ where authorized by a communal license.
 In addition, treaty and aboriginal commercial fisheries may occur
 in some specific management regions.
 Four modern treaties (Nisga'a, Tsawwassen, Maa-nulth, and Tla'amin)
-have been ratified in British Columbia and
-articulate a treaty right to FSC harvest of fish.
+have been ratified in BC and articulate a treaty right to FSC harvest of fish.
 Five Nuu-chah-nulth First Nations located on the West Coast of Vancouver Island
 -- Ahousaht, Ehattesaht, Hesquiaht, Mowachaht/Muchalaht, and Tla-o-qui-aht
 (the Five Nations) --
 have aboriginal rights to fish for any species of fish,
 with the exception of Geoduck,
 within their Fishing Territories and to sell that fish.
-DFO developed a 2022/23 Five Nations Multi-Species Fishery Management Plan (FMP).
+DFO developed a 2022/23 Five Nations Multi-Species
+Fishery Management Plan (FMP).
 The FMP includes specific details about the fishery, such as
 allocation/access,
 licensing and designations,
@@ -64,8 +64,9 @@ The 2022/23 FMP is the fourth Multi-Species FMP developed to implement
 the right-based multi-species fishery to accommodate the Five Nations’ 
 Aboriginal rights consistent with the British Columbia Supreme Court’s 
 2018 decision. 
-Version 2 of the 2021 FMP, issued on December 2, 2021, was the first 
-Multi-Species FMP developed following the British Columbia Court of Appeal (BCCA)
+Version 2 of the 2021 FMP, issued on December 2, 2021,
+was the first Multi-Species FMP developed
+following the British Columbia Court of Appeal (BCCA)
 decision of April 19, 2021, in Ahousaht Indian Band and Nation v. Canada, 
 2021 BCCA 155, but it only partially implemented it.
 
@@ -101,7 +102,7 @@ The exclusion of SOK fishery data from the annual stock assessment process was
 identified as a key uncertainty in the most recent CSAS review
 of the stock assessment framework [@cleary2018].
 Recommendations for addressing this uncertainty will require quantifying
-ponding mortality and removals (eggs) associated with SOK fisheries.
+ponding mortality and removals (i.e., eggs) associated with SOK fisheries.
 Although this work is underway,
 results are not yet available to inform the stock assessment.
 
@@ -142,12 +143,14 @@ the current year's recruitment deviations from average as
 predicted by the Beverton-Holt stock-recruit model, and
 estimated natural mortality and weight-at-age,
 both averaged over the most recent 5-years.
-The Markov chain Monte Carlo (MCMC) sampling procedure follows the same method implemented by @cleary2018.
+The Markov chain Monte Carlo (MCMC) sampling procedure
+follows the same method implemented by @cleary2018.
 
 @cleary2018 reported results from two SCA model fits that differed
 in assumptions about dive survey catchability $q_2$
 (from `r new_surv_yr` to `r major_end_yr`):
-assessment model 1 (AM1) where $q_2$ is estimated with a prior distribution assumed; and
+assessment model 1 (AM1) where $q_2$ is
+estimated with a prior distribution assumed; and
 assessment model 2 (AM2) where $q_2 = 1$.
 The assumptions that the dive survey spawn index represents
 all the spawn deposited and that no eggs are lost to predation are strong.
@@ -164,7 +167,8 @@ despite recent simulation evaluation showing that
 large (positive) assessment errors are produced by the current assessment model
 even with $q_2 = 1$ [@dfo2019a].
 Scaling the assessment with values of $q_2 < 1$ is likely to result in
-larger absolute assessment errors than those estimated when $q_2 = 1$ [@dfo2019a].
+larger absolute assessment errors than those estimated
+when $q_2 = 1$ [@dfo2019a].
 For these reasons,
 advice presented here is based on the AM2 parameterization,
 supported also by comparisons presented in @dfo2016 [, Table A1], and

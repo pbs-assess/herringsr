@@ -6,14 +6,11 @@
 contributors <- tibble::tribble(
   ~"Collaborateur", ~"Organisme d'appartenance",
   "Jaclyn Cleary", "Secteur des sciences du MPO, région du Pacifique",
-  "Sarah Hawkshaw", "Secteur des sciences du MPO, région du Pacifique",
-  "Matthew Grinnell", "Secteur des sciences du MPO, région du Pacifique",
   "Sarah Power", "Secteur des sciences du MPO, région du Pacifique",
-  "Chris Grandin", "Secteur des sciences du MPO, région du Pacifique (support analytique)",
-  # "Groupe de travail technique sur le hareng", "Divers (contributions aux observations des Premières Nations)",
-  "Victoria Postlethwaite", "Gestion des pêches du MPO, Région du Pacifique (réviseur)",
-  "Marisa Keefe", "Gestion des pêches du MPO, Région du Pacifique (réviseur)",
-  "Bryan Rusch", "Gestion des pêches du MPO, Région du Pacifique (réviseur)")
+  "Matthew Grinnell", "Secteur des sciences du MPO, région du Pacifique",
+  "Sarah Hawkshaw", "Secteur des sciences du MPO, région du Pacifique",
+  "Bryan Rusch", "Gestion des pêches du MPO, Région du Pacifique (réviseur)",
+  "Marisa Keefe", "Gestion des pêches du MPO, Région du Pacifique (réviseur)")
 ```
 
 ```{r, results='asis'}

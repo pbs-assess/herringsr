@@ -685,7 +685,7 @@ make.biomass.depletion.table(
 
 (ref:wcvi-spawning-biomass-depletion-cap) West Coast of Vancouver Island SAR:
 spawning biomass and depletion from 
-from `r major_end_yr - num_yrs_tab` to `r major_end_yr` for the
+`r major_end_yr - num_yrs_tab` to `r major_end_yr` for the
 Pacific Herring statistical catch-age model.
 See Table \@ref(tab:hg-spawning-biomass-depletion) for description.
 

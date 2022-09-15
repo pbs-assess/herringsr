@@ -8,20 +8,20 @@ the collection and analysis of biological data in 2022.
 Spawn surveys proceeded as usual in 2022,
 with dive surveys in all major SARs.
 
-## Management strategy evaluation
+## Management strategy evaluation\label{sec:mse}
 
 Fisheries and Oceans Canada (DFO) has committed to
-renewing the current management framework to
-address a range of challenges facing Pacific Herring stocks and fisheries
-in British Columbia. 
+renewing the current management framework to address a range of challenges
+facing Pacific Herring stocks and fisheries in BC. 
 Renewal of the management framework for Pacific Herring uses MSE to
 evaluate the performance of candidate MPs against
 hypotheses about past and future stock and fishery dynamics. 
 The purpose of the MSE process is to
-identify and eliminate MPs that incur unacceptable risks to a stock (poor 
-choices) and to identify MPs that provide acceptable outcomes related to
+identify and eliminate MPs that incur unacceptable risks to a stock
+(i.e., poor choices) and
+identify MPs that provide acceptable outcomes related to
 conservation and fishery management objectives.
-The identification of a preferred management procedure requires
+The identification of a preferred MP requires
 a fully specified set of measurable objectives that include
 reference points (typically categorized as limits and targets) and
 to the extent possible,
@@ -31,21 +31,20 @@ MSE is an iterative and ongoing process conducted with the participation of
 First Nations, the fishing industry, as well as
 government and non-government organizations. 
 
-The first MSE cycles for the SoG and WCVI management areas
+The first MSE cycles for the SoG and WCVI SARs
 were completed in 2018 [@dfo2019a].
 Steps included
 OM development [@benson2022],
-fitting the OMs to Pacific Herring stock and fishery monitoring data
-from 1951 to 2017, and
+fitting OMs to Pacific Herring stock and fishery monitoring data
+from `r major_start_yr` to 2017, and
 closed-loop simulations of MP performance for
 alternative future natural mortality scenarios [@dfo2019a].
-In the spring of 2019,
-the MSE process was extended to the HG, PRD, and CC management areas
+In 2019, the MSE process was extended to
+the HG, PRD, and CC SARs
 with stock and fishery monitoring data updated to include 2018
 and performance evaluation of area specific MPs [@dfo2019c],
 with subsequent updates outlined in Section "\nameref{sec:context}".
-Results from MP evaluations reflect
-most recent updates for all management areas.
+Results from MP evaluations reflect most recent updates for all SARs.
 
 A core set of fisheries management objectives [@dfo2019c]
 have been applied to each major SAR:
@@ -67,15 +66,15 @@ over three Pacific Herring generations
 (i.e., maximize average catch).
 
 However, a fully specified set of objectives has not yet been developed
-for each management area.
+for each SAR.
 DFO will continue to collaborate with coastal First Nations to
 develop area-specific objectives specific to
-Food, Social and Ceremonial fisheries as well as SOK fisheries.
+FSC fisheries as well as SOK fisheries.
 In addition, DFO will continue to engage with
 the herring industry, government, and non-government organizations
 to describe broader objectives related to conservation, economics, and access.
 
-The MPs for each SAR differ in the form of the HCR and choices of catch cap,
+MPs for each SAR differ in the form of the HCR and choices of catch cap,
 but use the same type of monitoring data and assessment model
 [e.g., @cleary2018].
 The current stock assessment model assumes natural mortality is
@@ -88,9 +87,10 @@ three hypotheses about future Pacific Herring natural mortality $M$:
 
 1. $M$ is constant over time (conM).
 
-These three hypotheses are captured as three operating model (OM) scenarios in @benson2022.
+These three hypotheses are captured as
+three operating model (OM) scenarios in @benson2022.
 The DDM scenario was identified as the reference OM scenario based on
-discussion at the July 2018 CSAS review process [@dfo2019c],
+discussion at the 2018 CSAS review process [@dfo2019c],
 while the DIM and conM scenarios were identified as robustness OM scenarios.
 In 2022 we removed the conM scenario from the list of
 plausible natural mortality hypotheses because
@@ -122,7 +122,8 @@ including HCR components, are expected a priori among SARs.
 The reasons relate to
 differences in objectives deemed important by resource users,
 differences in historical and current stock and fishery dynamics, and
-differences in the magnitude and direction of assessment model errors in each SAR.
+differences in the magnitude and direction
+of assessment model errors in each SAR.
 Conservation objectives such as those based on avoiding a biological limit
 reference point (LRP) in alignment with the DFO PA Policy [@dfo2009] are held 
 constant among SARs based on the analyses of @kronlund2017.
@@ -150,11 +151,11 @@ especially if probabilities are considerably different between MP updates.
 There are three types of input data used for
 the Pacific Herring stock assessment:
 catch data, biological data, and abundance data.
-These data sets are described in the following sections, and
+These data are described in the following sections, and
 summarized in Table \@ref(tab:data-input).
 Relative to the previous assessment,
-the only change made to input data was to update all data time series
-to include data from the `r this_season` herring season (July 1 to June 30).
+the only change to input data was to extend all the time series
+to include the `r this_season` herring season (July 1 to June 30).
 Note that we refer to 'year' instead of 'herring season' in this report;
 therefore `r assess_yr` refers to the `r this_season` Pacific Herring season.
 
@@ -163,24 +164,24 @@ therefore `r assess_yr` refers to the `r this_season` Pacific Herring season.
 For the purposes of stock assessment,
 catch data are summarized by gear type as described in
 Table \@ref(tab:data-input) and presented in Figure \@ref(fig:major-catch).
-As in previous years, catch input to the stock assessment model
+As in previous years, catch data for the stock assessment model
 does not include mortality from the commercial SOK fishery,
 nor any recreational fisheries or food, social, and ceremonial (FSC) harvest.
-The FSC and recreational harvest are considered minor
+Recreational fisheries and FSC harvest are considered minor
 relative to commercial harvest.
 The commercial SOK fishery is licensed based on pounds of validated SOK product
 (i.e., eggs adhered to kelp), not tonnes of fish used or spawned.
-Currently there is no basis for validating mortality
+Currently there is no basis to validate mortality
 imposed on the population by this fishery, however
 methods for estimating SOK mortality are being developed.
 
-Combined commercial removals from `r assess_yr-9` to `r assess_yr`
+Combined commercial removals from `r assess_yr - num_yrs_tab` to `r assess_yr`
 from the roe, food and bait, and special use fisheries
 appear in Table \@ref(tab:annual-catch).
 The proportion of coast-wide catch that comes from SoG was
 22% in 1990, and 100% in `r assess_yr`.
-Total SOK harvest (pounds of validated product) for the major SARs
-from `r assess_yr-9` to `r assess_yr` is presented in
+Total SOK harvest (i.e., pounds of validated product) for the major SARs
+from `r assess_yr - num_yrs_tab` to `r assess_yr` is presented in
 Table \@ref(tab:annual-sok-catch).
 
 ### Biological data\label{sec:biol-data}
@@ -191,15 +192,14 @@ Biological data inputs to the stock assessment are
 annual weight-at-age (Figure \@ref(fig:major-wa)) and 
 annual number-at-age, shown as proportion-at-age (Figure \@ref(fig:major-pa)).
 
-Significant declines in weight-at-age are evident for all major herring stocks,
+Significant declines in weight-at-age are evident for all major herring stocks
 from the mid-1980s to 2010.
-Declining weight-at-age may be attributed to any number of factors, including
+Declining weight-at-age may be due to a number of factors, including
 fishing effects (i.e., gear selectivity),
 environmental effects (e.g., changes in ocean productivity), or
 changes in sampling protocols
 (e.g., shorter time frame over which samples are collected).
-Declines in appear to have ceased 
-In the years since 2010, there appears to be no further declines in weight-at-age.
+Declines in weight-at-age appear to have ceased since 2010.
 
 ### Abundance data
 
@@ -211,7 +211,7 @@ other data.
 There are two spawn survey periods defined by the predominant survey method:
 surface survey period from `r surv_yr_rng[1]` to `r new_surv_yr - 1`, and
 dive survey period from `r new_surv_yr` to `r surv_yr_rng[2]`.
-Data from these surveys are used to calculate egg densities per spawn.
+Data from these surveys are used to calculate egg density in each spawn.
 Ultimately, the estimated weight of mature spawners required
 to produce the egg deposition is calculated and
 referred to as the 'spawn index'.
@@ -223,7 +223,7 @@ are summarized in Figure \@ref(fig:major-spawn-index).
 In `r surv_yr_rng[2]`, there was an
 increase in survey biomass (i.e., index values) for the PRD and SoG SARs, and
 a decrease in survey biomass for HG, CC, and WCVI SARs
-(Figure \@ref(fig:major-spawn-index) and
+(Figure \@ref(fig:major-spawn-index;
 Tables \@ref(tab:spawn-index-hg) to \@ref(tab:spawn-index-wcvi)).
 
 ## Spatial spawn distribution
@@ -231,7 +231,7 @@ Tables \@ref(tab:spawn-index-hg) to \@ref(tab:spawn-index-wcvi)).
 Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) 
 summarize the spatial distribution of survey spawn biomass
 (i.e., the spawn index)
-by proportion over the most recent `r num_yrs_tab+1` years for the major SARs.
+by proportion over the last `r num_yrs_tab + 1` years for the major SARs.
 HG and SoG are summarized by Group, while
 PRD, CC, and WCVI are summarized by Statistical Area;
 the choice of spatial grouping reflects spawning behaviour and
@@ -341,8 +341,41 @@ at the time the draft was submitted.
 
 ### Central Coast
 
-Observations for Areas 06 and 07 had not been provided
-at the time the draft was submitted.
+<!-- TODO: JC to review the Heiltsuk observations -->
+
+In 2022, Heiltsuk observed that
+the herring season spawning behavior was similar to last year
+where herring spawned sporadically throughout the areas and
+in different areas than in previous years.
+This trend seems to be driven by whales, sea lions and seal populations,
+and water temperature.
+Younger and smaller age classes spawn in
+the normal shallower water of 0 to 5 or 10 fathoms,
+while the older and larger age classes now spawn deeper in 10 to 15 fathoms.
+The deeper spawn was harder to locate and set kelp and boughs on. 
+The shallower herring spawns lasted a day and a half,
+and yielded minimal spawn for the spawn on kelp fishery.
+Predation by whales, seals and sea lions has continued to
+disrupt and move spawning herring around,
+causing the deeper water spawns and shifting locations. 
+Water temperature is suspected to influence herring spawning behavior
+as well as predation.
+Water temperatures this year and last year have been colder than normal;
+local fishers identified this as the primary driver for
+the changing spawning behavior with predation as the second.  
+
+Heiltsuk sounding vessels and test boat skippers reported
+adequate tonnage in areas with estimates of 32,000t to 36,000t
+for the CC and shared that this was the low end of their estimate.   
+ 
+Heiltsuk fishers, sounding vessels captains and HIRMD staff observed
+that the dive survey vessels were late this year and cause for concern.
+For example, the spawn that took place in Spiller
+was not surveyed until 12 days afterwards.
+This delayed survey would have missed
+the greater portion of surviving spawn after predation.
+Concerns raised that the overall Central Coast spawn survey
+may not yield adequate data that reflects the actual biomass. 
 
 FSC harvesters in Area 08 observed only brief spot spawns
 lasting 24 hours or less.
@@ -352,7 +385,7 @@ Herring observed in spawning aggregations were small in size.
 
 ### Strait of Georgia
 
-In the Northern SoG in 2022,
+In the northern SoG in 2022,
 spawn observations and ancillary information
 regarding herring spawning activity was very limited
 within the Discovery Islands.
@@ -363,8 +396,12 @@ which doesn’t indicate it didn’t happen.
 Bute Inlet is very remote.
 No other indications of spawn activity were observed or reported.
 
-Observations for southern areas of SoG had not been provided
-at the time the draft was submitted.
+<!-- TODO: JC to review Cowichan Tribes observations -->
+
+In the southern SoG, the Cowichan Tribes
+did not actively observe herring spawn but some signs were seen.
+For example, a huge mass/frenzy of birds were observed
+in Active Pass on March 4th.
 
 ### West Coast of Vancouver Island
 
@@ -412,7 +449,7 @@ with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration (i.e., thinning).
 The first `r f(mcmc_burnin)` samples are discarded (i.e., burn-in),
 leaving `r f(mcmc_num_samples)` samples for posteriors.
 Perceptions of stock status based on outputs (i.e., posteriors)
-from the SCA model (AM2)
+from the SCA model (i.e., AM2)
 are summarized for each stock in a multi-panel figure
 (e.g., Figure \@ref(fig:storyboard-hg)).
 The panels show:
@@ -423,7 +460,7 @@ a. Instantaneous natural mortality rate $M$ estimates,
 
 a. Number of age-`r age_first` recruits,
 
-a. Spawning biomass $\SB_t$ and total catch $C_t$ in year $t$,
+a. Spawning biomass $\SB_t$ and total catch $C_t$,
 with reference lines at model estimates of $0.3\SB_0$,
 
 a. Recruitment deviations (log scale) from the
@@ -452,15 +489,13 @@ when spawning occurs very early (e.g., January or February) or
 late (e.g., May) in the season. 
 In these instances,
 spawning biomass estimates obtained from surface surveys for
-a given stock area and year are added to
-biomass estimates from dive surveys,
+a given SAR and year are added to biomass estimates from dive surveys,
 and $q_2 = 1$ is assumed for the combined index.
-The \link{https://github.com/grinnellm/Reports}{Pacific Herring data summary reports}
+The \link{https://github.com/grinnellm/Reports}{Pacific Herring data summaries}
 show the proportion of spawn survey data (i.e., spawn index)
-from the surface and dive survey methods by year and SAR.
-Note that only surface surveys were conducted
-for HG in 2020 and 2021, as well as
-for PRD in 2020 (due to the COVID-19 pandemic).
+from the surface and dive survey methods by SAR and year.
+Due to the COVID-19 pandemic, only surface surveys were conducted
+for HG in 2020 and 2021, as well as for PRD in 2020.
 These surface survey observations are treated as dive survey observations and
 are assumed to be continuous with the dive survey time series.
 
@@ -469,11 +504,11 @@ are assumed to be continuous with the dive survey time series.
 A biological limit reference point (LRP) is defined for the major
 Pacific Herring SARs at $0.3\SB_0$ [@kronlund2017].
 Candidate upper stock reference (USR) points were introduced in @cleary2018 and
-implemented as biomass objectives in the simulation analyses for WCVI and SoG
-in 2018 [@dfo2019a] and then for HG, PRD, and CC in 2019 [@dfo2019c].
+implemented as biomass objectives in simulation analyses
+for WCVI and SoG in 2018 [@dfo2019a] and 
+for HG, PRD, and CC in 2019 [@dfo2019c].
 An analysis of USR options was undertaken in 2022 with
 results presented in @dfo2022.
-
 Five USR options were evaluated:
 
 1. Average spawning biomass during a productive period,
@@ -488,69 +523,70 @@ $\SB_{\mli{productive-period}}$ ($B_\text{MSY}$ proxy),
 1. Average spawning biomass from `r major_start_yr` to `r assess_yr`,
 $\SB_{\mli{long-term}}$.
 
-Implementing the USR as a target biomass objective within the simulation 
-evaluation process allows us to identify MP performance in achieving USRs, 
+Implementing USRs as target biomass objectives within
+the simulation-evaluation process allows the evaluation of
+MPs with respect to achieving USRs, 
 including whether a given USR option can be achieved in the absence of 
 commercial fisheries. 
 Implementation of USRs for major Herring SARs will occur through the 
 2022/23 draft IFMP.
 
-Stock status relative to the assessment model estimates $0.3\SB_0$ (LRP) and
+Stock status relative to assessment model estimates $0.3\SB_0$ (i.e., LRP) and
 USR options are presented for PRD, CC, SoG, and WCVI SARs
-in Tables \@ref(tab:ref-points-prd) through \@ref(tab:ref-points-wcvi).
+(Tables \@ref(tab:ref-points-prd) through \@ref(tab:ref-points-wcvi)).
 
-The LRP and USR relate stock status to the DFO PA Policy [@dfo2009], and
-in the assessment of Pacific Herring
-the same calculations are applied for each SAR.
+LRPs and USRs relate stock status to the DFO PA Policy [@dfo2009], and
+the same calculations are used for each Pacific Herring SAR.
 There is an important distinction between reference points (e.g., LRP, USR) and
-operational control points of the harvest control rule (HCR)
-or the management procedure used to set catch limits.
-Specifically, operational control points (OCPs) define the inflection points
-of a HCR and identify biomass levels where management action is taken,
-whereas the LRP and USR are implemented as management objectives.
+operational control points (OCPs) of the harvest control rule (HCR)
+or the management procedure (MP) used to set catch limits.
+Specifically, OCPs define the inflection points of a HCR and
+identify biomass levels where management action is taken,
+whereas LRPs and USRs are management objectives.
 
 ### Coast wide trends
 
 Coast wide trends in Pacific Herring biomass and contribution by SAR show 
-an increasing trend in estimated spawning biomass from 2010 to 2020 with low 
-variability in catches (Figure \@ref(fig:coastwide-biomass-catch)).
-
-We also include time series of total estimated biomass and spawning biomass for 
-each SAR (Figure \@ref(fig:biomass-total-biomass)) where these trends 
-and the coast wide trends are presented using median posterior estimates.
+an increasing trend in estimated spawning biomass from 2010 to 2020 with
+low catch variability (Figure \@ref(fig:coastwide-biomass-catch)).
+We also include total estimated biomass and spawning biomass for 
+each SAR (Figure \@ref(fig:biomass-total-biomass));
+these trends are presented using median posterior estimates.
 
 ### Haida Gwaii
 
-Estimated spawning biomass historic lows occurred in the late 1960s predicated by
-estimated low recruitment and high estimated natural mortality 
+Estimated spawning biomass historic lows occurred in the late 1960s predicated
+by estimated low recruitment and high estimated natural mortality 
 (Figure \@ref(fig:storyboard-hg)a, b, e). 
 Under variable estimated recruitment, estimated spawning biomass recovered
 from that point through the early 1980s supported by 
 declining rates of estimated natural mortality.
-As the estimated natural mortality agai began increasing, HG herring reached
-near historic lows in estimated biomass in the mid-1990s. 
-A reprieve in the estimated low biomass was spurred by through the late 1990s 
-by above average estimated recruitment before biomass declined to persistent 
-historic lows in estimated from 2000 to 2010 (Figure \@ref(fig:storyboard-hg)d).
+As the estimated natural mortality again began increasing,
+estimated biomass reached near historic lows in the mid-1990s. 
+A reprieve in estimated low biomass was caused by 
+above average estimated recruitment through the late 1990s,
+before biomass declined to persistent at historic lows 
+from 2000 to 2010 (Figure \@ref(fig:storyboard-hg)d).
 Above average estimated recruitment of age-`r age_first` fish in 2012 supported 
-modest increases in the spawn index in 2013 and 2015 before falling once again to 
-near historic lows from 2016 to 2018 (Figure \@ref(fig:storyboard-hg)a, c, d).
+modest increases in the spawn index in 2013 and 2015
+before falling once again to near historic lows from 2016 to 2018
+(Figure \@ref(fig:storyboard-hg)a, c, d).
 The increasing trend in the estimated natural mortality rate since 1980
 (Figure \@ref(fig:storyboard-hg)b) largely absorbed surplus production
-attributable to above average recruitment events
+attributed to above average recruitment events
 (e.g., 1997 and 2012; Figure \@ref(fig:storyboard-hg)c, d).
-Estimated natural mortality has declined from a peak rate around 2002 and in the 
-last 5 years has decreased sharply. 
+Estimated natural mortality has declined from a peak around 2002,
+and has decreased in the last five years. 
 Despite the decline in estimated natural mortality, 
 the HG stock has been in a low biomass state,
-with many of these years also showing low productivity
+with many years also showing low productivity
 which has largely precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
 There is an increase in survey biomass in 2019 and 2020, and
-above-average recruitment of age-2s in 2018, and
-below-average recruitment in 2019, 2020 and 2022.
-Estimated productivity in the 2021 to 2022 is positive but follows two years of 
-negative productivity.
-Overall, biomass remains low relative to historical patterns.
+above-average recruitment of age-`r age_first` fish in 2018, and
+below-average recruitment in 2019, 2020, and 2022.
+Estimated productivity in 2021/2022 is positive
+but follows two years of negative productivity.
+Overall, biomass remains low relative to historic values.
 The effective harvest rate $U_t$ since 2000 has been at or near zero
 (Figure \@ref(fig:harvest-rate)),
 with the last commercial roe fishery in 2002,
@@ -564,25 +600,27 @@ the rebuilding plan process.$^{\ref{fn:rebuild}}$
 ### Prince Rupert District
 
 Estimated spawning biomass reached historic highs in the early 1960s 
-spurred by both lowest estimated mortality rate and high estimated recruitment
+due to low estimated mortality rate and high estimated recruitment
 (Figure \@ref(fig:storyboard-prd)a, b, e). 
-This was followed immediately by below average recruitment and a rise to the highest 
-estimated mortality rate, more than doubling the rate within 10 years.
-In response the stock collapsed to the lowest estimated values of spawning biomass. 
-Spawning biomass recover by the mid-1980s to about 50% of the historic high
-even amid mostly below average recruitment (Figure \@ref(fig:storyboard-prd)b, d, e).
+This was followed immediately by below average recruitment and
+a rise to the highest estimated mortality rate,
+more than doubling within 10 years.
+In response the stock collapsed to
+the lowest estimated spawning biomass. 
+Spawning biomass recovered by the mid-1980s to about 50% of the historic high
+even amid mostly below-average recruitment
+(Figure \@ref(fig:storyboard-prd)b, d, e).
 In the mid-1980s, estimated spawning biomass steadily declined amid slowly 
 rising mortality rates and variable recruitment, before stabilizing at a 
 relatively low level (but above historic lows) by around 2005, 
 which was maintained until 2018.
-The estimated spawning biomass has since shown modest increases in biomass  
-with above average age-`r age_first`+ recruitment in 2014, 2017 and 2018 and 
-declining natural mortality rates (Figure \@ref(fig:storyboard-prd)c, d, f). 
-Productivity in the recent most year is relatively high compared to the 
-last 30 years (Figure \@ref(fig:storyboard-prd) f).
+The estimated spawning biomass has since shown modest increases in biomass 
+with above average age-`r age_first` recruitment in 2014, 2017, and 2018, and 
+declining natural mortality (Figure \@ref(fig:storyboard-prd)c, d, f). 
+Productivity in recent years is relatively high compared to the 
+last 30 years (Figure \@ref(fig:storyboard-prd)f).
 
-Fluctuations in the trend in spawning biomass appear to be less
-than those observed in other SARs,
+Fluctuations in spawning biomass appear to be less than in other SARs,
 possibly because some spawn index points are being under- or over-fit
 (e.g., 2001 to 2004, and 2010 to 2013) as shown in 
 Figure \@ref(fig:storyboard-prd)a.
@@ -590,43 +628,45 @@ Figure \@ref(fig:storyboard-prd)a.
 `r stock_status_text(SAR = "PRD", this_yr = assess_yr, translate = french)`
 Commercial fisheries have occurred annually in PRD since the mid-1980s,
 with the exception of 2019 to 2022,
-during which the effective harvest rate $U_t$ was estimated to be at or below 20% 
-in all years except 1989 (Figure \@ref(fig:harvest-rate)).
+during which the effective harvest rate $U_t$ was estimated to be
+at or below 20% in all years except 1989 (Figure \@ref(fig:harvest-rate)).
 Commercial catches from 2007 to 2018 remained low (below 2,000&nbsp;t) and
-there were no commercial catches in 2019 to 2022 (exception: SOK).
+there were no commercial catches from 2019 to 2022, except SOK.
 
 ### Central Coast
 
 Estimated spawning biomass reached a historic high around 1980
 following low estimated natural mortality rates and one of the highest estimated 
 recruitments in 1979 (Figure \@ref(fig:storyboard-cc)a, b, c). 
-From there a jagged 
-decline of estimated spawning biomass appears to be influenced initially by 
-higher estimated natural mortality rates and highly variable estimated recruitment.
-An increase in estimated natural mortality lead to historically low estimated biomass
-levels in the period of 2005 to 2015. 
-Decreasing estimated natural mortality lead to moderate general increases in 
+From there a decline in estimated spawning biomass
+appears to be influenced initially by 
+higher estimated natural mortality rates and
+highly variable estimated recruitment.
+An increase in estimated natural mortality lead to
+historically low estimated biomass levels from 2005 to 2015. 
+Decreasing estimated natural mortality lead to moderate increases in 
 biomass through 2020. 
-In 2021 and 2022 increasing estimated natural mortality rates have deceased 
-estimated biomass, which has been mitigated in part by higher than average 
+In 2021 and 2022,
+increasing estimated natural mortality caused a decrease in estimated biomass,
+which has been mitigated in part by higher than average 
 estimated recruitment (Figure \@ref(fig:storyboard-cc)a, b, e).
-The model estimates very similar spawning biomass in 2021 and 2022
+Model estimates suggest similar spawning biomass in 2021 and 2022
 (Table \@ref(tab:cc-spawning-biomass-depletion)),
-and the analysis of surplus production shows there is evidence of
-strong production in the year between 2016/2017 and between 2018/2019,
+and the analysis of surplus production shows evidence of
+strong production in 2016/2017 and 2018/2019,
 similar to the 1990 to 1999 period (Figure \@ref(fig:storyboard-cc)f).
 However, surplus production is estimated to be negative
-in the years between 2019 to 2021 and near zero for 2021 to 2022.
+in from 2019 to 2021 and near zero for 2021/2022.
 
-An examination of spawn biomass by Herring Section shows
+An examination of spawn biomass by herring Section shows
 the recent decline in herring spawn to have largely occurred in
 Spiller Channel (Sections 072 and 078) and
 Kitasu Bay/East Higgins (Section 067; Figure \@ref(fig:spawn-section-cc)).
-The majority of Area 07 spawn in 2021 and 2022 appears concentrated in
+The majority of Area 07 spawn in 2021 and 2022 is concentrated in
 Thompson/Stryker (Section 074).
 Occurrence of spawn in Thompson/Stryker from 2020 to 2022
-represents the first significant spawns for this Section in many years.
-The mechanisms driving fluctuations of spawn throughout the Central Coast
+represents the first significant spawns in this Section in many years.
+The mechanisms driving spawn fluctuations in the Central Coast
 are not well understood.
 
 A fixed cutoff HCR was implemented in 1986, and
@@ -639,40 +679,39 @@ are due in part to positive assessment model errors, and
 lags in detecting a directional change in the trend.
 
 Following a commercial fishery closure from 2007 to 2013,
-the CC stock was reopened to commercial fisheries
-and commercial roe fisheries occurred in 2014, 2015, and 2016.
-Commercial SOK fisheries operated yearly from 2014 to 2021 (exception: 2020).
+the CC SAR was reopened to commercial fisheries;
+commercial roe fisheries occurred in 2014, 2015, and 2016.
+Commercial SOK fisheries operated yearly from 2014 to 2019, and in 2021.
 SOK removals are not included in the estimation of $U_t$. 
 A commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19,
-and was not permitted in 2022
-(Table \@ref(tab:annual-sok-catch)).
+and was not permitted in 2022 (Table \@ref(tab:annual-sok-catch)).
 
 `r stock_status_text(SAR = "CC", this_yr = assess_yr, translate = french)`
 
 ### Strait of Georgia
 
-The estimated spawning biomass for the SoG stock
-had a historical low in the later part of the 1960's,
+The estimated spawning biomass for the SoG SAR
+had a historical low in the late 1960's,
 driven by lower than average estimated recruitment and
 increasing estimated natural mortality (Figure \@ref(fig:storyboard-sog)a, b, e).
-Following this, as natural mortality declined, the estimated spawning biomass 
-grew (Figure \@ref(fig:storyboard-sog)b, d).
-Some deep dips in estimated biomass in the mid 1980's and late 2000's were 
-improved by above average recruitment. 
+Following this, estimated spawning biomass increased
+as natural mortality declined (Figure \@ref(fig:storyboard-sog)b, d).
+Some declines in estimated biomass in the mid 1980's and around 2008 were 
+mitigated by above-average recruitment. 
 From 2010 to 2020 there is an increasing trend in estimated spawning 
-biomass spurred by above average estimated recruitment 
+biomass caused by above-average estimated recruitment 
 (Figure \@ref(fig:storyboard-sog)b, d, e).
 
-From 2015 to `r assess_yr` estimated natural mortality trend has been increasing,
-after a previously long stable period (1980 to 2010). 
-Greater estimated biomass declines in the face of increasing mortality have 
-been ameliorated by above average estimated recruitment in most years from 2010 to
-`r assess_yr` with the estimated recruitment at an all time high in 2022
+From 2015 to `r assess_yr` estimated natural mortality has been increasing,
+after a previously long stable period from 1980 to 2010. 
+Biomass declines due to increasing mortality have been mitigated by
+above-average estimated recruitment in most years from 2010 to `r assess_yr`,
+with estimated recruitment at an all time high in 2022
 (Figure \@ref(fig:storyboard-sog)e). 
-Estimated production was very high in the 2017/2018 season, declining from there
-in the recent three years (Figure \@ref(fig:storyboard-sog)f).
-In 2022 estimated spawning biomass was 
-maintained at 2021 levels and above what was forecast for the year.
+Estimated production was high in 2017/2018 and
+then declined in the last three years (Figure \@ref(fig:storyboard-sog)f).
+In 2022 estimated spawning biomass was similar to 2021, and
+was above the forecast.
 
 The uncertainty associated with the last few years of spawning biomass
 along with the forecast biomass `r paste0("$\\SB_{", assess_yr, "}$")`,
@@ -680,15 +719,14 @@ is quite large (Figure \@ref(fig:storyboard-sog)d).
 The large uncertainty in both spawning biomass and natural mortality estimates
 in `r assess_yr` may be in part a function of large opposing fluctuations
 in the spawn index (Figure \@ref(fig:storyboard-sog)a) and
-also due to the uncertainty
-around the estimated age-`r age_first` recruitment.
+uncertainty in estimated age-`r age_first` recruitment.
 The large uncertainty around estimated age-`r age_first` recruitment
 in 2019 and 2020 was observed in the previous years' assessment and
-remains apparent now that these age-2s are
-fully recruited to the fishing/sampling gear.
-Analysis of surplus production shows that for the year between 2019 and 2020,
-the SoG SAR is estimated to be in high biomass state with neutral production,
-and that production is negative  for the year between 2021 and 2022
+remains apparent now that these age-`r age_first` fish are
+fully recruited to the fishery and sampling gear.
+Analysis of surplus production shows that the SoG SAR
+was in high biomass state with neutral production in 2019/2020,
+and that production was negative for 2021/2022
 (Figure \@ref(fig:storyboard-sog)f).
 
 Commercial fisheries have occurred annually in SoG since the early-1970s
@@ -706,20 +744,21 @@ in 2006 and 2017.
 ### West Coast of Vancouver Island
 
 The time series of estimated spawning biomass reached an estimated peak in the 
-mid to late 1970s during a time period of the lowest estimated natural mortality 
-and variable estimated recruitment
+mid to late 1970s during a time period of the
+lowest estimated natural mortality and variable estimated recruitment
 (Figure \@ref(fig:storyboard-wcvi)a, b, c). 
-From the late 1980s through to the 2000s a variable rise in estimated mortality
-and a generally variable but low recruitment led to decline trend over these 
-years, down from the peaks observed in the late 1970s 
+From the late 1980s through to around 2008
+a variable increase in estimated mortality and
+a generally variable but low recruitment led to decline trend,
+down from the peaks observed in the late 1970s 
 (Figure \@ref(fig:storyboard-wcvi)a, b, c).
 
-The low estimated spawning biomass persisted through the 2006 to 2012 period 
+The low estimated spawning biomass persisted from 2006 to 2012, 
 influenced by negative recruitment deviations 
 (i.e., lower than predicted by the stock-recruit function)
-and the highest estimated natural mortality rates since 1950
+and the highest estimated natural mortality rates since `r major_start_yr`
 (Figure \@ref(fig:storyboard-wcvi)a, b, f). 
-Some estimated biomass gains were made in the 2010s with
+Some increases in estimated biomass were made in the 2010s with
 lower estimated natural mortality and higher estimated recruitment in 2015. 
 Since then estimated natural mortality has again increased. 
 Biomass and production has been maintained in part by
@@ -730,10 +769,9 @@ of spawn index values (Figure \@ref(fig:storyboard-wcvi)a).
 
 The absence of a commercial fishery since 2005 means the realized harvest rate
 has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
-There is modest evidence for an increase in biomass above the LRP
-since 2016 and
-production estimates for the year between 2019 and 2020, and 2020 and 2021
-are positive (Figure \@ref(fig:storyboard-wcvi)f).
+There is modest evidence for an increase in biomass above the LRP since 2016 and
+positive production estimates in 2019/2020 and 2020/2021
+(Figure \@ref(fig:storyboard-wcvi)f).
 
 Investigation of WCVI MCMC diagnostics revealed autocorrelation
 in the estimation of fishery selectivity-at-50% ($\hat{a}_1$) 
@@ -744,7 +782,7 @@ Autocorrelation in parameter estimation may indicate
 bias in the posterior distribution or local minima. 
 In this instance, autocorrelation likely resulting from
 there being no new commercial fishery data since 2005. 
-Running longer chains in 2021 resulted in only minor improvements.
+Running longer chains in 2021 resulted in only minor improvements [@dfo2021c].
 If and when fisheries resume in the future,
 the addition of new fishery data may reduce this apparent autocorrelation and
 any resulting bias.
@@ -767,10 +805,10 @@ are presented in Figure \@ref(fig:harvest-rate).
 
 Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs
 for each major SAR, derived from the Herring OM [@benson2022]. 
-OM conditioning was updated using the latest historic stock and fishery data from 
-1951 to 2021.
-MPs are not provided for HG as this is now conducted within the
-rebuilding plan process.
+OM conditioning was updated using the latest historic stock and fishery data
+from `r major_start_yr` to 2021.
+MPs are not provided for HG because
+this is now conducted within the rebuilding plan process.
 
 ### Haida Gwaii
 
@@ -780,13 +818,13 @@ from approximately 2000 to 2018
 The stock was below the LRP for much of that period and shows
 little evidence of sustained stock growth despite the absence of
 commercial fisheries since 2002 (and since 2004 for the SOK fishery).
-Survey biomass increased from 2019 to 2020, remained stable for 2021
+Survey biomass increased from 2019 to 2020,
+remained stable in 2021,
 and declined from 2021 to 2022.
 Spawn biomass production was positive in 2021.
 Results of the simulation-evaluations found that none of the proposed MPs, 
 including the historical and no fishing MPs,
-performed satisfactorily against the conservation objective of
-maintaining spawning biomass above the LRP with high probability
+maintained spawning biomass above the LRP with high probability
 [i.e., at least 75%, @dfo2009].\footnote{\label{fn:HighProb}``High'' probability
 is defined as 75 to 95\% by the DFO decision-making framework (DFO 2009).}
 
@@ -797,14 +835,14 @@ Haida Gwaii Pacific Herring.
 Work finalizing the draft for consultation continues via a 
 technical working group comprised of members of
 the Council of Haida Nation, DFO, and Parks Canada.
-The consultation period is anticipated to commence in fall 2021.
+The consultation period is anticipated to commence in fall 2022.
 Guidance for developing rebuilding plans [@dfo2013] states that
 the primary objective of any rebuilding plan is to
 promote stock growth out of the Critical Zone
 (i.e., to grow the stock above the status-based LRP) by
 ensuring removals from all fishing sources are kept to the lowest possible level
 until the stock has cleared this zone with high probability.
-Stock rebuilding does not end having met this goal, however, and
+However, stock rebuilding does not end having met this goal, and
 one of the goals of the rebuilding plan will be to
 identify candidate threshold biomass levels greater than the LRP
 that are consistent with a rebuilt state.
@@ -812,7 +850,7 @@ that are consistent with a rebuilt state.
 Based on MP evaluations and the ongoing rebuilding plan process,
 the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&nbsp;t.
 Because Haida Gwaii has an on-going rebuilding plan process,
-we did not update the HG MP evaluations with recent data.
+we did not update HG MP evaluations with recent data.
 
 ### Prince Rupert District
 
@@ -821,20 +859,21 @@ fluctuating at or near the LRP of $0.3\SB_0$
 (Figure \@ref(fig:storyboard-prd)d). 
 Spawning biomass increased above $0.3\SB_0$ in 2019 and has
 remained above since.
-Adjacent SARs (HG and CC)
-show evidence of recent prolonged periods of low biomass and low productivity:
+Adjacent SARs (i.e., HG and CC)
+show evidence of recent prolonged periods of low biomass and low productivity;
 however these states were entered rapidly and were preceded by
 high biomass levels [@kronlund2017].
 
-In the summer of 2022, we updated the conditioning of the MSE operating model
+In the summer of 2022, we updated the conditioning of the OM
 for PRD with 2021 spawn, catch, and biological data.
-We re-ran MSE simulations to generate updated probability values for the MPs
-presented in September 2019 [@dfo2020a] and 2020 [@dfo2021].
+We re-ran MSE simulations to generate updated probability values for MPs
+presented in 2019 [@dfo2020a] and 2020 [@dfo2021].
 These latest MP evaluations also appear in @dfo2022.
-No new MPs were included however probability metrics for the five USRs options 
-[@dfo2022] were estimated and have been added to the harvest options tables.
+No new MPs were included,
+however probability metrics for the five USRs options [@dfo2022]
+were estimated and have been added to the harvest options tables.
 <!-- TODO-: Make %'s auto update.JC: Defer until after SR is submitted-->
-The updated closed-loop feedback simulations for PRD show that
+Updated closed-loop feedback simulations for PRD show that
 MPs with harvest rates at 5, 10, and 20% maintain spawning biomass
 above the LRP with 85 to 98% probability, over both OM scenarios
 (Table \@ref(tab:decision-prd)). 
@@ -844,18 +883,17 @@ While MPs with harvest rates ranging from 5% to 20%
 were able to meet the core conservation objective of
 maintaining spawning biomass above the LRP with high probability
 (i.e., at least 75%)^\ref{fn:HighProb}^,
-they also imply different trade-offs among biomass 
-and yield objectives.
+they also imply different trade-offs among biomass and yield objectives.
 Since multiple MPs meet the conservation objective,
-other socio-economic reasons may
-drive the choice for a particular MP.
+other socio-economic reasons may drive the choice for a particular MP.
 
 `r proj_biomass_text(SAR = "PRD", next_yr = assess_yr + 1, translate = french)`
 
 Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs
 are presented in Table \@ref(tab:decision-prd)
 and include probability values that reflect updated OM conditioning.
-Options reflect application of MPs to the `r assess_yr + 1` forecast biomass for PRD,
+Options reflect application of MPs to the `r assess_yr + 1`
+forecast biomass for PRD,
 whereby each MP meets the conservation objective with a minimum 75% probability
 under both DDM and DIM OM scenarios.
 For ease of comparison with MP performance evaluation, harvest options are 
@@ -880,21 +918,22 @@ maintain spawning biomass above the LRP with 81 to 92% probability over all
 both OM scenarios (Table \@ref(tab:decision-cc)).
 `r mean_harvest_text(SAR = "CC", translate = french)`
 
-Harvest options listed in Table \@ref(tab:decision-cc) reflect application 
-of MPs to the 2023 forecast biomass for CC, whereby each MP meets the 
-conservation objective with a minimum 75% probability under either DDM or DIM 
-OM scenario.
+Harvest options listed in Table \@ref(tab:decision-cc) reflect
+application of MPs to the 2023 forecast biomass for CC,
+whereby each MP meets the conservation objective
+with a minimum 75% probability under both DDM or DIM OM scenarios.
 
-Since multiple MPs meet the conservation objective of maintaining spawning 
-biomass above the LRP with at least 75%, other socio-economic objectives  may
-drive the choice for a particular MP. 
-Additionally, the current CC operating model is unable to directly address
-Heilstuk Nation conservation objectives related to age and size of herring, nor 
+Since multiple MPs meet the conservation objective of
+maintaining spawning biomass above the LRP with at least 75%,
+other socio-economic objectives may drive the choice for a particular MP. 
+Additionally, the current CC OM is unable to directly address
+Heilstuk Nation conservation objectives related to herring age and size, nor 
 objectives on a finer spatial scale or those specific to SOK fisheries.
 These limitations exist for all five major stocks.
 
 `r proj_biomass_text(SAR = "CC", next_yr = assess_yr + 1, translate = french)`
 
+<!-- TODO: Review this statement with senior management (Neil/Andy) -->
 Finally, DFO acknowledges commitment to the Heiltsuk Nation for
 the development of a Joint Fisheries Management Plan for Pacific Herring
 in the Central Coast in `r assess_yr + 1`.
@@ -906,56 +945,43 @@ The SoG has the largest biomass of the major SARs
 and comprises more than 50% of the total coast wide biomass 
 (Figure \@ref(fig:coastwide-biomass-catch)).
 Estimated spawning biomass trends remained stable and high from
-2011 through 2020, and increases in estimated natural mortality rates
-have increased in the last 3-5 years.
+2011 through 2020, though increases in estimated natural mortality rates
+have increased in the last three to five years.
 SoG MP evaluations are implemented using the Herring OM [@benson2022] and
 were first presented in 2018 [@dfo2019a].
 MP updates were conducted in 2020 [@dfo2021b] and again herein.
-Each update shows differences in MP performance against the conservation 
-objective over both OM scenarios.
+Each update shows differences in MP performance against
+the conservation objective for both OM scenarios.
 Initial simulations show the probability of meeting the conservation 
-objective ranging from 91% to 100% [@dfo2019a], depending on the scenario and MP.
+objective ranges from 91% to 100% [@dfo2019a], depending on the scenario and MP.
 Subsequent updates in 2020 show a decline in conservation performance with
 probabilities ranging from 75% to 88% (DDM and DIM only, @dfo2021b), and the
 updates included here show probabilities ranging from 67% to 87%
 (Table \@ref(tab:decision-sog)).
 
-These comparisons highlights the importance of considering the learned
-lessons from the MSE process (Section "Management strategy evaluation")
-when selecting or eliminating MPs.
-<!-- TODO-MG: make/ add Section reference for previous line-->
-In this case it may be important to consider how these recent most MP updates 
-for SoG (Table \@ref(tab:decision-sog)) may be influenced by the the last 
-three to five years of natural mortality trends used to condition the OM. 
+These comparisons highlights the importance of considering
+the lessons learned from the MSE process (Section "\nameref{sec:mse}")
+when selecting or rejecting MPs.
+In this case it may be important to consider how the recent MP updates 
+may be influenced by the the last three to five years
+of natural mortality trends used to condition the OM
+(Table \@ref(tab:decision-sog)). 
 
+MSE updates presented here show the conservation objective is met with the
+minimum 75% probability when simulating MPs with 10% and 15% harvest rates.
+However MPs with 20% harvest rates 
+(e.g., HS30-60_HR20 and minE30_HR20),
+which previously met the minimum 75% probability level
+(@dfo2019a and @dfo2021b) now show probability values ranging
+from 67% to 74% (across both DDM and DIM OMs).
 
-
-In 2022, with updated information from 2021
-closed-loop feedback simulations for the SoG showed that
-only 3 tested MPs could maintain the spawning biomass above the LRP
-with 75% probability or higher for three generations
-(a.k.a. the conservation objective) 
-across both the OM scenarios.
-The three MPs including the no-fish MP, the Lenfest MP and the 
-30-60% hockey-stick MP with a 10% harvest rate
-(Table \@ref(tab:decision-sog)).This can be compared to 2020 when 
-all evaluated MP's met the conservation objective (range 75 to 87%) in both
-the DDM and DIM scenarios, or compared to 2018 when biomass was trending upward 
-and the range was 97% or above.The 15 year projections of the performance 
-objectives are sensitive to trends in the spawn index
-during the recent three to five year period. 
-So while the simulations give a relative ranking of performance, 
-and an estimate of how the MPs might preform over time, 
-it is prudent understand that they are estimates given the information at hand.
-
-Additional simulation-evaluations were conducted in 2019 to
-further explore the role of catch caps in
-mitigating assessment errors [@dfo2019c].
-A comparison of catch caps from 30,000&nbsp;t to 5,000&nbsp;t showed
-no discernible gain in conservation performance under both OM scenarios.
-Results also showed MPs with catch caps of 20,000&nbsp;t or less
-rarely exceed the 20% harvest rate for any given projection year
-(over the 15 year projections).
+In situations where estimated natural mortality trends show
+a sudden increasing or decreasing trend in the terminal three to five years,
+MP evaluations may more reliably reflect
+the relative ranking of MP performance, as opposed to
+realized short term performance.
+In all cases the simulated MP performance from previous years can inform 
+selection or elimination of MPs.
 
 `r proj_biomass_text(SAR = "SoG", next_yr = assess_yr + 1, translate = french)`
 
@@ -964,71 +990,24 @@ Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
 are presented in Table \@ref(tab:decision-sog).
 These options reflect application of MPs to the `r assess_yr + 1`
 forecast biomass for SoG,
-whereby each MP meets the conservation objective with a minimum
-75% probability under the reference OM (DDM) scenario.
-Harvest options under the two robustness OM scenarios are also included.
+whereby each MP meets (or has been shown to meet) the conservation objective 
+with a minimum 75% probability.
 All MPs and scenarios listed in Table \@ref(tab:decision-sog) include
 updated performance metrics under both scenarios [@dfo2021b].
-
-<!-- TODO-JC: Perhaps remove findings form last year.-->
-In 2021, we investigated the sensitivity of SoG MP performance to changes in 
-allocation of TAC between the roe seine and roe gillnet fleets.
-The recent 20 year average catches show 
-the food and bait, roe seine, and roe gillnet 
-fleets take 21%, 40%, and 39% of the catch
-and represents the status quo allocation used for this analysis.
-
-We consider two changes in allocation of TAC
-between roe seine and roe gillnet fleets:
-high gillnet allocation (i.e., 90% gillnet) and
-high seine allocation (i.e., 90% seine).
-MPs consider only movement between roe fleets,
-thus no changes are made to the overall food and bait allocation.
-Comparisons among TAC allocation are implemented using the HS30-60_HR20 MP
-with an index based procedure.
-This analysis was designed to investigate relative differences
-between allocation MPs.
-Thus we used an index-based approach in lieu of fitting the assessment model
-to calculate the TAC for each simulated year, to save computational time.
-
-Results show there is no difference in conservation performance
-between simulated TAC allocation procedures [@dfo2021c].
-That is, the simulations show that movement of TAC between
-the roe fishery fleets
-does not appear to impact the probability 
-of avoiding the LRP over the 15-year simulation period.
-Note that these results consider recent stock status of SoG herring, and
-that due to structure of the current herring simulation model,
-the simulation approach does not provide insight into 
-year-to-year changes in age composition, spawn distribution, or spawning behaviour.
-However, these results do indicate that given the overlap in catch at age 
-between the two fleets, the harvest rates applied to the population and the 
-age structure of the population, the differences in age and size selectivity 
-between the two gears is not large enough to impact the status of the population.
-Finally, probability values in Table \@ref(tab:allocation-sog)
-should not be directly compared to those in Table \@ref(tab:decision-sog)
-due to differences in assessment method implemented in the simulations
-(index-based vs. current stock assessment model) and
-the conditioning data used
-(spawn survey data up to 2020 and biological data up to 2019 vs.
-both spawn survey and biological data up to 2020).
 
 ### West Coast of Vancouver Island
 
 The WCVI stock persisted in a low biomass, low productivity state from
 approximately 2004 to 2014.
-In recent years
-biomass remained low relative to historical levels,
+In recent years, biomass remained low relative to historic levels,
 but above the LRP of $0.3\SB_0$.
 
 In 2022, with updated 2021 data, closed-loop feedback simulations
-for WCVI showed the conservation objective could be met
-under the DDM OM scenario
-with between 80 and 84% probability,
-but all MPs failed to meet the conservation objective under the DIM 
+for WCVI show the conservation objective is met
+under the DDM OM scenario with between 80 and 84% probability,
+and the same MPs failed to meet the conservation objective under the DIM 
 OM scenario, where natural mortality rates are
-<!-- TODO-: Update numbers.-->
-most similar to the last 10 years ($p=$ 56 to 74%).
+most similar to the last 10 years ($p=$ 61 to 65%).
 
 `r proj_biomass_text(SAR = "WCVI", next_yr = assess_yr + 1, translate = french)`
 

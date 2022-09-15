@@ -4,21 +4,22 @@ Pacific Herring (*Clupea pallasii*) abundance in British Columbia (BC) is
 assessed using a statistical catch-age (SCA) model [@martell2011].
 In 2017, the Pacific Herring stock assessment included
 updates to the SCA model,
-and a bridging analysis to support these changes [@cleary2018].
-Also introduced in the 2017 assessment was
+a bridging analysis to support these changes [@cleary2018], as well as
 the estimation of stock productivity and current stock status
 relative to the new limit reference point (LRP) of $0.3\SB_0$ [@kronlund2017],
 where $\SB_0$ is estimated unfished spawning biomass.
 The structure of the SCA model has not changed since 2017.
 
-In 2016, DFO committed to renewing the current management framework to
+In 2016, Fisheries and Oceans Canada (DFO) committed to
+renewing the current management framework to
 address a range of challenges facing Pacific Herring stocks and fisheries in BC.
-Renewal of the management framework includes engaging in
+Renewal of the management framework included engaging in
 a management strategy evaluation (MSE) process to evaluate
 the performance of candidate management procedures against
 a range of hypotheses about future stock and fishery dynamics.
 As part of the MSE process,
-a CSAS regional peer review occurred in 2018,
+a Canadian Science Advisory Secretariat (CSAS)
+regional peer review occurred in 2018,
 where performance of Pacific Herring management procedures (MPs) were assessed
 against conservation objectives for the
 Strait of Georgia (SoG) and West Coast of Vancouver Island (WCVI)
@@ -31,9 +32,9 @@ future natural mortality scenarios.
 In 2019, DFO initiated the MSE process for the
 Haida Gwaii (HG), Prince Rupert District (PRD), and Central Coast (CC)
 SARs [@dfo2019c].
-Updates to MP evaluations were then conducted for SoG and WCVI SARs in 2020 
-[@dfo2021b],
-and for all SARs herein.
+Updates to MP evaluations were then conducted for
+SoG and WCVI SARs in 2020 [@dfo2021b], and
+for all SARs herein.
 
 This assessment incorporates new science advice on
 choice of upper stock reference (USR) points
@@ -45,8 +46,8 @@ To support on-going consultations,
 five USR options are presented for PRD, CC, SoG and WCVI
 (Section "\nameref{sec:harv-opts}").
 For these four stocks
-we also update conditioning of the Herring OM [@benson2022]
-by including stock and fishery data from 1951 to 2021.
+we also update conditioning of the herring OM [@benson2022]
+by including stock and fishery data from `r major_start_yr` to 2021.
 These updates first appear in @dfo2022.
 MP evaluations presented in the harvest option tables 
 reflect the latest OM updates.
@@ -54,29 +55,29 @@ reflect the latest OM updates.
 Since initiation of the Pacific Herring MSE process,
 results have been included in the annual stock assessment as follows:
 
-1. The 2018 stock assessment includes MP recommendations
-for the SoG and WCVI SARs [@dfo2019a].
+1. The 2018 stock assessment includes
+MP recommendations for the SoG and WCVI SARs [@dfo2019a].
 
-1. The 2019 stock assessment includes MP recommendations for the 
-HG, PRD, and CC SARs [@dfo2020a] and implements the previous years' MP 
-recommendations for the SoG and WCVI SARs. 
+1. The 2019 stock assessment includes
+MP recommendations for the HG, PRD, and CC SARs [@dfo2020a], and
+implements the previous years' MP recommendations for the SoG and WCVI SARs. 
 
-1. The 2020 stock assessment includes an update to MP recommendations
-for the SoG and WCVI SARs [@dfo2021b] and implements the previous
-years' MP recommendations for HG, PRD, and CC SARs.
+1. The 2020 stock assessment includes
+an update to MP recommendations for the SoG and WCVI SARs [@dfo2021b], and
+implements the previous years' MP recommendations for HG, PRD, and CC SARs.
 
-1. The 2021 stock assessment includes an update to MP recommendations 
-for the PRD and CC SARs [@dfo2021c] and implements the previous years
-MP recommendations for the SoG and WCVI SARs.
+1. The 2021 stock assessment includes
+an update to MP recommendations for the PRD and CC SARs [@dfo2021c], and
+implements the previous years MP recommendations for the SoG and WCVI SARs.
 
 MPs are not updated for HG because management measures to support 
 long-term recovery of HG herring are being developed through the 
 rebuilding plan process.
 
-The 2022 stock assessment includes
+This 2022 stock assessment includes
 MP recommendations for PRD, CC, SoG, and WCVI,
-derived by updating Herring OMs conditioning [@benson2022] using 
-the latest historic stock and fishery data from 1951 to 2021.
+derived by updating herring OM conditioning [@benson2022] using 
+the latest historic stock and fishery data from `r major_start_yr` to 2021.
 USR options first presented in @dfo2022 are included to
 support selection of stock-specific USRs
 for implementation through the 2022/23 IFMP.
@@ -93,8 +94,7 @@ that DFO Pacific Science Branch assess the status of
 British Columbia (BC) Pacific Herring stocks in `r assess_yr` and
 recommend harvest advice for `r assess_yr + 1`
 as simulation-tested MPs to inform the development of the
-`r assess_yr`/`r assess_yr + 1` IFMP,
-where appropriate.
+`r assess_yr`/`r assess_yr + 1` IFMP, where appropriate.
 Estimated stock trajectories,
 current status of stocks for `r assess_yr`,
 management procedure options, and
