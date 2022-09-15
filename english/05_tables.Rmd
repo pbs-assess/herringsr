@@ -887,7 +887,7 @@ $\overline{SB}_\mli{Prod}$ is average spawning biomass
 during a productive period;
 $\overline{SB}$ is average spawning biomass;
 average annual variability (AAV); and
-$\overline{C}$ is average catch.
+$\overline{C}$ is average catch (1,000&nbsp;t).
 MPs are defined in @dfo2019a and @dfo2019c.
 Note: 'NA' indicates that TAC and HR do not apply, either
 because the MP specifies no fishing at current projected biomass level, or
@@ -917,7 +917,7 @@ $\overline{SB}_\mli{Prod}$ est la biomass reproductrice moyenne
 dans un periode productive;
 $\overline{SB}$ est la biomass reproductrice moyenne;
 variabilité annuelle moyenne (VAM); et
-$\overline{C}$ est la prise moyenne.
+$\overline{C}$ est la prise moyenne (1 000&nbsp;t).
 Les PM sont définis dans @dfo2019a et @dfo2019c.
 Note: «NA» indique que le TAC et la TR ne s'appliquent pas,
 soit parce que le PM spécifie l'interdiction de la pêche
