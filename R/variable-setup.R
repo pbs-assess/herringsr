@@ -234,25 +234,6 @@ cc_vars <- get_vars("CC", french = french)
 sog_vars <- get_vars("SoG", french = french)
 wcvi_vars <- get_vars("WCVI", french = french)
 
-# Format MP tables
-proc_mp <- function(df) {
-  csas_table(
-    df,
-    format = "latex",
-    bold_header = TRUE,
-    col_names = c(
-      "Scenario",
-      "MP",
-      "Label",
-      "Conservation\nObj 1 (LRP)\n>75%",
-      "Biomass\nObj 2\n>50%",
-      "Yield\nObj 3\n<25%",
-      "Yield\nObj 4\nmax",
-      "Catch < 650t\nmin"
-    )
-  )
-}
-
 # Years and proportion for productive period
 prod_period <- list(
   HG = list(yrs = 1975:1985, prop = 0.75),
