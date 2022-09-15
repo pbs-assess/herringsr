@@ -365,7 +365,7 @@ local fishers identified this as the primary driver for
 the changing spawning behavior with predation as the second.  
 
 Heiltsuk sounding vessels and test boat skippers reported
-adequate tonnage in areas with estimates of 32,000t to 36,000t
+adequate tonnage in areas with estimates of 32,000 to 36,000 tonnes
 for the CC and shared that this was the low end of their estimate.   
  
 Heiltsuk fishers, sounding vessels captains and HIRMD staff observed
@@ -401,7 +401,7 @@ No other indications of spawn activity were observed or reported.
 In the southern SoG, the Cowichan Tribes
 did not actively observe herring spawn but some signs were seen.
 For example, a huge mass/frenzy of birds were observed
-in Active Pass on March 4th.
+in Active Pass on March 4.
 
 ### West Coast of Vancouver Island
 
@@ -561,8 +561,8 @@ by estimated low recruitment and high estimated natural mortality
 Under variable estimated recruitment, estimated spawning biomass recovered
 from that point through the early 1980s supported by 
 declining rates of estimated natural mortality.
-As the estimated natural mortality again began increasing,
-estimated biomass reached near historic lows in the mid-1990s. 
+As estimated natural mortality began increasing again in the mid 1990s,
+estimated biomass reached near historic lows. 
 A reprieve in estimated low biomass was caused by 
 above average estimated recruitment through the late 1990s,
 before biomass declined to persistent at historic lows 
@@ -581,7 +581,7 @@ Despite the decline in estimated natural mortality,
 the HG stock has been in a low biomass state,
 with many years also showing low productivity
 which has largely precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
-There is an increase in survey biomass in 2019 and 2020, and
+There was an increase in survey biomass in 2019 and 2020, and
 above-average recruitment of age-`r age_first` fish in 2018, and
 below-average recruitment in 2019, 2020, and 2022.
 Estimated productivity in 2021/2022 is positive
@@ -711,11 +711,11 @@ with estimated recruitment at an all time high in 2022
 Estimated production was high in 2017/2018 and
 then declined in the last three years (Figure \@ref(fig:storyboard-sog)f).
 In 2022 estimated spawning biomass was similar to 2021, and
-was above the forecast.
+was consistent with the forecast.
 
-The uncertainty associated with the last few years of spawning biomass
-along with the forecast biomass `r paste0("$\\SB_{", assess_yr, "}$")`,
-is quite large (Figure \@ref(fig:storyboard-sog)d).
+There is large uncertainty for the last few years of spawning biomass and
+forecast biomass `r paste0("$\\SB_{", assess_yr + 1, "}$")`
+(Figure \@ref(fig:storyboard-sog)d).
 The large uncertainty in both spawning biomass and natural mortality estimates
 in `r assess_yr` may be in part a function of large opposing fluctuations
 in the spawn index (Figure \@ref(fig:storyboard-sog)a) and
@@ -945,8 +945,8 @@ The SoG has the largest biomass of the major SARs
 and comprises more than 50% of the total coast wide biomass 
 (Figure \@ref(fig:coastwide-biomass-catch)).
 Estimated spawning biomass trends remained stable and high from
-2011 through 2020, though increases in estimated natural mortality rates
-have increased in the last three to five years.
+2011 through 2020 despite increases in estimated natural mortality rates
+in the last three to five years.
 SoG MP evaluations are implemented using the Herring OM [@benson2022] and
 were first presented in 2018 [@dfo2019a].
 MP updates were conducted in 2020 [@dfo2021b] and again herein.
