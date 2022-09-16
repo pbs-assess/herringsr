@@ -504,15 +504,15 @@ are assumed to be continuous with the dive survey time series.
 A biological limit reference point (LRP) is defined for the major
 Pacific Herring SARs at $0.3\SB_0$ [@kronlund2017].
 Candidate upper stock reference (USR) points were introduced in @cleary2018 and
-implemented as biomass objectives in simulation analyses
-for WCVI and SoG in 2018 [@dfo2019a] and 
-for HG, PRD, and CC in 2019 [@dfo2019c].
+implemented as biomass objectives in simulation analyses for
+WCVI and SoG in 2018 [@dfo2019a], and then
+HG, PRD, and CC in 2019 [@dfo2019c].
 An analysis of USR options was undertaken in 2022 with
 results presented in @dfo2022.
 Five USR options were evaluated:
 
-1. Average spawning biomass during a productive period,
-$\SB_{\mli{productive-period}}$ ($B_\text{MSY}$ proxy),
+1. Average spawning biomass during a productive period
+$\overline{\SB}_\mli{Prod}$ ($B_\text{MSY}$ proxy),
 
 1. $0.4\SB_0$,
 
@@ -520,8 +520,8 @@ $\SB_{\mli{productive-period}}$ ($B_\text{MSY}$ proxy),
 
 1. $0.6\SB_0$, and
 
-1. Average spawning biomass from `r major_start_yr` to `r assess_yr`,
-$\SB_{\mli{long-term}}$.
+1. Average spawning biomass from `r major_start_yr` to `r assess_yr`
+$\overline{\SB}$.
 
 Implementing USRs as target biomass objectives within
 the simulation-evaluation process allows the evaluation of
