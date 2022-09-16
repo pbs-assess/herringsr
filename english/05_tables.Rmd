@@ -865,6 +865,29 @@ make.ref.points.table(
 
 \afterpage{\clearpage}
 
+(ref:prod-period-cap) Year range and proportion for calculating
+average spawning biomass of Pacific Herring during a productive period
+$\overline{\SB}_\mli{Prod}$
+in the major stock assessment regions (SARs).
+
+(ref:prod-period-cap-fr) Gamme d'années et proportion pour le calcul de la
+biomasse reproductrice moyenne du hareng du Pacifique
+pendant une période productive
+$\overline{\SB}_\mli{Prod}$
+dans les principales régions d'évaluation des stocks (RES).
+
+\needspace{0.25\textheight}
+
+```{r prod-period}
+prod_period_table(
+  dat = prod_period,
+  cap = ifelse(french, "(ref:prod-period-cap-fr)", "(ref:prod-period-cap)"),
+  translate = french
+)
+```
+
+\afterpage{\clearpage}
+
 (ref:decision-prd-cap) Prince Rupert District SAR:
 management procedure (MP) performance for the Pacific Herring
 statistical catch-age model.

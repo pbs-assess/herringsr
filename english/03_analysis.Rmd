@@ -512,7 +512,8 @@ results presented in @dfo2022.
 Five USR options were evaluated:
 
 1. Average spawning biomass during a productive period
-$\overline{\SB}_\mli{Prod}$ ($B_\text{MSY}$ proxy),
+$\overline{\SB}_\mli{Prod}$
+(i.e., a $B_\text{MSY}$ proxy; Table \@ref(tab:prod-period)),
 
 1. $0.4\SB_0$,
 
