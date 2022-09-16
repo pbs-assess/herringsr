@@ -239,6 +239,6 @@ prod_period <- list(
   HG = list(yrs = 1975:1985, prop = 0.75),
   PRD = list(yrs = 1983:1992, prop = 1.0),
   CC = list(yrs = 1990:1999, prop = 1.0),
-  SoG = list(yrs = 1987:2007, prop = 0.8),
+  SoG = list(yrs = 1988:2007, prop = 0.8),
   WCVI = list(yrs = 1990:1999, prop = 1.0)
 )
