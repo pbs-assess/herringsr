@@ -898,7 +898,7 @@ Performance criteria are calculated over three Pacific Herring generations
 (i.e., 15 years) from the start of the projection period
 for all objectives (Obj).
 MPs are ordered within each scenario by performance of achieving Objective 1.
-The recommended total allowable catch (TAC) in thousands of tonnes (t) and
+The recommended total allowable catch (TAC) and
 associated harvest rate (HR) are reported for each MP.
 Legend: limit reference point (LRP);
 upper stock reference (USR);
@@ -910,8 +910,9 @@ $\overline{SB}_\mli{Prod}$ is average spawning biomass
 during a productive period (Table \@ref(tab:prod-period));
 $\overline{SB}$ is average spawning biomass;
 average annual variability (AAV); and
-$\overline{C}$ is average catch (1,000&nbsp;t).
+$\overline{C}$ is average catch.
 MPs are defined in @dfo2019a and @dfo2019c.
+Legend: biomass and catch are in thousands of tonnes (t).
 Note: 'NA' indicates that TAC and HR do not apply, either
 because the MP specifies no fishing at current projected biomass level, or
 because the MP specifies no fishing.
@@ -928,7 +929,7 @@ de hareng du Pacifique (c'est-à-dire 15 ans)
 à partir du début de la période de projection pour tous les objectifs (Obj).
 Les PG sont classés à l'intérieur de chaque scénario
 en fonction de leur capacité à atteindre l'objectif 1.
-Le total autorisé des captures (TAC) recommandé en milliers de tonnes (t) et le
+Le total autorisé des captures (TAC) recommandé et le
 taux de récolte (TR) associé sont indiqués pour chaque PG.
 Légende: point de référence limite (PRL);
 point de référence supérieur du stock (RSS);
@@ -940,8 +941,9 @@ $\overline{SB}_\mli{Prod}$ est la biomass reproductrice moyenne
 dans un periode productive (Table \@ref(tab:prod-period));
 $\overline{SB}$ est la biomass reproductrice moyenne;
 variabilité annuelle moyenne (VAM); et
-$\overline{C}$ est la prise moyenne (1 000&nbsp;t).
+$\overline{C}$ est la prise moyenne.
 Les PM sont définis dans @dfo2019a et @dfo2019c.
+Légende: la biomasse et les captures sont exprimées en milliers de tonnes (t).
 Note: «NA» indique que le TAC et la TR ne s'appliquent pas,
 soit parce que le PM spécifie l'interdiction de la pêche
 au niveau actuel de la biomasse projetée,
