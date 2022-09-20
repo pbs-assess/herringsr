@@ -869,18 +869,22 @@ make.ref.points.table(
 average spawning biomass of Pacific Herring during a productive period
 $\overline{\SB}_\mli{Prod}$
 in the major stock assessment regions (SARs).
+Note that HG is excluded because
+this is now conducted within the rebuilding plan process.
 
 (ref:prod-period-cap-fr) Gamme d'années et proportion pour le calcul de la
 biomasse reproductrice moyenne du hareng du Pacifique
 pendant une période productive
 $\overline{\SB}_\mli{Prod}$
 dans les principales régions d'évaluation des stocks (RES).
+Notez que HG est exclu parce que cette évaluation est désormais réalisée
+dans le cadre du processus du plan de reconstitution.
 
 \needspace{0.25\textheight}
 
 ```{r prod-period}
 prod_period_table(
-  dat = prod_period,
+  dat = prod_period[2:5],
   cap = ifelse(french, "(ref:prod-period-cap-fr)", "(ref:prod-period-cap)"),
   translate = french
 )
