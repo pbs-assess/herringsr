@@ -24,7 +24,7 @@ region: Pacific Region
 # branch: Secteur des sciences
 # region: Région du Pacifique
 output:
-  csasdown::sr_pdf:
+  csasdown:::sr_pdf:
     french: false
     prepub: false
     copy_sty: true
@@ -103,9 +103,9 @@ if (is.null(meta)) {
   options(french = FALSE)
 } else {
   if (length(grep("pdf", names(meta)))) {
-    french <- meta$`csasdown::sr_pdf`$french
+    french <- meta$`csasdown:::sr_pdf`$french
     options(french = french)
-    prepub <- meta$`csasdown::sr_pdf`$prepub
+    prepub <- meta$`csasdown:::sr_pdf`$prepub
   } else if (length(grep("word", names(meta)))) {
     french <- meta$`csasdown::sr_word`$french
     options(french = french)
