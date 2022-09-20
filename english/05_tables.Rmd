@@ -907,7 +907,7 @@ maximum (max);
 $\SB_t$ is spawning biomass in year $t$;
 $\SB_0$ is estimated unfished spawning biomass;
 $\overline{SB}_\mli{Prod}$ is average spawning biomass
-during a productive period;
+during a productive period (Table \@ref(tab:prod-period));
 $\overline{SB}$ is average spawning biomass;
 average annual variability (AAV); and
 $\overline{C}$ is average catch (1,000&nbsp;t).
@@ -937,7 +937,7 @@ maximum (max);
 $\SB_t$ est la biomasse reproductrice de l'année $t$;
 $\SB_0$ est la biomasse reproductrice estimée non pêchée;
 $\overline{SB}_\mli{Prod}$ est la biomass reproductrice moyenne
-dans un periode productive;
+dans un periode productive (Table \@ref(tab:prod-period));
 $\overline{SB}$ est la biomass reproductrice moyenne;
 variabilité annuelle moyenne (VAM); et
 $\overline{C}$ est la prise moyenne (1 000&nbsp;t).
