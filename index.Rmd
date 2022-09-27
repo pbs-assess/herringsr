@@ -9,8 +9,8 @@ work_done_year: 2022
 work_done_month: Month
 # work_done_month: Mois
 report_number: 46
-isbn: 111-1-111-11111-1
-# isbn: 111-1-111-11111-1
+isbn: 978-0-660-45602-7
+# isbn: 978-0-660-45603-4
 approver: |
   Andrew Thomson\
   Regional Director
