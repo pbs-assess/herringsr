@@ -982,7 +982,9 @@ rendement de la procédure de gestion pour le modèle statistique
 de prises-âges du hareng du Pacifique.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
-\begin{landscapepage}
+\newgeometry{hmargin=1in,vmargin=1in}
+\begin{landscape}
+\pagestyle{empty}
 
 \setlength{\tabcolsep}{3.75pt}
 
@@ -1047,6 +1049,7 @@ decision_tables_mp(
 
 \setlength{\tabcolsep}{6pt}
 
-\end{landscapepage}
+\end{landscape}
+\restoregeometry
 
 \afterpage{\clearpage}
