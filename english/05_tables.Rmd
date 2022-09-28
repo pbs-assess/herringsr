@@ -869,7 +869,7 @@ make.ref.points.table(
 average spawning biomass of Pacific Herring during a productive period
 $\overline{\SB}_\mli{Prod}$
 in the major stock assessment regions (SARs).
-Note that Haida Gwaii is excluded because
+Note: Haida Gwaii is excluded because
 this is conducted within the rebuilding plan process.
 
 (ref:prod-period-cap-fr) Gamme d'années pour le calcul de la
@@ -877,7 +877,7 @@ biomasse reproductrice moyenne du hareng du Pacifique
 pendant une période productive
 $\overline{\SB}_\mli{Prod}$
 dans les principales régions d'évaluation des stocks (RES).
-Notez que Haida Gwaii est exclu parce que cette évaluation est
+Remarque: Haida Gwaii est exclu parce que cette évaluation est
 désormais réalisée dans le cadre du processus du plan de reconstitution.
 
 \needspace{0.25\textheight}
@@ -942,7 +942,7 @@ maximum (max);
 $\SB_t$ est la biomasse reproductrice de l'année $t$;
 $\SB_0$ est la biomasse reproductrice estimée non pêchée;
 $\overline{SB}_\mli{Prod}$ est la biomass reproductrice moyenne
-dans un periode productive (Table \@ref(tab:prod-period));
+dans un periode productive (Tableau \@ref(tab:prod-period));
 $\overline{SB}$ est la biomass reproductrice moyenne;
 variabilité annuelle moyenne (VAM); et
 $\overline{C}$ est la prise moyenne.
