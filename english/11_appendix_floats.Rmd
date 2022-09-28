@@ -5,13 +5,13 @@
 ## `r en2fr("Tables", translate=french)`
 
 (ref:spawn-index-a27-cap) Area 27 SAR: 
-spawn index in tonnes for Pacific Herring, and
+spawn index in tonnes for Pacific Herring and
 proportion of  spawn index by Section 
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
 
 (ref:spawn-index-a27-cap-fr) RES de la zone 27:
-indice de frai en tonnes pour le hareng du Pacifique, et
+indice de frai en tonnes pour le hareng du Pacifique et
 proportion de l'indice de frai par section 
 de `r major_end_yr - num_yrs_tab` à `r major_end_yr`.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
@@ -30,13 +30,13 @@ spawn_index_by_area_table(
 \afterpage{\clearpage}
 
 (ref:spawn-index-a2w-cap) Area 2 West SAR: 
-spawn index in tonnes for Pacific Herring, and
+spawn index in tonnes for Pacific Herring and
 proportion of  spawn index by Section
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
 
 (ref:spawn-index-a2w-cap-fr) RES de la zone 2 ouest:
-indice de frai en tonnes pour le hareng du Pacifique, et
+indice de frai en tonnes pour le hareng du Pacifique et
 proportion de l'indice de frai par section
 de `r major_end_yr - num_yrs_tab` à `r major_end_yr`.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
@@ -55,13 +55,13 @@ spawn_index_by_area_table(
 ```
 
 (ref:spawn-index-a10-cap) Area 10 special area: 
-spawn index in tonnes for Pacific Herring, and
+spawn index in tonnes for Pacific Herring and
 proportion of  spawn index by Section 
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
 
 (ref:spawn-index-a10-cap-fr) Zone spécial de la zone 10:
-indice de frai en tonnes pour le hareng du Pacifique, et
+indice de frai en tonnes pour le hareng du Pacifique et
 proportion de l'indice de frai par section
 de `r major_end_yr - num_yrs_tab` à `r major_end_yr`.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.

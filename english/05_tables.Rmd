@@ -86,7 +86,7 @@ sok_harvest_table(
 \afterpage{\clearpage}
 
 (ref:spawn-index-hg-cap) Haida Gwaii SAR: 
-spawn index in tonnes for Pacific Herring, and
+spawn index in tonnes for Pacific Herring and
 proportion of  spawn index by Group 
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`.
 Legend: 'Cumshewa/Selwyn' is Section 023 and 024;
@@ -122,7 +122,7 @@ spawn_index_by_area_table(
 \afterpage{\clearpage}
 
 (ref:spawn-index-prd-cap) Prince Rupert District SAR: 
-spawn index in tonnes for Pacific Herring, and
+spawn index in tonnes for Pacific Herring and
 proportion of  spawn index by Statistical Area 
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
@@ -149,7 +149,7 @@ spawn_index_by_area_table(
 \afterpage{\clearpage}
 
 (ref:spawn-index-cc-cap) Central Coast SAR: 
-spawn index in tonnes for Pacific Herring, and
+spawn index in tonnes for Pacific Herring and
 proportion of  spawn index by Statistical Area 
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
@@ -176,7 +176,7 @@ spawn_index_by_area_table(
 \afterpage{\clearpage}
 
 (ref:spawn-index-sog-cap) Strait of Georgia SAR: 
-spawn index in tonnes for Pacific Herring, and
+spawn index in tonnes for Pacific Herring and
 proportion of  spawn index by Group 
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`.
 Legend: '14&17' is Statistical Areas 14 and 17 (excluding Section 173);
@@ -212,7 +212,7 @@ spawn_index_by_area_table(
 \afterpage{\clearpage}
 
 (ref:spawn-index-wcvi-cap) West Coast of Vancouver Island SAR: 
-spawn index in tonnes for Pacific Herring, and
+spawn index in tonnes for Pacific Herring and
 proportion of  spawn index by Statistical Area 
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`.
 See Table \@ref(tab:spawn-index-hg) for description.
