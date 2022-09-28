@@ -306,7 +306,7 @@ so we see some years of slight recovery followed by other years of decline,
 but no real growth even in the absence of a fishery for almost 20 years.
 Spawns in 2022 were found to be mostly light to medium in deposition. 
 
-The Juan Perez Sound inlets normally supports spawns
+The Juan Perez Sound inlets normally support spawns
 when there are a lot of recruits in the population
 and first time spawners can out number older repeat spawners.
 That has not been the case now for some time.
@@ -425,13 +425,13 @@ Area 24 had the largest spawning event
 A January spawn in a Hesquiaht Harbour was observed,
 followed by a multi-day spawn in Hesquiaht Harbour from February 24 to March 7.
 Spawning events were observed again in Hesquiaht Harbour later in March and
-around Vargas, Stubbs, Mears (Opisaht) islands.
+around Vargas, Stubbs, and Mears (Opisaht) islands.
 The herring spawn was described as moderate to heavy in most areas.
 
 In Area 23, spawns were small and short in duration around mid-March.
 The main spawn was around
-Muscle Beach/Cabbage Rocks to Macoha on March 9 and
-a spot spawn around Spilling islets on March 10.
+Muscle Beach/Cabbage Rocks to Macoah on March 9 and
+there was a spot spawn around Spilling Islets on March 10.
 Most trees set for SOB collections were bare or had one to two layers
 and so were returned to the water to hatch.
 A short duration spawn was observed around
@@ -504,15 +504,16 @@ are assumed to be continuous with the dive survey time series.
 A biological limit reference point (LRP) is defined for the major
 Pacific Herring SARs at $0.3\SB_0$ [@kronlund2017].
 Candidate upper stock reference (USR) points were introduced in @cleary2018 and
-implemented as biomass objectives in simulation analyses
-for WCVI and SoG in 2018 [@dfo2019a] and 
-for HG, PRD, and CC in 2019 [@dfo2019c].
+implemented as biomass objectives in simulation analyses for
+WCVI and SoG in 2018 [@dfo2019a], and then
+HG, PRD, and CC in 2019 [@dfo2019c].
 An analysis of USR options was undertaken in 2022 with
 results presented in @dfo2022.
 Five USR options were evaluated:
 
-1. Average spawning biomass during a productive period,
-$\SB_{\mli{productive-period}}$ ($B_\text{MSY}$ proxy),
+1. Average spawning biomass during a productive period
+$\overline{\SB}_\mli{Prod}$
+(i.e., a $B_\text{MSY}$ proxy; Table \@ref(tab:prod-period)),
 
 1. $0.4\SB_0$,
 
@@ -520,8 +521,8 @@ $\SB_{\mli{productive-period}}$ ($B_\text{MSY}$ proxy),
 
 1. $0.6\SB_0$, and
 
-1. Average spawning biomass from `r major_start_yr` to `r assess_yr`,
-$\SB_{\mli{long-term}}$.
+1. Average spawning biomass from `r major_start_yr` to `r assess_yr`
+$\overline{\SB}$.
 
 Implementing USRs as target biomass objectives within
 the simulation-evaluation process allows the evaluation of
@@ -937,7 +938,7 @@ These limitations exist for all five major stocks.
 Finally, DFO acknowledges commitment to the Heiltsuk Nation for
 the development of a Joint Fisheries Management Plan for Pacific Herring
 in the Central Coast in `r assess_yr + 1`.
-Results presented here may inform this on going commitment.
+Results presented here may inform this ongoing commitment.
 
 ### Strait of Georgia
 
@@ -959,7 +960,7 @@ probabilities ranging from 75% to 88% (DDM and DIM only, @dfo2021b), and the
 updates included here show probabilities ranging from 67% to 87%
 (Table \@ref(tab:decision-sog)).
 
-These comparisons highlights the importance of considering
+These comparisons highlight the importance of considering
 the lessons learned from the MSE process (Section "\nameref{sec:mse}")
 when selecting or rejecting MPs.
 In this case it may be important to consider how the recent MP updates 
