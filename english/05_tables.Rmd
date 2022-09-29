@@ -904,7 +904,7 @@ for all objectives (Obj).
 MPs are ordered within each scenario by performance of achieving Objective 1.
 The recommended total allowable catch (TAC) and
 associated harvest rate (HR) are calculated for each MP
-using their posterior densities values.
+using posterior densities values.
 Legend: limit reference point (LRP);
 upper stock reference (USR);
 $P$ is probability;
