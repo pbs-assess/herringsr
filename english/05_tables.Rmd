@@ -904,7 +904,7 @@ for all objectives (Obj).
 MPs are ordered within each scenario by performance of achieving Objective 1.
 The recommended total allowable catch (TAC) and
 associated harvest rate (HR) are calculated for each MP
-using their posterior densities values.
+using posterior densities values.
 Legend: limit reference point (LRP);
 upper stock reference (USR);
 $P$ is probability;
@@ -935,7 +935,8 @@ de hareng du Pacifique (c'est-à-dire 15 ans)
 Les PG sont classés à l'intérieur de chaque scénario
 en fonction de leur capacité à atteindre l'objectif 1.
 Le total autorisé des captures (TAC) recommandé et le
-taux de récolte (TR) associé sont indiqués pour chaque PG.
+taux de récolte (TR) associé sont indiqués pour chaque PG
+en utilisant les valeurs de leurs densités postérieures.
 Légende: point de référence limite (PRL);
 point de référence supérieur du stock (RSS);
 $P$ est la probabilité;
