@@ -234,30 +234,13 @@ cc_vars <- get_vars("CC", french = french)
 sog_vars <- get_vars("SoG", french = french)
 wcvi_vars <- get_vars("WCVI", french = french)
 
-# Format MP tables
-proc_mp <- function(df) {
-  csas_table(
-    df,
-    format = "latex",
-    bold_header = TRUE,
-    col_names = c(
-      "Scenario",
-      "MP",
-      "Label",
-      "Conservation\nObj 1 (LRP)\n>75%",
-      "Biomass\nObj 2\n>50%",
-      "Yield\nObj 3\n<25%",
-      "Yield\nObj 4\nmax",
-      "Catch < 650t\nmin"
-    )
-  )
-}
-
 # Years and proportion for productive period
 prod_period <- list(
-  HG = list(yrs = 1975:1985, prop = 0.75),
-  PRD = list(yrs = 1983:1992, prop = 1.0),
-  CC = list(yrs = 1990:1999, prop = 1.0),
-  SoG = list(yrs = 1987:2007, prop = 0.8),
-  WCVI = list(yrs = 1990:1999, prop = 1.0)
+  HG = list(region = "Haida Gwaii", yrs = 1975:1985, prop = 0.75),
+  PRD = list(region = "Prince Rupert District", yrs = 1983:1992, prop = 1.0),
+  CC = list(region = "Central Coast", yrs = 1990:1999, prop = 1.0),
+  SoG = list(region = "Strait of Georgia", yrs = 1988:2007, prop = 0.8),
+  WCVI = list(
+    region = "West Coast of Vancouver Island", yrs = 1990:1999, prop = 1.0
+  )
 )
