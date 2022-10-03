@@ -8,23 +8,23 @@ title_other: "Mise à jour de l'état des stocks avec application des procédure
 work_done_year: 2022
 work_done_month: Month
 # work_done_month: Mois
-report_number: 46
-isbn: 978-0-660-45602-7
-# isbn: 978-0-660-45603-4
+report_number: 1
+isbn: 111-1-111-11111-1
+# isbn: 111-1-111-11111-1
 approver: |
   Andrew Thomson\
   Regional Director
 # Directeur régionale
 approval_year: 2022
-approval_month: September
-# approval_month: Septembre
-approval_day: 20
+approval_month: Month
+# approval_month: Mois
+approval_day: nn
 branch: Science Branch
 region: Pacific Region
 # branch: Secteur des sciences
 # region: Région du Pacifique
 output:
-  csasdown:::sr_pdf:
+  csasdown::sr_pdf:
     french: false
     prepub: false
     copy_sty: true
@@ -103,9 +103,9 @@ if (is.null(meta)) {
   options(french = FALSE)
 } else {
   if (length(grep("pdf", names(meta)))) {
-    french <- meta$`csasdown:::sr_pdf`$french
+    french <- meta$`csasdown::sr_pdf`$french
     options(french = french)
-    prepub <- meta$`csasdown:::sr_pdf`$prepub
+    prepub <- meta$`csasdown::sr_pdf`$prepub
   } else if (length(grep("word", names(meta)))) {
     french <- meta$`csasdown::sr_word`$french
     options(french = french)

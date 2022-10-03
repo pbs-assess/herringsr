@@ -320,7 +320,7 @@ points and time-series lines are median posterior estimates,
 bands and error bars are `r ci_level * 100`\% credible intervals, 
 dashed horizontal lines indicate zero, and
 red lines indicate the median limit reference point $0.3\SB_0$,
-where $SB_0$ is estimated unfished spawning biomass.}
+where $SB_0$ is the estimated unfished spawning biomass.}
 
 \newcommand{\storyboardfr}{
 \textbf{Panneau (a)}: Ajustement du modèle (lignes) à l'abondance à l'échelle

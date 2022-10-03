@@ -865,33 +865,6 @@ make.ref.points.table(
 
 \afterpage{\clearpage}
 
-(ref:prod-period-cap) Year range for calculating
-average spawning biomass of Pacific Herring during a productive period
-$\overline{\SB}_\mli{Prod}$
-in the major stock assessment regions (SARs).
-Note: Haida Gwaii is excluded because
-this is conducted within the rebuilding plan process.
-
-(ref:prod-period-cap-fr) Gamme d'années pour le calcul de la
-biomasse reproductrice moyenne du hareng du Pacifique
-pendant une période productive
-$\overline{\SB}_\mli{Prod}$
-dans les principales régions d'évaluation des stocks (RES).
-Remarque: Haida Gwaii est exclu parce que cette évaluation est
-désormais réalisée dans le cadre du processus du plan de reconstitution.
-
-\needspace{0.25\textheight}
-
-```{r prod-period}
-prod_period_table(
-  dat = prod_period[2:5],
-  cap = ifelse(french, "(ref:prod-period-cap-fr)", "(ref:prod-period-cap)"),
-  translate = french
-)
-```
-
-\afterpage{\clearpage}
-
 (ref:decision-prd-cap) Prince Rupert District SAR:
 management procedure (MP) performance for the Pacific Herring
 statistical catch-age model.
@@ -902,7 +875,7 @@ Performance criteria are calculated over three Pacific Herring generations
 (i.e., 15 years) from the start of the projection period
 for all objectives (Obj).
 MPs are ordered within each scenario by performance of achieving Objective 1.
-The recommended total allowable catch (TAC) and
+The recommended total allowable catch (TAC) in thousands of tonnes (t) and
 associated harvest rate (HR) are reported for each MP.
 Legend: limit reference point (LRP);
 upper stock reference (USR);
@@ -911,12 +884,11 @@ maximum (max);
 $\SB_t$ is spawning biomass in year $t$;
 $\SB_0$ is estimated unfished spawning biomass;
 $\overline{SB}_\mli{Prod}$ is average spawning biomass
-during a productive period (Table \@ref(tab:prod-period));
+during a productive period;
 $\overline{SB}$ is average spawning biomass;
 average annual variability (AAV); and
-$\overline{C}$ is average catch.
+$\overline{C}$ is average catch (1,000&nbsp;t).
 MPs are defined in @dfo2019a and @dfo2019c.
-Legend: biomass and catch are in thousands of tonnes (t).
 Note: 'NA' indicates that TAC and HR do not apply, either
 because the MP specifies no fishing at current projected biomass level, or
 because the MP specifies no fishing.
@@ -933,7 +905,7 @@ de hareng du Pacifique (c'est-à-dire 15 ans)
 à partir du début de la période de projection pour tous les objectifs (Obj).
 Les PG sont classés à l'intérieur de chaque scénario
 en fonction de leur capacité à atteindre l'objectif 1.
-Le total autorisé des captures (TAC) recommandé et le
+Le total autorisé des captures (TAC) recommandé en milliers de tonnes (t) et le
 taux de récolte (TR) associé sont indiqués pour chaque PG.
 Légende: point de référence limite (PRL);
 point de référence supérieur du stock (RSS);
@@ -942,12 +914,11 @@ maximum (max);
 $\SB_t$ est la biomasse reproductrice de l'année $t$;
 $\SB_0$ est la biomasse reproductrice estimée non pêchée;
 $\overline{SB}_\mli{Prod}$ est la biomass reproductrice moyenne
-dans un periode productive (Tableau \@ref(tab:prod-period));
+dans un periode productive;
 $\overline{SB}$ est la biomass reproductrice moyenne;
 variabilité annuelle moyenne (VAM); et
-$\overline{C}$ est la prise moyenne.
+$\overline{C}$ est la prise moyenne (1 000&nbsp;t).
 Les PM sont définis dans @dfo2019a et @dfo2019c.
-Légende: la biomasse et les captures sont exprimées en milliers de tonnes (t).
 Note: «NA» indique que le TAC et la TR ne s'appliquent pas,
 soit parce que le PM spécifie l'interdiction de la pêche
 au niveau actuel de la biomasse projetée,
@@ -982,9 +953,7 @@ rendement de la procédure de gestion pour le modèle statistique
 de prises-âges du hareng du Pacifique.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
-\newgeometry{hmargin=1in,vmargin=1in}
-\begin{landscape}
-\thispagestyle{empty}
+\begin{landscapepage}
 
 \setlength{\tabcolsep}{3.75pt}
 
@@ -1002,7 +971,6 @@ decision_tables_mp(
 ```
 
 \clearpage
-\thispagestyle{empty}
 
 ```{r decision-cc, results = 'asis', echo = FALSE}
 decision_tables_mp(
@@ -1018,7 +986,6 @@ decision_tables_mp(
 ```
 
 \clearpage
-\thispagestyle{empty}
 
 ```{r decision-sog, results = 'asis', echo = FALSE}
 decision_tables_mp(
@@ -1035,7 +1002,6 @@ decision_tables_mp(
 ```
 
 \clearpage
-\thispagestyle{empty}
 
 ```{r decision-wcvi, results = 'asis', echo = FALSE}
 decision_tables_mp(
@@ -1052,7 +1018,6 @@ decision_tables_mp(
 
 \setlength{\tabcolsep}{6pt}
 
-\end{landscape}
-\restoregeometry
+\end{landscapepage}
 
 \afterpage{\clearpage}
