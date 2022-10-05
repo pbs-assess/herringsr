@@ -987,8 +987,10 @@ Voir le tableau \@ref(tab:decision-prd) pour la description.
 \newgeometry{hmargin=1in,vmargin=1in}
 \begin{landscape}
 \thispagestyle{empty}
-
-\setlength{\tabcolsep}{3.75pt}
+\newlength{\oldtabcolsep}
+\setlength{\oldtabcolsep}{\tabcolsep}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.15}
 
 ```{r decision-prd, results = 'asis', echo = FALSE}
 decision_tables_mp(
@@ -1052,9 +1054,10 @@ decision_tables_mp(
 )
 ```
 
-\setlength{\tabcolsep}{6pt}
-
 \end{landscape}
+\setlength{\tabcolsep}{\oldtabcolsep}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
 \restoregeometry
 
 \afterpage{\clearpage}
