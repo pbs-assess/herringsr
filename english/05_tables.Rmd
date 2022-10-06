@@ -908,12 +908,12 @@ using posterior densities values.
 Legend: limit reference point (LRP);
 upper stock reference (USR);
 $P$ is probability;
-maximum (max);
+maximum (Max);
 $\SB_t$ is spawning biomass in year $t$;
 $\SB_0$ is estimated unfished spawning biomass;
-$\overline{SB}_\mli{Prod}$ is average spawning biomass
+$\overline{\SB}_\mli{Prod}$ is average spawning biomass
 during a productive period (Table \@ref(tab:prod-period));
-$\overline{SB}$ is average spawning biomass;
+$\overline{\SB}$ is average spawning biomass;
 average annual variability (AAV); and
 $\overline{C}$ is average catch.
 MPs are defined in @dfo2019a and @dfo2019c.
@@ -940,12 +940,12 @@ en utilisant les valeurs de leurs densités postérieures.
 Légende: point de référence limite (PRL);
 point de référence supérieur du stock (RSS);
 $P$ est la probabilité;
-maximum (max);
+maximum (Max);
 $\SB_t$ est la biomasse reproductrice de l'année $t$;
 $\SB_0$ est la biomasse reproductrice estimée non pêchée;
-$\overline{SB}_\mli{Prod}$ est la biomass reproductrice moyenne
+$\overline{\SB}_\mli{Prod}$ est la biomass reproductrice moyenne
 dans un periode productive (Tableau \@ref(tab:prod-period));
-$\overline{SB}$ est la biomass reproductrice moyenne;
+$\overline{\SB}$ est la biomass reproductrice moyenne;
 variabilité annuelle moyenne (VAM); et
 $\overline{C}$ est la prise moyenne.
 Les PM sont définis dans @dfo2019a et @dfo2019c.
