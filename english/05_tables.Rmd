@@ -921,6 +921,7 @@ Legend: biomass and catch are in thousands of tonnes (t).
 Note: 'NA' indicates that TAC and HR do not apply, either
 because the MP specifies no fishing at current projected biomass level, or
 because the MP specifies no fishing.
+The Herring Industry Advisory Board objective is reported as $0.4\SB_0$.
 
 (ref:decision-prd-cap-fr) RES du district de Prince Rupert:
 rendement de la procédure de gestion (PG) pour
@@ -954,6 +955,8 @@ Note: «NA» indique que le TAC et la TR ne s'appliquent pas,
 soit parce que le PM spécifie l'interdiction de la pêche
 au niveau actuel de la biomasse projetée,
 soit parce que le PM spécifie l'interdiction de la pêche.
+L'objectif du Herring Industry Advisory Board est indiqué comme
+étant de $0.4\SB_0$.
 
 (ref:decision-cc-cap) Central Coast SAR:
 management procedure performance for the Pacific Herring
@@ -978,11 +981,23 @@ Voir le tableau \@ref(tab:decision-prd) pour la description.
 management procedure performance for the Pacific Herring
 statistical catch-age model.
 See Table \@ref(tab:decision-prd) for description.
+Note that representation of Nuu-chah-nulth objectives
+has been modified this year:
+$0.75\SB_0$ is reported as $\overline{\SB}_\mli{Prod}$
+(calculated over three herring generations),
+$\SB_{\text{AVE}}$ appears as $\overline{\SB}$, and
+$0.65\SB_0$ is omitted.
 
 (ref:decision-wcvi-cap-fr) RES de la côte ouest de l’île de Vancouver:
 rendement de la procédure de gestion pour le modèle statistique
 de prises-âges du hareng du Pacifique.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
+Notez que la représentation des objectifs de Nuu-chah-nulth
+a été modifiée cette année:
+$0.75\SB_0$ est indiqué comme $\overline{\SB}_\mli{Prod}$
+(calculé sur trois générations de harengs),
+$\SB_{\text{AVE}}$ apparaît comme $\overline{\SB}$, et
+$0.65\SB_0$ est omis.
 
 \newgeometry{hmargin=1in,vmargin=1in}
 \begin{landscape}
