@@ -315,10 +315,10 @@ Coloured vertical bars indicate commercial catch (Figure \ref{fig:major-catch}).
 for the dive survey period (`r new_surv_yr` to `r assess_yr - 1`).
 Points are chronologically shaded light to dark;
 triangle indicates `r assess_yr - 1`.
-Legend: biomass and catch are in thousands of tonnes (t),
-points and time-series lines are median posterior estimates,
-bands and error bars are `r ci_level * 100`\% credible intervals,
-dashed horizontal lines indicate zero, and
+Legend: biomass and catch are in thousands of tonnes (t);
+points and time-series lines are median posterior estimates;
+bands and error bars are `r ci_level * 100`\% credible intervals;
+dashed horizontal lines indicate zero; and
 red lines indicate the median limit reference point $0.3\SB_0$,
 where $SB_0$ is estimated unfished spawning biomass.}
 
