@@ -917,10 +917,10 @@ $\overline{\SB}$ is average spawning biomass;
 average annual variability (AAV); and
 $\overline{C}$ is average catch.
 MPs are defined in @dfo2019a and @dfo2019c.
-Legend: biomass and catch are in thousands of tonnes (t).
-Note: 'NA' indicates that TAC and HR do not apply, either
-because the MP specifies no fishing at current projected biomass level, or
-because the MP specifies no fishing.
+Biomass and catch are in thousands of tonnes (t).
+Note: 'NA' indicates that TAC and HR do not apply, either because
+the MP specifies no fishing at current projected biomass level, or
+the MP specifies no fishing.
 The Herring Industry Advisory Board objective is reported as $0.4\SB_0$.
 
 (ref:decision-prd-cap-fr) RES du district de Prince Rupert:
@@ -950,7 +950,7 @@ $\overline{\SB}$ est la biomass reproductrice moyenne;
 variabilité annuelle moyenne (VAM); et
 $\overline{C}$ est la prise moyenne.
 Les PM sont définis dans @dfo2019a et @dfo2019c.
-Légende: la biomasse et les captures sont exprimées en milliers de tonnes (t).
+La biomasse et les captures sont exprimées en milliers de tonnes (t).
 Note: «NA» indique que le TAC et la TR ne s'appliquent pas,
 soit parce que le PM spécifie l'interdiction de la pêche
 au niveau actuel de la biomasse projetée,
