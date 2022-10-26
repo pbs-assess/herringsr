@@ -1002,8 +1002,6 @@ $0.65\SB_0$ est omis.
 \newgeometry{hmargin=1in,vmargin=1in}
 \begin{landscape}
 \thispagestyle{empty}
-\newlength{\oldtabcolsep}
-\setlength{\oldtabcolsep}{\tabcolsep}
 \setlength{\tabcolsep}{5pt}
 \renewcommand{\arraystretch}{1.15}
 
@@ -1070,8 +1068,7 @@ decision_tables_mp(
 ```
 
 \end{landscape}
-\setlength{\tabcolsep}{\oldtabcolsep}
-\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1}
 \restoregeometry
 
