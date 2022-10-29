@@ -470,6 +470,9 @@ plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 y_axis_label_newline_length = 40,
                                 annot = region_abbreviation,
                                 label_points = TRUE,
+                                show_prod_usr = TRUE,
+                                prop_prod = 0.75,
+                                prod_yrs = 1975:1985,
                                 translate = french) 
 ggsave(filename = here("figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=5, dpi=300)
 ```
