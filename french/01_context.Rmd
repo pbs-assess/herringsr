@@ -1,30 +1,108 @@
-# Contexte
+# Contexte\label{sec:context}
 
-L'abondance du hareng du Pacifique (*Clupea pallasii*) est évaluée en Colombie-Britannique (C.-B.) au moyen d'un modèle statistique des prises selon l'âge [@martell2011].
-En 2017, l'évaluation des stocks de hareng du Pacifique comprenait des mises à jour du modèle statistique des prises selon l'âge, et une analyse de transition pour soutenir ces changements [@cleary2018].
-L'évaluation de 2017 a également introduit l'estimation de la productivité des stocks et de l'état actuel des stocks par rapport au nouveau point de référence limite (PRL) de $0.3\SB_0$ [@kronlund2017], où $\SB_0$ est l'estimation de la biomasse du stock reproducteur non exploitée.
-La structure du modèle statistique des prises selon l'âge n'a pas changé depuis 2017.
+L’abondance du hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique est
+évaluée à l’aide d’un modèle statistique des prises selon l’âge [@martell2011].
+En 2017, l’évaluation des stocks de hareng du Pacifique comprenait
+des mises à jour du modèle statistique des prises selon l’âge,
+une analyse de rapprochement pour prendre en compte ces changements [@cleary2018], ainsi que
+l’estimation de la productivité des stocks et de l’état actuel des stocks
+par rapport au nouveau point de référence limite (PRL) de $0,3\SB_0$ [@kronlund2017],
+où $\SB_0$ est la biomasse estimée du stock reproducteur non pêché.
+La structure du modèle SCA n’a pas changé depuis 2017.
 
-En 2016, le MPO s'est engagé à renouveler le présent cadre de gestion pour s'attaquer à l'éventail de difficultés qui touchent les stocks et les pêches de hareng du Pacifique en Colombie-Britannique.
-Le renouvellement du cadre de gestion consiste à mener un processus d'évaluation des stratégies de gestion (ESG) afin d'examiner le rendement des procédures de gestion proposées par rapport à différentes hypothèses concernant la dynamique future du stock et de la pêche.
-Dans le cadre du processus d'ESG, un examen régional par les pairs du SCCS a eu lieu au cours de l'été 2018, au cours duquel le rendement des procédures de gestion (PG) du hareng du Pacifique a été évalué par rapport aux objectifs de conservation des régions d'évaluation des stocks du détroit de Géorgie (DG) et de la côte ouest de l'île de Vancouver (COIV) [@dfo2019a].
-Les étapes comprenaient l'élaboration d'un modèle opérationnel (MO), l'adaptation du MO aux données de surveillance des stocks et des pêches de hareng du Pacifique (conditionnement du MO) et des simulations en boucle fermée du rendement des PG pour d'autres scénarios de mortalité naturelle future.
-Au printemps 2019, le processus de l'ESG a été lancé pour les régions d'évaluation des stocks de Haida Gwaii (HG), du district de Prince Rupert (DPR) et de la côte centrale (CC) [@dfo2019c].
-À l'été 2020, des mises à jour ont été apportées aux simulations de l'ESG pour les zones de gestion de la côte ouest de l'île de Vancouver et du détroit de Georgie, et au cours de l'été 2021, des mises à jour similaires ont été apportées aux simulations de l'ESG pour les zones de gestion du DPR et de la CC.
-Pour les quatre stocks, les mises à jour comprennent le conditionnement du MO selon les plus récentes données relatives au stock et à la pêche et une évaluation du rendement d'autres procédures de gestion proposées pour ces deux zones.
+En 2016, Pêches et Océans Canada (MPO) s’est engagé à
+renouveler le cadre de gestion actuel afin de
+répondre aux différents enjeux qui touchent les stocks et les pêches de hareng du Pacifique en Colombie-Britannique.
+Le renouvellement du cadre de gestion comprenait la réalisation d’une évaluation de la stratégie de gestion (ESG) pour examiner
+le rendement des procédures de gestion proposées par rapport à
+une série d’hypothèses concernant la dynamique future des stocks et des pêches.
+Dans le cadre du processus d’ESG,
+le Secrétariat canadien des avis scientifiques (SCAS)
+a réalisé un examen régional par les pairs en 2018,
+qui a évalué le rendement des procédures de gestion du hareng du Pacifique
+par rapport aux objectifs de conservation des
+régions d’évaluation des stocks du détroit de Géorgie (DG) et
+de la côte ouest de l’île de Vancouver (COIV) [@dfo2019a].
+Les étapes comprenaient l’élaboration d’un modèle opérationnel [@benson2022],
+l’adaptation du modèle opérationnel aux données de surveillance des stocks et des pêches de hareng du Pacifique
+(conditionnement du modèle opérationnel) et
+des simulations en boucle fermée du rendement des procédures de gestion sur les
+scénarios alternatifs de mortalité naturelle future.
+En 2019, le MPO a lancé le processus d’ESG pour les régions d’évaluation des stocks de
+Haida Gwaii (HG), du district de Prince Rupert (DPR), et de la côte centrale (CC)
+[@dfo2019c].
+Des mises à jour des évaluations des procédures de gestion ont ensuite été effectuées pour
+les régions d’évaluation des stocks du détroit de Géorgie et de la côte ouest de l’île de Vancouver en 2020 [@dfo2021b], et
+pour toutes les régions d’évaluation des stocks inclus dans la présente étude.
 
-Depuis le lancement du processus d'évaluation des stratégies de gestion (ESG) du hareng du Pacifique, les résultats ont été inclus dans l'évaluation annuelle des stocks comme suit:
+Cette évaluation intègre les nouveaux avis scientifiques sur
+le choix des points de référence supérieurs du stock (PRS)
+pour les quatre principales régions d’évaluation des stocks du hareng du Pacifique (DPR, CC, DG et COIV).
+Une analyse des options a été réalisée en 2022 [@dfo2022] et
+la mise en œuvre des PRS se fera par le biais du 
+Plan de gestion intégrée de la pêche (PGIP) 2022-2023.
+Pour appuyer les consultations en cours,
+cinq options de PRS sont présentées pour le DPR, la CC, le DG et la COIV
+(section «\nameref{sec:harv-opts}»).
+Pour ces quatre stocks,
+nous mettons également à jour le conditionnement du modèle opérationnel du hareng du Pacifique [@benson2022]
+en incluant les données sur les stocks et les pêches de `r major_start_yr` à 2021.
+Ces mises à jour apparaissent pour la première fois dans @dfo2022.
+Les évaluations des procédures de gestion présentées dans les tableaux des options de récolte 
+reflètent les dernières mises à jour du modèle opérationnel.
 
-1. L'évaluation des stocks de 2018 comprenait des recommandations mises à jour des PG pour les régions d'évaluation des stocks du DG et de la COIV pour 2019 [@dfo2019b].
+Depuis le début du processus d’ESG du hareng du Pacifique,
+les résultats ont été inclus dans l’évaluation annuelle du stock comme suit:
 
-1. L'évaluation des stocks de 2019 comprenait des recommandations mises à jour des PG pour les régions d'évaluation des stocks du DG et de la COIV selon l'évaluation de 2018, et des recommandations mises à jour des PG pour les régions d'évaluation des stocks de HG, du DPR et de la CC [@dfo2020a].
+1. L’évaluation du stock de 2018 comprend
+les recommandations des procédures de gestion pour les zones d’évaluation des stocks du DG et de la COIV [@dfo2019a].
 
-1. L'évaluation des stocks de 2020 comprend des recommandations mises à jour des PG pour les régions d'évaluation des stocks du DG et de la COIV et des recommandations des PG pour les régions d'évaluation des stocks de HG, du DPR et de la CC, selon l'évaluation de 2019 [@dfo2020a].
+1. L’évaluation du stock de 2019 comprend
+les recommandations des procédures de gestion pour les zones d’évaluation des stocks de HG, du DPR et de la CC [@dfo2020a], et
+met en œuvre les recommandations des procédures de gestion des années précédentes pour les régions d’évaluation des stocks du DG et de la COIV. 
 
-1. L'évaluation des stocks de 2021 comprend des recommandations mises à jour des PG pour les régions d'évaluation des stocks du DG et de la COIV selon l'évaluation de 2020, et des recommandations mises à jour des PG pour les régions d'évaluation des stocks du DPR et de la CC [@dfo2021].
-Des mesures de gestion visant à soutenir le rétablissement à long terme du hareng de Haida Gwaii sont en cours d'élaboration selon le processus relatif au plan de rétablissement.
+1. L’évaluation du stock de 2020 comprend
+une mise à jour des recommandations des procédures de gestion pour les régions d’évaluation des stocks du DG et de la COIV [@dfo2021b], et
+met en œuvre les recommandations des procédures de gestion des années précédentes pour les régions d’évaluation des stocks de HG, du DPR et de la CC.
 
-La Direction de la gestion des pêches du Pacifique de Pêches et Océans Canada (MPO) a demandé à la Direction des sciences de la région du Pacifique du MPO d'évaluer l'état des stocks de hareng du Pacifique de la Colombie-Britannique (C.-B.) en `r assess_yr` et de recommander des avis de récolte pour `r assess_yr + 1` sous la forme de PG mises à l'essai à l'aide de simulations afin d'orienter l'élaboration du `r assess_yr`/`r assess_yr + 1` Plan de gestion intégrée des pêches, le cas échéant.
-Les trajectoires estimées des stocks, l'état actuel des stocks pour `r assess_yr`, les options de la procédure de gestion et les recommandations sur les avis de récolte tirées de ces PG pour `r assess_yr + 1` reflètent les méthodes décrites dans @cleary2018 et, le cas échéant, les recommandations issues des analyses de l'ESG 2018, 2019 et 2020 susmentionnées (Section «\nameref{sec:harv-opts}»).
+1. L’évaluation du stock de 2021 comprend
+une mise à jour des recommandations des procédures de gestion pour les régions d’évaluation des stocks du DPR et de la CC [@dfo2021c], et
+met en œuvre les recommandations des procédures de gestion des années précédentes pour les régions d’évaluation des stocks du DG et de la COIV.
 
-La présente réponse des Sciences résulte du processus de réponse des Sciences qui s'est tenu le 15 septembre 2021 sur `r rmarkdown::metadata$title`.
+Les procédures de gestion ne sont pas mises à jour pour HG étant donné que les mesures de gestion visant à soutenir 
+le rétablissement à long terme du stock de hareng de HG sont en cours d’élaboration dans le cadre du 
+plan de rétablissement.
+
+Cette évaluation du stock de 2022 comprend
+les recommandations des procédures de gestion pour le DPR, la CC, le DG et la COIV,
+issues de la mise à jour du conditionnement du modèle opérationnel du hareng du Pacifique [@benson2022] à l’aide 
+des dernières données historiques sur les stocks et les pêches de `r major_start_yr` à 2021.
+Les options de PRS présentées pour la première fois dans @dfo2022 sont incluses pour
+soutenir la sélection des PRS propres aux stocks
+destinés à la mise en œuvre du PGIP 2022-2023.
+Les mesures de gestion visant à soutenir le rétablissement à long terme du stock de hareng de Haida Gwaii,
+y compris les objectifs de rétablissement et les PRS,
+sont documentées dans l’ébauche du
+plan de rétablissement du hareng de Haida Gwaii.\footnote{\label{fn:rebuild}
+Haida Gwaii 'íináang | iinang Pacific Herring:
+An ecosystem overview and ecosystem-based rebuilding plan.
+Draft consultation period fall 2022.}
+
+La Direction de la gestion des pêches de la région du Pacifique de Pêches et Océans Canada (MPO) a
+demandé à la Direction des sciences de la région du Pacifique du MPO d’évaluer l’état des
+stocks de hareng du Pacifique en Colombie-Britannique en `r assess_yr` et
+propose des avis de récolte pour `r assess_yr + 1`
+sous la forme de procédures de gestion testées par simulation pour rendre compte de l’élaboration de
+du PGIP `r assess_yr`/`r assess_yr + 1`, le cas échéant.
+La trajectoire estimée des stocks,
+l’état actuel des stocks pour `r assess_yr`,
+les options de procédure de gestion et
+les avis sur les récolte offerts par ces procédures de gestion pour `r assess_yr + 1`
+reflètent les méthodes de @cleary2018 et @benson2022 et,
+le cas échéant,
+les recommandations issues des analyses des ESG de 2018, 2019, 2020 et 2021 susmentionnées
+(section «\nameref{sec:harv-opts}»).
+
+<!-- Mandatory last paragraph in this section -->
+Cette réponse des Sciences découle du processus de réponse des Sciences du
+15 septembre `r assess_yr` sur le `r rmarkdown::metadata$title`.
