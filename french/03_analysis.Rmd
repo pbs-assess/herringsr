@@ -156,7 +156,7 @@ afin d’inclure les données de la saison `r this_season` de hareng (du 1 juill
 Veuillez noter que le présent rapport emploiera le terme «année» plutôt que «saison» du hareng,
 et que `r assess_yr` fait donc référence à la saison `r this_season` du hareng du Pacifique.
 
-## Données sur les prises
+### Données sur les prises
 
 Aux fins de l’évaluation des stocks,
 les données sur les prises sont résumées par type d’engin, comme le décrivent le
@@ -281,7 +281,7 @@ En `r assess_yr`, les observations locales ont été fournies par
 les participants des Premières Nations côtières pour la plupart des zones.
 Les descriptions suivantes ont été fournies par des contributeurs des Premières Nations.
 
-## Haida Gwaii
+### Haida Gwaii
 
 Le stock de l’inlet Selwyn montre une tendance à la baisse
 depuis au moins dix ans.
@@ -548,7 +548,7 @@ Nous incluons également la biomasse totale estimée et la biomasse reproductric
 chaque zone d’évaluation des stocks (figure \@ref(fig:biomass-total-biomass));
 ces tendances sont présentées en utilisant des estimations médianes a posteriori.
 
-## Haida Gwaii
+### Haida Gwaii
 
 La biomasse reproductrice estimée a atteint son niveau le plus bas à la fin des années 1960, ce qui était prédit
 par un faible recrutement estimé et une forte mortalité naturelle estimée 
@@ -803,7 +803,7 @@ de `r major_start_yr` à 2021.
 Les procédures de gestion ne sont pas prévues pour HG, car
 ce processus est désormais mené dans le cadre du plan de rétablissement.
 
-## Haida Gwaii
+### Haida Gwaii
 
 Le faible état de la biomasse du stock de HG a persisté
 de 2000 à 2018 environ
