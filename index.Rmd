@@ -1,31 +1,31 @@
 ---
-# title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2022 and forecast for 2023"
-# title_short: "Pacific Herring status in 2022 and forecast for 2023"
-# title_other: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique: État en 2022 et prévisions pour 2023"
-title: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique: État en 2022 et prévisions pour 2023"
-title_short: "État du hareng du Pacifique en 2022 et prévisions pour 2023"
-title_other: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2022 and forecast for 2023"
+title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2022 and forecast for 2023"
+title_short: "Pacific Herring status in 2022 and forecast for 2023"
+title_other: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique: État en 2022 et prévisions pour 2023"
+# title: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique: État en 2022 et prévisions pour 2023"
+# title_short: "État du hareng du Pacifique en 2022 et prévisions pour 2023"
+# title_other: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2022 and forecast for 2023"
 work_done_year: 2022
-# work_done_month: December
-work_done_month: Décembre
+work_done_month: December
+# work_done_month: Décembre
 report_number: 46
-# isbn: 978-0-660-45602-7
-isbn: 978-0-660-45603-4
+isbn: 978-0-660-45602-7
+# isbn: 978-0-660-45603-4
 approver: |
   Andrew Thomson\
-  Directeur régionale
-# Regional Director
+  Regional Director
+# Directeur régionale
 approval_year: 2022
-# approval_month: September
-approval_month: Septembre
+approval_month: September
+# approval_month: Septembre
 approval_day: 20
-# branch: Science Branch
-# region: Pacific Region
-branch: Secteur des sciences
-region: Région du Pacifique
+branch: Science Branch
+region: Pacific Region
+# branch: Secteur des sciences
+# region: Région du Pacifique
 output:
   csasdown:::sr_pdf:
-    french: true
+    french: false
     prepub: false
     copy_sty: true
     line_nums: false
@@ -36,8 +36,8 @@ type: sr
 knit: bookdown::render_book
 site: bookdown::bookdown_site
 link-citations: true
-# bibliography: bib/refs.bib
-bibliography: bib/refs_fr.bib
+bibliography: bib/refs.bib
+# bibliography: bib/refs_fr.bib
 lot: true
 lof: true
 header-includes:
