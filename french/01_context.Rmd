@@ -38,7 +38,7 @@ pour toutes les régions d’évaluation des stocks inclus dans la présente ét
 Cette évaluation intègre les nouveaux avis scientifiques sur
 le choix des points de référence supérieurs du stock (PRS)
 pour les quatre principales régions d’évaluation des stocks du hareng du Pacifique (DPR, CC, DG et COIV).
-Une analyse des options a été réalisée en 2022 [@dfo2022] et
+Une analyse des options a été réalisée en 2022 [@dfo2022a] et
 la mise en œuvre des PRS se fera par le biais du 
 Plan de gestion intégrée de la pêche (PGIP) 2022-2023.
 Pour appuyer les consultations en cours,
@@ -47,7 +47,7 @@ cinq options de PRS sont présentées pour le DPR, la CC, le DG et la COIV
 Pour ces quatre stocks,
 nous mettons également à jour le conditionnement du modèle opérationnel du hareng du Pacifique [@benson2022]
 en incluant les données sur les stocks et les pêches de `r major_start_yr` à 2021.
-Ces mises à jour apparaissent pour la première fois dans @dfo2022.
+Ces mises à jour apparaissent pour la première fois dans @dfo2022a.
 Les évaluations des procédures de gestion présentées dans les tableaux des options de récolte 
 reflètent les dernières mises à jour du modèle opérationnel.
 
@@ -77,7 +77,7 @@ Cette évaluation du stock de 2022 comprend
 les recommandations des procédures de gestion pour le DPR, la CC, le DG et la COIV,
 issues de la mise à jour du conditionnement du modèle opérationnel du hareng du Pacifique [@benson2022] à l’aide 
 des dernières données historiques sur les stocks et les pêches de `r major_start_yr` à 2021.
-Les options de PRS présentées pour la première fois dans @dfo2022 sont incluses pour
+Les options de PRS présentées pour la première fois dans @dfo2022a sont incluses pour
 soutenir la sélection des PRS propres aux stocks
 destinés à la mise en œuvre du PGIP 2022-2023.
 Les mesures de gestion visant à soutenir le rétablissement à long terme du stock de hareng de Haida Gwaii,

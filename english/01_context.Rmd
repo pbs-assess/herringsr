@@ -39,7 +39,7 @@ for all SARs herein.
 This assessment incorporates new science advice on
 choice of upper stock reference (USR) points
 for four Pacific Herring major SARs (PRD, CC, SoG, and WCVI).
-An analysis of options was completed in 2022 [@dfo2022] and
+An analysis of options was completed in 2022 [@dfo2022a] and
 implementation of USRs will occur through the 
 2022/23 Integrated Fisheries Management Plan (IFMP).
 To support on-going consultations,
@@ -48,7 +48,7 @@ five USR options are presented for PRD, CC, SoG and WCVI
 For these four stocks
 we also update conditioning of the herring OM [@benson2022]
 by including stock and fishery data from `r major_start_yr` to 2021.
-These updates first appear in @dfo2022.
+These updates first appear in @dfo2022a.
 MP evaluations presented in the harvest option tables 
 reflect the latest OM updates.
 
@@ -78,7 +78,7 @@ This 2022 stock assessment includes
 MP recommendations for PRD, CC, SoG, and WCVI,
 derived by updating herring OM conditioning [@benson2022] using 
 the latest historic stock and fishery data from `r major_start_yr` to 2021.
-USR options first presented in @dfo2022 are included to
+USR options first presented in @dfo2022a are included to
 support selection of stock-specific USRs
 for implementation through the 2022/23 IFMP.
 Management measures to support long-term recovery of HG herring,

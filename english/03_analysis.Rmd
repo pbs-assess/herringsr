@@ -508,7 +508,7 @@ implemented as biomass objectives in simulation analyses for
 WCVI and SoG in 2018 [@dfo2019a], and then
 HG, PRD, and CC in 2019 [@dfo2019c].
 An analysis of USR options was undertaken in 2022 with
-results presented in @dfo2022.
+results presented in @dfo2022a.
 Five USR options were evaluated:
 
 1. Average spawning biomass during a productive period
@@ -868,10 +868,10 @@ high biomass levels [@kronlund2017].
 In the summer of 2022, we updated the conditioning of the OM
 for PRD with 2021 spawn, catch, and biological data.
 We re-ran MSE simulations to generate updated probability values for MPs
-presented in 2019 [@dfo2020a] and 2020 [@dfo2021].
-These latest MP evaluations also appear in @dfo2022.
+presented in 2019 [@dfo2020a] and 2020 [@dfo2021a].
+These latest MP evaluations also appear in @dfo2022a.
 No new MPs were included,
-however probability metrics for the five USRs options [@dfo2022]
+however probability metrics for the five USRs options [@dfo2022a]
 were estimated and have been added to the harvest options tables.
 <!-- TODO-: Make %'s auto update.JC: Defer until after SR is submitted-->
 Updated closed-loop feedback simulations for PRD show that
@@ -910,9 +910,9 @@ most recent two years (Figure \@ref(fig:storyboard-cc)a).
 
 In the summer of 2022, we updated the conditioning of the MSE operating model
 for CC with 2021 spawn, catch, and biological data.
-These latest MP evaluations also appear in @dfo2022.
+These latest MP evaluations also appear in @dfo2022a.
 No new MPs were included however probability metrics for the five USRs options 
-[@dfo2022] were estimated and have been added to the harvest options tables.
+[@dfo2022a] were estimated and have been added to the harvest options tables.
 <!-- TODO-: Make %'s auto update.JC: Defer until after SR is submitted-->
 The updated simulations show that MPs with harvest rates at 5% and 10% 
 maintain spawning biomass above the LRP with 81 to 92% probability over all 

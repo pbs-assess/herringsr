@@ -503,7 +503,7 @@ mis en œuvre comme objectifs de biomasse dans les analyses de simulation pour
 la COIV et le DG en 2018 [@dfo2019a], puis
 pour HG, le DPR et la CC en 2019 [@dfo2019c].
 Une analyse des options de PRS a été entreprise en 2022 avec
-les résultats présentés dans @dfo2022.
+les résultats présentés dans @dfo2022a.
 Cinq options de PRS ont été évaluées:
 
 1. Biomasse reproductrice moyenne pendant une période productive
@@ -860,10 +860,10 @@ des niveaux élevés de biomasse [@kronlund2017].
 Au cours de l’été 2022, nous avons mis à jour le conditionnement du modèle opérationnel
 pour le DPR avec les données de ponte, les données sur les prises et les données biologiques de 2021.
 Nous avons réexécuté les simulations ESG pour générer des valeurs de probabilité actualisées pour les procédures de gestion
-présentées en 2019 [@dfo2020a] et 2020 [@dfo2021].
-Ces dernières évaluations des procédures de gestion figurent également dans @dfo2022.
+présentées en 2019 [@dfo2020a] et 2020 [@dfo2021a].
+Ces dernières évaluations des procédures de gestion figurent également dans @dfo2022a.
 Aucune nouvelle procédure de gestion n’a été incluse,
-mais les mesures de probabilité pour les cinq options de PRS [@dfo2022]
+mais les mesures de probabilité pour les cinq options de PRS [@dfo2022a]
 ont été estimées et ont été ajoutées aux tableaux des options de récolte.
 <!-- TODO-: Make %'s auto update.JC: Defer until after SR is submitted-->
 Les simulations de rétroaction en boucle fermée actualisées pour le DPR montrent que
@@ -902,9 +902,9 @@ les années sauf les deux dernières (figure \@ref(fig:storyboard-cc)a).
 
 Au cours de l’été 2022, nous avons mis à jour le conditionnement du modèle opérationnel de l’ESG
 pour la côte centrale avec les données sur le frai et les prises, et les données biologiques de 2021.
-Ces dernières évaluations des procédures de gestion figurent également dans @dfo2022.
+Ces dernières évaluations des procédures de gestion figurent également dans @dfo2022a.
 Aucune nouvelle procédure de gestion n’a été incluse, mais les mesures de probabilité pour les cinq options de PRS
-[@dfo2022] ont été estimées et ont été ajoutées aux tableaux des options de récolte.
+[@dfo2022a] ont été estimées et ont été ajoutées aux tableaux des options de récolte.
 <!-- TODO-: Make %'s auto update.JC: Defer until after SR is submitted-->
 Les simulations mises à jour montrent que les procédures de gestion avec des taux de récolte de 5% et 10% 
 maintiennent la biomasse reproductrice au-dessus du point de référence limite (PRL) selon une probabilité de 81% à 92% sur 
