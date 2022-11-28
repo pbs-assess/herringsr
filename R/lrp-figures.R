@@ -142,6 +142,7 @@ get_lrp_data <- function(models,
   reg_names_short[reg_names_short == "SoG"] <- "SOG"
   # Set factor levels and sort by region and year
   res <- res %>%
+    filter(Year %in% yrs) %>%
     mutate(
       Region = factor(x = Region, levels = reg_names_long),
       Reg = ifelse(Reg == "SoG", "SOG", Reg),
@@ -215,7 +216,7 @@ fig_3 <- ggplot(data = lrp_dat, mapping = aes(x = Year)) +
     labels = seq(from = 1950, to = 2020, by = 10)
   ) +
   facet_wrap(~Reg, scales = "free_y", ncol = 1, strip.position = "right") +
-  labs(y = "Spawning biomass production (1,000 t)") +
+  labs(y = "Surplus production (1,000 t)") +
   scale_fill_grey(start = 1, end = 0) +
   guides(fill = "none", shape = "none")
 
@@ -258,10 +259,7 @@ fig_4 <- ggplot(
   guides(color = "none") +
   expand_limits(x = 0) +
   facet_wrap(~Reg, scales = "free", ncol = 2) +
-  labs(
-    x = "Spawning biomass (1,000 t)",
-    y = "Spawning biomass production (1,000 t)"
-  )
+  labs(x = "Spawning biomass (1,000 t)", y = "Surplus production (1,000 t)")
 
 # Save as PNG
 ggsave(file.path(ms_out, "Figure4.png"), plot = fig_4, dpi = 600,
