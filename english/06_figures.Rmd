@@ -46,6 +46,18 @@ plot_catch(
   xlim = c(recent_catch_yr, major_end_yr),
   translate = french
 )
+# For SISCAH res-doc
+gear_4 <- major_catch %>%
+  mutate(gear = case_when(gear != "Other" ~ gear,
+                       gear == "Other" & year <1970 ~ "Reduction",
+                       gear == "Other" & year > 1969 ~ "Food and Bait"))
+
+catch_plot <- plot_catch(
+  df = gear_4,
+  xlim = c(special_start_yr, major_end_yr),
+  translate = french
+)
+ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("catch_seine.png")),  width=12, height=6, dpi=300)
 ```
 
 (ref:major-incidental-cap) Incidental Pacific Herring mortality
@@ -172,12 +184,17 @@ Note: l'indice de frai n'est pas mis à l'échelle
 par le paramètre d'échelle de l'enquête sur le frai $q$.
 
 ```{r major-spawn-index, fig.asp=ifelse(french, 1.25, 1.25), fig.cap = ifelse(french, "(ref:major-spawn-index-cap-fr)", "(ref:major-spawn-index-cap)")}
-plot_spawn_ind(
+major_spawn_index <- plot_spawn_ind(
   df = major_surv,
   new_surv_yr = new_surv_yr,
   yr_range = c(major_start_yr, major_end_yr),
   translate = french
 )
+
+major_spawn_index
+
+# For SISCAH res-doc
+ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("index.png")),  width=12, height=6, dpi=300)
 ```
 
 (ref:coastwide-biomass-catch-cap) Spawning biomass and catch
@@ -673,7 +690,7 @@ plot_d_single <- plot_biomass_catch(
   y_axis_tick_label_size = 20,
   y_axis_label_newline_length = 40,
   annot = region_abbreviation,
-  label_points = FALSE,
+  label_points = TRUE,
   translate = french) 
 ggsave(filename = here("figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
 ```
