@@ -25,21 +25,21 @@ region: Pacific Region
 # region: Région du Pacifique
 output:
   csasdown:::sr_pdf:
-    french: false
-    prepub: false
-    copy_sty: true
-    line_nums: false
+    french: FALSE
+    prepub: FALSE
+    copy_sty: TRUE
+    line_nums: FALSE
     line_nums_mod: 1
-    draft_watermark: false
+    draft_watermark: FALSE
     highlight: tango
 type: sr
 knit: bookdown::render_book
 site: bookdown::bookdown_site
-link-citations: true
+link-citations: TRUE
 bibliography: bib/refs.bib
 # bibliography: bib/refs_fr.bib
-lot: true
-lof: true
+lot: TRUE
+lof: TRUE
 header-includes:
   - \usepackage{needspace} \usepackage{afterpage}
 ---
