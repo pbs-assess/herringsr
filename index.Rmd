@@ -131,14 +131,17 @@ cat_no <- paste0(
 
 ```{r load-libraries, cache=FALSE}
 library(tidyverse)
+library(reshape2)
 library(kableExtra)
 library(here)
 library(rosettafish)
 library(csasdown)
 library(gfutilities)
 library(gfiscamutils)
+library(ggrepel)
 library(herringutils)
 library(gcookbook)#added for stacked figures
+library(zoo)
 
 assess_yr <- 2022
 
