@@ -1414,7 +1414,7 @@ wa_WCVI <- read_csv("../../DataSummaries/Summaries/fleetWtAgeWCVI.csv")
 
 wa_graph <- function(df) {
   plot_wa2(
-  df = df,
+  df = wa_SOG,
   xlim = c(1951, 2022),
   ylim = wa_ylim,
   n_roll = 5,
@@ -1422,9 +1422,18 @@ wa_graph <- function(df) {
 )
 }
 wa_HGplot <- wa_graph(wa_HG)
-ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageHG.png")),  width=12, height=6, dpi=300)
+ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageHG.png")),  width=8, height=10.5, dpi=300)
 
 wa_SOGplot <- wa_graph(wa_SOG)
 ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageSOG.png")),  width=8, height=10.5, dpi=300)
+
+wa_PRDplot <- wa_graph(wa_PRD)
+ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_agePRD.png")),  width=8, height=10.5, dpi=300)
+
+wa_CCplot <- wa_graph(wa_CC)
+ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageCC.png")),  width=8, height=10.5, dpi=300)
+
+wa_WCVIplot <- wa_graph(wa_WCVI)
+ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageWCVI.png")),  width=8, height=10.5, dpi=300)
 
 ```
