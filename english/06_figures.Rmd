@@ -131,7 +131,7 @@ tels que le filet maillant.
 La classe âge-`r age_plus` comprend les poissons âgés de `r age_plus` et plus.
 Les axes verticaux sont rognés de `r f(wa_ylim[1], 2)` à `r f(wa_ylim[2], 2)` kg.
 
-```{r major-wa, fig.asp=ifelse(FALSE, 1.1, 1.15), fig.cap = ifelse(FALSE, "(ref:major-wa-cap-fr)", "(ref:major-wa-cap)")}
+```{r major-wa, fig.asp=ifelse(french, 1.1, 1.15), fig.cap = ifelse(french, "(ref:major-wa-cap-fr)", "(ref:major-wa-cap)")}
 plot_wa(
   df = major_wa,
   circle_age = age_highlight,
@@ -140,17 +140,6 @@ plot_wa(
   n_roll = nRollWA,
   translate = french
 )
-
-wa2 <- plot_wa2(
-  df = major_wa,
-  circle_age = age_highlight,
-  xlim = c(major_start_yr, major_end_yr),
-  ylim = wa_ylim,
-  n_roll = nRollWA,
-  translate = FALSE
-)
-
-ggsave(wa2, filename = here("../SISCAH_resDoc2023/figure", paste0("weight_age3.png")),  width=12, height=6, dpi=300)
 
 ```
 
@@ -1413,4 +1402,29 @@ plot_proj_biomass_density(
   refpt = "X03B0",
   translate = french
 )
+```
+
+```{r major-wa-res-doc, fig.asp=ifelse(FALSE, 1.1, 1.15), fig.cap = ifelse(FALSE, "(ref:major-wa-cap-fr)", "(ref:major-wa-cap)")}
+
+wa_HG <- read_csv("../../DataSummaries/Summaries/fleetWtAgeHG.csv") 
+wa_PRD <- read_csv("../../DataSummaries/Summaries/fleetWtAgePRD.csv") 
+wa_CC <- read_csv("../../DataSummaries/Summaries/fleetWtAgeCC.csv")
+wa_SOG <- read_csv("../../DataSummaries/Summaries/fleetWtAgeSOG.csv") 
+wa_WCVI <- read_csv("../../DataSummaries/Summaries/fleetWtAgeWCVI.csv")
+
+wa_graph <- function(df) {
+  plot_wa2(
+  df = df,
+  xlim = c(1951, 2022),
+  ylim = wa_ylim,
+  n_roll = 5,
+  translate = FALSE
+)
+}
+wa_HGplot <- wa_graph(wa_HG)
+ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageHG.png")),  width=12, height=6, dpi=300)
+
+wa_SOGplot <- wa_graph(wa_SOG)
+ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageSOG.png")),  width=8, height=10.5, dpi=300)
+
 ```
