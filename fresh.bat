@@ -7,6 +7,7 @@ del HerringSR.pdf
 del HerringSR.Rmd
 del HerringSR.tex
 del HerringSR.upa
+del HerringSR.upb
 del HerringSR.utf8.md
 del texput.log
 
