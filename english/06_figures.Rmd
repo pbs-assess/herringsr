@@ -1406,8 +1406,7 @@ plot_proj_biomass_density(
 )
 ```
 
-```{r major-wa-res-doc, fig.asp=ifelse(FALSE, 1.1, 1.15), fig.cap = ifelse(FALSE, "(ref:major-wa-cap-fr)", "(ref:major-wa-cap)")}
-
+```{r major-wa-res-doc, fig.asp=ifelse(FALSE, 1.1, 1.15), fig.cap = ifelse(FALSE, "(ref:major-wa-cap-fr)", "(ref:major-wa-cap)"), eval=FALSE}
 wa_HG <- read_csv(here("../DataSummaries/Summaries/fleetWtAgeHG.csv")) 
 wa_PRD <- read_csv(here("../DataSummaries/Summaries/fleetWtAgePRD.csv")) 
 wa_CC <- read_csv(here("../DataSummaries/Summaries/fleetWtAgeCC.csv"))
@@ -1441,7 +1440,7 @@ ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageWCVI.png
 
 ```
 
-```{r major-pa-res-doc, fig.asp=ifelse(french, 1.2, 1.25), fig.cap = ifelse(french, "(ref:major-pa-cap-fr)", "(ref:major-pa-cap)")}
+```{r major-pa-res-doc, fig.asp=ifelse(french, 1.2, 1.25), fig.cap = ifelse(french, "(ref:major-pa-cap-fr)", "(ref:major-pa-cap)"), eval=FALSE}
 
 pa_HG <- read_csv(here("../DataSummaries/Summaries/ageDataHG.csv")) 
 pa_SOG <- read_csv(here("../DataSummaries/Summaries/ageDataSOG.csv"))

@@ -41,7 +41,7 @@ bibliography: bib/refs.bib
 lot: TRUE
 lof: TRUE
 header-includes:
-  - \usepackage{needspace} 
+  - \usepackage{needspace}
   - \usepackage{afterpage}
 ---
 
