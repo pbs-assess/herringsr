@@ -44,10 +44,6 @@ header-includes:
   - \usepackage{needspace} 
   - \usepackage{afterpage}
 ---
-```{r
-#packageurl <- "http://cran.r-project.org/src/contrib/Archive/needspace/XXXX_A.B.C.tar.gz"
-#install.packages(packageurl, contriburl=NULL, type="source")
-}
 
 \sloppy
 
@@ -146,7 +142,7 @@ library(gfutilities)
 library(gfiscamutils)
 library(ggrepel)
 library(herringutils)
-library(gcookbook) #added for stacked figures
+library(gcookbook)
 library(readr)
 library(zoo)
 
