@@ -1413,7 +1413,7 @@ wa_PRD <- read_csv(here("../DataSummaries/Summaries/fleetWtAgePRD.csv"))
 wa_CC <- read_csv(here("../DataSummaries/Summaries/fleetWtAgeCC.csv"))
 wa_SOG <- read_csv(here("../DataSummaries/Summaries/fleetWtAgeSOG.csv")) 
 wa_WCVI <- read_csv(here("../DataSummaries/Summaries/fleetWtAgeWCVI.csv"))
-if(FALSE){
+
 wa_graph <- function(df) {
   plot_wa_by_gear(
   df = df,
@@ -1423,7 +1423,7 @@ wa_graph <- function(df) {
   translate = FALSE
 )
 }
-}
+
 wa_HGplot <- wa_graph(wa_HG)
 ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageHG.png")),  width=8, height=10.5, dpi=300)
 
