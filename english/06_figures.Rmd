@@ -57,21 +57,21 @@ catch_plot <- plot_catch(
   xlim = c(special_start_yr, major_end_yr),
   translate = french
 )
-ggsave(filename = here("../herringsr_figures/", paste0("catchFullTimeSeries.png")),  width=7, height=9, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("catchFullTimeSeries.png")),  width=7, height=9, dpi=300)
 
 catch_plot_pre70 <- plot_catch(
   df = gear_4,
   xlim = c(special_start_yr, 1969), # major_end_yr),
   translate = french
 )
-ggsave(filename = here("../herringsr_figures/", paste0("catch_pre1970.png")),  width=7, height=9, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("catch_pre1970.png")),  width=7, height=9, dpi=300)
 
 catch_plot_post69 <- plot_catch(
   df = gear_4,
   xlim = c(1970, major_end_yr),
   translate = french
 )
-ggsave(filename = here("../herringsr_figures/", paste0("catchShortTimeSeries.png")),  width=7, height=9, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("catchShortTimeSeries.png")),  width=7, height=9, dpi=300)
 ```
 
 (ref:major-incidental-cap) Incidental Pacific Herring mortality
@@ -209,7 +209,7 @@ major_spawn_index <- plot_spawn_ind(
 major_spawn_index
 
 # For SISCAH res-doc
-ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("index.png")),  width=12, height=6, dpi=300)
+# ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("index.png")),  width=12, height=6, dpi=300)
 ```
 
 (ref:coastwide-biomass-catch-cap) Spawning biomass and catch
@@ -464,7 +464,7 @@ storyboard_multi_ppt_h <- cowplot::plot_grid(
                    ncol = 3,
                    align = "h"
                    )
-ggsave(filename = here("../herringsr_figures/", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
 shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    plot_b_multi_x_up,
                    plot_c_multi,
@@ -472,7 +472,7 @@ shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    ncol = 2,
                    align = "v"
                    )
-ggsave(filename = here("../herringsr_figures/", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=5, dpi=300)
 plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                    major_models[[model_ind]],
                                    surv_type,
@@ -489,7 +489,7 @@ plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_reg
                                    show_x_axis = TRUE,
                                    x_axis_position = "bottom",
                                    translate = french)
-ggsave(filename = here("../herringsr_figures/", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
 
 plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
@@ -506,7 +506,7 @@ plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 prop_prod = 0.75,
                                 prod_yrs = 1975:1985,
                                 translate = french) 
-ggsave(filename = here("../herringsr_figures/", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=5, dpi=300)
 ```
 
 <!-- Prince Rupert District Storyboard -->
@@ -664,7 +664,7 @@ storyboard_multi_ppt_h <- cowplot::plot_grid(
                    ncol = 3,
                    align = "h"
                    )
-ggsave(filename = here("../herringsr_figures/", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
 shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    plot_b_multi_x_up,
                    plot_c_multi,
@@ -672,7 +672,7 @@ shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    ncol = 2,
                    align = "v"
                    )
-ggsave(filename = here("../herringsr_figures/", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=5, dpi=300)
 
 plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                    major_models[[model_ind]],
@@ -690,7 +690,7 @@ plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_reg
                                    show_x_axis = TRUE,
                                    x_axis_position = "bottom",
                                    translate = french)
-ggsave(filename = here("../herringsr_figures/", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
 plot_d_single <- plot_biomass_catch(
   major_models[[model_ind]],
   catch_df = ct,
@@ -707,7 +707,7 @@ plot_d_single <- plot_biomass_catch(
   annot = region_abbreviation,
   label_points = TRUE,
   translate = french) 
-ggsave(filename = here("../herringsr_figures/", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
 ```
 <!-- Central Coast Storyboard -->
 ```{r scaled-abundance-cc, fig.show = "hide", fig.asp = 1}
@@ -894,7 +894,7 @@ storyboard_multi_ppt_h <- cowplot::plot_grid(
                    ncol = 3,
                    align = "h"
                    )
-ggsave(filename = here("../herringsr_figures/", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
 shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    plot_b_multi_x_up,
                    plot_c_multi,
@@ -920,7 +920,7 @@ plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_reg
                                    show_x_axis = TRUE,
                                    x_axis_position = "bottom",
                                    translate = french)
-ggsave(filename = here("../herringsr_figures/", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
 plot_d_single <- plot_biomass_catch(
   major_models[[model_ind]],
   catch_df = ct,
@@ -937,7 +937,7 @@ plot_d_single <- plot_biomass_catch(
   annot = region_abbreviation,
   label_points = TRUE,
   translate = french) 
-ggsave(filename = here("../herringsr_figures/", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
 ```
 
 
@@ -1095,7 +1095,7 @@ storyboard_multi_ppt_h <- cowplot::plot_grid(
                    ncol = 3,
                    align = "h"
                    )
-ggsave(filename = here("../herringsr_figures/", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
 shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    plot_b_multi_x_up,
                    plot_c_multi,
@@ -1103,7 +1103,7 @@ shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    ncol = 2,
                    align = "v"
                    )
-ggsave(filename = here("../herringsr_figures/", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=5, dpi=300)
 
 plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                    major_models[[model_ind]],
@@ -1121,7 +1121,7 @@ plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_reg
                                    show_x_axis = TRUE,
                                    x_axis_position = "bottom",
                                    translate = french)
-ggsave(filename = here("../herringsr_figures/", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
 plot_d_single <- plot_biomass_catch(
   major_models[[model_ind]],
   catch_df = ct,
@@ -1138,7 +1138,7 @@ plot_d_single <- plot_biomass_catch(
   annot = region_abbreviation,
   label_points = TRUE,
   translate = french) 
-ggsave(filename = here("../herringsr_figures/", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
 ```
 
 <!-- West Coast of Vancouver Island Storyboard -->
@@ -1295,7 +1295,7 @@ storyboard_multi_ppt_h <- cowplot::plot_grid(
                    ncol = 3,
                    align = "h"
                    )
-ggsave(filename = here("../herringsr_figures/", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
 shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    plot_b_multi_x_up,
                    plot_c_multi,
@@ -1303,7 +1303,7 @@ shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    ncol = 2,
                    align = "v"
                    )
-ggsave(filename = here("../herringsr_figures/", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=5, dpi=300)
 
 plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                    major_models[[model_ind]],
@@ -1321,7 +1321,7 @@ plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_reg
                                    show_x_axis = TRUE,
                                    x_axis_position = "bottom",
                                    translate = french)
-ggsave(filename = here("../herringsr_figures/", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
 plot_d_single <- plot_biomass_catch(
   major_models[[model_ind]],
   catch_df = ct,
@@ -1340,7 +1340,7 @@ plot_d_single <- plot_biomass_catch(
   translate = french) 
 #folder "herringsr_figures" must exist at the same level 
 # as the herringsr folder for the next line to work.
-ggsave(filename = here("../herringsr_figures/", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
+# ggsave(filename = here("../herringsr_figures/", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
 ```
 
 
@@ -1423,21 +1423,20 @@ wa_graph <- function(df) {
 )
 }
 
-wa_HGplot <- wa_graph(wa_HG)
-ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageHG.png")),  width=8, height=10.5, dpi=300)
-
-wa_SOGplot <- wa_graph(wa_SOG)
-ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageSOG.png")),  width=8, height=10.5, dpi=300)
-
-wa_PRDplot <- wa_graph(wa_PRD)
-ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_agePRD.png")),  width=8, height=10.5, dpi=300)
-
-wa_CCplot <- wa_graph(wa_CC)
-ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageCC.png")),  width=8, height=10.5, dpi=300)
-
-wa_WCVIplot <- wa_graph(wa_WCVI)
-ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageWCVI.png")),  width=8, height=10.5, dpi=300)
-
+# wa_HGplot <- wa_graph(wa_HG)
+# ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageHG.png")),  width=8, height=10.5, dpi=300)
+# 
+# wa_SOGplot <- wa_graph(wa_SOG)
+# ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageSOG.png")),  width=8, height=10.5, dpi=300)
+# 
+# wa_PRDplot <- wa_graph(wa_PRD)
+# ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_agePRD.png")),  width=8, height=10.5, dpi=300)
+# 
+# wa_CCplot <- wa_graph(wa_CC)
+# ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageCC.png")),  width=8, height=10.5, dpi=300)
+# 
+# wa_WCVIplot <- wa_graph(wa_WCVI)
+# ggsave(filename = here("../SISCAH_resDoc2023/figure", paste0("weight_ageWCVI.png")),  width=8, height=10.5, dpi=300)
 ```
 
 ```{r major-pa-res-doc, fig.asp=ifelse(french, 1.2, 1.25), fig.cap = ifelse(french, "(ref:major-pa-cap-fr)", "(ref:major-pa-cap)"), eval=FALSE}
@@ -1459,19 +1458,18 @@ pa_graph <- function(df){
 )
 }
 
-pa_HGplot <- pa_graph(pa_HG)
-ggsave(filename = here("../herringsr_figures/", paste0("proportion_of_ageHG.png")),  width=8, height=10.5, dpi=300)
-
-pa_SOGplot <- pa_graph(pa_SOG)
-ggsave(filename = here("../herringsr_figures/", paste0("proportion_of_ageSOG.png")),  width=8, height=10.5, dpi=300)
-
-pa_PRDplot <- pa_graph(pa_PRD)
-ggsave(filename = here("../herringsr_figures/", paste0("proportion_of_agePRD.png")),  width=8, height=10.5, dpi=300)
-
-pa_CCplot <- pa_graph(pa_CC)
-ggsave(filename = here("../herringsr_figures/", paste0("proportion_of_ageCC.png")),  width=8, height=10.5, dpi=300)
-
-pa_WCVIplot <- pa_graph(pa_WCVI)
-ggsave(filename = here("../herringsr_figures/", paste0("proportion_of_ageWCVI.png")),  width=8, height=10.5, dpi=300)
-
+# pa_HGplot <- pa_graph(pa_HG)
+# ggsave(filename = here("../herringsr_figures/", paste0("proportion_of_ageHG.png")),  width=8, height=10.5, dpi=300)
+# 
+# pa_SOGplot <- pa_graph(pa_SOG)
+# ggsave(filename = here("../herringsr_figures/", paste0("proportion_of_ageSOG.png")),  width=8, height=10.5, dpi=300)
+# 
+# pa_PRDplot <- pa_graph(pa_PRD)
+# ggsave(filename = here("../herringsr_figures/", paste0("proportion_of_agePRD.png")),  width=8, height=10.5, dpi=300)
+# 
+# pa_CCplot <- pa_graph(pa_CC)
+# ggsave(filename = here("../herringsr_figures/", paste0("proportion_of_ageCC.png")),  width=8, height=10.5, dpi=300)
+# 
+# pa_WCVIplot <- pa_graph(pa_WCVI)
+# ggsave(filename = here("../herringsr_figures/", paste0("proportion_of_ageWCVI.png")),  width=8, height=10.5, dpi=300)
 ```
