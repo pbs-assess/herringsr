@@ -370,6 +370,9 @@ to a normal distribution ($\sim$ $N$(ln(0:2); 4:0)) to
 <!-- TODO: Use normal distribution function (i.e., \dNorm) -->
 prevent estimates of catch from exceeding estimated biomass.
 
+<!-- 1. Normal \dNorm{\mu}{\sigma^2}, -->
+<!-- where $\mu$ and $\sigma^2$ are the mean and variance, respectively, -->
+
 Sensitivity analysis indicate that the model is
 insensitive to changes in the penalty function parameters,
 indicating that the other likelihood components and
