@@ -2,11 +2,9 @@
 
 ## COVID-19 pandemic
 
-Unlike the past three years,
+Unlike the last three years,
 the COVID-19 pandemic did not impact
 the collection and analysis of biological data in 2023.
-Spawn surveys proceeded as usual in 2023,
-with dive surveys in all major SARs.
 
 ## Management strategy evaluation\label{sec:mse}
 
