@@ -376,13 +376,10 @@ conform to a Beverton-Holt stock-recruit function,
 1. Weakly constrain the log recruitment deviations
 to a normal distribution, and
 
+<!-- TODO: Use normal distribution function (i.e., \dNorm) and define ln-->
 1. Weakly constrain estimates of log fishing mortality
 to a normal distribution ($\sim$ $N$(ln(0:2); 4:0)) to
-<!-- TODO: Use normal distribution function (i.e., \dNorm) -->
 prevent estimates of catch from exceeding estimated biomass.
-
-<!-- 1. Normal \dNorm{\mu}{\sigma^2}, -->
-<!-- where $\mu$ and $\sigma^2$ are the mean and variance, respectively, -->
 
 Sensitivity analysis indicate that the model is
 insensitive to changes in the penalty function parameters,
@@ -412,7 +409,7 @@ The negative loglikelihood (ignoring the scaling constant)
 for the catch data is given by
 
 \begin{equation}\label{eq:ell-C}
-\ell_C = \sum_k\left[T_k \lognorm\left(\sigma_C\right) +
+\ell_C = \sum_k\left[T_k\lognorm\left(\sigma_C\right) +
 \frac{\sum_t\left(\eta_{k,t}\right)^2}{2\sigma_C^2}\right] 
 \end{equation}
 
