@@ -16,14 +16,14 @@ the components of the objective function that
 formulate the statistical criterion used to estimate model parameters.
 This section will not be included in the final document.
 
-A documented list of symbols used in model equations is given
-in Table \@ref(tab:variables).
+A documented list of symbols used in model equations
+is given in Table \@ref(tab:variables).
 The documentation presented here is a revised version of the
 \link{https://sites.google.com/site/iscamproject/}{iSCAM users guide}.
 Much of the text and many of the equations
 have been taken directly from this guide.
-Note that all the model equations are presented for a sex structured model
-with $S$ sexes.
+Note that all the model equations are presented
+for a sex structured model with $S$ sexes.
 Models can therefore be constructed with data
 for females only, for males and females, or with unsexed data.
 
@@ -154,7 +154,8 @@ unfished and fished conditions, respectively.
 \end{equation}
 
 Unfished spawning biomass $B_0$ and
-the recruitment compensation ratio $\kappa$ [@myers1999] are estimated by
+the recruitment compensation ratio $\kappa$ [@myers1999]
+are estimated by
   
 \begin{equation}\label{eq:B-0}
 B_0 = R_0\phi_B
@@ -178,8 +179,9 @@ the density-dependent term $\beta$ are given by
 \end{equation}
 
 These equations can then be simplified to the
-steady-state equilibrium recruitment $R_e$ needed to calculate 
-the equilibrium yield $C_e$ for a given fishing mortality rate $F_e$
+steady-state equilibrium recruitment $R_e$
+needed to calculate the equilibrium yield $C_e$
+for a given fishing mortality rate $F_e$
 <!-- TODO: Write something about phi_q? -->
   
 \begin{equation}\label{eq:R-e}
@@ -249,7 +251,8 @@ age-specific total mortality rate $Z_{t,a,s}$
 N_{t,a,s},\,\, B_{t,s},\,\, Z_{t,a,s}.
 \end{equation}
 
-Initial numbers-at-age in the first year (Equation \ref{eq:N-tas-init-1}) and
+Initial numbers-at-age in the first year
+(Equation \ref{eq:N-tas-init-1}) and
 annual recruits (Equation \ref{eq:N-tas-init-2})
 are treated as estimated parameters and
 used to initialize the numbers-at-age array
@@ -266,6 +269,7 @@ N_{t,a,s} = \frac{1}{S}\bar{R}e^{\omega_{t}};\quad
 a = \acute{a}.  
 \end{equation}
 
+<!-- TODO: These values should come from the model input files -->
 Vulnerability-at-age $v_{k,a}$ is assumed to be time-invariant and
 is modelled using a two-parameter logistic function (Equation \ref{eq:v-ka}).
 Annual fishing mortality for each gear $k$ in year $t$ is
@@ -276,7 +280,6 @@ minimum value of $-30.0$ and a maximum value of $3.0$.
 In arithmetic space, this corresponds to a
 minimum value of $9.36^{-14}$ and
 a maximum value of $20.01$ for annual fishing mortality rates.
-<!-- TODO: Automate these (and all other) values -->
 In years where there are no reported catches for a given fleet,
 no corresponding fishing mortality rate parameter is estimated,
 and the implicit assumption is there was no fishery that year:
@@ -295,7 +298,8 @@ where the spawning biomass is the product of
 numbers-at-age and mature biomass-at-age 
 (Equation \ref{eq:B-ts-state}).
 Total mortality rate is given by Equation \@ref(eq:Z-tas-state),
-and total catch (in weight) for each gear is given by Equation \@ref(eq:C-kt),
+and total catch (in weight) for each gear
+is given by Equation \@ref(eq:C-kt),
 assuming that both natural and fishing mortality occur
 simultaneously throughout the year.
 Sex-specifc numbers-at-age are propagated over time using
@@ -358,7 +362,8 @@ The penalty functions:
 1. Constrain the estimates of annual recruitment to
 conform to a Beverton-Holt stock-recruit function,
 
-1. Weakly constrain the log recruitment deviations to a normal distribution, and
+1. Weakly constrain the log recruitment deviations
+to a normal distribution, and
 
 1. Weakly constrain estimates of log fishing mortality
 to a normal distribution ($\sim$ $N$(ln(0:2); 4:0)) to
@@ -513,7 +518,9 @@ The conditional maximum likelihood estimate of the variance is given by
 \hat{\tau}^2=\frac{1}{\left(A-1\right)T}\sum^{T}_{t=1}\sum^{A}_{a=1}\eta_{t,a}^2.
 \end{equation}
 
-The negative loglikelihood evaluated at the conditional maximum likelihood estimate of the variance is given by
+The negative loglikelihood
+evaluated at the conditional maximum likelihood estimate of the variance
+is given by
 
 \begin{equation}\label{eq:ell-A}
 \ell_A = \left(A-1\right)T \lognorm\left(\hat{\tau}^2\right).
@@ -551,7 +558,8 @@ the normal density (ignoring the scaling constant)
 Equations \@ref(eq:delta-t) and \@ref(eq:delta-ell) are key for
 estimating unfished spawning stock biomass and
 recruitment compensation via the recruitment models. 
-The relationship between ($\alpha$, $\beta$) and ($B_0$, $\kappa$) is defined by 
+The relationship between ($\alpha$, $\beta$) and
+($B_0$, $\kappa$) is defined by 
 Equations \@ref(eq:alpha) and \@ref(eq:beta), where again
 $\alpha$ is the maximum juvenile survival rate,
 $\beta$ is the density effect on recruitment, and
@@ -579,7 +587,8 @@ f = \text{negative loglikelihoods} + \text{constraints} +
 + \text{survey priors} + \text{convergence penalties}.
 \end{multline}
   
-The purpose of this section is to completely document all of the components that make up the objective function.
+The purpose of this section is to completely document
+all of the components that make up the objective function.
 
 #### Negative loglikelihoods 
 
@@ -613,8 +622,9 @@ for the leading parameters defined in the control file
 (i.e., $ln(R_0)$, $h$, $ln(M)$, $ln(\bar{R})$, $ln(\ddot{R})$, $\rho$, and
 $\vartheta$). 
 
-All estimated selectivity parameters $\vec{\gamma_k}$ are estimated
-in log space and
+<!-- TODO: These values should come from the model input files -->
+All estimated selectivity parameters $\vec{\gamma_k}$
+are estimated in log space and
 have a minimum and maximum values of -5.0 and 5.0, respectively.
 These values are hard-wired into the code, but
 should be sufficiently large/small enough to
@@ -622,6 +632,7 @@ capture a wide range of selectivities.
 Estimated fishing mortality rates are also constrained (in log space)
 to have a minimum value of -30, and a maximum value of 3.0, also hard-wired. 
 
+<!-- TODO: These values should come from the model input files -->
 Log annual recruitment deviations are also constrained to
 have minimum and maximum values of -15.0 and 15.0 and
 there is an additional constraint to ensure the vector of deviations sums to 0.
@@ -640,11 +651,14 @@ for each of these parameters.
 Five distinct prior distributions can be implemented:
 
 <!-- TODO: a, b, and \sigma appear elsewhere; find different parameters? -->
-1. Uniform \dUnif{a}{b}, where $a$ and $b$ are the minima and maxima, respectively,
+1. Uniform \dUnif{a}{b},
+where $a$ and $b$ are the minima and maxima, respectively,
 
-1. Normal \dNorm{\mu}{\sigma^2}, where $\mu$ and $\sigma^2$ are the mean and variance, respectively,
+1. Normal \dNorm{\mu}{\sigma^2},
+where $\mu$ and $\sigma^2$ are the mean and variance, respectively,
 
-1. Lognormal \dLognorm{\mu}{\sigma^2}, where $\mu$ and $\sigma^2$ are the mean and variance, respectively,
+1. Lognormal \dLognorm{\mu}{\sigma^2},
+where $\mu$ and $\sigma^2$ are the mean and variance, respectively,
 
 1. Beta \dBeta{a}{b}, where $a$ and $b$ are the shape parameters, and 
 
