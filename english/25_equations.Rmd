@@ -73,8 +73,10 @@ age-specific vulnerability $v_a$ is given by an age-based logistic function
 (Equation \ref{eq:v-a}).
 
 \begin{equation}\label{eq:Phi}
-\Phi = \left(l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,
-  \acute{b}_s,\,\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k\right)
+\Phi = \left(
+l_{\infty,s},\,\acute{k}_s,\,t_{0,s},\,\acute{a}_s,\,\acute{b}_s,\,
+\dot{a}_s,\,\dot{\gamma}_s,\,\hat{a}_k,\,\hat{\gamma}_k
+\right)
 \end{equation}
 
 \begin{equation}\label{eq:l-as}
@@ -86,7 +88,9 @@ w_{a,s} = \acute{a}_s\left(l_{a,s}\right)^{\acute{b}_s}
 \end{equation}
 
 \begin{equation}\label{eq:v-a}
-v_a = \left(1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}\right)^{-1}
+v_a = \left(
+1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}
+\right)^{-1}
 \end{equation}
 
 The terms vulnerability and selectivity are
@@ -100,8 +104,9 @@ Fecundity-at-age $f_{a,s}$ is defined in terms of
 weight-at-age and an age-based logistic function
   
 \begin{equation}\label{eq:f-as}
-f_{a,s}=w_{a,s}\left(1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}
-                                 {\dot{\gamma}_s}\right)}\right)^{-1}.
+f_{a,s} = w_{a,s}\left(
+1+e^{\left(\frac{-\left(\dot{a}_s-a_s\right)}{\dot{\gamma}_s}\right)}
+\right)^{-1}.
 \end{equation}
 
 Survivorship for unfished and fished populations is 
@@ -215,10 +220,12 @@ $R_0$, $h$, and $M$ are the leading population parameters
 that define the overall scale and productivity of the population
 
 \begin{equation}\label{eq:Theta-catch}
-\Theta = \left(R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,
-  \vartheta^2,\,\rho,\,\Gamma_{k,t},\,
-  \{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
-  \{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}\right).
+\Theta = \left(
+R_0,\,h,\,M,\,\overline{R},\,\overline{R}_{\mli{init}},\,
+\vartheta^2,\,\rho,\,\Gamma_{k,t},\,
+\{\omega_t\}_{\acute{t}=1-A}^{\acute{t}=T},\,
+\{\omega_{\mli{init},t}\}_{t=\acute{t}-A}^{t=\acute{t}-1}
+\right).
 \end{equation}
 
 The variance components of the model are partitioned
@@ -258,7 +265,9 @@ are treated as estimated parameters and
 used to initialize the numbers-at-age array
 
 \begin{equation}\label{eq:N-tas-init-1}
-N_{t,a,s} = \frac{1}{S}\overline{R}_\mli{init}e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)};\quad
+N_{t,a,s} = 
+\frac{1}{S}\overline{R}_\mli{init}
+e^{\omega_{\mli{init},t}}e^{-M\left(a-1\right)};\quad
 \left(\acute{t}-A\right) < t < 1,\,\,
 \acute{a} \leq a \leq A
 \end{equation}
@@ -316,15 +325,17 @@ Z_{t,a,s} = M+\sum_{k=1}^K F_{k,t} v_{k,t,a,s}
 \end{equation}
 
 \begin{equation}\label{eq:C-kt}
-\hat{C}_{k,t} = \sum_{s=1}^S \sum_{a=\acute{a}}^A \frac {N_{t,a,s}w_{a,s}F_{k,t}
-v_{k,t,a,s} \left( 1-{e^{-Z_{t,a,s}}} \right) }{Z_{t,a,s}}^{\eta_t}
+\hat{C}_{k,t} =
+\sum_{s=1}^S \sum_{a=\acute{a}}^A\frac{N_{t,a,s}w_{a,s}F_{k,t}v_{k,t,a,s}
+\left( 1-{e^{-Z_{t,a,s}}}\right)}{Z_{t,a,s}}^{\eta_t}
 \end{equation}
 
 \begin{equation}\label{eq:N-tas-state}
 N_{t,a,s} = \begin{cases}
-\frac{\alpha E_{t-1}}{1+\beta E_{t-1}} e^{\left(\omega_t-0.5\tau^2\right)}, & a=\acute{a}\\
-N_{t-1,a-1,s} e^{\left(-Z_{t-1,a-1,s}\right)}, & \acute{a}<a<A\\
-N_{t-1,a,s} e^{\left(-Z_{t-1,a,s}\right)}, & a=A\\
+\frac{\alpha E_{t-1}}{1+\beta E_{t-1}}e^{\left(\omega_t-0.5\tau^2\right)}, &
+a = \acute{a}\\
+N_{t-1,a-1,s}e^{\left(-Z_{t-1,a-1,s}\right)}, & \acute{a}<a<A\\
+N_{t-1,a,s}e^{\left(-Z_{t-1,a,s}\right)}, & a = A\\
 \end{cases}.
 \end{equation}
 
@@ -387,7 +398,8 @@ It is assumed that measurement errors in catch observations are
 log-normally distributed, and the residuals given by:
 
 \begin{equation}\label{eq:eta-kt}
-\eta_{k,t} = \lognorm\left(C_{k,t} + o\right) - \lognorm\left(\hat{C}_{k,t} + o\right)
+\eta_{k,t} =
+\lognorm\left(C_{k,t} + o\right) - \lognorm\left(\hat{C}_{k,t} + o\right)
 \end{equation}
 
 where $o$ is a small constant (i.e., $e^{-10}$) to
@@ -400,7 +412,7 @@ The negative loglikelihood (ignoring the scaling constant)
 for the catch data is given by
 
 \begin{equation}\label{eq:ell-C}
-\ell_C = \sum_k\left[T_k \lognorm\left(\sigma_C\right)+
+\ell_C = \sum_k\left[T_k \lognorm\left(\sigma_C\right) +
 \frac{\sum_t\left(\eta_{k,t}\right)^2}{2\sigma_C^2}\right] 
 \end{equation}
 
@@ -422,7 +434,10 @@ adjusts numbers-at-age to correct for survey timing.
 Residuals between the observed and predicted relative abundance index is given by
 
 \begin{equation}\label{eq:epsilon-kt}
-\epsilon_{k,t} = \lognorm\left(I_{k,t}\right) - \lognorm\left(q_k\right)+\lognorm\left(V_{k,t}\right)
+\epsilon_{k,t} =
+\lognorm\left(I_{k,t}\right) -
+\lognorm\left(q_k\right) + 
+\lognorm\left(V_{k,t}\right)
 \end{equation}
 
 where $I_{k,t}$ is the observed relative abundance index, 
@@ -432,7 +447,9 @@ The catchability coefficient $q_k$ is evaluated at
 its conditional maximum likelihood estimate
 
 \begin{equation}\label{eq:q-k}
-q_k = \frac{1}{N_k}\sum_{t \in I_{k,t}} \lognorm\left(I_{k,t}\right) - \lognorm\left(V_{k,t}\right)
+q_k =
+\frac{1}{N_k}\sum_{t \in I_{k,t}} 
+\lognorm\left(I_{k,t}\right) - \lognorm\left(V_{k,t}\right)
 \end{equation}
 
 where $N_k$ is the number of relative abundance observations for index $k$
@@ -440,7 +457,9 @@ where $N_k$ is the number of relative abundance observations for index $k$
 The negative loglikelihood for relative abundance data is given by
 
 \begin{equation}\label{eq:ell-I}
-\ell_I = \sum_k \sum_{t \in I_{k,t}} \lognorm\left(\sigma_{k,t}\right)+\frac{\epsilon_{k,t}^2}{2\sigma_{k,t}^2}
+\ell_I =
+\sum_k \sum_{t \in I_{k,t}}
+\lognorm\left(\sigma_{k,t}\right)+\frac{\epsilon_{k,t}^2}{2\sigma_{k,t}^2}
 \end{equation}
 
 and the standard deviation $\sigma_{k,t}$ is calculated by
@@ -511,14 +530,18 @@ The residuals between the observed $p_{t,a}$ and
 predicted proportions $\hat{p}_{t,a}$ is given by
 
 \begin{equation}\label{eq:eta-ta}
-\eta_{t,a} = \lognorm\left(p_{t,a}\right) - \lognorm\left(\hat{p}_{t,a}\right)-\frac{1}{A}
-\sum^{A}_{a=1}\left[\lognorm\left(p_{t,a}\right) - \lognorm\left(\hat{p}_{t,a}\right)\right].
+\eta_{t,a} =
+\lognorm\left(p_{t,a}\right) - 
+\lognorm\left(\hat{p}_{t,a}\right) -
+\frac{1}{A}\sum^{A}_{a=1}\left[\lognorm\left(p_{t,a}\right) -
+\lognorm\left(\hat{p}_{t,a}\right)\right].
 \end{equation}
 
 The conditional maximum likelihood estimate of the variance is given by
 
 \begin{equation}\label{eq:tau-hat}
-\hat{\tau}^2=\frac{1}{\left(A-1\right)T}\sum^{T}_{t=1}\sum^{A}_{a=1}\eta_{t,a}^2.
+\hat{\tau}^2 = 
+\frac{1}{\left(A-1\right)T}\sum^{T}_{t=1}\sum^{A}_{a=1}\eta_{t,a}^2.
 \end{equation}
 
 The negative loglikelihood
@@ -555,7 +578,9 @@ The negative loglikelihood for the recruitment deviations is given by
 the normal density (ignoring the scaling constant)
   
 \begin{equation}\label{eq:delta-ell}
-\ell_{\delta} = nln\left(\tau\right) +\frac{\sum^{T}_{t=1} +k^{\delta_{t}^2}}{2\tau^2}.
+\ell_{\delta} =
+nln\left(\tau\right) +
+\frac{\sum^{T}_{t=1} + k^{\delta_{t}^2}}{2\tau^2}.
 \end{equation}
 
 Equations \@ref(eq:delta-t) and \@ref(eq:delta-ell) are key for
@@ -585,9 +610,11 @@ There are five distinct components that make up the
 objective function $f$ that is being minimized by iSCAM
 
 \begin{multline}\label{eq:f}
-f = \text{negative loglikelihoods} + \text{constraints} +
+f = \text{negative loglikelihoods} +
+\text{constraints} +
 \text{parameter priors}\\
-+ \text{survey priors} + \text{convergence penalties}.
++ \text{survey priors}
++ \text{convergence penalties}.
 \end{multline}
   
 The purpose of this section is to completely document
