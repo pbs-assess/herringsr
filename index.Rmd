@@ -77,8 +77,8 @@ opts_chunk$set(
   fig.width = fig_width,
   out.width = fig_out_width,
   echo = FALSE,
-  #  autodep = TRUE,
-  #  cache = TRUE,
+  # autodep = TRUE,
+  # cache = TRUE,
   cache.comments = FALSE,
   dev = fig_out_type,
   dpi = fig_dpi,
@@ -171,9 +171,9 @@ theme_set(herring_theme())
 ```
 
 ```{r output-options}
-keep_non_CC <- TRUE # set = FALSE if providing preliminary report to CC
+keep_non_CC <- TRUE # FALSE to provide preliminary CC report
 show_ic_figures <- TRUE # Show/hide incidental catch figures
-slides <- FALSE #set = TRUE if you want common figures in .png slide format in figures folder.
+slides <- FALSE # TRUE to save common figures as PNGs
 ```
 
 <!-- Distributions -->
