@@ -70,7 +70,7 @@ which describes observed length-at-age $l_{a,s}$ (Equation \ref{eq:l-as}).
 Mean weight-at-age $w_{a,s}$ is given by an allometric relationship
 (Equation \ref{eq:w-as}), and
 age-specific vulnerability $v_a$ is given by an age-based logistic function
-(Equation \ref{eq:v-a}).
+(Equation \ref{eq:v-a}):
 
 \begin{equation}\label{eq:Phi}
 \Phi = \left(
@@ -90,7 +90,7 @@ w_{a,s} = \acute{a}_s\left(l_{a,s}\right)^{\acute{b}_s}
 \begin{equation}\label{eq:v-a}
 v_a = \left(
 1+e^{\left(\frac{-\left(\hat{a}-a\right)}{\hat{\gamma}}\right)}
-\right)^{-1}
+\right)^{-1}.
 \end{equation}
 
 The terms vulnerability and selectivity are
@@ -112,7 +112,7 @@ f_{a,s} = w_{a,s}\left(
 Survivorship for unfished and fished populations is 
 defined by Equations \@ref(eq:iota-a-1) and \@ref(eq:iota-a-2), respectively,
 and it is assumed that all individuals ages $A$ and older
-(i.e., the plus group) have the same total mortality rate.
+(i.e., the plus group) have the same total mortality rate
 
 \begin{equation}\label{eq:iota-a-1}
 \iota_a = \begin{cases}
@@ -125,7 +125,7 @@ and it is assumed that all individuals ages $A$ and older
 \begin{equation}\label{eq:iota-a-2}
 \iota_a = \begin{cases}
 \frac{1}{S}, & a=\acute{a}\\
-\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}, & \acute{a}<a<A\\
+\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}, & \acute{a}<a<A.\\
 \frac{\hat{\iota}_{a-1,s}e^{-M-F_ev_{a-1,s}}}{1-e^{-M-F_e v_{a,s}}}, & a=A\\
 \end{cases}
 \end{equation}
@@ -210,7 +210,7 @@ This is accomplished numerically using a Newton-Raphson method
 where an initial guess for
 $F_\text{MSY}$ is set equal to $M$. 
 Given an estimate of $F_\text{MSY}$,
-other reference points such as $MSY$ and
+other reference points such as MSY and
 $B_\text{MSY}$ can be calculated.
 However, these reference points are not currently used
 in the Pacific Herring assessment.
@@ -395,7 +395,7 @@ in the following sections.
 ### Observed catch
 
 It is assumed that measurement errors in catch observations are
-log-normally distributed, and the residuals given by:
+log-normally distributed, and the residuals given by
 
 \begin{equation}\label{eq:eta-kt}
 \eta_{k,t} =
