@@ -171,9 +171,9 @@ theme_set(herring_theme())
 ```
 
 ```{r output-options}
-keep_non_CC <- TRUE # FALSE to provide preliminary CC report
+keep_non_CC <- TRUE     # FALSE to provide preliminary CC report
 show_ic_figures <- TRUE # Show/hide incidental catch figures
-slides <- FALSE # TRUE to save common figures as PNGs
+slides <- FALSE         # TRUE to save common figures as PNGs
 ```
 
 <!-- Distributions -->
