@@ -5,10 +5,11 @@
 This section contains Markov chain Monte Carlo (MCMC) diagnostics
 for the Pacific Herring statistical catch-age model
 in the Strait of Georgia major stock assessment region.
-The MCMC run had chain length `r n2w(mcmc_length)`
-with a sample taken every `r n2w(mcmc_samp_freq)` iterations (i.e., thinning).
-The first `r n2w(mcmc_burnin)` samples were discarded (i.e., burn-in),
-leaving `r n2w(mcmc_num_samples)` samples for posteriors.
+The MCMC run had chain length `r number_to_word(mcmc_length)`
+with a sample taken every `r number_to_word(mcmc_samp_freq)` iterations
+(i.e., thinning).
+The first `r number_to_word(mcmc_burnin)` samples were discarded (i.e., burn-in),
+leaving `r number_to_word(mcmc_num_samples)` samples for posteriors.
 This section will not be included in the final document.
 
 (ref:sog-priors-posts-cap) Strait of Georgia SAR:
