@@ -5,10 +5,10 @@
 This section contains Markov chain Monte Carlo (MCMC) diagnostics
 for the Pacific Herring statistical catch-age model
 in the Haida Gwaii major stock assessment region.
-The MCMC run had chain length `r f(mcmc_length)`
-with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration (i.e., thinning).
-The first `r f(mcmc_burnin)` samples were discarded (i.e., burn-in),
-leaving `r f(mcmc_num_samples)` samples for posteriors.
+The MCMC run had chain length `r n2w(mcmc_length)`
+with a sample taken every `r n2w(mcmc_samp_freq)` iterations (i.e., thinning).
+The first `r n2w(mcmc_burnin)` samples were discarded (i.e., burn-in),
+leaving `r n2w(mcmc_num_samples)` samples for posteriors.
 This section will not be included in the final document.
 
 (ref:hg-priors-posts-cap) Haida Gwaii SAR:

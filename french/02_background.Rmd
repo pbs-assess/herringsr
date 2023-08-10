@@ -1,7 +1,7 @@
 # Renseignements de base
 
-En Colombie-Britannique, le hareng du Pacifique est géré selon `r number_to_word(length(major_regions_short))` régions principales d’évaluation des stocks et
-`r number_to_word(length(minor_regions_short))` régions secondaires d’évaluation des stocks 
+En Colombie-Britannique, le hareng du Pacifique est géré selon `r length(major_regions_short)` régions principales d’évaluation des stocks et
+`r length(minor_regions_short)` régions secondaires d’évaluation des stocks 
 (SARs; figure \@ref(fig:bc-map)).
 Les régions principales d’évaluation des stocks sont `r commify(major_regions_full_parens)`.
 Les régions secondaires d’évaluation des stocks sont `r commify(minor_regions_full_parens)`.
@@ -115,7 +115,7 @@ le recrutement.
 Le poids selon l’âge annuel observé est estimé en dehors du modèle, et
 la maturité selon l’âge est un paramètre d’entrée fixe.
 En 2017, une version actualisée du modèle statistique des prises selon l’âge a été appliquée pour évaluer chacune des
-`r number_to_word(length(major_regions_short))`
+`r length(major_regions_short)`
 régions principales d’évaluation des stocks de hareng du Pacifique [@cleary2018].
 Le principal changement par rapport au modèle statistique des prises selon l’âge utilisé de 2011 à 2016 était
 le partage de l’écart entre l’erreur d’observation et l’erreur de procédure

@@ -145,6 +145,7 @@ library(herringutils)
 library(gcookbook)
 library(readr)
 library(zoo)
+library(xfun)
 
 assess_yr <- 2023
 

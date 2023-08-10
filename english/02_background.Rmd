@@ -1,8 +1,8 @@
 # Background
 
 Pacific Herring in BC are managed as
-`r number_to_word(length(major_regions_short))` major and
-`r number_to_word(length(minor_regions_short))` minor
+`r n2w(length(major_regions_short))` major and
+`r n2w(length(minor_regions_short))` minor
 stock assessment regions (SARs; Figure \@ref(fig:bc-map)).
 The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
@@ -118,7 +118,7 @@ recruitment.
 Observed annual weight-at-age is estimated external to the model, and
 maturity-at-age is a fixed input parameter.
 In 2017, an updated version of the SCA model was applied to assess each of the
-`r number_to_word(length(major_regions_short))`
+`r n2w(length(major_regions_short))`
 major Pacific Herring SARs [@cleary2018].
 The main change from the SCA model used from 2011 to 2016 was
 the partitioning of variance between observation and process error
