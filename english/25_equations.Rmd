@@ -135,6 +135,9 @@ spawning biomass per recruit (Equation \ref{eq:phi-E}) or
 vulnerable biomass per recruit (Equation \ref{eq:phi-B}).
 Note that upper and lower case subscripts denote
 unfished and fished conditions, respectively.
+<!-- TODO: Need to confirm this is true (phi_q) -->
+The incidence function for per-recruit yield to the fishery
+is given by Equation \ref{eq:phi-q}:
 
 \begin{equation}\label{eq:phi-E}
 \phi_E = \sum_{s=1}^S\sum_{a=\acute{a}}^A \iota_a f_{a,s}
@@ -155,7 +158,7 @@ unfished and fished conditions, respectively.
 \begin{equation}\label{eq:phi-q}
 \phi_q = \sum_{s=1}^S\sum_{a=\acute{a}}^A
 \frac{\hat{\iota}_{a,s} w_{a,s} v_{a,s}}{M+F_ev_{a,s}}
-\left(1-e^{\left(-M-F_ev_{a,s}\right)}\right)
+\left(1-e^{\left(-M-F_ev_{a,s}\right)}\right).
 \end{equation}
 
 Unfished spawning biomass $B_0$ and
@@ -187,14 +190,14 @@ These equations can then be simplified to the
 steady-state equilibrium recruitment $R_e$
 needed to calculate the equilibrium yield $C_e$
 for a given fishing mortality rate $F_e$
-<!-- TODO: Write something about phi_q? -->
+and per-recruit yield to the fishery $\phi_q$
   
 \begin{equation}\label{eq:R-e}
 R_e = R_0 \frac{\kappa-\frac{\phi_E}{\phi_e}}{\kappa-1}  
 \end{equation}
 
 \begin{equation}\label{eq:C-e}
-C_e = F_e R_e \phi_q .
+C_e = F_e R_e \phi_q.
 \end{equation}
 
 These steady-state conditions are critical for
