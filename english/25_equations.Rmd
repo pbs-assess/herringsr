@@ -1,3 +1,5 @@
+\clearpage
+
 # Model description
 
 The Pacific Herring stock assessment is conducted using
@@ -395,7 +397,7 @@ in the following sections.
 ### Observed catch
 
 It is assumed that measurement errors in catch observations are
-log-normally distributed, and the residuals given by
+log-normally distributed and residuals are given by
 
 \begin{equation}\label{eq:eta-kt}
 \eta_{k,t} =
@@ -403,7 +405,7 @@ log-normally distributed, and the residuals given by
 \end{equation}
 
 where $o$ is a small constant (i.e., $e^{-10}$) to
-ensure the residual is defined in the case of a zero catch observation.
+ensure residuals are defined when catch observations are equal to zero.
 Residuals are assumed to be normally distributed
 with a user-specified standard deviation $\sigma_C$.
 At present, it is assumed that observed catches for each gear $k$
