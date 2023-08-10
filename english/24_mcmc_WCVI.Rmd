@@ -1,3 +1,5 @@
+\clearpage
+
 # West Coast of Vancouver Island diagnostics
 
 This section contains Markov chain Monte Carlo (MCMC) diagnostics

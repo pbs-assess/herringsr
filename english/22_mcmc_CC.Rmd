@@ -1,3 +1,5 @@
+\clearpage
+
 # Central Coast diagnostics
 
 This section contains Markov chain Monte Carlo (MCMC) diagnostics

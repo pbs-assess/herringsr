@@ -1,3 +1,5 @@
+\clearpage
+
 # Strait of Georgia diagnostics
 
 This section contains Markov chain Monte Carlo (MCMC) diagnostics

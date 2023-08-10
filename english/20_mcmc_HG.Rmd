@@ -1,3 +1,5 @@
+\clearpage
+
 # Haida Gwaii diagnostics
 
 This section contains Markov chain Monte Carlo (MCMC) diagnostics
