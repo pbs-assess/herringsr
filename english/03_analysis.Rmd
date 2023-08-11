@@ -2,11 +2,9 @@
 
 ## COVID-19 pandemic
 
-Unlike the past three years,
+Unlike the last three years,
 the COVID-19 pandemic did not impact
 the collection and analysis of biological data in 2023.
-Spawn surveys proceeded as usual in 2023,
-with dive surveys in all major SARs.
 
 ## Management strategy evaluation\label{sec:mse}
 
@@ -443,11 +441,13 @@ but no trees were set as most people had left the area for the season.
 
 Analyses of stock trend information is presented following
 methods of @cleary2018 for the Pacific Herring major SARs (AM2 only).
-As in previous years,
-Markov chain Monte Carlo (MCMC) runs have chain length `r f(mcmc_length)`
-with a sample taken every `r f(mcmc_samp_freq)`^th^ iteration (i.e., thinning).
-The first `r f(mcmc_burnin)` samples are discarded (i.e., burn-in),
-leaving `r f(mcmc_num_samples)` samples for posteriors.
+This year,
+Markov chain Monte Carlo (MCMC) runs have chain length
+`r number_to_word(mcmc_length)`
+with a sample taken every `r number_to_word(mcmc_samp_freq)` iterations
+(i.e., thinning).
+The first `r number_to_word(mcmc_burnin)` samples are discarded (i.e., burn-in),
+leaving `r number_to_word(mcmc_num_samples)` samples for posteriors.
 Perceptions of stock status based on outputs (i.e., posteriors)
 from the SCA model (i.e., AM2)
 are summarized for each stock in a multi-panel figure

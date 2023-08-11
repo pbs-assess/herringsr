@@ -3,7 +3,7 @@
 ## Régions secondaires d’évaluation des stocks\label{sec:app-minor}
 
 Nous n’effectuons pas d’analyses officielles des informations sur les tendances des stocks pour les
-`r number_to_word(length(minor_regions_short))` régions secondaires d’évaluation des stocks de hareng du Pacifique: `r commify(minor_regions_full_parens)`.
+`r length(minor_regions_short)` régions secondaires d’évaluation des stocks de hareng du Pacifique: `r commify(minor_regions_full_parens)`.
 Cependant, nous fournissons l’indice de frai et la proportion de l’indice du frai par section 
 de `r minor_end_yr-num_yrs_tab` à `r minor_end_yr` pour les zones 27 et 2W
 (tableaux \@ref(tab:spawn-index-a27) et \@ref(tab:spawn-index-a2w), respectivement).

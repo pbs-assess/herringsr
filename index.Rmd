@@ -77,8 +77,8 @@ opts_chunk$set(
   fig.width = fig_width,
   out.width = fig_out_width,
   echo = FALSE,
-  #  autodep = TRUE,
-  #  cache = TRUE,
+  # autodep = TRUE,
+  # cache = TRUE,
   cache.comments = FALSE,
   dev = fig_out_type,
   dpi = fig_dpi,
@@ -153,14 +153,14 @@ major_stock_dir <- list("HG", "PRD", "CC", "SoG", "WCVI")
 minor_stock_dir <- list("A27", "A2W")
 special_stock_dir <- list("A10")
 
-mcmc_length <- 5000000
-mcmc_samp_freq <- 1000
-mcmc_burnin <- 1000
-retro_yrs <- 1:10
+mcmc_length <- 20000000 # Default: 20,000,000
+mcmc_samp_freq <- 4000  # Default: 4,000
+mcmc_burnin <- 1000     # Default: 1,000
+retro_yrs <- 1:10       # Default: 1:10
 
-run_sca_models <- FALSE
-rebuild_rdata_model_files <- FALSE
-run_retros <- FALSE
+run_sca_models <- FALSE            # Run the SCA using run_sca()
+rebuild_rdata_model_files <- FALSE # Rebuild RData files (replace existing)
+run_retros <- FALSE                # Run retrospectives
 
 source(here("R", "run-sca.R"))
 source(here("R", "model-setup.R"))
@@ -171,9 +171,9 @@ theme_set(herring_theme())
 ```
 
 ```{r output-options}
-keep_non_CC <- TRUE # set = FALSE if providing preliminary report to CC
+keep_non_CC <- TRUE     # FALSE to provide preliminary CC report
 show_ic_figures <- TRUE # Show/hide incidental catch figures
-slides <- FALSE #set = TRUE if you want common figures in .png slide format in figures folder.
+slides <- FALSE         # TRUE to save common figures as PNGs
 ```
 
 <!-- Distributions -->
