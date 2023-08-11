@@ -567,27 +567,23 @@ estimated biomass reached near historic lows.
 A reprieve in estimated low biomass was caused by 
 above average estimated recruitment through the late 1990s,
 before biomass declined to persistent at historic lows 
-from 2000 to 2010 (Figure \@ref(fig:storyboard-hg)d).
-Above average estimated recruitment of age-`r age_first` fish in 2012 supported 
-modest increases in the spawn index in 2013 and 2015
-before falling once again to near historic lows from 2016 to 2018
-(Figure \@ref(fig:storyboard-hg)a, c, d).
+from 2000 to present with a couple low peaks in 2013 and 2019
+(Figure \@ref(fig:storyboard-hg)d).
 The increasing trend in the estimated natural mortality rate since 1980
-(Figure \@ref(fig:storyboard-hg)b) largely absorbed surplus production
+(Figure \@ref(fig:storyboard-hg)b) largely absorbed  any surplus production
 attributed to above average recruitment events
-(e.g., 1997 and 2012; Figure \@ref(fig:storyboard-hg)c, d).
-Estimated natural mortality has declined from a peak around 2002,
-and has decreased in the last five years. 
-Despite the decline in estimated natural mortality, 
-the HG stock has been in a low biomass state,
+(e.g., 1997, 2012, 2018; Figure \@ref(fig:storyboard-hg)c, d).
+Additionally estimated natural mortality has increased the last 5 years
+to historic highs.  
+The HG stock persists in a low biomass state,
 with many years also showing low productivity
 which has largely precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
+TODO:
 There was an increase in survey biomass in 2019 and 2020, and
-above-average recruitment of age-`r age_first` fish in 2018, and
-below-average recruitment in 2019, 2020, and 2022.
-Estimated productivity in 2021/2022 is positive
-but follows two years of negative productivity.
-Overall, biomass remains low relative to historic values.
+above-average recruitment of age-`r age_first` fish in 2018, but
+average to below-average recruitment ever since.
+Estimated productivity in 2022/2023 is negative.
+Overall, biomass remains near historic low values.
 The effective harvest rate $U_t$ since 2000 has been at or near zero
 (Figure \@ref(fig:harvest-rate)),
 with the last commercial roe fishery in 2002,
