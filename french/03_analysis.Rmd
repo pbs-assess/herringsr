@@ -338,8 +338,6 @@ avant la soumission de l’ébauche.
 
 ### Côte centrale
 
-<!-- TODO: JC to review the Heiltsuk observations -->
-
 En 2022, les Heiltsuk ont observé que
 le comportement de fraie lors de la saison du hareng était similaire à celui de l’année précédente,
 alors que les harengs frayaient de façon sporadique dans toutes les zones et
@@ -392,8 +390,6 @@ cependant, aucune observation n’a été faite ou signalée cette année,
 ce qui ne veut pas dire qu’aucune ponte n’a eu lieu.
 Le passage de Bute est très éloigné.
 Aucune autre indication d’activité de fraie n’a été observée ou signalée.
-
-<!-- TODO: JC to review Cowichan Tribes observations -->
 
 Dans le sud du détroit de Géorgie, les tribus Cowichan
 n’ont pas activement observé la fraie du hareng, mais ont constaté certains signes.
