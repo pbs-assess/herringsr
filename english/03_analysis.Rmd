@@ -238,6 +238,8 @@ survey data and working group discussions with local First Nations.
 
 ## Incidental mortality
 
+<!-- TODO: Add data for 2023 if/when available (MG) -->
+
 In order to advance progress towards
 a holistic ecosystem-based management (EBM) approach for Pacific Herring,
 we present information to describe indirect effects on herring populations
