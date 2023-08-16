@@ -353,8 +353,8 @@ bands and error bars are `r ci_level * 100`\% credible intervals;
 dashed horizontal lines indicate zero;
 blue circles and shaded regions indicate a productive period
 (Table \ref{tab:prod-period});
-blue lines indicate spawning biomass during a productive period #1
-$\overline{\SB}_\mli{Prod}$; and
+blue lines indicate proportion of spawning biomass
+during a productive period #1 $\overline{\SB}_\mli{Prod}$; and
 red lines indicate the median limit reference point $0.3\SB_0$,
 where $SB_0$ is estimated unfished spawning biomass.}
 

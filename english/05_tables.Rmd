@@ -871,12 +871,12 @@ make.ref.points.table(
 
 \afterpage{\clearpage}
 
-(ref:prod-period-cap) Year range and proportion for calculating
+(ref:prod-period-cap) Year range for calculating proportion of
 average spawning biomass of Pacific Herring during a productive period
 $\overline{\SB}_\mli{Prod}$
 in the major stock assessment regions (SARs).
 
-(ref:prod-period-cap-fr) Gamme d'années et proportion pour le calcul de la
+(ref:prod-period-cap-fr) Gamme d'années pour le calcul de la proportion de la
 biomasse reproductrice moyenne du hareng du Pacifique
 pendant une période productive
 $\overline{\SB}_\mli{Prod}$
