@@ -721,9 +721,12 @@ Reference points are summarised by posterior
 percentile) estimates.
 All biomass numbers are in thousands of tonnes.
 Legend: $\SB_0$ is estimated unfished spawning biomass;
-$\SB_{t}$ is spawning biomass in year $t$; and
-$\SB_{`r assess_yr+1`}$ is projected spawning biomass in `r assess_yr+1`
-assuming no fishing.
+$\SB_{t}$ is spawning biomass in year $t$;
+$\SB_{`r assess_yr+1`}$ is
+projected spawning biomass in `r assess_yr+1` assuming no fishing; and
+$\overline{\SB}_\mli{Prod}$ is
+average spawning biomass during a productive period
+(Table \@ref(tab:prod-period)).
 Note that the age-`r age_plus` class is a 'plus group' which includes
 fish ages `r age_plus` and older.
 
@@ -733,9 +736,12 @@ Les points de référence sont résumés par des estimations postérieures
 et `r confidence_vals[2]*100`^e^ centile).
 Tous les chiffres relatifs à la biomasse sont exprimés en milliers de tonnes.
 Légende: $\SB_0$ est la biomasse reproductrice estimée non pêchée;
-$\SB_{t}$ est la biomasse reproductrice de l'année $t$; et
+$\SB_{t}$ est la biomasse reproductrice de l'année $t$;
 $\SB_{`r assess_yr+1`}$ est la biomasse reproductrice projetée en
-`r assess_yr+1` en supposant l'absence de pêche.
+`r assess_yr+1` en supposant l'absence de pêche; et
+$\overline{\SB}_\mli{Prod}$ est la
+biomasse reproductrice moyenne pendant une période productive
+(Tableau \@ref(tab:prod-period)).
 Notez que la classe âge-`r age_plus` est un 'groupe plus'
 qui inclut les poissons âgés de `r age_plus` et plus.
 
@@ -865,26 +871,22 @@ make.ref.points.table(
 
 \afterpage{\clearpage}
 
-(ref:prod-period-cap) Year range for calculating
+(ref:prod-period-cap) Year range for calculating proportion of
 average spawning biomass of Pacific Herring during a productive period
 $\overline{\SB}_\mli{Prod}$
 in the major stock assessment regions (SARs).
-Note: Haida Gwaii is excluded because
-this is conducted within the rebuilding plan process.
 
-(ref:prod-period-cap-fr) Gamme d'années pour le calcul de la
+(ref:prod-period-cap-fr) Gamme d'années pour le calcul de la proportion de la
 biomasse reproductrice moyenne du hareng du Pacifique
 pendant une période productive
 $\overline{\SB}_\mli{Prod}$
 dans les principales régions d'évaluation des stocks (RES).
-Remarque: Haida Gwaii est exclu parce que cette évaluation est
-désormais réalisée dans le cadre du processus du plan de reconstitution.
 
 \needspace{0.25\textheight}
 
 ```{r prod-period}
 prod_period_table(
-  dat = prod_period[2:5],
+  dat = prod_period,
   cap = ifelse(french, "(ref:prod-period-cap-fr)", "(ref:prod-period-cap)"),
   translate = french
 )

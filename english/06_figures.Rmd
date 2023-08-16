@@ -329,7 +329,7 @@ plot_f_hg <- plot_biomass_phase(
 ```
 
 <!-- Storyboard caption for all regions -->
-\newcommand{\storyboard}{
+\newcommand{\storyboard}[1]{
 \textbf{Panel (a)}: Model fit (lines) to scaled abundance
 (points; Figure \ref{fig:major-spawn-index}).
 Spawn index is scaled to abundance by the spawn index scaling parameter $q$.
@@ -350,7 +350,11 @@ triangle indicates `r assess_yr - 1`.
 Legend: biomass and catch are in thousands of tonnes (t);
 points and time-series lines are median posterior estimates;
 bands and error bars are `r ci_level * 100`\% credible intervals;
-dashed horizontal lines indicate zero; and
+dashed horizontal lines indicate zero;
+blue circles and shaded regions indicate a productive period
+(Table \ref{tab:prod-period});
+blue lines indicate proportion of spawning biomass
+during a productive period #1 $\overline{\SB}_\mli{Prod}$; and
 red lines indicate the median limit reference point $0.3\SB_0$,
 where $SB_0$ is estimated unfished spawning biomass.}
 
@@ -387,7 +391,7 @@ où $\SB_0$ est la biomasse reproductrice non pêchée estimée.}
 (ref:storyboard-hg-cap) Haida Gwaii SAR:
 statistical catch-age model output for Pacific Herring
 from `r major_start_yr` to `r major_end_yr`.
-\storyboard{}
+\storyboard{`r ifelse(prod_period[[model_ind]]$prop == 1, "", prod_period[[model_ind]]$prop)`}
 
 (ref:storyboard-hg-cap-fr) RES Haida Gwaii:
 sortie du modèle statistique de capture-âge pour le hareng du Pacifique
@@ -588,7 +592,7 @@ plot_f_prd <- plot_biomass_phase(
 (ref:storyboard-prd-cap) Prince Rupert District SAR:
 statistical catch-age model output for Pacific Herring
 from `r major_start_yr` to `r major_end_yr`.
-\storyboard{}
+\storyboard{`r ifelse(prod_period[[model_ind]]$prop == 1, "", prod_period[[model_ind]]$prop)`}
 
 (ref:storyboard-prd-cap-fr) RES du district de Prince Rupert:
 sortie du modèle statistique de capture-âge pour le hareng du Pacifique
@@ -788,7 +792,7 @@ plot_f_cc <- plot_biomass_phase(
 (ref:storyboard-cc-cap) Central Coast SAR:
 statistical catch-age model output for Pacific Herring
 from `r major_start_yr` to `r major_end_yr`.
-\storyboard{}
+\storyboard{`r ifelse(prod_period[[model_ind]]$prop == 1, "", prod_period[[model_ind]]$prop)`}
 
 (ref:storyboard-cc-cap-fr) RES de la côte centrale:
 sortie du modèle statistique de capture-âge pour le hareng du Pacifique
@@ -1020,7 +1024,7 @@ plot_f_sog <- plot_biomass_phase(
 (ref:storyboard-sog-cap) Strait of Georgia SAR:
 statistical catch-age model output for Pacific Herring
 from `r major_start_yr` to `r major_end_yr`.
-\storyboard{}
+\storyboard{`r ifelse(prod_period[[model_ind]]$prop == 1, "", prod_period[[model_ind]]$prop)`}
 
 (ref:storyboard-sog-cap-fr) RES du détroit de Georgie:
 sortie du modèle statistique de capture-âge pour le hareng du Pacifique
@@ -1220,7 +1224,7 @@ plot_f_wcvi <- plot_biomass_phase(
 (ref:storyboard-wcvi-cap) West Coast of Vancouver Island SAR:
 statistical catch-age model output for Pacific Herring
 from `r major_start_yr` to `r major_end_yr`.
-\storyboard{}
+\storyboard{`r ifelse(prod_period[[model_ind]]$prop == 1, "", prod_period[[model_ind]]$prop)`}
 
 (ref:storyboard-wcvi-cap-fr) RES de la côte ouest de l’île de Vancouver:
 sortie du modèle statistique de capture-âge pour le hareng du Pacifique
