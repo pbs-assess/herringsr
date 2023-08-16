@@ -579,12 +579,10 @@ to historic highs.
 The HG stock persists in a low biomass state,
 with many years also showing low productivity
 which has largely precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
-TODO:
-There was an increase in survey biomass in 2019 and 2020, and
-above-average recruitment of age-`r age_first` fish in 2018, but
-average to below-average recruitment ever since.
-Estimated productivity in 2022/2023 is negative.
-Overall, biomass remains near historic low values.
+Above-average recruitment of age-`r age_first` fish in 2018, 
+leading to increases in survey biomass in 2019 and 2020 were positive signs but 
+average to below-average recruitment since then which estimates negative productivity
+has brought biomass down to recent historical lows. 
 The effective harvest rate $U_t$ since 2000 has been at or near zero
 (Figure \@ref(fig:harvest-rate)),
 with the last commercial roe fishery in 2002,
@@ -605,31 +603,31 @@ a rise to the highest estimated mortality rate,
 more than doubling within 10 years.
 In response the stock collapsed to
 the lowest estimated spawning biomass. 
-Spawning biomass recovered by the mid-1980s to about 50% of the historic high
+Spawning biomass recovered by the mid-1980s estimated to be
+about 50% of the historic high
 even amid mostly below-average recruitment
 (Figure \@ref(fig:storyboard-prd)b, d, e).
 In the mid-1980s, estimated spawning biomass steadily declined amid slowly 
 rising mortality rates and variable recruitment, before stabilizing at a 
-relatively low level (but above historic lows) by around 2005, 
-which was maintained until 2018.
-The estimated spawning biomass has since shown modest increases in biomass 
-with above average age-`r age_first` recruitment in 2014, 2017, and 2018, and 
-declining natural mortality (Figure \@ref(fig:storyboard-prd)c, d, f). 
+relatively low level (but above historic lows) between 2005 - 2018.  
+Since then estimated spawning biomass has shown modest increases in biomass 
+with above average age-`r age_first` recruitment in 2014, 2018 and,
+2022 and declining natural mortality (Figure \@ref(fig:storyboard-prd)c, d, f). 
 Productivity in recent years is relatively high compared to the 
-last 30 years (Figure \@ref(fig:storyboard-prd)f).
+last 30 years, with the highest estimated productivity in 2022
+(Figure \@ref(fig:storyboard-prd)f).
 
-Fluctuations in spawning biomass appear to be less than in other SARs,
-possibly because some spawn index points are being under- or over-fit
-(e.g., 2001 to 2004, and 2010 to 2013) as shown in 
-Figure \@ref(fig:storyboard-prd)a.
+Fluctuations in spawning biomass appear to be less than in other SARs 
+in the last 30 years, possibly because they are smaller in magnitude 
+and offset each other as shown in Figure \@ref(fig:storyboard-prd)a.
 
 `r stock_status_text(SAR = "PRD", this_yr = assess_yr, translate = french)`
 Commercial fisheries have occurred annually in PRD since the mid-1980s,
-with the exception of 2019 to 2022,
+with the exception of 2019 to 2023,
 during which the effective harvest rate $U_t$ was estimated to be
 at or below 20% in all years except 1989 (Figure \@ref(fig:harvest-rate)).
 Commercial catches from 2007 to 2018 remained low (below 2,000&nbsp;t) and
-there were no commercial catches from 2019 to 2022, except SOK.
+there were no commercial catches from 2019 to 2023, except SOK.
 
 ### Central Coast
 
