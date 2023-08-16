@@ -579,12 +579,10 @@ to historic highs.
 The HG stock persists in a low biomass state,
 with many years also showing low productivity
 which has largely precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
-TODO:
-There was an increase in survey biomass in 2019 and 2020, and
-above-average recruitment of age-`r age_first` fish in 2018, but
-average to below-average recruitment ever since.
-Estimated productivity in 2022/2023 is negative.
-Overall, biomass remains near historic low values.
+Above-average recruitment of age-`r age_first` fish in 2018, 
+leading to increases in survey biomass in 2019 and 2020 were positive signs but 
+average to below-average recruitment since then which estimates negative productivity
+has brought biomass down to recent historical lows. 
 The effective harvest rate $U_t$ since 2000 has been at or near zero
 (Figure \@ref(fig:harvest-rate)),
 with the last commercial roe fishery in 2002,
