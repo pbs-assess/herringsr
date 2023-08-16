@@ -632,8 +632,8 @@ there were no commercial catches from 2019 to 2023, except SOK.
 ### Central Coast
 
 Estimated spawning biomass reached a historic high around 1980
-following low estimated natural mortality rates and one of the highest estimated 
-recruitments in 1979 (Figure \@ref(fig:storyboard-cc)a, b, c). 
+following low estimated natural mortality rates and the highest estimated 
+recruitment in 1979 (Figure \@ref(fig:storyboard-cc)a, b, c). 
 From there a decline in estimated spawning biomass
 appears to be influenced initially by 
 higher estimated natural mortality rates and
@@ -642,26 +642,24 @@ An increase in estimated natural mortality lead to
 historically low estimated biomass levels from 2005 to 2015. 
 Decreasing estimated natural mortality lead to moderate increases in 
 biomass through 2020. 
-In 2021 and 2022,
+In 2021 - 2023,
 increasing estimated natural mortality caused a decrease in estimated biomass,
-which has been mitigated in part by higher than average 
-estimated recruitment (Figure \@ref(fig:storyboard-cc)a, b, e).
-Model estimates suggest similar spawning biomass in 2021 and 2022
+which was mitigated in part by higher than average 
+estimated recruitment in 2022 (Figure \@ref(fig:storyboard-cc)a, b, e).
+Model estimates suggest slightly less spawning biomass in 2023 than 2022
 (Table \@ref(tab:cc-spawning-biomass-depletion)),
 and the analysis of surplus production shows evidence of
-strong production in 2016/2017 and 2018/2019,
-similar to the 1990 to 1999 period (Figure \@ref(fig:storyboard-cc)f).
-However, surplus production is estimated to be negative
-in from 2019 to 2021 and near zero for 2021/2022.
+strong production in 2018/2019, followed by two years of the lowest 
+estimated production and near neutral production in the last couple years 
+(Figure \@ref(fig:storyboard-cc)f).
 
-An examination of spawn biomass by herring Section shows
+An examination of spawn biomass by herring section shows
 the recent decline in herring spawn to have largely occurred in
-Spiller Channel (Sections 072 and 078) and
-Kitasu Bay/East Higgins (Section 067; Figure \@ref(fig:spawn-section-cc)).
-The majority of Area 07 spawn in 2021 and 2022 is concentrated in
-Thompson/Stryker (Section 074).
+Spiller Channel (Sections 072 and 078),
+Kitasu Bay/East Higgins (Section 067) and more recently 
+Thompson/Styker (Section 074; Figure \@ref(fig:spawn-section-cc)).
 Occurrence of spawn in Thompson/Stryker from 2020 to 2022
-represents the first significant spawns in this Section in many years.
+represented the first significant spawns in this section in many years.
 The mechanisms driving spawn fluctuations in the Central Coast
 are not well understood.
 
@@ -680,7 +678,7 @@ commercial roe fisheries occurred in 2014, 2015, and 2016.
 Commercial SOK fisheries operated yearly from 2014 to 2019, and in 2021.
 SOK removals are not included in the estimation of $U_t$. 
 A commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19,
-and was not permitted in 2022 (Table \@ref(tab:annual-sok-catch)).
+and was not permitted in 2022 and 2023 (Table \@ref(tab:annual-sok-catch)).
 
 `r stock_status_text(SAR = "CC", this_yr = assess_yr, translate = french)`
 
