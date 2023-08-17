@@ -955,6 +955,9 @@ soit parce que le PM spécifie l'interdiction de la pêche
 au niveau actuel de la biomasse projetée,
 soit parce que le PM spécifie l'interdiction de la pêche.
 
+<!-- \setlength{\tabcolsep}{5pt} -->
+<!-- \renewcommand{\arraystretch}{1.15} -->
+
 \needspace{0.35\textheight}
 
 ```{r decision-prd, results = 'asis', echo = FALSE}
@@ -1050,5 +1053,8 @@ decision_tables_mp(
   translate = french
 )
 ```
+
+<!-- \setlength{\tabcolsep}{6pt} -->
+<!-- \renewcommand{\arraystretch}{1} -->
 
 \afterpage{\clearpage}
