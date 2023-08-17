@@ -915,7 +915,6 @@ $\SB_t$ is spawning biomass in year $t$;
 $\SB_0$ is estimated unfished spawning biomass;
 $\overline{\SB}_\mli{Prod}$ is average spawning biomass
 during a productive period (Table \@ref(tab:prod-period));
-<!-- $\overline{\SB}$ is average spawning biomass; -->
 average annual variability (AAV); and
 $\overline{C}$ is average catch.
 MPs are defined in @dfo2019a and @dfo2019c.
@@ -923,7 +922,6 @@ Biomass and catch are in thousands of tonnes (t).
 Note: 'NA' indicates that TAC and HR do not apply, either because
 the MP specifies no fishing at current projected biomass level, or
 the MP specifies no fishing.
-<!-- The Herring Industry Advisory Board objective is reported as $0.4\SB_0$. -->
 
 (ref:decision-prd-cap-fr) RES du district de Prince Rupert:
 rendement de la procédure de gestion (PG) pour
@@ -948,7 +946,6 @@ $\SB_t$ est la biomasse reproductrice de l'année $t$;
 $\SB_0$ est la biomasse reproductrice estimée non pêchée;
 $\overline{\SB}_\mli{Prod}$ est la biomass reproductrice moyenne
 dans un periode productive (Tableau \@ref(tab:prod-period));
-<!-- $\overline{\SB}$ est la biomass reproductrice moyenne; -->
 variabilité annuelle moyenne (VAM); et
 $\overline{C}$ est la prise moyenne.
 Les PM sont définis dans @dfo2019a et @dfo2019c.
@@ -957,55 +954,8 @@ Note: «NA» indique que le TAC et la TR ne s'appliquent pas,
 soit parce que le PM spécifie l'interdiction de la pêche
 au niveau actuel de la biomasse projetée,
 soit parce que le PM spécifie l'interdiction de la pêche.
-<!-- L'objectif du Herring Industry Advisory Board est indiqué comme -->
-<!-- étant de $0.4\SB_0$. -->
 
-(ref:decision-cc-cap) Central Coast SAR:
-management procedure performance for the Pacific Herring
-statistical catch-age model.
-See Table \@ref(tab:decision-prd) for description.
-
-(ref:decision-cc-cap-fr) RES de la côte centrale:
-rendement de la procédure de gestion pour le modèle statistique de prises-âges du hareng du Pacifique.
-Voir le tableau \@ref(tab:decision-prd) pour la description.
-
-(ref:decision-sog-cap) Strait of Georgia SAR:
-management procedure performance for the Pacific Herring
-statistical catch-age model.
-See Table \@ref(tab:decision-prd) for description.
-
-(ref:decision-sog-cap-fr) RES du détroit de Georgie:
-rendement de la procédure de gestion pour le modèle statistique
-de prises-âges du hareng du Pacifique.
-Voir le tableau \@ref(tab:decision-prd) pour la description.
-
-(ref:decision-wcvi-cap) West Coast of Vancouver Island SAR:
-management procedure performance for the Pacific Herring
-statistical catch-age model.
-See Table \@ref(tab:decision-prd) for description.
-<!-- Note that representation of Nuu-chah-nulth objectives -->
-<!-- has been modified this year: -->
-<!-- $0.75\SB_0$ is reported as $\overline{\SB}_\mli{Prod}$ -->
-<!-- (calculated over three herring generations), -->
-<!-- $\SB_{\text{AVE}}$ appears as $\overline{\SB}$, and -->
-<!-- $0.65\SB_0$ is omitted. -->
-
-(ref:decision-wcvi-cap-fr) RES de la côte ouest de l’île de Vancouver:
-rendement de la procédure de gestion pour le modèle statistique
-de prises-âges du hareng du Pacifique.
-Voir le tableau \@ref(tab:decision-prd) pour la description.
-<!-- Notez que la représentation des objectifs de Nuu-chah-nulth -->
-<!-- a été modifiée cette année: -->
-<!-- $0.75\SB_0$ est indiqué comme $\overline{\SB}_\mli{Prod}$ -->
-<!-- (calculé sur trois générations de harengs), -->
-<!-- $\SB_{\text{AVE}}$ apparaît comme $\overline{\SB}$, et -->
-<!-- $0.65\SB_0$ est omis. -->
-
-\newgeometry{hmargin=1in,vmargin=1in}
-\begin{landscape}
-\thispagestyle{empty}
-\setlength{\tabcolsep}{5pt}
-\renewcommand{\arraystretch}{1.15}
+\needspace{0.35\textheight}
 
 ```{r decision-prd, results = 'asis', echo = FALSE}
 decision_tables_mp(
@@ -1020,8 +970,18 @@ decision_tables_mp(
 )
 ```
 
-\clearpage
-\thispagestyle{empty}
+\afterpage{\clearpage}
+
+(ref:decision-cc-cap) Central Coast SAR:
+management procedure performance for the Pacific Herring
+statistical catch-age model.
+See Table \@ref(tab:decision-prd) for description.
+
+(ref:decision-cc-cap-fr) RES de la côte centrale:
+rendement de la procédure de gestion pour le modèle statistique de prises-âges du hareng du Pacifique.
+Voir le tableau \@ref(tab:decision-prd) pour la description.
+
+\needspace{0.35\textheight}
 
 ```{r decision-cc, results = 'asis', echo = FALSE}
 decision_tables_mp(
@@ -1036,8 +996,19 @@ decision_tables_mp(
 )
 ```
 
-\clearpage
-\thispagestyle{empty}
+\afterpage{\clearpage}
+
+(ref:decision-sog-cap) Strait of Georgia SAR:
+management procedure performance for the Pacific Herring
+statistical catch-age model.
+See Table \@ref(tab:decision-prd) for description.
+
+(ref:decision-sog-cap-fr) RES du détroit de Georgie:
+rendement de la procédure de gestion pour le modèle statistique
+de prises-âges du hareng du Pacifique.
+Voir le tableau \@ref(tab:decision-prd) pour la description.
+
+\needspace{0.35\textheight}
 
 ```{r decision-sog, results = 'asis', echo = FALSE}
 decision_tables_mp(
@@ -1053,8 +1024,19 @@ decision_tables_mp(
 )
 ```
 
-\clearpage
-\thispagestyle{empty}
+\afterpage{\clearpage}
+
+(ref:decision-wcvi-cap) West Coast of Vancouver Island SAR:
+management procedure performance for the Pacific Herring
+statistical catch-age model.
+See Table \@ref(tab:decision-prd) for description.
+
+(ref:decision-wcvi-cap-fr) RES de la côte ouest de l’île de Vancouver:
+rendement de la procédure de gestion pour le modèle statistique
+de prises-âges du hareng du Pacifique.
+Voir le tableau \@ref(tab:decision-prd) pour la description.
+
+\needspace{0.35\textheight}
 
 ```{r decision-wcvi, results = 'asis', echo = FALSE}
 decision_tables_mp(
@@ -1068,10 +1050,5 @@ decision_tables_mp(
   translate = french
 )
 ```
-
-\end{landscape}
-\setlength{\tabcolsep}{6pt}
-\renewcommand{\arraystretch}{1}
-\restoregeometry
 
 \afterpage{\clearpage}
