@@ -733,7 +733,7 @@ lowest estimated natural mortality and variable estimated recruitment
 (Figure \@ref(fig:storyboard-wcvi)a, b, c). 
 From the late 1980s through to around 2008
 a variable increase in estimated mortality and
-a generally variable but low recruitment led to decline trend,
+a generally variable but low estimated recruitment led to decline trend,
 down from the peaks observed in the late 1970s 
 (Figure \@ref(fig:storyboard-wcvi)a, b, c).
 
@@ -743,13 +743,9 @@ influenced by negative recruitment deviations
 and the highest estimated natural mortality rates since `r major_start_yr`
 (Figure \@ref(fig:storyboard-wcvi)a, b, f). 
 Some increases in estimated biomass were made in the 2010s with
-lower estimated natural mortality and higher estimated recruitment in 2015. 
-Since then estimated natural mortality has again increased. 
-Biomass and production has been maintained in part by
-higher than average estimated recruitment in 2020 and 2021
+lower estimated natural mortality and higher estimated recruitment in 2015, 
+and then again after 2020
 (Figure \@ref(fig:storyboard-wcvi) d, f).
-The model reconstruction of spawning biomass closely follows the trajectory
-of spawn index values (Figure \@ref(fig:storyboard-wcvi)a).
 
 The absence of a commercial fishery since 2005 means the realized harvest rate
 has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
@@ -764,11 +760,17 @@ for the "other" fisheries category
 (i.e., reduction, food and bait, as well as special use).
 Autocorrelation in parameter estimation may indicate
 bias in the posterior distribution or local minima. 
-In this instance, autocorrelation likely resulting from
-there being no new commercial fishery data since 2005. 
-Running longer chains in 2021 resulted in only minor improvements [@dfo2021c].
+In this instance, autocorrelation likely resulting from little
+to no data on either catch or age composition data for that fishery 
+since the late 1970's. To ameliorate data quality issues we removed
+age compositions from 1984 for which there was no associated catch as well as
+catch after 1978 for which there was no age composition. This didn't 
+seem to make much difference in the autocorrelation. 
+Running longer chains (20 million vs 5 million)
+resulted in only minor improvements as it
+did in 2021 [@dfo2021c].
 If and when fisheries resume in the future,
-the addition of new fishery data may reduce this apparent autocorrelation and
+the addition of new fishery data may reduce autocorrelation and
 any resulting bias.
 
 `r stock_status_text(SAR = "WCVI", this_yr = assess_yr, translate = french)`
