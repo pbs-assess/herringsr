@@ -955,14 +955,10 @@ soit parce que le PM spécifie l'interdiction de la pêche
 au niveau actuel de la biomasse projetée,
 soit parce que le PM spécifie l'interdiction de la pêche.
 
-<!-- \setlength{\tabcolsep}{5pt} -->
+\setlength{\tabcolsep}{5pt}
 <!-- \renewcommand{\arraystretch}{1.15} -->
 
 \needspace{0.35\textheight}
-
-<!-- TODO: (MG) Remove SB_t from Obj 1 header (so it's the same as Obj 2) -->
-<!-- and note in the table caption that Obj 1 and 2 show probabilities -->
-<!-- of SB_t being at or above the LRP and USR, respectively -->
 
 ```{r decision-prd, results = 'asis', echo = FALSE}
 decision_tables_mp(
@@ -1058,7 +1054,7 @@ decision_tables_mp(
 )
 ```
 
-<!-- \setlength{\tabcolsep}{6pt} -->
+\setlength{\tabcolsep}{6pt}
 <!-- \renewcommand{\arraystretch}{1} -->
 
 \afterpage{\clearpage}
