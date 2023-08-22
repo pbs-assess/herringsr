@@ -286,6 +286,8 @@ as DFO receives additional reports.
 <!-- coastal First Nations participants for most areas. -->
 <!-- The following descriptions were provided by First Nations contributors. -->
 
+<!-- TODO: JC to check HG -->
+
 ### Haida Gwaii
 
 Herring spawns in Cumshewa Inlet have been infrequent in recent years, but when they have occurred the spawns have generally been very late in the season (late April to early May). However, in 2023 some of the earliest herring spawns in the Haida Gwaii major stock assessment area occurred along the north shore of Cumshewa Inlet. Spawns, which were generally light in deposition and inconsistent (spotty), occurred in areas near Aero Camp, Cumshewa Village, and out around Cumshewa Hear to Grey Point.
