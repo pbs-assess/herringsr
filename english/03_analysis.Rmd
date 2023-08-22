@@ -277,7 +277,7 @@ as DFO receives additional reports.
 
 ## First Nations observations
 
-<!-- TODO: Need PRD, CC, SoG, and WCVI -->
+<!-- TODO: Waiting on PRD, CC, SoG, and WCVI -->
 
 <!-- The COVID-19 pandemic continues to impact First Nations participation -->
 <!-- in Pacific Herring survey activities as well as participation -->
