@@ -42,9 +42,29 @@ the HG, PRD, and CC SARs
 with stock and fishery monitoring data updated to include 2018
 and performance evaluation of area specific MPs [@dfo2019c],
 with subsequent updates outlined in Section "\nameref{sec:context}".
-Results from MP evaluations reflect most recent updates for all SARs.
+In 2022 management procedure evaluation tables (Table XX to XXX) were updated. 
 
-A core set of fisheries management objectives [@dfo2019c]
+TODO: JC Mention June 2023 CSAS csas and commitment for transition plan
+for implementing the new operating model. (SP SFD)
+
+In June 2023 a CSAS meeting was held to evaluate the application 
+of a new modelling framework for the Assessment of Pacific Herring major stocks
+and implementation in the MSE process. 
+
+From that meeting came the following recomendations:
+
+•	A minimum 3 year cycle for MSE updates is recommended, 
+unless new evidence reveals exceptional circumstances.
+•	A process for implementing the new assessment and operating model, 
+updates to the MSE, and identification of exceptional circumstances 
+should be developed in a phased approach in consultation with managers, 
+First Nations and other stakeholders.
+
+With those recommendations in mind we have begun consultations. ...
+
+
+
+Currently, a core set of fisheries management objectives [@dfo2019c]
 have been applied to each major SAR:
 
 1. Maintain spawning biomass above the LRP with at least 75% probability
