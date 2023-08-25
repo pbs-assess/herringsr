@@ -77,23 +77,16 @@ but use the same type of monitoring data and assessment model
 [e.g., @cleary2018].
 The current stock assessment model assumes natural mortality is
 time-varying and this is reflected in the MSE as
-three hypotheses about future Pacific Herring natural mortality $M$: 
+two hypotheses about future Pacific Herring natural mortality $M$: 
 
-1. $M$ is a time-varying, density-dependent process (DDM),
+1. $M$ is a time-varying, density-dependent process (DDM), and
 
-1. $M$ is a time-varying, density-independent process (DIM), and
+1. $M$ is a time-varying, density-independent process (DIM).
 
-1. $M$ is constant over time (conM).
-
-These three hypotheses are captured as
-three operating model (OM) scenarios in @benson2022.
+These two hypotheses are captured as operating model (OM) scenarios in @benson2022.
 The DDM scenario was identified as the reference OM scenario based on
 discussion at the 2018 CSAS review process [@dfo2019c],
-while the DIM and conM scenarios were identified as robustness OM scenarios.
-In 2022 we removed the conM scenario from the list of
-plausible natural mortality hypotheses because
-MP performance has been found to be consistently over-optimistic.
-As such, OM updates are presented for the DDM and DIM OM scenarios only.
+while the DIM scenario was identified as a robustness OM scenario.
 
 Several lessons were learned from the MSE analyses conducted so far:
 
