@@ -173,7 +173,7 @@ theme_set(herring_theme())
 ```{r output-options}
 keep_non_CC <- TRUE     # FALSE to provide preliminary CC report
 show_ic_figures <- TRUE # Show/hide incidental catch figures
-slides <- TRUE  # TRUE saves (powerpoint) big-font figs in figure folder
+slides <- FALSE  # TRUE saves (powerpoint) big-font figs in figure folder
 ```
 
 <!-- Distributions -->
