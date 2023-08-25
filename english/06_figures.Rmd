@@ -711,7 +711,7 @@ plot_d_single <- plot_biomass_catch(
   annot = region_abbreviation,
   label_points = TRUE,
   translate = french) 
-# ggsave(filename = here("/figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
+ggsave(filename = here("/figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
 ```
 <!-- Central Coast Storyboard -->
 ```{r scaled-abundance-cc, fig.show = "hide", fig.asp = 1}
@@ -843,7 +843,7 @@ plot_spawn_section(
   translate = french
 )
 ```
-```{r ppt-plots-cc, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-cc-cap-fr)", "(ref:storyboard-cc-cap)"), eval= slides}
+```{r ppt-plots-cc, fig.asp=1.1, fig.cap = "(ref:storyboard-cc-cap)", eval= slides}
 reg <- regions$Region
 region_abbreviation <-reg[model_ind]
 plot_a_multi <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
@@ -855,8 +855,6 @@ plot_a_multi <- plot_scaled_abundance(major_surv %>% filter(region == major_regi
                                    y_axis_label_newline_length = 20,
                                    translate = french)
 plot_a_multi_x_up <- plot_a_multi  + scale_x_continuous(position = "top")
-  
-
 
 plot_b_multi <- plot_natural_mortality(major_models[[model_ind]],
                                     xlim = xlim_all,
@@ -898,7 +896,7 @@ storyboard_multi_ppt_h <- cowplot::plot_grid(
                    ncol = 3,
                    align = "h"
                    )
-# ggsave(filename = here("/figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
+ggsave(filename = here("/figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
 shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    plot_b_multi_x_up,
                    plot_c_multi,
@@ -924,7 +922,7 @@ plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_reg
                                    show_x_axis = TRUE,
                                    x_axis_position = "bottom",
                                    translate = french)
-# ggsave(filename = here("/figures", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
+ggsave(filename = here("/figures", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
 plot_d_single <- plot_biomass_catch(
   major_models[[model_ind]],
   catch_df = ct,
@@ -941,7 +939,7 @@ plot_d_single <- plot_biomass_catch(
   annot = region_abbreviation,
   label_points = TRUE,
   translate = french) 
-# ggsave(filename = here("/figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
+ggsave(filename = here("/figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=4.5, dpi=300)
 ```
 
 
