@@ -411,7 +411,7 @@ cowplot::plot_grid(
   rel_heights = c(1.1, 1.0, 1.1)
 )
 ```
-```{r ppt-plots-hg, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-hg-cap-fr)", "(ref:storyboard-hg-cap)"), eval= slides}
+```{r ppt-plots-hg, fig.asp = 1.1, fig.cap = "(ref:storyboard-hg-cap)", eval= slides}
 reg <- regions$Region
 #model_ind <- 1
 #french <- FALSE
@@ -468,7 +468,7 @@ storyboard_multi_ppt_h <- cowplot::plot_grid(
                    ncol = 3,
                    align = "h"
                    )
-# ggsave(filename = here("/figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
+ggsave(filename = here("/figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
 shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    plot_b_multi_x_up,
                    plot_c_multi,
@@ -476,7 +476,7 @@ shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    ncol = 2,
                    align = "v"
                    )
-# ggsave(filename = here("/figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=5, dpi=300)
+ggsave(filename = here("/figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=5, dpi=300)
 plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                    major_models[[model_ind]],
                                    surv_type,
@@ -493,7 +493,7 @@ plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_reg
                                    show_x_axis = TRUE,
                                    x_axis_position = "bottom",
                                    translate = french)
-# ggsave(filename = here("/figures", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
+ggsave(filename = here("/figures", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
 
 plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 catch_df = ct,
@@ -510,7 +510,7 @@ plot_d_single <- plot_biomass_catch(major_models[[model_ind]],
                                 prop_prod = 0.75,
                                 prod_yrs = 1975:1985,
                                 translate = french) 
-# ggsave(filename = here("/figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=5, dpi=300)
+ggsave(filename = here("/figures", paste0("plot_d_", region_abbreviation, "_ppt.png")), plot = plot_d_single,  width=9, height=5, dpi=300)
 ```
 
 <!-- Prince Rupert District Storyboard -->
@@ -613,7 +613,7 @@ cowplot::plot_grid(
 )
 ```
 
-```{r ppt-plots-prd, fig.asp=ifelse(french, 0.8, 1.1), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)"), eval= slides}
+```{r ppt-plots-prd, fig.asp=1.1, fig.cap = "(ref:storyboard-prd-cap)", eval= slides}
 reg <- regions$Region
 region_abbreviation <-reg[model_ind]
 plot_a_multi <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
@@ -668,7 +668,7 @@ storyboard_multi_ppt_h <- cowplot::plot_grid(
                    ncol = 3,
                    align = "h"
                    )
-# ggsave(filename = here("/figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
+ggsave(filename = here("/figures", paste0("storyboard_", region_abbreviation, "_ppt.png")),  width=12, height=6, dpi=300)
 shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    plot_b_multi_x_up,
                    plot_c_multi,
@@ -676,7 +676,7 @@ shortstory_ppt <- cowplot::plot_grid(plot_a_multi_x_up,
                    ncol = 2,
                    align = "v"
                    )
-# ggsave(filename = here("/figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=5, dpi=300)
+ ggsave(filename = here("/figures", paste0("shortstory_", region_abbreviation, "_ppt.png")),  width=8, height=5, dpi=300)
 
 plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                    major_models[[model_ind]],
@@ -694,7 +694,7 @@ plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_reg
                                    show_x_axis = TRUE,
                                    x_axis_position = "bottom",
                                    translate = french)
-# ggsave(filename = here("/figures", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
+ ggsave(filename = here("/figures", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
 plot_d_single <- plot_biomass_catch(
   major_models[[model_ind]],
   catch_df = ct,
