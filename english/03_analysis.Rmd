@@ -42,27 +42,25 @@ the HG, PRD, and CC SARs
 with stock and fishery monitoring data updated to include 2018
 and performance evaluation of area specific MPs [@dfo2019c],
 with subsequent updates outlined in Section "\nameref{sec:context}".
-In 2022 management procedure evaluation tables (Table XX to XXX) were updated. 
-
-TODO: JC Mention June 2023 CSAS csas and commitment for transition plan
-for implementing the new operating model. (SP SFD)
+Management procedure evaluation tables were updated in 2022
+(Tables \@ref(tab:decision-prd) to \@ref(tab:decision-wcvi)).
+<!-- TODO: (JC) Mention June 2023 CSAS -->
+<!-- Commitment for transition plan to implement new OM (SP SFD) -->
 
 In June 2023 a CSAS meeting was held to evaluate the application 
 of a new modelling framework for the Assessment of Pacific Herring major stocks
 and implementation in the MSE process. 
-
 From that meeting came the following recomendations:
 
-•	A minimum 3 year cycle for MSE updates is recommended, 
+1. A minimum 3 year cycle for MSE updates is recommended, 
 unless new evidence reveals exceptional circumstances.
-•	A process for implementing the new assessment and operating model, 
+
+1. A process for implementing the new assessment and operating model, 
 updates to the MSE, and identification of exceptional circumstances 
 should be developed in a phased approach in consultation with managers, 
 First Nations and other stakeholders.
 
 With those recommendations in mind we have begun consultations. ...
-
-
 
 Currently, a core set of fisheries management objectives [@dfo2019c]
 have been applied to each major SAR:
@@ -234,7 +232,7 @@ are summarized in Figure \@ref(fig:major-spawn-index).
 In `r surv_yr_rng[2]`, there was an
 increase in survey biomass (i.e., index values) for the PRD and SoG SARs, and
 a decrease in survey biomass for HG, CC, and WCVI SARs
-(Figure \@ref(fig:major-spawn-index;
+(Figure \@ref(fig:major-spawn-index);
 Tables \@ref(tab:spawn-index-hg) to \@ref(tab:spawn-index-wcvi)).
 
 ## Spatial spawn distribution
@@ -494,7 +492,7 @@ even amid mostly below-average recruitment
 (Figure \@ref(fig:storyboard-prd)b, d, e).
 In the mid-1980s, estimated spawning biomass steadily declined amid slowly 
 rising mortality rates and variable recruitment, before stabilizing at a 
-relatively low level (but above historic lows) between 2005 - 2018.  
+relatively low level (but above historic lows) between 2005 - 2018.
 Since then estimated spawning biomass has shown modest increases in biomass 
 with above average age-`r age_first` recruitment in 2014, 2018 and,
 2022 and declining natural mortality (Figure \@ref(fig:storyboard-prd)c, d, f). 
@@ -630,7 +628,7 @@ and the highest estimated natural mortality rates since `r major_start_yr`
 Some increases in estimated biomass were made in the 2010s with
 lower estimated natural mortality and higher estimated recruitment in 2015, 
 and then again after 2020
-(Figure \@ref(fig:storyboard-wcvi) d, f).
+(Figure \@ref(fig:storyboard-wcvi)d, f).
 
 The absence of a commercial fishery since 2005 means the realized harvest rate
 has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).

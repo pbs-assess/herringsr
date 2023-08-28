@@ -36,6 +36,7 @@ Updates to MP evaluations were then conducted for
 SoG and WCVI SARs in 2020 [@dfo2021b], and
 for all SARs herein.
 
+<!-- TODO: Need to update this text -->
 This assessment incorporates new science advice on
 choice of upper stock reference (USR) points
 for four Pacific Herring major SARs (PRD, CC, SoG, and WCVI).
@@ -70,10 +71,13 @@ implements the previous years' MP recommendations for HG, PRD, and CC SARs.
 an update to MP recommendations for the PRD and CC SARs [@dfo2021c], and
 implements the previous years MP recommendations for the SoG and WCVI SARs.
 
+1. Describe what we did in 2022.
+
 MPs are not updated for HG because management measures to support 
 long-term recovery of HG herring are being developed through the 
 rebuilding plan process.
 
+<!-- TODO: Need to update this text -->
 This 2022 stock assessment includes
 MP recommendations for PRD, CC, SoG, and WCVI,
 derived by updating herring OM conditioning [@benson2022] using 
