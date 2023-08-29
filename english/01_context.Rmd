@@ -4,11 +4,14 @@ Pacific Herring (*Clupea pallasii*) abundance in British Columbia (BC) is
 assessed using a statistical catch-age (SCA) model [@martell2011].
 In 2017, the Pacific Herring stock assessment included
 updates to the SCA model,
-a bridging analysis to support these changes [@cleary2018], as well as
-the estimation of stock productivity and current stock status
+a bridging analysis to support these changes [@cleary2018], and 
+estimation of stock productivity and current stock status
 relative to the new limit reference point (LRP) of $0.3\SB_0$ [@kronlund2017],
 where $\SB_0$ is estimated unfished spawning biomass.
-The structure of the SCA model has not changed since 2017.
+In 2022, upper stock reference (USR) point options were introduced for the major 
+SARs, and in this assessment estimation of stock status relative to productive period 
+USRs [@dfo2022a] are included.
+The overall structure of the SCA model has not changed since 2017.
 
 In 2016, Fisheries and Oceans Canada (DFO) committed to
 renewing the current management framework to
@@ -33,16 +36,18 @@ In 2019, DFO initiated the MSE process for the
 Haida Gwaii (HG), Prince Rupert District (PRD), and Central Coast (CC)
 SARs [@dfo2019c].
 Updates to MP evaluations were then conducted for
-SoG and WCVI SARs in 2020 [@dfo2021b], and
-for all SARs herein.
+SoG and WCVI SARs in 2020 [@dfo2021b] and
+for PRD, CC, SoG, and WCVI in 2023 [@dfo2022a,@dfo2022b].
 
-<!-- TODO: Need to update this text -->
-This assessment incorporates new science advice on
+This assessment includes new science advice on
 choice of upper stock reference (USR) points
-for four Pacific Herring major SARs (PRD, CC, SoG, and WCVI).
-An analysis of options was completed in 2022 [@dfo2022a] and
-implementation of USRs will occur through the 
-2022/23 Integrated Fisheries Management Plan (IFMP).
+for all five Pacific Herring major SARs.
+An analysis of USR options for PRD, CC, SoG, and WCVI was completed in 
+2022 [@dfo2022a] and provisional USRs based on productive 
+periods identified for each SAR was implemented in the 2022/23 Integrated 
+Fisheries Management Plan (IFMP).
+
+<!-- DELETE
 To support on-going consultations,
 five USR options are presented for PRD, CC, SoG and WCVI
 (Section "\nameref{sec:harv-opts}").
@@ -51,10 +56,10 @@ we also update conditioning of the herring OM [@benson2022]
 by including stock and fishery data from `r major_start_yr` to 2021.
 These updates first appear in @dfo2022a.
 MP evaluations presented in the harvest option tables 
-reflect the latest OM updates.
+reflect the latest OM updates. -->
 
 Since initiation of the Pacific Herring MSE process,
-results have been included in the annual stock assessment as follows:
+MP evaluations have been included in the annual stock assessment as follows:
 
 1. The 2018 stock assessment includes
 MP recommendations for the SoG and WCVI SARs [@dfo2019a].
@@ -71,27 +76,22 @@ implements the previous years' MP recommendations for HG, PRD, and CC SARs.
 an update to MP recommendations for the PRD and CC SARs [@dfo2021c], and
 implements the previous years MP recommendations for the SoG and WCVI SARs.
 
-1. Describe what we did in 2022.
+1. The 2022 stock assessment includes
+an update to MP recommendations for PRD, CC, SoG, and WCVI SARs [@dfo2022b].
 
-MPs are not updated for HG because management measures to support 
-long-term recovery of HG herring are being developed through the 
-rebuilding plan process.
-
-<!-- TODO: Need to update this text -->
-This 2022 stock assessment includes
-MP recommendations for PRD, CC, SoG, and WCVI,
-derived by updating herring OM conditioning [@benson2022] using 
-the latest historic stock and fishery data from `r major_start_yr` to 2021.
-USR options first presented in @dfo2022a are included to
-support selection of stock-specific USRs
-for implementation through the 2022/23 IFMP.
-Management measures to support long-term recovery of HG herring,
-including rebuilding objectives and USR,
-are documented in the draft
-HG herring rebuilding plan.\footnote{\label{fn:rebuild}
+Note that MPs for HG are not updated through this process. 
+Instead, management measures to support long-term recovery of HG herring 
+are being developed through the HG rebuilding plan process.\footnote{\label{fn:rebuild}
 Haida Gwaii 'íináang | iinang Pacific Herring:
 An ecosystem overview and ecosystem-based rebuilding plan.
 Draft consultation period fall 2022.}
+
+This `r assess_yr` stock assessment includes
+MP recommendations for PRD, CC, SoG, and WCVI,
+derived in 2022 by updating herring OM conditioning [@benson2022] using 
+the latest historic stock and fishery data from `r major_start_yr` to 2021 [@dfo2022b].
+There are no new MP evaluations for `r assess_yr` (all probability metrics reflect the
+MP evaluations presented in 2022).
 
 Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested
 that DFO Pacific Science Branch assess the status of
@@ -105,9 +105,9 @@ management procedure options, and
 harvest advice recommendations from those MPs for `r assess_yr + 1`
 reflect methods of @cleary2018 and @benson2022 and,
 where applicable,
-recommendations from the aforementioned 2018, 2019, 2020, and 2021 MSE analyses
+recommendations from the aforementioned 2018, 2019, 2020, 2021, and 2022 MSE analyses
 (Section "\nameref{sec:harv-opts}").
 
 <!-- Mandatory last paragraph in this section -->
 This Science Response results from the Science Response Process of
-September 15, `r assess_yr` on the `r rmarkdown::metadata$title`.
+September XX, `r assess_yr` on the `r rmarkdown::metadata$title`.

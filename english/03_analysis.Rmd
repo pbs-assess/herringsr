@@ -2,9 +2,8 @@
 
 ## COVID-19 pandemic
 
-Unlike the last three years,
-the COVID-19 pandemic did not impact
-the collection and analysis of biological data in 2023.
+Unlike the last three years, the COVID-19 pandemic did not impact
+the collection and analysis of spawn or biological data in 2023.
 
 ## Management strategy evaluation\label{sec:mse}
 
@@ -16,9 +15,8 @@ evaluate the performance of candidate MPs against
 hypotheses about past and future stock and fishery dynamics. 
 The purpose of the MSE process is to
 identify and eliminate MPs that incur unacceptable risks to a stock
-(i.e., poor choices) and
-identify MPs that provide acceptable outcomes related to
-conservation and fishery management objectives.
+(i.e., poor choices) and identify MPs that provide acceptable outcomes related
+to conservation and fishery management objectives.
 The identification of a preferred MP requires
 a fully specified set of measurable objectives that include
 reference points (typically categorized as limits and targets) and
@@ -45,12 +43,11 @@ with subsequent updates outlined in Section "\nameref{sec:context}".
 Management procedure evaluation tables were updated in 2022
 (Tables \@ref(tab:decision-prd) to \@ref(tab:decision-wcvi)).
 <!-- TODO: (JC) Mention June 2023 CSAS -->
-<!-- Commitment for transition plan to implement new OM (SP SFD) -->
 
-In June 2023 a CSAS meeting was held to evaluate the application 
+In June 2023 a CSAS meeting was held to review "Application 
 of a new modelling framework for the Assessment of Pacific Herring major stocks
 and implementation in the MSE process. 
-From that meeting came the following recomendations:
+From that meeting came the following recommendations:
 
 1. A minimum 3 year cycle for MSE updates is recommended, 
 unless new evidence reveals exceptional circumstances.
@@ -676,8 +673,8 @@ Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs
 for each major SAR, derived from the Herring OM [@benson2022]. 
 OM conditioning was updated using the latest historic stock and fishery data
 from `r major_start_yr` to 2021.
-MPs are not provided for HG because
-this is now conducted within the rebuilding plan process.
+MPs are not provided for HG because this is now conducted within the 
+HG rebuilding plan process.$^{\ref{fn:rebuild}}$
 
 ### Haida Gwaii
 
