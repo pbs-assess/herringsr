@@ -77,15 +77,13 @@ catch_plot_post69 <- plot_catch(
 (ref:major-incidental-cap) Incidental Pacific Herring mortality
 in aquaculture activities in thousands of fish from
 `r min(ic_yrs)` to `r max(ic_yrs)` in the major SARs.
-Notes: data for `r max(ic_yrs)` may be incomplete,
-figure may include data outside SAR boundaries, and
+Notes: figure may include data outside SAR boundaries and
 figure excludes SARs with no reported incidental mortality.
 
 (ref:major-incidental-cap-fr) Mortalité accidentelle de hareng du Pacifique
 dans les activités d'aquaculture en milliers de poissons
 de `r min(ic_yrs)` à `r max(ic_yrs)` dans les RES majeurs.
-Notes: Les données pour `r max(ic_yrs)` peuvent être incomplètes, et
-la figure exclut les RES pour lesquels
+Notes: La figure exclut les RES pour lesquels
 aucune mortalité accidentelle n'a été déclarée.
 
 ```{r major-incidental, fig.asp=ifelse(french, 0.8, 0.8), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)"), eval = show_ic_figures}
