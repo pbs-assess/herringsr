@@ -412,7 +412,6 @@ cowplot::plot_grid(
 ```{r ppt-plots-hg, fig.asp = 1.1, fig.cap = "(ref:storyboard-hg-cap)", eval= slides}
 reg <- regions$Region
 #model_ind <- 1
-#french <- FALSE
 region_abbreviation <-reg[model_ind]
 plot_a_multi <- plot_scaled_abundance(major_surv %>% filter(region == major_regions_full[model_ind]),
                                    major_models[[model_ind]],
@@ -421,9 +420,9 @@ plot_a_multi <- plot_scaled_abundance(major_surv %>% filter(region == major_regi
                                    xlim = xlim_all,
                                    show_x_axis = TRUE, 
                                    y_axis_label_newline_length = 20,
+                                   prod_yrs = prod_period[[model_ind]]$yrs,
                                    translate = french)
 plot_a_multi_x_up <- plot_a_multi  + scale_x_continuous(position = "top")
-  
 
 
 plot_b_multi <- plot_natural_mortality(major_models[[model_ind]],
@@ -431,6 +430,7 @@ plot_b_multi <- plot_natural_mortality(major_models[[model_ind]],
                                     show_x_axis = TRUE,
                                     y_max = M_max,
                                     y_axis_label_newline_length = 20,
+                                    prod_yrs = prod_period[[model_ind]]$yrs,
                                     translate = french)
 plot_b_multi_x_up <- plot_b_multi + scale_x_continuous(position = "top")
 
@@ -438,6 +438,7 @@ plot_c_multi <- plot_recruitment(major_models[[model_ind]],
                               xlim = xlim_all,
                               show_x_axis = TRUE,
                               y_axis_label_newline_length = 17,
+                              prod_yrs = prod_period[[model_ind]]$yrs,
                               translate = french) + labs(x = NULL)
 
 plot_d_multi <- plot_biomass_catch(major_models[[model_ind]],
@@ -445,11 +446,14 @@ plot_d_multi <- plot_biomass_catch(major_models[[model_ind]],
                                 xlim = xlim_all,
                                 y_axis_label_newline_length = 20,
                                 label_points = TRUE,
+                                prod_yrs = prod_period[[model_ind]]$yrs,
+                                prop_prod = prod_period[[model_ind]]$prop,
                                 translate = french)
 plot_e_multi <- plot_recruitment_devs(major_models[[model_ind]],
                                    run_mean_yrs = nRollRec,
                                    xlim = xlim_all,
                                    y_axis_label_newline_length = 20,
+                                   prod_yrs = prod_period[[model_ind]]$yrs,
                                    translate = french)
 plot_f_multi <- plot_biomass_phase(major_models[[model_ind]],
                                 catch_df = ct,
