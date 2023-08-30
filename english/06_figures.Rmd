@@ -494,6 +494,7 @@ plot_a_single <- plot_scaled_abundance(major_surv %>% filter(region == major_reg
                                    annot = region_abbreviation,
                                    show_x_axis = TRUE,
                                    x_axis_position = "bottom",
+                                   prod_yrs = prod_period[[model_ind]]$yrs,
                                    translate = french)
 ggsave(filename = here("figures", paste0("plot_a_", region_abbreviation, "_ppt.png")), plot = plot_a_single,  width=10, height=5, dpi=300)
 
