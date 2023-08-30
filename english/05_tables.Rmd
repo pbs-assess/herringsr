@@ -721,13 +721,13 @@ Reference points are summarised by posterior
 percentile) estimates.
 All biomass numbers are in thousands of tonnes.
 Legend: $\SB_0$ is estimated unfished spawning biomass;
-$\SB_{t}$ is spawning biomass in year $t$;
-$\SB_{`r assess_yr+1`}$ is
-projected spawning biomass in `r assess_yr+1` assuming no fishing;
 $\overline{\SB}_\mli{Prod}$ is
 average spawning biomass during a productive period
-(Table \@ref(tab:prod-period)); and
-$P$ is probability.
+(Table \@ref(tab:prod-period));
+$\SB_{t}$ is spawning biomass in year $t$;
+$P$ is probability; and
+$\SB_{`r assess_yr+1`}$ is
+projected spawning biomass in `r assess_yr+1` assuming no fishing.
 Note that the age-`r age_plus` class is a 'plus group' which includes
 fish ages `r age_plus` and older.
 
