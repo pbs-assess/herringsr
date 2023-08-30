@@ -19,9 +19,10 @@ minor SARs or special areas.
 
 ## Description of the fishery
 
-At present, there are several Pacific Herring fisheries in BC.
-First Nations have priority access, after conservation,
-to fish for food, social, and ceremonial (FSC) purposes.
+There are several Pacific Herring fisheries in BC.
+After conservation,
+First Nations have priority access to fish for
+food, social, and ceremonial (FSC) purposes.
 Commercial fishing opportunities consist of four directed fisheries:
 food and bait (FB),
 special use (SU),
