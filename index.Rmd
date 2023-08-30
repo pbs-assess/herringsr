@@ -80,7 +80,8 @@ opts_chunk$set(
   # autodep = TRUE,
   # cache = TRUE,
   cache.comments = FALSE,
-  dev = fig_out_type,
+  #dev = fig_out_type, change by sp 8/29 to get ggsave to work
+  dev = "ragg_png",
   dpi = fig_dpi,
   fig.align = fig_align,
   fig.pos = "H"
@@ -140,11 +141,14 @@ library(rosettafish)
 library(csasdown)
 library(gfutilities)
 library(gfiscamutils)
+library(ggplot2)
 library(ggrepel)
 library(herringutils)
 library(gcookbook)
-library(ragg)
+#library(ragg)
 library(readr)
+#library(svglite)
+library(tidyverse)
 library(zoo)
 
 assess_yr <- 2023
@@ -174,7 +178,7 @@ theme_set(herring_theme())
 ```{r output-options}
 keep_non_CC <- TRUE     # FALSE to provide preliminary CC report
 show_ic_figures <- TRUE # Show/hide incidental catch figures
-slides <- FALSE         # Make figures for powerpoint slides
+slides <- TRUE         # Make figures for powerpoint slides
 ```
 
 <!-- Distributions -->
