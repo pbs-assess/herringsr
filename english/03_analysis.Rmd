@@ -289,12 +289,10 @@ as DFO receives additional reports.
 
 ## First Nations observations
 
-<!-- TODO: Waiting on PRD, CC, SoG, and WCVI; change statement 'for most areas.' (line below) -->
+<!-- TODO: Waiting on PRD, CC, SoG, and WCVI -->
 
-In `r assess_yr`, local observations were provided by
-coastal First Nations participants for most areas.
-
-The following descriptions were contributed by representatives of First Nations communities.
+The following observations were contributed by
+representatives of First Nations communities.
 
 ### Haida Gwaii
 
