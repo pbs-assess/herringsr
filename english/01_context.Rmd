@@ -8,9 +8,10 @@ a bridging analysis to support these changes [@cleary2018], and
 estimation of stock productivity and current stock status
 relative to the new limit reference point (LRP) of $0.3\SB_0$ [@kronlund2017],
 where $\SB_0$ is estimated unfished spawning biomass.
-In 2022, upper stock reference (USR) point options were introduced for the major 
-SARs, and in this assessment estimation of stock status relative to productive period 
-USRs [@dfo2022a] are included.
+In 2022, upper stock reference (USR) point options
+were introduced for the major SARs, and
+in this assessment estimation of stock status relative to
+productive period USRs [@dfo2022a] are included.
 The overall structure of the SCA model has not changed since 2017.
 
 In 2016, Fisheries and Oceans Canada (DFO) committed to
@@ -70,18 +71,19 @@ implements the previous years' MP recommendations for the SoG and WCVI SARs.
 
 1. The 2020 stock assessment includes
 an update to MP recommendations for the SoG and WCVI SARs [@dfo2021b], and
-implements the previous years' MP recommendations for HG, PRD, and CC SARs.
+implements the previous years' MP recommendations for the HG, PRD, and CC SARs.
 
 1. The 2021 stock assessment includes
 an update to MP recommendations for the PRD and CC SARs [@dfo2021c], and
 implements the previous years MP recommendations for the SoG and WCVI SARs.
 
 1. The 2022 stock assessment includes
-an update to MP recommendations for PRD, CC, SoG, and WCVI SARs [@dfo2022b].
+an update to MP recommendations for the PRD, CC, SoG, and WCVI SARs [@dfo2022b].
 
 Note that MPs for HG are not updated through this process. 
 Instead, management measures to support long-term recovery of HG herring 
-are being developed through the HG rebuilding plan process.\footnote{\label{fn:rebuild}
+are being developed through the
+HG rebuilding plan process.\footnote{\label{fn:rebuild}
 Haida Gwaii 'íináang | iinang Pacific Herring:
 An ecosystem overview and ecosystem-based rebuilding plan.
 Draft consultation period fall 2022.}
@@ -89,9 +91,10 @@ Draft consultation period fall 2022.}
 This `r assess_yr` stock assessment includes
 MP recommendations for PRD, CC, SoG, and WCVI,
 derived in 2022 by updating herring OM conditioning [@benson2022] using 
-the latest historic stock and fishery data from `r major_start_yr` to 2021 [@dfo2022b].
-There are no new MP evaluations for `r assess_yr` (all probability metrics reflect the
-MP evaluations presented in 2022).
+the latest historic stock and fishery data
+from `r major_start_yr` to 2021 [@dfo2022b].
+There are no new MP evaluations for `r assess_yr`
+(all probability metrics reflect the MP evaluations presented in 2022).
 
 Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested
 that DFO Pacific Science Branch assess the status of
@@ -105,9 +108,11 @@ management procedure options, and
 harvest advice recommendations from those MPs for `r assess_yr + 1`
 reflect methods of @cleary2018 and @benson2022 and,
 where applicable,
-recommendations from the aforementioned 2018, 2019, 2020, 2021, and 2022 MSE analyses
+recommendations from the aforementioned
+2018, 2019, 2020, 2021, and 2022 MSE analyses
 (Section "\nameref{sec:harv-opts}").
 
 <!-- Mandatory last paragraph in this section -->
 This Science Response results from the Science Response Process of
-September XX, `r assess_yr` on the `r rmarkdown::metadata$title`.
+`r rmarkdown::metadata$approval_month` `r rmarkdown::metadata$approval_day`,
+`r rmarkdown::metadata$approval_year` on the `r rmarkdown::metadata$title`.

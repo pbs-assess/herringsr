@@ -43,7 +43,6 @@ with subsequent updates outlined in Section "\nameref{sec:context}".
 Management procedure evaluation tables were updated in 2022
 (Tables \@ref(tab:decision-prd) to \@ref(tab:decision-wcvi)).
 
-
 Currently, a core set of fisheries management objectives [@dfo2019c]
 have been applied to each major SAR:
 
@@ -83,7 +82,8 @@ two hypotheses about future Pacific Herring natural mortality $M$:
 
 1. $M$ is a time-varying, density-independent process (DIM).
 
-These two hypotheses are captured as operating model (OM) scenarios in @benson2022.
+These two hypotheses are captured as operating model (OM) scenarios
+in @benson2022.
 The DDM scenario was identified as the reference OM scenario based on
 discussion at the 2018 CSAS review process [@dfo2019c],
 while the DIM scenario was identified as a robustness OM scenario.
@@ -251,8 +251,6 @@ biology for each SAR based on the
 survey data and working group discussions with local First Nations.
 
 ## Incidental mortality
-
-<!-- TODO: Add data for 2023 if/when available (MG) -->
 
 In order to advance progress towards
 a holistic ecosystem-based management (EBM) approach for Pacific Herring,
