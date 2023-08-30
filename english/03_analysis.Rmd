@@ -289,16 +289,12 @@ as DFO receives additional reports.
 
 ## First Nations observations
 
-<!-- TODO: Waiting on PRD, CC, SoG, and WCVI -->
+<!-- TODO: Waiting on PRD, CC, SoG, and WCVI; change statement 'for most areas.' (line below) -->
 
-<!-- The COVID-19 pandemic continues to impact First Nations participation -->
-<!-- in Pacific Herring survey activities as well as participation -->
-<!-- in traditional harvest activities such as FSC. -->
-<!-- In `r assess_yr`, local observations were provided by -->
-<!-- coastal First Nations participants for most areas. -->
-<!-- The following descriptions were provided by First Nations contributors. -->
+In `r assess_yr`, local observations were provided by
+coastal First Nations participants for most areas.
 
-<!-- TODO: JC to check HG -->
+The following descriptions were contributed by representatives of First Nations communities.
 
 ### Haida Gwaii
 
@@ -312,7 +308,7 @@ The majority of herring stocks in the Haida Gwaii major stock assessment area co
 
 In Louscoone Inlet, local stocks would normally be found well up inside the inlet and often presented a very light spawn near the head of the inlet early in the season (early to mid March). There were no reported spawns in Louscoone Inlet in 2023. The herring stocks in Louscoone Inlet seldom exceeded 500 tons, however in recent years it has been much less. Other stocks, found in the outer portions of Louscoone Inlet, are thought to be more migratory and rarely spawn in Louscoone.
 
-There was no effort toward the traditional harvest of k’aaw in Skincuttle and Upper Burnaby. However, there were local harvesters from Skidegate that were set up during the spawn in Selwyn Inlet. As a result there was 11,000 pounds of k’aaw estimated to have been harvested from Selwyn Inlet during the 2023 season.
+There was no effort toward the traditional harvest of k’aaw in Skincuttle and Upper Burnaby in 2023. However, there were local harvesters from Skidegate that were set up during the spawn in Selwyn Inlet. As a result there was 11,000 pounds of k’aaw was estimated to have been harvested from Selwyn Inlet during the 2023 season.
 
 <!-- ### Prince Rupert District -->
 
