@@ -83,36 +83,6 @@ spawn_index_by_area_table(
 
 ## Figures
 
-(ref:spawn-section-a27-cap) Area 27 SAR:
-spawn index in thousands of tonnes (t) of Pacific Herring by Section
-from `r minor_start_yr_plot` to `r minor_end_yr`.
-The dashed vertical line delineates between two periods
-defined by the dominant survey method:
-surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
-dive surveys (`r new_surv_yr` to `r major_end_yr`).
-Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
-
-(ref:spawn-section-a27-cap-fr) RES de la zone 27:
-indice de frai en milliers de tonnes (t) de hareng du Pacifique par section
-de `r minor_start_yr_plot` à `r minor_end_yr`.
-La ligne verticale en pointillés délimite deux périodes
-définies par la méthode de relevé dominante:
-les relevés de surface (`r major_start_yr` à `r new_surv_yr-1`), et
-les relevés en plongée (`r new_surv_yr` à `r major_end_yr`).
-Note: l'indice de frai n'est pas mis à l'échelle par
-le paramètre d'échelle de l'enquête sur le frai $q$.
-
-```{r spawn-section-a27, fig.asp=ifelse(french, 0.67, 0.67), fig.cap = ifelse(french, "(ref:spawn-section-a27-cap-fr)", "(ref:spawn-section-a27-cap)")}
-plot_spawn_section(
-  model = NA,
-  data_file = file.path(data_path, "spawn-yr-sec-a27.csv"),
-  sections = NA,
-  yr_range = c(minor_start_yr_plot, minor_end_yr),
-  scale = FALSE,
-  translate = french
-)
-```
-
 (ref:minor-catch-cap) Total landed Pacific Herring catch in
 thousands of tonnes (t)
 from `r minor_start_yr_plot` to `r minor_end_yr` in the minor SARs.
@@ -225,6 +195,36 @@ plot_spawn_ind(
   df = minor_surv,
   yr_range = c(minor_start_yr_plot, minor_end_yr),
   new_surv_yr = new_surv_yr,
+  translate = french
+)
+```
+
+(ref:spawn-section-a27-cap) Area 27 SAR:
+spawn index in thousands of tonnes (t) of Pacific Herring by Section
+from `r minor_start_yr_plot` to `r minor_end_yr`.
+The dashed vertical line delineates between two periods
+defined by the dominant survey method:
+surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
+dive surveys (`r new_surv_yr` to `r major_end_yr`).
+Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
+
+(ref:spawn-section-a27-cap-fr) RES de la zone 27:
+indice de frai en milliers de tonnes (t) de hareng du Pacifique par section
+de `r minor_start_yr_plot` à `r minor_end_yr`.
+La ligne verticale en pointillés délimite deux périodes
+définies par la méthode de relevé dominante:
+les relevés de surface (`r major_start_yr` à `r new_surv_yr-1`), et
+les relevés en plongée (`r new_surv_yr` à `r major_end_yr`).
+Note: l'indice de frai n'est pas mis à l'échelle par
+le paramètre d'échelle de l'enquête sur le frai $q$.
+
+```{r spawn-section-a27, fig.asp=ifelse(french, 0.67, 0.67), fig.cap = ifelse(french, "(ref:spawn-section-a27-cap-fr)", "(ref:spawn-section-a27-cap)")}
+plot_spawn_section(
+  model = NA,
+  data_file = file.path(data_path, "spawn-yr-sec-a27.csv"),
+  sections = NA,
+  yr_range = c(minor_start_yr_plot, minor_end_yr),
+  scale = FALSE,
   translate = french
 )
 ```
