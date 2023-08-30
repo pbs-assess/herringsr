@@ -88,25 +88,25 @@ The DDM scenario was identified as the reference OM scenario based on
 discussion at the 2018 CSAS review process [@dfo2019c],
 while the DIM scenario was identified as a robustness OM scenario.
 
-<!-- TODO: (JC) Mention June 2023 CSAS -->
 On June 26-28, 2023, a regional peer review occurred for "Application 
 of a new modelling framework for the assessment of Pacific Herring 
-(*Clupea pallasii*) major stocks and implementation in the MSE process"
-[@dfo2023a].
-From that meeting came the following recommendations:
+(*Clupea pallasii*) major stocks and implementation in the MSE process".
 
-1. A minimum 3 year cycle for MSE updates is recommended, 
-unless new evidence reveals exceptional circumstances.
+The details of the review process are summarized in @dfo2023a, and there were
+two key recommendations for implementation:
 
 1. A process for implementing the new assessment and operating model, 
 updates to the MSE, and identification of exceptional circumstances 
 should be developed in a phased approach in consultation with managers, 
 First Nations and other stakeholders.
 
-With those recommendations in mind we have begun consultations. ...
+1. A minimum 3 year cycle for MSE updates is recommended, 
+unless new evidence reveals exceptional circumstances.
 
+DFO is committed to these recommendations prior to implementation of 
+the SISCAH modelling framework.
 
-<!-- JC COMMENTED OUT
+<!-- JC COMMENTED OUT Aug 29, 2023
 Several lessons were learned from the MSE analyses conducted so far:
 
 1. The catch-at-age stock assessment model can produce large (positive)
@@ -155,6 +155,8 @@ performance would start to approach equilibrium and be
 unaffected by most recent trends in OM conditioning data.
 This phenomenon is important to consider when selecting or eliminating MPs, 
 especially if probabilities are considerably different between MP updates. -->
+
+#stopped here
 
 ## Input data
 
