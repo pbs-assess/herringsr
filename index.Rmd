@@ -175,7 +175,7 @@ theme_set(herring_theme())
 ```{r output-options}
 keep_non_CC <- TRUE     # FALSE to provide preliminary CC report
 show_ic_figures <- TRUE # Show/hide incidental catch figures
-slides <- TRUE         # Make figures for powerpoint slides
+slides <- FALSE         # Make figures for powerpoint slides
 ```
 
 <!-- Distributions -->
