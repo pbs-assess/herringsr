@@ -105,4 +105,5 @@ les recommandations issues des analyses des ESG de 2018, 2019, 2020 et 2021 susm
 
 <!-- Mandatory last paragraph in this section -->
 Cette réponse des Sciences découle du processus de réponse des Sciences du
-15 septembre `r assess_yr` sur le `r rmarkdown::metadata$title`.
+`r rmarkdown::metadata$process_day` `r rmarkdown::metadata$process_month`
+`r rmarkdown::metadata$process_year` sur le `r rmarkdown::metadata$title`.
