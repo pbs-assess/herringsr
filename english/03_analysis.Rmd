@@ -320,17 +320,15 @@ There was no effort toward the traditional harvest of k’aaw in Skincuttle and 
 
 Analyses of stock trend information is presented following
 methods of @cleary2018 for the Pacific Herring major SARs (AM2 only).
-This year,
-Markov chain Monte Carlo (MCMC) runs have chain length
-`r number_to_word(mcmc_length)`
-with a sample taken every `r number_to_word(mcmc_samp_freq)` iterations
-(i.e., thinning).
+This year, Markov chain Monte Carlo (MCMC) runs
+have chain length `r number_to_word(mcmc_length)`
+with a sample taken every `r number_to_word(mcmc_samp_freq)`
+iterations (i.e., thinning).
 The first `r number_to_word(mcmc_burnin)` samples are discarded (i.e., burn-in),
 leaving `r number_to_word(mcmc_num_samples)` samples for posteriors.
 Perceptions of stock status based on outputs (i.e., posteriors)
-from the SCA model (i.e., AM2)
-are summarized for each stock in a multi-panel figure
-(e.g., Figure \@ref(fig:storyboard-hg)).
+from the AM2 SCA model are summarized for each stock
+in a multi-panel figure (e.g., Figure \@ref(fig:storyboard-hg)).
 The panels show:
 
 a. Model fit to scaled spawn survey data,
