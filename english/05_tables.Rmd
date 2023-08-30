@@ -44,7 +44,7 @@ Légende: `r commify(major_regions_full_parens, and_word = "et")`.
 Remarque: «DT» indique que les données ne sont pas divulguées
 pour des raisons de confidentialité.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r annual-catch}
 total_landed_catch_table(
@@ -69,7 +69,7 @@ hareng du Pacifique de `r major_end_yr - num_yrs_tab` à `r major_end_yr`
 dans les regions d’évaluation des stocks (RES) majeurs.
 Voir le tableau \@ref(tab:annual-catch) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r annual-sok-catch}
 sok_harvest_table(
@@ -106,7 +106,7 @@ Remarque: l’indice du frai n’est pas mis à l’échelle
 à l’aide du paramètre de mise à l’échelle du relevé du frai $q$, et
 «NA» indique que les données ne sont pas disponibles.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r spawn-index-hg}
 spawn_index_by_area_table(
@@ -133,7 +133,7 @@ par zone statistique pour le hareng du Pacifique
 de `r major_end_yr - num_yrs_tab` à `r major_end_yr`.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r spawn-index-prd}
 spawn_index_by_area_table(
@@ -160,7 +160,7 @@ par zone statistique pour le hareng du Pacifique
 de `r major_end_yr - num_yrs_tab` à `r major_end_yr`.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r spawn-index-cc}
 spawn_index_by_area_table(
@@ -196,7 +196,7 @@ Légende: «14&17» fait référence aux zones statistiques 14 et 17
 «SDodd» fait référence au sud du passage Dodd.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r spawn-index-sog}
 spawn_index_by_area_table(
@@ -223,7 +223,7 @@ par zone statistique pour le hareng du Pacifique
 de `r major_end_yr - num_yrs_tab` à `r major_end_yr`.
 Voir le tableau \@ref(tab:spawn-index-hg) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r spawn-index-wcvi}
 spawn_index_by_area_table(
@@ -281,7 +281,7 @@ $\tau$ est l'écart-type de l'erreur de processus (c.-à-d. le recrutement); and
 $\sigma$ est l'écart-type de l'erreur d'observation (c.-à-d. l'indice du frai).
 Remarque: $\tau$ et $\sigma$ sont des valeurs calculées.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r hg-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -305,7 +305,7 @@ See Table \@ref(tab:hg-parameter-est) for description.
 paramètres clés du modèle statistique de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r prd-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
@@ -329,7 +329,7 @@ See Table \@ref(tab:hg-parameter-est) for description.
 paramètres clés du modèle statistique de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r cc-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -353,7 +353,7 @@ See Table \@ref(tab:hg-parameter-est) for description.
 paramètres clés du modèle statistique de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r sog-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
@@ -377,7 +377,7 @@ See Table \@ref(tab:hg-parameter-est) for description.
 paramètres clés du modèle statistique de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r wcvi-parameter-est, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
@@ -409,7 +409,7 @@ Le recrutement en millions est résumé par des estimations postérieures
 (`r confidence_vals[1]*100`^e^, 50^e^, et `r confidence_vals[2]*100`^e^
 centile) et les estimations de la densité a posteriori maximale (DPM).
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r hg-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -439,7 +439,7 @@ de `r major_end_yr - num_yrs_tab` à `r major_end_yr`
 pour le modèle statistique de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:hg-recruitment) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r prd-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
@@ -469,7 +469,7 @@ de `r major_end_yr - num_yrs_tab` à `r major_end_yr`
 pour le modèle statistique de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:hg-recruitment) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r cc-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -499,7 +499,7 @@ de `r major_end_yr - num_yrs_tab` à `r major_end_yr`
 pour le modèle statistique de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:hg-recruitment) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r sog-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
@@ -529,7 +529,7 @@ de `r major_end_yr - num_yrs_tab` à `r major_end_yr`
 pour le modèle statistique de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:hg-recruitment) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r wcvi-recruitment, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
@@ -571,7 +571,7 @@ Note: la déplétion est la biomasse reproductrice relative $\SB_t/\SB_0$, où
 $\SB_t$ est la biomasse reproductrice de l'année $t$, et
 $\SB_0$ est la biomasse reproductrice estimée non pêchée.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r hg-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -602,7 +602,7 @@ biomasse reproductrice et déplétion de
 modèle statistique de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r prd-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
@@ -633,7 +633,7 @@ biomasse reproductrice et déplétion de
 modèle statistique de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r cc-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -664,7 +664,7 @@ biomasse reproductrice et déplétion de
 modèle statistique de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r sog-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
@@ -695,7 +695,7 @@ biomasse reproductrice et déplétion de
 modèle statistique de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r wcvi-spawning-biomass-depletion, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
@@ -721,12 +721,13 @@ Reference points are summarised by posterior
 percentile) estimates.
 All biomass numbers are in thousands of tonnes.
 Legend: $\SB_0$ is estimated unfished spawning biomass;
-$\SB_{t}$ is spawning biomass in year $t$;
-$\SB_{`r assess_yr+1`}$ is
-projected spawning biomass in `r assess_yr+1` assuming no fishing; and
 $\overline{\SB}_\mli{Prod}$ is
 average spawning biomass during a productive period
-(Table \@ref(tab:prod-period)).
+(Table \@ref(tab:prod-period));
+$\SB_{t}$ is spawning biomass in year $t$;
+$P$ is probability; and
+$\SB_{`r assess_yr+1`}$ is
+projected spawning biomass in `r assess_yr+1` assuming no fishing.
 Note that the age-`r age_plus` class is a 'plus group' which includes
 fish ages `r age_plus` and older.
 
@@ -745,7 +746,7 @@ biomasse reproductrice moyenne pendant une période productive
 Notez que la classe âge-`r age_plus` est un 'groupe plus'
 qui inclut les poissons âgés de `r age_plus` et plus.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r ref-points-hg, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("HG", french), major_regions_short)
@@ -772,7 +773,7 @@ points de référence proposés pour le modèle statistique
 de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r ref-points-prd, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
@@ -799,7 +800,7 @@ points de référence proposés pour le modèle statistique
 de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r ref-points-cc, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -826,7 +827,7 @@ points de référence proposés pour le modèle statistique
 de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r ref-points-sog, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
@@ -853,7 +854,7 @@ points de référence proposés pour le modèle statistique
 de capture-âge du hareng du Pacifique.
 Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r ref-points-wcvi, results = 'asis', echo = FALSE}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
@@ -882,7 +883,7 @@ pendant une période productive
 $\overline{\SB}_\mli{Prod}$
 dans les principales régions d'évaluation des stocks (RES).
 
-\needspace{0.25\textheight}
+\needspace{0.32\textheight}
 
 ```{r prod-period}
 prod_period_table(
@@ -958,7 +959,7 @@ soit parce que le PM spécifie l'interdiction de la pêche.
 \setlength{\tabcolsep}{5pt}
 <!-- \renewcommand{\arraystretch}{1.15} -->
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r decision-prd, results = 'asis', echo = FALSE}
 decision_tables_mp(
@@ -984,7 +985,7 @@ See Table \@ref(tab:decision-prd) for description.
 rendement de la procédure de gestion pour le modèle statistique de prises-âges du hareng du Pacifique.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r decision-cc, results = 'asis', echo = FALSE}
 decision_tables_mp(
@@ -1011,7 +1012,7 @@ rendement de la procédure de gestion pour le modèle statistique
 de prises-âges du hareng du Pacifique.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r decision-sog, results = 'asis', echo = FALSE}
 decision_tables_mp(
@@ -1039,7 +1040,7 @@ rendement de la procédure de gestion pour le modèle statistique
 de prises-âges du hareng du Pacifique.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
-\needspace{0.35\textheight}
+\needspace{0.32\textheight}
 
 ```{r decision-wcvi, results = 'asis', echo = FALSE}
 decision_tables_mp(

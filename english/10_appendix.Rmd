@@ -5,36 +5,39 @@
 We do not conduct formal analyses of stock trend information for the
 `r number_to_word(length(minor_regions_short))`
 Pacific Herring minor SARs: `r commify(minor_regions_full_parens)`.
-However, we provide the spawn index and proportion of spawn index by Section 
+However, we provide
+landed commercial catch (Figure \@ref(fig:minor-catch)),
+incidental mortality in finfish aquaculture activities
+(Figure \@ref(fig:minor-incidental)),
+biological data including weight-at-age (Figure \@ref(fig:minor-wa)) and
+proportion-at-age (Figure \@ref(fig:minor-pa)),
+as well as spawn index (Figure \@ref(fig:minor-spawn-index))
+from `r minor_start_yr_plot` to `r minor_end_yr`.
+We also provide the spawn index and proportion of spawn index by Section 
 from `r minor_end_yr-num_yrs_tab` to `r minor_end_yr` for A27 and A2W
 (Tables \@ref(tab:spawn-index-a27) and \@ref(tab:spawn-index-a2w), respectively).
 For Area 27, we provide the spawn index by Section
 from `r minor_start_yr_plot` to `r minor_end_yr`
 (Figure \@ref(fig:spawn-section-a27)).
-We also provide
-landed commercial catch (Figure \@ref(fig:minor-catch)),
-incidental catch (Figure \@ref(fig:minor-incidental)),
-biological data including weight-at-age (Figure \@ref(fig:minor-wa)) and
-proportion-at-age (Figure \@ref(fig:minor-pa)),
-as well as spawn index (Figure \@ref(fig:minor-spawn-index))
-from `r minor_start_yr_plot` to `r minor_end_yr`.
+
 
 ## Special areas\label{sec:app-special}
 
-We do not conduct formal analyses of stock trend information for the
-Pacific Herring special area, Area 10 (A10; Figure \@ref(fig:a10-map)).
-Note that Area 10 is a subset of the Central Coast
-and is outside the SAR boundary.
 As with the minor SARs,
-we provide the spawn index and proportion of spawn index by Section
-from `r special_end_yr-num_yrs_tab` to `r special_end_yr`
-(Table \@ref(tab:spawn-index-a10)).
-Note that 2022 spawn data may be incomplete;
-DFO has not received data collected by the Gwa'sala-'Nakwaxda'xw Nation.
-We also provide
+we do not conduct formal analyses of stock trend information for the
+Pacific Herring special area, Area 10 (A10; Figure \@ref(fig:a10-map)).
+However, we provide
 biological data including weight-at-age (Figure \@ref(fig:special-wa)) and
 proportion-at-age (Figure \@ref(fig:special-pa)),
 as well as spawn index (Figure \@ref(fig:special-spawn-index))
 from `r special_start_yr_plot` to `r special_end_yr`.
-Note that there is no commercial catch or incidental catch in Area 10 from 
-`r special_start_yr_plot` to `r special_end_yr`.
+We also provide the spawn index and proportion of spawn index by Section
+from `r special_end_yr-num_yrs_tab` to `r special_end_yr`
+(Table \@ref(tab:spawn-index-a10)).
+<!-- TODO: Note that 2023 spawn data may be incomplete; -->
+<!-- DFO has not received data collected by the Gwa'sala-'Nakwaxda'xw Nation. -->
+Note that Area 10 is a subset of the Central Coast
+and is outside the SAR boundary.
+In addition, note that there is no landed commercial catch or
+incidental mortality in finfish aquaculture activities
+in Area 10 from `r special_start_yr_plot` to `r special_end_yr`.

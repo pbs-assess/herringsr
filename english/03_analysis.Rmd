@@ -2,9 +2,8 @@
 
 ## COVID-19 pandemic
 
-Unlike the last three years,
-the COVID-19 pandemic did not impact
-the collection and analysis of biological data in 2023.
+Unlike the last three years, the COVID-19 pandemic did not impact
+the collection and analysis of spawn or biological data in 2023.
 
 ## Management strategy evaluation\label{sec:mse}
 
@@ -16,9 +15,8 @@ evaluate the performance of candidate MPs against
 hypotheses about past and future stock and fishery dynamics. 
 The purpose of the MSE process is to
 identify and eliminate MPs that incur unacceptable risks to a stock
-(i.e., poor choices) and
-identify MPs that provide acceptable outcomes related to
-conservation and fishery management objectives.
+(i.e., poor choices) and identify MPs that provide acceptable outcomes related
+to conservation and fishery management objectives.
 The identification of a preferred MP requires
 a fully specified set of measurable objectives that include
 reference points (typically categorized as limits and targets) and
@@ -44,23 +42,6 @@ and performance evaluation of area specific MPs [@dfo2019c],
 with subsequent updates outlined in Section "\nameref{sec:context}".
 Management procedure evaluation tables were updated in 2022
 (Tables \@ref(tab:decision-prd) to \@ref(tab:decision-wcvi)).
-<!-- TODO: (JC) Mention June 2023 CSAS -->
-<!-- Commitment for transition plan to implement new OM (SP SFD) -->
-
-In June 2023 a CSAS meeting was held to evaluate the application 
-of a new modelling framework for the Assessment of Pacific Herring major stocks
-and implementation in the MSE process. 
-From that meeting came the following recomendations:
-
-1. A minimum 3 year cycle for MSE updates is recommended, 
-unless new evidence reveals exceptional circumstances.
-
-1. A process for implementing the new assessment and operating model, 
-updates to the MSE, and identification of exceptional circumstances 
-should be developed in a phased approach in consultation with managers, 
-First Nations and other stakeholders.
-
-With those recommendations in mind we have begun consultations. ...
 
 Currently, a core set of fisheries management objectives [@dfo2019c]
 have been applied to each major SAR:
@@ -71,7 +52,7 @@ over three Pacific Herring generations
 
 1. Maintain spawning biomass at or above the USR with at least 50% probability 
 over three Pacific Herring generations
-(i.e., achieve a target biomass; $P(\SB_t \geq 0.6\SB_0) \geq 0.5$),
+(i.e., achieve a target biomass; $P(\SB_t \geq SB_{targ}) \geq 0.5$),
 
 1. Maintain average annual variability (AAV) in catch below 25%
 over three Pacific Herring generations
@@ -101,11 +82,32 @@ two hypotheses about future Pacific Herring natural mortality $M$:
 
 1. $M$ is a time-varying, density-independent process (DIM).
 
-These two hypotheses are captured as operating model (OM) scenarios in @benson2022.
+These two hypotheses are captured as operating model (OM) scenarios
+in @benson2022.
 The DDM scenario was identified as the reference OM scenario based on
 discussion at the 2018 CSAS review process [@dfo2019c],
 while the DIM scenario was identified as a robustness OM scenario.
 
+On June 26-28, 2023, a regional peer review occurred for "Application 
+of a new modelling framework for the assessment of Pacific Herring 
+(*Clupea pallasii*) major stocks and implementation in the MSE process".
+
+The details of the review process are summarized in @dfo2023a, and there were
+two key recommendations for implementation:
+
+1. A process for implementing the new assessment and operating model, 
+updates to the MSE, and identification of exceptional circumstances 
+should be developed in a phased approach in consultation with managers, 
+First Nations and other stakeholders.
+
+1. A minimum 3 year cycle for MSE updates is recommended, 
+unless new evidence reveals exceptional circumstances.
+
+DFO is committed to these recommendations prior to implementation of the
+spatially integrated statistical catch at age herring (SISCAH)
+modelling framework.
+
+<!-- JC COMMENTED OUT Aug 29, 2023
 Several lessons were learned from the MSE analyses conducted so far:
 
 1. The catch-at-age stock assessment model can produce large (positive)
@@ -153,7 +155,9 @@ If simulations were run over a greater number of years (e.g., 50 years)
 performance would start to approach equilibrium and be 
 unaffected by most recent trends in OM conditioning data.
 This phenomenon is important to consider when selecting or eliminating MPs, 
-especially if probabilities are considerably different between MP updates.
+especially if probabilities are considerably different between MP updates. -->
+
+#stopped here
 
 ## Input data
 
@@ -249,8 +253,6 @@ survey data and working group discussions with local First Nations.
 
 ## Incidental mortality
 
-<!-- TODO: Add data for 2023 if/when available (MG) -->
-
 In order to advance progress towards
 a holistic ecosystem-based management (EBM) approach for Pacific Herring,
 we present information to describe indirect effects on herring populations
@@ -290,14 +292,8 @@ as DFO receives additional reports.
 
 <!-- TODO: Waiting on PRD, CC, SoG, and WCVI -->
 
-<!-- The COVID-19 pandemic continues to impact First Nations participation -->
-<!-- in Pacific Herring survey activities as well as participation -->
-<!-- in traditional harvest activities such as FSC. -->
-<!-- In `r assess_yr`, local observations were provided by -->
-<!-- coastal First Nations participants for most areas. -->
-<!-- The following descriptions were provided by First Nations contributors. -->
-
-<!-- TODO: JC to check HG -->
+The following observations were contributed by
+representatives of First Nations communities.
 
 ### Haida Gwaii
 
@@ -311,7 +307,7 @@ The majority of herring stocks in the Haida Gwaii major stock assessment area co
 
 In Louscoone Inlet, local stocks would normally be found well up inside the inlet and often presented a very light spawn near the head of the inlet early in the season (early to mid March). There were no reported spawns in Louscoone Inlet in 2023. The herring stocks in Louscoone Inlet seldom exceeded 500 tons, however in recent years it has been much less. Other stocks, found in the outer portions of Louscoone Inlet, are thought to be more migratory and rarely spawn in Louscoone.
 
-There was no effort toward the traditional harvest of k’aaw in Skincuttle and Upper Burnaby. However, there were local harvesters from Skidegate that were set up during the spawn in Selwyn Inlet. As a result there was 11,000 pounds of k’aaw estimated to have been harvested from Selwyn Inlet during the 2023 season.
+There was no effort toward the traditional harvest of k’aaw in Skincuttle and Upper Burnaby in 2023. However, there were local harvesters from Skidegate that were set up during the spawn in Selwyn Inlet. As a result there was 11,000 pounds of k’aaw was estimated to have been harvested from Selwyn Inlet during the 2023 season.
 
 <!-- ### Prince Rupert District -->
 
@@ -324,18 +320,16 @@ There was no effort toward the traditional harvest of k’aaw in Skincuttle and 
 ## Stock status update
 
 Analyses of stock trend information is presented following
-methods of @cleary2018 for the Pacific Herring major SARs (AM2 only).
-This year,
-Markov chain Monte Carlo (MCMC) runs have chain length
-`r number_to_word(mcmc_length)`
-with a sample taken every `r number_to_word(mcmc_samp_freq)` iterations
-(i.e., thinning).
+methods of @cleary2018 for the Pacific Herring major SARs.
+This year, Markov chain Monte Carlo (MCMC) runs
+have chain length `r number_to_word(mcmc_length)`
+with a sample taken every `r number_to_word(mcmc_samp_freq)`
+iterations (i.e., thinning).
 The first `r number_to_word(mcmc_burnin)` samples are discarded (i.e., burn-in),
 leaving `r number_to_word(mcmc_num_samples)` samples for posteriors.
 Perceptions of stock status based on outputs (i.e., posteriors)
-from the SCA model (i.e., AM2)
-are summarized for each stock in a multi-panel figure
-(e.g., Figure \@ref(fig:storyboard-hg)).
+from the SCA model are summarized for each stock
+in a multi-panel figure (e.g., Figure \@ref(fig:storyboard-hg)).
 The panels show:
 
 a. Model fit to scaled spawn survey data,
@@ -676,8 +670,8 @@ Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs
 for each major SAR, derived from the Herring OM [@benson2022]. 
 OM conditioning was updated using the latest historic stock and fishery data
 from `r major_start_yr` to 2021.
-MPs are not provided for HG because
-this is now conducted within the rebuilding plan process.
+MPs are not provided for HG because this is now conducted within the 
+HG rebuilding plan process.$^{\ref{fn:rebuild}}$
 
 ### Haida Gwaii
 
