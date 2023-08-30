@@ -19,6 +19,10 @@ approval_year: 2023
 approval_month: Month
 # approval_month: Mois
 approval_day: 00
+process_year: 2023
+process_month: Month
+# process_month: Mois
+process_day: 00
 branch: Science Branch
 region: Pacific Region
 # branch: Secteur des sciences

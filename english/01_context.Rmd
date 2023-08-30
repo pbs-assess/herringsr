@@ -114,5 +114,5 @@ recommendations from the aforementioned
 
 <!-- Mandatory last paragraph in this section -->
 This Science Response results from the Science Response Process of
-`r rmarkdown::metadata$approval_month` `r rmarkdown::metadata$approval_day`,
-`r rmarkdown::metadata$approval_year` on the `r rmarkdown::metadata$title`.
+`r rmarkdown::metadata$process_month` `r rmarkdown::metadata$process_day`,
+`r rmarkdown::metadata$process_year` on the `r rmarkdown::metadata$title`.
