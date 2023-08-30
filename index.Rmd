@@ -61,7 +61,7 @@ if (is_latex_output()) {
 } else {
   knitr_figs_dir <- "knitr-figs-docx/"
   knitr_cache_dir <- "knitr-cache-docx/"
-  fig_out_type <- "png"
+  fig_out_type <- "ragg_png"
 }
 
 fig_asp <- 0.618
@@ -81,11 +81,8 @@ opts_chunk$set(
   fig.width = fig_width,
   out.width = fig_out_width,
   echo = FALSE,
-  # autodep = TRUE,
-  # cache = TRUE,
   cache.comments = FALSE,
-  #dev = fig_out_type, change by sp 8/29 to get ggsave to work
-  dev = "ragg_png",
+  dev = fig_out_type,
   dpi = fig_dpi,
   fig.align = fig_align,
   fig.pos = "H"
@@ -145,14 +142,10 @@ library(rosettafish)
 library(csasdown)
 library(gfutilities)
 library(gfiscamutils)
-library(ggplot2)
 library(ggrepel)
 library(herringutils)
 library(gcookbook)
-#library(ragg)
 library(readr)
-#library(svglite)
-library(tidyverse)
 library(zoo)
 
 assess_yr <- 2023
