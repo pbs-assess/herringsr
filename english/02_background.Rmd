@@ -3,7 +3,7 @@
 Pacific Herring in BC are managed as
 `r number_to_word(length(major_regions_short))` major and
 `r number_to_word(length(minor_regions_short))` minor
-stock assessment regions (SARs; Figure \@ref(fig:bc-map)).
+SARs (Figure \@ref(fig:bc-map)).
 The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
 We conduct formal analyses of stock trend information for the major SARs.
