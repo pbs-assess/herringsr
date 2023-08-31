@@ -575,7 +575,7 @@ occurred in the last 5 years, and while 2020 is one of the three highest
 peaks in estimated spawning biomass, rising natural mortality has moderated
 potential gains in estimated spawning biomass.
 (Figure \@ref(fig:storyboard-sog)a, b, c). 
-We see thisbalance play out in estimated production which was high in 2019/2020,
+We see this balance play out in estimated production which was high in 2019/2020,
 declined to a negative value in 2021/2022, 
 and is slightly positive for the 2022/2023 (Figure \@ref(fig:storyboard-sog)f).
 In 2023 estimated spawning biomass was similar to the last two years and
