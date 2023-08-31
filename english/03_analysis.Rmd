@@ -376,9 +376,9 @@ are assumed to be continuous with the dive survey time series.
 
 ### Reference points\label{sec:ref-pts}
 
-A biological limit reference point (LRP) is defined for the major
+A biological LRP is defined for the major
 Pacific Herring SARs at $0.3\SB_0$ [@kronlund2017].
-Candidate upper stock reference (USR) points were introduced in @cleary2018 and
+Candidate USRs were introduced in @cleary2018 and
 implemented as biomass objectives in simulation analyses for
 WCVI and SoG in 2018 [@dfo2019a], and then
 HG, PRD, and CC in 2019 [@dfo2019c].

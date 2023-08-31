@@ -40,9 +40,9 @@ Updates to MP evaluations were then conducted for
 SoG and WCVI SARs in 2020 [@dfo2021b] and
 for PRD, CC, SoG, and WCVI in 2023 [@dfo2022a,@dfo2022b].
 
-This assessment includes new science advice on
-choice of upper stock reference (USR) points
-for all five Pacific Herring major SARs.
+This assessment includes new science advice on choice of USR points for all
+`r number_to_word(length(major_regions_short))`
+Pacific Herring major SARs.
 An analysis of USR options for PRD, CC, SoG, and WCVI was completed in 
 2022 [@dfo2022a] and provisional USRs based on productive 
 periods identified for each SAR was implemented in the 2022/23 Integrated 
