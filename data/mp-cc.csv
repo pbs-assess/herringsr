@@ -1,4 +1,4 @@
-mp,om,label,obj1,hiab,obj2,ncn1,ncn2,ncn3,obj3,obj4,catch,esc,abs_esc,hr,cap,num_end_yrs,lrp,usr
+mp,om,label,obj1,obj2,hiab,ncn1,ncn2,ncn3,obj3,obj4,catch,esc,abs_esc,hr,cap,num_end_yrs,lrp,usr
 1,DDM,NoFish_FSC,0.92,0.69,0.83,0.76,0.68,0.78,0,0.14,1,NA,NA,NA,NA,NA,NA,NA
 2,DDM,HS30-60_HR10_cap5,0.9,0.58,0.8,0.68,0.56,0.69,38.83,2.92,0.19,NA,NA,0.1,5,1,0.3,0.6
 3,DDM,HS30-60_HR05,0.91,0.64,0.82,0.73,0.62,0.74,40.76,1.74,0.24,NA,NA,0.05,NA,1,0.3,0.6
