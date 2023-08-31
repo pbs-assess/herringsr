@@ -3,7 +3,7 @@
 Pacific Herring in BC are managed as
 `r number_to_word(length(major_regions_short))` major and
 `r number_to_word(length(minor_regions_short))` minor
-stock assessment regions (SARs; Figure \@ref(fig:bc-map)).
+SARs (Figure \@ref(fig:bc-map)).
 The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
 We conduct formal analyses of stock trend information for the major SARs.
@@ -130,7 +130,7 @@ associated with the structural adjustments to be nearly identical
 to results from previous versions of the model,
 supporting the adoption of the revised structure [@cleary2018].
 
-A Bayesian framework was used to estimate time series of
+A Bayesian framework is used to estimate time series of
 spawning biomass,
 instantaneous natural mortality, and
 age-`r age_first` recruitment from `r major_start_yr` to `r major_end_yr`.
@@ -159,7 +159,7 @@ However, there is little information in the stock assessment data
 to inform an estimate of $q_2$;
 examination of the Bayes posterior shows the prior is not updated for
 the HG, CC, SoG, and WCVI SARs, and
-the estimated value reflects the prior mean [@cleary2018, Appendix D].
+estimated values reflect the prior means [@cleary2018, Appendix D].
 Assuming $q_2 = 1$ produces a "minimum" biomass estimate
 buffering any other assessment and management implementation errors
 [@martell2011; @herring2012].

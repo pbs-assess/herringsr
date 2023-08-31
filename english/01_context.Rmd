@@ -9,7 +9,7 @@ estimation of stock productivity and current stock status
 relative to the new limit reference point (LRP) of $0.3\SB_0$ [@kronlund2017],
 where $\SB_0$ is estimated unfished spawning biomass.
 In 2022, upper stock reference (USR) point options
-were introduced for the major SARs, and
+were introduced for the major stock assessment regions (SARs), and
 in this assessment estimation of stock status relative to
 productive period USRs [@dfo2022a] are included.
 The overall structure of the SCA model has not changed since 2017.
@@ -27,7 +27,7 @@ regional peer review occurred in 2018,
 where performance of Pacific Herring management procedures (MPs) were assessed
 against conservation objectives for the
 Strait of Georgia (SoG) and West Coast of Vancouver Island (WCVI)
-stock assessment regions (SARs) [@dfo2019a].
+SARs [@dfo2019a].
 Steps included operating model (OM) development [@benson2022],
 fitting the OM to Pacific Herring stock and fishery monitoring data
 (OM conditioning), and
@@ -40,9 +40,9 @@ Updates to MP evaluations were then conducted for
 SoG and WCVI SARs in 2020 [@dfo2021b] and
 for PRD, CC, SoG, and WCVI in 2023 [@dfo2022a,@dfo2022b].
 
-This assessment includes new science advice on
-choice of upper stock reference (USR) points
-for all five Pacific Herring major SARs.
+This assessment includes new science advice on choice of USR points for all
+`r number_to_word(length(major_regions_short))`
+Pacific Herring major SARs.
 An analysis of USR options for PRD, CC, SoG, and WCVI was completed in 
 2022 [@dfo2022a] and provisional USRs based on productive 
 periods identified for each SAR was implemented in the 2022/23 Integrated 
