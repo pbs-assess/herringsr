@@ -52,7 +52,7 @@ over three Pacific Herring generations
 
 1. Maintain spawning biomass at or above the USR with at least 50% probability 
 over three Pacific Herring generations
-(i.e., achieve a target biomass; $P(\SB_t \geq SB_{targ}) \geq 0.5$),
+(i.e., achieve a target biomass; $P(\SB_t \geq SB_{targ}) \geq 0.50$),
 
 1. Maintain average annual variability (AAV) in catch below 25%
 over three Pacific Herring generations
