@@ -2,10 +2,10 @@
 
 ## Minor stock assessment regions\label{sec:app-minor}
 
-We do not conduct formal analyses of stock trend information for the
+DFO do not conduct formal analyses of stock trend information for the
 `r number_to_word(length(minor_regions_short))`
 Pacific Herring minor SARs: `r commify(minor_regions_full_parens)`.
-However, we provide
+However, DFO do provide
 landed commercial catch (Figure \@ref(fig:minor-catch)),
 incidental mortality in finfish aquaculture activities
 (Figure \@ref(fig:minor-incidental)),
@@ -13,29 +13,27 @@ biological data including weight-at-age (Figure \@ref(fig:minor-wa)) and
 proportion-at-age (Figure \@ref(fig:minor-pa)),
 as well as spawn index (Figure \@ref(fig:minor-spawn-index))
 from `r minor_start_yr_plot` to `r minor_end_yr`.
-We also provide the spawn index and proportion of spawn index by Section 
+DFO also provide the spawn index and proportion of spawn index by Section 
 from `r minor_end_yr-num_yrs_tab` to `r minor_end_yr` for A27 and A2W
 (Tables \@ref(tab:spawn-index-a27) and \@ref(tab:spawn-index-a2w), respectively).
-For Area 27, we provide the spawn index by Section
-from `r minor_start_yr_plot` to `r minor_end_yr`
+For Area 27, spawn index by Section
+from `r minor_start_yr_plot` to `r minor_end_yr` is also provided
 (Figure \@ref(fig:spawn-section-a27)).
 
 
 ## Special areas\label{sec:app-special}
 
-As with the minor SARs,
-we do not conduct formal analyses of stock trend information for the
+As is the case for the minor SARs,
+DFO do not conduct formal analyses of stock trend information for the
 Pacific Herring special area, Area 10 (A10; Figure \@ref(fig:a10-map)).
-However, we provide
+However, DFO provide
 biological data including weight-at-age (Figure \@ref(fig:special-wa)) and
 proportion-at-age (Figure \@ref(fig:special-pa)),
-as well as spawn index (Figure \@ref(fig:special-spawn-index))
-from `r special_start_yr_plot` to `r special_end_yr`.
-We also provide the spawn index and proportion of spawn index by Section
-from `r special_end_yr-num_yrs_tab` to `r special_end_yr`
-(Table \@ref(tab:spawn-index-a10)).
-<!-- TODO: Note that 2023 spawn data may be incomplete; -->
-<!-- DFO has not received data collected by the Gwa'sala-'Nakwaxda'xw Nation. -->
+as well as spawn index and proportion of spawn index by Section (Figure \@ref(fig:special-spawn-index),Table \@ref(tab:spawn-index-a10))
+from `r special_start_yr_plot` to `r special_end_yr`, where available.
+
+<!-- NOTE: DFO did not received 2023 spawn data collected by the Gwa'sala-'Nakwaxda'xw Nation prior to publication. -->
+
 Note that Area 10 is a subset of the Central Coast
 and is outside the SAR boundary.
 In addition, note that there is no landed commercial catch or

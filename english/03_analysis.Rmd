@@ -793,7 +793,6 @@ These limitations exist for all five major stocks.
 
 `r proj_biomass_text(SAR = "CC", next_yr = assess_yr + 1, translate = french)`
 
-<!-- TODO: Review this statement with senior management (Neil/Andy) -->
 Finally, DFO acknowledges commitment to the Heiltsuk Nation for
 the development of a Joint Fisheries Management Plan for Pacific Herring
 in the Central Coast in `r assess_yr + 1`.

@@ -922,7 +922,6 @@ Ces limites existent pour les cinq stocks principaux.
 
 `r proj_biomass_text(SAR = "CC", next_yr = assess_yr + 1, translate = french)`
 
-<!-- TODO: Review this statement with senior management (Neil/Andy) -->
 Enfin, le MPO reconnaît son engagement envers la Nation Heiltsuk en ce qui concerne
 l’élaboration d’un plan conjoint de gestion des pêches pour le hareng du Pacifique
 sur la côte centrale en `r assess_yr + 1`.
