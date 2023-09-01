@@ -827,7 +827,7 @@ of natural mortality trends used to condition the OM
 MSE updates presented here show the conservation objective is met with the
 minimum 75% probability when simulating MPs with 10% and 15% harvest rates.
 However MPs with 20% harvest rates 
-(e.g., HS30-60_HR20 and minE30_HR20),
+(e.g., HS30-60_HR20 and MinE30_HR20),
 which previously met the minimum 75% probability level
 (@dfo2019a and @dfo2021b) now show probability values ranging
 from 67% to 74% (across both DDM and DIM OMs).

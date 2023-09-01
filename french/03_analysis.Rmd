@@ -957,7 +957,7 @@ tendances de mortalité naturelle depuis les trois à cinq dernières années, a
 Les mises à jour de l’ESG présentées ici montrent que l’objectif de conservation est atteint avec la
 probabilité minimale de 75% lors de la simulation des procédures de gestion, avec des taux de récolte de 10% et 15%.
 Toutefois, les procédures de gestion ayant un taux de récolte de 20% 
-(p. ex., HS30-60_HR20 et minE30_HR20),
+(p. ex., HS30-60_HR20 et MinE30_HR20),
 et qui atteignaient auparavant le niveau de probabilité minimal de 75%
 (@dfo2019a and @dfo2021b) montrent maintenant des valeurs de probabilité allant de 67% à 74% (pour les modèles opérationnels DDM et DIM).
 
