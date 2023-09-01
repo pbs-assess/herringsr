@@ -682,7 +682,6 @@ in addition users can also specify an informative prior distribution
 for each of these parameters. 
 Five distinct prior distributions can be implemented:
 
-<!-- TODO: a, b, and \sigma appear elsewhere; find different parameters? -->
 1. Uniform \dUnif{a}{b},
 where $a$ and $b$ are the minima and maxima, respectively,
 
