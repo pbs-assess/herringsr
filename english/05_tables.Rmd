@@ -1,5 +1,5 @@
 \afterpage{\clearpage}
-\needspace{0.5\textheight}
+\needspace{0.32\textheight}
 
 # `r en2fr("Tables", translate=french)`
 
@@ -957,7 +957,6 @@ au niveau actuel de la biomasse projetée,
 soit parce que le PM spécifie l'interdiction de la pêche.
 
 \setlength{\tabcolsep}{5pt}
-<!-- \renewcommand{\arraystretch}{1.15} -->
 
 \needspace{0.32\textheight}
 
@@ -1055,7 +1054,6 @@ decision_tables_mp(
 )
 ```
 
-\setlength{\tabcolsep}{6pt}
-<!-- \renewcommand{\arraystretch}{1} -->
-
 \afterpage{\clearpage}
+
+\setlength{\tabcolsep}{6pt}
