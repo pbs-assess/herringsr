@@ -916,8 +916,8 @@ $\SB_t$ is spawning biomass in year $t$;
 $\SB_0$ is estimated unfished spawning biomass;
 $\overline{\SB}_\mli{Prod}$ is average spawning biomass
 during a productive period (Table \@ref(tab:prod-period));
-average annual variability (AAV); and
-$\overline{C}$ is average catch.
+average annual variability (AAV) in catch; and
+$\overline{C}$ is average annual catch.
 MPs are defined in @dfo2019a and @dfo2019c.
 Biomass and catch are in thousands of tonnes (t).
 Note: Dashes indicate that TAC and HR do not apply either because
