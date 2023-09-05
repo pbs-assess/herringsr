@@ -636,7 +636,7 @@ In this instance, autocorrelation likely resulting from little
 to no data on either catch or age composition data for that fishery 
 since the late 1970's. To ameliorate data quality issues we removed
 age compositions from 1984 for which there was no associated catch as well as
-catch from 1978-1996, ranging from 0.001 t to 0.84 t for which 
+catch from 1978-1996, ranging from 0 t to 0.84 t for which 
 there was no age composition. This didn't 
 seem to make much difference in the autocorrelation. 
 Running longer chains (20 million vs 5 million)
