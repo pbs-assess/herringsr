@@ -1363,7 +1363,7 @@ from `r major_start_yr` to `r major_end_yr` in the major SARs.
 Effective harvest rate is $U_t = C_t/(C_t + \SB_t)$ where
 $C_t$ is catch in year $t$, and
 $\SB_t$ is estimated spawning biomass in year $t$.
-Black lines and shaded ribbons indicate
+Points and vertical lines indicate
 medians and `r ci_level*100`% credible intervals for $U_t$, respectively.
 Horizontal dashed lines indicate $U_t = `r target_hr`$.
 
