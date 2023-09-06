@@ -183,7 +183,8 @@ The commercial SOK fishery is licensed based on pounds of validated SOK product
 (i.e., eggs adhered to kelp), not tonnes of fish used or spawned.
 Currently there is no basis to validate mortality
 imposed on the population by this fishery, however
-methods for estimating SOK mortality are being developed.
+methods for estimating SOK mortality have been developed within
+the SISCAH modelling framework.
 
 Combined commercial removals from `r assess_yr - num_yrs_tab` to `r assess_yr`
 from the roe, food and bait, and special use fisheries
