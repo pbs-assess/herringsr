@@ -87,6 +87,7 @@ HG rebuilding plan process.\footnote{\label{fn:rebuild}
 Haida Gwaii 'íináang | iinang Pacific Herring:
 An ecosystem overview and ecosystem-based rebuilding plan.
 Draft consultation period fall 2022.}
+<!-- TODO: JC is waiting for wording from SH to update footnote -->
 
 This `r assess_yr` stock assessment includes
 MP recommendations for PRD, CC, SoG, and WCVI,
@@ -113,6 +114,7 @@ recommendations from the aforementioned
 (Section "\nameref{sec:harv-opts}").
 
 <!-- Mandatory last paragraph in this section -->
+<!-- TODO: MG pls update process_month to September -->
 This Science Response results from the Science Response Process of
 `r rmarkdown::metadata$process_month` `r rmarkdown::metadata$process_day`,
 `r rmarkdown::metadata$process_year` on the `r rmarkdown::metadata$title`.

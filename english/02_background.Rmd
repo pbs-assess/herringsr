@@ -92,8 +92,9 @@ seine roe and gillnet roe fisheries,
 with a combined coast wide catch of `r total_final_yr_roe_catch` tonnes (t).
 The FB seine fishery had a coast wide catch of
 `r total_final_yr_other_catch`&nbsp;t.
-The roe, FB and SU fisheries operated in SoG only in `r this_season`.
-All areas were closed for commercial SOK fisheries in `r this_season`.
+The roe fisheries operated in SoG and PRD this season, and FB and SU fisheries
+in SoG only.
+Commercial SOK fisheries operated only in the CC in `r this_season`.
 
 A complete dockside monitoring program exists for all Pacific Herring
 commercial fisheries and the resulting validated catch data are included
@@ -104,8 +105,9 @@ identified as a key uncertainty in the most recent CSAS review
 of the stock assessment framework [@cleary2018].
 Recommendations for addressing this uncertainty will require quantifying
 ponding mortality and removals (i.e., eggs) associated with SOK fisheries.
-Although this work is underway,
-results are not yet available to inform the stock assessment.
+Progress has been made in quantifying SOK mortality sources within the 
+new modelling framework [@dfo2023a], however those approaches are not
+transferable to the SCA model [@martel2011] used here.
 
 ## Description of the stock assessment process
 
