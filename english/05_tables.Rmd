@@ -920,8 +920,8 @@ average annual variability (AAV) in catch; and
 $\overline{C}$ is average annual catch.
 MPs are defined in @dfo2019a and @dfo2019c.
 Biomass and catch are in thousands of tonnes (t).
-Note: Dashes indicate that TAC and HR do not apply either because
-the MP specifies no fishing at current projected biomass level, or
+Note: Dashes indicate that TAC and HR do not apply because
+<!-- the MP specifies no fishing at current projected biomass level, or -->
 the MP specifies no fishing.
 
 (ref:decision-prd-cap-fr) RES du district de Prince Rupert:
