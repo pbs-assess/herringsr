@@ -482,33 +482,31 @@ due to low estimated mortality rate and high estimated recruitment
 This was followed immediately by below average recruitment and
 a rise to the highest estimated mortality rate,
 more than doubling within 10 years.
-In response the stock collapsed to
+In response the stock collapsed by the mid 1960s to
 the lowest estimated spawning biomass. 
 Spawning biomass recovered by the mid-1980s estimated to be
 about 50% of the historic high
 even amid mostly below-average recruitment
 (Figure \@ref(fig:storyboard-prd)b, d, e).
-In the mid-1980s, estimated spawning biomass steadily declined amid slowly 
+In the late-1980s, estimated spawning biomass began a steady decline amid slowly 
 rising mortality rates and variable recruitment, before stabilizing at a 
 relatively low level (but above historic lows) between 2005 - 2018.
 Since then estimated spawning biomass has shown modest increases in biomass 
 with above average age-`r age_first` recruitment in 2014, 2018 and,
-2022 and declining natural mortality (Figure \@ref(fig:storyboard-prd)c, d, f). 
+2022 and stable natural mortality rates (Figure \@ref(fig:storyboard-prd)c, d, f). 
 Productivity in recent years is relatively high compared to the 
 last 30 years, with the highest estimated productivity in 2022
 (Figure \@ref(fig:storyboard-prd)f).
 
-Fluctuations in spawning biomass appear to be less than in other SARs 
+Fluctuations in spawning biomass trend appear to be less than in other SARs 
 in the last 30 years, possibly because they are smaller in magnitude 
 and offset each other as shown in Figure \@ref(fig:storyboard-prd)a.
 
 `r stock_status_text(SAR = "PRD", this_yr = assess_yr, translate = french)`
 Commercial fisheries have occurred annually in PRD since the mid-1980s,
-with the exception of 2019 to 2023,
+with the exception of 2019 to 2022,
 during which the effective harvest rate $U_t$ was estimated to be
 at or below 20% in all years except 1989 (Figure \@ref(fig:harvest-rate)).
-Commercial catches from 2007 to 2018 remained low (below 2,000&nbsp;t) and
-there were no commercial catches from 2019 to 2023, except SOK.
 
 ### Central Coast
 
