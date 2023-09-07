@@ -564,25 +564,24 @@ SOK removals are not included in the estimation of $U_t$.
 ### Strait of Georgia
 
 The estimated spawning biomass for the SoG SAR
-had a historical low in the late 1960's,
-driven by lower than average estimated recruitment and
+shows a historical low in the late 1960's,
+driven by high catches, lower than average estimated recruitment, and
 increasing estimated natural mortality (Figure \@ref(fig:storyboard-sog)a, b, e).
 In the 1970's estimated natural mortality declined, and until recent years 
-has been relatively stable.(Figure \@ref(fig:storyboard-sog)b).
+has been relatively stable (Figure \@ref(fig:storyboard-sog)b).
 Most of the fluctuations in estimated spawning biomass have been 
 attributed to estimated recruitment, with lower than average recruitments 
-in the the 1980's and late 2000's mirroring dips in the spawning biomass, 
-and above average recruitments in the intervening times corresponding to
-biomass peaks.(Figure \@ref(fig:storyboard-sog)a, c)
-The story however is shifting as estimated natural mortality rises.
-Three of the highest estimated recruitment years (2019, 2020 and, 2022) have 
+in the 1970's, 1980's, and in 2077 and 2009, all of which mirror dips in the 
+spawning biomass.
+Above average recruitments occurred in the intervening times corresponding to
+biomass peaks (Figure \@ref(fig:storyboard-sog)a, c).
+Three of the highest estimated recruitment years (2019, 2020, and 2022) have 
 occurred in the last 5 years, and while 2020 is one of the three highest 
 peaks in estimated spawning biomass, rising natural mortality has moderated
-potential gains in estimated spawning biomass.
-(Figure \@ref(fig:storyboard-sog)a, b, c). 
-We see this balance play out in estimated production which was high in 2019/2020,
-declined to a negative value in 2021/2022, 
-and is slightly positive for the 2022/2023 (Figure \@ref(fig:storyboard-sog)f).
+potential gains in estimated spawning biomass (Figure \@ref(fig:storyboard-sog)a, b, c). 
+This plays out in estimated production which was high in 2019,
+declined to a negative value in 2021, 
+and is slightly positive for the 2022 (Figure \@ref(fig:storyboard-sog)f).
 In 2023 estimated spawning biomass was similar to the last two years and
 was consistent with the forecast.
 
