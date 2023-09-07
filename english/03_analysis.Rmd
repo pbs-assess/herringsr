@@ -517,47 +517,47 @@ From there a decline in estimated spawning biomass
 appears to be influenced initially by 
 higher estimated natural mortality rates and
 highly variable estimated recruitment.
-An increase in estimated natural mortality lead to
+Spawning biomass trend declined from 1985-2005 and 
+an increase in estimated natural mortality led to
 historically low estimated biomass levels from 2005 to 2015. 
 Decreasing estimated natural mortality lead to moderate increases in 
 biomass through 2020. 
-In 2021 - 2023,
-increasing estimated natural mortality caused a decrease in estimated biomass,
-which was mitigated in part by higher than average 
+In 2021 - 2023, increasing estimated natural mortality caused a decrease 
+in estimated biomass, which was mitigated in part by higher than average 
 estimated recruitment in 2022 (Figure \@ref(fig:storyboard-cc)a, b, e).
 Model estimates suggest slightly less spawning biomass in 2023 than 2022
 (Table \@ref(tab:cc-spawning-biomass-depletion)),
-and the analysis of surplus production shows evidence of
-strong production in 2018/2019, followed by two years of the lowest 
-estimated production and near neutral production in the last couple years 
+and the analysis of surplus production shows evidence of positive production in 2018, 
+followed by negative in both 2019 and 2020, 
+and near neutral production in 2021 and 2022 
 (Figure \@ref(fig:storyboard-cc)f).
 
 An examination of spawn biomass by herring section shows
 the recent decline in herring spawn to have largely occurred in
 Spiller Channel (Sections 072 and 078),
-Kitasu Bay/East Higgins (Section 067) and more recently 
+Kitasu Bay/East Higgins (Section 067) and
 Thompson/Styker (Section 074; Figure \@ref(fig:spawn-section-cc)).
-Occurrence of spawn in Thompson/Stryker from 2020 to 2022
+Occurrence of spawn in Thompson/Stryker in 2020 to 2021
 represented the first significant spawns in this section in many years.
 The mechanisms driving spawn fluctuations in the Central Coast
 are not well understood.
 
-A fixed cutoff HCR was implemented in 1986, and
-from 1986 to 2007 the effective harvest rate $U_t$ is estimated to fluctuate
-above and below the `r target_hr*100`% target rate,
+From 1990 to 2006 the effective harvest rate $U_t$ is estimated to fluctuate
+above and below `r target_hr*100`%,
 with median estimates exceeding `r target_hr*100`% in some of these years
 (Figure \@ref(fig:harvest-rate)).
-Occurrences of $U_t$ exceeding the `r target_hr*100`% target harvest rate
-are due in part to positive assessment model errors, and
+Occurrences of $U_t$ exceeding `r target_hr*100`% 
+are due in part to positive assessment model errors and
 lags in detecting a directional change in the trend.
 
 Following a commercial fishery closure from 2007 to 2013,
 the CC SAR was reopened to commercial fisheries;
 commercial roe fisheries occurred in 2014, 2015, and 2016.
-Commercial SOK fisheries operated yearly from 2014 to 2019, and in 2021.
+Commercial SOK fisheries have operated yearly at some level 
+from 2014 to 2021 and in 2023 (Table \@ref(tab:annual-sok-catch)). 
+Note that a commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19,
+and no commercial SOK fisheries were permitted in 2022.
 SOK removals are not included in the estimation of $U_t$. 
-A commercial SOK fishery did not occur in Area 07 in 2020 due to COVID-19,
-and was not permitted in 2022 and 2023 (Table \@ref(tab:annual-sok-catch)).
 
 `r stock_status_text(SAR = "CC", this_yr = assess_yr, translate = french)`
 
