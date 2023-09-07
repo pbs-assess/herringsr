@@ -41,7 +41,7 @@ with stock and fishery monitoring data updated to include 2018
 and performance evaluation of area specific MPs [@dfo2019c],
 with subsequent updates outlined in Section "\nameref{sec:context}".
 Management procedure evaluation tables were updated in 2022
-(Tables \@ref(tab:decision-prd) to \@ref(tab:decision-wcvi)).
+[@dfo2022b].
 
 Currently, a core set of fisheries management objectives [@dfo2019c]
 have been applied to each major SAR:
@@ -183,14 +183,16 @@ The commercial SOK fishery is licensed based on pounds of validated SOK product
 (i.e., eggs adhered to kelp), not tonnes of fish used or spawned.
 Currently there is no basis to validate mortality
 imposed on the population by this fishery, however
-methods for estimating SOK mortality have been developed within
-the SISCAH modelling framework.
+methods for estimating SOK mortality are developed within
+the SISCAH modelling framework [@dfo2023a].
 
 Combined commercial removals from `r assess_yr - num_yrs_tab` to `r assess_yr`
 from the roe, food and bait, and special use fisheries
 appear in Table \@ref(tab:annual-catch).
 The proportion of coast-wide catch that comes from SoG was
-22% in 1990, and 100% in `r assess_yr`.
+22% in 1990, and 97% in `r assess_yr`.
+<!-- NOTE: percentage updated for 2023-->
+
 Total SOK harvest (i.e., pounds of validated product) for the major SARs
 from `r assess_yr - num_yrs_tab` to `r assess_yr` is presented in
 Table \@ref(tab:annual-sok-catch).
@@ -230,8 +232,8 @@ Time series of spawn index by major SAR
 from `r paste(surv_yr_rng, collapse=" to ")`
 are summarized in Figure \@ref(fig:major-spawn-index).
 In `r surv_yr_rng[2]`, there was an
-increase in survey biomass (i.e., index values) for the PRD and SoG SARs, and
-a decrease in survey biomass for HG, CC, and WCVI SARs
+increase in survey biomass (i.e., index values) for the PRD and WCVI SARs, and
+a decrease in survey biomass for HG, CC, and SoG SARs
 (Figure \@ref(fig:major-spawn-index);
 Tables \@ref(tab:spawn-index-hg) to \@ref(tab:spawn-index-wcvi)).
 
@@ -260,6 +262,8 @@ incidental mortality is currently only indirectly accounted for
 in Pacific Herring stock assessment by
 estimating annual rates of natural mortality, 
 and is considered minor relative to commercial harvest.
+Impacts of additional mortality sources will be explored with the new 
+modelling framework.
 
 Again this year,
 we include data for incidental mortality in finfish aquaculture activities
@@ -273,7 +277,7 @@ Data indicate the number of Pacific Herring dead and released,
 with the following caveats:
 
 1. Data for `r max(ic_yrs)` are considered incomplete,
-
+<!-- TODO: MG, is this statement still correct, 2022 is incomplete? -->
 1. Unknown mortality rate for "released" fish,
 
 1. Unknown length, weight, age, and sex of fish, and
@@ -281,7 +285,7 @@ with the following caveats:
 1. "Herring-like" fish are assumed to be herring
 when decomposition hinders identification.
 
-Note that we sometimes update data in previous years
+Note that data from previous years are updated 
 as DFO receives additional reports.
 
 ## First Nations observations
@@ -301,7 +305,7 @@ The Juan Perez Sound inlets normally support spawns when there are a lot of new 
 
 The majority of herring stocks in the Haida Gwaii major stock assessment area continue to be in Skincuttle Inlet and upper Burnaby Strait (around Burnaby Island). The abundance of stocks and deposition of spawns appear to be very similar to 2022. These stocks appear to be maintaining themselves, but are not really showing any signs of meaningful growth in spite of no active fisheries for over 20 years.
 
-In Louscoone Inlet, local stocks would normally be found well up inside the inlet and often presented a very light spawn near the head of the inlet early in the season (early to mid March). There were no reported spawns in Louscoone Inlet in 2023. The herring stocks in Louscoone Inlet seldom exceeded 500 tons, however in recent years it has been much less. Other stocks, found in the outer portions of Louscoone Inlet, are thought to be more migratory and rarely spawn in Louscoone.
+In Louscoone Inlet, local stocks would normally be found well up inside the inlet and often presented a very light spawn near the head of the inlet early in the season (early to mid March). There were no reported spawns in Louscoone Inlet in 2023. The herring stocks in Louscoone Inlet seldom exceeded 500 tons, however in recent years it has been much less. Herring observed in the outer portions of Louscoone Inlet are thought to be more migratory and rarely spawn in Louscoone.
 
 There was no effort toward the traditional harvest of k’aaw in Skincuttle and Upper Burnaby in 2023. However, there were local harvesters from Skidegate that were set up during the spawn in Selwyn Inlet. As a result there was 11,000 pounds of k’aaw was estimated to have been harvested from Selwyn Inlet during the 2023 season.
 
@@ -321,8 +325,8 @@ This year, Markov chain Monte Carlo (MCMC) runs
 have chain length `r number_to_word(mcmc_length)`
 with a sample taken every `r number_to_word(mcmc_samp_freq)`
 iterations (i.e., thinning).
-The first `r number_to_word(mcmc_burnin)` samples are discarded (i.e., burn-in),
-leaving `r number_to_word(mcmc_num_samples)` samples for posteriors.
+Next, the first `r number_to_word(mcmc_burnin)` samples are discarded (i.e., burn-in),
+leaving `r number_to_word(mcmc_num_samples)` samples as the posteriors.
 Perceptions of stock status based on outputs (i.e., posteriors)
 from the SCA model are summarized for each stock
 in a multi-panel figure (e.g., Figure \@ref(fig:storyboard-hg)).
@@ -372,6 +376,8 @@ Due to the COVID-19 pandemic, only surface surveys were conducted
 for HG in 2020 and 2021, as well as for PRD in 2020.
 These surface survey observations are treated as dive survey observations and
 are assumed to be continuous with the dive survey time series.
+Methods for combining surface and dive survey observations are presented
+for the SISCAH modelling framework [@dfo2033a], but are not implemented here.
 
 ### Reference points\label{sec:ref-pts}
 
@@ -383,7 +389,7 @@ WCVI and SoG in 2018 [@dfo2019a], and then
 HG, PRD, and CC in 2019 [@dfo2019c].
 An analysis of USR options was undertaken in 2022 with
 results presented in @dfo2022a.
-Five USR options were evaluated:
+In total, five USR options were evaluated:
 
 1. Average spawning biomass during a productive period
 $\overline{\SB}_\mli{Prod}$
@@ -403,8 +409,8 @@ the simulation-evaluation process allows the evaluation of
 MPs with respect to achieving USRs, 
 including whether a given USR option can be achieved in the absence of 
 commercial fisheries. 
-Implementation of USRs for major Herring SARs will occur through the 
-2022/23 draft IFMP.
+In 2023, DFO Resource Management selected and implemented a provisional 
+USR of $\overline{\SB}$ through 2022/23 IFMP process.
 
 Stock status relative to assessment model estimates $0.3\SB_0$ (i.e., LRP) and
 USR options are presented for PRD, CC, SoG, and WCVI SARs
