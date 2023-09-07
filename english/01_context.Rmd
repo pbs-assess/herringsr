@@ -86,8 +86,8 @@ are being developed through the
 HG rebuilding plan process.\footnote{\label{fn:rebuild}
 Haida Gwaii 'íináang | iinang Pacific Herring:
 An ecosystem overview and ecosystem-based rebuilding plan.
-Draft consultation period fall 2022.}
-<!-- TODO: JC is waiting for wording from SH to update footnote -->
+Draft consultation period occurred September 26 - December 16, 2022; 
+DFO internal review period scheduled for fall 2023.}
 
 This `r assess_yr` stock assessment includes
 MP recommendations for PRD, CC, SoG, and WCVI,
