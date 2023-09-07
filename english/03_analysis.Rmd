@@ -427,27 +427,28 @@ whereas LRPs and USRs are management objectives.
 
 ### Coast wide trends
 
-Coast wide trends in Pacific Herring biomass and contribution by SAR show 
-an increasing trend in estimated spawning biomass from 2010 to 2020 with
-low catch variability (Figure \@ref(fig:coastwide-biomass-catch)).
-We also include total estimated biomass and spawning biomass for 
+Coast wide trends in Pacific Herring biomass show 
+an average increasing trend in estimated spawning biomass from 2010 to 2020 with
+stable catches since 1980, and catch declining over the last decade 
+(Figure \@ref(fig:coastwide-biomass-catch)).
+Comparisons of total estimated biomass and spawning biomass are also included for 
 each SAR (Figure \@ref(fig:biomass-total-biomass));
 these trends are presented using median posterior estimates.
 
 ### Haida Gwaii
 
 Estimated spawning biomass historic lows occurred in the late 1960s predicated
-by estimated low recruitment and high estimated natural mortality 
+by high catches, low estimated recruitment and high estimated natural mortality 
 (Figure \@ref(fig:storyboard-hg)a, b, e). 
 Under variable estimated recruitment, estimated spawning biomass recovered
 from that point through the early 1980s supported by 
 declining rates of estimated natural mortality.
 As estimated natural mortality began increasing again in the mid 1990s,
-estimated biomass reached near historic lows. 
-A reprieve in estimated low biomass was caused by 
+estimated biomass declined. 
+A reprieve in estimated low biomass occurred following several years with 
 above average estimated recruitment through the late 1990s,
-before biomass declined to persistent at historic lows 
-from 2000 to present with a couple low peaks in 2013 and 2019
+before biomass declined to persistent historic lows 
+from 2000 to present, with a couple low biomass peaks in 2013 and 2019
 (Figure \@ref(fig:storyboard-hg)d).
 The increasing trend in the estimated natural mortality rate since 1980
 (Figure \@ref(fig:storyboard-hg)b) largely absorbed  any surplus production
@@ -455,6 +456,7 @@ attributed to above average recruitment events
 (e.g., 1997, 2012, 2018; Figure \@ref(fig:storyboard-hg)c, d).
 Additionally estimated natural mortality has increased the last 5 years
 to historic highs.  
+
 The HG stock persists in a low biomass state,
 with many years also showing low productivity
 which has largely precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
