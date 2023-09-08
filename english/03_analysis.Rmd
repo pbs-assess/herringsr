@@ -462,7 +462,8 @@ with many years also showing low productivity
 which has largely precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
 Above-average recruitment of age-`r age_first` fish in 2018, 
 leading to increases in survey biomass in 2019 and 2020 were positive signs but 
-average to below-average recruitment since then which estimates negative productivity
+average to below-average recruitment since then
+which estimates negative productivity
 has brought biomass down to recent historical lows. 
 The effective harvest rate $U_t$ since 2000 has been at or near zero
 (Figure \@ref(fig:harvest-rate)),
@@ -527,7 +528,8 @@ in estimated biomass, which was mitigated in part by higher than average
 estimated recruitment in 2022 (Figure \@ref(fig:storyboard-cc)a, b, e).
 Model estimates suggest slightly less spawning biomass in 2023 than 2022
 (Table \@ref(tab:cc-spawning-biomass-depletion)),
-and the analysis of surplus production shows evidence of positive production in 2018, 
+and the analysis of surplus production shows
+evidence of positive production in 2018, 
 followed by negative in both 2019 and 2020, 
 and near neutral production in 2021 and 2022 
 (Figure \@ref(fig:storyboard-cc)f).
@@ -696,7 +698,8 @@ A technical working group comprised of members of
 the Council of Haida Nation, DFO, and Parks Canada co-developed
 a draft plan for which a  consultation period was held
 from September 26 – December 16, 2022. 
-Final edits are underway and a DFO internal review period is scheduled for fall 2023.
+Final edits are underway and a DFO internal review period
+is scheduled for fall 2023.
 
 Guidance for developing rebuilding plans [@dfo2013] states that
 the primary objective of any rebuilding plan is to
@@ -710,7 +713,8 @@ identify candidate threshold biomass levels greater than the LRP
 that are consistent with a rebuilt state.
 
 Based on MP evaluations and the ongoing rebuilding plan process,
-the harvest recommendation for the Haida Gwaii stock in `r assess_yr + 1` is 0&nbsp;t.
+the harvest recommendation for the Haida Gwaii stock in
+`r assess_yr + 1` is 0&nbsp;t.
 All future MP evaluations will occur through the rebuilding plan process.
 
 ### Prince Rupert District
