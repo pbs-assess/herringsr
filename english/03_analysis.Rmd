@@ -276,8 +276,8 @@ PFMAs are larger and can extend beyond SAR boundaries.
 Data indicate the number of Pacific Herring dead and released,
 with the following caveats:
 
-1. Data for `r max(ic_yrs)` are considered incomplete,
-<!-- TODO: MG, is this statement still correct, 2022 is incomplete? -->
+<!-- 1. Data for `r max(ic_yrs)` are considered incomplete, -->
+
 1. Unknown mortality rate for "released" fish,
 
 1. Unknown length, weight, age, and sex of fish, and
