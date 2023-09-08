@@ -114,7 +114,6 @@ recommendations from the aforementioned
 (Section "\nameref{sec:harv-opts}").
 
 <!-- Mandatory last paragraph in this section -->
-<!-- TODO: MG pls update process_month to September -->
 This Science Response results from the Science Response Process of
 `r rmarkdown::metadata$process_month` `r rmarkdown::metadata$process_day`,
 `r rmarkdown::metadata$process_year` on the `r rmarkdown::metadata$title`.
