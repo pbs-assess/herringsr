@@ -653,37 +653,34 @@ in 2021 [@dfo2021c]).
 
 ## Management performance
 
-Management procedure performance can be investigated using
+Historic management procedure performance can be assessed using
 the time series of effective harvest rate $U$.
 Estimated effective harvest rate $U$ in each year $t$ is
 $U_t = C_t/(C_t + \SB_t)$, where
 $C_t$ is catch in year $t$, and
 $\SB_t$ is estimated spawning biomass in year $t$.
-Time series of $U_t$ relative to
-the target harvest rate of `r target_hr*100`%
+Time series of $U_t$
 are presented in Figure \@ref(fig:harvest-rate).
 
 ## Application of MPs and harvest options for `r assess_yr + 1`\label{sec:harv-opts}
 
 Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs
 for each major SAR, derived from the Herring OM [@benson2022]. 
-OM conditioning was updated using the latest historic stock and fishery data
-from `r major_start_yr` to 2021.
+OM conditioning was updated in 2022 using historic stock and fishery data
+from `r major_start_yr` to 2021; no MP updates were conducted for 2023.
 MPs are not provided for HG because this is now conducted within the 
 HG rebuilding plan process.$^{\ref{fn:rebuild}}$
 
 ### Haida Gwaii
 
-The HG stock persisted in a low biomass state
-from approximately 2000 to 2018
-(Figure \@ref(fig:storyboard-hg)).
+The HG stock  persisted in a low biomass state
+from approximately 2000-2018 (Figure \@ref(fig:storyboard-hg)).
 The stock was below the LRP for much of that period and shows
 little evidence of sustained stock growth despite the absence of
 commercial fisheries since 2002 (and since 2004 for the SOK fishery).
 Survey biomass increased from 2019 to 2020,
 remained stable in 2021,
-and declined from 2021 to 2022.
-Spawn biomass production was positive in 2021.
+and declined from 2021 to 2023.
 Results of the simulation-evaluations found that none of the proposed MPs, 
 including the historical and no fishing MPs,
 maintained spawning biomass above the LRP with high probability
@@ -694,10 +691,13 @@ is defined as 75 to 95\% by the DFO decision-making framework (DFO 2009).}
 
 DFO has committed to developing and implementing a rebuilding plan for
 Haida Gwaii Pacific Herring.
-Work finalizing the draft for consultation continues via a 
-technical working group comprised of members of
-the Council of Haida Nation, DFO, and Parks Canada.
-The consultation period is anticipated to commence in fall 2022.
+The draft for consultation continues via a 
+A technical working group comprised of members of
+the Council of Haida Nation, DFO, and Parks Canada co-developed
+a draft plan for which a  consultation period was held
+from September 26 – December 16, 2022. 
+Final edits are underway and a DFO internal review period is scheduled for fall 2023.
+
 Guidance for developing rebuilding plans [@dfo2013] states that
 the primary objective of any rebuilding plan is to
 promote stock growth out of the Critical Zone
@@ -710,9 +710,8 @@ identify candidate threshold biomass levels greater than the LRP
 that are consistent with a rebuilt state.
 
 Based on MP evaluations and the ongoing rebuilding plan process,
-the harvest recommendation for the HG stock in `r assess_yr + 1` is 0&nbsp;t.
-Because Haida Gwaii has an on-going rebuilding plan process,
-we did not update HG MP evaluations with recent data.
+the harvest recommendation for the Haida Gwaii stock in `r assess_yr + 1` is 0&nbsp;t.
+All future MP evaluations will occur through the rebuilding plan process.
 
 ### Prince Rupert District
 
@@ -737,7 +736,7 @@ were estimated and have been added to the harvest options tables.
 <!-- TODO-: Make %'s auto update.JC: Defer until after SR is submitted-->
 Updated closed-loop feedback simulations for PRD show that
 MPs with harvest rates at 5, 10, and 20% maintain spawning biomass
-above the LRP with 85 to 98% probability, over both OM scenarios
+above the LRP with 85 to 97% probability, over both OM scenarios
 (Table \@ref(tab:decision-prd)). 
 `r mean_harvest_text(SAR = "PRD", translate = french)`
 
@@ -753,7 +752,8 @@ other socio-economic reasons may drive the choice for a particular MP.
 
 Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs
 are presented in Table \@ref(tab:decision-prd)
-and include probability values that reflect updated OM conditioning.
+and include probability values for the LRP and provisional USR which 
+reflect updated OM conditioning.
 Options reflect application of MPs to the `r assess_yr + 1`
 forecast biomass for PRD,
 whereby each MP meets the conservation objective with a minimum 75% probability
