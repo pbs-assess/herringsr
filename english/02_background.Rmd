@@ -107,7 +107,7 @@ Recommendations for addressing this uncertainty will require quantifying
 ponding mortality and removals (i.e., eggs) associated with SOK fisheries.
 Progress has been made in quantifying SOK mortality sources within the 
 new modelling framework [@dfo2023a], however those approaches are not
-transferable to the SCA model [@martel2011] used here.
+transferable to the SCA model [@martell2011] used here.
 
 ## Description of the stock assessment process
 

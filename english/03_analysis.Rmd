@@ -377,7 +377,7 @@ for HG in 2020 and 2021, as well as for PRD in 2020.
 These surface survey observations are treated as dive survey observations and
 are assumed to be continuous with the dive survey time series.
 Methods for combining surface and dive survey observations are presented
-for the SISCAH modelling framework [@dfo2033a], but are not implemented here.
+for the SISCAH modelling framework [@dfo2023a], but are not implemented here.
 
 ### Reference points\label{sec:ref-pts}
 
