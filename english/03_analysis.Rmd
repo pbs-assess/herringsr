@@ -770,8 +770,8 @@ presented along side MP performance metrics for both OM scenarios
 
 The CC stock persisted in a low biomass, low productivity state from
 approximately 2005 to 2014.
-In years since, an increasing trend has been observed in all but the 
-most recent two years (Figure \@ref(fig:storyboard-cc)a).
+An increasing trend was observed from 2015-2020, followed by a decline 
+from 2021-2023 (Figure \@ref(fig:storyboard-cc)a).
 
 In the summer of 2022, we updated the conditioning of the MSE operating model
 for CC with 2021 spawn, catch, and biological data.
@@ -780,7 +780,7 @@ No new MPs were included however probability metrics for the five USRs options
 [@dfo2022a] were estimated and have been added to the harvest options tables.
 <!-- TODO-: Make %'s auto update.JC: Defer until after SR is submitted-->
 The updated simulations show that MPs with harvest rates at 5% and 10% 
-maintain spawning biomass above the LRP with 81 to 92% probability over all 
+maintain spawning biomass above the LRP with 81 to 91% probability over all 
 both OM scenarios (Table \@ref(tab:decision-cc)).
 `r mean_harvest_text(SAR = "CC", translate = french)`
 
@@ -807,11 +807,11 @@ Results presented here may inform this ongoing commitment.
 ### Strait of Georgia
 
 The SoG has the largest biomass of the major SARs
-and comprises more than 50% of the total coast wide biomass 
+and currently comprises approximately 50% of the total coast wide biomass 
 (Figure \@ref(fig:coastwide-biomass-catch)).
 Estimated spawning biomass trends remained stable and high from
 2011 through 2020 despite increases in estimated natural mortality rates
-in the last three to five years.
+in the last three to five years (Figure \@ref(fig:storyboard-SoG)b).
 SoG MP evaluations are implemented using the Herring OM [@benson2022] and
 were first presented in 2018 [@dfo2019a].
 MP updates were conducted in 2020 [@dfo2021b] and again herein.
@@ -821,16 +821,17 @@ Initial simulations show the probability of meeting the conservation
 objective ranges from 91% to 100% [@dfo2019a], depending on the scenario and MP.
 Subsequent updates in 2020 show a decline in conservation performance with
 probabilities ranging from 75% to 88% (DDM and DIM only, @dfo2021b), and the
-updates included here show probabilities ranging from 67% to 87%
+updates in 2022, included here, show probabilities ranging from 67% to 80%
 (Table \@ref(tab:decision-sog)).
 
 These comparisons highlight the importance of considering
 the lessons learned from the MSE process (Section "\nameref{sec:mse}")
 when selecting or rejecting MPs.
 In this case it may be important to consider how the recent MP updates 
-may be influenced by the the last three to five years
+may be influenced by the last three to five years
 of natural mortality trends used to condition the OM
-(Table \@ref(tab:decision-sog)). 
+(Table \@ref(tab:decision-sog)), as well as to consider how biomass trends
+have responded under continual annual commercial fisheries. 
 
 MSE updates presented here show the conservation objective is met with the
 minimum 75% probability when simulating MPs with 10% and 15% harvest rates.
