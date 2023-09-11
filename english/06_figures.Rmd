@@ -503,6 +503,7 @@ create_slide_figures <- function(model_index = 1) {
     major_models[[model_ind]],
     surv_type,
     new_surv_yr = new_surv_yr,
+    prod_yrs = prod_period[[model_index]]$yrs,
     xlim = xlim_all,
     point_size = 4,
     line_size = 2,
