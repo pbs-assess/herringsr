@@ -811,7 +811,7 @@ and currently comprises approximately 50% of the total coast wide biomass
 (Figure \@ref(fig:coastwide-biomass-catch)).
 Estimated spawning biomass trends remained stable and high from
 2011 through 2020 despite increases in estimated natural mortality rates
-in the last three to five years (Figure \@ref(fig:storyboard-SoG)b).
+in the last three to five years (Figure \@ref(fig:storyboard-sog)b).
 SoG MP evaluations are implemented using the Herring OM [@benson2022] and
 were first presented in 2018 [@dfo2019a].
 MP updates were conducted in 2020 [@dfo2021b] and again herein.
