@@ -4,19 +4,17 @@
 
 ```{r, echo=FALSE, include=FALSE}
 contributors <- tibble::tribble(
-  ~"Contributor", ~"Affiliation",
-  "Jaclyn Cleary", "DFO Science, Pacific Region",
-  "Sarah Power", "DFO Science, Pacific Region",
-  "Matthew Grinnell", "DFO Science, Pacific Region",
-  "Sarah Hawkshaw", "DFO Science, Pacific Region",
-  "Bryan Rusch", "DFO Fisheries Management, Pacific Region (reviewer)",
-  "Marisa Keefe", "DFO Fisheries Management, Pacific Region (reviewer)")
+  ~"Contributor",     ~"Affiliation",                             ~"Role",
+  "Jaclyn Cleary",    "DFO Science, Pacific Region",              "Author",
+  "Sarah Power",      "DFO Science, Pacific Region",              "Author",
+  "Matthew Grinnell", "DFO Science, Pacific Region",              "Author",
+  "Bryan Rusch",      "DFO Fisheries Management, Pacific Region", "Client",
+  "Marisa Keefe",     "DFO Fisheries Management, Pacific Region", "Client")
 ```
 
 ```{r, results='asis'}
 csasdown::csas_table(x = contributors, format = "latex") %>%
-   kable_styling(full_width = FALSE) %>%
-   column_spec(1, width = "9em")
+   row_spec(0, bold = TRUE)
 ```
 
 <!-- Omit Contributors from table numbering -->
