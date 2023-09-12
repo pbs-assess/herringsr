@@ -16,8 +16,8 @@ approver: |
   Regional Director
 # Directeur régionale
 approval_year: 2023
-approval_month: Month
-# approval_month: Mois
+approval_month: September
+# approval_month: Septembre
 approval_day: 00
 process_year: 2023
 process_month: September
