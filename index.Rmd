@@ -22,7 +22,7 @@ approval_day: 00
 process_year: 2023
 process_month: September
 # process_month: Septembre
-process_day: 00
+process_day: 22
 branch: Science Branch
 region: Pacific Region
 # branch: Secteur des sciences

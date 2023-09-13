@@ -102,7 +102,8 @@ First Nations and other stakeholders.
 1. A minimum three year cycle for MSE updates is recommended, 
 unless new evidence reveals exceptional circumstances.
 
-DFO is committed to these recommendations prior to implementation of the
+DFO is committed to implementing these recommendations
+prior to implementation of the
 spatially integrated statistical catch at age herring (SISCAH)
 modelling framework.
 
@@ -622,7 +623,7 @@ The low estimated spawning biomass persisted from 2006 to 2012,
 influenced by negative recruitment deviations 
 (i.e., lower than predicted by the stock-recruit function)
 and the highest estimated natural mortality rates since `r major_start_yr`
-(Figure \@ref(fig:storyboard-wcvi)a, b, f). ,
+(Figure \@ref(fig:storyboard-wcvi)a, b, f).
 Some increases in estimated biomass occur in 2015 with 
 lower estimated natural mortality and higher estimated recruitment, 
 and then again after 2020 (Figure \@ref(fig:storyboard-wcvi)d, f).
@@ -694,7 +695,7 @@ is defined as 75 to 95\% by the DFO decision-making framework (DFO 2009).}
 DFO has committed to developing and implementing a rebuilding plan for
 Haida Gwaii Pacific Herring.
 The draft for consultation continues via a 
-A technical working group comprised of members of
+technical working group comprised of members of
 the Council of Haida Nation, DFO, and Parks Canada co-developed
 a draft plan for which a  consultation period was held
 from September 26 – December 16, 2022. 
