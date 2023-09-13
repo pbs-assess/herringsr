@@ -38,7 +38,7 @@ Haida Gwaii (HG), Prince Rupert District (PRD), and Central Coast (CC)
 SARs [@dfo2019c].
 Updates to MP evaluations were then conducted for
 SoG and WCVI SARs in 2020 [@dfo2021b] and
-for PRD, CC, SoG, and WCVI in 2023 [@dfo2022a,@dfo2022b].
+for PRD, CC, SoG, and WCVI in 2023 [@dfo2022a; @dfo2022b].
 
 This assessment includes new science advice on choice of USR points for all
 `r number_to_word(length(major_regions_short))`
