@@ -13,8 +13,8 @@ The MSE process identifies a range of MPs that meet the conservation objective
 with at least 75% probability for the PRD, CC, SoG, and WCVI SARs
 for the DDM reference OM scenario [@dfo2019c; @dfo2021b].
 Harvest options or MP calculations for `r assess_yr + 1` for these four SARs
-is combined with MP evaluations (probabilities) arising from the latest MSE 
-update.
+is combined with MP evaluations (probabilities)
+arising from the latest MSE update.
 Tables also include MP performance and harvest options for the DIM robustness 
 OM scenario (Tables \@ref(tab:decision-prd) to \@ref(tab:decision-wcvi)).
 

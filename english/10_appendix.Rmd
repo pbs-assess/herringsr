@@ -15,7 +15,8 @@ as well as spawn index (Figure \@ref(fig:minor-spawn-index))
 from `r minor_start_yr_plot` to `r minor_end_yr`.
 DFO also provides the spawn index and proportion of spawn index by Section 
 from `r minor_end_yr-num_yrs_tab` to `r minor_end_yr` for A27 and A2W
-(Tables \@ref(tab:spawn-index-a27) and \@ref(tab:spawn-index-a2w), respectively).
+(Tables \@ref(tab:spawn-index-a27) and \@ref(tab:spawn-index-a2w),
+respectively).
 For Area 27, spawn index by Section
 from `r minor_start_yr_plot` to `r minor_end_yr` is also provided
 (Figure \@ref(fig:spawn-section-a27)).

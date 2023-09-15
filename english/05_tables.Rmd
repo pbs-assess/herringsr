@@ -689,7 +689,8 @@ spawning biomass and depletion from
 Pacific Herring statistical catch-age model.
 See Table \@ref(tab:hg-spawning-biomass-depletion) for description.
 
-(ref:wcvi-spawning-biomass-depletion-cap-fr) RES de la côte ouest de l’île de Vancouver:
+(ref:wcvi-spawning-biomass-depletion-cap-fr) RES de la côte ouest de
+l’île de Vancouver:
 biomasse reproductrice et déplétion de
 `r major_end_yr - num_yrs_tab` à `r major_end_yr` pour le
 modèle statistique de capture-âge du hareng du Pacifique.
@@ -981,7 +982,8 @@ statistical catch-age model.
 See Table \@ref(tab:decision-prd) for description.
 
 (ref:decision-cc-cap-fr) RES de la côte centrale:
-rendement de la procédure de gestion pour le modèle statistique de prises-âges du hareng du Pacifique.
+rendement de la procédure de gestion pour
+le modèle statistique de prises-âges du hareng du Pacifique.
 Voir le tableau \@ref(tab:decision-prd) pour la description.
 
 \needspace{0.32\textheight}

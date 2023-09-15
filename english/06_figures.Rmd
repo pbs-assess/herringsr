@@ -785,7 +785,6 @@ plot_spawn_section(
 create_slide_figures(model_index = model_ind)
 ```
 
-
 <!-- Strait of Georgia Storyboard -->
 ```{r scaled-abundance-sog, fig.show = "hide", fig.asp = 1}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
