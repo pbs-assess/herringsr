@@ -185,7 +185,7 @@ The commercial SOK fishery is licensed based on pounds of validated SOK product
 (i.e., eggs adhered to kelp), not tonnes of fish used or spawned.
 Currently there is no basis to validate mortality
 imposed on the population by this fishery, however
-methods for estimating SOK mortality are developed within
+methods for estimating SOK mortality have been developed within
 the SISCAH modelling framework [@dfo2023a].
 
 Combined commercial removals from `r assess_yr - num_yrs_tab` to `r assess_yr`
@@ -324,7 +324,7 @@ There was no effort toward the traditional harvest of k’aaw (herring roe) in S
 Analyses of stock trend information is presented following
 methods of @cleary2018 for the Pacific Herring major SARs.
 This year, Markov chain Monte Carlo (MCMC) runs
-have chain length `r number_to_word(mcmc_length)`
+have a chain length of `r number_to_word(mcmc_length)`
 with a sample taken every `r number_to_word(mcmc_samp_freq)`
 iterations (i.e., thinning).
 Next, the first `r number_to_word(mcmc_burnin)` samples are discarded (i.e., burn-in),
@@ -700,8 +700,7 @@ A technical working group comprised of members of
 the Council of Haida Nation, DFO, and Parks Canada co-developed
 a draft plan for which a  consultation period was held
 from September 26 to December 16, 2022. 
-Final edits are underway and a DFO internal review period
-is scheduled for fall 2023.
+Approval of the final rebuilding plan is expected for the fall/winter of 2023.
 
 Guidance for developing rebuilding plans [@dfo2013] states that
 the primary objective of any rebuilding plan is to
@@ -815,17 +814,16 @@ and currently comprises approximately 50% of the total coast wide biomass
 Estimated spawning biomass trends remained stable and high from
 2011 through 2020 despite increases in estimated natural mortality rates
 in the last three to five years (Figure \@ref(fig:storyboard-sog)b).
-SoG MP evaluations are implemented using the Herring OM [@benson2022] and
-were first presented in 2018 [@dfo2019a].
-MP updates were conducted in 2020 [@dfo2021b] and again herein.
+SoG MP evaluations are implemented using the Herring OM [@benson2022].
+MPs were first presented in 2018 [@dfo2019a]
+and updates in 2020 [@dfo2021b] and in 2022 [@dfo2022b].
 Each update shows differences in MP performance against
 the conservation objective for both OM scenarios.
 Initial simulations show the probability of meeting the conservation 
 objective ranges from 91% to 100% [@dfo2019a], depending on the scenario and MP.
 Subsequent updates in 2020 show a decline in conservation performance with
 probabilities ranging from 75% to 88% (DDM and DIM only, @dfo2021b), and the
-updates in 2022, included here, show probabilities ranging from 67% to 80%
-(Table \@ref(tab:decision-sog)).
+updates in 2022 [@dfo2022b], included here, show probabilities ranging from 67% to 80% (Table \@ref(tab:decision-sog)).
 
 These comparisons highlight the importance of considering
 the lessons learned from the MSE process (Section "\nameref{sec:mse}")
@@ -836,7 +834,7 @@ of natural mortality trends used to condition the OM
 (Table \@ref(tab:decision-sog)), as well as to consider how biomass trends
 have responded under continual annual commercial fisheries. 
 
-MSE updates presented here show the conservation objective is met with the
+SOG MP evaluations show the conservation objective is met with the
 minimum 75% probability when simulating MPs with 10% and 15% harvest rates.
 However MPs with 20% harvest rates 
 (e.g., HS30-60_HR20 and MinE30_HR20),
@@ -886,3 +884,15 @@ These options reflect application of MPs to the `r assess_yr + 1`
 forecast biomass for WCVI, under the two OM scenarios.
 All MPs and scenarios listed in Table \@ref(tab:decision-wcvi) include
 updated performance metrics under both scenarios [@dfo2021b].
+
+#Ecosystem considerations
+The assessment approach used for Pacific Herring models environmental 
+variability implicitly via natural mortality process that is time varying
+(e.g., implied predation impacts) and via recruitment process variability; 
+however, ecosystem indicators are not directly incorporated into a stock
+assessment model.
+
+These methods do not necessarily identify the mechanisms through which
+mortality is changing, however; qualitative and quantitative summaries and
+analyses can help to fill this knowledge gap.
+
