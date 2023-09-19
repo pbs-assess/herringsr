@@ -886,13 +886,15 @@ All MPs and scenarios listed in Table \@ref(tab:decision-wcvi) include
 updated performance metrics under both scenarios [@dfo2021b].
 
 #Ecosystem considerations
-The assessment approach used for Pacific Herring models environmental 
-variability implicitly via natural mortality process that is time varying
-(e.g., implied predation impacts) and via recruitment process variability; 
-however, ecosystem indicators are not directly incorporated into a stock
+The Pacific Herring assessment models environmental 
+variability implicitly via time varying natural mortality and recruitment 
+(e.g., implied predation and other environmental impacts); 
+however, ecosystem indicators are not directly incorporated into the
 assessment model.
 
 These methods do not necessarily identify the mechanisms through which
 mortality is changing, however; qualitative and quantitative summaries and
-analyses can help to fill this knowledge gap.
+analyses can help to fill this knowledge gap. 
+
+
 
