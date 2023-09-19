@@ -885,16 +885,88 @@ forecast biomass for WCVI, under the two OM scenarios.
 All MPs and scenarios listed in Table \@ref(tab:decision-wcvi) include
 updated performance metrics under both scenarios [@dfo2021b].
 
-#Ecosystem considerations
+## Ecosystem considerations
+
 The Pacific Herring assessment models environmental 
 variability implicitly via time varying natural mortality and recruitment 
 (e.g., implied predation and other environmental impacts); 
 however, ecosystem indicators are not directly incorporated into the
 assessment model.
-
 These methods do not necessarily identify the mechanisms through which
 mortality is changing, however; qualitative and quantitative summaries and
 analyses can help to fill this knowledge gap. 
 
+As a step towards improving the understanding of the environmental conditions 
+that affect herring, directed and standardized literature searches were 
+conducted to identify mechanistic hypotheses that link environmental and 
+biological pressures to Pacific Herring outcomes (responses), such as 
+distribution, growth, migration, productivity, reproduction, and survival 
+(Boldt et al. 2022).
+For a case study on Haida Gwaii herring, indicators of these 
+mechanistically-linked pressures and responses were assembled from multiple 
+sources (e.g., Boldt et al. 2023), based upon the 
+Driver-Pressure-State-Impact-Response (DPSIR) framework (Elliott 2002). 
+Indicators generally corresponded to published lists of standard indicators 
+(e.g., Bundy et al. 2017; Boldt et al. 2014; Takahashi and Perry 2019), 
+with consideration for the spatial scales and herring distribution by season 
+and life history stage (Boldt et al. in prep). Data exploration and analyses 
+were undertaken to collate and reduce the number of indicators according to 
+the methods of Boldt et al. (2021) and indicator selection criteria 
+(Rice and Rochet 2005).  A multi-model approach, including single 
+pressure-response and multivariate models, was applied to determine 
+functional forms of pressure-response relationships and identify linear 
+and non-linear relationships (Boldt et al. in prep).
 
+Environmental pressures that have been identified as important for herring 
+include the timing, duration, and magnitude of upwelling, which can affect 
+the amount of primary and secondary production available to herring 
+(Mackas et al. 2001; Hourston and Thomson 2019; (Figure \@ref(fig:eco-diagram)). 
+Other physical environmental pressures include sea surface temperature (SST), 
+salinity, sea level, river discharge, and Ekman transport 
+(Tester 1948; Alderdice and Hourston 1985; Stocker et al. 1985; Stocker and Noakes 1988;
+Schweigert and Noakes 1990; Ware 1991; Zebdi and Collie 1995). 
+For example, Tester (1948) found that herring recruitment and survival are 
+negatively related to sea surface temperature. Fish yield was found to be 
+correlated with phytoplankton and zooplankton production in BC (Ware and Thomson 2005) 
+and zooplankton biomass anomalies have been correlated with herring growth (Mackas et al. 2007). 
+Changes in zooplankton species composition from larger-sized and lipid-rich 
+boreal and subarctic copepod species to smaller-sized and lipid-poor southern 
+copepod species affects the quality of food available to herring 
+(Mackas et al. 2001; Keister et al. 2011). The timing or match-mismatch 
+between spawning herring and the subsequent 
+availability of prey to juveniles appears to be important in determining 
+abundance of age-0 herring in the fall 
+(Schweigert et al. 2013; Boldt et al. 2018). Increased water temperatures are 
+often associated with increased abundance of 
+herring predators and competitors (Mysak 1986; Ware and McFarlane 1986). 
+Herring predators, include Pacific Hake, groundfish (e.g., Spiny Dogfish), 
+Coho and Chinook Salmon, pinnipeds and Humpback Whales 
+(Ware and McFarlane 1986; Ware and McFarlane 1995; Schweigert et al. 2010). 
+Potential herring competitors include other zooplanktivores, such as 
+juvenile groundfish, juvenile pink, chum and sockeye salmon, Pacific Hake, 
+and, in the past, Pacific sardine (Sardinops sagax).  Spatio-temporal model 
+results suggest that the strongest drivers of summer distribution and biomass 
+of Pacific Herring off the WCVI include: 1) zooplankton prey availability, 
+2) predator avoidance, particularly Pacific Hake, and 3) 
+competition with sardines (Godefroid et al. 2019).
+
+The Haida Gwaii herring stock has been in a low productivity phase in 
+the absence of fishing over the last two decades. The herring responses that 
+have shown long-term declining trends are herring biomass, age-3 weight, and 
+condition. 
+Trends in pressures that correspond with these herring responses include (Figure \@ref(fig:eco-trend)): 
+
+1. Long-term increasing SSTs, which has been correlated with poor herring productivity.  
+In 2022, late and below average upwelling indicate reduced upwelling-based productivity;
+
+1. An increase in total zooplankton biomass and hence prey availability, but with 
+changes to the community composition (i.e., lipid-poor southern copepods 
+increased during and then decreased after the 2014-2016 marine heat wave);	
+
+1. An increase in marine mammal predator abundances (i.e., Steller Sea Lion 
+and Humpback whale abundance); 
+
+1. Decreases in some groundfish predators and competitors (i.e., Pacific Hake, 
+North Pacific Spiny Dogfish biomass, Arrowtooth Flounder), with recent (2021) 
+increases in survey catch rates of some species (e.g., Pacific Cod).
 

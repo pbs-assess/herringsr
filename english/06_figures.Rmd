@@ -1119,3 +1119,33 @@ pa_graph <- function(df){
 # pa_WCVIplot <- pa_graph(pa_WCVI)
 # ggsave(filename = here("figures", paste0("proportion_of_ageWCVI.png")),  width=8, height=10.5, dpi=300)
 ```
+
+(ref:eco-diagram-cap) Depiction of some pressures that can affect different life history 
+stages of Pacific Herring (from DFO 2022).
+
+(ref:eco-diagram-cap-fr) Need french title.
+
+```{r eco-diagram, fig.cap = ifelse(french, "(ref:eco-diagram-cap-fr)", "(ref:eco-diagram-cap)"), out.width = "100%"}
+knitr::include_graphics(
+  here(ifelse(french, "figures/herring_ecosystem_pressures_diagram.png", "figures/herring_ecosystem_pressures_diagram.png"))
+)
+```
+
+(ref:eco-trend-cap) Standardized time series of selected pressure indicators and 
+herring responses and their status and trends within the last 5 years of the time series.  
+Some indicators are specific to the Hecate Strait area (e.g., SST). 
+Solid green lines are +/- one standard deviation; the most recent five years 
+are highlighted in green. Symbols to the right of graphs indicate trend (top) and status (bottom). 
+Trend symbols indicate if there was significantly increasing (upwards pointing arrow) 
+or decreasing (downwards pointing arrow) trend, or neither (horizontal arrow) 
+in the most recent 5 years, where there are > 2 years of data available. 
+Status symbols indicate if the recent 5- year-average value was greater than one 
+standard deviation above (+) or below (-) the time-series average.
+
+(ref:eco-trend-cap-fr) Need french title.
+
+```{r eco-trend, fig.cap = ifelse(french, "(ref:eco-trend-cap-fr)", "(ref:eco-trend-cap)"), out.width = "100%"}
+knitr::include_graphics(
+  here(ifelse(french, "figures/ecosystem_pressure_trends.png", "figures/ecosystem_pressure_trends.png"))
+)
+```
