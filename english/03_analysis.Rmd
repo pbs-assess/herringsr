@@ -908,8 +908,7 @@ Driver-Pressure-State-Impact-Response (DPSIR) framework [@elliott2002].
 Indicators generally corresponded to published lists of standard indicators 
 (e.g., @bundy2017; @boldt2014; @takahashi2019),
 with consideration for the spatial scales and herring distribution by season 
-and life history stage (Boldt et al. in prep). 
-\footnote{\label{fn:boldt}
+and life history stage (Boldt et al. in prep).\footnote{\label{fn:boldt}
 Incorporating ecosystem information into science advice - a case study for
 Haida Gwaii Pacific Herring.}
 Data exploration and analyses 
@@ -923,10 +922,10 @@ and non-linear relationships (Boldt et al. in prep).$^{\ref{fn:boldt}}$
 Environmental pressures that have been identified as important for herring 
 include the timing, duration, and magnitude of upwelling, which can affect 
 the amount of primary and secondary production available to herring 
-(@mackas2001; Hourston and Thomson 2019; (Figure \@ref(fig:eco-diagram)). 
+(@mackas2001; @hourston2019; (Figure \@ref(fig:eco-diagram)). 
 Other physical environmental pressures include sea surface temperature (SST), 
 salinity, sea level, river discharge, and Ekman transport 
-(Tester 1948; Alderdice and Hourston 1985; Stocker et al. 1985; Stocker and Noakes 1988;
+(@tester1948; Alderdice and Hourston 1985; Stocker et al. 1985; Stocker and Noakes 1988;
 Schweigert and Noakes 1990; Ware 1991; Zebdi and Collie 1995). 
 For example, Tester (1948) found that herring recruitment and survival are 
 negatively related to sea surface temperature. Fish yield was found to be 
