@@ -1122,7 +1122,7 @@ pa_graph <- function(df){
 
 (ref:eco-diagram-cap) Depiction of some pressures
 that can affect different life history 
-stages of Pacific Herring (from [@dfo2022c]).
+stages of Pacific Herring (from @dfo2022c).
 
 (ref:eco-diagram-cap-fr) Need french title.
 
@@ -1133,7 +1133,7 @@ knitr::include_graphics(
 ```
 
 (ref:eco-trend-cap) Standardized time series of selected pressure indicators and 
-herring responses and their status and trends within the last 5 years of the time series.  
+herring responses and their status and trends within the last 5 years of the time series.
 Some indicators are specific to the Hecate Strait area (e.g., SST). 
 Solid green lines are +/- one standard deviation; the most recent five years 
 are highlighted in green. Symbols to the right of graphs indicate trend (top) and status (bottom). 
@@ -1142,7 +1142,7 @@ or decreasing (downwards pointing arrow) trend, or neither (horizontal arrow)
 in the most recent 5 years, where there are > 2 years of data available. 
 Status symbols indicate if the recent 5- year-average value was greater than one 
 standard deviation above (+) or below (-) the time-series average.
-SST = Sea surface temperature; AVHRR satellite; https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm
+SST = Sea surface temperature; \link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{AVHRR satellite}
 bio_mg_mg3 = Biomass in mg/m3; M. Galbraith and R.I. Perry, DFO, pers. comm.;
 abund_no= number in numbers/m3 ; M. Galbraith and R.I. Perry, DFO, pers. comm.;
 Humpback Whale abundance: Best et al. (2015) for 2008 estimate, DFO survey (B. Wright, DFO, pers. comm.) for 2018 estimate; other years interpolated using a 4% population growth rate (Ford et al. 2010) (T. Doniol-Valcroze, DFO, pers. comm.);
