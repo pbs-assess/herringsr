@@ -926,15 +926,15 @@ the amount of primary and secondary production available to herring
 Other physical environmental pressures include sea surface temperature (SST), 
 salinity, sea level, river discharge, and Ekman transport 
 (@tester1948; @alderdice1985; @stocker1985; @stocker1988;
-@schweigert1990; @ware1991; Zebdi and Collie 1995). 
+@schweigert1990; @ware1991; @zebdi1995). 
 For example, @tester1948 found that herring recruitment and survival are 
 negatively related to sea surface temperature. Fish yield was found to be 
-correlated with phytoplankton and zooplankton production in BC (Ware and Thomson 2005) 
-and zooplankton biomass anomalies have been correlated with herring growth (Mackas et al. 2007). 
+correlated with phytoplankton and zooplankton production in BC [@ware2005] 
+and zooplankton biomass anomalies have been correlated with herring growth [@mackas2007].
 Changes in zooplankton species composition from larger-sized and lipid-rich 
 boreal and subarctic copepod species to smaller-sized and lipid-poor southern 
 copepod species affects the quality of food available to herring 
-(Mackas et al. 2001; Keister et al. 2011). The timing or match-mismatch 
+(@mackas2001; Keister et al. 2011). The timing or match-mismatch 
 between spawning herring and the subsequent 
 availability of prey to juveniles appears to be important in determining 
 abundance of age-0 herring in the fall 
