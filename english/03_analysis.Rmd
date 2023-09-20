@@ -925,9 +925,9 @@ the amount of primary and secondary production available to herring
 (@mackas2001; @hourston2019; (Figure \@ref(fig:eco-diagram)). 
 Other physical environmental pressures include sea surface temperature (SST), 
 salinity, sea level, river discharge, and Ekman transport 
-(@tester1948; Alderdice and Hourston 1985; Stocker et al. 1985; Stocker and Noakes 1988;
-Schweigert and Noakes 1990; Ware 1991; Zebdi and Collie 1995). 
-For example, Tester (1948) found that herring recruitment and survival are 
+(@tester1948; @alderdice1985; @stocker1985; @stocker1988;
+@schweigert1990; @ware1991; Zebdi and Collie 1995). 
+For example, @tester1948 found that herring recruitment and survival are 
 negatively related to sea surface temperature. Fish yield was found to be 
 correlated with phytoplankton and zooplankton production in BC (Ware and Thomson 2005) 
 and zooplankton biomass anomalies have been correlated with herring growth (Mackas et al. 2007). 
