@@ -908,7 +908,7 @@ Driver-Pressure-State-Impact-Response (DPSIR) framework [@elliott2002].
 Indicators generally corresponded to published lists of standard indicators 
 (e.g., @bundy2017; @boldt2014; @takahashi2019),
 with consideration for the spatial scales and herring distribution by season 
-and life history stage (Boldt et al. in prep).\footnote{\label{fn:boldt}
+and life history stage (Boldt et al.).\footnote{\label{fn:boldt}
 Incorporating ecosystem information into science advice - a case study for
 Haida Gwaii Pacific Herring.}
 Data exploration and analyses 
@@ -917,7 +917,7 @@ the methods of @boldt2021 and indicator selection criteria
 (@rice2005). A multi-model approach, including single 
 pressure-response and multivariate models, was applied to determine 
 functional forms of pressure-response relationships and identify linear 
-and non-linear relationships (Boldt et al. in prep).$^{\ref{fn:boldt}}$
+and non-linear relationships (Boldt et al.).$^{\ref{fn:boldt}}$
 
 Environmental pressures that have been identified as important for herring 
 include the timing, duration, and magnitude of upwelling, which can affect 
@@ -934,23 +934,23 @@ and zooplankton biomass anomalies have been correlated with herring growth [@mac
 Changes in zooplankton species composition from larger-sized and lipid-rich 
 boreal and subarctic copepod species to smaller-sized and lipid-poor southern 
 copepod species affects the quality of food available to herring 
-(@mackas2001; Keister et al. 2011). The timing or match-mismatch 
+(@mackas2001; @keister2011). The timing or match-mismatch 
 between spawning herring and the subsequent 
 availability of prey to juveniles appears to be important in determining 
 abundance of age-0 herring in the fall 
-(Schweigert et al. 2013; Boldt et al. 2018). Increased water temperatures are 
+(@schweigert2013; @boldt2018). Increased water temperatures are 
 often associated with increased abundance of 
-herring predators and competitors (Mysak 1986; Ware and McFarlane 1986). 
+herring predators and competitors (@mysak1986; @ware1986). 
 Herring predators, include Pacific Hake, groundfish (e.g., Spiny Dogfish), 
 Coho and Chinook Salmon, pinnipeds and Humpback Whales 
-(Ware and McFarlane 1986; Ware and McFarlane 1995; Schweigert et al. 2010). 
+(@ware1986; @ware1995; @schweigert2010). 
 Potential herring competitors include other zooplanktivores, such as 
 juvenile groundfish, juvenile pink, chum and sockeye salmon, Pacific Hake, 
 and, in the past, Pacific sardine (Sardinops sagax).  Spatio-temporal model 
 results suggest that the strongest drivers of summer distribution and biomass 
 of Pacific Herring off the WCVI include: 1) zooplankton prey availability, 
 2) predator avoidance, particularly Pacific Hake, and 3) 
-competition with sardines (Godefroid et al. 2019).
+competition with sardines (@godefroid2019).
 
 The Haida Gwaii herring stock has been in a low productivity phase in 
 the absence of fishing over the last two decades. The herring responses that 
