@@ -950,7 +950,7 @@ Coho and Chinook Salmon, pinnipeds and Humpback Whales
 [@ware1986; @ware1995; @schweigert2010]. 
 Potential herring competitors include other zooplanktivores, such as 
 juvenile groundfish, juvenile pink, chum and sockeye salmon, Pacific Hake, 
-and, in the past, Pacific sardine (Sardinops sagax).
+and, in the past, Pacific Sardine.
 Spatio-temporal model results suggest that
 the strongest drivers of summer distribution and biomass 
 of Pacific Herring off the WCVI include:
