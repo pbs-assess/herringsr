@@ -1157,6 +1157,6 @@ Mean_LWResids_Female = residuals from a double-log-transformed length-weight reg
 
 ```{r eco-trend, fig.cap = ifelse(french, "(ref:eco-trend-cap-fr)", "(ref:eco-trend-cap)"), out.width = "100%"}
 knitr::include_graphics(
-  here(ifelse(french, "figures/ecosystem_pressure_trends.png", "figures/ecosystem_pressure_trends.png"))
+  here(ifelse(french, "figures/ecosystem_pressure_trends_V2.png", "figures/ecosystem_pressure_trends_V2.png"))
 )
 ```
