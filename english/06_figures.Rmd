@@ -1128,7 +1128,7 @@ stages of Pacific Herring (from @dfo2022c).
 
 ```{r eco-diagram, fig.cap = ifelse(french, "(ref:eco-diagram-cap-fr)", "(ref:eco-diagram-cap)"), out.width = "100%"}
 knitr::include_graphics(
-  here(ifelse(french, "figures/herring_ecosystem_pressures_diagram.png", "figures/herring_ecosystem_pressures_diagram.png"))
+  here(ifelse(french, "figures/eco_diagram.png", "figures/eco_diagram.png"))
 )
 ```
 
@@ -1157,6 +1157,6 @@ Mean_LWResids_Female = residuals from a double-log-transformed length-weight reg
 
 ```{r eco-trend, fig.cap = ifelse(french, "(ref:eco-trend-cap-fr)", "(ref:eco-trend-cap)"), out.width = "100%"}
 knitr::include_graphics(
-  here(ifelse(french, "figures/ecosystem_pressure_trends_V2.png", "figures/ecosystem_pressure_trends_V2.png"))
+  here(ifelse(french, "figures/eco_trend.png", "figures/eco_trend.png"))
 )
 ```
