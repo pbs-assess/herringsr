@@ -1122,9 +1122,13 @@ pa_graph <- function(df){
 
 (ref:eco-diagram-cap) Depiction of some pressures
 that can affect different life history 
-stages of Pacific Herring (from @dfo2022c).
+stages of Pacific Herring.
+Diagram copied with permission from @dfo2022c.
 
-(ref:eco-diagram-cap-fr) Need french title.
+(ref:eco-diagram-cap-fr) Représentation de certaines pressions
+qui peuvent affecter les différents stades du cycle biologique
+du hareng du Pacifique.
+Diagramme copié avec l'autorisation de @dfo2022c.
 
 ```{r eco-diagram, fig.cap = ifelse(french, "(ref:eco-diagram-cap-fr)", "(ref:eco-diagram-cap)"), out.width = "100%"}
 knitr::include_graphics(
