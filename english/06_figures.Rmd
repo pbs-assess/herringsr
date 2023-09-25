@@ -1137,25 +1137,45 @@ knitr::include_graphics(
 ```
 
 (ref:eco-trend-cap) Standardized time series of selected pressure indicators and 
-herring responses and their status and trends within the last 5 years of the time series.
-Some indicators are specific to the Hecate Strait area (e.g., SST). 
-Solid green lines are +/- one standard deviation; the most recent five years 
-are highlighted in green. Symbols to the right of graphs indicate trend (top) and status (bottom). 
-Trend symbols indicate if there was significantly increasing (upwards pointing arrow) 
-or decreasing (downwards pointing arrow) trend, or neither (horizontal arrow) 
+herring responses and their status and trends
+within the last 5 years of the time series.
+Some indicators are specific to the Hecate Strait area
+(e.g., sea surface temperature, SST). 
+Solid green lines are +/- one standard deviation;
+the most recent five years are highlighted in green.
+Symbols to the right of graphs indicate trend (top) and status (bottom). 
+Trend symbols indicate if there was significantly
+increasing (upwards pointing arrow) or
+decreasing (downwards pointing arrow) trend,
+or neither (horizontal arrow) 
 in the most recent 5 years, where there are > 2 years of data available. 
-Status symbols indicate if the recent 5- year-average value was greater than one 
-standard deviation above (+) or below (-) the time-series average.
-SST = Sea surface temperature; \link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{AVHRR satellite}
-bio_mg_mg3 = Biomass in mg/m3; M. Galbraith and R.I. Perry, DFO, pers. comm.;
-abund_no= number in numbers/m3 ; M. Galbraith and R.I. Perry, DFO, pers. comm.;
-Humpback Whale abundance: Best et al. (2015) for 2008 estimate, DFO survey (B. Wright, DFO, pers. comm.) for 2018 estimate; other years interpolated using a 4% population growth rate (Ford et al. 2010) (T. Doniol-Valcroze, DFO, pers. comm.);
-HG_StellerSeaLion_Abund = interpolated estimates of Steller Sea Lion abundance; S. Tucker, DFO, pers.comm.;
-AreaOfInterest_B = Biomass of Pacific Hake in the Hecate Strait region determined from hake stock assessment data in combination with data collected as part of the joint US-Canada acoustic-trawl survey of Pacific Hake by the US agencies NOAA/NMFS/AFSC (1995-2001), NOAA/NMFS/NWFSC (2003-2019), and Fisheries and Oceans Canada Pacific Region (1995-2019); S. Johnson, Landmark Fisheries Research, pers. comm.;
-IPHC = International Pacific Halibut Commission; A. Edwards, DFO, pers. comm.;
-HGHerringSB_Med = Median Haida Gwaii herring spawning biomass, from the stock assessment;
-Age3_herring_weight_g = mean weight of age-3 herring, from the stock assessment;
-Mean_LWResids_Female = residuals from a double-log-transformed length-weight regression for female herring.
+Status symbols indicate if the recent 5- year-average value was
+greater than one standard deviation above (+) or below (-)
+the time-series average.
+SST = Sea surface temperature (\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{AVHRR satellite})
+bio_mg_mg3 = biomass in mg/m3 (M. Galbraith and R. I. Perry, DFO, pers. comm.);
+abund_no = number in numbers/m3 (M. Galbraith and R. I. Perry, DFO, pers. comm.);
+Humpback Whale abundance
+(@best2015 for 2008 estimate,
+DFO survey (B. Wright, DFO, pers. comm.) for 2018 estimate, and
+other years interpolated using a 4% population growth rate [@ford2010]
+(T. Doniol-Valcroze, DFO, pers. comm.);
+HG_StellerSeaLion_Abund = interpolated estimates of Steller Sea Lion abundance
+(S. Tucker, DFO, pers.comm.);
+AreaOfInterest_B = Biomass of Pacific Hake in the Hecate Strait region
+determined from hake stock assessment data in combination with data collected
+as part of the joint US-Canada acoustic-trawl survey of Pacific Hake by
+the US agencies NOAA/NMFS/AFSC (1995 to 2001),
+NOAA/NMFS/NWFSC (2003 to 2019), and
+Fisheries and Oceans Canada, Pacific Region (1995 to 2019)
+(S. Johnson, Landmark Fisheries Research, pers. comm.);
+IPHC = International Pacific Halibut Commission (A. Edwards, DFO, pers. comm.);
+HGHerringSB_Med = median Haida Gwaii herring spawning biomass
+(from the stock assessment);
+Age3_herring_weight_g = mean weight of age-3 herring
+(from the stock assessment);
+Mean_LWResids_Female = residuals from a double-log-transformed
+length-weight regression for female herring.
 
 (ref:eco-trend-cap-fr) Need french title.
 
