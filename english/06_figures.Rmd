@@ -1137,11 +1137,11 @@ knitr::include_graphics(
 ```
 
 (ref:eco-trend-cap) Standardized time series of selected pressure indicators and 
-herring responses and their status and trends
-within the last five years of the time series.
-Some indicators are specific to the Hecate Strait area
+Pacific Herring responses (e.g., status and trends)
+in the last five years.
+Some indicators are specific to Hecate Strait
 (e.g., sea surface temperature, SST). 
-Solid green lines are +/- one standard deviation (SD);
+Solid green lines are within one standard deviation (SD);
 the most recent five years are highlighted in green.
 Symbols to the right of graphs indicate trend (top) and status (bottom).
 Trend indicates if there was significant increasing (up arrow) or
@@ -1149,12 +1149,12 @@ decreasing (down arrow) trend, or
 neither (horizontal) in the most recent five years,
 where there are more than two years of data available.
 Status indicates if recent average value was
-greater than one SD above (+) or below (-)
+greater than one SD above ($+$) or below ($-$)
 the time-series average.
 Legend:
 SST (\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{AVHRR satellite});
 bio_mg_mg3 is biomass in $\text{mg}/\text{m}^3$ and
-abund_no isnumber in $\text{numbers}/\text{m}^3$
+abund_no is number in $\text{numbers}/\text{m}^3$
 (M. Galbraith and R.I. Perry, DFO, pers. comm.);
 Humpback Whale abundance
 (@best2015 for 2008 estimate,
