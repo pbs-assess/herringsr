@@ -1136,7 +1136,7 @@ knitr::include_graphics(
 )
 ```
 
-(ref:eco-trend-cap) Standardized pressure indicators and 
+(ref:eco-trend-cap) Selected standardized pressure indicators and 
 Pacific Herring responses (e.g., status and trend) in the last five years.
 Solid green lines are within one standard deviation (SD);
 the most recent five years are highlighted in green.
@@ -1147,8 +1147,10 @@ neither (horizontal) in the last five years,
 where there are more than two years of data.
 Status indicates if recent average values are
 greater than one SD above ($+$) or below ($-$) the time series average.
-Note that some indicators are specific to Hecate Strait (HS).
-Legend: sea surface temperature (SST) in HS (\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{AVHRR satellite});
+Note that
+pressure indicators are for Hecate Strait and Queen Charlotte Sound, and
+responses are for Haida Gwaii (HG) herring.
+Legend: sea surface temperature (SST; \link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{AVHRR satellite});
 prey abundance and biomass are in
 $\text{number}/\text{m}^3$ and $\text{mg}/\text{m}^3$, respectively,
 where $\text{m}$ is metres and \text{mg} is milligrams
@@ -1161,17 +1163,17 @@ other years interpolated using a 4% population growth rate
 [@ford2010, T. Doniol-Valcroze, DFO, pers. comm.];
 HG_StellerSeaLion_Abund is interpolated estimates of Steller Sea Lion abundance
 (S. Tucker, DFO, pers. comm.);
-Hake_Acoustic is HS Pacific Hake biomass from the hake stock assessment
-and joint United States-Canada acoustic-trawl survey by
+Hake_Acoustic is Pacific Hake biomass from the hake stock assessment
+and joint United States (US)-Canada acoustic trawl survey by
 US agencies NOAA, NMFS, and AFSC (1995 to 2001),
 NOAA, NMFS, and NWFSC (2003 to 2019), and
 DFO (1995 to 2019)
 (S. Johnson, Landmark Fisheries Research, pers. comm.);
 IPHC is International Pacific Halibut Commission (A. Edwards, DFO, pers. comm.);
-HGHerringSB_Med is median Haida Gwaii (HG) herring spawning biomass [@dfo2021c];
+HGHerringSB_Med is median HG herring spawning biomass [@dfo2021c];
 Age3_herring_weight_g is mean weight in grams of age-3 HG herring [@dfo2021c]; and
 Mean_LWResids_Female is residuals from a double-log-transformed
-length-weight regression for female HG herring.
+length-weight regression for female HG herring (Boldt et al. In prep.).
 
 (ref:eco-trend-cap-fr) Need french title.
 
