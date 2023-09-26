@@ -1172,8 +1172,8 @@ DFO (1995 to 2019)
 IPHC is International Pacific Halibut Commission (A. Edwards, DFO, pers. comm.);
 HGHerringSB_Med is median HG herring spawning biomass [@dfo2021c];
 Age3_herring_weight_g is mean weight in grams of age-3 HG herring [@dfo2021c]; and
-Mean_LWResids_Female is residuals from a double-log-transformed
-length-weight regression for female HG herring [@boldt2023a].
+Mean_LWResids_Female is residuals from a double log-transformed
+length-weight regression for female HG herring (Boldt et al.).$^{\ref{fn:boldt}}$
 
 (ref:eco-trend-cap-fr) Need french title.
 
