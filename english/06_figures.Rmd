@@ -1136,6 +1136,12 @@ knitr::include_graphics(
 )
 ```
 
+<!-- TODO: -->
+<!-- Remove horizontal lines and dots (figure and caption) -->
+<!-- Remove /m3 and mg/m3 from figure -->
+<!-- Define seasons (Spring, Summer, Fall, Winter) -->
+<!-- Add "Copied with permission from (Boldt et al.).$^{\ref{fn:boldt}}$" -->
+
 (ref:eco-trend-cap) Selected standardized pressure indicators and 
 Pacific Herring responses (e.g., status and trend) in the last five years.
 Solid green lines are within one standard deviation (SD);
