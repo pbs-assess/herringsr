@@ -1141,6 +1141,7 @@ knitr::include_graphics(
 <!-- Remove /m3 and mg/m3 from figure -->
 <!-- Define seasons (Spring, Summer, Fall, Winter) -->
 <!-- Add "Copied with permission from (Boldt et al.).$^{\ref{fn:boldt}}$" -->
+<!-- Add x- and y-axes labels -->
 
 (ref:eco-trend-cap) Selected standardized pressure indicators and 
 Pacific Herring responses (e.g., status and trend) in the last five years.
