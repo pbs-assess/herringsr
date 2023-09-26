@@ -1162,11 +1162,7 @@ other years interpolated using a 4% population growth rate
 [@ford2010, T. Doniol-Valcroze, DFO, pers. comm.]);
 Steller Sea Lion abundance is interpolated
 (S. Tucker, DFO, pers. comm.);
-Pacific Hake biomass is from the hake stock assessment
-and joint United States (US)-Canada acoustic trawl survey by
-US agencies NOAA, NMFS, and AFSC (1995 to 2001),
-NOAA, NMFS, and NWFSC (2003 to 2019), and
-DFO (1995 to 2019)
+Pacific Hake biomass is from the hake stock assessment and acoustic trawl survey
 (S. Johnson, Landmark Fisheries Research, pers. comm.);
 Arrowtooth Flounder, Spiny Dogfish, and Pacific Cod
 catch per unit effort (CPUE) is from the 
