@@ -1146,7 +1146,8 @@ increase (up arrow) or decrease (down), or
 neither (horizontal) in the last five years,
 where there are more than two years of data.
 Status indicates if recent average values are
-greater than one SD above ($+$) or below ($-$) the time series average.
+greater than one SD above (plus) or below (minus), or
+neigher (dot) the time series average.
 Note that
 pressure indicators are for Hecate Strait and Queen Charlotte Sound, and
 responses are for Haida Gwaii (HG) herring.
