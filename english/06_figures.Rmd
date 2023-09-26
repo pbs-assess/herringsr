@@ -1167,9 +1167,11 @@ Pacific Hake biomass is from the hake stock assessment and acoustic trawl survey
 Arrowtooth Flounder, Spiny Dogfish, and Pacific Cod
 catch per unit effort (CPUE) is from the 
 International Pacific Halibut Commission (IPHC; A. Edwards, DFO, pers. comm.);
-median HG herring spawning biomass and weight in grams of age-3 herring [@dfo2021c];
+median HG herring spawning biomass and
+weight in grams of age-3 herring [@dfo2021c];
 and residuals from a double log-transformed
-length-weight regression for female HG herring (Boldt et al.).$^{\ref{fn:boldt}}$
+length-weight regression for female HG herring
+(Boldt et al.).$^{\ref{fn:boldt}}$
 
 (ref:eco-trend-cap-fr) Need french title.
 
