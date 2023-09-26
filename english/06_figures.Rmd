@@ -1154,11 +1154,10 @@ Legend: sea surface temperature (SST; \link{https://www.avl.class.noaa.gov/relea
 prey abundance and biomass are in
 $\text{number}/\text{m}^3$ and $\text{mg}/\text{m}^3$, respectively,
 where $\text{m}$ is metres and \text{mg} is milligrams
-(M. Galbraith and R.I. Perry, DFO, pers. comm.);
+(M. Galbraith and R.I. Perry, Fisheries and Oceans Canada (DFO), pers. comm.);
 Humpback Whale abundance
 (@best2015 for 2008 estimate,
-Fisheries and Oceans Canada (DFO) survey
-(B. Wright, DFO, pers. comm.) for 2018 estimate, and
+DFO survey (B. Wright, DFO, pers. comm.) for 2018 estimate, and
 other years interpolated using a 4% population growth rate
 [@ford2010, T. Doniol-Valcroze, DFO, pers. comm.]);
 HG_StellerSeaLion_Abund is interpolated estimates of Steller Sea Lion abundance
