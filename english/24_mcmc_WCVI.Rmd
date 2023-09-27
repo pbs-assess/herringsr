@@ -166,7 +166,7 @@ compared to harvest rate (HR) and total allowable catch (TAC;
 rows 2 to 7 in Table \@ref(tab:decision-wcvi)).
 See Figure \@ref(fig:hcr-prd-1) for description.
 
-```{r hcr-wcvi-1, fig.asp=1, fig.cap="(ref:hcr-wcvi-1-cap)", eval=FALSE}
+```{r hcr-wcvi-1, fig.asp=1, fig.cap="(ref:hcr-wcvi-1-cap)", eval=TRUE}
 region <- "WCVI"
 probs <- confidence_vals
 cowplot::plot_grid(
@@ -182,16 +182,14 @@ cowplot::plot_grid(
     sbt.lst = sbt.wcvi,
     mp = mp.wcvi[3, ]$label,
     region = region,
-    probs = probs,
-    show.x.axes = TRUE
+    probs = probs
   ),
   plot_hcr(
     hcr.lst = mp.lst.wcvi[[1]][[4]],
     sbt.lst = sbt.wcvi,
     mp = mp.wcvi[4, ]$label,
     region = region,
-    probs = probs,
-    show.x.axes = TRUE
+    probs = probs
   ),
   plot_hcr(
     hcr.lst = mp.lst.wcvi[[1]][[5]],
@@ -205,7 +203,8 @@ cowplot::plot_grid(
     sbt.lst = sbt.wcvi,
     mp = mp.wcvi[6, ]$label,
     region = region,
-    probs = probs
+    probs = probs,
+    show.x.axes = TRUE
   ),
   plot_hcr(
     hcr.lst = mp.lst.wcvi[[1]][[7]],
@@ -228,7 +227,7 @@ compared to harvest rate (HR) and total allowable catch (TAC;
 rows 9 to 14 in Table \@ref(tab:decision-wcvi)).
 See Figure \@ref(fig:hcr-prd-1) for description.
 
-```{r hcr-wcvi-2, fig.asp=1, fig.cap="(ref:hcr-wcvi-2-cap)", eval=FALSE}
+```{r hcr-wcvi-2, fig.asp=1, fig.cap="(ref:hcr-wcvi-2-cap)", eval=TRUE}
 region <- "WCVI"
 probs <- confidence_vals
 cowplot::plot_grid(
@@ -237,32 +236,28 @@ cowplot::plot_grid(
     sbt.lst = sbt.wcvi,
     mp = mp.wcvi[9, ]$label,
     region = region,
-    probs = probs,
-    show.x.axes = TRUE
+    probs = probs
   ),
   plot_hcr(
     hcr.lst = mp.lst.wcvi[[1]][[10]],
     sbt.lst = sbt.wcvi,
     mp = mp.wcvi[10, ]$label,
     region = region,
-    probs = probs,
-    show.x.axes = TRUE
+    probs = probs
   ),
   plot_hcr(
     hcr.lst = mp.lst.wcvi[[1]][[11]],
     sbt.lst = sbt.wcvi,
     mp = mp.wcvi[11, ]$label,
     region = region,
-    probs = probs,
-    show.x.axes = TRUE
+    probs = probs
   ),
   plot_hcr(
     hcr.lst = mp.lst.wcvi[[1]][[12]],
     sbt.lst = sbt.wcvi,
     mp = mp.wcvi[12, ]$label,
     region = region,
-    probs = probs,
-    show.x.axes = TRUE
+    probs = probs
   ),
   plot_hcr(
     hcr.lst = mp.lst.wcvi[[1]][[13]],

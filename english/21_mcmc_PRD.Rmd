@@ -153,7 +153,7 @@ Red horizontal and vertical lines show median HR, TAC,
 and $\SB_{`r assess_yr+1`}$;
 green lines show mean statistics.
 
-```{r hcr-prd-1, fig.asp=1, fig.cap="(ref:hcr-prd-1-cap)", eval=FALSE}
+```{r hcr-prd-1, fig.asp=1, fig.cap="(ref:hcr-prd-1-cap)", eval=TRUE}
 region <- "PRD"
 probs <- confidence_vals
 cowplot::plot_grid(
@@ -169,16 +169,14 @@ cowplot::plot_grid(
     sbt.lst = sbt.prd,
     mp = mp.prd[3, ]$label,
     region = region,
-    probs = probs,
-    show.x.axes = TRUE
+    probs = probs
   ),
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[4]],
     sbt.lst = sbt.prd,
     mp = mp.prd[4, ]$label,
     region = region,
-    probs = probs,
-    show.x.axes = TRUE
+    probs = probs
   ),
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[5]],
@@ -192,7 +190,8 @@ cowplot::plot_grid(
     sbt.lst = sbt.prd,
     mp = mp.prd[6, ]$label,
     region = region,
-    probs = probs
+    probs = probs,
+    show.x.axes = TRUE
   ),
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[7]],
@@ -215,7 +214,7 @@ compared to harvest rate (HR) and total allowable catch (TAC;
 rows 9 to 14 in Table \@ref(tab:decision-prd)).
 See Figure \@ref(fig:hcr-prd-1) for description.
 
-```{r hcr-prd-2, fig.asp=1, fig.cap="(ref:hcr-prd-2-cap)", eval=FALSE}
+```{r hcr-prd-2, fig.asp=1, fig.cap="(ref:hcr-prd-2-cap)", eval=TRUE}
 region <- "PRD"
 probs <- confidence_vals
 cowplot::plot_grid(
@@ -224,32 +223,28 @@ cowplot::plot_grid(
     sbt.lst = sbt.prd,
     mp = mp.prd[9, ]$label,
     region = region,
-    probs = probs,
-    show.x.axes = TRUE
+    probs = probs
   ),
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[10]],
     sbt.lst = sbt.prd,
     mp = mp.prd[10, ]$label,
     region = region,
-    probs = probs,
-    show.x.axes = TRUE
+    probs = probs
   ),
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[11]],
     sbt.lst = sbt.prd,
     mp = mp.prd[11, ]$label,
     region = region,
-    probs = probs,
-    show.x.axes = TRUE
+    probs = probs
   ),
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[12]],
     sbt.lst = sbt.prd,
     mp = mp.prd[12, ]$label,
     region = region,
-    probs = probs,
-    show.x.axes = TRUE
+    probs = probs
   ),
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[13]],
