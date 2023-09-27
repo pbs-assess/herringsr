@@ -144,7 +144,7 @@ plot_bh(
 ```
 
 (ref:hcr-sog-1-cap) Strait of Georgia SAR:
-projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
+projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$
 compared to harvest rate (HR) and total allowable catch (TAC;
 rows 2 to 7 in Table \@ref(tab:decision-sog)).
 See Figure \@ref(fig:hcr-prd-1) for description.
@@ -211,7 +211,7 @@ cowplot::plot_grid(
 ```
 
 (ref:hcr-sog-2-cap) Strait of Georgia SAR:
-projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
+projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$
 compared to harvest rate (HR) and total allowable catch (TAC;
 rows 9 to 14 in Table \@ref(tab:decision-sog)).
 See Figure \@ref(fig:hcr-prd-1) for description.

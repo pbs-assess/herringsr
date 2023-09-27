@@ -144,7 +144,7 @@ plot_bh(
 ```
 
 (ref:hcr-cc-1-cap) Central Coast SAR:
-projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
+projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$
 compared to harvest rate (HR) and total allowable catch (TAC;
 rows 2 to 4 in Table \@ref(tab:decision-cc)).
 See Figure \@ref(fig:hcr-prd-1) for description.
@@ -187,7 +187,7 @@ cowplot::plot_grid(
 ```
 
 (ref:hcr-cc-2-cap) Central Coast SAR:
-projected spawning biomass for `r assess_yr + 1` $\SB_{`r assess_yr+1`}$
+projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$
 compared to harvest rate (HR) and total allowable catch (TAC;
 rows 6 to 8 in Table \@ref(tab:decision-cc)).
 See Figure \@ref(fig:hcr-prd-1) for description.
