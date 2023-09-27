@@ -160,6 +160,7 @@ cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[2]],
     sbt.lst = sbt.prd,
+    sbo.lst = sbo.prd,
     mp = mp.prd[2, ]$label,
     region = region,
     probs = probs
@@ -167,6 +168,7 @@ cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[3]],
     sbt.lst = sbt.prd,
+    sbo.lst = sbo.prd,
     mp = mp.prd[3, ]$label,
     region = region,
     probs = probs
@@ -174,6 +176,7 @@ cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[4]],
     sbt.lst = sbt.prd,
+    sbo.lst = sbo.prd,
     mp = mp.prd[4, ]$label,
     region = region,
     probs = probs
@@ -181,6 +184,7 @@ cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[5]],
     sbt.lst = sbt.prd,
+    sbo.lst = sbo.prd,
     mp = mp.prd[5, ]$label,
     region = region,
     probs = probs
@@ -188,6 +192,7 @@ cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[6]],
     sbt.lst = sbt.prd,
+    sbo.lst = sbo.prd,
     mp = mp.prd[6, ]$label,
     region = region,
     probs = probs,
@@ -196,6 +201,7 @@ cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[7]],
     sbt.lst = sbt.prd,
+    sbo.lst = sbo.prd,
     mp = mp.prd[7, ]$label,
     region = region,
     probs = probs,
@@ -221,6 +227,7 @@ cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[9]],
     sbt.lst = sbt.prd,
+    sbo.lst = sbo.prd,
     mp = mp.prd[9, ]$label,
     region = region,
     probs = probs
@@ -228,6 +235,7 @@ cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[10]],
     sbt.lst = sbt.prd,
+    sbo.lst = sbo.prd,
     mp = mp.prd[10, ]$label,
     region = region,
     probs = probs
@@ -235,6 +243,7 @@ cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[11]],
     sbt.lst = sbt.prd,
+    sbo.lst = sbo.prd,
     mp = mp.prd[11, ]$label,
     region = region,
     probs = probs
@@ -242,6 +251,7 @@ cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[12]],
     sbt.lst = sbt.prd,
+    sbo.lst = sbo.prd,
     mp = mp.prd[12, ]$label,
     region = region,
     probs = probs
@@ -249,6 +259,7 @@ cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[13]],
     sbt.lst = sbt.prd,
+    sbo.lst = sbo.prd,
     mp = mp.prd[13, ]$label,
     region = region,
     probs = probs,
@@ -257,6 +268,7 @@ cowplot::plot_grid(
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[14]],
     sbt.lst = sbt.prd,
+    sbo.lst = sbo.prd,
     mp = mp.prd[14, ]$label,
     region = region,
     probs = probs,
