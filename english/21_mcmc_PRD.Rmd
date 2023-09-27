@@ -147,11 +147,9 @@ plot_bh(
 projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$
 compared to harvest rate (HR) and total allowable catch (TAC;
 rows 2 to 7 in Table \@ref(tab:decision-prd)).
-Note: management procedures that specify no fishing
-are excluded from this figure.
-Red horizontal and vertical lines show median HR, TAC,
-and $\SB_{`r assess_yr+1`}/\SB_0$;
-green lines show mean statistics.
+Note that figure excludes management procedures that specify no fishing.
+Red lines show median depletion, HR, and TAC;
+green lines show means.
 
 ```{r hcr-prd-1, fig.asp=1, fig.cap="(ref:hcr-prd-1-cap)", eval=TRUE}
 region <- "PRD"
