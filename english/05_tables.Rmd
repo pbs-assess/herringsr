@@ -936,6 +936,13 @@ Biomass and catch are in thousands of tonnes (t).
 Note: Dashes or 0.00 indicate that TAC and HR do not apply because
 <!-- the MP specifies no fishing at current projected biomass level, or -->
 the MP specifies no fishing.
+Also note that TAC and HR are median values calculated by the MP
+using posterior distributions of $\SB_{2024}$ and $\SB_0$.
+The HR is derived according to the MP shape
+and is equivalent to $\text{TAC}/\SB_{2024}$.
+In cases where MPs include a cap,
+the cap is constant regardless of estimated $\SB_{2024}$, and
+higher $\SB_{2024}$ leads to lower HR.
 
 (ref:decision-prd-cap-fr) RES du district de Prince Rupert:
 rendement de la procédure de gestion (PG) pour
