@@ -975,6 +975,14 @@ Note: «NA» ou 0.00 indique que le TAC et la TR ne s'appliquent pas,
 <!--soit parce que le PM spécifie l'interdiction de la pêche
 au niveau actuel de la biomasse projetée,-->
 soit parce que le PM spécifie l'interdiction de la pêche.
+Il convient également de noter que le TAC et le TR
+sont des valeurs médianes calculées par la MP
+à l'aide des distributions a posteriori de $\SB_{2024}$ et $\SB_0$.
+La TR est dérivée en fonction de la forme de la MP et
+est équivalente à $\text{TAC}/\SB_{2024}$.
+Dans les cas où les PM incluent un plafond,
+celui-ci est constant quelle que soit l'estimation de $\SB_{2024}$,
+et un $\SB_{2024}$ plus élevé conduit à un TR plus faible.
 
 \setlength{\tabcolsep}{5pt}
 
