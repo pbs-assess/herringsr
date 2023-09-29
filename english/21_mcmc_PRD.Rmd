@@ -143,15 +143,20 @@ plot_bh(
 )
 ```
 
-(ref:hcr-prd-1-cap) Prince Rupert District SAR:
+(ref:hcr-prd-cap) Prince Rupert District SAR:
 projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$
-compared to harvest rate (HR) and total allowable catch (TAC;
-rows 2 to 7 in Table \@ref(tab:decision-prd)).
-Note that figure excludes management procedures that specify no fishing.
+compared to harvest rate (HR) and total allowable catch (TAC) for
+management procedures (MPs) in Table \@ref(tab:decision-prd).
+There are four panels fo each MP arranged in a 2x2 grid:
+the top-right panel has the MP name and
+the other three panels show relationships between
+depletion, HR, and TAC.
+Note: figure excludes MPs that specify no fishing, and
+panels are the same for both operating model scenarios.
 Red lines show median depletion, HR, and TAC;
 green lines show means.
 
-```{r hcr-prd-1, fig.asp=1, fig.cap="(ref:hcr-prd-1-cap)", eval=TRUE}
+```{r hcr-prd, fig.asp=1, fig.cap="(ref:hcr-prd-cap)", eval=TRUE}
 region <- "PRD"
 cowplot::plot_grid(
   plot_hcr(
@@ -192,8 +197,7 @@ cowplot::plot_grid(
     sbo.lst = sbo.prd,
     mp = mp.prd[6, ]$label,
     region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
+    probs = confidence_vals
   ),
   plot_hcr(
     hcr.lst = mp.lst.prd[[1]][[7]],
@@ -201,77 +205,11 @@ cowplot::plot_grid(
     sbo.lst = sbo.prd,
     mp = mp.prd[7, ]$label,
     region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
+    probs = confidence_vals
   ),
   nrow = 3,
   ncol = 2,
   align = "hv",
   axis = "tblr"
-)
-```
-
-(ref:hcr-prd-2-cap) Prince Rupert District SAR:
-projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$
-compared to harvest rate (HR) and total allowable catch (TAC;
-rows 9 to 14 in Table \@ref(tab:decision-prd)).
-See Figure \@ref(fig:hcr-prd-1) for description.
-
-```{r hcr-prd-2, fig.asp=1, fig.cap="(ref:hcr-prd-2-cap)", eval=TRUE}
-region <- "PRD"
-cowplot::plot_grid(
-  plot_hcr(
-    hcr.lst = mp.lst.prd[[1]][[9]],
-    sbt.lst = sbt.prd,
-    sbo.lst = sbo.prd,
-    mp = mp.prd[9, ]$label,
-    region = region,
-    probs = confidence_vals
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.prd[[1]][[10]],
-    sbt.lst = sbt.prd,
-    sbo.lst = sbo.prd,
-    mp = mp.prd[10, ]$label,
-    region = region,
-    probs = confidence_vals
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.prd[[1]][[11]],
-    sbt.lst = sbt.prd,
-    sbo.lst = sbo.prd,
-    mp = mp.prd[11, ]$label,
-    region = region,
-    probs = confidence_vals
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.prd[[1]][[12]],
-    sbt.lst = sbt.prd,
-    sbo.lst = sbo.prd,
-    mp = mp.prd[12, ]$label,
-    region = region,
-    probs = confidence_vals
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.prd[[1]][[13]],
-    sbt.lst = sbt.prd,
-    sbo.lst = sbo.prd,
-    mp = mp.prd[13, ]$label,
-    region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.prd[[1]][[14]],
-    sbt.lst = sbt.prd,
-    sbo.lst = sbo.prd,
-    mp = mp.prd[14, ]$label,
-    region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
-  ),
-  nrow = 3,
-  ncol = 2,
-  align = c("v", "h")
 )
 ```
