@@ -143,13 +143,13 @@ plot_bh(
 )
 ```
 
-(ref:hcr-sog-1-cap) Strait of Georgia SAR:
-projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$
-compared to harvest rate (HR) and total allowable catch (TAC;
-rows 2 to 7 in Table \@ref(tab:decision-sog)).
-See Figure \@ref(fig:hcr-prd-1) for description.
+(ref:hcr-sog-cap) Strait of Georgia SAR: relationships between
+projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$,
+harvest rate (HR), and total allowable catch (TAC) for
+management procedures in Table \@ref(tab:decision-sog).
+See Figure \@ref(fig:hcr-prd) for description.
 
-```{r hcr-sog-1, fig.asp=1, fig.cap="(ref:hcr-sog-1-cap)", eval=TRUE}
+```{r hcr-sog, fig.asp=1, fig.cap="(ref:hcr-sog-cap)", eval=TRUE}
 region <- "SoG"
 cowplot::plot_grid(
   plot_hcr(
@@ -190,8 +190,7 @@ cowplot::plot_grid(
     sbo.lst = sbo.sog,
     mp = mp.sog[6, ]$label,
     region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
+    probs = confidence_vals
   ),
   plot_hcr(
     hcr.lst = mp.lst.sog[[1]][[7]],
@@ -199,77 +198,11 @@ cowplot::plot_grid(
     sbo.lst = sbo.sog,
     mp = mp.sog[7, ]$label,
     region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
+    probs = confidence_vals
   ),
   nrow = 3,
   ncol = 2,
   align = "hv",
   axis = "tblr"
-)
-```
-
-(ref:hcr-sog-2-cap) Strait of Georgia SAR:
-projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$
-compared to harvest rate (HR) and total allowable catch (TAC;
-rows 9 to 14 in Table \@ref(tab:decision-sog)).
-See Figure \@ref(fig:hcr-prd-1) for description.
-
-```{r hcr-sog-2, fig.asp=1, fig.cap="(ref:hcr-sog-2-cap)", eval=TRUE}
-region <- "SoG"
-cowplot::plot_grid(
-  plot_hcr(
-    hcr.lst = mp.lst.sog[[1]][[9]],
-    sbt.lst = sbt.sog,
-    sbo.lst = sbo.sog,
-    mp = mp.sog[9, ]$label,
-    region = region,
-    probs = confidence_vals
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.sog[[1]][[10]],
-    sbt.lst = sbt.sog,
-    sbo.lst = sbo.sog,
-    mp = mp.sog[10, ]$label,
-    region = region,
-    probs = confidence_vals
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.sog[[1]][[11]],
-    sbt.lst = sbt.sog,
-    sbo.lst = sbo.sog,
-    mp = mp.sog[11, ]$label,
-    region = region,
-    probs = confidence_vals
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.sog[[1]][[12]],
-    sbt.lst = sbt.sog,
-    sbo.lst = sbo.sog,
-    mp = mp.sog[12, ]$label,
-    region = region,
-    probs = confidence_vals
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.sog[[1]][[13]],
-    sbt.lst = sbt.sog,
-    sbo.lst = sbo.sog,
-    mp = mp.sog[13, ]$label,
-    region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.sog[[1]][[14]],
-    sbt.lst = sbt.sog,
-    sbo.lst = sbo.sog,
-    mp = mp.sog[14, ]$label,
-    region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
-  ),
-  nrow = 3,
-  ncol = 2,
-  align = c("v", "h")
 )
 ```
