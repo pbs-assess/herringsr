@@ -144,13 +144,12 @@ plot_bh(
 ```
 
 (ref:hcr-prd-cap) Prince Rupert District SAR: relationships between
-projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$,
+projected depletion in `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$,
 harvest rate (HR), and total allowable catch (TAC) for
 management procedures (MPs) in Table \@ref(tab:decision-prd).
 There are four panels fo each MP arranged in a 2x2 grid:
 the top-right panel has the MP name and
-the other three panels show relationships between
-depletion, HR, and TAC.
+the other three panels show relationships.
 Note: figure excludes MPs that specify no fishing, and
 panels are the same for both operating model scenarios.
 Red lines show median depletion, HR, and TAC;
