@@ -1137,9 +1137,11 @@ knitr::include_graphics(
 ```
 
 <!-- TODO: -->
-<!-- Remove horizontal lines and dots (figure and caption) -->
-<!-- Remove /m3 and mg/m3 from figure -->
-<!-- Define seasons (Spring, Summer, Fall, Winter) -->
+<!-- Remove horizontal lines and dots from figure and caption -->
+<!-- Remove "/m3" and "mg/m3" -->
+<!-- Change "Spring sea surface temperature" to "Spring SST (March to May)" -->
+<!--   and remove from caption -->
+<!-- Change "CPUE" to "catch rate"; remove "CPUE" from caption -->
 <!-- Add "Copied with permission from (Boldt et al.).$^{\ref{fn:boldt}}$" -->
 <!-- Add x- and y-axes labels -->
 
@@ -1158,7 +1160,12 @@ neigher (dot) the time series average.
 Note that
 pressure indicators are for Hecate Strait and Queen Charlotte Sound, and
 responses are for Haida Gwaii (HG) herring.
-Legend: sea surface temperature (\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{AVHRR satellite});
+Legend: sea surface temperature (SST;
+\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{AVHRR satellite});
+spring (March to May),
+summer (June to August),
+fall (September to November), and
+winter (December to February);
 prey abundance and biomass are in
 $\text{number}/\text{m}^3$ and $\text{mg}/\text{m}^3$, respectively,
 where $\text{m}$ is metres and \text{mg} is milligrams
@@ -1174,7 +1181,7 @@ Pacific Hake biomass is from the hake stock assessment and acoustic trawl survey
 (S. Johnson, Landmark Fisheries Research, pers. comm.);
 Arrowtooth Flounder, Spiny Dogfish, and Pacific Cod
 catch per unit effort (CPUE) is from the 
-International Pacific Halibut Commission (IPHC; A. Edwards, DFO, pers. comm.);
+International Pacific Halibut Commission (A. Edwards, DFO, pers. comm.);
 median HG herring spawning biomass and
 weight in grams of age-3 herring [@dfo2021c]; and
 residuals from a double log-transformed length-weight regression
