@@ -331,7 +331,8 @@ plot_f_hg <- plot_biomass_phase(
 \textbf{Panel (a)}: Model fit (lines) to scaled abundance
 (points; Figure \ref{fig:major-spawn-index}).
 Spawn index is scaled to abundance by the spawn index scaling parameter $q$.
-\textbf{Panel (b)}: Instantaneous natural mortality rate ($\text{year}^{-1}$).
+\textbf{Panel (b)}: Instantaneous natural mortality rate
+($\text{year}^{\,\text{-}1}$).
 \textbf{Panel (c)}: Reconstructed number of age-`r age_first` recruits
 in thousands of millions from
 `r major_start_yr + age_first` to `r major_end_yr`. 
