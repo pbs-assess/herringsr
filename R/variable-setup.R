@@ -57,6 +57,9 @@ nRollRec <- 3
 # Target harvest rate
 target_hr <- 0.2
 
+# Proportion of F_MSY
+prop_f_msy <- 0.5
+
 regions <- tribble(
   ~SAR, ~Region,                      ~RegionName,     ~Type,
   1,       "HG",                    "Haida Gwaii",   "Major",
