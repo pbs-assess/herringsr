@@ -160,7 +160,6 @@ plot_bh(
 )
 ```
 
-
 (ref:hcr-wcvi-cap) West Coast of Vancouver Island SAR: relationships between
 projected depletion in `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$,
 harvest rate (HR), and total allowable catch (TAC) for
