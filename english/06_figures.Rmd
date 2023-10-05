@@ -1000,6 +1000,9 @@ $\SB_t$ is estimated spawning biomass in year $t$.
 Points and vertical lines indicate
 medians and `r ci_level*100`% credible intervals for $U_t$, respectively.
 Horizontal dashed lines indicate $U_t = `r target_hr`$.
+<!-- , and -->
+<!-- horizontal dotted lines indicate $`r prop_f_msy` F_\text{MSY}$ where -->
+<!-- $F_\text{MSY}$ is fishing mortality at maximum sustainable yield. -->
 
 (ref:harvest-rate-cap-fr) Taux de récolte effectif $U_t$ de
 `r major_start_yr` à `r major_end_yr`
@@ -1015,8 +1018,9 @@ Les lignes en tirets horizontales indiquent $U_t = `r target_hr`$.
 ```{r harvest-rate, fig.asp=ifelse(french, 1.25, 1.25), fig.cap = ifelse(french, "(ref:harvest-rate-cap-fr)", "(ref:harvest-rate-cap)")}
 plot_harvest_rate(
   df = major_catch,
-  major_models,
-  major_regions_full,
+  models = major_models,
+  regions = major_regions_full,
+  prop_msy = prop_f_msy,
   h_line = target_hr,
   translate = french
 )
