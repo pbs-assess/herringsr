@@ -525,6 +525,7 @@ create_slide_figures <- function(model_index = 1) {
     catch_df = ct,
     xlim = xlim_all,
     line_size = 1,
+    show_lrp_ribbon = FALSE,
     x_axis_label_size = 20,
     x_axis_tick_label_size = 20,
     y_axis_label_size = 20,
