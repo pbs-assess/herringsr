@@ -143,13 +143,13 @@ plot_bh(
 )
 ```
 
-(ref:hcr-cc-1-cap) Central Coast SAR:
-projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$
-compared to harvest rate (HR) and total allowable catch (TAC;
-rows 2 to 4 in Table \@ref(tab:decision-cc)).
-See Figure \@ref(fig:hcr-prd-1) for description.
+(ref:hcr-cc-cap) Central Coast SAR: relationships between
+projected depletion in `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$,
+harvest rate (HR), and total allowable catch (TAC) for
+management procedures in Table \@ref(tab:decision-cc).
+See Figure \@ref(fig:hcr-prd) for description.
 
-```{r hcr-cc-1, fig.asp=0.75, fig.cap="(ref:hcr-cc-1-cap)", eval=TRUE}
+```{r hcr-cc, fig.asp=0.75, fig.cap="(ref:hcr-cc-cap)", eval=TRUE}
 region <- "CC"
 cowplot::plot_grid(
   plot_hcr(
@@ -166,8 +166,7 @@ cowplot::plot_grid(
     sbo.lst = sbo.cc,
     mp = mp.cc[3, ]$label,
     region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
+    probs = confidence_vals
   ),
   plot_hcr(
     hcr.lst = mp.lst.cc[[1]][[4]],
@@ -175,53 +174,11 @@ cowplot::plot_grid(
     sbo.lst = sbo.cc,
     mp = mp.cc[4, ]$label,
     region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
+    probs = confidence_vals
   ),
   nrow = 2,
   ncol = 2,
   align = "hv",
   axis = "tblr"
-)
-```
-
-(ref:hcr-cc-2-cap) Central Coast SAR:
-projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$
-compared to harvest rate (HR) and total allowable catch (TAC;
-rows 6 to 8 in Table \@ref(tab:decision-cc)).
-See Figure \@ref(fig:hcr-prd-1) for description.
-
-```{r hcr-cc-2, fig.asp=0.75, fig.cap="(ref:hcr-cc-2-cap)", eval=TRUE}
-region <- "CC"
-cowplot::plot_grid(
-  plot_hcr(
-    hcr.lst = mp.lst.cc[[1]][[6]],
-    sbt.lst = sbt.cc,
-    sbo.lst = sbo.cc,
-    mp = mp.cc[6, ]$label,
-    region = region,
-    probs = confidence_vals
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.cc[[1]][[7]],
-    sbt.lst = sbt.cc,
-    sbo.lst = sbo.cc,
-    mp = mp.cc[7, ]$label,
-    region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.cc[[1]][[8]],
-    sbt.lst = sbt.cc,
-    sbo.lst = sbo.cc,
-    mp = mp.cc[8, ]$label,
-    region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
-  ),
-  nrow = 2,
-  ncol = 2,
-  align = c("v", "h")
 )
 ```

@@ -160,13 +160,13 @@ plot_bh(
 )
 ```
 
-(ref:hcr-wcvi-1-cap) West Coast of Vancouver Island SAR:
-projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$
-compared to harvest rate (HR) and total allowable catch (TAC;
-rows 2 to 7 in Table \@ref(tab:decision-wcvi)).
-See Figure \@ref(fig:hcr-prd-1) for description.
+(ref:hcr-wcvi-cap) West Coast of Vancouver Island SAR: relationships between
+projected depletion in `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$,
+harvest rate (HR), and total allowable catch (TAC) for
+management procedures in Table \@ref(tab:decision-wcvi).
+See Figure \@ref(fig:hcr-prd) for description.
 
-```{r hcr-wcvi-1, fig.asp=1, fig.cap="(ref:hcr-wcvi-1-cap)", eval=TRUE}
+```{r hcr-wcvi, fig.asp=1, fig.cap="(ref:hcr-wcvi-cap)", eval=TRUE}
 region <- "WCVI"
 cowplot::plot_grid(
   plot_hcr(
@@ -207,8 +207,7 @@ cowplot::plot_grid(
     sbo.lst = sbo.wcvi,
     mp = mp.wcvi[6, ]$label,
     region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
+    probs = confidence_vals
   ),
   plot_hcr(
     hcr.lst = mp.lst.wcvi[[1]][[7]],
@@ -216,77 +215,11 @@ cowplot::plot_grid(
     sbo.lst = sbo.wcvi,
     mp = mp.wcvi[7, ]$label,
     region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
+    probs = confidence_vals
   ),
   nrow = 3,
   ncol = 2,
   align = "hv",
   axis = "tblr"
-)
-```
-
-(ref:hcr-wcvi-2-cap) West Coast of Vancouver Island  SAR:
-projected depletion for `r assess_yr + 1` $\SB_{`r assess_yr+1`}/\SB_0$
-compared to harvest rate (HR) and total allowable catch (TAC;
-rows 9 to 14 in Table \@ref(tab:decision-wcvi)).
-See Figure \@ref(fig:hcr-prd-1) for description.
-
-```{r hcr-wcvi-2, fig.asp=1, fig.cap="(ref:hcr-wcvi-2-cap)", eval=TRUE}
-region <- "WCVI"
-cowplot::plot_grid(
-  plot_hcr(
-    hcr.lst = mp.lst.wcvi[[1]][[9]],
-    sbt.lst = sbt.wcvi,
-    sbo.lst = sbo.wcvi,
-    mp = mp.wcvi[9, ]$label,
-    region = region,
-    probs = confidence_vals
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.wcvi[[1]][[10]],
-    sbt.lst = sbt.wcvi,
-    sbo.lst = sbo.wcvi,
-    mp = mp.wcvi[10, ]$label,
-    region = region,
-    probs = confidence_vals
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.wcvi[[1]][[11]],
-    sbt.lst = sbt.wcvi,
-    sbo.lst = sbo.wcvi,
-    mp = mp.wcvi[11, ]$label,
-    region = region,
-    probs = confidence_vals
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.wcvi[[1]][[12]],
-    sbt.lst = sbt.wcvi,
-    sbo.lst = sbo.wcvi,
-    mp = mp.wcvi[12, ]$label,
-    region = region,
-    probs = confidence_vals
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.wcvi[[1]][[13]],
-    sbt.lst = sbt.wcvi,
-    sbo.lst = sbo.wcvi,
-    mp = mp.wcvi[13, ]$label,
-    region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
-  ),
-  plot_hcr(
-    hcr.lst = mp.lst.wcvi[[1]][[14]],
-    sbt.lst = sbt.wcvi,
-    sbo.lst = sbo.wcvi,
-    mp = mp.wcvi[14, ]$label,
-    region = region,
-    probs = confidence_vals,
-    show.x.axes = TRUE
-  ),
-  nrow = 3,
-  ncol = 2,
-  align = c("v", "h")
 )
 ```
