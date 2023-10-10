@@ -21,7 +21,6 @@ For Area 27, spawn index by Section
 from `r minor_start_yr_plot` to `r minor_end_yr` is also provided
 (Figure \@ref(fig:spawn-section-a27)).
 
-
 ## Special areas\label{sec:app-special}
 
 As is the case for the minor SARs,
@@ -30,7 +29,8 @@ Pacific Herring special area, Area 10 (A10; Figure \@ref(fig:a10-map)).
 However, DFO provides
 biological data including weight-at-age (Figure \@ref(fig:special-wa)) and
 proportion-at-age (Figure \@ref(fig:special-pa)),
-as well as spawn index and proportion of spawn index by Section (Figure \@ref(fig:special-spawn-index),Table \@ref(tab:spawn-index-a10))
+as well as spawn index and proportion of spawn index by Section
+(Figure \@ref(fig:special-spawn-index),Table \@ref(tab:spawn-index-a10))
 from `r special_start_yr_plot` to `r special_end_yr`, where available.
 <!-- NOTE: DFO did not received 2023 spawn data collected by the -->
 <!-- Gwa'sala-'Nakwaxda'xw Nation prior to publication. -->
