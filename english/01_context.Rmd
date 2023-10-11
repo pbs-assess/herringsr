@@ -48,17 +48,6 @@ An analysis of USR options for PRD, CC, SoG, and WCVI was completed in
 periods identified for each SAR was implemented in the 2022/23 Integrated 
 Fisheries Management Plan (IFMP).
 
-<!-- DELETE
-To support on-going consultations,
-five USR options are presented for PRD, CC, SoG and WCVI
-(Section "\nameref{sec:harv-opts}").
-For these four stocks
-we also update conditioning of the herring OM [@benson2022]
-by including stock and fishery data from `r major_start_yr` to 2021.
-These updates first appear in @dfo2022a.
-MP evaluations presented in the harvest option tables 
-reflect the latest OM updates. -->
-
 Since initiation of the Pacific Herring MSE process,
 MP evaluations have been included in the annual stock assessment as follows:
 

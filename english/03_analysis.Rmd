@@ -108,27 +108,6 @@ prior to implementation of the
 spatially integrated statistical catch at age herring (SISCAH)
 modelling framework.
 
-<!-- JC COMMENTED OUT Aug 29, 2023
-Several lessons were learned from the MSE analyses conducted so far:
-
-1. The catch-at-age stock assessment model can produce large (positive)
-assessment errors and in such cases, assessment errors can cause 
-over-estimation of the spawning biomass.
-However Herring OMs simulate these phenomena and thus assessment errors
-are accounted for in the MP evaluations.
-
-1. Reduction in harvest rate from 20% to 10% was the most effective means of
-mitigating stock assessment errors by
-reducing the absolute size of the catch.
-The use of a catch cap, implemented as a maximum annual catch level, 
-is an effective model-free way to
-further mitigate assessment errors at very high biomass levels.
-Simulation analyses additionally showed that outcomes
-are insensitive to the choice of operational control points (OCPs)
-in the HCR when a low harvest rate (HR) and catch cap are applied.
-This occurs because low biomass levels (associated with the lower OCP)
-are avoided for these MPs.
-
 1. Differences in specification of Pacific Herring MPs,
 including HCR components, are expected a priori among SARs.
 The reasons relate to
@@ -193,7 +172,6 @@ from the roe, food and bait, and special use fisheries
 appear in Table \@ref(tab:annual-catch).
 The proportion of coast-wide catch that comes from SoG was
 22% in 1990, and 97% in `r assess_yr`.
-<!-- NOTE: percentage updated for 2023-->
 
 Total SOK harvest (i.e., pounds of validated product) for the major SARs
 from `r assess_yr - num_yrs_tab` to `r assess_yr` is presented in
@@ -278,8 +256,6 @@ PFMAs are larger and can extend beyond SAR boundaries.
 Data indicate the number of Pacific Herring dead and released,
 with the following caveats:
 
-<!-- 1. Data for `r max(ic_yrs)` are considered incomplete, -->
-
 1. Unknown mortality rate for "released" fish,
 
 1. Unknown length, weight, age, and sex of fish, and
@@ -291,8 +267,6 @@ Note that data from previous years are updated
 as DFO receives additional reports.
 
 ## First Nations observations
-
-<!-- TODO: Waiting on PRD, CC, SoG, and WCVI -->
 
 The following observations were contributed by
 representatives of First Nations communities.
@@ -738,7 +712,6 @@ These latest MP evaluations also appear in @dfo2022a.
 No new MPs were included,
 however probability metrics for the five USRs options [@dfo2022a]
 were estimated and have been added to the harvest options tables.
-<!-- TODO-: Make %'s auto update.JC: Defer until after SR is submitted-->
 Updated closed-loop feedback simulations for PRD show that
 MPs with harvest rates at 5, 10, and 20% maintain spawning biomass
 above the LRP with 85 to 97% probability, over both OM scenarios
@@ -780,7 +753,6 @@ These latest MP evaluations also appear in @dfo2022a.
 No new MPs were included,
 however probability metrics for the five USRs options 
 [@dfo2022a] were estimated and have been added to the harvest options tables.
-<!-- TODO-: Make %'s auto update.JC: Defer until after SR is submitted-->
 The updated simulations show that MPs with harvest rates at 5% and 10% 
 maintain spawning biomass above the LRP with 81 to 91% probability over all 
 both OM scenarios (Table \@ref(tab:decision-cc)).
