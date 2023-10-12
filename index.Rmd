@@ -99,7 +99,9 @@ options(
   xtable.comment = FALSE,
   kableExtra.latex.load_packages = FALSE,
   width = 80,
-  scipen = 999
+  scipen = 999,
+  dplyr.summarise.inform = FALSE,
+  ggrepel.max.overlaps = Inf
 )
 ```
 
