@@ -1,21 +1,32 @@
 ---
-t_title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia`:` Status in 2023 and forecast for 2024"
-t_title_other: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique`:` État en 2023 et prévisions pour 2024"
-assess_year: 2023
+title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2023 and forecast for 2024"
+title_short: "Pacific Herring status in 2023 and forecast for 2024"
+title_other: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique: État en 2023 et prévisions pour 2024"
+# title: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique: État en 2023 et prévisions pour 2024"
+# title_short: "État du hareng du Pacifique en 2023 et prévisions pour 2024"
+# title_other: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia: Status in 2023 and forecast for 2024"
 work_done_year: 2023
-t_work_done_month: Month
+work_done_month: Month
+# work_done_month: Mois
 report_number: 000
 isbn: 978-0-660-00000-0
 # isbn: 978-0-660-00000-0
-t_approver: "Andrew Thomson \n\n\n Regional Director"
+approver: |
+  Andrew Thomson\
+  Regional Director
+# Directeur régionale
 approval_year: 2023
-t_approval_month: September
+approval_month: September
+# approval_month: Septembre
 approval_day: 22
 process_year: 2023
-t_process_month: September
+process_month: September
+# process_month: Septembre
 process_day: 22
-t_branch: Science Branch
-t_region: Pacific Region
+branch: Science Branch
+region: Pacific Region
+# branch: Secteur des sciences
+# region: Région du Pacifique
 output:
   csasdown:::sr_pdf:
     french: FALSE
@@ -40,27 +51,9 @@ header-includes:
 
 \sloppy
 
-```{r libraries, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}
-library(knitr)
-library(rmarkdown)
-library(stringr)
-library(tidyverse)
-library(directlabels)
-library(reshape2)
-library(kableExtra)
-library(here)
-library(rosettafish)
-library(csasdown)
-library(gfutilities)
-library(gfiscamutils)
-library(ggrepel)
-library(herringutils)
-library(gcookbook)
-library(readr)
-library(zoo)
-```
-
 ```{r setup, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}
+library(knitr)
+
 if (is_latex_output()) {
   knitr_figs_dir <- "knitr-figs-pdf/"
   knitr_cache_dir <- "knitr-cache-pdf/"
@@ -99,14 +92,13 @@ options(
   xtable.comment = FALSE,
   kableExtra.latex.load_packages = FALSE,
   width = 80,
-  scipen = 999,
-  dplyr.summarise.inform = FALSE,
-  ggrepel.max.overlaps = Inf
+  scipen = 999
 )
 ```
 
 ```{r metadata}
-assess_yr <- metadata$assess_year
+library(rmarkdown)
+library(stringr)
 
 meta <- metadata$output
 
@@ -124,40 +116,13 @@ if (is.null(meta)) {
   }
 }
 
-if (french) {
-  t_title <- metadata$t_title_other
-  t_title_other <- metadata$t_title
-  t_title_short <- paste("État du hareng du Pacifique en", assess_yr,
-                         "et prévisions pour", assess_yr + 1)
-  t_csl <- "csl/csas-french.csl"
+csl <- "csl/csas.csl"
+if (getOption("french")) {
+  csl <- "csl/csas-french.csl"
   options(OutDec = ",")
-} else {
-  t_title <- metadata$t_title
-  t_title_other <- metadata$t_title_other
-  t_title_short <- paste("Pacific Herring status in", assess_yr,
-                         "and forecast for", assess_yr + 1)
-  t_csl <- "csl/csas.csl"
 }
 
-t_work_done_month <- en2fr(
-  metadata$t_work_done_month, translate = french, case = "title"
-)
-t_approver <- gsub(
-  pattern = "Regional Director",
-  x = metadata$t_approver,
-  replacement = en2fr(x = "Regional Director",
-                      translate = french, case = "title")
-)
-t_approval_month <- en2fr(
-  metadata$t_approval_month, translate = french, case = "title"
-)
-t_process_month <- en2fr(
-  metadata$t_process_month, translate = french, case = "title"
-)
-t_branch <- en2fr(metadata$t_branch, translate = french, case = "title")
-t_region <- en2fr(metadata$t_region, translate = french, case = "title")
-
-t_cat_no <- paste0(
+cat_no <- paste0(
   "Fs70-7/",
   metadata$work_done_year,
   "-",
@@ -167,7 +132,24 @@ t_cat_no <- paste0(
 )
 ```
 
-```{r models, cache=FALSE}
+```{r load-libraries, cache=FALSE}
+library(tidyverse)
+library(directlabels)
+library(reshape2)
+library(kableExtra)
+library(here)
+library(rosettafish)
+library(csasdown)
+library(gfutilities)
+library(gfiscamutils)
+library(ggrepel)
+library(herringutils)
+library(gcookbook)
+library(readr)
+library(zoo)
+
+assess_yr <- 2023
+
 models_dir <- here("models")
 major_stock_dir <- list("HG", "PRD", "CC", "SoG", "WCVI")
 minor_stock_dir <- list("A27", "A2W")
@@ -206,21 +188,11 @@ slides <- TRUE         # Make figures for powerpoint slides
 <!-- Other math -->
 \newcommand{\lognorm}{\text{ln}}
 \newcommand{\SB}{\mli{`r en2fr("SB", translate = french)`}}
-\newcommand{\BR}{\mli{BR}}
 \newcommand{\AVE}{\text{`r en2fr("AVE", translate = french)`}}
 
 ---
-title: `r t_title`
-title_other: `r t_title_other`
-title_short: `r t_title_short`
-approver: `r t_approver`
-approval_month: `r t_approval_month`
-work_done_month: `r t_work_done_month`
-branch: `r t_branch`
-region: `r t_region`
-cat_no: `r t_cat_no`
-process_month: `r t_process_month`
-csl: `r t_csl`
+csl: `r csl`
+cat_no: `r cat_no`
 ---
 
 <!-- Compile the PDF on the command line: -->

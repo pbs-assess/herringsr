@@ -1140,7 +1140,7 @@ Diagramme copié avec l'autorisation de @dfo2022c.
 
 ```{r eco-diagram, fig.cap = ifelse(french, "(ref:eco-diagram-cap-fr)", "(ref:eco-diagram-cap)"), out.width = "100%"}
 knitr::include_graphics(
-  here(ifelse(french, "figures/eco_diagram_fr.png", "figures/eco_diagram.png"))
+  here(ifelse(french, "figures/eco_diagram.png", "figures/eco_diagram.png"))
 )
 ```
 
