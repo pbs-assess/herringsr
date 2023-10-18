@@ -107,20 +107,19 @@ options(
 
 ```{r metadata}
 assess_yr <- metadata$assess_year
+meta_out <- metadata$output
 
-meta <- metadata$output
-
-if (is.null(meta)) {
+if (is.null(meta_out)) {
   options(french = FALSE)
 } else {
-  if (length(grep("pdf", names(meta)))) {
-    french <- meta$`csasdown:::sr_pdf`$french
+  if (length(grep("pdf", names(meta_out)))) {
+    french <- meta_out$`csasdown:::sr_pdf`$french
     options(french = french)
-    prepub <- meta$`csasdown:::sr_pdf`$prepub
-  } else if (length(grep("word", names(meta)))) {
-    french <- meta$`csasdown::sr_word`$french
+    prepub <- meta_out$`csasdown:::sr_pdf`$prepub
+  } else if (length(grep("word", names(meta_out)))) {
+    french <- meta_out$`csasdown::sr_word`$french
     options(french = french)
-    prepub <- meta$`csasdown::sr_word`$prepub
+    prepub <- meta_out$`csasdown::sr_word`$prepub
   }
 }
 
