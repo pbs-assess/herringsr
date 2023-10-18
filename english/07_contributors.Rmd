@@ -4,27 +4,32 @@
 
 ```{r, echo=FALSE, include=FALSE}
 contributors <- tibble::tribble(
-  ~"Contributor",          ~"Affiliation",                             ~"Role",
-  "Jaclyn Cleary",         "DFO Science, Pacific Region",              "Author",
-  "Sarah Power",           "DFO Science, Pacific Region",              "Author",
-  "Matthew Grinnell",      "DFO Science, Pacific Region",              "Author",
-  "Jennifer Boldt",        "DFO Science, Pacific Region",              "Author (Ecosystem section)",
-  "Chris Rooper",          "DFO Science, Pacific Region",              "Author (Ecosystem section)",
-  "Thomas Doniol-Valcroze","DFO Science, Pacific Region",              "Data (Ecosystem section)",
-  "Andrew Edwards",        "DFO Science, Pacific Region",              "Data (Ecosystem section)",
-  "Moira Galbraith",       "DFO Science, Pacific Region",              "Data (Ecosystem section)",
-  "Ian Perry",             "DFO Science, Pacific Region",              "Data (Ecosystem section)",
-  "Strahan Tucker",        "DFO Science, Pacific Region",              "Data (Ecosystem section)",
-  "Brianna Wright",        "DFO Science, Pacific Region",              "Data (Ecosystem section)",
-  "Sam Johnson",           "Landmark Fisheries Research",              "Data (Ecosystem section)",
+  ~"Contributor",          ~"Affiliation",                      ~"Role",
+  "Jaclyn Cleary",         "DFO Science, Pacific",              "Author",
+  "Sarah Power",           "DFO Science, Pacific",              "Author",
+  "Matthew Grinnell",      "DFO Science, Pacific",              "Author",
+  "Jennifer Boldt",        "DFO Science, Pacific",              "Author (Ecosystem section)",
+  "Chris Rooper",          "DFO Science, Pacific",              "Author (Ecosystem section)",
+  "Thomas Doniol-Valcroze","DFO Science, Pacific",              "Data (Ecosystem section)",
+  "Andrew Edwards",        "DFO Science, Pacific",              "Data (Ecosystem section)",
+  "Moira Galbraith",       "DFO Science, Pacific",              "Data (Ecosystem section)",
+  "Ian Perry",             "DFO Science, Pacific",              "Data (Ecosystem section)",
+  "Strahan Tucker",        "DFO Science, Pacific",              "Data (Ecosystem section)",
+  "Brianna Wright",        "DFO Science, Pacific",              "Data (Ecosystem section)",
+  "Sam Johnson",           "Landmark Fisheries Research",       "Data (Ecosystem section)",
+  "Katherine Middleton",   "DFO Science Advisor, Ottawa",       "Infographic (Ecosystem section)",
   "Bryan Rusch",           "DFO Fisheries Management, Pacific", "Client",
   "Marisa Keefe",          "DFO Fisheries Management, Pacific", "Client")
 ```
+
+\setlength{\tabcolsep}{3pt}
 
 ```{r, results='asis'}
 csasdown::csas_table(x = contributors, format = "latex") %>%
    row_spec(0, bold = TRUE)
 ```
+
+\setlength{\tabcolsep}{6pt}
 
 <!-- Omit Contributors from table numbering -->
 \addtocounter{table}{-1}

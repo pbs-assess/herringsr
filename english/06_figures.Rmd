@@ -547,6 +547,7 @@ create_slide_figures <- function(model_index = 1) {
 }
 
 ```
+
 ```{r FSAR-fnc, eval = TRUE}
 create_FSAR_figures <- function(model_index = 1) {
   region_abbreviation <-regions$Region[model_index]
@@ -724,6 +725,7 @@ cowplot::plot_grid(
 ```{r ppt-plots-prd, fig.cap = "(ref:storyboard-prd-cap)", eval= slides}
 create_slide_figures(model_index = model_ind)
 ```
+
 <!-- Central Coast Storyboard -->
 ```{r scaled-abundance-cc, fig.show = "hide", fig.asp = 1}
 model_ind <- match(en2fr("CC", french), major_regions_short)
@@ -854,6 +856,7 @@ plot_spawn_section(
   translate = french
 )
 ```
+
 ```{r ppt-plots-cc, fig.cap = "(ref:storyboard-cc-cap)", eval= slides}
 create_slide_figures(model_index = model_ind)
 ```
@@ -957,12 +960,15 @@ cowplot::plot_grid(
   rel_heights = c(1.1, 1.0, 1.1)
 )
 ```
+
 ```{r ppt-plots-sog, fig.asp= 1.1, fig.cap = "(ref:storyboard-sog-cap)", eval= slides}
 create_slide_figures(model_index = model_ind)
 ```
+
 ```{r FSAR-plots-sog, fig.asp= 1.1, eval= TRUE}
 create_FSAR_figures(model_index = model_ind)
 ```
+
 <!-- West Coast of Vancouver Island Storyboard -->
 ```{r scaled-abundance-wcvi, fig.show = "hide", fig.asp = 1}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
@@ -1211,7 +1217,7 @@ Diagramme copié avec l'autorisation de @dfo2022c.
 
 ```{r eco-diagram, fig.cap = ifelse(french, "(ref:eco-diagram-cap-fr)", "(ref:eco-diagram-cap)"), out.width = "100%"}
 knitr::include_graphics(
-  here(ifelse(french, "figures/eco_diagram.png", "figures/eco_diagram.png"))
+  here(ifelse(french, "figures/eco_diagram_fr.png", "figures/eco_diagram.png"))
 )
 ```
 
