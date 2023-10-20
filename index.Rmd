@@ -5,8 +5,8 @@ assess_year: 2023
 work_done_year: 2023
 t_work_done_month: Month
 report_number: 000
-isbn: 978-0-660-00000-0
-# isbn: 978-0-660-00000-0
+isbn_en: 978-0-660-00000-1
+isbn_fr: 978-0-660-00000-2
 t_approver: "Andrew Thomson \n\n\n Regional Director"
 approval_year: 2023
 t_approval_month: September
@@ -128,6 +128,7 @@ if (french) {
   t_title_other <- metadata$t_title
   t_title_short <- paste("État du hareng du Pacifique en", assess_yr,
                          "et prévisions pour", assess_yr + 1)
+  t_isbn <- metadata$isbn_fr
   t_csl <- "csl/csas-french.csl"
   options(OutDec = ",")
 } else {
@@ -135,6 +136,7 @@ if (french) {
   t_title_other <- metadata$t_title_other
   t_title_short <- paste("Pacific Herring status in", assess_yr,
                          "and forecast for", assess_yr + 1)
+  t_isbn <- metadata$isbn_en
   t_csl <- "csl/csas.csl"
 }
 
@@ -212,6 +214,7 @@ slides <- FALSE         # Make figures for powerpoint slides
 title: `r t_title`
 title_other: `r t_title_other`
 title_short: `r t_title_short`
+isbn: `r t_isbn`
 approver: `r t_approver`
 approval_month: `r t_approval_month`
 work_done_month: `r t_work_done_month`
