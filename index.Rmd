@@ -2,15 +2,15 @@
 t_title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia`:` Status in 2023 and forecast for 2024"
 t_title_other: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique`:` État en 2023 et prévisions pour 2024"
 assess_year: 2023
-work_done_year: 2023
-t_work_done_month: Month
-report_number: 000
-isbn_en: 978-0-660-00000-1
-isbn_fr: 978-0-660-00000-2
+work_done_year: 2024
+t_work_done_month: January
+report_number: 001
+isbn_en: 978-0-660-68721-6
+isbn_fr: 978-0-660-68722-3
 t_approver: "Andrew Thomson \n\n\n Regional Director"
 approval_year: 2023
 t_approval_month: September
-approval_day: 22
+approval_day: 25
 process_year: 2023
 t_process_month: September
 process_day: 22
@@ -159,12 +159,12 @@ t_branch <- en2fr(metadata$t_branch, translate = french, case = "title")
 t_region <- en2fr(metadata$t_region, translate = french, case = "title")
 
 t_cat_no <- paste0(
-  "Fs70-7/",
+  "Fs70-5/",
   metadata$work_done_year,
   "-",
   str_pad(string = metadata$report_number, width = 3, pad = "0"),
   ifelse(french, "F", "E"),
-  "PDF"
+  "-PDF"
 )
 ```
 
