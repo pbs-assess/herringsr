@@ -69,7 +69,7 @@ regions <- tribble(
   5,     "WCVI", "West Coast of Vancouver Island",   "Major",
   6,      "A27",                        "Area 27",   "Minor",
   7,      "A2W",                    "Area 2 West",   "Minor",
-  8,      "A10",                        "Area 10", "Special"
+  8,      "A10",                        "Area 10",   "Special"
 )
 regions$Region <- en2fr(regions$Region, french)
 regions$RegionName <- en2fr(regions$RegionName, french)
