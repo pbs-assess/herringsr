@@ -1,26 +1,9 @@
 # Conclusions
 
-La réponse des Sciences de `r assess_yr` comprend des analyses officielles de
-l’information sur les tendances des stocks pour les régions principales d’évaluation des stocks de hareng du Pacifique
-à l’aide du cadre d’évaluation des stocks révisé en 2017 [@cleary2018]
-avec des données mises à jour pour inclure `r assess_yr`.
+La réponse des Sciences de `r assess_yr` comprend une analyse officielle de l’information sur les tendances des stocks dans les RES principales du hareng du Pacifique à l’aide du cadre d’évaluation des stocks examiné en 2017 [@cleary2018] et d’une mise à jour des données pour inclure `r assess_yr`.
 
-Le MPO s’est engagé à élaborer et à mettre en œuvre un plan de rétablissement des stocks de
-hareng du Pacifique à Haida Gwaii.
-Sur la base des évaluations des procédures de gestion, la recommandation de récolte pour la région d’évaluation des stocks de Haida Gwaii est 0&nbsp;t.
+Le MPO s’est engagé à élaborer et à mettre en œuvre un plan de rétablissement pour le hareng du Pacifique de HG. Sur la base des évaluations des procédures de gestion, la recommandation sur la récolte pour le stock dans la RES de HG est de 0&nbsp;t.
 
-Le processus d’ESG identifie une série de procédures de gestion qui répondent à l’objectif de conservation
-avec une probabilité d’au moins 75% pour les régions d’évaluation des stocks du district de Prince Rupert, de la côte centrale, du détroit de Géorgie et de la côte ouest de l’île de Vancouver
-pour le scénario du modèle opérationnel de référence DDM [@dfo2019c; @dfo2021b].
-Les calculs des options de récolte ou de procédures de gestion pour `r assess_yr + 1` pour ces quatre régions d’évaluation des stocks
-sont combinés avec les évaluations de procédures de gestion (probabilités) issues de l’actualisation de l’ESG 
-la plus récente.
-Les tableaux comprennent également les options de rendement et de récolte de la procédure de gestion pour le scénario du modèle opérationnel 
-de robustesse DIM (tableaux \@ref(tab:decision-prd) à \@ref(tab:decision-wcvi)).
+Le processus d’ESG définit une série de procédures de gestion qui répondent à l’objectif de conservation avec une probabilité d’au moins 75 % pour les RES du DPR, de la CC et du DG pour le modèle opérationnel de référence MDD [@dfo2019c; @dfo2021b]. Les options de récolte ou les calculs des procédures de gestion pour `r assess_yr + 1` for these four SARs pour ces quatre RES sont combinés avec les évaluations des procédures de gestion (probabilités) découlant de la dernière mise à jour de l’ESG. Les tableaux comprennent également le rendement des procédures de gestion et les options de récolte pour le modèle opérationnel de robustesse MID (tableaux \@ref(tab:decision-prd) à \@ref(tab:decision-wcvi)).
 
-Les avis scientifiques pour les régions secondaires d’évaluation des stocks se limitent à
-la présentation des données sur les prises, des données biologiques et des données des relevés de ponte
-(section «\nameref{sec:app-minor}»).
-De même, l’avis scientifique pour la zone spéciale, la zone 10, se limite à
-la présentation des données sur les prises, des données biologiques et des données des relevés de ponte
-(section «\nameref{sec:app-special}»).
+L’avis scientifique pour les RES secondaires se limite à la présentation des données sur les prises, des données biologiques et des données de relevé du frai (Section "\nameref{sec:app-minor}"). De même, l’avis scientifique pour la zone spéciale (zone 10) se limite à la présentation des données sur les prises, des données biologiques et des données de relevé du frai (Section "\nameref{sec:app-special}").
