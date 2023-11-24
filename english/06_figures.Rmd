@@ -1266,40 +1266,49 @@ residuals from a double log-transformed length-weight regression
 for female HG herring
 (Boldt et al.).$^{\ref{fn:boldt}}$
 
-(ref:eco-trend-cap-fr) Indicateurs de pression normalisés sélectionnés et réponses du hareng du Pacifique (par exemple, état et tendance) au cours des cinq dernières années.
+(ref:eco-trend-cap-fr) Indicateurs de pression normalisés sélectionnés et
+réponses du hareng du Pacifique (par exemple, état et tendance)
+au cours des cinq dernières années.
 Les lignes vertes pleines se situent à l'intérieur d'un écart-type (ET) ;
 les cinq années les plus récentes sont surlignées en vert.
 Les symboles à droite indiquent la tendance (en haut) et l'état (en bas).
-La tendance indique une augmentation (flèche vers le haut) ou une diminution (flèche vers le bas)
-significative (flèche vers le haut) ou une baisse (vers le bas), ou
+La tendance indique une augmentation (flèche vers le haut) ou
+une diminution (flèche vers le bas) significative ou
 ni l'un ni l'autre (horizontal) au cours des cinq dernières années,
 lorsqu'il y a plus de deux années de données.
 L'état indique si les valeurs moyennes récentes sont
-supérieures à une ET au-dessus (plus) ou au-dessous (moins), ou
-supérieures (point) à la moyenne de la série chronologique.
+supérieures à une ET au-dessus (plus) ou au-dessous (moins) ou
+ni l'un ni l'autre (point) à la moyenne de la série chronologique.
 Il convient de noter que
-les indicateurs de pression concernent le détroit d'Hécate et le détroit de la Reine-Charlotte, et les
-sont pour le hareng de Haida Gwaii (HG).
+les indicateurs de pression concernent
+le détroit d'Hécate et le détroit de la Reine-Charlotte, et les
+réponses sont pour le hareng de Haida Gwaii (HG).
 Légende : température de surface de la mer (\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{satellite AVHRR}) ;
 l'abondance et la biomasse des proies sont exprimées en
 $\text{number}/\text{m}^3$ et $\text{mg}/\text{m}^3$, respectivement,
 où $\text{m}$ représente les mètres et $\text{mg}$ les milligrammes.
-(M. Galbraith et R.I. Perry, Pêches et Océans Canada (MPO), comm. pers ;)
-Abondance des baleines à bosse
+(M. Galbraith et R.I. Perry,
+Pêches et Océans Canada (MPO), comm. pers.) ;
+abondance des baleines à bosse
 (@best2015 pour l'estimation de 2008,
-enquête du MPO (B. Wright, MPO, comm. pers.) pour l'estimation de 2018, et
-autres années interpolées à l'aide d'un taux de croissance de la population de 4% [@ford2010, T. Donovan, comm. pers.
-(@ford2010, T. Doniol-Valcroze, MPO, comm. pers.]) ;
-L'abondance de l'otarie de Steller est interpolée
+enquête du MPO (B. Wright, MPO, comm. pers.)
+pour l'estimation de 2018, et
+autres années interpolées à l'aide d'un taux de croissance
+de la population de 4%
+[@ford2010, T. Doniol-Valcroze, MPO, comm. pers.]) ;
+l'abondance de l'otarie de Steller est interpolée
 (S. Tucker, MPO, comm. pers.) ;
-La biomasse du merlu du Pacifique provient de l'évaluation des stocks de merlu et de l'étude acoustique au chalut.
+la biomasse du merlu du Pacifique provient de
+l'évaluation des stocks de merlu et de l'étude acoustique au chalut
 (S. Johnson, Landmark Fisheries Research, comm. pers.) ;
-Plie à dents de flèche, aiguillat commun et cabillaud du Pacifique
-la prise par unité d'effort (CPUE) provient de la 
-Commission internationale du flétan du Pacifique (A. Edwards, MPO, comm. pers.) ;
+plie à grande bouche, aiguillat commun du Pacifique Nord,
+et morue du Pacifique
+prise par unité d'effort (PUE) provient de la 
+International Pacific Halibut Commission (A. Edwards, MPO, comm. pers.) ;
 biomasse médiane de harengs reproducteurs HG et
 le poids en grammes du hareng d'âge 3 [@dfo2021c] ; et
-les résidus d'une régression longueur-poids à double transformation logarithmique
+les résidus d'une régression longueur-poids à
+double transformation logarithmique
 pour le hareng femelle HG
 (Boldt et al.).$^{\ref{fn:boldt}}$
 
