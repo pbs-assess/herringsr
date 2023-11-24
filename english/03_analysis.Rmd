@@ -135,7 +135,7 @@ If simulations were run over a greater number of years (e.g., 50 years)
 performance would start to approach equilibrium and be 
 unaffected by most recent trends in OM conditioning data.
 This phenomenon is important to consider when selecting or eliminating MPs, 
-especially if probabilities are considerably different between MP updates. -->
+especially if probabilities are considerably different between MP updates.
 
 ## Input data
 

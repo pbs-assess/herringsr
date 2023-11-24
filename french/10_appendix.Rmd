@@ -1,6 +1,6 @@
 # Annexe\label{sec:app}
 
-## Régions d’évaluation des stocks secondaires \label{sec:app-minor}
+## Régions d’évaluation des stocks secondaires\label{sec:app-minor}
 
 Le MPO n’effectue pas d’analyse officielle de l’information sur les tendances des stocks pour les `r number_to_word(length(minor_regions_short))` RES secondaires du hareng du Pacifique (`r commify(minor_regions_full_parens)`). Toutefois, le MPO fournit les prises commerciales débarquées (figure \@ref(fig:minor-catch)), la mortalité accessoire dans les activités de pisciculture (figure \@ref(fig:minor-incidental)), les données biologiques, y compris le poids selon l’âge (figure \@ref(fig:minor-wa)) et la proportion selon l’âge (figure \@ref(fig:minor-pa)), ainsi que l’indice du frai (figure \@ref(fig:minor-spawn-index)) de `r minor_start_yr_plot` à `r minor_end_yr`.
 Le MPO fournit également l’indice du frai et la proportion de l’indice du frai par section de `r minor_end_yr-num_yrs_tab` à `r minor_end_yr` for A27 and A2W pour la zone 27 et la zone 2 ouest (tableaux \@ref(tab:spawn-index-a27) et \@ref(tab:spawn-index-a2w), respectivement). Pour la zone 27, l’indice du frai par section de `r minor_start_yr_plot` à `r minor_end_yr` est également fourni (figure \@ref(fig:spawn-section-a27)).

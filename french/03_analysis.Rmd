@@ -4,7 +4,7 @@
 
 Contrairement aux trois dernières années, la pandémie de COVID-19 n’a pas eu d’impact sur la collecte et l’analyse des données biologiques ou sur le frai en 2023.
 
-## Évaluation de la stratégie de gestion \label{sec:mse}
+## Évaluation de la stratégie de gestion\label{sec:mse}
 
 Le MPO s’est engagé à renouveler le cadre de gestion actuel pour s’attaquer à l’éventail de difficultés qui touchent les stocks et les pêches de hareng du Pacifique en Colombie-Britannique. Le renouvellement du cadre de gestion du hareng du Pacifique utilise une ESG pour évaluer le rendement des procédures de gestion possibles par rapport à des hypothèses sur la dynamique passée et future des stocks et des pêches. L’objectif du processus d’ESG est de définir des procédures de gestion, d’éliminer celles qui entraînent des risques inacceptables pour un stock (c’est-à-dire qui sont de mauvais choix) et de définir celles qui fournissent des résultats acceptables par rapport aux objectifs de conservation et de gestion des pêches. La détermination d’une procédure de gestion privilégiée nécessite un ensemble d’objectifs mesurables bien définis qui comprennent des points de référence (généralement classés comme limites et cibles) et, dans la mesure du possible, la spécification d’objectifs mesurables liés aux prises, à la variabilité de ces dernières et à des buts socioculturels. L’ESG est un processus itératif et continu, mené en collaboration avec les Premières Nations, l’industrie de la pêche ainsi que des organisations gouvernementales et non gouvernementales.
 
@@ -37,7 +37,7 @@ Du 26 au 28 juin 2023, un examen régional par les pairs a eu lieu sur l’« Ap
 
 1. Prévoir un cycle minimum de trois ans pour les mises à jour de l’ESG, sauf si de nouvelles données probantes révèlent des circonstances exceptionnelles.
 
-Le MPO s’est engagé à mettre en œuvre ces recommandations avant la mise en œuvre du cadre du modèle statistique spatialement intégré des prises de hareng selon l’âge (MSSIPHA).
+Le MPO s’est engagé à mettre en œuvre ces recommandations avant la mise en œuvre du cadre du modèle statistique spatialement intégré des prises de hareng selon l’âge (SISCAH).
 
 1. On s’attend a priori à des différences dans les spécifications des procédures de gestion pour le hareng du Pacifique, y compris les composantes de la règle de contrôle des prises, parmi les RES. Les raisons sont liées aux différences entre les objectifs jugés importants par les utilisateurs de la ressource, aux différences dans la dynamique historique et actuelle des stocks et des pêches, et aux différences dans l’ampleur et le sens des erreurs du modèle d’évaluation dans chaque RES. Les objectifs de conservation tels que ceux qui visent à éviter un PRL biologique conformément à la politique de l’approche de précaution du MPO [@dfo2009] demeurent constants pour toutes les RES selon les analyses de @kronlund2017.
 
@@ -45,7 +45,7 @@ Le MPO s’est engagé à mettre en œuvre ces recommandations avant la mise en 
 
 1. Lorsque plusieurs procédures de gestion atteignent l’objectif convenu, il est nécessaire d’établir d’autres critères, comme un classement des objectifs secondaires, afin de fournir aux décideurs un ensemble de choix de compromis souples.
 
-1. Les résultats des évaluations des procédures de gestion semblent être davantage influencés par les tendances de l’état des stocks et de mortalité naturelle des trois à cinq dernières années, utilisées pour conditionner le modèle opérationnel. Si les simulations étaient exécutées sur un plus grand nombre d’années (par exemple, 50 ans), le rendement commencerait à s’approcher de l’équilibre et cesserait d’être sensible aux tendances les plus récentes utilisées pour conditionner le modèle opérationnel. Il est important de tenir compte de ce phénomène lors de la sélection ou de l’élimination de procédures de gestion, en particulier si les probabilités sont très différentes entre chaque mise à jour des procédures de gestion. -->
+1. Les résultats des évaluations des procédures de gestion semblent être davantage influencés par les tendances de l’état des stocks et de mortalité naturelle des trois à cinq dernières années, utilisées pour conditionner le modèle opérationnel. Si les simulations étaient exécutées sur un plus grand nombre d’années (par exemple, 50 ans), le rendement commencerait à s’approcher de l’équilibre et cesserait d’être sensible aux tendances les plus récentes utilisées pour conditionner le modèle opérationnel. Il est important de tenir compte de ce phénomène lors de la sélection ou de l’élimination de procédures de gestion, en particulier si les probabilités sont très différentes entre chaque mise à jour des procédures de gestion.
 
 ## Données d’entrée
 
@@ -53,13 +53,13 @@ Trois types de données d’entrée sont utilisées pour l’évaluation des sto
 
 ### Données sur les prises
 
-Aux fins de l’évaluation des stocks, les données sur les prises sont résumées par type d’engin, tel que décrit au tableau \@ref(tab:data-input) et présenté à la figure \@ref(fig:major-catch). Comme les années précédentes, les données sur les prises utilisées dans le modèle d’évaluation des stocks ne tiennent pas compte de la mortalité attribuable à la récolte commerciale d’œufs sur varech ni des pêches récréatives ou à des fins ASR. Les pêches récréatives et à des fins ASR sont considérées comme secondaires par rapport à la pêche commerciale. La récolte commerciale d’œufs sur varech requiert un permis délivré en fonction du poids validé du produit récolté (c’est-à-dire les œufs sur du varech) et non des tonnes de poissons utilisés pour obtenir des œufs. Il est impossible actuellement de valider la mortalité attribuable à cette pêche dans la population, mais des méthodes d’estimation de la mortalité attribuable à la récolte d’œufs sur varech ont été élaborées avec le cadre de modélisation du MSSIPHA [@dfo2023a].
+Aux fins de l’évaluation des stocks, les données sur les prises sont résumées par type d’engin, tel que décrit au tableau \@ref(tab:data-input) et présenté à la figure \@ref(fig:major-catch). Comme les années précédentes, les données sur les prises utilisées dans le modèle d’évaluation des stocks ne tiennent pas compte de la mortalité attribuable à la récolte commerciale d’œufs sur varech ni des pêches récréatives ou à des fins ASR. Les pêches récréatives et à des fins ASR sont considérées comme secondaires par rapport à la pêche commerciale. La récolte commerciale d’œufs sur varech requiert un permis délivré en fonction du poids validé du produit récolté (c’est-à-dire les œufs sur du varech) et non des tonnes de poissons utilisés pour obtenir des œufs. Il est impossible actuellement de valider la mortalité attribuable à cette pêche dans la population, mais des méthodes d’estimation de la mortalité attribuable à la récolte d’œufs sur varech ont été élaborées avec le cadre de modélisation du SISCAH [@dfo2023a].
 
 Les prélèvements commerciaux combinés de `r assess_yr - num_yrs_tab` à `r assess_yr` dans la pêche du hareng rogué, la pêche de subsistance et d’appât, ainsi que la pêche en vue d’une utilisation spéciale sont présentés dans le tableau \@ref(tab:annual-catch). La proportion des prises totales à l’échelle de la côte qui proviennent du DG était de 22 % en 1990, et de 97 % en `r assess_yr`.
 
 La récolte totale d’œufs sur varech (c’est-à-dire les livres de produit validé) pour les RES principales de `r assess_yr - num_yrs_tab` à `r assess_yr` est présentée dans le tableau \@ref(tab:annual-sok-catch).
 
-### Données biologiques \label{sec:biol-data}
+### Données biologiques\label{sec:biol-data}
 
 Les échantillons biologiques sont collectés comme décrit dans @cleary2018 et le tableau \@ref(tab:data-input). Les données biologiques utilisées pour l’évaluation des stocks sont le poids annuel selon l’âge (\@ref(fig:major-wa)) et les nombres annuels de poissons selon l’âge, exprimés en proportion selon l’âge (figure\@ref(fig:major-pa)).
 
@@ -139,7 +139,7 @@ La méthodologie du relevé en surface a été utilisée à l’occasion de `r n
 
 Les \link{https://github.com/grinnellm/Reports}{résumés des données sur le hareng du Pacifique (en anglais seulement)} montrent la proportion des données du relevé du frai (c’est-à-dire l’indice du frai) provenant des méthodes de relevé en surface et en plongée par RES et par année. En raison de la pandémie de COVID-19, seuls des relevés en surface ont été menés pour HG en 2020 et 2021, ainsi que pour le DPR en 2020. Les observations de ces relevés en surface sont traitées comme les observations des relevés en plongée et sont censées être continues avec la série chronologique des relevés en plongée. Des méthodes permettant de combiner les observations des relevés en surface et en plongée sont présentées pour le cadre de modélisation du MSSIPHA [@dfo2023a], mais ne sont pas mises en œuvre ici.
 
-### Points de référence \label{sec:ref-pts}
+### Points de référence\label{sec:ref-pts}
 
 Un PRL biologique est défini pour les RES principales du hareng du Pacifique : $0.3\SB_0$ [@kronlund2017]. Des options de PRS pour les stocks ont été proposées dans @cleary2018 et mis en œuvre comme objectifs de biomasse dans les analyses de simulation pour la COIV et le DG en 2018 [@dfo2019a] puis pour HG, le DPR et la CC en 2019 [@dfo2019c]. Une analyse des options de PRS a été entreprise en 2022 et les résultats sont présentés dans @dfo2022a. Au total, cinq options de PRS ont été évaluées.
 
@@ -155,7 +155,7 @@ Un PRL biologique est défini pour les RES principales du hareng du Pacifique : 
 
 La mise en œuvre des PRS en tant qu’objectifs de biomasse cible dans le cadre du processus de simulation et d’évaluation permet d’évaluer les procédures de gestion relativement à la réalisation des PRS, et notamment de déterminer si une option de PRS donnée peut être réalisée en l’absence de pêches commerciales. En 2023, la Direction de la gestion des ressources du MPO a choisi et mis en œuvre un PRS provisoire de $\overline{\SB}$ dans le cadre du processus du PGIP pour 2022-2023.
 
-L’état des stocks par rapport aux estimations du modèle d’évaluation pour $0.3\SB_0$ (c’est-à-dire le PRL) et les options de PRS sont présentés pour les RES du DPR, de la CC, du DG et de la COIV (tableaux \@ref(tab:ref-points-prd) à @ref(tab:ref-points-wcvi)).
+L’état des stocks par rapport aux estimations du modèle d’évaluation pour $0.3\SB_0$ (c’est-à-dire le PRL) et les options de PRS sont présentés pour les RES du DPR, de la CC, du DG et de la COIV (tableaux \@ref(tab:ref-points-prd) à \@ref(tab:ref-points-wcvi)).
 
 Les PRL et les PRS établissent un lien entre l’état des stocks et la politique de l’approche de précaution du MPO [@dfo2009], et les mêmes calculs sont utilisés pour chaque RES du hareng du Pacifique. Il existe une distinction importante entre les points de référence (PRL et PRS) et les points de contrôle opérationnels d’une règle de contrôle des prises ou la procédure de gestion utilisée pour fixer les limites de prises. Plus précisément, les points de contrôle opérationnels définissent les points d’inflexion d’une règle de contrôle des prises et déterminent les niveaux de biomasse pour lesquels des mesures de gestion sont prises, tandis que les PRL et les PRS sont des objectifs de gestion.
 
