@@ -18,7 +18,7 @@ t_branch: Science Branch
 t_region: Pacific Region
 output:
   csasdown:::sr_pdf:
-    french: FALSE
+    french: TRUE
     prepub: FALSE
     copy_sty: TRUE
     line_nums: FALSE
@@ -155,8 +155,8 @@ t_approval_month <- en2fr(
 t_process_month <- en2fr(
   metadata$t_process_month, translate = french, case = "title"
 )
-t_branch <- en2fr(metadata$t_branch, translate = french, case = "title")
-t_region <- en2fr(metadata$t_region, translate = french, case = "title")
+t_branch <- en2fr(metadata$t_branch, translate = french, case = "none")
+t_region <- en2fr(metadata$t_region, translate = french, case = "none")
 
 t_cat_no <- paste0(
   "Fs70-5/",
