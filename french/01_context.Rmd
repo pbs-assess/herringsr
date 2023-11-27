@@ -21,6 +21,7 @@ Remarque : les procédures de gestion pour HG ne sont pas mises à jour par le b
 Haida Gwaii 'íináang | iinang Pacific Herring:
 An ecosystem overview and ecosystem-based rebuilding plan.
 La période de consultation sur la version provisoire a eu lieu du 26 septembre au 16 décembre 2022; l’approbation de la version finale est prévue pour l’automne 2023.}
+
 Cette évaluation des stocks de `r assess_yr` comprend des recommandations sur les procédures de gestion pour le DPR, la CC, le DG et la COIV, obtenues en 2022 par la mise à jour du conditionnement du modèle opérationnel pour le hareng [@benson2022] en utilisant les données historiques sur les stocks et les pêches de `r major_start_yr` to 2021 [@dfo2022b]. Il n’y a pas de nouvelle évaluation des procédures de gestion pour `r assess_yr` (toutes les mesures de probabilité reflètent les évaluations des procédures de gestion présentées en 2022).
 
 La Direction de la gestion des pêches de la région du Pacifique de Pêches et Océans Canada (MPO) a demandé à la Direction des sciences de la région du Pacifique du MPO d’évaluer l’état des stocks de hareng du Pacifique de la Colombie-Britannique en `r assess_yr` et de formuler un avis sur la récolte pour `r assess_yr + 1` sous la forme de procédures de gestion mises à l’essai à l’aide de simulations afin d’orienter l’élaboration du PGIP pour `r assess_yr`/`r assess_yr + 1`, le cas échéant.
@@ -28,5 +29,5 @@ Les trajectoires estimées des stocks, l’état actuel des stocks pour `r asses
 
 <!-- Mandatory last paragraph in this section -->
 La présente réponse des Sciences découle de l’examen par les pairs régional du
-`r rmarkdown::metadata$process_month` `r rmarkdown::metadata$process_day`,
-`r rmarkdown::metadata$process_year` sur le `r rmarkdown::metadata$title`.
+`r t_process_month` `r rmarkdown::metadata$process_day`,
+`r rmarkdown::metadata$process_year` sur le `r t_title`.
