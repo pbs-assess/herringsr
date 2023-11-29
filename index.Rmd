@@ -1,6 +1,6 @@
 ---
 t_title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia`:` Status in 2023 and forecast for 2024"
-t_title_other: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique`:` État en 2023 et prévisions pour 2024"
+t_title_other: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique `:` État en 2023 et prévisions pour 2024"
 assess_year: 2023
 work_done_year: 2024
 t_work_done_month: January
@@ -18,7 +18,7 @@ t_branch: Science Branch
 t_region: Pacific Region
 output:
   csasdown:::sr_pdf:
-    french: TRUE
+    french: FALSE
     prepub: FALSE
     copy_sty: TRUE
     line_nums: FALSE
