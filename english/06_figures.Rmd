@@ -1223,7 +1223,6 @@ knitr::include_graphics(
 
 <!-- TODO: -->
 <!-- Remove horizontal lines and dots (figure and caption) -->
-<!-- Remove /m3 and mg/m3 from figure -->
 <!-- Define seasons (Spring, Summer, Fall, Winter) -->
 <!-- Add "Copied with permission from (Boldt et al.).$^{\ref{fn:boldt}}$" -->
 <!-- Add x- and y-axes labels -->
@@ -1234,17 +1233,19 @@ Solid green lines are within one standard deviation (SD);
 the most recent five years are highlighted in green.
 Symbols on the right indicate trend (top) and status (bottom).
 Trend indicates a significant
-increase (up arrow) or decrease (down), or
-neither (horizontal) in the last five years,
+increase (up arrow), decrease (down), or
+neither in the last five years,
 where there are more than two years of data.
 Status indicates if recent average values are
-greater than one SD above (plus) or below (minus), or
-neigher (dot) the time series average.
+greater than one SD above (plus), below (minus), or
+neigher the time series average.
 Note that
-pressure indicators are for Hecate Strait and Queen Charlotte Sound, and
-responses are for Haida Gwaii (HG) herring.
-Legend: sea surface temperature (\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{AVHRR satellite});
-prey abundance and biomass are in
+pressure indicators are for Hecate Strait and Queen Charlotte Sound,
+responses are for Haida Gwaii (HG) herring, and
+sea surface temperature (SST) is from the
+\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}
+{AVHRR satellite}.
+Legend: prey abundance and biomass are in
 $\text{number}/\text{m}^3$ and $\text{mg}/\text{m}^3$, respectively,
 where $\text{m}$ is metres and $\text{mg}$ is milligrams
 (M. Galbraith and R.I. Perry, Fisheries and Oceans Canada (DFO), pers. comm.);
@@ -1255,13 +1256,14 @@ other years interpolated using a 4% population growth rate
 [@ford2010, T. Doniol-Valcroze, DFO, pers. comm.]);
 Steller Sea Lion abundance is interpolated
 (S. Tucker, DFO, pers. comm.);
-Pacific Hake biomass is from the hake stock assessment and acoustic trawl survey
+Pacific Hake biomass is from the
+hake stock assessment and acoustic trawl survey
 (S. Johnson, Landmark Fisheries Research, pers. comm.);
 Arrowtooth Flounder, Spiny Dogfish, and Pacific Cod
 catch per unit effort (CPUE) is from the 
 International Pacific Halibut Commission (A. Edwards, DFO, pers. comm.);
 median HG herring spawning biomass and
-weight in grams of age-3 herring [@dfo2021c]; and
+weight of age-3 herring [@dfo2021c]; and
 residuals from a double log-transformed length-weight regression
 for female HG herring
 (Boldt et al.).$^{\ref{fn:boldt}}$
@@ -1272,19 +1274,21 @@ au cours des cinq dernières années.
 Les lignes vertes pleines se situent à l'intérieur d'un écart-type (ET) ;
 les cinq années les plus récentes sont surlignées en vert.
 Les symboles à droite indiquent la tendance (en haut) et l'état (en bas).
-La tendance indique une augmentation (flèche vers le haut) ou
-une diminution (flèche vers le bas) significative ou
-ni l'un ni l'autre (horizontal) au cours des cinq dernières années,
+La tendance indique une augmentation (flèche vers le haut),
+une diminution (flèche vers le bas) significative, ou
+ni l'un ni l'autre au cours des cinq dernières années,
 lorsqu'il y a plus de deux années de données.
 L'état indique si les valeurs moyennes récentes sont
-supérieures à une ET au-dessus (plus) ou au-dessous (moins) ou
-ni l'un ni l'autre (point) à la moyenne de la série chronologique.
+supérieures à une ET au-dessus (plus), au-dessous (moins), ou
+ni l'un ni l'autre à la moyenne de la série chronologique.
 Il convient de noter que
 les indicateurs de pression concernent
-le détroit d'Hécate et le détroit de la Reine-Charlotte, et les
-réponses sont pour le hareng de Haida Gwaii (HG).
-Légende : température de surface de la mer (\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{satellite AVHRR}) ;
-l'abondance et la biomasse des proies sont exprimées en
+le détroit d'Hécate et le détroit de la Reine-Charlotte,
+les réponses sont pour le hareng de Haida Gwaii (HG), et
+la température de surface de la mer (TSM) provient du
+\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}
+{satellite AVHRR}.
+Légende : l'abondance et la biomasse des proies sont exprimées en
 $\text{number}/\text{m}^3$ et $\text{mg}/\text{m}^3$, respectivement,
 où $\text{m}$ représente les mètres et $\text{mg}$ les milligrammes.
 (M. Galbraith et R.I. Perry,
@@ -1306,7 +1310,7 @@ et morue du Pacifique
 prise par unité d'effort (PUE) provient de la 
 International Pacific Halibut Commission (A. Edwards, MPO, comm. pers.) ;
 biomasse médiane de harengs reproducteurs HG et
-le poids en grammes du hareng d'âge 3 [@dfo2021c] ; et
+le poids du hareng d'âge 3 [@dfo2021c] ; et
 les résidus d'une régression longueur-poids à
 double transformation logarithmique
 pour le hareng femelle HG
