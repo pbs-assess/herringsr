@@ -227,8 +227,14 @@ M_max <- lapply(
   unlist() %>%
   max(na.rm = TRUE)
 
-# Input catch for table 1
-inp_catch <- read_csv(here("data", "input-data.csv"), col_types = cols())
+# Input data for model input
+inp_data <- read_csv(here("data", "input-data.csv"), col_types = cols())
+
+# Input data for table of ecosystem trends description
+eco_trend_desc_data <- read_delim(
+  here("data", ifelse(french, "eco-trend-desc-fr.csv", "eco-trend-desc.csv")),
+  delim = ";", col_types = cols()
+)
 
 # SARs - dependent values
 hg_vars <- get_vars("HG", french = french)

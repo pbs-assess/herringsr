@@ -947,7 +947,7 @@ in  the absence of fishing over the last two decades.
 The herring responses that have shown long-term declining trends are
 herring biomass, age-3 weight, and condition.
 Trends in pressures that correspond with these herring responses include
-(Figure \@ref(fig:eco-trend)):
+(Table \@ref(tab:eco-trend-desc) and Figure \@ref(fig:eco-trend)):
 
 1. Long-term increasing SSTs,
 which has been correlated with poor herring productivity.

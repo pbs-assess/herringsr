@@ -1,0 +1,5 @@
+Variable,Description,Source
+Spring sea surface temperature,Mars à mai,\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{satellite AVHRR}
+Summer sea surface temperature,Juin à août,\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{satellite AVHRR}
+Fall sea surface temperature,Septembre à novembre,\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{satellite AVHRR}
+Winter sea surface temperature,Décembre à février,\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{satellite AVHRR}

@@ -22,7 +22,7 @@ L’indice du frai n’est pas mis à l’échelle
 
 ```{r data-input}
 input_data_table(
-  tab = inp_catch,
+  tab = inp_data,
   last_year = major_end_yr,
   cap = ifelse(french, "(ref:data-input-cap-fr)", "(ref:data-input-cap)"),
   translate = french
@@ -985,7 +985,6 @@ celui-ci est constant quelle que soit l'estimation de $\SB_{2024}$,
 et un $\SB_{2024}$ plus élevé conduit à un TR plus faible.
 
 \setlength{\tabcolsep}{5pt}
-
 \needspace{0.32\textheight}
 
 ```{r decision-prd, results = 'asis', echo = FALSE}
@@ -1083,6 +1082,77 @@ decision_tables_mp(
 )
 ```
 
+\setlength{\tabcolsep}{6pt}
 \afterpage{\clearpage}
 
-\setlength{\tabcolsep}{6pt}
+(ref:eco-trend-desc-cap) Description and sources for
+selected standardized pressure indicators and Pacific Herring responses
+(see Figure \@ref(fig:eco-trend)).
+Legend:
+SST is sea surface temperature,
+AVHHR is advanced very high resolution radiometer,
+DFO is Fisheries and Oceans Canada,
+CPUE is catch per unit effort, and
+IPHC is International Pacific Halibut Commission.
+Note that
+pressure indicators are for Hecate Strait and Queen Charlotte Sound, and
+responses are for Haida Gwaii (HG) herring.
+
+(ref:eco-trend-desc-cap-fr) Description et sources
+des indicateurs de pression standardisés sélectionnés et
+des réponses du hareng du Pacifique
+(voir la figure \@ref(fig:eco-trend)).
+Il convient de noter que
+les indicateurs de pression concernent
+le détroit d'Hécate et le détroit de la Reine-Charlotte, et
+les réponses sont pour le hareng de Haida Gwaii (HG).
+La température de surface de la mer (TSM)
+provient du
+\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}
+{satellite AVHRR}.
+Légende : l'abondance et la biomasse des proies sont exprimées en
+$\text{number}/\text{m}^3$ et $\text{mg}/\text{m}^3$, respectivement,
+où $\text{m}$ représente les mètres et $\text{mg}$ les milligrammes.
+(M. Galbraith et R.I. Perry,
+Pêches et Océans Canada (MPO), comm. pers.) ;
+abondance des baleines à bosse
+<!-- (@best2015 pour l'estimation de 2008, -->
+enquête du MPO (B. Wright, MPO, comm. pers.)
+pour l'estimation de 2018, et
+autres années interpolées à l'aide d'un taux de croissance
+de la population de 4%
+<!-- [@ford2010, T. Doniol-Valcroze, MPO, comm. pers.]) ; -->
+l'abondance de l'otarie de Steller est interpolée
+(S. Tucker, MPO, comm. pers.) ;
+la biomasse du merlu du Pacifique provient de
+l'évaluation des stocks de merlu et de l'étude acoustique au chalut
+(S. Johnson, Landmark Fisheries Research, comm. pers.) ;
+plie à grande bouche, aiguillat commun du Pacifique Nord,
+et morue du Pacifique
+prise par unité d'effort (PUE) provient de la
+International Pacific Halibut Commission (A. Edwards, MPO, comm. pers.) ;
+biomasse médiane de harengs reproducteurs HG et
+le poids du hareng d'âge 3 [@dfo2021c] ; et
+les résidus d'une régression longueur-poids à
+double transformation logarithmique
+pour le hareng femelle HG
+(Boldt et al.).$^{\ref{fn:boldt}}$
+
+\FloatBarrier
+\needspace{0.32\textheight}
+
+```{r eco-trend-desc}
+basic_table(
+  tab = eco_trend_desc_data,
+  cap = ifelse(
+    french, "(ref:eco-trend-desc-cap-fr)", "(ref:eco-trend-desc-cap)"
+  ),
+  translate = FALSE
+) %>%
+  column_spec(1, width = "4cm") %>%
+  column_spec(2, width = "4cm") %>%
+  column_spec(3, width = "7.25cm")
+```
+
+\afterpage{\clearpage}
+\FloatBarrier

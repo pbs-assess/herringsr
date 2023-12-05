@@ -1240,33 +1240,9 @@ Status indicates if recent average values are
 greater than one SD above (plus), below (minus), or
 neigher the time series average.
 Note that
-pressure indicators are for Hecate Strait and Queen Charlotte Sound,
-responses are for Haida Gwaii (HG) herring, and
-sea surface temperature (SST) is from the
-\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}
-{AVHRR satellite}.
-Legend: prey abundance and biomass are in
-$\text{number}/\text{m}^3$ and $\text{mg}/\text{m}^3$, respectively,
-where $\text{m}$ is metres and $\text{mg}$ is milligrams
-(M. Galbraith and R.I. Perry, Fisheries and Oceans Canada (DFO), pers. comm.);
-Humpback Whale abundance
-(@best2015 for 2008 estimate,
-DFO survey (B. Wright, DFO, pers. comm.) for 2018 estimate, and
-other years interpolated using a 4% population growth rate
-[@ford2010, T. Doniol-Valcroze, DFO, pers. comm.]);
-Steller Sea Lion abundance is interpolated
-(S. Tucker, DFO, pers. comm.);
-Pacific Hake biomass is from the
-hake stock assessment and acoustic trawl survey
-(S. Johnson, Landmark Fisheries Research, pers. comm.);
-Arrowtooth Flounder, Spiny Dogfish, and Pacific Cod
-catch per unit effort (CPUE) is from the 
-International Pacific Halibut Commission (A. Edwards, DFO, pers. comm.);
-median HG herring spawning biomass and
-weight of age-3 herring [@dfo2021c]; and
-residuals from a double log-transformed length-weight regression
-for female HG herring
-(Boldt et al.).$^{\ref{fn:boldt}}$
+pressure indicators are for Hecate Strait and Queen Charlotte Sound, and
+responses are for Haida Gwaii (HG) herring.
+See Table \@ref(tab:eco-trend-desc) for description.
 
 (ref:eco-trend-cap-fr) Indicateurs de pression normalisés sélectionnés et
 réponses du hareng du Pacifique (par exemple, état et tendance)
@@ -1283,41 +1259,12 @@ supérieures à une ET au-dessus (plus), au-dessous (moins), ou
 ni l'un ni l'autre à la moyenne de la série chronologique.
 Il convient de noter que
 les indicateurs de pression concernent
-le détroit d'Hécate et le détroit de la Reine-Charlotte,
-les réponses sont pour le hareng de Haida Gwaii (HG), et
-la température de surface de la mer (TSM) provient du
-\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}
-{satellite AVHRR}.
-Légende : l'abondance et la biomasse des proies sont exprimées en
-$\text{number}/\text{m}^3$ et $\text{mg}/\text{m}^3$, respectivement,
-où $\text{m}$ représente les mètres et $\text{mg}$ les milligrammes.
-(M. Galbraith et R.I. Perry,
-Pêches et Océans Canada (MPO), comm. pers.) ;
-abondance des baleines à bosse
-(@best2015 pour l'estimation de 2008,
-enquête du MPO (B. Wright, MPO, comm. pers.)
-pour l'estimation de 2018, et
-autres années interpolées à l'aide d'un taux de croissance
-de la population de 4%
-[@ford2010, T. Doniol-Valcroze, MPO, comm. pers.]) ;
-l'abondance de l'otarie de Steller est interpolée
-(S. Tucker, MPO, comm. pers.) ;
-la biomasse du merlu du Pacifique provient de
-l'évaluation des stocks de merlu et de l'étude acoustique au chalut
-(S. Johnson, Landmark Fisheries Research, comm. pers.) ;
-plie à grande bouche, aiguillat commun du Pacifique Nord,
-et morue du Pacifique
-prise par unité d'effort (PUE) provient de la 
-International Pacific Halibut Commission (A. Edwards, MPO, comm. pers.) ;
-biomasse médiane de harengs reproducteurs HG et
-le poids du hareng d'âge 3 [@dfo2021c] ; et
-les résidus d'une régression longueur-poids à
-double transformation logarithmique
-pour le hareng femelle HG
-(Boldt et al.).$^{\ref{fn:boldt}}$
+le détroit d'Hécate et le détroit de la Reine-Charlotte, et
+les réponses sont pour le hareng de Haida Gwaii (HG).
+Voir le tableau \@ref(tab:eco-trend-desc) pour la description.
 
 ```{r eco-trend, fig.cap = ifelse(french, "(ref:eco-trend-cap-fr)", "(ref:eco-trend-cap)"), out.width = "100%"}
 knitr::include_graphics(
-  here(ifelse(french, "figures/eco_trend.png", "figures/eco_trend.png"))
+  here(ifelse(french, "figures/eco_trend_fr.png", "figures/eco_trend.png"))
 )
 ```

@@ -210,6 +210,8 @@ slides <- FALSE         # Make figures for powerpoint slides
 \newcommand{\BR}{\mli{BR}}
 \newcommand{\AVE}{\text{`r en2fr("AVE", translate = french)`}}
 
+<!-- Cludge to add manual table citations to the list (eco trends table) -->
+
 ---
 title: `r t_title`
 title_other: `r t_title_other`
@@ -223,6 +225,9 @@ region: `r t_region`
 cat_no: `r t_cat_no`
 process_month: `r t_process_month`
 csl: `r t_csl`
+nocite: |
+  @best2015
+  @ford2010
 ---
 
 <!-- Compile the PDF on the command line: -->
