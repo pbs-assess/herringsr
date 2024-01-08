@@ -1233,12 +1233,11 @@ Solid green lines are within one standard deviation (SD);
 the most recent five years are highlighted in green.
 Symbols on the right indicate trend (top) and status (bottom).
 Trend indicates a significant
-increase (up arrow), decrease (down), or
-neither in the last five years,
-where there are more than two years of data.
+increase (up arrow), decrease (down), or neither (horizontal)
+in the last five years, where there are more than two years of data.
 Status indicates if recent average values are
-greater than one SD above (plus), below (minus), or
-neigher the time series average.
+greater than one SD above (plus), below (minus), or neither (dot)
+the time series average.
 Note that
 pressure indicators are for Hecate Strait and Queen Charlotte Sound, and
 responses are for Haida Gwaii (HG) herring.
