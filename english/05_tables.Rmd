@@ -1124,9 +1124,9 @@ basic_table(
   ),
   translate = FALSE
 ) %>%
-  column_spec(1, width = "4cm") %>%
+  column_spec(1, width = "5cm") %>%
   column_spec(2, width = "4.75cm") %>%
-  column_spec(3, width = "6.5cm")
+  column_spec(3, width = "5.5cm")
 ```
 
 \afterpage{\clearpage}

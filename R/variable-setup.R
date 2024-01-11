@@ -233,7 +233,7 @@ inp_data <- read_csv(here("data", "input-data.csv"), col_types = cols())
 # Input data for table of ecosystem trends description
 eco_trend_desc_data <- read_delim(
   here("data", ifelse(french, "eco-trend-desc-fr.csv", "eco-trend-desc.csv")),
-  delim = ";", col_types = cols()
+  delim = ";", col_types = cols(), locale = locale(encoding = "Windows-1252")
 )
 
 # SARs - dependent values
