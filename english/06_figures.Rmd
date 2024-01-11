@@ -1251,11 +1251,11 @@ les cinq années les plus récentes sont surlignées en vert.
 Les symboles à droite indiquent la tendance (en haut) et l'état (en bas).
 La tendance indique une augmentation (flèche vers le haut),
 une diminution (flèche vers le bas) significative, ou
-ni l'un ni l'autre au cours des cinq dernières années,
+ni l'un ni l'autre (flèche horizontale) au cours des cinq dernières années,
 lorsqu'il y a plus de deux années de données.
 L'état indique si les valeurs moyennes récentes sont
 supérieures à une ET au-dessus (plus), au-dessous (moins), ou
-ni l'un ni l'autre à la moyenne de la série chronologique.
+ni l'un ni l'autre (point) à la moyenne de la série chronologique.
 Il convient de noter que
 les indicateurs de pression concernent
 le détroit d'Hécate et le détroit de la Reine-Charlotte, et
