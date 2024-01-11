@@ -105,4 +105,4 @@ recommendations from the aforementioned
 <!-- Mandatory last paragraph in this section -->
 This Science Response results from the Science Response Process of
 `r t_process_month` `r rmarkdown::metadata$process_day`,
-`r rmarkdown::metadata$process_year` on the `r t_title`.
+`r rmarkdown::metadata$process_year` on the `r rmarkdown::metadata$title`.

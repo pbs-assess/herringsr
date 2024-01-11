@@ -1,6 +1,6 @@
 ---
-t_title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia`:` Status in 2023 and forecast for 2024"
-t_title_other: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique `:` État en 2023 et prévisions pour 2024"
+title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia`:` Status in 2023 and forecast for 2024"
+french_title: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique `:` État en 2023 et prévisions pour 2024"
 assess_year: 2023
 work_done_year: 2024
 t_work_done_month: January
@@ -124,16 +124,12 @@ if (is.null(meta_out)) {
 }
 
 if (french) {
-  t_title <- metadata$t_title_other
-  t_title_other <- metadata$t_title
   t_title_short <- paste("État du hareng du Pacifique en", assess_yr,
                          "et prévisions pour", assess_yr + 1)
   t_isbn <- metadata$isbn_fr
   t_csl <- "csl/csas-french.csl"
   options(OutDec = ",")
 } else {
-  t_title <- metadata$t_title
-  t_title_other <- metadata$t_title_other
   t_title_short <- paste("Pacific Herring status in", assess_yr,
                          "and forecast for", assess_yr + 1)
   t_isbn <- metadata$isbn_en
@@ -213,8 +209,6 @@ slides <- FALSE         # Make figures for powerpoint slides
 <!-- Cludge to add manual table citations to the list (eco trends table) -->
 
 ---
-title: `r t_title`
-title_other: `r t_title_other`
 title_short: `r t_title_short`
 isbn: `r t_isbn`
 approver: `r t_approver`
@@ -232,3 +226,8 @@ nocite: |
 
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->
+
+<!-- Make French version: -->
+<!-- 1. Set `french` to `TRUE` -->
+<!-- 2. Select the French bibliography -->
+<!-- 3. Select French children in "_bookdown.yml" -->

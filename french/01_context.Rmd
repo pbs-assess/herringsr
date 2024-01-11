@@ -30,4 +30,5 @@ Les trajectoires estimées des stocks, l’état actuel des stocks pour `r asses
 <!-- Mandatory last paragraph in this section -->
 La présente réponse des Sciences découle de l’examen par les pairs régional du
 `r t_process_month` `r rmarkdown::metadata$process_day`,
-`r rmarkdown::metadata$process_year` sur le `r t_title`.
+`r rmarkdown::metadata$process_year`
+sur le `r rmarkdown::metadata$french_title`.
