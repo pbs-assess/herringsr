@@ -1,5 +1,27 @@
-Variable,Description,Source
-Spring sea surface temperature,Mars à mai,\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{satellite AVHRR}
-Summer sea surface temperature,Juin à août,\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{satellite AVHRR}
-Fall sea surface temperature,Septembre à novembre,\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{satellite AVHRR}
-Winter sea surface temperature,Décembre à février,\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{satellite AVHRR}
+Variable;Description;Source
+\enspace\emph{Environnement physique};\enspace;\enspace
+TSM au printemps;Mars à mai;\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{Satellite AVHRR}
+TSM en été;Juin à août;\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{Satellite AVHRR}
+TSM en automne;Septembre à novembre;\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{Satellite AVHRR}
+TSM en hiver;Décembre à février;\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{Satellite AVHRR}
+\enspace\emph{Proies};\enspace;\enspace
+Abondance moyenne de copépodes boréaux;\enspace;M. Galbraith et R.I. Perry, MPO, comm. pers.
+Biomasse moyenne de copépodes boréaux;\enspace;M. Galbraith et R.I. Perry, MPO, comm. pers.
+Abondance moyenne de copépodes du sud;\enspace;M. Galbraith et R.I. Perry, MPO, comm. pers.
+Biomasse moyenne de copépodes du sud;\enspace;M. Galbraith et R.I. Perry, MPO, comm. pers.
+Abondance moyenne de copépodes subarctiques;\enspace;M. Galbraith et R.I. Perry, MPO, comm. pers.
+Biomasse moyenne de copépodes subarctiques;\enspace;M. Galbraith et R.I. Perry, MPO, comm. pers.
+Abondance moyenne du zooplankton total;\enspace;M. Galbraith et R.I. Perry, MPO, comm. pers.
+Biomasse moyenne du zooplankton total;\enspace;M. Galbraith et R.I. Perry, MPO, comm. pers.
+\enspace\emph{Prédateurs};\enspace;\enspace
+Abondance des baleines à bosse;"Interpolation à partir d'un taux de croissance démographique de 4\% (Ford et al. 2010; T. Doniol-Valcroze, MPO, comm. pers.)";Best et al. (2015) pour l'estimation de 2008 et enquête du MPO pour l'estimation de 2018 (B. Wright, MPO, comm. pers.)
+Abondance de l'otarie de Steller;Interpolation à partir de données recueillies tous les deux à cinq ans;S. Tucker, MPO, comm. pers.
+Biomasse du merlu du Pacifique;Évaluation des stocks de merlu et étude acoustique au chalut;S. Johnson, Landmark Fisheries Research, comm. pers.
+PUE de la plie à grande bouche;PUE de l'IPHC;A. Edwards, MPO, comm. pers.
+PUE de l'aiguilland commun du Pacifique Nord;PUE de l'IPHC;A. Edwards, MPO, comm. pers.
+PUE du morue du Pacifique;PUE de l'IPHC;A. Edwards, MPO, comm. pers.
+\enspace\emph{Hareng du Pacifique de HG};\enspace;\enspace
+Biomasse médiane du frai;Estimation de la biomasse du frai à partir de l'évaluation du stock de hareng du Pacifique;Boldt et al.$^{\ref{fn:boldt}}$
+Poids moyen (âge 3);Estimation du poids des poissons d'âge 3 à partir de l'évaluation du stock de hareng du Pacifique;Boldt et al.$^{\ref{fn:boldt}}$
+Moyenne des résidus longueur-poids des femelles;Résidus d'une régression longueur-poids à double transformation logarithmique;Boldt et al.$^{\ref{fn:boldt}}$
+

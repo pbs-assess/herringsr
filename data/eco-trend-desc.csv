@@ -5,22 +5,22 @@ Summer SST;June to August;\link{https://www.avl.class.noaa.gov/release/data_avai
 Fall SST;September to November;\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{AVHRR satellite}
 Winter SST;December to February;\link{https://www.avl.class.noaa.gov/release/data_available/avhrr/index.htm}{AVHRR satellite}
 \enspace\emph{Prey};\enspace;\enspace
-Mean boreal copepod abundance;" ";M. Galbraith and R.I. Perry, DFO, pers. comm.
-Mean boreal copepod biomass;" ";M. Galbraith and R.I. Perry, DFO, pers. comm.
-Mean southern copepod abundance;" ";M. Galbraith and R.I. Perry, DFO, pers. comm.
-Mean southern copepod biomass;" ";M. Galbraith and R.I. Perry, DFO, pers. comm.
-Mean subarctic copepod abundance;" ";M. Galbraith and R.I. Perry, DFO, pers. comm.
-Mean subarctic copepod biomass;" ";M. Galbraith and R.I. Perry, DFO, pers. comm.
-Mean total zooplankton abundance;" ";M. Galbraith and R.I. Perry, DFO, pers. comm.
-Mean total zooplankton biomass;" ";M. Galbraith and R.I. Perry, DFO, pers. comm.
+Mean boreal copepod abundance;\enspace;M. Galbraith and R.I. Perry, DFO, pers. comm.
+Mean boreal copepod biomass;\enspace;M. Galbraith and R.I. Perry, DFO, pers. comm.
+Mean southern copepod abundance;\enspace;M. Galbraith and R.I. Perry, DFO, pers. comm.
+Mean southern copepod biomass;\enspace;M. Galbraith and R.I. Perry, DFO, pers. comm.
+Mean subarctic copepod abundance;\enspace;M. Galbraith and R.I. Perry, DFO, pers. comm.
+Mean subarctic copepod biomass;\enspace;M. Galbraith and R.I. Perry, DFO, pers. comm.
+Mean total zooplankton abundance;\enspace;M. Galbraith and R.I. Perry, DFO, pers. comm.
+Mean total zooplankton biomass;\enspace;M. Galbraith and R.I. Perry, DFO, pers. comm.
 \enspace\emph{Predators};\enspace;\enspace
 Humpback Whale abundance;"Interpolated using a 4\% population growth rate (Ford et al. 2010; T. Doniol-Valcroze, DFO, pers. comm.)";Best et al. (2015) for 2008 estimate and DFO survey for 2018 estimate (B. Wright, DFO, pers. comm.)
 Steller Sea Lion abundance;Interpolated from data every two to five years;S. Tucker, DFO, pers. comm.
 Pacific Hake biomass;Hake stock assessment and acoustic trawl survey;S. Johnson, Landmark Fisheries Research, pers. comm.
-Arrowtooth Flounder CPUE;Catch per unit effort from the IPHC;A. Edwards, DFO, pers. comm.
-North Pacific Spiny Dogfish CPUE;Catch per unit effort from the IPHC;A. Edwards, DFO, pers. comm.
-Pacific Cod CPUE;Catch per unit effort from the IPHC;A. Edwards, DFO, pers. comm.
+Arrowtooth Flounder CPUE;CPUE from the IPHC;A. Edwards, DFO, pers. comm.
+North Pacific Spiny Dogfish CPUE;CPUE from the IPHC;A. Edwards, DFO, pers. comm.
+Pacific Cod CPUE;CPUE from the IPHC;A. Edwards, DFO, pers. comm.
 \enspace\emph{HG Pacific Herring};\enspace;\enspace
-Median spawning biomass;Pacific Herring stock assessment;Boldt et al.$^{\ref{fn:boldt}}$
-Mean weight (age-3);Pacific Herring stock assessment;Boldt et al.$^{\ref{fn:boldt}}$
-Mean female length-weight residuals;Double log-transformed length-weight regression;Boldt et al.$^{\ref{fn:boldt}}$
+Median spawning biomass;Estimated spawning biomass from the Pacific Herring stock assessment;Boldt et al.$^{\ref{fn:boldt}}$
+Mean weight (age-3);Estimated weight of age-3 fish from the Pacific Herring stock assessment;Boldt et al.$^{\ref{fn:boldt}}$
+Mean female length-weight residuals;Residuals from a double log-transformed length-weight regression;Boldt et al.$^{\ref{fn:boldt}}$
