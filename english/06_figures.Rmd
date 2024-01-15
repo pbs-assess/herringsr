@@ -1223,9 +1223,13 @@ knitr::include_graphics(
 
 <!-- TODO: -->
 <!-- Remove horizontal lines and dots (figure and caption) -->
-<!-- Define seasons (Spring, Summer, Fall, Winter) -->
 <!-- Add "Copied with permission from (Boldt et al.).$^{\ref{fn:boldt}}$" -->
 <!-- Add x- and y-axes labels -->
+<!-- Change "sea surface temperature" to "SST" -->
+<!-- Change "Mean southern copepod biomass mg" to "Mean southern copepod biomass" -->
+<!-- Change "Median Pacific Herring spawning biomass" to "Median spawning biomass" -->
+<!-- Change "Mean weight of age-3 Pacific Herring" to "Mean weight (age-3)" -->
+<!-- Change "Mean female Pacific Herring length-weight residuals" to "Mean female length-weight residuals" -->
 
 (ref:eco-trend-cap) Selected standardized pressure indicators and 
 Pacific Herring responses (e.g., status and trend) in the last five years.
