@@ -166,7 +166,7 @@ t_cat_no <- paste0(
 
 ```{r models, cache=FALSE}
 models_dir <- here("models")
-major_stock_dir <- list("HG", "PRD", "CC", "SoG", "WCVI")
+major_stock_dir <- list("HG", "PRD", "CC", "WCVI")
 minor_stock_dir <- list("A27", "A2W")
 special_stock_dir <- list("A10")
 

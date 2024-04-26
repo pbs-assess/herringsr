@@ -68,14 +68,6 @@ mp.lst.cc <- get_hcr(sbt.cc, sbo.cc, fn = here("data", "mp-cc.csv"))
 mp.vals.cc <- mp.lst.cc[[1]]
 mp.cc <- mp.lst.cc[[2]]
 
-sbt_sbo.sog <- get_sbt_sbo("SoG")
-sbt.sog <- sbt_sbo.sog[[1]]
-sbo.sog <- sbt_sbo.sog[[2]]
-rel.sbo.sog <- rep(1, length(sbo.sog))
-mp.lst.sog <- get_hcr(sbt.sog, sbo.sog, fn = here("data", "mp-sog.csv"))
-mp.vals.sog <- mp.lst.sog[[1]]
-mp.sog <- mp.lst.sog[[2]]
-
 sbt_sbo.wcvi <- get_sbt_sbo("WCVI")
 sbt.wcvi <- sbt_sbo.wcvi[[1]]
 sbo.wcvi <- sbt_sbo.wcvi[[2]]
@@ -83,22 +75,6 @@ rel.sbo.wcvi <- rep(1, length(sbo.wcvi))
 mp.lst.wcvi <- get_hcr(sbt.wcvi, sbo.wcvi, fn = here("data", "mp-wcvi.csv"))
 mp.vals.wcvi <- mp.lst.wcvi[[1]]
 mp.wcvi <- mp.lst.wcvi[[2]]
-
-sog.min.esc.rel.50.hr.10.cap.2 <- get_hcr_tac_hr(
-  hcr(
-    sbt.sog,
-    rel.sbo.sog,
-    tibble(
-      esc = 0.5,
-      abs_esc = 0,
-      cap = 2.0,
-      hr = 0.1,
-      lrp = NA,
-      usr = NA,
-      num_end_yrs = NA
-    )
-  )
-)
 
 wcvi.min.esc.rel.50.hr.10.cap.2 <- get_hcr_tac_hr(
   hcr(
@@ -116,22 +92,6 @@ wcvi.min.esc.rel.50.hr.10.cap.2 <- get_hcr_tac_hr(
   )
 )
 
-sog.min.hs.3060.hr.20 <- get_hcr_tac_hr(
-  hcr(
-    sbt.sog,
-    sbo.sog,
-    tibble(
-      esc = NA,
-      abs_esc = NA,
-      cap = NA,
-      hr = 0.2,
-      lrp = 0.3,
-      usr = 0.6,
-      num_end_yrs = NA
-    )
-  )
-)
-
 wcvi.min.hs.3060.hr.20 <- get_hcr_tac_hr(
   hcr(
     sbt.wcvi,
@@ -140,22 +100,6 @@ wcvi.min.hs.3060.hr.20 <- get_hcr_tac_hr(
       esc = NA,
       abs_esc = NA,
       cap = 0.0,
-      hr = 0.2,
-      lrp = 0.3,
-      usr = 0.6,
-      num_end_yrs = NA
-    )
-  )
-)
-
-sog.min.hs.3060.hr.20.cap.30 <- get_hcr_tac_hr(
-  hcr(
-    sbt.sog,
-    sbo.sog,
-    tibble(
-      esc = NA,
-      abs_esc = NA,
-      cap = 30.0,
       hr = 0.2,
       lrp = 0.3,
       usr = 0.6,
@@ -180,22 +124,6 @@ wcvi.min.hs.5060.hr.10.cap.2 <- get_hcr_tac_hr(
   )
 )
 
-sog.min.esc.rel.50.hr.10.cap.2.slow <- get_hcr_tac_hr(
-  hcr(
-    sbt.sog,
-    sbo.sog,
-    tibble(
-      esc = 0.5,
-      abs_esc = 0,
-      cap = 2.0,
-      hr = 0.1,
-      lrp = NA,
-      usr = NA,
-      num_end_yrs = 3
-    )
-  )
-)
-
 wcvi.min.esc.rel.50.hr.10.cap.2.slow <- get_hcr_tac_hr(
   hcr(
     sbt.wcvi,
@@ -207,22 +135,6 @@ wcvi.min.esc.rel.50.hr.10.cap.2.slow <- get_hcr_tac_hr(
       hr = 0.1,
       lrp = NA,
       usr = NA,
-      num_end_yrs = 3
-    )
-  )
-)
-
-sog.min.hs.3060.hr.20.slow <- get_hcr_tac_hr(
-  hcr(
-    sbt.sog,
-    sbo.sog,
-    tibble(
-      esc = NA,
-      abs_esc = NA,
-      cap = NA,
-      hr = 0.2,
-      lrp = 0.3,
-      usr = 0.6,
       num_end_yrs = 3
     )
   )
@@ -244,22 +156,6 @@ wcvi.min.hs.3060.hr.20.slow <- get_hcr_tac_hr(
   )
 )
 
-sog.min.hs.3060.hr.10.cap.2.slow <- get_hcr_tac_hr(
-  hcr(
-    sbt.sog,
-    sbo.sog,
-    tibble(
-      esc = NA,
-      abs_esc = NA,
-      cap = 0.2,
-      hr = 0.1,
-      lrp = 0.3,
-      usr = 0.6,
-      num_end_yrs = 3
-    )
-  )
-)
-
 wcvi.min.hs.3060.hr.10.cap.2.slow <- get_hcr_tac_hr(
   hcr(
     sbt.wcvi,
@@ -272,54 +168,6 @@ wcvi.min.hs.3060.hr.10.cap.2.slow <- get_hcr_tac_hr(
       lrp = 0.3,
       usr = 0.6,
       num_end_yrs = 3
-    )
-  )
-)
-
-sog.min.esc.rel.30.hr.10 <- get_hcr_tac_hr(
-  hcr(
-    sbt.sog,
-    rel.sbo.sog,
-    tibble(
-      esc = 0.3,
-      abs_esc = 0,
-      cap = NA,
-      hr = 0.1,
-      lrp = NA,
-      usr = NA,
-      num_end_yrs = NA
-    )
-  )
-)
-
-sog.min.esc.rel.30.hr.20 <- get_hcr_tac_hr(
-  hcr(
-    sbt.sog,
-    rel.sbo.sog,
-    tibble(
-      esc = 0.3,
-      abs_esc = 0,
-      cap = NA,
-      hr = 0.2,
-      lrp = NA,
-      usr = NA,
-      num_end_yrs = NA
-    )
-  )
-)
-
-sog.min.hs.3040.hr.30 <- get_hcr_tac_hr(
-  hcr(
-    sbt.sog,
-    sbo.sog,
-    tibble(
-      esc = NA,
-      abs_esc = NA,
-      cap = NA,
-      hr = 0.3,
-      lrp = 0.3,
-      usr = 0.4,
-      num_end_yrs = NA
     )
   )
 )
@@ -420,39 +268,5 @@ wcvi.consTAC.cap.1 <- get_hcr_tac_hr(
     )
   )
 )
-
-sog.min.hs.3060.hr.10 <- get_hcr_tac_hr(
-  hcr(
-    sbt.sog,
-    sbo.sog,
-    tibble(
-      esc = NA,
-      abs_esc = NA,
-      cap = NA,
-      hr = 0.1,
-      lrp = 0.3,
-      usr = 0.6,
-      num_end_yrs = NA
-    )
-  )
-)
-
-sog.min.hs.3060.hr.15 <- get_hcr_tac_hr(
-  hcr(
-    sbt.sog,
-    sbo.sog,
-    tibble(
-      esc = NA,
-      abs_esc = NA,
-      cap = NA,
-      hr = 0.15,
-      lrp = 0.3,
-      usr = 0.6,
-      num_end_yrs = NA
-    )
-  )
-)
-
-hcr.sog <- sog.min.hs.3060.hr.20.cap.30
 
 hcr.wcvi <- wcvi.min.hs.5060.hr.10.cap.2

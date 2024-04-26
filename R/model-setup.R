@@ -1,8 +1,3 @@
-# Warning if using 32-bit R
-if (.Machine$sizeof.pointer == 4) {
-  warning("May run out of memory in 32-bit R")
-}
-
 # Years and proportion for productive period
 prod_period <- list(
   HG = list(
@@ -22,12 +17,6 @@ prod_period <- list(
     region_name = "Central Coast",
     yrs = 1990:1999,
     prop = 1.0
-  ),
-  SoG = list(
-    region = "SoG",
-    region_name = "Strait of Georgia",
-    yrs = 1988:2007,
-    prop = 0.8
   ),
   WCVI = list(
     region = "WCVI",

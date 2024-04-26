@@ -547,50 +547,6 @@ SOK removals are not included in the estimation of $U_t$.
 
 `r stock_status_text(SAR = "CC", this_yr = assess_yr, translate = french)`
 
-### Strait of Georgia
-
-The estimated spawning biomass for the SoG SAR
-shows a historical low in the late 1960s,
-driven by high catches, lower than average estimated recruitment, and
-increasing estimated natural mortality
-(Figure \@ref(fig:storyboard-sog)a, b, e).
-In the 1970's estimated natural mortality declined, and until recent years 
-has been relatively stable (Figure \@ref(fig:storyboard-sog)b).
-Most of the fluctuations in estimated spawning biomass have been 
-attributed to estimated recruitment, with lower than average recruitments 
-in the 1970s, 1980s, and in 2007 and 2009,
-all of which mirror dips in spawning biomass.
-Above average recruitments occurred in the intervening times corresponding to
-biomass peaks (Figure \@ref(fig:storyboard-sog)a, c).
-Three of the highest estimated recruitment years (2019, 2020, and 2022) have 
-occurred in the last 5 years. 
-While 2020 is one of the three highest peaks in estimated spawning biomass, 
-rising natural mortality has moderated potential gains in estimated spawning 
-biomass (Figure \@ref(fig:storyboard-sog)a, b, c). 
-This plays out in estimated production which was high in 2019,
-declined to a negative value in 2021, 
-and is slightly positive for the 2022 (Figure \@ref(fig:storyboard-sog)f).
-In 2023, the estimated spawning biomass was similar to the last two years and
-was consistent with the forecast.
-
-The large opposing fluctuations in estimated recruitment and 
-natural mortality are likely contributing to
-increased uncertainty in spawning biomass and
-forecast biomass `r paste0("$\\SB_{", assess_yr + 1, "}$")`
-(Figure \@ref(fig:storyboard-sog)d).
-
-Commercial fisheries have occurred annually in SoG since the early-1970s
-(following the stock collapse of the late 1960s).
-Since implementing the fixed cutoff HCR in 1986,
-the effective harvest rate $U_t$ is estimated to fluctuate
-above and below the `r target_hr*100`% target rate,
-with median estimates distributed evenly above and below `r target_hr*100`%
-(Figure \@ref(fig:harvest-rate)).
-The model estimates the median effective harvest rate exceeded 25%
-in 2006 and 2017.
-
-`r stock_status_text(SAR = "SoG", this_yr = assess_yr, translate = french)`
-
 ### West Coast of Vancouver Island
 
 The time series of estimated spawning biomass reached an estimated peak in the 
@@ -785,63 +741,6 @@ Finally, DFO acknowledges commitment to the Heiltsuk Nation for
 the development of a Joint Fisheries Management Plan for Pacific Herring
 in the Central Coast in `r assess_yr + 1`.
 Results presented here may inform this ongoing commitment.
-
-### Strait of Georgia
-
-The SoG has the largest biomass of the major SARs
-and currently comprises approximately 50% of the total coast wide biomass 
-(Figure \@ref(fig:coastwide-biomass-catch)).
-Estimated spawning biomass trends remained stable and high from
-2011 through 2020 despite increases in estimated natural mortality rates
-in the last three to five years (Figure \@ref(fig:storyboard-sog)b).
-SoG MP evaluations are implemented using the Herring OM [@benson2022].
-MPs were first presented in 2018 [@dfo2019a]
-and updates in 2020 [@dfo2021b] and in 2022 [@dfo2022b].
-Each update shows differences in MP performance against
-the conservation objective for both OM scenarios.
-Initial simulations show the probability of meeting the conservation 
-objective ranges from 91% to 100% [@dfo2019a], depending on the scenario and MP.
-Subsequent updates in 2020 show a decline in conservation performance with
-probabilities ranging from 75% to 88% (DDM and DIM only, @dfo2021b), and the
-updates in 2022 [@dfo2022b], included here,
-show probabilities ranging from 67% to 80% (Table \@ref(tab:decision-sog)).
-
-These comparisons highlight the importance of considering
-the lessons learned from the MSE process (Section "\nameref{sec:mse}")
-when selecting or rejecting MPs.
-In this case it may be important to consider how the recent MP updates 
-may be influenced by the last three to five years
-of natural mortality trends used to condition the OM
-(Table \@ref(tab:decision-sog)), as well as to consider how biomass trends
-have responded under continual annual commercial fisheries. 
-
-SOG MP evaluations show the conservation objective is met with the
-minimum 75% probability when simulating MPs with 10% and 15% harvest rates.
-However MPs with 20% harvest rates 
-(e.g., HS30-60_HR20 and MinE30_HR20),
-which previously met the minimum 75% probability level
-(@dfo2019a and @dfo2021b) now show probability values ranging
-from 67% to 74% (across both DDM and DIM OMs).
-
-In situations where estimated natural mortality trends show
-a sudden increasing or decreasing trend in the terminal three to five years,
-MP evaluations may more reliably reflect
-the relative ranking of MP performance, as opposed to
-realized short term performance.
-In all cases the simulated MP performance from previous years can inform 
-selection or elimination of MPs.
-
-`r proj_biomass_text(SAR = "SoG", next_yr = assess_yr + 1, translate = french)`
-
-`r mean_harvest_text(SAR = "SoG", translate = french)`
-Harvest options for `r assess_yr + 1`, resulting from simulation-tested MPs,
-are presented in Table \@ref(tab:decision-sog).
-These options reflect application of MPs to the `r assess_yr + 1`
-forecast biomass for SoG,
-whereby each MP meets (or has been shown to meet) the conservation objective 
-with a minimum 75% probability.
-All MPs and scenarios listed in Table \@ref(tab:decision-sog) include
-updated performance metrics under both scenarios [@dfo2021b].
 
 ### West Coast of Vancouver Island
 
