@@ -71,6 +71,7 @@ regions <- tribble(
   7,      "A2W",                    "Area 2 West",   "Minor",
   8,      "A10",                        "Area 10",   "Special"
 )
+if(!keep_sog) regions <- filter(.data = regions, Region != "SoG")
 regions$Region <- en2fr(regions$Region, french)
 regions$RegionName <- en2fr(regions$RegionName, french)
 
@@ -240,5 +241,5 @@ eco_trend_desc_data <- read_delim(
 hg_vars <- get_vars("HG", french = french)
 prd_vars <- get_vars("PRD", french = french)
 cc_vars <- get_vars("CC", french = french)
-sog_vars <- get_vars("SoG", french = french)
+# if(!keep_sog) sog_vars <- get_vars("SoG", french = french)
 wcvi_vars <- get_vars("WCVI", french = french)

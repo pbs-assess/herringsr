@@ -1,8 +1,3 @@
-# Warning if using 32-bit R
-if (.Machine$sizeof.pointer == 4) {
-  warning("May run out of memory in 32-bit R")
-}
-
 # Years and proportion for productive period
 prod_period <- list(
   HG = list(
@@ -36,6 +31,8 @@ prod_period <- list(
     prop = 1.0
   )
 )
+
+if(!keep_sog) prod_period$SoG <- NULL
 
 # Directories and names of stocks
 major_model_dirs <- lapply(

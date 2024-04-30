@@ -207,7 +207,7 @@ Remarque: l’indice du frai n’est pas mis à l’échelle
 
 \needspace{0.32\textheight}
 
-```{r spawn-index-sog}
+```{r spawn-index-sog, eval = keep_sog}
 spawn_index_by_area_table(
   tab = ps[[en2fr("SoG", french)]],
   cap = ifelse(
@@ -367,7 +367,7 @@ Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r sog-parameter-est, results = 'asis', echo = FALSE}
+```{r sog-parameter-est, results = 'asis', echo = FALSE, eval = keep_sog}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.parameters.est.table(
   model = major_models[[model_ind]],
@@ -513,7 +513,7 @@ Voir le tableau \@ref(tab:hg-recruitment) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r sog-recruitment, results = 'asis', echo = FALSE}
+```{r sog-recruitment, results = 'asis', echo = FALSE, eval = keep_sog}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.value.table(
   model = major_models[[model_ind]],
@@ -678,7 +678,7 @@ Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r sog-spawning-biomass-depletion, results = 'asis', echo = FALSE}
+```{r sog-spawning-biomass-depletion, results = 'asis', echo = FALSE, eval = keep_sog}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.biomass.depletion.table(
   model = major_models[[model_ind]],
@@ -842,7 +842,7 @@ Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r ref-points-sog, results = 'asis', echo = FALSE}
+```{r ref-points-sog, results = 'asis', echo = FALSE, eval = keep_sog}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.ref.points.table(
   model = major_models[[model_ind]],
@@ -1041,7 +1041,7 @@ Voir le tableau \@ref(tab:decision-prd) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r decision-sog, results = 'asis', echo = FALSE}
+```{r decision-sog, results = 'asis', echo = FALSE, eval = keep_sog}
 decision_tables_mp(
   df = mp.sog,
   xcaption = ifelse(

@@ -862,7 +862,7 @@ create_slide_figures(model_index = model_ind)
 ```
 
 <!-- Strait of Georgia Storyboard -->
-```{r scaled-abundance-sog, fig.show = "hide", fig.asp = 1}
+```{r scaled-abundance-sog, fig.show = "hide", fig.asp = 1, eval = keep_sog}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 sbt_yrs <- as.numeric(colnames(major_models[[model_ind]]$mcmccalcs$sbt.quants))
 xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
@@ -880,7 +880,7 @@ plot_a_sog <- plot_scaled_abundance(
 ```
 
 <!-- Strait of Georgia Storyboard -->
-```{r natural-mortality-sog, fig.show = "hide", fig.asp = 1}
+```{r natural-mortality-sog, fig.show = "hide", fig.asp = 1, eval = keep_sog}
 plot_b_sog <- plot_natural_mortality(
   model = major_models[[model_ind]],
   prod_yrs = prod_period[[model_ind]]$yrs,
@@ -891,7 +891,7 @@ plot_b_sog <- plot_natural_mortality(
 ```
 
 <!-- Strait of Georgia Storyboard -->
-```{r recruitment-sog, fig.show = "hide", fig.asp = 1}
+```{r recruitment-sog, fig.show = "hide", fig.asp = 1, eval = keep_sog}
 plot_c_sog <- plot_recruitment(
   model = major_models[[model_ind]],
   prod_yrs = prod_period[[model_ind]]$yrs,
@@ -901,7 +901,7 @@ plot_c_sog <- plot_recruitment(
 ```
 
 <!-- Strait of Georgia Storyboard -->
-```{r biomass-catch-sog, fig.show = "hide", fig.asp = 1}
+```{r biomass-catch-sog, fig.show = "hide", fig.asp = 1, eval = keep_sog}
 plot_d_sog <- plot_biomass_catch(
   model = major_models[[model_ind]],
   catch_df = ct,
@@ -914,7 +914,7 @@ plot_d_sog <- plot_biomass_catch(
 ```
 
 <!-- Strait of Georgia Storyboard -->
-```{r recruitment-devs-sog, fig.show = "hide", fig.asp = 1}
+```{r recruitment-devs-sog, fig.show = "hide", fig.asp = 1, eval = keep_sog}
 plot_e_sog <- plot_recruitment_devs(
   model = major_models[[model_ind]],
   run_mean_yrs = nRollRec,
@@ -925,7 +925,7 @@ plot_e_sog <- plot_recruitment_devs(
 ```
 
 <!-- Strait of Georgia Storyboard -->
-```{r biomass-phase-sog, fig.show = "hide", fig.asp = 1}
+```{r biomass-phase-sog, fig.show = "hide", fig.asp = 1, eval = keep_sog}
 plot_f_sog <- plot_biomass_phase(
   model = major_models[[model_ind]],
   catch_df = ct,
@@ -947,7 +947,7 @@ sortie du modèle statistique de capture-âge pour le hareng du Pacifique
 de `r major_start_yr` à `r major_end_yr`.
 \storyboardfr{}
 
-```{r storyboard-sog, fig.asp=ifelse(french, 1.0, 1.05), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)")}
+```{r storyboard-sog, fig.asp=ifelse(french, 1.0, 1.05), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)"), eval = keep_sog}
 cowplot::plot_grid(
   plot_a_sog,
   plot_b_sog,
@@ -961,11 +961,11 @@ cowplot::plot_grid(
 )
 ```
 
-```{r ppt-plots-sog, fig.asp= 1.1, fig.cap = "(ref:storyboard-sog-cap)", eval= slides}
+```{r ppt-plots-sog, fig.asp= 1.1, fig.cap = "(ref:storyboard-sog-cap)", eval= FALSE}
 create_slide_figures(model_index = model_ind)
 ```
 
-```{r FSAR-plots-sog, fig.asp= 1.1, eval= TRUE}
+```{r FSAR-plots-sog, fig.asp= 1.1, eval= FALSE}
 create_FSAR_figures(model_index = model_ind)
 ```
 
