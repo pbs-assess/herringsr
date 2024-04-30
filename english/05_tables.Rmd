@@ -181,6 +181,45 @@ spawn_index_by_area_table(
 
 \afterpage{\clearpage}
 
+(ref:spawn-index-sog-cap) Strait of Georgia SAR: 
+spawn index in tonnes for Pacific Herring and
+proportion of  spawn index by Group 
+from `r major_end_yr - num_yrs_tab` to `r major_end_yr`.
+Legend: '14&17' is Statistical Areas 14 and 17 (excluding Section 173);
+'ESoG' is eastern Strait of Georgia;
+'Lazo' is above Cape Lazo; and
+'SDodd' is South of Dodd Narrows.
+Note: the 'spawn index' is not scaled by the spawn survey scaling parameter 
+$q$, and 'NA' indicates that data are not available.
+
+(ref:spawn-index-sog-cap-fr) RES  du détroit de Georgie:
+indice du frai en tonnes et proportion de l’indice du frai
+par groupe pour le hareng du Pacifique
+de `r major_end_yr - num_yrs_tab` à `r major_end_yr`.
+Légende: «14&17» fait référence aux zones statistiques 14 et 17
+(à l’exclusion de la section 173);
+«EDG» fait référence à l’est du détroit de Géorgie;
+«Lazo» fait référence au-dessus du cap Lazo; et
+«SDodd» fait référence au sud du passage Dodd.
+Remarque: l’indice du frai n’est pas mis à l’échelle
+à l’aide du paramètre de mise à l’échelle du relevé du frai $q$, et
+«NA» indique que les données ne sont pas disponibles.
+
+\needspace{0.32\textheight}
+
+```{r spawn-index-sog, eval = keep_sog}
+spawn_index_by_area_table(
+  tab = ps[[en2fr("SoG", french)]],
+  cap = ifelse(
+    french, "(ref:spawn-index-sog-cap-fr)", "(ref:spawn-index-sog-cap)"
+  ),
+  first_yr = major_end_yr - num_yrs_tab,
+  translate = french
+)
+```
+
+\afterpage{\clearpage}
+
 (ref:spawn-index-wcvi-cap) West Coast of Vancouver Island SAR: 
 spawn index in tonnes for Pacific Herring and
 proportion of  spawn index by Statistical Area 
@@ -318,6 +357,30 @@ make.parameters.est.table(
 
 \afterpage{\clearpage}
 
+(ref:sog-parameter-est-cap) Strait of Georgia SAR:
+key parameters in the Pacific Herring statistical catch-age model.
+See Table \@ref(tab:hg-parameter-est) for description.
+
+(ref:sog-parameter-est-cap-fr) RES du détroit de Georgie:
+paramètres clés du modèle statistique de capture-âge du hareng du Pacifique.
+Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
+
+\needspace{0.32\textheight}
+
+```{r sog-parameter-est, results = 'asis', echo = FALSE, eval = keep_sog}
+model_ind <- match(en2fr("SoG", french), major_regions_short)
+make.parameters.est.table(
+  model = major_models[[model_ind]],
+  xcaption = ifelse(
+    french, "(ref:sog-parameter-est-cap-fr)", "(ref:sog-parameter-est-cap)"
+  ),
+  xlabel = "tab:sog-parameter-est",
+  translate = french
+)
+```
+
+\afterpage{\clearpage}
+
 (ref:wcvi-parameter-est-cap) West Coast of Vancouver Island SAR:
 key parameters in the Pacific Herring statistical catch-age model.
 See Table \@ref(tab:hg-parameter-est) for description.
@@ -430,6 +493,36 @@ make.value.table(
     french, "(ref:cc-recruitment-cap-fr)", "(ref:cc-recruitment-cap)"
   ),
   xlabel = "tab:cc-recruitment",
+  translate = french
+)
+```
+
+\afterpage{\clearpage}
+
+(ref:sog-recruitment-cap) Strait of Georgia SAR:
+age-`r age_first` recruitment
+from `r major_end_yr - num_yrs_tab` to `r major_end_yr` 
+for the Pacific Herring statistical catch-age model.
+See Table \@ref(tab:hg-recruitment) for description.
+
+(ref:sog-recruitment-cap-fr) RES du détroit de Georgie:
+age-`r age_first` recrutement
+de `r major_end_yr - num_yrs_tab` à `r major_end_yr`
+pour le modèle statistique de capture-âge du hareng du Pacifique.
+Voir le tableau \@ref(tab:hg-recruitment) pour la description.
+
+\needspace{0.32\textheight}
+
+```{r sog-recruitment, results = 'asis', echo = FALSE, eval = keep_sog}
+model_ind <- match(en2fr("SoG", french), major_regions_short)
+make.value.table(
+  model = major_models[[model_ind]],
+  type = 2,
+  syr = major_end_yr - num_yrs_tab,
+  xcaption = ifelse(
+    french, "(ref:sog-recruitment-cap-fr)", "(ref:sog-recruitment-cap)"
+  ),
+  xlabel = "tab:sog-recruitment",
   translate = french
 )
 ```
@@ -571,6 +664,37 @@ make.biomass.depletion.table(
 
 \afterpage{\clearpage}
 
+(ref:sog-spawning-biomass-depletion-cap) Strait of Georgia SAR:
+spawning biomass and depletion from 
+`r major_end_yr - num_yrs_tab` to `r major_end_yr` for the
+Pacific Herring statistical catch-age model.
+See Table \@ref(tab:hg-spawning-biomass-depletion) for description.
+
+(ref:sog-spawning-biomass-depletion-cap-fr) RES du détroit de Georgie:
+biomasse reproductrice et déplétion de
+`r major_end_yr - num_yrs_tab` à `r major_end_yr` pour le
+modèle statistique de capture-âge du hareng du Pacifique.
+Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
+
+\needspace{0.32\textheight}
+
+```{r sog-spawning-biomass-depletion, results = 'asis', echo = FALSE, eval = keep_sog}
+model_ind <- match(en2fr("SoG", french), major_regions_short)
+make.biomass.depletion.table(
+  model = major_models[[model_ind]],
+  syr = major_end_yr - num_yrs_tab,
+  xcaption = ifelse(
+    french,
+    "(ref:sog-spawning-biomass-depletion-cap-fr)",
+    "(ref:sog-spawning-biomass-depletion-cap)"
+  ),
+  xlabel = "tab:sog-spawning-biomass-depletion",
+  translate = french
+)
+```
+
+\afterpage{\clearpage}
+
 (ref:wcvi-spawning-biomass-depletion-cap) West Coast of Vancouver Island SAR:
 spawning biomass and depletion from 
 `r major_end_yr - num_yrs_tab` to `r major_end_yr` for the
@@ -701,6 +825,33 @@ make.ref.points.table(
     "(ref:ref-points-cc-cap)"
   ),
   xlabel = "tab:ref-points-cc",
+  translate = french
+)
+```
+
+\afterpage{\clearpage}
+
+(ref:ref-points-sog-cap) Strait of Georgia SAR:
+proposed reference points for the Pacific Herring statistical catch-age model.
+See Table \@ref(tab:ref-points-hg) for description.
+
+(ref:ref-points-sog-cap-fr) RES du détroit de Georgie:
+points de référence proposés pour le modèle statistique
+de capture-âge du hareng du Pacifique.
+Voir le tableau \@ref(tab:ref-points-hg) pour la description.
+
+\needspace{0.32\textheight}
+
+```{r ref-points-sog, results = 'asis', echo = FALSE, eval = keep_sog}
+model_ind <- match(en2fr("SoG", french), major_regions_short)
+make.ref.points.table(
+  model = major_models[[model_ind]],
+  xcaption = ifelse(
+    french,
+    "(ref:ref-points-sog-cap-fr)",
+    "(ref:ref-points-sog-cap)"
+  ),
+  xlabel = "tab:ref-points-sog",
   translate = french
 )
 ```
@@ -870,6 +1021,34 @@ decision_tables_mp(
     french, "(ref:decision-cc-cap-fr)", "(ref:decision-cc-cap)"
   ),
   xlabel = "tab:decision-cc",
+  font.size = ifelse(french, 10, 11),
+  space.size = ifelse(french, 13, 14),
+  translate = french
+)
+```
+
+\afterpage{\clearpage}
+
+(ref:decision-sog-cap) Strait of Georgia SAR:
+management procedure performance for the Pacific Herring
+statistical catch-age model.
+See Table \@ref(tab:decision-prd) for description.
+
+(ref:decision-sog-cap-fr) RES du détroit de Georgie:
+rendement de la procédure de gestion pour le modèle statistique
+de prises-âges du hareng du Pacifique.
+Voir le tableau \@ref(tab:decision-prd) pour la description.
+
+\needspace{0.32\textheight}
+
+```{r decision-sog, results = 'asis', echo = FALSE, eval = keep_sog}
+decision_tables_mp(
+  df = mp.sog,
+  xcaption = ifelse(
+    french, "(ref:decision-sog-cap-fr)", "(ref:decision-sog-cap)"
+  ),
+  xlabel = "tab:decision-sog",
+  p_sb_ave_prod = "0.8",
   font.size = ifelse(french, 10, 11),
   space.size = ifelse(french, 13, 14),
   translate = french

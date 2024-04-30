@@ -18,6 +18,12 @@ prod_period <- list(
     yrs = 1990:1999,
     prop = 1.0
   ),
+  SoG = list(
+    region = "SoG",
+    region_name = "Strait of Georgia",
+    yrs = 1988:2007,
+    prop = 0.8
+  ),
   WCVI = list(
     region = "WCVI",
     region_name = "West Coast of Vancouver Island",
@@ -25,6 +31,8 @@ prod_period <- list(
     prop = 1.0
   )
 )
+
+if(!keep_sog) prod_period$SoG <- NULL
 
 # Directories and names of stocks
 major_model_dirs <- lapply(
