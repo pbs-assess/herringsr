@@ -266,24 +266,24 @@ when decomposition hinders identification.
 Note that data from previous years are updated 
 as DFO receives additional reports.
 
-## First Nations observations
+<!-- ## First Nations observations -->
 
-The following observations were contributed by
-representatives of First Nations communities.
+<!-- The following observations were contributed by -->
+<!-- representatives of First Nations communities. -->
 
-### Haida Gwaii
+<!-- ### Haida Gwaii -->
 
-Herring spawns in Cumshewa Inlet have been infrequent in recent years, but when they have occurred the spawns have generally been very late in the season (late April to early May). However, in 2023 some of the earliest herring spawns in the Haida Gwaii major stock assessment area occurred along the north shore of Cumshewa Inlet. Spawns, which were generally light in deposition and inconsistent (spotty), occurred in areas near Aero Camp, Cumshewa Village, and out around Cumshewa Head to Grey Point.
+<!-- Herring spawns in Cumshewa Inlet have been infrequent in recent years, but when they have occurred the spawns have generally been very late in the season (late April to early May). However, in 2023 some of the earliest herring spawns in the Haida Gwaii major stock assessment area occurred along the north shore of Cumshewa Inlet. Spawns, which were generally light in deposition and inconsistent (spotty), occurred in areas near Aero Camp, Cumshewa Village, and out around Cumshewa Head to Grey Point. -->
 
-The Selwyn Inlet stock continues to show a declining trend (as it has for over the past 10 years). Similar to 2021, the spawn in Selwyn Inlet in 2023 occurred very late in the season (end of April). The location of the spawn was consistent with the traditional area along the Louise Island shore in and near Traynor Bay and out toward Kilmington Point. Herring stocks in Selwyn Inlet remain at a low level of productivity with no real growth in the population. Spawns in 2023 were found to be mostly light to medium in deposition.
+<!-- The Selwyn Inlet stock continues to show a declining trend (as it has for over the past 10 years). Similar to 2021, the spawn in Selwyn Inlet in 2023 occurred very late in the season (end of April). The location of the spawn was consistent with the traditional area along the Louise Island shore in and near Traynor Bay and out toward Kilmington Point. Herring stocks in Selwyn Inlet remain at a low level of productivity with no real growth in the population. Spawns in 2023 were found to be mostly light to medium in deposition. -->
 
-The Juan Perez Sound inlets normally support spawns when there are a lot of new "young of the year" in the population. There were no spawns observed in the upper Juan Perez Sound inlets during the 2023 season.
+<!-- The Juan Perez Sound inlets normally support spawns when there are a lot of new "young of the year" in the population. There were no spawns observed in the upper Juan Perez Sound inlets during the 2023 season. -->
 
-The majority of herring stocks in the Haida Gwaii major stock assessment area continue to be in Skincuttle Inlet and upper Burnaby Strait (around Burnaby Island). The abundance of stocks and deposition of spawns appear to be very similar to 2022. These stocks appear to be maintaining themselves, but are not really showing any signs of meaningful growth in spite of no active fisheries for over 20 years.
+<!-- The majority of herring stocks in the Haida Gwaii major stock assessment area continue to be in Skincuttle Inlet and upper Burnaby Strait (around Burnaby Island). The abundance of stocks and deposition of spawns appear to be very similar to 2022. These stocks appear to be maintaining themselves, but are not really showing any signs of meaningful growth in spite of no active fisheries for over 20 years. -->
 
-In Louscoone Inlet, local stocks would normally be found well up inside the inlet and often presented a very light spawn near the head of the inlet early in the season (early to mid March). There were no reported spawns in Louscoone Inlet in 2023. The herring stocks in Louscoone Inlet seldom exceeded 500 tons, however in recent years it has been much less. Herring observed in the outer portions of Louscoone Inlet are thought to be more migratory and rarely spawn in Louscoone.
+<!-- In Louscoone Inlet, local stocks would normally be found well up inside the inlet and often presented a very light spawn near the head of the inlet early in the season (early to mid March). There were no reported spawns in Louscoone Inlet in 2023. The herring stocks in Louscoone Inlet seldom exceeded 500 tons, however in recent years it has been much less. Herring observed in the outer portions of Louscoone Inlet are thought to be more migratory and rarely spawn in Louscoone. -->
 
-There was no effort toward the traditional harvest of k’aaw (herring roe) in Skincuttle and Upper Burnaby in 2023. However, there were local harvesters from Skidegate that were set up during the spawn in Selwyn Inlet. As a result there was 11,000 pounds of k’aaw was estimated to have been harvested from Selwyn Inlet during the 2023 season.
+<!-- There was no effort toward the traditional harvest of k’aaw (herring roe) in Skincuttle and Upper Burnaby in 2023. However, there were local harvesters from Skidegate that were set up during the spawn in Selwyn Inlet. As a result there was 11,000 pounds of k’aaw was estimated to have been harvested from Selwyn Inlet during the 2023 season. -->
 
 <!-- ### Prince Rupert District -->
 
