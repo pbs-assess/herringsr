@@ -7,8 +7,8 @@ DFO does not conduct formal analyses of stock trend information for the
 Pacific Herring minor SARs: `r commify(minor_regions_full_parens)`.
 However, DFO does provide
 landed commercial catch (Figure \@ref(fig:minor-catch)),
-incidental mortality in finfish aquaculture activities
-(Figure \@ref(fig:minor-incidental)),
+<!-- incidental mortality in finfish aquaculture activities -->
+<!-- (Figure \@ref(fig:minor-incidental)), -->
 biological data including weight-at-age (Figure \@ref(fig:minor-wa)) and
 proportion-at-age (Figure \@ref(fig:minor-pa)),
 as well as spawn index (Figure \@ref(fig:minor-spawn-index))

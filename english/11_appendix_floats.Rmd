@@ -101,24 +101,6 @@ plot_catch(
 )
 ```
 
-(ref:minor-incidental-cap) Incidental Pacific Herring mortality
-in aquaculture activities in thousands of fish from
-`r min(ic_yrs)` to `r max(ic_yrs)` in the minor SARs.
-See Figure \@ref(fig:major-incidental) for description.
-
-(ref:minor-incidental-cap-fr) Mortalité accidentelle de hareng du Pacifique
-dans les activités d'aquaculture en milliers de poissons
-de `r min(ic_yrs)` à `r max(ic_yrs)` dans les RES mineurs.
-Voir la figure \@ref(fig:major-incidental) pour la description.
-
-```{r minor-incidental, fig.asp=ifelse(french, 0.4, 0.35), fig.cap = ifelse(french, "(ref:minor-incidental-cap-fr)", "(ref:minor-incidental-cap)"), eval = show_ic_figures}
-plot_ic(
-  df = ic %>% filter(Region %in% regions$Region[regions$Type == "Minor"]),
-  xlim = c(min(ic_yrs), max(ic_yrs)),
-  translate = french
-)
-```
-
 (ref:minor-wa-cap) Mean weight-at-age for Pacific Herring in kilograms (kg) 
 from `r minor_start_yr_plot` to `r minor_end_yr` in the minor SARs.
 Circles show mean for age-`r age_highlight` herring.

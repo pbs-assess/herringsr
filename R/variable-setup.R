@@ -42,9 +42,6 @@ recent_catch_yr <- 1972
 # Number of years to show in tables (+1)
 num_yrs_tab <- 9
 
-# Years to include for incidental catch
-ic_yrs <- 2014:(assess_yr - 1)
-
 # Limits for the weight-at-age plot
 wa_ylim <- c(0.05, 0.20)
 
@@ -169,19 +166,6 @@ total_final_yr_other_catch <- total_final_yr_catch %>%
 
 # Data file
 data_path <- here("data")
-
-# Incidental catch
-ic_file_pattern <- "incidental-*"
-ic_filenames <- dir(data_path, pattern = ic_file_pattern)
-ic <- ic_filenames %>%
-  map(~ read_csv(file.path(data_path, .), col_types = cols())) %>%
-  reduce(rbind)
-ic <- ic %>%
-  mutate(
-    Region = en2fr(Region, french),
-    Region = factor(Region, regions$Region)
-  ) %>%
-  filter(Year %in% ic_yrs)
 
 # Spawn-on-kelp
 sok_file_pattern <- "harvest-sok-*"

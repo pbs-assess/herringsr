@@ -74,20 +74,6 @@ En `r surv_yr_rng[2]`, il y a eu une augmentation de la biomasse d’après les 
 
 Les tableaux \@ref(tab:spawn-index-hg) à \@ref(tab:spawn-index-wcvi) résument la répartition spatiale de la biomasse des reproducteurs d’après les relevés (c’est-à-dire l’indice du frai) par proportion au cours des `r num_yrs_tab + 1` dernières années dans les RES principales. Nous résumons les RES de HG et du DG par groupe et celles du DPR, de la CC et de la COIV par zone statistique; le choix du groupement spatial reflète la biologie et le comportement de reproduction pour chaque RES en fonction des données de relevé et des discussions du groupe de travail avec les Premières Nations locales.
 
-## Mortalité accessoire
-
-Afin de progresser vers une approche gestion écosystémique globale pour le hareng du Pacifique, nous présentons les renseignements pour décrire des effets indirects sur les populations de hareng, comme la mortalité accessoire. Certaines activités de pêche et d’aquaculture en Colombie-Britannique entraînent une mortalité accessoire pour le hareng du Pacifique. À l’instar de la récolte d’œufs sur varech, ainsi que des prises récréatives et à des fins ASR, la mortalité accessoire n’est actuellement prise en compte qu’indirectement dans l’évaluation des stocks de hareng du Pacifique, par l’estimation des taux annuels de mortalité naturelle, et est considérée comme secondaire par rapport à la pêche commerciale. L’incidence de sources de mortalité supplémentaires sera étudiée à l’aide du nouveau cadre de modélisation.
-
-Cette année encore, nous incluons des données sur la mortalité accessoire dans les activités d’aquaculture de poissons à nageoires par RES de `r min(ic_yrs)` à `r max(ic_yrs)` (figure \@ref(fig:major-incidental)). Il est à noter que les données sur la mortalité accessoire sont déclarées par secteur de gestion des pêches du Pacifique (SGPP), qui sont analogues aux zones statistiques, mais plus vastes, et qui peuvent s’étendre au-delà des limites des RES. Les données indiquent le nombre de harengs du Pacifique morts et remis à l’eau, avec les mises en garde suivantes :
-
-1. le taux de mortalité des poissons « remis à l’eau » n’est pas connu;
-
-1. la longueur, le poids, l’âge et le sexe des poissons ne sont pas connus;
-
-1. les poissons « de type hareng » sont présumés être des harengs lorsque la décomposition empêche l’identification.
-
-Veuillez noter que les données des années précédentes sont mises à jour à mesure que le MPO reçoit des rapports supplémentaires.
-
 ## Observations des Premières Nations
 
 Les observations suivantes ont été formulées par des représentants des communautés des Premières Nations.

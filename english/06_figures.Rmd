@@ -74,26 +74,6 @@ catch_plot_post69 <- plot_catch(
 # ggsave(filename = here("figures", paste0("catchShortTimeSeries.png")),  width=7, height=9, dpi=300)
 ```
 
-(ref:major-incidental-cap) Incidental Pacific Herring mortality
-in aquaculture activities in thousands of fish from
-`r min(ic_yrs)` to `r max(ic_yrs)` in the major SARs.
-Notes: figure may include data outside SAR boundaries and
-figure excludes SARs with no reported incidental mortality.
-
-(ref:major-incidental-cap-fr) Mortalité accidentelle de hareng du Pacifique
-dans les activités d'aquaculture en milliers de poissons
-de `r min(ic_yrs)` à `r max(ic_yrs)` dans les RES majeurs.
-Notes: La figure exclut les RES pour lesquels
-aucune mortalité accidentelle n'a été déclarée.
-
-```{r major-incidental, fig.asp=ifelse(french, 0.8, 0.8), fig.cap = ifelse(french, "(ref:major-incidental-cap-fr)", "(ref:major-incidental-cap)"), eval = show_ic_figures}
-plot_ic(
-  df = ic %>% filter(Region %in% regions$Region[regions$Type == "Major"]),
-  xlim = c(min(ic_yrs), max(ic_yrs)),
-  translate = french
-)
-```
-
 (ref:major-wa-cap) Mean weight-at-age for Pacific Herring in kilograms (kg) 
 from `r major_start_yr` to `r major_end_yr` in the major SARs.
 Lines show `r nRollWA`-year running means
