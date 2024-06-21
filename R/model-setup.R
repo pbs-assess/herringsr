@@ -32,8 +32,6 @@ prod_period <- list(
   )
 )
 
-if(!keep_sog) prod_period$SoG <- NULL
-
 # Directories and names of stocks
 major_model_dirs <- lapply(
   1:length(major_stock_dir),

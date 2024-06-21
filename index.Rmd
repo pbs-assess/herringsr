@@ -173,7 +173,6 @@ keep_sog <- FALSE       # Keep or omit SoG
 ```{r models, cache=FALSE}
 models_dir <- here("models")
 major_stock_dir <- list("HG", "PRD", "CC", "SoG", "WCVI")
-if(!keep_sog) major_stock_dir <- major_stock_dir[major_stock_dir != "SoG"]
 minor_stock_dir <- list("A27", "A2W")
 special_stock_dir <- list("A10")
 

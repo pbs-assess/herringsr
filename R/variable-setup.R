@@ -68,7 +68,6 @@ regions <- tribble(
   7,      "A2W",                    "Area 2 West",   "Minor",
   8,      "A10",                        "Area 10",   "Special"
 )
-if(!keep_sog) regions <- filter(.data = regions, Region != "SoG")
 regions$Region <- en2fr(regions$Region, french)
 regions$RegionName <- en2fr(regions$RegionName, french)
 
