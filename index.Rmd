@@ -183,7 +183,7 @@ retro_yrs <- 1:10       # Default: 1:10
 
 run_sca_models <- FALSE            # Run SCA for SARs in `major_stock_dir`
 rebuild_rdata_model_files <- FALSE # Rebuild RData files (replace existing)
-run_retros <- TRUE                # Run retrospectives
+run_retros <- FALSE                # Run retrospectives
 
 source(here("R", "run-sca.R"))
 source(here("R", "model-setup.R"))
