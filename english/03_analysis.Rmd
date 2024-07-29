@@ -223,8 +223,8 @@ Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi)
 summarize the spatial distribution of survey spawn biomass
 (i.e., the spawn index)
 by proportion over the last `r num_yrs_tab + 1` years for the major SARs.
-HG and SoG are summarized by Group, while
-PRD, CC, and WCVI are summarized by Statistical Area;
+HG spawn is summarized by Group, while
+spawn in PRD, CC, and WCVI are summarized by Statistical Area;
 the choice of spatial grouping reflects spawning behaviour and
 biology for each SAR based on the
 survey data and working group discussions with local First Nations.
@@ -260,11 +260,11 @@ survey data and working group discussions with local First Nations.
 
 Analyses of stock trend information is presented following
 methods of @cleary2018 for the Pacific Herring major SARs.
-This year, Markov chain Monte Carlo (MCMC) runs
+Markov chain Monte Carlo (MCMC) runs
 have a chain length of `r number_to_word(mcmc_length)`
 with a sample taken every `r number_to_word(mcmc_samp_freq)`
 iterations (i.e., thinning).
-Next, the first `r number_to_word(mcmc_burnin)` samples are discarded
+Then the first `r number_to_word(mcmc_burnin)` samples are discarded
 (i.e., burn-in),
 leaving `r number_to_word(mcmc_num_samples)` samples as the posteriors.
 Perceptions of stock status based on outputs (i.e., posteriors)
@@ -353,7 +353,7 @@ In 2023, DFO Resource Management selected and implemented a provisional
 USR of $\overline{\SB}$ through 2022/23 IFMP process.
 
 Stock status relative to assessment model estimates $0.3\SB_0$ (i.e., LRP) and
-USR options are presented for PRD, CC, SoG, and WCVI SARs
+USR options are presented for PRD, CC, and WCVI SARs
 (Tables \@ref(tab:ref-points-prd) through \@ref(tab:ref-points-wcvi)).
 
 LRPs and USRs relate stock status to the DFO
@@ -571,11 +571,12 @@ are presented in Figure \@ref(fig:harvest-rate).
 ## Application of MPs and harvest options for `r assess_yr + 1`\label{sec:harv-opts}
 
 Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs
-for each major SAR, derived from the Herring OM [@benson2022]. 
+for the major SARs, derived from the Herring OM [@benson2022]. 
 OM conditioning was updated in 2022 using historic stock and fishery data
 from `r major_start_yr` to 2021; no MP updates were conducted for 2023.
 MPs are not provided for HG because this is now conducted within the 
 HG rebuilding plan process.$^{\ref{fn:rebuild}}$
+MPs for SoG are provided in @dfo2025b.
 
 ### Haida Gwaii
 
