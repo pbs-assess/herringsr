@@ -53,28 +53,32 @@ Fisheries Management Plan (IFMP).
 Since initiation of the Pacific Herring MSE process,
 MP evaluations have been included in the annual stock assessment as follows:
 
-1. The 2018 stock assessment includes
+1. The 2018 stock assessment included
 MP recommendations for the SoG and WCVI SARs [@dfo2019a].
 
-1. The 2019 stock assessment includes
-MP recommendations for the HG, PRD, and CC SARs [@dfo2020a], and
-implements the previous years' MP recommendations for the SoG and WCVI SARs. 
+1. The 2019 stock assessment included
+MP recommendations for the HG, PRD, and CC SARs, and
+implemented MP recommendations from previous years for the
+SoG and WCVI SARs [@dfo2020a].
 
-1. The 2020 stock assessment includes
-an update to MP recommendations for the SoG and WCVI SARs [@dfo2021b], and
-implements the previous years' MP recommendations for the HG, PRD, and CC SARs.
+1. The 2020 stock assessment included
+updated MP recommendations for the SoG and WCVI SARs, and
+implemented MP recommendations from previous years for the
+HG, PRD, and CC SARs [@dfo2021b].
 
-1. The 2021 stock assessment includes
-an update to MP recommendations for the PRD and CC SARs [@dfo2021c], and
-implements the previous years MP recommendations for the SoG and WCVI SARs.
+1. The 2021 stock assessment included
+updated MP recommendations for the PRD and CC SARs, and
+implemented MP recommendations from previous years for the
+SoG and WCVI SARs [@dfo2021c].
 
-1. The 2022 stock assessment includes
-an update to MP recommendations for the PRD, CC, SoG, and WCVI SARs [@dfo2022b].
+1. The 2022 stock assessment included
+updated MP recommendations for the PRD, CC, SoG, and WCVI SARs [@dfo2022b].
+<!-- TODO: Verify this last one -->
+1. The 2023 stock assessment
+implemented MP recommendations from previous years for the
+PRD, CC, SoG, and WCVI SARs [@dfo2024].
 
-<!-- TODO: Blurb for last year's assessment -->
-1. The 2023 stock assessment includes
-... [@dfo2024].
-
+<!-- TODO: Update HG rebuilding text -->
 Note that MPs for HG and SoG are not updated through this process. 
 Management measures to support long-term recovery of HG herring 
 are being developed through the
@@ -83,7 +87,7 @@ Haida Gwaii 'íináang | iinang Pacific Herring:
 An ecosystem overview and ecosystem-based rebuilding plan.
 Draft consultation period occurred September 26 to December 16, 2022; 
 Final approval scheduled for fall 2023.}
-MPs for SoG are updated in a separate process [@dfo2025b]
+MPs for SoG are updated in @dfo2025b
 using a new modelling framework [@johnson2024].
 
 This `r assess_yr` stock assessment includes
