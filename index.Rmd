@@ -206,8 +206,6 @@ theme_set(herring_theme())
 \newcommand{\BR}{\mli{BR}}
 \newcommand{\AVE}{\text{`r en2fr("AVE", translate = french)`}}
 
-<!-- Cludge to add manual table citations to the list (eco trends table) -->
-
 ---
 title_short: `r t_title_short`
 isbn: `r t_isbn`

@@ -226,3 +226,20 @@ prd_vars <- get_vars("PRD", french = french)
 cc_vars <- get_vars("CC", french = french)
 # if(!keep_sog) sog_vars <- get_vars("SoG", french = french)
 wcvi_vars <- get_vars("WCVI", french = french)
+
+incl_sog <- function(tabfig = "table", trans = french) {
+  if(french){
+    res <- paste(
+      "Notez que le stock SoG est évalué dans @dfo2025b,",
+      "mais les données SoG sont incluses dans ce",
+      en2fr(tabfig, translate = trans),
+      "par souci d'exhaustivité."
+    )
+  } else {
+    res <- paste(
+      "Note that the SoG stock is assessed in @dfo2025b",
+      "but SoG data is included in this", tabfig, "for completeness."
+    )
+  }
+  res
+}

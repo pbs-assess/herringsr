@@ -19,6 +19,7 @@ knitr::include_graphics(
 (ref:major-catch-cap) Total landed Pacific Herring catch in
 thousands of tonnes (t)
 from `r recent_catch_yr` to `r major_end_yr` in the major SARs.
+`r incl_sog(tabfig = "figure")`
 See Figures \@ref(fig:storyboard-hg) to \@ref(fig:storyboard-wcvi) for
 catches during the reduction period
 (`r major_start_yr` to `r recent_catch_yr-1`).
@@ -30,6 +31,7 @@ as well as the special use fishery;
 (ref:major-catch-cap-fr) Prises totales débarquées en
 hareng du Pacifique en milliers de tonnes (t)
 de `r recent_catch_yr` à `r major_end_yr` dans les RES majeurs.
+`r incl_sog(tabfig = "figure")`
 Voir les Figures \@ref(fig:storyboard-hg) à \@ref(fig:storyboard-wcvi)
 pour les prises durant la période de réduction
 (`r major_start_yr` à `r recent_catch_yr-1`).
@@ -76,6 +78,7 @@ catch_plot_post69 <- plot_catch(
 
 (ref:major-wa-cap) Mean weight-at-age for Pacific Herring in kilograms (kg) 
 from `r major_start_yr` to `r major_end_yr` in the major SARs.
+`r incl_sog(tabfig = "figure")`
 Lines show `r nRollWA`-year running means
 for age-`r age_first` to age-`r age_plus` herring,
 incrementing up from bottom line and shaded from darker to lighter,
@@ -93,6 +96,7 @@ Vertical axes are cropped at `r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
 (ref:major-wa-cap-fr) Poids moyen à l'âge du hareng du Pacifique
 en kilogrammes (kg) de `r major_start_yr` à `r major_end_yr`
 dans les principaux RESs.
+`r incl_sog(tabfig = "figure")`
 Les lignes indiquent les moyennes mobiles annuelles `r nRollWA`
 pour les harengs d'âge `r age_first` à âge `r age_plus`,
 augmentant à partir de la ligne inférieure et ombrées de plus en plus foncées,
@@ -123,6 +127,7 @@ plot_wa(
 
 (ref:major-pa-cap) Proportion-at-age for Pacific Herring from
 `r major_start_yr` to `r major_end_yr` in the major SARs.
+`r incl_sog(tabfig = "figure")`
 Dot size and colour indicates age class proportion for the year;
 each year adds up to 1.0.
 The gray line is the mean age, and
@@ -134,6 +139,7 @@ The age-`r age_plus` plus class includes fish ages `r age_plus` and older.
 
 (ref:major-pa-cap-fr) Proportion selon l'âge pour le hareng du Pacifique
 de `r major_start_yr` à `r major_end_yr` dans les principaux RESs.
+`r incl_sog(tabfig = "figure")`
 La taille et la couleur des points indiquent la proportion
 de la classe d'âge pour l'année;
 la somme de chaque année est égale à 1,0.
@@ -160,6 +166,7 @@ plot_pa(
 (ref:major-spawn-index-cap) Spawn index in thousands of tonnes (t)
 for Pacific Herring from `r major_start_yr` to `r major_end_yr`
 in the major SARs.
+`r incl_sog(tabfig = "figure")`
 The dashed vertical line delineates between two periods
 defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
@@ -169,6 +176,7 @@ Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 (ref:major-spawn-index-cap-fr) Indice de frai en milliers de tonnes (t)
 pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr`
 dans les principaux RESs.
+`r incl_sog(tabfig = "figure")`
 La ligne verticale en pointillés délimite deux périodes
 définies par la méthode de relevé dominante:
 les relevés de surface (`r major_start_yr` à `r new_surv_yr-1`), et
@@ -194,12 +202,14 @@ major_spawn_index
 in thousands of tonnes (t)
 for Pacific Herring from `r major_start_yr` to `r major_end_yr`
 in the major SARs.
+`r incl_sog(tabfig = "figure")`
 Spawning biomass is represented by median posterior estimates.
 
 (ref:coastwide-biomass-catch-cap-fr) Biomasse reproductrice et prises
 en milliers de tonnes (t)
 pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr`
 dans les principaux RESs.
+`r incl_sog(tabfig = "figure")`
 La biomasse reproductrice est représentée par
 les estimations médianes postérieures.
 
@@ -215,12 +225,14 @@ plot_coastwide_biomass_catch(
 in thousands of tonnes (t)
 for Pacific Herring from `r major_start_yr` to `r major_end_yr`
 in the major SARs.
+`r incl_sog(tabfig = "figure")`
 Biomass is represented by median posterior estimates.
 
 (ref:biomass-total-biomass-cap-fr) Biomasse totale et biomasse reproductrice 
 en milliers de tonnes (t)
 pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr`
 dans les principaux RESs.
+`r incl_sog(tabfig = "figure")`
 La biomasse est représentée par les estimations médianes postérieures.
 
 ```{r biomass-total-biomass, fig.asp=1.25, fig.cap=ifelse(french, "(ref:biomass-total-biomass-cap-fr)", "(ref:biomass-total-biomass-cap)")}
@@ -1054,6 +1066,7 @@ create_slide_figures(model_index = model_ind)
 
 (ref:harvest-rate-cap) Effective harvest rate $U_t$ for Pacific Herring
 from `r major_start_yr` to `r major_end_yr` in the major SARs.
+`r incl_sog(tabfig = "figure")`
 Effective harvest rate is $U_t = C_t/(C_t + \SB_t)$ where
 $C_t$ is catch in year $t$, and
 $\SB_t$ is estimated spawning biomass in year $t$.
@@ -1067,6 +1080,7 @@ Horizontal dashed lines indicate $U_t = `r target_hr`$.
 (ref:harvest-rate-cap-fr) Taux de récolte effectif $U_t$ de
 `r major_start_yr` à `r major_end_yr`
 pour le hareng du Pacifique dans les RES majeurs.
+`r incl_sog(tabfig = "figure")`
 Taux de récolte effectif est $U_t = C_t/(C_t + \SB_t)$, où
 $C_t$ est est la prise pour l’année $t$, et
 $\SB_t$ est la biomasse reproductrice estimée pour l’année $t$.
@@ -1089,6 +1103,7 @@ plot_harvest_rate(
 (ref:proj-biomass-density-cap) Projected spawning biomass of Pacific Herring
 assuming no fishing in `r assess_yr + 1` $\SB_{`r assess_yr + 1`}$ in
 thousands of tonnes (t) in the major SARs.
+`r incl_sog(tabfig = "figure")`
 Solid and dashed black lines indicate median posterior estimate and
 `r ci_level*100`% credible intervals for $\SB_{`r assess_yr + 1`}$, respectively.
 Vertical red lines and shaded red areas indicate medians and `r ci_level*100`%
@@ -1099,6 +1114,7 @@ where $\SB_0$ is estimated unfished spawning biomass.
 biomasse reproductrice projetée pour le hareng du Pacifique
 en supposant qu’il n’y aura pas de pêche en `r assess_yr + 1`
 $\SB_{`r assess_yr+1`}$ en milliers de tonnes dans les RES majeurs.
+`r incl_sog(tabfig = "figure")`
 Les lignes noires pleines et tiretées indiquent
 les médianes et les intervalles de confiance de `r ci_level*100` %
 pour $\SB_{`r assess_yr + 1`}$, respectivement.

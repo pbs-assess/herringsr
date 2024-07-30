@@ -34,17 +34,19 @@ input_data_table(
 (ref:annual-catch-cap) Total landed Pacific Herring catch in tonnes
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`
 in the major stock assessment regions (SARs).
+`r incl_sog()`
 Legend: `r commify(major_regions_full_parens)`.
 Note: 'WP' indicates that data are withheld due to privacy concerns.
 
 (ref:annual-catch-cap-fr) Total des prises débarquées en tonnes de hareng du
 Pacifique de `r major_end_yr - num_yrs_tab` à `r major_end_yr`
 dans les regions d’évaluation des stocks (RESs) majeurs.
+`r incl_sog()`
 Légende: `r commify(major_regions_full_parens, and_word = "et")`.
 Remarque: «DT» indique que les données ne sont pas divulguées
 pour des raisons de confidentialité.
 
-\needspace{0.32\textheight}
+\needspace{0.5\textheight}
 
 ```{r annual-catch}
 total_landed_catch_table(
@@ -62,11 +64,13 @@ total_landed_catch_table(
 reported as pounds of eggs on kelp,
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`
 in the major stock assessment regions (SARs).
+`r incl_sog()`
 See Table \@ref(tab:annual-catch) for description.
 
 (ref:annual-sok-catch-cap-fr) Récolte totale d’oeufs sur varech en livres de
 hareng du Pacifique de `r major_end_yr - num_yrs_tab` à `r major_end_yr`
 dans les regions d’évaluation des stocks (RES) majeurs.
+`r incl_sog()`
 Voir le tableau \@ref(tab:annual-catch) pour la description.
 
 \needspace{0.32\textheight}
@@ -889,12 +893,14 @@ make.ref.points.table(
 average spawning biomass of Pacific Herring during a productive period
 $\overline{\SB}_\mli{Prod}$
 in the major stock assessment regions (SARs).
+`r incl_sog()`
 
 (ref:prod-period-cap-fr) Gamme d'années pour le calcul de la proportion de la
 biomasse reproductrice moyenne du hareng du Pacifique
 pendant une période productive
 $\overline{\SB}_\mli{Prod}$
 dans les principales régions d'évaluation des stocks (RES).
+`r incl_sog()`
 
 \needspace{0.32\textheight}
 
