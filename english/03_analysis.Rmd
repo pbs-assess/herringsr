@@ -208,6 +208,26 @@ from `r paste(surv_yr_rng, collapse=" to ")`
 are summarized in Figure \@ref(fig:major-spawn-index)
 and Tables \@ref(tab:spawn-index-hg) to \@ref(tab:spawn-index-wcvi).
 
+The surface survey methodology has been used on occasion
+from `r new_surv_yr` to `r surv_yr_rng[2]`. 
+Generally this occurs when spawns are observed in locations where
+a dive survey team is not available, or
+when spawns are early (e.g., January or February) or
+late (e.g., May) in the season. 
+In these instances,
+spawning biomass estimates obtained from surface surveys for
+a given SAR and year are added to biomass estimates from dive surveys,
+and $q_2 = 1$ is assumed for the combined index.
+The \link{https://github.com/grinnellm/Reports}{Pacific Herring data summaries}
+show the proportion of spawn survey data (i.e., spawn index)
+from the surface and dive survey methods by SAR and year.
+Due to the COVID-19 pandemic, only surface surveys were conducted
+for HG in 2020 and 2021, as well as for PRD in 2020.
+These surface survey observations are treated as dive survey observations and
+are assumed to be continuous with the dive survey time series.
+Methods for combining surface and dive survey observations are presented
+for the SISCAH modelling framework in @dfo2023a, but are not implemented here.
+
 ## Spatial spawn distribution
 
 Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi) 
@@ -262,26 +282,6 @@ $q_1$ (`r surv_yr_rng[1]` to `r new_surv_yr - 1`)
 with an uninformative prior, and
 $q_2$ (`r new_surv_yr` to `r surv_yr_rng[2]`)
 with an informative prior approximating 1.0.
-
-The surface survey methodology has been used on occasion
-from `r new_surv_yr` to `r surv_yr_rng[2]`. 
-Generally this occurs when spawns are observed in locations where
-a dive survey team is not available, or
-when spawns are early (e.g., January or February) or
-late (e.g., May) in the season. 
-In these instances,
-spawning biomass estimates obtained from surface surveys for
-a given SAR and year are added to biomass estimates from dive surveys,
-and $q_2 = 1$ is assumed for the combined index.
-The \link{https://github.com/grinnellm/Reports}{Pacific Herring data summaries}
-show the proportion of spawn survey data (i.e., spawn index)
-from the surface and dive survey methods by SAR and year.
-Due to the COVID-19 pandemic, only surface surveys were conducted
-for HG in 2020 and 2021, as well as for PRD in 2020.
-These surface survey observations are treated as dive survey observations and
-are assumed to be continuous with the dive survey time series.
-Methods for combining surface and dive survey observations are presented
-for the SISCAH modelling framework [@dfo2023a], but are not implemented here.
 
 ### Reference points\label{sec:ref-pts}
 
