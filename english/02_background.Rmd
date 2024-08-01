@@ -7,7 +7,8 @@ SARs (Figure \@ref(fig:bc-map)).
 The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
 We conduct formal analyses of stock trend information for the major SARs.
-Recall that the SoG assessment is in @dfo2025b.
+Although SoG is assessed in @dfo2025b,
+some tables and figures in this document include SoG data for completeness.
 For the minor SARs, we present available
 catch data, biological data, and spawn survey data
 (Section "\nameref{sec:app-minor}").
@@ -83,7 +84,6 @@ Commercial SOK fisheries operated only in the CC in `r this_season`.
 A complete dockside monitoring program exists for all Pacific Herring
 commercial fisheries and the resulting validated catch data are included
 in the annual stock assessment process for all fisheries, except SOK.
-
 The exclusion of SOK fishery data from the annual stock assessment process was
 identified as a key uncertainty in the most recent CSAS review
 of the stock assessment framework [@cleary2018].
@@ -108,44 +108,43 @@ In 2017, an updated version of the SCA model was applied to assess each of the
 `r number_to_word(length(major_regions_short))`
 major Pacific Herring SARs [@cleary2018].
 The main change from the SCA model used from 2011 to 2016 was
-the partitioning of variance between observation and process error
-to improve the estimation of the variance structure [@cleary2018].
-A bridging analysis was used to validate the updated model:
-this showed parameter estimates and biomass trajectories
-associated with the structural adjustments to be nearly identical
-to results from previous versions of the model,
-supporting the adoption of the revised structure [@cleary2018].
+partitioning variance between observation and process error
+to improve variance structure estimates [@cleary2018].
+A bridging analysis was used to validate the updated model
+which showed nearly identical parameter estimates and biomass trajectories
+from the new model compared to previous versions of the model,
+which supported adopting the updated model [@cleary2018].
 
 A Bayesian framework is used to estimate time series of
 spawning biomass,
 instantaneous natural mortality, and
 age-`r age_first` recruitment from `r major_start_yr` to `r major_end_yr`.
-Advice to managers for the major SARs includes posterior estimates of
+Advice to managers for the major SARs includes
+posterior estimates of
 current stock status $\SB_{`r major_end_yr`}$,
-stock status relative to the LRP of $0.3\SB_0$, and
+stock status relative to the LRP $0.3\SB_0$, and
 spawning biomass in `r major_end_yr + 1` assuming no catch
 $\SB_{`r major_end_yr + 1`}$.
-The projected spawning biomass is based on
+Projected spawning biomass is based on
 the current year's recruitment deviations from average as 
 predicted by the Beverton-Holt stock-recruit model, and
 estimated natural mortality and weight-at-age,
-both averaged over the most recent 5-years.
+both averaged over the last five years.
 The Markov chain Monte Carlo (MCMC) sampling procedure
 follows the same method implemented by @cleary2018.
 
-@cleary2018 reported results from two SCA model fits that differed
-in assumptions about dive survey catchability $q_2$
+@cleary2018 reported results from two SCA model fits with different
+assumptions about dive survey catchability $q_2$
 (from `r new_surv_yr` to `r major_end_yr`):
-assessment model 1 (AM1) where $q_2$ is
-estimated with a prior distribution assumed; and
+assessment model 1 (AM1) which estimates $q_2$ with a prior distribution; and
 assessment model 2 (AM2) where $q_2 = 1$.
 The assumptions that the dive survey spawn index represents
 all the spawn deposited and that no eggs are lost to predation are strong.
 However, there is little information in the stock assessment data
 to inform an estimate of $q_2$;
-examination of the Bayes posterior shows the prior is not updated for
+examination of Bayes posteriors show that priors are not updated for
 the HG, CC, SoG, and WCVI SARs, and
-estimated values reflect the prior means [@cleary2018, Appendix D].
+estimated values reflect prior means [@cleary2018, Appendix D].
 Assuming $q_2 = 1$ produces a "minimum" biomass estimate
 buffering any other assessment and management implementation errors
 [@martell2011; @herring2012].

@@ -6,7 +6,7 @@
 (ref:data-input-cap) Input data for the `r assess_yr` Pacific Herring
 statistical catch-age model for the major SARs.
 The spawn index has two distinct periods defined by the dominant survey method:
-surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
+surface surveys (`r major_start_yr` to `r new_surv_yr-1`) and
 dive surveys (`r new_surv_yr` to `r major_end_yr`).
 Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 

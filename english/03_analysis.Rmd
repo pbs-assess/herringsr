@@ -1,10 +1,5 @@
 # Analysis and Response
 
-## COVID-19 pandemic
-
-Unlike the last three years, the COVID-19 pandemic did not impact
-the collection and analysis of spawn or biological data in 2023.
-
 ## Management strategy evaluation\label{sec:mse}
 
 Fisheries and Oceans Canada (DFO) has committed to
@@ -15,9 +10,10 @@ evaluate the performance of candidate MPs against
 hypotheses about past and future stock and fishery dynamics. 
 The purpose of the MSE process is to
 identify and eliminate MPs that incur unacceptable risks to a stock
-(i.e., poor choices) and identify MPs that provide acceptable outcomes related
-to conservation and fishery management objectives.
-The identification of a preferred MP requires
+(i.e., poor choices) and
+identify MPs that provide acceptable outcomes
+related to conservation and fishery management objectives.
+Identifying preferred MPs requires
 a fully specified set of measurable objectives that include
 reference points (typically categorized as limits and targets) and
 to the extent possible,
@@ -38,7 +34,7 @@ alternative future natural mortality scenarios [@dfo2019a].
 In 2019, the MSE process was extended to
 the HG, PRD, and CC SARs
 with stock and fishery monitoring data updated to include 2018
-and performance evaluation of area specific MPs [@dfo2019c],
+and performance evaluation of SAR specific MPs [@dfo2019c],
 with subsequent updates outlined in Section "\nameref{sec:context}".
 Management procedure evaluation tables were updated in 2022
 [@dfo2022b].
@@ -48,7 +44,8 @@ have been applied to each major SAR:
 
 1. Maintain spawning biomass at or above the LRP with at least 75% probability
 over three Pacific Herring generations
-(i.e., avoid a biomass limit; $P(\SB_t \geq 0.3 \SB_0) \geq 0.75$).
+(i.e., avoid a biomass limit; $P(\SB_t \geq 0.3 \SB_0) \geq 0.75$),
+where generation time is estimated to be about five years [@cleary2010].
 
 1. Maintain spawning biomass at or above the USR with at least 50% probability 
 over three Pacific Herring generations
@@ -72,12 +69,13 @@ the herring industry, government, and non-government organizations
 to describe broader objectives related to conservation, economics, and access.
 
 MPs for each SAR differ in the form of the harvest control rule (HCR)
-and choices of catch cap,
+and choice of catch cap,
 but use the same type of monitoring data and assessment model
 [e.g., @cleary2018].
-The current stock assessment model assumes natural mortality is
-time-varying and this is reflected in the MSE as
-two hypotheses about future Pacific Herring natural mortality $M$: 
+The current stock assessment model
+assumes natural mortality $M$ is time-varying and
+this is reflected in the MSE as
+two hypotheses about future Pacific Herring natural mortality: 
 
 1. $M$ is a time-varying, density-dependent process (DDM), and
 
@@ -104,7 +102,7 @@ First Nations and other stakeholders.
 unless new evidence reveals exceptional circumstances.
 
 DFO is committed to implementing these recommendations
-prior to implementation of the
+prior to implementing the
 spatially integrated statistical catch at age herring (SISCAH)
 modelling framework.
 
@@ -112,21 +110,22 @@ modelling framework.
 including HCR components, are expected a priori among SARs.
 The reasons relate to
 differences in objectives deemed important by resource users,
-differences in historical and current stock and fishery dynamics, and
-differences in the magnitude and direction
-of assessment model errors in each SAR.
-Conservation objectives such as those based on avoiding a biological limit
-reference point (LRP) in alignment with the DFO PA Policy [@dfo2009] are held 
-constant among SARs based on the analyses of @kronlund2017.
+differences in historic and current stock and fishery dynamics, and
+differences in the magnitude and direction of assessment model errors.
+Conservation objectives are held constant among SARs
+based on the analyses of @kronlund2017 
+(e.g., avoid a biological limit reference point (LRP)
+in alignment with the DFO precautionary approach (PA) Policy [@dfo2009]).
 
 1. There are many possible ways to incorporate MP performance in
-robustness trials into decision-making but, 
-there is currently no accepted scientific way of
-combining results from multiple operating models.
+robustness trials into decision making,
+but there is currently no accepted scientific way to
+combine results from multiple operating models.
 
 1. In situations where multiple MPs meet the agreed upon objectives,
-further criteria, such as ranking secondary objectives, is needed in order to
-provide decision-makers with a tractable set of trade-off choices.
+further criteria, such as ranking secondary objectives,
+is needed in order to provide decision-makers
+with a tractable set of trade-off choices.
 
 1. Outcomes of MP evaluations appear to be more heavily influenced by
 the last three to five years of stock status and 
@@ -170,9 +169,6 @@ the SISCAH modelling framework [@dfo2023a].
 Combined commercial removals from `r assess_yr - num_yrs_tab` to `r assess_yr`
 from the roe, food and bait, and special use fisheries
 appear in Table \@ref(tab:annual-catch).
-The proportion of coast-wide catch that comes from SoG was
-22% in 1990, and 97% in `r assess_yr`.
-
 Total SOK harvest (i.e., pounds of validated product) for the major SARs
 from `r assess_yr - num_yrs_tab` to `r assess_yr` is presented in
 Table \@ref(tab:annual-sok-catch).
@@ -185,7 +181,7 @@ Biological data inputs to the stock assessment are
 annual weight-at-age (Figure \@ref(fig:major-wa)) and 
 annual number-at-age, shown as proportion-at-age (Figure \@ref(fig:major-pa)).
 
-Significant declines in weight-at-age are evident for all major herring stocks
+Declines in weight-at-age are evident for all major SARs
 from the mid-1980s to 2010.
 Declining weight-at-age may be due to a number of factors, including
 fishing effects (i.e., gear selectivity),
@@ -200,22 +196,17 @@ The spawn index survey collects information on
 spatial extent of the spawn, number of egg layers,
 substrate type, and other data.
 There are two spawn survey periods defined by the predominant survey method:
-surface survey period from `r surv_yr_rng[1]` to `r new_surv_yr - 1`, and
+surface survey period from `r surv_yr_rng[1]` to `r new_surv_yr - 1` and
 dive survey period from `r new_surv_yr` to `r surv_yr_rng[2]`.
 Data from these surveys are used to calculate egg density in each spawn.
-Ultimately, the estimated weight of mature spawners required
-to produce the egg deposition is calculated and
-referred to as the 'spawn index'.
+Ultimately, we calculate the 'spawn index', 
+the estimated biomass of mature spawners required to produce those eggs.
 The `r surv_yr_rng[2]` spawn survey followed standard dive survey protocols
 for the HG, PRD, CC, SoG, and WCVI SARs as described in @cleary2018.
 Time series of spawn index by major SAR
 from `r paste(surv_yr_rng, collapse=" to ")`
-are summarized in Figure \@ref(fig:major-spawn-index).
-In `r surv_yr_rng[2]`, there was an
-increase in survey biomass (i.e., index values) for the PRD and WCVI SARs, and
-a decrease in survey biomass for HG, CC, and SoG SARs
-(Figure \@ref(fig:major-spawn-index);
-Tables \@ref(tab:spawn-index-hg) to \@ref(tab:spawn-index-wcvi)).
+are summarized in Figure \@ref(fig:major-spawn-index)
+and Tables \@ref(tab:spawn-index-hg) to \@ref(tab:spawn-index-wcvi).
 
 ## Spatial spawn distribution
 
@@ -239,10 +230,10 @@ with a sample taken every `r number_to_word(mcmc_samp_freq)`
 iterations (i.e., thinning).
 Then the first `r number_to_word(mcmc_burnin)` samples are discarded
 (i.e., burn-in),
-leaving `r number_to_word(mcmc_num_samples)` samples as the posteriors.
+leaving `r number_to_word(mcmc_num_samples)` samples as posteriors.
 Perceptions of stock status based on outputs (i.e., posteriors)
-from the SCA model are summarized for each stock
-in a multi-panel figure (e.g., Figure \@ref(fig:storyboard-hg)).
+from SCA models are summarized for each SAR
+in a six-panel figure (e.g., Figure \@ref(fig:storyboard-hg)).
 The panels show:
 
 a. Model fit to scaled spawn survey data,
@@ -264,7 +255,7 @@ with reference lines at model estimates of $0.3\SB_0$.
 Note that spawn survey data (i.e., spawn index) is scaled to abundance
 in panel (a) by the spawn survey scaling parameter $q$.
 The spawn index has two distinct periods defined by the dominant survey method: 
-surface surveys (`r surv_yr_rng[1]` to `r new_surv_yr - 1`), and 
+surface surveys (`r surv_yr_rng[1]` to `r new_surv_yr - 1`) and 
 dive surveys (`r new_surv_yr` to `r surv_yr_rng[2]`).
 Thus, two $q$ parameters are implemented in the estimation procedure:
 $q_1$ (`r surv_yr_rng[1]` to `r new_surv_yr - 1`)
@@ -274,9 +265,9 @@ with an informative prior approximating 1.0.
 
 The surface survey methodology has been used on occasion
 from `r new_surv_yr` to `r surv_yr_rng[2]`. 
-Generally this occurs when herring spawn is observed in locations where
+Generally this occurs when spawns are observed in locations where
 a dive survey team is not available, or
-when spawning occurs very early (e.g., January or February) or
+when spawns are early (e.g., January or February) or
 late (e.g., May) in the season. 
 In these instances,
 spawning biomass estimates obtained from surface surveys for
@@ -297,9 +288,9 @@ for the SISCAH modelling framework [@dfo2023a], but are not implemented here.
 A biological LRP is defined for the major
 Pacific Herring SARs at $0.3\SB_0$ [@kronlund2017].
 Candidate USRs were introduced in @cleary2018 and
-implemented as biomass objectives in simulation analyses for
-WCVI and SoG in 2018 [@dfo2019a], and then
-HG, PRD, and CC in 2019 [@dfo2019c].
+implemented as biomass objectives in simulation analyses
+for WCVI and SoG in 2018 [@dfo2019a], and
+then for HG, PRD, and CC in 2019 [@dfo2019c].
 An analysis of USR options was undertaken in 2022 with
 results presented in @dfo2022a.
 In total, five USR options were evaluated:
@@ -318,19 +309,17 @@ $\overline{\SB}_\mli{Prod}$
 $\overline{\SB}$.
 
 Implementing USRs as target biomass objectives within
-the simulation-evaluation process allows the evaluation of
+the simulation-evaluation process allows evaluation of
 MPs with respect to achieving USRs, 
 including whether a given USR option can be achieved in the absence of 
 commercial fisheries. 
 In 2023, DFO Resource Management selected and implemented a provisional 
 USR of $\overline{\SB}$ through 2022/23 IFMP process.
-
 Stock status relative to assessment model estimates $0.3\SB_0$ (i.e., LRP) and
 USR options are presented for PRD, CC, and WCVI SARs
 (Tables \@ref(tab:ref-points-prd) through \@ref(tab:ref-points-wcvi)).
 
-LRPs and USRs relate stock status to the DFO
-precautionary approach (PA) Policy [@dfo2009], and
+LRPs and USRs relate stock status to the DFO PA Policy [@dfo2009], and
 the same calculations are used for each Pacific Herring SAR.
 There is an important distinction between reference points (e.g., LRP, USR) and
 operational control points (OCPs) of the HCR
@@ -543,11 +532,12 @@ are presented in Figure \@ref(fig:harvest-rate).
 
 ## Application of MPs and harvest options for `r assess_yr + 1`\label{sec:harv-opts}
 
-Harvest options for `r assess_yr+1` reflect application of simulation-tested MPs
-for the major SARs, derived from the Herring OM [@benson2022]. 
+Harvest options for `r assess_yr+1` reflect
+application of simulation-tested MPs for the major SARs,
+derived from the Herring OM [@benson2022]. 
 OM conditioning was updated in 2022 using historic stock and fishery data
 from `r major_start_yr` to 2021; no MP updates were conducted for 2023.
-MPs are not provided for HG because this is now conducted within the 
+MPs are not provided for HG because this is now conducted within the
 HG rebuilding plan process.$^{\ref{fn:rebuild}}$
 MPs for SoG are provided in @dfo2025b.
 
