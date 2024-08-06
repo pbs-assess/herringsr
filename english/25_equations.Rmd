@@ -5,7 +5,7 @@
 The Pacific Herring stock assessment is conducted using
 the integrated statistical catch age model [iSCAM; @martell2011].
 iSCAM is implemented in a Bayesian estimation framework
-written in AD Model Builder [ADMB; @admb].
+written in AD Model Builder [ADMB; @admb2012].
 The original source code and documentation for
 \link{https://github.com/smartell/iSCAM}{iSCAM} and
 \link{https://www.admb-project.org/}{ADMB} are available online.

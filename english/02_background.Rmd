@@ -147,7 +147,7 @@ the HG, CC, SoG, and WCVI SARs, and
 estimated values reflect prior means [@cleary2018, Appendix D].
 Assuming $q_2 = 1$ produces a "minimum" biomass estimate
 buffering any other assessment and management implementation errors
-[@martell2011; @herring2012].
+[@martell2011; @dfo2012].
 Application of AM1 would remove such safeguards
 despite recent simulation evaluation showing that
 large (positive) assessment errors are produced by the current assessment model
