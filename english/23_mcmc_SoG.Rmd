@@ -12,7 +12,7 @@ The first `r number_to_word(mcmc_burnin)` samples were discarded (i.e., burn-in)
 leaving `r number_to_word(mcmc_num_samples)` samples for posteriors.
 This section will not be included in the final document.
 
-As SISCAH is thenew operating model, no changes were made to the iscam model as a result of diagnostics.  
+As SISCAH is the new operating model, no changes were made to the iscam model as a result of diagnostics.  
 
 (ref:sog-priors-posts-cap) Strait of Georgia SAR:
 prior probability distributions (lines) with

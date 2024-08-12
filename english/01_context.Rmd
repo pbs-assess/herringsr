@@ -80,7 +80,7 @@ implemented MP recommendations from previous years for the
 PRD, CC, SoG, and WCVI SARs [@dfo2024].
 
 <!-- TODO: Update HG rebuilding footnote -->
-Note that MPs for HG and SoG are not updated through this process. 
+Note that MPs for HG and SoG are not currently updated through this process. 
 Management measures to support long-term recovery of HG herring 
 are being developed through the
 HG rebuilding plan process.\footnote{\label{fn:rebuild}
