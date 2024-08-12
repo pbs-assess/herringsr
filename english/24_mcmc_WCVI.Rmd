@@ -12,22 +12,11 @@ The first `r number_to_word(mcmc_burnin)` samples were discarded (i.e., burn-in)
 leaving `r number_to_word(mcmc_num_samples)` samples for posteriors.
 This section will not be included in the final document.
 
-Autocorrelation was detected in the estimation of
-fishery selectivity-at-50% ($\hat{a}_1$) and
+Autocorrelation was detected in the estimation of several parameters. Doubling the chain length and thin rate did not significantly change the autocorrelation so priors were reparameterized. 
+For fishery selectivity-at-50% ($\hat{a}_1$) and
 its standard deviation ($\hat{\gamma}_1$) for the "other" fisheries category
-In 2021 we attempted to ameliorate the issue by
-using posterior medians from 2020 as starting values,
-increasing the MCMC chain from 5 million to 10 million iterations, and
-increasing the number of initial iterations discarded as burn-in from
-1,000 to 5,000, and then again to 7,000.
-The thinning rate, choosing 1 out of every 1,000 was kept the same. 
-The autocorrelation for both $\hat{a}_1$ and $\hat{\gamma}_1$ was reduced
-but still persistent. 
-An attempt to run the chain for 20 million iterations, with a 1 in 4,000 thin rate, was also made but was not successful due to computer limitations. 
-Since these remedies did not eliminate the autocorrelation, and
-had little impact on the estimation of $SB_t$ and $SB_0$ in 2021, 
-we have reported the results of the 5 million-run chain
-to be consistent with other SARs.
+we adjusted the prior on the logistic selectivity from 3 to 2.6 and narrowing the standard deviation from 0.25 to .2.
+For average initial recruitment a wide normal prior with a mean of -0.5 and sd of 1.5 replaced a uniform prior. For logrithmic natural mortality the prior normal mean was shifted from approximately -0.8 to -0.5 and the sd reduced from 0.4 to 0.35. The autocorrelation for all parameters were greatly reduced but still persistent.
 
 (ref:wcvi-priors-posts-cap) West Coast of Vancouver Island SAR:
 prior probability distributions (lines) with
