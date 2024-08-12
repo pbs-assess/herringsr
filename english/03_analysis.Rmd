@@ -405,7 +405,9 @@ with above average age-`r age_first` recruitment in 2014, 2018 and,
 (Figure \@ref(fig:storyboard-prd)c, d, f). 
 Productivity in recent years is relatively high compared to the 
 last 30 years, with the highest estimated productivity in 2022
-(Figure \@ref(fig:storyboard-prd)f).
+(Figure \@ref(fig:storyboard-prd)f) and natural mortality is decreasing 
+in the last handful of years. This has led to an abundance estimate that is 
+steeply increasing, and higher than estimates since the 1960s.
 
 Fluctuations in spawning biomass trend appear to be less than in other SARs 
 in the last 30 years, possibly because they are smaller in magnitude 
