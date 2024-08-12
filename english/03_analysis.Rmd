@@ -436,12 +436,11 @@ biomass through 2020.
 In 2021 - 2023, increasing estimated natural mortality caused a decrease 
 in estimated biomass, which was mitigated in part by higher than average 
 estimated recruitment in 2022 (Figure \@ref(fig:storyboard-cc)a, b, e).
-Model estimates suggest slightly less spawning biomass in 2023 than 2022
+Model estimates suggest decreasing spawning biomass since 2020.
 (Table \@ref(tab:cc-spawning-biomass-depletion)),
 and the analysis of surplus production shows
-evidence of positive production in 2018, 
-followed by negative in both 2019 and 2020, 
-and near neutral production in 2021 and 2022 
+evidence of positive production in 2018 followed by decreases in 2019, 2020, 
+and estimated production closer to neutral the past couple years.
 (Figure \@ref(fig:storyboard-cc)f).
 
 An examination of spawn biomass by herring section shows
