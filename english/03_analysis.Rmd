@@ -475,10 +475,8 @@ SOK removals are not included in the estimation of $U_t$.
 
 ### West Coast of Vancouver Island
 
-The time series of estimated spawning biomass reached an estimated peak in the 
-mid to late 1970s during a time period of lowest
-observed model estimates of natural mortality and variable estimated recruitment
-(Figure \@ref(fig:storyboard-wcvi)a, b, c). 
+The time series of estimated spawning biomass reached an estimated peak in the mid to late 1970s during a time period of lowest
+observed model estimates of natural mortality and variable estimated recruitment (Figure \@ref(fig:storyboard-wcvi)a, b, c). 
 From the late 1980s through to around 2008
 a variable increase in estimated mortality and
 a generally variable but low estimated recruitment led to a declining trend,
@@ -486,37 +484,17 @@ down from the peaks observed in the late 1970s
 (Figure \@ref(fig:storyboard-wcvi)a, b, c).
 
 The low estimated spawning biomass persisted from 2006 to 2012, 
-influenced by negative recruitment deviations 
-(i.e., lower than predicted by the stock-recruit function)
-and the highest estimated natural mortality rates since `r major_start_yr`
-(Figure \@ref(fig:storyboard-wcvi)a, b, f).
-Some increases in estimated biomass occured in 2015 with 
-lower estimated natural mortality and higher estimated recruitment, 
-and then again after 2020 (Figure \@ref(fig:storyboard-wcvi)d, f).
+at which point productivity has increased with higher than average recruitment and declining natural mortality estimates resulting in increasing spawning biomass estimates (Figure \@ref(fig:storyboard-wcvi)a, b, f).
 
 The absence of a commercial fishery since 2005 means the realized harvest rate
 has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
-There is modest evidence for an increase in biomass above the LRP since 2016 and
-positive production estimates in 2019/2020 and 2020/2021
+There is modest evidence for an increase in biomass above the LRP since 2016 and positive production estimates in the last few years.
 (Figure \@ref(fig:storyboard-wcvi)f).
 
-Investigation of WCVI MCMC diagnostics revealed autocorrelation
-in the estimation of fishery selectivity-at-50% ($\hat{a}_1$) 
+Previous years WCVI MCMC diagnostics showed autocorrelation 
+especially in the estimation of fishery selectivity-at-50% ($\hat{a}_1$) 
 and its standard deviation ($\hat{\gamma}_1$)
-for the "other" fisheries category
-(i.e., reduction, food and bait, as well as special use).
-Autocorrelation in parameter estimation may indicate
-bias in the posterior distribution or local minima. 
-In this instance, autocorrelation is likely resulting from little
-to no catch or age composition data for that fishery in the 1970s. 
-In an attempt to resolve parameter autocorrelation, we removed
-age compositions from 1984 for which there was no associated catch as well as
-catch from 1978 to 1996 (range: 0 t to 0.84 t), for which
-there are no associated age compositions. 
-These changes did not notably improve the autocorrelation.
-Similarly, running longer chains (20 million vs 5 million)
-resulted in only minor improvements (as was observed when this was conducted
-in 2021 [@dfo2021c]).
+for the "other" fisheries category (i.e., reduction, food and bait, as well as special use). These were largely ameliorated by a reparameterization of parameter priors [@dfo2021c]).
 
 `r stock_status_text(SAR = "WCVI", this_yr = assess_yr, translate = french)`
 
