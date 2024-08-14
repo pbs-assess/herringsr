@@ -475,26 +475,31 @@ SOK removals are not included in the estimation of $U_t$.
 
 ### West Coast of Vancouver Island
 
-The time series of estimated spawning biomass reached an estimated peak in the mid to late 1970s during a time period of lowest
-observed model estimates of natural mortality and variable estimated recruitment (Figure \@ref(fig:storyboard-wcvi)a, b, c). 
+The time series of estimated spawning biomass reached an estimated peak in the 
+mid to late 1970s during a time period of lowest
+observed model estimates of natural mortality and variable estimated recruitment 
+(Figure \@ref(fig:storyboard-wcvi)a, b, c). 
 From the late 1980s through to around 2008
 a variable increase in estimated mortality and
 a generally variable but low estimated recruitment led to a declining trend,
-down from the peaks observed in the late 1970s 
-(Figure \@ref(fig:storyboard-wcvi)a, b, c).
+down from the peaks observed in the late 1970s to a slump in the mid 2000s to
+mid 2010s. (Figure \@ref(fig:storyboard-wcvi)a, b, c).
 
-The low estimated spawning biomass persisted from 2006 to 2012, 
-at which point productivity has increased with higher than average recruitment and declining natural mortality estimates resulting in increasing spawning biomass estimates (Figure \@ref(fig:storyboard-wcvi)a, b, f).
+In the last 5 years productivity has increased with mostly higher than average 
+recruitment and declining natural mortality estimates resulting in an 
+upward swing of spawning biomass estimates not seen since the 1970s 
+(Figure \@ref(fig:storyboard-wcvi)a, b, f). Biomass estimates have reached a
+peak seldom seen on the WCVI in the over 70 year history of DFO records.
 
 The absence of a commercial fishery since 2005 means the realized harvest rate
 has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
-There is modest evidence for an increase in biomass above the LRP since 2016 and positive production estimates in the last few years.
-(Figure \@ref(fig:storyboard-wcvi)f).
 
 Previous years WCVI MCMC diagnostics showed autocorrelation 
 especially in the estimation of fishery selectivity-at-50% ($\hat{a}_1$) 
 and its standard deviation ($\hat{\gamma}_1$)
-for the "other" fisheries category (i.e., reduction, food and bait, as well as special use). These were largely ameliorated by a reparameterization of parameter priors [@dfo2021c]).
+for the "other" fisheries category (i.e., reduction, food and bait, as well as 
+special use). These were largely ameliorated by a reparameterization of 
+parameter priors [@dfo2021c]).
 
 `r stock_status_text(SAR = "WCVI", this_yr = assess_yr, translate = french)`
 
