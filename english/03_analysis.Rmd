@@ -332,7 +332,7 @@ whereas LRPs and USRs are management objectives.
 
 Coast wide trends in Pacific Herring biomass show 
 an average increasing trend in estimated spawning biomass
-from 2010 to 2020 with
+from mid-to-late 2000's to present with
 stable catches since 1980, and catch declining over the last decade 
 (Figure \@ref(fig:coastwide-biomass-catch)).
 Comparisons of total estimated biomass and spawning biomass
@@ -355,12 +355,13 @@ above average estimated recruitment through the late 1990s,
 before biomass declined to persistent historic lows 
 from 2000 to present, with a couple of low biomass peaks in 2013 and 2019
 (Figure \@ref(fig:storyboard-hg)d).
-The increasing trend in the estimated natural mortality rate since 1980
+The increasing trend in the estimated natural mortality rate startingin 1980
 (Figure \@ref(fig:storyboard-hg)b) largely absorbed  any surplus production
 attributed to above average recruitment events
 (e.g., 1997, 2012, 2018; Figure \@ref(fig:storyboard-hg)c, d).
-Additionally estimated natural mortality has increased the last 5 years
-to historic highs.  
+Estimated natural mortality has been on a slow decline since the early 2000s
+but low estimated recruitment has failed to lead to a positive estimated 
+productivity.
 
 The HG stock persists in a low biomass state,
 with many years also showing low productivity
