@@ -675,3 +675,22 @@ These options reflect application of MPs to the `r assess_yr + 1`
 forecast biomass for WCVI, under the two OM scenarios.
 All MPs and scenarios listed in Table \@ref(tab:decision-wcvi) include
 updated performance metrics under both scenarios [@dfo2021b].
+
+## Ecosystem considerations
+
+DFO is committed to an ecosystem approach to fisheries management [@dfo2024].
+Environmental variability is modeled implicitly via
+time varying natural mortality and recruitment, however,
+ecosystem indicators are not directly incorporated into the assessment model.
+@boldt2022 identified mechanistic hypotheses that link
+environmental and biological pressures to Pacific Herring outcomes (responses),
+such as distribution, growth, migration, productivity,
+reproduction, and survival.
+Environmental pressures that have been identified as important for herring
+include the timing, duration, and magnitude of upwelling,
+which can affect the amount of primary and secondary production
+available to herring [@mackas2001; @hourston2019].
+Other physical environmental pressures include sea surface temperature (SST),
+salinity, sea level, river discharge, and Ekman transport
+[@tester1948; @alderdice1985; @stocker1985; @stocker1988;
+@schweigert1990; @ware1991; @zebdi1995].
