@@ -40,7 +40,8 @@ Management procedure evaluation tables were updated in 2022
 [@dfo2022b].
 
 Currently, a core set of fisheries management objectives [@dfo2019c]
-have been applied to each major SAR:
+have drafted for each major SAR, however only the conservation objective
+(1) has been used in the selection of MPs:
 
 1. Maintain spawning biomass at or above the LRP with at least 75% probability
 over three Pacific Herring generations
@@ -59,8 +60,8 @@ over three Pacific Herring generations
 over three Pacific Herring generations
 (i.e., maximize average catch).
 
-However, a fully specified set of objectives has not yet been developed
-for each SAR.
+A fully specified set of objectives has not yet been developed
+for each SAR,
 DFO will continue to collaborate with coastal First Nations to
 develop area-specific objectives specific to
 FSC fisheries as well as SOK fisheries.
@@ -101,40 +102,12 @@ First Nations and other stakeholders.
 1. A minimum three year cycle for MSE updates is recommended, 
 unless new evidence reveals exceptional circumstances.
 
-DFO is committed to implementing these recommendations
-prior to implementing the
-spatially integrated statistical catch at age herring (SISCAH)
-modelling framework.
+DFO has advanced these recommendations and
+has implemented the spatially integrated statistical catch at age 
+herring (SISCAH) modelling framework for the SoG SAR [@dfo2025b].
+For the remaining 4 SARs, we implement MPs from the previously
+approved operating model (as per 2024).
 
-1. Differences in specification of Pacific Herring MPs,
-including HCR components, are expected a priori among SARs.
-The reasons relate to
-differences in objectives deemed important by resource users,
-differences in historic and current stock and fishery dynamics, and
-differences in the magnitude and direction of assessment model errors.
-Conservation objectives are held constant among SARs
-based on the analyses of @kronlund2017 
-(e.g., avoid a biological limit reference point (LRP)
-in alignment with the DFO precautionary approach (PA) Policy [@dfo2009]).
-
-1. There are many possible ways to incorporate MP performance in
-robustness trials into decision making,
-but there is currently no accepted scientific way to
-combine results from multiple operating models.
-
-1. In situations where multiple MPs meet the agreed upon objectives,
-further criteria, such as ranking secondary objectives,
-is needed in order to provide decision-makers
-with a tractable set of trade-off choices.
-
-1. Outcomes of MP evaluations appear to be more heavily influenced by
-the last three to five years of stock status and 
-natural mortality trends used to condition the OM. 
-If simulations were run over a greater number of years (e.g., 50 years)
-performance would start to approach equilibrium and be 
-unaffected by most recent trends in OM conditioning data.
-This phenomenon is important to consider when selecting or eliminating MPs, 
-especially if probabilities are considerably different between MP updates.
 
 ## Input data
 
@@ -234,8 +207,7 @@ Tables \@ref(tab:spawn-index-hg) through \@ref(tab:spawn-index-wcvi)
 summarize the spatial distribution of survey spawn biomass
 (i.e., the spawn index)
 by proportion over the last `r num_yrs_tab + 1` years for the major SARs.
-HG spawn is summarized by Group, while
-spawn in PRD, CC, and WCVI are summarized by Statistical Area;
+For each SAR, spawn is summarized either by Group, or Statistical Area;
 the choice of spatial grouping reflects spawning behaviour and
 biology for each SAR based on the
 survey data and working group discussions with local First Nations.
