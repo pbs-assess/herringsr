@@ -86,8 +86,8 @@ are being developed through the
 HG rebuilding plan process.\footnote{\label{fn:rebuild}
 Haida Gwaii 'íináang | iinang Pacific Herring:
 An ecosystem overview and ecosystem-based rebuilding plan.
-Draft consultation period occurred September 26 to December 16, 2022; 
-Final approval scheduled for fall 2023.}
+Approved by the Minister of Fisheries and Oceans, the Council of Haida Nation 
+and Parks Canada.  April 2024.  In Press.}
 MPs for SoG are updated in @dfo2025b using methods from @johnson2024.
 
 This `r assess_yr` stock assessment includes
