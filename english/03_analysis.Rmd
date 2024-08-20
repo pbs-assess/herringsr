@@ -288,14 +288,14 @@ commercial fisheries.
 In 2023, DFO Resource Management selected and implemented a provisional 
 USR of $\overline{\SB}$ through 2022/23 IFMP process.
 Stock status relative to assessment model estimates $0.3\SB_0$ (i.e., LRP) and
-USR options are presented for PRD, CC, and WCVI SARs
-(Tables \@ref(tab:ref-points-prd) through \@ref(tab:ref-points-wcvi)).
+USR options are presented in
+Tables \@ref(tab:ref-points-prd) through \@ref(tab:ref-points-wcvi).
 
 LRPs and USRs relate stock status to the DFO PA Policy [@dfo2009], and
 the same calculations are used for each Pacific Herring SAR.
 There is an important distinction between reference points (e.g., LRP, USR) and
 operational control points (OCPs) of the HCR
-or the management procedure (MP) used to set catch limits.
+used to set catch limits.
 Specifically, OCPs define the inflection points of a HCR and
 identify biomass levels where management action is taken,
 whereas LRPs and USRs are management objectives.
@@ -304,8 +304,8 @@ whereas LRPs and USRs are management objectives.
 
 Coast wide trends in Pacific Herring biomass show 
 an average increasing trend in estimated spawning biomass
-from mid-to-late 2000's to present with
-stable catches since 1980, and catch declining over the last decade 
+from mid-to-late 2000's to present. 
+Catches have been stable since 1980 and declining over the last decade 
 (Figure \@ref(fig:coastwide-biomass-catch)).
 Comparisons of total estimated biomass and spawning biomass
 are also included for each SAR
@@ -316,7 +316,7 @@ these trends are presented using median posterior estimates.
 
 Estimated spawning biomass historic lows occurred in the late 1960s predicated
 by high catches, low estimated recruitment and high estimated natural mortality 
-(Figure \@ref(fig:storyboard-hg)a, b, e). 
+(Figure \@ref(fig:storyboard-hg)). 
 Under variable estimated recruitment, estimated spawning biomass recovered
 from that point through the early 1980s supported by 
 declining rates of estimated natural mortality.
@@ -327,8 +327,8 @@ above average estimated recruitment through the late 1990s,
 before biomass declined to persistent historic lows 
 from 2000 to present, with a couple of low biomass peaks in 2013 and 2019
 (Figure \@ref(fig:storyboard-hg)d).
-The increasing trend in the estimated natural mortality rate startingin 1980
-(Figure \@ref(fig:storyboard-hg)b) largely absorbed  any surplus production
+The increasing trend in the estimated natural mortality rate starting in 1980
+(Figure \@ref(fig:storyboard-hg)b) largely absorbed any surplus production
 attributed to above average recruitment events
 (e.g., 1997, 2012, 2018; Figure \@ref(fig:storyboard-hg)c, d).
 Estimated natural mortality has been on a slow decline since the early 2000s
@@ -342,7 +342,7 @@ Above-average recruitment of age-`r age_first` fish in 2018,
 leading to increases in survey biomass in 2019 and 2020 were positive signs but 
 average to below-average recruitment since then,
 which estimates negative productivity,
-has brought biomass down to recent historical lows. 
+has brought biomass back down to the LRP. 
 The effective harvest rate $U_t$ since 2000 has been at or near zero
 (Figure \@ref(fig:harvest-rate)),
 with the last commercial roe fishery in 2002,
@@ -357,21 +357,20 @@ the rebuilding plan process.$^{\ref{fn:rebuild}}$
 
 Estimated spawning biomass reached historic highs in the early 1960s 
 due to low estimated mortality rate and high estimated recruitment
-(Figure \@ref(fig:storyboard-prd)a, b, e). 
+(Figure \@ref(fig:storyboard-prd)). 
 This was followed immediately by below average recruitment and
 a rise to the highest estimated mortality rate,
 more than doubling within 10 years.
 In response the stock collapsed by the mid-1960s to
 the lowest estimated spawning biomass. 
 Spawning biomass recovered by the mid-1980s estimated to be
-about 50% of the historic high
-even amid mostly below-average recruitment
-(Figure \@ref(fig:storyboard-prd)b, d, e).
-In the late-1980s,
-estimated spawning biomass began a steady decline
+about 50% of the historic high, but began a steady decline 
+in the late-1980s,
 amid slowly rising mortality rates and variable recruitment,
 before stabilizing at a relatively low level
-(but above historic lows) between 2005 and 2018.
+(but above historic lows) between 2005 and 2018 
+(Figure \@ref(fig:storyboard-prd)b, d, e).
+
 Since then estimated spawning biomass has shown modest increases in biomass 
 with above average age-`r age_first` recruitment in 2014, 2018 and,
 2022 and stable natural mortality rates
@@ -387,29 +386,28 @@ in the last 30 years, possibly because they are smaller in magnitude
 and offset each other as shown in Figure \@ref(fig:storyboard-prd)a.
 
 `r stock_status_text(SAR = "PRD", this_yr = assess_yr, translate = french)`
-Commercial fisheries have occurred annually in PRD since the mid-1980s,
-with the exception of 2019 to 2022,
-during which the effective harvest rate $U_t$ was estimated to be
+Commercial fisheries have occurred annually in PRD from the mid-1980s through 
+2018, during which the effective harvest rate $U_t$ was estimated to be
 at or below 20% in all years except 1989 (Figure \@ref(fig:harvest-rate)).
 
 ### Central Coast
 
 Estimated spawning biomass reached a historic high around 1980
-following low estimated natural mortality rates and the highest estimated 
-recruitment in 1979 (Figure \@ref(fig:storyboard-cc)a, b, c). 
+preceded by low estimated natural mortality rates and the highest estimated 
+recruitment on record (1979, Figure \@ref(fig:storyboard-cc)).
 From there a decline in estimated spawning biomass
 appears to be influenced initially by 
 higher estimated natural mortality rates and
 highly variable estimated recruitment.
-Spawning biomass trend declined from 1985-2005 and 
+Spawning biomass trend declined from 1985-2008 and 
 an increase in estimated natural mortality led to
-historically low estimated biomass levels from 2005 to 2015. 
+historically low estimated biomass levels from 2006 to 2012. 
 Decreasing estimated natural mortality lead to moderate increases in 
-biomass through 2020. 
+biomass through 2020.
 In 2021 - 2023, increasing estimated natural mortality caused a decrease 
 in estimated biomass, which was mitigated in part by higher than average 
 estimated recruitment in 2022 (Figure \@ref(fig:storyboard-cc)a, b, e).
-Model estimates suggest decreasing spawning biomass since 2020.
+Model estimates suggest decreasing spawning biomass since 2020
 (Table \@ref(tab:cc-spawning-biomass-depletion)),
 and the analysis of surplus production shows
 an estimated production close to neutral for 2021 and 2023, and negative for 2023.
@@ -423,10 +421,10 @@ Thompson/Stryker (Section 074; Figure \@ref(fig:spawn-section-cc)).
 Occurrence of spawn in Thompson/Stryker in 2020-2022
 represented the first significant spawns in this section in many years.
 The mechanisms driving spawn fluctuations in these smaller areas in the 
-Central Coast have occurred in the past and are not well understood.
+Central Coast occur throughout the time series and are not well understood.
 
 From 1990 to 2006 the effective harvest rate $U_t$ is estimated to fluctuate
-above and below `r target_hr*100`%,
+above and below the reference harvest rate of `r target_hr*100`%,
 with median estimates exceeding `r target_hr*100`% in some of these years
 (Figure \@ref(fig:harvest-rate)).
 Occurrences of $U_t$ exceeding `r target_hr*100`% 
@@ -434,13 +432,10 @@ are due in part to positive assessment model errors and
 lags in detecting a directional change in the trend.
 
 Following a commercial fishery closure from 2007 to 2013,
-the CC SAR was reopened to commercial fisheries;
+the CC SAR was reopened to commercial fisheries:
 commercial roe fisheries occurred in 2014, 2015, and 2016.
-Commercial SOK fisheries have operated yearly at some level 
-from 2014 to 2021 and in 2023 (Table \@ref(tab:annual-sok-catch)). 
-Note that a commercial SOK fishery did not occur in Area 07 in 2020
-due to COVID-19,
-and no commercial SOK fisheries were permitted in 2022.
+Commercial SOK fisheries have operated at some level most years
+from 2014 to 2024 (Table \@ref(tab:annual-sok-catch)).
 SOK removals are not included in the estimation of $U_t$. 
 
 `r stock_status_text(SAR = "CC", this_yr = assess_yr, translate = french)`
@@ -450,22 +445,25 @@ SOK removals are not included in the estimation of $U_t$.
 The time series of estimated spawning biomass reached an estimated peak in the 
 mid to late 1970s during a time period of lowest
 observed model estimates of natural mortality and variable estimated recruitment 
-(Figure \@ref(fig:storyboard-wcvi)a, b, c). 
+(Figure \@ref(fig:storyboard-wcvi)). 
 From the late 1980s through to around 2008
-a variable increase in estimated mortality and
+an increase in estimated mortality and
 a generally variable but low estimated recruitment led to a declining trend,
 down from the peaks observed in the late 1970s to a slump in the mid 2000s to
-mid 2010s. (Figure \@ref(fig:storyboard-wcvi)a, b, c).
+mid 2010s (Figure \@ref(fig:storyboard-wcvi)a, b, c).
 
 In the last 5 years productivity has increased with mostly higher than average 
-recruitment and declining natural mortality estimates resulting in an 
-upward swing of spawning biomass estimates not seen since the 1970s 
-(Figure \@ref(fig:storyboard-wcvi)a, b, f). Biomass estimates have reached a
-peak seldom seen on the WCVI in the over 70 year history of DFO records.
+recruitment and declining natural mortality estimates resulting in
+increasing spawning biomass estimates not seen since the 1970s 
+(Figure \@ref(fig:storyboard-wcvi)a, b, f). Biomass estimates are nearing the 
+peak seen on the WCVI in the over 70 year history of DFO records.
 
 The absence of a commercial fishery since 2005 means the realized harvest rate
 has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
 
+<!--TODO (SP): I'm not sure this fits here, as we don't provide this clarification
+for the other SARs. Maybe this can be added to the Appendix, under
+Model description (eg, Table of Priors) ?? -->
 Previous years WCVI MCMC diagnostics showed autocorrelation 
 especially in the estimation of fishery selectivity-at-50% ($\hat{a}_1$) 
 and its standard deviation ($\hat{\gamma}_1$)
