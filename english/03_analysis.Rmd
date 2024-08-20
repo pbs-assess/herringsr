@@ -482,7 +482,10 @@ has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
 
 <!--TODO (SP): I'm not sure this next statement fits here, as we don't provide this clarification
 for the other SARs. Maybe this can be added to the Appendix, under
-Model description (eg, Table of Priors) ?? -->
+Model description (eg, Table of Priors) ?? 
+Last year because there was so much autocorrelation we provided some verbage.
+This year it might be good to show that it was taken care of. Otherwise just 
+delete this paragraph-->
 Previous years WCVI MCMC diagnostics showed autocorrelation 
 especially in the estimation of fishery selectivity-at-50% ($\hat{a}_1$) 
 and its standard deviation ($\hat{\gamma}_1$)
