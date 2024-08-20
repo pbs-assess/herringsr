@@ -480,7 +480,7 @@ peak seen on the WCVI in the over 70 year history of DFO records.
 The absence of a commercial fishery since 2005 means the realized harvest rate
 has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
 
-<!--TODO (SP): I'm not sure this fits here, as we don't provide this clarification
+<!--TODO (SP): I'm not sure this next statement fits here, as we don't provide this clarification
 for the other SARs. Maybe this can be added to the Appendix, under
 Model description (eg, Table of Priors) ?? -->
 Previous years WCVI MCMC diagnostics showed autocorrelation 
