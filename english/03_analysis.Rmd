@@ -677,7 +677,8 @@ reproduction, and survival.
 Environmental pressures that have been identified as important for herring
 include the timing, duration, and magnitude of upwelling,
 which can affect the amount of primary and secondary production
-available to herring [@mackas2001; @hourston2019].
+available to herring [@mackas2001; @hourston2019], as well as predation and
+competition [@Goedfroid2019].
 Other physical environmental pressures include sea surface temperature (SST),
 salinity, sea level, river discharge, and Ekman transport
 [@tester1948; @alderdice1985; @stocker1985; @stocker1988;
