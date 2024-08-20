@@ -501,18 +501,19 @@ $U_t = C_t/(C_t + \SB_t)$, where
 $C_t$ is catch in year $t$, and
 $\SB_t$ is estimated spawning biomass in year $t$.
 Time series of $U_t$
-are presented in Figure \@ref(fig:harvest-rate).
+are presented in Figure \@ref(fig:harvest-rate), where $U_t$ of 20%
+is used as a reference line only and is not indicative of annual management
+decisions on TAC for each SAR.
 
 ## Application of MPs and harvest options for `r assess_yr + 1`\label{sec:harv-opts}
 
-Harvest options for `r assess_yr+1` reflect
-application of simulation-tested MPs for the major SARs,
-derived from the Herring OM [@benson2022]. 
+Harvest options for PRD, CC, and WCVI for `r assess_yr+1` reflect
+application of simulation-tested MPs using the Herring OM [@benson2022]. 
 OM conditioning was updated in 2022 using historic stock and fishery data
-from `r major_start_yr` to 2021; no MP updates were conducted for 2023.
+from `r major_start_yr` to 2021; no MP updates were conducted for 2023 or 2024.
 MPs are not provided for HG because this is now conducted within the
-HG rebuilding plan process.$^{\ref{fn:rebuild}}$
-MPs for SoG are provided in @dfo2025b.
+HG rebuilding plan process$^{\ref{fn:rebuild}}$
+and MPs for SoG are provided in @dfo2025b.
 
 ### Haida Gwaii
 
@@ -523,7 +524,7 @@ little evidence of sustained stock growth despite the absence of
 commercial fisheries since 2002 (and since 2004 for the SOK fishery).
 Survey biomass increased from 2019 to 2020,
 remained stable in 2021,
-and declined from 2021 to 2023.
+and declined from 2021 to 2023, with a slight uptick in 2024.
 Results of the simulation-evaluations found that none of the proposed MPs, 
 including the historical and no fishing MPs,
 maintained spawning biomass above the LRP with high probability
@@ -532,13 +533,11 @@ is defined as 75 to 95\% by the DFO decision-making framework (DFO 2009).}
 
 `r proj_biomass_text(SAR = "HG", next_yr = assess_yr + 1, translate = french)`
 
-DFO has committed to developing and implementing a rebuilding plan for
-Haida Gwaii Pacific Herring.
-A technical working group comprised of members of
-the Council of Haida Nation, DFO, and Parks Canada co-developed
-a draft plan for which a  consultation period was held
-from September 26 to December 16, 2022. 
-Approval of the final rebuilding plan is expected for the fall/winter of 2023.
+Given it's prolonged low biomass state, a rebuilding plan was required 
+for Haida Gwaii Pacific Herring. 
+A comprehensive plan was co-developed by the Council of Haida Nation, 
+Fisheries and Oceans Canada and Parks Canada and was finalized in 
+April 2024.$^{\ref{fn:rebuild}}$
 
 Guidance for developing rebuilding plans [@dfo2013] states that
 the primary objective of any rebuilding plan is to
