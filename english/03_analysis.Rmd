@@ -10,30 +10,21 @@ evaluate the performance of candidate MPs against
 hypotheses about past and future stock and fishery dynamics. 
 The purpose of the MSE process is to
 identify and eliminate MPs that incur unacceptable risks to a stock
-(i.e., poor choices) and
-identify MPs that provide acceptable outcomes
+and identify MPs that provide acceptable outcomes
 related to conservation and fishery management objectives.
-Identifying preferred MPs requires
-a fully specified set of measurable objectives that include
+Identifying preferred MPs requires measurable objectives that include
 reference points (typically categorized as limits and targets) and
-to the extent possible,
-specification of measurable objectives related to
-catch, catch variability, and socio-cultural goals. 
+those related to catch, catch variability, and socio-cultural goals. 
 MSE is an iterative and ongoing process conducted with the participation of
 First Nations, the fishing industry, as well as
 government and non-government organizations. 
 
 The first MSE cycles for the SoG and WCVI SARs
 were completed in 2018 [@dfo2019a].
-Steps included
-OM development [@benson2022],
-fitting OMs to Pacific Herring stock and fishery monitoring data
-from `r major_start_yr` to 2017, and
-closed-loop simulations of MP performance for
-alternative future natural mortality scenarios [@dfo2019a].
-In 2019, the MSE process was extended to
-the HG, PRD, and CC SARs
-with stock and fishery monitoring data updated to include 2018
+Steps included OM development [@benson2022],
+fitting OMs and simulations of MP performance for
+various hypothesized natural mortality scenarios [@dfo2019a].
+In 2019, the MSE process was extended to HG, PRD, and CC SARs
 and performance evaluation of SAR specific MPs [@dfo2019c],
 with subsequent updates outlined in Section "\nameref{sec:context}".
 Management procedure evaluation tables were updated in 2022
@@ -195,7 +186,7 @@ The \link{https://github.com/grinnellm/Reports}{Pacific Herring data summaries}
 show the proportion of spawn survey data (i.e., spawn index)
 from the surface and dive survey methods by SAR and year.
 Due to the COVID-19 pandemic, only surface surveys were conducted
-for HG in 2020 and 2021, as well as for PRD in 2020.
+for HG in 2020 and 2021, and for PRD in 2020.
 These surface survey observations are treated as dive survey observations and
 are assumed to be continuous with the dive survey time series.
 Methods for combining surface and dive survey observations are presented
@@ -270,9 +261,9 @@ surface surveys (`r surv_yr_rng[1]` to `r new_surv_yr - 1`) and
 dive surveys (`r new_surv_yr` to `r surv_yr_rng[2]`).
 Thus, two $q$ parameters are implemented in the estimation procedure:
 $q_1$ (`r surv_yr_rng[1]` to `r new_surv_yr - 1`)
-with an uninformative prior, and
+with a weakly informative prior, and
 $q_2$ (`r new_surv_yr` to `r surv_yr_rng[2]`)
-with an informative prior approximating 1.0.
+with a strongly informative prior approximating 1.0.
 
 ### Reference points\label{sec:ref-pts}
 
@@ -680,14 +671,15 @@ salinity, sea level, river discharge, and Ekman transport
 
 Thirdly, while these ecosystem indicators are not directly incorporated into the 
 assessment model they are modelled implicitly via time varying natural mortality 
-and recruitment. Incorporating spatial, and other 
-ecosystem indicators is an area of ongoing research for Pacific Herring.
+and recruitment. 
 
 Fourthly, [@dfo2022a] introduce a process for evaluating five different USR 
 points as candidate biomass target objectives for Pacific Herring and these are
 considered in the MSE process and in development of the IFMP.
 
-DFO is committed to an ecosystem approach to fisheries management and provides 
-further summary of recent research in [@dfo2024].
+Incorporating spatial, and other ecosystem indicators is an area of ongoing 
+research for Pacific Herring.DFO is committed to an ecosystem approach to 
+fisheries management and provides further summary of recent research 
+in [@dfo2024].
  
 
