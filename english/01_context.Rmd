@@ -74,12 +74,11 @@ SoG and WCVI SARs [@dfo2021c].
 
 1. The 2022 stock assessment included
 updated MP recommendations for the PRD, CC, SoG, and WCVI SARs [@dfo2022b].
-<!-- TODO: Verify this last one -->
+
 1. The 2023 stock assessment
-implemented MP recommendations from previous years for the
+implemented MPs from previous years for the
 PRD, CC, SoG, and WCVI SARs [@dfo2024].
 
-<!-- TODO: Update HG rebuilding footnote -->
 Note that MPs for HG and SoG are not currently updated through this process. 
 Management measures to support long-term recovery of HG herring 
 are being developed through the
