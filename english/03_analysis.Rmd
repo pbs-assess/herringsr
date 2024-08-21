@@ -485,7 +485,7 @@ especially in the estimation of fishery selectivity-at-50% ($\hat{a}_1$)
 and its standard deviation ($\hat{\gamma}_1$)
 for the "other" fisheries category (i.e., reduction, food and bait,
 special use). These were largely ameliorated this year by a reparameterization of 
-parameter priors [@dfo2021c]).
+parameter priors.
 
 `r stock_status_text(SAR = "WCVI", this_yr = assess_yr, translate = french)`
 
@@ -655,33 +655,39 @@ are presented in Table \@ref(tab:decision-wcvi).
 These options reflect application of MPs to the `r assess_yr + 1`
 forecast biomass for WCVI, under the two OM scenarios.
 All MPs and scenarios listed in Table \@ref(tab:decision-wcvi) include
-updated performance metrics under both scenarios [@dfo2021b].
+updated performance metrics under both scenarios [@dfo2022a].
 
 ## Ecosystem considerations
 
 Ecosystem considerations are taken into account in the model in a number of ways.
 Firstly, Pacific Herring in BC are managed as 5 major stocks, taking into account
 stock specific life history, abundance, and pressures that feed into the models. 
-Secondly, the Limit Reference Point is set to a higher values compared to those
-recommended in 
-<!--TODO (JC) add wording here. -->
-due to mid-trophic level (middle-of-the-food-chain) nature of Herring which 
-likely results in the high variability in Herring productivity.
+Secondly, the biological LRP is set to a higher value compared to those
+recommended in [@dfo2009] and above the recommendation of 0.5$B_{MSY}$ 
+[@shelton2008], due to mid-trophic level (middle-of-the-food-chain) nature of 
+Herring which likely drives observed high variability in Herring productivity.
+
 @boldt2022 identified possible environmental and biological pressures 
 that link to Herring distribution, growth, and production.
 Environmental pressures include the timing, duration, and magnitude of upwelling,
 which can affect the amount of prey available to 
 Herring [@mackas2001; @hourston2019], as well as predation and
-competition [@Goedfroid2019].
+competition [@godefroid2019].
 Other physical environmental pressures include sea surface temperature (SST),
 salinity, sea level, river discharge, and Ekman transport
 [@tester1948; @alderdice1985; @stocker1985; @stocker1988;
 @schweigert1990; @ware1991; @zebdi1995].
+
 Thirdly, while these ecosystem indicators are not directly incorporated into the 
 assessment model they are modelled implicitly via time varying natural mortality 
 and recruitment. Incorporating spatial, and other 
 ecosystem indicators is an area of ongoing research for Pacific Herring.
+
+Fourthly, [@dfo2022a] introduce a process for evaluating five different USR 
+points as candidate biomass target objectives for Pacific Herring and these are
+considered in the MSE process and in development of the IFMP.
+
 DFO is committed to an ecosystem approach to fisheries management and provides 
-a summary of recent research in [@dfo2024]. 
+further summary of recent research in [@dfo2024].
  
 
