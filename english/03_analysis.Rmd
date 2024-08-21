@@ -480,17 +480,11 @@ peak seen on the WCVI in the over 70 year history of DFO records.
 The absence of a commercial fishery since 2005 means the realized harvest rate
 has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
 
-<!--TODO (SP): I'm not sure this next statement fits here, as we don't provide this clarification
-for the other SARs. Maybe this can be added to the Appendix, under
-Model description (eg, Table of Priors) ?? 
-Last year because there was so much autocorrelation we provided some verbage.
-This year it might be good to show that it was taken care of. Otherwise just 
-delete this paragraph-->
 Previous years WCVI MCMC diagnostics showed autocorrelation 
 especially in the estimation of fishery selectivity-at-50% ($\hat{a}_1$) 
 and its standard deviation ($\hat{\gamma}_1$)
-for the "other" fisheries category (i.e., reduction, food and bait, as well as 
-special use). These were largely ameliorated by a reparameterization of 
+for the "other" fisheries category (i.e., reduction, food and bait,
+special use). These were largely ameliorated this year by a reparameterization of 
 parameter priors [@dfo2021c]).
 
 `r stock_status_text(SAR = "WCVI", this_yr = assess_yr, translate = french)`
