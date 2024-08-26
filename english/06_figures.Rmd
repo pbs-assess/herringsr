@@ -1066,7 +1066,6 @@ create_slide_figures(model_index = model_ind)
 
 (ref:harvest-rate-cap) Effective harvest rate $U_t$ for Pacific Herring
 from `r major_start_yr` to `r major_end_yr` in the major SARs.
-`r incl_sog(tabfig = "figure")`
 Effective harvest rate is $U_t = C_t/(C_t + \SB_t)$ where
 $C_t$ is catch in year $t$, and
 $\SB_t$ is estimated spawning biomass in year $t$.
@@ -1090,10 +1089,20 @@ pour $U_t$, respectivement.
 Les lignes en tirets horizontales indiquent $U_t = `r target_hr`$.
 
 ```{r harvest-rate, fig.asp=ifelse(french, 1.25, 1.25), fig.cap = ifelse(french, "(ref:harvest-rate-cap-fr)", "(ref:harvest-rate-cap)")}
+sog_ind <- match(en2fr("SoG", french), major_regions_short)
+if(keep_sog) {
+  m_c <- major_catch
+  m_m <- major_models
+  m_r_f <- major_regions_full
+} else {
+  m_c <- major_catch %>% filter(region != "Strait of Georgia")
+  m_m <- major_models[-sog_ind]
+  m_r_f <- major_regions_full[major_regions_full != "Strait of Georgia"]
+}
 plot_harvest_rate(
-  df = major_catch,
-  models = major_models,
-  regions = major_regions_full,
+  df = m_c,
+  models = m_m,
+  regions = m_r_f,
   prop_msy = prop_f_msy,
   h_line = target_hr,
   translate = french
@@ -1103,7 +1112,6 @@ plot_harvest_rate(
 (ref:proj-biomass-density-cap) Projected spawning biomass of Pacific Herring
 assuming no fishing in `r assess_yr + 1` $\SB_{`r assess_yr + 1`}$ in
 thousands of tonnes (t) in the major SARs.
-`r incl_sog(tabfig = "figure")`
 Solid and dashed black lines indicate median posterior estimate and
 `r ci_level*100`% credible intervals for $\SB_{`r assess_yr + 1`}$, respectively.
 Vertical red lines and shaded red areas indicate medians and `r ci_level*100`%
@@ -1124,9 +1132,17 @@ pour le point de référence limite, $0,3\SB_0$,
 où $\SB_0$ est la biomasse reproductrice non exploitée estimée.
 
 ```{r proj-biomass-density, fig.asp=ifelse(french, 1.2, 1.2), fig.cap = ifelse(french, "(ref:proj-biomass-density-cap-fr)", "(ref:proj-biomass-density-cap)")}
+sog_ind <- match(en2fr("SoG", french), major_regions_short)
+if(keep_sog) {
+  m_m <- major_models
+  m_r_f <- major_regions_full
+} else {
+  m_m <- major_models[-sog_ind]
+  m_r_f <- major_regions_full[major_regions_full != "Strait of Georgia"]
+}
 plot_proj_biomass_density(
-  models = major_models,
-  regions = major_regions_full,
+  models = m_m,
+  regions = m_r_f,
   yr = assess_yr + 1,
   refpt = "X03B0",
   translate = french
