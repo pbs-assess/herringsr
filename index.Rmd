@@ -176,8 +176,8 @@ major_stock_dir <- list("HG", "PRD", "CC", "SoG", "WCVI")
 minor_stock_dir <- list("A27", "A2W")
 special_stock_dir <- list("A10")
 
-mcmc_length <- 5000000 # Default: 20,000,000
-mcmc_samp_freq <- 1000 # Default: 4,000
+mcmc_length <- 5000000 # Default: 5,000,000
+mcmc_samp_freq <- 1000 # Default: 1,000
 mcmc_burnin <- 1000    # Default: 1,000
 retro_yrs <- 1:10      # Default: 1:10
 
