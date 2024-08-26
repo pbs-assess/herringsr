@@ -1,5 +1,5 @@
 \afterpage{\clearpage}
-\needspace{0.32\textheight}
+\needspace{0.45\textheight}
 
 # `r en2fr("Tables", translate = french)`
 
@@ -54,35 +54,6 @@ total_landed_catch_table(
   by_vec = major_regions_short,
   first_yr = major_end_yr - num_yrs_tab,
   cap = ifelse(french, "(ref:annual-catch-cap-fr)", "(ref:annual-catch-cap)"),
-  translate = french
-)
-```
-
-\afterpage{\clearpage}
-
-(ref:annual-sok-catch-cap) Total Pacific Herring spawn-on-kelp harvest,
-reported as pounds of eggs on kelp,
-from `r major_end_yr - num_yrs_tab` to `r major_end_yr`
-in the major stock assessment regions (SARs).
-`r incl_sog()`
-See Table \@ref(tab:annual-catch) for description.
-
-(ref:annual-sok-catch-cap-fr) Récolte totale d’oeufs sur varech en livres de
-hareng du Pacifique de `r major_end_yr - num_yrs_tab` à `r major_end_yr`
-dans les regions d’évaluation des stocks (RES) majeurs.
-`r incl_sog()`
-Voir le tableau \@ref(tab:annual-catch) pour la description.
-
-\needspace{0.32\textheight}
-
-```{r annual-sok-catch}
-sok_harvest_table(
-  tab = sok,
-  by_vec = major_regions_short,
-  first_yr = major_end_yr - num_yrs_tab,
-  cap = ifelse(
-    french, "(ref:annual-sok-catch-cap-fr)", "(ref:annual-sok-catch-cap)"
-  ),
   translate = french
 )
 ```

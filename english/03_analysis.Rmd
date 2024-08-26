@@ -134,8 +134,8 @@ Combined commercial removals from `r assess_yr - num_yrs_tab` to `r assess_yr`
 from the roe, food and bait, and special use fisheries
 appear in Table \@ref(tab:annual-catch).
 Total SOK harvest (i.e., pounds of validated product) for the major SARs
-from `r assess_yr - num_yrs_tab` to `r assess_yr` is presented in
-Table \@ref(tab:annual-sok-catch).
+from `r assess_yr - num_yrs_tab` to `r assess_yr` is presented in the
+\link{https://github.com/grinnellm/Reports/tree/master/Summaries}{Pacific Herring data summaries}.
 
 ### Biological data\label{sec:biol-data}
 
@@ -445,7 +445,8 @@ Following a commercial fishery closure from 2007 to 2013,
 the CC SAR was reopened to commercial fisheries:
 commercial roe fisheries occurred in 2014, 2015, and 2016.
 Commercial SOK fisheries have operated at some level most years
-from 2014 to 2024 (Table \@ref(tab:annual-sok-catch)).
+from 2014 to 2024 (see the
+\link{https://github.com/grinnellm/Reports/tree/master/Summaries}{Pacific Herring data summaries}).
 SOK removals are not included in the estimation of $U_t$. 
 
 `r stock_status_text(SAR = "CC", this_yr = assess_yr, translate = french)`
