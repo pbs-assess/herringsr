@@ -224,6 +224,8 @@ nocite: |
 
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->
+<!-- TODO: update to render_sar() next year -->
+<!-- csasdown::render_sar() -->
 
 <!-- Make French version: -->
 <!-- 1. Set `french` to `TRUE` -->
