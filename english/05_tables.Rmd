@@ -270,7 +270,7 @@ Remarque: $\tau$ et $\sigma$ sont des valeurs calculées.
 
 \needspace{0.32\textheight}
 
-```{r hg-parameter-est, results = 'asis', echo = FALSE, , eval = keep_non_CC}
+```{r hg-parameter-est, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.parameters.est.table(
   model = major_models[[model_ind]],
@@ -294,7 +294,7 @@ Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r prd-parameter-est, results = 'asis', echo = FALSE}
+```{r prd-parameter-est, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.parameters.est.table(
   model = major_models[[model_ind]],
@@ -310,7 +310,24 @@ make.parameters.est.table(
 
 (ref:cc-parameter-est-cap) Central Coast SAR:
 key parameters in the Pacific Herring statistical catch-age model.
-See Table \@ref(tab:hg-parameter-est) for description.
+Parameters are summarised by posterior
+(`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^
+percentile) and maximum posterior density (MPD) estimates.
+Legend: $R_0$ is unfished age-`r age_first` recruitment;
+$h$ is steepness of the stock-recruitment relationship;
+$M$ is instantaneous natural mortality rate;
+$\overline{R}$ is average age-`r age_first` recruitment
+from `r major_start_yr` to `r major_end_yr`;
+$\overline{R}_\mli{init}$ is average age-`r age_first` recruitment
+in `r major_start_yr-1`;
+$\rho$ is the fraction of total variance associated with observation error;
+$\vartheta$ is the precision of total error;
+$q$ is catchability for
+surface (`r major_start_yr` to `r new_surv_yr-1`; $q_1$) and
+dive (`r new_surv_yr` to `r major_end_yr`; $q_2$) survey periods;
+$\tau$ is the standard deviation of process error (i.e., recruitment); and
+$\sigma$ is the standard deviation of observation error (i.e., survey index).
+Note: $\tau$ and $\sigma$ are calculated values.
 
 (ref:cc-parameter-est-cap-fr) RES de la côte centrale:
 paramètres clés du modèle statistique de capture-âge du hareng du Pacifique.
@@ -448,7 +465,9 @@ make.value.table(
 age-`r age_first` recruitment
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr` 
 for the Pacific Herring statistical catch-age model.
-See Table \@ref(tab:hg-recruitment) for description.
+Recruitment in millions is summarised by posterior
+(`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^
+percentile) and maximum posterior density (MPD) estimates.
 
 (ref:cc-recruitment-cap-fr) RES de la côte centrale:
 age-`r age_first` recrutement
@@ -612,7 +631,13 @@ make.biomass.depletion.table(
 spawning biomass and depletion from 
 `r major_end_yr - num_yrs_tab` to `r major_end_yr` for the
 Pacific Herring statistical catch-age model.
-See Table \@ref(tab:hg-spawning-biomass-depletion) for description.
+Spawning biomass and depletion are summarised by the posterior
+(`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ 
+percentile) and maximum posterior density (MPD) estimates
+in thousands of tonnes.
+Note: depletion is relative spawning biomass $\SB_t/\SB_0$, where
+$\SB_t$ is spawning biomass in year $t$, and
+$\SB_0$ is estimated unfished spawning biomass.
 
 (ref:cc-spawning-biomass-depletion-cap-fr) RES de la côte centrale:
 biomasse reproductrice et déplétion de
@@ -781,7 +806,20 @@ make.ref.points.table(
 
 (ref:ref-points-cc-cap) Central Coast SAR:
 proposed reference points for the Pacific Herring statistical catch-age model.
-See Table \@ref(tab:ref-points-hg) for description.
+Reference points are summarised by posterior
+(`r confidence_vals[1]*100`^th^, 50^th^, and `r confidence_vals[2]*100`^th^ 
+percentile) estimates.
+All biomass numbers are in thousands of tonnes.
+Legend: $\SB_0$ is estimated unfished spawning biomass;
+$\overline{\SB}_\mli{Prod}$ is
+average spawning biomass during a productive period
+(Table \@ref(tab:prod-period));
+$\SB_{t}$ is spawning biomass in year $t$;
+$P$ is probability; and
+$\SB_{`r assess_yr+1`}$ is
+projected spawning biomass in `r assess_yr+1` assuming no fishing.
+Note that the age-`r age_plus` class is a 'plus group' which includes
+fish ages `r age_plus` and older.
 
 (ref:ref-points-cc-cap-fr) RES de la côte centrale:
 points de référence proposés pour le modèle statistique
@@ -982,7 +1020,38 @@ decision_tables_mp(
 (ref:decision-cc-cap) Central Coast SAR:
 management procedure performance for the Pacific Herring
 statistical catch-age model.
-See Table \@ref(tab:decision-prd) for description.
+Performance metrics are given for two operating model (OM) scenarios:
+density-dependent natural mortality (DDM) and
+density-independent natural mortality (DIM).
+Performance criteria are calculated over three Pacific Herring generations
+(i.e., 15 years) from the start of the projection period
+for all objectives (Obj).
+MPs are ordered within each scenario by performance of achieving Objective 1.
+The recommended total allowable catch (TAC) and
+associated harvest rate (HR) in `r assess_yr+1`
+are calculated for each MP using posterior densities values.
+Legend: limit reference point (LRP);
+upper stock reference (USR);
+$P$ is probability;
+maximum (Max);
+$\SB_t$ is spawning biomass in year $t$;
+$\SB_0$ is estimated unfished spawning biomass;
+$\overline{\SB}_\mli{Prod}$ is average spawning biomass
+during a productive period (Table \@ref(tab:prod-period));
+average annual variability (AAV) in catch; and
+$\overline{C}$ is average annual catch.
+MPs are defined in @dfo2019a and @dfo2019c.
+Biomass and catch are in thousands of tonnes (t).
+Note: Dashes or 0.00 indicate that TAC and HR do not apply because
+<!-- the MP specifies no fishing at current projected biomass level, or -->
+the MP specifies no fishing.
+Also note that TAC and HR are median values calculated by the MP
+using posterior distributions of $\SB_{2024}$ and $\SB_0$.
+The HR is derived according to the MP shape
+and is equivalent to $\text{TAC}/\SB_{2024}$.
+In cases where MPs include a cap,
+the cap is constant regardless of estimated $\SB_{2024}$, and
+higher $\SB_{2024}$ leads to lower HR.
 
 (ref:decision-cc-cap-fr) RES de la côte centrale:
 rendement de la procédure de gestion pour
@@ -1046,7 +1115,7 @@ Voir le tableau \@ref(tab:decision-prd) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r decision-wcvi, results = 'asis', echo = FALSE}
+```{r decision-wcvi, results = 'asis', echo = FALSE, eval = keep_non_CC}
 decision_tables_mp(
   df = mp.wcvi,
   xcaption = ifelse(
