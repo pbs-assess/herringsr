@@ -270,7 +270,7 @@ Remarque: $\tau$ et $\sigma$ sont des valeurs calculées.
 
 \needspace{0.32\textheight}
 
-```{r hg-parameter-est, results = 'asis', echo = FALSE, , eval = keep_non_CC}
+```{r hg-parameter-est, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.parameters.est.table(
   model = major_models[[model_ind]],
@@ -294,7 +294,7 @@ Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r prd-parameter-est, results = 'asis', echo = FALSE}
+```{r prd-parameter-est, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.parameters.est.table(
   model = major_models[[model_ind]],
@@ -1046,7 +1046,7 @@ Voir le tableau \@ref(tab:decision-prd) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r decision-wcvi, results = 'asis', echo = FALSE}
+```{r decision-wcvi, results = 'asis', echo = FALSE, eval = keep_non_CC}
 decision_tables_mp(
   df = mp.wcvi,
   xcaption = ifelse(
