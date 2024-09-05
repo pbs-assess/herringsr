@@ -83,7 +83,7 @@ Remarque: l’indice du frai n’est pas mis à l’échelle
 
 \needspace{0.32\textheight}
 
-```{r spawn-index-hg}
+```{r spawn-index-hg, eval = keep_non_CC}
 spawn_index_by_area_table(
   tab = ps[[en2fr("HG", french)]],
   cap = ifelse(
@@ -113,7 +113,7 @@ Remarque: l’indice du frai n’est pas mis à l’échelle
 
 \needspace{0.32\textheight}
 
-```{r spawn-index-prd}
+```{r spawn-index-prd,, eval = keep_non_CC}
 spawn_index_by_area_table(
   tab = ps[[en2fr("PRD", french)]],
   cap = ifelse(
@@ -182,7 +182,7 @@ Remarque: l’indice du frai n’est pas mis à l’échelle
 
 \needspace{0.32\textheight}
 
-```{r spawn-index-sog, eval = keep_sog}
+```{r spawn-index-sog, eval = keep_sog & keep_non_CC}
 spawn_index_by_area_table(
   tab = ps[[en2fr("SoG", french)]],
   cap = ifelse(
@@ -212,7 +212,7 @@ Remarque: l’indice du frai n’est pas mis à l’échelle
 
 \needspace{0.32\textheight}
 
-```{r spawn-index-wcvi}
+```{r spawn-index-wcvi, eval = keep_non_CC}
 spawn_index_by_area_table(
   tab = ps[[en2fr("WCVI", french)]],
   cap = ifelse(
@@ -270,7 +270,7 @@ Remarque: $\tau$ et $\sigma$ sont des valeurs calculées.
 
 \needspace{0.32\textheight}
 
-```{r hg-parameter-est, results = 'asis', echo = FALSE}
+```{r hg-parameter-est, results = 'asis', echo = FALSE, , eval = keep_non_CC}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.parameters.est.table(
   model = major_models[[model_ind]],
@@ -342,7 +342,7 @@ Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r sog-parameter-est, results = 'asis', echo = FALSE, eval = keep_sog}
+```{r sog-parameter-est, results = 'asis', echo = FALSE, eval = keep_sog & keep_non_CC}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.parameters.est.table(
   model = major_models[[model_ind]],
@@ -366,7 +366,7 @@ Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r wcvi-parameter-est, results = 'asis', echo = FALSE}
+```{r wcvi-parameter-est, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.parameters.est.table(
   model = major_models[[model_ind]],
@@ -398,7 +398,7 @@ centile) et les estimations de la densité a posteriori maximale (DPM).
 
 \needspace{0.32\textheight}
 
-```{r hg-recruitment, results = 'asis', echo = FALSE}
+```{r hg-recruitment, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.value.table(
   model = major_models[[model_ind]],
@@ -428,7 +428,7 @@ Voir le tableau \@ref(tab:hg-recruitment) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r prd-recruitment, results = 'asis', echo = FALSE}
+```{r prd-recruitment, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.value.table(
   model = major_models[[model_ind]],
@@ -488,7 +488,7 @@ Voir le tableau \@ref(tab:hg-recruitment) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r sog-recruitment, results = 'asis', echo = FALSE, eval = keep_sog}
+```{r sog-recruitment, results = 'asis', echo = FALSE, eval = keep_sog & keep_non_CC}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.value.table(
   model = major_models[[model_ind]],
@@ -518,7 +518,7 @@ Voir le tableau \@ref(tab:hg-recruitment) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r wcvi-recruitment, results = 'asis', echo = FALSE}
+```{r wcvi-recruitment, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.value.table(
   model = major_models[[model_ind]],
@@ -560,7 +560,7 @@ $\SB_0$ est la biomasse reproductrice estimée non pêchée.
 
 \needspace{0.32\textheight}
 
-```{r hg-spawning-biomass-depletion, results = 'asis', echo = FALSE}
+```{r hg-spawning-biomass-depletion, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.biomass.depletion.table(
   model = major_models[[model_ind]],
@@ -591,7 +591,7 @@ Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r prd-spawning-biomass-depletion, results = 'asis', echo = FALSE}
+```{r prd-spawning-biomass-depletion, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.biomass.depletion.table(
   model = major_models[[model_ind]],
@@ -653,7 +653,7 @@ Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r sog-spawning-biomass-depletion, results = 'asis', echo = FALSE, eval = keep_sog}
+```{r sog-spawning-biomass-depletion, results = 'asis', echo = FALSE, eval = keep_sog & keep_non_CC}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.biomass.depletion.table(
   model = major_models[[model_ind]],
@@ -685,7 +685,7 @@ Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r wcvi-spawning-biomass-depletion, results = 'asis', echo = FALSE}
+```{r wcvi-spawning-biomass-depletion, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.biomass.depletion.table(
   model = major_models[[model_ind]],
@@ -736,7 +736,7 @@ qui inclut les poissons âgés de `r age_plus` et plus.
 
 \needspace{0.32\textheight}
 
-```{r ref-points-hg, results = 'asis', echo = FALSE}
+```{r ref-points-hg, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("HG", french), major_regions_short)
 make.ref.points.table(
   model = major_models[[model_ind]],
@@ -763,7 +763,7 @@ Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r ref-points-prd, results = 'asis', echo = FALSE}
+```{r ref-points-prd, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.ref.points.table(
   model = major_models[[model_ind]],
@@ -817,7 +817,7 @@ Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r ref-points-sog, results = 'asis', echo = FALSE, eval = keep_sog}
+```{r ref-points-sog, results = 'asis', echo = FALSE, eval = keep_sog & keep_non_CC}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.ref.points.table(
   model = major_models[[model_ind]],
@@ -844,7 +844,7 @@ Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r ref-points-wcvi, results = 'asis', echo = FALSE}
+```{r ref-points-wcvi, results = 'asis', echo = FALSE, eval = keep_non_CC}
 model_ind <- match(en2fr("WCVI", french), major_regions_short)
 make.ref.points.table(
   model = major_models[[model_ind]],
@@ -964,7 +964,7 @@ et un $\SB_{2024}$ plus élevé conduit à un TR plus faible.
 \setlength{\tabcolsep}{5pt}
 \needspace{0.32\textheight}
 
-```{r decision-prd, results = 'asis', echo = FALSE}
+```{r decision-prd, results = 'asis', echo = FALSE, eval = keep_non_CC}
 decision_tables_mp(
   df = mp.prd,
   xcaption = ifelse(
@@ -1018,7 +1018,7 @@ Voir le tableau \@ref(tab:decision-prd) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r decision-sog, results = 'asis', echo = FALSE, eval = keep_sog}
+```{r decision-sog, results = 'asis', echo = FALSE, eval = keep_sog & keep_non_CC}
 decision_tables_mp(
   df = mp.sog,
   xcaption = ifelse(
