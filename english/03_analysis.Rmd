@@ -31,8 +31,9 @@ Management procedure evaluation tables were updated in 2022
 [@dfo2022b].
 
 Currently, a core set of fisheries management objectives [@dfo2019c]
-have drafted for each major SAR, however only the conservation objective
-(1) has been used in the selection of MPs:
+have been drafted for each major SAR,
+however only the conservation objective (1)
+has been used in the selection of MPs:
 
 1. Maintain spawning biomass at or above the LRP with at least 75% probability
 over three Pacific Herring generations
@@ -296,7 +297,7 @@ MPs with respect to achieving USRs,
 including whether a given USR option can be achieved in the absence of 
 commercial fisheries. 
 In 2023, DFO Resource Management selected and implemented a provisional 
-USR of $\overline{\SB}$ through 2022/23 IFMP process.
+USR of $\overline{\SB}_\mli{Prod}$ through 2022/2023 IFMP process.
 Stock status relative to assessment model estimates $0.3\SB_0$ (i.e., LRP) and
 USR options are presented in
 Tables \@ref(tab:ref-points-prd) through \@ref(tab:ref-points-wcvi).
@@ -374,8 +375,7 @@ more than doubling within 10 years.
 In response the stock collapsed by the mid-1960s to
 the lowest estimated spawning biomass. 
 Spawning biomass recovered by the mid-1980s estimated to be
-about 50% of the historic high, but began a steady decline 
-in the late-1980s,
+about 50% of the historic high, but began a steady decline in the late-1980s,
 amid slowly rising mortality rates and variable recruitment,
 before stabilizing at a relatively low level
 (but above historic lows) between 2005 and 2018 
@@ -388,11 +388,13 @@ with above average age-`r age_first` recruitment in 2014, 2018 and,
 Productivity in recent years is relatively high compared to the 
 last 30 years, with the highest estimated productivity in 2022
 (Figure \@ref(fig:storyboard-prd)f) and with natural mortality decreasing 
-in the last handful of years. This has led to an abundance estimate that is 
-steeply increasing, and higher than estimates since the 1960s.
+in the last handful of years.
+This has led to an abundance estimate that is steeply increasing, and
+is the highest since the mid-1960s.
 
-Fluctuations in spawning biomass trend appear to be less than in other SARs 
-in the last 30 years, possibly because they are smaller in magnitude 
+Fluctuations in spawning biomass trends
+appear to be less than in other SARs in the last 30 years,
+possibly because they are smaller in magnitude 
 and offset each other as shown in Figure \@ref(fig:storyboard-prd)a.
 
 `r stock_status_text(SAR = "PRD", this_yr = assess_yr, translate = french)`
@@ -466,8 +468,8 @@ mid 2010s (Figure \@ref(fig:storyboard-wcvi)a, b, c).
 In the last 5 years productivity has increased with mostly higher than average 
 recruitment and declining natural mortality estimates resulting in
 increasing spawning biomass estimates not seen since the 1970s 
-(Figure \@ref(fig:storyboard-wcvi)a, b, f). Biomass estimates are nearing the 
-peak seen on the WCVI in the over 70 year history of DFO records.
+(Figure \@ref(fig:storyboard-wcvi)a, b, f).
+Biomass estimates are nearing the highest since 1951.
 
 The absence of a commercial fishery since 2005 means the realized harvest rate
 has been zero for the last 15 years (Figure \@ref(fig:harvest-rate)).
@@ -602,7 +604,7 @@ No new MPs were included,
 however probability metrics for the five USRs options 
 [@dfo2022a] were estimated and have been added to the harvest options tables.
 The updated simulations show that MPs with harvest rates at 5% and 10% 
-maintain spawning biomass above the LRP with 81 to 91% probability over all 
+maintain spawning biomass above the LRP with 81 to 91% probability over
 both OM scenarios (Table \@ref(tab:decision-cc)).
 `r mean_harvest_text(SAR = "CC", translate = french)`
 
@@ -652,35 +654,34 @@ updated performance metrics under both scenarios [@dfo2022a].
 ## Ecosystem considerations
 
 Ecosystem considerations are taken into account in the model in a number of ways.
-Firstly, Pacific Herring in BC are managed as 5 major stocks, taking into account
+First, Pacific Herring in BC are managed as 5 major SARs, taking into account
 stock specific life history, abundance, and pressures that feed into the models. 
-Secondly, the biological LRP is set to a higher value compared to those
-recommended in [@dfo2009] and above the recommendation of 0.5$B_{MSY}$ 
-[@shelton2008], due to mid-trophic level (middle-of-the-food-chain) nature of 
-Herring which likely drives observed high variability in Herring productivity.
+Second, the biological LRP is set to a higher value compared to those
+recommended in the DFO sustainable fisheries policy [@dfo2009] and
+above the recommendation of 0.5$B_{MSY}$
+which is implemented in New Zealand fisheries [@shelton2008].
+This accounts for the mid-trophic level (middle-of-the-food-chain) nature of 
+herring which likely drives observed high variability in herring productivity.
 
 @boldt2022 identified possible environmental and biological pressures 
-that link to Herring distribution, growth, and production.
+that link to herring distribution, growth, and production.
 Environmental pressures include the timing, duration, and magnitude of upwelling,
 which can affect the amount of prey available to 
-Herring [@mackas2001; @hourston2019], as well as predation and
+herring [@mackas2001; @hourston2019], as well as predation and
 competition [@godefroid2019].
 Other physical environmental pressures include sea surface temperature (SST),
 salinity, sea level, river discharge, and Ekman transport
 [@tester1948; @alderdice1985; @stocker1985; @stocker1988;
 @schweigert1990; @ware1991; @zebdi1995].
 
-Thirdly, while these ecosystem indicators are not directly incorporated into the 
+Third, while these ecosystem indicators are not directly incorporated into the 
 assessment model they are modelled implicitly via time varying natural mortality 
 and recruitment. 
-
-Fourthly, [@dfo2022a] introduce a process for evaluating five different USR 
-points as candidate biomass target objectives for Pacific Herring and these are
-considered in the MSE process and in development of the IFMP.
+Fourth, candidate USRs [@dfo2022a] incorporate area-specific ecosystem considerations
+and have been introduced to the MSE process and the IFMP to evaluate the lower
+boundary of the Healthy status.
 
 Incorporating spatial, and other ecosystem indicators is an area of ongoing 
-research for Pacific Herring.DFO is committed to an ecosystem approach to 
+research for Pacific Herring. DFO is committed to an ecosystem approach to 
 fisheries management and provides further summary of recent research 
 in [@dfo2024].
- 
-
