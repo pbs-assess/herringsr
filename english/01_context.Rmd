@@ -101,7 +101,7 @@ Fisheries and Oceans Canada (DFO) Pacific Fisheries Management Branch requested
 that DFO Pacific Science Branch assess the status of
 British Columbia (BC) Pacific Herring stocks in `r assess_yr` and
 recommend harvest advice for `r assess_yr + 1`
-as simulation-tested MPs to inform the development of the
+using simulation-tested MPs to inform the development of the
 `r assess_yr`/`r assess_yr + 1` IFMP, where appropriate.
 Estimated stock trajectories,
 current status of stocks for `r assess_yr`,
