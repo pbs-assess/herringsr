@@ -214,7 +214,7 @@ These data are not currently included as removals in Herring stock assessments.
 
 ## First Nations observations
 
-Data and observations for the 2024 herring spawning season were contributed by 
+Data and observations for the `r assess_yr` herring spawning season were contributed by 
 representatives of First Nations communities for each SAR and can be found in
 the \link{https://github.com/grinnellm/Reports/tree/master/Summaries}{Pacific Herring data summaries}.
 This includes contributions from the Haida Nation in Haida Gwaii; 
@@ -620,7 +620,7 @@ both OM scenarios (Table \@ref(tab:decision-cc)).
 `r mean_harvest_text(SAR = "CC", translate = french)`
 
 Harvest options listed in Table \@ref(tab:decision-cc) reflect
-application of MPs to the 2024 forecast biomass for CC,
+application of MPs to the `r assess_yr + 1` forecast biomass for CC,
 whereby each MP meets the conservation objective
 with a minimum 75% probability under both DDM and DIM OM scenarios.
 
