@@ -96,7 +96,7 @@ unless new evidence reveals exceptional circumstances.
 
 DFO has advanced these recommendations and
 has implemented the spatially integrated statistical catch at age 
-herring (SISCAH) modelling framework for the SoG SAR$^{\ref{fn:sogfsar}}$.
+herring (SISCAH) modelling framework for the SoG SAR [@dfo2025b].
 For the remaining 4 SARs, we implement MPs from the previously
 approved operating model (as per 2024).
 
@@ -511,7 +511,7 @@ OM conditioning was updated in 2022 using historic stock and fishery data
 from `r major_start_yr` to 2021; no MP updates were conducted for 2023 or 2024.
 MPs are not provided for HG because this is now conducted within the
 HG rebuilding plan process$^{\ref{fn:rebuild}}$
-and MPs for SoG are provided in DFO (In Prep.).$^{\ref{fn:sogfsar}}$
+and MPs for SoG are provided in @dfo2025b.
 
 ### Haida Gwaii
 
