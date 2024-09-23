@@ -12,7 +12,7 @@ The first `r number_to_word(mcmc_burnin)` samples were discarded (i.e., burn-in)
 leaving `r number_to_word(mcmc_num_samples)` samples for posteriors.
 This section will not be included in the final document.
 
-Autocorrelation was detected within a number of the parameters. Inline with procedures used on WCVI parameter priors were reparameterized. For logarithmic natural mortality the upper bound was reduced from 5 to 3, and the mean was shifted from -0.8 to -0.5 and the sd widened form .4 to 1. For logarithmic initial recruitment the uniform prior was changed to a normal distribution with mean 5 and a sd of 15. The sd for selectivity for gear 3 [TODO: insert geartype name]was widened from 0.25 to 0.5.
+Autocorrelation was detected within a number of the parameters. Inline with procedures used on WCVI parameter priors were reparameterized. For logarithmic natural mortality the upper bound was reduced from 5 to 3, and the mean was shifted from -0.8 to -0.5 and the sd widened form 0.4 to 0.5. For logarithmic initial recruitment the uniform prior was changed to a normal distribution with mean 5 and a sd of 2. The sd for selectivity for gear 3 was widened from 0.25 to 0.5.
 
 (ref:cc-priors-posts-cap) Central Coast SAR:
 prior probability distributions (lines) with
