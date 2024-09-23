@@ -10,10 +10,10 @@ isbn_fr: 978-0-660-00000-0
 t_approver: "Andrew Thomson \n\n\n Regional Director"
 approval_year: 2024
 t_approval_month: September
-approval_day: 00
+approval_day: 27
 process_year: 2024
 t_process_month: September
-process_day: 00
+process_day: 23
 t_branch: Science Branch
 t_region: Pacific Region
 output:

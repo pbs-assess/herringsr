@@ -683,7 +683,7 @@ that link to herring distribution, growth, and production.
 Environmental pressures include
 the timing, duration, and magnitude of upwelling,
 which can affect the amount of prey available to 
-herring [@mackas2001; @hourston2019], as well as
+herring [@mackas2001; @hourston2019; @boldt2018], as well as
 predation and competition [@godefroid2019].
 Other physical environmental pressures include sea surface temperature (SST),
 salinity, sea level, river discharge, and Ekman transport
@@ -700,6 +700,6 @@ and have been introduced to the MSE process and the IFMP
 to evaluate the lower boundary of the Healthy status.
 
 Incorporating spatial and ecosystem indicators
-is an area of ongoing research for Pacific Herring.
+is an area of ongoing research for Pacific Herring. 
 DFO is committed to an ecosystem approach to fisheries management and
 provides further summary of recent research in [@dfo2024].

@@ -107,7 +107,7 @@ using methods from Johnson et al. (In Prep.).$^{\ref{fn:siscah}}$
 This `r assess_yr` stock assessment includes
 MP recommendations for PRD, CC, and WCVI,
 derived in 2022 by updating herring OM conditioning [@benson2022] using 
-the latest historic stock and fishery data
+the historic stock and fishery data
 from `r major_start_yr` to 2021 [@dfo2022b].
 There are no new MP evaluations for `r assess_yr`
 (all probability metrics reflect the MP evaluations presented in 2022).
