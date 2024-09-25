@@ -492,6 +492,18 @@ These were largely ameliorated this year by changing parameter priors.
 
 ## Management performance
 
+<!-- TODO: Re-write for clarity and brevity -->
+<!-- Historic management procedure performance can be assessed using -->
+<!-- estimated effective harvest rate -->
+<!-- $U_t = C_t/(C_t + \SB_t)$, where -->
+<!-- $C_t$ is catch in year $t$, and -->
+<!-- $\SB_t$ is estimated spawning biomass in year $t$ -->
+<!-- (Figure \@ref(fig:harvest-rate)). -->
+
+<!-- TODO: Move this to the figure caption -->
+<!-- Note that lines showing $U_t = 20\%$ are reference lines only and -->
+<!-- do not indicate annual management decisions on TAC for each SAR. -->
+
 Historic management procedure performance can be assessed using
 the time series of effective harvest rate $U$.
 Estimated effective harvest rate $U$ in each year $t$ is
@@ -515,7 +527,7 @@ and MPs for SoG are provided in DFO (In Prep.).$^{\ref{fn:sogfsar}}$
 
 ### Haida Gwaii
 
-The HG stock  persisted in a low biomass state
+The HG stock persisted in a low biomass state
 from approximately 2000-2018 (Figure \@ref(fig:storyboard-hg)).
 The stock was below the LRP for much of that period and shows
 little evidence of sustained stock growth despite the absence of
@@ -693,7 +705,7 @@ salinity, sea level, river discharge, and Ekman transport
 Third, while these ecosystem indicators are not
 directly incorporated into the assessment model,
 they are modelled implicitly via
-time varying natural mortality and recruitment. 
+time varying natural mortality and recruitment.
 Fourth, candidate USRs [@dfo2022a] incorporate
 area-specific ecosystem considerations
 and have been introduced to the MSE process and the IFMP
