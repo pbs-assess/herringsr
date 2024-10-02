@@ -97,7 +97,7 @@ unless new evidence reveals exceptional circumstances.
 DFO has advanced these recommendations and
 has implemented the spatially integrated statistical catch at age 
 herring (SISCAH) modelling framework for the SoG SAR$^{\ref{fn:sogfsar}}$.
-For the remaining 4 SARs, we implement MPs from the previously
+For the remaining four SARs, we implement MPs from the previously
 approved operating model (as per 2024).
 
 ## Input data
@@ -217,7 +217,7 @@ These data are not currently included as removals in Herring stock assessments.
 Data and observations for the `r assess_yr` herring spawning season were contributed by 
 representatives of First Nations communities for each SAR and can be found in
 the \link{https://github.com/grinnellm/Reports/tree/master/Summaries}{Pacific Herring data summaries}.
-This includes contributions from the Haida Nation in Haida Gwaii; 
+These observations include contributions from the Haida Nation in Haida Gwaii; 
 the Heiltsuk Nation in the Central Coast; 
 the Homalko, Qualicum, and Tla'amin Nations in Strait of Georgia;
 and the Nuu-chah-nulth Nation on the West Coast of Vancouver Island.
@@ -298,8 +298,8 @@ MPs with respect to achieving USRs,
 including whether a given USR option can be achieved in the absence of 
 commercial fisheries. 
 In 2023, DFO Resource Management selected and implemented a provisional 
-USR of $\overline{\SB}_\mli{Prod}$ through 2022/2023 IFMP process.
-Stock status relative to assessment model estimates $0.3\SB_0$ (i.e., LRP) and
+USR of $\overline{\SB}_\mli{Prod}$ through the 2022/2023 IFMP process.
+Stock status relative to assessment model estimates of $0.3\SB_0$ (i.e., LRP) and
 USR options are presented in
 Tables \@ref(tab:ref-points-prd) through \@ref(tab:ref-points-wcvi).
 
@@ -373,7 +373,7 @@ due to low estimated mortality rate and high estimated recruitment
 This was followed immediately by below average recruitment and
 a rise to the highest estimated mortality rate,
 more than doubling within 10 years.
-In response the stock collapsed by the mid-1960s to
+In response, the stock collapsed by the mid-1960s to
 the lowest estimated spawning biomass. 
 Spawning biomass recovered by the mid-1980s estimated to be
 about 50% of the historic high,
@@ -383,7 +383,7 @@ before stabilizing at a relatively low level
 (but above historic lows) between 2005 and 2018 
 (Figure \@ref(fig:storyboard-prd)b, d, e).
 
-Since then estimated spawning biomass has shown modest increases in biomass 
+Since 2018 estimated spawning biomass has shown modest increases in biomass 
 with above average age-`r age_first` recruitment
 in 2014, 2018 and, 2022 and stable natural mortality rates
 (Figure \@ref(fig:storyboard-prd)c, d, f). 
@@ -391,7 +391,7 @@ Productivity in recent years is relatively high compared to the last 30 years,
 with the highest estimated productivity in 2022
 (Figure \@ref(fig:storyboard-prd)f) and
 with natural mortality decreasing in the last handful of years.
-This has led to an abundance estimate that is steeply increasing, and
+This combination has led to an abundance estimate that is steeply increasing, and
 is the highest since the mid-1960s.
 
 Fluctuations in spawning biomass trends
@@ -413,7 +413,7 @@ From there a decline in estimated spawning biomass
 appears to be influenced initially by 
 higher estimated natural mortality rates and
 highly variable estimated recruitment.
-Spawning biomass trend declined from 1985-2008 and 
+Spawning biomass trend declined during the 1985-2008 period and 
 an increase in estimated natural mortality led to
 historically low estimated biomass levels from 2006 to 2012. 
 Decreasing estimated natural mortality lead to moderate increases in 
@@ -422,10 +422,10 @@ From 2021 to 2023,
 increasing estimated natural mortality caused a decrease in estimated biomass,
 which was mitigated in part by higher than average estimated recruitment in 2022
 (Figure \@ref(fig:storyboard-cc)a, b, e).
-Model estimates suggest decreasing spawning biomass since 2020
+Model estimates show decreasing spawning biomass since 2020
 (Table \@ref(tab:cc-spawning-biomass-depletion)),
 and the analysis of surplus production shows
-an estimated production close to neutral for 2021 and 2023, and
+an estimated production close to neutral for 2021 and 2022, and
 negative for 2023
 (Figure \@ref(fig:storyboard-cc)f).
 
@@ -435,7 +435,7 @@ Upper Spiller Channel (Section 078),
 Section 086,
 Kitasu Bay/East Higgins (Section 067), and
 Thompson/Stryker (Section 074; Figure \@ref(fig:spawn-section-cc)).
-Occurrence of spawn in Thompson/Stryker from 2020 to 2022
+The occurrence of spawn in Thompson/Stryker from 2020 to 2022
 represented the first significant spawns in this section in many years.
 The mechanisms driving spawn fluctuations in these smaller areas in the 
 Central Coast occur throughout the time series and are not well understood.
@@ -486,7 +486,7 @@ especially in the estimation of fishery selectivity-at-50% ($\hat{a}_1$)
 and its standard deviation ($\hat{\gamma}_1$)
 for the "other" fisheries category
 (i.e., reduction, food and bait, special use).
-These were largely ameliorated this year by changing parameter priors.
+These results were largely ameliorated this year by changing parameter priors.
 
 `r stock_status_text(SAR = "WCVI", this_yr = assess_yr, translate = french)`
 
@@ -637,7 +637,7 @@ whereby each MP meets the conservation objective
 with a minimum 75% probability under both DDM and DIM OM scenarios.
 
 Since multiple MPs meet the conservation objective of
-maintaining spawning biomass above the LRP with at least 75%,
+maintaining spawning biomass above the LRP with at least 75% probability,
 other socio-economic objectives may drive the choice for a particular MP. 
 Additionally, the current CC OM is unable to directly address
 Heilstuk Nation conservation objectives related to herring age and size, nor 
@@ -686,7 +686,7 @@ Second, the biological LRP is set to a higher value compared to those
 recommended in the DFO sustainable fisheries policy [@dfo2009] and
 above the recommendation of 0.5$B_{MSY}$
 which is implemented in New Zealand fisheries [@shelton2008].
-This accounts for the mid-trophic level (i.e., middle-of-the-food-chain)
+This herring LRP accounts for the mid-trophic level (i.e., middle-of-the-food-chain)
 nature of herring which likely drives
 the observed highly variable herring productivity.
 

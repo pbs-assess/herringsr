@@ -10,16 +10,12 @@ contributors <- tibble::tribble(
   "Matthew Grinnell",      "DFO Science, Pacific",              "Author",
   "Jennifer Boldt",        "DFO Science, Pacific",              "Author (Ecosystem section)",
   "Chris Rooper",          "DFO Science, Pacific",              "Author (Ecosystem section)",
-  "Thomas Doniol-Valcroze","DFO Science, Pacific",              "Data (Ecosystem section)",
-  "Andrew Edwards",        "DFO Science, Pacific",              "Data (Ecosystem section)",
-  "Moira Galbraith",       "DFO Science, Pacific",              "Data (Ecosystem section)",
-  "Ian Perry",             "DFO Science, Pacific",              "Data (Ecosystem section)",
-  "Strahan Tucker",        "DFO Science, Pacific",              "Data (Ecosystem section)",
-  "Brianna Wright",        "DFO Science, Pacific",              "Data (Ecosystem section)",
-  "Sam Johnson",           "Landmark Fisheries Research",       "Data (Ecosystem section)",
-  "Katherine Middleton",   "DFO Science Advisor, Ottawa",       "Infographic (Ecosystem section)",
+  "Chris Rooper",          "DFO Science, Pacific",              "Author (Ecosystem section)",
   "Bryan Rusch",           "DFO Fisheries Management, Pacific", "Client",
-  "Marisa Keefe",          "DFO Fisheries Management, Pacific", "Client")
+  "Marisa Keefe",          "DFO Fisheries Management, Pacific", "Client",  
+  "Sarah Hawkshaw",        "DFO Science, Pacific",              "Reviewer",
+  "Jessica Finney",        "DFO Science, Pacific",              "CSAS Science Advisor",
+  "Miriam O",              "DFO Science, Pacific",              "CSAS Manager")
 ```
 
 \setlength{\tabcolsep}{3pt}

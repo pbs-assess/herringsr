@@ -6,7 +6,7 @@ Pacific Herring in BC are managed as
 SARs (Figure \@ref(fig:bc-map)).
 The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
-We conduct formal analyses of stock trend information for the major SARs.
+We conduct formal analyses of stock trend information for the major SARs annually.
 Although SoG is assessed in
 DFO (In Prep),$^{\ref{fn:sogfsar}}$
 some tables and figures in this document include SoG data for completeness.
@@ -124,9 +124,9 @@ Advice to managers for the major SARs includes
 posterior estimates of
 current stock status $\SB_{`r major_end_yr`}$,
 stock status relative to the LRP $0.3\SB_0$, and
-spawning biomass in `r major_end_yr + 1` assuming no catch
-$\SB_{`r major_end_yr + 1`}$.
-Projected spawning biomass is based on
+spawning biomass in `r major_end_yr + 1`, 
+$\SB_{`r major_end_yr + 1`}$, assuming no catch.
+Projected pre-fishery spawning biomass is based on
 the current year's recruitment deviations from average as 
 predicted by the Beverton-Holt stock-recruit model, and
 estimated natural mortality and weight-at-age,
