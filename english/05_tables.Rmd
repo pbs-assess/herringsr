@@ -113,7 +113,7 @@ Remarque: l’indice du frai n’est pas mis à l’échelle
 
 \needspace{0.32\textheight}
 
-```{r spawn-index-prd,, eval = keep_non_CC}
+```{r spawn-index-prd, eval = keep_non_CC}
 spawn_index_by_area_table(
   tab = ps[[en2fr("PRD", french)]],
   cap = ifelse(
