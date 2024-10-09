@@ -1,3 +1,13 @@
+<!-- For the pre-pub -->
+<!-- \textblockcolour{yellow} -->
+<!-- \textblockrulecolour{black} -->
+<!-- \begin{textblock*}{0.55\textwidth}(12cm,0.3cm) -->
+<!-- This document is approved and in pre-publication with CSAS. -->
+<!-- As such it is confidential in nature and -->
+<!-- cannot be distributed more broadly or -->
+<!-- shared with the public on the CSAS website. -->
+<!-- \end{textblock*} -->
+
 # Context\label{sec:context}
 
 Pacific Herring (*Clupea pallasii*) abundance in British Columbia (BC) is

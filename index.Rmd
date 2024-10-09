@@ -36,6 +36,8 @@ lof: TRUE
 header-includes:
   - \usepackage{needspace}
   - \usepackage{afterpage}
+  # - \usepackage{textpos}
+  # - \usepackage{color}
 ---
 
 \sloppy
