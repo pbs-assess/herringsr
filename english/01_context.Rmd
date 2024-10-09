@@ -45,22 +45,15 @@ four of the `r number_to_word(length(major_regions_short))` major
 Pacific Herring SARs:
 `r commify(major_regions_short[major_regions_short != "SoG"])`.
 <!-- TODO: Update to @dfo2025b when published -->
-Note that the SoG SAR is assessed in a separate document\footnote{\label{fn:sogfsar}
+Note that the SoG SAR is assessed
+in a separate document\footnote{\label{fn:sogfsar}
 DFO. In Prep.
 Stock status update with application of management procedures for
 Pacific Herring (\emph{Clupea pallasii}) in the Strait of Georgia,
 British Columbia: Status in 2024 and forecast for 2025.
 DFO Can. Sci. Advis. Sec. Fish. Sci. Advis. Rep.
 }
-<!-- TODO: Update to @johnson2024 when published -->
-using a new modelling framework.\footnote{\label{fn:siscah}
-S. D. N. Johnson, S. P. Cox, J. S. Cleary, A. J. Benson, S. J. H. Power, and
-S. P. Rossi.
-In Prep.
-Application of a new modelling framework for the assessment of
-Pacific Herring (\emph{Clupea pallasii}) major stocks and
-implementation in the management strategy evaluation process.
-DFO Can. Sci. Advis. Sec. Res. Doc.}
+using a new modelling framework [@johnson2024].
 An analysis of USR options for PRD, CC, SoG, and WCVI was completed in 
 2022 [@dfo2022a] and provisional USRs based on productive 
 periods identified for each SAR was implemented in the 2022/23 Integrated 
@@ -102,7 +95,7 @@ An ecosystem overview and ecosystem-based rebuilding plan.
 Approved by the Minister of Fisheries and Oceans, the Council of Haida Nation 
 and Parks Canada. April 2024. In Press.}
 MPs for SoG are updated in DFO (In Prep.)$^{\ref{fn:sogfsar}}$
-using methods from Johnson et al. (In Prep.).$^{\ref{fn:siscah}}$
+using methods from @johnson2024.
 
 This `r assess_yr` stock assessment includes
 MP recommendations for PRD, CC, and WCVI,
