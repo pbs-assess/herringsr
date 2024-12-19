@@ -169,7 +169,7 @@ t_cat_no <- paste0(
 ```{r output-options}
 keep_non_CC <- TRUE # FALSE to provide preliminary CC report
 slides <- FALSE     # Make figures for powerpoint slides
-keep_sog <- TRUE    # Keep or omit SoG
+keep_sog <- FALSE    # Keep or omit SoG
 ```
 
 ```{r models, cache=FALSE}

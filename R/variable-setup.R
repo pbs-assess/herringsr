@@ -224,7 +224,7 @@ eco_trend_desc_data <- read_delim(
 hg_vars <- get_vars("HG", french = french)
 prd_vars <- get_vars("PRD", french = french)
 cc_vars <- get_vars("CC", french = french)
-# if(!keep_sog) sog_vars <- get_vars("SoG", french = french)
+if(!keep_sog) sog_vars <- get_vars("SoG", french = french)
 wcvi_vars <- get_vars("WCVI", french = french)
 
 incl_sog <- function(tabfig = "table", trans = french) {
