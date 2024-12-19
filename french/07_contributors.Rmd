@@ -4,22 +4,17 @@
 
 ```{r, echo=FALSE, include=FALSE}
 contributors <- tibble::tribble(
-  ~"Collaborateur",         ~"Organisme d'appartenance",                        ~"Rôle",
-  "Jaclyn Cleary",          "Secteur des sciences du MPO, région du Pacifique", "Auteur",
-  "Sarah Power",            "Secteur des sciences du MPO, région du Pacifique", "Auteur",
-  "Matthew Grinnell",       "Secteur des sciences du MPO, région du Pacifique", "Auteur",
-  "Jennifer Boldt",         "Secteur des sciences du MPO, région du Pacifique", "Auteur (Ecosystem section)",
-  "Chris Rooper",           "Secteur des sciences du MPO, région du Pacifique", "Auteur (Ecosystem section)",
-  "Thomas Doniol-Valcroze", "Secteur des sciences du MPO, région du Pacifique", "Données (section Écosystémiques)",
-  "Andrew Edwards",         "Secteur des sciences du MPO, région du Pacifique", "Données (section Écosystémiques)",
-  "Moira Galbraith",        "Secteur des sciences du MPO, région du Pacifique", "Données (section Écosystémiques)",
-  "Ian Perry",              "Secteur des sciences du MPO, région du Pacifique", "Données (section Écosystémiques)",
-  "Strahan Tucker",         "Secteur des sciences du MPO, région du Pacifique", "Données (section Écosystémiques)",
-  "Brianna Wright",         "Secteur des sciences du MPO, région du Pacifique", "Données (section Écosystémiques)",
-  "Sam Johnson",            "Landmark Fisheries Research",                      "Données (section Écosystémiques)",
-  "Katherine Middleton",    "Conseiller scientifique du MPO, Ottawa",           "Infographie (section Écosystémiques)",
-  "Bryan Rusch",            "Gestion des pêches du MPO, région du Pacifique",   "Client",
-  "Marisa Keefe",           "Gestion des pêches du MPO, région du Pacifique",   "Client")
+  ~"Collaborateur",   ~"Organisme d'appartenance",                        ~"Rôle",
+  "Jaclyn Cleary",    "Secteur des sciences du MPO, région du Pacifique", "Auteur",
+  "Sarah Power",      "Secteur des sciences du MPO, région du Pacifique", "Auteur",
+  "Matthew Grinnell", "Secteur des sciences du MPO, région du Pacifique", "Auteur",
+  "Jennifer Boldt",   "Secteur des sciences du MPO, région du Pacifique", "Auteur (Ecosystem section)",
+  "Chris Rooper",     "Secteur des sciences du MPO, région du Pacifique", "Auteur (Ecosystem section)",
+  "Bryan Rusch",      "Gestion des pêches du MPO, région du Pacifique",   "Client",
+  "Marisa Keefe",     "Gestion des pêches du MPO, région du Pacifique",   "Client",
+  "Sarah Hawkshaw",   "Secteur des sciences du MPO, région du Pacifique", "Réviseur",
+  "Jessica Finney",   "Secteur des sciences du MPO, région du Pacifique", "Conseiller scientifique du SCAS",
+  "Miriam O",         "Secteur des sciences du MPO, région du Pacifique", "Gestionnaire du SCAS")
 ```
 
 ```{r, results='asis'}

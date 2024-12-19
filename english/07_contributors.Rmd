@@ -4,18 +4,17 @@
 
 ```{r, echo=FALSE, include=FALSE}
 contributors <- tibble::tribble(
-  ~"Contributor",          ~"Affiliation",                      ~"Role",
-  "Jaclyn Cleary",         "DFO Science, Pacific",              "Author",
-  "Sarah Power",           "DFO Science, Pacific",              "Author",
-  "Matthew Grinnell",      "DFO Science, Pacific",              "Author",
-  "Jennifer Boldt",        "DFO Science, Pacific",              "Author (Ecosystem section)",
-  "Chris Rooper",          "DFO Science, Pacific",              "Author (Ecosystem section)",
-  "Chris Rooper",          "DFO Science, Pacific",              "Author (Ecosystem section)",
-  "Bryan Rusch",           "DFO Fisheries Management, Pacific", "Client",
-  "Marisa Keefe",          "DFO Fisheries Management, Pacific", "Client",  
-  "Sarah Hawkshaw",        "DFO Science, Pacific",              "Reviewer",
-  "Jessica Finney",        "DFO Science, Pacific",              "CSAS Science Advisor",
-  "Miriam O",              "DFO Science, Pacific",              "CSAS Manager")
+  ~"Contributor",     ~"Affiliation",                      ~"Role",
+  "Jaclyn Cleary",    "DFO Science, Pacific",              "Author",
+  "Sarah Power",      "DFO Science, Pacific",              "Author",
+  "Matthew Grinnell", "DFO Science, Pacific",              "Author",
+  "Jennifer Boldt",   "DFO Science, Pacific",              "Author (Ecosystem section)",
+  "Chris Rooper",     "DFO Science, Pacific",              "Author (Ecosystem section)",
+  "Bryan Rusch",      "DFO Fisheries Management, Pacific", "Client",
+  "Marisa Keefe",     "DFO Fisheries Management, Pacific", "Client",  
+  "Sarah Hawkshaw",   "DFO Science, Pacific",              "Reviewer",
+  "Jessica Finney",   "DFO Science, Pacific",              "CSAS Science Advisor",
+  "Miriam O",         "DFO Science, Pacific",              "CSAS Manager")
 ```
 
 \setlength{\tabcolsep}{3pt}
