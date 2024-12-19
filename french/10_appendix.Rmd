@@ -2,7 +2,7 @@
 
 ## Régions d’évaluation des stocks (RES) secondaires\label{sec:app-minor}
 
-Pêches et Océans Canada n’effectue pas d’analyse officielle de l’information sur les tendances des stocks pour les `r number_to_word(length(minor_regions_short)) RES secondaires du hareng du Pacifique : `r commify(minor_regions_full_parens)`.
+Pêches et Océans Canada n’effectue pas d’analyse officielle de l’information sur les tendances des stocks pour les `r number_to_word(length(minor_regions_short))` RES secondaires du hareng du Pacifique : `r commify(minor_regions_full_parens)`.
 Cependant, Pêches et Océans Canada présente les prises commerciales débarquées (figure \@ref(fig:minor-catch)), les données biologiques y compris le poids selon l’âge (figure \@ref(fig:minor-wa)) et la proportion selon l’âge (figure \@ref(fig:minor-pa)), ainsi que l’indice du frai (figure \@ref(fig:minor-spawn-index)) de `r minor_start_yr_plot` à `r minor_end_yr`.
 Pêches et Océans Canada fournit également l’indice de frai et la proportion de l’indice de frai par section de `r minor_end_yr-num_yrs_tab` à `r minor_end_yr` pour A27 et A2W (tableaux \@ref(tab:spawn-index-a27) et \@ref(tab:spawn-index-a2w), respectivement).
 Pour la zone 27, l’indice du frai par section de `r minor_start_yr_plot` à `r minor_end_yr` est également fourni (figure \@ref(fig:spawn-section-a27)).

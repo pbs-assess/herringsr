@@ -80,7 +80,7 @@ Il existe deux périodes de relevé du frai définies par la méthode de relevé
 Les données de ces relevés sont utilisées pour déterminer la densité des œufs dans chaque frayère.
 On calcule l’« indice du frai », soit la biomasse estimative des reproducteurs matures requis pour produire ces œufs.
 Le relevé du frai de `r surv_yr_rng[2]` a suivi les protocoles standard de relevé de plongée pour les RES de HG, du DPR, de la CC, du DG et de la COIV, comme décrits dans @cleary2018.
-Les séries chronologiques de l’indice du frai pour les RES principales de `r paste(surv_yr_rng, collapse=“ to “)` sont résumées dans la figure \@ref(fig:major-spawn-index) et les tableaux de \@ref(tab:spawn-index-hg) à \@ref(tab:spawn-index-wcvi).
+Les séries chronologiques de l’indice du frai pour les RES principales de `r paste(surv_yr_rng, collapse=" to ")` sont résumées dans la figure \@ref(fig:major-spawn-index) et les tableaux de \@ref(tab:spawn-index-hg) à \@ref(tab:spawn-index-wcvi).
 
 La méthodologie du relevé en surface a été utilisée à l’occasion de `r new_surv_yr` à `r surv_yr_rng[2]`. 
 Cela se produit généralement lorsque du frai est observé à des endroits où une équipe de relevé en plongée n’est pas disponible, ou lorsque la fraie a lieu très tôt (p. ex. en janvier ou février) ou très tard (p. ex. en mai) dans la saison. 
@@ -172,7 +172,7 @@ Le stock de HG demeure dans un état de faible biomasse, avec de nombreuses ann�
 Le recrutement supérieur à la moyenne de poissons d’âge `r age_first` en 2018, qui a entraîné des augmentations de la biomasse dans les relevés en 2019 et 2020, a été un signe positif, mais le recrutement moyen ou inférieur à la moyenne depuis lors, qui estime que la productivité est négative, a ramené la biomasse au niveau du PRL. 
 Le taux de récolte effectif depuis $U_t$ a été égal à zéro ou proche de zéro depuis 2000 (figure \@ref(fig:harvest-rate)), avec la dernière pêche commerciale d’œufs de poisson en 2002, et la dernière pêche commerciale d’œufs sur varech en 2004.
 
-`r stock_status_text(SAR = “HG”, this_yr = assess_yr, translate = french)` Des mesures de gestion visant à soutenir le rétablissement à long terme des stocks de hareng de Haida Gwaii sont en cours d’élaboration dans le cadre du processus relatif au plan de rétablissement$^{\ref{fn:rebuild}}$.
+`r stock_status_text(SAR = "HG", this_yr = assess_yr, translate = french)` Des mesures de gestion visant à soutenir le rétablissement à long terme des stocks de hareng de Haida Gwaii sont en cours d’élaboration dans le cadre du processus relatif au plan de rétablissement$^{\ref{fn:rebuild}}$.
 
 ### District de Prince Rupert
 
@@ -187,7 +187,7 @@ Cette combinaison a donné lieu à une estimation de l’abondance qui augmente 
 
 Les fluctuations de la tendance de la biomasse reproductrice semblent être moins importantes que dans d’autres RES au cours des 30 dernières années, peut-être parce qu’elles sont de moindre ampleur et se compensent mutuellement, comme le montre la figure \@ref(fig:storyboard-prd)a.
 
-`r stock_status_text(SAR = “PRD”, this_yr = assess_yr, translate = french)`La pêche commerciale a été pratiquée chaque année dans le DPR depuis le milieu des années 1980 jusqu’en 2018, période pendant laquelle le taux de récolte effectif $U_t$ a été estimé à 20 % ou moins pour toutes les années, sauf 1989 (figure \@ref(fig:harvest-rate)).
+`r stock_status_text(SAR = "PRD", this_yr = assess_yr, translate = french)`La pêche commerciale a été pratiquée chaque année dans le DPR depuis le milieu des années 1980 jusqu’en 2018, période pendant laquelle le taux de récolte effectif $U_t$ a été estimé à 20 % ou moins pour toutes les années, sauf 1989 (figure \@ref(fig:harvest-rate)).
 
 ### Côte centrale
 
@@ -209,7 +209,7 @@ Après la fermeture de la pêche commerciale de 2007 à 2013, la pêche commerci
 La récolte commerciale d’œufs sur varech a eu lieu la plupart des années dans une certaine mesure de 2014 à 2024 (voir le \link{https://github.com/grinnellm/Reports/tree/master/Summaries}{Pacific Herring data summaries}).
 Les prélèvements associés à la pêche d’œufs sur varech ne sont pas inclus dans l’estimation de $U_t$. 
 
-`r stock_status_text(SAR = “CC”, this_yr = assess_yr, translate = french)`
+`r stock_status_text(SAR = "CC", this_yr = assess_yr, translate = french)`
 
 ### Côte ouest de l’île de Vancouver
 
@@ -224,7 +224,7 @@ L’absence de pêche commerciale depuis 2005 signifie que le taux de récolte r
 Les diagnostics MCCM de la COIV des années précédentes a révélé une autocorrélation des paramètres dans l’estimation de la sélectivité des pêches à 50 % ($\hat{a}_1$) et son écart-type $\hat{\gamma}_1$ pour les « autres » catégories des pêches (c.-à-d. la pêche minotière, la pêche d’appâts à des fins de consommation, et la pêche en vue d’une utilisation spéciale).
 Ces résultats ont été largement améliorés cette année en modifiant les valeurs a priori des paramètres.
 
-`r stock_status_text(SAR = “WCVI”, this_yr = assess_yr, translate = french)`
+`r stock_status_text(SAR = "WCVI", this_yr = assess_yr, translate = french)`
 
 ## Rendement des procédures de gestion
 
@@ -245,7 +245,7 @@ Il s’est situé en dessous du PRL pendant une grande partie de cette période,
 La biomasse dans les relevés a augmenté de 2019 à 2020, est restée stable en 2021, a diminué de 2021 à 2023 et a montré une légère augmentation en 2024.
 Les résultats des évaluations par simulation ont révélé qu’aucune des PG proposées, y compris les PG historiques et les PG sans pêche, n’a maintenu la biomasse reproductrice au-dessus du PRL avec une probabilité élevée (c.-à-d. au moins 75 % @dfo2009]\footnote{\label{fn:HighProb}. Le Cadre décisionnel de Pêches et Océans Canada définit une probabilité comme étant « élevée » lorsqu’elle se situe entre 75 et 95 % (Pêches et Océans Canada 2009)}.
 
-`r proj_biomass_text(SAR = “HG”, next_yr = assess_yr + 1, translate = french)`
+`r proj_biomass_text(SAR = "HG", next_yr = assess_yr + 1, translate = french)`
 
 En raison de l’état prolongé de faible biomasse, un plan de rétablissement était nécessaire pour le hareng du Pacifique de HG. 
 Un plan global a été élaboré conjointement par le Conseil de la Nation haïda, Pêches et Océans Canada et Parcs Canada et a été mis au point en avril 2024$^{\ref{fn:rebuild}}$.
@@ -266,12 +266,12 @@ Nous avons refait des simulations de l’ESG pour générer des valeurs de proba
 Ces dernières évaluations des PG figurent également dans @dfo2022a.
 Aucune nouvelle PG n’a été incluse, mais les mesures de probabilité pour les cinq options de PRS [@dfo2022a] ont été estimées et ajoutées aux tableaux des options de récolte.
 Les simulations par rétroaction en boucle fermée actualisées indiquent que les procédures de gestion pour le DPR qui établissent des taux de récolte de 5, 10 et 20 % permettent de maintenir la biomasse reproductrice au-dessus du PRL selon une probabilité de 85 à 97 % dans les deux scénarios du MO (tableau \@ref(tab:decision-prd)). 
-`r mean_harvest_text(SAR = “PRD”, translate = french)`
+`r mean_harvest_text(SAR = "PRD", translate = french)`
 
 Bien que les PG comportant des taux de récolte 5 % à 20 % ont été en mesure d’atteindre l’objectif de conservation principal consistant à maintenir la biomasse féconde au-dessus du PRL avec une probabilité élevée (c.-à-d. au moins 75 %)^\ref{fn:HighProb}^, elles impliquent également des compromis différents entre les objectifs relatifs à la biomasse et au rendement.
 Puisque plusieurs PG répondent à l’objectif de conservation, d’autres raisons socio-économiques peuvent motiver le choix d’une PG particulière.
 
-`r proj_biomass_text(SAR = “PRD”, next_yr = assess_yr + 1, translate = french)`
+`r proj_biomass_text(SAR = "PRD", next_yr = assess_yr + 1, translate = french)`
 
 Les options de récolte pour `r assess_yr + 1`, résultant des PG testées par simulation, sont présentées dans le tableau \@ref(tab:decision-prd) et comprennent des valeurs de probabilité pour le PRL et le PRS provisoires qui reflètent le conditionnement mis à jour du MO.
 Ces options reflètent l’application des PG à la biomasse prévue en `r assess_yr + 1` pour le DPR, chaque PG ayant une probabilité d’au moins 75 % d’atteindre l’objectif de conservation selon les scénarios MDD et MID du MO. 
@@ -286,7 +286,7 @@ Une tendance à la hausse a été observée de 2015 à 2020, suivie d’une bais
 Ces dernières évaluations des PG figurent également dans @dfo2022a.
 Aucune nouvelle PG n’a été incluse, mais les mesures de probabilité pour les cinq options PRS [@dfo2022a] ont été estimées et ajoutées aux tableaux des options de récolte.
 Les simulations actualisées indiquent que les procédures de gestion qui établissent des taux de récolte de 5 % et 10 % permettent de maintenir la biomasse reproductrice au-dessus du PRL selon une probabilité de 81 à 91 % dans les deux scénarios du MO (tableau \@ref(tab:decision-cc)).
-`r mean_harvest_text(SAR = “CC”, translate = french)`
+`r mean_harvest_text(SAR = "CC", translate = french)`
 
 Les options de récolte énumérées dans le tableau \@ref(tab:decision-cc) reflètent l’application des PG à la biomasse prévue pour la CC en `r assess_yr + 1`, chaque PG ayant une probabilité d’au moins 75 % d’atteindre l’objectif de conservation selon les scénarios du MO (MDD et MID).
 
@@ -294,7 +294,7 @@ Puisque de multiples PG répondent à l’objectif de conservation consistant à
 De plus, le MO actuel de la CC ne permet pas d’aborder directement les objectifs de conservation de la Nation Heilstuk liés à l’âge et à la taille des harengs, ni les objectifs à une échelle spatiale plus fine ou ceux spécifiques aux pêches d’œufs sur varech.
 Ces limitations existent pour l’ensemble des cinq RES principales.
 
-`r proj_biomass_text(SAR = “CC”, next_yr = assess_yr + 1, translate = french)`
+`r proj_biomass_text(SAR = "CC", next_yr = assess_yr + 1, translate = french)`
 
 Enfin, Pêches et Océans Canada souligne qu’il s’est engagé envers la Nation Heiltsuk à élaborer un plan conjoint de gestion des pêches du hareng du Pacifique sur la côte centrale en `r assess_yr + 1`.
 Les résultats présentés dans le présent document pourraient contribuer à éclairer cet engagement en cours.
@@ -306,7 +306,7 @@ Au cours des dernières années, la biomasse a augmenté au-dessus du PRL de $0.
 
 En 2022, avec les données mises à jour de 2021, les simulations par rétroaction en boucle fermée pour la COIV montrent que l’objectif de conservation est atteint dans le cadre du scénario de MO de MDD avec une probabilité comprise entre 80 et 84 %, et que les mêmes PG n’ont pas atteint l’objectif de conservation dans le cadre du scénario du MO de MID, où les taux de mortalité naturelle sont les plus similaires à ceux des 10 dernières années ($p$ entre 61 et 65 %).
 
-`r proj_biomass_text(SAR = “WCVI”, next_yr = assess_yr + 1, translate = french)`
+`r proj_biomass_text(SAR = "WCVI", next_yr = assess_yr + 1, translate = french)`
 
 Les options de récolte pour `r assess_yr + 1`, découlant de simulations des PG, sont présentées dans le tableau \@ref(tab:decision-wcvi).
 Ces options reflètent l’application des PG à la biomasse prévue en `r assess_yr + 1` pour la COIV, dans le cadre des deux scénarios de MO.

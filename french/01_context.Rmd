@@ -12,7 +12,7 @@ Les étapes comprenaient l’élaboration d’un modèle opérationnel (MO) [@be
 En 2019, Pêches et Océans Canada a mis en œuvre le processus d’ESG pour les RES de HG, du district de Prince Rupert (DPR) et de la côte centrale (CC) [@dfo2019c].
 Des mises à jour des évaluations des PG ont ensuite été effectuées pour les RES du DG et de la COIV en 2020 [@dfo2021b] et pour le DPR, la CC, le DG et la COIV en 2023 [@dfo2022a; @dfo2022b].
 
-Cette évaluation comprend de nouveaux avis scientifiques sur le `r number_to_word(length(major_regions_short))` choix des PRS pour quatre RES principales de hareng du Pacifique : `r commify(major_regions_short[major_regions_short! = “SoG”])`
+Cette évaluation comprend de nouveaux avis scientifiques sur le `r number_to_word(length(major_regions_short))` choix des PRS pour quatre RES principales de hareng du Pacifique : `r commify(major_regions_short[major_regions_short != "SoG"])`
 Il est à noter que la RES du DG est évaluée dans un document\footnote{\label{fn:sogfsar} 
 DFO. In Prep. Stock status update with application of management procedures for Pacific Herring (\emph{Clupea pallasii}) in the Strait of Georgia, British Columbia: Status in 2024 and forecast for 2025. DFO Can. Sci. Advis. Sec. Fish. Sci. Advis. Rep.} distinct à l’aide d’un nouveau cadre de modélisation [@johnson2024].
 Une analyse des options de PRS pour le DPR, la CC, le DG et la COIV a été réalisée en 2022 [@dfo2022a] et des PRS provisoires basés sur les périodes de production déterminées pour chaque RES ont été mis en œuvre dans le plan de gestion intégrée des pêches (PGIP) de 2022-2023.
