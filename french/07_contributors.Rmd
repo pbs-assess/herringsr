@@ -5,23 +5,23 @@
 ```{r, echo=FALSE, include=FALSE}
 contributors <- tibble::tribble(
   ~"Collaborateur",   ~"Organisme d'appartenance",                        ~"Rôle",
-  "Jaclyn Cleary",    "Secteur des sciences du MPO, région du Pacifique", "Auteur",
-  "Sarah Power",      "Secteur des sciences du MPO, région du Pacifique", "Auteur",
-  "Matthew Grinnell", "Secteur des sciences du MPO, région du Pacifique", "Auteur",
-  "Jennifer Boldt",   "Secteur des sciences du MPO, région du Pacifique", "Auteur (Ecosystem section)",
-  "Chris Rooper",     "Secteur des sciences du MPO, région du Pacifique", "Auteur (Ecosystem section)",
-  "Bryan Rusch",      "Gestion des pêches du MPO, région du Pacifique",   "Client",
-  "Marisa Keefe",     "Gestion des pêches du MPO, région du Pacifique",   "Client",
-  "Sarah Hawkshaw",   "Secteur des sciences du MPO, région du Pacifique", "Réviseur",
-  "Jessica Finney",   "Secteur des sciences du MPO, région du Pacifique", "Conseiller scientifique du SCAS",
-  "Miriam O",         "Secteur des sciences du MPO, région du Pacifique", "Gestionnaire du SCAS")
+  "Jaclyn Cleary",    "Secteur des sciences du MPO, Pacifique", "Auteur",
+  "Sarah Power",      "Secteur des sciences du MPO, Pacifique", "Auteur",
+  "Matthew Grinnell", "Secteur des sciences du MPO, Pacifique", "Auteur",
+  "Jennifer Boldt",   "Secteur des sciences du MPO, Pacifique", "Auteur (Considérations écosystémiques)",
+  "Chris Rooper",     "Secteur des sciences du MPO, Pacifique", "Auteur (Considérations écosystémiques)",
+  "Bryan Rusch",      "Gestion des pêches du MPO, Pacifique",   "Client",
+  "Marisa Keefe",     "Gestion des pêches du MPO, Pacifique",   "Client",
+  "Sarah Hawkshaw",   "Secteur des sciences du MPO, Pacifique", "Réviseur",
+  "Jessica Finney",   "Secteur des sciences du MPO, Pacifique", "Conseiller scientifique du SCAS",
+  "Miriam O",         "Secteur des sciences du MPO, Pacifique", "Gestionnaire du SCAS")
 ```
 
 ```{r, results='asis'}
 csasdown::csas_table(x = contributors, format = "latex") %>%
    row_spec(0, bold = TRUE) %>%
-   column_spec(2, width = "7.5cm") %>%
-   column_spec(3, width = "3.5cm")
+   column_spec(2, width = "7.15cm") %>%
+   column_spec(3, width = "4.9cm")
 ```
 
 <!-- Omit Contributors from table numbering -->

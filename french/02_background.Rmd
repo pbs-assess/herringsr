@@ -27,8 +27,9 @@ Cinq Premières Nations Nuu-chah-nulth situées sur la côte ouest de l’île d
 Pêches et Océans Canada a élaboré un plan de gestion des pêches (PGP) plurispécifique des cinq Nations pour 2022-2023.
 Ce plan de gestion comprend des détails précis sur la pêche, y compris les allocations, l’accès, la délivrance de permis, les désignations, les zones de pêche, les possibilités de pêche, la surveillance des pêches et la déclaration des prises.
 Pêches et Océans Canada a tenu compte des commentaires formulés par les cinq Nations au cours des consultations et les a intégrés au PGP de 2023-2024 dans la mesure du possible.
-Pour plus d’informations, voir le PGP de 2023-2024.
-\link{https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41096605.pdf}{FMP}.
+Pour plus d’informations, voir le
+\link{https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41096605.pdf}{PGP}
+de 2023-2024.
 
 Sur la côte centrale, la Première Nation Heiltsuk a le droit ancestral de pêcher les œufs sur varech des harengs du Pacifique à des fins commerciales.
 Les Heiltsuk détiennent actuellement neuf permis pour l’œuf sur varech dans cette région, et ils utilisent leurs moyens préférés pour le faire, c’est-à-dire en étang ouvert.
