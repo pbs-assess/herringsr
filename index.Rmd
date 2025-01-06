@@ -18,7 +18,7 @@ t_branch: Science Branch
 t_region: Pacific Region
 output:
   csasdown:::sr_pdf:
-    french: TRUE
+    french: FALSE
     prepub: FALSE
     copy_sty: TRUE
     line_nums: FALSE
@@ -29,8 +29,8 @@ type: sr
 knit: bookdown::render_book
 site: bookdown::bookdown_site
 link-citations: TRUE
-# bibliography: bib/refs.bib
-bibliography: bib/refs_fr.bib
+bibliography: bib/refs.bib
+# bibliography: bib/refs_fr.bib
 lot: TRUE
 lof: TRUE
 header-includes:
