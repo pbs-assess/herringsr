@@ -1,4 +1,4 @@
-# Figures
+# FIGURES
 
 (ref:bc-map-cap) Boundaries for Pacific Herring SARs in British Columbia.
 The major SARs are `r commify(major_regions_full_parens)`.

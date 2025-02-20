@@ -1,7 +1,7 @@
 \afterpage{\clearpage}
 \needspace{0.45\textheight}
 
-# `r en2fr("Tables", translate = french)`
+# `r en2fr("TABLES", translate = french, case = "upper")`
 
 (ref:data-input-cap) Input data for the `r assess_yr` Pacific Herring
 statistical catch-age model for the major SARs.

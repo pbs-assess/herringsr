@@ -1,9 +1,9 @@
-# Renseignements de base
+# RENSEIGNEMENTS DE BASE
 
 La gestion du hareng du Pacifique en Colombie-Britannique (C.-B.) est organisée en `r number_to_word(length(major_regions_short))` régions d’évaluation des stocks (RES) principales et en `r number_to_word(length(minor_regions_short))` RES secondaires (figure \@ref(fig:bc-map)).
 Les RES principales sont `r commify(major_regions_full_parens)`. Les RES secondaires sont `r commify(minor_regions_full_parens)`.
 Chaque année, nous effectuons des analyses formelles de l’information sur les tendances des stocks dans les RES principales.
-Bien que le détroit de Georgia (DG) soit évalué à Pêches et Océans Canada (en préparation),$^{\ref{fn:sogfsar}}$ certains tableaux et figures du présent document comprennent des données sur le DG à des fins d’exhaustivité.
+Bien que le détroit de Georgia (DG) soit évalué à @dfo2025b certains tableaux et figures du présent document comprennent des données sur le DG à des fins d’exhaustivité.
 Pour les RES secondaires, nous présentons les données sur les prises, les données biologiques et les données de relevé du frai qui sont disponibles (section « \nameref{sec:app-minor} »).
 À partir de 2021, nous incluons des données similaires pour la zone spéciale, zone 10 (section « \nameref{sec:app-special} »).
 Il faut noter que la zone 10 est un sous-ensemble de la côte centrale qui se trouve à l’extérieur des limites de la RES.

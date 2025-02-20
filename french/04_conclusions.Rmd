@@ -1,4 +1,4 @@
-# Conclusions
+# CONCLUSIONS
 
 La réponse des Sciences de `r assess_yr` comprend des analyses officielles de l’information sur les tendances des stocks dans les régions d’évaluations des stocks (RES) principales de hareng du Pacifique à l’aide du cadre d’évaluation des stocks examiné en @cleary2018 et d’une mise à jour des données pour inclure `r assess_yr`.
 

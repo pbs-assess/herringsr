@@ -1,4 +1,4 @@
-# Annexe\label{sec:app}
+# ANNEXE\label{sec:app}
 
 ## Régions d’évaluation des stocks (RES) secondaires\label{sec:app-minor}
 

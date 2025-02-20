@@ -1,12 +1,12 @@
 ---
-title: "Stock status update with application of management procedures for Pacific Herring (*Clupea pallasii*) in British Columbia`:` Status in 2024 and forecast for 2025"
+title: "Stock Status Update with Application of Management Procedures for Pacific Herring (*Clupea pallasii*) in British Columbia`:` Status in 2024 and forecast for 2025"
 french_title: "Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique `:` État en 2024 et prévisions pour 2025"
 assess_year: 2024
 work_done_year: 2025
-t_work_done_month: Month
-report_number: 000
-isbn_en: 978-0-660-00000-0
-isbn_fr: 978-0-660-00000-0
+t_work_done_month: February
+report_number: 005
+isbn_en: 978-0-660-75136-8
+isbn_fr: 978-0-660-75137-5
 t_approver: "Andrew Thomson \n\n\n Regional Director"
 approval_year: 2024
 t_approval_month: September
@@ -132,8 +132,8 @@ if (french) {
   t_csl <- "csl/csas-french.csl"
   options(OutDec = ",")
 } else {
-  t_title_short <- paste("Pacific Herring status in", assess_yr,
-                         "and forecast for", assess_yr + 1)
+  t_title_short <- paste("Pacific Herring Status in", assess_yr,
+                         "and Forecast for", assess_yr + 1)
   t_isbn <- metadata$isbn_en
   t_csl <- "csl/csas.csl"
 }

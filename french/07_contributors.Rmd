@@ -1,6 +1,6 @@
 \needspace{0.35\textheight}
 
-# Collaborateurs
+# LISTE DES PARTICIPANTS DE LA RÉUNION
 
 ```{r, echo=FALSE, include=FALSE}
 contributors <- tibble::tribble(

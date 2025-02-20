@@ -1,4 +1,4 @@
-# Analyse et réponse
+# ANALYSE ET RÉPONSE
 
 ## Évaluation de la stratégie de gestion\label{sec:mse}
 
@@ -43,7 +43,7 @@ Les détails du processus d’examen sont résumés dans le document @dfo2023a. 
 
 1. Prévoir un cycle minimum de trois ans pour les mises à jour de l’ESG, sauf si de nouvelles données probantes révèlent des circonstances exceptionnelles.
 
-Pêches et Océans Canada a mis en avant ces recommandations et mis en œuvre le cadre du modèle statistique spatialement intégré des prises de hareng selon l’âge (MSSIPHA) pour la RES du DG$^{\ref{fn:sogfsar}}$.
+Pêches et Océans Canada a mis en avant ces recommandations et mis en œuvre le cadre du modèle statistique spatialement intégré des prises de hareng selon l’âge (MSSIPHA) pour la RES du DG [@dfo2025b].
 Pour les quatre autres RES, nous mettons en œuvre les PG du MO approuvé précédemment (comme en 2024).
 
 ## Données d’entrée
@@ -62,7 +62,7 @@ Les permis de pêche commerciale d’œufs sur varech sont fondés sur le poids 
 Il est impossible actuellement de valider le taux de mortalité attribuable à cette pêche dans la population, mais des méthodes d’estimation de la mortalité attribuable à la pêche d’œufs sur varech ont été élaborées avec le cadre de modélisation du MSSIPHA. [@dfo2023a].
 
 Les prélèvements commerciaux combinés de `r assess_yr - num_yrs_tab` à `r assess_yr` dans les pêches d’œufs, de nourriture et d’appât, ainsi que la pêche en vue d’une utilisation spéciale sont présentés dans le tableau \@ref(tab:annual-catch).
-La récolte totale d’œufs sur varech (c.-à-d. les livres de produit validé) pour les RES principales de `r assess_yr - num_yrs_tab` à `r assess_yr` est présentée dans le tableau \link{https://github.com/grinnellm/Reports/tree/master/Summaries}{Synthèse des données sur le hareng du Pacifique}.
+La récolte totale d’œufs sur varech (c.-à-d. les livres de produit validé) pour les RES principales de `r assess_yr - num_yrs_tab` à `r assess_yr` est présentée dans le tableau \link{https://doi.org/10.5281/zenodo.14908165}{Synthèse des données sur le hareng du Pacifique}.
 
 ### Données biologiques\label{sec:biol-data}
 
@@ -85,7 +85,7 @@ Les séries chronologiques de l’indice du frai pour les RES principales de `r 
 La méthodologie du relevé en surface a été utilisée à l’occasion de `r new_surv_yr` à `r surv_yr_rng[2]`. 
 Cela se produit généralement lorsque du frai est observé à des endroits où une équipe de relevé en plongée n’est pas disponible, ou lorsque la fraie a lieu très tôt (p. ex. en janvier ou février) ou très tard (p. ex. en mai) dans la saison. 
 Dans ces cas, les estimations de la biomasse reproductrice obtenues à partir des relevés en surface pour une RES et une année données sont ajoutées aux estimations de la biomasse provenant des relevés de plongée, et le paramètre $q_2 = 1$ est utilisé pour obtenir l’indice combiné.
-Les \link{https://github.com/grinnellm/Reports}{Synthèse des données sur le hareng du Pacifique} montrent la proportion des données de relevé du frai (c.-à-d. l’indice de frai) provenant des méthodes de relevé en surface et de plongée par RES et par année.
+Les \link{https://doi.org/10.5281/zenodo.14908165}{Synthèse des données sur le hareng du Pacifique} montrent la proportion des données de relevé du frai (c.-à-d. l’indice de frai) provenant des méthodes de relevé en surface et de plongée par RES et par année.
 En raison de la pandémie de COVID-19, seuls des relevés en surface ont été menés pour HG en 2020 et 2021, ainsi que pour le DPR en 2020.
 Ces observations des relevés en surface sont traitées comme les observations des relevés en plongée et sont censées être continues avec la série chronologique des relevés de plongée.
 Des méthodes permettant de combiner les observations des relevés en surface et en plongée sont présentées pour le cadre de modélisation du MSSIPHA en @dfo2023a, mais ne sont pas mises en œuvre ici.
@@ -97,12 +97,12 @@ Pour chaque RES, nous résumons le frai par groupe ou par zone statistique; ce c
 
 ## Mortalité accidentelle
 
-La mortalité accidentelle est décrite dans @dfo2024 et les mises à jour des séries chronologiques pour chaque SAR figurent dans \link{https://github.com/grinnellm/Reports}{Synthèse des données sur le hareng du Pacifique}.
+La mortalité accidentelle est décrite dans @dfo2024 et les mises à jour des séries chronologiques pour chaque SAR figurent dans \link{https://doi.org/10.5281/zenodo.14908165}{Synthèse des données sur le hareng du Pacifique}.
 À l’heure actuelle, ces données ne sont pas incluses en tant que prélèvement dans les évaluations des stocks de hareng.
 
 ## Observations des Premières Nations
 
-Les données et les observations pour la saison de frai du `r assess_yr` hareng ont été transmises par des représentants des communautés des Premières Nations pour chaque SAR et figurent dans \link{https://github.com/grinnellm/Reports/tree/master/Summaries}{Synthèse des données sur le hareng du Pacifique}.
+Les données et les observations pour la saison de frai du `r assess_yr` hareng ont été transmises par des représentants des communautés des Premières Nations pour chaque SAR et figurent dans \link{https://doi.org/10.5281/zenodo.14908165}{Synthèse des données sur le hareng du Pacifique}.
 Ces observations comprennent les contributions de la Nation haïda de Haida Gwaii; la Nation Heiltsuk sur la côte centrale; les Nations Homalko, Qualicum et Tla’amin dans le détroit de Georgia; et la Nation Nuu-chah-nulth sur la COIV.
 Les observations comprennent la répartition et l’abondance du frai, l’accès, les réussites et les défis de la pêche à des fins ASR, le comportement des poissons et la comparaison avec les saisons précédentes. 
 
@@ -206,7 +206,7 @@ De 1990 à 2006, on estime que le taux de récolte effectif $U_t$ a fluctué au-
 Les occurrences de $U_t$ dépassant `r target_hr*100` % sont dues en partie à des erreurs positives du modèle d’évaluation et à des retards dans la détection d’un changement directionnel dans la tendance.
 
 Après la fermeture de la pêche commerciale de 2007 à 2013, la pêche commerciale de la RES de la CC a été rouverte; de petites pêches commerciales au hareng rogué ont eu lieu en 2014, 2015 et 2016.
-La récolte commerciale d’œufs sur varech a eu lieu la plupart des années dans une certaine mesure de 2014 à 2024 (voir le \link{https://github.com/grinnellm/Reports/tree/master/Summaries}{Synthèse des données sur le hareng du Pacifique}).
+La récolte commerciale d’œufs sur varech a eu lieu la plupart des années dans une certaine mesure de 2014 à 2024 (voir le \link{https://doi.org/10.5281/zenodo.14908165}{Synthèse des données sur le hareng du Pacifique}).
 Les prélèvements associés à la pêche d’œufs sur varech ne sont pas inclus dans l’estimation de $U_t$. 
 
 `r stock_status_text(SAR = "CC", this_yr = assess_yr, translate = french)`
@@ -236,7 +236,7 @@ Les séries chronologiques de $U_t$ sont présentées dans la figure \@ref(fig:h
 
 Les options de récolte du DPR, de la CC et du COIV pour `r assess_yr+1` reflètent l’application des procédures de gestion testées par simulation à l’aide du MO pour le hareng [@benson2022]. 
 Le conditionnement du MO a été mis à jour en 2022 à l’aide des données historiques sur les stocks et les pêches de `r major_start_yr` à 2021; aucune mise à jour des PG n’a été effectuée pour 2023 ou 2024.
-Aucune procédure de gestion n’est fournie pour HG, car cette activité est désormais menée dans le cadre du processus du plan de rétablissement pour HG$^{\ref{fn:rebuild}}$, et les PG pour le DG sont fournies dans MPO (en préparation)$^{\ref{fn:sogfsar}}$.
+Aucune procédure de gestion n’est fournie pour HG, car cette activité est désormais menée dans le cadre du processus du plan de rétablissement pour HG$^{\ref{fn:rebuild}}$, et les PG pour le DG sont fournies dans @dfo2025b.
 
 ### Haida Gwaii
 

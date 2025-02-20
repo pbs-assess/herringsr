@@ -1,4 +1,4 @@
-# Appendix\label{sec:app}
+# APPENDIX\label{sec:app}
 
 ## Minor stock assessment regions\label{sec:app-minor}
 

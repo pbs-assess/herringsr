@@ -1,4 +1,4 @@
-# Conclusions
+# CONCLUSIONS
 
 The `r assess_yr` Science Response includes formal analyses of
 stock trend information for Pacific Herring major SARs

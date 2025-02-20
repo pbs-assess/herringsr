@@ -1,4 +1,4 @@
-# Background
+# BACKGROUND
 
 Pacific Herring in BC are managed as
 `r number_to_word(length(major_regions_short))` major and
@@ -7,8 +7,7 @@ SARs (Figure \@ref(fig:bc-map)).
 The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
 We conduct formal analyses of stock trend information for the major SARs annually.
-Although SoG is assessed in
-DFO (In Prep),$^{\ref{fn:sogfsar}}$
+Although SoG is assessed in @dfo2025b
 some tables and figures in this document include SoG data for completeness.
 For the minor SARs, we present available
 catch data, biological data, and spawn survey data

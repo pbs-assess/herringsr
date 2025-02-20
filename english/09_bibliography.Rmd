@@ -1,4 +1,4 @@
-# `r en2fr("Sources of information", translate=french)`
+# `r en2fr("SOURCES OF INFORMATION", translate=french, case = "upper")`
 
 <div id="refs"></div>
 

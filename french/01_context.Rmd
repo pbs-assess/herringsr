@@ -1,6 +1,6 @@
-# Contexte\label{sec:context}
+# CONTEXT\label{sec:context}
 
-L’abondance du hareng du Pacifique (Clupea pallasii) en Colombie-Britannique (C.-B.) est évaluée au moyen d’un modèle statistique des prises selon l’âge [@martell2011].
+L’abondance du hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique (C.-B.) est évaluée au moyen d’un modèle statistique des prises selon l’âge [@martell2011].
 En 2017, l’évaluation du stock de hareng du Pacifique comprenait des mises à jour du modèle statistique des prises selon l’âge, une analyse de transition pour soutenir ces changements [@cleary2018], et une estimation de la productivité du stock et de l’état actuel du stock par rapport au nouveau point de référence limite (PRL) de $0.3\SB_0$ [@kronlund2017], où $\SB_0$ est la biomasse reproductrice non pêchée estimée.
 En 2022, des options de points de référence supérieurs du stock (PRS) ont été introduites pour les principales régions d’évaluation des stocks (RES), et la présente évaluation comprend des estimations de l’état du stock par rapport aux PRS [@dfo2022a] de la période productive.
 La structure globale du modèle statistique des prises selon l’âge n’a pas changé depuis 2017.
@@ -13,8 +13,8 @@ En 2019, Pêches et Océans Canada a mis en œuvre le processus d’ESG pour les
 Des mises à jour des évaluations des PG ont ensuite été effectuées pour les RES du DG et de la COIV en 2020 [@dfo2021b] et pour le DPR, la CC, le DG et la COIV en 2023 [@dfo2022a; @dfo2022b].
 
 Cette évaluation comprend de nouveaux avis scientifiques sur le `r number_to_word(length(major_regions_short))` choix des PRS pour quatre RES principales de hareng du Pacifique : `r commify(major_regions_short[major_regions_short != "SoG"])`
-Il est à noter que la RES du DG est évaluée dans un document\footnote{\label{fn:sogfsar} 
-DFO. In Prep. Stock status update with application of management procedures for Pacific Herring (\emph{Clupea pallasii}) in the Strait of Georgia, British Columbia: Status in 2024 and forecast for 2025. DFO Can. Sci. Advis. Sec. Fish. Sci. Advis. Rep.} distinct à l’aide d’un nouveau cadre de modélisation [@johnson2024].
+Il est à noter que la RES du DG est évaluée dans @dfo2025b
+à l’aide d’un nouveau cadre de modélisation [@johnson2024].
 Une analyse des options de PRS pour le DPR, la CC, le DG et la COIV a été réalisée en 2022 [@dfo2022a] et des PRS provisoires basés sur les périodes de production déterminées pour chaque RES ont été mis en œuvre dans le plan de gestion intégrée des pêches (PGIP) de 2022-2023.
 
 Depuis le lancement du processus d’ESG du hareng du Pacifique, des évaluations des PG ont été incluses dans l’évaluation annuelle des stocks comme suit :
@@ -31,7 +31,7 @@ Depuis le lancement du processus d’ESG du hareng du Pacifique, des évaluation
 
 1. L’évaluation des stocks de 2023 a mis en œuvre des PG des années précédentes pour les RES du DPR, de la CC, du DG et de la COIV [@dfo2024].
 Il est à noter que les PG pour HG et le DG ne sont pas mises à jour par le biais de ce processus. 
-Les mesures de gestion visant à soutenir le rétablissement à long terme du hareng de HG sont en cours d’élaboration selon le processus relatif au plan de rétablissement de HG\footnote{\label{fn:rebuild}. Haida Gwaii ‘íináang | iinang Pacific Herring: An ecosystem overview and ecosystem-based rebuilding plan. Approuvé par le ministre des Pêches et des Océans, le Conseil de la nation haïda et Parcs Canada. Avril 2024. Dans la presse.} Les PG du DG sont mis à jour à Pêches et Océans Canada (en préparation)$^{\ref{fn:sogfsar}}$ en utilisant des méthodes de @johnson2024.
+Les mesures de gestion visant à soutenir le rétablissement à long terme du hareng de HG sont en cours d’élaboration selon le processus relatif au plan de rétablissement de HG\footnote{\label{fn:rebuild}. Haida Gwaii ‘íináang | iinang Pacific Herring: An ecosystem overview and ecosystem-based rebuilding plan. Approuvé par le ministre des Pêches et des Océans, le Conseil de la nation haïda et Parcs Canada. Avril 2024. Dans la presse.} Les PG du DG sont mis à jour à @dfo2025b en utilisant des méthodes de @johnson2024.
 
 Cette évaluation des stocks de `r assess_yr` comprenait des recommandations des PG pour le DPR, la CC et la COIV, obtenues en 2022 par la mise à jour du conditionnement du MO pour le hareng [@benson2022] en utilisant les données historiques sur les stocks et les pêches de `r major_start_yr` 2021 [@dfo2022b].
 Il n’y a pas de nouvelles évaluations des PG pour `r assess_yr` (toutes les mesures de probabilité reflètent les évaluations des PG présentées en 2022).
@@ -39,4 +39,6 @@ Il n’y a pas de nouvelles évaluations des PG pour `r assess_yr` (toutes les m
 La Direction de la gestion des pêches du Pacifique de Pêches et Océans Canada a demandé à la Direction des sciences de la région du Pacifique de Pêches et Océans Canada d’évaluer l’état des stocks de hareng du Pacifique de la Colombie-Britannique en `r assess_yr` et de fournir des avis de récolte pour `r assess_yr + 1` en utilisant des PG mises à l’essai à l’aide de simulations afin d’orienter l’élaboration du PGIP pour `r assess_yr`-`r assess_yr + 1`, le cas échéant.
 Les trajectoires estimées des stocks, l’état actuel des stocks pour `r assess_yr`, les options de procédure de gestion et les recommandations relatives aux avis de récolte tirées de ces PG pour `r assess_yr + 1` reflètent les méthodes décrites dans @cleary2018 et dans @benson2022 et, le cas échéant, les recommandations issues des analyses de l’ESG 2018, 2019, 2020, 2021, 2022 et 2023 susmentionnées (section «\nameref{sec:harv-opts} »).
 
-La présente réponse des Sciences résulte du processus de réponse des Sciences qui s’est tenu le `r t_process_month` `r rmarkdown::metadata$process_day`, `r rmarkdown::metadata$process_year` sur Mise à jour de l'état des stocks avec application des procédures de gestion pour le hareng du Pacifique (*Clupea pallasii*) en Colombie-Britannique `:` État en 2024 et prévisions pour 2025.
+La présente réponse des Sciences résulte de l’examen par les pairs régional
+qui s’est tenu le `r t_process_month` `r rmarkdown::metadata$process_day`,
+`r rmarkdown::metadata$process_year` sur l’Évaluation du stock de hareng du Pacifique de 2024-2025, prévision de la biomasse des individus matures et options de récolte pour 2025 (HG, DPR, CC, et COIV).
