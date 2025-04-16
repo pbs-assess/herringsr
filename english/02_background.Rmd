@@ -7,8 +7,10 @@ SARs (Figure \@ref(fig:bc-map)).
 The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
 We conduct formal analyses of stock trend information for the major SARs annually.
-Although SoG is assessed in @dfo2025b
-some tables and figures in this document include SoG data for completeness.
+Although `r commify(fsar_sars)` are assessed in
+XXX and XXX <!-- @dfo2025b -->
+some tables and figures in this document include
+`r commify(fsar_sars)` data for completeness.
 For the minor SARs, we present available
 catch data, biological data, and spawn survey data
 (Section "\nameref{sec:app-minor}").

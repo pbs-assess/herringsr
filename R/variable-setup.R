@@ -222,23 +222,27 @@ eco_trend_desc_data <- read_delim(
 
 # SARs - dependent values
 hg_vars <- get_vars("HG", french = french)
-prd_vars <- get_vars("PRD", french = french)
+if(!keep_fsar) prd_vars <- get_vars("PRD", french = french)
 cc_vars <- get_vars("CC", french = french)
-if(!keep_sog) sog_vars <- get_vars("SoG", french = french)
+if(!keep_fsar) sog_vars <- get_vars("SoG", french = french)
 wcvi_vars <- get_vars("WCVI", french = french)
 
-incl_sog <- function(tabfig = "table", trans = french) {
+incl_fsar <- function(tabfig = "table", trans = french) {
   if(french){
     res <- paste(
-      "Notez que le stock SoG est évalué dans @dfo2025b",
-      "mais les données SoG sont incluses dans ce",
+      "Notez que les stock", commify(fsar_sars, and_word = "et"),
+      "sont évalué dans XXX and XXX", # @dfo2025b
+      "mais les données", commify(fsar_sars, and_word = "et"),
+      "sont incluses dans ce",
       en2fr(tabfig, translate = trans),
       "par souci d'exhaustivité."
     )
   } else {
     res <- paste(
-      "Note that the SoG stock is assessed in @dfo2025b",
-      "but SoG data is included in this", tabfig, "for completeness."
+      "Note that the", commify(fsar_sars),
+      "stocks are assessed in XXX and XXX but", # @dfo2025b
+      commify(fsar_sars),
+      "data are included in this", tabfig, "for completeness."
     )
   }
   res

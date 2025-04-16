@@ -34,14 +34,14 @@ input_data_table(
 (ref:annual-catch-cap) Total landed Pacific Herring catch in tonnes
 from `r major_end_yr - num_yrs_tab` to `r major_end_yr`
 in the major stock assessment regions (SARs).
-`r incl_sog()`
+`r incl_fsar()`
 Legend: `r commify(major_regions_full_parens)`.
 Note: 'WP' indicates that data are withheld due to privacy concerns.
 
 (ref:annual-catch-cap-fr) Total des prises débarquées en tonnes de hareng du
 Pacifique de `r major_end_yr - num_yrs_tab` à `r major_end_yr`
 dans les regions d’évaluation des stocks (RESs) majeurs.
-`r incl_sog()`
+`r incl_fsar()`
 Légende: `r commify(major_regions_full_parens, and_word = "et")`.
 Remarque: «DT» indique que les données ne sont pas divulguées
 pour des raisons de confidentialité.
@@ -113,7 +113,7 @@ Remarque: l’indice du frai n’est pas mis à l’échelle
 
 \needspace{0.32\textheight}
 
-```{r spawn-index-prd, eval = keep_non_CC}
+```{r spawn-index-prd, eval = keep_fsar & keep_non_CC}
 spawn_index_by_area_table(
   tab = ps[[en2fr("PRD", french)]],
   cap = ifelse(
@@ -182,7 +182,7 @@ Remarque: l’indice du frai n’est pas mis à l’échelle
 
 \needspace{0.32\textheight}
 
-```{r spawn-index-sog, eval = keep_sog & keep_non_CC}
+```{r spawn-index-sog, eval = keep_fsar & keep_non_CC}
 spawn_index_by_area_table(
   tab = ps[[en2fr("SoG", french)]],
   cap = ifelse(
@@ -294,7 +294,7 @@ Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r prd-parameter-est, results = 'asis', echo = FALSE, eval = keep_non_CC}
+```{r prd-parameter-est, results = 'asis', echo = FALSE, eval = keep_fsar & keep_non_CC}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.parameters.est.table(
   model = major_models[[model_ind]],
@@ -359,7 +359,7 @@ Voir le tableau \@ref(tab:hg-parameter-est) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r sog-parameter-est, results = 'asis', echo = FALSE, eval = keep_sog & keep_non_CC}
+```{r sog-parameter-est, results = 'asis', echo = FALSE, eval = keep_fsar & keep_non_CC}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.parameters.est.table(
   model = major_models[[model_ind]],
@@ -445,7 +445,7 @@ Voir le tableau \@ref(tab:hg-recruitment) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r prd-recruitment, results = 'asis', echo = FALSE, eval = keep_non_CC}
+```{r prd-recruitment, results = 'asis', echo = FALSE, eval = keep_fsar & keep_non_CC}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.value.table(
   model = major_models[[model_ind]],
@@ -507,7 +507,7 @@ Voir le tableau \@ref(tab:hg-recruitment) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r sog-recruitment, results = 'asis', echo = FALSE, eval = keep_sog & keep_non_CC}
+```{r sog-recruitment, results = 'asis', echo = FALSE, eval = keep_fsar & keep_non_CC}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.value.table(
   model = major_models[[model_ind]],
@@ -610,7 +610,7 @@ Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r prd-spawning-biomass-depletion, results = 'asis', echo = FALSE, eval = keep_non_CC}
+```{r prd-spawning-biomass-depletion, results = 'asis', echo = FALSE, eval = keep_fsar & keep_non_CC}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.biomass.depletion.table(
   model = major_models[[model_ind]],
@@ -678,7 +678,7 @@ Voir le tableau \@ref(tab:hg-spawning-biomass-depletion) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r sog-spawning-biomass-depletion, results = 'asis', echo = FALSE, eval = keep_sog & keep_non_CC}
+```{r sog-spawning-biomass-depletion, results = 'asis', echo = FALSE, eval = keep_fsar & keep_non_CC}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.biomass.depletion.table(
   model = major_models[[model_ind]],
@@ -788,7 +788,7 @@ Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r ref-points-prd, results = 'asis', echo = FALSE, eval = keep_non_CC}
+```{r ref-points-prd, results = 'asis', echo = FALSE, eval = keep_fsar & keep_non_CC}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 make.ref.points.table(
   model = major_models[[model_ind]],
@@ -855,7 +855,7 @@ Voir le tableau \@ref(tab:ref-points-hg) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r ref-points-sog, results = 'asis', echo = FALSE, eval = keep_sog & keep_non_CC}
+```{r ref-points-sog, results = 'asis', echo = FALSE, eval = keep_fsar & keep_non_CC}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 make.ref.points.table(
   model = major_models[[model_ind]],
@@ -902,14 +902,14 @@ make.ref.points.table(
 average spawning biomass of Pacific Herring during a productive period
 $\overline{\SB}_\mli{Prod}$
 in the major stock assessment regions (SARs).
-`r incl_sog()`
+`r incl_fsar()`
 
 (ref:prod-period-cap-fr) Gamme d'années pour le calcul de la proportion de la
 biomasse reproductrice moyenne du hareng du Pacifique
 pendant une période productive
 $\overline{\SB}_\mli{Prod}$
 dans les principales régions d'évaluation des stocks (RES).
-`r incl_sog()`
+`r incl_fsar()`
 
 \needspace{0.32\textheight}
 
@@ -1002,7 +1002,7 @@ et un $\SB_{2024}$ plus élevé conduit à un TR plus faible.
 \setlength{\tabcolsep}{5pt}
 \needspace{0.32\textheight}
 
-```{r decision-prd, results = 'asis', echo = FALSE, eval = keep_non_CC}
+```{r decision-prd, results = 'asis', echo = FALSE, eval = keep_fsar & keep_non_CC}
 decision_tables_mp(
   df = mp.prd,
   xcaption = ifelse(
@@ -1087,7 +1087,7 @@ Voir le tableau \@ref(tab:decision-prd) pour la description.
 
 \needspace{0.32\textheight}
 
-```{r decision-sog, results = 'asis', echo = FALSE, eval = keep_sog & keep_non_CC}
+```{r decision-sog, results = 'asis', echo = FALSE, eval = keep_fsar & keep_non_CC}
 decision_tables_mp(
   df = mp.sog,
   xcaption = ifelse(

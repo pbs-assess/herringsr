@@ -19,7 +19,7 @@ knitr::include_graphics(
 (ref:major-catch-cap) Total landed Pacific Herring catch in
 thousands of tonnes (t)
 from `r recent_catch_yr` to `r major_end_yr` in the major SARs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 See Figures \@ref(fig:storyboard-hg) to \@ref(fig:storyboard-wcvi) for
 catches during the reduction period
 (`r major_start_yr` to `r recent_catch_yr-1`).
@@ -31,7 +31,7 @@ as well as the special use fishery;
 (ref:major-catch-cap-fr) Prises totales débarquées en
 hareng du Pacifique en milliers de tonnes (t)
 de `r recent_catch_yr` à `r major_end_yr` dans les RES majeurs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 Voir les Figures \@ref(fig:storyboard-hg) à \@ref(fig:storyboard-wcvi)
 pour les prises durant la période de réduction
 (`r major_start_yr` à `r recent_catch_yr-1`).
@@ -78,7 +78,7 @@ catch_plot_post69 <- plot_catch(
 
 (ref:major-wa-cap) Mean weight-at-age for Pacific Herring in kilograms (kg) 
 from `r major_start_yr` to `r major_end_yr` in the major SARs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 Lines show `r nRollWA`-year running means
 for age-`r age_first` to age-`r age_plus` herring,
 incrementing up from bottom line and shaded from darker to lighter,
@@ -96,7 +96,7 @@ Vertical axes are cropped at `r f(wa_ylim[1], 2)` to `r f(wa_ylim[2], 2)` kg.
 (ref:major-wa-cap-fr) Poids moyen à l'âge du hareng du Pacifique
 en kilogrammes (kg) de `r major_start_yr` à `r major_end_yr`
 dans les principaux RESs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 Les lignes indiquent les moyennes mobiles annuelles `r nRollWA`
 pour les harengs d'âge `r age_first` à âge `r age_plus`,
 augmentant à partir de la ligne inférieure et ombrées de plus en plus foncées,
@@ -127,7 +127,7 @@ plot_wa(
 
 (ref:major-pa-cap) Proportion-at-age for Pacific Herring from
 `r major_start_yr` to `r major_end_yr` in the major SARs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 Dot size and colour indicates age class proportion for the year;
 each year adds up to 1.0.
 The gray line is the mean age, and
@@ -139,7 +139,7 @@ The age-`r age_plus` plus class includes fish ages `r age_plus` and older.
 
 (ref:major-pa-cap-fr) Proportion selon l'âge pour le hareng du Pacifique
 de `r major_start_yr` à `r major_end_yr` dans les principaux RESs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 La taille et la couleur des points indiquent la proportion
 de la classe d'âge pour l'année;
 la somme de chaque année est égale à 1,0.
@@ -166,7 +166,7 @@ plot_pa(
 (ref:major-spawn-index-cap) Spawn index in thousands of tonnes (t)
 for Pacific Herring from `r major_start_yr` to `r major_end_yr`
 in the major SARs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 The dashed vertical line delineates between two periods
 defined by the dominant survey method:
 surface surveys (`r major_start_yr` to `r new_surv_yr-1`), and
@@ -176,7 +176,7 @@ Note: the 'spawn index' is not scaled by the spawn survey scaling parameter $q$.
 (ref:major-spawn-index-cap-fr) Indice de frai en milliers de tonnes (t)
 pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr`
 dans les principaux RESs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 La ligne verticale en pointillés délimite deux périodes
 définies par la méthode de relevé dominante:
 les relevés de surface (`r major_start_yr` à `r new_surv_yr-1`), et
@@ -202,14 +202,14 @@ major_spawn_index
 in thousands of tonnes (t)
 for Pacific Herring from `r major_start_yr` to `r major_end_yr`
 in the major SARs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 Spawning biomass is represented by median posterior estimates.
 
 (ref:coastwide-biomass-catch-cap-fr) Biomasse reproductrice et prises
 en milliers de tonnes (t)
 pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr`
 dans les principaux RESs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 La biomasse reproductrice est représentée par
 les estimations médianes postérieures.
 
@@ -225,14 +225,14 @@ plot_coastwide_biomass_catch(
 in thousands of tonnes (t)
 for Pacific Herring from `r major_start_yr` to `r major_end_yr`
 in the major SARs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 Biomass is represented by median posterior estimates.
 
 (ref:biomass-total-biomass-cap-fr) Biomasse totale et biomasse reproductrice 
 en milliers de tonnes (t)
 pour le hareng du Pacifique de `r major_start_yr` à `r major_end_yr`
 dans les principaux RESs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 La biomasse est représentée par les estimations médianes postérieures.
 
 ```{r biomass-total-biomass, fig.asp=1.25, fig.cap=ifelse(french, "(ref:biomass-total-biomass-cap-fr)", "(ref:biomass-total-biomass-cap)")}
@@ -615,7 +615,7 @@ create_slide_figures(model_index = model_ind)
 ```
 
 <!-- Prince Rupert District Storyboard -->
-```{r scaled-abundance-prd, fig.show = "hide", fig.asp = 1}
+```{r scaled-abundance-prd, fig.show = "hide", fig.asp = 1, eval = keep_fsar}
 model_ind <- match(en2fr("PRD", french), major_regions_short)
 sbt_yrs <- as.numeric(colnames(major_models[[model_ind]]$mcmccalcs$sbt.quants))
 xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
@@ -633,7 +633,7 @@ plot_a_prd <- plot_scaled_abundance(
 ```
 
 <!-- Prince Rupert District Storyboard -->
-```{r natural-mortality-prd, fig.show = "hide", fig.asp = 1}
+```{r natural-mortality-prd, fig.show = "hide", fig.asp = 1, eval = keep_fsar}
 plot_b_prd <- plot_natural_mortality(
   model = major_models[[model_ind]],
   prod_yrs = prod_period[[model_ind]]$yrs,
@@ -644,7 +644,7 @@ plot_b_prd <- plot_natural_mortality(
 ```
 
 <!-- Prince Rupert District Storyboard -->
-```{r recruitment-prd, fig.show = "hide", fig.asp = 1}
+```{r recruitment-prd, fig.show = "hide", fig.asp = 1, eval = keep_fsar}
 plot_c_prd <- plot_recruitment(
   model = major_models[[model_ind]],
   prod_yrs = prod_period[[model_ind]]$yrs,
@@ -654,7 +654,7 @@ plot_c_prd <- plot_recruitment(
 ```
 
 <!-- Prince Rupert District Storyboard -->
-```{r biomass-catch-prd, fig.show = "hide", fig.asp = 1}
+```{r biomass-catch-prd, fig.show = "hide", fig.asp = 1, eval = keep_fsar}
 plot_d_prd <- plot_biomass_catch(
   model = major_models[[model_ind]],
   catch_df = ct,
@@ -667,7 +667,7 @@ plot_d_prd <- plot_biomass_catch(
 ```
 
 <!-- Prince Rupert District Storyboard -->
-```{r recruitment-devs-prd, fig.show = "hide", fig.asp = 1}
+```{r recruitment-devs-prd, fig.show = "hide", fig.asp = 1, eval = keep_fsar}
 plot_e_prd <- plot_recruitment_devs(
   model = major_models[[model_ind]],
   run_mean_yrs = nRollRec,
@@ -678,7 +678,7 @@ plot_e_prd <- plot_recruitment_devs(
 ```
 
 <!-- Prince Rupert District Storyboard -->
-```{r biomass-phase-prd, fig.show = "hide", fig.asp = 1}
+```{r biomass-phase-prd, fig.show = "hide", fig.asp = 1, eval = keep_fsar}
 plot_f_prd <- plot_biomass_phase(
   model = major_models[[model_ind]],
   catch_df = ct,
@@ -700,7 +700,7 @@ sortie du modèle statistique de capture-âge pour le hareng du Pacifique
 de `r major_start_yr` à `r major_end_yr`.
 \storyboardfr{}
 
-```{r storyboard-prd, fig.asp=ifelse(french, 1.0, 1.05), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)"), eval = keep_non_CC}
+```{r storyboard-prd, fig.asp=ifelse(french, 1.0, 1.05), fig.cap = ifelse(french, "(ref:storyboard-prd-cap-fr)", "(ref:storyboard-prd-cap)"), eval = keep_fsar & keep_non_CC}
 cowplot::plot_grid(
   plot_a_prd,
   plot_b_prd,
@@ -854,7 +854,7 @@ create_slide_figures(model_index = model_ind)
 ```
 
 <!-- Strait of Georgia Storyboard -->
-```{r scaled-abundance-sog, fig.show = "hide", fig.asp = 1, eval = keep_sog}
+```{r scaled-abundance-sog, fig.show = "hide", fig.asp = 1, eval = keep_fsar}
 model_ind <- match(en2fr("SoG", french), major_regions_short)
 sbt_yrs <- as.numeric(colnames(major_models[[model_ind]]$mcmccalcs$sbt.quants))
 xlim_all <- c(min(sbt_yrs) - 1, max(sbt_yrs) + 1)
@@ -872,7 +872,7 @@ plot_a_sog <- plot_scaled_abundance(
 ```
 
 <!-- Strait of Georgia Storyboard -->
-```{r natural-mortality-sog, fig.show = "hide", fig.asp = 1, eval = keep_sog}
+```{r natural-mortality-sog, fig.show = "hide", fig.asp = 1, eval = keep_fsar}
 plot_b_sog <- plot_natural_mortality(
   model = major_models[[model_ind]],
   prod_yrs = prod_period[[model_ind]]$yrs,
@@ -883,7 +883,7 @@ plot_b_sog <- plot_natural_mortality(
 ```
 
 <!-- Strait of Georgia Storyboard -->
-```{r recruitment-sog, fig.show = "hide", fig.asp = 1, eval = keep_sog}
+```{r recruitment-sog, fig.show = "hide", fig.asp = 1, eval = keep_fsar}
 plot_c_sog <- plot_recruitment(
   model = major_models[[model_ind]],
   prod_yrs = prod_period[[model_ind]]$yrs,
@@ -893,7 +893,7 @@ plot_c_sog <- plot_recruitment(
 ```
 
 <!-- Strait of Georgia Storyboard -->
-```{r biomass-catch-sog, fig.show = "hide", fig.asp = 1, eval = keep_sog}
+```{r biomass-catch-sog, fig.show = "hide", fig.asp = 1, eval = keep_fsar}
 plot_d_sog <- plot_biomass_catch(
   model = major_models[[model_ind]],
   catch_df = ct,
@@ -906,7 +906,7 @@ plot_d_sog <- plot_biomass_catch(
 ```
 
 <!-- Strait of Georgia Storyboard -->
-```{r recruitment-devs-sog, fig.show = "hide", fig.asp = 1, eval = keep_sog}
+```{r recruitment-devs-sog, fig.show = "hide", fig.asp = 1, eval = keep_fsar}
 plot_e_sog <- plot_recruitment_devs(
   model = major_models[[model_ind]],
   run_mean_yrs = nRollRec,
@@ -917,7 +917,7 @@ plot_e_sog <- plot_recruitment_devs(
 ```
 
 <!-- Strait of Georgia Storyboard -->
-```{r biomass-phase-sog, fig.show = "hide", fig.asp = 1, eval = keep_sog}
+```{r biomass-phase-sog, fig.show = "hide", fig.asp = 1, eval = keep_fsar}
 plot_f_sog <- plot_biomass_phase(
   model = major_models[[model_ind]],
   catch_df = ct,
@@ -939,7 +939,7 @@ sortie du modèle statistique de capture-âge pour le hareng du Pacifique
 de `r major_start_yr` à `r major_end_yr`.
 \storyboardfr{}
 
-```{r storyboard-sog, fig.asp=ifelse(french, 1.0, 1.05), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)"), eval = keep_sog & keep_non_CC}
+```{r storyboard-sog, fig.asp=ifelse(french, 1.0, 1.05), fig.cap = ifelse(french, "(ref:storyboard-sog-cap-fr)", "(ref:storyboard-sog-cap)"), eval = keep_fsar & keep_non_CC}
 cowplot::plot_grid(
   plot_a_sog,
   plot_b_sog,
@@ -1079,7 +1079,7 @@ Horizontal dashed lines indicate $U_t = `r target_hr`$.
 (ref:harvest-rate-cap-fr) Taux de récolte effectif $U_t$ de
 `r major_start_yr` à `r major_end_yr`
 pour le hareng du Pacifique dans les RES majeurs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 Taux de récolte effectif est $U_t = C_t/(C_t + \SB_t)$, où
 $C_t$ est est la prise pour l’année $t$, et
 $\SB_t$ est la biomasse reproductrice estimée pour l’année $t$.
@@ -1089,15 +1089,16 @@ pour $U_t$, respectivement.
 Les lignes en tirets horizontales indiquent $U_t = `r target_hr`$.
 
 ```{r harvest-rate, fig.asp=ifelse(french, 1.25, 1.25), fig.cap = ifelse(french, "(ref:harvest-rate-cap-fr)", "(ref:harvest-rate-cap)")}
-sog_ind <- match(en2fr("SoG", french), major_regions_short)
-if(keep_sog) {
+fsar_ind <- match(en2fr(fsar_sars, french), major_regions_short)
+if(keep_fsar) {
   m_c <- major_catch
   m_m <- major_models
   m_r_f <- major_regions_full
 } else {
-  m_c <- major_catch %>% filter(region != "Strait of Georgia")
-  m_m <- major_models[-sog_ind]
-  m_r_f <- major_regions_full[major_regions_full != "Strait of Georgia"]
+  keep_regions <- major_regions_full[-fsar_ind]
+  m_c <- major_catch %>% filter(region %in% keep_regions)
+  m_m <- major_models[-fsar_ind]
+  m_r_f <- keep_regions
 }
 plot_harvest_rate(
   df = m_c,
@@ -1122,7 +1123,7 @@ where $\SB_0$ is estimated unfished spawning biomass.
 biomasse reproductrice projetée pour le hareng du Pacifique
 en supposant qu’il n’y aura pas de pêche en `r assess_yr + 1`
 $\SB_{`r assess_yr+1`}$ en milliers de tonnes dans les RES majeurs.
-`r incl_sog(tabfig = "figure")`
+`r incl_fsar(tabfig = "figure")`
 Les lignes noires pleines et tiretées indiquent
 les médianes et les intervalles de confiance de `r ci_level*100` %
 pour $\SB_{`r assess_yr + 1`}$, respectivement.
@@ -1133,12 +1134,13 @@ où $\SB_0$ est la biomasse reproductrice non exploitée estimée.
 
 ```{r proj-biomass-density, fig.asp=ifelse(french, 1.2, 1.2), fig.cap = ifelse(french, "(ref:proj-biomass-density-cap-fr)", "(ref:proj-biomass-density-cap)")}
 sog_ind <- match(en2fr("SoG", french), major_regions_short)
-if(keep_sog) {
+if(keep_fsar) {
   m_m <- major_models
   m_r_f <- major_regions_full
 } else {
-  m_m <- major_models[-sog_ind]
-  m_r_f <- major_regions_full[major_regions_full != "Strait of Georgia"]
+  keep_regions <- major_regions_full[-fsar_ind]
+  m_m <- major_models[-fsar_ind]
+  m_r_f <- keep_regions
 }
 plot_proj_biomass_density(
   models = m_m,

@@ -52,13 +52,15 @@ sbt.hg <- sbt_sbo.hg[[1]]
 sbo.hg <- sbt_sbo.hg[[2]]
 rel.sbo.hg <- rep(1, length(sbo.hg))
 
-sbt_sbo.prd <- get_sbt_sbo("PRD")
-sbt.prd <- sbt_sbo.prd[[1]]
-sbo.prd <- sbt_sbo.prd[[2]]
-rel.sbo.prd <- rep(1, length(sbo.prd))
-mp.lst.prd <- get_hcr(sbt.prd, sbo.prd, fn = here("data", "mp-prd.csv"))
-mp.vals.prd <- mp.lst.prd[[1]]
-mp.prd <- mp.lst.prd[[2]]
+if(keep_fsar){
+  sbt_sbo.prd <- get_sbt_sbo("PRD")
+  sbt.prd <- sbt_sbo.prd[[1]]
+  sbo.prd <- sbt_sbo.prd[[2]]
+  rel.sbo.prd <- rep(1, length(sbo.prd))
+  mp.lst.prd <- get_hcr(sbt.prd, sbo.prd, fn = here("data", "mp-prd.csv"))
+  mp.vals.prd <- mp.lst.prd[[1]]
+  mp.prd <- mp.lst.prd[[2]]
+}
 
 sbt_sbo.cc <- get_sbt_sbo("CC")
 sbt.cc <- sbt_sbo.cc[[1]]
@@ -68,7 +70,7 @@ mp.lst.cc <- get_hcr(sbt.cc, sbo.cc, fn = here("data", "mp-cc.csv"))
 mp.vals.cc <- mp.lst.cc[[1]]
 mp.cc <- mp.lst.cc[[2]]
 
-if(keep_sog){
+if(keep_fsar){
   sbt_sbo.sog <- get_sbt_sbo("SoG")
   sbt.sog <- sbt_sbo.sog[[1]]
   sbo.sog <- sbt_sbo.sog[[2]]
@@ -86,7 +88,7 @@ mp.lst.wcvi <- get_hcr(sbt.wcvi, sbo.wcvi, fn = here("data", "mp-wcvi.csv"))
 mp.vals.wcvi <- mp.lst.wcvi[[1]]
 mp.wcvi <- mp.lst.wcvi[[2]]
 
-if(keep_sog){
+if(keep_fsar){
   sog.min.esc.rel.50.hr.10.cap.2 <- get_hcr_tac_hr(
     hcr(
       sbt.sog,
@@ -120,7 +122,7 @@ wcvi.min.esc.rel.50.hr.10.cap.2 <- get_hcr_tac_hr(
   )
 )
 
-if(keep_sog){
+if(keep_fsar){
   sog.min.hs.3060.hr.20 <- get_hcr_tac_hr(
     hcr(
       sbt.sog,
@@ -154,7 +156,7 @@ wcvi.min.hs.3060.hr.20 <- get_hcr_tac_hr(
   )
 )
 
-if(keep_sog){
+if(keep_fsar){
   sog.min.hs.3060.hr.20.cap.30 <- get_hcr_tac_hr(
     hcr(
       sbt.sog,
@@ -188,7 +190,7 @@ wcvi.min.hs.5060.hr.10.cap.2 <- get_hcr_tac_hr(
   )
 )
 
-if(keep_sog){
+if(keep_fsar){
   sog.min.esc.rel.50.hr.10.cap.2.slow <- get_hcr_tac_hr(
     hcr(
       sbt.sog,
@@ -222,7 +224,7 @@ wcvi.min.esc.rel.50.hr.10.cap.2.slow <- get_hcr_tac_hr(
   )
 )
 
-if(keep_sog){
+if(keep_fsar){
   sog.min.hs.3060.hr.20.slow <- get_hcr_tac_hr(
     hcr(
       sbt.sog,
@@ -256,7 +258,7 @@ wcvi.min.hs.3060.hr.20.slow <- get_hcr_tac_hr(
   )
 )
 
-if(keep_sog){
+if(keep_fsar){
   sog.min.hs.3060.hr.10.cap.2.slow <- get_hcr_tac_hr(
     hcr(
       sbt.sog,
@@ -290,7 +292,7 @@ wcvi.min.hs.3060.hr.10.cap.2.slow <- get_hcr_tac_hr(
   )
 )
 
-if(keep_sog){
+if(keep_fsar){
   sog.min.esc.rel.30.hr.10 <- get_hcr_tac_hr(
     hcr(
       sbt.sog,
@@ -437,7 +439,7 @@ wcvi.consTAC.cap.1 <- get_hcr_tac_hr(
   )
 )
 
-if(keep_sog){
+if(keep_fsar){
   sog.min.hs.3060.hr.10 <- get_hcr_tac_hr(
     hcr(
       sbt.sog,

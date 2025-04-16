@@ -365,44 +365,44 @@ Management measures to support long-term recovery of herring stocks in
 Haida Gwaii are being developed through
 the rebuilding plan process.$^{\ref{fn:rebuild}}$
 
-### Prince Rupert District
+<!-- ### Prince Rupert District -->
 
-Estimated spawning biomass reached historic highs in the early 1960s 
-due to low estimated mortality rate and high estimated recruitment
-(Figure \@ref(fig:storyboard-prd)). 
-This was followed immediately by below average recruitment and
-a rise to the highest estimated mortality rate,
-more than doubling within 10 years.
-In response, the stock collapsed by the mid-1960s to
-the lowest estimated spawning biomass. 
-Spawning biomass recovered by the mid-1980s estimated to be
-about 50% of the historic high,
-but began a steady decline in the late-1980s,
-amid slowly rising mortality rates and variable recruitment,
-before stabilizing at a relatively low level
-(but above historic lows) between 2005 and 2018 
-(Figure \@ref(fig:storyboard-prd)b, d, e).
+<!-- Estimated spawning biomass reached historic highs in the early 1960s  -->
+<!-- due to low estimated mortality rate and high estimated recruitment -->
+<!-- (Figure \@ref(fig:storyboard-prd)).  -->
+<!-- This was followed immediately by below average recruitment and -->
+<!-- a rise to the highest estimated mortality rate, -->
+<!-- more than doubling within 10 years. -->
+<!-- In response, the stock collapsed by the mid-1960s to -->
+<!-- the lowest estimated spawning biomass.  -->
+<!-- Spawning biomass recovered by the mid-1980s estimated to be -->
+<!-- about 50% of the historic high, -->
+<!-- but began a steady decline in the late-1980s, -->
+<!-- amid slowly rising mortality rates and variable recruitment, -->
+<!-- before stabilizing at a relatively low level -->
+<!-- (but above historic lows) between 2005 and 2018  -->
+<!-- (Figure \@ref(fig:storyboard-prd)b, d, e). -->
 
-Since 2018 estimated spawning biomass has shown modest increases in biomass 
-with above average age-`r age_first` recruitment
-in 2014, 2018 and, 2022 and stable natural mortality rates
-(Figure \@ref(fig:storyboard-prd)c, d, f). 
-Productivity in recent years is relatively high compared to the last 30 years,
-with the highest estimated productivity in 2022
-(Figure \@ref(fig:storyboard-prd)f) and
-with natural mortality decreasing in the last handful of years.
-This combination has led to an abundance estimate that is steeply increasing, and
-is the highest since the mid-1960s.
+<!-- Since 2018 estimated spawning biomass has shown modest increases in biomass  -->
+<!-- with above average age-`r age_first` recruitment -->
+<!-- in 2014, 2018 and, 2022 and stable natural mortality rates -->
+<!-- (Figure \@ref(fig:storyboard-prd)c, d, f).  -->
+<!-- Productivity in recent years is relatively high compared to the last 30 years, -->
+<!-- with the highest estimated productivity in 2022 -->
+<!-- (Figure \@ref(fig:storyboard-prd)f) and -->
+<!-- with natural mortality decreasing in the last handful of years. -->
+<!-- This combination has led to an abundance estimate that is steeply increasing, and -->
+<!-- is the highest since the mid-1960s. -->
 
-Fluctuations in spawning biomass trends
-appear to be less than in other SARs in the last 30 years,
-possibly because they are smaller in magnitude 
-and offset each other as shown in Figure \@ref(fig:storyboard-prd)a.
+<!-- Fluctuations in spawning biomass trends -->
+<!-- appear to be less than in other SARs in the last 30 years, -->
+<!-- possibly because they are smaller in magnitude  -->
+<!-- and offset each other as shown in Figure \@ref(fig:storyboard-prd)a. -->
 
-`r stock_status_text(SAR = "PRD", this_yr = assess_yr, translate = french)`
-Commercial fisheries have occurred annually in PRD from the mid-1980s through 
-2018, during which the effective harvest rate $U_t$ was estimated to be
-at or below 20% in all years except 1989 (Figure \@ref(fig:harvest-rate)).
+<!-- `r stock_status_text(SAR = "PRD", this_yr = assess_yr, translate = french)` -->
+<!-- Commercial fisheries have occurred annually in PRD from the mid-1980s through  -->
+<!-- 2018, during which the effective harvest rate $U_t$ was estimated to be -->
+<!-- at or below 20% in all years except 1989 (Figure \@ref(fig:harvest-rate)). -->
 
 ### Central Coast
 
@@ -566,51 +566,51 @@ the harvest recommendation for the Haida Gwaii stock in
 `r assess_yr + 1` is 0&nbsp;t.
 All future MP evaluations will occur through the rebuilding plan process.
 
-### Prince Rupert District
+<!-- ### Prince Rupert District -->
 
-The PRD estimated stock biomass showed little trend from 2005 to 2018, 
-fluctuating at or near the LRP of $0.3\SB_0$
-(Figure \@ref(fig:storyboard-prd)d). 
-Spawning biomass increased above $0.3\SB_0$ in 2019
-and has remained above since.
+<!-- The PRD estimated stock biomass showed little trend from 2005 to 2018,  -->
+<!-- fluctuating at or near the LRP of $0.3\SB_0$ -->
+<!-- (Figure \@ref(fig:storyboard-prd)d).  -->
+<!-- Spawning biomass increased above $0.3\SB_0$ in 2019 -->
+<!-- and has remained above since. -->
 
-In the summer of 2022, we updated the conditioning of the OM
-for PRD with 2021 spawn, catch, and biological data.
-We re-ran MSE simulations to generate updated probability values for MPs
-presented in 2019 [@dfo2020a] and 2020 [@dfo2021a].
-These latest MP evaluations also appear in @dfo2022a.
-No new MPs were included,
-however probability metrics for the five USRs options [@dfo2022a]
-were estimated and have been added to the harvest options tables.
-Updated closed-loop feedback simulations for PRD show that
-MPs with harvest rates at 5, 10, and 20% maintain spawning biomass
-above the LRP with 85 to 97% probability, over both OM scenarios
-(Table \@ref(tab:decision-prd)). 
-`r mean_harvest_text(SAR = "PRD", translate = french)`
+<!-- In the summer of 2022, we updated the conditioning of the OM -->
+<!-- for PRD with 2021 spawn, catch, and biological data. -->
+<!-- We re-ran MSE simulations to generate updated probability values for MPs -->
+<!-- presented in 2019 [@dfo2020a] and 2020 [@dfo2021a]. -->
+<!-- These latest MP evaluations also appear in @dfo2022a. -->
+<!-- No new MPs were included, -->
+<!-- however probability metrics for the five USRs options [@dfo2022a] -->
+<!-- were estimated and have been added to the harvest options tables. -->
+<!-- Updated closed-loop feedback simulations for PRD show that -->
+<!-- MPs with harvest rates at 5, 10, and 20% maintain spawning biomass -->
+<!-- above the LRP with 85 to 97% probability, over both OM scenarios -->
+<!-- (Table \@ref(tab:decision-prd)).  -->
+<!-- `r mean_harvest_text(SAR = "PRD", translate = french)` -->
 
-While MPs with harvest rates ranging from 5% to 20%
-were able to meet the core conservation objective of
-maintaining spawning biomass above the LRP with high probability
-(i.e., at least 75%)^\ref{fn:HighProb}^,
-they also imply different trade-offs among biomass and yield objectives.
-Since multiple MPs meet the conservation objective,
-other socio-economic reasons may drive the choice for a particular MP.
+<!-- While MPs with harvest rates ranging from 5% to 20% -->
+<!-- were able to meet the core conservation objective of -->
+<!-- maintaining spawning biomass above the LRP with high probability -->
+<!-- (i.e., at least 75%)^\ref{fn:HighProb}^, -->
+<!-- they also imply different trade-offs among biomass and yield objectives. -->
+<!-- Since multiple MPs meet the conservation objective, -->
+<!-- other socio-economic reasons may drive the choice for a particular MP. -->
 
-`r proj_biomass_text(SAR = "PRD", next_yr = assess_yr + 1, translate = french)`
+<!-- `r proj_biomass_text(SAR = "PRD", next_yr = assess_yr + 1, translate = french)` -->
 
-Harvest options for `r assess_yr + 1`,
-resulting from simulation-tested MPs
-are presented in Table \@ref(tab:decision-prd)
-and include probability values for the LRP and provisional USR which 
-reflect updated OM conditioning.
-Options reflect application of MPs to the `r assess_yr + 1`
-forecast biomass for PRD,
-whereby each MP meets the conservation objective with a minimum 75% probability
-under both DDM and DIM OM scenarios.
-For ease of comparison with MP performance evaluation,
-harvest options are presented along side MP performance metrics
-for both OM scenarios 
-(Table \@ref(tab:decision-prd)).
+<!-- Harvest options for `r assess_yr + 1`, -->
+<!-- resulting from simulation-tested MPs -->
+<!-- are presented in Table \@ref(tab:decision-prd) -->
+<!-- and include probability values for the LRP and provisional USR which  -->
+<!-- reflect updated OM conditioning. -->
+<!-- Options reflect application of MPs to the `r assess_yr + 1` -->
+<!-- forecast biomass for PRD, -->
+<!-- whereby each MP meets the conservation objective with a minimum 75% probability -->
+<!-- under both DDM and DIM OM scenarios. -->
+<!-- For ease of comparison with MP performance evaluation, -->
+<!-- harvest options are presented along side MP performance metrics -->
+<!-- for both OM scenarios  -->
+<!-- (Table \@ref(tab:decision-prd)). -->
 
 ### Central Coast
 
