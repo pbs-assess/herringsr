@@ -56,12 +56,26 @@ of the `r number_to_word(length(major_regions_short))` major
 Pacific Herring SARs:
 `r commify(major_regions_short[!major_regions_short %in% fsar_sars])`.
 Note that the `r commify(fsar_sars)` SARs are assessed in
-XXX and XXX <!-- @dfo2025b -->
-using a new modelling framework [@johnson2024].
+<!-- TODO: Update to @dfo2025c and @dfo2025d when published -->
+DFO\footnote{\label{fn:dfo2025c}
+DFO. In prep. Prince Rupert District Pacific Herring (Clupea pallasii)
+stock status in 2025 and forecast for 2026.
+DFO Can. Sci. Advis. Sec. Sci. Advis. Rep.}
+and DFO\footnote{\label{fn:dfo2025d}
+DFO. In prep. Strait of Georgia Pacific Herring (Clupea pallasii)
+stock status in 2025 and forecast for 2026.
+DFO Can. Sci. Advis. Sec. Sci. Advis. Rep.}
+respectively, using a new modelling framework [@johnson2024].
 An analysis of USR options for PRD, CC, SoG, and WCVI was completed in 
 2022 [@dfo2022a] and provisional USRs based on productive 
 periods identified for each SAR was implemented in the 2022/23 Integrated 
 Fisheries Management Plan (IFMP).
+Note that Haida Gwaii USRs are developed in the
+HG rebuilding plan process.\footnote{\label{fn:rebuild}
+Haida Gwaii 'íináang | iinang Pacific Herring:
+An ecosystem overview and ecosystem-based rebuilding plan.
+Approved by the Minister of Fisheries and Oceans, the Council of Haida Nation 
+and Parks Canada. April 2024. In Press.}
 
 Since initiation of the Pacific Herring MSE process,
 MP evaluations have been included in the annual stock assessment as follows:
@@ -87,18 +101,21 @@ SoG and WCVI SARs [@dfo2021c].
 1. The 2022 stock assessment included
 updated MP recommendations for the PRD, CC, SoG, and WCVI SARs [@dfo2022b].
 
-1. The 2023 stock assessment
-implemented MPs from previous years for the
-PRD, CC, SoG, and WCVI SARs [@dfo2024].
-Note that MPs for HG and SoG are not currently updated through this process. 
+1. The 2023 stock assessment implemented
+MPs from previous years for the PRD, CC, SoG, and WCVI SARs [@dfo2024].
 Management measures to support long-term recovery of HG herring 
-are being developed through the
-HG rebuilding plan process.\footnote{\label{fn:rebuild}
-Haida Gwaii 'íináang | iinang Pacific Herring:
-An ecosystem overview and ecosystem-based rebuilding plan.
-Approved by the Minister of Fisheries and Oceans, the Council of Haida Nation 
-and Parks Canada. April 2024. In Press.}
-MPs for SoG are updated in @dfo2025b using methods from @johnson2024.
+are developed through the HG rebuilding plan process.$^{\ref{fn:rebuild}}$
+
+1. The 2024 stock assessment implemented
+MPs from previous years for the PRD, CC, and WCVI SARs [@dfo2025a].
+
+1. MPs for SoG are updated in @dfo2025b using methods from @johnson2024
+and applied in 2024 and 2025 (DFO, In prep.).$^{\ref{fn:dfo2025d}}$
+
+1. MPs for PRD are updated in DFO (In prep.).$^{\ref{fn:dfo2025c}}$
+
+1. The 2026 stock assessments for HG, CC, and WCVI
+will be implemented in SISCAH.
 
 This `r assess_yr` stock assessment includes
 MP recommendations for CC and WCVI,
@@ -125,10 +142,6 @@ recommendations from the aforementioned
 (Section "\nameref{sec:harv-opts}").
 
 <!-- Mandatory last paragraph in this section -->
-This Science Response results from the regional peer review of September 23, 2024 on the 2024/2025 Pacific Herring Stock Assessment, Forecast of Mature Stock Biomass, and Harvest Options for 2025 (HG, PRD, CC, WCVI).
-
 This Science Response results from the regional peer review of
 `r t_process_month` `r rmarkdown::metadata$process_day`,
-`r rmarkdown::metadata$process_year` on the 
-2024/2025 Pacific Herring Stock Assessment, Forecast of Mature Stock Biomass, and Harvest Options for 2025 (HG, PRD, CC, WCVI).
-<!-- `r rmarkdown::metadata$title`. -->
+`r rmarkdown::metadata$process_year` on `r rmarkdown::metadata$title`.

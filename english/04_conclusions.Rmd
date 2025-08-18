@@ -11,12 +11,12 @@ Based on MP evaluations,
 the harvest recommendation for the HG SAR is 0&nbsp;t.
 
 The MSE process identifies a range of MPs that meet the conservation objective
-with at least 75% probability for the PRD, CC, and WCVI SARs
+with at least 75% probability for the CC and WCVI SARs
 for the DDM reference OM scenario [@dfo2019c; @dfo2021b].
-Harvest options and MP calculations for `r assess_yr + 1` for these three SARs
+Harvest options and MP calculations for `r assess_yr + 1` for these two SARs
 are combined with MP evaluations (probabilities) from the latest MSE update.
 Tables also include MP performance and harvest options for the DIM robustness 
-OM scenario (Tables \@ref(tab:decision-prd) to \@ref(tab:decision-wcvi)).
+OM scenario (Tables \@ref(tab:decision-cc) and \@ref(tab:decision-wcvi)).
 
 Science advice for the minor SARs is limited to
 presentation of catch data, biological data, and spawn survey data 

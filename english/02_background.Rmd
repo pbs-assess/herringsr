@@ -8,8 +8,9 @@ The major SARs are `r commify(major_regions_full_parens)`.
 The minor SARs are `r commify(minor_regions_full_parens)`.
 We conduct formal analyses of stock trend information for the major SARs annually.
 Although `r commify(fsar_sars)` are assessed in
-XXX and XXX <!-- @dfo2025b -->
-some tables and figures in this document include
+<!-- TODO: Update to @dfo2025c and @dfo2025d when published -->
+DFO$^{\ref{fn:dfo2025c}}$ and DFO$^{\ref{fn:dfo2025d}}$
+respectively, some tables and figures in this document include
 `r commify(fsar_sars)` data for completeness.
 For the minor SARs, we present available
 catch data, biological data, and spawn survey data
@@ -89,10 +90,12 @@ in the annual stock assessment process for all fisheries, except SOK.
 The exclusion of SOK fishery data from the annual stock assessment process was
 identified as a key uncertainty in the most recent CSAS review
 of the stock assessment framework [@cleary2018].
-Recommendations for addressing this uncertainty will require quantifying
+Recommendations for addressing this uncertainty require quantifying
 ponding mortality and removals (i.e., eggs) associated with SOK fisheries.
 Progress has been made in quantifying SOK mortality sources within the 
-new modelling framework [@dfo2023a], however those approaches are not
+new modelling framework [@dfo2023a]
+implemented for PRD (DFO. In prep.)$^{\ref{fn:dfo2025c}}$,
+however those approaches are not
 transferable to the SCA model [@martell2011] used here.
 
 ## Description of the stock assessment process

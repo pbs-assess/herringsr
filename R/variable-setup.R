@@ -231,7 +231,7 @@ incl_fsar <- function(tabfig = "table", trans = french) {
   if(french){
     res <- paste(
       "Notez que les stock", commify(fsar_sars, and_word = "et"),
-      "sont évalué dans XXX and XXX", # @dfo2025b
+      "sont évalué dans XXX et XXX", # @dfo2025b
       "mais les données", commify(fsar_sars, and_word = "et"),
       "sont incluses dans ce",
       en2fr(tabfig, translate = trans),
@@ -240,7 +240,7 @@ incl_fsar <- function(tabfig = "table", trans = french) {
   } else {
     res <- paste(
       "Note that the", commify(fsar_sars),
-      "stocks are assessed in XXX and XXX but", # @dfo2025b
+      "stocks are assessed in DFO^1^ and DFO^2^, respectively, but", # @dfo2025b
       commify(fsar_sars),
       "data are included in this", tabfig, "for completeness."
     )
