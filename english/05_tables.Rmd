@@ -1078,7 +1078,7 @@ decision_tables_mp(
 (ref:decision-sog-cap) Strait of Georgia SAR:
 management procedure performance for the Pacific Herring
 statistical catch-age model.
-See Table \@ref(tab:decision-prd) for description.
+See Table \@ref(tab:decision-cc) for description.
 
 (ref:decision-sog-cap-fr) RES du détroit de Georgie:
 rendement de la procédure de gestion pour le modèle statistique
@@ -1106,12 +1106,12 @@ decision_tables_mp(
 (ref:decision-wcvi-cap) West Coast of Vancouver Island SAR:
 management procedure performance for the Pacific Herring
 statistical catch-age model.
-See Table \@ref(tab:decision-prd) for description.
+See Table \@ref(tab:decision-cc) for description.
 
 (ref:decision-wcvi-cap-fr) RES de la côte ouest de l’île de Vancouver:
 rendement de la procédure de gestion pour le modèle statistique
 de prises-âges du hareng du Pacifique.
-Voir le tableau \@ref(tab:decision-prd) pour la description.
+Voir le tableau \@ref(tab:decision-cc) pour la description.
 
 \needspace{0.32\textheight}
 

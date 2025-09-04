@@ -305,7 +305,7 @@ In 2023, DFO Resource Management selected and implemented a provisional
 USR of $\overline{\SB}_\mli{Prod}$ through the 2022/2023 IFMP process.
 Stock status relative to assessment model estimates of $0.3\SB_0$ (i.e., LRP) and
 USR options are presented in
-Tables \@ref(tab:ref-points-prd) through \@ref(tab:ref-points-wcvi).
+Tables \@ref(tab:ref-points-hg) through \@ref(tab:ref-points-wcvi).
 
 LRPs and USRs relate stock status to the DFO PA Policy [@dfo2009], and
 the same calculations are used for each Pacific Herring SAR.

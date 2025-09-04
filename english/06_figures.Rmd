@@ -1263,7 +1263,7 @@ knitr::include_graphics(
 ```
 
 (ref:wcvi-eco-quilt-cap) Spatial distribution of Pacific Herring
-spawn (blended index) from 1951 to 2024
+spawn (blended index) from 1951 to 2025
 for West Coast of Vancouver Island herring
 in Statistical Areas 23, 24, and 25
 broken into individual sections.
