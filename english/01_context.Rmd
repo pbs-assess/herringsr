@@ -113,8 +113,8 @@ MPs from previous years for the PRD, CC, and WCVI SARs [@dfo2025a].
 1. The new SISCAH management framework [@johnson2024]
 was applied to PRD in 2025.$^{\ref{fn:dfo2025c}}$
 
-1. The 2026 stock assessments for HG, CC, and WCVI
-will be implemented in SISCAH.
+1. The new SISCAH management framework [@johnson2024] will be applied for
+HG, CC, and WCVI in 2026.
 
 This `r assess_yr` stock assessment includes
 MP recommendations for CC and WCVI,
