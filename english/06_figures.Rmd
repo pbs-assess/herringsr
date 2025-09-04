@@ -1218,3 +1218,90 @@ pa_graph <- function(df){
 # pa_WCVIplot <- pa_graph(pa_WCVI)
 # ggsave(filename = here("figures", paste0("proportion_of_ageWCVI.png")),  width=8, height=10.5, dpi=300)
 ```
+
+(ref:wcvi-eco-concept-one-cap) Conceptual model of the
+annual life cycle of Pacific Herring,
+including predation mortality in inshore and offshore regions,
+spawn timing (January to June), recruitment, and fisheries.
+Arrows to predator boxes (grey) indicate losses
+due to predation mortality from Pacific Hake (HAKE), Humpback Whales (HBW),
+Steller Sea Lions (SSL), and Harbour Seals (HS).
+Spawning occurs at the end of each year on June 30^th^.
+Arrows from recruitment boxes (blue) indicate recruitment of juveniles
+hatched from eggs deposited during the previous year’s spawning events.
+Recruits do not migrate offshore during the feeding season
+but are subject to inshore predation before mixing with age-2+ herring
+returning from the offshore (green arrow on far left)
+during the spawning season.
+The top panel shows average weekly (vertical bars) and
+cumulative (dashed line) proportion of spawn
+for inshore spawning grounds, along with timing for roe and SOK fisheries.
+
+(ref:wcvi-eco-concept-one-cap-fr) Concept 1.
+
+```{r wcvi-eco-concept-one, fig.cap = ifelse(french, "(ref:wcvi-eco-concept-one-cap-fr)", "(ref:wcvi-eco-concept-one-cap)"), out.width = "100%"}
+knitr::include_graphics(
+  here(ifelse(french, "figures/wcvi_eco_concept_1.png", "figures/wcvi_eco_concept_1.png"))
+)
+```
+
+(ref:wcvi-eco-predators-cap) Estimated predator consumption of
+WCVI Herring from 1951 to 2024.
+Consumption is estimated in thousands of tonnes for each species,
+with Pacific Hake and Humpback Whales broken into
+two and four feeding groups, respectively.
+Feeding groups for hake differ in their Herring size preference,
+while Humpback Whale seasonal groups differ in size preference and
+spatio-temporal overlap with WCVI Herring.
+
+(ref:wcvi-eco-predators-cap-fr) Predators.
+
+```{r wcvi-eco-predators, fig.cap = ifelse(french, "(ref:wcvi-eco-predators-cap-fr)", "(ref:wcvi-eco-predators-cap)"), out.width = "100%"}
+knitr::include_graphics(
+  here(ifelse(french, "figures/wcvi_eco_predators.png", "figures/wcvi_eco_predators.png"))
+)
+```
+
+(ref:wcvi-eco-quilt-cap) Spatial distribution of Pacific Herring
+spawn (blended index) from 1951 to 2024
+for West Coast of Vancouver Island herring in PFMAs 23, 24, and 25
+broken into individual sections.
+Diamonds indicate incomplete survey of spawning event, and
+colour gradients show spawning magnitude.
+
+(ref:wcvi-eco-quilt-cap-fr) Quilt.
+
+```{r wcvi-eco-quilt, fig.cap = ifelse(french, "(ref:wcvi-eco-quilt-cap-fr)", "(ref:wcvi-eco-quilt-cap)"), out.width = "100%"}
+knitr::include_graphics(
+  here(ifelse(french, "figures/wcvi_eco_quilt.png", "figures/wcvi_eco_quilt.png"))
+)
+```
+
+(ref:wcvi-eco-concept-two-cap) An annual time-step
+in the three-area Pacific Herring predation mortality model
+showing herring migrations between inshore spawning areas
+in Pacific Fishery Management Areas (PFMAs) and offshore feeding grounds,
+spawn timing (January to June), recruitment, fisheries, and predation.
+Arrows to predator boxes (grey) indicate losses due to predation mortality
+from Pacific Hake (HAKE), Humpback Whales (HBW), Steller Sea Lions (SSL),
+and Harbour Seals (HS).
+The annual time-step runs from July 1^st^ to June 30^th^
+with spawning occurring at the end of each year.
+Arrows from recruitment boxes (blue) indicate
+recruitment of juveniles hatched from eggs deposited
+during the previous year’s spawning events.
+Recruits do not migrate offshore during the feeding season,
+but are subject to inshore predation before mixing with age-2+ herring
+returning from the offshore (green arrow on far left)
+during the spawning season.
+The top panel shows average weekly (vertical bars) and
+cumulative (dashed line) proportion of spawn for
+inshore spawning grounds, along with timing for roe and SOK fisheries.
+
+(ref:wcvi-eco-concept-two-cap-fr) Concept 2.
+
+```{r wcvi-eco-concept-two, fig.cap = ifelse(french, "(ref:wcvi-eco-concept-two-cap-fr)", "(ref:wcvi-eco-concept-two-cap)"), out.width = "100%"}
+knitr::include_graphics(
+  here(ifelse(french, "figures/wcvi_eco_concept_2.png", "figures/wcvi_eco_concept_2.png"))
+)
+```

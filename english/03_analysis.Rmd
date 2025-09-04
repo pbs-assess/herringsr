@@ -674,7 +674,8 @@ could contribute to observed changes in natural mortality (Doherty et al. 2024).
 Predators include Humpback Whales (*Megaptera novaeangliae*),
 Harbour Seals (*Phoca vitulina*), Steller Sea Lions (*Eumetopias jubatus*), and 
 Pacific Hake (*Merluccius productus*),
-which prey on herring during most of their annual life cycle (Figure 1).
+which prey on herring during most of their annual life cycle
+(Figure \@ref(fig:wcvi-eco-concept-one)).
 
 Consumption of Pacific Herring by each predator
 is estimated via bio-energetics modeling (Chasco et al. 2017, Doherty et al. 2024),
@@ -707,7 +708,8 @@ Changing future productivity is expected for WCVI herring,
 where local knowledge and models suggest that
 predation is a driver of natural mortality.
 Total estimated consumption of herring by predators increased from
-7 kt in the late 1990s to 13 kt in recent years (Figure 2) and
+7 kt in the late 1990s to 13 kt in recent years
+(Figure \@ref(fig:wcvi-eco-predators)) and
 is expected to increase further as the abundance of
 Steller Sea Lions (and possibly Humpback Whales) increases.
 
@@ -717,14 +719,15 @@ The historical distribution of WCVI herring spawning abundance
 shows relatively consistent core areas within PFMAs.
 PFMA 23 has the most consistent spawning in section 232, while
 242 and 245 are most consistent for PFMA 24, and
-section 253 is the most consistent spawning area for PFMA 25 (Figure 3).
+section 253 is the most consistent spawning area for PFMA 25
+(Figure \@ref(fig:wcvi-eco-quilt)).
 
 Based on these distinct areas,
 the single-stock stock assessment model data for WCVI herring
 was disaggregated into three independent stocks corresponding to
 PFMAs 23, 24, and 25
 to examine the potential for higher spatial resolution
-assessments$^{\ref{fn:wcvi2025}}$ (Figure 4).
+assessments$^{\ref{fn:wcvi2025}}$ (Figure \@ref(fig:wcvi-eco-concept-two)).
 Simulations of future average unfished biomass for the 3-stock model
 accounting for predation indicate that 2023 biomass
 in PFMAs 23, 24, and 25 is 91%, 140%, and 85% of unfished levels,
