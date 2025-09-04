@@ -610,7 +610,7 @@ advance Ecosystem Approaches to Fisheries Management.
 
 ### Reference points
 
-The ecosystem context of Herring as a mid-trophic level
+The ecosystem context of herring as a mid-trophic level
 (i.e., middle-of-the-food-chain) species
 is taken into account in the establishement of reference points.
 The biological LRP is set to a higher value compared to those
@@ -642,4 +642,129 @@ new modelling framework for HG herring.
 
 ### West Coast of Vancouver Island
 
-<!-- TODO: INSERT WCVI text here (from Word doc) -->
+Uu-a-thluk Fisheries began a research program in 2020 to examine the role of
+(i) predation,
+(ii) spawn distribution, and
+(iii) life history characteristics in
+Pacific Herring productivity.\footnote{\label{fn:wcvi2021}
+Uu-a-thluk Fisheries (2021) [Ausmit] (taking care of herring) project.}^,^
+\footnote{\label{fn:wcvi2025}
+Uu-a-thluk Fisheries (2025), [?aayaaqa] (herring) spawn dynamics.}
+Those studies found relatively large changes in the predation regimes
+for Pacific Herring stocks that spend considerable parts
+of their life cycle in offshore oceanic habitats.
+Furthermore, the results also show that
+stock assessments at smaller spatial scales are able to
+more precisely model the spatial dynamics of Pacific Herring
+without drastic declines in statistical performance.
+Although the role of predation and ecosystem change
+varies among Pacific Herring stock assessment units,
+there are shared processes and commonalities among units
+in how ecosystems and climate affect productivity. 
+
+This section summarizes Pacific Herring productivity studies and
+their implications for the West Coast of Vancouver Island (WCVI)
+Pacific Herring stock assessment region.
+
+#### Changing predation regimes
+
+Ecosystem effects are included in Pacific Herring models
+via population dynamics that represent how historical predator consumption
+could contribute to observed changes in natural mortality (Doherty et al. 2024).
+Predators include Humpback Whales (*Megaptera novaeangliae*),
+Harbour Seals (*Phoca vitulina*), Steller Sea Lions (*Eumetopias jubatus*), and 
+Pacific Hake (*Merluccius productus*),
+which prey on herring during most of their annual life cycle (Figure 1).
+
+Consumption of Pacific Herring by each predator
+is estimated via bio-energetics modeling (Chasco et al. 2017, Doherty et al. 2024),
+accounting for average predator size, estimated abundance, size preference,
+foraging days, diet composition, and the energy content of Pacific Herring
+(Doherty et al. 2024).
+These predation models provide estimates of
+current stock biomass and historical total natural mortality
+that are consistent with existing stock assessments.
+
+While the predation model agrees with the existing assessment
+on the stock history (e.g., biomass, mortality, recruitment),
+projections of future biomass and productivity from the predation model
+differ due to ecosystem impacts from predators.
+The predation model estimates a lower unfished biomass for WCVI,
+which results in different perceptions of stock status ($B/B[0]$),
+despite both models having similar estimates of current biomass
+(Table 2 in Doherty et al. 2024).
+Expectations for future biomass growth for WCVI herring are
+smaller in comparison to previous assessments
+that do not model predator consumption
+due to higher rates of predation mortality in recent years and
+projected increases in future predator biomass.
+In contrast, the random walk projections of natural mortality
+used in the current assessment
+rely heavily on analyst choice about future trends,
+which influences the perception of risk when making fishing decisions
+under uncertainty (see implications section below for further discussion).
+Changing future productivity is expected for WCVI herring,
+where local knowledge and models suggest that
+predation is a driver of natural mortality.
+Total estimated consumption of herring by predators increased from
+7 kt in the late 1990s to 13 kt in recent years (Figure 2) and
+is expected to increase further as the abundance of
+Steller Sea Lions (and possibly Humpback Whales) increases.
+
+#### Spatial dynamics and spawn distribution
+
+The historical distribution of WCVI herring spawning abundance
+shows relatively consistent core areas within PFMAs.
+PFMA 23 has the most consistent spawning in section 232, while
+242 and 245 are most consistent for PFMA 24, and
+section 253 is the most consistent spawning area for PFMA 25 (Figure 3).
+
+Based on these distinct areas,
+the single-stock stock assessment model data for WCVI herring
+was disaggregated into three independent stocks corresponding to
+PFMAs 23, 24, and 25
+to examine the potential for higher spatial resolution
+assessments$^{\ref{fn:wcvi2025}}$ (Figure 4).
+Simulations of future average unfished biomass for the 3-stock model
+accounting for predation indicate that 2023 biomass
+in PFMAs 23, 24, and 25 is 91%, 140%, and 85% of unfished levels,
+respectively.$^{\ref{fn:wcvi2025}}$
+Statistical performance of the three-stock model
+was comparable to the single stock assessment and
+represents a potentially practical way
+to incorporate greater spatial detail in ecosystem processes and fisheries, and
+to represent Uu-a-thluk objectives.
+
+#### Life history characteristics
+
+Empirical analyses of data collected during herring spawn events found
+egg production per gram of bodyweight (fecundity) increases with age, and
+that older herring spawn later,
+consistent with findings for Pacific Herring stocks outside of Canada (Shelton et al. 2014). 
+
+#### Implications for science advice
+
+Changing ecosystems and climate are implicitly represented
+in historical science advice for Pacific Herring;
+however, their impact on future herring productivity
+is of most importance for management.
+Changes in natural mortality and recruitment are
+neither random nor independent of Pacific Herring or predator abundance
+(Doherty et al. 2024).
+This finding should be integrated into the MSE process. 
+
+Historical and future changes to Pacific Herring ecosystems
+imply a need to modify expectations for future biomass and fisheries, and
+to account for this in the choice of management objectives.
+For example, biomass targets (or upper stock reference points)
+recently proposed for WCVI herring were based on a productive period
+in the recent history (DFO 2023):
+‘maintain spawning stock biomass at or above a target biomass level
+equivalent to the average biomass from 1990-1999,
+with at least 50% probability over three herring generations’.
+This objective was updated from an earlier version proposed by
+the Nuu-chah-nulth Tribal Council that had a higher probability threshold
+of 75% that could not be achieved in simulations (DFO 2021).
+Future MSE analyses should include scenarios
+with changing predation regimes that
+inhibit the stock’s ability to return to previous biomass levels.
