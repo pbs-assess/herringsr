@@ -670,7 +670,7 @@ Pacific Herring stock assessment region.
 
 Ecosystem effects are included in Pacific Herring models
 via population dynamics that represent how historical predator consumption
-could contribute to observed changes in natural mortality (Doherty et al. 2024).
+could contribute to observed changes in natural mortality [@doherty2024].
 Predators include Humpback Whales (*Megaptera novaeangliae*),
 Harbour Seals (*Phoca vitulina*), Steller Sea Lions (*Eumetopias jubatus*), and 
 Pacific Hake (*Merluccius productus*),
@@ -678,10 +678,10 @@ which prey on herring during most of their annual life cycle
 (Figure \@ref(fig:wcvi-eco-concept-one)).
 
 Consumption of Pacific Herring by each predator
-is estimated via bio-energetics modeling (Chasco et al. 2017, Doherty et al. 2024),
+is estimated via bio-energetics modeling [@chasco2017; @doherty2024],
 accounting for average predator size, estimated abundance, size preference,
 foraging days, diet composition, and the energy content of Pacific Herring
-(Doherty et al. 2024).
+[@doherty2024].
 These predation models provide estimates of
 current stock biomass and historical total natural mortality
 that are consistent with existing stock assessments.
@@ -693,7 +693,7 @@ differ due to ecosystem impacts from predators.
 The predation model estimates a lower unfished biomass for WCVI,
 which results in different perceptions of stock status ($B/B[0]$),
 despite both models having similar estimates of current biomass
-(Table 2 in Doherty et al. 2024).
+[Table 2 in @doherty2024].
 Expectations for future biomass growth for WCVI herring are
 smaller in comparison to previous assessments
 that do not model predator consumption
@@ -725,12 +725,12 @@ Section 253 is the most consistent spawning area for Statistical Area 25
 Based on these distinct areas,
 the single-stock stock assessment model data for WCVI herring
 was disaggregated into three independent stocks corresponding to
-StatArea 23, 24, and 25
+Statistical Area 23, 24, and 25
 to examine the potential for higher spatial resolution
 assessments$^{\ref{fn:wcvi2025}}$ (Figure \@ref(fig:wcvi-eco-concept-two)).
 Simulations of future average unfished biomass for the 3-stock model
 accounting for predation indicate that 2023 biomass
-in StatAreas 23, 24, and 25 is 91%, 140%, and 85% of unfished levels,
+in Statistical Areas 23, 24, and 25 is 91%, 140%, and 85% of unfished levels,
 respectively.$^{\ref{fn:wcvi2025}}$
 Statistical performance of the three-stock model
 was comparable to the single stock assessment and
@@ -743,7 +743,8 @@ to represent Uu-a-thluk objectives.
 Empirical analyses of data collected during herring spawn events found
 egg production per gram of bodyweight (fecundity) increases with age, and
 that older herring spawn later,
-consistent with findings for Pacific Herring stocks outside of Canada (Shelton et al. 2014). 
+consistent with findings for Pacific Herring stocks outside of Canada
+[@shelton2014].
 
 #### Implications for science advice
 
@@ -753,7 +754,7 @@ however, their impact on future herring productivity
 is of most importance for management.
 Changes in natural mortality and recruitment are
 neither random nor independent of Pacific Herring or predator abundance
-(Doherty et al. 2024).
+[@doherty2024].
 This finding should be integrated into the MSE process. 
 
 Historical and future changes to Pacific Herring ecosystems
@@ -761,13 +762,13 @@ imply a need to modify expectations for future biomass and fisheries, and
 to account for this in the choice of management objectives.
 For example, biomass targets (or upper stock reference points)
 recently proposed for WCVI herring were based on a productive period
-in the recent history (DFO 2023):
+in the recent history [@dfo2022a]:
 ‘maintain spawning stock biomass at or above a target biomass level
-equivalent to the average biomass from 1990-1999,
+equivalent to the average biomass from 1990 to 1999,
 with at least 50% probability over three herring generations’.
 This objective was updated from an earlier version proposed by
 the Nuu-chah-nulth Tribal Council that had a higher probability threshold
-of 75% that could not be achieved in simulations (DFO 2021).
+of 75% that could not be achieved in simulations [@dfo2021b].
 Future MSE analyses should include scenarios
 with changing predation regimes that
 inhibit the stock’s ability to return to previous biomass levels.
