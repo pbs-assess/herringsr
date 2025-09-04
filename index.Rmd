@@ -19,7 +19,7 @@ t_region: Pacific Region
 output:
   csasdown:::sr_pdf:
     french: FALSE
-    prepub: FALSE
+    prepub: TRUE
     copy_sty: TRUE
     line_nums: FALSE
     line_nums_mod: 1

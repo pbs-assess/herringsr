@@ -82,7 +82,7 @@ The FB seine fishery had a coast wide catch of
 `r total_final_yr_other_catch`&nbsp;t.
 Roe fisheries operated in SoG and PRD this season, and
 FB and SU fisheries operated in SoG only.
-Commercial SOK fisheries operated only in the CC in `r this_season`.
+Commercial SOK fisheries operated both in the CC and WCVI in `r this_season`.
 
 A complete dockside monitoring program exists for all Pacific Herring
 commercial fisheries and the resulting validated catch data are included

@@ -58,13 +58,11 @@ Pacific Herring SARs:
 Note that the `r commify(fsar_sars)` SARs are assessed in
 <!-- TODO: Update to @dfo2025c and @dfo2025d when published -->
 DFO\footnote{\label{fn:dfo2025c}
-DFO. In prep. Prince Rupert District Pacific Herring (Clupea pallasii)
-stock status in 2025 and forecast for 2026.
-DFO Can. Sci. Advis. Sec. Sci. Advis. Rep.}
+DFO. In prep. Prince Rupert District Pacific Herring (\emph{Clupea pallasii})
+stock update in 2025.DFO Can. Sci. Advis. Sec. Sci. Advis. Rep.}
 and DFO\footnote{\label{fn:dfo2025d}
-DFO. In prep. Strait of Georgia Pacific Herring (Clupea pallasii)
-stock status in 2025 and forecast for 2026.
-DFO Can. Sci. Advis. Sec. Sci. Advis. Rep.}
+DFO. In prep. Strait of Georgia Pacific Herring (\emph{Clupea pallasii})
+stock update in 2025. DFO Can. Sci. Advis. Sec. Sci. Advis. Rep.}
 respectively, using a new modelling framework [@johnson2024].
 An analysis of USR options for PRD, CC, SoG, and WCVI was completed in 
 2022 [@dfo2022a] and provisional USRs based on productive 
@@ -109,10 +107,11 @@ are developed through the HG rebuilding plan process.$^{\ref{fn:rebuild}}$
 1. The 2024 stock assessment implemented
 MPs from previous years for the PRD, CC, and WCVI SARs [@dfo2025a].
 
-1. MPs for SoG are updated in @dfo2025b using methods from @johnson2024
-and applied in 2024 and 2025 (DFO, In prep.).$^{\ref{fn:dfo2025d}}$
+1. The new SISCAH management framework [@johnson2024] was applied to SoG in 2024
+[@dfo2025b] and updated for 2025.$^{\ref{fn:dfo2025d}}$
 
-1. MPs for PRD are updated in DFO (In prep.).$^{\ref{fn:dfo2025c}}$
+1. The new SISCAH management framework [@johnson2024]
+was applied to PRD in 2025.$^{\ref{fn:dfo2025c}}$
 
 1. The 2026 stock assessments for HG, CC, and WCVI
 will be implemented in SISCAH.
