@@ -593,44 +593,53 @@ are presented in Table \@ref(tab:decision-wcvi).
 These options reflect application of MPs to the `r assess_yr + 1`
 forecast biomass for WCVI, under the two OM scenarios.
 
-## Ecosystem considerations
+## Ecosystem and climate change considerations
 
-Ecosystem considerations are taken into account in the model
-in a number of ways.
-First, Pacific Herring in BC are managed as 5 major SARs,
-taking into account stock-specific life history,
-abundance, and
-pressures that feed into the models. 
-Second, the biological LRP is set to a higher value compared to those
+Stock assessment models for Pacific Herring
+incorporate ecosystem and climate change indirectly
+via processes such as natural mortality and recruitment,
+both of which represent the foundations of historical stock productivity.
+Over the years, scientists and First Nations have expressed the need
+to examine the role of ecosystem changes in driving
+variation and trends in these Pacific Herring productivity processes,
+especially considering the importance of future productivity
+in evaluating harvest management procedures
+(i.e., as part of the management strategy evaluation process).
+This also aligns with DFOs commitment to
+advance Ecosystem Approaches to Fisheries Management.
+
+### Reference points
+
+The ecosystem context of Herring as a mid-trophic level
+(i.e., middle-of-the-food-chain) species
+is taken into account in the establishement of reference points.
+The biological LRP is set to a higher value compared to those
 recommended in the DFO sustainable fisheries policy [@dfo2009] and
 above the recommendation of 0.5$B_{MSY}$
 which is implemented in New Zealand fisheries [@shelton2008].
-This herring LRP accounts for the mid-trophic level (i.e., middle-of-the-food-chain)
-nature of herring which likely drives
-the observed highly variable herring productivity.
+Candidate USRs [@dfo2022a] incorporate area-specific ecosystem considerations,
+including to reflect states (historical time frames)
+of higher stock biomass and variable levels of stock productivity.
+Both the LRP and USRs are included in the MSE process.
 
-@boldt2022 identified possible environmental and biological pressures 
+### Haida Gwaii
+
+@boldt2022 identified possible environmental and biological pressures
 that link to herring distribution, growth, and production.
 Environmental pressures include
 the timing, duration, and magnitude of upwelling,
-which can affect the amount of prey available to 
+which can affect the amount of prey available to
 herring [@mackas2001; @hourston2019; @boldt2018], as well as
 predation and competition [@godefroid2019].
 Other physical environmental pressures include sea surface temperature (SST),
 salinity, sea level, river discharge, and Ekman transport
 [@tester1948; @alderdice1985; @stocker1985; @stocker1988;
 @schweigert1990; @ware1991; @zebdi1995].
+These indicators are described in more detail
+in the 2023 Science Response [@dfo2024].
+Additional work is needed to incorporate mechanistic-linked indicators into the
+new modelling framework for HG herring.
 
-Third, while these ecosystem indicators are not
-directly incorporated into the assessment model,
-they are modelled implicitly via
-time varying natural mortality and recruitment.
-Fourth, candidate USRs [@dfo2022a] incorporate
-area-specific ecosystem considerations
-and have been introduced to the MSE process and the IFMP
-to evaluate the lower boundary of the Healthy status.
+### West Coast of Vancouver Island
 
-Incorporating spatial and ecosystem indicators
-is an area of ongoing research for Pacific Herring. 
-DFO is committed to an ecosystem approach to fisheries management and
-provides further summary of recent research in [@dfo2024].
+<!-- TODO: INSERT WCVI text here (from Word doc) -->
