@@ -57,7 +57,8 @@ DFO will continue to collaborate with coastal First Nations to
 develop area-specific objectives specific for FSC and SOK fisheries.
 In addition, DFO will continue to engage with
 the herring industry, government, and non-government organizations
-to describe broader objectives related to conservation, economics, and access.
+to describe broader objectives related to conservation, stock rebuilding, 
+economics, and access.
 
 MPs for each SAR differ in the form of the harvest control rule (HCR)
 and choice of catch cap,
@@ -318,7 +319,8 @@ whereas LRPs and USRs are management objectives.
 
 ### Coast wide trends
 
-Coast wide trends in Pacific Herring biomass show 
+Coast wide trends in Pacific Herring biomass, represented by adding estimated
+spawning biomass across all SARs, show 
 an average increasing trend in estimated spawning biomass
 from mid-to-late 2000's to present. 
 Catches have been stable since 1980 and declining over the last decade 
@@ -354,8 +356,9 @@ to lead to a positive estimated productivity.
 The HG stock persists in a low biomass state,
 with many years also showing low productivity
 which has largely precluded stock growth (Figure \@ref(fig:storyboard-hg)f).
-Above-average recruitment of age-`r age_first` fish in 2018, 
-leading to increases in survey biomass in 2019 and 2020 were positive signs but 
+Above-average recruitment of age-`r age_first` fish in 2018 lead to
+increases in survey biomass in 2019 and 2020. 
+Although this was a positive signs of growth, the 
 average to below-average recruitment since then,
 which estimates negative productivity,
 has brought biomass back down to the LRP. 
@@ -489,8 +492,8 @@ application of simulation-tested MPs using the Herring OM [@benson2022].
 OM conditioning was updated in 2022 using historic stock and fishery data
 from `r major_start_yr` to 2021; no MP updates were conducted for 2023 or 2024.
 MPs are not provided for HG because this is now conducted within the
-HG rebuilding plan process$^{\ref{fn:rebuild}}$
-and MPs for SoG are provided in [@dfo2025b].
+HG rebuilding plan process.$^{\ref{fn:rebuild}}$
+MPs for SoG were updated in [@dfo2025b] and for PRD in (DFO. In prep.)$^{\ref{fn:dfo2025c}}$.
 
 ### Haida Gwaii
 
