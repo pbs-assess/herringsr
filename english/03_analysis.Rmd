@@ -451,13 +451,6 @@ Biomass estimates are nearing the highest since 1951.
 The absence of a commercial fishery since 2005 means the realized harvest rate
 has been near zero for the last 20 years (Figure \@ref(fig:harvest-rate)).
 
-Previous years WCVI MCMC diagnostics showed parameter autocorrelation 
-especially in the estimation of fishery selectivity-at-50% ($\hat{a}_1$) 
-and its standard deviation ($\hat{\gamma}_1$)
-for the "other" fisheries category
-(i.e., reduction, food and bait, special use).
-These results were largely ameliorated this year by changing parameter priors.
-
 `r stock_status_text(SAR = "WCVI", this_yr = assess_yr, translate = french)`
 
 ## Management performance
