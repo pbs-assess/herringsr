@@ -668,9 +668,9 @@ Pacific Herring stock assessment region.
 
 #### Changing predation regimes
 
-Ecosystem effects are included in Pacific Herring models
-via population dynamics that represent how historical predator consumption
-could contribute to observed changes in natural mortality [@doherty2024].
+Ecosystem effects are included in Herring population dynamics models by linking 
+historical (and future) predator consumption estimates to observed natural 
+mortality [@doherty2024].
 Predators include Humpback Whales (*Megaptera novaeangliae*),
 Harbour Seals (*Phoca vitulina*), Steller Sea Lions (*Eumetopias jubatus*), and 
 Pacific Hake (*Merluccius productus*),
@@ -682,14 +682,17 @@ is estimated via bio-energetics modeling [@chasco2017; @doherty2024],
 accounting for average predator size, estimated abundance, size preference,
 foraging days, diet composition, and the energy content of Pacific Herring
 [@doherty2024].
-These predation models provide estimates of
-current stock biomass and historical total natural mortality
-that are consistent with existing stock assessments.
+Estimates of stock biomass derived from these ecosystem-based models are 
+consistent with corresponding estimates from models that use the implicit 
+time-varying $M$ approach, albeit with recruitment and age-2 mortality rates 
+that have the same trend but at higher absolute values given the size-selection 
+of predators [Figure 2 in @doherty2024].
 
-While the predation model agrees with the existing assessment
-on the stock history (e.g., biomass, mortality, recruitment),
-projections of future biomass and productivity from the predation model
-differ due to ecosystem impacts from predators.
+While estimates of historical biomass, recruitment, and mortality derived from 
+predation models are similar to corresponding estimates from the time-varying 
+mortality model, the two approaches differ in their expectations of future 
+biomass and productivity due to ecosystem impacts from predators. 
+
 The predation model estimates a lower unfished biomass for WCVI,
 which results in different perceptions of stock status ($B/B[0]$),
 despite both models having similar estimates of current biomass
@@ -712,6 +715,15 @@ Total estimated consumption of herring by predators increased from
 (Figure \@ref(fig:wcvi-eco-predators)) and
 is expected to increase further as the abundance of
 Steller Sea Lions (and possibly Humpback Whales) increases.
+
+The key difference between the time-varying $M$ approach and explicitly 
+modeling $M$ via predation lies in their implications for future trends in 
+natural mortality. 
+Projecting $M$ via the implicit approach requires strong assumptions about 
+the trends in $M$, while the predation approach involves modeling future trends 
+in predator populations for which we have reasonable data and models. 
+In general, some of these key predators may increase further in the future 
+as the continue to recover from historical over-exploitation.
 
 #### Spatial dynamics and spawn distribution
 
