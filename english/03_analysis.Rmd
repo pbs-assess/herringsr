@@ -485,7 +485,7 @@ application of simulation-tested MPs using the Herring OM [@benson2022].
 OM conditioning was updated in 2022 using historic stock and fishery data
 from `r major_start_yr` to 2021; no MP updates were conducted for 2023 or 2024.
 MPs are not provided for HG because this is now conducted within the
-HG rebuilding plan process [@dfo2025e].
+HG rebuilding plan [@dfo2025e].
 MPs for SoG were updated in [@dfo2025b] and for PRD in (DFO. In prep.)$^{\ref{fn:dfo2025c}}$.
 
 ### Haida Gwaii
@@ -524,10 +524,10 @@ one of the goals of the rebuilding plan will be to
 identify candidate threshold biomass levels greater than the LRP
 that are consistent with a rebuilt state.
 
-Based on MP evaluations and the ongoing rebuilding plan process,
+Based on MP evaluations and the ongoing rebuilding plan,
 the harvest recommendation for the Haida Gwaii stock in
 `r assess_yr + 1` is 0&nbsp;t.
-All future MP evaluations will occur through the rebuilding plan process.
+All future MP evaluations will occur through the rebuilding plan.
 
 ### Central Coast
 
