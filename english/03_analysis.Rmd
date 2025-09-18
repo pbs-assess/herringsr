@@ -323,7 +323,7 @@ Coast wide trends in Pacific Herring biomass, represented by adding estimated
 spawning biomass across all SARs, show 
 an average increasing trend in estimated spawning biomass
 from mid-to-late 2000's to present. 
-Catches have been stable since 1980 and declining over the last decade 
+Catches have been declining over the last decade 
 (Figure \@ref(fig:coastwide-biomass-catch)).
 Comparisons of total estimated biomass and spawning biomass
 are also included for each SAR
@@ -351,7 +351,7 @@ attributed to above average recruitment events
 (e.g., 1997, 2012, 2018; Figure \@ref(fig:storyboard-hg)c, d).
 Estimated natural mortality has been on a slow decline since the early 2000s
 but low estimated recruitment has failed
-to lead to a positive estimated productivity.
+to lead to higher productivity.
 
 The HG stock persists in a low biomass state,
 with many years also showing low productivity
@@ -370,7 +370,7 @@ and the last commercial SOK fishery in 2004.
 `r stock_status_text(SAR = "HG", this_yr = assess_yr, translate = french)`
 Management measures to support long-term recovery of herring stocks in
 Haida Gwaii are being developed through
-the rebuilding plan process [@dfo2025e].
+the rebuilding plan [@dfo2025e].
 
 ### Central Coast
 
@@ -381,7 +381,7 @@ From there a decline in estimated spawning biomass
 appears to be influenced initially by 
 higher estimated natural mortality rates and
 highly variable estimated recruitment.
-Spawning biomass trend declined during the 1985-2008 period and 
+Spawning biomass declined during the 1985-2008 period and 
 an increase in estimated natural mortality led to
 historically low estimated biomass levels from 2006 to 2012. 
 Decreasing estimated natural mortality lead to moderate increases in 
@@ -608,7 +608,7 @@ advance Ecosystem Approaches to Fisheries Management.
 
 The ecosystem context of herring as a mid-trophic level
 (i.e., middle-of-the-food-chain) species
-is taken into account in the establishement of reference points.
+is taken into account in the establishment of reference points.
 The biological LRP is set to a higher value compared to those
 recommended in the DFO sustainable fisheries policy [@dfo2009] and
 above the recommendation of 0.5$B_{MSY}$
@@ -670,7 +670,7 @@ mortality [@doherty2024].
 Predators include Humpback Whales (*Megaptera novaeangliae*),
 Harbour Seals (*Phoca vitulina*), Steller Sea Lions (*Eumetopias jubatus*), and 
 Pacific Hake (*Merluccius productus*),
-which prey on herring during most of their annual life cycle
+which prey on herring throughout juvenile and adult stages
 (Figure \@ref(fig:wcvi-eco-concept-one)).
 
 Consumption of Pacific Herring by each predator

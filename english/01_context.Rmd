@@ -69,7 +69,7 @@ An analysis of USR options for PRD, CC, SoG, and WCVI was completed in
 periods identified for each SAR were first implemented in the 2022/23 Integrated 
 Fisheries Management Plan (IFMP).
 Note that Haida Gwaii USRs are developed in the
-HG rebuilding plan process [@dfo2025e].
+HG rebuilding plan [@dfo2025e].
 
 Since initiation of the Pacific Herring MSE process,
 MP evaluations have been included in the annual stock assessment as follows:
@@ -98,7 +98,7 @@ updated MP recommendations for the PRD, CC, SoG, and WCVI SARs [@dfo2022b].
 1. The 2023 stock assessment implemented
 MPs from previous years for the PRD, CC, SoG, and WCVI SARs [@dfo2024].
 Management measures to support long-term recovery of HG herring 
-are developed through the HG rebuilding plan process [@dfo2025e].
+are developed through the HG rebuilding plan [@dfo2025e].
 
 1. The 2024 stock assessment implemented
 MPs from previous years for the PRD, CC, and WCVI SARs [@dfo2025a].
