@@ -95,7 +95,7 @@ ponding mortality and removals (i.e., eggs) associated with SOK fisheries.
 Progress has been made in quantifying SOK mortality sources within the 
 new modelling framework [@dfo2023a]
 implemented for PRD (DFO. In prep.)$^{\ref{fn:dfo2025c}}$,
-and also within the HG rebuilding plan$^{\ref{fn:rebuild}}$
+and also within the HG rebuilding plan [@dfo2025e]
 however those approaches are not
 transferable to the SCA model [@martell2011] used here.
 

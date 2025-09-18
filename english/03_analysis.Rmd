@@ -370,7 +370,7 @@ and the last commercial SOK fishery in 2004.
 `r stock_status_text(SAR = "HG", this_yr = assess_yr, translate = french)`
 Management measures to support long-term recovery of herring stocks in
 Haida Gwaii are being developed through
-the rebuilding plan process.$^{\ref{fn:rebuild}}$
+the rebuilding plan process [@dfo2025e].
 
 ### Central Coast
 
@@ -485,7 +485,7 @@ application of simulation-tested MPs using the Herring OM [@benson2022].
 OM conditioning was updated in 2022 using historic stock and fishery data
 from `r major_start_yr` to 2021; no MP updates were conducted for 2023 or 2024.
 MPs are not provided for HG because this is now conducted within the
-HG rebuilding plan process.$^{\ref{fn:rebuild}}$
+HG rebuilding plan process [@dfo2025e].
 MPs for SoG were updated in [@dfo2025b] and for PRD in (DFO. In prep.)$^{\ref{fn:dfo2025c}}$.
 
 ### Haida Gwaii
@@ -511,7 +511,7 @@ Given it's prolonged low biomass state,
 a rebuilding plan was required for Haida Gwaii Pacific Herring. 
 A comprehensive plan was co-developed by the Council of Haida Nation, 
 Fisheries and Oceans Canada and Parks Canada and was finalized in 
-April 2024.$^{\ref{fn:rebuild}}$
+April 2024 [@dfo2025e].
 
 Guidance for developing rebuilding plans [@dfo2013] states that
 the primary objective of any rebuilding plan is to
