@@ -1046,12 +1046,12 @@ Note: Dashes or 0.00 indicate that TAC and HR do not apply because
 <!-- the MP specifies no fishing at current projected biomass level, or -->
 the MP specifies no fishing.
 Also note that TAC and HR are median values calculated by the MP
-using posterior distributions of $\SB_{2024}$ and $\SB_0$.
+using posterior distributions of $\SB_{`r assess_yr+1`}$ and $\SB_0$.
 The HR is derived according to the MP shape
-and is equivalent to $\text{TAC}/\SB_{2024}$.
+and is equivalent to $\text{TAC}/\SB_{`r assess_yr+1`}$.
 In cases where MPs include a cap,
-the cap is constant regardless of estimated $\SB_{2024}$, and
-higher $\SB_{2024}$ leads to lower HR.
+the cap is constant regardless of estimated $\SB_{`r assess_yr+1`}$, and
+higher $\SB_{`r assess_yr+1`}$ leads to lower HR.
 
 (ref:decision-cc-cap-fr) RES de la côte centrale:
 rendement de la procédure de gestion pour
