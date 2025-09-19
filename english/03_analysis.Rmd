@@ -488,8 +488,8 @@ MPs are not provided for HG because this is now conducted within the
 HG rebuilding plan [@dfo2025e].
 MPs for SoG were updated in [@dfo2025b] and for PRD in (DFO. In prep.)$^{\ref{fn:dfo2025c}}$.
 
-MP updates for HG, CC and WCVI are planned for the 2026/27 fiscal year, and will be
-implemented in the SISCAH OM framework.
+MP updates for HG, CC and WCVI are planned for the 2026/27 fiscal year, and
+will be implemented in the SISCAH OM framework.
 
 ### Haida Gwaii
 
