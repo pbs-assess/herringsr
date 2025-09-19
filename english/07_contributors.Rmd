@@ -6,10 +6,10 @@
 contributors <- tibble::tribble(
   ~"Contributor",     ~"Affiliation",                      ~"Role",
   "Jaclyn Cleary",    "DFO Science, Pacific",              "Author",
-  "Sarah Power",      "DFO Science, Pacific",              "Author",
   "Matthew Grinnell", "DFO Science, Pacific",              "Author",
   "Jennifer Boldt",   "DFO Science, Pacific",              "Author (Ecosystem section)",
-  "Chris Rooper",     "DFO Science, Pacific",              "Author (Ecosystem section)",
+  "Samuel Johnson",   "Landmark Fisheries Research",       "Author (Ecosystem section)",
+  "Chris Rooper",     "DFO Science, Pacific",              "CSAS Chair",
   "Bryan Rusch",      "DFO Fisheries Management, Pacific", "Client",
   "Marisa Keefe",     "DFO Fisheries Management, Pacific", "Client",  
   "Sarah Hawkshaw",   "DFO Science, Pacific",              "Reviewer",
