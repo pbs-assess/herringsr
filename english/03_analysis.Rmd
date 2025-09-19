@@ -746,6 +746,22 @@ represents a potentially practical way
 to incorporate greater spatial detail in ecosystem processes and fisheries, and
 to represent Uu-a-thluk objectives.
 
+Similar to WCVI, the historical distribution of HG and CC herring spawning 
+abundance has shown relatively consistent core areas within Statistical Areas. 
+Analyses carried out in the development of the HG rebuilding plan incorporated 
+a finer-scale sub-stock structure dividing the DFO Management Sections with 
+in Statistical Areas 00 and 02 in HG into three sub-stocks. 
+Approximately 80% of the annual herring spawning occurs in the Juan Perez/Skincuttle 
+sub-stock (Sections 021 and 025) and 10% in each of the other 2 sub-stocks 
+Cumshewa/Selwyn (Sections 023 and 024) and Louscoone Inlet (Section 006).
+Haida Traditional Knowledge has contributed greatly to understanding the spatial 
+dynamics used to inform these finer spatial delineations and will continue to be 
+used in the transition to the SISCAH OM framework planned for 2026.
+
+Similar work is also underway with First Nations partners in the Central Coast, 
+the Kitasoo and Heiltsuk Nations, including to inform transition to the SISCAH OM 
+framework in 2026.
+
 #### Life history characteristics
 
 Empirical analyses of data collected during herring spawn events found
