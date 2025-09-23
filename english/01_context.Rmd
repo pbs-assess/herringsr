@@ -103,13 +103,14 @@ are developed through the HG rebuilding plan [@dfo2025e].
 1. The 2024 stock assessment implemented
 MPs from previous years for the PRD, CC, and WCVI SARs [@dfo2025a].
 
-1. The new SISCAH management framework [@johnson2024] was applied to SoG in 2024
-[@dfo2025b] and updated for 2025.$^{\ref{fn:dfo2025d}}$
+1. The new SISCAH modelling framework [@johnson2024] was applied to SoG in 2024
+[@dfo2025b] and updated for 2025
+(Table \@ref(tab:mse-updates)).$^{\ref{fn:dfo2025d}}$
 
-1. The new SISCAH management framework [@johnson2024]
+1. The new SISCAH modelling framework
 was applied to PRD in 2025.$^{\ref{fn:dfo2025c}}$
 
-1. The new SISCAH management framework [@johnson2024] will be applied for
+1. The new SISCAH modelling framework will be applied to
 HG, CC, and WCVI in 2026.
 
 This `r assess_yr` stock assessment includes

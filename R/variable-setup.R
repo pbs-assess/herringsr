@@ -214,6 +214,9 @@ M_max <- lapply(
 # Input data for model input
 inp_data <- read_csv(here("data", "input-data.csv"), col_types = cols())
 
+# MSE updates
+mse_up <- read_csv(here("data", "mse-updates.csv"), col_types = cols())
+
 # Input data for table of ecosystem trends description
 eco_trend_desc_data <- read_delim(
   here("data", ifelse(french, "eco-trend-desc-fr.csv", "eco-trend-desc.csv")),

@@ -1,7 +1,44 @@
 \afterpage{\clearpage}
-\needspace{0.45\textheight}
+\needspace{0.5\textheight}
 
 # `r en2fr("TABLES", translate = french, case = "upper")`
+
+(ref:mse-updates-cap) Implementation of the
+spatially integrated statistical catch-at-age herring (SISCAH)
+modelling framework [@johnson2024] for the Pacific Herring major SARs.
+Management strategy evaluation (MSE) update schedule for 2023 to 2029
+is subject to evaluation of exceptional circumstances criteria and
+available resources.
+Legend: `r commify(major_regions_full_parens, use_and = FALSE)`,
+Canadian Science Advisory Secretariat (CSAS),
+management performance (MP), and
+operating model (OM).
+
+(ref:mse-updates-cap-fr) Mise en oeuvre du cadre
+statistique intégré spatialement des prises de hareng par âge (SISCAH)
+[@johnson2024] pour les principales régions d’évaluation des stocks (RES)
+du hareng du Pacifique.
+Le calendrier de mise à jour d’évaluation des stratégies de gestion (ESG)
+pour 2023 à 2029 est soumis à
+l'évaluation des critères de circonstances exceptionnelles et
+des ressources disponibles.
+Légende : `r commify(major_regions_full_parens, use_and = FALSE)`,
+Secrétariat Canadien de consultation scientifique (SCCS), 
+performance de gestion (PG), et
+modèle opérationnel (MO).
+
+```{r mse-updates}
+basic_table(
+  tab = mse_up,
+  cap = ifelse(french, "(ref:mse-updates-cap-fr)", "(ref:mse-updates-cap)"),
+  translate = french,
+  knitr.kable.na = ""
+) %>%
+  add_header_above(header = c(" " = 1, "Year" = 7), bold = TRUE) %>%
+  column_spec(2:8, width = "1.7cm")
+```
+
+\afterpage{\clearpage}
 
 (ref:data-input-cap) Input data for the `r assess_yr` Pacific Herring
 statistical catch-age model for the major SARs.
@@ -19,6 +56,8 @@ relevés en surface (de `r major_start_yr` à `r new_surv_yr - 1`), et
 relevés de plongée (de `r new_surv_yr` à `r major_end_yr`).
 L’indice du frai n’est pas mis à l’échelle
 à l’aide du paramètre de mise à l’échelle du relevé du frai $q$.
+
+\needspace{0.45\textheight}
 
 ```{r data-input}
 input_data_table(

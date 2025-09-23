@@ -100,8 +100,10 @@ has implemented the spatially integrated statistical catch at age
 herring (SISCAH) modelling framework for
 the SoG SAR beginning in 2024 [@dfo2025b] and
 the PRD SAR beginning in 2025 (DFO. In prep.).$^{\ref{fn:dfo2025c}}$
-For the remaining three SARs (HG, CC, and WCVI)
+For the remaining three SARs (HG, CC, and WCVI) covered in this report
 we implement MPs from the previously approved operating model (as per 2024).
+Migration to the SISCAH modelling framework for HG, CC, and WCVI
+is planned for 2026/27 (Table \@ref(tab:mse-updates)).
 
 ## Input data
 
