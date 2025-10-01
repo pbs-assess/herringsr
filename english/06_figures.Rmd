@@ -221,6 +221,16 @@ plot_coastwide_biomass_catch(
   translate = french)
 ```
 
+```{r coastwide-biomass-catch-ppt, fig.asp=1, fig.cap="", eval = slides}
+plot_coastwide_biomass_catch(
+  models = major_models,
+  catch = major_catch,
+  reg_names = major_regions_full,
+  translate = french)
+ggsave(filename = here(knitr_figs_dir, "coastwide_biomass_catch.png"),  
+    width=12, height=6, dpi=300)
+```
+
 (ref:biomass-total-biomass-cap) Total biomass and spawning biomass
 in thousands of tonnes (t)
 for Pacific Herring from `r major_start_yr` to `r major_end_yr`
@@ -1060,6 +1070,7 @@ cowplot::plot_grid(
   rel_heights = c(1.1, 1.0, 1.1)
 )
 ```
+
 ```{r ppt-plots-wcvi, fig.asp = 1.1, fig.cap = "(ref:storyboard-wcvi-cap)", eval= slides}
 create_slide_figures(model_index = model_ind)
 ```
