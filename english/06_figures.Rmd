@@ -1252,7 +1252,10 @@ for inshore spawning grounds, along with timing for roe and SOK fisheries.
 
 ```{r wcvi-eco-concept-one, fig.cap = ifelse(french, "(ref:wcvi-eco-concept-one-cap-fr)", "(ref:wcvi-eco-concept-one-cap)"), out.width = "100%"}
 knitr::include_graphics(
-  here(ifelse(french, "figures/wcvi_eco_concept_1.png", "figures/wcvi_eco_concept_1.png"))
+  here(
+    ifelse(french, "figures/wcvi_eco_concept_1_fr.png",
+           "figures/wcvi_eco_concept_1.png")
+  )
 )
 ```
 
@@ -1269,7 +1272,10 @@ spatio-temporal overlap with WCVI Herring.
 
 ```{r wcvi-eco-predators, fig.cap = ifelse(french, "(ref:wcvi-eco-predators-cap-fr)", "(ref:wcvi-eco-predators-cap)"), out.width = "100%"}
 knitr::include_graphics(
-  here(ifelse(french, "figures/wcvi_eco_predators.png", "figures/wcvi_eco_predators.png"))
+  here(
+    ifelse(french, "figures/wcvi_eco_predators_fr.png",
+           "figures/wcvi_eco_predators.png")
+    )
 )
 ```
 
@@ -1285,7 +1291,10 @@ colour gradients show spawning magnitude.
 
 ```{r wcvi-eco-quilt, fig.cap = ifelse(french, "(ref:wcvi-eco-quilt-cap-fr)", "(ref:wcvi-eco-quilt-cap)"), out.width = "100%"}
 knitr::include_graphics(
-  here(ifelse(french, "figures/wcvi_eco_quilt.png", "figures/wcvi_eco_quilt.png"))
+  here(
+    ifelse(french, "figures/wvci_eco_quilt_fr.png",
+           "figures/wcvi_eco_quilt.png")
+  )
 )
 ```
 
@@ -1314,6 +1323,9 @@ inshore spawning grounds, along with timing for roe and SOK fisheries.
 
 ```{r wcvi-eco-concept-two, fig.cap = ifelse(french, "(ref:wcvi-eco-concept-two-cap-fr)", "(ref:wcvi-eco-concept-two-cap)"), out.width = "100%"}
 knitr::include_graphics(
-  here(ifelse(french, "figures/wcvi_eco_concept_2.png", "figures/wcvi_eco_concept_2.png"))
+  here(
+    ifelse(french, "figures/wcvi_eco_concept_2_fr.png",
+           "figures/wcvi_eco_concept_2.png")
+  )
 )
 ```
