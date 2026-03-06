@@ -94,7 +94,8 @@ opts_chunk$set(
   dev = fig_out_type,
   dpi = fig_dpi,
   fig.align = fig_align,
-  fig.pos = "H"
+  fig.pos = "H",
+  dev = "png"
 )
 
 options(
