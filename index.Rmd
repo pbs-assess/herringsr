@@ -17,7 +17,7 @@ process_day: 22
 t_branch: Science Branch
 t_region: Pacific Region
 output:
-  csasdown:::sr_pdf:
+  csasdowntex:::sr_pdf:
     french: FALSE
     prepub: TRUE
     copy_sty: TRUE
@@ -52,7 +52,7 @@ library(reshape2)
 library(kableExtra)
 library(here)
 library(rosettafish)
-library(csasdown)
+library(csasdowntex)
 library(gfutilities)
 library(gfiscamutils)
 library(ggrepel)
@@ -116,13 +116,13 @@ if (is.null(meta_out)) {
   options(french = FALSE)
 } else {
   if (length(grep("pdf", names(meta_out)))) {
-    french <- meta_out$`csasdown:::sr_pdf`$french
+    french <- meta_out$`csasdowntex:::sr_pdf`$french
     options(french = french)
-    prepub <- meta_out$`csasdown:::sr_pdf`$prepub
+    prepub <- meta_out$`csasdowntex:::sr_pdf`$prepub
   } else if (length(grep("word", names(meta_out)))) {
-    french <- meta_out$`csasdown::sr_word`$french
+    french <- meta_out$`csasdowntex::sr_word`$french
     options(french = french)
-    prepub <- meta_out$`csasdown::sr_word`$prepub
+    prepub <- meta_out$`csasdowntex::sr_word`$prepub
   }
 }
 
@@ -226,7 +226,7 @@ csl: `r t_csl`
 <!-- Compile the PDF on the command line: -->
 <!-- bookdown::render_book("index.Rmd") -->
 <!-- TODO: update to render_sar() next year -->
-<!-- csasdown::render_sar() -->
+<!-- csasdowntex::render_sar() -->
 
 <!-- Make French version: -->
 <!-- 1. Set `french` to `TRUE` -->

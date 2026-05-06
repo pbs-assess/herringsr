@@ -20,7 +20,7 @@ contributors <- tibble::tribble(
 \setlength{\tabcolsep}{3pt}
 
 ```{r, results='asis'}
-csasdown::csas_table(x = contributors, format = "latex") %>%
+csasdowntex::csas_table(x = contributors, format = "latex") %>%
    row_spec(0, bold = TRUE)
 ```
 

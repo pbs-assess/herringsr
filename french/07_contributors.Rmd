@@ -18,7 +18,7 @@ contributors <- tibble::tribble(
 ```
 
 ```{r, results='asis'}
-csasdown::csas_table(x = contributors, format = "latex") %>%
+csasdowntex::csas_table(x = contributors, format = "latex") %>%
    row_spec(0, bold = TRUE) %>%
    column_spec(2, width = "7.15cm") %>%
    column_spec(3, width = "4.9cm")
